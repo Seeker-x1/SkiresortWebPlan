@@ -4,7 +4,7 @@
 
 **見た目の正（2026-06 更新）**: Mapbox 衛星 3D は品質目標とずれる。**標高 DEM → イラスト生成パイプライン** を本筋とする → [ELEVATION_ILLUSTRATION_MODEL.md](./ELEVATION_ILLUSTRATION_MODEL.md)
 
-**関連**: [LIFT_MAP_WEBDX_TEMPLATE.md](./LIFT_MAP_WEBDX_TEMPLATE.md)（技術設計） / [laax_gap_spec.md](./laax_gap_spec.md)（LAAX ベンチマーク・G2–G4 受け入れ） / [sichinohe-CyoueiSki/agents/MASTER_SUMMARY_AND_ROADMAP.md](../sichinohe-CyoueiSki/agents/MASTER_SUMMARY_AND_ROADMAP.md)（サイト全体）
+**関連**: [LIFT_MAP_WEBDX_TEMPLATE.md](./LIFT_MAP_WEBDX_TEMPLATE.md)（技術設計） / [laax_gap_spec.md](./laax_gap_spec.md)（LAAX ベンチマーク・G2–G4 受け入れ） / [resorts/Sichinohe-CyoueiSki/agents/MASTER_SUMMARY_AND_ROADMAP.md](../resorts/Sichinohe-CyoueiSki/agents/MASTER_SUMMARY_AND_ROADMAP.md)（サイト全体）
 
 ---
 
@@ -30,7 +30,7 @@
 | `/api/public/map-status` | モック JSON（色の動的変更の配線済み） |
 | `/api/public/map` | 中心座標 + OSM 由来 `lifts.geojson`（**1本のみ**） |
 | `/courses` | マップは説明テキストのみ、**ビューア未埋め込み** |
-| 公式イラスト | skimap.org 2012 版を参考（[sources.md](../sichinohe-CyoueiSki/web/data/map/sources.md)） |
+| 公式イラスト | skimap.org 2012 版を参考（[sources.md](../resorts/Sichinohe-CyoueiSki/web/data/map/sources.md)） |
 | 未整備 | ポニーリフト線、コース `runs.geojson`、イラスト SVG の本番化 |
 
 ---
@@ -148,7 +148,7 @@ flowchart LR
 ### M5 — 見せ方・信頼の仕上げ（1日）
 
 - 「β版マップ」「要公式確認」バッジ
-- 出典（OSM / イラスト改変）フッター — [sources.md](../sichinohe-CyoueiSki/web/data/map/sources.md) 準拠
+- 出典（OSM / イラスト改変）フッター — [sources.md](../resorts/Sichinohe-CyoueiSki/web/data/map/sources.md) 準拠
 - Lighthouse モバイル パフォーマンス簡易確認
 
 ---
@@ -246,7 +246,7 @@ flowchart LR
 1. ~~**M1**: マップ表現を **A（イラスト SVG）** で進めるか確認~~ → **A 確定**
 2. **素材収集**: skimap 1345・現場の紙マップ写真・リフト名称リストを1枚にまとめる
 3. **M2 着手**: イラスト SVG トレース + `features.manifest.json` ドラフト
-4. ~~**map-interaction-spec**: G2 状態追記~~ → [`map-interaction-spec-g2.md`](../sichinohe-CyoueiSki/docs/map-interaction-spec-g2.md)
+4. ~~**map-interaction-spec**: G2 状態追記~~ → [`map-interaction-spec-g2.md`](../resorts/Sichinohe-CyoueiSki/docs/map-interaction-spec-g2.md)
 5. **触らない**: LINE Developers 申請、DB マイグレーション、Mapbox 契約
 
 ---

@@ -13,7 +13,7 @@
     "preview:site": "node scripts/build-static-preview.mjs && node scripts/build-evaluation-html.mjs",
     "preview:evaluation": "node scripts/build-evaluation-html.mjs",
     "preview:static": "node scripts/build-static-preview.mjs && node scripts/build-evaluation-html.mjs && npx --yes serve public -p 5500",
-    "preview:map": "node sichinohe-CyoueiSki/scripts/build-map-preview.mjs && node sichinohe-CyoueiSki/scripts/build-calibration-qa.mjs && node scripts/build-static-preview.mjs && node scripts/build-evaluation-html.mjs"
+    "preview:map": "node resorts/Sichinohe-CyoueiSki/scripts/build-map-preview.mjs && node resorts/Sichinohe-CyoueiSki/scripts/build-calibration-qa.mjs && node scripts/build-static-preview.mjs && node scripts/build-evaluation-html.mjs"
   },
   "dependencies": {
     "framer-motion": "^11.18.2",

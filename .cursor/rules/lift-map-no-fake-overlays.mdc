@@ -1,6 +1,6 @@
 ---
 description: リフトマップに根拠なき線・手置き座標を載せない。品質ゲート必須。
-globs: sichinohe-CyoueiSki/**/*,NanakoCyoueiSki/**/*,docs/**/*LIFT*,docs/**/*HERO*,docs/**/*MAP*
+globs: resorts/Sichinohe-CyoueiSki/**/*,NanakoCyoueiSki/**/*,docs/**/*LIFT*,docs/**/*HERO*,docs/**/*MAP*
 alwaysApply: true
 ---
 
@@ -29,7 +29,7 @@ alwaysApply: true
 - [ ] データソースを `source` フィールドに明記（OSM way ID / skimap / 現地）
 - [ ] `/maps/calibration-qa.html` で端点が実画像と一致
 - [ ] ユーザーまたは担当者が目視 OK
-- [ ] dev サーバーが `sichinohe-CyoueiSki/web`（`NanakoCyoueiSki` ではない）
+- [ ] dev サーバーが `resorts/Sichinohe-CyoueiSki/web`（`NanakoCyoueiSki` ではない）
 
 ## 過去インシデント（再発防止）
 

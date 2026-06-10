@@ -1,6 +1,6 @@
 ---
 description: マップ操作は17 spec → 19 実装 → 18 評価。リスト選択で sheet 禁止。
-globs: sichinohe-CyoueiSki/web/src/components/lift-map/**/*,sichinohe-CyoueiSki/web/public/maps/**/*,sichinohe-CyoueiSki/scripts/build-map-preview.mjs
+globs: resorts/Sichinohe-CyoueiSki/web/src/components/lift-map/**/*,resorts/Sichinohe-CyoueiSki/web/public/maps/**/*,resorts/Sichinohe-CyoueiSki/scripts/build-map-preview.mjs
 alwaysApply: false
 ---
 

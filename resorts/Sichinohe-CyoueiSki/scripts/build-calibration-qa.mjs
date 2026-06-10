@@ -304,4 +304,4 @@ console.log("");
 console.log("開き方:");
 console.log("  file:///.../public/maps/calibration-qa.html");
 console.log("  npm run preview:static  →  http://localhost:5500/maps/calibration-qa.html");
-console.log("  cd sichinohe-CyoueiSki/web && npm run dev  →  http://localhost:3000/maps/calibration-qa.html");
+console.log("  cd resorts/resorts/Sichinohe-CyoueiSki/web && npm run dev  →  http://localhost:3000/maps/calibration-qa.html");

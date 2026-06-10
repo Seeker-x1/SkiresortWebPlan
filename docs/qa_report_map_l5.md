@@ -1,7 +1,7 @@
 # マップ L5 ブランド評価 — `map_integration_spec` 準拠
 
 > **評価日**: 2026-06-08  
-> **対象**: `sichinohe-CyoueiSki/web/` — `/map`, `/courses` embed, `LiftMapViewer` 周辺  
+> **対象**: `resorts/Sichinohe-CyoueiSki/web/` — `/map`, `/courses` embed, `LiftMapViewer` 周辺  
 > **参照**: [`map_integration_spec.md`](./map_integration_spec.md), [`g2_checklist.md`](./g2_checklist.md) Phase C
 
 ---

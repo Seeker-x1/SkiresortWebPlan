@@ -3,7 +3,7 @@
 
 version: 1
 project:
-  name: sichinohe-CyoueiSki
+  name: resorts/Sichinohe-CyoueiSki
   locale: ja
   app_root: web
   stack: nextjs-app-router

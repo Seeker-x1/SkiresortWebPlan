@@ -1,7 +1,7 @@
 # マップ統合 spec — ルートテンプレ ↔ 七戸 `/map`
 
 > **L1** | `resort-map-bridge` 成果物 | 2026-06-08  
-> 実装: `map-ui-implementer`（`sichinohe-CyoueiSki/web/`）
+> 実装: `map-ui-implementer`（`resorts/Sichinohe-CyoueiSki/web/`）
 
 ---
 
@@ -96,7 +96,7 @@
 | トップ `PathMagnet`「Terrain」 | `/[locale]/map` |
 | ルート `public/preview` | 静的プレビュー（本番 IA とは別。`npm run preview:site`） |
 
-**IA ラベル（七戸）**: nav「ゲレンデマップ」=`/map` — [`map-interaction-spec-g6.md`](../sichinohe-CyoueiSki/docs/map-interaction-spec-g6.md) §0–§2
+**IA ラベル（七戸）**: nav「ゲレンデマップ」=`/map` — [`map-interaction-spec-g6.md`](../resorts/Sichinohe-CyoueiSki/docs/map-interaction-spec-g6.md) §0–§2
 
 **G6 禁止（再掲）**: `/courses` 独立 embed・地図上 `MapLegend`・6ピル LAAX フィルタ帯・リスト選択時の地図上 bottom sheet
 

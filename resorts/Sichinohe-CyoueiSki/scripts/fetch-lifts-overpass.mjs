@@ -20,7 +20,7 @@ const res = await fetch("https://overpass-api.de/api/interpreter", {
   method: "POST",
   headers: {
     "Content-Type": "application/x-www-form-urlencoded",
-    "User-Agent": "sichinohe-CyoueiSki/1.0 (map-research)",
+    "User-Agent": "resorts/Sichinohe-CyoueiSki/1.0 (map-research)",
   },
   body: "data=" + encodeURIComponent(query),
 });

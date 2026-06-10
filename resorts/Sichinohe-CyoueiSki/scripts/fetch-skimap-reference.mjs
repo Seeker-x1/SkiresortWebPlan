@@ -21,13 +21,13 @@ async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
   const pageRes = await fetch("https://www.skimap.org/SkiAreas/view/1345", {
-    headers: { "User-Agent": "sichinohe-CyoueiSki-research/1.0" },
+    headers: { "User-Agent": "resorts/Sichinohe-CyoueiSki-research/1.0" },
   });
   const html = await pageRes.text();
   const url = extractImageUrl(html);
 
   const res = await fetch(url, {
-    headers: { "User-Agent": "sichinohe-CyoueiSki-research/1.0" },
+    headers: { "User-Agent": "resorts/Sichinohe-CyoueiSki-research/1.0" },
     redirect: "follow",
   });
   if (!res.ok) throw new Error(`fetch failed ${res.status} ${url}`);

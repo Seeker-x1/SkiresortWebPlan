@@ -48,7 +48,7 @@
 
 ```bash
 
-cd sichinohe-CyoueiSki/scripts
+cd resorts/Sichinohe-CyoueiSki/scripts
 
 npm install
 
@@ -315,7 +315,7 @@ URL 形式: `@緯度,経度,高度a,画角y,方位h,傾きt`
 
 
 
-詳細: [earth-studio-manual-entry.md](../sichinohe-CyoueiSki/web/data/map/earth-studio-manual-entry.md)
+詳細: [earth-studio-manual-entry.md](../resorts/Sichinohe-CyoueiSki/web/data/map/earth-studio-manual-entry.md)
 
 
 

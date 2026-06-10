@@ -39,5 +39,5 @@ styles/     色・線幅トークン
 ## 開発者向けメモ
 
 - GSI 標高タイル PNG は `analyze` 前に GeoTIFF 等へ正規化が必要
-- OSM リフト: `sichinohe-CyoueiSki/scripts/fetch-lift-way.mjs`
+- OSM リフト: `resorts/Sichinohe-CyoueiSki/scripts/fetch-lift-way.mjs`
 - 出力は `web/public/maps/{resort-slug}/` と `features.manifest.json` に接続

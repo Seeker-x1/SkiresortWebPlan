@@ -28,7 +28,7 @@ function round7(n) {
 
 // --- OpenSkiMap ---
 const liftsRes = await fetch("https://tiles.openskimap.org/geojson/lifts.geojson", {
-  headers: { "User-Agent": "sichinohe-CyoueiSki/1.0" },
+  headers: { "User-Agent": "resorts/Sichinohe-CyoueiSki/1.0" },
 });
 const liftsGeo = await liftsRes.json();
 const osmLifts = liftsGeo.features.filter((f) =>
@@ -49,7 +49,7 @@ try {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
-      "User-Agent": "sichinohe-CyoueiSki/1.0",
+      "User-Agent": "resorts/Sichinohe-CyoueiSki/1.0",
     },
     body: "data=" + encodeURIComponent(query),
   });

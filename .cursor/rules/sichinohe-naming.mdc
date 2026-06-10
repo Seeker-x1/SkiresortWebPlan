@@ -14,6 +14,6 @@ alwaysApply: true
 | `nanako-hero.png` | `sichinohe-hero.png` |
 | `nanako-hero-gsi.png` 等 | `sichinohe-hero-gsi.png` 等 |
 
-- 本番作業ディレクトリ: `sichinohe-CyoueiSki/web/`（`NanakoCyoueiSki/` はレガシー・触らない）
+- 本番作業ディレクトリ: `resorts/Sichinohe-CyoueiSki/web/`（`NanakoCyoueiSki/` はレガシー・触らない）
 - トップヒーロー（非マップ）: 従来どおり `hero-sichinohe.png`（`public/images/`）
 - 新規スクリプト・JSON・manifest・ドキュメントに `nanako` を再導入しない

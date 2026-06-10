@@ -140,15 +140,15 @@ section.award-hero-scroll (min-h-[92svh])
 
 | 資産 | フルパス | 用途 | トップヒーロー |
 |------|----------|------|----------------|
-| **トップ用（本番）** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\sichinohe-CyoueiSki\web\public\images\hero-sichinohe.png` | `/` `CinematicHero` のみ | ✅ 本番候補 |
+| **トップ用（本番）** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\resorts/Sichinohe-CyoueiSki\web\public\images\hero-sichinohe.png` | `/` `CinematicHero` のみ | ✅ 本番候補 |
 | **モック A** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\docs\preview\hero-mock-a-blue.png` | 比較・プレビューのみ | ⚠️ 承認前は本番不可 |
 | **モック B** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\docs\preview\hero-mock-b-monochrome.png` | 比較・プレビューのみ | ⚠️ 承認前は本番不可 |
 | **モック C** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\docs\preview\hero-mock-c-warm-editorial.png` | 比較・プレビューのみ | ⚠️ 暫定プレースホルダ元 |
 | **3案比較 HTML** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\docs\preview\hero-mock-triptych.html` | ブラウザ比較（file:// 可） | — |
 | **トップ全体モック** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\docs\preview\sichinohe-top-mock.html` | セクション全体プレビュー | — |
-| **マップ v4** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\sichinohe-CyoueiSki\web\public\maps\sichinohe-hero.png` | `/map`・キャリブ・preview | ❌ **禁止** |
-| **マップ v5** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\sichinohe-CyoueiSki\web\public\maps\sichinohe-hero-v5.png` | layout-v5 `/map` 候補 | ❌ **禁止** |
-| **Earth Studio** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\sichinohe-CyoueiSki\web\public\maps\sichinohe-hero-earthstudio.png` | 内部キャリブ参照 | ❌ **禁止** |
+| **マップ v4** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\resorts/Sichinohe-CyoueiSki\web\public\maps\sichinohe-hero.png` | `/map`・キャリブ・preview | ❌ **禁止** |
+| **マップ v5** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\resorts/Sichinohe-CyoueiSki\web\public\maps\sichinohe-hero-v5.png` | layout-v5 `/map` 候補 | ❌ **禁止** |
+| **Earth Studio** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\resorts/Sichinohe-CyoueiSki\web\public\maps\sichinohe-hero-earthstudio.png` | 内部キャリブ参照 | ❌ **禁止** |
 
 根拠: [`map_integration_spec.md`](../../docs/map_integration_spec.md) §5 — マップイラストをトップに流用すると「公式地形図」と誤認される。
 
@@ -165,7 +165,7 @@ section.award-hero-scroll (min-h-[92svh])
 | 代替 | 説明 | 向き |
 |------|------|------|
 | **本番写真** | Gemini / 現地撮影（[`asset_brief.md`](../../docs/asset_brief.md)） | 最良。フォトリアル QA 必須 |
-| **v5 マップ画像** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\sichinohe-CyoueiSki\web\public\maps\sichinohe-hero-v5.png` | **トップ不可** — `/map` 専用 |
+| **v5 マップ画像** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\resorts/Sichinohe-CyoueiSki\web\public\maps\sichinohe-hero-v5.png` | **トップ不可** — `/map` 専用 |
 
 ### 5.3 採用基準（すべて YES でないと本番配置不可）
 
@@ -202,12 +202,12 @@ section.award-hero-scroll (min-h-[92svh])
 
 > L2 配置:  
 > `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\docs\preview\hero-mock-a-blue.png`  
-> → `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\sichinohe-CyoueiSki\web\public\images\hero-sichinohe.png`
+> → `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\resorts/Sichinohe-CyoueiSki\web\public\images\hero-sichinohe.png`
 
 | 項目 | 決定（記入） |
 |------|-------------|
 | **採用候補** | ☑ **案 A**　☐ 案 B　☐ 案 C　☐ 本番写真　☐ その他: — |
-| **本番ファイル名** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\sichinohe-CyoueiSki\web\public\images\hero-sichinohe.png` |
+| **本番ファイル名** | `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\resorts/Sichinohe-CyoueiSki\web\public\images\hero-sichinohe.png` |
 | **元ソース** | ☑ A: `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\docs\preview\hero-mock-a-blue.png` |
 | **v5 マップ画像をトップに使うか** | ☑ **No** |
 | **案 B 選択時: 白文字 UI 改修** | ☑ 不要（B 不採用） |
@@ -275,5 +275,5 @@ section.award-hero-scroll (min-h-[92svh])
 - モック比較 HTML: `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\docs\preview\hero-mock-triptych.html`
 - トップ全体モック: `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\docs\preview\sichinohe-top-mock.html`
 - 写真生成: `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\docs\asset_brief.md`
-- マップ資産: `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\sichinohe-CyoueiSki\web\data\map\sources.md`
-- v5 レイアウト: `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\sichinohe-CyoueiSki\docs\map-asset-layout-v5-spec.md`
+- マップ資産: `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\resorts/Sichinohe-CyoueiSki\web\data\map\sources.md`
+- v5 レイアウト: `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\resorts/Sichinohe-CyoueiSki\docs\map-asset-layout-v5-spec.md`

@@ -7,7 +7,7 @@
 **関連 spec（読む順）**
 
 1. [`docs/laax_gap_spec.md`](./laax_gap_spec.md) §G2 — LAAX 判定目標  
-2. [`sichinohe-CyoueiSki/docs/map-interaction-spec-g2.md`](../sichinohe-CyoueiSki/docs/map-interaction-spec-g2.md) — 状態遷移・G2-1〜6  
+2. [`resorts/Sichinohe-CyoueiSki/docs/map-interaction-spec-g2.md`](../resorts/Sichinohe-CyoueiSki/docs/map-interaction-spec-g2.md) — 状態遷移・G2-1〜6  
 3. [`.cursor/rules/lift-map-no-fake-overlays.mdc`](../.cursor/rules/lift-map-no-fake-overlays.mdc) — A 方式幾何
 
 ---
@@ -122,7 +122,7 @@ Phase E  ゲート（16 + 18 + code-reviewer）
 - トレース: http://localhost:5500/maps/trace-hitboxes.html  
 - サイト同期: `npm run preview:site`（`messages/ja.json` → `public/preview/`）  
 - マップ再生成: `npm run preview:map`（map + calibration-qa + **site 同期**）  
-- 七戸 dev のみ: http://localhost:3000/maps/calibration-qa.html（`cd sichinohe-CyoueiSki/web && npm run dev`）
+- 七戸 dev のみ: http://localhost:3000/maps/calibration-qa.html（`cd resorts/Sichinohe-CyoueiSki/web && npm run dev`）
 
 ---
 
@@ -134,7 +134,7 @@ Phase E  ゲート（16 + 18 + code-reviewer）
 | 2 | `map-ux-evaluator` | R1–R6（`/map` + embed + preview） | Phase B/C |
 | 3 | `map-interaction-evaluator` | I1–I5 + **G2-1〜6** | `map-interaction-spec-g2.md` |
 
-**G2-1〜6 早見表**（[`map-interaction-spec-g2.md`](../sichinohe-CyoueiSki/docs/map-interaction-spec-g2.md) §8）
+**G2-1〜6 早見表**（[`map-interaction-spec-g2.md`](../resorts/Sichinohe-CyoueiSki/docs/map-interaction-spec-g2.md) §8）
 
 | ID | 要点 |
 |----|------|
@@ -187,12 +187,12 @@ Phase E  ゲート（16 + 18 + code-reviewer）
 | マップ UI i18n | 2026-06-08 | L2 | **PASS** — `messages/map.*` ja+en |
 | **G2 完了宣言** | 2026-06-08 | — | **完了** — Phase A–E + L5/C3/i18n 記録済み |
 | UI 整理セッション | 2026-06-09 | ユーザー指定 | レール分割・QuickNav ADEF・凡例削除・コースデフォルト・preview 同期 |
-| **G6 spec ユーザー承認** | 2026-06-08 | ユーザー | **OK** — [`map-interaction-spec-g6.md`](../sichinohe-CyoueiSki/docs/map-interaction-spec-g6.md) |
+| **G6 spec ユーザー承認** | 2026-06-08 | ユーザー | **OK** — [`map-interaction-spec-g6.md`](../resorts/Sichinohe-CyoueiSki/docs/map-interaction-spec-g6.md) |
 | map-ux-evaluator（G6） | 2026-06-08 | 16 | **PASS** — R1–R6 + G6-1,3,7（[`qa_report_map.md`](./qa_report_map.md) §G6） |
 | map-interaction-evaluator（G6） | 2026-06-08 | 18 | **PASS** — I1–I5 + G6-2,4,5,6。G2-4 **WAIVED** |
 | **G6 出荷ゲート** | 2026-06-08 | — | **完了** — spec OK + 16 PASS + 18 PASS |
-| トップ hero 採用 | 2026-06-08 | ユーザー | **案 A** — `docs/preview/hero-mock-a-blue.png` → `sichinohe-CyoueiSki/web/public/images/hero-sichinohe.png` |
-| **トップ hero L1 spec** | 2026-06-09 | 01+05 | [`home-hero-spec.md`](../sichinohe-CyoueiSki/docs/home-hero-spec.md) — §6 **案 A 承認済** |
+| トップ hero 採用 | 2026-06-08 | ユーザー | **案 A** — `docs/preview/hero-mock-a-blue.png` → `resorts/Sichinohe-CyoueiSki/web/public/images/hero-sichinohe.png` |
+| **トップ hero L1 spec** | 2026-06-09 | 01+05 | [`home-hero-spec.md`](../resorts/Sichinohe-CyoueiSki/docs/home-hero-spec.md) — §6 **案 A 承認済** |
 | resort-visual-evaluator（hero 案 A） | 2026-06-08 | V3 | **PASS**（WARN: 1536×1024 のみ）— [`qa_report_visual.md`](./qa_report_visual.md) |
 | hero reduced-motion CSS | 2026-06-08 | L2（06） | `award-rise` / `animate-rise` / scroll title 無効化 |
 | resort-qa-a11y（七戸 `/`） | 2026-06-08 | L3 | **PASS**（再評価）— Q1–Q6（[`qa_report.md`](./qa_report.md)） |
@@ -212,5 +212,5 @@ Phase E  ゲート（16 + 18 + code-reviewer）
 ## 10. G3 以降
 
 - ~~サイドバー検索・status 手運用~~ → ✅ [`g3_checklist.md`](./g3_checklist.md)（2026-06-08 完了）
-- **G6 UI レイアウト正本** → [`map-interaction-spec-g6.md`](../sichinohe-CyoueiSki/docs/map-interaction-spec-g6.md)（**承認済・出荷ゲート PASS** 2026-06-08）
+- **G6 UI レイアウト正本** → [`map-interaction-spec-g6.md`](../resorts/Sichinohe-CyoueiSki/docs/map-interaction-spec-g6.md)（**承認済・出荷ゲート PASS** 2026-06-08）
 - **G4**: SSE/ポーリング本番、DB、GPS、難易度フィルタ → [`laax_gap_spec.md`](./laax_gap_spec.md) §G4（**G6 §6 承認まで UI 載せ禁止**）

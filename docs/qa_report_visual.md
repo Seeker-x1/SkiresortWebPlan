@@ -59,9 +59,9 @@ resort-qa-a11y PASS + resort-visual-evaluator PASS → ルートテンプレ UI 
 ## CinematicHero 評価 — 案 A 承認後（2026-06-08）
 
 > **Agent**: `resort-visual-evaluator`  
-> **参照**: [`home-hero-spec.md`](../sichinohe-CyoueiSki/docs/home-hero-spec.md) §5.3・§6  
-> **対象**: `/` `CinematicHero` のみ（`sichinohe-CyoueiSki/web/`）  
-> **アセット**: `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\sichinohe-CyoueiSki\web\public\images\hero-sichinohe.png`（元: `hero-mock-a-blue.png`）
+> **参照**: [`home-hero-spec.md`](../resorts/Sichinohe-CyoueiSki/docs/home-hero-spec.md) §5.3・§6  
+> **対象**: `/` `CinematicHero` のみ（`resorts/Sichinohe-CyoueiSki/web/`）  
+> **アセット**: `c:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\resorts/Sichinohe-CyoueiSki\web\public\images\hero-sichinohe.png`（元: `hero-mock-a-blue.png`）
 
 ### Verdict
 

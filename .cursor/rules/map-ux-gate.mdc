@@ -1,6 +1,6 @@
 ---
 description: マップUI変更時は主コンテンツ（地図画像）を覆わない。map-ux-evaluator 必須。
-globs: sichinohe-CyoueiSki/web/src/components/lift-map/**/*,sichinohe-CyoueiSki/web/public/maps/**/*,sichinohe-CyoueiSki/scripts/build-map-preview.mjs
+globs: resorts/Sichinohe-CyoueiSki/web/src/components/lift-map/**/*,resorts/Sichinohe-CyoueiSki/web/public/maps/**/*,resorts/Sichinohe-CyoueiSki/scripts/build-map-preview.mjs
 alwaysApply: false
 ---
 

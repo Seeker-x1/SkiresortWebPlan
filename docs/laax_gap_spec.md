@@ -12,7 +12,7 @@
 | 項目 | 内容 |
 |------|------|
 | 何を定義するか | LAAX 級体験との **ギャップ（L1–L5）** をフェーズ（G1–G4）ごとに閉じる条件 |
-| 対象 | `sichinohe-CyoueiSki/web/` の `/map`、`/courses` 埋め込み、ルートテンプレからの導線 |
+| 対象 | `resorts/Sichinohe-CyoueiSki/web/` の `/map`、`/courses` 埋め込み、ルートテンプレからの導線 |
 | 対象外 | LAAX の WebGL エンジン複製、全世界リゾート 3D、Liftopia 連携 |
 | 現在地 | **G1 ビジュアル MVP**（16/18 UX・操作ゲートは PASS、LAAX ベンチマークは未達） |
 
@@ -117,7 +117,7 @@ map-interaction-spec（G2 状態追記）✅
     → code-reviewer（幾何・source）
 ```
 
-**G2 インタラクション spec**: [`sichinohe-CyoueiSki/docs/map-interaction-spec-g2.md`](../sichinohe-CyoueiSki/docs/map-interaction-spec-g2.md)（2026-06-07）
+**G2 インタラクション spec**: [`resorts/Sichinohe-CyoueiSki/docs/map-interaction-spec-g2.md`](../resorts/Sichinohe-CyoueiSki/docs/map-interaction-spec-g2.md)（2026-06-07）
 
 ---
 
@@ -252,14 +252,14 @@ map-interaction-spec（G2 状態追記）✅
 | [ELEVATION_ILLUSTRATION_MODEL.md](./ELEVATION_ILLUSTRATION_MODEL.md) | L1 地形真理層 |
 | [UNIVERSAL_RESORT_MAP_SYSTEM_REQUIREMENTS.md](./UNIVERSAL_RESORT_MAP_SYSTEM_REQUIREMENTS.md) | データ変数 |
 | [qa_report_map.md](./qa_report_map.md) §D | 初回ギャップ監査 |
-| `sichinohe-CyoueiSki/agents/17-map-interaction-spec.prompt.md` | 操作の正 |
+| `resorts/Sichinohe-CyoueiSki/agents/17-map-interaction-spec.prompt.md` | 操作の正 |
 
 ---
 
 ## 10. 次のアクション
 
 ```
-1. ~~map-interaction-spec — G2 状態遷移~~ ✅ `sichinohe-CyoueiSki/docs/map-interaction-spec-g2.md`
+1. ~~map-interaction-spec — G2 状態遷移~~ ✅ `resorts/Sichinohe-CyoueiSki/docs/map-interaction-spec-g2.md`
 2. resort-map-bridge — トークン統合 spec（L5）
 3. イラスト制作 — DEM/skimap トレース → SVG + feature-id（A 方式）
 4. map-ui-implementer — G2 チェックリストのみ実装（spec 承認済み・幾何準備後）

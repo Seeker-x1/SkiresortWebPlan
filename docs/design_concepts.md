@@ -277,7 +277,7 @@
 | `--success` | `#2D8F5E` | 運行中 |
 | `--danger` | `#C0392B` | クローズ |
 
-**マップ連携**: `sichinohe-CyoueiSki/web` の `#0c1220` を将来的に `--alpine-dark` 系へ寄せる（`resort-map-bridge`）。
+**マップ連携**: `resorts/Sichinohe-CyoueiSki/web` の `#0c1220` を将来的に `--alpine-dark` 系へ寄せる（`resort-map-bridge`）。
 
 ---
 

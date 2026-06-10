@@ -1,16 +1,25 @@
 # Agent instructions — SkiresortWebPlan
 
+モノレポ構成:
+
+```
+SkiresortWebPlan/          # 汎用テンプレ（src/, docs/, resort-* 艦隊）
+  resorts/
+    Sichinohe-CyoueiSki/   # 七戸本番（web/ + map-* 艦隊）
+    …                      # 今後ゲレンデごとに追加
+```
+
 このリポジトリは **2つのエージェント艦隊** と **横断 Rules** で運用する。
 
 | 艦隊 | 配置 | 対象 |
 |------|------|------|
 | **resort-*** | `.cursor/agents/`（ルート） | 汎用テンプレ `src/`, `messages/`, ルート `docs/` |
-| **map-*** | `sichinohe-CyoueiSki/.cursor/agents/` | 七戸本番 `sichinohe-CyoueiSki/web/` のリフトマップ |
+| **map-*** | `resorts/Sichinohe-CyoueiSki/.cursor/agents/` | 七戸本番 `resorts/Sichinohe-CyoueiSki/web/` のリフトマップ |
 | **Rules** | `.cursor/rules/` | 両艦隊に常時適用 |
-| **設計書（詳細）** | `sichinohe-CyoueiSki/agents/*.prompt.md` | マップ艦隊の一次参照（ID 01〜19） |
+| **設計書（詳細）** | `resorts/Sichinohe-CyoueiSki/agents/*.prompt.md` | マップ艦隊の一次参照（ID 01〜19） |
 | **設計書（ルート L3）** | `agents/resort-visual-evaluator.prompt.md` | ビジュアル評価ルーブリック |
 
-レジストリ: [`.cursor/agents/REGISTRY.yaml`](.cursor/agents/REGISTRY.yaml) / [`sichinohe-CyoueiSki/.cursor/agents/REGISTRY.yaml`](sichinohe-CyoueiSki/.cursor/agents/REGISTRY.yaml)
+レジストリ: [`.cursor/agents/REGISTRY.yaml`](.cursor/agents/REGISTRY.yaml) / [`resorts/Sichinohe-CyoueiSki/.cursor/agents/REGISTRY.yaml`](resorts/Sichinohe-CyoueiSki/.cursor/agents/REGISTRY.yaml)
 
 ---
 
@@ -26,7 +35,7 @@
 
 ## 艦隊 A: ルートテンプレート（resort-*）
 
-**対象ディレクトリ**: `src/`, `messages/`, ルート `docs/`（`sichinohe-CyoueiSki/web/` は対象外）
+**対象ディレクトリ**: `src/`, `messages/`, ルート `docs/`（`resorts/Sichinohe-CyoueiSki/web/` は対象外）
 
 ### エージェント一覧
 
@@ -68,8 +77,8 @@ resort-ux-designer          # 3案 + ベンチマーク参照
 
 ## 艦隊 B: 七戸マップ（map-*）
 
-**対象ディレクトリ**: `sichinohe-CyoueiSki/web/`  
-**詳細プロンプト**: `sichinohe-CyoueiSki/agents/17,19,16,18`
+**対象ディレクトリ**: `resorts/Sichinohe-CyoueiSki/web/`  
+**詳細プロンプト**: `resorts/Sichinohe-CyoueiSki/agents/17,19,16,18`
 
 ### エージェント一覧
 
@@ -103,7 +112,7 @@ map-interaction-spec
 
 - 根拠なき手置き座標でコース／リフト線を描く
 - 未検証の SVG 線を `/map` 本番に載せる
-- **`NanakoCyoueiSki/` で作業する**（正は `sichinohe-CyoueiSki/`）
+- **`NanakoCyoueiSki/` で作業する**（正は `resorts/Sichinohe-CyoueiSki/`）
 - **リスト選択で地図上に bottom sheet / モーダルを出す**
 
 ### 組み込みレビュー（Cursor 標準）
@@ -134,5 +143,5 @@ docs/handoff_checklist.md に従い HeroSection の contrast を修正
 ## 七戸その他（01〜15, 06 等）
 
 汎用サイト・データ・運用コンソールは従来どおり  
-[`sichinohe-CyoueiSki/agents/REGISTRY.yaml`](sichinohe-CyoueiSki/agents/REGISTRY.yaml) を参照。  
+[`resorts/Sichinohe-CyoueiSki/agents/REGISTRY.yaml`](resorts/Sichinohe-CyoueiSki/agents/REGISTRY.yaml) を参照。  
 Cursor サブエージェント化は **マップ艦隊（map-*）とルート艦隊（resort-*）を優先**。

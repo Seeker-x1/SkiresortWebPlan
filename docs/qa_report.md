@@ -2,7 +2,7 @@
 
 > **Agent**: `resort-qa-a11y`（L3）  
 > **Date**: 2026-06-10（全站再評価）  
-> **Target**: `sichinohe-CyoueiSki/web/src/app/[locale]/**` + 共有コンポーネント  
+> **Target**: `resorts/Sichinohe-CyoueiSki/web/src/app/[locale]/**` + 共有コンポーネント  
 > **前回**: 2026-06-08 トップ `/` のみ PASS  
 > **L2 前提**: 全コンテンツページ i18n + G4 マップ UI 再マウント + `resort-data.en.json`
 
@@ -118,7 +118,7 @@ resort-qa-a11y PASS + resort-visual-evaluator PASS → サイト UI 出荷可
 | 項目 | 結果 |
 |------|------|
 | admin POST → SSE | **PASS** 2279ms（2026-06-10） |
-| スクリプト | `sichinohe-CyoueiSki/scripts/verify-g4-1-sse.mjs` |
+| スクリプト | `resorts/Sichinohe-CyoueiSki/scripts/verify-g4-1-sse.mjs` |
 
 ---
 

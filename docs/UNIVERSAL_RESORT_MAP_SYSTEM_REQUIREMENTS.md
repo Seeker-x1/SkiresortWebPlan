@@ -2,7 +2,7 @@
 
 **版**: v0.1（2026-06-05）  
 **対象**: 見ず知らずのスキー場でも、現場に忠実な鳥瞰イラストマップを再現可能にするマルチテナント基盤  
-**パイロット実績**: 七戸町営スキー場（`sichinohe-CyoueiSki`）
+**パイロット実績**: 七戸町営スキー場（`resorts/Sichinohe-CyoueiSki`）
 
 ---
 
@@ -223,7 +223,7 @@ Resort 1──* MapStatus（運行状況、別ドメイン）
 
 #### 2.4 ファイルベース MVP（現行パイロット互換）
 
-DB 前段階として、ゲレンデごとに以下を保持（`sichinohe-CyoueiSki/web/data/map/` と同型）:
+DB 前段階として、ゲレンデごとに以下を保持（`resorts/Sichinohe-CyoueiSki/web/data/map/` と同型）:
 
 ```
 data/map/

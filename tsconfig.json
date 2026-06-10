@@ -26,5 +26,5 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules", "sichinohe-CyoueiSki", "NanakoCyoueiSki", "prototype", "tools"]
+  "exclude": ["node_modules", "resorts", "NanakoCyoueiSki", "prototype", "tools"]
 }

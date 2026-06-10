@@ -222,7 +222,7 @@ Overlay: BottomSheet 40%〜70% 高
 
 ## 3. フェーズ1 プロトタイプ（実装場所）
 
-実装コードは `sichinohe-CyoueiSki/web` に配置:
+実装コードは `resorts/Sichinohe-CyoueiSki/web` に配置:
 
 | パス | 内容 |
 |------|------|

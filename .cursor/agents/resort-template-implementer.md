@@ -13,7 +13,7 @@ You are the **L2 template implementer** for `SkiresortWebPlan` root.
 
 ## Out of scope
 
-- `sichinohe-CyoueiSki/web/` (unless user explicitly redirects)
+- `resorts/Sichinohe-CyoueiSki/web/` (unless user explicitly redirects)
 - `NanakoCyoueiSki/` — **forbidden**
 - Map lines, GeoJSON, calibration, SVG overlays on `/map`
 

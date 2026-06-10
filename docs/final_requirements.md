@@ -207,7 +207,7 @@ interface ResortTemplateData {
 1. **ヒーロー画像**: Unsplash の雪山プレースホルダーを使用。本番は各リゾートの写真に差し替え。
 2. **i18n**: テンプレート初版は日本語固定。`next-intl` 統合は Phase 2。
 3. **ダークモード**: 初版はライトのみ。スキー場は日中閲覧が主のため優先度低。
-4. **地図**: `/map` 連携は既存 `sichinohe-CyoueiSki` 側。テンプレートでは `mapUrl` リンクのみ。
+4. **地図**: `/map` 連携は既存 `resorts/Sichinohe-CyoueiSki` 側。テンプレートでは `mapUrl` リンクのみ。
 
 ---
 

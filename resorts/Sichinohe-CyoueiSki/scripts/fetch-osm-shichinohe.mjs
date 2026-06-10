@@ -12,7 +12,7 @@ const res = await fetch("https://overpass.kumi.systems/api/interpreter", {
   method: "POST",
   headers: {
     "Content-Type": "application/x-www-form-urlencoded",
-    "User-Agent": "sichinohe-CyoueiSki-research/1.0",
+    "User-Agent": "resorts/Sichinohe-CyoueiSki-research/1.0",
   },
   body: `data=${encodeURIComponent(query)}`,
 });

@@ -22,7 +22,7 @@
 - `/`（ja）、`/en`（en）
 - `src/components/sections/*`, `src/components/ui/*`, `src/components/layout/*`
 - `src/app/globals.css`（トークン・タイポ）
-- **対象外**: `sichinohe-CyoueiSki/web/` マップ（→ `map-ux-evaluator`）
+- **対象外**: `resorts/Sichinohe-CyoueiSki/web/` マップ（→ `map-ux-evaluator`）
 
 ## システムプロンプト（そのまま利用可）
 

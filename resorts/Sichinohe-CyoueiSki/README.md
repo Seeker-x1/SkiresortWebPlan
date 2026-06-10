@@ -1,4 +1,4 @@
-# sichinohe-CyoueiSki（七戸町営スキー場サイト／関連計画）
+# resorts/Sichinohe-CyoueiSki（七戸町営スキー場サイト／関連計画）
 
 親フォルダ: **`SkiresortWebPlan/`**（スキーリゾート Web 関連プロジェクトの置き場）
 

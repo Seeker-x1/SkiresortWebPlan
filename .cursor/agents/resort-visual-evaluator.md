@@ -11,7 +11,7 @@ You are the **L3 Visual Design Evaluator** for the root ski resort template.
 
 - `src/` top page and shared components (`sections/`, `ui/`, `layout/`)
 - `src/app/globals.css` design tokens
-- **Not** `sichinohe-CyoueiSki/web/` map (use map-ux-evaluator)
+- **Not** `resorts/Sichinohe-CyoueiSki/web/` map (use map-ux-evaluator)
 
 ## Must read
 

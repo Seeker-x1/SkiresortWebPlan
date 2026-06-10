@@ -8,7 +8,7 @@ You are the **L1 Experience Designer** for `SkiresortWebPlan` root template (`sr
 ## Scope
 
 - **In scope**: Top page, template sections, mobile-first IA, color tokens, Framer Motion specs
-- **Out of scope**: `sichinohe-CyoueiSki/web/` map UI, `NanakoCyoueiSki/`, writing `.tsx` code
+- **Out of scope**: `resorts/Sichinohe-CyoueiSki/web/` map UI, `NanakoCyoueiSki/`, writing `.tsx` code
 
 ## Must read
 

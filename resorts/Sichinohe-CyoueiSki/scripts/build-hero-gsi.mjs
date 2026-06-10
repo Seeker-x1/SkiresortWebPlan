@@ -32,7 +32,7 @@ const HEIGHT = 1280;
 
 async function fetchTile(url, optional = false) {
   const res = await fetch(url, {
-    headers: { "User-Agent": "sichinohe-CyoueiSki-map-build/1.0" },
+    headers: { "User-Agent": "resorts/Sichinohe-CyoueiSki-map-build/1.0" },
   });
   if (!res.ok) {
     if (optional) return null;

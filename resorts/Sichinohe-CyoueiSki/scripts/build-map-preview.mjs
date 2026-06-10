@@ -11,7 +11,7 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const MAP_DIR = path.join(__dirname, "..", "web", "data", "map");
 const WEB_MAPS = path.join(__dirname, "..", "web", "public", "maps");
-const ROOT_PUBLIC_MAPS = path.join(__dirname, "..", "..", "public", "maps");
+const ROOT_PUBLIC_MAPS = path.join(__dirname, "..", "..", "..", "public", "maps");
 const OUT_PATHS = [
   path.join(WEB_MAPS, "map-preview.html"),
   path.join(ROOT_PUBLIC_MAPS, "map-preview.html"),
@@ -839,4 +839,4 @@ console.log("");
 console.log("開き方（推奨）:");
 console.log("  1) ルート public: file:///.../public/maps/map-preview.html");
 console.log("  2) トップから: public/preview/index.html → ゲレンデマップ");
-console.log("  3) dev: cd sichinohe-CyoueiSki/web && npm run dev → http://localhost:3000/maps/map-preview.html");
+console.log("  3) dev: cd resorts/resorts/Sichinohe-CyoueiSki/web && npm run dev → http://localhost:3000/maps/map-preview.html");

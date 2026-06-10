@@ -38,7 +38,7 @@
 
 ## 対象外
 
-- `sichinohe-CyoueiSki/web/` マップ UI（別艦隊）
+- `resorts/Sichinohe-CyoueiSki/web/` マップ UI（別艦隊）
 - Bento 画像の実写差し替え（Phase 2）
 - LAAX 3D マップ
 

@@ -1,4 +1,4 @@
-# エージェント管理（sichinohe-CyoueiSki）
+# エージェント管理（resorts/Sichinohe-CyoueiSki）
 
 このリポジトリでは **`agents/*.prompt.md`** を役割別プロンプトとして固定し、Cursor／Claude Code のサブエージェントやチャットにそのまま割り当てます。
 

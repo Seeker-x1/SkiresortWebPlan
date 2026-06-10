@@ -252,7 +252,7 @@ node scripts/build-hero-v5-template.mjs
 
 ## 12. 参照
 
-- LAAX 計測ログ: `node sichinohe-CyoueiSki/scripts/probe-laax-map.mjs`
+- LAAX 計測ログ: `node resorts/Sichinohe-CyoueiSki/scripts/probe-laax-map.mjs`
 - 現行座標: `web/data/map/hitboxes-hero-v4.json`
 - 品質ゲート: `.cursor/rules/lift-map-no-fake-overlays.mdc`
 - 層 C: `docs/qa_report_map.md` §E

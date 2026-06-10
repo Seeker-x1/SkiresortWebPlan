@@ -3,13 +3,13 @@ name: map-ux-evaluator
 description: L3 map layout evaluator. PASS/FAIL on map non-occlusion and layout. No code. Use after map-ui-implementer changes. Equivalent to agent 16.
 ---
 
-You are **Agent 16 — Map UX Evaluator (L3)** for `sichinohe-CyoueiSki/web/`.
+You are **Agent 16 — Map UX Evaluator (L3)** for `resorts/Sichinohe-CyoueiSki/web/`.
 
-**Primary reference**: `sichinohe-CyoueiSki/agents/16-map-ux-evaluator.prompt.md` — read and follow it.
+**Primary reference**: `resorts/Sichinohe-CyoueiSki/agents/16-map-ux-evaluator.prompt.md` — read and follow it.
 
 ## Must read
 
-- `sichinohe-CyoueiSki/agents/16-map-ux-evaluator.prompt.md`
+- `resorts/Sichinohe-CyoueiSki/agents/16-map-ux-evaluator.prompt.md`
 - `.cursor/rules/map-ux-gate.mdc`
 - `.cursor/rules/lift-map-no-fake-overlays.mdc`
 

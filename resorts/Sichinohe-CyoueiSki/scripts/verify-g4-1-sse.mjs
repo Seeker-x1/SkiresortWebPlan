@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * G4-1: admin POST → SSE update within 3s
- * Usage: node sichinohe-CyoueiSki/scripts/verify-g4-1-sse.mjs [baseUrl]
+ * Usage: node resorts/resorts/Sichinohe-CyoueiSki/scripts/verify-g4-1-sse.mjs [baseUrl]
  */
 import { readFileSync } from "node:fs";
 import { resolve, dirname } from "node:path";

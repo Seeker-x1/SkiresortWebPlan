@@ -11,7 +11,7 @@ for (const q of queries) {
     limit: "5",
   })}`;
   const res = await fetch(url, {
-    headers: { "User-Agent": "sichinohe-CyoueiSki-research/1.0 (contact: local-dev)" },
+    headers: { "User-Agent": "resorts/Sichinohe-CyoueiSki-research/1.0 (contact: local-dev)" },
   });
   const data = await res.json();
   console.log("\n===", q, "===");

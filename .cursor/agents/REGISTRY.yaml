@@ -26,7 +26,7 @@ pipeline:
     - resort-qa-a11y
   map_bridge:
     - resort-map-bridge
-    # full map UI → sichinohe-CyoueiSki fleet
+    # full map UI → resorts/Sichinohe-CyoueiSki fleet
 
 agents:
   - name: resort-ux-designer
