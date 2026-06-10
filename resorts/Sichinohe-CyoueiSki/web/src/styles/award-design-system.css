@@ -72,6 +72,11 @@
   --map-float-rail-width: min(42%, 240px);
 }
 
+/* §E P1 — /map ヘッダー1行（タイトル + QuickNav + 言語） */
+.map-page-header {
+  backdrop-filter: blur(12px);
+}
+
 /* §E P0 — 地図上フロートレール（laax-comparison-mock 準拠） */
 .map-float-rail {
   position: absolute;

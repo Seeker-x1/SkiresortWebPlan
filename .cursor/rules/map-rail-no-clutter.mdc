@@ -1,0 +1,28 @@
+---
+description: 運行状況レールに検索・GPS・難易度フィルタを載せない（ユーザー永久禁止）
+globs: resorts/Sichinohe-CyoueiSki/web/src/components/lift-map/**/*
+alwaysApply: false
+---
+
+# 運行状況レール — 禁止 UI（永久）
+
+ユーザーが **明示的に削除を要求** した要素。モック同期・G3/G4 仕様書があっても **復活させない**。
+
+## 禁止（MapStatusRail / モバイルボトムシート内）
+
+1. **検索 input**（`type="search"`、`名前で検索` 等）
+2. **難易度ピル**（すべて / 初級 / 中級 / 上級）
+3. **GPS / 現在地パネル**（`MapLocationPanel`、`geolocation`、距離表示）
+4. 上記の i18n キー（`map.search.*` `map.location.*` `map.difficulty.*`）の再追加
+
+## 許可されるレール UI
+
+- タイトル + 更新時刻
+- **リフト / コース** タブのみ
+- リスト + 選択時詳細（`MapFeatureDetail`）
+
+## エージェント行動
+
+- 実装前に `MapStatusRail.tsx` を読み、上記が無いことを確認
+- 仕様書（G3/G4）と矛盾する場合は **仕様書より本ルールを優先** し、ユーザーに報告
+- 変更後は `resorts/Sichinohe-CyoueiSki/web` で `npm run build`

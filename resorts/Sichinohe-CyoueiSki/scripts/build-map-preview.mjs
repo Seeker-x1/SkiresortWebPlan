@@ -140,44 +140,85 @@ const html = `<!DOCTYPE html>
       flex-shrink: 0;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 10px 16px;
-      background: rgba(255,255,255,.9);
+      gap: 6px;
+      height: 44px;
+      padding: 0 8px;
+      background: rgba(255,255,255,.92);
       border-bottom: 1px solid var(--border);
       backdrop-filter: blur(12px);
     }
-    .topbar-title { display: flex; align-items: center; gap: 8px; min-width: 0; flex: 1; }
-    .topbar h1 { font-size: 14px; font-weight: 700; letter-spacing: .02em; margin: 0; }
-    .live-badge { display: none; flex-shrink: 0; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; background: #5eb8e8; color: #1c2434; }
+    .topbar-title {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 0;
+      max-width: 32%;
+      flex-shrink: 1;
+    }
+    .topbar h1 {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .02em;
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    @media (min-width: 640px) {
+      .topbar { gap: 8px; padding: 0 12px; }
+      .topbar-title { max-width: 26%; }
+      .topbar h1 { font-size: 14px; }
+    }
+    .live-badge { display: none; flex-shrink: 0; font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 2px 6px; border-radius: 999px; background: #5eb8e8; color: #1c2434; }
     .live-badge.on { display: inline-block; }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-    .quicknav {
-      flex-shrink: 0;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      border-bottom: 1px solid var(--border);
-      background: rgba(255,255,255,.9);
-      backdrop-filter: blur(12px);
-    }
-    .quicknav a {
+    .topbar-nav {
+      flex: 1;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 4px;
+      gap: 0;
+      min-width: 0;
+    }
+    .topbar-nav a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
       min-height: 44px;
-      padding: 8px 4px;
-      border-right: 1px solid var(--border);
+      min-width: 44px;
+      padding: 0 4px;
+      border-radius: 8px;
       font-size: 11px;
       font-weight: 600;
       color: var(--ink);
       text-decoration: none;
       text-align: center;
     }
-    .quicknav a:last-child { border-right: 0; }
-    .quicknav a:hover { background: var(--canvas); }
-    .quicknav a:focus-visible { outline: 2px solid var(--alpine); outline-offset: -2px; }
+    .topbar-nav a:hover { background: var(--canvas); }
+    .topbar-nav a:focus-visible { outline: 2px solid var(--alpine); outline-offset: -2px; }
+    .topbar-nav .nav-label {
+      max-width: 2.75rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 9px;
+      line-height: 1.1;
+    }
+    @media (min-width: 640px) {
+      .topbar-nav a { min-width: 0; padding: 0 10px; }
+      .topbar-nav .nav-label { max-width: 4.75rem; font-size: 11px; }
+    }
+    .topbar-lang {
+      flex-shrink: 0;
+      font-size: 11px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 4px 8px;
+      background: #fff;
+      color: var(--slate);
+    }
     .main { flex: 1; min-height: 0; display: flex; flex-direction: column; }
     .map-col { flex: 1; min-width: 0; min-height: 0; position: relative; }
     .stage { position: absolute; inset: 0; overflow: hidden; cursor: grab; background: var(--canvas); }
@@ -257,13 +298,14 @@ const html = `<!DOCTYPE html>
       <h1>ゲレンデマップ</h1>
       <span class="live-badge" id="liveBadge">ライブ</span>
     </div>
+    <nav class="topbar-nav" aria-label="サイト内ナビ">
+      <a href="/" id="navHome" aria-label="ホーム"><span class="nav-label">ホーム</span></a>
+      <a href="/live-cams" id="navCams" aria-label="ライブカメラ"><span class="nav-label">ライブカメラ</span></a>
+      <a href="/access" id="navAccess" aria-label="アクセス"><span class="nav-label">アクセス</span></a>
+      <a href="/today" id="navToday" aria-label="今日の運営"><span class="nav-label">今日の運営</span></a>
+    </nav>
+    <span class="topbar-lang" aria-hidden="true">JA</span>
   </header>
-  <nav class="quicknav" aria-label="サイト内ナビ">
-    <a href="/" id="navHome">ホーム</a>
-    <a href="/live-cams" id="navCams">ライブカメラ</a>
-    <a href="/access" id="navAccess">アクセス</a>
-    <a href="/today" id="navToday">今日の運営</a>
-  </nav>
 
   <div class="main">
     <div class="map-col">

@@ -311,34 +311,12 @@
     "detail": {
       "updated": "更新 {time}"
     },
-    "search": {
-      "label": "リフト・コースを検索",
-      "placeholder": "名前で検索…",
-      "noResults": "該当するリフト・コースがありません",
-      "clear": "検索をクリア"
-    },
     "stale": {
       "banner": "運行状況の更新に失敗しています",
       "retry": "再試行"
     },
     "live": {
       "badge": "ライブ"
-    },
-    "difficulty": {
-      "label": "コース難易度で絞り込み",
-      "all": "すべて",
-      "beginner": "初級",
-      "intermediate": "中級",
-      "advanced": "上級"
-    },
-    "location": {
-      "title": "現在地",
-      "hint": "屋外で GPS を許可すると、ゲレンデ中心からの距離を表示します（地図上には点を描画しません）。",
-      "action": "距離を取得",
-      "loading": "取得中…",
-      "distance": "ゲレンデ中心から約 {km} km",
-      "denied": "位置情報の利用が許可されていません",
-      "unsupported": "この端末では位置情報を利用できません"
     }
   }
 }

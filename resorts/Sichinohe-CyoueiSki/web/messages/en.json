@@ -312,34 +312,12 @@
     "detail": {
       "updated": "Updated {time}"
     },
-    "search": {
-      "label": "Search lifts and trails",
-      "placeholder": "Search by name…",
-      "noResults": "No matching lifts or trails",
-      "clear": "Clear search"
-    },
     "stale": {
       "banner": "Could not refresh operations status",
       "retry": "Retry"
     },
     "live": {
       "badge": "Live"
-    },
-    "difficulty": {
-      "label": "Filter by trail difficulty",
-      "all": "All",
-      "beginner": "Beginner",
-      "intermediate": "Intermediate",
-      "advanced": "Advanced"
-    },
-    "location": {
-      "title": "Your location",
-      "hint": "With GPS enabled outdoors, shows distance to the resort center (no dot on the illustrated map).",
-      "action": "Get distance",
-      "loading": "Locating…",
-      "distance": "About {km} km from resort center",
-      "denied": "Location access was denied",
-      "unsupported": "Geolocation is not available on this device"
     }
   }
 }
