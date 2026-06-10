@@ -12,7 +12,7 @@ npm run dev
 高解像度 **ヒーロー画像**（`public/maps/sichinohe-hero.png`）の上に **SVG オーバーレイ**でリフト・コースを表示します。Mapbox トークンは不要です。
 
 - オーバーレイ座標: `data/map/overlay-paths.json`
-- 運行状況: `data/map/status.json` を編集 → `/api/public/map-status` に反映
+- 運行状況: `data/map/status.json` を編集 → Git push → Vercel 再デプロイで本番反映（ローカルは即 `/api/public/map-status`）
 - 本番用画像は Blender / Google Earth Studio 書き出しに差し替え
 
 Windows では `start-dev.bat` をダブルクリックしても起動できます。

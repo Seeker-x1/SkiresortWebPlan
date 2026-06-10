@@ -52,20 +52,23 @@ async function writeBlobStatus(data: StatusFile): Promise<void> {
   });
 }
 
-/** Vercel 本番: Blob 優先。ローカル: ファイルシステム。 */
+/** Git デプロイ済み data/map/status.json 優先。Blob はファイル欠落時のみ。 */
 export async function readMapStatusFile(): Promise<StatusFile | null> {
+  const fromLocal = await readLocalStatus();
+  if (fromLocal) return fromLocal;
   if (blobEnabled()) {
-    const fromBlob = await readBlobStatus();
-    if (fromBlob) return fromBlob;
+    return readBlobStatus();
   }
-  return readLocalStatus();
+  return null;
 }
 
 export async function writeMapStatusFile(data: StatusFile): Promise<void> {
+  if (process.env.VERCEL !== "1") {
+    await writeLocalStatus(data);
+    return;
+  }
+  // 本番の公開データは Git push → 再デプロイで反映。admin の一時保存用に Blob のみ。
   if (blobEnabled()) {
     await writeBlobStatus(data);
-  }
-  if (process.env.VERCEL !== "1" || !blobEnabled()) {
-    await writeLocalStatus(data);
   }
 }
