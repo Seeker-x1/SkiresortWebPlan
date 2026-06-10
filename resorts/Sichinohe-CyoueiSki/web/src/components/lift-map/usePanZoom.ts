@@ -12,6 +12,8 @@ import {
 import { mapDefaultView, MAP_FIT_SCALE } from "./map-default-view";
 
 const MAX_SCALE = 4;
+/** §E P2: scale=1 でも山を追う微パン（viewport 比率） */
+const BASE_PAN_FRACTION = 0.14;
 
 export type MapDefaultView = { scale: number; x: number; y: number };
 
@@ -30,7 +32,15 @@ export function clampTranslate(
   baseView: MapDefaultView,
 ): { x: number; y: number } {
   if (scale <= baseView.scale + 0.001) {
-    return { x: baseView.x, y: baseView.y };
+    if (!bounds) {
+      return { x: baseView.x, y: baseView.y };
+    }
+    const microX = bounds.containerWidth * BASE_PAN_FRACTION;
+    const microY = bounds.containerHeight * BASE_PAN_FRACTION;
+    return {
+      x: Math.min(baseView.x + microX, Math.max(baseView.x - microX, tx)),
+      y: Math.min(baseView.y + microY, Math.max(baseView.y - microY, ty)),
+    };
   }
   if (!bounds) {
     return { x: tx, y: ty };
@@ -159,7 +169,7 @@ export function usePanZoom({ containerRef, contentRef, railOverlay = false }: Us
 
   const onPointerDown = useCallback(
     (e: PointerEvent<HTMLDivElement>) => {
-      if (e.button !== 0 || scale <= baseViewRef.current.scale + 0.001) return;
+      if (e.button !== 0) return;
       dragRef.current = {
         active: true,
         lastX: e.clientX,
@@ -173,11 +183,7 @@ export function usePanZoom({ containerRef, contentRef, railOverlay = false }: Us
 
   const onPointerMove = useCallback(
     (e: PointerEvent<HTMLDivElement>) => {
-      if (
-        !dragRef.current.active ||
-        dragRef.current.pointerId !== e.pointerId ||
-        scale <= baseViewRef.current.scale + 0.001
-      ) {
+      if (!dragRef.current.active || dragRef.current.pointerId !== e.pointerId) {
         return;
       }
       const dx = e.clientX - dragRef.current.lastX;
@@ -203,7 +209,7 @@ export function usePanZoom({ containerRef, contentRef, railOverlay = false }: Us
 
   return {
     scale,
-    canPan: scale > baseViewRef.current.scale + 0.001,
+    canPan: true,
     transform: `translate(${translate.x}px, ${translate.y}px) scale(${scale})`,
     zoomIn: () => zoomBy(0.2),
     zoomOut: () => zoomBy(-0.2),

@@ -34,6 +34,32 @@ export type FaqCategory = {
   items: FaqItem[];
 };
 
+export type AccessLandmark = {
+  id: string;
+  label: string;
+  labelEn: string;
+  lat: number;
+  lng: number;
+  role: "transit" | "destination";
+};
+
+export type AccessMapData = {
+  source: string;
+  driveMinutes: number;
+  driveFrom: string;
+  driveFromEn: string;
+  parking: string;
+  parkingEn: string;
+  mapUrl: string;
+  bounds: {
+    minLat: number;
+    maxLat: number;
+    minLng: number;
+    maxLng: number;
+  };
+  landmarks: AccessLandmark[];
+};
+
 export type ResortData = {
   updatedAt: string;
   resort: {
@@ -61,6 +87,7 @@ export type ResortData = {
   access: {
     cards: Array<{ k: string; v: string }>;
     bullets: string[];
+    map?: AccessMapData;
   };
   courses: {
     notice: string;
@@ -263,6 +290,7 @@ export async function updateResortData(
           ...patch.access,
           cards: patch.access.cards ?? current.access.cards,
           bullets: patch.access.bullets ?? current.access.bullets,
+          map: patch.access.map ?? current.access.map,
         }
       : current.access,
     courses: patch.courses

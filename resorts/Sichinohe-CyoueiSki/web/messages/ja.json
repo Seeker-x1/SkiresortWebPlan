@@ -112,7 +112,17 @@
     "description": "東北新幹線「七戸十和田駅」方面から七戸町営スキー場へのアクセス概要（詳細・運賃は公式確認）。",
     "eyebrow": "Transit",
     "shellDescription": "公共交通機関の時刻・運賃は季節やダイヤで変わります。必ず交通機関・タクシーの公式情報でご確認ください。",
-    "foldTitle": "新幹線・アクセスの骨子"
+    "foldTitle": "新幹線・アクセスの骨子",
+    "map": {
+      "eyebrow": "Access map",
+      "caption": "東北新幹線七戸十和田駅・道の駅しちのへからゲレンデまでの概略です（たびくら：車約11分）。",
+      "driveTime": "車 約{minutes}分",
+      "north": "北",
+      "parking": "駐車場",
+      "openMaps": "Google マップで経路を見る",
+      "sourceNote": "出典：七戸町観光「たびくら」施設概要。道路状況により所要時間は変わります。",
+      "ariaLabel": "{from}からスキー場まで車で約{minutes}分の概略図"
+    }
   },
   "contact": {
     "title": "問い合わせ",
@@ -265,7 +275,8 @@
       "legendStopped": "停止",
       "legendHold": "確認中",
       "fetchFailed": "運行状況の取得に失敗しました。",
-      "retrying": "再試行中…"
+      "retrying": "再試行中…",
+      "empty": "該当するリフト・コースがありません"
     },
     "legend": {
       "title": "凡例",

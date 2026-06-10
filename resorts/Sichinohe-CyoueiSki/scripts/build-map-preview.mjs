@@ -24,16 +24,6 @@ const liftMarkers = readJson(path.join(MAP_DIR, "lift-markers.json"));
 const status = readJson(path.join(MAP_DIR, "status.json"));
 const manifest = readJson(path.join(MAP_DIR, "features.manifest.json"));
 
-let resortCenter = null;
-try {
-  const resortData = readJson(
-    path.join(__dirname, "..", "web", "data", "resort-data.json"),
-  );
-  resortCenter = resortData.resort?.coordinates ?? null;
-} catch {
-  /* optional */
-}
-
 const heroBase = manifest.heroImage ?? liftMarkers.hero;
 const heroFile = (heroBase.src ?? "/maps/sichinohe-hero.png")
   .replace(/^\/maps\//, "")
@@ -119,7 +109,6 @@ const bundle = {
   status: statusMap,
   labels,
   updatedAt: status.updatedAt,
-  resortCenter,
 };
 
 const html = `<!DOCTYPE html>
@@ -160,7 +149,7 @@ const html = `<!DOCTYPE html>
     }
     .topbar-title { display: flex; align-items: center; gap: 8px; min-width: 0; flex: 1; }
     .topbar h1 { font-size: 14px; font-weight: 700; letter-spacing: .02em; margin: 0; }
-    .live-badge { display: none; flex-shrink: 0; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; background: #2d5a4a; color: #fff; }
+    .live-badge { display: none; flex-shrink: 0; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; background: #5eb8e8; color: #1c2434; }
     .live-badge.on { display: inline-block; }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     .quicknav {
@@ -189,7 +178,7 @@ const html = `<!DOCTYPE html>
     .quicknav a:last-child { border-right: 0; }
     .quicknav a:hover { background: var(--canvas); }
     .quicknav a:focus-visible { outline: 2px solid var(--alpine); outline-offset: -2px; }
-    .main { flex: 1; min-height: 0; display: flex; flex-direction: row; }
+    .main { flex: 1; min-height: 0; display: flex; flex-direction: column; }
     .map-col { flex: 1; min-width: 0; min-height: 0; position: relative; }
     .stage { position: absolute; inset: 0; overflow: hidden; cursor: grab; background: var(--canvas); }
     .stage:active { cursor: grabbing; }
@@ -200,7 +189,12 @@ const html = `<!DOCTYPE html>
     .load-error[hidden] { display: none !important; }
     .frame svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
     .frame svg path.hit { pointer-events: stroke; cursor: pointer; }
-    .rail { flex-shrink: 0; width: 320px; display: flex; flex-direction: column; border-left: 1px solid var(--border); background: rgba(255,255,255,.96); overflow: hidden; }
+    .rail {
+      position: absolute; top: 12px; right: 12px; bottom: 12px; width: min(42%, 240px); z-index: 20;
+      display: flex; flex-direction: column; border-radius: 12px; border: 1px solid var(--border);
+      background: rgba(255,255,255,.94); box-shadow: 0 12px 40px rgb(20 26 38 / 14%);
+      backdrop-filter: blur(8px); overflow: hidden;
+    }
     .rail-head { flex-shrink: 0; padding: 12px 16px 0; border-bottom: 1px solid var(--border); }
     .rail-title-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
     .rail-title-row h2 { font-size: 13px; font-weight: 700; color: var(--ink); margin: 0; }
@@ -219,27 +213,13 @@ const html = `<!DOCTYPE html>
     }
     .rail-tabs button.active { color: var(--ink); border-bottom-color: var(--ink); }
     .rail-tabs button:focus-visible { outline: 2px solid var(--alpine); outline-offset: 2px; }
-    .rail-search { margin-top: 12px; padding-bottom: 12px; }
-    .rail-search input { width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; background: var(--canvas); color: var(--ink); }
-    .rail-search input::placeholder { color: var(--slate); }
-    .rail-search input:focus-visible { outline: 2px solid var(--alpine); outline-offset: 2px; }
-    .rail-difficulty { display: flex; flex-wrap: wrap; gap: 6px; padding-bottom: 12px; }
-    .rail-difficulty[hidden] { display: none !important; }
-    .rail-difficulty button { margin: 0; padding: 4px 10px; border: 0; border-radius: 999px; background: transparent; font-size: 11px; font-weight: 600; color: var(--slate); cursor: pointer; }
-    .rail-difficulty button.on { background: var(--canvas); color: var(--ink); box-shadow: 0 0 0 1px var(--border); }
-    .rail-difficulty button:focus-visible { outline: 2px solid var(--alpine); outline-offset: 2px; }
     .rail-empty { padding: 24px 16px; text-align: center; font-size: 13px; color: var(--slate); }
-    .rail-location { flex-shrink: 0; border-top: 1px solid var(--border); padding: 12px 16px; }
-    .rail-location h3 { font-size: 12px; font-weight: 700; margin: 0; color: var(--ink); }
-    .rail-location p { margin-top: 6px; font-size: 11px; line-height: 1.5; color: var(--slate); }
-    .rail-location button { margin-top: 8px; padding: 0; border: 0; background: transparent; font-size: 11px; font-weight: 600; color: var(--ink); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
-    .rail-location button:disabled { opacity: .6; cursor: wait; }
-    .rail-location button:focus-visible { outline: 2px solid var(--alpine); outline-offset: 2px; }
     .rail-body { flex: 1; min-height: 0; overflow-y: auto; padding: 8px; }
     .rail ul { margin: 0; padding: 0; }
     .rail li { list-style: none; }
-    .rail button { width: 100%; display: flex; align-items: center; gap: 8px; padding: 9px 10px 9px 8px; border: 0; border-radius: 0; background: transparent; color: var(--ink); text-align: left; font-size: 13px; cursor: pointer; border-left: 3px solid transparent; }
-    .rail button:hover, .rail button.sel { background: var(--canvas); }
+    .rail button { width: 100%; display: flex; align-items: center; gap: 6px; padding: 7px 8px; border: 0; border-radius: 8px; background: transparent; color: var(--ink); text-align: left; font-size: 13px; cursor: pointer; }
+    .rail button:hover { background: var(--canvas); }
+    .rail button.sel { background: var(--canvas); outline: 2px solid var(--alpine); outline-offset: -2px; }
     .rail button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
     .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
     .badge { margin-left: auto; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 999px; color: #fff; }
@@ -253,21 +233,20 @@ const html = `<!DOCTYPE html>
     .rail-detail-meta dl { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 10px; margin: 0; }
     .rail-detail-meta dt { color: var(--slate); font-size: 10px; }
     .rail-detail-meta dd { margin: 0; font-weight: 600; color: var(--ink); }
-    .fab { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 8px; z-index: 15; }
-    .fab button { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--border); background: rgba(255,255,255,.92); color: var(--ink); font-size: 18px; cursor: pointer; box-shadow: 0 4px 16px rgb(20 26 38 / 8%); }
+    .fab { position: absolute; right: calc(min(42%, 240px) + 24px); top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 6px; z-index: 15; }
+    .fab button { width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--border); background: rgba(255,255,255,.92); color: var(--ink); font-size: 16px; font-weight: 600; cursor: pointer; box-shadow: 0 2px 8px rgb(0 0 0 / 8%); }
     .fab button:focus-visible { outline: 2px solid var(--alpine); outline-offset: 2px; }
     .frame svg path.hit:focus-visible { outline: 2px solid var(--alpine); outline-offset: 2px; }
-    .status-fab { display: none; position: absolute; left: 12px; bottom: 12px; z-index: 6; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,.96); color: var(--ink); padding: 10px 16px; font-size: 12px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 16px rgb(20 26 38 / 16%); }
+    .status-fab { display: none; position: absolute; left: 12px; bottom: 12px; z-index: 6; border-radius: 8px; border: 1px solid var(--border); background: rgba(255,255,255,.96); color: var(--ink); padding: 10px 14px; font-size: 11px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 16px rgb(0 0 0 / 10%); }
     .status-fab:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
     .rail-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 19; }
     .rail-backdrop.open { display: block; }
     @media (max-width: 767px) {
-      .main { flex-direction: column; }
       .map-col { flex: 1; min-height: 0; }
       .stage { position: relative; flex: 1; min-height: 0; }
       .status-fab { display: block; }
       .fab { right: 12px; }
-      .rail { display: none; position: fixed; left: 0; right: 0; bottom: 0; width: 100%; max-height: min(70dvh, 520px); border-left: 0; border-top: 1px solid var(--border); z-index: 20; box-shadow: none; }
+      .rail { display: none; position: fixed; left: 0; right: 0; bottom: 0; width: 100%; max-width: none; max-height: min(70dvh, 520px); border-radius: 0; border-left: 0; border-top: 1px solid var(--border); z-index: 20; box-shadow: none; backdrop-filter: none; }
       .rail.open { display: flex; }
     }
   </style>
@@ -299,30 +278,18 @@ const html = `<!DOCTYPE html>
         <button type="button" id="resetBtn" aria-label="全体表示">⊡</button>
       </div>
       <button type="button" class="status-fab" id="statusFab">運行状況</button>
-    </div>
-    <nav class="rail" id="rail" aria-label="運行状況">
+      <nav class="rail" id="rail" aria-label="運行状況">
       <div class="rail-head">
         <div class="rail-title-row">
           <h2>運行状況</h2>
           <span class="rail-updated" id="railUpdated"></span>
         </div>
         <div class="rail-tabs" role="tablist" aria-label="運行状況">
-          <button type="button" role="tab" data-filter="trail" class="active" aria-selected="true">コース</button>
-          <button type="button" role="tab" data-filter="lift" aria-selected="false">リフト</button>
-        </div>
-        <label class="rail-search">
-          <span class="sr-only">リフト・コースを検索</span>
-          <input type="search" id="railSearch" placeholder="名前で検索…" aria-label="リフト・コースを検索" autocomplete="off" />
-        </label>
-        <div class="rail-difficulty" id="railDifficulty" role="group" aria-label="コース難易度で絞り込み">
-          <button type="button" data-bucket="all" class="on" aria-pressed="true">すべて</button>
-          <button type="button" data-bucket="beginner" aria-pressed="false">初級</button>
-          <button type="button" data-bucket="intermediate" aria-pressed="false">中級</button>
-          <button type="button" data-bucket="advanced" aria-pressed="false">上級</button>
+          <button type="button" role="tab" data-filter="lift" class="active" aria-selected="true">リフト</button>
+          <button type="button" role="tab" data-filter="trail" aria-selected="false">コース</button>
         </div>
       </div>
       <div class="rail-body"></div>
-      <div class="rail-location" id="railLocation" hidden></div>
       <div class="rail-detail" id="railDetail" hidden aria-live="polite">
         <div class="rail-detail-head">
           <div>
@@ -334,6 +301,7 @@ const html = `<!DOCTYPE html>
         <p class="rail-detail-meta" id="detailMeta"></p>
       </div>
     </nav>
+    </div>
     <div class="rail-backdrop" id="railBackdrop" hidden></div>
   </div>
 
@@ -353,7 +321,7 @@ const html = `<!DOCTYPE html>
     }
 
     const DATA = JSON.parse(document.getElementById("map-data").textContent);
-    const STATUS_COLORS = { operating: "#16a34a", open: "#16a34a", stopped: "#64748b", closed: "#64748b", hold: "#f59e0b", unknown: "#94a3b8" };
+    const STATUS_COLORS = { operating: "#7ec8e3", open: "#7ec8e3", stopped: "#64748b", closed: "#64748b", hold: "#f59e0b", unknown: "#94a3b8" };
     const LABELS = { operating: "運転中", open: "滑走可", stopped: "停止", closed: "閉鎖", hold: "確認中", unknown: "確認中" };
     const FEATURE_COLORS = DATA.featureColors || {};
 
@@ -362,10 +330,17 @@ const html = `<!DOCTYPE html>
     }
 
     function listBadgeColor(id, type, status) {
+      if (status === "operating" || status === "open") {
+        return STATUS_COLORS[status];
+      }
       if (status === "stopped" || status === "closed" || status === "hold" || status === "unknown") {
         return STATUS_COLORS[status] || STATUS_COLORS.unknown;
       }
       return featureAccent(id, type);
+    }
+
+    function badgeTextColor(status) {
+      return status === "operating" || status === "open" ? "#1c2434" : "#fff";
     }
 
     function isStoppedLift(id) {
@@ -377,40 +352,10 @@ const html = `<!DOCTYPE html>
       return typeFilter !== "all" && type !== typeFilter;
     }
 
-    let searchQuery = "";
-    let difficultyFilter = "all";
-
-    function featureMatchesSearch(feat, query) {
-      const q = query.trim().toLowerCase();
-      if (!q) return true;
-      const hay = [feat.label, feat.shortLabel, feat.id].filter(Boolean).join(" ").toLowerCase();
-      return hay.includes(q);
-    }
-
-    function featureMatchesDifficulty(feat, bucket) {
-      if (bucket === "all") return true;
-      if (feat.type === "lift") return true;
-      const d = feat.difficulty || "";
-      if (bucket === "beginner") return d === "beginner";
-      if (bucket === "intermediate") return d === "intermediate" || d === "intermediate-advanced";
-      if (bucket === "advanced") return d === "advanced" || d === "intermediate-advanced";
-      return true;
-    }
-
-    function featureMeta(feat) {
-      return (DATA.features || []).find((f) => f.id === feat.id) || feat;
-    }
-
-    function isDifficultyDimmed(feat) {
-      const meta = featureMeta(feat);
-      if (meta.type !== "trail" || difficultyFilter === "all") return false;
-      return !featureMatchesDifficulty(meta, difficultyFilter);
-    }
-
     function mapHighlightStyle(feat, isSelected) {
       const accent = featureAccent(feat.id, feat.type);
       const st = DATA.status[feat.id] || "unknown";
-      if ((isDimmed(feat.type) || isDifficultyDimmed(feat)) && !isSelected) {
+      if (isDimmed(feat.type) && !isSelected) {
         return { show: true, stroke: accent, width: 2, opacity: 0.35, dash: null };
       }
       if (feat.type === "lift") {
@@ -420,10 +365,16 @@ const html = `<!DOCTYPE html>
         if (st === "hold" || st === "unknown") {
           return { show: true, stroke: STATUS_COLORS[st] || STATUS_COLORS.unknown, width: isSelected ? 3 : 2, opacity: isSelected ? 0.95 : 0.72, dash: "4 3" };
         }
+        if (st === "operating") {
+          return { show: true, stroke: STATUS_COLORS.operating, width: isSelected ? 3.5 : 2.5, opacity: isSelected ? 0.98 : 0.72, dash: null };
+        }
         return { show: isSelected, stroke: accent, width: 3, opacity: 1, dash: null };
       }
       if (st === "closed") {
         return { show: true, stroke: STATUS_COLORS.closed, width: isSelected ? 3 : 2, opacity: isSelected ? 0.9 : 0.5, dash: "5 4" };
+      }
+      if (st === "open") {
+        return { show: true, stroke: STATUS_COLORS.open, width: isSelected ? 3.5 : 2.5, opacity: isSelected ? 0.98 : 0.72, dash: null };
       }
       return { show: isSelected, stroke: accent, width: 3, opacity: 1, dash: null };
     }
@@ -441,7 +392,7 @@ const html = `<!DOCTYPE html>
 
     const FIT_SCALE = 1.12;
     let scale = FIT_SCALE, tx = 0, ty = 0, dragging = false, px = 0, py = 0, selected = null;
-    let typeFilter = "trail";
+    let typeFilter = "lift";
 
     function defaultView() {
       const sw = stage.clientWidth;
@@ -569,15 +520,8 @@ const html = `<!DOCTYPE html>
     function visibleFeatures() {
       return (DATA.features || []).filter((f) => {
         if (typeFilter !== "all" && f.type !== typeFilter) return false;
-        if (!featureMatchesSearch(f, searchQuery)) return false;
-        if (!featureMatchesDifficulty(f, difficultyFilter)) return false;
         return true;
       });
-    }
-
-    function updateDifficultyVisibility() {
-      const panel = document.getElementById("railDifficulty");
-      if (panel) panel.hidden = typeFilter === "lift";
     }
 
     function renderRailList() {
@@ -600,8 +544,7 @@ const html = `<!DOCTYPE html>
         btn.type = "button";
         btn.dataset.id = feat.id;
         btn.classList.toggle("sel", selected === feat.id);
-        btn.style.borderLeftColor = selected === feat.id ? accent : "transparent";
-        btn.innerHTML = '<span class="dot" style="background:' + accent + '"></span><span>' + (DATA.labels[feat.id] || feat.label) + '</span><span class="badge" style="background:' + badge + '">' + (LABELS[st]||st) + '</span>';
+        btn.innerHTML = '<span class="dot" style="background:' + accent + '"></span><span>' + (DATA.labels[feat.id] || feat.label) + '</span><span class="badge" style="background:' + badge + ';color:' + badgeTextColor(st) + '">' + (LABELS[st]||st) + '</span>';
         btn.addEventListener("click", () => selectFeature(feat.id));
         li.appendChild(btn);
         ul.appendChild(li);
@@ -610,28 +553,6 @@ const html = `<!DOCTYPE html>
     }
 
     renderRailList();
-    updateDifficultyVisibility();
-
-    const railSearch = document.getElementById("railSearch");
-    if (railSearch) {
-      railSearch.addEventListener("input", () => {
-        searchQuery = railSearch.value;
-        renderRailList();
-      });
-    }
-
-    document.querySelectorAll("#railDifficulty [data-bucket]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        difficultyFilter = btn.dataset.bucket;
-        document.querySelectorAll("#railDifficulty [data-bucket]").forEach((b) => {
-          const active = b.dataset.bucket === difficultyFilter;
-          b.classList.toggle("on", active);
-          b.setAttribute("aria-pressed", active ? "true" : "false");
-        });
-        renderRailList();
-        refreshHighlights();
-      });
-    });
 
     rail.querySelectorAll("[data-filter]").forEach((tab) => {
       tab.addEventListener("click", () => {
@@ -641,65 +562,10 @@ const html = `<!DOCTYPE html>
           t.classList.toggle("active", active);
           t.setAttribute("aria-selected", active ? "true" : "false");
         });
-        updateDifficultyVisibility();
         renderRailList();
         refreshHighlights();
       });
     });
-
-    function haversineKm(lat1, lng1, lat2, lng2) {
-      const R = 6371;
-      const dLat = ((lat2 - lat1) * Math.PI) / 180;
-      const dLng = ((lng2 - lng1) * Math.PI) / 180;
-      const a =
-        Math.sin(dLat / 2) ** 2 +
-        Math.cos((lat1 * Math.PI) / 180) *
-          Math.cos((lat2 * Math.PI) / 180) *
-          Math.sin(dLng / 2) ** 2;
-      return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    }
-
-    function initLocationPanel() {
-      const el = document.getElementById("railLocation");
-      const center = DATA.resortCenter;
-      if (!el || !center) return;
-      el.hidden = false;
-      el.innerHTML =
-        '<h3>現在地</h3>' +
-        '<p>屋外で GPS を許可すると、ゲレンデ中心からの距離を表示します（地図上には点を描画しません）。</p>' +
-        '<button type="button" id="locateBtn">距離を取得</button>' +
-        '<p id="locateResult" style="margin-top:8px;font-size:11px;color:var(--slate)"></p>';
-      const btn = document.getElementById("locateBtn");
-      const result = document.getElementById("locateResult");
-      if (!btn || !result) return;
-      btn.addEventListener("click", () => {
-        if (!navigator.geolocation) {
-          result.textContent = "この端末では位置情報を利用できません";
-          return;
-        }
-        btn.disabled = true;
-        result.textContent = "取得中…";
-        navigator.geolocation.getCurrentPosition(
-          (pos) => {
-            const km = Math.round(
-              haversineKm(
-                pos.coords.latitude,
-                pos.coords.longitude,
-                center.lat,
-                center.lng,
-              ) * 10,
-            ) / 10;
-            result.textContent = "ゲレンデ中心から約 " + km + " km";
-            btn.disabled = false;
-          },
-          () => {
-            result.textContent = "位置情報の利用が許可されていません";
-            btn.disabled = false;
-          },
-          { enableHighAccuracy: true, timeout: 15000, maximumAge: 60000 },
-        );
-      });
-    }
 
     function initLiveBadge() {
       const badge = document.getElementById("liveBadge");
@@ -717,14 +583,12 @@ const html = `<!DOCTYPE html>
       }
     }
 
-    initLocationPanel();
     initLiveBadge();
 
     function selectFeature(id) {
       selected = id;
       railBody.querySelectorAll("button[data-id]").forEach((b) => {
         b.classList.toggle("sel", b.dataset.id === id);
-        b.style.borderLeftColor = b.dataset.id === id ? featureAccent(b.dataset.id, (DATA.features || []).find((f) => f.id === b.dataset.id)?.type || "trail") : "transparent";
       });
       const hit = (DATA.hitboxes || DATA.lifts).find((h) => h.id === id);
       const feat = (DATA.features || []).find((f) => f.id === id) || hit;
@@ -733,6 +597,7 @@ const html = `<!DOCTYPE html>
       detailTitle.textContent = DATA.labels[id] || feat?.label || id;
       detailBadge.textContent = LABELS[st] || st;
       detailBadge.style.background = listBadgeColor(id, feat?.type || "trail", st);
+      detailBadge.style.color = badgeTextColor(st);
       railDetail.style.borderLeftColor = featureAccent(id, feat?.type || (id.startsWith("lift-") ? "lift" : "trail"));
       if (feat?.meta && Object.keys(feat.meta).length) {
         detailMeta.innerHTML = "<dl>" + Object.entries(feat.meta).map(function (e) {

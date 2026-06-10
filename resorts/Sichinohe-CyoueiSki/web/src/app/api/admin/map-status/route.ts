@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import type { MapFeature } from "@/components/lift-map/types";
 import { isAdminAuthorized } from "@/lib/admin-auth";
+import { isAdminRateLimited } from "@/lib/admin-rate-limit";
 import {
   getFeatureManifest,
   getStatusFile,
@@ -24,10 +25,19 @@ type PostBody = {
   features?: StatusFile["features"];
 };
 
-export async function GET(req: Request) {
+function adminGuard(req: Request): Response | null {
+  if (isAdminRateLimited(req)) {
+    return NextResponse.json({ error: "rate_limited" }, { status: 429 });
+  }
   if (!isAdminAuthorized(req)) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
+  return null;
+}
+
+export async function GET(req: Request) {
+  const denied = adminGuard(req);
+  if (denied) return denied;
 
   const [manifest, status] = await Promise.all([
     getFeatureManifest(),
@@ -61,9 +71,8 @@ export async function GET(req: Request) {
 }
 
 export async function POST(req: Request) {
-  if (!isAdminAuthorized(req)) {
-    return NextResponse.json({ error: "unauthorized" }, { status: 401 });
-  }
+  const denied = adminGuard(req);
+  if (denied) return denied;
 
   let body: PostBody;
   try {

@@ -113,7 +113,17 @@
     "description": "How to reach Shichinohe Town Ski Area from Shichinohe-Towada Station on the Tohoku Shinkansen (confirm fares and times officially).",
     "eyebrow": "Transit",
     "shellDescription": "Transit times and fares change by season and schedule. Always confirm with operators and official sources.",
-    "foldTitle": "Shinkansen & access overview"
+    "foldTitle": "Shinkansen & access overview",
+    "map": {
+      "eyebrow": "Access map",
+      "caption": "Overview from Tohoku Shinkansen Shichinohe-Towada Station / Michi-no-Eki Shichinohe to the ski area (Tabikura: approx. 11 min by car).",
+      "driveTime": "~{minutes} min drive",
+      "north": "N",
+      "parking": "Parking",
+      "openMaps": "Open route in Google Maps",
+      "sourceNote": "Source: Shichinohe tourism Tabikura facility page. Travel time varies with road conditions.",
+      "ariaLabel": "Schematic map: about {minutes} minutes by car from {from} to the ski area"
+    }
   },
   "contact": {
     "title": "Contact",
@@ -266,7 +276,8 @@
       "legendStopped": "Stopped",
       "legendHold": "Checking",
       "fetchFailed": "Could not load operations status.",
-      "retrying": "Retrying…"
+      "retrying": "Retrying…",
+      "empty": "No matching lifts or trails"
     },
     "legend": {
       "title": "Legend",

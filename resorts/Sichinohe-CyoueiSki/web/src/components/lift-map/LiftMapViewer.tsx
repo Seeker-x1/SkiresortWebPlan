@@ -7,7 +7,6 @@ import { MapOverlayChrome } from "./MapOverlayChrome";
 import { MapStaleBanner } from "./MapStaleBanner";
 import { MapStatusRail } from "./MapStatusRail";
 import type { HitboxFeature } from "./MapHitboxes";
-import type { DifficultyBucket } from "./map-difficulty";
 import type { MapFeature } from "./types";
 import { mapFocusOnDark, mapFocusRing } from "./map-focus";
 import { useMapStatusContext } from "./MapStatusContext";
@@ -45,11 +44,8 @@ export function LiftMapViewer({ variant = "full" }: Props) {
   const [mapLoadError, setMapLoadError] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [statusFilter, setStatusFilter] = useState<StatusFilter>(
-    isEmbed ? "all" : "trail",
+    isEmbed ? "all" : "lift",
   );
-  const [searchQuery, setSearchQuery] = useState("");
-  const [difficultyFilter, setDifficultyFilter] =
-    useState<DifficultyBucket>("all");
   const [mobileStatusOpen, setMobileStatusOpen] = useState(false);
 
   useEffect(() => {
@@ -96,7 +92,6 @@ export function LiftMapViewer({ variant = "full" }: Props) {
     : "map-chrome relative h-full min-h-0 w-full";
 
   const hasStatusRail = Boolean(data?.features.length);
-  const resortCenter = mapBundle?.center?.center;
 
   if (mapLoadError || !mapBundle?.hero) {
     return (
@@ -118,14 +113,7 @@ export function LiftMapViewer({ variant = "full" }: Props) {
     onDeselect: () => setSelectedId(null),
     filter: statusFilter,
     onFilterChange: setStatusFilter,
-    searchQuery,
-    onSearchChange: setSearchQuery,
-    difficultyFilter,
-    onDifficultyChange: setDifficultyFilter,
-    resortCenter,
   };
-
-  const splitRail = hasStatusRail && !isEmbed;
 
   const mapStage = (
     <div className="relative h-full min-h-0 min-w-0 flex-1">
@@ -137,8 +125,7 @@ export function LiftMapViewer({ variant = "full" }: Props) {
         onSelect={setSelectedId}
         onDeselect={() => setSelectedId(null)}
         statusFilter={statusFilter}
-        difficultyFilter={difficultyFilter}
-        railOverlay={!splitRail && hasStatusRail}
+        railOverlay={hasStatusRail && !isEmbed}
       />
 
       {isEmbed ? (
@@ -156,15 +143,15 @@ export function LiftMapViewer({ variant = "full" }: Props) {
         <button
           type="button"
           onClick={() => setMobileStatusOpen(true)}
-          className={`map-type-body pointer-events-auto absolute bottom-4 left-4 z-20 border border-[color:var(--map-rail-border)] bg-[color:var(--map-rail-bg)] px-4 py-2.5 text-xs font-semibold text-[color:var(--map-rail-text)] shadow-sm md:hidden ${mapFocusRing}`}
+          className={`map-type-body pointer-events-auto absolute bottom-3 left-3 z-20 rounded-lg border border-[color:var(--map-rail-border)] bg-white/96 px-3.5 py-2.5 text-[0.6875rem] font-semibold text-[color:var(--map-rail-text)] shadow-md md:hidden ${mapFocusRing}`}
         >
           {t("status.title")}
         </button>
       ) : null}
 
-      {hasStatusRail && !splitRail ? (
-        <aside className="pointer-events-auto absolute inset-y-0 right-0 z-20 hidden w-72 flex-col border-l border-[color:var(--map-rail-border)] bg-[color:var(--map-rail-bg)] md:flex">
-          <MapStatusRail {...railProps} className="h-full" />
+      {hasStatusRail && !isEmbed ? (
+        <aside className="map-float-rail pointer-events-auto hidden md:flex">
+          <MapStatusRail {...railProps} className="h-full min-h-0" />
         </aside>
       ) : null}
     </div>
@@ -186,19 +173,8 @@ export function LiftMapViewer({ variant = "full" }: Props) {
             onRefresh={() => void refresh()}
           />
         ) : null}
-        <div
-          className={
-            splitRail
-              ? "flex min-h-0 flex-1 w-full"
-              : "relative min-h-0 flex-1 w-full"
-          }
-        >
+        <div className="relative min-h-0 flex-1 w-full">
           {mapStage}
-          {splitRail ? (
-            <aside className="hidden w-80 shrink-0 flex-col border-l border-[color:var(--map-rail-border)] bg-[color:var(--map-rail-bg)] md:flex">
-              <MapStatusRail {...railProps} className="h-full min-h-0" />
-            </aside>
-          ) : null}
         </div>
       </div>
 

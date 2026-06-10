@@ -3,6 +3,7 @@ import path from "node:path";
 import { unstable_noStore as noStore } from "next/cache";
 import type { MapFeature, MapStatusPayload } from "@/components/lift-map/types";
 import { appendStatusAudit } from "@/lib/map-status-audit";
+import { readMapStatusFile, writeMapStatusFile } from "@/lib/map-status-store";
 
 const MAP_DIR = path.join(process.cwd(), "data", "map");
 
@@ -69,7 +70,7 @@ export async function getMapStatusPayload(): Promise<MapStatusPayload | null> {
   noStore();
   const [manifest, status] = await Promise.all([
     readJson<FeatureManifest>("features.manifest.json"),
-    readJson<StatusFile>("status.json"),
+    readMapStatusFile(),
   ]);
   if (!manifest || !status) return null;
 
@@ -99,14 +100,14 @@ export async function getMapStatusPayload(): Promise<MapStatusPayload | null> {
 
 export async function getStatusFile(): Promise<StatusFile | null> {
   noStore();
-  return readJson<StatusFile>("status.json");
+  return readMapStatusFile();
 }
 
 export async function updateMapStatusFile(
   features: StatusFile["features"],
 ): Promise<StatusFile> {
   noStore();
-  const current = await readJson<StatusFile>("status.json");
+  const current = await readMapStatusFile();
   const manifest = await readJson<FeatureManifest>("features.manifest.json");
   if (!current || !manifest) {
     throw new Error("map_status_files_missing");
@@ -133,11 +134,7 @@ export async function updateMapStatusFile(
     features,
   };
 
-  await fs.writeFile(
-    path.join(MAP_DIR, "status.json"),
-    `${JSON.stringify(next, null, 2)}\n`,
-    "utf-8",
-  );
+  await writeMapStatusFile(next);
 
   if (changes.length > 0) {
     await appendStatusAudit({

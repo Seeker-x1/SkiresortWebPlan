@@ -97,8 +97,10 @@ export function HeroMapCanvas({
 
       <div className="pointer-events-none absolute inset-0 z-10">
         <div
-          className={`pointer-events-auto absolute top-1/2 flex -translate-y-1/2 flex-col gap-2 ${
-            railOverlay ? "right-4 md:right-[19rem]" : "right-4"
+          className={`pointer-events-auto absolute top-1/2 z-[8] flex -translate-y-1/2 flex-col gap-1.5 ${
+            railOverlay
+              ? "right-3 md:right-[calc(min(42%,240px)+24px)]"
+              : "right-3"
           }`}
         >
           <MapFab label={t("fab.zoomIn")} onClick={panZoom.zoomIn}>
@@ -130,7 +132,7 @@ function MapFab({
       type="button"
       aria-label={label}
       onClick={onClick}
-      className={`flex h-11 w-11 items-center justify-center rounded-full border border-[color:var(--map-rail-border)] bg-[color:var(--map-rail-bg)] text-lg font-medium text-[color:var(--map-rail-text)] shadow-lg backdrop-blur-md hover:bg-white ${mapFocusRing}`}
+      className={`flex h-9 w-9 items-center justify-center rounded-lg border border-[color:var(--map-rail-border)] bg-white/92 text-base font-semibold text-[color:var(--map-rail-text)] shadow-sm hover:bg-white ${mapFocusRing}`}
     >
       {children}
     </button>

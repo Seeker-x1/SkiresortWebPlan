@@ -15,7 +15,7 @@ export function MapTopBar() {
           {map("chrome.fullTitle")}
         </p>
         {transport === "sse" ? (
-          <span className="map-type-mono shrink-0 rounded-full bg-[color:var(--forest)] px-2 py-0.5 text-[0.625rem] font-semibold uppercase tracking-wide text-white">
+          <span className="map-type-mono shrink-0 rounded-full bg-[color:var(--status-live-strong)] px-2 py-0.5 text-[0.625rem] font-semibold uppercase tracking-wide text-[color:var(--ink)]">
             {map("live.badge")}
           </span>
         ) : null}

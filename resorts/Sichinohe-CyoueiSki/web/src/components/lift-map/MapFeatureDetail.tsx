@@ -2,7 +2,11 @@
 
 import { useTranslations } from "next-intl";
 import type { MapFeature } from "./types";
-import { featureAccentColor, featureListBadgeColor } from "./feature-colors";
+import {
+  featureAccentColor,
+  featureListBadgeColor,
+  statusBadgeUsesDarkText,
+} from "./feature-colors";
 import { useMapStatusLabel } from "./map-i18n";
 
 type Props = {
@@ -40,7 +44,11 @@ export function MapFeatureDetail({
         </div>
         <div className="flex shrink-0 items-center gap-2">
           <span
-            className="map-type-body rounded-full px-2 py-0.5 text-[0.625rem] font-semibold text-white"
+            className={`map-type-body rounded-full px-2 py-0.5 text-[0.625rem] font-semibold ${
+              statusBadgeUsesDarkText(feature.status)
+                ? "text-[color:var(--ink)]"
+                : "text-white"
+            }`}
             style={{ backgroundColor: badgeColor }}
           >
             {statusLabel(feature.status)}

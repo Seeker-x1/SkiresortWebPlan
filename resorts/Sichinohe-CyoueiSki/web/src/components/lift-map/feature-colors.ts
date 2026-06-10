@@ -24,14 +24,21 @@ export function featureAccentColor(id: string, type: FeatureType): string {
   return FEATURE_COLORS[id] ?? (type === "lift" ? ILLUSTRATION_COLORS.lift : ILLUSTRATION_COLORS.beginner);
 }
 
-/** リストのバッジ: 通常はコース/リフト色、停止・閉鎖時のみステータス色 */
+/** リストのバッジ背景（P4: 稼働中・滑走可は薄青） */
 export function featureListBadgeColor(
   id: string,
   type: FeatureType,
   status: string,
 ): string {
+  if (status === "operating" || status === "open") {
+    return STATUS_COLORS[status];
+  }
   if (status === "stopped" || status === "closed" || status === "hold" || status === "unknown") {
     return STATUS_COLORS[status] ?? STATUS_COLORS.unknown;
   }
   return featureAccentColor(id, type);
+}
+
+export function statusBadgeUsesDarkText(status: string): boolean {
+  return status === "operating" || status === "open";
 }

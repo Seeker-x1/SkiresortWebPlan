@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>層C P6 — LAAX vs 七戸 並置モック（375 / 1280）</title>
+  <style>
+    :root {
+      --canvas: #f7f9fb;
+      --ink: #1c2434;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --live: #7ec8e3;
+      --live-strong: #5eb8e8;
+      --page-bg: #eef2f6;
+      --alpine: #2d6b7a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", system-ui, sans-serif;
+      background: var(--page-bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 1440px; margin: 0 auto; padding: 0 1.25rem 3rem; }
+    .head { padding: 1.75rem 0 1rem; }
+    .head h1 { font-size: 1.25rem; margin: 0 0 0.5rem; font-weight: 700; }
+    .head p { margin: 0; font-size: 0.875rem; color: var(--muted); max-width: 52rem; }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+      font-size: 0.6875rem;
+    }
+    .meta span {
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+    .meta .evidence { background: var(--live-strong); border-color: var(--live-strong); color: var(--ink); font-weight: 700; }
+
+    .rubric {
+      display: grid;
+      gap: 0.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      margin: 1rem 0 1.5rem;
+    }
+    .rubric div {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.65rem 0.75rem;
+      font-size: 0.75rem;
+    }
+    .rubric strong { display: block; font-size: 0.6875rem; color: var(--muted); margin-bottom: 0.15rem; }
+    .rubric .ok { border-color: #5eb8e8; }
+    .rubric .mid { border-color: #f59e0b; }
+
+    h2.section {
+      font-size: 0.9375rem;
+      margin: 2rem 0 0.75rem;
+      font-weight: 700;
+    }
+    .compare-row {
+      display: grid;
+      gap: 1rem;
+    }
+    @media (min-width: 1100px) {
+      .compare-row { grid-template-columns: 1fr 1fr; }
+    }
+    .panel {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .panel-head {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+    .panel-head h3 { margin: 0; font-size: 0.8125rem; font-weight: 700; }
+    .panel-head span { font-size: 0.6875rem; color: var(--muted); }
+
+    /* —— device chrome —— */
+    .device {
+      margin: 0 auto;
+      background: #111;
+      border-radius: 0 0 12px 12px;
+      overflow: hidden;
+      position: relative;
+    }
+    .device--375 { width: 375px; max-width: 100%; }
+    .device--1280 { width: 100%; }
+    .device-label {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      z-index: 30;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: rgba(0,0,0,.55);
+      color: #fff;
+      padding: 3px 7px;
+      border-radius: 4px;
+      pointer-events: none;
+    }
+
+    .map-shell {
+      display: flex;
+      flex-direction: column;
+      background: var(--canvas);
+      height: 667px;
+    }
+    .device--1280 .map-shell { height: 720px; }
+
+    .topbar {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 10px 14px;
+      background: rgba(255,255,255,.92);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+    .topbar-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .live-badge {
+      flex-shrink: 0;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--live-strong);
+      color: var(--ink);
+    }
+    .lang {
+      font-size: 10px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 4px 10px;
+      background: #fff;
+    }
+    .quicknav {
+      flex-shrink: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,.9);
+    }
+    .quicknav a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      min-height: 44px;
+      padding: 6px 2px;
+      border-right: 1px solid var(--border);
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--ink);
+      text-decoration: none;
+      text-align: center;
+    }
+    .quicknav a:last-child { border-right: 0; }
+    .quicknav svg { width: 16px; height: 16px; opacity: 0.75; }
+
+    .map-body { flex: 1; min-height: 0; position: relative; }
+    .stage { position: absolute; inset: 0; overflow: hidden; background: var(--canvas); }
+    .stage img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .stage svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    .stage svg path.hit { pointer-events: stroke; cursor: pointer; }
+
+    .rail-overlay {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      bottom: 12px;
+      width: 42%;
+      max-width: 240px;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.94);
+      box-shadow: 0 12px 40px rgb(20 26 38 / 14%);
+      backdrop-filter: blur(8px);
+      overflow: hidden;
+    }
+    .device--375 .rail-overlay {
+      display: none;
+    }
+    .rail-head { padding: 10px 12px 0; border-bottom: 1px solid var(--border); }
+    .rail-head h4 { margin: 0; font-size: 12px; font-weight: 700; }
+    .rail-updated { font-size: 9px; color: var(--muted); padding: 2px 0 8px; }
+    .rail-tabs { display: flex; gap: 12px; padding: 0 12px; border-bottom: 1px solid var(--border); }
+    .rail-tabs button {
+      border: 0; background: none; padding: 8px 0; font-size: 11px; font-weight: 600;
+      color: var(--muted); border-bottom: 2px solid transparent; margin-bottom: -1px; cursor: default;
+    }
+    .rail-tabs button.on { color: var(--ink); border-bottom-color: var(--ink); }
+    .rail-list { list-style: none; margin: 0; padding: 6px; overflow: auto; flex: 1; }
+    .rail-list li {
+      display: flex; align-items: center; gap: 6px; padding: 7px 8px; border-radius: 8px;
+      font-size: 10px; cursor: pointer;
+    }
+    .rail-list li:hover, .rail-list li.sel { background: var(--canvas); }
+    .rail-list li.sel { outline: 2px solid var(--alpine); outline-offset: -2px; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+    .badge {
+      margin-left: auto; font-size: 8px; font-weight: 700; padding: 2px 6px;
+      border-radius: 999px; color: #fff; white-space: nowrap;
+    }
+
+    .zoom-fabs {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 8;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .device--1280 .zoom-fabs { right: calc(42% + 24px); max-width: calc(100% - 280px); }
+    .zoom-fabs button {
+      width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--border);
+      background: rgba(255,255,255,.92); font-size: 16px; font-weight: 600; color: var(--ink);
+      box-shadow: 0 2px 8px rgb(0 0 0 / 8%); cursor: default;
+    }
+    .mobile-fab {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      z-index: 10;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.96);
+      box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+    }
+    .device--1280 .mobile-fab { display: none; }
+
+    /* LAAX reference panel */
+    .laax-ref { position: relative; background: #0a0f14; }
+    .laax-ref img { width: 100%; display: block; }
+    .laax-ref--mobile {
+      height: 667px;
+      overflow: hidden;
+    }
+    .laax-ref--mobile img {
+      width: 180%;
+      max-width: none;
+      margin-left: -28%;
+      object-fit: cover;
+      height: 100%;
+      object-position: 42% 38%;
+    }
+    .laax-ref--desktop { min-height: 720px; }
+    .callout {
+      position: absolute;
+      z-index: 5;
+      font-size: 9px;
+      font-weight: 600;
+      line-height: 1.3;
+      max-width: 120px;
+      padding: 5px 7px;
+      border-radius: 6px;
+      background: rgba(255,255,255,.94);
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+    }
+    .callout::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      transform: rotate(45deg);
+    }
+    .callout--p0 { top: 18%; left: 8%; }
+    .callout--p0::after { bottom: -5px; left: 20px; }
+    .callout--p4 { top: 42%; right: 22%; }
+    .callout--p4::after { bottom: -5px; right: 24px; }
+    .callout--p1 { top: 4%; right: 12%; max-width: 100px; }
+    .callout--p1::after { bottom: -5px; right: 30px; }
+
+    .anno-shichinohe .callout--p0 { top: 28%; left: 6%; }
+    .anno-shichinohe .callout--p4 { top: 48%; left: 38%; }
+    .anno-shichinohe .callout--p2 { bottom: 18%; left: 28%; top: auto; }
+    .anno-shichinohe .callout--p2::after { top: -5px; left: 24px; transform: rotate(225deg); }
+    .anno-shichinohe .callout--p3 { bottom: 22%; right: 46%; top: auto; max-width: 110px; }
+    .anno-shichinohe .callout--p3::after { top: -5px; right: 20px; transform: rotate(225deg); }
+
+    .diff-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8125rem;
+      margin-top: 1.5rem;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .diff-table th, .diff-table td {
+      padding: 0.65rem 0.85rem;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+    .diff-table th { background: var(--canvas); font-size: 0.75rem; color: var(--muted); }
+    .diff-table tr:last-child td { border-bottom: 0; }
+    .links {
+      margin-top: 1.25rem;
+      font-size: 0.8125rem;
+      color: var(--muted);
+    }
+    .links a { color: var(--alpine); }
+    .panel-foot {
+      padding: 0.75rem 1rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 8px 12px;
+      font-size: 10px;
+      border-top: 1px solid var(--border);
+      background: #fff;
+    }
+    .legend span { display: inline-flex; align-items: center; gap: 5px; }
+    .legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="head">
+      <h1>層C P6 — LAAX 本家 vs 七戸町営（並置評価モック）</h1>
+      <p>
+        左が LAAX 参考スクショ、右が七戸の<strong>実イラスト</strong>（<code>sichinohe-hero-v5.png</code>）+
+        <strong>手トレースヒットボックス</strong> + 本番 UI クローム。P4 ライブ色は薄青 <code>#7ec8e3</code>。
+        リストの行をクリックすると地図ハイライトが連動します。
+      </p>
+      <div class="meta">
+        <span class="evidence">P6 evidence — 2026-06-08</span>
+        <span>375px = iPhone 幅</span>
+        <span>1280px = デスクトップ</span>
+        <span>データ: hitboxes-hero-v5.json</span>
+      </div>
+    </header>
+
+    <div class="rubric" aria-label="層C ルーブリック対応">
+      <div class="ok"><strong>P0</strong>地図が viewport の 80% 以上（オーバーレイレール）</div>
+      <div class="ok"><strong>P1</strong>MapPageShell — サイト chrome なし全画面</div>
+      <div class="ok"><strong>P2</strong>scale=1 でもドラッグで微パン</div>
+      <div class="mid"><strong>P3</strong>地図タップ = リストと同等の選択</div>
+      <div class="ok"><strong>P4</strong>稼働リフト・滑走可コースが薄青線</div>
+      <div class="mid"><strong>P5</strong>30 秒理解 — 本モック + 実機で確認</div>
+    </div>
+
+    <!-- ——— MOBILE 375 ——— -->
+    <h2 class="section">① モバイル 375px — 初見 5 秒で「地図が主役」か</h2>
+    <div class="compare-row">
+      <section class="panel">
+        <div class="panel-head">
+          <h3>LAAX（参照）</h3>
+          <span>laax.com/map · 体験分解のみ</span>
+        </div>
+        <div class="device device--375 laax-ref laax-ref--mobile">
+          <span class="device-label">375 × 667</span>
+          <img src="../preview/laax-map-reference.png" alt="LAAX マップ参考（モバイル相当クロップ）" />
+          <div class="callout callout--p0">P0 地形が画面を埋める</div>
+          <div class="callout callout--p4">P4 線色で稼働が一目</div>
+        </div>
+        <p class="panel-foot">3D 地形 · WebGL · 全リフト網の色分け。七戸は 2D イラスト簡易版。</p>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h3>七戸町営（実装モック）</h3>
+          <span>/ja/map · MapPageShell</span>
+        </div>
+        <div class="device device--375" id="mock-mobile"></div>
+        <div class="legend">
+          <span><i style="background:#7ec8e3"></i>稼働中 / 滑走可</span>
+          <span><i style="background:#64748b;border:1px dashed #64748b;height:0"></i>停止</span>
+        </div>
+        <p class="panel-foot">モバイルは FAB「運行状況」→ ボトムシート（本番と同じ）。地図は常時 100% 幅。</p>
+      </section>
+    </div>
+
+    <!-- ——— DESKTOP 1280 ——— -->
+    <h2 class="section">② デスクトップ 1280px — ライブ線色 + レール連動</h2>
+    <div class="compare-row">
+      <section class="panel">
+        <div class="panel-head">
+          <h3>LAAX（参照）</h3>
+          <span>フルビューポート</span>
+        </div>
+        <div class="device device--1280 laax-ref laax-ref--desktop">
+          <span class="device-label">1280 × 720</span>
+          <img src="../preview/laax-map-reference.png" alt="LAAX マップ参考" />
+          <div class="callout callout--p1">P1 マップ専用シェル</div>
+          <div class="callout callout--p0">P0 地形主役</div>
+          <div class="callout callout--p4">P4 ネットワーク着色</div>
+        </div>
+        <p class="panel-foot">右パネルにリスト。七戸は<strong>オーバーレイレール</strong>で地図面積を確保（split rail 廃止）。</p>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h3>七戸町営（実装モック）</h3>
+          <span>焼き込み線 + 薄青オーバーレイ</span>
+        </div>
+        <div class="device device--1280 anno-shichinohe" id="mock-desktop"></div>
+        <div class="legend">
+          <span><i style="background:#7ec8e3"></i>operating / open</span>
+          <span><i style="background:#64748b"></i>stopped</span>
+          <span><i style="background:#6d28d9"></i>選択ハイライト（コース色）</span>
+        </div>
+        <p class="panel-foot">ペアリフト=運転中（薄青）· ポニー=停止（灰破線）· コース=滑走可（薄青）。ズーム FAB はレール左。</p>
+      </section>
+    </div>
+
+    <h2 class="section">③ 体験差分（30 秒理解用）</h2>
+    <table class="diff-table">
+      <thead>
+        <tr><th>観点</th><th>LAAX</th><th>七戸（本実装）</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>地形表現</td>
+          <td>3D WebGL · 没入斜面</td>
+          <td>2D 焼き込みイラスト（DEM 拘束 v5）· パンズーム</td>
+        </tr>
+        <tr>
+          <td>ライブ状態</td>
+          <td>線・面のネットワーク着色</td>
+          <td>焼き込み線の上に<strong>薄青 (#7ec8e3)</strong> オーバーレイ + リストバッジ</td>
+        </tr>
+        <tr>
+          <td>レイアウト</td>
+          <td>ほぼ全画面マップ + サイドパネル</td>
+          <td>MapPageShell 全画面 · レールは地図上フロート（P0）</td>
+        </tr>
+        <tr>
+          <td>操作</td>
+          <td>3D カメラパン</td>
+          <td>2D ズーム + scale=1 微パン（P2）</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="links">
+      実機: <a href="../../resorts/Sichinohe-CyoueiSki/web/public/maps/map-preview.html">map-preview.html</a> ·
+      本番相当: <code>resorts/Sichinohe-CyoueiSki/web</code> で <code>npm run dev</code> → <code>/ja/map</code> ·
+      画像は <code>docs/preview/</code> 相対参照（<code>npx serve docs</code> 推奨）
+    </p>
+  </div>
+
+  <script id="map-data" type="application/json">
+  {
+    "heroSrc": "../preview/sichinohe-hero-v5.png",
+    "updatedAt": "6/8 14:30",
+    "status": {
+      "lift-pair": "operating",
+      "lift-pony": "stopped",
+      "trail-champion": "open",
+      "trail-upper": "open",
+      "trail-intermediate": "open",
+      "trail-forest": "open",
+      "trail-pony": "open"
+    },
+    "features": [
+      {"id":"lift-pair","type":"lift","label":"ペアリフト","shortLabel":"ペア"},
+      {"id":"lift-pony","type":"lift","label":"ポニーリフト","shortLabel":"ポニー"},
+      {"id":"trail-intermediate","type":"trail","label":"中斜面（コース1）","difficulty":"intermediate"},
+      {"id":"trail-upper","type":"trail","label":"上部（コース2）","difficulty":"intermediate-advanced"},
+      {"id":"trail-champion","type":"trail","label":"チャンピオン（コース3）","difficulty":"advanced"},
+      {"id":"trail-forest","type":"trail","label":"林間周回（コース4）","difficulty":"beginner"},
+      {"id":"trail-pony","type":"trail","label":"ポニー周辺（コース5）","difficulty":"beginner"}
+    ],
+    "paths": {
+      "lift-pair": "M 429 379.3 L 454 401.3 L 486 435.3 L 512 474.3 L 544 513.3 L 580 534.3 L 661 595.3 L 709 632.3",
+      "lift-pony": "M 644 447.3 L 775 545.3",
+      "trail-intermediate": "M 474 359.3 L 738 608.3",
+      "trail-upper": "M 446 356.3 L 411 405.3 L 491 480.3 L 509 487.3 L 541 492.3 L 560 500.3 L 681 596.3",
+      "trail-champion": "M 539 349.3 L 551 360.3 L 621 414.3 L 619 431.3 L 630 455.3 L 676 492.3 L 725 535.3 L 764 552.3",
+      "trail-forest": "M 412 349.3 L 331 386.3 L 314 397.3 L 302 412.3 L 240 509.3 L 239 525.3 L 357 574.3 L 391 585.3 L 436 577.3 L 542 554.3 L 564 554.3 L 606 579.3",
+      "trail-pony": "M 679 440.3 L 775 522.3"
+    },
+    "colors": {
+      "lift-pair": "#1a1a1a", "lift-pony": "#1a1a1a",
+      "trail-intermediate": "#2fa84a", "trail-upper": "#d62839",
+      "trail-champion": "#6d28d9", "trail-forest": "#2fa84a", "trail-pony": "#2fa84a"
+    }
+  }
+  </script>
+  <script>
+    const DATA = JSON.parse(document.getElementById("map-data").textContent);
+    const STATUS_COLORS = {
+      operating: "#7ec8e3", open: "#7ec8e3",
+      stopped: "#64748b", closed: "#64748b",
+      hold: "#f59e0b", unknown: "#94a3b8"
+    };
+    const STATUS_LABELS = {
+      operating: "運転中", open: "滑走可", stopped: "停止",
+      closed: "閉鎖", hold: "確認中", unknown: "確認中"
+    };
+
+    function highlightStyle(id, type, selected) {
+      const st = DATA.status[id] || "unknown";
+      const accent = DATA.colors[id] || "#1a1a1a";
+      if (type === "lift") {
+        if (st === "stopped" || st === "closed") {
+          return { show: true, stroke: STATUS_COLORS.stopped, w: selected ? 3 : 2, op: 0.75, dash: "6 4" };
+        }
+        if (st === "operating") {
+          return { show: true, stroke: STATUS_COLORS.operating, w: selected ? 3.5 : 2.5, op: selected ? 0.98 : 0.72 };
+        }
+        return { show: selected, stroke: accent, w: 3, op: 1 };
+      }
+      if (st === "closed") {
+        return { show: true, stroke: STATUS_COLORS.closed, w: 2, op: 0.5, dash: "5 4" };
+      }
+      if (st === "open") {
+        return { show: true, stroke: STATUS_COLORS.open, w: selected ? 3.5 : 2.5, op: selected ? 0.98 : 0.72 };
+      }
+      return { show: selected, stroke: accent, w: 3, op: 1 };
+    }
+
+    function badgeColor(id, type, status) {
+      if (["stopped","closed","hold","unknown"].includes(status)) {
+        return STATUS_COLORS[status];
+      }
+      return DATA.colors[id] || "#1a1a1a";
+    }
+
+    function buildMapShell(containerId, variant) {
+      const root = document.getElementById(containerId);
+      const isDesktop = variant === "desktop";
+      let selected = "lift-pair";
+
+      root.innerHTML = `
+        <div class="map-shell">
+          <header class="topbar">
+            <div class="topbar-title">
+              <span>七戸町営スキー場</span>
+              <span class="live-badge">Live</span>
+            </div>
+            <span class="lang">EN</span>
+          </header>
+          <nav class="quicknav" aria-label="クイックナビ">
+            <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>トップ</a>
+            <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>今日</a>
+            <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>アクセス</a>
+            <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>運営</a>
+          </nav>
+          <div class="map-body">
+            <div class="stage">
+              <img src="${DATA.heroSrc}" alt="七戸ゲレンデイラスト v5" />
+              <svg viewBox="0 0 1024 1024" preserveAspectRatio="xMidYMid slice" id="svg-${variant}"></svg>
+              ${isDesktop ? `
+                <aside class="rail-overlay" aria-label="運行状況">
+                  <div class="rail-head">
+                    <h4>運行状況</h4>
+                    <div class="rail-updated">最終更新 ${DATA.updatedAt}</div>
+                  </div>
+                  <div class="rail-tabs">
+                    <button type="button" class="on">リフト</button>
+                    <button type="button">コース</button>
+                  </div>
+                  <ul class="rail-list" id="list-${variant}"></ul>
+                </aside>
+                <div class="callout callout--p0">P0 地図 ≥80%</div>
+                <div class="callout callout--p4">P4 薄青=稼働</div>
+                <div class="callout callout--p2">P2 ドラッグ微パン</div>
+                <div class="callout callout--p3">P3 地図タップ選択</div>
+              ` : ""}
+              <div class="zoom-fabs" aria-hidden="true">
+                <button type="button">+</button>
+                <button type="button">−</button>
+                <button type="button">⊡</button>
+              </div>
+              ${!isDesktop ? `<button type="button" class="mobile-fab">運行状況</button>` : ""}
+            </div>
+          </div>
+        </div>
+      `;
+
+      const svg = document.getElementById(`svg-${variant}`);
+      const list = isDesktop ? document.getElementById(`list-${variant}`) : null;
+
+      function renderList() {
+        if (!list) return;
+        list.innerHTML = DATA.features.map((f) => {
+          const st = DATA.status[f.id];
+          const bc = badgeColor(f.id, f.type, st);
+          return `<li data-id="${f.id}" class="${selected === f.id ? "sel" : ""}">
+            <span class="dot" style="background:${bc}"></span>
+            <span>${f.label}</span>
+            <span class="badge" style="background:${STATUS_COLORS[st] || bc}">${STATUS_LABELS[st] || st}</span>
+          </li>`;
+        }).join("");
+        list.querySelectorAll("li").forEach((li) => {
+          li.addEventListener("click", () => {
+            selected = li.dataset.id;
+            renderOverlay();
+            renderList();
+          });
+        });
+      }
+
+      function renderOverlay() {
+        svg.innerHTML = "";
+        DATA.features.forEach((f) => {
+          const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+          const d = DATA.paths[f.id];
+          if (!d) return;
+          const hit = document.createElementNS("http://www.w3.org/2000/svg", "path");
+          hit.setAttribute("d", d);
+          hit.setAttribute("fill", "none");
+          hit.setAttribute("stroke", "transparent");
+          hit.setAttribute("stroke-width", "20");
+          hit.classList.add("hit");
+          hit.addEventListener("click", () => {
+            selected = f.id;
+            renderOverlay();
+            renderList();
+          });
+          const line = document.createElementNS("http://www.w3.org/2000/svg", "path");
+          line.setAttribute("d", d);
+          line.setAttribute("fill", "none");
+          line.setAttribute("stroke-linecap", "round");
+          line.setAttribute("stroke-linejoin", "round");
+          const hl = highlightStyle(f.id, f.type, selected === f.id);
+          line.setAttribute("stroke", hl.stroke);
+          line.setAttribute("stroke-width", hl.show ? String(hl.w) : "0");
+          line.setAttribute("stroke-opacity", String(hl.op));
+          if (hl.dash) line.setAttribute("stroke-dasharray", hl.dash);
+          g.appendChild(hit);
+          g.appendChild(line);
+          svg.appendChild(g);
+        });
+      }
+
+      renderOverlay();
+      renderList();
+    }
+
+    buildMapShell("mock-mobile", "mobile");
+    buildMapShell("mock-desktop", "desktop");
+  </script>
+</body>
+</html>

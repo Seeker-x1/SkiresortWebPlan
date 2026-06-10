@@ -18,8 +18,8 @@ export const INITIAL_CAMERA = {
 } as const;
 
 export const STATUS_LINE_COLORS: Record<string, string> = {
-  operating: "#22c55e",
-  open: "#38bdf8",
+  operating: "#7ec8e3",
+  open: "#7ec8e3",
   stopped: "#64748b",
   closed: "#64748b",
   hold: "#f59e0b",

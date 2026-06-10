@@ -23,14 +23,6 @@ export interface MapStatusPayload {
   features: MapFeature[];
 }
 
-export const STATUS_COLORS: Record<string, string> = {
-  operating: "#16a34a",
-  open: "#16a34a",
-  stopped: "#64748b",
-  closed: "#64748b",
-  hold: "#f59e0b",
-  partial: "#f59e0b",
-  unknown: "#94a3b8",
-};
+export { STATUS_COLORS } from "@/lib/status-colors";
 
 /** Status badge labels: use `useMapStatusLabel()` + `messages/*.json` map.status */

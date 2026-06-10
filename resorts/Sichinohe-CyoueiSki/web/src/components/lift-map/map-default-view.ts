@@ -1,5 +1,5 @@
 /** 全体表示（リセット）時の基準ビュー — ステージ全面に cover（レールは地図外） */
-export const MAP_FIT_SCALE = 1.12;
+export const MAP_FIT_SCALE = 1.18;
 
 export function mapDefaultView(
   containerWidth: number,

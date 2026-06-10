@@ -36,7 +36,7 @@
     }
     .topbar-title { display: flex; align-items: center; gap: 8px; min-width: 0; flex: 1; }
     .topbar h1 { font-size: 14px; font-weight: 700; letter-spacing: .02em; margin: 0; }
-    .live-badge { display: none; flex-shrink: 0; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; background: #2d5a4a; color: #fff; }
+    .live-badge { display: none; flex-shrink: 0; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; background: #5eb8e8; color: #1c2434; }
     .live-badge.on { display: inline-block; }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     .quicknav {
@@ -65,7 +65,7 @@
     .quicknav a:last-child { border-right: 0; }
     .quicknav a:hover { background: var(--canvas); }
     .quicknav a:focus-visible { outline: 2px solid var(--alpine); outline-offset: -2px; }
-    .main { flex: 1; min-height: 0; display: flex; flex-direction: row; }
+    .main { flex: 1; min-height: 0; display: flex; flex-direction: column; }
     .map-col { flex: 1; min-width: 0; min-height: 0; position: relative; }
     .stage { position: absolute; inset: 0; overflow: hidden; cursor: grab; background: var(--canvas); }
     .stage:active { cursor: grabbing; }
@@ -76,7 +76,12 @@
     .load-error[hidden] { display: none !important; }
     .frame svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
     .frame svg path.hit { pointer-events: stroke; cursor: pointer; }
-    .rail { flex-shrink: 0; width: 320px; display: flex; flex-direction: column; border-left: 1px solid var(--border); background: rgba(255,255,255,.96); overflow: hidden; }
+    .rail {
+      position: absolute; top: 12px; right: 12px; bottom: 12px; width: min(42%, 240px); z-index: 20;
+      display: flex; flex-direction: column; border-radius: 12px; border: 1px solid var(--border);
+      background: rgba(255,255,255,.94); box-shadow: 0 12px 40px rgb(20 26 38 / 14%);
+      backdrop-filter: blur(8px); overflow: hidden;
+    }
     .rail-head { flex-shrink: 0; padding: 12px 16px 0; border-bottom: 1px solid var(--border); }
     .rail-title-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
     .rail-title-row h2 { font-size: 13px; font-weight: 700; color: var(--ink); margin: 0; }
@@ -95,27 +100,13 @@
     }
     .rail-tabs button.active { color: var(--ink); border-bottom-color: var(--ink); }
     .rail-tabs button:focus-visible { outline: 2px solid var(--alpine); outline-offset: 2px; }
-    .rail-search { margin-top: 12px; padding-bottom: 12px; }
-    .rail-search input { width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; background: var(--canvas); color: var(--ink); }
-    .rail-search input::placeholder { color: var(--slate); }
-    .rail-search input:focus-visible { outline: 2px solid var(--alpine); outline-offset: 2px; }
-    .rail-difficulty { display: flex; flex-wrap: wrap; gap: 6px; padding-bottom: 12px; }
-    .rail-difficulty[hidden] { display: none !important; }
-    .rail-difficulty button { margin: 0; padding: 4px 10px; border: 0; border-radius: 999px; background: transparent; font-size: 11px; font-weight: 600; color: var(--slate); cursor: pointer; }
-    .rail-difficulty button.on { background: var(--canvas); color: var(--ink); box-shadow: 0 0 0 1px var(--border); }
-    .rail-difficulty button:focus-visible { outline: 2px solid var(--alpine); outline-offset: 2px; }
     .rail-empty { padding: 24px 16px; text-align: center; font-size: 13px; color: var(--slate); }
-    .rail-location { flex-shrink: 0; border-top: 1px solid var(--border); padding: 12px 16px; }
-    .rail-location h3 { font-size: 12px; font-weight: 700; margin: 0; color: var(--ink); }
-    .rail-location p { margin-top: 6px; font-size: 11px; line-height: 1.5; color: var(--slate); }
-    .rail-location button { margin-top: 8px; padding: 0; border: 0; background: transparent; font-size: 11px; font-weight: 600; color: var(--ink); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
-    .rail-location button:disabled { opacity: .6; cursor: wait; }
-    .rail-location button:focus-visible { outline: 2px solid var(--alpine); outline-offset: 2px; }
     .rail-body { flex: 1; min-height: 0; overflow-y: auto; padding: 8px; }
     .rail ul { margin: 0; padding: 0; }
     .rail li { list-style: none; }
-    .rail button { width: 100%; display: flex; align-items: center; gap: 8px; padding: 9px 10px 9px 8px; border: 0; border-radius: 0; background: transparent; color: var(--ink); text-align: left; font-size: 13px; cursor: pointer; border-left: 3px solid transparent; }
-    .rail button:hover, .rail button.sel { background: var(--canvas); }
+    .rail button { width: 100%; display: flex; align-items: center; gap: 6px; padding: 7px 8px; border: 0; border-radius: 8px; background: transparent; color: var(--ink); text-align: left; font-size: 13px; cursor: pointer; }
+    .rail button:hover { background: var(--canvas); }
+    .rail button.sel { background: var(--canvas); outline: 2px solid var(--alpine); outline-offset: -2px; }
     .rail button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
     .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
     .badge { margin-left: auto; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 999px; color: #fff; }
@@ -129,21 +120,20 @@
     .rail-detail-meta dl { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 10px; margin: 0; }
     .rail-detail-meta dt { color: var(--slate); font-size: 10px; }
     .rail-detail-meta dd { margin: 0; font-weight: 600; color: var(--ink); }
-    .fab { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 8px; z-index: 15; }
-    .fab button { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--border); background: rgba(255,255,255,.92); color: var(--ink); font-size: 18px; cursor: pointer; box-shadow: 0 4px 16px rgb(20 26 38 / 8%); }
+    .fab { position: absolute; right: calc(min(42%, 240px) + 24px); top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 6px; z-index: 15; }
+    .fab button { width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--border); background: rgba(255,255,255,.92); color: var(--ink); font-size: 16px; font-weight: 600; cursor: pointer; box-shadow: 0 2px 8px rgb(0 0 0 / 8%); }
     .fab button:focus-visible { outline: 2px solid var(--alpine); outline-offset: 2px; }
     .frame svg path.hit:focus-visible { outline: 2px solid var(--alpine); outline-offset: 2px; }
-    .status-fab { display: none; position: absolute; left: 12px; bottom: 12px; z-index: 6; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,.96); color: var(--ink); padding: 10px 16px; font-size: 12px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 16px rgb(20 26 38 / 16%); }
+    .status-fab { display: none; position: absolute; left: 12px; bottom: 12px; z-index: 6; border-radius: 8px; border: 1px solid var(--border); background: rgba(255,255,255,.96); color: var(--ink); padding: 10px 14px; font-size: 11px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 16px rgb(0 0 0 / 10%); }
     .status-fab:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
     .rail-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 19; }
     .rail-backdrop.open { display: block; }
     @media (max-width: 767px) {
-      .main { flex-direction: column; }
       .map-col { flex: 1; min-height: 0; }
       .stage { position: relative; flex: 1; min-height: 0; }
       .status-fab { display: block; }
       .fab { right: 12px; }
-      .rail { display: none; position: fixed; left: 0; right: 0; bottom: 0; width: 100%; max-height: min(70dvh, 520px); border-left: 0; border-top: 1px solid var(--border); z-index: 20; box-shadow: none; }
+      .rail { display: none; position: fixed; left: 0; right: 0; bottom: 0; width: 100%; max-width: none; max-height: min(70dvh, 520px); border-radius: 0; border-left: 0; border-top: 1px solid var(--border); z-index: 20; box-shadow: none; backdrop-filter: none; }
       .rail.open { display: flex; }
     }
   </style>
@@ -175,30 +165,18 @@
         <button type="button" id="resetBtn" aria-label="全体表示">⊡</button>
       </div>
       <button type="button" class="status-fab" id="statusFab">運行状況</button>
-    </div>
-    <nav class="rail" id="rail" aria-label="運行状況">
+      <nav class="rail" id="rail" aria-label="運行状況">
       <div class="rail-head">
         <div class="rail-title-row">
           <h2>運行状況</h2>
           <span class="rail-updated" id="railUpdated"></span>
         </div>
         <div class="rail-tabs" role="tablist" aria-label="運行状況">
-          <button type="button" role="tab" data-filter="trail" class="active" aria-selected="true">コース</button>
-          <button type="button" role="tab" data-filter="lift" aria-selected="false">リフト</button>
-        </div>
-        <label class="rail-search">
-          <span class="sr-only">リフト・コースを検索</span>
-          <input type="search" id="railSearch" placeholder="名前で検索…" aria-label="リフト・コースを検索" autocomplete="off" />
-        </label>
-        <div class="rail-difficulty" id="railDifficulty" role="group" aria-label="コース難易度で絞り込み">
-          <button type="button" data-bucket="all" class="on" aria-pressed="true">すべて</button>
-          <button type="button" data-bucket="beginner" aria-pressed="false">初級</button>
-          <button type="button" data-bucket="intermediate" aria-pressed="false">中級</button>
-          <button type="button" data-bucket="advanced" aria-pressed="false">上級</button>
+          <button type="button" role="tab" data-filter="lift" class="active" aria-selected="true">リフト</button>
+          <button type="button" role="tab" data-filter="trail" aria-selected="false">コース</button>
         </div>
       </div>
       <div class="rail-body"></div>
-      <div class="rail-location" id="railLocation" hidden></div>
       <div class="rail-detail" id="railDetail" hidden aria-live="polite">
         <div class="rail-detail-head">
           <div>
@@ -210,10 +188,11 @@
         <p class="rail-detail-meta" id="detailMeta"></p>
       </div>
     </nav>
+    </div>
     <div class="rail-backdrop" id="railBackdrop" hidden></div>
   </div>
 
-  <script id="map-data" type="application/json">{"generatedAt":"2026-06-10T05:12:46.923Z","resortName":"七戸町営スキー場","disclaimer":"コース・リフトはイラスト内に描画済み。地図タップまたはリストで運行状況を確認できます。","hero":{"src":"sichinohe-hero-v5.png","width":1024,"height":1024,"viewBox":"0 0 1024 1024","projection":"official-map-layout-illustrated-v5","attribution":"layout-v5 Gemini 正方形 + 手トレースヒットボックス","credit":"Gemini 生成イラスト + trace-hitboxes 直トレース","srcHttp":"/maps/sichinohe-hero-v5.png"},"heroVersion":"layout-v5 Gemini 正方形 + 手トレースヒットボックス","lifts":[{"id":"lift-pair","label":"ペアリフト","source":"illustrated-hero layout-v5 手トレース","path":"M 429 379.3 L 454 401.3 L 486 435.3 L 512 474.3 L 544 513.3 L 580 534.3 L 661 595.3 L 709 632.3","stations":[[429,379.3],[709,632.3]],"type":"lift"},{"id":"lift-pony","label":"ポニーリフト","source":"illustrated-hero layout-v5 手トレース","path":"M 644 447.3 L 775 545.3","stations":[[644,447.3],[775,545.3]],"type":"lift"}],"trails":[{"id":"trail-intermediate","label":"中斜面（コース1）","source":"illustrated-hero layout-v5 手トレース","path":"M 474 359.3 L 738 608.3","stations":[],"type":"trail"},{"id":"trail-upper","label":"上部（コース2）","source":"illustrated-hero layout-v5 手トレース","path":"M 446 356.3 L 411 405.3 L 491 480.3 L 509 487.3 L 541 492.3 L 560 500.3 L 681 596.3","stations":[],"type":"trail"},{"id":"trail-champion","label":"チャンピオン（コース3）","source":"illustrated-hero layout-v5 手トレース","path":"M 539 349.3 L 551 360.3 L 621 414.3 L 619 431.3 L 630 455.3 L 676 492.3 L 725 535.3 L 764 552.3","stations":[],"type":"trail"},{"id":"trail-forest","label":"林間周回（コース4）","source":"illustrated-hero layout-v5 手トレース","path":"M 412 349.3 L 331 386.3 L 314 397.3 L 302 412.3 L 240 509.3 L 239 525.3 L 357 574.3 L 391 585.3 L 436 577.3 L 542 554.3 L 564 554.3 L 606 579.3","stations":[],"type":"trail"},{"id":"trail-pony","label":"ポニー周辺（コース5）","source":"illustrated-hero layout-v5 手トレース","path":"M 679 440.3 L 775 522.3","stations":[],"type":"trail"}],"hitboxes":[{"id":"lift-pair","label":"ペアリフト","source":"illustrated-hero layout-v5 手トレース","path":"M 429 379.3 L 454 401.3 L 486 435.3 L 512 474.3 L 544 513.3 L 580 534.3 L 661 595.3 L 709 632.3","stations":[[429,379.3],[709,632.3]],"type":"lift"},{"id":"lift-pony","label":"ポニーリフト","source":"illustrated-hero layout-v5 手トレース","path":"M 644 447.3 L 775 545.3","stations":[[644,447.3],[775,545.3]],"type":"lift"},{"id":"trail-intermediate","label":"中斜面（コース1）","source":"illustrated-hero layout-v5 手トレース","path":"M 474 359.3 L 738 608.3","stations":[],"type":"trail"},{"id":"trail-upper","label":"上部（コース2）","source":"illustrated-hero layout-v5 手トレース","path":"M 446 356.3 L 411 405.3 L 491 480.3 L 509 487.3 L 541 492.3 L 560 500.3 L 681 596.3","stations":[],"type":"trail"},{"id":"trail-champion","label":"チャンピオン（コース3）","source":"illustrated-hero layout-v5 手トレース","path":"M 539 349.3 L 551 360.3 L 621 414.3 L 619 431.3 L 630 455.3 L 676 492.3 L 725 535.3 L 764 552.3","stations":[],"type":"trail"},{"id":"trail-forest","label":"林間周回（コース4）","source":"illustrated-hero layout-v5 手トレース","path":"M 412 349.3 L 331 386.3 L 314 397.3 L 302 412.3 L 240 509.3 L 239 525.3 L 357 574.3 L 391 585.3 L 436 577.3 L 542 554.3 L 564 554.3 L 606 579.3","stations":[],"type":"trail"},{"id":"trail-pony","label":"ポニー周辺（コース5）","source":"illustrated-hero layout-v5 手トレース","path":"M 679 440.3 L 775 522.3","stations":[],"type":"trail"}],"features":[{"id":"lift-pair","type":"lift","label":"ペアリフト","shortLabel":"ペア","difficulty":null,"source":"リフト","color":"#1a1a1a","meta":{"所要":"約4分","区分":"メインリフト"}},{"id":"lift-pony","type":"lift","label":"ポニーリフト","shortLabel":"ポニー","difficulty":null,"source":"リフト","color":"#1a1a1a","meta":{"区分":"初級エリア","券種":"ペアリフト券と共通"}},{"id":"trail-champion","type":"trail","label":"チャンピオン（上級）","shortLabel":"チャンピオン","difficulty":"advanced","source":"コース","color":"#6d28d9","meta":{"距離":"約400m","雪面":"非圧雪（上部）","最大斜度":"35度（要確認）"}},{"id":"trail-upper","type":"trail","label":"上部エリア（中〜上級）","shortLabel":"上部","difficulty":"intermediate-advanced","source":"コース","color":"#d62839","meta":{"雪面":"圧雪 / 非圧雪（要確認）"}},{"id":"trail-intermediate","type":"trail","label":"中斜面コース（中級）","shortLabel":"中斜面","difficulty":"intermediate","source":"コース","color":"#2fa84a","meta":{"特徴":"カービング向け整地（要確認）"}},{"id":"trail-forest","type":"trail","label":"林間周回（初級・コース4）","shortLabel":"林間","difficulty":"beginner","source":"コース","color":"#2fa84a","meta":{"特徴":"左側の森を周回する林間コース","公式":"official-map-layout コース4"}},{"id":"trail-pony","type":"trail","label":"ポニーリフト周辺（初級）","shortLabel":"初級","difficulty":"beginner","source":"コース","color":"#2fa84a","meta":{"雪面":"圧雪","特徴":"ワイドな緩斜面"}}],"featureColors":{"lift-pair":"#1a1a1a","lift-pony":"#1a1a1a","trail-intermediate":"#2fa84a","trail-upper":"#d62839","trail-champion":"#6d28d9","trail-forest":"#2fa84a","trail-pony":"#2fa84a"},"status":{"lift-pair":"operating","lift-pony":"stopped","trail-champion":"open","trail-upper":"open","trail-intermediate":"open","trail-forest":"open","trail-pony":"open"},"labels":{"lift-pair":"ペアリフト","lift-pony":"ポニーリフト","trail-champion":"チャンピオン（上級）","trail-upper":"上部エリア（中〜上級）","trail-intermediate":"中斜面コース（中級）","trail-forest":"林間周回（初級・コース4）","trail-pony":"ポニーリフト周辺（初級）"},"updatedAt":"2026-06-05T10:00:00+09:00","resortCenter":{"lat":40.69839,"lng":141.099714}}</script>
+  <script id="map-data" type="application/json">{"generatedAt":"2026-06-10T12:38:47.966Z","resortName":"七戸町営スキー場","disclaimer":"コース・リフトはイラスト内に描画済み。地図タップまたはリストで運行状況を確認できます。","hero":{"src":"sichinohe-hero-v5.png","width":1024,"height":1024,"viewBox":"0 0 1024 1024","projection":"official-map-layout-illustrated-v5","attribution":"layout-v5 Gemini 正方形 + 手トレースヒットボックス","credit":"Gemini 生成イラスト + trace-hitboxes 直トレース","srcHttp":"/maps/sichinohe-hero-v5.png"},"heroVersion":"layout-v5 Gemini 正方形 + 手トレースヒットボックス","lifts":[{"id":"lift-pair","label":"ペアリフト","source":"illustrated-hero layout-v5 手トレース","path":"M 429 379.3 L 454 401.3 L 486 435.3 L 512 474.3 L 544 513.3 L 580 534.3 L 661 595.3 L 709 632.3","stations":[[429,379.3],[709,632.3]],"type":"lift"},{"id":"lift-pony","label":"ポニーリフト","source":"illustrated-hero layout-v5 手トレース","path":"M 644 447.3 L 775 545.3","stations":[[644,447.3],[775,545.3]],"type":"lift"}],"trails":[{"id":"trail-intermediate","label":"中斜面（コース1）","source":"illustrated-hero layout-v5 手トレース","path":"M 474 359.3 L 738 608.3","stations":[],"type":"trail"},{"id":"trail-upper","label":"上部（コース2）","source":"illustrated-hero layout-v5 手トレース","path":"M 446 356.3 L 411 405.3 L 491 480.3 L 509 487.3 L 541 492.3 L 560 500.3 L 681 596.3","stations":[],"type":"trail"},{"id":"trail-champion","label":"チャンピオン（コース3）","source":"illustrated-hero layout-v5 手トレース","path":"M 539 349.3 L 551 360.3 L 621 414.3 L 619 431.3 L 630 455.3 L 676 492.3 L 725 535.3 L 764 552.3","stations":[],"type":"trail"},{"id":"trail-forest","label":"林間周回（コース4）","source":"illustrated-hero layout-v5 手トレース","path":"M 412 349.3 L 331 386.3 L 314 397.3 L 302 412.3 L 240 509.3 L 239 525.3 L 357 574.3 L 391 585.3 L 436 577.3 L 542 554.3 L 564 554.3 L 606 579.3","stations":[],"type":"trail"},{"id":"trail-pony","label":"ポニー周辺（コース5）","source":"illustrated-hero layout-v5 手トレース","path":"M 679 440.3 L 775 522.3","stations":[],"type":"trail"}],"hitboxes":[{"id":"lift-pair","label":"ペアリフト","source":"illustrated-hero layout-v5 手トレース","path":"M 429 379.3 L 454 401.3 L 486 435.3 L 512 474.3 L 544 513.3 L 580 534.3 L 661 595.3 L 709 632.3","stations":[[429,379.3],[709,632.3]],"type":"lift"},{"id":"lift-pony","label":"ポニーリフト","source":"illustrated-hero layout-v5 手トレース","path":"M 644 447.3 L 775 545.3","stations":[[644,447.3],[775,545.3]],"type":"lift"},{"id":"trail-intermediate","label":"中斜面（コース1）","source":"illustrated-hero layout-v5 手トレース","path":"M 474 359.3 L 738 608.3","stations":[],"type":"trail"},{"id":"trail-upper","label":"上部（コース2）","source":"illustrated-hero layout-v5 手トレース","path":"M 446 356.3 L 411 405.3 L 491 480.3 L 509 487.3 L 541 492.3 L 560 500.3 L 681 596.3","stations":[],"type":"trail"},{"id":"trail-champion","label":"チャンピオン（コース3）","source":"illustrated-hero layout-v5 手トレース","path":"M 539 349.3 L 551 360.3 L 621 414.3 L 619 431.3 L 630 455.3 L 676 492.3 L 725 535.3 L 764 552.3","stations":[],"type":"trail"},{"id":"trail-forest","label":"林間周回（コース4）","source":"illustrated-hero layout-v5 手トレース","path":"M 412 349.3 L 331 386.3 L 314 397.3 L 302 412.3 L 240 509.3 L 239 525.3 L 357 574.3 L 391 585.3 L 436 577.3 L 542 554.3 L 564 554.3 L 606 579.3","stations":[],"type":"trail"},{"id":"trail-pony","label":"ポニー周辺（コース5）","source":"illustrated-hero layout-v5 手トレース","path":"M 679 440.3 L 775 522.3","stations":[],"type":"trail"}],"features":[{"id":"lift-pair","type":"lift","label":"ペアリフト","shortLabel":"ペア","difficulty":null,"source":"リフト","color":"#1a1a1a","meta":{"所要":"約4分","区分":"メインリフト"}},{"id":"lift-pony","type":"lift","label":"ポニーリフト","shortLabel":"ポニー","difficulty":null,"source":"リフト","color":"#1a1a1a","meta":{"区分":"初級エリア","券種":"ペアリフト券と共通"}},{"id":"trail-champion","type":"trail","label":"チャンピオン（上級）","shortLabel":"チャンピオン","difficulty":"advanced","source":"コース","color":"#6d28d9","meta":{"距離":"約400m","雪面":"非圧雪（上部）","最大斜度":"35度（要確認）"}},{"id":"trail-upper","type":"trail","label":"上部エリア（中〜上級）","shortLabel":"上部","difficulty":"intermediate-advanced","source":"コース","color":"#d62839","meta":{"雪面":"圧雪 / 非圧雪（要確認）"}},{"id":"trail-intermediate","type":"trail","label":"中斜面コース（中級）","shortLabel":"中斜面","difficulty":"intermediate","source":"コース","color":"#2fa84a","meta":{"特徴":"カービング向け整地（要確認）"}},{"id":"trail-forest","type":"trail","label":"林間周回（初級・コース4）","shortLabel":"林間","difficulty":"beginner","source":"コース","color":"#2fa84a","meta":{"特徴":"左側の森を周回する林間コース","公式":"official-map-layout コース4"}},{"id":"trail-pony","type":"trail","label":"ポニーリフト周辺（初級）","shortLabel":"初級","difficulty":"beginner","source":"コース","color":"#2fa84a","meta":{"雪面":"圧雪","特徴":"ワイドな緩斜面"}}],"featureColors":{"lift-pair":"#1a1a1a","lift-pony":"#1a1a1a","trail-intermediate":"#2fa84a","trail-upper":"#d62839","trail-champion":"#6d28d9","trail-forest":"#2fa84a","trail-pony":"#2fa84a"},"status":{"lift-pair":"operating","lift-pony":"stopped","trail-champion":"open","trail-upper":"open","trail-intermediate":"open","trail-forest":"open","trail-pony":"open"},"labels":{"lift-pair":"ペアリフト","lift-pony":"ポニーリフト","trail-champion":"チャンピオン（上級）","trail-upper":"上部エリア（中〜上級）","trail-intermediate":"中斜面コース（中級）","trail-forest":"林間周回（初級・コース4）","trail-pony":"ポニーリフト周辺（初級）"},"updatedAt":"2026-06-10T05:25:49.293Z"}</script>
   <script>
     const fileNav = {
       navHome: "../preview/index.html",
@@ -229,7 +208,7 @@
     }
 
     const DATA = JSON.parse(document.getElementById("map-data").textContent);
-    const STATUS_COLORS = { operating: "#16a34a", open: "#16a34a", stopped: "#64748b", closed: "#64748b", hold: "#f59e0b", unknown: "#94a3b8" };
+    const STATUS_COLORS = { operating: "#7ec8e3", open: "#7ec8e3", stopped: "#64748b", closed: "#64748b", hold: "#f59e0b", unknown: "#94a3b8" };
     const LABELS = { operating: "運転中", open: "滑走可", stopped: "停止", closed: "閉鎖", hold: "確認中", unknown: "確認中" };
     const FEATURE_COLORS = DATA.featureColors || {};
 
@@ -238,10 +217,17 @@
     }
 
     function listBadgeColor(id, type, status) {
+      if (status === "operating" || status === "open") {
+        return STATUS_COLORS[status];
+      }
       if (status === "stopped" || status === "closed" || status === "hold" || status === "unknown") {
         return STATUS_COLORS[status] || STATUS_COLORS.unknown;
       }
       return featureAccent(id, type);
+    }
+
+    function badgeTextColor(status) {
+      return status === "operating" || status === "open" ? "#1c2434" : "#fff";
     }
 
     function isStoppedLift(id) {
@@ -253,40 +239,10 @@
       return typeFilter !== "all" && type !== typeFilter;
     }
 
-    let searchQuery = "";
-    let difficultyFilter = "all";
-
-    function featureMatchesSearch(feat, query) {
-      const q = query.trim().toLowerCase();
-      if (!q) return true;
-      const hay = [feat.label, feat.shortLabel, feat.id].filter(Boolean).join(" ").toLowerCase();
-      return hay.includes(q);
-    }
-
-    function featureMatchesDifficulty(feat, bucket) {
-      if (bucket === "all") return true;
-      if (feat.type === "lift") return true;
-      const d = feat.difficulty || "";
-      if (bucket === "beginner") return d === "beginner";
-      if (bucket === "intermediate") return d === "intermediate" || d === "intermediate-advanced";
-      if (bucket === "advanced") return d === "advanced" || d === "intermediate-advanced";
-      return true;
-    }
-
-    function featureMeta(feat) {
-      return (DATA.features || []).find((f) => f.id === feat.id) || feat;
-    }
-
-    function isDifficultyDimmed(feat) {
-      const meta = featureMeta(feat);
-      if (meta.type !== "trail" || difficultyFilter === "all") return false;
-      return !featureMatchesDifficulty(meta, difficultyFilter);
-    }
-
     function mapHighlightStyle(feat, isSelected) {
       const accent = featureAccent(feat.id, feat.type);
       const st = DATA.status[feat.id] || "unknown";
-      if ((isDimmed(feat.type) || isDifficultyDimmed(feat)) && !isSelected) {
+      if (isDimmed(feat.type) && !isSelected) {
         return { show: true, stroke: accent, width: 2, opacity: 0.35, dash: null };
       }
       if (feat.type === "lift") {
@@ -296,10 +252,16 @@
         if (st === "hold" || st === "unknown") {
           return { show: true, stroke: STATUS_COLORS[st] || STATUS_COLORS.unknown, width: isSelected ? 3 : 2, opacity: isSelected ? 0.95 : 0.72, dash: "4 3" };
         }
+        if (st === "operating") {
+          return { show: true, stroke: STATUS_COLORS.operating, width: isSelected ? 3.5 : 2.5, opacity: isSelected ? 0.98 : 0.72, dash: null };
+        }
         return { show: isSelected, stroke: accent, width: 3, opacity: 1, dash: null };
       }
       if (st === "closed") {
         return { show: true, stroke: STATUS_COLORS.closed, width: isSelected ? 3 : 2, opacity: isSelected ? 0.9 : 0.5, dash: "5 4" };
+      }
+      if (st === "open") {
+        return { show: true, stroke: STATUS_COLORS.open, width: isSelected ? 3.5 : 2.5, opacity: isSelected ? 0.98 : 0.72, dash: null };
       }
       return { show: isSelected, stroke: accent, width: 3, opacity: 1, dash: null };
     }
@@ -317,7 +279,7 @@
 
     const FIT_SCALE = 1.12;
     let scale = FIT_SCALE, tx = 0, ty = 0, dragging = false, px = 0, py = 0, selected = null;
-    let typeFilter = "trail";
+    let typeFilter = "lift";
 
     function defaultView() {
       const sw = stage.clientWidth;
@@ -445,15 +407,8 @@
     function visibleFeatures() {
       return (DATA.features || []).filter((f) => {
         if (typeFilter !== "all" && f.type !== typeFilter) return false;
-        if (!featureMatchesSearch(f, searchQuery)) return false;
-        if (!featureMatchesDifficulty(f, difficultyFilter)) return false;
         return true;
       });
-    }
-
-    function updateDifficultyVisibility() {
-      const panel = document.getElementById("railDifficulty");
-      if (panel) panel.hidden = typeFilter === "lift";
     }
 
     function renderRailList() {
@@ -476,8 +431,7 @@
         btn.type = "button";
         btn.dataset.id = feat.id;
         btn.classList.toggle("sel", selected === feat.id);
-        btn.style.borderLeftColor = selected === feat.id ? accent : "transparent";
-        btn.innerHTML = '<span class="dot" style="background:' + accent + '"></span><span>' + (DATA.labels[feat.id] || feat.label) + '</span><span class="badge" style="background:' + badge + '">' + (LABELS[st]||st) + '</span>';
+        btn.innerHTML = '<span class="dot" style="background:' + accent + '"></span><span>' + (DATA.labels[feat.id] || feat.label) + '</span><span class="badge" style="background:' + badge + ';color:' + badgeTextColor(st) + '">' + (LABELS[st]||st) + '</span>';
         btn.addEventListener("click", () => selectFeature(feat.id));
         li.appendChild(btn);
         ul.appendChild(li);
@@ -486,28 +440,6 @@
     }
 
     renderRailList();
-    updateDifficultyVisibility();
-
-    const railSearch = document.getElementById("railSearch");
-    if (railSearch) {
-      railSearch.addEventListener("input", () => {
-        searchQuery = railSearch.value;
-        renderRailList();
-      });
-    }
-
-    document.querySelectorAll("#railDifficulty [data-bucket]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        difficultyFilter = btn.dataset.bucket;
-        document.querySelectorAll("#railDifficulty [data-bucket]").forEach((b) => {
-          const active = b.dataset.bucket === difficultyFilter;
-          b.classList.toggle("on", active);
-          b.setAttribute("aria-pressed", active ? "true" : "false");
-        });
-        renderRailList();
-        refreshHighlights();
-      });
-    });
 
     rail.querySelectorAll("[data-filter]").forEach((tab) => {
       tab.addEventListener("click", () => {
@@ -517,65 +449,10 @@
           t.classList.toggle("active", active);
           t.setAttribute("aria-selected", active ? "true" : "false");
         });
-        updateDifficultyVisibility();
         renderRailList();
         refreshHighlights();
       });
     });
-
-    function haversineKm(lat1, lng1, lat2, lng2) {
-      const R = 6371;
-      const dLat = ((lat2 - lat1) * Math.PI) / 180;
-      const dLng = ((lng2 - lng1) * Math.PI) / 180;
-      const a =
-        Math.sin(dLat / 2) ** 2 +
-        Math.cos((lat1 * Math.PI) / 180) *
-          Math.cos((lat2 * Math.PI) / 180) *
-          Math.sin(dLng / 2) ** 2;
-      return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    }
-
-    function initLocationPanel() {
-      const el = document.getElementById("railLocation");
-      const center = DATA.resortCenter;
-      if (!el || !center) return;
-      el.hidden = false;
-      el.innerHTML =
-        '<h3>現在地</h3>' +
-        '<p>屋外で GPS を許可すると、ゲレンデ中心からの距離を表示します（地図上には点を描画しません）。</p>' +
-        '<button type="button" id="locateBtn">距離を取得</button>' +
-        '<p id="locateResult" style="margin-top:8px;font-size:11px;color:var(--slate)"></p>';
-      const btn = document.getElementById("locateBtn");
-      const result = document.getElementById("locateResult");
-      if (!btn || !result) return;
-      btn.addEventListener("click", () => {
-        if (!navigator.geolocation) {
-          result.textContent = "この端末では位置情報を利用できません";
-          return;
-        }
-        btn.disabled = true;
-        result.textContent = "取得中…";
-        navigator.geolocation.getCurrentPosition(
-          (pos) => {
-            const km = Math.round(
-              haversineKm(
-                pos.coords.latitude,
-                pos.coords.longitude,
-                center.lat,
-                center.lng,
-              ) * 10,
-            ) / 10;
-            result.textContent = "ゲレンデ中心から約 " + km + " km";
-            btn.disabled = false;
-          },
-          () => {
-            result.textContent = "位置情報の利用が許可されていません";
-            btn.disabled = false;
-          },
-          { enableHighAccuracy: true, timeout: 15000, maximumAge: 60000 },
-        );
-      });
-    }
 
     function initLiveBadge() {
       const badge = document.getElementById("liveBadge");
@@ -593,14 +470,12 @@
       }
     }
 
-    initLocationPanel();
     initLiveBadge();
 
     function selectFeature(id) {
       selected = id;
       railBody.querySelectorAll("button[data-id]").forEach((b) => {
         b.classList.toggle("sel", b.dataset.id === id);
-        b.style.borderLeftColor = b.dataset.id === id ? featureAccent(b.dataset.id, (DATA.features || []).find((f) => f.id === b.dataset.id)?.type || "trail") : "transparent";
       });
       const hit = (DATA.hitboxes || DATA.lifts).find((h) => h.id === id);
       const feat = (DATA.features || []).find((f) => f.id === id) || hit;
@@ -609,6 +484,7 @@
       detailTitle.textContent = DATA.labels[id] || feat?.label || id;
       detailBadge.textContent = LABELS[st] || st;
       detailBadge.style.background = listBadgeColor(id, feat?.type || "trail", st);
+      detailBadge.style.color = badgeTextColor(st);
       railDetail.style.borderLeftColor = featureAccent(id, feat?.type || (id.startsWith("lift-") ? "lift" : "trail"));
       if (feat?.meta && Object.keys(feat.meta).length) {
         detailMeta.innerHTML = "<dl>" + Object.entries(feat.meta).map(function (e) {

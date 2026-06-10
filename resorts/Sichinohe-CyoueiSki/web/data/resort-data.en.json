@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-07T20:55:00+09:00",
+  "updatedAt": "2026-06-08T12:00:00+09:00",
   "resort": {
     "id": "sichinohe-choei-ski",
     "slug": "sichinohe-choei-ski",
@@ -12,155 +12,195 @@
     }
   },
   "today": {
-    "notice": "Figures shown are placeholders until confirmed by the resort. Items still being verified appear as “TBC”.",
-    "lastUpdated": "Preparing for operations",
+    "notice": "Snow and operations are posted after official confirmation. Figures may change.",
+    "lastUpdated": "Official site reference (2026-06-08)",
     "snapshot": [
       {
         "key": "operations_summary.open_status",
         "title": "Operations",
-        "value": "Preparing",
-        "note": "Opening and closing times will appear here once confirmed.",
+        "value": "Season ended (Mar 1, 2026)",
+        "note": "Typically late Dec–mid Mar. Closed Mondays. Next season announced on the official site.",
         "wide": false
       },
       {
         "key": "snow_conditions.reported_depth_cm",
         "title": "Snow depth & snowfall",
-        "value": "— cm (TBC)",
-        "note": "Base depth and 24-hour snowfall will follow official measurements.",
+        "value": "See official site",
+        "note": "During the season, updated on Tabikura “Today's conditions”.",
         "wide": false
       },
       {
         "key": "operations_summary.lift_summary",
         "title": "Lifts & trails",
-        "value": "Preparing",
-        "note": "Per-lift status will be listed here when available.",
+        "value": "See map",
+        "note": "Live lift and trail status on the map page during operations.",
         "wide": true
       }
     ]
   },
   "access": {
     "cards": [
-      { "k": "Nearest station", "v": "Shichinohe-Towada (approx.)" },
-      { "k": "From station", "v": "Taxi (TBC)" },
-      { "k": "Note", "v": "Times & fares vary" }
+      { "k": "Address", "v": "106-5 Sakugumi, Shichinohe, Kamikita, Aomori 039-2568" },
+      { "k": "Nearest station", "v": "JR Shichinohe-Towada" },
+      { "k": "From station", "v": "Approx. 11 min by car" }
     ],
     "bullets": [
-      "Nearest Shinkansen stop (approx.): Tohoku Shinkansen “Shichinohe-Towada Station”. Confirm details with station and town guides.",
-      "From the station to the resort: taxi is typical. Travel time and fare depend on conditions.",
-      "If using JR East rail passes, check eligible sections and terms on the official JR site."
-    ]
+      "Address: 106-5 Sakugumi, Shichinohe, Kamikita District, Aomori 039-2568, Japan",
+      "Access: Approx. 11 minutes by car from JR Shichinohe-Towada Station / Michi-no-Eki Shichinohe (Tabikura facility page)",
+      "Parking: Free (approx. 300 spaces per local guides — confirm on the official site)",
+      "Hours: Day 9:00–16:00 (last lift 15:40) / Night 17:00–21:00 (no night skiing Sundays)"
+    ],
+    "map": {
+      "source": "https://www.shichinohe-kankou.jp/ski/",
+      "driveMinutes": 11,
+      "driveFrom": "七戸十和田駅・道の駅しちのへ",
+      "driveFromEn": "Shichinohe-Towada Sta. / Michi-no-Eki Shichinohe",
+      "parking": "無料（約300台）",
+      "parkingEn": "Free (approx. 300 spaces)",
+      "mapUrl": "https://www.google.com/maps/dir/?api=1&origin=40.4253,141.094&destination=40.69839,141.099714&travelmode=driving",
+      "bounds": {
+        "minLat": 40.41,
+        "maxLat": 40.71,
+        "minLng": 141.07,
+        "maxLng": 141.12
+      },
+      "landmarks": [
+        {
+          "id": "transit-hub",
+          "label": "七戸十和田駅・道の駅しちのへ",
+          "labelEn": "Shichinohe-Towada Sta. / Michi-no-Eki",
+          "lat": 40.4253,
+          "lng": 141.094,
+          "role": "transit"
+        },
+        {
+          "id": "resort",
+          "label": "七戸町営スキー場",
+          "labelEn": "Shichinohe Town Ski Area",
+          "lat": 40.69839,
+          "lng": 141.099714,
+          "role": "destination"
+        }
+      ]
+    }
   },
   "courses": {
-    "notice": "Distance and grade figures will be updated after official publication.",
+    "notice": "Course names follow the official pamphlet and Tabikura. On-hill signage takes precedence.",
     "items": [
       {
         "name": "Champion (advanced)",
         "distance": "approx. 400 m",
-        "maxSlope": "TBC",
-        "snowType": "Ungroomed (TBC)",
-        "status": "Preparing for publication"
+        "maxSlope": "Advanced",
+        "snowType": "Ungroomed",
+        "status": "Official listing"
       },
       {
         "name": "Upper area (intermediate–advanced)",
-        "distance": "TBC",
-        "maxSlope": "TBC",
-        "snowType": "Groomed / ungroomed (TBC)",
-        "status": "Preparing for publication"
+        "distance": "—",
+        "maxSlope": "Intermediate–advanced",
+        "snowType": "Groomed / ungroomed",
+        "status": "Official listing"
       },
       {
         "name": "Pony lift area (beginner)",
-        "distance": "TBC",
-        "maxSlope": "TBC",
+        "distance": "—",
+        "maxSlope": "Beginner",
         "snowType": "Groomed",
-        "status": "Preparing for publication"
+        "status": "Official listing"
       }
     ]
   },
   "ticketsRental": {
-    "notice": "Prices and availability shown are samples. Update with official information before launch.",
+    "notice": "Prices from [Tabikura lift fares](https://www.shichinohe-kankou.jp/ski/lift.html) (verified 2026-06-08). Window prices prevail if changed.",
     "tickets": [
-      { "name": "Day ticket (adult)", "price": "TBC", "note": "Sold at ticket window / update after confirmation" },
-      { "name": "Day ticket (child)", "price": "TBC", "note": "Sold at ticket window / update after confirmation" },
-      { "name": "Time ticket", "price": "TBC", "note": "Availability being confirmed" }
+      { "name": "Day ticket (adult)", "price": "¥2,500", "note": "Valid on pair & pony lifts" },
+      { "name": "Day ticket (child / junior high)", "price": "¥1,500", "note": "Valid on pair & pony lifts" },
+      { "name": "Family pack (1 adult + 1 child)", "price": "¥3,500", "note": "Price for two people" },
+      { "name": "2-hour ticket (adult)", "price": "¥1,300", "note": "—" },
+      { "name": "2-hour ticket (child / junior high)", "price": "¥700", "note": "—" },
+      { "name": "Night ticket (adult)", "price": "¥1,500", "note": "No night skiing Sundays" },
+      { "name": "Night ticket (child / junior high)", "price": "¥1,000", "note": "—" },
+      { "name": "Season pass (adult)", "price": "¥20,000", "note": "Sold year-round" },
+      { "name": "Season pass (child / junior high)", "price": "¥12,000", "note": "Sold year-round" }
     ],
     "rentals": [
-      { "item": "Ski set", "status": "Preparing", "note": "Skis, boots, poles — scope being confirmed" },
-      { "item": "Snowboard set", "status": "Preparing", "note": "Board and boots — scope being confirmed" },
-      { "item": "Outerwear", "status": "Preparing", "note": "Jacket/pants and sizing policy being confirmed" }
+      { "item": "Ski set", "status": "TBC", "note": "See [Tabikura rentals](https://www.shichinohe-kankou.jp/ski/rental.html)" },
+      { "item": "Snowboard set", "status": "TBC", "note": "Same as above" },
+      { "item": "Outerwear", "status": "TBC", "note": "Same as above" }
     ],
     "payments": [
-      { "method": "Cash", "status": "Expected" },
+      { "method": "Cash", "status": "Accepted" },
       { "method": "Credit card", "status": "TBC" },
       { "method": "QR / mobile pay", "status": "TBC" }
     ]
   },
   "lessonsEvents": {
-    "notice": "Registration times, age limits, and fees will be posted after confirmation.",
+    "notice": "Lessons and events: [Tabikura ski & snowboard school](https://www.shichinohe-kankou.jp/ski/school.html).",
     "items": [
       {
         "name": "Free night lesson (Thursdays)",
         "time": "19:00–20:00 (TBC)",
         "target": "Beginner–intermediate",
-        "status": "Preparing",
-        "note": "Registration expected until 5 minutes before start. Details after official confirmation."
+        "status": "Confirm on official site",
+        "note": "On night-skiing days only. Check Tabikura for details."
       },
       {
         "name": "General lessons",
         "time": "Daytime (TBC)",
         "target": "Beginner–advanced",
-        "status": "Preparing",
-        "note": "Age groups, class levels, and booking method being confirmed."
+        "status": "Confirm on official site",
+        "note": "Age groups and booking via the official site."
       }
     ]
   },
   "stayLocal": {
     "notice": "Third-party facilities may change hours and prices. Always check official sources.",
     "spots": [
-      { "category": "Hot spring", "name": "Higashi-Hakkoda Onsen (planned)", "summary": "Hours and fees after official confirmation" },
-      { "category": "Hot spring", "name": "Tsuta Onsen Ryokan (planned)", "summary": "Private bath and day-use TBC" },
-      { "category": "Dining", "name": "Slope-side & local restaurants", "summary": "Hours and closed days updated as confirmed" }
+      { "category": "Hot spring", "name": "Higashi-Hakkoda Onsen", "summary": "Local onsen in Shichinohe (see each facility's site)" },
+      { "category": "Hot spring", "name": "Tsuta Onsen Ryokan", "summary": "Day-use availability TBC" },
+      { "category": "Dining", "name": "Town hut & local restaurants", "summary": "Hours on official listings" }
     ]
   },
   "news": {
     "items": [
       {
+        "id": "news-003",
+        "date": "2026-02-28",
+        "title": "2025–26 season operations ended",
+        "category": "Operations",
+        "body": "Operations ended on Sunday, March 1, 2026 at 16:00. Thank you for visiting this season. (Source: Tabikura)"
+      },
+      {
         "id": "news-001",
         "date": "2026-05-07",
         "title": "Official site framework published",
         "category": "Site update",
-        "body": "Early release of home, today's operations, access, tickets, courses, and related pages."
-      },
-      {
-        "id": "news-002",
-        "date": "2026-05-07",
-        "title": "Operations page is being prepared",
-        "category": "Operations",
-        "body": "Confirmed snow depth, lift status, and hours will be posted after official verification."
+        "body": "Home, today's operations, access, tickets, courses, and related pages are live."
       }
     ]
   },
   "contact": {
     "general": {
-      "description": "General inquiries on hours, tickets, and access (preparing)",
-      "phone": "TBC",
-      "hours": "TBC"
+      "description": "Inquiries on hours, tickets, and access",
+      "phone": "0176-62-5612",
+      "hours": "During season 9:00–16:00 (night 17:00–21:00)"
     },
     "group": {
-      "description": "Groups, filming, and media — please contact in advance (desk being set up).",
-      "email": "Preparing",
-      "form": "Preparing"
+      "description": "Operator: Nanbu-Jukan Co., Ltd. — groups and media please contact in advance",
+      "email": "Official inquiry form",
+      "form": "https://www.shichinohe-kankou.jp/ski/inquiry.html"
     }
   },
   "liftDeals": {
-    "notice": "Listings are being prepared. Always verify price, availability, and terms on each partner site.",
+    "notice": "Partner deals are being prepared. Always verify price, availability, and terms on each partner site.",
     "sections": [
       {
-        "title": "Lift ticket deals (preparing)",
-        "body": "Season passes, early bird, and weekday offers will be listed with partners."
+        "title": "Lift & season tickets",
+        "body": "Official fares are on the Tickets & rental page. Early bird and family offers — confirm at the window or on Tabikura."
       },
       {
-        "title": "Stay & transport (preparing)",
-        "body": "Lodging and transport bundles will be shown with clear terms and disclaimers."
+        "title": "Stay & transport",
+        "body": "Lodging and transport bundles will be listed with clear terms and disclaimers."
       }
     ]
   },
@@ -190,7 +230,7 @@
     ]
   },
   "faq": {
-    "notice": "Content may change. Also check “Today's operations & snow” for the latest status.",
+    "notice": "Content may change. Also check Today's operations & snow and the map for the latest status.",
     "categories": [
       {
         "id": "access",
@@ -199,12 +239,12 @@
           {
             "id": "faq-access-1",
             "question": "What is the nearest station?",
-            "answer": "Tohoku Shinkansen Shichinohe-Towada Station is the nearest stop (approx.). Taxis are typical from the station to the resort. Confirm travel time and fare with operators on the day."
+            "answer": "JR Shichinohe-Towada Station. Approx. 11 minutes by car from the station or Michi-no-Eki Shichinohe (Tabikura facility page)."
           },
           {
             "id": "faq-access-2",
             "question": "Is there parking?",
-            "answer": "Parking availability, capacity, and fees will be posted after official confirmation. Winter road conditions can affect access."
+            "answer": "Free parking is available (approx. 300 spaces per local guides). Winter road conditions can affect access."
           }
         ]
       },
@@ -215,12 +255,12 @@
           {
             "id": "faq-tickets-1",
             "question": "Where can I buy lift tickets?",
-            "answer": "Ticket window sales are planned. Confirmed types and prices will be on the Tickets & rental page. Online sales will be announced separately if offered."
+            "answer": "At the ticket window during the season. Day tickets: adult ¥2,500, child/junior high ¥1,500 — see Tickets & rental for the full list."
           },
           {
             "id": "faq-tickets-2",
-            "question": "What payment methods are accepted?",
-            "answer": "Cash plus credit card and QR payment availability will be updated after confirmation with the resort."
+            "question": "Are preschool children free?",
+            "answer": "Yes — preschool children ride lifts free (Tabikura lift fares)."
           }
         ]
       },
@@ -230,8 +270,8 @@
         "items": [
           {
             "id": "faq-ops-1",
-            "question": "When is operations information updated?",
-            "answer": "We post what the resort has verified before opening and during the day. Last updated time appears on the Today's operations page."
+            "question": "What are the opening hours?",
+            "answer": "Day skiing 9:00–16:00 (last lift 15:40). Night skiing 17:00–21:00 (closed Sunday nights). Closed every Monday."
           },
           {
             "id": "faq-ops-2",

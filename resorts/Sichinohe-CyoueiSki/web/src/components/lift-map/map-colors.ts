@@ -66,6 +66,14 @@ export function mapHighlightStyle(
         dasharray: "4 3",
       };
     }
+    if (status === "operating") {
+      return {
+        show: true,
+        stroke: STATUS_COLORS.operating,
+        strokeWidth: selected ? 3.5 : 2.5,
+        opacity: selected ? 0.98 : 0.72,
+      };
+    }
     if (bakedLines) {
       return {
         show: selected,
@@ -100,6 +108,14 @@ export function mapHighlightStyle(
       strokeWidth: selected ? 3 : 1.5,
       opacity: trailOpacity(id, statusById),
       dasharray: "8 4",
+    };
+  }
+  if (status === "open") {
+    return {
+      show: true,
+      stroke: STATUS_COLORS.open,
+      strokeWidth: selected ? 3.5 : 2.5,
+      opacity: selected ? 0.98 : 0.72,
     };
   }
   if (bakedLines) {

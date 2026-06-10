@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { isAdminAuthorized } from "@/lib/admin-auth";
+import { isAdminRateLimited } from "@/lib/admin-rate-limit";
 import {
   getResortData,
   updateResortData,
@@ -27,10 +28,19 @@ const ALLOWED_PATCH_KEYS: Array<keyof ResortData> = [
   "faq",
 ];
 
-export async function GET(req: Request) {
+function adminGuard(req: Request): Response | null {
+  if (isAdminRateLimited(req)) {
+    return NextResponse.json({ error: "rate_limited" }, { status: 429 });
+  }
   if (!isAdminAuthorized(req)) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
+  return null;
+}
+
+export async function GET(req: Request) {
+  const denied = adminGuard(req);
+  if (denied) return denied;
 
   try {
     const data = await getResortData();
@@ -42,9 +52,8 @@ export async function GET(req: Request) {
 }
 
 export async function POST(req: Request) {
-  if (!isAdminAuthorized(req)) {
-    return NextResponse.json({ error: "unauthorized" }, { status: 401 });
-  }
+  const denied = adminGuard(req);
+  if (denied) return denied;
 
   let body: Body;
   try {

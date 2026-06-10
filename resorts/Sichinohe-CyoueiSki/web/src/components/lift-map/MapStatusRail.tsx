@@ -3,22 +3,14 @@
 import { useTranslations } from "next-intl";
 import { useMemo } from "react";
 import { MapFeatureDetail } from "./MapFeatureDetail";
-import { MapLocationPanel } from "./MapLocationPanel";
-import {
-  DIFFICULTY_BUCKETS,
-  featureMatchesDifficulty,
-  type DifficultyBucket,
-} from "./map-difficulty";
-import { featureMatchesSearch } from "./map-search";
 import type { MapFeature } from "./types";
-import { featureAccentColor, featureListBadgeColor } from "./feature-colors";
+import {
+  featureAccentColor,
+  featureListBadgeColor,
+  statusBadgeUsesDarkText,
+} from "./feature-colors";
 import { useMapStatusLabel } from "./map-i18n";
 import { mapFocusRing } from "./map-focus";
-
-type ResortCenter = {
-  lat: number;
-  lng: number;
-};
 
 type Props = {
   features: MapFeature[];
@@ -29,11 +21,6 @@ type Props = {
   onDeselect: () => void;
   filter: "all" | "lift" | "trail";
   onFilterChange?: (filter: "all" | "lift" | "trail") => void;
-  searchQuery: string;
-  onSearchChange: (query: string) => void;
-  difficultyFilter: DifficultyBucket;
-  onDifficultyChange: (bucket: DifficultyBucket) => void;
-  resortCenter?: ResortCenter;
   className?: string;
 };
 
@@ -46,26 +33,15 @@ export function MapStatusRail({
   onDeselect,
   filter,
   onFilterChange,
-  searchQuery,
-  onSearchChange,
-  difficultyFilter,
-  onDifficultyChange,
-  resortCenter,
   className = "",
 }: Props) {
   const t = useTranslations("map");
   const statusLabel = useMapStatusLabel();
 
-  const visible = useMemo(() => {
-    let list = features.filter((f) => filter === "all" || f.type === filter);
-    if (searchQuery.trim()) {
-      list = list.filter((f) => featureMatchesSearch(f, searchQuery));
-    }
-    if (difficultyFilter !== "all") {
-      list = list.filter((f) => featureMatchesDifficulty(f, difficultyFilter));
-    }
-    return list;
-  }, [features, filter, searchQuery, difficultyFilter]);
+  const visible = useMemo(
+    () => features.filter((f) => filter === "all" || f.type === filter),
+    [features, filter],
+  );
 
   if (features.length === 0) return null;
 
@@ -80,8 +56,6 @@ export function MapStatusRail({
             { title: t("groups.lifts"), items: lifts },
             { title: t("groups.trails"), items: trails },
           ].filter((g) => g.items.length > 0);
-
-  const showDifficulty = filter !== "lift";
 
   return (
     <div
@@ -106,8 +80,8 @@ export function MapStatusRail({
         >
           {(
             [
-              { id: "trail" as const, label: t("filters.trails") },
               { id: "lift" as const, label: t("filters.lifts") },
+              { id: "trail" as const, label: t("filters.trails") },
             ] as const
           ).map((tab) => {
             const active = filter === tab.id;
@@ -129,52 +103,11 @@ export function MapStatusRail({
             );
           })}
         </div>
-        <label className="map-type-body mt-3 block">
-          <span className="sr-only">{t("search.label")}</span>
-          <input
-            type="search"
-            value={searchQuery}
-            onChange={(e) => onSearchChange(e.target.value)}
-            placeholder={t("search.placeholder")}
-            aria-label={t("search.label")}
-            className={`map-type-body w-full rounded-md border border-[color:var(--map-rail-border)] bg-[color:var(--canvas)] px-3 py-2 text-sm text-[color:var(--ink)] placeholder:text-[color:var(--map-rail-muted)] ${mapFocusRing}`}
-          />
-        </label>
-        {showDifficulty ? (
-          <div
-            className="mt-3 flex flex-wrap gap-1.5"
-            role="group"
-            aria-label={t("difficulty.label")}
-          >
-            {DIFFICULTY_BUCKETS.map((bucket) => {
-              const active = difficultyFilter === bucket;
-              const label =
-                bucket === "all"
-                  ? t("difficulty.all")
-                  : t(`difficulty.${bucket}`);
-              return (
-                <button
-                  key={bucket}
-                  type="button"
-                  aria-pressed={active}
-                  onClick={() => onDifficultyChange(bucket)}
-                  className={`map-type-body rounded-full px-2.5 py-1 text-[0.6875rem] font-semibold transition ${mapFocusRing} ${
-                    active
-                      ? "bg-[color:var(--canvas)] text-[color:var(--ink)] ring-1 ring-[color:var(--map-rail-border)]"
-                      : "text-[color:var(--map-rail-muted)] hover:text-[color:var(--map-rail-text)]"
-                  }`}
-                >
-                  {label}
-                </button>
-              );
-            })}
-          </div>
-        ) : null}
       </div>
       <div className="min-h-0 flex-1 overflow-y-auto">
         {groups.length === 0 ? (
           <p className="map-type-body px-4 py-6 text-center text-sm text-[color:var(--map-rail-muted)]">
-            {t("search.noResults")}
+            {t("status.empty")}
           </p>
         ) : (
           groups.map((group) => (
@@ -196,6 +129,7 @@ export function MapStatusRail({
                     feature.status,
                   );
                   const selected = selectedId === feature.id;
+                  const liveBadge = statusBadgeUsesDarkText(feature.status);
 
                   return (
                     <li key={feature.id}>
@@ -203,27 +137,24 @@ export function MapStatusRail({
                         type="button"
                         onClick={() => onSelect(feature.id)}
                         aria-pressed={selected}
-                        className={`map-type-body flex w-full items-center gap-3 px-3 py-2.5 text-left transition ${mapFocusRing} ${
+                        className={`map-type-body flex w-full items-center gap-2 rounded-lg px-2 py-2 text-left text-[0.8125rem] transition ${mapFocusRing} ${
                           selected
-                            ? "bg-[color:var(--canvas)] ring-1 ring-[color:var(--map-rail-border)]"
+                            ? "bg-[color:var(--canvas)] outline outline-2 outline-[color:var(--alpine)] outline-offset-[-2px]"
                             : "hover:bg-[color:var(--canvas)]"
                         }`}
-                        style={
-                          selected
-                            ? { boxShadow: `inset 3px 0 0 ${accent}` }
-                            : undefined
-                        }
                       >
                         <span
-                          className="h-2.5 w-2.5 shrink-0 rounded-full"
+                          className="h-[7px] w-[7px] shrink-0 rounded-full"
                           style={{ backgroundColor: accent }}
                           aria-hidden
                         />
-                        <span className="min-w-0 flex-1 truncate text-sm font-medium text-[color:var(--map-rail-text)]">
+                        <span className="min-w-0 flex-1 truncate font-medium text-[color:var(--map-rail-text)]">
                           {feature.label}
                         </span>
                         <span
-                          className="shrink-0 rounded-full px-2 py-0.5 text-[0.625rem] font-semibold text-white"
+                          className={`shrink-0 rounded-full px-1.5 py-0.5 text-[0.5rem] font-bold ${
+                            liveBadge ? "text-[color:var(--ink)]" : "text-white"
+                          }`}
                           style={{ backgroundColor: badgeColor }}
                         >
                           {statusLabel(feature.status)}
@@ -237,7 +168,6 @@ export function MapStatusRail({
           ))
         )}
       </div>
-      <MapLocationPanel resortCenter={resortCenter} />
       {selectedFeature ? (
         <MapFeatureDetail
           feature={selectedFeature}
