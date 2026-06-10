@@ -6,7 +6,7 @@
 
 | パス | 内容 |
 |------|------|
-| [`resorts/Sichinohe-CyoueiSki/`](./resorts/Sichinohe-CyoueiSki/) | 七戸町営スキー場 — 本番 Next.js（`web/`）・マップ艦隊・運用データ |
+| [`Sichinohe-CyoueiSki/`](./Sichinohe-CyoueiSki/) | 七戸町営スキー場 — 本番 Next.js（`web/`）・マップ艦隊・運用データ |
 | `NanakoCyoueiSki/` | レガシー参照（ルート直下・触らない） |
 
 ## 新規ゲレンデの追加
@@ -18,7 +18,7 @@
 ## 開発（七戸）
 
 ```bash
-cd resorts/resorts/Sichinohe-CyoueiSki/web
+cd resorts/Sichinohe-CyoueiSki/web
 npm install
 npm run dev
 ```
@@ -28,3 +28,11 @@ npm run dev
 ```bash
 npm run preview:map
 ```
+
+## Vercel（モノレポ）
+
+| ゲレンデ | Vercel プロジェクト | Root Directory |
+|----------|---------------------|----------------|
+| 七戸 | `sichinohe-choei`（ルート `vercel.json`） | リポジトリルート — ビルドは `resorts/Sichinohe-CyoueiSki/web` |
+
+2本目以降は **New Project → 同じ repo → Root Directory を `resorts/<名前>/web`** に設定。
