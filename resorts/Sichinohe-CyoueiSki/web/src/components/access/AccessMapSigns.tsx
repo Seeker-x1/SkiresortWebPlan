@@ -65,7 +65,9 @@ function SignMarker({
     : "h-2 w-2 rounded-full bg-[color:var(--award-color-muted)] ring-2 ring-white";
 
   const pill = (
-    <div className={`max-w-[8.5rem] whitespace-nowrap sm:max-w-[9.5rem] ${pillClass}`}>
+    <div
+      className={`inline-flex max-w-[min(13rem,calc(100vw-3rem))] items-center justify-center whitespace-nowrap ${pillClass}`}
+    >
       {label}
     </div>
   );
