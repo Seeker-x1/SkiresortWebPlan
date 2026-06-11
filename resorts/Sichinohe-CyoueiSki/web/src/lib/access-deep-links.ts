@@ -36,17 +36,6 @@ export function appleMapsNavigateUrl(destination: NavPoint): string {
   return `https://maps.apple.com/?${params}`;
 }
 
-/** 駅など指定起点 → ゲレンデ（ルートプレビュー） */
-export function googleMapsRouteUrl(origin: NavPoint, destination: NavPoint): string {
-  const params = new URLSearchParams({
-    api: "1",
-    origin: `${origin.lat},${origin.lng}`,
-    destination: `${destination.lat},${destination.lng}`,
-    travelmode: "driving",
-  });
-  return `https://www.google.com/maps/dir/?${params}`;
-}
-
 export type MobilePlatform = "ios" | "android" | "other";
 
 export function detectMobilePlatform(): MobilePlatform {

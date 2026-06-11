@@ -56,8 +56,6 @@ export type AccessTaxiInfo = {
 };
 
 export type AccessMapData = {
-  /** 概略アクセス図（SVG/PNG）。未指定時は座標から SVG を生成 */
-  illustrationSrc?: string;
   source: string;
   driveMinutes: number;
   /** ヒーローカード用のタクシー所要（分）。未指定時は driveMinutes */
@@ -66,7 +64,6 @@ export type AccessMapData = {
   driveFromEn: string;
   parking: string;
   parkingEn: string;
-  mapUrl: string;
   bounds: {
     minLat: number;
     maxLat: number;
