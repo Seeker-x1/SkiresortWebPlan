@@ -152,7 +152,7 @@ export function LiftMapViewer({ variant = "full" }: Props) {
       ) : null}
 
       {hasStatusRail && !splitRail ? (
-        <aside className="pointer-events-auto absolute inset-y-0 left-0 z-20 hidden w-72 flex-col border-r border-[color:var(--map-rail-border)] bg-[color:var(--map-rail-bg)] md:flex">
+        <aside className="pointer-events-auto absolute inset-y-0 right-0 z-20 hidden w-72 flex-col border-l border-[color:var(--map-rail-border)] bg-[color:var(--map-rail-bg)] md:flex">
           <MapStatusRail {...railProps} className="h-full" />
         </aside>
       ) : null}
@@ -182,12 +182,12 @@ export function LiftMapViewer({ variant = "full" }: Props) {
               : "relative min-h-0 flex-1 w-full"
           }
         >
+          {mapStage}
           {splitRail ? (
-            <aside className="hidden w-80 shrink-0 flex-col border-r border-[color:var(--map-rail-border)] bg-[color:var(--map-rail-bg)] md:flex">
+            <aside className="hidden w-80 shrink-0 flex-col border-l border-[color:var(--map-rail-border)] bg-[color:var(--map-rail-bg)] md:flex">
               <MapStatusRail {...railProps} className="h-full min-h-0" />
             </aside>
           ) : null}
-          {mapStage}
         </div>
       </div>
 
