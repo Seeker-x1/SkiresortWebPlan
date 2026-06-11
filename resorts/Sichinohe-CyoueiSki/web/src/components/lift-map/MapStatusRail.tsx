@@ -80,8 +80,8 @@ export function MapStatusRail({
         >
           {(
             [
-              { id: "lift" as const, label: t("filters.lifts") },
               { id: "trail" as const, label: t("filters.trails") },
+              { id: "lift" as const, label: t("filters.lifts") },
             ] as const
           ).map((tab) => {
             const active = filter === tab.id;

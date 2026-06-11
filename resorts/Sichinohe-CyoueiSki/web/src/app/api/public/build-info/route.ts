@@ -7,7 +7,7 @@ export async function GET() {
       commit: process.env.VERCEL_GIT_COMMIT_SHA ?? "local",
       ref: process.env.VERCEL_GIT_COMMIT_REF ?? "local",
       deploymentId: process.env.VERCEL_DEPLOYMENT_ID ?? null,
-      railUi: "no-search-v2",
+      railUi: "split-rail-left-trail-default",
       statusSource: "git-deployed-json-first",
     },
     {
