@@ -44,6 +44,8 @@ export type AccessLandmark = {
 };
 
 export type AccessMapData = {
+  /** 概略アクセス図（SVG/PNG）。未指定時は座標から SVG を生成 */
+  illustrationSrc?: string;
   source: string;
   driveMinutes: number;
   driveFrom: string;

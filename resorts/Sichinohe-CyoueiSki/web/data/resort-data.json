@@ -51,6 +51,7 @@
       "営業時間：通常 9:00〜16:00（リフト最終乗車 15:40）／ナイター 17:00〜21:00（日曜ナイター休業）"
     ],
     "map": {
+      "illustrationSrc": "/images/access/sichinohe-access-map.svg",
       "source": "https://www.shichinohe-kankou.jp/ski/",
       "driveMinutes": 11,
       "driveFrom": "七戸十和田駅・道の駅しちのへ",
