@@ -124,7 +124,11 @@
       "stationRoute": "Route from Shichinohe-Towada Station",
       "goTaxiNote": "GO opens the official app store or website. Set your pickup near the station in the app.",
       "parking": "Parking",
-      "sourceNote": "Source: Shichinohe tourism Tabikura. Travel time varies with road conditions."
+      "sourceNote": "Source: Shichinohe tourism Tabikura. Travel time varies with road conditions.",
+      "taxiEyebrow": "TAXI",
+      "taxiPhoneLabel": "Tel",
+      "taxiAddressLabel": "Address",
+      "signOpenMaps": "Open {place} in Google Maps"
     }
   },
   "contact": {

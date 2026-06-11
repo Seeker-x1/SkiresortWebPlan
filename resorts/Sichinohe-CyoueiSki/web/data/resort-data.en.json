@@ -44,6 +44,14 @@
       { "k": "Nearest station", "v": "JR Shichinohe-Towada" },
       { "k": "From station", "v": "Approx. 11 min by car" }
     ],
+    "taxi": {
+      "company": "（株）縦貫タクシー",
+      "companyEn": "Jukan Taxi Co., Ltd.",
+      "phone": "0176-62-2121",
+      "phoneHref": "tel:0176622121",
+      "address": "上北郡七戸町荒熊内211−1",
+      "addressEn": "211-1 Arakumauchi, Shichinohe, Kamikita, Aomori"
+    },
     "bullets": [
       "Address: 106-5 Sakugumi, Shichinohe, Kamikita District, Aomori 039-2568, Japan",
       "Access: Approx. 11 minutes by car from JR Shichinohe-Towada Station / Michi-no-Eki Shichinohe (Tabikura facility page)",

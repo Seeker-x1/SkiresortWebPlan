@@ -1,8 +1,15 @@
+import type { CSSProperties } from "react";
 import type { AccessLandmark, AccessMapData } from "@/lib/resort-data";
+
+export type SignLink = {
+  landmark: AccessLandmark;
+  href: string;
+  ariaLabel: string;
+};
 
 type Props = {
   bounds: AccessMapData["bounds"];
-  landmarks: AccessMapData["landmarks"];
+  signLinks: SignLink[];
   en?: boolean;
 };
 
@@ -11,12 +18,9 @@ function landmarkShortLabel(landmark: AccessLandmark, en: boolean): string {
   return landmark.shortLabel ?? landmark.label;
 }
 
-/** 右カラム内の X（地理 lng をサインゾーン幅に正規化） */
 function projectSignX(lng: number, bounds: AccessMapData["bounds"]): number {
   const geoX = (lng - bounds.minLng) / (bounds.maxLng - bounds.minLng);
-  const xMin = 14;
-  const xMax = 86;
-  return xMin + geoX * (xMax - xMin);
+  return 14 + geoX * 72;
 }
 
 type SignSlot = {
@@ -53,8 +57,8 @@ function SignMarker({
   labelBelow: boolean;
 }) {
   const pillClass = isDestination
-    ? "rounded-full bg-white px-3 py-1.5 text-center text-[0.6875rem] font-semibold leading-tight text-[color:var(--award-color-fg)] shadow-[0_8px_24px_rgb(20_26_38_/16%)] sm:text-xs"
-    : "rounded-full border border-[color:var(--award-color-border)] bg-white/95 px-3 py-1.5 text-center text-[0.6875rem] font-medium leading-tight text-[color:var(--award-color-muted)] shadow-[0_6px_20px_rgb(20_26_38_/10%)] sm:text-xs";
+    ? "rounded-full bg-white px-3 py-1.5 text-center text-[0.6875rem] font-semibold leading-tight text-[color:var(--award-color-fg)] shadow-[0_8px_24px_rgb(20_26_38_/16%)] transition-transform duration-200 ease-[var(--ease-award)] motion-safe:group-hover:scale-[1.03] sm:text-xs"
+    : "rounded-full border border-[color:var(--award-color-border)] bg-white/95 px-3 py-1.5 text-center text-[0.6875rem] font-medium leading-tight text-[color:var(--award-color-muted)] shadow-[0_6px_20px_rgb(20_26_38_/10%)] transition-transform duration-200 ease-[var(--ease-award)] motion-safe:group-hover:scale-[1.03] sm:text-xs";
 
   const dotClass = isDestination
     ? "h-2.5 w-2.5 rounded-full bg-[color:var(--award-color-accent)] ring-2 ring-white"
@@ -69,83 +73,112 @@ function SignMarker({
   return (
     <div className="flex flex-col items-center gap-1.5">
       {!labelBelow ? pill : null}
-      <span className={dotClass} />
+      <span className={dotClass} aria-hidden={true} />
       {labelBelow ? pill : null}
     </div>
   );
 }
 
-/** 装飾用フローティングサイン（駅・ゲレンデのみ、ルート線なし） */
-export function AccessMapSigns({ bounds, landmarks, en = false }: Props) {
-  const transit = landmarks.find((l) => l.role === "transit");
-  const destination = landmarks.find((l) => l.role === "destination");
+function SignLinkAnchor({
+  link,
+  en,
+  className,
+  style,
+  centerX = true,
+}: {
+  link: SignLink;
+  en: boolean;
+  className: string;
+  style?: CSSProperties;
+  centerX?: boolean;
+}) {
+  const isDestination = link.landmark.role === "destination";
+  const labelBelow = isDestination;
+
+  return (
+    <a
+      href={link.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={link.ariaLabel}
+      className={`group map-focus-ring pointer-events-auto flex min-h-11 min-w-11 items-center justify-center ${centerX ? "-translate-x-1/2" : ""} ${className}`}
+      style={style}
+    >
+      <SignMarker
+        label={landmarkShortLabel(link.landmark, en)}
+        isDestination={isDestination}
+        labelBelow={labelBelow}
+      />
+    </a>
+  );
+}
+
+/** 地図上のフローティングサイン（タップで Google マップの地点表示） */
+export function AccessMapSigns({ bounds, signLinks, en = false }: Props) {
+  const destination = signLinks.find((l) => l.landmark.role === "destination");
+  const transit = signLinks.find((l) => l.landmark.role === "transit");
 
   return (
     <>
-      {/* md+ — カード右 55% のサインゾーンに配置 */}
       <div
-        className="pointer-events-none absolute inset-y-0 z-[5] hidden md:block md:left-[var(--access-sign-zone-left,45%)] md:right-0"
-        aria-hidden={true}
+        className="absolute inset-y-0 z-[5] hidden md:block md:left-[var(--access-sign-zone-left,45%)] md:right-0"
+        role="group"
+        aria-label={en ? "Locations on map" : "地図上の地点"}
       >
         {destination ? (() => {
           const slot = signSlotForRole(
-            destination.lat,
-            destination.lng,
+            destination.landmark.lat,
+            destination.landmark.lng,
             bounds,
             "destination",
           );
           return (
-          <div
-            className="absolute -translate-x-1/2"
-            style={{ left: `${slot.x}%`, top: `${slot.y}%` }}
-          >
-            <SignMarker
-              label={landmarkShortLabel(destination, en)}
-              isDestination
-              labelBelow
+            <SignLinkAnchor
+              link={destination}
+              en={en}
+              className="absolute"
+              style={{ left: `${slot.x}%`, top: `${slot.y}%` }}
             />
-          </div>
           );
         })() : null}
         {transit ? (() => {
-          const slot = signSlotForRole(transit.lat, transit.lng, bounds, "transit");
+          const slot = signSlotForRole(
+            transit.landmark.lat,
+            transit.landmark.lng,
+            bounds,
+            "transit",
+          );
           return (
-          <div
-            className="absolute -translate-x-1/2 -translate-y-full"
-            style={{ left: `${slot.x}%`, top: `${slot.y}%` }}
-          >
-            <SignMarker
-              label={landmarkShortLabel(transit, en)}
-              isDestination={false}
-              labelBelow={false}
+            <SignLinkAnchor
+              link={transit}
+              en={en}
+              className="absolute -translate-y-full"
+              style={{ left: `${slot.x}%`, top: `${slot.y}%` }}
             />
-          </div>
           );
         })() : null}
       </div>
 
-      {/* モバイル — 右上（ゲレンデ）・右下（駅）に固定 */}
       <div
-        className="pointer-events-none absolute inset-0 z-[5] md:hidden"
-        aria-hidden={true}
+        className="absolute inset-0 z-[5] md:hidden"
+        role="group"
+        aria-label={en ? "Locations on map" : "地図上の地点"}
       >
         {destination ? (
-          <div className="absolute right-4 top-[var(--access-sign-inset-y,12%)]">
-            <SignMarker
-              label={landmarkShortLabel(destination, en)}
-              isDestination
-              labelBelow
-            />
-          </div>
+          <SignLinkAnchor
+            link={destination}
+            en={en}
+            centerX={false}
+            className="absolute right-4 top-[var(--access-sign-inset-y,12%)]"
+          />
         ) : null}
         {transit ? (
-          <div className="absolute bottom-[var(--access-sign-inset-y,12%)] right-4">
-            <SignMarker
-              label={landmarkShortLabel(transit, en)}
-              isDestination={false}
-              labelBelow={false}
-            />
-          </div>
+          <SignLinkAnchor
+            link={transit}
+            en={en}
+            centerX={false}
+            className="absolute bottom-[var(--access-sign-inset-y,12%)] right-4"
+          />
         ) : null}
       </div>
     </>

@@ -7,6 +7,15 @@ export type NavPoint = {
   labelEn?: string;
 };
 
+/** 地点ピン表示（ルート・起点なし） */
+export function googleMapsPlaceUrl(point: NavPoint): string {
+  const params = new URLSearchParams({
+    api: "1",
+    query: `${point.lat},${point.lng}`,
+  });
+  return `https://www.google.com/maps/search/?${params}`;
+}
+
 /** 現在地 → 目的地の Google Maps ナビ（アプリ優先） */
 export function googleMapsNavigateUrl(destination: NavPoint): string {
   const params = new URLSearchParams({

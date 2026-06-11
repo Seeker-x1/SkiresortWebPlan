@@ -44,6 +44,14 @@
       { "k": "最寄り駅", "v": "JR七戸十和田駅" },
       { "k": "駅から", "v": "車で約11分" }
     ],
+    "taxi": {
+      "company": "（株）縦貫タクシー",
+      "companyEn": "Jukan Taxi Co., Ltd.",
+      "phone": "0176-62-2121",
+      "phoneHref": "tel:0176622121",
+      "address": "上北郡七戸町荒熊内211−1",
+      "addressEn": "211-1 Arakumauchi, Shichinohe, Kamikita, Aomori"
+    },
     "bullets": [
       "住所：〒039-2568 青森県上北郡七戸町字左組106-5",
       "アクセス：JR七戸十和田駅・道の駅しちのへから車で約11分（たびくら 施設概要）",

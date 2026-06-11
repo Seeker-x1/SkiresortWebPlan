@@ -46,6 +46,15 @@ export type AccessLandmark = {
   role: "transit" | "destination";
 };
 
+export type AccessTaxiInfo = {
+  company: string;
+  companyEn: string;
+  phone: string;
+  phoneHref: string;
+  address: string;
+  addressEn: string;
+};
+
 export type AccessMapData = {
   /** 概略アクセス図（SVG/PNG）。未指定時は座標から SVG を生成 */
   illustrationSrc?: string;
@@ -94,6 +103,7 @@ export type ResortData = {
   access: {
     cards: Array<{ k: string; v: string }>;
     bullets: string[];
+    taxi?: AccessTaxiInfo;
     map?: AccessMapData;
   };
   courses: {
@@ -297,6 +307,7 @@ export async function updateResortData(
           ...patch.access,
           cards: patch.access.cards ?? current.access.cards,
           bullets: patch.access.bullets ?? current.access.bullets,
+          taxi: patch.access.taxi ?? current.access.taxi,
           map: patch.access.map ?? current.access.map,
         }
       : current.access,
