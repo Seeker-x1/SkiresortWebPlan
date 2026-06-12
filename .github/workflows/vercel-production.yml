@@ -33,7 +33,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      # Vercel project Root Directory is resorts/Sichinohe-CyoueiSki/web — deploy from repo root only.
       - name: Deploy to Vercel Production
+        working-directory: .
         run: npx vercel deploy --prod --yes --token="${{ secrets.VERCEL_TOKEN }}"
         env:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
