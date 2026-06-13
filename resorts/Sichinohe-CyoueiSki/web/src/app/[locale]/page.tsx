@@ -7,6 +7,7 @@ import { PathMagnet } from "@/components/home/PathMagnet";
 import { LpHighlightDuet } from "@/components/home/LpHighlightDuet";
 import { NewsTeaser } from "@/components/home/NewsTeaser";
 import { GuidesReveal } from "@/components/home/GuidesReveal";
+import { NearbyOnsenTeaser } from "@/components/home/NearbyOnsenTeaser";
 
 export default async function Home() {
   const data = await getResortData();
@@ -34,6 +35,8 @@ export default async function Home() {
       <PathMagnet />
 
       {lpFeatured.length >= 2 ? <LpHighlightDuet highlights={lpFeatured} /> : null}
+
+      <NearbyOnsenTeaser />
 
       <NewsTeaser news={data.news} />
 

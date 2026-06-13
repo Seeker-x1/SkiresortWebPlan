@@ -113,7 +113,13 @@ export type StayLocalFeaturedSpot = {
   dayUseUrl?: string;
   officialSource: string;
   image: string;
+  imageSecondary?: string;
   phone: string;
+};
+
+export type OnsenGuideData = {
+  mapsUrl: string;
+  heroImage: string;
 };
 
 export type ResortData = {
@@ -201,6 +207,7 @@ export type ResortData = {
     categories: FaqCategory[];
   };
   lpHighlights?: LpHighlightsConfig;
+  onsenGuide?: OnsenGuideData;
 };
 
 const LP_FEATURED_MAX = 2;

@@ -176,13 +176,18 @@
       "officialUrl": "https://tsutaonsen.com/",
       "dayUseUrl": "https://tsutaonsen.com/hotspring/",
       "officialSource": "Tsuta Onsen Ryokan official website",
-      "image": "/images/hero-slope.png",
+      "image": "/images/tsuta-onsen-rotenburo.png",
+      "imageSecondary": "/images/tsuta-onsen-ryokan.png",
       "phone": "0176-74-2311"
     },
     "spots": [
       { "category": "Hot spring", "name": "Higashi-Hakkoda Onsen", "summary": "Local onsen in Shichinohe (see each facility's site)" },
       { "category": "Dining", "name": "Town hut & local restaurants", "summary": "Hours on official listings" }
     ]
+  },
+  "onsenGuide": {
+    "mapsUrl": "https://www.google.com/maps/search/%E9%9D%92%E6%A3%AE%E7%9C%8C%E4%B8%83%E6%88%B8%E7%94%BA+%E6%B8%A9%E6%B3%89/@40.7013615,141.1793519,20117m/data=!3m1!1e3?entry=ttu",
+    "heroImage": "/images/tsuta-onsen-rotenburo.png"
   },
   "news": {
     "items": [
@@ -320,7 +325,7 @@
         "id": "tsuta-onsen",
         "theme": "stay",
         "source": "SITE_SKELETON A6; stayLocal.spots Tsuta Onsen",
-        "image": "/images/hero-slope.png",
+        "image": "/images/tsuta-onsen-ryokan.png",
         "href": "/stay-local#tsuta-onsen",
         "layout": "secondary"
       },

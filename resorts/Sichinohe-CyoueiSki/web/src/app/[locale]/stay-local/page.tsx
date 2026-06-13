@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { getResortData } from "@/lib/resort-data";
 import { AwardPageShell } from "@/components/AwardPageShell";
 import { StayLocalFeatured } from "@/components/stay-local/StayLocalFeatured";
+import { AwardButton } from "@/components/AwardButton";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("stayLocal");
@@ -27,6 +28,17 @@ export default async function StayLocalPage() {
       <p role="note" className="notice-banner">
         {data.stayLocal.notice}
       </p>
+
+      {data.onsenGuide ? (
+        <section className="border-b border-[color:var(--award-color-border)] pb-12">
+          <p className="award-eyebrow">{t("onsenGuidePromoEyebrow")}</p>
+          <h2 className="heading-md mt-3">{t("onsenGuidePromoTitle")}</h2>
+          <p className="lead mt-4 max-w-2xl">{t("onsenGuidePromoBody")}</p>
+          <AwardButton href="/stay-local/onsen" variant="primary" className="mt-6">
+            {t("onsenGuidePromoCta")}
+          </AwardButton>
+        </section>
+      ) : null}
 
       {featured ? <StayLocalFeatured spot={featured} /> : null}
 

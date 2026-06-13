@@ -18,15 +18,30 @@ export async function StayLocalFeatured({ spot }: StayLocalFeaturedProps) {
       aria-labelledby={`${spot.id}-title`}
     >
       <div className="relative lg:grid lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-14 lg:items-start">
-        <div className="relative aspect-[16/11] overflow-hidden lg:sticky lg:top-28">
-          <Image
-            src={spot.image}
-            alt=""
-            fill
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            className="object-cover"
-            priority
-          />
+        <div className="relative lg:sticky lg:top-28">
+          <div className="relative aspect-[16/11] overflow-hidden">
+            <Image
+              src={spot.image}
+              alt={t("imageAlt")}
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+              priority
+            />
+          </div>
+          {spot.imageSecondary ? (
+            <div className="relative z-10 -mt-12 ml-auto w-[78%] overflow-hidden shadow-[0_24px_64px_rgb(20_26_38_/12%)] sm:-mt-16 sm:w-[68%]">
+              <div className="relative aspect-[16/11]">
+                <Image
+                  src={spot.imageSecondary}
+                  alt={t("imageSecondaryAlt")}
+                  fill
+                  sizes="(max-width: 1024px) 78vw, 34vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          ) : null}
         </div>
 
         <div className="mt-10 lg:mt-0">

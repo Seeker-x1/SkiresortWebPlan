@@ -28,7 +28,7 @@ export async function LpHighlightDuet({ highlights }: LpHighlightDuetProps) {
             <div className="relative aspect-[16/11] overflow-hidden">
               <Image
                 src={primary.image}
-                alt=""
+                alt={t(`items.${primary.id}.imageAlt`)}
                 fill
                 sizes="(max-width: 1024px) 100vw, 68vw"
                 className="object-cover"

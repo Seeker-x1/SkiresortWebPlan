@@ -59,12 +59,14 @@
         "transit-station": {
           "title": "About 11 minutes from the Shinkansen",
           "body": "Roughly 10–11 minutes by taxi from Shichinohe-Towada Station on the Tohoku Shinkansen—easy to fit into a wider trip.",
-          "cta": "Getting here"
+          "cta": "Getting here",
+          "imageAlt": "Traveler on a train looking out at snowy countryside"
         },
         "tsuta-onsen": {
           "title": "Tsuta Onsen — a thousand-year secret spring",
           "body": "Near the Oirase stream gateway, a historic inn famed as a “thousand-year” hot spring. After skiing, soak in rare spring-fed baths (hours and fees on the official site).",
-          "cta": "About Tsuta Onsen"
+          "cta": "About Tsuta Onsen",
+          "imageAlt": "Tsuta Onsen ryokan exterior surrounded by autumn foliage"
         },
         "powder-upper": {
           "title": "Ungroomed upper terrain",
@@ -77,6 +79,14 @@
           "cta": "Lessons & events"
         }
       }
+    },
+    "nearbyOnsen": {
+      "eyebrow": "Nearby hot springs",
+      "title": "An area where true spring flow is everyday life",
+      "body": "Around Shichinohe, onsen lovers call it a paradise of free-flowing spring water. Unlike Aomori’s famous volcanic mud baths, the plains here yield moor springs and alkaline simple springs—amber water that runs generously from bath to shower.",
+      "bodySecondary": "Many day-use baths cost just a few hundred yen. Bring a towel and soap and hop between two or three “silky skin” soaks with locals after skiing.",
+      "cta": "Hot spring guide",
+      "imageAlt": "Outdoor hot spring surrounded by autumn foliage"
     },
     "news": {
       "eyebrow": "News",
@@ -202,11 +212,17 @@
     "description": "Hot springs, dining, and stay ideas near the slopes—summaries aligned with each facility’s official information.",
     "eyebrow": "Local",
     "shellDescription": "Nearby onsen and dining spots, based on official sources. Always confirm hours, prices, and closures on each facility’s website.",
+    "onsenGuidePromoEyebrow": "Hot spring guide",
+    "onsenGuidePromoTitle": "Hot springs around Shichinohe",
+    "onsenGuidePromoBody": "Spring-fed baths, local hopping routes, and historic Tsuta Onsen—your après-ski guide.",
+    "onsenGuidePromoCta": "Read the hot spring guide",
     "otherSpotsTitle": "More nearby spots",
     "featured": {
       "tsuta-onsen": {
         "eyebrow": "Thousand-year secret spring",
         "title": "Tsuta Onsen Ryokan",
+        "imageAlt": "Outdoor bath at Tsuta Onsen overlooking autumn foliage and a forest pond",
+        "imageSecondaryAlt": "Tsuta Onsen ryokan building lit at dusk among autumn trees",
         "lead": "A single inn near the Oirase stream gateway in Towada, Aomori. Rare spring water wells up through the bath floor, surrounded by beech forest—a calm stop after a day on snow.",
         "history": "Records note a healing hut on this site as early as 1147 (Kyuan 3), per the ryokan’s official site. Long cherished by writers as a “thousand-year” secret spring.",
         "highlights": {
@@ -230,6 +246,65 @@
         "sourceNote": "Source: {source} (summary based on official listings as of June 2026)"
       }
     }
+  },
+  "onsenGuide": {
+    "title": "Hot springs around Shichinohe",
+    "description": "Spring-fed water, local bath-hopping, and thousand-year Tsuta Onsen—an après guide after skiing.",
+    "eyebrow": "Hot spring",
+    "shellDescription": "Why the Shichinohe area is loved for free-flowing springs, water types, and how locals hop between baths.",
+    "notice": "Prices, hours, and closures vary by facility and may change. Check official sources before visiting.",
+    "heroImageAlt": "Outdoor hot spring and autumn foliage near Shichinohe",
+    "introTitle": "A spring-flow paradise for onsen fans",
+    "introLead": "Among hot-spring enthusiasts nationwide, the Shichinohe area is sometimes called a miraculous land of true spring-fed baths.",
+    "introBody": "Many picture Aomori onsen as volcanic mud baths like Sukayu. On the Shichinohe plain, however, you find moor springs rich in organic matter and alkaline simple springs that leave skin silky. Amber or oolong-tea-colored water flows generously—even to the showers—in many facilities.",
+    "springEyebrow": "Water types",
+    "springTitle": "Gentle, lotion-like water from the plain",
+    "springLead": "Fresh, constantly flowing water is the signature of this area.",
+    "springItems": {
+      "moor": {
+        "title": "Moor spring",
+        "body": "Rich in plant organic matter—soft, mellow water with a gentle feel."
+      },
+      "alkaline": {
+        "title": "Alkaline simple spring",
+        "body": "Often described as lotion-like water that smooths the skin."
+      },
+      "flow": {
+        "title": "True spring flow",
+        "body": "Many places run spring water straight to baths and showers—you taste the freshness."
+      }
+    },
+    "localEyebrow": "Local style",
+    "localTitle": "Bath-hopping tips",
+    "localLead": "Shichinohe onsen are less resort luxury, more friendly neighborhood day baths.",
+    "localTips": {
+      "price": {
+        "label": "Entry fee",
+        "body": "Often around ¥300–400—remarkably affordable for true spring water."
+      },
+      "shower": {
+        "label": "Spring showers",
+        "body": "Showers fed by the same spring are unusually common here."
+      },
+      "fresh": {
+        "label": "Hot & fresh",
+        "body": "Flowing springs run on the warm side—ideal after a cold day on snow."
+      },
+      "hopping": {
+        "label": "Hop 2–3 baths",
+        "body": "Bring towel and soap, join locals, and visit two or three silky-soak spots in one day."
+      }
+    },
+    "localClosing": "Warm a chilled body with living spring water—that’s the Shichinohe après.",
+    "mapsTitle": "Find baths on the map",
+    "mapsBody": "Day-use baths and sento around Shichinohe town are easy to locate on Google Maps.",
+    "mapsCta": "Search hot springs on Google Maps",
+    "tsutaEyebrow": "Thousand-year secret spring",
+    "tsutaTitle": "Tsuta Onsen Ryokan — history in the forest",
+    "tsutaLead": "Alongside Shichinohe’s day baths stands Tsuta Onsen Ryokan near the Oirase gateway—a thousand-year secret spring in its own class.",
+    "tsutaBody": "Documented history and rare spring water rising through the bath floor. Day use may be available—always confirm hours, fees, and shuttle on the official site.",
+    "tsutaCtaDetail": "Tsuta Onsen details",
+    "backToStayLocal": "Back to local guide"
   },
   "liftDeals": {
     "title": "Lift deals & partners",
