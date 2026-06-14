@@ -60,8 +60,83 @@ body.area-map-page.area-map-page--embed {
 }
 
 .area-map-page--embed .area-shell {
-  min-height: 22rem;
+  min-height: 26rem;
   height: 100%;
+}
+
+.area-google-wrap {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  background: #e8edf2;
+}
+
+.area-google-frame {
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  border: 0;
+}
+
+.area-map-hint {
+  margin: 0;
+  padding: 0.45rem 0.65rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-top: 1px solid var(--area-rail-border);
+  font-size: 0.6875rem;
+  color: var(--area-muted);
+  line-height: 1.45;
+  flex-shrink: 0;
+}
+
+.area-map-page--embed .area-map-hint {
+  font-size: 0.625rem;
+  padding: 0.35rem 0.5rem;
+}
+
+.area-embed-chips {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  gap: 0.35rem;
+  padding: 0.45rem 0.5rem;
+  overflow-x: auto;
+  background: rgba(255, 255, 255, 0.96);
+  border-top: 1px solid var(--area-rail-border);
+  -webkit-overflow-scrolling: touch;
+}
+
+.area-embed-chip {
+  flex: 0 0 auto;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--area-rail-border);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--area-text);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.area-embed-chip.is-active,
+.area-embed-chip:hover {
+  background: var(--area-accent);
+  border-color: var(--area-accent);
+  color: #fff;
+}
+
+.area-map-page--embed .area-google-wrap {
+  bottom: 2.35rem;
+}
+
+.area-map-page--embed .area-disclaimer {
+  bottom: 2.5rem;
 }
 
 .area-stage {
@@ -173,8 +248,19 @@ body.area-map-page.area-map-page--embed {
   padding: 0.5rem 0;
 }
 
+.area-filter-count {
+  align-self: center;
+  margin-left: 0.15rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: var(--area-muted);
+  letter-spacing: 0.04em;
+}
+
 .area-list-item {
-  display: block;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
   width: 100%;
   padding: 0.75rem 1rem;
   border: none;
@@ -185,9 +271,28 @@ body.area-map-page.area-map-page--embed {
   color: inherit;
 }
 
-.area-list-item:hover,
-.area-list-item.is-active {
+.area-list-item__num {
+  flex-shrink: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--area-accent);
+  letter-spacing: 0.06em;
+  padding-top: 0.15rem;
+}
+
+.area-list-item__body {
+  min-width: 0;
+  flex: 1;
+}
+
+.area-list-item:hover {
   background: #f0f4f8;
+}
+
+.area-list-item.is-active {
+  background: #e8f0f8;
+  box-shadow: inset 3px 0 0 var(--area-accent);
 }
 
 .area-list-item__eyebrow {

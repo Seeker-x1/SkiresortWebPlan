@@ -8,6 +8,38 @@
   },
   "center": [43.52, 142.52],
   "zoom": 10,
+  "viewports": {
+    "food": {
+      "lat": 43.585,
+      "lon": 142.458,
+      "zoom": 12,
+      "query": { "ja": "美瑛町 グルメ", "en": "Biei town restaurants" }
+    },
+    "onsen": {
+      "lat": 43.476,
+      "lon": 142.639,
+      "zoom": 12,
+      "query": { "ja": "白金温泉 美瑛", "en": "Shirogane Onsen Biei" }
+    },
+    "anchor": {
+      "lat": 43.541,
+      "lon": 142.537,
+      "zoom": 11,
+      "query": { "ja": "美瑛町 青い池 スキー場", "en": "Biei Blue Pond ski area" }
+    },
+    "foodOnsen": {
+      "lat": 43.53,
+      "lon": 142.55,
+      "zoom": 10,
+      "query": { "ja": "美瑛町 白金温泉", "en": "Biei and Shirogane Onsen" }
+    },
+    "default": {
+      "lat": 43.55,
+      "lon": 142.55,
+      "zoom": 9,
+      "query": { "ja": "美瑛町", "en": "Biei, Hokkaido" }
+    }
+  },
   "disclaimer": {
     "ja": "位置は OpenStreetMap・ナビタイム等の公開情報に基づく概略です。冬季の営業時間・入浴可否・道路規制は各施設・公式でご確認ください。",
     "en": "Locations are approximate from public sources. Confirm winter hours, day-bath availability, and road closures with each facility."
