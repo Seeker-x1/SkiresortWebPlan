@@ -1,12 +1,7 @@
 {
   "meta": {
-    "title": "Kiyosato Midori Ski Area — LP Mock (Transit Skiing Strategy)",
-    "description": "Five minutes on foot from Midori Station—Train, Powder, Onsen. LP mock based on the Kiyosato revenue-doubling strategy."
-  },
-  "banner": {
-    "hubLink": "← Index",
-    "strong": "Kiyosato LP mock",
-    "text": "Transit Skiing · zero-emission day trip | Evaluation for Category 1 → standalone site"
+    "title": "Kiyosato Midori Ski Area",
+    "description": "Train · Powder · Onsen"
   },
   "logo": "Kiyosato Midori Ski Area",
   "hero": {
@@ -142,8 +137,7 @@
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>斜里郡<rt>Shari-gun</rt></ruby></span><span class=\"place-unit\"><ruby>清里町<rt>Kiyosato</rt></ruby></span><span class=\"place-unit\"><ruby>緑町51-1<rt>Midori 51-1</rt></ruby></span>"
   },
   "footer": {
-    "copyright": "© Kiyosato Midori Ski Area — LP mock",
-    "credit": "Operated by Kiyosato Town · Category 1 → standalone site evaluation · AI-generated mock images",
+    "copyright": "© Kiyosato Midori Ski Area",
     "location": "099-4525 · Midori 51-1, Kiyosato, Shari-gun, Hokkaido"
   }
 }

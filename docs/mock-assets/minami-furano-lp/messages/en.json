@@ -1,12 +1,7 @@
 {
   "meta": {
-    "title": "Minami-Furano National Ski Area — LP Mock (Local Sanctuary Strategy)",
-    "description": "A quiet refuge surrounded by Furano and Tomamu. LP mock for Secret Powder Pass, night skiing, and Ezo deer curry partnerships."
-  },
-  "banner": {
-    "hubLink": "← Index",
-    "strong": "Minami-Furano LP mock",
-    "text": "Local sanctuary · Secret Powder Pass strategy | Minami-Furano Town Development Corp. | AI-generated mock images"
+    "title": "Kokusetsu Minami-Furano Ski Area",
+    "description": "Quiet powder in the heart of mega-resorts."
   },
   "logo": "Minami-Furano National Ski Area",
   "hero": {
@@ -167,8 +162,7 @@
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>空知郡<rt>Sorachi-gun</rt></ruby></span><span class=\"place-unit\"><ruby>南富良野町<rt>Minami-Furano</rt></ruby></span><span class=\"place-unit\"><ruby>字幾寅<rt>Kito</rt></ruby></span>"
   },
   "footer": {
-    "copyright": "© Minami-Furano National Ski Area — LP mock",
-    "credit": "Minami-Furano Town Development Corp. (designated manager) · Based on local sanctuary strategy report",
+    "copyright": "© Kokusetsu Minami-Furano Ski Area",
     "location": "079-2402 · Kito, Minami-Furano, Sorachi-gun, Hokkaido"
   }
 }

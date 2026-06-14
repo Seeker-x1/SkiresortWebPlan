@@ -1,12 +1,7 @@
 {
   "meta": {
-    "title": "Shimukappu Central Ski Area — LP Mock (Zero-Revenue Ecosystem · Patronage Strategy)",
-    "description": "No chairlifts, no crowds, pure powder. Two rope tows only, free for villagers, 100% advanced skiers, 34-minute average stay. Contrast with nearby Tomamu mega-resort. Powder Patronage donations, Secret Powder Experience ¥30,000–50,000, Rope Tow Master certification, mobile fat-ski rental—LP mock based on the Shimukappu zero-revenue ecosystem strategy report."
-  },
-  "banner": {
-    "hubLink": "← Index",
-    "strong": "Shimukappu Central LP mock",
-    "text": "Rope tows only · patronage · Tomamu contrast · village ecosystem | AI-generated mock images"
+    "title": "Shimukappu Central Ski Area",
+    "description": "No chairlifts, no crowds, pure powder—two rope tows, 100% advanced skiers, a hidden gem beside Tomamu."
   },
   "logo": "Shimukappu Central Ski Area",
   "nav": {
@@ -246,8 +241,7 @@
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>勇払郡<rt>Yubari-gun</rt></ruby></span><span class=\"place-unit\"><ruby>占冠村<rt>Shimukappu</rt></ruby></span><span class=\"place-unit\"><ruby>字中央<rt>Chuo</rt></ruby></span>"
   },
   "footer": {
-    "copyright": "© Shimukappu Central Ski Area — LP mock",
-    "credit": "Shimukappu Village · Evaluation mock based on zero-revenue ecosystem strategy report | AI-generated images",
+    "copyright": "© Shimukappu Central Ski Area",
     "location": "079-2201 · Chuo, Shimukappu, Yubari-gun, Hokkaido"
   }
 }

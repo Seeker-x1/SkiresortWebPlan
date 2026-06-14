@@ -1,12 +1,7 @@
 {
   "meta": {
-    "title": "Unabetsu Ski Area (Kaibetsu) — LP Mock",
-    "description": "Landing page mock for Unabetsu Ski Area—Shiretoko gateway with immersive drift-ice skiing. Based on the web renewal strategy."
-  },
-  "banner": {
-    "hubLink": "← Index",
-    "strong": "Unabetsu LP mock",
-    "text": "Immersive drift-ice · real-time dashboard strategy | AI-generated mock images"
+    "title": "Unabetsu Ski Area",
+    "description": "A rare worldwide run that feels like diving into drift ice"
   },
   "logo": "Unabetsu Ski Area (Kaibetsu)",
   "hero": {
@@ -150,8 +145,7 @@
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>斜里郡<rt>Shari-gun</rt></ruby></span><span class=\"place-unit\"><ruby>斜里町<rt>Shari</rt></ruby></span><span class=\"place-unit\"><ruby>字峰浜110番地<rt>Minehama 110</rt></ruby></span>"
   },
   "footer": {
-    "copyright": "© Unabetsu Ski Area (Kaibetsu) — LP mock",
-    "credit": "Operated by Shiretoko Shari Tourism Association NPO | AI-generated mock images",
+    "copyright": "© Unabetsu Ski Area",
     "location": "099-4122 · Minehama 110, Shari, Shari-gun, Hokkaido"
   }
 }

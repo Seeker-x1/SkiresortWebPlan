@@ -1,12 +1,7 @@
 {
   "meta": {
-    "title": "Sichinohe Town Ski Area — LP Mock (Template Preview)",
-    "description": "Landing page concept for Sichinohe Town Ski Area based on the visitor growth strategy report. Static preview with mock imagery."
-  },
-  "banner": {
-    "hubLink": "← Index",
-    "strong": "LP mock",
-    "text": "Template implementation preview | AI-generated mock images | Not the production site"
+    "title": "Sichinohe Town Ski Area",
+    "description": "Sichinohe Town Ski Area"
   },
   "logo": "Sichinohe Town Ski Area",
   "hero": {
@@ -88,8 +83,7 @@
     "places": "<span class=\"place-unit\"><ruby>青森県<rt>Aomori</rt></ruby></span><span class=\"place-unit\"><ruby>上北郡<rt>Kamikita-gun</rt></ruby></span><span class=\"place-unit\"><ruby>七戸町<rt>Sichinohe</rt></ruby></span><span class=\"place-unit\"><ruby>字左組106-5<rt>Hidarikumi 106-5</rt></ruby></span>"
   },
   "footer": {
-    "copyright": "© Sichinohe Town Ski Area — LP mock",
-    "credit": "Images: AI-generated mocks (production will use real photos and official assets)",
+    "copyright": "© Sichinohe Town Ski Area",
     "location": "039-2568 · Hidarikumi 106-5, Sichinohe, Kamikita-gun, Aomori"
   }
 }

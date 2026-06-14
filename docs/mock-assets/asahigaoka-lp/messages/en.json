@@ -1,12 +1,7 @@
 {
   "meta": {
-    "title": "Kutchan Asahigaoka Ski Area — LP Mock (Local Hill · Dual Pricing Strategy)",
-    "description": "Niseko's hidden local hill. About 3 minutes from Kutchan Station, no lift lines, Mt. Yotei views. LP mock based on Kutchan Visitor Pass, delivery rental, and Yukinko Hall night bar strategy."
-  },
-  "banner": {
-    "hubLink": "← Index",
-    "strong": "Asahigaoka LP mock",
-    "text": "Local hill · dual pricing · Kutchan Visitor Pass strategy | AI-generated mock images"
+    "title": "Kutchan Asahigaoka Ski Area",
+    "description": "Niseko's hidden local hill—without the lift lines."
   },
   "logo": "Kutchan Asahigaoka Ski Area",
   "nav": {
@@ -198,8 +193,7 @@
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>虻田郡<rt>Abuta-gun</rt></ruby></span><span class=\"place-unit\"><ruby>倶知安町<rt>Kutchan</rt></ruby></span><span class=\"place-unit\"><ruby>字旭37番地1<rt>Asahi 37-1</rt></ruby></span>"
   },
   "footer": {
-    "copyright": "© Kutchan Asahigaoka Ski Area — LP mock",
-    "credit": "Kutchan Town · Evaluation mock based on local-hill dual-pricing strategy report | AI-generated images",
+    "copyright": "© Kutchan Asahigaoka Ski Area",
     "location": "044-0083 · Asahi 37-1, Kutchan, Abuta-gun, Hokkaido"
   }
 }

@@ -1,12 +1,7 @@
 {
   "meta": {
-    "title": "音威富士スキー場 — LP案モック（隠れJapow×駅徒歩×二重料金戦略）",
-    "description": "日本最軽量級のドライパウダー、上級者84%。北海道最小村・音威子府（535人）の隠れJapow。JR音威子府駅徒歩15分、Otoifuji Visitor Pass・CATツアー¥40,000・FIS/SAJ認定クロカン・Tomte宿泊拠点戦略に基づくLP案モック。"
-  },
-  "banner": {
-    "hubLink": "← 索引",
-    "strong": "音威富士 LP案モック",
-    "text": "隠れJapow×駅徒歩 · Otoifuji Visitor Pass · CATツアー戦略 | AI生成モック画像"
+    "title": "音威富士スキー場",
+    "description": "日本最軽量級のドライJapow——上級者84%が選ぶ、駅から歩ける秘境。"
   },
   "logo": "音威富士スキー場",
   "nav": {
@@ -229,8 +224,7 @@
     "places": ""
   },
   "footer": {
-    "copyright": "© 音威富士スキー場 — LP案モック",
-    "credit": "音威子府村 · 隠れJapow×駅徒歩×二重料金戦略レポートに基づく評価用 | AI生成モック画像",
+    "copyright": "© 音威富士スキー場",
     "location": "〒098-2501 北海道中川郡音威子府村字音威子府200-6"
   }
 }

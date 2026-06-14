@@ -1,12 +1,7 @@
 {
   "meta": {
-    "title": "Biei Town Ski Area — LP Mock (Snow Wellness Template Preview)",
-    "description": "Landing page concept for Biei Town Ski Area based on the Biei brand and snow wellness fusion strategy. Static preview with mock imagery."
-  },
-  "banner": {
-    "hubLink": "← Index",
-    "strong": "Biei LP mock",
-    "text": "Template implementation preview | Snow wellness strategy | AI-generated mock images"
+    "title": "Biei Town Ski Area",
+    "description": "A snow wellness hub for people who don't ski"
   },
   "logo": "Biei Town Ski Area",
   "nav": {
@@ -124,8 +119,7 @@
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>上川郡<rt>Kamikawa-gun</rt></ruby></span><span class=\"place-unit\"><ruby>美瑛町<rt>Biei-cho</rt></ruby></span><span class=\"place-unit\"><ruby>字大村村山<rt>Omura-Murayama</rt></ruby></span>"
   },
   "footer": {
-    "copyright": "© Biei Town Ski Area — LP mock",
-    "credit": "Images: AI-generated mocks (production will use real photos and official assets)",
+    "copyright": "© Biei Town Ski Area",
     "location": "071-0218 · Omura-Murayama, Biei-cho, Kamikawa-gun, Hokkaido"
   }
 }

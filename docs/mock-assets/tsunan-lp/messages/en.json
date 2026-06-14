@@ -1,12 +1,7 @@
 {
   "meta": {
-    "title": "Mountain Park Tsunan — LP Mock (Pivot & Specialized Infrastructure Strategy)",
-    "description": "Mountain Park Tsunan pivoted from general skiing to education and competition. LP mock for 40 ha campus, Nordic sport, and English Adventure."
-  },
-  "banner": {
-    "hubLink": "← Index",
-    "strong": "Tsunan LP mock",
-    "text": "Functional pivot · spatial redefinition strategy | Evaluation for Category 1 → standalone site"
+    "title": "Mountain Park Tsunan",
+    "description": "Unbundling from snow."
   },
   "logo": "Mountain Park Tsunan",
   "nav": {
@@ -153,8 +148,7 @@
     "places": "<span class=\"place-unit\"><ruby>新潟県<rt>Niigata</rt></ruby></span><span class=\"place-unit\"><ruby>中魚沼郡<rt>Nakauonuma-gun</rt></ruby></span><span class=\"place-unit\"><ruby>津南町<rt>Tsunan</rt></ruby></span><span class=\"place-unit\"><ruby>大字上郷上田甲1745-1<rt>Kamigo Kamida Ko 1745-1</rt></ruby></span>"
   },
   "footer": {
-    "copyright": "© Mountain Park Tsunan — LP mock",
-    "credit": "Operated by Panorama LLC · Based on pivot strategy report · AI-generated mock images",
+    "copyright": "© Mountain Park Tsunan",
     "location": "949-8122 · Kamigo Kamida Ko 1745-1, Tsunan, Nakauonuma-gun, Niigata"
   }
 }

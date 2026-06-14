@@ -63,7 +63,8 @@
   function applyMessages(messages) {
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const val = getByPath(messages, el.dataset.i18n);
-      if (val != null) el.textContent = val;
+      if (val != null && val !== "") el.textContent = val;
+      else if (val === "") el.hidden = true;
     });
 
     document.querySelectorAll("[data-i18n-html]").forEach((el) => {

@@ -1,12 +1,7 @@
 {
   "meta": {
-    "title": "Abashiri Lake View Ski Area — LP Mock (Okhotsk Panorama · Drift Ice · Dual Pricing Strategy)",
-    "description": "360° views of drift ice, Lake Abashiri, and the Sea of Okhotsk from Mt. Tento. Six courses, 900 m pair lift, night skiing until 21:00. Local day ticket ¥2,940 and 2-hour ¥1,200 held steady; Winter Iron Activity Pass ¥8,000–10,000; Night Snow Lounge ¥3,000; Okhotsk seafood bowls and year-round Panorama Cafe. Operated by Nissenren Okhotsk Abashiri · 428 free parking spaces. Evaluation mock based on strategy report."
-  },
-  "banner": {
-    "hubLink": "← Index",
-    "strong": "Abashiri Lake View LP mock",
-    "text": "Drift-ice panorama · Winter Iron Pass · Night Snow Lounge · local pricing protected | AI-generated mock images"
+    "title": "Abashiri Lake View Ski Area",
+    "description": "Drift ice, Lake Abashiri, and the Sea of Okhotsk—a northern panorama from six courses and 900 m of lift."
   },
   "logo": "Abashiri Lake View Ski Area",
   "nav": {
@@ -295,8 +290,7 @@
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>網走市<rt>Abashiri</rt></ruby></span><span class=\"place-unit\"><ruby>字呼人28-3<rt>Yobito 28-3</rt></ruby></span>"
   },
   "footer": {
-    "copyright": "© Abashiri Lake View Ski Area — LP mock",
-    "credit": "Abashiri City · Evaluation mock based on Okhotsk panorama, drift ice, and dual-pricing strategy report | AI-generated images",
+    "copyright": "© Abashiri Lake View Ski Area",
     "location": "099-2421 · Yobito 28-3, Abashiri, Hokkaido"
   }
 }

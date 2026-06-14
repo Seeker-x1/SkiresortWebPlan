@@ -1,12 +1,7 @@
 {
   "meta": {
-    "title": "Otoifuji Ski Area — LP Mock (Hidden Japow · Station Walk · Dual Pricing Strategy)",
-    "description": "Japan's lightest dry powder, 84% advanced skiers. A hidden Japow gem in Otoineppu—Hokkaido's smallest village (535 residents). 15-minute walk from JR Otoineppu Station. LP mock based on Otoifuji Visitor Pass, ¥40,000 CAT tour, FIS/SAJ certified XC, and Tomte lodging hub strategy."
-  },
-  "banner": {
-    "hubLink": "← Index",
-    "strong": "Otoifuji LP mock",
-    "text": "Hidden Japow · station walk · Otoifuji Visitor Pass · CAT tour strategy | AI-generated mock images"
+    "title": "Otoifuji Ski Area",
+    "description": "Japan's lightest dry Japow—84% advanced skiers, a hidden gem you can reach on foot from the station."
   },
   "logo": "Otoifuji Ski Area",
   "nav": {
@@ -229,8 +224,7 @@
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>中川郡<rt>Nakagawa-gun</rt></ruby></span><span class=\"place-unit\"><ruby>音威子府村<rt>Otoifuke</rt></ruby></span><span class=\"place-unit\"><ruby>字音威子府200-6<rt>Otoifuke 200-6</rt></ruby></span>"
   },
   "footer": {
-    "copyright": "© Otoifuji Ski Area — LP mock",
-    "credit": "Otoineppu Village · Evaluation mock based on hidden Japow, station-walk, and dual-pricing strategy report | AI-generated images",
+    "copyright": "© Otoifuji Ski Area",
     "location": "098-2501 · Otoifuke 200-6, Otoifuke, Nakagawa-gun, Hokkaido"
   }
 }

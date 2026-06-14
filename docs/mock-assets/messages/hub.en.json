@@ -1,25 +1,22 @@
 {
   "meta": {
-    "title": "LP Mock Index — 11 Resort Previews",
-    "description": "Bilingual index of eleven ski resort LP mocks for template evaluation."
-  },
-  "banner": {
-    "strong": "LP Mock Index",
-    "text": "11 resorts · Bilingual · Template evaluation"
+    "title": "Ski Resort Guides — 11 Resorts",
+    "description": "Guides for ski areas in Hokkaido, Tohoku, and Niigata. Resort info, access, and trail maps."
   },
   "hero": {
-    "eyebrow": "SkiresortWebPlan",
-    "title": "LP Mock<br />11-Resort Hub",
-    "lead": "Landing page concepts from growth and pivot strategy reports. Click a resort to preview."
+    "eyebrow": "JAPOWSERCH",
+    "title": "Ski Resort Guides<br />11 Resorts",
+    "lead": "Open each resort guide page."
   },
   "table": {
     "name": "Resort",
     "region": "Region",
-    "strategy": "Strategy",
-    "preview": "Preview",
+    "strategy": "Highlights",
+    "preview": "Guide",
     "map": "Map"
   },
-  "note": "Static HTML · AI mock images · Not production sites",
-  "back": "Back to index",
-  "lang": { "switch": "Language" }
+  "back": "Back to guides",
+  "lang": {
+    "switch": "Language"
+  }
 }
