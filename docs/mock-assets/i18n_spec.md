@@ -16,34 +16,19 @@
 ## ファイル構成
 
 ```
-docs/mock-assets/
-  registry.json              # 施設一覧メタ（索引ページ用）
-  i18n_spec.md               # 本書
-  index.html                 # 11施設ハブ（日英）
-  _shared/
-    mock-i18n.js             # LP共通ローダー
-    mock-i18n.css            # 言語切替 UI
-    mock-hub.css             # 索引ページ
-    messages/
-      ui.ja.json             # 共通 UI 文言（ja）
-      ui.en.json             # 共通 UI 文言（en）
-  scripts/
-    validate-mock-i18n.mjs   # ja/en キー parity 検証
-    validate-mock-html-i18n.mjs
-    generate-map-data.mjs    # data/maps/*.json 再生成
-  map.html                   # 共通ゲレンデマップ（?resort=ID&lang=en）
+docs/mock-assets/              # 各施設 LP ソース
+  registry.json
+  _shared/                     # mock-i18n, resort-map, ui messages
+  map.html
   data/maps/
-    {id}.json                # 概略コースマップ（11施設・座標は概略）
-  _shared/
-    mock-i18n.js / mock-i18n.css / mock-hub.js
-    resort-map.js / resort-map.css   # マップ UI（七戸 /map レイアウト参考）
-    messages/
-      ui.ja.json / ui.en.json
+  scripts/
   {resort}-lp/
-    messages/
-      ja.json
-      en.json
-    index.html               # data-i18n 属性 + mock-i18n.js
+    messages/ja.json, en.json
+    index.html
+
+guides/hub/                    # 索引のみ → guides.japowserch.com/
+  index.html
+  messages/hub.ja.json, hub.en.json
 ```
 
 ## メッセージ境界

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Remove mock-banner, footer.credit, hub note from HTML */
+/** Remove mock-banner, footer.credit from resort LP HTML */
 import { readFileSync, writeFileSync, readdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
@@ -18,7 +18,3 @@ for (const dir of readdirSync(ROOT).filter((d) => d.endsWith("-lp"))) {
   writeFileSync(path, stripHtml(readFileSync(path, "utf8")), "utf8");
   console.log(`✓ ${dir}/index.html`);
 }
-
-const hubPath = join(ROOT, "index.html");
-writeFileSync(hubPath, stripHtml(readFileSync(hubPath, "utf8")), "utf8");
-console.log("✓ index.html");

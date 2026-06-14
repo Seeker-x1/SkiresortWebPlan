@@ -1,5 +1,5 @@
 /**
- * Hub index i18n — docs/mock-assets/index.html
+ * Hub index i18n — guides/hub/index.html → guides.japowserch.com/
  */
 (function () {
   const STORAGE_KEY = "mock-lp-locale";

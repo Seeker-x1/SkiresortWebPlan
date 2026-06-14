@@ -52,6 +52,7 @@ node scripts/sync.mjs
 
 | 開発 | 配信 |
 |------|------|
+| `guides/hub/` | `guides/public/index.html`（**索引のみ**） |
 | `docs/mock-assets/{slug}-lp/` | `guides/public/{id}/` |
 | `docs/mock-assets/_shared/` | `guides/public/_shared/` |
 | 相対パス `../_shared/` | 絶対パス `/_shared/` |

@@ -7,6 +7,7 @@ import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+const GUIDES_ROOT = join(ROOT, "..", "..", "guides");
 const registry = JSON.parse(readFileSync(join(ROOT, "registry.json"), "utf8"));
 
 const bySlug = Object.fromEntries(registry.resorts.map((r) => [r.slug, r]));
@@ -84,6 +85,6 @@ const hubEn = {
   lang: { switch: "Language" },
 };
 
-writeFileSync(join(ROOT, "messages", "hub.ja.json"), JSON.stringify(hubJa, null, 2) + "\n", "utf8");
-writeFileSync(join(ROOT, "messages", "hub.en.json"), JSON.stringify(hubEn, null, 2) + "\n", "utf8");
-console.log("✓ hub messages");
+writeFileSync(join(GUIDES_ROOT, "hub", "messages", "hub.ja.json"), JSON.stringify(hubJa, null, 2) + "\n", "utf8");
+writeFileSync(join(GUIDES_ROOT, "hub", "messages", "hub.en.json"), JSON.stringify(hubEn, null, 2) + "\n", "utf8");
+console.log("✓ guides/hub/messages");

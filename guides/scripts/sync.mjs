@@ -17,6 +17,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const GUIDES_ROOT = join(__dirname, "..");
+const HUB_ROOT = join(GUIDES_ROOT, "hub");
 const REPO_ROOT = join(GUIDES_ROOT, "..");
 const MOCK_ROOT = join(REPO_ROOT, "docs", "mock-assets");
 const RESORT_GUIDES_SRC = join(REPO_ROOT, "data", "resort-guides.json");
@@ -202,10 +203,10 @@ function main() {
   rmSync(OUT, { recursive: true, force: true });
   mkdirSync(OUT, { recursive: true });
 
-  // Hub
+  // Hub (guides/hub/ → public/index.html)
   writeFileSync(
     join(OUT, "index.html"),
-    rewriteHtml(readFileSync(join(MOCK_ROOT, "index.html"), "utf8")),
+    rewriteHtml(readFileSync(join(HUB_ROOT, "index.html"), "utf8")),
     "utf8",
   );
 
@@ -220,7 +221,7 @@ function main() {
   copyDirSimple(join(MOCK_ROOT, "_shared"), join(OUT, "_shared"), { transformJs: true });
   mkdirSync(join(OUT, "messages"), { recursive: true });
   for (const f of ["hub.ja.json", "hub.en.json"]) {
-    cpSync(join(MOCK_ROOT, "messages", f), join(OUT, "messages", f));
+    cpSync(join(HUB_ROOT, "messages", f), join(OUT, "messages", f));
   }
 
   // Map data + hero images
