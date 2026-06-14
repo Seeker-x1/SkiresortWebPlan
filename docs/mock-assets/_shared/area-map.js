@@ -117,16 +117,19 @@
     );
   }
 
-  function googleEmbedUrl({ lat, lon, zoom, query }) {
+  function googleEmbedUrl({ lat, lon, zoom, query, pin }) {
     const hl = locale === "en" ? "en" : "ja";
+    const z = String(zoom);
+    if (pin) {
+      return `https://maps.google.com/maps?q=${lat},${lon}&hl=${hl}&z=${z}&output=embed`;
+    }
     const q = query || `${lat},${lon}`;
-    const u = new URL("https://www.google.com/maps");
-    u.searchParams.set("q", q);
-    u.searchParams.set("ll", `${lat},${lon}`);
-    u.searchParams.set("z", String(zoom));
-    u.searchParams.set("hl", hl);
-    u.searchParams.set("output", "embed");
-    return u.toString();
+    const text = typeof q === "string" ? q : `${lat},${lon}`;
+    return (
+      "https://maps.google.com/maps?q=" +
+      encodeURIComponent(text) +
+      `&ll=${lat},${lon}&hl=${hl}&z=${z}&output=embed`
+    );
   }
 
   function parseLayers() {
@@ -187,24 +190,28 @@
   }
 
   function viewForFeature(feature) {
-    const mapsQ = feature.mapsQuery || pick(feature.label);
     return {
       lat: feature.lat,
       lon: feature.lon,
-      zoom: feature.zoom || 15,
-      query: mapsQ,
+      zoom: feature.zoom || 16,
+      pin: true,
     };
   }
 
   function syncGoogleMap(feature) {
     if (!googleFrame) return;
     const view = feature ? viewForFeature(feature) : viewportForLayers();
+    if (feature) {
+      googleFrame.src = googleEmbedUrl(view);
+      return;
+    }
     const query = typeof view.query === "object" ? pick(view.query) : view.query;
     googleFrame.src = googleEmbedUrl({
       lat: view.lat,
       lon: view.lon,
       zoom: view.zoom,
       query: query || `${view.lat},${view.lon}`,
+      pin: false,
     });
   }
 
@@ -221,32 +228,6 @@
     return `${resortId}-lp/${langQ}`;
   }
 
-  function renderEmbedChips() {
-    if (!embed || !el.stage) return;
-    const existing = el.stage.querySelector(".area-embed-chips");
-    if (existing) existing.remove();
-
-    const items = filteredFeatures();
-    if (!items.length) return;
-
-    const bar = document.createElement("div");
-    bar.className = "area-embed-chips";
-    bar.setAttribute("role", "listbox");
-    bar.setAttribute("aria-label", t("title"));
-
-    items.forEach((f) => {
-      const chip = document.createElement("button");
-      chip.type = "button";
-      chip.className = `area-embed-chip${selectedId === f.id ? " is-active" : ""}`;
-      chip.dataset.featureId = f.id;
-      chip.textContent = pick(f.shortLabel) || pick(f.label);
-      chip.addEventListener("click", () => select(f.id));
-      bar.appendChild(chip);
-    });
-
-    el.stage.appendChild(bar);
-  }
-
   function select(id) {
     selectedId = id;
     const feature = allFeatures().find((f) => f.id === id);
@@ -259,7 +240,6 @@
 
     syncGoogleMap(feature);
     renderDetail(feature);
-    renderEmbedChips();
   }
 
   function renderDetail(feature) {
@@ -331,11 +311,9 @@
       selectedId = null;
       if (el.detail) el.detail.innerHTML = `<p>${t("detailPick")}</p>`;
       syncGoogleMap(null);
-      renderEmbedChips();
       return;
     }
     syncGoogleMap(allFeatures().find((f) => f.id === selectedId));
-    renderEmbedChips();
   }
 
   function setAllLayers(on) {
@@ -396,14 +374,16 @@
     googleFrame.allowFullscreen = true;
     wrap.appendChild(googleFrame);
 
-    const hint = document.createElement("p");
-    hint.className = "area-map-hint";
-    hint.textContent = t("mapHint");
-    wrap.appendChild(hint);
+    if (!embed) {
+      const hint = document.createElement("p");
+      hint.className = "area-map-hint";
+      hint.textContent = t("mapHint");
+      wrap.appendChild(hint);
+    }
 
     el.stage.appendChild(wrap);
 
-    if (mapData.disclaimer) {
+    if (!embed && mapData.disclaimer) {
       const disclaimer = document.createElement("p");
       disclaimer.className = "area-disclaimer";
       disclaimer.textContent = pick(mapData.disclaimer);
@@ -452,17 +432,17 @@
     renderFilters();
     renderList();
     initGoogleMap();
-    renderEmbedChips();
 
     const focus = params.get("focus");
     const focusFeature = focus && allFeatures().find((f) => f.id === focus);
     if (focusFeature && activeLayers.has(focusFeature.group)) {
       select(focus);
-    } else if (filteredFeatures().length === 1) {
-      select(filteredFeatures()[0].id);
     }
   }
 
-  if (embed) document.body.classList.add("area-map-page--embed");
+  if (embed) {
+    document.documentElement.classList.add("area-map-embed-root");
+    document.body.classList.add("area-map-page--embed");
+  }
   boot();
 })();

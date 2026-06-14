@@ -1,4 +1,4 @@
-/* LP案モック — 周辺エリアマップ（飲食・絶景 POI） */
+/* LP案モック — 周辺エリアマップ（Google Maps embed） */
 
 :root {
   --area-bg: #f4f6f8;
@@ -7,18 +7,15 @@
   --area-text: #1a1f26;
   --area-muted: #5c6570;
   --area-accent: #5a6f85;
-  --area-marker-anchor: #6366f1;
-  --area-marker-dairy: #f59e0b;
-  --area-marker-wagyu: #dc2626;
-  --area-marker-bakery: #d97706;
-  --area-marker-western: #2563eb;
-  --area-marker-burger: #16a34a;
-  --area-marker-cafe: #7c3aed;
-  --area-marker-fine: #0f766e;
-  --area-marker-ramen: #ea580c;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
+
+html.area-map-embed-root,
+html.area-map-embed-root body.area-map-page--embed {
+  height: 100%;
+  overflow: hidden;
+}
 
 body.area-map-page {
   margin: 0;
@@ -60,17 +57,33 @@ body.area-map-page.area-map-page--embed {
 }
 
 .area-map-page--embed .area-shell {
-  min-height: 26rem;
+  height: 100%;
+  min-height: 0;
+}
+
+.area-stage {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.area-map-page--embed .area-stage {
   height: 100%;
 }
 
 .area-google-wrap {
-  position: absolute;
-  inset: 0;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  z-index: 1;
+  min-height: 0;
   background: #e8edf2;
+}
+
+.area-map-page--embed .area-google-wrap {
+  height: 100%;
 }
 
 .area-google-frame {
@@ -78,6 +91,7 @@ body.area-map-page.area-map-page--embed {
   width: 100%;
   min-height: 0;
   border: 0;
+  display: block;
 }
 
 .area-map-hint {
@@ -91,82 +105,20 @@ body.area-map-page.area-map-page--embed {
   flex-shrink: 0;
 }
 
-.area-map-page--embed .area-map-hint {
-  font-size: 0.625rem;
-  padding: 0.35rem 0.5rem;
-}
-
-.area-embed-chips {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  display: flex;
-  gap: 0.35rem;
-  padding: 0.45rem 0.5rem;
-  overflow-x: auto;
-  background: rgba(255, 255, 255, 0.96);
-  border-top: 1px solid var(--area-rail-border);
-  -webkit-overflow-scrolling: touch;
-}
-
-.area-embed-chip {
-  flex: 0 0 auto;
-  padding: 0.35rem 0.65rem;
-  border: 1px solid var(--area-rail-border);
-  border-radius: 999px;
-  background: #fff;
-  font-size: 0.6875rem;
-  font-weight: 600;
-  color: var(--area-text);
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.area-embed-chip.is-active,
-.area-embed-chip:hover {
-  background: var(--area-accent);
-  border-color: var(--area-accent);
-  color: #fff;
-}
-
-.area-map-page--embed .area-google-wrap {
-  bottom: 2.35rem;
-}
-
+.area-map-page--embed .area-map-hint,
 .area-map-page--embed .area-disclaimer {
-  bottom: 2.5rem;
-}
-
-.area-stage {
-  position: relative;
-  flex: 1;
-  min-width: 0;
-  min-height: 0;
-}
-
-.area-leaflet {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: #dbe4ec;
+  display: none;
 }
 
 .area-disclaimer {
-  position: absolute;
-  left: 0.75rem;
-  bottom: 0.75rem;
-  z-index: 500;
-  max-width: min(24rem, 75%);
-  padding: 0.5rem 0.65rem;
-  background: rgba(255, 255, 255, 0.92);
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  background: #f8fafc;
   color: var(--area-muted);
   font-size: 0.6875rem;
   line-height: 1.5;
-  border-radius: 4px;
-  border: 1px solid var(--area-rail-border);
-  pointer-events: none;
+  border-top: 1px solid var(--area-rail-border);
 }
 
 .area-rail {
@@ -234,20 +186,6 @@ body.area-map-page.area-map-page--embed {
   line-height: 1.5;
 }
 
-.area-marker-dot--onsen-hotel { background: #0d9488; }
-.area-marker-dot--onsen-day { background: #14b8a6; }
-.area-marker-dot--onsen-ryokan { background: #115e59; }
-.area-marker-dot--onsen-public { background: #5eead4; }
-.area-marker-dot--onsen-mountain { background: #0891b2; }
-.area-marker-dot--onsen-sauna { background: #f43f5e; }
-.area-marker-dot--onsen-roten { background: #a855f7; }
-
-.area-list {
-  flex: 1;
-  overflow: auto;
-  padding: 0.5rem 0;
-}
-
 .area-filter-count {
   align-self: center;
   margin-left: 0.15rem;
@@ -255,6 +193,12 @@ body.area-map-page.area-map-page--embed {
   font-weight: 600;
   color: var(--area-muted);
   letter-spacing: 0.04em;
+}
+
+.area-list {
+  flex: 1;
+  overflow: auto;
+  padding: 0.5rem 0;
 }
 
 .area-list-item {
@@ -356,33 +300,10 @@ body.area-map-page.area-map-page--embed {
   border: 1px solid var(--area-rail-border);
 }
 
-.area-marker-dot {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
-}
-
-.area-marker-dot--anchor { background: var(--area-marker-anchor); width: 16px; height: 16px; }
-.area-marker-dot--dairy { background: var(--area-marker-dairy); }
-.area-marker-dot--wagyu { background: var(--area-marker-wagyu); }
-.area-marker-dot--bakery { background: var(--area-marker-bakery); }
-.area-marker-dot--western { background: var(--area-marker-western); }
-.area-marker-dot--burger { background: var(--area-marker-burger); }
-.area-marker-dot--cafe { background: var(--area-marker-cafe); }
-.area-marker-dot--fine-dining { background: var(--area-marker-fine); }
-.area-marker-dot--ramen { background: var(--area-marker-ramen); }
-
-.area-popup-title {
-  margin: 0 0 0.35rem;
+.map-error {
+  padding: 1rem;
   font-size: 0.875rem;
-  font-weight: 700;
-}
-
-.area-popup-link {
-  font-size: 0.75rem;
-  color: var(--area-accent);
+  color: var(--area-muted);
 }
 
 @media (max-width: 768px) {
