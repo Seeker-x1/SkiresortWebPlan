@@ -52,7 +52,7 @@ docs/mock-assets/
 |----------|------|
 | `_shared/messages/ui.*.json` | Access, Google Map, 電話する, Explore, 特集, 読む, 言語切替 等 |
 | `{resort}/messages/*.json` | 施設固有コピー（hero, 戦略訴求, 住所注記の英訳 等） |
-| HTML 直書き禁止 | ユーザー向け文言は JSON のみ（モックバナー除く） |
+| HTML 直書き禁止 | ユーザー向け文言は JSON のみ。**例外**: `.mock-banner` は `docs/mock-assets/` ローカルプレビュー用のみ。`guides.japowserch.com` ビルド（`sync.mjs`）では除去される。
 
 ## HTML バインディング
 

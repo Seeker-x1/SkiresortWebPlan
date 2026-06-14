@@ -64,7 +64,7 @@ function validateResortGuides(registry, resortGuides) {
 }
 
 function rewriteHtml(content) {
-  return content
+  let out = content
     .replaceAll('href="../_shared/', 'href="/_shared/')
     .replaceAll('src="../_shared/', 'src="/_shared/')
     .replaceAll('href="../map.html', 'href="/map.html')
@@ -73,6 +73,9 @@ function rewriteHtml(content) {
     .replaceAll('href="index.html"', 'href="/"')
     .replaceAll('href="_shared/', 'href="/_shared/')
     .replaceAll('src="_shared/', 'src="/_shared/');
+  // Internal dev banner (docs/mock-assets preview only) — not for public guides host
+  out = out.replace(/<p class="mock-banner">[\s\S]*?<\/p>\s*/g, "");
+  return out;
 }
 
 function rewriteJs(content, filename) {
