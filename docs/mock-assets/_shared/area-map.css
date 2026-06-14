@@ -1,0 +1,293 @@
+/* LP案モック — 周辺エリアマップ（飲食・絶景 POI） */
+
+:root {
+  --area-bg: #f4f6f8;
+  --area-rail-bg: #fff;
+  --area-rail-border: #e2e6ec;
+  --area-text: #1a1f26;
+  --area-muted: #5c6570;
+  --area-accent: #5a6f85;
+  --area-marker-anchor: #6366f1;
+  --area-marker-dairy: #f59e0b;
+  --area-marker-wagyu: #dc2626;
+  --area-marker-bakery: #d97706;
+  --area-marker-western: #2563eb;
+  --area-marker-burger: #16a34a;
+  --area-marker-cafe: #7c3aed;
+  --area-marker-fine: #0f766e;
+  --area-marker-ramen: #ea580c;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body.area-map-page {
+  margin: 0;
+  min-height: 100dvh;
+  font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+  background: var(--area-bg);
+  color: var(--area-text);
+  display: flex;
+  flex-direction: column;
+}
+
+body.area-map-page.area-map-page--embed {
+  min-height: 0;
+  height: 100%;
+}
+
+.area-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.65rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid var(--area-rail-border);
+  flex-shrink: 0;
+}
+
+.area-map-page--embed .area-topbar { display: none; }
+
+.area-topbar a { color: inherit; text-decoration: none; font-size: 0.8125rem; }
+.area-topbar .logo { font-weight: 700; font-size: 0.875rem; }
+.area-topbar-actions { display: flex; align-items: center; gap: 0.75rem; }
+
+.area-shell {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+  min-height: calc(100dvh - 52px);
+}
+
+.area-map-page--embed .area-shell {
+  min-height: 22rem;
+  height: 100%;
+}
+
+.area-stage {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+.area-leaflet {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: #dbe4ec;
+}
+
+.area-disclaimer {
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
+  z-index: 500;
+  max-width: min(24rem, 75%);
+  padding: 0.5rem 0.65rem;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--area-muted);
+  font-size: 0.6875rem;
+  line-height: 1.5;
+  border-radius: 4px;
+  border: 1px solid var(--area-rail-border);
+  pointer-events: none;
+}
+
+.area-rail {
+  width: 22rem;
+  max-width: 44vw;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--area-rail-bg);
+  border-left: 1px solid var(--area-rail-border);
+}
+
+.area-map-page--embed .area-rail { display: none; }
+
+.area-rail-head {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--area-rail-border);
+}
+
+.area-rail-title {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.area-rail-lead {
+  margin: 0.35rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.55;
+  color: var(--area-muted);
+}
+
+.area-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+}
+
+.area-filter-btn {
+  padding: 0.25rem 0.55rem;
+  border: 1px solid var(--area-rail-border);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.6875rem;
+  color: var(--area-muted);
+  cursor: pointer;
+}
+
+.area-filter-btn[aria-pressed="true"] {
+  background: var(--area-accent);
+  border-color: var(--area-accent);
+  color: #fff;
+}
+
+.area-filter-btn--all[aria-pressed="true"] {
+  background: #1a2332;
+  border-color: #1a2332;
+}
+
+.area-filter-hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.6875rem;
+  color: var(--area-muted);
+  line-height: 1.5;
+}
+
+.area-marker-dot--onsen-hotel { background: #0d9488; }
+.area-marker-dot--onsen-day { background: #14b8a6; }
+.area-marker-dot--onsen-ryokan { background: #115e59; }
+.area-marker-dot--onsen-public { background: #5eead4; }
+.area-marker-dot--onsen-mountain { background: #0891b2; }
+.area-marker-dot--onsen-sauna { background: #f43f5e; }
+.area-marker-dot--onsen-roten { background: #a855f7; }
+
+.area-list {
+  flex: 1;
+  overflow: auto;
+  padding: 0.5rem 0;
+}
+
+.area-list-item {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-bottom: 1px solid var(--area-rail-border);
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+}
+
+.area-list-item:hover,
+.area-list-item.is-active {
+  background: #f0f4f8;
+}
+
+.area-list-item__eyebrow {
+  font-size: 0.625rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--area-accent);
+}
+
+.area-list-item__title {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.area-detail {
+  padding: 0.85rem 1rem;
+  border-top: 1px solid var(--area-rail-border);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--area-muted);
+}
+
+.area-detail__title {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--area-text);
+}
+
+.area-detail__meta {
+  margin: 0.5rem 0 0;
+  font-size: 0.6875rem;
+  color: var(--area-muted);
+}
+
+.area-detail__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.area-detail__actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.35rem;
+  background: var(--area-accent);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.area-detail__actions a.area-link-ghost {
+  background: transparent;
+  color: var(--area-accent);
+  border: 1px solid var(--area-rail-border);
+}
+
+.area-marker-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.area-marker-dot--anchor { background: var(--area-marker-anchor); width: 16px; height: 16px; }
+.area-marker-dot--dairy { background: var(--area-marker-dairy); }
+.area-marker-dot--wagyu { background: var(--area-marker-wagyu); }
+.area-marker-dot--bakery { background: var(--area-marker-bakery); }
+.area-marker-dot--western { background: var(--area-marker-western); }
+.area-marker-dot--burger { background: var(--area-marker-burger); }
+.area-marker-dot--cafe { background: var(--area-marker-cafe); }
+.area-marker-dot--fine-dining { background: var(--area-marker-fine); }
+.area-marker-dot--ramen { background: var(--area-marker-ramen); }
+
+.area-popup-title {
+  margin: 0 0 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.area-popup-link {
+  font-size: 0.75rem;
+  color: var(--area-accent);
+}
+
+@media (max-width: 768px) {
+  .area-shell { flex-direction: column; }
+  .area-rail {
+    width: 100%;
+    max-width: none;
+    max-height: 42vh;
+    border-left: none;
+    border-top: 1px solid var(--area-rail-border);
+  }
+  .area-stage { min-height: 52vh; }
+}

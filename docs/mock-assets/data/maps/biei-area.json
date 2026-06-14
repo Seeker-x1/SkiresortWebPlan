@@ -1,0 +1,291 @@
+{
+  "schemaVersion": "2026-06-14",
+  "id": "biei-area",
+  "resortId": "biei",
+  "name": {
+    "ja": "美瑛周辺マップ",
+    "en": "Biei area map"
+  },
+  "center": [43.52, 142.52],
+  "zoom": 10,
+  "disclaimer": {
+    "ja": "位置は OpenStreetMap・ナビタイム等の公開情報に基づく概略です。冬季の営業時間・入浴可否・道路規制は各施設・公式でご確認ください。",
+    "en": "Locations are approximate from public sources. Confirm winter hours, day-bath availability, and road closures with each facility."
+  },
+  "sources": [
+    "OpenStreetMap",
+    "NAVITIME",
+    "MapFan",
+    "美瑛町観光協会"
+  ],
+  "updatedAt": "2026-06-14T18:00:00+09:00",
+  "anchors": [
+    {
+      "id": "biei-station",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "transit",
+      "lat": 43.59105,
+      "lon": 142.4617806,
+      "source": "Wikipedia / JR",
+      "label": { "ja": "JR美瑛駅", "en": "JR Biei Station" },
+      "shortLabel": { "ja": "美瑛駅", "en": "Biei Stn." }
+    },
+    {
+      "id": "ski",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "ski",
+      "lat": 43.5897157,
+      "lon": 142.4448652,
+      "source": "OpenStreetMap",
+      "label": { "ja": "美瑛町民スキー場", "en": "Biei Town Ski Area" },
+      "shortLabel": { "ja": "町民スキー場", "en": "Town ski area" }
+    },
+    {
+      "id": "blue-pond",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "view",
+      "lat": 43.4923699,
+      "lon": 142.6126449,
+      "source": "OpenStreetMap",
+      "label": { "ja": "白金青い池", "en": "Shirogane Blue Pond" },
+      "shortLabel": { "ja": "青い池", "en": "Blue Pond" }
+    }
+  ],
+  "food": [
+    {
+      "id": "junpei",
+      "group": "food",
+      "category": "western",
+      "lat": 43.5893234,
+      "lon": 142.4681529,
+      "source": "OpenStreetMap",
+      "label": { "ja": "洋食とCafe じゅんぺい", "en": "Yoshoku & Cafe Junpei" },
+      "shortLabel": { "ja": "じゅんぺい", "en": "Junpei" },
+      "mapsQuery": "洋食とCafe じゅんぺい 美瑛町"
+    },
+    {
+      "id": "biei-farm",
+      "group": "food",
+      "category": "dairy",
+      "lat": 43.575,
+      "lon": 142.4639,
+      "source": "美瑛町観光協会",
+      "label": { "ja": "美瑛放牧酪農場（美瑛ファーム）", "en": "Biei Farm (grazing dairy)" },
+      "shortLabel": { "ja": "美瑛ファーム", "en": "Biei Farm" },
+      "mapsQuery": "美瑛放牧酪農場 美瑛町新星平和5235"
+    },
+    {
+      "id": "aruno",
+      "group": "food",
+      "category": "bakery",
+      "lat": 43.5989161,
+      "lon": 142.4513715,
+      "source": "MapFan",
+      "label": { "ja": "あるうのぱいん", "en": "Aruu no Pain" },
+      "shortLabel": { "ja": "あるうのぱいん", "en": "Aruu no Pain" },
+      "mapsQuery": "あるうのぱいん 美瑛町大村村山1087-16"
+    },
+    {
+      "id": "chiyoda",
+      "group": "food",
+      "category": "wagyu",
+      "lat": 43.5426832,
+      "lon": 142.4913454,
+      "source": "OpenStreetMap",
+      "label": { "ja": "ファームレストラン千代田", "en": "Farm Restaurant Chiyoda" },
+      "shortLabel": { "ja": "千代田", "en": "Chiyoda" },
+      "mapsQuery": "ファームレストラン千代田 美瑛"
+    },
+    {
+      "id": "ferme",
+      "group": "food",
+      "category": "bakery",
+      "lat": 43.603552,
+      "lon": 142.442585,
+      "source": "NAVITIME",
+      "label": { "ja": "フェルム ラ・テール 美瑛 本店", "en": "Ferme La Terre Biei" },
+      "shortLabel": { "ja": "フェルム", "en": "Ferme" },
+      "mapsQuery": "フェルム ラ・テール 美瑛 本店"
+    },
+    {
+      "id": "between",
+      "group": "food",
+      "category": "burger",
+      "lat": 43.503056,
+      "lon": 142.597222,
+      "source": "道の駅びえい白金ビルケ",
+      "label": { "ja": "BETWEEN THE BREAD", "en": "BETWEEN THE BREAD" },
+      "shortLabel": { "ja": "BTB", "en": "BTB" },
+      "mapsQuery": "BETWEEN THE BREAD 道の駅 白金ビルケ 美瑛"
+    },
+    {
+      "id": "gosh",
+      "group": "food",
+      "category": "cafe",
+      "lat": 43.538939,
+      "lon": 142.44319,
+      "source": "OpenStreetMap",
+      "label": { "ja": "自家焙煎珈琲店 Gosh（ゴーシュ）", "en": "Gosh Coffee Roastery" },
+      "shortLabel": { "ja": "Gosh", "en": "Gosh" },
+      "mapsQuery": "自家焙煎珈琲店 Gosh 美馬牛"
+    },
+    {
+      "id": "asperge",
+      "group": "food",
+      "category": "fine-dining",
+      "lat": 43.5907551,
+      "lon": 142.4545326,
+      "source": "OpenStreetMap",
+      "label": { "ja": "レストラン・アスペルジュ", "en": "Restaurant Asperges" },
+      "shortLabel": { "ja": "アスペルジュ", "en": "Asperges" },
+      "mapsQuery": "レストラン アスペルジュ 美瑛選果"
+    },
+    {
+      "id": "sabo",
+      "group": "food",
+      "category": "cafe",
+      "lat": 43.5903,
+      "lon": 142.4602,
+      "source": "美瑛町公式住所",
+      "label": { "ja": "美瑛茶房", "en": "Biei Sabo" },
+      "shortLabel": { "ja": "美瑛茶房", "en": "Biei Sabo" },
+      "mapsQuery": "美瑛茶房 美瑛町中町1丁目3-26"
+    },
+    {
+      "id": "santouka",
+      "group": "food",
+      "category": "ramen",
+      "lat": 43.588889,
+      "lon": 142.465833,
+      "source": "楽天ぐるなび",
+      "label": { "ja": "らーめん山頭火 美瑛店", "en": "Ramen Santouka Biei" },
+      "shortLabel": { "ja": "山頭火", "en": "Santouka" },
+      "mapsQuery": "らーめん山頭火 美瑛店"
+    }
+  ],
+  "onsen": [
+    {
+      "id": "ao-no-bi-yuyu",
+      "group": "onsen",
+      "category": "onsen-hotel",
+      "region": { "ja": "白金温泉", "en": "Shirogane Onsen" },
+      "lat": 43.474169,
+      "lon": 142.639922,
+      "source": "まっぷるウェブ",
+      "label": { "ja": "碧の美 ゆゆ（旧：湯元白金温泉ホテル）", "en": "Ao no Bi Yuyu" },
+      "shortLabel": { "ja": "碧の美ゆゆ", "en": "Ao no Bi Yuyu" },
+      "mapsQuery": "碧の美 ゆゆ 白金温泉 美瑛"
+    },
+    {
+      "id": "park-hills",
+      "group": "onsen",
+      "category": "onsen-hotel",
+      "region": { "ja": "白金温泉", "en": "Shirogane Onsen" },
+      "lat": 43.4752,
+      "lon": 142.6378,
+      "source": "まっぷるウェブ / 美瑛町観光協会",
+      "label": { "ja": "美瑛白金四季の森ホテルパークヒルズ", "en": "Hotel Park Hills Shirogane" },
+      "shortLabel": { "ja": "パークヒルズ", "en": "Park Hills" },
+      "mapsQuery": "美瑛白金四季の森ホテルパークヒルズ 白金温泉"
+    },
+    {
+      "id": "tsuewasure",
+      "group": "onsen",
+      "category": "onsen-day",
+      "region": { "ja": "白金温泉", "en": "Shirogane Onsen" },
+      "lat": 43.4728,
+      "lon": 142.6415,
+      "source": "美瑛町観光協会",
+      "label": { "ja": "湯処 杖忘れの湯", "en": "Tsuewasure no Yu" },
+      "shortLabel": { "ja": "杖忘れの湯", "en": "Tsuewasure" },
+      "mapsQuery": "湯処 杖忘れの湯 白金温泉 美瑛"
+    },
+    {
+      "id": "mori-no-ryotei",
+      "group": "onsen",
+      "category": "onsen-ryokan",
+      "region": { "ja": "白金温泉", "en": "Shirogane Onsen" },
+      "lat": 43.4736674,
+      "lon": 142.6432997,
+      "source": "OpenStreetMap",
+      "label": { "ja": "森の旅亭 びえい", "en": "Mori no Ryotei Biei" },
+      "shortLabel": { "ja": "森の旅亭", "en": "Mori no Ryotei" },
+      "mapsQuery": "森の旅亭 びえい 白金温泉"
+    },
+    {
+      "id": "mori-no-shizuku",
+      "group": "onsen",
+      "category": "onsen-hotel",
+      "region": { "ja": "白金温泉", "en": "Shirogane Onsen" },
+      "lat": 43.4745,
+      "lon": 142.6355,
+      "source": "公式サイト / 美瑛町観光協会",
+      "label": { "ja": "森の雫 RIN（旧：大雪山白金観光ホテル）", "en": "Mori no Shizuku RIN" },
+      "shortLabel": { "ja": "森の雫 RIN", "en": "Mori no Shizuku" },
+      "mapsQuery": "森の雫 RIN 白金温泉 美瑛"
+    },
+    {
+      "id": "kokumin",
+      "group": "onsen",
+      "category": "onsen-public",
+      "region": { "ja": "白金温泉", "en": "Shirogane Onsen" },
+      "lat": 43.4735751,
+      "lon": 142.6419135,
+      "source": "OpenStreetMap",
+      "label": { "ja": "白金温泉 美瑛町国民保養センター", "en": "Biei Kokumin Hoyojo Center" },
+      "shortLabel": { "ja": "国民保養センター", "en": "Public bath" },
+      "mapsQuery": "白金温泉 美瑛町国民保養センター"
+    },
+    {
+      "id": "ryounkaku",
+      "group": "onsen",
+      "category": "onsen-mountain",
+      "region": { "ja": "上富良野・十勝岳", "en": "Kamifurano / Mt. Tokachi" },
+      "lat": 43.413333,
+      "lon": 142.643056,
+      "source": "山の温泉ガイド DMS",
+      "label": { "ja": "十勝岳温泉 湯元 凌雲閣", "en": "Tokachidake Onsen Ryounkaku" },
+      "shortLabel": { "ja": "凌雲閣", "en": "Ryounkaku" },
+      "mapsQuery": "十勝岳温泉 湯元 凌雲閣 上富良野"
+    },
+    {
+      "id": "hakuginso",
+      "group": "onsen",
+      "category": "onsen-sauna",
+      "region": { "ja": "上富良野・十勝岳", "en": "Kamifurano / Mt. Tokachi" },
+      "lat": 43.4314559,
+      "lon": 142.641572,
+      "source": "OpenStreetMap",
+      "label": { "ja": "吹上温泉保養センター 白銀荘", "en": "Fukiage Onsen Hakuginso" },
+      "shortLabel": { "ja": "白銀荘", "en": "Hakuginso" },
+      "mapsQuery": "吹上温泉保養センター 白銀荘 上富良野"
+    },
+    {
+      "id": "fukiage-roten",
+      "group": "onsen",
+      "category": "onsen-roten",
+      "region": { "ja": "上富良野・十勝岳", "en": "Kamifurano / Mt. Tokachi" },
+      "lat": 43.4297364,
+      "lon": 142.6372595,
+      "source": "OpenStreetMap",
+      "label": { "ja": "吹上露天の湯", "en": "Fukiage Roten no Yu" },
+      "shortLabel": { "ja": "吹上露天の湯", "en": "Fukiage roten" },
+      "mapsQuery": "吹上露天の湯 上富良野"
+    },
+    {
+      "id": "yukoma",
+      "group": "onsen",
+      "category": "onsen-mountain",
+      "region": { "ja": "旭岳・東川", "en": "Mt. Asahidake / Higashikawa" },
+      "lat": 43.6478326,
+      "lon": 142.7899492,
+      "source": "OpenStreetMap",
+      "label": { "ja": "旭岳温泉 湯元 湧駒荘", "en": "Asahidake Onsen Yukomanso" },
+      "shortLabel": { "ja": "湧駒荘", "en": "Yukomanso" },
+      "mapsQuery": "旭岳温泉 湯元 湧駒荘 東川町"
+    }
+  ]
+}

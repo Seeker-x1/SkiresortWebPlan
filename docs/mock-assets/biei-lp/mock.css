@@ -974,6 +974,140 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
 }
 
+.map-embed {
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: #e8edf2;
+}
+
+.map-layer-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.map-layer-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  font-family: Syne, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 0.2s var(--ease), color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.map-layer-btn:hover {
+  border-color: var(--accent);
+  color: var(--fg);
+}
+
+.map-layer-btn[aria-pressed="true"] {
+  background: var(--fg);
+  border-color: var(--fg);
+  color: var(--surface);
+}
+
+.map-layer-hint {
+  margin: 0.75rem 0 0;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.onsen-region {
+  margin: 2.5rem 0 0;
+  font-family: Syne, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.onsen-region + .food-spot-list {
+  margin-top: 1rem;
+}
+
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.food-spot-list {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--border);
+}
+
+.food-spot {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: 5rem;
+}
+
+@media (min-width: 640px) {
+  .food-spot { grid-template-columns: 3.5rem 1fr; gap: 1.5rem; }
+}
+
+.food-spot__num {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+}
+
+.food-spot__tag {
+  margin: 0;
+  font-family: Syne, sans-serif;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.food-spot__title {
+  margin: 0.5rem 0 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.food-spot__lead {
+  margin: 0.75rem 0 0;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: var(--muted);
+  max-width: 40rem;
+}
+
+.food-spot__map-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .btn:hover { transform: none; }

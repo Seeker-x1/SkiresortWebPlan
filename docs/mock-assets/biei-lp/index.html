@@ -121,6 +121,21 @@
               <span class="path-tile__arrow" aria-hidden="true">→</span>
             </span>
           </a>
+          <a href="nearby-food.html" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.food.label">グルメ</span>
+            <span class="path-tile__title" data-i18n="paths.food.title">周辺飲食10選</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="../area-map.html?resort=biei&layers=food,onsen,anchor" class="path-tile span-8">
+            <span class="path-tile__label">Map</span>
+            <span class="path-tile__title" data-i18n="nearbyFood.navAreaMap">周辺マップ</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="nearby-onsen.html" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.onsen.label">温泉</span>
+            <span class="path-tile__title" data-i18n="paths.onsen.title">周辺温泉10選</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
     </section>
@@ -190,9 +205,12 @@
               美瑛野菜を何時間も煮込んだコンソメスープやポトフ——冷え切った身体へのローカルフード・セラピー。白金温泉など周辺の温浴と組み合わせ、ホリスティック・ウェルネス・サイクルを完成させます。
             </p>
             <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="recovery.whisper">
-              おきらく亭をはじめ、駅周辺のカフェで湯気の立つドリンクを。散策の合間に、地元の温かさを味わえます。
+              おきらく亭をはじめ、駅周辺のカフェで湯気の立つドリンクを。白金温泉の日帰り入浴も、雪遊び後の王道です。
             </p>
-            <a href="#" class="btn btn-primary" style="margin-top:2rem" data-i18n="recovery.cta">周辺グルメ・温泉ガイド</a>
+            <div style="margin-top:2rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+              <a href="nearby-food.html" class="btn btn-primary" data-i18n="recovery.cta">周辺グルメ10選ガイド</a>
+              <a href="nearby-onsen.html" class="btn btn-ghost" data-i18n="recovery.ctaOnsen">周辺温泉10選ガイド</a>
+            </div>
           </div>
           <div class="recovery-visual">
             <div class="frame">
@@ -232,7 +250,8 @@
           <div class="journey-step">
             <p class="journey-step__num">03</p>
             <p class="journey-step__title" data-i18n="journey.steps.03.title">回復・滋養</p>
-            <p class="journey-step__body" data-i18n="journey.steps.03.body">おきらく亭のポトフ、温活ランチ</p>
+            <p class="journey-step__body" data-i18n="journey.steps.03.body">じゅんぺいの海老丼、美瑛ファームのラクレットトースト——インバウンドに刺さる周辺グルメ</p>
+            <a href="nearby-food.html" class="journey-step__link" data-i18n="journey.steps.03.linkLabel">周辺飲食ガイド</a>
           </div>
           <div class="journey-step">
             <p class="journey-step__num">04</p>
@@ -313,6 +332,56 @@
                     Mac の壁紙にもなった、コバルトブルーの池。スノーウェルネスのあと、白金温泉エリアへ——海外旅行者が最も検索する美瑛の象徴。
                   </p>
                   <a href="blue-pond.html" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="food">
+              <span data-i18n="guides.food.title">周辺飲食10選 — 雪遊びの前後に</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-food" hidden>
+              <div class="guide-preview">
+                <div class="guide-preview__thumb">
+                  <img
+                    src="lp-mock-biei-recovery.png"
+                    data-i18n-attr="alt:guides.food.thumbAlt"
+                    alt="美瑛の温活ランチ"
+                    width="280"
+                    height="350"
+                  />
+                </div>
+                <div>
+                  <p class="lead" data-i18n="guides.food.body">
+                    乳製品・和牛・小麦・ラーメン——雪遊びと青い池をつなぐ周辺グルメマップ付きガイド。
+                  </p>
+                  <a href="nearby-food.html" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="onsen">
+              <span data-i18n="guides.onsen.title">周辺温泉10選 — 雪見露天</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-onsen" hidden>
+              <div class="guide-preview">
+                <div class="guide-preview__thumb">
+                  <img
+                    src="lp-mock-biei-recovery.png"
+                    data-i18n-attr="alt:guides.onsen.thumbAlt"
+                    alt="雪景色と温泉"
+                    width="280"
+                    height="350"
+                  />
+                </div>
+                <div>
+                  <p class="lead" data-i18n="guides.onsen.body">
+                    白金温泉から十勝岳・旭岳まで——冷えた体を温める温泉マップ付きガイド。
+                  </p>
+                  <a href="nearby-onsen.html" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
                 </div>
               </div>
             </div>
