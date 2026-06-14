@@ -115,6 +115,20 @@ th {
 
 tr:last-child td { border-bottom: none; }
 
+.hub-id {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+  width: 1%;
+}
+
+.hub-id--empty {
+  color: var(--muted);
+  font-weight: 400;
+}
+
 .hub-link {
   color: var(--accent);
   font-weight: 600;

@@ -9,6 +9,7 @@
     "lead": "Open each resort guide page."
   },
   "table": {
+    "id": "Snow List ID",
     "name": "Resort",
     "region": "Region",
     "strategy": "Highlights",

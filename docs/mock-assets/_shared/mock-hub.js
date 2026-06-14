@@ -50,16 +50,24 @@
     const tbody = document.getElementById("resort-table-body");
     if (tbody) {
       tbody.innerHTML = "";
-      registry.resorts.forEach((r) => {
+      const rows = [...registry.resorts].sort(
+        (a, b) => (a.japowResortId ?? 9999) - (b.japowResortId ?? 9999),
+      );
+      rows.forEach((r) => {
         const tr = document.createElement("tr");
-        const href = `${r.slug}/index.html${locale === "en" ? "?lang=en" : ""}`;
+        const lpHref = `/${r.id}/${locale === "en" ? "?lang=en" : ""}`;
+        const mapHref = `/map.html?resort=${r.id}${locale === "en" ? "&lang=en" : ""}`;
+        const idCell = r.japowResortId != null
+          ? `<td class="hub-id">${r.japowResortId}</td>`
+          : `<td class="hub-id hub-id--empty">—</td>`;
         tr.innerHTML = `
+          ${idCell}
           <td><strong>${r.name[locale]}</strong></td>
           <td>${r.region[locale]}</td>
           <td>${r.strategy[locale]}</td>
           <td>
-            <a class="hub-link" href="${href}">${get(messages, "table.preview")}</a>
-            · <a class="hub-link" href="map.html?resort=${r.id}${locale === "en" ? "&lang=en" : ""}">${get(messages, "table.map")}</a>
+            <a class="hub-link" href="${lpHref}">${get(messages, "table.preview")}</a>
+            · <a class="hub-link" href="${mapHref}">${get(messages, "table.map")}</a>
           </td>
         `;
         tbody.appendChild(tr);
