@@ -40,6 +40,10 @@
     "pricing": {
       "label": "Pricing",
       "title": "Free lift & rentals"
+    },
+    "bluePond": {
+      "label": "Nearby",
+      "title": "Shirogane Blue Pond"
     }
   },
   "highlights": {
@@ -88,7 +92,8 @@
       },
       "05": {
         "title": "Views & finale",
-        "body": "Blue Pond and Shirahige Falls light-up"
+        "body": "Shirogane Blue Pond winter light-up—the cobalt blue the world knows",
+        "linkLabel": "Read the Blue Pond guide"
       }
     }
   },
@@ -109,7 +114,73 @@
         "#SnowGlobeVillage",
         "#WinterWellnessHokkaido"
       ]
+    },
+    "bluePond": {
+      "title": "Shirogane Blue Pond — winter light-up",
+      "body": "The cobalt pond that became a Mac wallpaper. After snow wellness, head to the Shirogane onsen area—the icon overseas visitors search for most in Biei.",
+      "thumbAlt": "Shirogane Blue Pond under winter light-up—cobalt water and snowfields"
     }
+  },
+  "featuredSpot": {
+    "eyebrow": "Iconic nearby",
+    "title": "Shirogane Blue Pond",
+    "lead": "The cobalt blue the world knows—close a snow wellness day with a winter light-up finale.",
+    "cta": "Blue Pond guide",
+    "imgAlt": "Shirogane Blue Pond at night under light-up—birch trees and cobalt water"
+  },
+  "bluePond": {
+    "meta": {
+      "title": "Shirogane Blue Pond — Biei Town Ski Area",
+      "description": "Winter light-up, access, and pairing with snow play—guide for international visitors"
+    },
+    "backLink": "Back to Biei guide",
+    "hero": {
+      "eyebrow": "Shirogane · Biei",
+      "title": "Japan's Blue Pond—<br />beyond the photo",
+      "tagline": "The cobalt blue the world knows—after snow wellness, into the winter night"
+    },
+    "notice": "Light-up dates, parking, and bus service change by season. Confirm on Biei Town or tourism association official sites before you go.",
+    "introTitle": "Why is it so blue?",
+    "introLead": "Shirogane Blue Pond (Aoiike) was created as a by-product of erosion-control work linked to Mt. Tokachi volcanic activity.",
+    "introBody": "Minerals from submerged birch and fallen leaves scatter light into cobalt blue—a Biei view where nature and human intervention overlap.",
+    "whenEyebrow": "Best time",
+    "whenTitle": "Winter light-up",
+    "whenLead": "Typically from around November through April, lights come on after sunset. In crisp midwinter air, the blue sinks deep into still water—the hour overseas visitors seek most.",
+    "whenNote": "Viewing decks or parking may be restricted due to weather, snow, or crowds.",
+    "accessEyebrow": "Access",
+    "accessTitle": "From Biei Station & the ski area",
+    "accessLead": "About 25 minutes by car from Biei Station (Shirogane Onsen area). After the ski hill, most visitors go by rental car or winter bus/tour.",
+    "accessItems": {
+      "drive": {
+        "label": "Car",
+        "body": "Biei Station → Shirogane Onsen area, approx. 25 min. Winter tires required."
+      },
+      "bus": {
+        "label": "Bus & tours",
+        "body": "Seasonal buses and day tours from Biei/Furano (schedules vary by year)."
+      },
+      "pair": {
+        "label": "Itinerary",
+        "body": "Ski area → warming lunch → Shirogane Onsen → Blue Pond light-up in one day."
+      },
+      "winter": {
+        "label": "Winter",
+        "body": "Watch for ice and blizzards. Tripods only in designated areas."
+      }
+    },
+    "responsibleTitle": "Quietly, in welcoming spaces",
+    "responsibleLead": "No trespassing on farmland—the same stance as our \"landscape is livelihood\" message. Shoot from the viewing deck, yield in crowds, and respect tripod etiquette.",
+    "responsibleHashtags": [
+      "#BluePondBiei",
+      "#ShiroganeBluePond",
+      "#WinterWellnessHokkaido"
+    ],
+    "mapsTitle": "Location",
+    "mapsBody": "Shirogane, Biei-cho, Kamikawa-gun, Hokkaido. Check your route on Google Maps.",
+    "mapsCta": "Open in Google Maps",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Shirogane+Blue+Pond+Biei+Hokkaido",
+    "heroImageAlt": "Shirogane Blue Pond at night under light-up—birch silhouettes and cobalt water",
+    "galleryAlt": "Winter at Shirogane Blue Pond—cobalt surface framed by snow"
   },
   "access": {
     "postal": "071-0218, Japan",
