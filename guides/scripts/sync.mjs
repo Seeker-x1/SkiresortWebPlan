@@ -69,6 +69,8 @@ function rewriteHtml(content) {
     .replaceAll('href="../_shared/', 'href="/_shared/')
     .replaceAll('src="../_shared/', 'src="/_shared/')
     .replaceAll('href="../map.html', 'href="/map.html')
+    .replaceAll('href="../area-map.html', 'href="/area-map.html')
+    .replaceAll('src="../area-map.html', 'src="/area-map.html')
     .replaceAll('href="../index.html"', 'href="/"')
     .replaceAll("href='../index.html'", "href='/'")
     .replaceAll('href="index.html"', 'href="/"')
@@ -106,6 +108,17 @@ function rewriteJs(content, filename) {
       /src="\$\{hero\.src\}"/,
       'src="${hero.src.startsWith("/") ? hero.src : `/${hero.src}`}"',
     );
+  }
+
+  if (filename === "area-map.js") {
+    out = out
+      .replaceAll("`${resortId}-lp/", "`/${resortId}/")
+      .replaceAll('fetch(`data/maps/', 'fetch(`/data/maps/')
+      .replaceAll('href = `index.html', 'href = `/');
+  }
+
+  if (filename === "map-embed-layers.js") {
+    out = out.replaceAll('"../area-map.html"', '"/area-map.html"');
   }
 
   return out;
@@ -214,6 +227,13 @@ function main() {
   writeFileSync(
     join(OUT, "map.html"),
     rewriteHtml(readFileSync(join(MOCK_ROOT, "map.html"), "utf8")),
+    "utf8",
+  );
+
+  // Area map (food / onsen / hubs)
+  writeFileSync(
+    join(OUT, "area-map.html"),
+    rewriteHtml(readFileSync(join(MOCK_ROOT, "area-map.html"), "utf8")),
     "utf8",
   );
 

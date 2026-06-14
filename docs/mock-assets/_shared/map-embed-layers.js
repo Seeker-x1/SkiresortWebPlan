@@ -28,7 +28,7 @@
     );
 
     function sync() {
-      iframe.src = buildMapSrc("../area-map.html", [...active], lang());
+      iframe.src = buildMapSrc("/area-map.html", [...active], lang());
       toggles.forEach((btn) => {
         btn.setAttribute("aria-pressed", active.has(btn.dataset.mapLayer) ? "true" : "false");
       });
