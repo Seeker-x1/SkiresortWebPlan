@@ -16,7 +16,7 @@
     "preview:map": "node resorts/Sichinohe-CyoueiSki/scripts/build-map-preview.mjs && node resorts/Sichinohe-CyoueiSki/scripts/build-calibration-qa.mjs && node scripts/build-static-preview.mjs && node scripts/build-evaluation-html.mjs"
   },
   "dependencies": {
-    "framer-motion": "^11.18.2",
+    "framer-motion": "^12.40.0",
     "next": "16.2.9",
     "next-intl": "^4.13.0",
     "react": "19.2.7",
