@@ -46,7 +46,7 @@ jobs:
           if [ -n "${{ matrix.directory }}" ]; then
             cd "${{ matrix.directory }}"
           fi
-          npm ci
+          npx --yes npm@10.9.2 ci
 
       - name: npm audit (high+)
         shell: bash
@@ -55,4 +55,4 @@ jobs:
           if [ -n "${{ matrix.directory }}" ]; then
             cd "${{ matrix.directory }}"
           fi
-          npm audit --audit-level=high
+          npx --yes npm@10.9.2 audit --audit-level=high

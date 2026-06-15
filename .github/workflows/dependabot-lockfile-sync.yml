@@ -1,0 +1,90 @@
+# Dependabot sometimes leaves package-lock.json out of sync (npm ci fails with
+# "Missing: @swc/helpers@…"). Regenerate lockfiles with npm 10.9.2 (same as CI).
+name: Dependabot lockfile sync
+
+on:
+  pull_request:
+    branches: [main, master]
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: read
+
+concurrency:
+  group: dependabot-lockfile-${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  sync-lockfile:
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Detect changed lockfiles
+        id: changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin "${{ github.base_ref }}"
+          CHANGED="$(git diff --name-only "origin/${{ github.base_ref }}...HEAD")"
+          echo "$CHANGED"
+          {
+            echo "root=false"
+            echo "web=false"
+            echo "scripts=false"
+          } >> "$GITHUB_OUTPUT"
+          echo "$CHANGED" | grep -qx 'package-lock.json' && echo "root=true" >> "$GITHUB_OUTPUT"
+          echo "$CHANGED" | grep -qx 'resorts/Sichinohe-CyoueiSki/web/package-lock.json' && echo "web=true" >> "$GITHUB_OUTPUT"
+          echo "$CHANGED" | grep -qx 'resorts/Sichinohe-CyoueiSki/scripts/package-lock.json' && echo "scripts=true" >> "$GITHUB_OUTPUT"
+
+      - name: Sync root lockfile
+        if: steps.changed.outputs.root == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          npx --yes npm@10.9.2 install
+          npx --yes npm@10.9.2 ci
+
+      - name: Sync sichinohe-web lockfile
+        if: steps.changed.outputs.web == 'true'
+        shell: bash
+        working-directory: resorts/Sichinohe-CyoueiSki/web
+        run: |
+          set -euo pipefail
+          npx --yes npm@10.9.2 install
+          npx --yes npm@10.9.2 ci
+
+      - name: Sync sichinohe-scripts lockfile
+        if: steps.changed.outputs.scripts == 'true'
+        shell: bash
+        working-directory: resorts/Sichinohe-CyoueiSki/scripts
+        run: |
+          set -euo pipefail
+          npx --yes npm@10.9.2 install
+          npx --yes npm@10.9.2 ci
+
+      - name: Commit lockfile fix
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "Lockfile already in sync"
+            exit 0
+          fi
+          git add package-lock.json \
+            resorts/Sichinohe-CyoueiSki/web/package-lock.json \
+            resorts/Sichinohe-CyoueiSki/scripts/package-lock.json 2>/dev/null || true
+          git commit -m "chore(deps): sync lockfile after Dependabot (npm 10.9.2)"
+          git push

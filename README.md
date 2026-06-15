@@ -35,6 +35,7 @@ npx npm@10.9.2 ci
 ## セキュリティ
 
 - **Dependabot**（`.github/dependabot.yml`）: 週次で npm / GitHub Actions の更新 PR
+- **Dependabot lockfile sync**（`.github/workflows/dependabot-lockfile-sync.yml`）: Dependabot PR で lockfile が不完全なとき `npm@10.9.2` で自動修正
 - **Security audit**（`.github/workflows/security-audit.yml`）: push / PR / 週次で `npm ci` + `npm audit --audit-level=high`
 
 ## 開発の入口
