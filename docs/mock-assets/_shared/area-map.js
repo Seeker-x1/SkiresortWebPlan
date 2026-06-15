@@ -778,13 +778,6 @@
     mapEl.id = "area-leaflet-map";
     wrap.appendChild(mapEl);
 
-    if (!embed) {
-      const hint = document.createElement("p");
-      hint.className = "area-map-hint";
-      hint.textContent = t("mapHint");
-      wrap.appendChild(hint);
-    }
-
     el.stage.appendChild(wrap);
 
     if (!embed && mapData.disclaimer && el.rail) {

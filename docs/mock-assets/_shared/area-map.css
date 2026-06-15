@@ -501,7 +501,7 @@ body.area-map-page:not(.area-map-page--embed) .area-leaflet-wrap {
 }
 
 body.area-map-page:not(.area-map-page--embed) .area-map-fixed-toggles {
-  bottom: 2.1rem;
+  bottom: 0.35rem;
 }
 
 .area-map-page--embed .area-map-fixed-toggles {
@@ -547,18 +547,6 @@ body.area-map-page:not(.area-map-page--embed) .area-map-fixed-toggles {
   display: block;
 }
 
-.area-map-hint {
-  margin: 0;
-  padding: 0.45rem 0.65rem;
-  background: rgba(255, 255, 255, 0.95);
-  border-top: 1px solid var(--area-rail-border);
-  font-size: 0.6875rem;
-  color: var(--area-muted);
-  line-height: 1.45;
-  flex-shrink: 0;
-}
-
-.area-map-page--embed .area-map-hint,
 .area-map-page--embed .area-disclaimer {
   display: none;
 }
