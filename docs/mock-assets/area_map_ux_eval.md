@@ -1,6 +1,6 @@
 # 周辺エリアマップ — UX 評価レポート
 
-**Date:** 2026-06-15（M1 / A2 / P1 / R1 実装後）  
+**Date:** 2026-06-15（A2 評価 FAIL 記録 → `ee84627` 実装・再評価 PASS）  
 **Evaluator:** L3 横断レビュー（`resort-template-implementer` 実装 + コード検証）  
 **基準:** `area_map_ux_spec.md` §2、`area_map_m1_a1_handoff.md`、`area_map_a2_fixed_anchor_handoff.md`、`area_map_p1_popup_handoff.md`  
 **対象:** `area-map.html` standalone、`nearby-food.html` / `nearby-onsen.html` embed
@@ -9,7 +9,7 @@
 
 ## Verdict
 
-**PASS（条件付き）** — M1 / A2 / P1 / R1 は実装済み。本番 `guides.japowserch.com` でビルド反映後の実機スモークを推奨。
+**PASS（条件付き）** — A2 は実装前 FAIL → `ee84627` で是正済み。本番 JS に A2 コード反映を確認。
 
 | ゲート | 結果 |
 |--------|------|
@@ -34,13 +34,39 @@
 
 ## A2 — 固定拠点（スキー場・駅）
 
+参照: `area_map_a2_fixed_anchor_handoff.md`
+
+### A2 評価ゲート（実装前・2026-06-15）
+
+**確認 URL:** https://guides.japowserch.com/area-map.html?resort=biei&layers=food,anchor  
+**方法:** ユーザー報告スクリーンショット + コードレビュー（`sortForList`）
+
+| # | 観点 | 結果 | メモ |
+|---|------|------|------|
+| 1 | リスト 01/02 が ski / station | **FAIL** | `sortForList` が `[...hubs, ...rest]` で先頭固定 |
+| 2 | 可視 3 行が拠点 2 + 他 1 で潰れる | **FAIL** | レール高さ制約下で回遊 POI が読めない |
+| 3 | 件数に固定拠点含む | **FAIL** | 「13件」表示（リスト対象は 11 のはず） |
+| 4 | マップ下部トグル | **FAIL** | 未実装 |
+| 5 | 地図ピン（スキー場・駅） | — | 要件どおり表示でよい（リスト除外が論点） |
+
+**A2 ゲート総合: FAIL** → `area_map_a2_fixed_anchor_handoff.md` 実装へ進行。
+
+---
+
+### A2 再評価（実装後 `ee84627`・本番 JS 確認）
+
+**確認:** `guides.japowserch.com/_shared/area-map.js` に `FIXED_ANCHOR_IDS` + `sortForList` filter を確認（2026-06-15）。
+
 | # | 観点 | 結果 | 根拠 |
 |---|------|------|------|
 | 1 | リスト 01/02 | **PASS** | `sortForList` が `FIXED_ANCHOR_IDS` を除外 |
-| 2 | 件数 | **PASS** | `spotCount` はリスト対象のみ（例: 11件） |
-| 3 | マップ下部トグル | **PASS** | `.area-map-fixed-toggles`（standalone のみ） |
-| 4 | 拠点レイヤー OFF + トグル ON | **PASS** | `markersForRender()` / `isFeatureOnMap()` |
-| 5 | embed | **PASS** | トグル非表示・固定ピン常時 ON |
+| 2 | 可視行が回遊 POI のみ | **PASS** | 先頭が飲食 or 青い池等 |
+| 3 | 件数 | **PASS** | `spotCount` はリスト対象のみ（11件） |
+| 4 | マップ下部トグル | **PASS** | `.area-map-fixed-toggles`（standalone） |
+| 5 | 拠点レイヤー OFF + トグル ON | **PASS** | `markersForRender()` / `isFeatureOnMap()` |
+| 6 | embed | **PASS** | トグル非表示・固定ピン常時 ON |
+
+**A2 ゲート総合: PASS** ✅
 
 ---
 
