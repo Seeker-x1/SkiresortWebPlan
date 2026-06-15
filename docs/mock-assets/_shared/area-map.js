@@ -1,15 +1,18 @@
 /**
- * Biei area map — Leaflet POI map (Plan A: ski-centric cluster + custom pins).
+ * Biei area map — Leaflet POI map v2 (BKKDW: fitBounds overview + unified dots + map popup).
  */
 (function () {
   const STORAGE_KEY = "mock-lp-locale";
+  const FALLBACK_CENTER = [43.5897, 142.4449];
+  const FALLBACK_ZOOM = 12;
+
   const params = new URLSearchParams(location.search);
   const resortId = params.get("resort") || "biei";
   const embed = params.get("embed") === "1";
   const locale = params.get("lang") || localStorage.getItem(STORAGE_KEY) || "ja";
-  const ICON_BASE = "_shared/icons/";
 
   const LAYER_KEYS = ["food", "onsen", "anchor"];
+  const DEFAULT_LAYERS = ["food", "anchor"];
 
   const UI = {
     ja: {
@@ -21,12 +24,21 @@
       filterFood: "飲食",
       filterOnsen: "温泉",
       filterAnchor: "拠点",
-      filterHint: "飲食と温泉は同時表示できます。温泉のみのときは白金方面に切り替わります",
-      mapHint: "ピンをタップするかリストから選ぶとハイライトされます",
-      detailPick: "リストまたは地図のピンからスポットを選んでください",
-      openMaps: "Google Mapで開く",
-      readGuide: "特集を読む",
+      filterLabel: "レイヤーフィルタ",
+      filterHint:
+        "表示中のスポットがすべて地図に収まります。温泉のみのときは白金方面に切り替わります",
+      mapHint: "ピンをタップすると地図上に詳細が表示されます",
       spotCount: "{n}件",
+      popup: {
+        close: "ポップアップを閉じる",
+        viewMap: "地図で開く →",
+        viewMapAria: "{name}を Google マップで開く",
+        readGuide: "特集を読む",
+        readGuideAria: "{name}の特集記事を読む",
+        website: "公式サイト",
+        phoneAria: "電話 {phone} に発信",
+        hubBadge: "拠点",
+      },
       category: {
         anchor: "拠点",
         dairy: "乳製品",
@@ -52,6 +64,9 @@
       needHttp:
         "file:// では動きません。npx serve docs/mock-assets -p 3456 を実行してください。",
       leafletError: "地図ライブラリを読み込めませんでした。",
+      embedListFab: "スポット一覧",
+      embedListFabClose: "一覧を閉じる",
+      railLabel: "周辺スポット",
     },
     en: {
       backHub: "← Index",
@@ -62,12 +77,21 @@
       filterFood: "Food",
       filterOnsen: "Onsen",
       filterAnchor: "Hubs",
-      filterHint: "Food and onsen can overlap. Onsen-only snaps to Shirogane area",
-      mapHint: "Tap a pin or pick from the list to highlight a spot",
-      detailPick: "Select a spot from the list or map pins",
-      openMaps: "Open in Google Maps",
-      readGuide: "Read guide",
+      filterLabel: "Layer filters",
+      filterHint:
+        "All visible spots fit on the map. Onsen-only snaps to Shirogane area",
+      mapHint: "Tap a pin to see details on the map",
       spotCount: "{n} spots",
+      popup: {
+        close: "Close popup",
+        viewMap: "VIEW MAP →",
+        viewMapAria: "Open {name} in Google Maps",
+        readGuide: "Read guide",
+        readGuideAria: "Read the guide for {name}",
+        website: "Official site",
+        phoneAria: "Call {phone}",
+        hubBadge: "Hub",
+      },
       category: {
         anchor: "Hub",
         dairy: "Dairy",
@@ -92,6 +116,9 @@
       loadError: "Could not load map data.",
       needHttp: "Run npx serve docs/mock-assets -p 3456 (file:// will not work).",
       leafletError: "Could not load the map library.",
+      embedListFab: "Spot list",
+      embedListFabClose: "Close list",
+      railLabel: "Nearby spots",
     },
   };
 
@@ -113,6 +140,13 @@
     return obj[locale] || obj.ja || obj.en || "";
   }
 
+  function esc(str) {
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/"/g, "&quot;");
+  }
+
   function googleMapsUrl(query) {
     return (
       "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(query)
@@ -121,28 +155,32 @@
 
   function parseLayers() {
     const raw = params.get("layers");
-    if (!raw) return new Set(LAYER_KEYS);
+    if (!raw) return new Set(DEFAULT_LAYERS);
     const parts = raw.split(",").map((s) => s.trim()).filter(Boolean);
     const valid = parts.filter((p) => LAYER_KEYS.includes(p));
-    return valid.length ? new Set(valid) : new Set(LAYER_KEYS);
+    return valid.length ? new Set(valid) : new Set(DEFAULT_LAYERS);
+  }
+
+  function featureById(id) {
+    return allFeatures().find((f) => f.id === id);
   }
 
   let mapData = null;
-  let markerManifest = null;
   let leafletMap = null;
   let markerLayer = null;
   const markerById = new Map();
   let selectedId = null;
   let activeLayers = parseLayers();
   let skipNextMoveEnd = false;
+  let embedRailOpen = false;
+  let embedMobileMq = null;
 
   const el = {
+    shell: document.querySelector(".area-shell"),
     stage: document.getElementById("area-stage"),
     list: document.getElementById("area-list"),
-    detail: document.getElementById("area-detail"),
-    embedToolbar: null,
-    embedFilters: null,
-    embedPicker: null,
+    rail: document.querySelector(".area-rail"),
+    embedListFab: null,
     title: document.getElementById("area-rail-title"),
     lead: document.getElementById("area-rail-lead"),
     resortName: document.getElementById("area-resort-name"),
@@ -184,37 +222,21 @@
     return prefersReducedMotion() ? "auto" : "smooth";
   }
 
-  function markerKeyFor(feature) {
-    if (!markerManifest) return feature.group === "food" ? "food" : feature.group;
-    const mapping = markerManifest.bieiAreaMapping || {};
-    if (feature.group === "food") return mapping.food || "food";
-    if (feature.group === "onsen") return mapping.onsen || "onsen";
-    return mapping[`anchor.${feature.id}`] || "food";
+  function popupOffset() {
+    return embed && embedMobileMq?.matches ? [0, -44] : [0, -12];
   }
 
-  function iconPath(key, size) {
-    const files = markerManifest?.markers?.[key]?.files;
-    const file = files?.[size] || files?.["32"];
-    return file ? `${ICON_BASE}${file}` : null;
-  }
-
-  function markerSize(feature, active) {
-    if (active) return 48;
-    if (feature.id === "ski") return 40;
-    return 32;
-  }
-
-  function makeIcon(feature, active) {
-    const size = markerSize(feature, active);
-    const key = markerKeyFor(feature);
-    const assetSize = size >= 48 || (feature.id === "ski" && !active) ? "48" : "32";
-    const url = iconPath(key, assetSize);
-    if (!url || !window.L) return null;
-    return window.L.icon({
-      iconUrl: url,
+  function makeDotIcon(feature, active) {
+    const isSki = feature.id === "ski";
+    const size = active || isSki ? 24 : 20;
+    const classes = ["area-dot-pin"];
+    if (active) classes.push("area-dot-pin--active");
+    if (isSki) classes.push("area-dot-pin--ski");
+    return window.L.divIcon({
+      className: classes.join(" "),
+      html: '<span class="area-dot-pin__outer"><span class="area-dot-pin__inner"></span></span>',
       iconSize: [size, size],
       iconAnchor: [size / 2, size / 2],
-      className: active ? "area-pin area-pin--active" : "area-pin",
     });
   }
 
@@ -222,9 +244,55 @@
     const hasFood = activeLayers.has("food");
     const hasOnsen = activeLayers.has("onsen");
     const hasAnchor = activeLayers.has("anchor");
+    if (hasFood && hasOnsen) return "foodOnsen";
     if (hasOnsen && !hasFood && !hasAnchor) return "onsen";
+    if (hasOnsen && !hasFood && hasAnchor) return "onsenAnchor";
     if (hasAnchor && !hasFood && !hasOnsen) return "anchorAll";
     return "skiFood";
+  }
+
+  function isEmbedMobile() {
+    return embed && embedMobileMq?.matches;
+  }
+
+  function setEmbedRailOpen(open) {
+    if (!embed) return;
+    embedRailOpen = open;
+    document.body.classList.toggle("area-embed-rail-open", open);
+    if (el.embedListFab) {
+      el.embedListFab.setAttribute("aria-expanded", open ? "true" : "false");
+      el.embedListFab.textContent = open ? t("embedListFabClose") : t("embedListFab");
+    }
+    requestAnimationFrame(() => leafletMap?.invalidateSize());
+  }
+
+  function initEmbedMobileRail() {
+    if (!embed || !el.stage) return;
+
+    embedMobileMq = window.matchMedia("(max-width: 768px)");
+
+    function syncFab() {
+      if (!embedMobileMq.matches) {
+        setEmbedRailOpen(false);
+        el.embedListFab?.remove();
+        el.embedListFab = null;
+        return;
+      }
+      if (el.embedListFab) return;
+
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "area-embed-list-fab";
+      btn.setAttribute("aria-expanded", "false");
+      btn.setAttribute("aria-controls", "area-list");
+      btn.textContent = t("embedListFab");
+      btn.addEventListener("click", () => setEmbedRailOpen(!embedRailOpen));
+      el.stage.appendChild(btn);
+      el.embedListFab = btn;
+    }
+
+    embedMobileMq.addEventListener("change", syncFab);
+    syncFab();
   }
 
   function featuresForBounds(profile) {
@@ -250,66 +318,33 @@
     if (!leafletMap) return;
     const profile = resolveBoundsProfile();
     const feats = featuresForBounds(profile);
-    const cfg = mapData.boundsProfiles?.[profile];
+    const cfg = mapData.boundsProfiles?.[profile] || {};
+    const anim = !!animate && !prefersReducedMotion();
+
     if (!feats.length) {
-      const c = mapData.center || [43.5897, 142.4449];
       skipNextMoveEnd = true;
-      leafletMap.setView(c, cfg?.maxZoom || 12, { animate: !!animate });
+      leafletMap.setView(FALLBACK_CENTER, FALLBACK_ZOOM, { animate: anim });
       return;
     }
+
     const bounds = window.L.latLngBounds(feats.map((f) => [f.lat, f.lon]));
-    const pad = embed ? [24, 24] : [40, 40];
+    const pad = embed ? [32, 32] : [48, 48];
     skipNextMoveEnd = true;
     leafletMap.fitBounds(bounds, {
       padding: pad,
-      maxZoom: cfg?.maxZoom ?? 13,
-      animate: !!animate,
+      maxZoom: cfg.maxZoom ?? 13,
+      animate: anim,
     });
   }
 
-  function panToFeature(feature) {
-    if (!leafletMap || !feature) return;
-    skipNextMoveEnd = true;
-    leafletMap.setView([feature.lat, feature.lon], 14, { animate: !prefersReducedMotion() });
-    syncMarkerStyles();
+  function districtLabel(feature) {
+    const d = pick(feature.district);
+    if (d) return d;
+    return pick(feature.region);
   }
 
-  function syncMarkerStyles() {
-    markerById.forEach((marker, id) => {
-      const feature = allFeatures().find((f) => f.id === id);
-      if (!feature || !activeLayers.has(feature.group)) return;
-      const active = id === selectedId;
-      const icon = makeIcon(feature, active);
-      if (icon) marker.setIcon(icon);
-      marker.setZIndexOffset(active ? 1000 : feature.id === "ski" ? 500 : 0);
-    });
-  }
-
-  function renderMarkers() {
-    if (!leafletMap || !markerLayer) return;
-    markerLayer.clearLayers();
-    markerById.clear();
-
-    const visible = filteredFeatures();
-    for (const f of visible) {
-      const icon = makeIcon(f, f.id === selectedId);
-      if (!icon) continue;
-      const marker = window.L.marker([f.lat, f.lon], {
-        icon,
-        title: pick(f.shortLabel) || pick(f.label),
-      });
-      const label = pick(f.shortLabel) || pick(f.label);
-      marker.bindTooltip(label, {
-        direction: "top",
-        offset: [0, -12],
-        opacity: 0.95,
-        className: "area-pin-tooltip",
-      });
-      marker.on("click", () => select(f.id));
-      marker.addTo(markerLayer);
-      markerById.set(f.id, marker);
-    }
-    syncMarkerStyles();
+  function categoryLabel(feature) {
+    return t(`category.${feature.category}`) || feature.category;
   }
 
   function guideHref(feature) {
@@ -325,65 +360,173 @@
     return `${resortId}-lp/${langQ}`;
   }
 
-  function select(id, options = {}) {
-    const { pan = true, fromList = false } = options;
-    selectedId = id;
-    const feature = allFeatures().find((f) => f.id === id);
-    if (!feature || !activeLayers.has(feature.group)) return;
+  function buildPopupHtml(feature) {
+    const name = pick(feature.label);
+    const cat = categoryLabel(feature);
+    const district = districtLabel(feature);
+    const mapsQ = feature.mapsQuery || name;
+    const mapsUrl = googleMapsUrl(mapsQ);
 
-    document.querySelectorAll(".area-list-item").forEach((btn) => {
-      btn.classList.toggle("is-active", btn.dataset.featureId === id);
-      if (fromList && btn.dataset.featureId === id) {
-        btn.scrollIntoView({ block: "nearest", behavior: scrollBehavior() });
-      }
-    });
+    let html = `
+      <div class="area-map-popup" role="dialog" aria-labelledby="area-popup-title-${esc(feature.id)}">
+        <button type="button" class="area-map-popup__close" aria-label="${esc(t("popup.close"))}">×</button>
+        <h3 class="area-map-popup__title" id="area-popup-title-${esc(feature.id)}">${esc(name)}</h3>
+        <p class="area-map-popup__category">${esc(cat)}</p>`;
 
-    syncMarkerStyles();
-    if (pan) panToFeature(feature);
-    renderDetail(feature);
-    if (embed && el.embedPicker) {
-      const sel = el.embedPicker.querySelector("select");
-      if (sel) sel.value = id;
+    if (district) {
+      html += `<p class="area-map-popup__district">${esc(district)}</p>`;
     }
+    if (feature.phone) {
+      html += `<a class="area-map-popup__phone" href="tel:${esc(feature.phone)}" aria-label="${esc(t("popup.phoneAria", { phone: feature.phone }))}">${esc(feature.phone)}</a>`;
+    }
+    if (feature.website) {
+      html += `<a class="area-map-popup__web" href="${esc(feature.website)}" target="_blank" rel="noopener noreferrer">${esc(t("popup.website"))} ↗</a>`;
+    }
+
+    html += `<a class="area-map-popup__cta" href="${esc(mapsUrl)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(t("popup.viewMapAria", { name }))}">${esc(t("popup.viewMap"))}</a>`;
+
+    if (feature.group === "food" || feature.group === "onsen") {
+      html += `<a class="area-map-popup__guide" href="${esc(guideHref(feature))}" aria-label="${esc(t("popup.readGuideAria", { name }))}">${esc(t("popup.readGuide"))}</a>`;
+    }
+
+    html += `</div>`;
+    return html;
   }
 
-  function renderDetail(feature) {
-    if (!el.detail) return;
-    const catLabel = t(`category.${feature.category}`) || feature.category;
-    const region = feature.region ? pick(feature.region) : "";
-    const mapsQ = feature.mapsQuery || pick(feature.label);
+  function syncMarkerStyles() {
+    markerById.forEach((marker, id) => {
+      const feature = featureById(id);
+      if (!feature || !activeLayers.has(feature.group)) return;
+      const active = id === selectedId;
+      marker.setIcon(makeDotIcon(feature, active));
+      marker.setZIndexOffset(active ? 1000 : feature.id === "ski" ? 500 : 0);
+    });
+  }
 
-    el.detail.innerHTML = `
-      <h2 class="area-detail__title">${pick(feature.label)}</h2>
-      <p class="area-detail__meta">${[region, catLabel, feature.source].filter(Boolean).join(" · ")}</p>
-      <div class="area-detail__actions">
-        <a href="${googleMapsUrl(mapsQ)}" target="_blank" rel="noopener noreferrer">${t("openMaps")} ↗</a>
-        ${
-          feature.group === "food" || feature.group === "onsen"
-            ? `<a href="${guideHref(feature)}" class="area-link-ghost">${t("readGuide")}</a>`
-            : ""
+  function syncListActive() {
+    document.querySelectorAll(".area-list-item").forEach((btn) => {
+      const on = btn.dataset.featureId === selectedId;
+      btn.classList.toggle("is-active", on);
+      if (on) btn.setAttribute("aria-current", "true");
+      else btn.removeAttribute("aria-current");
+    });
+  }
+
+  function closePopup() {
+    if (selectedId) {
+      markerById.get(selectedId)?.closePopup();
+    }
+    selectedId = null;
+    syncMarkerStyles();
+    syncListActive();
+  }
+
+  function openPopupForFeature(feature) {
+    const marker = markerById.get(feature.id);
+    if (!marker) return;
+    marker.setPopupContent(buildPopupHtml(feature));
+    marker.openPopup();
+  }
+
+  function renderMarkers() {
+    if (!leafletMap || !markerLayer) return;
+    markerLayer.clearLayers();
+    markerById.clear();
+
+    const visible = filteredFeatures();
+    for (const f of visible) {
+      const marker = window.L.marker([f.lat, f.lon], {
+        icon: makeDotIcon(f, f.id === selectedId),
+        title: pick(f.shortLabel) || pick(f.label),
+      });
+
+      marker.bindPopup(() => buildPopupHtml(f), {
+        className: "area-leaflet-popup",
+        maxWidth: 300,
+        minWidth: 240,
+        autoPan: true,
+        autoPanPadding: embed ? [48, 48] : [32, 32],
+        offset: popupOffset(),
+        closeButton: false,
+      });
+
+      marker.on("click", (e) => {
+        window.L.DomEvent.stopPropagation(e);
+        select(f.id);
+      });
+
+      marker.on("popupclose", () => {
+        if (selectedId === f.id) {
+          selectedId = null;
+          syncMarkerStyles();
+          syncListActive();
         }
-      </div>
-    `;
+      });
+
+      marker.addTo(markerLayer);
+      markerById.set(f.id, marker);
+    }
+    syncMarkerStyles();
+  }
+
+  function select(id, options = {}) {
+    const { fromList = false } = options;
+    const feature = featureById(id);
+    if (!feature || !activeLayers.has(feature.group)) return;
+
+    if (selectedId && selectedId !== id) {
+      markerById.get(selectedId)?.closePopup();
+    }
+
+    selectedId = id;
+    syncMarkerStyles();
+    syncListActive();
+
+    if (fromList) {
+      document.querySelectorAll(".area-list-item").forEach((btn) => {
+        if (btn.dataset.featureId === id) {
+          btn.scrollIntoView({ block: "nearest", behavior: scrollBehavior() });
+        }
+      });
+    }
+
+    openPopupForFeature(feature);
+    if (isEmbedMobile() && fromList) setEmbedRailOpen(false);
   }
 
   function listEyebrow(feature) {
-    if (feature.region) return pick(feature.region);
-    return t(`category.${feature.category}`) || feature.category;
+    const district = districtLabel(feature);
+    if (district) return district;
+    return categoryLabel(feature);
+  }
+
+  function listTitle(feature) {
+    if (embed) return pick(feature.shortLabel) || pick(feature.label);
+    return pick(feature.label);
+  }
+
+  function sortForList(items) {
+    const ski = items.find((f) => f.id === "ski");
+    const station = items.find((f) => f.id === "biei-station");
+    const hubs = [ski, station].filter(Boolean);
+    const hubIds = new Set(hubs.map((f) => f.id));
+    const rest = items.filter((f) => !hubIds.has(f.id));
+    return [...hubs, ...rest];
   }
 
   function renderList() {
     if (!el.list) return;
-    const items = filteredFeatures();
+    const items = sortForList(filteredFeatures());
     el.list.innerHTML = items
       .map((f, i) => {
+        const active = selectedId === f.id;
         return `
-          <button type="button" class="area-list-item${selectedId === f.id ? " is-active" : ""}"
-            data-feature-id="${f.id}">
+          <button type="button" class="area-list-item${active ? " is-active" : ""}"
+            data-feature-id="${f.id}" role="listitem"${active ? ' aria-current="true"' : ""}>
             <span class="area-list-item__num">${String(i + 1).padStart(2, "0")}</span>
             <span class="area-list-item__body">
-              <span class="area-list-item__eyebrow">${listEyebrow(f)}</span>
-              <span class="area-list-item__title">${pick(f.label)}</span>
+              <span class="area-list-item__eyebrow">${esc(listEyebrow(f))}</span>
+              <span class="area-list-item__title">${esc(listTitle(f))}</span>
             </span>
           </button>`;
       })
@@ -401,29 +544,19 @@
   function syncUrlLayers() {
     if (embed && window.parent !== window) return;
     const u = new URL(location.href);
-    if (activeLayers.size === LAYER_KEYS.length) u.searchParams.delete("layers");
+    const isDefault =
+      DEFAULT_LAYERS.every((l) => activeLayers.has(l)) &&
+      activeLayers.size === DEFAULT_LAYERS.length;
+    if (isDefault) u.searchParams.delete("layers");
     else u.searchParams.set("layers", layersQuery());
     window.history.replaceState({}, "", u);
   }
 
   function afterLayerChange() {
-    renderFilters();
-    if (embed) {
-      ensureEmbedToolbar();
-      renderFilters(el.embedFilters);
-      renderEmbedPicker();
-    }
+    closePopup();
+    if (!embed) renderFilters();
     renderList();
     syncUrlLayers();
-
-    const stillVisible = selectedId && filteredFeatures().some((f) => f.id === selectedId);
-    if (!stillVisible) {
-      selectedId = null;
-      if (el.detail) el.detail.innerHTML = `<p>${t("detailPick")}</p>`;
-    } else {
-      renderDetail(allFeatures().find((f) => f.id === selectedId));
-    }
-
     renderMarkers();
     fitMapToProfile(true);
   }
@@ -468,56 +601,14 @@
       btn.addEventListener("click", () => toggleLayer(btn.dataset.layer));
     });
 
-    if (!target && el.filterHint) el.filterHint.textContent = t("filterHint");
-  }
-
-  function renderEmbedPicker() {
-    if (!embed || !el.embedPicker) return;
-    const items = filteredFeatures();
-    el.embedPicker.innerHTML = `
-      <label class="area-embed-picker">
-        <span class="area-embed-picker__label">${t("detailPick")}</span>
-        <select class="area-embed-picker__select" aria-label="${t("detailPick")}">
-          <option value="">${locale === "en" ? "Choose a spot…" : "スポットを選択…"}</option>
-          ${items
-            .map(
-              (f) =>
-                `<option value="${f.id}"${selectedId === f.id ? " selected" : ""}>${pick(f.label)}</option>`,
-            )
-            .join("")}
-        </select>
-      </label>`;
-    el.embedPicker.querySelector("select")?.addEventListener("change", (e) => {
-      if (e.target.value) select(e.target.value, { fromList: true });
-    });
-  }
-
-  function ensureEmbedToolbar() {
-    if (!embed || !el.stage || el.embedToolbar) return;
-    const toolbar = document.createElement("div");
-    toolbar.className = "area-embed-toolbar";
-    toolbar.setAttribute("role", "region");
-    toolbar.setAttribute("aria-label", t("title"));
-
-    el.embedFilters = document.createElement("div");
-    el.embedFilters.className = "area-filter area-filter--embed";
-    el.embedFilters.id = "area-embed-filters";
-
-    el.embedPicker = document.createElement("div");
-    el.embedPicker.className = "area-embed-picker-wrap";
-
-    toolbar.appendChild(el.embedFilters);
-    toolbar.appendChild(el.embedPicker);
-    el.stage.prepend(toolbar);
-    el.embedToolbar = toolbar;
+    if (!target && el.filterHint && !embed) el.filterHint.textContent = t("filterHint");
+    node.setAttribute("aria-label", t("filterLabel"));
   }
 
   function initLeafletMap() {
     if (!el.stage || !window.L) return;
 
-    const toolbar = el.embedToolbar;
     el.stage.replaceChildren();
-    if (toolbar) el.stage.prepend(toolbar);
 
     const wrap = document.createElement("div");
     wrap.className = "area-leaflet-wrap";
@@ -548,25 +639,71 @@
       attributionControl: !embed,
     });
 
-    window.L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    window.L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
       maxZoom: 19,
       attribution: embed
         ? ""
-        : '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        : '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
     }).addTo(leafletMap);
 
     markerLayer = window.L.layerGroup().addTo(leafletMap);
 
+    leafletMap.on("click", () => closePopup());
+
+    leafletMap.on("popupopen", (e) => {
+      const root = e.popup.getElement();
+      root?.querySelector(".area-map-popup__close")?.addEventListener("click", (ev) => {
+        window.L.DomEvent.stopPropagation(ev);
+        ev.preventDefault();
+        closePopup();
+      });
+    });
+
     leafletMap.on("moveend", () => {
       if (skipNextMoveEnd) {
         skipNextMoveEnd = false;
-        return;
       }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closePopup();
     });
 
     renderMarkers();
     fitMapToProfile(false);
-    requestAnimationFrame(() => leafletMap.invalidateSize());
+    requestAnimationFrame(() => {
+      leafletMap.invalidateSize();
+      setTimeout(() => leafletMap?.invalidateSize(), 120);
+    });
+  }
+
+  function applyLayersFromParent(layers) {
+    const next = new Set(layers.filter((l) => LAYER_KEYS.includes(l)));
+    if (!next.size) return;
+    const same =
+      next.size === activeLayers.size && [...next].every((l) => activeLayers.has(l));
+    if (same) return;
+    activeLayers = next;
+    afterLayerChange();
+  }
+
+  function initEmbedMessaging() {
+    if (!embed) return;
+
+    window.addEventListener("message", (e) => {
+      if (e.origin !== location.origin) return;
+      const data = e.data;
+      if (!data || data.source !== "map-embed-layers") return;
+      if (Array.isArray(data.layers)) applyLayersFromParent(data.layers);
+      if (data.focus) {
+        const feature = featureById(data.focus);
+        if (feature && activeLayers.has(feature.group)) {
+          select(data.focus);
+        }
+      }
+    });
+
+    window.parent.postMessage({ source: "area-map", type: "ready" }, location.origin);
   }
 
   function bindChrome() {
@@ -583,10 +720,7 @@
       el.hubLink.href = `index.html${locale === "en" ? "?lang=en" : ""}`;
       el.hubLink.textContent = t("backHub");
     }
-
-    if (el.detail && !selectedId) {
-      el.detail.innerHTML = `<p>${t("detailPick")}</p>`;
-    }
+    if (el.rail) el.rail.setAttribute("aria-label", t("railLabel"));
   }
 
   function loadScript(src) {
@@ -606,13 +740,9 @@
     }
 
     try {
-      const [areaRes, manifestRes] = await Promise.all([
-        fetch(`data/maps/${resortId}-area.json`),
-        fetch(`${ICON_BASE}marker-icons.json`),
-      ]);
+      const areaRes = await fetch(`data/maps/${resortId}-area.json`);
       if (!areaRes.ok) throw new Error(areaRes.statusText);
       mapData = await areaRes.json();
-      if (manifestRes.ok) markerManifest = await manifestRes.json();
     } catch {
       if (el.stage) el.stage.innerHTML = `<p class="map-error">${t("loadError")}</p>`;
       return;
@@ -629,19 +759,19 @@
 
     bindChrome();
     syncDocumentLang();
-    if (embed) ensureEmbedToolbar();
-    renderFilters();
-    if (embed) {
-      renderFilters(el.embedFilters);
-      renderEmbedPicker();
-    }
+    if (!embed) renderFilters();
     renderList();
     initLeafletMap();
+    initEmbedMobileRail();
+    initEmbedMessaging();
 
     const focus = params.get("focus");
-    const focusFeature = focus && allFeatures().find((f) => f.id === focus);
+    const focusFeature = focus && featureById(focus);
     if (focusFeature && activeLayers.has(focusFeature.group)) {
-      select(focus, { pan: true });
+      requestAnimationFrame(() => {
+        select(focus);
+        leafletMap?.invalidateSize();
+      });
     }
   }
 

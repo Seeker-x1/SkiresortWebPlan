@@ -1,0 +1,41 @@
+resortId: biei
+schemaVersion: "2026-06-15"
+
+hub:
+  name:
+    ja: 美瑛町民スキー場
+    en: Biei Town Ski Area
+  lat: 43.5897157
+  lon: 142.4448652
+  mapsQuery: "美瑛町民スキー場"
+
+hookStrategy:
+  primary: mixed
+  secondary: [food, onsen, sight]
+  narrative:
+    ja: "スノーウェルネスとパッチワークの丘。雪遊び後は酪農スイーツ・白金温泉・青い池へ"
+    en: "Snow wellness and patchwork hills—dairy treats, Shirogane onsen, Blue Pond after play"
+  anchorHighlights:
+    - id: blue-pond
+      label: { ja: 白金青い池, en: Shirogane Blue Pond }
+      hook:
+        ja: "冬の青い光と立枯れのコントラスト—インバウンドの定番フォトスポット"
+        en: "Winter blue glow and silver birches—a signature inbound photo stop"
+  foodHighlights:
+    - category: dairy
+      hook: { ja: "放牧酪農のソフトクリーム", en: "Grazing dairy soft-serve" }
+    - category: bakery
+      hook: { ja: "美瑛小麦のベーカリー", en: "Biei wheat artisan bakery" }
+
+research:
+  radiusKm: 40
+  layers:
+    food: { enabled: true, minPois: 10, maxPois: 15 }
+    onsen: { enabled: true, minPois: 4, maxPois: 8 }
+    anchor: { enabled: true, minPois: 3, maxPois: 5 }
+  localeAudience: inbound
+
+mapDefaults:
+  defaultLayers: [food, anchor]
+  hubAnchorId: ski
+  boundsProfile: skiFood

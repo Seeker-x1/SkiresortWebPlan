@@ -1,0 +1,45 @@
+resortId: bihoro
+schemaVersion: "2026-06-15"
+
+hub:
+  name:
+    ja: 美幌町国スポスキー場
+    en: Bihoro Town Ski Area
+  lat: 43.8231
+  lon: 144.0456
+  mapsQuery: "美幌町国スポスキー場"
+
+hookStrategy:
+  primary: sight
+  secondary: [food, onsen]
+  narrative:
+    ja: "糠平湖の冬景色と道東の絶景を軸に、スキー後はローカル食堂と温泉へ"
+    en: "Lake Kussharo winterscapes—local dining and onsen after skiing"
+  anchorHighlights:
+    - id: kussharo
+      label: { ja: 糠平湖, en: Lake Kussharo }
+      hook:
+        ja: "冬の蒸気霧とサンセット—カメラを持つインバウンドの聖地"
+        en: "Winter steam mist at sunset—a photographer magnet"
+    - id: mashu
+      label: { ja: 摩周湖, en: Lake Mashu }
+      hook:
+        ja: "世界一の透明度—霧に包まれたカルデラ湖"
+        en: "One of the clearest lakes—mist-shrouded caldera"
+  foodHighlights:
+    - hook:
+        ja: "道東の海鮮・ジンギスカン—スキー後のエネルギー補給"
+        en: "East Hokkaido seafood and Genghis Khan after slopes"
+
+research:
+  radiusKm: 35
+  layers:
+    food: { enabled: true, minPois: 6, maxPois: 12 }
+    onsen: { enabled: true, minPois: 3, maxPois: 6 }
+    anchor: { enabled: true, minPois: 3, maxPois: 6 }
+  localeAudience: inbound
+
+mapDefaults:
+  defaultLayers: [food, anchor]
+  hubAnchorId: ski
+  boundsProfile: skiFood

@@ -979,14 +979,21 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--border);
   border-radius: 0.75rem;
   overflow: hidden;
-  min-height: 50dvh;
-  height: max(50dvh, clamp(16rem, 42vw, 22rem));
+  min-height: clamp(14rem, 32dvh, 18rem);
+  height: clamp(14rem, 32dvh, 18rem);
   background: #e8edf2;
+}
+
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 @media (min-width: 768px) {
   .map-embed {
-    height: max(50dvh, clamp(18rem, 36vw, 26rem));
+    height: clamp(15rem, 30dvh, 20rem);
   }
 }
 
