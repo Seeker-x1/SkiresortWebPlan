@@ -40,16 +40,27 @@ jobs:
           echo "$CHANGED"
           {
             echo "root=false"
+            echo "nanako=false"
             echo "web=false"
             echo "scripts=false"
           } >> "$GITHUB_OUTPUT"
           echo "$CHANGED" | grep -qx 'package-lock.json' && echo "root=true" >> "$GITHUB_OUTPUT"
+          echo "$CHANGED" | grep -qx 'NanakoCyoueiSki/web/package-lock.json' && echo "nanako=true" >> "$GITHUB_OUTPUT"
           echo "$CHANGED" | grep -qx 'resorts/Sichinohe-CyoueiSki/web/package-lock.json' && echo "web=true" >> "$GITHUB_OUTPUT"
           echo "$CHANGED" | grep -qx 'resorts/Sichinohe-CyoueiSki/scripts/package-lock.json' && echo "scripts=true" >> "$GITHUB_OUTPUT"
 
       - name: Sync root lockfile
         if: steps.changed.outputs.root == 'true'
         shell: bash
+        run: |
+          set -euo pipefail
+          npx --yes npm@10.9.2 install
+          npx --yes npm@10.9.2 ci
+
+      - name: Sync nanako-web lockfile
+        if: steps.changed.outputs.nanako == 'true'
+        shell: bash
+        working-directory: NanakoCyoueiSki/web
         run: |
           set -euo pipefail
           npx --yes npm@10.9.2 install
@@ -84,6 +95,7 @@ jobs:
             exit 0
           fi
           git add package-lock.json \
+            NanakoCyoueiSki/web/package-lock.json \
             resorts/Sichinohe-CyoueiSki/web/package-lock.json \
             resorts/Sichinohe-CyoueiSki/scripts/package-lock.json 2>/dev/null || true
           git commit -m "chore(deps): sync lockfile after Dependabot (npm 10.9.2)"

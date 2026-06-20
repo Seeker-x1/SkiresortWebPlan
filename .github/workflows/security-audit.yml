@@ -13,6 +13,13 @@ permissions:
   contents: read
 
 jobs:
+  config-encoding:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify config UTF-8 encoding
+        run: node .github/scripts/check-config-encoding.cjs
+
   npm-audit:
     name: npm audit (${{ matrix.name }})
     runs-on: ubuntu-latest
@@ -23,6 +30,9 @@ jobs:
           - name: root-template
             directory: ""
             lockfile: package-lock.json
+          - name: nanako-web
+            directory: NanakoCyoueiSki/web
+            lockfile: NanakoCyoueiSki/web/package-lock.json
           - name: sichinohe-web
             directory: resorts/Sichinohe-CyoueiSki/web
             lockfile: resorts/Sichinohe-CyoueiSki/web/package-lock.json
