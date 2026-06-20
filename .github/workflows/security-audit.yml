@@ -42,14 +42,65 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Detect changed package trees (PR only)
+        if: github.event_name == 'pull_request'
+        id: changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin "${{ github.base_ref }}"
+          CHANGED="$(git diff --name-only "origin/${{ github.base_ref }}...HEAD")"
+          echo "$CHANGED"
+          {
+            echo "root=false"
+            echo "nanako=false"
+            echo "web=false"
+            echo "scripts=false"
+          } >> "$GITHUB_OUTPUT"
+          if echo "$CHANGED" | grep -qE '^(package\.json|package-lock\.json)$'; then
+            echo "root=true" >> "$GITHUB_OUTPUT"
+          fi
+          if echo "$CHANGED" | grep -qE '^NanakoCyoueiSki/web/(package\.json|package-lock\.json)$'; then
+            echo "nanako=true" >> "$GITHUB_OUTPUT"
+          fi
+          if echo "$CHANGED" | grep -qE '^resorts/Sichinohe-CyoueiSki/web/(package\.json|package-lock\.json)$'; then
+            echo "web=true" >> "$GITHUB_OUTPUT"
+          fi
+          if echo "$CHANGED" | grep -qE '^resorts/Sichinohe-CyoueiSki/scripts/(package\.json|package-lock\.json)$'; then
+            echo "scripts=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Skip unchanged package tree
+        if: >-
+          github.event_name == 'pull_request' &&
+          ((matrix.name == 'root-template' && steps.changed.outputs.root != 'true') ||
+           (matrix.name == 'nanako-web' && steps.changed.outputs.nanako != 'true') ||
+           (matrix.name == 'sichinohe-web' && steps.changed.outputs.web != 'true') ||
+           (matrix.name == 'sichinohe-scripts' && steps.changed.outputs.scripts != 'true'))
+        run: echo "Skipping ${{ matrix.name }} (unchanged in this PR)"
 
       - uses: actions/setup-node@v4
+        if: >-
+          github.event_name != 'pull_request' ||
+          (matrix.name == 'root-template' && steps.changed.outputs.root == 'true') ||
+          (matrix.name == 'nanako-web' && steps.changed.outputs.nanako == 'true') ||
+          (matrix.name == 'sichinohe-web' && steps.changed.outputs.web == 'true') ||
+          (matrix.name == 'sichinohe-scripts' && steps.changed.outputs.scripts == 'true')
         with:
           node-version: "22"
           cache: npm
           cache-dependency-path: ${{ matrix.lockfile }}
 
       - name: Install (npm ci)
+        if: >-
+          github.event_name != 'pull_request' ||
+          (matrix.name == 'root-template' && steps.changed.outputs.root == 'true') ||
+          (matrix.name == 'nanako-web' && steps.changed.outputs.nanako == 'true') ||
+          (matrix.name == 'sichinohe-web' && steps.changed.outputs.web == 'true') ||
+          (matrix.name == 'sichinohe-scripts' && steps.changed.outputs.scripts == 'true')
         shell: bash
         run: |
           set -euo pipefail
@@ -59,6 +110,12 @@ jobs:
           npx --yes npm@10.9.2 ci
 
       - name: npm audit (high+)
+        if: >-
+          github.event_name != 'pull_request' ||
+          (matrix.name == 'root-template' && steps.changed.outputs.root == 'true') ||
+          (matrix.name == 'nanako-web' && steps.changed.outputs.nanako == 'true') ||
+          (matrix.name == 'sichinohe-web' && steps.changed.outputs.web == 'true') ||
+          (matrix.name == 'sichinohe-scripts' && steps.changed.outputs.scripts == 'true')
         shell: bash
         run: |
           set -euo pipefail

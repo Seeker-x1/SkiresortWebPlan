@@ -17,7 +17,8 @@ concurrency:
 
 jobs:
   sync-lockfile:
-    if: github.actor == 'dependabot[bot]'
+    # PR author, not actor: github-actions[bot] pushes follow-up lockfile commits.
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,7 +31,7 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Detect changed lockfiles
+      - name: Detect changed package trees
         id: changed
         shell: bash
         run: |
@@ -44,10 +45,18 @@ jobs:
             echo "web=false"
             echo "scripts=false"
           } >> "$GITHUB_OUTPUT"
-          echo "$CHANGED" | grep -qx 'package-lock.json' && echo "root=true" >> "$GITHUB_OUTPUT"
-          echo "$CHANGED" | grep -qx 'NanakoCyoueiSki/web/package-lock.json' && echo "nanako=true" >> "$GITHUB_OUTPUT"
-          echo "$CHANGED" | grep -qx 'resorts/Sichinohe-CyoueiSki/web/package-lock.json' && echo "web=true" >> "$GITHUB_OUTPUT"
-          echo "$CHANGED" | grep -qx 'resorts/Sichinohe-CyoueiSki/scripts/package-lock.json' && echo "scripts=true" >> "$GITHUB_OUTPUT"
+          if echo "$CHANGED" | grep -qE '^(package\.json|package-lock\.json)$'; then
+            echo "root=true" >> "$GITHUB_OUTPUT"
+          fi
+          if echo "$CHANGED" | grep -qE '^NanakoCyoueiSki/web/(package\.json|package-lock\.json)$'; then
+            echo "nanako=true" >> "$GITHUB_OUTPUT"
+          fi
+          if echo "$CHANGED" | grep -qE '^resorts/Sichinohe-CyoueiSki/web/(package\.json|package-lock\.json)$'; then
+            echo "web=true" >> "$GITHUB_OUTPUT"
+          fi
+          if echo "$CHANGED" | grep -qE '^resorts/Sichinohe-CyoueiSki/scripts/(package\.json|package-lock\.json)$'; then
+            echo "scripts=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Sync root lockfile
         if: steps.changed.outputs.root == 'true'
