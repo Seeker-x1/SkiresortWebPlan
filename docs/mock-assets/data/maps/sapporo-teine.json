@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "2026-06-23",
+  "id": "sapporo-teine",
+  "name": {
+    "ja": "札幌手稲スキー場",
+    "en": "Sapporo Teine Ski Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "札幌手稲スキー場公式",
+    "1972年札幌オリンピック会場"
+  ],
+  "updatedAt": "2026-06-23T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/sapporo-teine-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": { "ja": "手稲山ゴンドラ", "en": "Teineyama Gondola" },
+      "shortLabel": { "ja": "ゴンドラ", "en": "Gondola" },
+      "meta": {
+        "ja": { "状態": "運行中", "ゾーン": "ハイランド" },
+        "en": { "Status": "Operating", "Zone": "Highland" }
+      }
+    },
+    {
+      "id": "lift-olympia-1",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": { "ja": "白樺第1リフト", "en": "Shirakaba Lift 1" },
+      "shortLabel": { "ja": "白樺1", "en": "Shirakaba 1" },
+      "meta": {
+        "ja": { "状態": "運行中", "ナイター": "〜20:00" },
+        "en": { "Status": "Operating", "Night": "until 20:00" }
+      }
+    },
+    {
+      "id": "trail-rainbow",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": { "ja": "レインボーコース", "en": "Rainbow Course" },
+      "shortLabel": { "ja": "レインボー", "en": "Rainbow" },
+      "meta": {
+        "ja": { "全長": "5.4km", "特徴": "山頂〜ベース最長" },
+        "en": { "Length": "5.4 km", "Note": "Longest run summit to base" }
+      }
+    },
+    {
+      "id": "trail-olympia",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": { "ja": "オリンピアコース", "en": "Olympia Course" },
+      "shortLabel": { "ja": "オリンピア", "en": "Olympia" },
+      "meta": {
+        "ja": { "特徴": "オリンピック会場斜面" },
+        "en": { "Note": "1972 Olympic venue" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="sapporo-teine">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>厳選温泉4選 — 札幌手稲スキー場</title>
+  <meta name="description" content="広域コリドーのインバウンド向け温泉厳選リストとマップ付きガイド" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="./" class="logo" data-i18n="logo">札幌手稲スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="./#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=sapporo-teine" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="/area-map.html?resort=sapporo-teine&layers=onsen,anchor" data-i18n="nearbyOnsen.navAreaMap">広域マップ</a></li>
+          <li><a href="nearby-food.html" data-i18n="paths.food.title">厳選飲食6選</a></li>
+          <li><a href="corridor-stay.html" data-i18n="paths.stay.title">厳選宿5選</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--spot" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-sapporo-teine-onsen.png" alt="" width="1200" height="1500" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <a href="./" class="detail-back">← <span data-i18n="nearbyOnsen.backLink">札幌手稲 LP に戻る</span></a>
+        <p class="eyebrow" data-i18n="nearbyOnsen.hero.eyebrow">Onsen · Map</p>
+        <h1 class="hero-title" data-i18n-html="nearbyOnsen.hero.title">雪のあと、<br />湯治文化へ。</h1>
+        <p class="hero-tagline" data-i18n="nearbyOnsen.hero.tagline">雪見露天から24時間銭湯、貸切風呂まで——戦略的に配置された温泉</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="inner">
+        <p role="note" class="notice-banner" data-i18n="nearbyOnsen.notice">入浴料・営業時間・タトゥー規定・深夜割増は各施設の公式情報が最新です。</p>
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.introTitle">温泉が担う多角的な役割</h2>
+        <p class="lead" style="margin-top:1.5rem; max-width:36rem" data-i18n="nearbyOnsen.introLead">入浴を超えた文化体験、疲労回復、トランジットハブとしての温泉資源。</p>
+        <p class="lead-whisper" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.introBody">手稲直下のほのかから定山渓の雪見露天、小樽の24時間オスパまで——4施設を比較掲載。</p>
+      </div>
+    </section>
+
+    <section class="section border-top" id="onsen-map">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyOnsen.mapEyebrow">Area map</p>
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.mapTitle">広域コリドー温泉マップ</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.mapLead">スキー場・宿泊拠点と重ねて回遊を設計。</p>
+        <div data-map-embed data-default-layers="onsen,anchor">
+          <div class="map-layer-toggles" role="group" data-i18n-attr="aria-label:nearbyOnsen.mapEmbedTitle">
+            <button type="button" class="map-layer-btn" data-map-layer="food" aria-pressed="false" data-i18n="nearbyOnsen.mapLayers.food">飲食</button>
+            <button type="button" class="map-layer-btn" data-map-layer="onsen" aria-pressed="true" data-i18n="nearbyOnsen.mapLayers.onsen">温泉</button>
+            <button type="button" class="map-layer-btn" data-map-layer="anchor" aria-pressed="true" data-i18n="nearbyOnsen.mapLayers.anchor">拠点</button>
+          </div>
+          <p class="map-layer-hint" data-i18n="nearbyOnsen.mapLayers.hint">飲食と温泉は同時に表示できます</p>
+          <div class="map-embed">
+            <iframe title="札幌西部広域マップ" data-i18n-attr="title:nearbyOnsen.mapEmbedTitle" src="/area-map.html?resort=sapporo-teine&embed=1&layers=onsen,anchor" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="/area-map.html?resort=sapporo-teine&layers=onsen,anchor" class="btn btn-primary" data-i18n="nearbyOnsen.mapCta">フルサイズマップを開く</a>
+          <a href="nearby-food.html" class="btn btn-ghost" data-i18n="nearbyOnsen.linkFoodGuide">厳選飲食6選ガイド</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyOnsen.spotsEyebrow">4 picks</p>
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.spotsTitle">インバウンド向け厳選温泉4選</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.spotsLead">スキー後のリカバリーと広域移動のトランジットに最適な順に掲載。</p>
+        <ol class="food-spot-list">
+          <li class="food-spot" id="entry-hoheikyo" data-spot-entry="hoheikyo">
+            <span class="food-spot__num">01</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.hoheikyo.tag">雪見露天 · インドカレー · ¥1,300</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.hoheikyo.title">豊平峡温泉</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.hoheikyo.lead">日本最大級の露天と本格窯焼きインド料理——予期せぬカルチャーミックス。</p>
+              <a href="/area-map.html?resort=sapporo-teine&layers=onsen,anchor&focus=hoheikyo" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-teine-honoka" data-spot-entry="teine-honoka">
+            <span class="food-spot__num">02</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.teine-honoka.tag">24時間 · 手稲直下 · 岩盤浴</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.teine-honoka.title">ていね温泉 ほのか</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.teine-honoka.lead">スーパー銭湯文化を包括的に体験——下山動線のハブ施設。</p>
+              <a href="/area-map.html?resort=sapporo-teine&layers=onsen,anchor&focus=teine-honoka" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-o-spa" data-spot-entry="o-spa">
+            <span class="food-spot__num">03</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.o-spa.tag">24時間 · 小樽IC1分 · 強塩泉</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.o-spa.title">小樽温泉 オスパ</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.o-spa.lead">ナイトエコノミー後のリカバリーと早朝フライト前の拠点。</p>
+              <a href="/area-map.html?resort=sapporo-teine&layers=onsen,anchor&focus=o-spa" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-koganeyu" data-spot-entry="koganeyu">
+            <span class="food-spot__num">04</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.koganeyu.tag">貸切風呂 · タトゥー可 · 硫黄泉</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.koganeyu.title">湯元 小金湯</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.koganeyu.lead">3室の貸切風呂（90分¥3,800〜）——プライバシー重視層への切り札。</p>
+              <a href="/area-map.html?resort=sapporo-teine&layers=onsen,anchor&focus=koganeyu" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p data-i18n="footer.copyright">© 札幌手稲スキー場 — LP案モック</p>
+      <p class="footer-location"><a href="./" data-i18n="nearbyOnsen.backLink">札幌手稲 LP に戻る</a></p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+  <script src="../_shared/map-embed-layers.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "2026-06-23",
+  "id": "sapporo-kokusai-area",
+  "resortId": "sapporo-kokusai",
+  "name": {
+    "ja": "札幌国際・ゴールデントライアングルマップ",
+    "en": "Sapporo Kokusai Golden Triangle map"
+  },
+  "disclaimer": {
+    "ja": "位置は OpenStreetMap 等の公開情報に基づく概略です。冬季の営業時間・入浴可否・道路規制は各施設の公式情報でご確認ください。",
+    "en": "Locations are approximate from public sources. Confirm winter hours and road conditions with each facility."
+  },
+  "sources": [
+    "OpenStreetMap",
+    "NAVITIME",
+    "札幌国際スキー場広域エリア調査（2026）"
+  ],
+  "updatedAt": "2026-06-23T12:00:00+09:00",
+  "boundsProfiles": {
+    "skiFood": {
+      "includeGroups": ["food", "anchor"],
+      "excludeAnchorIds": ["teine"],
+      "maxZoom": 11
+    },
+    "onsen": {
+      "includeGroups": ["onsen"],
+      "maxZoom": 11
+    },
+    "onsenAnchor": {
+      "includeGroups": ["onsen", "anchor"],
+      "excludeAnchorIds": ["teine"],
+      "maxZoom": 10
+    },
+    "foodOnsen": {
+      "includeGroups": ["food", "onsen", "anchor"],
+      "excludeAnchorIds": ["teine"],
+      "maxZoom": 9
+    },
+    "anchorAll": {
+      "includeGroups": ["anchor"],
+      "maxZoom": 9
+    }
+  },
+  "anchors": [
+    {
+      "id": "ski",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "ski",
+      "fixedOnMap": true,
+      "listExclude": true,
+      "lat": 43.0756,
+      "lon": 141.0042,
+      "source": "Wikipedia / 公式",
+      "label": { "ja": "札幌国際スキー場", "en": "Sapporo Kokusai Ski Resort" },
+      "shortLabel": { "ja": "国際", "en": "Kokusai" },
+      "district": { "ja": "札幌市清田区", "en": "Kiyota-ku, Sapporo" }
+    },
+    {
+      "id": "jozankei",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "view",
+      "lat": 42.965,
+      "lon": 141.158,
+      "source": "OpenStreetMap",
+      "label": { "ja": "定山渓温泉郷", "en": "Jozankei Onsen" },
+      "shortLabel": { "ja": "定山渓", "en": "Jozankei" }
+    },
+    {
+      "id": "otaru-canal",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "view",
+      "lat": 43.2137,
+      "lon": 141.0022,
+      "source": "OpenStreetMap",
+      "label": { "ja": "小樽運河", "en": "Otaru Canal" },
+      "shortLabel": { "ja": "運河", "en": "Canal" }
+    },
+    {
+      "id": "chalet-ivy",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "onsen-hotel",
+      "lat": 42.9667,
+      "lon": 141.1597,
+      "source": "公式サイト",
+      "label": { "ja": "シャレーアイビー定山渓", "en": "Chalet Ivy Jozankei" },
+      "shortLabel": { "ja": "シャレーアイビー", "en": "Chalet Ivy" },
+      "phone": "011-595-2088",
+      "website": "https://chaletivy.com/ja/jozankei/",
+      "mapsQuery": "シャレーアイビー定山渓 北海道札幌市南区定山渓温泉町3丁目231"
+    },
+    {
+      "id": "kuriyasuizan",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "onsen-ryokan",
+      "lat": 42.965,
+      "lon": 141.156,
+      "source": "公式サイト",
+      "label": { "ja": "厨翠山", "en": "Kuriyasuizan" },
+      "shortLabel": { "ja": "厨翠山", "en": "Kuriyasuizan" },
+      "phone": "011-598-5555",
+      "website": "http://www.kuriyasuizan.com/",
+      "mapsQuery": "厨翠山 札幌市南区定山渓温泉西3丁目4"
+    },
+    {
+      "id": "yurakusoan",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "onsen-hotel",
+      "lat": 42.9683,
+      "lon": 141.1602,
+      "source": "公式サイト",
+      "label": { "ja": "定山渓 ゆらく草庵", "en": "Jozankei Yurakusoan" },
+      "shortLabel": { "ja": "ゆらく草庵", "en": "Yurakusoan" },
+      "phone": "011-595-2489",
+      "website": "https://www.hotespa.net/hotels/yurakusoan",
+      "mapsQuery": "定山渓 ゆらく草庵 札幌市南区定山渓温泉東2丁目36"
+    },
+    {
+      "id": "unwind-otaru",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "anchor",
+      "lat": 43.1876,
+      "lon": 141.0012,
+      "source": "公式サイト",
+      "label": { "ja": "UNWIND HOTEL & BAR OTARU", "en": "UNWIND HOTEL & BAR OTARU" },
+      "shortLabel": { "ja": "UNWIND", "en": "UNWIND" },
+      "phone": "0134-64-5810",
+      "website": "https://www.livelyhotels.com/ja/unwindotaru",
+      "mapsQuery": "UNWIND HOTEL OTARU 小樽市色内1丁目8-25"
+    },
+    {
+      "id": "omo5-otaru",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "anchor",
+      "lat": 43.188,
+      "lon": 141.0005,
+      "source": "公式サイト",
+      "label": { "ja": "OMO5小樽 by 星野リゾート", "en": "OMO5 Otaru by Hoshino Resorts" },
+      "shortLabel": { "ja": "OMO5小樽", "en": "OMO5 Otaru" },
+      "phone": "050-3134-8095",
+      "website": "https://hoshinoresorts.com/ja/hotels/omo5otaru",
+      "mapsQuery": "OMO5小樽 小樽市色内1丁目6-31"
+    }
+  ],
+  "food": [
+    {
+      "id": "masazushi",
+      "group": "food",
+      "category": "western",
+      "lat": 43.212,
+      "lon": 141.0015,
+      "source": "公式サイト",
+      "label": { "ja": "おたる政寿司 本店", "en": "Masazushi Honten" },
+      "shortLabel": { "ja": "政寿司", "en": "Masazushi" },
+      "phone": "0134-64-1101",
+      "website": "http://www.masazushi.co.jp/",
+      "mapsQuery": "おたる政寿司 本店 小樽市花園1丁目1-1",
+      "district": { "ja": "小樽市", "en": "Otaru" }
+    },
+    {
+      "id": "garaku",
+      "group": "food",
+      "category": "ramen",
+      "lat": 43.0595,
+      "lon": 141.352,
+      "source": "公式サイト",
+      "label": { "ja": "スープカレー GARAKU", "en": "Soup Curry GARAKU" },
+      "shortLabel": { "ja": "GARAKU", "en": "GARAKU" },
+      "phone": "050-5869-6095",
+      "website": "https://s-garaku.com",
+      "mapsQuery": "スープカレー GARAKU 札幌市中央区南2条西2-6-1",
+      "district": { "ja": "札幌市", "en": "Sapporo" }
+    },
+    {
+      "id": "beer-garden",
+      "group": "food",
+      "category": "western",
+      "lat": 43.0645,
+      "lon": 141.368,
+      "source": "公式サイト",
+      "label": { "ja": "サッポロビール園", "en": "Sapporo Beer Garden" },
+      "shortLabel": { "ja": "ビール園", "en": "Beer Garden" },
+      "phone": "0570-098-346",
+      "website": "https://www.sapporo-bier-garten.jp/",
+      "mapsQuery": "サッポロビール園 札幌市東区北7条東9丁目2-10",
+      "district": { "ja": "札幌市", "en": "Sapporo" }
+    },
+    {
+      "id": "ame-yuki",
+      "group": "food",
+      "category": "cafe",
+      "lat": 42.9655,
+      "lon": 141.1575,
+      "source": "公式サイト",
+      "label": { "ja": "雨ノ日と雪ノ日", "en": "Ame no Hi to Yuki no Hi" },
+      "shortLabel": { "ja": "雨ノ日と雪ノ日", "en": "Rain & Snow Days" },
+      "phone": "011-596-9131",
+      "website": "https://www.amenohitoyukinohi.com/",
+      "mapsQuery": "雨ノ日と雪ノ日 札幌市南区定山渓温泉西2-41",
+      "district": { "ja": "定山渓", "en": "Jozankei" }
+    }
+  ],
+  "onsen": [
+    {
+      "id": "hoheikyo",
+      "group": "onsen",
+      "category": "onsen-day",
+      "lat": 42.948,
+      "lon": 141.164,
+      "source": "公式サイト",
+      "label": { "ja": "豊平峡温泉", "en": "Hoheikyo Onsen" },
+      "shortLabel": { "ja": "豊平峡", "en": "Hoheikyo" },
+      "phone": "011-598-2410",
+      "website": "http://www.hoheikyo.co.jp/",
+      "mapsQuery": "豊平峡温泉 札幌市南区定山渓608-2",
+      "district": { "ja": "定山渓", "en": "Jozankei" }
+    },
+    {
+      "id": "koganeyu",
+      "group": "onsen",
+      "category": "onsen-public",
+      "lat": 42.992,
+      "lon": 141.121,
+      "source": "公式サイト",
+      "label": { "ja": "湯元 小金湯", "en": "Koganeyu Onsen" },
+      "shortLabel": { "ja": "小金湯", "en": "Koganeyu" },
+      "phone": "011-596-2111",
+      "website": "http://koganeyu.jp/",
+      "mapsQuery": "湯元 小金湯 札幌市南区小金湯25番地",
+      "district": { "ja": "札幌市南区", "en": "Minami-ku, Sapporo" }
+    }
+  ]
+}

@@ -225,6 +225,47 @@
       "guideUrl": "https://guides.japowserch.com/abashiri-lv/",
       "japowResortId": 58,
       "guideTier": "mock"
+    },
+    {
+      "id": "sapporo-teine",
+      "slug": "sapporo-teine-lp",
+      "name": {
+        "ja": "札幌手稲スキー場",
+        "en": "Sapporo Teine Ski Resort"
+      },
+      "region": {
+        "ja": "北海道札幌市",
+        "en": "Sapporo, Hokkaido"
+      },
+      "strategy": {
+        "ja": "スノー＆カルチャー",
+        "en": "Snow & Culture"
+      },
+      "guidePath": "/sapporo-teine/",
+      "guideUrl": "https://guides.japowserch.com/sapporo-teine/",
+      "japowResortId": 22,
+      "guideTier": "mock"
+    },
+    {
+      "id": "sapporo-kokusai",
+      "slug": "sapporo-kokusai-lp",
+      "name": {
+        "ja": "札幌国際スキー場",
+        "en": "Sapporo Kokusai Ski Resort"
+      },
+      "region": {
+        "ja": "北海道札幌市",
+        "en": "Sapporo, Hokkaido"
+      },
+      "strategy": {
+        "ja": "ゴールデントライアングル",
+        "en": "Golden Triangle · Inbound"
+      },
+      "guidePath": "/sapporo-kokusai/",
+      "guideUrl": "https://guides.japowserch.com/sapporo-kokusai/",
+      "japowResortId": 3,
+      "guideTier": "mock",
+      "guideNote": "japowResortId は要確認"
     }
   ],
   "guides": {

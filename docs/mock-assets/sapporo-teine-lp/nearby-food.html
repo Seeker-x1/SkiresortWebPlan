@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="sapporo-teine">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>厳選飲食6選 — 札幌手稲スキー場</title>
+  <meta name="description" content="広域コリドーのインバウンド向け飲食厳選リストとマップ付きガイド" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="./" class="logo" data-i18n="logo">札幌手稲スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="./#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=sapporo-teine" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="/area-map.html?resort=sapporo-teine&layers=food,anchor" data-i18n="nearbyFood.navAreaMap">広域マップ</a></li>
+          <li><a href="./#journey" data-i18n="nav.journey">回遊</a></li>
+          <li><a href="nearby-onsen.html" data-i18n="paths.onsen.title">厳選温泉4選</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--spot" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-sapporo-teine-food.png" alt="" width="1600" height="1100" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <a href="./" class="detail-back">← <span data-i18n="nearbyFood.backLink">札幌手稲 LP に戻る</span></a>
+        <p class="eyebrow" data-i18n="nearbyFood.hero.eyebrow">Food · Map</p>
+        <h1 class="hero-title" data-i18n-html="nearbyFood.hero.title">ローカルガストロノミー、<br />6つの顔。</h1>
+        <p class="hero-tagline" data-i18n="nearbyFood.hero.tagline">小樽の海の幸から札幌発祥のスープカレー、開拓史のジンギスカンまで</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="inner">
+        <p role="note" class="notice-banner" data-i18n="nearbyFood.notice">営業時間・予約要否・食の制約対応は各店の公式情報が最新です。</p>
+        <h2 class="heading-lg" data-i18n="nearbyFood.introTitle">なぜ、食が回遊の動機になるのか</h2>
+        <p class="lead" style="margin-top:1.5rem; max-width:36rem" data-i18n="nearbyFood.introLead">地域の歴史と風土に根ざした食体験は、観光における最強のフック。</p>
+        <p class="lead-whisper" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyFood.introBody">インバウンド向けに厳選した6施設——多言語対応・ダイバーシティ・アクセシビリティを備えた、あるいは凌駕する体験価値。</p>
+      </div>
+    </section>
+
+    <section class="section border-top" id="food-map">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyFood.mapEyebrow">Area map</p>
+        <h2 class="heading-lg" data-i18n="nearbyFood.mapTitle">広域コリドー飲食マップ</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyFood.mapLead">手稲・定山渓・小樽・札幌中心部の飲食と拠点をレイヤー表示。</p>
+        <div data-map-embed data-default-layers="food,anchor">
+          <div class="map-layer-toggles" role="group" data-i18n-attr="aria-label:nearbyFood.mapEmbedTitle">
+            <button type="button" class="map-layer-btn" data-map-layer="food" aria-pressed="true" data-i18n="nearbyFood.mapLayers.food">飲食</button>
+            <button type="button" class="map-layer-btn" data-map-layer="onsen" aria-pressed="false" data-i18n="nearbyFood.mapLayers.onsen">温泉</button>
+            <button type="button" class="map-layer-btn" data-map-layer="anchor" aria-pressed="true" data-i18n="nearbyFood.mapLayers.anchor">拠点</button>
+          </div>
+          <p class="map-layer-hint" data-i18n="nearbyFood.mapLayers.hint">飲食と温泉は同時に表示できます</p>
+          <p class="map-layer-hint map-layer-hint--mobile" data-i18n="nearbyFood.mapLayers.mobileHint">ピンが重なるときは下の一覧の「地図で見る」をご利用ください</p>
+          <div class="map-embed">
+            <iframe title="札幌西部広域マップ" data-i18n-attr="title:nearbyFood.mapEmbedTitle" src="/area-map.html?resort=sapporo-teine&embed=1&layers=food,anchor" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="/area-map.html?resort=sapporo-teine&layers=food,anchor" class="btn btn-primary" data-i18n="nearbyFood.mapCta">フルサイズマップを開く</a>
+          <a href="nearby-onsen.html" class="btn btn-ghost" data-i18n="nearbyFood.linkOnsenGuide">厳選温泉4選ガイド</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyFood.spotsEyebrow">6 picks</p>
+        <h2 class="heading-lg" data-i18n="nearbyFood.spotsTitle">インバウンド向け厳選飲食6選</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyFood.spotsLead">スキー前後・広域移動のハブに組み込みやすい順に掲載。</p>
+        <ol class="food-spot-list">
+          <li class="food-spot" id="entry-masazushi" data-spot-entry="masazushi">
+            <span class="food-spot__num">01</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.masazushi.tag">寿司 · 英語対応 · 車椅子</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.masazushi.title">おたる政寿司 本店</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.masazushi.lead">小樽寿司屋通りを代表する名店。ベジタリアン・補助犬対応まで備えたダイバーシティ基準。</p>
+              <a href="/area-map.html?resort=sapporo-teine&layers=food,anchor&focus=masazushi" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-takeda" data-spot-entry="takeda">
+            <span class="food-spot__num">02</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.takeda.tag">市場 · 朝7時 · 海鮮丼</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.takeda.title">市場食堂 味処たけだ</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.takeda.lead">三角市場内——スキー場へ向かう前の究極の朝活拠点。</p>
+              <a href="/area-map.html?resort=sapporo-teine&layers=food,anchor&focus=takeda" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-otaru-bine" data-spot-entry="otaru-bine">
+            <span class="food-spot__num">03</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.otaru-bine.tag">歴史建築 · チーズフォンデュ</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.otaru-bine.title">小樽バイン</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.otaru-bine.lead">旧北海道銀行本店で小樽ワインとバインチーズフォンデュ。</p>
+              <a href="/area-map.html?resort=sapporo-teine&layers=food,anchor&focus=otaru-bine" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-beer-garden" data-spot-entry="beer-garden">
+            <span class="food-spot__num">04</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.beer-garden.tag">赤レンガ · ジンギスカン</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.beer-garden.title">サッポロビール園</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.beer-garden.lead">工場直送生ビールと北海道ソウルフード——食と産業のエンターテインメント。</p>
+              <a href="/area-map.html?resort=sapporo-teine&layers=food,anchor&focus=beer-garden" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-garaku" data-spot-entry="garaku">
+            <span class="food-spot__num">05</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.garaku.tag">スープカレー · 札幌発祥</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.garaku.title">スープカレー GARAKU</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.garaku.lead">極寒のアフタースキーに芯から温まる、SNS映えのソウルフード。</p>
+              <a href="/area-map.html?resort=sapporo-teine&layers=food,anchor&focus=garaku" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-ame-yuki" data-spot-entry="ame-yuki">
+            <span class="food-spot__num">06</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.ame-yuki.tag">ダウンデイ · 定山渓</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.ame-yuki.title">雨ノ日と雪ノ日</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.ame-yuki.lead">悪天候の日ほど嬉しいサービス——スキー不可日のアクティビティ拠点。</p>
+              <a href="/area-map.html?resort=sapporo-teine&layers=food,anchor&focus=ame-yuki" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p data-i18n="footer.copyright">© 札幌手稲スキー場 — LP案モック</p>
+      <p class="footer-location"><a href="./" data-i18n="nearbyFood.backLink">札幌手稲 LP に戻る</a></p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+  <script src="../_shared/map-embed-layers.js"></script>
+</body>
+</html>

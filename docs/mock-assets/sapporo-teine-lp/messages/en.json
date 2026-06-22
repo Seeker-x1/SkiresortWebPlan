@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "title": "Sapporo Teine Ski Resort",
+    "description": "Snow & Culture resort package linking powder, a 2M city, Jozankei onsen, and Otaru."
+  },
+  "logo": "Sapporo Teine Ski Resort",
+  "nav": {
+    "live": "Today",
+    "corridor": "Corridor",
+    "journey": "Journey",
+    "recovery": "Recovery"
+  },
+  "hero": {
+    "eyebrow": "Teine-ku, Sapporo · Hokkaido",
+    "title": "Sapporo Teine<br />Ski Resort",
+    "tagline": "Powder by day, sushi and onsen by night—an urban-adjacent snow & culture resort.",
+    "badgeCorridor": "30–40 km corridor",
+    "badgeNight": "Night skiing until 20:00",
+    "badgeOlympic": "1972 Olympic venue",
+    "ctaCorridor": "Snow & Culture Pass",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "World-class snow, 40 min from the city",
+    "updatedAt": "Updated Jun 23, 8:00",
+    "gondola": {
+      "label": "Teineyama Gondola",
+      "value": "Operating",
+      "note": "Highland Zone"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Until 20:00",
+      "note": "Shirakaba Lift 1"
+    },
+    "snow": {
+      "label": "Snow quality",
+      "value": "Sapporo powder",
+      "note": "Beside a 2M-person city"
+    },
+    "honoka": {
+      "label": "Honoka onsen",
+      "value": "24 hours",
+      "note": "Transit hub on the way down"
+    }
+  },
+  "corridor": {
+    "eyebrow": "Snow & Culture Corridor",
+    "title": "Teine, Kokusai, Jozankei,<br />Otaru—one package.",
+    "lead": "World-class powder, metro infrastructure, a historic port, and hot-spring culture within 30–40 km—a rare urban-adjacent, distributed resort unlike self-contained mega-resorts.",
+    "specs": [
+      "Sapporo Kokusai",
+      "Jozankei onsen",
+      "Otaru Canal"
+    ],
+    "noticeTitle": "FIT hook:",
+    "noticeBody": "Elite powder by day, Masazushi or UNWIND's bar by night, Hoheikyo's rotenburo—a stay package with contrasts rarely found elsewhere.",
+    "ctaCorridor": "Snow & Culture Pass",
+    "imgAlt": "Snow in west Sapporo—a corridor linking city, mountains, and sea"
+  },
+  "paths": {
+    "corridor": {
+      "label": "Pass",
+      "title": "Snow & Culture Pass"
+    },
+    "access": {
+      "label": "Access",
+      "title": "~80 min from CTS"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Lifts · snow · night skiing"
+    },
+    "food": {
+      "label": "Food",
+      "title": "6 curated dining picks"
+    },
+    "onsen": {
+      "label": "Onsen",
+      "title": "4 curated hot springs"
+    },
+    "stay": {
+      "label": "Stay",
+      "title": "5 curated lodges"
+    },
+    "map": {
+      "label": "Map",
+      "title": "Corridor area map"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Urban-adjacent resort edge",
+    "primary": {
+      "title": "Olympic powder × city access",
+      "lead": "About 40 min from downtown Sapporo. 15 courses including the 5.4 km Rainbow run on 1972 Olympic slopes—then GARAKU soup curry or beer-garden Genghis Khan.",
+      "cta": "Trail map",
+      "imgAlt": "Powder at Teine—mountain snow minutes from the city"
+    },
+    "secondary": {
+      "title": "24h recovery at Honoka",
+      "lead": "Teine Onsen Honoka at the base—super-sento culture with rock baths and dining, an affordable transit stop for inbound FIT guests.",
+      "cta": "Onsen guide"
+    }
+  },
+  "pass": {
+    "eyebrow": "Snow & Culture Pass",
+    "title": "Snow, city, and tradition—<br />seamlessly linked.",
+    "lead": "For high-value FIT guests—private bath at Koganeyu after skiing, Masazushi in Otaru at night. Chalet Ivy Jozankei offers in-room rotenburo across every suite.",
+    "specs": [
+      "5 stays",
+      "6 dining",
+      "4 onsen"
+    ],
+    "cta": "Open corridor map",
+    "imgAlt": "Jozankei and Otaru linked—a network of base camps"
+  },
+  "recovery": {
+    "eyebrow": "Warmth & recovery",
+    "title": "After skiing,<br />fill up on onsen and food.",
+    "lead": "Hoheikyo's snow-view rotenburo with Indian curry, Honoka at Teine, O-Spa at Otaru IC—layered fatigue recovery after winter sports.",
+    "whisper": "Private baths at Koganeyu welcome tattoos (from ¥3,800 / 90 min)—a strong hook for privacy-focused Western guests.",
+    "ctaFood": "6 dining picks",
+    "ctaOnsen": "4 onsen picks",
+    "ctaStay": "5 stay picks",
+    "imgAlt": "Snow-view outdoor bath—Jozankei hot-spring culture"
+  },
+  "journey": {
+    "eyebrow": "FIT Journey",
+    "title": "Three days,<br />self-guided corridor.",
+    "lead": "A model course for independent inbound travelers—snow & wellness resort package.",
+    "badge": "SNOW & CULTURE · INBOUND FIT",
+    "steps": {
+      "01": {
+        "title": "Morning: Triangle Market",
+        "body": "Seafood bowl at Takeda (from 7:00)—ultimate pre-ski breakfast",
+        "linkLabel": "Food guide"
+      },
+      "02": {
+        "title": "Day: Sapporo Teine",
+        "body": "Powder on Olympic slopes, or head to Sapporo Kokusai",
+        "linkLabel": "Trail map"
+      },
+      "03": {
+        "title": "Evening: Honoka · Koganeyu",
+        "body": "24h super-sento or private sulfur spring recovery",
+        "linkLabel": "Onsen guide"
+      },
+      "04": {
+        "title": "Night: Otaru",
+        "body": "Masazushi, Otaru Bine, UNWIND bar nightlife",
+        "linkLabel": "Food guide"
+      },
+      "05": {
+        "title": "Stay: Jozankei or Otaru",
+        "body": "Chalet Ivy rotenburo, OMO5 neighborhood map exploration",
+        "linkLabel": "Stay guide"
+      }
+    }
+  },
+  "guides": {
+    "corridor": {
+      "title": "Complete corridor guide",
+      "body": "The 30–40 km loop of Teine, Kokusai, Jozankei, and Otaru—MaaS needs, multilingual storytelling, and the shift to luxury wellness."
+    },
+    "authentic": {
+      "title": "Authenticity assets",
+      "body": "UNWIND in a former hotel, red-brick beer garden, Triangle Market chaos, Hoheikyo curry—moving from surface consumption to deep cultural experience."
+    },
+    "luxury": {
+      "title": "5 luxury wellness stays",
+      "body": "Chalet Ivy (every suite with rotenburo, 16 EV chargers), Kuriyasuizan (gastronomy ryokan), Morino Uta (forest spa), UNWIND (heritage), OMO5 (universal design).",
+      "hashtags": [
+        "#SnowAndCulture",
+        "#JozankeiWellness",
+        "#OtaruHeritage"
+      ]
+    }
+  },
+  "access": {
+    "postal": "006-0021, Japan",
+    "line": "593 Teinehoncho, Teine-ku, Sapporo, Hokkaido",
+    "note": "~40 min from downtown Sapporo · ~80 min from New Chitose · Bus from JR Teine · Parking available",
+    "phone": "TEL 011-681-2111 (Sapporo Teine Ski Resort)",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>札幌市<rt>Sapporo</rt></ruby></span><span class=\"place-unit\"><ruby>手稲区<rt>Teine-ku</rt></ruby></span><span class=\"place-unit\"><ruby>手稲本町<rt>Teinehoncho</rt></ruby></span>"
+  },
+  "footer": {
+    "copyright": "© Sapporo Teine Ski Resort — LP mock",
+    "location": "006-0021 · 593 Teinehoncho, Teine-ku, Sapporo, Hokkaido"
+  },
+  "nearbyFood": {
+    "backLink": "Back to Sapporo Teine LP",
+    "navAreaMap": "Area map",
+    "hero": {
+      "eyebrow": "Food · Map",
+      "title": "Local gastronomy,<br />six faces.",
+      "tagline": "From Otaru seafood to Sapporo-born soup curry and pioneer-era Genghis Khan"
+    },
+    "notice": "Hours, reservations, and dietary accommodations—check each venue's official site.",
+    "introTitle": "Why food drives the journey",
+    "introLead": "Terroir-rooted dining is the strongest motivator for travel in this corridor.",
+    "introBody": "Six inbound-ready picks—multilingual service, diversity, accessibility, or experience that exceeds those baselines.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Corridor dining map",
+    "mapLead": "Layer food, onsen, and hubs across Teine, Jozankei, Otaru, and central Sapporo.",
+    "mapEmbedTitle": "West Sapporo corridor food · onsen · hubs map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Hubs",
+      "hint": "Food and onsen layers can show together",
+      "mobileHint": "If pins overlap, use “View on map” in the list below"
+    },
+    "mapCta": "Open full-size map",
+    "linkOnsenGuide": "4 onsen picks guide",
+    "spotsEyebrow": "6 picks",
+    "spotsTitle": "6 curated dining spots for inbound guests",
+    "spotsLead": "Ordered for easy pairing before/after skiing and corridor moves.",
+    "spotMapLink": "View on map",
+    "spots": {
+      "masazushi": {
+        "tag": "Sushi · English · wheelchair",
+        "title": "Masazushi Honten",
+        "lead": "Otaru sushi street icon—vegetarian and assistance-dog ready."
+      },
+      "takeda": {
+        "tag": "Market · 7:00 open · seafood bowl",
+        "title": "Takeda Market Diner",
+        "lead": "Inside Triangle Market—ultimate pre-ski morning fuel."
+      },
+      "otaru-bine": {
+        "tag": "Heritage building · fondue",
+        "title": "Otaru Bine",
+        "lead": "Former Hokkaido Bank HQ—wine and bread-bowl cheese fondue."
+      },
+      "beer-garden": {
+        "tag": "Red brick · Genghis Khan",
+        "title": "Sapporo Beer Garden",
+        "lead": "Fresh draft and Hokkaido soul food—food meets industrial heritage."
+      },
+      "garaku": {
+        "tag": "Soup curry · Sapporo-born",
+        "title": "Soup Curry GARAKU",
+        "lead": "Spice warmth after arctic skiing—highly shareable soul food."
+      },
+      "ame-yuki": {
+        "tag": "Down day · Jozankei",
+        "title": "Rain & Snow Days Café",
+        "lead": "Rewards on rainy/snowy days—a down-day activity when lifts close."
+      }
+    }
+  },
+  "nearbyOnsen": {
+    "backLink": "Back to Sapporo Teine LP",
+    "navAreaMap": "Area map",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After snow,<br />hot-spring culture.",
+      "tagline": "Snow-view rotenburo to 24h sento and private baths—strategically placed"
+    },
+    "notice": "Fees, hours, tattoo rules, and late-night surcharges—check official sites.",
+    "introTitle": "Onsen in multiple roles",
+    "introLead": "Beyond bathing—culture, recovery, and transit hub.",
+    "introBody": "From Honoka at Teine to Hoheikyo snow views and Otaru's 24h O-Spa—four compared picks.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Corridor onsen map",
+    "mapLead": "Layer with ski areas and stays to plan your loop.",
+    "mapEmbedTitle": "West Sapporo corridor food · onsen · hubs map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Hubs",
+      "hint": "Food and onsen layers can show together",
+      "mobileHint": "If pins overlap, use “View on map” in the list below"
+    },
+    "mapCta": "Open full-size map",
+    "linkFoodGuide": "6 dining picks guide",
+    "spotsEyebrow": "4 picks",
+    "spotsTitle": "4 curated onsen for inbound guests",
+    "spotsLead": "Ordered for post-ski recovery and corridor transit.",
+    "spotMapLink": "View on map",
+    "spots": {
+      "hoheikyo": {
+        "tag": "Snow rotenburo · curry · ¥1,300",
+        "title": "Hoheikyo Onsen",
+        "lead": "Massive outdoor bath plus authentic tandoori curry—unexpected culture mix."
+      },
+      "teine-honoka": {
+        "tag": "24h · at Teine · rock bath",
+        "title": "Teine Onsen Honoka",
+        "lead": "Full super-sento experience—hub on the descent from the hill."
+      },
+      "o-spa": {
+        "tag": "24h · 1 min from Otaru IC · salt spring",
+        "title": "Otaru Onsen O-Spa",
+        "lead": "After nightlife or before early flights—a strategic recovery stop."
+      },
+      "koganeyu": {
+        "tag": "Private bath · tattoos OK · sulfur",
+        "title": "Koganeyu Onsen",
+        "lead": "Three private rooms (from ¥3,800 / 90 min)—privacy-first guests."
+      }
+    }
+  },
+  "corridorStay": {
+    "backLink": "Back to Sapporo Teine LP",
+    "navAreaMap": "Area map",
+    "hero": {
+      "eyebrow": "Stay · Corridor",
+      "title": "The stay itself<br />is the destination.",
+      "tagline": "From luxury wellness to heritage hotels—five bases"
+    },
+    "notice": "Room types, rates, and shuttles—check each property's booking site.",
+    "introTitle": "Base camps for the corridor",
+    "introLead": "Jozankei forest retreats and Otaru heritage—each translates Hokkaido differently.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Stay base map",
+    "mapLead": "Combine with ski, dining, and onsen layers.",
+    "mapEmbedTitle": "West Sapporo corridor hubs map",
+    "mapCta": "Open full-size map",
+    "linkFoodGuide": "6 dining picks",
+    "linkOnsenGuide": "4 onsen picks",
+    "spotsEyebrow": "5 picks",
+    "spotsTitle": "5 curated stays for inbound guests",
+    "spotsLead": "Private onsen, gastronomy ryokan, heritage, urban explorer hotel—by need.",
+    "spotMapLink": "View on map",
+    "regions": {
+      "jozankei": "Jozankei onsen",
+      "otaru": "Otaru"
+    },
+    "spots": {
+      "chalet-ivy": {
+        "tag": "Luxury · in-room bath · 16 EV",
+        "title": "Chalet Ivy Jozankei",
+        "lead": "Niseko-grade international hospitality—peak private onsen experience."
+      },
+      "morino-uta": {
+        "tag": "Wellness · sauna · barrier-free",
+        "title": "Morino Uta Tsuruga Resort",
+        "lead": "Forest immersion—après-ski recovery and spa."
+      },
+      "kuriyasuizan": {
+        "tag": "Gastronomy ryokan · rotenburo · network",
+        "title": "Kuriyasuizan",
+        "lead": "Japanese cuisine mastery plus walkable sister properties."
+      },
+      "unwind-otaru": {
+        "tag": "Heritage · former Etchuya · bar",
+        "title": "UNWIND HOTEL & BAR OTARU",
+        "lead": "Revived historic hotel—heritage tourism hook."
+      },
+      "omo5-otaru": {
+        "tag": "Hoshino · barrier-free · neighborhood map",
+        "title": "OMO5 Otaru by Hoshino Resorts",
+        "lead": "3 min to canal—urban hotel for deep local exploration."
+      }
+    }
+  }
+}

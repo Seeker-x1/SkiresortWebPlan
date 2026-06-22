@@ -1,0 +1,461 @@
+{
+  "meta": {
+    "title": "Sapporo Kokusai Ski Resort",
+    "description": "Japow at the center—linking Sapporo, Jozankei, and Otaru."
+  },
+  "logo": "Sapporo Kokusai Ski Resort",
+  "nav": {
+    "triangle": "Wide area",
+    "mobility": "Routes",
+    "picks": "Curated"
+  },
+  "hero": {
+    "eyebrow": "Minami-ku, Sapporo · Jozankei",
+    "title": "Sapporo Kokusai<br />Ski Resort",
+    "tagline": "Japow at the hub of three worlds.",
+    "badgePowder": "Japow · 1,100 m summit",
+    "badgeTriangle": "Golden Triangle",
+    "badgeSeason": "Nov–May",
+    "ctaTour": "Regional tour plan",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Access and routing dashboard",
+    "subtitle": "Real-time hub routing",
+    "updatedAt": "Updated Jun 23, 9:00",
+    "sapporo": {
+      "label": "Central Sapporo",
+      "value": "~60 min",
+      "note": "Bus or car"
+    },
+    "otaru": {
+      "label": "Central Otaru",
+      "value": "~40 min",
+      "note": "Route 1 (winter night closure)"
+    },
+    "jozankei": {
+      "label": "Jozankei Onsen",
+      "value": "~30–40 min",
+      "note": "Jozankei Ski Liner"
+    },
+    "airport": {
+      "label": "New Chitose Airport",
+      "value": "~100 min",
+      "note": "Car or private transfer"
+    }
+  },
+  "triangle": {
+    "eyebrow": "Golden Triangle",
+    "title": "City, onsen, port—<br />one snow links all three.",
+    "lead": "Sapporo Kokusai is more than a ski hill: a geographic hub tying Sapporo (urban convenience and gastronomy), Jozankei (national-park nature and hot-spring culture), and Otaru (heritage architecture and maritime culture). Ski as your anchor and blend three distinct experiences seamlessly.",
+    "specs": [
+      "7 courses · up to 3.6 km",
+      "Gondola summit 1,100 m",
+      "Jozankei Ski Liner"
+    ],
+    "noticeTitle": "Winter routing:",
+    "noticeBody": "Otaru–Jozankei Route 1 (Asari Pass) is closed nights Nov–Apr, 19:00–07:00. \"Otaru sushi at night, then Jozankei lodge\" is impossible—plan daytime circulation and early dinners.",
+    "ctaMobility": "Routes & constraints",
+    "ctaPicks": "Curated venues",
+    "imgAlt": "Jozankei snowscape and slopes—the regional hub"
+  },
+  "paths": {
+    "tour": {
+      "label": "Tour",
+      "title": "Golden Triangle"
+    },
+    "picks": {
+      "label": "Curated",
+      "title": "Stays · onsen · dining"
+    },
+    "mobility": {
+      "label": "Routes",
+      "title": "Access & night closure"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Snow · lifts · conditions"
+    },
+    "food": {
+      "label": "Dining",
+      "title": "4 curated restaurants"
+    },
+    "onsen": {
+      "label": "Onsen",
+      "title": "2 curated onsen"
+    },
+    "stay": {
+      "label": "Stays",
+      "title": "5 curated hotels"
+    },
+    "map": {
+      "label": "Map",
+      "title": "Regional area map"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Core Hook",
+    "title": "What inbound guests want",
+    "primary": {
+      "title": "World-class Japow, 60 min from the city",
+      "lead": "Light powder from the 1,100 m summit zone. Direct lines from New Chitose, then Sapporo soup curry, Otaru sushi, Jozankei snow-view baths—the core of a rare high-value regional package.",
+      "cta": "Tickets & lift passes",
+      "imgAlt": "Untouched powder—Sapporo Kokusai summit area"
+    },
+    "secondary": {
+      "title": "Onsen design that avoids culture clash",
+      "lead": "In-room baths, private rentals, tattoo-friendly trials—raising area-wide standards for privacy and inclusion for Western guests and diverse dietary needs.",
+      "cta": "Curated stays & onsen"
+    }
+  },
+  "mobility": {
+    "eyebrow": "Mobility",
+    "title": "Regional routing<br />and constraints.",
+    "lead": "Routing directly shapes experience quality. The Jozankei Ski Liner (guests only, ¥2,200 round trip, book online day before) lowers the barrier of winter driving and boosts long-stay regional value.",
+    "rows": {
+      "jozankei": {
+        "route": "Jozankei Onsen ⇔ Sapporo Kokusai",
+        "mode": "Ski Liner / car",
+        "time": "~30–40 min",
+        "note": "Guest shuttle—stress-free"
+      },
+      "sapporo": {
+        "route": "Central Sapporo ⇔ Sapporo Kokusai",
+        "mode": "Bus / car",
+        "time": "~60 min",
+        "note": "Main day-trip corridor"
+      },
+      "otaru": {
+        "route": "Central Otaru ⇔ Sapporo Kokusai",
+        "mode": "Route 1 Otaru–Jozankei",
+        "time": "~40–50 min",
+        "note": "Winter night closure 19:00–07:00"
+      },
+      "airport": {
+        "route": "New Chitose ⇔ Sapporo Kokusai",
+        "mode": "Car / private transfer",
+        "time": "~100 min",
+        "note": "Reliable chauffeur for HNWI"
+      }
+    },
+    "tableHeadRoute": "Segment",
+    "tableHeadMode": "Transport",
+    "tableHeadTime": "Time",
+    "tableHeadNote": "Notes",
+    "cta": "Multi-base stay plan",
+    "imgAlt": "Asari Pass tunnel and winter highway—regional bottleneck"
+  },
+  "picks": {
+    "eyebrow": "Curated",
+    "title": "Inbound-ready<br />venue shortlist.",
+    "lead": "Stays, onsen, and dining selected on five axes: snowscape, heritage, local food, onsen adaptability, and digital access—structured for package design.",
+    "categories": {
+      "stay": "Stays",
+      "onsen": "Onsen",
+      "food": "Dining"
+    },
+    "venues": {
+      "chaletIvy": {
+        "name": "Chalet Ivy Jozankei",
+        "area": "Jozankei",
+        "hook": "26 suite rooms with scenic baths—HNWI long-stay base for private snow-view soaking."
+      },
+      "kuriyasuizan": {
+        "name": "Kuriyasuizan",
+        "area": "Jozankei",
+        "hook": "Culinary inn inviting guests into the kitchen—13 rooms fusing Hokkaido produce and Japanese craft."
+      },
+      "yurakusoan": {
+        "name": "Jozankei Yurakusoan",
+        "area": "Jozankei",
+        "hook": "Natural hot spring in every room plus four free private baths—structural answer to shared-bath and tattoo concerns."
+      },
+      "unwind": {
+        "name": "UNWIND HOTEL & BAR Otaru",
+        "area": "Otaru",
+        "hook": "1931 former foreign hotel renovated—Art Deco anchor for heritage tourism."
+      },
+      "omo5": {
+        "name": "OMO5 Otaru by Hoshino Resorts",
+        "area": "Otaru",
+        "hook": "Trusted Hoshino brand—3 min walk to Otaru Canal for post-ski strolls."
+      },
+      "hoheikyo": {
+        "name": "Hoheikyo Onsen",
+        "area": "Jozankei",
+        "hook": "100% spring-fed open-air baths and cult-favorite Indian curry—immersive snowscape."
+      },
+      "koganeyu": {
+        "name": "Koganeyu",
+        "area": "Jozankei–Sapporo",
+        "hook": "Private baths plus tattoo cover-sticker trial—ideal stop on regional loops."
+      },
+      "garaku": {
+        "name": "Soup Curry GARAKU Sapporo",
+        "area": "Sapporo",
+        "hook": "Iconic Sapporo soul food—umami dashi meets secret spice blend."
+      },
+      "masazushi": {
+        "name": "Masazushi Otaru Main",
+        "area": "Otaru",
+        "hook": "Sushi Street landmark—English menu, wheelchair access, vegetarian by reservation."
+      },
+      "biergarten": {
+        "name": "Sapporo Beer Garden (Kaitakushi-kan)",
+        "area": "Sapporo",
+        "hook": "Red-brick hall and Genghis Khan—frontier-era authenticity."
+      },
+      "amenoyuki": {
+        "name": "Ame no Hi to Yuki no Hi",
+        "area": "Jozankei",
+        "hook": "Café framing snow views—strong visual hook for millennials and Gen Z."
+      }
+    }
+  },
+  "tour": {
+    "eyebrow": "Day Package",
+    "title": "Daytime circuit,<br />nights within each area.",
+    "lead": "Turn night closure into an asset: morning Japow → sunset Otaru sushi → Jozankei snow-view bath—via multi-base stays or rich in-area night content.",
+    "badge": "GOLDEN TRIANGLE · INBOUND",
+    "steps": {
+      "01": {
+        "title": "Sapporo Kokusai",
+        "body": "First-track powder—gondola summit 1,100 m"
+      },
+      "02": {
+        "title": "Jozankei Ski Liner",
+        "body": "Guest bus avoids winter driving (book day before)"
+      },
+      "03": {
+        "title": "Otaru · Masazushi",
+        "body": "Harbor-town craft—sunset dinner is realistic"
+      },
+      "04": {
+        "title": "Jozankei · Yurakusoan",
+        "body": "Private bath, snow views without culture friction"
+      },
+      "05": {
+        "title": "Sapporo · GARAKU",
+        "body": "Next day: soup curry and Beer Garden in the city"
+      }
+    }
+  },
+  "guides": {
+    "triangle": {
+      "title": "Complete Golden Triangle guide",
+      "body": "Link Sapporo, Jozankei, and Otaru through a ski hub. Jozankei Ski Liner as spine—Japow, gastronomy, onsen, and heritage in one journey for inbound high-value packages."
+    },
+    "mobility": {
+      "title": "Winter night closure and rescheduled routes",
+      "body": "Asari Pass closed 19:00–07:00 blocks night circulation. Early sunset dinners, split Otaru/Jozankei bases, or richer in-area night content—schedules that match infrastructure reality."
+    },
+    "culture": {
+      "title": "Tattoos, diet diversity—raising acceptance standards",
+      "body": "Yurakusoan private baths, Koganeyu cover stickers, Masazushi vegetarian prep—lift individual efforts to area norms. Multilingual visibility at booking is the competitiveness lever.",
+      "hashtags": [
+        "#GoldenTriangle",
+        "#JapowHub",
+        "#InboundHokkaido"
+      ]
+    }
+  },
+  "access": {
+    "postal": "061-2301, Japan",
+    "line": "937 Jozankei, Minami-ku, Sapporo, Hokkaido",
+    "note": "~60 min from central Sapporo by bus or car · ~40–50 min from Otaru · ~30–40 min from Jozankei Onsen · parking available",
+    "phone": "TEL 011-598-4511 (Sapporo Kokusai Ski Resort)",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>札幌市<rt>Sapporo</rt></ruby></span><span class=\"place-unit\"><ruby>南区<rt>Minami-ku</rt></ruby></span><span class=\"place-unit\"><ruby>定山渓<rt>Jozankei</rt></ruby></span><span class=\"place-unit\">937</span>"
+  },
+  "footer": {
+    "copyright": "© Sapporo Kokusai Ski Resort",
+    "location": "061-2301 · 937 Jozankei, Minami-ku, Sapporo, Hokkaido"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "4 curated restaurants — Sapporo Kokusai",
+      "description": "Inbound dining shortlist for the Golden Triangle with map guide"
+    },
+    "backLink": "Back to Sapporo Kokusai LP",
+    "navAreaMap": "Area map",
+    "hero": {
+      "eyebrow": "Food · Map",
+      "title": "Local gastronomy,<br />four faces.",
+      "tagline": "From Otaru seafood to Sapporo-born soup curry and frontier-era Genghis Khan"
+    },
+    "notice": "Hours, reservations, and dietary accommodations—check each venue's official site.",
+    "introTitle": "Why food drives regional travel",
+    "introLead": "Food rooted in local history and terroir is tourism's strongest hook.",
+    "introBody": "Four Golden Triangle picks—multilingual service, diversity, and accessibility baked in.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Golden Triangle dining map",
+    "mapLead": "Dining and anchor points across Kokusai, Jozankei, Otaru, and central Sapporo.",
+    "mapEmbedTitle": "Sapporo Kokusai regional dining, onsen, and anchor map",
+    "mapLayers": {
+      "food": "Dining",
+      "onsen": "Onsen",
+      "anchor": "Anchors",
+      "hint": "Food and onsen layers can be shown together",
+      "mobileHint": "When pins overlap, use “View on map” in the list below"
+    },
+    "mapCta": "Open full-size map",
+    "linkOnsenGuide": "2 curated onsen guide",
+    "spotsEyebrow": "4 picks",
+    "spotsTitle": "Inbound-ready dining shortlist",
+    "spotsLead": "Ordered for easy insertion before or after skiing and regional moves.",
+    "spotMapLink": "View on map",
+    "spotPhoneLabel": "Phone",
+    "spotWebsiteLabel": "Official site",
+    "spots": {
+      "masazushi": {
+        "tag": "Sushi · English · wheelchair",
+        "title": "Masazushi Honten",
+        "lead": "Sushi Street landmark—vegetarian and assistance-dog friendly by reservation.",
+        "phone": "0134-64-1101",
+        "website": "http://www.masazushi.co.jp/"
+      },
+      "garaku": {
+        "tag": "Soup curry · Sapporo-born",
+        "title": "Soup Curry GARAKU",
+        "lead": "Soul food that warms you to the core after sub-zero skiing—high visual appeal.",
+        "phone": "050-5869-6095",
+        "website": "https://s-garaku.com"
+      },
+      "beer-garden": {
+        "tag": "Red brick · Genghis Khan",
+        "title": "Sapporo Beer Garden",
+        "lead": "Factory-fresh draft beer and Hokkaido soul food—industrial gastronomy entertainment.",
+        "phone": "0570-098-346",
+        "website": "https://www.sapporo-bier-garten.jp/"
+      },
+      "ame-yuki": {
+        "tag": "Down day · Jozankei",
+        "title": "Ame no Hi to Yuki no Hi",
+        "lead": "A welcome refuge on bad-weather days—activity hub when slopes are closed.",
+        "phone": "011-596-9131",
+        "website": "https://www.amenohitoyukinohi.com/"
+      }
+    }
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "2 curated onsen — Sapporo Kokusai",
+      "description": "Inbound onsen shortlist for the Golden Triangle with map guide"
+    },
+    "backLink": "Back to Sapporo Kokusai LP",
+    "navAreaMap": "Area map",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After the snow,<br />hot-spring culture.",
+      "tagline": "Snow-view open-air baths to private rentals—strategically placed recovery"
+    },
+    "notice": "Fees, hours, tattoo policies, and late-night surcharges—confirm on each official site.",
+    "introTitle": "The many roles of onsen",
+    "introLead": "Beyond bathing—cultural immersion, fatigue recovery, and transit hubs.",
+    "introBody": "From Jozankei snow-view baths to private sulfur springs—two venues compared.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Golden Triangle onsen map",
+    "mapLead": "Layer stays and ski access to design your circuit.",
+    "mapEmbedTitle": "Sapporo Kokusai regional dining, onsen, and anchor map",
+    "mapLayers": {
+      "food": "Dining",
+      "onsen": "Onsen",
+      "anchor": "Anchors",
+      "hint": "Food and onsen layers can be shown together",
+      "mobileHint": "When pins overlap, use “View on map” in the list below"
+    },
+    "mapCta": "Open full-size map",
+    "linkFoodGuide": "4 curated restaurants guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "Inbound-ready onsen shortlist",
+    "spotsLead": "Ordered for post-ski recovery and regional transit stops.",
+    "spotMapLink": "View on map",
+    "spotPhoneLabel": "Phone",
+    "spotWebsiteLabel": "Official site",
+    "spots": {
+      "hoheikyo": {
+        "tag": "Snow-view · Indian curry · ¥1,300",
+        "title": "Hoheikyo Onsen",
+        "lead": "Japan-scale open-air baths and tandoor Indian curry—unexpected culture mix.",
+        "phone": "011-598-2410",
+        "website": "http://www.hoheikyo.co.jp/"
+      },
+      "koganeyu": {
+        "tag": "Private bath · tattoo OK · sulfur",
+        "title": "Koganeyu",
+        "lead": "Three private baths (90 min from ¥3,800)—privacy-first inbound hook.",
+        "phone": "011-596-2111",
+        "website": "http://koganeyu.jp/"
+      }
+    }
+  },
+  "goldenTriangleStay": {
+    "meta": {
+      "title": "5 curated stays — Sapporo Kokusai",
+      "description": "Inbound stay shortlist for the Golden Triangle with map guide"
+    },
+    "backLink": "Back to Sapporo Kokusai LP",
+    "navAreaMap": "Area map",
+    "hero": {
+      "eyebrow": "Stay · Golden Triangle",
+      "title": "The stay itself<br />is the destination.",
+      "tagline": "From luxury wellness to heritage hotels—five anchor bases"
+    },
+    "notice": "Room types, rates, and transfers—official booking sites are authoritative.",
+    "introTitle": "Base camps for regional loops",
+    "introLead": "Jozankei forest and Otaru's historic streets—each stay translates Hokkaido differently.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Stay anchor map",
+    "mapLead": "Layer ski, dining, and onsen to build your itinerary.",
+    "mapEmbedTitle": "Sapporo Kokusai regional anchor map",
+    "mapCta": "Open full-size map",
+    "linkFoodGuide": "4 curated restaurants",
+    "linkOnsenGuide": "2 curated onsen",
+    "spotsEyebrow": "5 picks",
+    "spotsTitle": "Inbound-ready stay shortlist",
+    "spotsLead": "Private baths, culinary inns, heritage, and urban tourism hotels—by need.",
+    "spotMapLink": "View on map",
+    "spotPhoneLabel": "Phone",
+    "spotWebsiteLabel": "Official site",
+    "regions": {
+      "jozankei": "Jozankei Onsen",
+      "otaru": "Otaru"
+    },
+    "spots": {
+      "chalet-ivy": {
+        "tag": "Luxury · in-room bath · 16 EV chargers",
+        "title": "Chalet Ivy Jozankei",
+        "lead": "Niseko-grade international hospitality—the peak of private hot-spring stays.",
+        "phone": "011-595-2088",
+        "website": "https://chaletivy.com/ja/jozankei/"
+      },
+      "kuriyasuizan": {
+        "tag": "Culinary inn · room bath · sister venues",
+        "title": "Kuriyasuizan",
+        "lead": "Japanese cuisine mastery plus walkable micro-tourism to sister bakery and gallery.",
+        "phone": "011-598-5555",
+        "website": "http://www.kuriyasuizan.com/"
+      },
+      "yurakusoan": {
+        "tag": "In-room spring · 4 free private baths · tattoo-friendly",
+        "title": "Jozankei Yurakusoan",
+        "lead": "Natural hot spring in every room plus four free private baths—structural privacy answer.",
+        "phone": "011-595-2489",
+        "website": "https://www.hotespa.net/hotels/yurakusoan"
+      },
+      "unwind-otaru": {
+        "tag": "Heritage · former hotel · bar",
+        "title": "UNWIND HOTEL & BAR OTARU",
+        "lead": "Historic building reborn—a strong heritage-tourism hook.",
+        "phone": "0134-64-5810",
+        "website": "https://www.livelyhotels.com/ja/unwindotaru"
+      },
+      "omo5-otaru": {
+        "tag": "Hoshino · barrier-free · neighborhood map",
+        "title": "OMO5 Otaru by Hoshino Resorts",
+        "lead": "Three minutes to the canal—urban hotel for deep local exploration.",
+        "phone": "050-3134-8095",
+        "website": "https://hoshinoresorts.com/ja/hotels/omo5otaru"
+      }
+    }
+  }
+}

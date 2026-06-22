@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="sapporo-kokusai">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>札幌国際スキー場</title>
+  <meta name="description" content="Japowの中心で、札幌・定山渓・小樽をつなぐ。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="#" class="logo" data-i18n="logo">札幌国際スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=sapporo-kokusai" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="#live" data-i18n="nav.live">本日</a></li>
+          <li><a href="#triangle" data-i18n="nav.triangle">広域圏</a></li>
+          <li><a href="#picks" data-i18n="nav.picks">厳選施設</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-sapporo-kokusai-hero.png" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">北海道札幌市南区 · 定山渓</p>
+        <h1 class="hero-title" data-i18n-html="hero.title">札幌国際<br />スキー場</h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">Japowの中心で、三つの街をつなぐ。</p>
+        <span class="badge-powder" data-i18n="hero.badgePowder">Japow · 標高1,100m</span>
+        <span class="badge-triangle" data-i18n="hero.badgeTriangle">ゴールデントライアングル</span>
+        <span class="badge-season" data-i18n="hero.badgeSeason">11月〜5月</span>
+        <div class="hero-cta">
+          <a href="#tour" class="btn btn-gold" data-i18n="hero.ctaTour">広域周遊プラン</a>
+          <a href="#live" class="btn btn-ghost" data-i18n="hero.ctaLive">本日のコンディション</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="live" class="live-dashboard" data-i18n-attr="aria-label:live.ariaLabel">
+      <div class="inner">
+        <div class="live-head">
+          <div>
+            <span class="live-pulse" aria-hidden="true"></span>
+            <span class="live-label">Hub</span>
+            <span style="font-size:0.75rem;color:var(--muted);margin-left:0.5rem" data-i18n="live.subtitle">広域ハブのリアルタイム導線</span>
+          </div>
+          <p class="live-updated" data-i18n="live.updatedAt">更新 6/23 9:00</p>
+        </div>
+        <div class="status-grid">
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.sapporo.label">札幌中心部</p>
+            <p class="status-card__value" data-i18n="live.sapporo.value">約60分</p>
+            <p class="status-card__note" data-i18n="live.sapporo.note">路線バス・車</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.otaru.label">小樽中心部</p>
+            <p class="status-card__value" data-i18n="live.otaru.value">約40分</p>
+            <p class="status-card__note" data-i18n="live.otaru.note">道道1号（冬期夜間規制あり）</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.jozankei.label">定山渓温泉</p>
+            <p class="status-card__value" style="color:var(--accent-powder)" data-i18n="live.jozankei.value">約30〜40分</p>
+            <p class="status-card__note" data-i18n="live.jozankei.note">定山渓スキーライナー</p>
+          </div>
+          <div class="status-card status-card--warn">
+            <p class="status-card__label" data-i18n="live.airport.label">新千歳空港</p>
+            <p class="status-card__value" data-i18n="live.airport.value">約100分</p>
+            <p class="status-card__note" data-i18n="live.airport.note">車・貸切送迎</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="triangle" class="section" aria-labelledby="triangle-heading">
+      <div class="inner">
+        <div class="transit-grid">
+          <div class="transit-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-sapporo-kokusai-jozankei.png"
+                data-i18n-attr="alt:triangle.imgAlt"
+                alt="定山渓の雪景色とゲレンデ——広域圏のハブ"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="transit-card">
+            <p class="eyebrow" data-i18n="triangle.eyebrow">Golden Triangle</p>
+            <h2 id="triangle-heading" class="heading-lg" data-i18n-html="triangle.title">都市・温泉・港町、<br />ひとつの雪でつながる。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:28rem" data-i18n="triangle.lead">
+              札幌国際は単なるゲレンデではなく、札幌（都市の利便性とガストロノミー）、定山渓（国立公園の自然と温泉文化）、小樽（歴史的建造物と海洋文化）を結ぶ地理的ハブ。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="triangle.specs.0">7コース · 最大3.6km</li>
+              <li class="spec-tag" data-i18n="triangle.specs.1">ゴンドラ山頂1,100m</li>
+              <li class="spec-tag" data-i18n="triangle.specs.2">定山渓スキーライナー</li>
+            </ul>
+            <div class="notice-box">
+              <strong data-i18n="triangle.noticeTitle">冬期の動線設計：</strong><span data-i18n="triangle.noticeBody">小樽定山渓線（朝里峠）は11〜4月、19:00〜翌7:00が夜間通行止め。</span>
+            </div>
+            <div class="transit-actions">
+              <a href="#mobility" class="btn btn-gold" data-i18n="triangle.ctaMobility">動線と制約を見る</a>
+              <a href="#picks" class="btn btn-ghost" data-i18n="triangle.ctaPicks">厳選施設リスト</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top" aria-labelledby="paths-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.explore">Explore</p>
+        <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
+        <div class="path-grid">
+          <a href="#tour" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.tour.label">周遊</span>
+            <span class="path-tile__title" data-i18n="paths.tour.title">ゴールデントライアングル</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#picks" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.picks.label">厳選</span>
+            <span class="path-tile__title" data-i18n="paths.picks.title">宿・温泉・飲食10選</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="nearby-food.html" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.food.label">グルメ</span>
+            <span class="path-tile__title" data-i18n="paths.food.title">厳選飲食4選</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#mobility" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.mobility.label">動線</span>
+            <span class="path-tile__title" data-i18n="paths.mobility.title">アクセスと夜間規制</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#live" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.today.label">今日</span>
+            <span class="path-tile__title" data-i18n="paths.today.title">積雪・リフト・雪質</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="/area-map.html?resort=sapporo-kokusai&layers=food,onsen,anchor" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.map.label">Map</span>
+            <span class="path-tile__title" data-i18n="paths.map.title">広域マップ</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="nearby-onsen.html" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.onsen.label">温泉</span>
+            <span class="path-tile__title" data-i18n="paths.onsen.title">厳選温泉2選</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="golden-triangle-stay.html" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.stay.label">宿泊</span>
+            <span class="path-tile__title" data-i18n="paths.stay.title">厳選宿5選</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section" aria-labelledby="highlights-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="highlights.eyebrow">Core Hook</p>
+        <h2 id="highlights-heading" class="heading-lg" data-i18n="highlights.title">インバウンドが求めるもの</h2>
+
+        <div class="highlight-duet">
+          <article class="highlight-primary">
+            <div class="frame">
+              <img
+                src="lp-mock-sapporo-kokusai-hero.png"
+                data-i18n-attr="alt:highlights.primary.imgAlt"
+                alt="手つかずのパウダーバーン——札幌国際の山頂エリア"
+                width="1600"
+                height="1100"
+              />
+            </div>
+            <div class="highlight-primary-body">
+              <h3 data-i18n="highlights.primary.title">世界水準のJapow、都市から60分</h3>
+              <p class="lead" style="margin-top:1rem" data-i18n="highlights.primary.lead">
+                標高1,100mの山頂エリアが生む軽いパウダー。
+              </p>
+              <a href="#" class="btn btn-powder" style="margin-top:2rem" data-i18n="highlights.primary.cta">料金・リフト券</a>
+            </div>
+          </article>
+
+          <article class="highlight-secondary">
+            <h3 data-i18n="highlights.secondary.title">文化摩擦を回避する温泉設計</h3>
+            <p class="lead-whisper" style="margin-top:1rem" data-i18n="highlights.secondary.lead">
+              全室露天・貸切風呂、タトゥー対応の試み。
+            </p>
+            <a href="#picks" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="highlights.secondary.cta">温泉・宿の厳選リスト</a>
+            <div style="margin-top:1rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+              <a href="golden-triangle-stay.html" class="btn btn-ghost" data-i18n="paths.stay.title">厳選宿5選</a>
+              <a href="nearby-onsen.html" class="btn btn-ghost" data-i18n="paths.onsen.title">厳選温泉2選</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="mobility" class="section border-top" aria-labelledby="mobility-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow" data-i18n="mobility.eyebrow">Mobility</p>
+            <h2 id="mobility-heading" class="heading-lg" data-i18n-html="mobility.title">広域モビリティの<br />力学と制約。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="mobility.lead">
+              動線設計は体験の質を直結的に左右します。
+            </p>
+            <div class="mobility-table-wrap">
+              <table class="mobility-table">
+                <thead>
+                  <tr>
+                    <th scope="col" data-i18n="mobility.tableHeadRoute">区間</th>
+                    <th scope="col" data-i18n="mobility.tableHeadMode">交通手段</th>
+                    <th scope="col" data-i18n="mobility.tableHeadTime">目安</th>
+                    <th scope="col" data-i18n="mobility.tableHeadNote">留意点</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-i18n="mobility.rows.jozankei.route">定山渓温泉 ⇔ 札幌国際</td>
+                    <td data-i18n="mobility.rows.jozankei.mode">定山渓スキーライナー / 車</td>
+                    <td data-i18n="mobility.rows.jozankei.time">約30〜40分</td>
+                    <td data-i18n="mobility.rows.jozankei.note">宿泊者専用バスでストレスフリー</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="mobility.rows.sapporo.route">札幌中心部 ⇔ 札幌国際</td>
+                    <td data-i18n="mobility.rows.sapporo.mode">路線バス / 車</td>
+                    <td data-i18n="mobility.rows.sapporo.time">約60分</td>
+                    <td data-i18n="mobility.rows.sapporo.note">日帰りスキー客の主動線</td>
+                  </tr>
+                  <tr class="mobility-table__warn">
+                    <td data-i18n="mobility.rows.otaru.route">小樽中心部 ⇔ 札幌国際</td>
+                    <td data-i18n="mobility.rows.otaru.mode">道道1号 小樽定山渓線</td>
+                    <td data-i18n="mobility.rows.otaru.time">約40〜50分</td>
+                    <td data-i18n="mobility.rows.otaru.note">冬期19:00〜翌7:00 夜間通行止め</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="mobility.rows.airport.route">新千歳空港 ⇔ 札幌国際</td>
+                    <td data-i18n="mobility.rows.airport.mode">車 / 貸切送迎</td>
+                    <td data-i18n="mobility.rows.airport.time">約100分</td>
+                    <td data-i18n="mobility.rows.airport.note">HNWI向けハイヤー手配の確実性</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a href="#tour" class="btn btn-gold" style="margin-top:2rem" data-i18n="mobility.cta">マルチベース滞在プラン</a>
+          </div>
+          <div class="feature-visual">
+            <div class="frame frame--wide">
+              <img
+                src="lp-mock-sapporo-kokusai-otaru.png"
+                data-i18n-attr="alt:mobility.imgAlt"
+                alt="朝里峠トンネルと冬の道道——広域周遊のボトルネック"
+                width="1600"
+                height="1100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="picks" class="section border-top" aria-labelledby="picks-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="picks.eyebrow">Curated</p>
+        <h2 id="picks-heading" class="heading-lg" data-i18n-html="picks.title">インバウンド向け<br />厳選リスト。</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="picks.lead">
+          雪景色・ヘリテージ・ローカルフード・温泉の受入・デジタルアクセシビリティ——5軸で抽出。
+        </p>
+
+        <div class="pick-groups">
+          <div class="pick-group">
+            <h3 class="pick-group__title"><a href="golden-triangle-stay.html" data-i18n="picks.categories.stay">宿</a></h3>
+            <ul class="pick-list">
+              <li class="pick-card">
+                <span class="pick-card__area" data-i18n="picks.venues.chaletIvy.area">定山渓</span>
+                <p class="pick-card__name" data-i18n="picks.venues.chaletIvy.name">シャレーアイビー定山渓</p>
+                <p class="pick-card__hook" data-i18n="picks.venues.chaletIvy.hook">全26室スイート＋展望温泉。</p>
+              </li>
+              <li class="pick-card">
+                <span class="pick-card__area" data-i18n="picks.venues.kuriyasuizan.area">定山渓</span>
+                <p class="pick-card__name" data-i18n="picks.venues.kuriyasuizan.name">厨翠山</p>
+                <p class="pick-card__hook" data-i18n="picks.venues.kuriyasuizan.hook">厨房に招かれる「食の宿」。</p>
+              </li>
+              <li class="pick-card">
+                <span class="pick-card__area" data-i18n="picks.venues.yurakusoan.area">定山渓</span>
+                <p class="pick-card__name" data-i18n="picks.venues.yurakusoan.name">定山渓 ゆらく草庵</p>
+                <p class="pick-card__hook" data-i18n="picks.venues.yurakusoan.hook">全室天然温泉＋4つの無料貸切風呂。</p>
+              </li>
+              <li class="pick-card">
+                <span class="pick-card__area" data-i18n="picks.venues.unwind.area">小樽</span>
+                <p class="pick-card__name" data-i18n="picks.venues.unwind.name">UNWIND HOTEL &amp; BAR 小樽</p>
+                <p class="pick-card__hook" data-i18n="picks.venues.unwind.hook">1931年建築の旧越中屋ホテルをリノベ。</p>
+              </li>
+              <li class="pick-card">
+                <span class="pick-card__area" data-i18n="picks.venues.omo5.area">小樽</span>
+                <p class="pick-card__name" data-i18n="picks.venues.omo5.name">OMO5小樽 by 星野リゾート</p>
+                <p class="pick-card__hook" data-i18n="picks.venues.omo5.hook">星野ブランドの安心感。</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pick-group">
+            <h3 class="pick-group__title"><a href="nearby-onsen.html" data-i18n="picks.categories.onsen">温泉</a></h3>
+            <ul class="pick-list">
+              <li class="pick-card">
+                <span class="pick-card__area" data-i18n="picks.venues.hoheikyo.area">定山渓</span>
+                <p class="pick-card__name" data-i18n="picks.venues.hoheikyo.name">豊平峡温泉</p>
+                <p class="pick-card__hook" data-i18n="picks.venues.hoheikyo.hook">源泉かけ流しの野趣露天とインドカレー。</p>
+              </li>
+              <li class="pick-card">
+                <span class="pick-card__area" data-i18n="picks.venues.koganeyu.area">定山渓〜札幌間</span>
+                <p class="pick-card__name" data-i18n="picks.venues.koganeyu.name">湯元 小金湯</p>
+                <p class="pick-card__hook" data-i18n="picks.venues.koganeyu.hook">貸切風呂＋タトゥーカバーシール試験運用。</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pick-group">
+            <h3 class="pick-group__title"><a href="nearby-food.html" data-i18n="picks.categories.food">飲食</a></h3>
+            <ul class="pick-list">
+              <li class="pick-card">
+                <span class="pick-card__area" data-i18n="picks.venues.garaku.area">札幌</span>
+                <p class="pick-card__name" data-i18n="picks.venues.garaku.name">スープカレーGARAKU 札幌本店</p>
+                <p class="pick-card__hook" data-i18n="picks.venues.garaku.hook">札幌発祥ソウルフードの代表格。</p>
+              </li>
+              <li class="pick-card">
+                <span class="pick-card__area" data-i18n="picks.venues.masazushi.area">小樽</span>
+                <p class="pick-card__name" data-i18n="picks.venues.masazushi.name">おたる政寿司 本店</p>
+                <p class="pick-card__hook" data-i18n="picks.venues.masazushi.hook">寿司屋通りの老舗。</p>
+              </li>
+              <li class="pick-card">
+                <span class="pick-card__area" data-i18n="picks.venues.biergarten.area">札幌</span>
+                <p class="pick-card__name" data-i18n="picks.venues.biergarten.name">サッポロビール園（開拓使館）</p>
+                <p class="pick-card__hook" data-i18n="picks.venues.biergarten.hook">赤レンガとジンギスカン。</p>
+              </li>
+              <li class="pick-card">
+                <span class="pick-card__area" data-i18n="picks.venues.amenoyuki.area">定山渓</span>
+                <p class="pick-card__name" data-i18n="picks.venues.amenoyuki.name">雨ノ日と雪ノ日</p>
+                <p class="pick-card__hook" data-i18n="picks.venues.amenoyuki.hook">雪景色を眺めるカフェ。</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div style="margin-top:2rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="nearby-food.html" class="btn btn-primary" data-i18n="paths.food.title">厳選飲食4選</a>
+          <a href="nearby-onsen.html" class="btn btn-ghost" data-i18n="paths.onsen.title">厳選温泉2選</a>
+          <a href="golden-triangle-stay.html" class="btn btn-ghost" data-i18n="paths.stay.title">厳選宿5選</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tour" class="section border-top" aria-labelledby="tour-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="tour.eyebrow">Day Package</p>
+        <h2 id="tour-heading" class="heading-lg" data-i18n-html="tour.title">日中周遊、<br />夜はエリア内で。</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="tour.lead">
+          夜間通行規制を逆手にした広域パッケージ設計。
+        </p>
+        <span class="secret-badge" data-i18n="tour.badge">GOLDEN TRIANGLE · INBOUND</span>
+
+        <div class="journey">
+          <div class="journey-step">
+            <p class="journey-step__num">01</p>
+            <p class="journey-step__title" data-i18n="tour.steps.01.title">札幌国際スキー場</p>
+            <p class="journey-step__body" data-i18n="tour.steps.01.body">朝イチのパウダー。ゴンドラ山頂1,100m</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">02</p>
+            <p class="journey-step__title" data-i18n="tour.steps.02.title">定山渓スキーライナー</p>
+            <p class="journey-step__body" data-i18n="tour.steps.02.body">宿泊者バスで雪道運転を回避</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">03</p>
+            <p class="journey-step__title" data-i18n="tour.steps.03.title">小樽・政寿司</p>
+            <p class="journey-step__body" data-i18n="tour.steps.03.body">港町の職人技。サンセット前のディナー</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">04</p>
+            <p class="journey-step__title" data-i18n="tour.steps.04.title">定山渓・ゆらく草庵</p>
+            <p class="journey-step__body" data-i18n="tour.steps.04.body">貸切風呂で文化摩擦なく雪見入浴</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">05</p>
+            <p class="journey-step__title" data-i18n="tour.steps.05.title">札幌・GARAKU</p>
+            <p class="journey-step__body" data-i18n="tour.steps.05.body">翌日は都市部でスープカレー</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.guidesEyebrow">特集</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="common.guidesTitle">特集ページ</h2>
+
+        <ul class="guides-list">
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="true" data-guide="triangle">
+              <span data-i18n="guides.triangle.title">ゴールデントライアングル完全ガイド</span>
+              <span class="guide-icon" aria-hidden="true">−</span>
+            </button>
+            <div class="guide-panel is-open" id="panel-triangle">
+              <p class="lead" data-i18n="guides.triangle.body">
+                札幌・定山渓・小樽をスキーハブで結ぶ広域体験。
+              </p>
+              <a href="#tour" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="mobility">
+              <span data-i18n="guides.mobility.title">冬期夜間通行規制と動線再設計</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-mobility" hidden>
+              <p class="lead" data-i18n="guides.mobility.body">
+                朝里峠の19:00〜翌7:00通行止めがナイトタイム周遊を物理的に遮断。
+              </p>
+              <a href="#mobility" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="culture">
+              <span data-i18n="guides.culture.title">タトゥー・食の多様性——受入の標準化</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-culture" hidden>
+              <p class="lead" data-i18n="guides.culture.body">
+                ゆらく草庵の貸切風呂、小金湯のカバーシール試験、政寿司のベジタリアン対応。
+              </p>
+              <div class="hashtags">
+                <span class="hashtag" data-i18n="guides.culture.hashtags.0">#GoldenTriangle</span>
+                <span class="hashtag" data-i18n="guides.culture.hashtags.1">#JapowHub</span>
+                <span class="hashtag" data-i18n="guides.culture.hashtags.2">#InboundHokkaido</span>
+              </div>
+              <a href="#picks" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="access" class="access-section border-top" aria-labelledby="access-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.accessEyebrow">Access</p>
+        <h2 id="access-heading" class="heading-lg" data-i18n="common.location">所在地</h2>
+        <div class="access-grid">
+          <address class="access-address">
+            <span class="access-postal" data-i18n="access.postal">〒061-2301</span>
+            <span class="access-line" data-i18n="access.line">北海道札幌市南区定山渓937番地先</span>
+            <p class="access-places" data-i18n-html="access.places" hidden></p>
+            <p class="access-note" data-i18n="access.note">札幌中心部から車・バス約60分</p>
+            <p class="access-phone" data-i18n="access.phone">TEL 011-598-4511（札幌国際スキー場）</p>
+          </address>
+          <div class="access-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9C%AD%E5%B9%8C%E5%9B%BD%E9%9A%9B%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E5%AE%9A%E5%B1%B1%E6%B8%93"
+              class="btn btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="common.googleMap">Google Mapで開く</span>
+            </a>
+            <a href="tel:0115984511" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 札幌国際スキー場 — LP案モック</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒061-2301 北海道札幌市南区定山渓937番地先</span> ·
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9C%AD%E5%B9%8C%E5%9B%BD%E9%9A%9B%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E5%AE%9A%E5%B1%B1%E6%B8%93" target="_blank" rel="noopener noreferrer" data-i18n="common.footerMap">Google Map</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+  <script>
+    document.querySelectorAll(".guide-trigger").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.guide;
+        const panel = document.getElementById("panel-" + id);
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".guide-trigger").forEach((b) => {
+          b.setAttribute("aria-expanded", "false");
+          b.querySelector(".guide-icon").textContent = "+";
+        });
+        document.querySelectorAll(".guide-panel").forEach((p) => {
+          p.classList.remove("is-open");
+          p.hidden = true;
+        });
+
+        if (!isOpen) {
+          btn.setAttribute("aria-expanded", "true");
+          btn.querySelector(".guide-icon").textContent = "−";
+          panel.classList.add("is-open");
+          panel.hidden = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

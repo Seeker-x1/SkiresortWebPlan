@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="sapporo-teine">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>厳選宿5選 — 札幌手稲スキー場</title>
+  <meta name="description" content="広域コリドーのインバウンド向け宿泊厳選リストとマップ付きガイド" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="./" class="logo" data-i18n="logo">札幌手稲スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="./#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="/area-map.html?resort=sapporo-teine&layers=anchor" data-i18n="corridorStay.navAreaMap">広域マップ</a></li>
+          <li><a href="nearby-food.html" data-i18n="paths.food.title">厳選飲食6選</a></li>
+          <li><a href="nearby-onsen.html" data-i18n="paths.onsen.title">厳選温泉4選</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--spot" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-sapporo-teine-corridor.png" alt="" width="1200" height="1500" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <a href="./" class="detail-back">← <span data-i18n="corridorStay.backLink">札幌手稲 LP に戻る</span></a>
+        <p class="eyebrow" data-i18n="corridorStay.hero.eyebrow">Stay · Corridor</p>
+        <h1 class="hero-title" data-i18n-html="corridorStay.hero.title">宿そのものが、<br />デスティネーション。</h1>
+        <p class="hero-tagline" data-i18n="corridorStay.hero.tagline">ラグジュアリー・ウェルネスからヘリテージホテルまで——5つの拠点</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="inner">
+        <p role="note" class="notice-banner" data-i18n="corridorStay.notice">客室タイプ・料金・送迎は各施設の公式予約サイトが最新です。</p>
+        <h2 class="heading-lg" data-i18n="corridorStay.introTitle">広域周遊のベースキャンプ</h2>
+        <p class="lead" style="margin-top:1.5rem; max-width:36rem" data-i18n="corridorStay.introLead">定山渓の森、小樽の歴史街、それぞれが北海道の魅力を異なるアプローチで翻訳する宿。</p>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="corridorStay.mapEyebrow">Area map</p>
+        <h2 class="heading-lg" data-i18n="corridorStay.mapTitle">宿泊拠点マップ</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="corridorStay.mapLead">スキー場・飲食・温泉と重ねて旅程を組み立て。</p>
+        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="/area-map.html?resort=sapporo-teine&layers=anchor,food,onsen" class="btn btn-primary" data-i18n="corridorStay.mapCta">フルサイズマップを開く</a>
+          <a href="nearby-food.html" class="btn btn-ghost" data-i18n="corridorStay.linkFoodGuide">厳選飲食6選</a>
+          <a href="nearby-onsen.html" class="btn btn-ghost" data-i18n="corridorStay.linkOnsenGuide">厳選温泉4選</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="corridorStay.spotsEyebrow">5 picks</p>
+        <h2 class="heading-lg" data-i18n="corridorStay.spotsTitle">インバウンド向け厳選宿5選</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="corridorStay.spotsLead">プライベート温泉、食の宿、ヘリテージ、都市観光ホテル——ニーズ別に厳選。</p>
+
+        <h3 class="onsen-region" data-i18n="corridorStay.regions.jozankei">定山渓温泉郷</h3>
+        <ol class="food-spot-list" start="1">
+          <li class="food-spot" id="entry-chalet-ivy" data-spot-entry="chalet-ivy">
+            <span class="food-spot__num">01</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="corridorStay.spots.chalet-ivy.tag">ラグジュアリー · 全室展望風呂 · EV16台</p>
+              <h3 class="food-spot__title" data-i18n="corridorStay.spots.chalet-ivy.title">シャレーアイビー定山渓</h3>
+              <p class="food-spot__lead" data-i18n="corridorStay.spots.chalet-ivy.lead">ニセコ基準のインターナショナル・ホスピタリティ。プライベート温泉体験の最高峰。</p>
+              <a href="/area-map.html?resort=sapporo-teine&layers=anchor&focus=chalet-ivy" class="food-spot__map-link" data-i18n="corridorStay.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-morino-uta" data-spot-entry="morino-uta">
+            <span class="food-spot__num">02</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="corridorStay.spots.morino-uta.tag">ウェルネス · サウナ · バリアフリー</p>
+              <h3 class="food-spot__title" data-i18n="corridorStay.spots.morino-uta.title">定山渓 鶴雅リゾートスパ 森の謌</h3>
+              <p class="food-spot__lead" data-i18n="corridorStay.spots.morino-uta.lead">森との一体化——スキー後のアフタースキー・リカバリー拠点。</p>
+              <a href="/area-map.html?resort=sapporo-teine&layers=anchor&focus=morino-uta" class="food-spot__map-link" data-i18n="corridorStay.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-kuriyasuizan" data-spot-entry="kuriyasuizan">
+            <span class="food-spot__num">03</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="corridorStay.spots.kuriyasuizan.tag">食の宿 · 客室露天 · 系列回遊</p>
+              <h3 class="food-spot__title" data-i18n="corridorStay.spots.kuriyasuizan.title">厨翠山</h3>
+              <p class="food-spot__lead" data-i18n="corridorStay.spots.kuriyasuizan.lead">和食の神髄と翠蝶館・ベーカリーへの徒歩圏マイクロツーリズム。</p>
+              <a href="/area-map.html?resort=sapporo-teine&layers=anchor&focus=kuriyasuizan" class="food-spot__map-link" data-i18n="corridorStay.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="onsen-region" data-i18n="corridorStay.regions.otaru">小樽市</h3>
+        <ol class="food-spot-list" start="4">
+          <li class="food-spot" id="entry-unwind-otaru" data-spot-entry="unwind-otaru">
+            <span class="food-spot__num">04</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="corridorStay.spots.unwind-otaru.tag">ヘリテージ · 旧越中屋 · バー</p>
+              <h3 class="food-spot__title" data-i18n="corridorStay.spots.unwind-otaru.title">UNWIND HOTEL & BAR OTARU</h3>
+              <p class="food-spot__lead" data-i18n="corridorStay.spots.unwind-otaru.lead">歴史的建造物の再生——Heritage Tourismの強力なフック。</p>
+              <a href="/area-map.html?resort=sapporo-teine&layers=anchor&focus=unwind-otaru" class="food-spot__map-link" data-i18n="corridorStay.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-omo5-otaru" data-spot-entry="omo5-otaru">
+            <span class="food-spot__num">05</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="corridorStay.spots.omo5-otaru.tag">星野 · バリアフリー · ご近所マップ</p>
+              <h3 class="food-spot__title" data-i18n="corridorStay.spots.omo5-otaru.title">OMO5小樽 by 星野リゾート</h3>
+              <p class="food-spot__lead" data-i18n="corridorStay.spots.omo5-otaru.lead">運河徒歩3分——地域密着型ディープ探索の都市観光ホテル。</p>
+              <a href="/area-map.html?resort=sapporo-teine&layers=anchor&focus=omo5-otaru" class="food-spot__map-link" data-i18n="corridorStay.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p data-i18n="footer.copyright">© 札幌手稲スキー場 — LP案モック</p>
+      <p class="footer-location"><a href="./" data-i18n="corridorStay.backLink">札幌手稲 LP に戻る</a></p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+</body>
+</html>
