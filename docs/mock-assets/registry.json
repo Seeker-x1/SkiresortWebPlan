@@ -264,8 +264,7 @@
       "guidePath": "/sapporo-kokusai/",
       "guideUrl": "https://guides.japowserch.com/sapporo-kokusai/",
       "japowResortId": 453,
-      "guideTier": "mock",
-      "guideNote": "japowResortId は要確認"
+      "guideTier": "mock"
     }
   ],
   "guides": {
