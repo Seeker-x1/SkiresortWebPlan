@@ -11,6 +11,8 @@
     "60":  { "registryId": "unabetsu",       "tier": "mock" },
     "65":  { "registryId": "kiyosato",       "tier": "mock" },
     "66":  { "registryId": "gokazan",        "tier": "mock", "note": "id 72 湧別町五鹿山ではなく 66" },
+    "3":   { "registryId": "sapporo-kokusai", "tier": "mock", "note": "japowResortId は要確認" },
+    "22":  { "registryId": "sapporo-teine",   "tier": "mock" },
     "98":  { "registryId": "sichinohe",      "tier": "mock" },
     "326": { "registryId": "tsunan",         "tier": "mock" }
   }
