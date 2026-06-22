@@ -243,7 +243,7 @@
       },
       "guidePath": "/sapporo-teine/",
       "guideUrl": "https://guides.japowserch.com/sapporo-teine/",
-      "japowResortId": 22,
+      "japowResortId": 454,
       "guideTier": "mock"
     },
     {
@@ -263,7 +263,7 @@
       },
       "guidePath": "/sapporo-kokusai/",
       "guideUrl": "https://guides.japowserch.com/sapporo-kokusai/",
-      "japowResortId": 3,
+      "japowResortId": 453,
       "guideTier": "mock",
       "guideNote": "japowResortId は要確認"
     }
