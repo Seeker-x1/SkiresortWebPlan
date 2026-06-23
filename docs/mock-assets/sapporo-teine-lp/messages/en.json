@@ -4,11 +4,14 @@
     "description": "Snow & Culture resort package linking powder, a 2M city, Jozankei onsen, and Otaru."
   },
   "logo": "Sapporo Teine Ski Resort",
+  "common": {
+    "explore": "Guides",
+    "accessEyebrow": "Access"
+  },
   "nav": {
-    "live": "Today",
     "corridor": "Corridor",
-    "journey": "Journey",
-    "recovery": "Recovery"
+    "guides": "Curated guides",
+    "journey": "Journey"
   },
   "hero": {
     "eyebrow": "Teine-ku, Sapporo · Hokkaido",
@@ -21,6 +24,7 @@
     "ctaLive": "Today's conditions"
   },
   "live": {
+    "label": "Today",
     "ariaLabel": "Today's operations dashboard",
     "subtitle": "World-class snow, 40 min from the city",
     "updatedAt": "Updated Jun 23, 8:00",
@@ -101,11 +105,11 @@
     "secondary": {
       "title": "24h recovery at Honoka",
       "lead": "Teine Onsen Honoka at the base—super-sento culture with rock baths and dining, an affordable transit stop for inbound FIT guests.",
-      "cta": "Onsen guide"
+      "cta": "Curated onsen (4)"
     }
   },
   "pass": {
-    "eyebrow": "Snow & Culture Pass",
+    "eyebrow": "Corridor pass",
     "title": "Snow, city, and tradition—<br />seamlessly linked.",
     "lead": "For high-value FIT guests—private bath at Koganeyu after skiing, Masazushi in Otaru at night. Chalet Ivy Jozankei offers in-room rotenburo across every suite.",
     "specs": [
@@ -126,11 +130,34 @@
     "ctaStay": "5 stay picks",
     "imgAlt": "Snow-view outdoor bath—Jozankei hot-spring culture"
   },
+  "guidesTeasers": {
+    "eyebrow": "Curated guides",
+    "title": "Stays · onsen · dining — full lists inside",
+    "lead": "Corridor venues with phones, official links, and maps on dedicated pages.",
+    "stay": {
+      "count": "5",
+      "label": "Stays",
+      "title": "5 curated stays",
+      "hook": "From Jozankei wellness to Otaru heritage hotels."
+    },
+    "onsen": {
+      "count": "4",
+      "label": "Onsen",
+      "title": "4 curated hot springs",
+      "hook": "Honoka, Hoheikyo, Koganeyu—after-ski recovery options."
+    },
+    "food": {
+      "count": "6",
+      "label": "Dining",
+      "title": "6 curated restaurants",
+      "hook": "Triangle Market, Masazushi, GARAKU—culture hooks that drive circulation."
+    }
+  },
   "journey": {
-    "eyebrow": "FIT Journey",
+    "eyebrow": "Tour plan",
     "title": "Three days,<br />self-guided corridor.",
     "lead": "A model course for independent inbound travelers—snow & wellness resort package.",
-    "badge": "SNOW & CULTURE · INBOUND FIT",
+    "badge": "Snow & Culture · FIT",
     "steps": {
       "01": {
         "title": "Morning: Triangle Market",

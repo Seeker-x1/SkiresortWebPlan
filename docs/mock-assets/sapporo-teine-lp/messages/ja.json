@@ -4,11 +4,14 @@
     "description": "パウダーと200万人都市、定山渓と小樽を結ぶスノー＆カルチャー・リゾートパッケージ。"
   },
   "logo": "札幌手稲スキー場",
+  "common": {
+    "explore": "ガイド",
+    "accessEyebrow": "アクセス"
+  },
   "nav": {
-    "live": "本日",
     "corridor": "広域コリドー",
-    "journey": "回遊",
-    "recovery": "回復"
+    "guides": "厳選ガイド",
+    "journey": "回遊"
   },
   "hero": {
     "eyebrow": "北海道札幌市 · 手稲区",
@@ -17,10 +20,11 @@
     "badgeCorridor": "30–40km 広域コリドー",
     "badgeNight": "ナイター 〜20:00",
     "badgeOlympic": "1972オリンピック会場",
-    "ctaCorridor": "Snow & Culture Pass",
+    "ctaCorridor": "スノー＆カルチャー・パス",
     "ctaLive": "本日のコンディション"
   },
   "live": {
+    "label": "本日",
     "ariaLabel": "本日の運営ダッシュボード",
     "subtitle": "都市から40分、世界水準の雪質",
     "updatedAt": "更新 6/23 8:00",
@@ -46,7 +50,7 @@
     }
   },
   "corridor": {
-    "eyebrow": "Snow & Culture Corridor",
+    "eyebrow": "広域コリドー",
     "title": "手稲・国際・定山渓・小樽、<br />一つのパッケージに。",
     "lead": "世界最高水準のパウダー、人口200万人都市のインフラ、歴史的港湾都市、湯治文化が半径30〜40kmに密集——ニセコ型の自己完結リゾートとは異なる「都市隣接型・広域分散型」の稀有な地政学優位性。",
     "specs": [
@@ -56,13 +60,13 @@
     ],
     "noticeTitle": "FIT向けの武器：",
     "noticeBody": "昼は極上のパウダー、夜は政寿司やUNWINDのバー、源泉かけ流しの豊平峡——世界でも類を見ないコントラストの強い滞在パッケージ。",
-    "ctaCorridor": "Snow & Culture Pass",
+    "ctaCorridor": "スノー＆カルチャー・パス",
     "imgAlt": "札幌西部の雪景色——都市と山と海を結ぶ広域コリドー"
   },
   "paths": {
     "corridor": {
       "label": "パス",
-      "title": "Snow & Culture Pass"
+      "title": "スノー＆カルチャー・パス"
     },
     "access": {
       "label": "アクセス",
@@ -85,7 +89,7 @@
       "title": "厳選宿5選"
     },
     "map": {
-      "label": "Map",
+      "label": "マップ",
       "title": "広域コリドーマップ"
     }
   },
@@ -101,11 +105,11 @@
     "secondary": {
       "title": "ほのかで24時間リカバリー",
       "lead": "手稲スキー場直下の「ていね温泉 ほのか」——岩盤浴・食事処付きのスーパー銭湯文化を、インバウンドFITがリーズナブルに体験できるトランジット拠点。",
-      "cta": "温泉ガイド"
+      "cta": "厳選温泉4選"
     }
   },
   "pass": {
-    "eyebrow": "Snow & Culture Pass",
+    "eyebrow": "コリドーパス",
     "title": "雪と都市と伝統文化、<br />シームレスに接続。",
     "lead": "高付加価値FIT向け——スキー後に小金湯の貸切風呂、夜は小樽で政寿司。定山渓のシャレーアイビーに泊まれば全室展望風呂でプライベート温泉体験。広域回遊のベースキャンプ設計。",
     "specs": [
@@ -126,11 +130,34 @@
     "ctaStay": "厳選宿5選",
     "imgAlt": "雪見露天風呂——定山渓の温泉文化"
   },
+  "guidesTeasers": {
+    "eyebrow": "厳選ガイド",
+    "title": "宿・温泉・飲食——詳細は各ガイドへ",
+    "lead": "広域コリドーの厳選施設は子ページに集約。電話・公式リンク・マップ付き。",
+    "stay": {
+      "count": "5",
+      "label": "宿",
+      "title": "厳選宿5選",
+      "hook": "定山渓のウェルネスから小樽のヘリテージホテルまで。"
+    },
+    "onsen": {
+      "count": "4",
+      "label": "温泉",
+      "title": "厳選温泉4選",
+      "hook": "ほのか・豊平峡・小金湯——アフタースキーの回復設計。"
+    },
+    "food": {
+      "count": "6",
+      "label": "飲食",
+      "title": "厳選飲食6選",
+      "hook": "三角市場・政寿司・GARAKU——文化体験のフック。"
+    }
+  },
   "journey": {
-    "eyebrow": "FIT Journey",
+    "eyebrow": "回遊プラン",
     "title": "3日間、広域コリドーを<br />自走する。",
     "lead": "インバウンド個人手配旅行者向け——スノー＆ウェルネス・リゾートパッケージのモデルコース。",
-    "badge": "SNOW & CULTURE · INBOUND FIT",
+    "badge": "スノー＆カルチャー · FIT",
     "steps": {
       "01": {
         "title": "朝：三角市場",

@@ -21,8 +21,8 @@
           <li><a href="../map.html?resort=sapporo-kokusai" data-i18n="nav.map">ゲレンデマップ</a></li>
           <li><a href="#live" data-i18n="nav.live">本日</a></li>
           <li><a href="#triangle" data-i18n="nav.triangle">広域圏</a></li>
-          <li><a href="#picks" data-i18n="nav.picks">厳選施設</a></li>
-          <li><a href="#guides" data-i18n="nav.guides">特集</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">厳選ガイド</a></li>
+          <li><a href="#tour" data-i18n="nav.tour">周遊</a></li>
         </ul>
       </nav>
       <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
@@ -57,8 +57,8 @@
         <div class="live-head">
           <div>
             <span class="live-pulse" aria-hidden="true"></span>
-            <span class="live-label">Hub</span>
-            <span style="font-size:0.75rem;color:var(--muted);margin-left:0.5rem" data-i18n="live.subtitle">広域ハブのリアルタイム導線</span>
+            <span class="live-label" data-i18n="live.label">動線</span>
+            <span class="live-tag" data-i18n="live.subtitle">広域ハブのリアルタイム導線</span>
           </div>
           <p class="live-updated" data-i18n="live.updatedAt">更新 6/23 9:00</p>
         </div>
@@ -75,7 +75,7 @@
           </div>
           <div class="status-card">
             <p class="status-card__label" data-i18n="live.jozankei.label">定山渓温泉</p>
-            <p class="status-card__value" style="color:var(--accent-powder)" data-i18n="live.jozankei.value">約30〜40分</p>
+            <p class="status-card__value status-card__value--powder" data-i18n="live.jozankei.value">約30〜40分</p>
             <p class="status-card__note" data-i18n="live.jozankei.note">定山渓スキーライナー</p>
           </div>
           <div class="status-card status-card--warn">
@@ -104,7 +104,7 @@
           <div class="transit-card">
             <p class="eyebrow" data-i18n="triangle.eyebrow">Golden Triangle</p>
             <h2 id="triangle-heading" class="heading-lg" data-i18n-html="triangle.title">都市・温泉・港町、<br />ひとつの雪でつながる。</h2>
-            <p class="lead" style="margin-top:1.5rem; max-width:28rem" data-i18n="triangle.lead">
+            <p class="lead lead-constrained" data-i18n="triangle.lead">
               札幌国際は単なるゲレンデではなく、札幌（都市の利便性とガストロノミー）、定山渓（国立公園の自然と温泉文化）、小樽（歴史的建造物と海洋文化）を結ぶ地理的ハブ。
             </p>
             <ul class="spec-list">
@@ -117,7 +117,7 @@
             </div>
             <div class="transit-actions">
               <a href="#mobility" class="btn btn-gold" data-i18n="triangle.ctaMobility">動線と制約を見る</a>
-              <a href="#picks" class="btn btn-ghost" data-i18n="triangle.ctaPicks">厳選施設リスト</a>
+              <a href="#guides" class="btn btn-ghost" data-i18n="triangle.ctaPicks">厳選ガイド</a>
             </div>
           </div>
         </div>
@@ -128,15 +128,10 @@
       <div class="inner">
         <p class="eyebrow" data-i18n="common.explore">Explore</p>
         <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
-        <div class="path-grid">
+        <div class="path-grid path-grid--compact">
           <a href="#tour" class="path-tile span-8">
             <span class="path-tile__label" data-i18n="paths.tour.label">周遊</span>
             <span class="path-tile__title" data-i18n="paths.tour.title">ゴールデントライアングル</span>
-            <span class="path-tile__arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="#picks" class="path-tile span-4">
-            <span class="path-tile__label" data-i18n="paths.picks.label">厳選</span>
-            <span class="path-tile__title" data-i18n="paths.picks.title">宿・温泉・飲食10選</span>
             <span class="path-tile__arrow" aria-hidden="true">→</span>
           </a>
           <a href="nearby-food.html" class="path-tile span-4">
@@ -144,29 +139,14 @@
             <span class="path-tile__title" data-i18n="paths.food.title">厳選飲食4選</span>
             <span class="path-tile__arrow" aria-hidden="true">→</span>
           </a>
-          <a href="#mobility" class="path-tile span-8">
-            <span class="path-tile__label" data-i18n="paths.mobility.label">動線</span>
-            <span class="path-tile__title" data-i18n="paths.mobility.title">アクセスと夜間規制</span>
-            <span class="path-tile__arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="#live" class="path-tile span-4">
-            <span class="path-tile__label" data-i18n="paths.today.label">今日</span>
-            <span class="path-tile__title" data-i18n="paths.today.title">積雪・リフト・雪質</span>
-            <span class="path-tile__arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="/area-map.html?resort=sapporo-kokusai&layers=food,onsen,anchor" class="path-tile span-8">
-            <span class="path-tile__label" data-i18n="paths.map.label">Map</span>
-            <span class="path-tile__title" data-i18n="paths.map.title">広域マップ</span>
-            <span class="path-tile__arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="nearby-onsen.html" class="path-tile span-4">
-            <span class="path-tile__label" data-i18n="paths.onsen.label">温泉</span>
-            <span class="path-tile__title" data-i18n="paths.onsen.title">厳選温泉2選</span>
-            <span class="path-tile__arrow" aria-hidden="true">→</span>
-          </a>
           <a href="golden-triangle-stay.html" class="path-tile span-8">
             <span class="path-tile__label" data-i18n="paths.stay.label">宿泊</span>
             <span class="path-tile__title" data-i18n="paths.stay.title">厳選宿5選</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="../area-map.html?resort=sapporo-kokusai&layers=food,onsen,anchor" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.map.label">マップ</span>
+            <span class="path-tile__title" data-i18n="paths.map.title">広域マップ</span>
             <span class="path-tile__arrow" aria-hidden="true">→</span>
           </a>
         </div>
@@ -191,23 +171,19 @@
             </div>
             <div class="highlight-primary-body">
               <h3 data-i18n="highlights.primary.title">世界水準のJapow、都市から60分</h3>
-              <p class="lead" style="margin-top:1rem" data-i18n="highlights.primary.lead">
+              <p class="lead stack-sm" data-i18n="highlights.primary.lead">
                 標高1,100mの山頂エリアが生む軽いパウダー。
               </p>
-              <a href="#" class="btn btn-powder" style="margin-top:2rem" data-i18n="highlights.primary.cta">料金・リフト券</a>
+              <a href="../map.html?resort=sapporo-kokusai" class="btn btn-powder stack-lg" data-i18n="highlights.primary.cta">ゲレンデマップ</a>
             </div>
           </article>
 
           <article class="highlight-secondary">
             <h3 data-i18n="highlights.secondary.title">文化摩擦を回避する温泉設計</h3>
-            <p class="lead-whisper" style="margin-top:1rem" data-i18n="highlights.secondary.lead">
+            <p class="lead-whisper stack-sm" data-i18n="highlights.secondary.lead">
               全室露天・貸切風呂、タトゥー対応の試み。
             </p>
-            <a href="#picks" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="highlights.secondary.cta">温泉・宿の厳選リスト</a>
-            <div style="margin-top:1rem; display:flex; flex-wrap:wrap; gap:0.75rem">
-              <a href="golden-triangle-stay.html" class="btn btn-ghost" data-i18n="paths.stay.title">厳選宿5選</a>
-              <a href="nearby-onsen.html" class="btn btn-ghost" data-i18n="paths.onsen.title">厳選温泉2選</a>
-            </div>
+            <a href="nearby-onsen.html" class="btn btn-ghost stack-md" data-i18n="highlights.secondary.cta">厳選温泉2選</a>
           </article>
         </div>
       </div>
@@ -219,7 +195,7 @@
           <div class="feature-copy">
             <p class="eyebrow" data-i18n="mobility.eyebrow">Mobility</p>
             <h2 id="mobility-heading" class="heading-lg" data-i18n-html="mobility.title">広域モビリティの<br />力学と制約。</h2>
-            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="mobility.lead">
+            <p class="lead lead-constrained-wide stack-md" data-i18n="mobility.lead">
               動線設計は体験の質を直結的に左右します。
             </p>
             <div class="mobility-table-wrap">
@@ -260,7 +236,7 @@
                 </tbody>
               </table>
             </div>
-            <a href="#tour" class="btn btn-gold" style="margin-top:2rem" data-i18n="mobility.cta">マルチベース滞在プラン</a>
+            <a href="#tour" class="btn btn-gold stack-lg" data-i18n="mobility.cta">マルチベース滞在プラン</a>
           </div>
           <div class="feature-visual">
             <div class="frame frame--wide">
@@ -277,104 +253,48 @@
       </div>
     </section>
 
-    <section id="picks" class="section border-top" aria-labelledby="picks-heading">
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
       <div class="inner">
-        <p class="eyebrow" data-i18n="picks.eyebrow">Curated</p>
-        <h2 id="picks-heading" class="heading-lg" data-i18n-html="picks.title">インバウンド向け<br />厳選リスト。</h2>
-        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="picks.lead">
-          雪景色・ヘリテージ・ローカルフード・温泉の受入・デジタルアクセシビリティ——5軸で抽出。
+        <p class="eyebrow" data-i18n="guidesTeasers.eyebrow">厳選ガイド</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="guidesTeasers.title">宿・温泉・飲食——詳細は各ガイドへ</h2>
+        <p class="lead lead-constrained-xl stack-sm" data-i18n="guidesTeasers.lead">
+          広域圏の厳選施設は子ページに集約。電話・公式リンク・マップ付き。
         </p>
 
-        <div class="pick-groups">
-          <div class="pick-group">
-            <h3 class="pick-group__title"><a href="golden-triangle-stay.html" data-i18n="picks.categories.stay">宿</a></h3>
-            <ul class="pick-list">
-              <li class="pick-card">
-                <span class="pick-card__area" data-i18n="picks.venues.chaletIvy.area">定山渓</span>
-                <p class="pick-card__name" data-i18n="picks.venues.chaletIvy.name">シャレーアイビー定山渓</p>
-                <p class="pick-card__hook" data-i18n="picks.venues.chaletIvy.hook">全26室スイート＋展望温泉。</p>
-              </li>
-              <li class="pick-card">
-                <span class="pick-card__area" data-i18n="picks.venues.kuriyasuizan.area">定山渓</span>
-                <p class="pick-card__name" data-i18n="picks.venues.kuriyasuizan.name">厨翠山</p>
-                <p class="pick-card__hook" data-i18n="picks.venues.kuriyasuizan.hook">厨房に招かれる「食の宿」。</p>
-              </li>
-              <li class="pick-card">
-                <span class="pick-card__area" data-i18n="picks.venues.yurakusoan.area">定山渓</span>
-                <p class="pick-card__name" data-i18n="picks.venues.yurakusoan.name">定山渓 ゆらく草庵</p>
-                <p class="pick-card__hook" data-i18n="picks.venues.yurakusoan.hook">全室天然温泉＋4つの無料貸切風呂。</p>
-              </li>
-              <li class="pick-card">
-                <span class="pick-card__area" data-i18n="picks.venues.unwind.area">小樽</span>
-                <p class="pick-card__name" data-i18n="picks.venues.unwind.name">UNWIND HOTEL &amp; BAR 小樽</p>
-                <p class="pick-card__hook" data-i18n="picks.venues.unwind.hook">1931年建築の旧越中屋ホテルをリノベ。</p>
-              </li>
-              <li class="pick-card">
-                <span class="pick-card__area" data-i18n="picks.venues.omo5.area">小樽</span>
-                <p class="pick-card__name" data-i18n="picks.venues.omo5.name">OMO5小樽 by 星野リゾート</p>
-                <p class="pick-card__hook" data-i18n="picks.venues.omo5.hook">星野ブランドの安心感。</p>
-              </li>
-            </ul>
-          </div>
-
-          <div class="pick-group">
-            <h3 class="pick-group__title"><a href="nearby-onsen.html" data-i18n="picks.categories.onsen">温泉</a></h3>
-            <ul class="pick-list">
-              <li class="pick-card">
-                <span class="pick-card__area" data-i18n="picks.venues.hoheikyo.area">定山渓</span>
-                <p class="pick-card__name" data-i18n="picks.venues.hoheikyo.name">豊平峡温泉</p>
-                <p class="pick-card__hook" data-i18n="picks.venues.hoheikyo.hook">源泉かけ流しの野趣露天とインドカレー。</p>
-              </li>
-              <li class="pick-card">
-                <span class="pick-card__area" data-i18n="picks.venues.koganeyu.area">定山渓〜札幌間</span>
-                <p class="pick-card__name" data-i18n="picks.venues.koganeyu.name">湯元 小金湯</p>
-                <p class="pick-card__hook" data-i18n="picks.venues.koganeyu.hook">貸切風呂＋タトゥーカバーシール試験運用。</p>
-              </li>
-            </ul>
-          </div>
-
-          <div class="pick-group">
-            <h3 class="pick-group__title"><a href="nearby-food.html" data-i18n="picks.categories.food">飲食</a></h3>
-            <ul class="pick-list">
-              <li class="pick-card">
-                <span class="pick-card__area" data-i18n="picks.venues.garaku.area">札幌</span>
-                <p class="pick-card__name" data-i18n="picks.venues.garaku.name">スープカレーGARAKU 札幌本店</p>
-                <p class="pick-card__hook" data-i18n="picks.venues.garaku.hook">札幌発祥ソウルフードの代表格。</p>
-              </li>
-              <li class="pick-card">
-                <span class="pick-card__area" data-i18n="picks.venues.masazushi.area">小樽</span>
-                <p class="pick-card__name" data-i18n="picks.venues.masazushi.name">おたる政寿司 本店</p>
-                <p class="pick-card__hook" data-i18n="picks.venues.masazushi.hook">寿司屋通りの老舗。</p>
-              </li>
-              <li class="pick-card">
-                <span class="pick-card__area" data-i18n="picks.venues.biergarten.area">札幌</span>
-                <p class="pick-card__name" data-i18n="picks.venues.biergarten.name">サッポロビール園（開拓使館）</p>
-                <p class="pick-card__hook" data-i18n="picks.venues.biergarten.hook">赤レンガとジンギスカン。</p>
-              </li>
-              <li class="pick-card">
-                <span class="pick-card__area" data-i18n="picks.venues.amenoyuki.area">定山渓</span>
-                <p class="pick-card__name" data-i18n="picks.venues.amenoyuki.name">雨ノ日と雪ノ日</p>
-                <p class="pick-card__hook" data-i18n="picks.venues.amenoyuki.hook">雪景色を眺めるカフェ。</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div style="margin-top:2rem; display:flex; flex-wrap:wrap; gap:0.75rem">
-          <a href="nearby-food.html" class="btn btn-primary" data-i18n="paths.food.title">厳選飲食4選</a>
-          <a href="nearby-onsen.html" class="btn btn-ghost" data-i18n="paths.onsen.title">厳選温泉2選</a>
-          <a href="golden-triangle-stay.html" class="btn btn-ghost" data-i18n="paths.stay.title">厳選宿5選</a>
+        <div class="guide-teaser-grid">
+          <a href="golden-triangle-stay.html" class="guide-teaser">
+            <span class="guide-teaser__count" data-i18n="guidesTeasers.stay.count">5</span>
+            <span class="guide-teaser__label" data-i18n="guidesTeasers.stay.label">宿</span>
+            <span class="guide-teaser__title" data-i18n="guidesTeasers.stay.title">厳選宿5選</span>
+            <span class="guide-teaser__hook" data-i18n="guidesTeasers.stay.hook">定山渓のラグジュアリーから小樽のヘリテージホテルまで。</span>
+            <span class="guide-teaser__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="nearby-onsen.html" class="guide-teaser">
+            <span class="guide-teaser__count" data-i18n="guidesTeasers.onsen.count">2</span>
+            <span class="guide-teaser__label" data-i18n="guidesTeasers.onsen.label">温泉</span>
+            <span class="guide-teaser__title" data-i18n="guidesTeasers.onsen.title">厳選温泉2選</span>
+            <span class="guide-teaser__hook" data-i18n="guidesTeasers.onsen.hook">雪見露天と貸切風呂——受入設計の比較。</span>
+            <span class="guide-teaser__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="nearby-food.html" class="guide-teaser">
+            <span class="guide-teaser__count" data-i18n="guidesTeasers.food.count">4</span>
+            <span class="guide-teaser__label" data-i18n="guidesTeasers.food.label">飲食</span>
+            <span class="guide-teaser__title" data-i18n="guidesTeasers.food.title">厳選飲食4選</span>
+            <span class="guide-teaser__hook" data-i18n="guidesTeasers.food.hook">政寿司・GARAKU・ビール園——回遊の動機になる食。</span>
+            <span class="guide-teaser__arrow" aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
     </section>
 
     <section id="tour" class="section border-top" aria-labelledby="tour-heading">
       <div class="inner">
-        <p class="eyebrow" data-i18n="tour.eyebrow">Day Package</p>
+        <p class="eyebrow" data-i18n="tour.eyebrow">周遊プラン</p>
         <h2 id="tour-heading" class="heading-lg" data-i18n-html="tour.title">日中周遊、<br />夜はエリア内で。</h2>
-        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="tour.lead">
+        <p class="lead lead-constrained-xl stack-sm" data-i18n="tour.lead">
           夜間通行規制を逆手にした広域パッケージ設計。
         </p>
-        <span class="secret-badge" data-i18n="tour.badge">GOLDEN TRIANGLE · INBOUND</span>
+        <span class="secret-badge" data-i18n="tour.badge">ゴールデントライアングル · インバウンド</span>
 
         <div class="journey">
           <div class="journey-step">
@@ -403,57 +323,6 @@
             <p class="journey-step__body" data-i18n="tour.steps.05.body">翌日は都市部でスープカレー</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
-      <div class="inner">
-        <p class="eyebrow" data-i18n="common.guidesEyebrow">特集</p>
-        <h2 id="guides-heading" class="heading-lg" data-i18n="common.guidesTitle">特集ページ</h2>
-
-        <ul class="guides-list">
-          <li class="guide-item">
-            <button type="button" class="guide-trigger" aria-expanded="true" data-guide="triangle">
-              <span data-i18n="guides.triangle.title">ゴールデントライアングル完全ガイド</span>
-              <span class="guide-icon" aria-hidden="true">−</span>
-            </button>
-            <div class="guide-panel is-open" id="panel-triangle">
-              <p class="lead" data-i18n="guides.triangle.body">
-                札幌・定山渓・小樽をスキーハブで結ぶ広域体験。
-              </p>
-              <a href="#tour" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
-            </div>
-          </li>
-          <li class="guide-item">
-            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="mobility">
-              <span data-i18n="guides.mobility.title">冬期夜間通行規制と動線再設計</span>
-              <span class="guide-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="guide-panel" id="panel-mobility" hidden>
-              <p class="lead" data-i18n="guides.mobility.body">
-                朝里峠の19:00〜翌7:00通行止めがナイトタイム周遊を物理的に遮断。
-              </p>
-              <a href="#mobility" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
-            </div>
-          </li>
-          <li class="guide-item">
-            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="culture">
-              <span data-i18n="guides.culture.title">タトゥー・食の多様性——受入の標準化</span>
-              <span class="guide-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="guide-panel" id="panel-culture" hidden>
-              <p class="lead" data-i18n="guides.culture.body">
-                ゆらく草庵の貸切風呂、小金湯のカバーシール試験、政寿司のベジタリアン対応。
-              </p>
-              <div class="hashtags">
-                <span class="hashtag" data-i18n="guides.culture.hashtags.0">#GoldenTriangle</span>
-                <span class="hashtag" data-i18n="guides.culture.hashtags.1">#JapowHub</span>
-                <span class="hashtag" data-i18n="guides.culture.hashtags.2">#InboundHokkaido</span>
-              </div>
-              <a href="#picks" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
-            </div>
-          </li>
-        </ul>
       </div>
     </section>
 
@@ -501,30 +370,5 @@
   </footer>
 
   <script src="../_shared/mock-i18n.js"></script>
-  <script>
-    document.querySelectorAll(".guide-trigger").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const id = btn.dataset.guide;
-        const panel = document.getElementById("panel-" + id);
-        const isOpen = btn.getAttribute("aria-expanded") === "true";
-
-        document.querySelectorAll(".guide-trigger").forEach((b) => {
-          b.setAttribute("aria-expanded", "false");
-          b.querySelector(".guide-icon").textContent = "+";
-        });
-        document.querySelectorAll(".guide-panel").forEach((p) => {
-          p.classList.remove("is-open");
-          p.hidden = true;
-        });
-
-        if (!isOpen) {
-          btn.setAttribute("aria-expanded", "true");
-          btn.querySelector(".guide-icon").textContent = "−";
-          panel.classList.add("is-open");
-          panel.hidden = false;
-        }
-      });
-    });
-  </script>
 </body>
 </html>

@@ -21,8 +21,8 @@
           <li><a href="../map.html?resort=sapporo-teine" data-i18n="nav.map">ゲレンデマップ</a></li>
           <li><a href="#live" data-i18n="nav.live">本日</a></li>
           <li><a href="#corridor" data-i18n="nav.corridor">広域コリドー</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">厳選ガイド</a></li>
           <li><a href="#journey" data-i18n="nav.journey">回遊</a></li>
-          <li><a href="#guides" data-i18n="nav.guides">特集</a></li>
         </ul>
       </nav>
       <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
@@ -57,8 +57,8 @@
         <div class="live-head">
           <div>
             <span class="live-pulse" aria-hidden="true"></span>
-            <span class="live-label">Live</span>
-            <span style="font-size:0.75rem;color:var(--muted);margin-left:0.5rem" data-i18n="live.subtitle">都市から40分、世界水準の雪質</span>
+            <span class="live-label" data-i18n="live.label">本日</span>
+            <span class="live-tag" data-i18n="live.subtitle">都市から40分、世界水準の雪質</span>
           </div>
           <p class="live-updated" data-i18n="live.updatedAt">更新 6/23 8:00</p>
         </div>
@@ -75,7 +75,7 @@
           </div>
           <div class="status-card">
             <p class="status-card__label" data-i18n="live.snow.label">雪質</p>
-            <p class="status-card__value" style="color:var(--accent-powder)" data-i18n="live.snow.value">札幌パウダー</p>
+            <p class="status-card__value status-card__value--powder" data-i18n="live.snow.value">札幌パウダー</p>
             <p class="status-card__note" data-i18n="live.snow.note">人口200万都市のすぐ隣</p>
           </div>
           <div class="status-card">
@@ -104,7 +104,7 @@
           <div class="transit-card">
             <p class="eyebrow" data-i18n="corridor.eyebrow">Snow & Culture Corridor</p>
             <h2 id="corridor-heading" class="heading-lg" data-i18n-html="corridor.title">手稲・国際・定山渓・小樽、<br />一つのパッケージに。</h2>
-            <p class="lead" style="margin-top:1.5rem; max-width:28rem" data-i18n="corridor.lead">
+            <p class="lead lead-constrained" data-i18n="corridor.lead">
               世界最高水準のパウダー、人口200万人都市のインフラ、歴史的港湾都市、湯治文化が半径30〜40kmに密集——ニセコ型の自己完結リゾートとは異なる「都市隣接型・広域分散型」の稀有な地政学優位性。
             </p>
             <ul class="spec-list">
@@ -117,7 +117,7 @@
             </div>
             <div class="transit-actions">
               <a href="#pass" class="btn btn-corridor" data-i18n="corridor.ctaCorridor">Snow & Culture Pass</a>
-              <a href="/area-map.html?resort=sapporo-teine&layers=food,onsen,anchor" class="btn btn-ghost" data-i18n="paths.map.title">広域コリドーマップ</a>
+              <a href="../area-map.html?resort=sapporo-teine&layers=food,onsen,anchor" class="btn btn-ghost" data-i18n="paths.map.title">広域コリドーマップ</a>
             </div>
           </div>
         </div>
@@ -128,20 +128,10 @@
       <div class="inner">
         <p class="eyebrow" data-i18n="common.explore">Explore</p>
         <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
-        <div class="path-grid">
+        <div class="path-grid path-grid--compact">
           <a href="#pass" class="path-tile span-8">
             <span class="path-tile__label" data-i18n="paths.corridor.label">パス</span>
-            <span class="path-tile__title" data-i18n="paths.corridor.title">Snow & Culture Pass</span>
-            <span class="path-tile__arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="#access" class="path-tile span-4">
-            <span class="path-tile__label" data-i18n="paths.access.label">アクセス</span>
-            <span class="path-tile__title" data-i18n="paths.access.title">新千歳から約80分</span>
-            <span class="path-tile__arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="#live" class="path-tile span-8">
-            <span class="path-tile__label" data-i18n="paths.today.label">今日</span>
-            <span class="path-tile__title" data-i18n="paths.today.title">リフト・雪質・ナイター</span>
+            <span class="path-tile__title" data-i18n="paths.corridor.title">スノー＆カルチャー・パス</span>
             <span class="path-tile__arrow" aria-hidden="true">→</span>
           </a>
           <a href="nearby-food.html" class="path-tile span-4">
@@ -149,19 +139,14 @@
             <span class="path-tile__title" data-i18n="paths.food.title">厳選飲食6選</span>
             <span class="path-tile__arrow" aria-hidden="true">→</span>
           </a>
-          <a href="/area-map.html?resort=sapporo-teine&layers=food,onsen,anchor" class="path-tile span-8">
-            <span class="path-tile__label">Map</span>
-            <span class="path-tile__title" data-i18n="paths.map.title">広域コリドーマップ</span>
-            <span class="path-tile__arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="nearby-onsen.html" class="path-tile span-4">
-            <span class="path-tile__label" data-i18n="paths.onsen.label">温泉</span>
-            <span class="path-tile__title" data-i18n="paths.onsen.title">厳選温泉4選</span>
-            <span class="path-tile__arrow" aria-hidden="true">→</span>
-          </a>
           <a href="corridor-stay.html" class="path-tile span-8">
             <span class="path-tile__label" data-i18n="paths.stay.label">宿泊</span>
             <span class="path-tile__title" data-i18n="paths.stay.title">厳選宿5選</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="../area-map.html?resort=sapporo-teine&layers=food,onsen,anchor" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.map.label">マップ</span>
+            <span class="path-tile__title" data-i18n="paths.map.title">広域コリドーマップ</span>
             <span class="path-tile__arrow" aria-hidden="true">→</span>
           </a>
         </div>
@@ -186,19 +171,19 @@
             </div>
             <div class="highlight-primary-body">
               <h3 data-i18n="highlights.primary.title">オリンピック級パウダー × 都市アクセス</h3>
-              <p class="lead" style="margin-top:1rem" data-i18n="highlights.primary.lead">
+              <p class="lead stack-sm" data-i18n="highlights.primary.lead">
                 札幌中心部から車約40分。15コース・最長5.4kmのレインボーコース——1972年オリンピック会場の斜面で、帰りはスープカレーGARAKUかビール園のジンギスカンへ。
               </p>
-              <a href="../map.html?resort=sapporo-teine" class="btn btn-primary" style="margin-top:2rem" data-i18n="highlights.primary.cta">ゲレンデマップ</a>
+              <a href="../map.html?resort=sapporo-teine" class="btn btn-primary stack-lg" data-i18n="highlights.primary.cta">ゲレンデマップ</a>
             </div>
           </article>
 
           <article class="highlight-secondary">
             <h3 data-i18n="highlights.secondary.title">ほのかで24時間リカバリー</h3>
-            <p class="lead-whisper" style="margin-top:1rem" data-i18n="highlights.secondary.lead">
+            <p class="lead-whisper stack-sm" data-i18n="highlights.secondary.lead">
               手稲スキー場直下の「ていね温泉 ほのか」——岩盤浴・食事処付きのスーパー銭湯文化を、インバウンドFITがリーズナブルに体験できるトランジット拠点。
             </p>
-            <a href="nearby-onsen.html" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="highlights.secondary.cta">温泉ガイド</a>
+            <a href="nearby-onsen.html" class="btn btn-ghost stack-md" data-i18n="highlights.secondary.cta">厳選温泉4選</a>
           </article>
         </div>
       </div>
@@ -210,7 +195,7 @@
           <div class="feature-copy">
             <p class="eyebrow" data-i18n="pass.eyebrow">Snow & Culture Pass</p>
             <h2 id="pass-heading" class="heading-lg" data-i18n-html="pass.title">雪と都市と伝統文化、<br />シームレスに接続。</h2>
-            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="pass.lead">
+            <p class="lead lead-constrained-wide stack-md" data-i18n="pass.lead">
               高付加価値FIT向け——スキー後に小金湯の貸切風呂、夜は小樽で政寿司。定山渓のシャレーアイビーに泊まれば全室展望風呂でプライベート温泉体験。広域回遊のベースキャンプ設計。
             </p>
             <ul class="spec-list">
@@ -218,7 +203,7 @@
               <li class="spec-tag" data-i18n="pass.specs.1">6飲食</li>
               <li class="spec-tag" data-i18n="pass.specs.2">4温泉</li>
             </ul>
-            <a href="/area-map.html?resort=sapporo-teine&layers=food,onsen,anchor" class="btn btn-corridor" style="margin-top:2rem" data-i18n="pass.cta">コリドーマップを見る</a>
+            <a href="../area-map.html?resort=sapporo-teine&layers=food,onsen,anchor" class="btn btn-corridor stack-lg" data-i18n="pass.cta">コリドーマップを見る</a>
           </div>
           <div class="feature-visual">
             <div class="frame frame--wide">
@@ -235,47 +220,48 @@
       </div>
     </section>
 
-    <section id="recovery" class="section border-top" aria-labelledby="recovery-heading">
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
       <div class="inner">
-        <div class="recovery-grid">
-          <div class="recovery-copy">
-            <p class="eyebrow" data-i18n="recovery.eyebrow">温活・回復</p>
-            <h2 id="recovery-heading" class="heading-lg" data-i18n-html="recovery.title">アフタースキー、<br />温泉と食で満たす。</h2>
-            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="recovery.lead">
-              豊平峡の雪見露天とインドカレーのカオス、手稲直下のほのか、小樽IC直結のオスパ——ウィンタースポーツ後の疲労回復を多層的に設計。
-            </p>
-            <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="recovery.whisper">
-              タトゥー対応の貸切風呂は湯元小金湯（90分¥3,800〜）。プライバシーを重視する欧米系旅行者の強力なフック。
-            </p>
-            <div style="margin-top:2rem; display:flex; flex-wrap:wrap; gap:0.75rem">
-              <a href="nearby-food.html" class="btn btn-primary" data-i18n="recovery.ctaFood">厳選飲食6選</a>
-              <a href="nearby-onsen.html" class="btn btn-ghost" data-i18n="recovery.ctaOnsen">厳選温泉4選</a>
-              <a href="corridor-stay.html" class="btn btn-ghost" data-i18n="recovery.ctaStay">厳選宿5選</a>
-            </div>
-          </div>
-          <div class="recovery-visual">
-            <div class="frame">
-              <img
-                src="lp-mock-sapporo-teine-onsen.png"
-                data-i18n-attr="alt:recovery.imgAlt"
-                alt="雪見露天風呂——定山渓の温泉文化"
-                width="1200"
-                height="1500"
-              />
-            </div>
-          </div>
+        <p class="eyebrow" data-i18n="guidesTeasers.eyebrow">厳選ガイド</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="guidesTeasers.title">宿・温泉・飲食——詳細は各ガイドへ</h2>
+        <p class="lead lead-constrained-xl stack-sm" data-i18n="guidesTeasers.lead">
+          広域コリドーの厳選施設は子ページに集約。電話・公式リンク・マップ付き。
+        </p>
+
+        <div class="guide-teaser-grid">
+          <a href="corridor-stay.html" class="guide-teaser">
+            <span class="guide-teaser__count" data-i18n="guidesTeasers.stay.count">5</span>
+            <span class="guide-teaser__label" data-i18n="guidesTeasers.stay.label">宿</span>
+            <span class="guide-teaser__title" data-i18n="guidesTeasers.stay.title">厳選宿5選</span>
+            <span class="guide-teaser__hook" data-i18n="guidesTeasers.stay.hook">定山渓のウェルネスから小樽のヘリテージホテルまで。</span>
+            <span class="guide-teaser__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="nearby-onsen.html" class="guide-teaser">
+            <span class="guide-teaser__count" data-i18n="guidesTeasers.onsen.count">4</span>
+            <span class="guide-teaser__label" data-i18n="guidesTeasers.onsen.label">温泉</span>
+            <span class="guide-teaser__title" data-i18n="guidesTeasers.onsen.title">厳選温泉4選</span>
+            <span class="guide-teaser__hook" data-i18n="guidesTeasers.onsen.hook">ほのか・豊平峡・小金湯——アフタースキーの回復設計。</span>
+            <span class="guide-teaser__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="nearby-food.html" class="guide-teaser">
+            <span class="guide-teaser__count" data-i18n="guidesTeasers.food.count">6</span>
+            <span class="guide-teaser__label" data-i18n="guidesTeasers.food.label">飲食</span>
+            <span class="guide-teaser__title" data-i18n="guidesTeasers.food.title">厳選飲食6選</span>
+            <span class="guide-teaser__hook" data-i18n="guidesTeasers.food.hook">三角市場・政寿司・GARAKU——文化体験のフック。</span>
+            <span class="guide-teaser__arrow" aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
     </section>
 
     <section id="journey" class="section border-top" aria-labelledby="journey-heading">
       <div class="inner">
-        <p class="eyebrow" data-i18n="journey.eyebrow">FIT Journey</p>
+        <p class="eyebrow" data-i18n="journey.eyebrow">回遊プラン</p>
         <h2 id="journey-heading" class="heading-lg" data-i18n-html="journey.title">3日間、広域コリドーを<br />自走する。</h2>
-        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="journey.lead">
+        <p class="lead lead-constrained-xl stack-sm" data-i18n="journey.lead">
           インバウンド個人手配旅行者向け——スノー＆ウェルネス・リゾートパッケージのモデルコース。
         </p>
-        <span class="secret-badge" data-i18n="journey.badge">SNOW & CULTURE · INBOUND FIT</span>
+        <span class="secret-badge" data-i18n="journey.badge">スノー＆カルチャー · FIT</span>
 
         <div class="journey">
           <div class="journey-step">
@@ -309,57 +295,6 @@
             <a href="corridor-stay.html" class="journey-step__link" data-i18n="journey.steps.05.linkLabel">宿泊ガイド</a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
-      <div class="inner">
-        <p class="eyebrow" data-i18n="common.guidesEyebrow">特集</p>
-        <h2 id="guides-heading" class="heading-lg" data-i18n="common.guidesTitle">特集ページ</h2>
-
-        <ul class="guides-list">
-          <li class="guide-item">
-            <button type="button" class="guide-trigger" aria-expanded="true" data-guide="corridor">
-              <span data-i18n="guides.corridor.title">広域コリドー完全ガイド</span>
-              <span class="guide-icon" aria-hidden="true">−</span>
-            </button>
-            <div class="guide-panel is-open" id="panel-corridor">
-              <p class="lead" data-i18n="guides.corridor.body">
-                手稲・国際・定山渓・小樽を結ぶ30〜40km圏——二次交通の課題とMaaS構想、本物志向の多言語ストーリーテリング、ラグジュアリー・ウェルネスへの移行戦略を整理。
-              </p>
-              <a href="/area-map.html?resort=sapporo-teine&layers=food,onsen,anchor" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
-            </div>
-          </li>
-          <li class="guide-item">
-            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="authentic">
-              <span data-i18n="guides.authentic.title">本物志向（Authenticity）の資源</span>
-              <span class="guide-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="guide-panel" id="panel-authentic" hidden>
-              <p class="lead" data-i18n="guides.authentic.body">
-                旧越中屋のUNWIND、赤レンガのビール園、三角市場のカオス、豊平峡のインドカレー——表層的消費から深層文化体験へ。背景にある物語を届ける解説の必要性。
-              </p>
-              <a href="nearby-food.html" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
-            </div>
-          </li>
-          <li class="guide-item">
-            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="luxury">
-              <span data-i18n="guides.luxury.title">ラグジュアリー・ウェルネス宿5選</span>
-              <span class="guide-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="guide-panel" id="panel-luxury" hidden>
-              <p class="lead" data-i18n="guides.luxury.body">
-                シャレーアイビー定山渓（全室展望風呂・EV16台）、厨翠山（食の宿）、森の謌（森と一体化）、UNWIND（ヘリテージ）、OMO5（バリアフリー徹底）。
-              </p>
-              <div class="hashtags">
-                <span class="hashtag" data-i18n="guides.luxury.hashtags.0">#SnowAndCulture</span>
-                <span class="hashtag" data-i18n="guides.luxury.hashtags.1">#JozankeiWellness</span>
-                <span class="hashtag" data-i18n="guides.luxury.hashtags.2">#OtaruHeritage</span>
-              </div>
-              <a href="corridor-stay.html" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
-            </div>
-          </li>
-        </ul>
       </div>
     </section>
 
@@ -407,31 +342,5 @@
   </footer>
 
   <script src="../_shared/mock-i18n.js"></script>
-  <script src="../_shared/map-embed-layers.js"></script>
-  <script>
-    document.querySelectorAll(".guide-trigger").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const id = btn.dataset.guide;
-        const panel = document.getElementById("panel-" + id);
-        const isOpen = btn.getAttribute("aria-expanded") === "true";
-
-        document.querySelectorAll(".guide-trigger").forEach((b) => {
-          b.setAttribute("aria-expanded", "false");
-          b.querySelector(".guide-icon").textContent = "+";
-        });
-        document.querySelectorAll(".guide-panel").forEach((p) => {
-          p.classList.remove("is-open");
-          p.hidden = true;
-        });
-
-        if (!isOpen) {
-          btn.setAttribute("aria-expanded", "true");
-          btn.querySelector(".guide-icon").textContent = "−";
-          panel.classList.add("is-open");
-          panel.hidden = false;
-        }
-      });
-    });
-  </script>
 </body>
 </html>

@@ -1364,9 +1364,98 @@ a { color: inherit; text-decoration: none; }
   text-underline-offset: 0.15em;
 }
 
+/* Layout utilities (index) */
+.stack-sm { margin-top: 1rem; }
+.stack-md { margin-top: 1.5rem; }
+.stack-lg { margin-top: 2rem; }
+.lead-constrained { margin-top: 1.5rem; max-width: 28rem; }
+.lead-constrained-wide { max-width: 32rem; }
+.lead-constrained-xl { max-width: 36rem; }
+
+.live-tag {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-left: 0.5rem;
+}
+
+.status-card__value--powder { color: var(--accent-powder); }
+
+.guide-teaser-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .guide-teaser-grid { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+}
+
+.guide-teaser {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-height: 11rem;
+  padding: 1.35rem 1.25rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease), transform 0.2s var(--ease);
+}
+
+.guide-teaser:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 24px rgb(21 34 56 / 6%);
+  transform: translateY(-2px);
+}
+
+.guide-teaser:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.guide-teaser__count {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--accent);
+}
+
+.guide-teaser__label {
+  font-family: Syne, sans-serif;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-powder);
+}
+
+.guide-teaser__title {
+  margin-top: 0.25rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.guide-teaser__hook {
+  flex: 1;
+  font-size: 0.8125rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.guide-teaser__arrow {
+  align-self: flex-end;
+  font-size: 1.125rem;
+  color: var(--accent);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .btn:hover { transform: none; }
+  .guide-teaser:hover { transform: none; }
   .map-layer-btn { transition: none; }
   .live-pulse { animation: none; }
 }

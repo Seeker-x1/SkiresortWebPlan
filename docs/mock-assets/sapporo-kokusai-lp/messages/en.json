@@ -4,10 +4,14 @@
     "description": "Japow at the center—linking Sapporo, Jozankei, and Otaru."
   },
   "logo": "Sapporo Kokusai Ski Resort",
+  "common": {
+    "explore": "Guides",
+    "accessEyebrow": "Access"
+  },
   "nav": {
     "triangle": "Wide area",
-    "mobility": "Routes",
-    "picks": "Curated"
+    "guides": "Curated guides",
+    "tour": "Tour plan"
   },
   "hero": {
     "eyebrow": "Minami-ku, Sapporo · Jozankei",
@@ -20,6 +24,7 @@
     "ctaLive": "Today's conditions"
   },
   "live": {
+    "label": "Routes",
     "ariaLabel": "Access and routing dashboard",
     "subtitle": "Real-time hub routing",
     "updatedAt": "Updated Jun 23, 9:00",
@@ -56,7 +61,7 @@
     "noticeTitle": "Winter routing:",
     "noticeBody": "Otaru–Jozankei Route 1 (Asari Pass) is closed nights Nov–Apr, 19:00–07:00. \"Otaru sushi at night, then Jozankei lodge\" is impossible—plan daytime circulation and early dinners.",
     "ctaMobility": "Routes & constraints",
-    "ctaPicks": "Curated venues",
+    "ctaPicks": "Curated guides",
     "imgAlt": "Jozankei snowscape and slopes—the regional hub"
   },
   "paths": {
@@ -94,22 +99,22 @@
     }
   },
   "highlights": {
-    "eyebrow": "Core Hook",
+    "eyebrow": "Why here",
     "title": "What inbound guests want",
     "primary": {
       "title": "World-class Japow, 60 min from the city",
       "lead": "Light powder from the 1,100 m summit zone. Direct lines from New Chitose, then Sapporo soup curry, Otaru sushi, Jozankei snow-view baths—the core of a rare high-value regional package.",
-      "cta": "Tickets & lift passes",
+      "cta": "Trail map",
       "imgAlt": "Untouched powder—Sapporo Kokusai summit area"
     },
     "secondary": {
       "title": "Onsen design that avoids culture clash",
       "lead": "In-room baths, private rentals, tattoo-friendly trials—raising area-wide standards for privacy and inclusion for Western guests and diverse dietary needs.",
-      "cta": "Curated stays & onsen"
+      "cta": "Curated onsen (2)"
     }
   },
   "mobility": {
-    "eyebrow": "Mobility",
+    "eyebrow": "Routes",
     "title": "Regional routing<br />and constraints.",
     "lead": "Routing directly shapes experience quality. The Jozankei Ski Liner (guests only, ¥2,200 round trip, book online day before) lowers the barrier of winter driving and boosts long-stay regional value.",
     "rows": {
@@ -212,11 +217,34 @@
       }
     }
   },
+  "guidesTeasers": {
+    "eyebrow": "Curated guides",
+    "title": "Stays · onsen · dining — full lists inside",
+    "lead": "Venue details, phones, official links, and maps live on dedicated guide pages.",
+    "stay": {
+      "count": "5",
+      "label": "Stays",
+      "title": "5 curated stays",
+      "hook": "From Jozankei luxury to Otaru heritage hotels."
+    },
+    "onsen": {
+      "count": "2",
+      "label": "Onsen",
+      "title": "2 curated hot springs",
+      "hook": "Snow-view rotenburo vs private baths—compare guest policies."
+    },
+    "food": {
+      "count": "4",
+      "label": "Dining",
+      "title": "4 curated restaurants",
+      "hook": "Masazushi, GARAKU, beer hall—food that drives circulation."
+    }
+  },
   "tour": {
-    "eyebrow": "Day Package",
+    "eyebrow": "Day tour",
     "title": "Daytime circuit,<br />nights within each area.",
     "lead": "Turn night closure into an asset: morning Japow → sunset Otaru sushi → Jozankei snow-view bath—via multi-base stays or rich in-area night content.",
-    "badge": "GOLDEN TRIANGLE · INBOUND",
+    "badge": "Golden Triangle · Inbound",
     "steps": {
       "01": {
         "title": "Sapporo Kokusai",
