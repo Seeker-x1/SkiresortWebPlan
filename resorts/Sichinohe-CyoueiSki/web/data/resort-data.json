@@ -53,8 +53,7 @@
       "addressEn": "211-1 Arakumauchi, Shichinohe, Kamikita, Aomori"
     },
     "rentacar": {
-      "href": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2347006&pid=892631184&vc_url=https%3A%2F%2Fskyticket.jp%2Frentacar%2Ftohoku%2Faomori%2Fshichinohetowada_station%2F",
-      "trackingPixel": "https://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2347006&pid=892631184"
+      "destination": "shichinohetowada_station"
     },
     "bullets": [
       "住所：〒039-2568 青森県上北郡七戸町字左組106-5",

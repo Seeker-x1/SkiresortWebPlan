@@ -23,7 +23,10 @@
       "guidePath": "/sichinohe/",
       "guideUrl": "https://guides.japowserch.com/sichinohe/",
       "japowResortId": 98,
-      "guideTier": "mock"
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "shichinohetowada_station"
+      }
     },
     {
       "id": "biei",
@@ -259,12 +262,15 @@
       },
       "strategy": {
         "ja": "ゴールデントライアングル",
-        "en": "Golden Triangle · Inbound"
+        "en": "Golden Triangle · Regional"
       },
       "guidePath": "/sapporo-kokusai/",
       "guideUrl": "https://guides.japowserch.com/sapporo-kokusai/",
       "japowResortId": 453,
-      "guideTier": "mock"
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "chitose_international_airport"
+      }
     }
   ],
   "guides": {

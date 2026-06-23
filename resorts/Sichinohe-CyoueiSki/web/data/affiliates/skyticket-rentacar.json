@@ -1,0 +1,23 @@
+{
+  "provider": "valuecommerce",
+  "sid": "2347006",
+  "pid": "892631184",
+  "referralBase": "https://ck.jp.ap.valuecommerce.com/servlet/referral",
+  "pixelBase": "https://ad.jp.ap.valuecommerce.com/servlet/gifbanner",
+  "destinations": {
+    "chitose_international_airport": {
+      "url": "https://skyticket.jp/rentacar/hokkaido/chitose_international_airport/",
+      "label": {
+        "ja": "新千歳空港",
+        "en": "New Chitose Airport"
+      }
+    },
+    "shichinohetowada_station": {
+      "url": "https://skyticket.jp/rentacar/tohoku/aomori/shichinohetowada_station/",
+      "label": {
+        "ja": "七戸十和田駅",
+        "en": "Shichinohe-Towada Station"
+      }
+    }
+  }
+}

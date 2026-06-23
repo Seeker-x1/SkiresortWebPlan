@@ -3,6 +3,7 @@ import path from "node:path";
 import { unstable_noStore as noStore } from "next/cache";
 import { getLocale } from "next-intl/server";
 import type { AppLocale } from "@/i18n/routing";
+import { buildSkyticketRentacarAffiliate } from "@/lib/affiliates/skyticket-rentacar";
 
 export type LiveCamStatus = "preparing" | "offline" | "live";
 
@@ -60,6 +61,11 @@ export type AccessRentacarAffiliate = {
   href: string;
   trackingPixel: string;
 };
+
+/** resort-data.json — destination ID は affiliates/skyticket-rentacar.json で解決 */
+export type AccessRentacarAffiliateConfig =
+  | AccessRentacarAffiliate
+  | { destination: string };
 
 export type AccessMapData = {
   source: string;
@@ -270,7 +276,34 @@ const FALLBACK_RESORT_DATA: ResortData = {
   faq: { notice: "データ準備中", categories: [] },
 };
 
-function isValidResortData(value: unknown): value is ResortData {
+type ResortDataRaw = Omit<ResortData, "access"> & {
+  access: Omit<ResortData["access"], "rentacar"> & {
+    rentacar?: AccessRentacarAffiliateConfig;
+  };
+};
+
+function resolveRentacarAffiliate(
+  rentacar: AccessRentacarAffiliateConfig | undefined,
+): AccessRentacarAffiliate | undefined {
+  if (!rentacar) return undefined;
+  if ("href" in rentacar && "trackingPixel" in rentacar) return rentacar;
+  if ("destination" in rentacar) {
+    return buildSkyticketRentacarAffiliate(rentacar.destination) ?? undefined;
+  }
+  return undefined;
+}
+
+function normalizeResortData(raw: ResortDataRaw): ResortData {
+  return {
+    ...raw,
+    access: {
+      ...raw.access,
+      rentacar: resolveRentacarAffiliate(raw.access.rentacar),
+    },
+  };
+}
+
+function isValidResortData(value: unknown): value is ResortDataRaw {
   if (!value || typeof value !== "object") return false;
   const data = value as Partial<ResortData>;
   return Boolean(
@@ -320,13 +353,13 @@ export async function getResortData(locale?: AppLocale): Promise<ResortData> {
       console.error(`[resort-data] invalid schema in ${filePath}`);
       return FALLBACK_RESORT_DATA;
     }
-    return parsed;
+    return normalizeResortData(parsed);
   } catch (error) {
     if (resolvedLocale === "en") {
       try {
         const raw = await fs.readFile(DATA_FILE_PATH, "utf-8");
         const parsed = JSON.parse(raw) as unknown;
-        if (isValidResortData(parsed)) return parsed;
+        if (isValidResortData(parsed)) return normalizeResortData(parsed);
       } catch {
         // fall through
       }
