@@ -112,6 +112,7 @@ implementer Phase 8 完了（機械検証 exit 0）
 ## 4. 検証手順
 
 ```bash
+node scripts/validate-resort-guides-ids.mjs
 node docs/mock-assets/scripts/validate-mock-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-lp-shell.mjs

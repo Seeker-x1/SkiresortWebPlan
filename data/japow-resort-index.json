@@ -1,0 +1,2308 @@
+{
+  "schemaVersion": "2026-06-23",
+  "source": "C:\\Users\\Takum\\Desktop\\Cloude\\JAPOWSERCH\\RESORTS一覧.txt",
+  "updatedAt": "2026-06-23",
+  "resortCount": 460,
+  "resorts": {
+    "1": {
+      "nameJa": "今金町種川スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "2": {
+      "nameJa": "上ノ国町民スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "3": {
+      "nameJa": "太鼓山スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "4": {
+      "nameJa": "大成スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "5": {
+      "nameJa": "富岡スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "6": {
+      "nameJa": "丹羽スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "7": {
+      "nameJa": "ピリカスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "8": {
+      "nameJa": "旭ヶ丘スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "9": {
+      "nameJa": "朝里川温泉スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "10": {
+      "nameJa": "IWANAI RESORT",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "11": {
+      "nameJa": "小樽天狗山スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "12": {
+      "nameJa": "キロロスノーワールド",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "13": {
+      "nameJa": "積丹町野外スポーツ林スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "14": {
+      "nameJa": "スノークルーズ・オーンズ",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "15": {
+      "nameJa": "中山峠スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "16": {
+      "nameJa": "コンサドーレ仁木スキーパーク",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "17": {
+      "nameJa": "ニセコアンヌプリ国際スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "18": {
+      "nameJa": "ニセコ東急 グラン・ヒラフ",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "19": {
+      "nameJa": "ニセコHANAZONOリゾート",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "20": {
+      "nameJa": "ニセコビレッジスキーリゾート",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "21": {
+      "nameJa": "ニセコモイワスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "22": {
+      "nameJa": "ルスツリゾート",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "23": {
+      "nameJa": "岩見沢萩の山市民スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "24": {
+      "nameJa": "桂沢国設スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "25": {
+      "nameJa": "かもい岳国際スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "26": {
+      "nameJa": "M's resort Ashibetsu",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "27": {
+      "nameJa": "そっち岳スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "28": {
+      "nameJa": "長沼スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "29": {
+      "nameJa": "沼田町営高穂スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "30": {
+      "nameJa": "美唄国設スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "31": {
+      "nameJa": "北海道グリーンランドホワイトパーク",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "32": {
+      "nameJa": "マウントレースイ",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "33": {
+      "nameJa": "旭岳スキーコース",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "34": {
+      "nameJa": "伊ノ沢市民スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "35": {
+      "nameJa": "音威富士スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "36": {
+      "nameJa": "上川町営中山スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "37": {
+      "nameJa": "カムイスキーリンクス",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "38": {
+      "nameJa": "キャンモアスキービレッジ",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "39": {
+      "nameJa": "国設占冠中央スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "40": {
+      "nameJa": "国設南ふらのスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "41": {
+      "nameJa": "サンタプレゼントパーク・マロースゲレンデ",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "42": {
+      "nameJa": "士別市あさひスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "43": {
+      "nameJa": "士別市日向スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "44": {
+      "nameJa": "下川スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "45": {
+      "nameJa": "大雪山黒岳スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "46": {
+      "nameJa": "当麻町営スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "47": {
+      "nameJa": "中川町民スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "48": {
+      "nameJa": "中富良野北星スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "49": {
+      "nameJa": "名寄ピヤシリスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "50": {
+      "nameJa": "美瑛町民スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "51": {
+      "nameJa": "ぴっぷスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "52": {
+      "nameJa": "日の出スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "53": {
+      "nameJa": "美深スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "54": {
+      "nameJa": "富良野スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "55": {
+      "nameJa": "星野リゾート トマム",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "56": {
+      "nameJa": "ほろたちスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "57": {
+      "nameJa": "和寒東山スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "58": {
+      "nameJa": "網走レークビュースキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "59": {
+      "nameJa": "ウトロスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "60": {
+      "nameJa": "ウナベツスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "61": {
+      "nameJa": "えんがるロックバレースキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "62": {
+      "nameJa": "置戸町南ヶ丘スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "63": {
+      "nameJa": "興部町営スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "64": {
+      "nameJa": "北見若松市民スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "65": {
+      "nameJa": "清里町営緑スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "66": {
+      "nameJa": "五鹿山スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "67": {
+      "nameJa": "佐呂間町営スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "68": {
+      "nameJa": "滝上町営桜ヶ丘スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "69": {
+      "nameJa": "ノーザンアークリゾートスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "70": {
+      "nameJa": "宮の森スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "71": {
+      "nameJa": "紋別市営大山スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "72": {
+      "nameJa": "湧別町五鹿山スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "73": {
+      "nameJa": "留辺蘂町八方台スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "74": {
+      "nameJa": "安平山スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "75": {
+      "nameJa": "ウインザースノービレッジ",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "76": {
+      "nameJa": "オロフレスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "77": {
+      "nameJa": "カルルス温泉サンライバスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "78": {
+      "nameJa": "穂別スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "79": {
+      "nameJa": "室蘭市だんパラスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "80": {
+      "nameJa": "日高国際スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "81": {
+      "nameJa": "明野ヶ丘スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "82": {
+      "nameJa": "サホロリゾート",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "83": {
+      "nameJa": "新得山スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "84": {
+      "nameJa": "ぬかびら源泉郷スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "85": {
+      "nameJa": "白銀台スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "86": {
+      "nameJa": "メムロスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "87": {
+      "nameJa": "阿寒ロイヤルバレイスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "88": {
+      "nameJa": "国設阿寒湖畔スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "89": {
+      "nameJa": "標津町営金山スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "90": {
+      "nameJa": "アップルヒルスキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "91": {
+      "nameJa": "岩木山百沢スキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "92": {
+      "nameJa": "兎沢スキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "93": {
+      "nameJa": "大鰐温泉スキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "94": {
+      "nameJa": "於法岳スキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "95": {
+      "nameJa": "金ヶ沢スキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "96": {
+      "nameJa": "釜臥山スキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "97": {
+      "nameJa": "五所川原市嘉瀬スキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "98": {
+      "nameJa": "七戸町営スキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "99": {
+      "nameJa": "そうまロマントピアスキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "100": {
+      "nameJa": "創遊村229スキーランド",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "101": {
+      "nameJa": "奥入瀬渓流温泉スキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "102": {
+      "nameJa": "中泊町営宮野沢スキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "103": {
+      "nameJa": "青森スプリング・スキーリゾート",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "104": {
+      "nameJa": "八甲田スキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "105": {
+      "nameJa": "manogamiスキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "106": {
+      "nameJa": "みどりの大地とロマンの森公園スキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "107": {
+      "nameJa": "リンクステーションヒルズ雲谷",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "108": {
+      "nameJa": "夜越山スキー場",
+      "pref": "青森県",
+      "region": "tohoku"
+    },
+    "109": {
+      "nameJa": "安比高原スキー場",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "110": {
+      "nameJa": "網張温泉スキー場",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "111": {
+      "nameJa": "岩手高原スノーパーク",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "112": {
+      "nameJa": "奥中山高原スキー場",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "113": {
+      "nameJa": "国見平スキー場",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "114": {
+      "nameJa": "夏油高原スキー場",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "115": {
+      "nameJa": "雫石スキー場",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "116": {
+      "nameJa": "田山スキー場",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "117": {
+      "nameJa": "遠野市赤羽根スキー場",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "118": {
+      "nameJa": "西和賀町営湯田スキー場",
+      "pref": "岩T県",
+      "region": "other"
+    },
+    "119": {
+      "nameJa": "八幡平リゾート下倉スキー場",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "120": {
+      "nameJa": "八幡平リゾートパノラマスキー場",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "121": {
+      "nameJa": "花巻鉛温泉",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "122": {
+      "nameJa": "平庭高原スキー場",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "123": {
+      "nameJa": "ひめかゆスキー場",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "124": {
+      "nameJa": "祭畤スノーパーク",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "125": {
+      "nameJa": "盛岡市立生出スキー場",
+      "pref": "岩手県",
+      "region": "tohoku"
+    },
+    "126": {
+      "nameJa": "泉ヶ岳スキー場",
+      "pref": "宮城県",
+      "region": "tohoku"
+    },
+    "127": {
+      "nameJa": "上野々スキー場",
+      "pref": "宮城県",
+      "region": "tohoku"
+    },
+    "128": {
+      "nameJa": "オニコウベスキー場",
+      "pref": "宮城県",
+      "region": "tohoku"
+    },
+    "129": {
+      "nameJa": "スプリングバレー泉高原スキー場",
+      "pref": "宮城県",
+      "region": "tohoku"
+    },
+    "130": {
+      "nameJa": "みやぎ蔵王えぼしスキー場",
+      "pref": "宮城県",
+      "region": "tohoku"
+    },
+    "131": {
+      "nameJa": "みやぎ蔵王七ヶ宿スキー場",
+      "pref": "宮城県",
+      "region": "tohoku"
+    },
+    "132": {
+      "nameJa": "みやぎ蔵王白石スキー場",
+      "pref": "宮城県",
+      "region": "tohoku"
+    },
+    "133": {
+      "nameJa": "みやぎ蔵王スキー場すみかわスノーパーク",
+      "pref": "宮城県",
+      "region": "tohoku"
+    },
+    "134": {
+      "nameJa": "やくらいファミリースキー場",
+      "pref": "宮城県",
+      "region": "tohoku"
+    },
+    "135": {
+      "nameJa": "秋田八幡平スキー場",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "136": {
+      "nameJa": "阿仁スキー場",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "137": {
+      "nameJa": "稲川スキー場",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "138": {
+      "nameJa": "大曲ファミリースキー場",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "139": {
+      "nameJa": "大台スキー場",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "140": {
+      "nameJa": "協和スキー場",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "141": {
+      "nameJa": "後三年スキー場",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "142": {
+      "nameJa": "ジュネス栗駒スキー場",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "143": {
+      "nameJa": "水晶山スキー場",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "144": {
+      "nameJa": "太平山スキー場オーパス",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "145": {
+      "nameJa": "たざわ湖スキー場",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "146": {
+      "nameJa": "鳥海高原矢島スキー場",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "147": {
+      "nameJa": "天下森スキー場",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "148": {
+      "nameJa": "花輪スキー場",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "149": {
+      "nameJa": "藤里町営スキー場",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "150": {
+      "nameJa": "薬師山スキー場",
+      "pref": "秋田県",
+      "region": "tohoku"
+    },
+    "151": {
+      "nameJa": "山形蔵王温泉スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "152": {
+      "nameJa": "Asahi自然観スノーパーク",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "153": {
+      "nameJa": "秋山スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "154": {
+      "nameJa": "小野川温泉スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "155": {
+      "nameJa": "月山スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "156": {
+      "nameJa": "神室スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "157": {
+      "nameJa": "櫛引たらのきだいスキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "158": {
+      "nameJa": "黒伏高原スノーパークジャングル・ジャングル",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "159": {
+      "nameJa": "小鳥山スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "160": {
+      "nameJa": "蔵王猿倉スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "161": {
+      "nameJa": "蔵王ライザスキーワールド",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "162": {
+      "nameJa": "白鷹町営スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "163": {
+      "nameJa": "新庄市民スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "164": {
+      "nameJa": "天元台高原スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "165": {
+      "nameJa": "天童高原スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "166": {
+      "nameJa": "手ノ子スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "167": {
+      "nameJa": "西川町民スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "168": {
+      "nameJa": "羽黒山スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "169": {
+      "nameJa": "花笠高原スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "170": {
+      "nameJa": "松山スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "171": {
+      "nameJa": "やまがた赤倉温泉スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "172": {
+      "nameJa": "蔵王温泉スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "173": {
+      "nameJa": "湯殿山スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "174": {
+      "nameJa": "湯の台スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "175": {
+      "nameJa": "横根スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "176": {
+      "nameJa": "米沢スキー場",
+      "pref": "山形県",
+      "region": "tohoku"
+    },
+    "177": {
+      "nameJa": "星野リゾート ネコマ マウンテン",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "178": {
+      "nameJa": "猪苗代スキー場",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "179": {
+      "nameJa": "裏磐梯スキー場",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "180": {
+      "nameJa": "グランデコスノーリゾート",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "181": {
+      "nameJa": "沼尻スキー場",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "182": {
+      "nameJa": "星野リゾート ネコマ マウンテン",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "183": {
+      "nameJa": "三ノ倉スキー場",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "184": {
+      "nameJa": "リステルスキーファンタジア",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "185": {
+      "nameJa": "会津高原だいくらスキー場",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "186": {
+      "nameJa": "会津高原たかつえスキー場",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "187": {
+      "nameJa": "会津高原高畑スキー場",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "188": {
+      "nameJa": "会津高原南郷スキー場",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "189": {
+      "nameJa": "只見スキー場",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "190": {
+      "nameJa": "檜枝岐温泉スキー場",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "191": {
+      "nameJa": "フェアリーランドかねやまスキー場",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "192": {
+      "nameJa": "あだたら高原スキー場",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "193": {
+      "nameJa": "二本松塩沢スキー場",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "194": {
+      "nameJa": "エーデルワイス スキーリゾート",
+      "pref": "栃木県",
+      "region": "kanto"
+    },
+    "195": {
+      "nameJa": "日光湯元温泉スキー場",
+      "pref": "栃木県",
+      "region": "kanto"
+    },
+    "196": {
+      "nameJa": "ハンターマウンテン塩原",
+      "pref": "栃木県",
+      "region": "kanto"
+    },
+    "197": {
+      "nameJa": "オグナほたかスキー場",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "198": {
+      "nameJa": "かたしな高原スキー場",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "199": {
+      "nameJa": "川場スキー場",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "200": {
+      "nameJa": "スノーパーク尾瀬戸倉",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "201": {
+      "nameJa": "たんばらスキーパーク",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "202": {
+      "nameJa": "ホワイトワールド尾瀬岩鞍",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "203": {
+      "nameJa": "丸沼高原スキー場",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "204": {
+      "nameJa": "奥利根スノーパーク",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "205": {
+      "nameJa": "Mt.T by 星野リゾート",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "206": {
+      "nameJa": "ノルンみなかみスキー場",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "207": {
+      "nameJa": "ホワイトバレースキー場",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "208": {
+      "nameJa": "水上高原スキーリゾート",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "209": {
+      "nameJa": "水上高原藤原スキー場",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "210": {
+      "nameJa": "群馬みなかみほうだいぎスキー場",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "211": {
+      "nameJa": "鹿沢スノーエリア",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "212": {
+      "nameJa": "軽井沢スノーパーク",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "213": {
+      "nameJa": "草津温泉スキー場",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "214": {
+      "nameJa": "パルコール嬬恋スキーリゾート",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "215": {
+      "nameJa": "万座温泉スキー場",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "216": {
+      "nameJa": "赤城山スキー場",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "217": {
+      "nameJa": "赤沢スキー場",
+      "pref": "群馬県",
+      "region": "kanto"
+    },
+    "218": {
+      "nameJa": "狭山スキー場",
+      "pref": "埼玉県",
+      "region": "kanto"
+    },
+    "219": {
+      "nameJa": "スノーヴァ新横浜",
+      "pref": "神奈川県",
+      "region": "kanto"
+    },
+    "220": {
+      "nameJa": "スノーヴァ溝の口",
+      "pref": "神奈川県",
+      "region": "kanto"
+    },
+    "221": {
+      "nameJa": "カムイみさかスキー場",
+      "pref": "山梨県",
+      "region": "chubu"
+    },
+    "222": {
+      "nameJa": "サンメドウズ清里スキー場",
+      "pref": "山梨県",
+      "region": "chubu"
+    },
+    "223": {
+      "nameJa": "ふじてんスノーリゾート",
+      "pref": "山梨県",
+      "region": "chubu"
+    },
+    "224": {
+      "nameJa": "高峰マウンテンパーク",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "225": {
+      "nameJa": "いいづなリゾートスキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "226": {
+      "nameJa": "軽井沢プリンスホテルスキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "227": {
+      "nameJa": "北志賀高原小丸山スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "228": {
+      "nameJa": "北志賀高井富士スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "229": {
+      "nameJa": "スノーリゾートロマンスの神様",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "230": {
+      "nameJa": "牧の入スノーパーク",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "231": {
+      "nameJa": "黒姫高原スノーパーク",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "232": {
+      "nameJa": "さかえ倶楽部スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "233": {
+      "nameJa": "佐久スキーガーデンパラダ",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "234": {
+      "nameJa": "サンバレースキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "235": {
+      "nameJa": "ジャイアントスキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "236": {
+      "nameJa": "蓮池スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "237": {
+      "nameJa": "発哺ブナ平スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "238": {
+      "nameJa": "丸池スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "239": {
+      "nameJa": "一の瀬ダイヤモンドスキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "240": {
+      "nameJa": "一の瀬ファミリースキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "241": {
+      "nameJa": "一の瀬山の神スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "242": {
+      "nameJa": "高天ヶ原マンモススキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "243": {
+      "nameJa": "タンネの森オコジョスキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "244": {
+      "nameJa": "寺小屋スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "245": {
+      "nameJa": "西館山スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "246": {
+      "nameJa": "東館山スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "247": {
+      "nameJa": "奥志賀高原スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "248": {
+      "nameJa": "焼額山スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "249": {
+      "nameJa": "熊の湯スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "250": {
+      "nameJa": "横手山・渋峠スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "251": {
+      "nameJa": "菅平高原スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "252": {
+      "nameJa": "タングラムスキーサーカス",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "253": {
+      "nameJa": "戸隠スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "254": {
+      "nameJa": "戸狩温泉スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "255": {
+      "nameJa": "野沢温泉スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "256": {
+      "nameJa": "番所ヶ原スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "257": {
+      "nameJa": "聖高原スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "258": {
+      "nameJa": "斑尾高原スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "259": {
+      "nameJa": "ニンジャスノーハイランド",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "260": {
+      "nameJa": "山田温泉キッズスノーパーク",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "261": {
+      "nameJa": "YAMABOKUワイルドスノーパーク",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "262": {
+      "nameJa": "湯の丸スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "263": {
+      "nameJa": "よませ温泉スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "264": {
+      "nameJa": "竜王スキーパーク",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "265": {
+      "nameJa": "あさひプライムスキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "266": {
+      "nameJa": "御嶽スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "267": {
+      "nameJa": "開田高原マイアスキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "268": {
+      "nameJa": "きそふくしまスキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "269": {
+      "nameJa": "車山高原スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "270": {
+      "nameJa": "小海リエックス・スキーバレー",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "271": {
+      "nameJa": "駒ヶ根高原スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "272": {
+      "nameJa": "治部坂高原スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "273": {
+      "nameJa": "シャトレーゼスキーリゾート八ヶ岳",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "274": {
+      "nameJa": "白樺高原国際スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "275": {
+      "nameJa": "白樺湖ロイヤルヒルスキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "276": {
+      "nameJa": "しらかば2in1スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "277": {
+      "nameJa": "白樺リゾートスキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "278": {
+      "nameJa": "信州松本野麦峠スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "279": {
+      "nameJa": "中央アルプス千畳敷スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "280": {
+      "nameJa": "蓼科東急スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "281": {
+      "nameJa": "中央道伊那スキーリゾート",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "282": {
+      "nameJa": "ピラタス蓼科スノーリゾート",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "283": {
+      "nameJa": "平谷高原赤坂スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "284": {
+      "nameJa": "ファミリーゲレンデ霧ヶ峰",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "285": {
+      "nameJa": "富士見高原スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "286": {
+      "nameJa": "富士見パノラマリゾート",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "287": {
+      "nameJa": "ブランシュたかやまスキーリゾート",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "288": {
+      "nameJa": "ヘブンスそのはらSNOW WORLD",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "289": {
+      "nameJa": "Mt.乗鞍",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "290": {
+      "nameJa": "八千穂高原スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "291": {
+      "nameJa": "やぶはら高原スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "292": {
+      "nameJa": "鹿島槍スキー場 ファミリーパーク",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "293": {
+      "nameJa": "爺ヶ岳スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "294": {
+      "nameJa": "栂池高原スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "295": {
+      "nameJa": "白馬岩岳スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "296": {
+      "nameJa": "白馬五竜スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "297": {
+      "nameJa": "白馬コルチナ国際スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "298": {
+      "nameJa": "白馬さのさかスキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "299": {
+      "nameJa": "白馬八方尾根スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "300": {
+      "nameJa": "Hakuba47ウィンタースポーツパーク",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "301": {
+      "nameJa": "白馬乗鞍温泉スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "302": {
+      "nameJa": "石打丸山スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "303": {
+      "nameJa": "一本杉スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "304": {
+      "nameJa": "岩原スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "305": {
+      "nameJa": "奥只見丸山スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "306": {
+      "nameJa": "GALA湯沢スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "307": {
+      "nameJa": "神立スノーリゾート",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "308": {
+      "nameJa": "小出スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "309": {
+      "nameJa": "国営越後丘陵公園",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "310": {
+      "nameJa": "古志高原スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "311": {
+      "nameJa": "八海山麓スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "312": {
+      "nameJa": "シャトー塩沢スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "313": {
+      "nameJa": "上越国際スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "314": {
+      "nameJa": "須原スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "315": {
+      "nameJa": "舞子スノーリゾート",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "316": {
+      "nameJa": "高柳ガルルのスキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "317": {
+      "nameJa": "十日町市松代ファミリースキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "318": {
+      "nameJa": "とちおファミリースキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "319": {
+      "nameJa": "長岡市営スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "320": {
+      "nameJa": "中里スノーウッドスキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "321": {
+      "nameJa": "NASPAスキーガーデン",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "322": {
+      "nameJa": "ニュー・グリーンピア津南スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "323": {
+      "nameJa": "Mt.Naeba",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "324": {
+      "nameJa": "かぐらスキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "325": {
+      "nameJa": "苗場スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "326": {
+      "nameJa": "マウンテンパーク津南スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "327": {
+      "nameJa": "松之山温泉スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "328": {
+      "nameJa": "六日町八海山スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "329": {
+      "nameJa": "ムイカスノーリゾート",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "330": {
+      "nameJa": "薬師スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "331": {
+      "nameJa": "湯沢高原スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "332": {
+      "nameJa": "湯沢中里スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "333": {
+      "nameJa": "湯沢パークスキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "334": {
+      "nameJa": "赤倉温泉スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "335": {
+      "nameJa": "赤倉中央スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "336": {
+      "nameJa": "赤倉観光リゾートスキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "337": {
+      "nameJa": "京王赤倉チャンピオンスキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "338": {
+      "nameJa": "池の平温泉スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "339": {
+      "nameJa": "妙高杉ノ原スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "340": {
+      "nameJa": "休暇村妙高スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "341": {
+      "nameJa": "関温泉スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "342": {
+      "nameJa": "キューピットバレイ",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "343": {
+      "nameJa": "金谷山スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "344": {
+      "nameJa": "シャルマン火打スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "345": {
+      "nameJa": "糸魚川シーサイドバレースキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "346": {
+      "nameJa": "アライマウンテンリゾート",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "347": {
+      "nameJa": "国設胎内スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "348": {
+      "nameJa": "NINOX SNOW PARK",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "349": {
+      "nameJa": "冬鳥越スキーガーデン",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "350": {
+      "nameJa": "三川温泉スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "351": {
+      "nameJa": "佐渡市営平スキー場",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "352": {
+      "nameJa": "宇奈月温泉スキー場",
+      "pref": "富山県",
+      "region": "chubu"
+    },
+    "353": {
+      "nameJa": "立山山岳スキー場",
+      "pref": "富山県",
+      "region": "chubu"
+    },
+    "354": {
+      "nameJa": "立山山麓スキー場",
+      "pref": "富山県",
+      "region": "chubu"
+    },
+    "355": {
+      "nameJa": "牛岳温泉スキー場",
+      "pref": "富山県",
+      "region": "chubu"
+    },
+    "356": {
+      "nameJa": "となみ夢の平スキー場",
+      "pref": "富山県",
+      "region": "chubu"
+    },
+    "357": {
+      "nameJa": "イオックス・アローザ",
+      "pref": "富山県",
+      "region": "chubu"
+    },
+    "358": {
+      "nameJa": "タカンボースキー場",
+      "pref": "富山県",
+      "region": "chubu"
+    },
+    "359": {
+      "nameJa": "たいらスキー場",
+      "pref": "富山県",
+      "region": "chubu"
+    },
+    "360": {
+      "nameJa": "大倉岳高原スキー場",
+      "pref": "石川県",
+      "region": "chubu"
+    },
+    "361": {
+      "nameJa": "金沢市営医王山スキー場",
+      "pref": "石川県",
+      "region": "chubu"
+    },
+    "362": {
+      "nameJa": "七尾コロサスキー場",
+      "pref": "石川県",
+      "region": "chubu"
+    },
+    "363": {
+      "nameJa": "白山一里野温泉スキー場",
+      "pref": "石川県",
+      "region": "chubu"
+    },
+    "364": {
+      "nameJa": "白山セイモアスキー場",
+      "pref": "石川県",
+      "region": "chubu"
+    },
+    "365": {
+      "nameJa": "莇生田スキー場",
+      "pref": "福井県",
+      "region": "chubu"
+    },
+    "366": {
+      "nameJa": "今庄365スキー場",
+      "pref": "福井県",
+      "region": "chubu"
+    },
+    "367": {
+      "nameJa": "九頭竜スキー場",
+      "pref": "福井県",
+      "region": "chubu"
+    },
+    "368": {
+      "nameJa": "新保ファミリースキー場",
+      "pref": "福井県",
+      "region": "chubu"
+    },
+    "369": {
+      "nameJa": "AM福井勝山マウンテンリゾート",
+      "pref": "福井県",
+      "region": "chubu"
+    },
+    "370": {
+      "nameJa": "福井和泉スキー場",
+      "pref": "福井県",
+      "region": "chubu"
+    },
+    "371": {
+      "nameJa": "スノーパーク イエティ",
+      "pref": "静岡県",
+      "region": "chubu"
+    },
+    "372": {
+      "nameJa": "リバウェル井川スキー場",
+      "pref": "静岡県",
+      "region": "chubu"
+    },
+    "373": {
+      "nameJa": "アウトドアイン母袋スキー場",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "374": {
+      "nameJa": "めいほうスキー場",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "375": {
+      "nameJa": "ホワイトピアたかす",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "376": {
+      "nameJa": "郡上ヴァカンス村スキー場",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "377": {
+      "nameJa": "ひるがの高原スキー場",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "378": {
+      "nameJa": "鷲ヶ岳スキー場",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "379": {
+      "nameJa": "ダイナランド",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "380": {
+      "nameJa": "高鷲スノーパーク",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "381": {
+      "nameJa": "ウイングヒルズ白鳥リゾート",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "382": {
+      "nameJa": "スノーウェーブパーク白鳥高原",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "383": {
+      "nameJa": "平湯温泉スキー場",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "384": {
+      "nameJa": "荘川高原スキー場",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "385": {
+      "nameJa": "飛騨ほおのき平スキー場",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "386": {
+      "nameJa": "高山市民スキー場",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "387": {
+      "nameJa": "飛騨高山スキー場",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "388": {
+      "nameJa": "ひだ舟山リゾートアルコピア",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "389": {
+      "nameJa": "ひだ流葉スキー場",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "390": {
+      "nameJa": "飛騨かわいスキー場",
+      "pref": "岐阜県",
+      "region": "chubu"
+    },
+    "391": {
+      "nameJa": "茶臼山高原スキー場",
+      "pref": "愛知県",
+      "region": "chubu"
+    },
+    "392": {
+      "nameJa": "御在所スキー場",
+      "pref": "三重県",
+      "region": "kansai"
+    },
+    "393": {
+      "nameJa": "グランスノー奥伊吹",
+      "pref": "滋賀県",
+      "region": "kansai"
+    },
+    "394": {
+      "nameJa": "びわ湖バレイ",
+      "pref": "滋賀県",
+      "region": "kansai"
+    },
+    "395": {
+      "nameJa": "Ohana Resort",
+      "pref": "滋賀県",
+      "region": "kansai"
+    },
+    "396": {
+      "nameJa": "箱館山スキー場",
+      "pref": "滋賀県",
+      "region": "kansai"
+    },
+    "397": {
+      "nameJa": "朽木スキー場",
+      "pref": "滋賀県",
+      "region": "kansai"
+    },
+    "398": {
+      "nameJa": "マキノスキー場",
+      "pref": "滋賀県",
+      "region": "kansai"
+    },
+    "399": {
+      "nameJa": "赤子山スキー場",
+      "pref": "滋賀県",
+      "region": "kansai"
+    },
+    "400": {
+      "nameJa": "余呉高原リゾート・ヤップスキー場",
+      "pref": "滋賀県",
+      "region": "kansai"
+    },
+    "401": {
+      "nameJa": "京都広河原スキー場",
+      "pref": "京都府",
+      "region": "kansai"
+    },
+    "402": {
+      "nameJa": "森林公園スイス村スキー場",
+      "pref": "京都府",
+      "region": "kansai"
+    },
+    "403": {
+      "nameJa": "神鍋高原スキー場",
+      "pref": "兵庫県",
+      "region": "kansai"
+    },
+    "404": {
+      "nameJa": "奥神鍋スキー場",
+      "pref": "兵庫県",
+      "region": "kansai"
+    },
+    "405": {
+      "nameJa": "万場スキー場",
+      "pref": "兵庫県",
+      "region": "kansai"
+    },
+    "406": {
+      "nameJa": "但馬牧場公園スキー場",
+      "pref": "兵庫県",
+      "region": "kansai"
+    },
+    "407": {
+      "nameJa": "おじろスキー場",
+      "pref": "兵庫県",
+      "region": "kansai"
+    },
+    "408": {
+      "nameJa": "スカイバレイスキー場",
+      "pref": "兵庫県",
+      "region": "kansai"
+    },
+    "409": {
+      "nameJa": "ハチ北高原スキー場",
+      "pref": "兵庫県",
+      "region": "kansai"
+    },
+    "410": {
+      "nameJa": "ハチ高原スキー場",
+      "pref": "兵庫県",
+      "region": "kansai"
+    },
+    "411": {
+      "nameJa": "ハイパーボウル東鉢",
+      "pref": "兵庫県",
+      "region": "kansai"
+    },
+    "412": {
+      "nameJa": "氷ノ山国際スキー場",
+      "pref": "兵庫県",
+      "region": "kansai"
+    },
+    "413": {
+      "nameJa": "若杉高原おおやスキー場",
+      "pref": "兵庫県",
+      "region": "kansai"
+    },
+    "414": {
+      "nameJa": "ばんしゅう戸倉スノーパーク",
+      "pref": "兵庫県",
+      "region": "kansai"
+    },
+    "415": {
+      "nameJa": "ちくさ高原スキー場",
+      "pref": "兵庫県",
+      "region": "kansai"
+    },
+    "416": {
+      "nameJa": "峰山高原リゾート ホワイトピーク",
+      "pref": "兵庫県",
+      "region": "kansai"
+    },
+    "417": {
+      "nameJa": "六甲山スノーパーク",
+      "pref": "兵庫県",
+      "region": "kansai"
+    },
+    "418": {
+      "nameJa": "スノーパーク洞川",
+      "pref": "奈良県",
+      "region": "kansai"
+    },
+    "419": {
+      "nameJa": "高野山スキー場",
+      "pref": "和歌山県",
+      "region": "kansai"
+    },
+    "420": {
+      "nameJa": "鏡ヶ成スキー場",
+      "pref": "鳥取県",
+      "region": "chugoku"
+    },
+    "421": {
+      "nameJa": "だいせんホワイトリゾート",
+      "pref": "鳥取県",
+      "region": "chugoku"
+    },
+    "422": {
+      "nameJa": "大山ますみず高原スノーパーク",
+      "pref": "鳥取県",
+      "region": "chugoku"
+    },
+    "423": {
+      "nameJa": "わかさ氷ノ山スキー場",
+      "pref": "鳥取県",
+      "region": "chugoku"
+    },
+    "424": {
+      "nameJa": "安蔵公園スキー場",
+      "pref": "鳥取県",
+      "region": "chugoku"
+    },
+    "425": {
+      "nameJa": "琴引フォレストパーク",
+      "pref": "島根県",
+      "region": "chugoku"
+    },
+    "426": {
+      "nameJa": "三井野原スキー場",
+      "pref": "島根県",
+      "region": "chugoku"
+    },
+    "427": {
+      "nameJa": "瑞穂ハイランド",
+      "pref": "島根県",
+      "region": "chugoku"
+    },
+    "428": {
+      "nameJa": "いぶきの里スキー場",
+      "pref": "岡山県",
+      "region": "chugoku"
+    },
+    "429": {
+      "nameJa": "恩原高原スキー場",
+      "pref": "岡山県",
+      "region": "chugoku"
+    },
+    "430": {
+      "nameJa": "ひるぜんベアバレースキー場",
+      "pref": "岡山県",
+      "region": "chugoku"
+    },
+    "431": {
+      "nameJa": "ひるぜんキッズスノーパーク",
+      "pref": "岡山県",
+      "region": "chugoku"
+    },
+    "432": {
+      "nameJa": "津黒高原スキー場",
+      "pref": "岡山県",
+      "region": "chugoku"
+    },
+    "433": {
+      "nameJa": "恐羅漢スキー場",
+      "pref": "広島県",
+      "region": "chugoku"
+    },
+    "434": {
+      "nameJa": "道後山高原スキー場",
+      "pref": "広島県",
+      "region": "chugoku"
+    },
+    "435": {
+      "nameJa": "芸北高原大佐スキー場",
+      "pref": "広島県",
+      "region": "chugoku"
+    },
+    "436": {
+      "nameJa": "県立もみのき森林公園",
+      "pref": "広島県",
+      "region": "chugoku"
+    },
+    "437": {
+      "nameJa": "ひろしま県民の森スキー場",
+      "pref": "広島県",
+      "region": "chugoku"
+    },
+    "438": {
+      "nameJa": "めがひらスキー場",
+      "pref": "広島県",
+      "region": "chugoku"
+    },
+    "439": {
+      "nameJa": "やわたハイランド191リゾート",
+      "pref": "広島県",
+      "region": "chugoku"
+    },
+    "440": {
+      "nameJa": "ユートピアサイオト",
+      "pref": "広島県",
+      "region": "chugoku"
+    },
+    "441": {
+      "nameJa": "りんご今日話国スキー場",
+      "pref": "広島県",
+      "region": "chugoku"
+    },
+    "442": {
+      "nameJa": "十種ヶ峰スキー場",
+      "pref": "山口県",
+      "region": "chugoku"
+    },
+    "443": {
+      "nameJa": "石鎚スキー場",
+      "pref": "愛媛県",
+      "region": "shikoku"
+    },
+    "444": {
+      "nameJa": "久万スキーランド",
+      "pref": "愛媛県",
+      "region": "shikoku"
+    },
+    "445": {
+      "nameJa": "SOL-FAオダスキーゲレンデ",
+      "pref": "愛媛県",
+      "region": "shikoku"
+    },
+    "446": {
+      "nameJa": "プラーナ",
+      "pref": "愛媛県",
+      "region": "shikoku"
+    },
+    "447": {
+      "nameJa": "井川スキー場腕山",
+      "pref": "徳島県",
+      "region": "shikoku"
+    },
+    "448": {
+      "nameJa": "剣山スキー場",
+      "pref": "徳島県",
+      "region": "shikoku"
+    },
+    "449": {
+      "nameJa": "九重森林公園スキー場",
+      "pref": "大分県",
+      "region": "kyushu"
+    },
+    "450": {
+      "nameJa": "五ヶ瀬ハイランドスキー場",
+      "pref": "宮崎県",
+      "region": "kyushu"
+    },
+    "451": {
+      "nameJa": "ぶどうスノーリゾート",
+      "pref": "新潟県",
+      "region": "niigata"
+    },
+    "452": {
+      "nameJa": "札幌藻岩山スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "453": {
+      "nameJa": "札幌国際スキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "454": {
+      "nameJa": "サッポロテイネ",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "455": {
+      "nameJa": "さっぽろばんけいスキー場",
+      "pref": "北海道",
+      "region": "hokkaido"
+    },
+    "456": {
+      "nameJa": "箕輪スキー場",
+      "pref": "福島県",
+      "region": "tohoku"
+    },
+    "457": {
+      "nameJa": "菅平高原奥ダボススキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "458": {
+      "nameJa": "菅平高原パインビークスキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "459": {
+      "nameJa": "菅平高原天狗スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    },
+    "460": {
+      "nameJa": "木島平スキー場",
+      "pref": "長野県",
+      "region": "nagano"
+    }
+  }
+}

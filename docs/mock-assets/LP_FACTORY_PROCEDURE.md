@@ -170,7 +170,7 @@ humanReview:
 - [ ] レポートから §2.1 必須項目を抜き出し、`configs/lp-brief/{id}.yaml` を作成（またはチャットに貼る）
 - [ ] `id` を確定: **英小文字・ハイフン**、既存と重複なし
 - [ ] `slug` = `{id}-lp`（慣例）
-- [ ] `japowResortId` を JAPOW マップで照合（不明なら `guideNote: "要確認"`）
+- [ ] `japowResortId` を **`data/japow-resort-index.tsv` で施設名検索して確定**（推測・仮 ID 禁止）。`node scripts/validate-resort-guides-ids.mjs` が PASS すること
 - [ ] アーキタイプを §3 から 1 つ選択し、複製元フォルダを決める
 
 ### Phase 1 — ディレクトリ作成
@@ -198,6 +198,7 @@ cp -r docs/mock-assets/sapporo-teine-lp docs/mock-assets/sapporo-kokusai-lp
 - [ ] 検証:
 
 ```bash
+node scripts/validate-resort-guides-ids.mjs
 node docs/mock-assets/scripts/validate-mock-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
 ```
@@ -306,6 +307,7 @@ npx serve docs/mock-assets -p 3456
 基準: [lp_mock_requirements.md](./lp_mock_requirements.md) · チェックリスト: [lp_mock_handoff_checklist.md](./lp_mock_handoff_checklist.md)
 
 ```bash
+node scripts/validate-resort-guides-ids.mjs
 node docs/mock-assets/scripts/validate-mock-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-lp-shell.mjs
