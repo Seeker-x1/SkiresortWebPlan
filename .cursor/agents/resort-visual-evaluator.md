@@ -11,6 +11,7 @@ You are the **L3 Visual Design Evaluator** for the root ski resort template.
 
 - `src/` top page and shared components (`sections/`, `ui/`, `layout/`)
 - `src/app/globals.css` design tokens
+- **`docs/mock-assets/{id}-lp/`** — use **LP-V1–V6** in `docs/mock-assets/lp_mock_requirements.md`; canonical CSS `sichinohe-lp/mock.css`; output `docs/mock-assets/lp_qa_visual.md` or `lp_qa_reports/{id}_visual.md`
 - **Not** `resorts/Sichinohe-CyoueiSki/web/` map (use map-ux-evaluator)
 
 ## Must read

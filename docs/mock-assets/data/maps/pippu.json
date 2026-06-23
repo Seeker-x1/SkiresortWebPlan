@@ -1,0 +1,295 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "pippu",
+  "name": {
+    "ja": "ぴっぷスキー場",
+    "en": "Pippu Ski Area"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "比布町公式 pippu.ski",
+    "LP戦略レポート"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/pippu-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-pair-2ab",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "第2ペアリフト（A・B）",
+        "en": "Lift 2 pair (A·B)"
+      },
+      "shortLabel": {
+        "ja": "第2ペア",
+        "en": "L2"
+      },
+      "meta": {
+        "ja": {
+          "長さ": "617m",
+          "状態": "運行中"
+        },
+        "en": {
+          "Length": "617 m",
+          "Status": "Operating"
+        }
+      }
+    },
+    {
+      "id": "lift-pair-6",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "第6ペアリフト",
+        "en": "Lift 6 pair"
+      },
+      "shortLabel": {
+        "ja": "第6",
+        "en": "L6"
+      },
+      "meta": {
+        "ja": {
+          "長さ": "1,181m",
+          "状態": "運行中"
+        },
+        "en": {
+          "Length": "1,181 m",
+          "Status": "Operating"
+        }
+      }
+    },
+    {
+      "id": "lift-rope-4",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": {
+        "ja": "第4ロープリフト",
+        "en": "Lift 4 rope tow"
+      },
+      "shortLabel": {
+        "ja": "第4",
+        "en": "L4"
+      },
+      "meta": {
+        "ja": {
+          "長さ": "150m",
+          "区分": "初級"
+        },
+        "en": {
+          "Length": "150 m",
+          "Zone": "Beginner"
+        }
+      }
+    },
+    {
+      "id": "trail-strawberry",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "ストロベリーコース",
+        "en": "Strawberry course"
+      },
+      "shortLabel": {
+        "ja": "ストロベリー",
+        "en": "Strawberry"
+      },
+      "meta": {
+        "ja": {
+          "全長": "2,200m",
+          "最大斜度": "20°"
+        },
+        "en": {
+          "Length": "2,200 m",
+          "Max slope": "20°"
+        }
+      }
+    },
+    {
+      "id": "trail-family",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "ファミリーコース",
+        "en": "Family course"
+      },
+      "shortLabel": {
+        "ja": "ファミリー",
+        "en": "Family"
+      },
+      "meta": {
+        "ja": {
+          "全長": "2,000m",
+          "平均斜度": "13°"
+        },
+        "en": {
+          "Length": "2,000 m",
+          "Avg slope": "13°"
+        }
+      }
+    },
+    {
+      "id": "trail-diamond",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "ダイヤモンドコース",
+        "en": "Diamond course"
+      },
+      "shortLabel": {
+        "ja": "ダイヤモンド",
+        "en": "Diamond"
+      },
+      "meta": {
+        "ja": {
+          "全長": "1,500m",
+          "平均斜度": "16°"
+        },
+        "en": {
+          "Length": "1,500 m",
+          "Avg slope": "16°"
+        }
+      }
+    },
+    {
+      "id": "trail-dynamic",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate-advanced",
+      "label": {
+        "ja": "ダイナミックコース",
+        "en": "Dynamic course"
+      },
+      "shortLabel": {
+        "ja": "ダイナミック",
+        "en": "Dynamic"
+      },
+      "meta": {
+        "ja": {
+          "全長": "1,800m",
+          "最大斜度": "25°"
+        },
+        "en": {
+          "Length": "1,800 m",
+          "Max slope": "25°"
+        }
+      }
+    },
+    {
+      "id": "trail-golden",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "ゴールデンコース",
+        "en": "Golden course"
+      },
+      "shortLabel": {
+        "ja": "ゴールデン",
+        "en": "Golden"
+      },
+      "meta": {
+        "ja": {
+          "全長": "1,200m",
+          "最大斜度": "30°",
+          "ナイター": "一部不可"
+        },
+        "en": {
+          "Length": "1,200 m",
+          "Max slope": "30°",
+          "Night skiing": "Partial"
+        }
+      }
+    },
+    {
+      "id": "trail-veteran",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "深雪・ベテランコース",
+        "en": "Deep snow veteran course"
+      },
+      "shortLabel": {
+        "ja": "ベテラン",
+        "en": "Veteran"
+      },
+      "meta": {
+        "ja": {
+          "全長": "1,300m",
+          "最大斜度": "36°",
+          "雪面": "非圧雪"
+        },
+        "en": {
+          "Length": "1,300 m",
+          "Max slope": "36°",
+          "Surface": "Ungroomed"
+        }
+      }
+    },
+    {
+      "id": "trail-kappa",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "カッパコース（ナイター）",
+        "en": "Kappa course (night)"
+      },
+      "shortLabel": {
+        "ja": "カッパ",
+        "en": "Kappa"
+      },
+      "meta": {
+        "ja": {
+          "全長": "600m",
+          "ナイター": "可"
+        },
+        "en": {
+          "Length": "600 m",
+          "Night skiing": "Yes"
+        }
+      }
+    },
+    {
+      "id": "trail-silver",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "シルバーコース（ナイター）",
+        "en": "Silver course (night)"
+      },
+      "shortLabel": {
+        "ja": "シルバー",
+        "en": "Silver"
+      },
+      "meta": {
+        "ja": {
+          "全長": "700m",
+          "ナイター": "可"
+        },
+        "en": {
+          "Length": "700 m",
+          "Night skiing": "Yes"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+resortId: pippu
+schemaVersion: "2026-06-23"
+
+name:
+  ja: ぴっぷスキー場
+  en: Pippu Ski Area
+region:
+  ja: 北海道上川郡比布町
+  en: Pippu, Kamikawa, Hokkaido
+japowResortId: 48  # 要確認
+
+strategy:
+  ja: 雪・食・温泉の隠れ家
+  en: Snow · Food · Onsen Hideaway
+archetype: live-dashboard
+
+audience: both
+
+hero:
+  tagline:
+    ja: メガリゾートの対抗軸——極寒の乾雪と、入浴券つきリフト。
+    en: An antidote to mega-resorts—dry powder and lift tickets bundled with bath access.
+  badges: [powder, bundle, night]
+
+pillars:
+  - id: powder
+    hook: { ja: 大雪山・超乾雪, en: Daisetsu views · dry powder }
+  - id: ecosystem
+    hook: { ja: 入浴券バンドル, en: Lift + onsen bundle }
+  - id: access
+    hook: { ja: 旭川ハブ・直行バス, en: Asahikawa hub · direct bus }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+  - corridor-stay
+
+map:
+  sources: ["ぴっぷスキー場公式", "LP戦略レポート"]
+  heroImage: images/maps/pippu-hero.png
+
+humanReview:
+  - japowResortId
+  - 道北バス冬季ダイヤ
+  - 2025-2026料金・営業時間
