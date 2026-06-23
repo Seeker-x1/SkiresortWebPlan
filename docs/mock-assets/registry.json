@@ -46,7 +46,10 @@
       "guidePath": "/biei/",
       "japowResortId": 50,
       "guideUrl": "https://guides.japowserch.com/biei/",
-      "guideTier": "mock"
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "asahikawa_airport"
+      }
     },
     {
       "id": "unabetsu",
@@ -66,7 +69,10 @@
       "guidePath": "/unabetsu/",
       "guideUrl": "https://guides.japowserch.com/unabetsu/",
       "japowResortId": 60,
-      "guideTier": "mock"
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "memanbetsu_airport"
+      }
     },
     {
       "id": "kiyosato",
@@ -86,7 +92,10 @@
       "guidePath": "/kiyosato/",
       "guideUrl": "https://guides.japowserch.com/kiyosato/",
       "japowResortId": 65,
-      "guideTier": "mock"
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "memanbetsu_airport"
+      }
     },
     {
       "id": "gokazan",
@@ -107,7 +116,10 @@
       "guideUrl": "https://guides.japowserch.com/gokazan/",
       "japowResortId": 66,
       "guideTier": "mock",
-      "guideNote": "id 72 湧別町五鹿山ではなく 66"
+      "guideNote": "id 72 湧別町五鹿山ではなく 66",
+      "affiliates": {
+        "rentacar": "memanbetsu_airport"
+      }
     },
     {
       "id": "tsunan",
@@ -127,7 +139,10 @@
       "guidePath": "/tsunan/",
       "guideUrl": "https://guides.japowserch.com/tsunan/",
       "japowResortId": 326,
-      "guideTier": "mock"
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "niigata_airport"
+      }
     },
     {
       "id": "minami-furano",
@@ -147,7 +162,10 @@
       "guidePath": "/minami-furano/",
       "guideUrl": "https://guides.japowserch.com/minami-furano/",
       "japowResortId": 40,
-      "guideTier": "mock"
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "asahikawa_airport"
+      }
     },
     {
       "id": "asahigaoka",
@@ -167,7 +185,10 @@
       "guidePath": "/asahigaoka/",
       "guideUrl": "https://guides.japowserch.com/asahigaoka/",
       "japowResortId": 8,
-      "guideTier": "mock"
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "chitose_international_airport"
+      }
     },
     {
       "id": "otoifuji",
@@ -187,7 +208,10 @@
       "guidePath": "/otoifuji/",
       "guideUrl": "https://guides.japowserch.com/otoifuji/",
       "japowResortId": 35,
-      "guideTier": "mock"
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "asahikawa_airport"
+      }
     },
     {
       "id": "shimukappu",
@@ -207,7 +231,10 @@
       "guidePath": "/shimukappu/",
       "guideUrl": "https://guides.japowserch.com/shimukappu/",
       "japowResortId": 39,
-      "guideTier": "mock"
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "chitose_international_airport"
+      }
     },
     {
       "id": "abashiri-lv",
@@ -227,7 +254,10 @@
       "guidePath": "/abashiri-lv/",
       "guideUrl": "https://guides.japowserch.com/abashiri-lv/",
       "japowResortId": 58,
-      "guideTier": "mock"
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "memanbetsu_airport"
+      }
     },
     {
       "id": "sapporo-teine",
@@ -247,7 +277,10 @@
       "guidePath": "/sapporo-teine/",
       "guideUrl": "https://guides.japowserch.com/sapporo-teine/",
       "japowResortId": 454,
-      "guideTier": "mock"
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "chitose_international_airport"
+      }
     },
     {
       "id": "sapporo-kokusai",

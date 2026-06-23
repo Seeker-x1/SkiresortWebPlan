@@ -80,7 +80,11 @@
     "line": "青森県上北郡七戸町字左組106-5",
     "note": "東北新幹線「七戸十和田駅」からタクシー約10分（目安）",
     "phone": "TEL 0176-62-5612",
-    "places": ""
+    "places": "",
+    "rentacarEyebrow": "新幹線＋レンタカー",
+    "rentacarLink": "七戸十和田駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "十和田湖・八甲田・七戸周遊向け"
   },
   "footer": {
     "copyright": "© 七戸町営スキー場",

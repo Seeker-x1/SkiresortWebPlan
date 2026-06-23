@@ -76,7 +76,7 @@
   "recovery": {
     "eyebrow": "Recovery",
     "title": "After skiing,<br />Midori-no-Yu.",
-    "lead": "Day-use bath Midori-no-Yu adjacent to the ski area. Train · Powder · Onsen—the core of an inbound package completable on foot.",
+    "lead": "Day-use bath Midori-no-Yu adjacent to the ski area. Train · Powder · Onsen—the core of an package completable on foot.",
     "noticeTitle": "Traveling light:",
     "noticeBody": "No on-site rentals. Plans to guide hands-free options via Yamato Ski Ta-Q-Bin and gear delivery partnerships with nearby lodging.",
     "cta": "Hands-free plan info",
@@ -134,7 +134,11 @@
     "line": "Midori 51-1, Kiyosato, Shari-gun, Hokkaido",
     "note": "About a 5-minute walk (~0.5 km) from JR Senmo Line Midori Station · adjacent Midori-no-Yu",
     "phone": "TEL 0152-27-5512 (Kiyosato Town)",
-    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>斜里郡<rt>Shari-gun</rt></ruby></span><span class=\"place-unit\"><ruby>清里町<rt>Kiyosato</rt></ruby></span><span class=\"place-unit\"><ruby>緑町51-1<rt>Midori 51-1</rt></ruby></span>"
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>斜里郡<rt>Shari-gun</rt></ruby></span><span class=\"place-unit\"><ruby>清里町<rt>Kiyosato</rt></ruby></span><span class=\"place-unit\"><ruby>緑町51-1<rt>Midori 51-1</rt></ruby></span>",
+    "rentacarEyebrow": "Shiretoko gateway",
+    "rentacarLink": "Book a rental car at Memanbetsu Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Midori Station and Shiretoko–Saroma routes"
   },
   "footer": {
     "copyright": "© Kiyosato Midori Ski Area",

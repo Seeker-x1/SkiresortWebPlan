@@ -58,7 +58,7 @@
       "Jozankei onsen",
       "Otaru Canal"
     ],
-    "noticeTitle": "FIT hook:",
+    "noticeTitle": "For independent travelers:",
     "noticeBody": "Elite powder by day, Masazushi or UNWIND's bar by night, Hoheikyo's rotenburo—a stay package with contrasts rarely found elsewhere.",
     "ctaCorridor": "Snow & Culture Pass",
     "imgAlt": "Snow in west Sapporo—a corridor linking city, mountains, and sea"
@@ -104,14 +104,14 @@
     },
     "secondary": {
       "title": "24h recovery at Honoka",
-      "lead": "Teine Onsen Honoka at the base—super-sento culture with rock baths and dining, an affordable transit stop for inbound FIT guests.",
+      "lead": "Teine Onsen Honoka at the base—super-sento culture with rock baths and dining, an affordable transit stop after skiing.",
       "cta": "Curated onsen (4)"
     }
   },
   "pass": {
     "eyebrow": "Corridor pass",
     "title": "Snow, city, and tradition—<br />seamlessly linked.",
-    "lead": "For high-value FIT guests—private bath at Koganeyu after skiing, Masazushi in Otaru at night. Chalet Ivy Jozankei offers in-room rotenburo across every suite.",
+    "lead": "Private bath at Koganeyu after skiing, Masazushi in Otaru at night. Chalet Ivy Jozankei offers in-room rotenburo across every suite—a corridor you can stitch together yourself.",
     "specs": [
       "5 stays",
       "6 dining",
@@ -156,8 +156,8 @@
   "journey": {
     "eyebrow": "Tour plan",
     "title": "Three days,<br />self-guided corridor.",
-    "lead": "A model course for independent inbound travelers—snow & wellness resort package.",
-    "badge": "Snow & Culture · FIT",
+    "lead": "A self-planned three-day loop—snow and wellness across the west Sapporo corridor.",
+    "badge": "Snow & Culture",
     "steps": {
       "01": {
         "title": "Morning: Triangle Market",
@@ -210,7 +210,11 @@
     "line": "593 Teinehoncho, Teine-ku, Sapporo, Hokkaido",
     "note": "~40 min from downtown Sapporo · ~80 min from New Chitose · Bus from JR Teine · Parking available",
     "phone": "TEL 011-681-2111 (Sapporo Teine Ski Resort)",
-    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>札幌市<rt>Sapporo</rt></ruby></span><span class=\"place-unit\"><ruby>手稲区<rt>Teine-ku</rt></ruby></span><span class=\"place-unit\"><ruby>手稲本町<rt>Teinehoncho</rt></ruby></span>"
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>札幌市<rt>Sapporo</rt></ruby></span><span class=\"place-unit\"><ruby>手稲区<rt>Teine-ku</rt></ruby></span><span class=\"place-unit\"><ruby>手稲本町<rt>Teinehoncho</rt></ruby></span>",
+    "rentacarEyebrow": "Sapporo gateway",
+    "rentacarLink": "Book a rental car at New Chitose Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Teine, downtown Sapporo, and Otaru loops"
   },
   "footer": {
     "copyright": "© Sapporo Teine Ski Resort — LP mock",
@@ -227,7 +231,7 @@
     "notice": "Hours, reservations, and dietary accommodations—check each venue's official site.",
     "introTitle": "Why food drives the journey",
     "introLead": "Terroir-rooted dining is the strongest motivator for travel in this corridor.",
-    "introBody": "Six inbound-ready picks—multilingual service, diversity, accessibility, or experience that exceeds those baselines.",
+    "introBody": "Six curated venues—multilingual service, dietary diversity, and accessibility considered throughout.",
     "mapEyebrow": "Area map",
     "mapTitle": "Corridor dining map",
     "mapLead": "Layer food, onsen, and hubs across Teine, Jozankei, Otaru, and central Sapporo.",
@@ -242,7 +246,7 @@
     "mapCta": "Open full-size map",
     "linkOnsenGuide": "4 onsen picks guide",
     "spotsEyebrow": "6 picks",
-    "spotsTitle": "6 curated dining spots for inbound guests",
+    "spotsTitle": "6 curated restaurants",
     "spotsLead": "Ordered for easy pairing before/after skiing and corridor moves.",
     "spotMapLink": "View on map",
     "spots": {
@@ -304,7 +308,7 @@
     "mapCta": "Open full-size map",
     "linkFoodGuide": "6 dining picks guide",
     "spotsEyebrow": "4 picks",
-    "spotsTitle": "4 curated onsen for inbound guests",
+    "spotsTitle": "4 curated hot springs",
     "spotsLead": "Ordered for post-ski recovery and corridor transit.",
     "spotMapLink": "View on map",
     "spots": {
@@ -349,7 +353,7 @@
     "linkFoodGuide": "6 dining picks",
     "linkOnsenGuide": "4 onsen picks",
     "spotsEyebrow": "5 picks",
-    "spotsTitle": "5 curated stays for inbound guests",
+    "spotsTitle": "5 curated stays",
     "spotsLead": "Private onsen, gastronomy ryokan, heritage, urban explorer hotel—by need.",
     "spotMapLink": "View on map",
     "regions": {

@@ -18,6 +18,27 @@
         "ja": "七戸十和田駅",
         "en": "Shichinohe-Towada Station"
       }
+    },
+    "asahikawa_airport": {
+      "url": "https://skyticket.jp/rentacar/hokkaido/asahikawa_airport/",
+      "label": {
+        "ja": "旭川空港",
+        "en": "Asahikawa Airport"
+      }
+    },
+    "memanbetsu_airport": {
+      "url": "https://skyticket.jp/rentacar/hokkaido/memanbetsu_airport/",
+      "label": {
+        "ja": "女満別空港",
+        "en": "Memanbetsu Airport"
+      }
+    },
+    "niigata_airport": {
+      "url": "https://skyticket.jp/rentacar/koushinetsu/niigata/niigata_airport/",
+      "label": {
+        "ja": "新潟空港",
+        "en": "Niigata Airport"
+      }
     }
   }
 }

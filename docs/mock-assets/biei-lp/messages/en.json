@@ -94,7 +94,7 @@
       },
       "03": {
         "title": "Restore & nourish",
-        "body": "Junpei's shrimp bowl, Biei Farm raclette toast—inbound-friendly food hooks after snow play",
+        "body": "Junpei's shrimp bowl, Biei Farm raclette toast—local food worth the detour after snow play",
         "linkLabel": "Nearby food guide",
         "linkOnsen": "Nearby onsen guide"
       },
@@ -260,7 +260,7 @@
   "nearbyFood": {
     "meta": {
       "title": "10 Nearby Eats — Biei Town Ski Area",
-      "description": "Inbound-friendly food picks and area map—pair with snow play and Blue Pond in one day"
+      "description": "Curated food picks and area map—pair with snow play and Blue Pond in one day"
     },
     "backLink": "Back to Biei guide",
     "hero": {
@@ -270,7 +270,7 @@
     },
     "notice": "Hours, closures, and winter schedules change—each venue's official site is authoritative. No trespass on farmland; enjoy only in welcoming spaces.",
     "introTitle": "Why food completes the loop",
-    "introLead": "Visitors to Biei—especially inbound FIT travelers—are highly sensitive to \"only-in-Hokkaido\" food and Instagram-ready settings.",
+    "introLead": "Visitors to Biei—especially independent travel travelers—are highly sensitive to \"only-in-Hokkaido\" food and Instagram-ready settings.",
     "introBody": "We picked ten strong food stops to hook travelers before and after snow scenes. Combined with the town ski area and Blue Pond, they form a friction-free day-trip package.",
     "mapEyebrow": "Area map",
     "mapTitle": "Nearby food map",
@@ -294,7 +294,7 @@
       "junpei": {
         "tag": "Western · shrimp bowl",
         "title": "Yoshoku & Cafe Junpei",
-        "lead": "A legendary western-style restaurant in Biei. The signature shrimp fry bowl draws long queues from Asia-focused inbound travelers."
+        "lead": "A legendary western-style restaurant in Biei. The signature shrimp fry bowl draws long queues from Asia-focused travelers."
       },
       "biei-farm": {
         "tag": "Dairy · farm views",
@@ -309,7 +309,7 @@
       "chiyoda": {
         "tag": "Wagyu · farm restaurant",
         "title": "Farm Restaurant Chiyoda",
-        "lead": "Farm-direct restaurant for inbound wagyu fans—Biei beef steak and hearty stews for meat-focused travelers."
+        "lead": "Farm-direct restaurant for wagyu fans—Biei beef steak and hearty stews for meat-focused travelers."
       },
       "ferme": {
         "tag": "Sweets · bread · dining",
@@ -339,7 +339,7 @@
       "santouka": {
         "tag": "Ramen · Asahikawa style",
         "title": "Ramen Santouka Biei",
-        "lead": "Ramen is killer content for inbound travelers. The famous Asahikawa-born chain on the Biei route—essential after snow play."
+        "lead": "Ramen is killer content . The famous Asahikawa-born chain on the Biei route—essential after snow play."
       }
     },
     "pairingTitle": "Sample day loop",
@@ -350,7 +350,7 @@
   "nearbyOnsen": {
     "meta": {
       "title": "10 Nearby Onsen — Biei Town Ski Area",
-      "description": "Snow-view open-air baths and day visits—inbound onsen map paired with snow play"
+      "description": "Snow-view open-air baths and day visits—onsen map paired with snow play"
     },
     "backLink": "Back to Biei guide",
     "hero": {
@@ -360,7 +360,7 @@
     },
     "notice": "Day-bath availability, hours, winter closures, and mixed-bath rules change—check each facility. Use extra care at wild roten baths.",
     "introTitle": "Why onsen anchors the loop",
-    "introLead": "Inbound visitors around Biei strongly want Japanese onsen culture and open-air baths in snowy scenery.",
+    "introLead": "visitors around Biei strongly want Japanese onsen culture and open-air baths in snowy scenery.",
     "introBody": "Ten baths that warm chilled bodies after snow play and scenic touring—designed as a digital bundle with our food map, like Japowserch set proposals.",
     "mapEyebrow": "Area map",
     "mapTitle": "Nearby onsen map",
@@ -404,7 +404,7 @@
       "mori-no-ryotei": {
         "tag": "Sukiya · day visit",
         "title": "Mori no Ryotei Biei",
-        "lead": "A 17-room sukiya-style luxury inn with day baths—Japanese aesthetics and hospitality for high-end inbound guests."
+        "lead": "A 17-room sukiya-style luxury inn with day baths—Japanese aesthetics and hospitality for high-end guests."
       },
       "mori-no-shizuku": {
         "tag": "Free-flow · sauna",
@@ -419,7 +419,7 @@
       "ryounkaku": {
         "tag": "Sky roten · highest",
         "title": "Tokachidake Onsen Ryounkaku (Kamifurano)",
-        "lead": "One of Hokkaido's highest onsen inns—iron-brown water and deep snow for ultimate photo contrast; hugely popular inbound."
+        "lead": "One of Hokkaido's highest onsen inns—iron-brown water and deep snow for ultimate photo contrast; hugely popular."
       },
       "hakuginso": {
         "tag": "Aufguss · northern mecca",
@@ -448,7 +448,11 @@
     "line": "Omura-Murayama, Biei-cho, Kamikawa-gun, Hokkaido",
     "note": "About a 15-minute walk (approx. 1.5 km) from JR Furano Line Biei Station",
     "phone": "TEL 0166-92-5808 (Biei Town)",
-    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>上川郡<rt>Kamikawa-gun</rt></ruby></span><span class=\"place-unit\"><ruby>美瑛町<rt>Biei-cho</rt></ruby></span><span class=\"place-unit\"><ruby>字大村村山<rt>Omura-Murayama</rt></ruby></span>"
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>上川郡<rt>Kamikawa-gun</rt></ruby></span><span class=\"place-unit\"><ruby>美瑛町<rt>Biei-cho</rt></ruby></span><span class=\"place-unit\"><ruby>字大村村山<rt>Omura-Murayama</rt></ruby></span>",
+    "rentacarEyebrow": "Furano · Biei touring",
+    "rentacarLink": "Book a rental car at Asahikawa Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Biei, Shirogane, and Sounkyo drives"
   },
   "footer": {
     "copyright": "© Biei Town Ski Area",

@@ -88,7 +88,7 @@
   "rental": {
     "eyebrow": "Book & Go",
     "title": "Travel light,<br />ski the view.",
-    "lead": "For light tourists and inbound visitors stopping during Shiretoko sightseeing. Book ski/snowboard sets and outerwear online. Combine with 4-hour (¥2,200) or day (¥3,200) tickets.",
+    "lead": "For light tourists and visitors stopping during Shiretoko sightseeing. Book ski/snowboard sets and outerwear online. Combine with 4-hour (¥2,200) or day (¥3,200) tickets.",
     "whisper": "Reduce lodge check-in load and maximize high-margin rental revenue—the core revenue-doubling lever.",
     "cta": "Rental booking & payment",
     "imgAlt": "Rental gear at the lodge—for hands-free visitors"
@@ -125,7 +125,7 @@
     },
     "rentalGuide": {
       "title": "Complete hands-free rental guide",
-      "body": "Size entry → ticket selection → card payment. Full web flow including ski, snowboard, and wear inventory. English for inbound visitors, mobile-optimized."
+      "body": "Size entry → ticket selection → card payment. Full web flow including ski, snowboard, and wear inventory. English , mobile-optimized."
     },
     "shiretoko": {
       "title": "Shiretoko & Shari half-day model course",
@@ -142,7 +142,11 @@
     "line": "Minehama 110, Shari, Shari-gun, Hokkaido",
     "note": "Gateway to the Shiretoko Peninsula, within Shari Town (car access is typical)",
     "phone": "TEL 0152-28-2225",
-    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>斜里郡<rt>Shari-gun</rt></ruby></span><span class=\"place-unit\"><ruby>斜里町<rt>Shari</rt></ruby></span><span class=\"place-unit\"><ruby>字峰浜110番地<rt>Minehama 110</rt></ruby></span>"
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>斜里郡<rt>Shari-gun</rt></ruby></span><span class=\"place-unit\"><ruby>斜里町<rt>Shari</rt></ruby></span><span class=\"place-unit\"><ruby>字峰浜110番地<rt>Minehama 110</rt></ruby></span>",
+    "rentacarEyebrow": "Shiretoko gateway",
+    "rentacarLink": "Book a rental car at Memanbetsu Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Shari and Shiretoko drives"
   },
   "footer": {
     "copyright": "© Unabetsu Ski Area",

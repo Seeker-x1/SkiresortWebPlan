@@ -117,7 +117,7 @@
   "pass": {
     "eyebrow": "Local Pricing Protected",
     "title": "Local ¥2,940/day,<br />¥1,200 for 2 hours—unchanged.",
-    "lead": "Keep the local full-day ticket at ¥2,940 and the 2-hour ticket at ¥1,200 for Abashiri residents and neighbors—protecting everyday local use comes first. Revenue from distant and inbound visitors extends through packages such as the Winter Iron Activity Pass and Night Snow Lounge—a dual-pricing model (LP strategy).",
+    "lead": "Keep the local full-day ticket at ¥2,940 and the 2-hour ticket at ¥1,200 for Abashiri residents and neighbors—protecting everyday local use comes first. Revenue from distant and visitors extends through packages such as the Winter Iron Activity Pass and Night Snow Lounge—a dual-pricing model (LP strategy).",
     "localDay": "Local full day ¥2,940",
     "localTwoHour": "Local 2 hours ¥1,200",
     "visitorNote": "Visitor revenue designed through package products",
@@ -145,7 +145,7 @@
     ],
     "whisper": "Leave local pricing untouched—productize the visitor's \"Okhotsk day.\" Wakasagi × ski is the differentiation core.",
     "noticeTitle": "Package design:",
-    "noticeBody": "Wakasagi fishing is a Lake Abashiri staple—finish in the morning, then non-stop through 2 hours on snow and rental return. The backbone of a half-day to full-day model for families and inbound guests.",
+    "noticeBody": "Wakasagi fishing is a Lake Abashiri staple—finish in the morning, then non-stop through 2 hours on snow and rental return. The backbone of a half-day to full-day model for families and guests.",
     "cta": "Book Winter Iron Pass",
     "imgAlt": "Wakasagi ice fishing on Lake Abashiri plus 2 hours on the hill—Winter Iron Activity Pass"
   },
@@ -193,7 +193,7 @@
   "board": {
     "eyebrow": "Snowboard Debut",
     "title": "First board day,<br />¥1,000/hour.",
-    "lead": "Gentle six-course layout and low crowds—position Abashiri Lake View as a first-snowboard destination. Board rental ¥1,000/hour, with hands-free sets bundled in the Winter Iron Pass. An acquisition axis for families, couples, and inbound beginners (LP concept).",
+    "lead": "Gentle six-course layout and low crowds—position Abashiri Lake View as a first-snowboard destination. Board rental ¥1,000/hour, with hands-free sets bundled in the Winter Iron Pass. An acquisition axis for families, couples, and beginners (LP concept).",
     "price": "Board rental ¥1,000/hour",
     "specs": [
       "6 courses · beginner-friendly",
@@ -211,7 +211,7 @@
     "title": "Museum Big Three,<br />the lake and Tsuruga.",
     "lead": "Stays are not born on the hill alone—bundle Abashiri's cultural and natural assets with the Winter Iron Pass into a 1-night/2-day Okhotsk circuit (LP strategy).",
     "prisonTitle": "Museum Abashiri Prison",
-    "prisonLead": "National Important Cultural Property—experience a Meiji-era penal facility. An Abashiri winter staple and popular inbound history content.",
+    "prisonLead": "National Important Cultural Property—experience a Meiji-era penal facility. An Abashiri winter staple and popular history content.",
     "driftTitle": "Okhotsk Drift Ice Museum",
     "driftLead": "Science and hands-on drift-ice exhibits—the core of the Big Three, giving context to what you see from Mt. Tento.",
     "peoplesTitle": "Northern Peoples Museum",
@@ -287,7 +287,11 @@
     "phoneOffSeason": "TEL 0152-45-5655 (off-season · management office)",
     "operator": "Operator: Nissenren Okhotsk Abashiri",
     "parking": "428 parking spaces · free",
-    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>網走市<rt>Abashiri</rt></ruby></span><span class=\"place-unit\"><ruby>字呼人28-3<rt>Yobito 28-3</rt></ruby></span>"
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>網走市<rt>Abashiri</rt></ruby></span><span class=\"place-unit\"><ruby>字呼人28-3<rt>Yobito 28-3</rt></ruby></span>",
+    "rentacarEyebrow": "Abashiri region",
+    "rentacarLink": "Book a rental car at Memanbetsu Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Abashiri, Akan, and Shiretoko drives"
   },
   "footer": {
     "copyright": "© Abashiri Lake View Ski Area",

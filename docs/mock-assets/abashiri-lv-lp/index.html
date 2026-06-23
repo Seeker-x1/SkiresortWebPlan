@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="mock.css" />
   <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
 </head>
 <body>
   <header class="site-header">
@@ -217,7 +218,7 @@
             <p class="eyebrow" data-i18n="pass.eyebrow">Local Pricing Protected</p>
             <h2 id="pass-heading" class="heading-lg" data-i18n-html="pass.title">地元 ¥2,940/日、<br />2時間 ¥1,200——据え置き。</h2>
             <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="pass.lead">
-              網走市民・近隣向け1日券¥2,940、2時間券¥1,200を維持——地元の日常利用を守ることが最優先。遠方・インバウンド向けの収益はWinter Iron Activity PassやNight Snow Loungeなど来場者パッケージで延伸する二重料金モデル（LP戦略案）。
+              網走市民・近隣向け1日券¥2,940、2時間券¥1,200を維持——地元の日常利用を守ることが最優先。遠方・の収益はWinter Iron Activity PassやNight Snow Loungeなど来場者パッケージで延伸する二重料金モデル（LP戦略案）。
             </p>
             <div class="price-duet">
               <div class="price-card">
@@ -290,7 +291,7 @@
               地元料金は触らず、来場者の「オホーツク1日」を商品化——ワカサギ×スキーの鉄板パスが差別化の核。
             </p>
             <div class="notice-box">
-              <strong data-i18n="package.noticeTitle">パッケージ設計：</strong><span data-i18n="package.noticeBody">ワカサギ釣りはLake Abashiri定番体験——午前完了後、午後2時間滑走＋レンタル返却までノンストップ。家族・インバウンド向け半日〜1日モデルの基軸。</span>
+              <strong data-i18n="package.noticeTitle">パッケージ設計：</strong><span data-i18n="package.noticeBody">ワカサギ釣りはLake Abashiri定番体験——午前完了後、午後2時間滑走＋レンタル返却までノンストップ。家族・半日〜1日モデルの基軸。</span>
             </div>
             <a href="#" class="btn btn-gold" style="margin-top:1.5rem" data-i18n="package.cta">Winter Iron Pass を予約</a>
           </div>
@@ -411,7 +412,7 @@
             <p class="eyebrow" data-i18n="board.eyebrow">Snowboard Debut</p>
             <h2 id="board-heading" class="heading-lg" data-i18n-html="board.title">ボードデビュー、<br />¥1,000/時間。</h2>
             <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="board.lead">
-              6コースの緩斜面と非混雑——網走レークビューを「はじめてのスノーボード」目的地に。ボードレンタル¥1,000/時間、Winter Iron Passには手ぶらセットを同梱。家族・カップル・インバウンド初級者の獲得軸（LP案）。
+              6コースの緩斜面と非混雑——網走レークビューを「はじめてのスノーボード」目的地に。ボードレンタル¥1,000/時間、Winter Iron Passには手ぶらセットを同梱。家族・カップル・初めてのゲストの獲得軸（LP案）。
             </p>
             <div class="price-card" style="margin-top:1.5rem; max-width:18rem">
               <p class="price-card__label">Rental</p>
@@ -456,7 +457,7 @@
               <div class="ecosystem-block">
                 <h3 data-i18n="ecosystem.prisonTitle">博物館網走監獄</h3>
                 <p class="lead-whisper" style="margin-top:0.75rem" data-i18n="ecosystem.prisonLead">
-                  国指定重要文化財——明治期の実刑施設を体感。冬の網走定番、インバウンドにも人気の歴史コンテンツ。
+                  国指定重要文化財——明治期の実刑施設を体感。冬の網走定番、国内外でも人気の歴史コンテンツ。
                 </p>
               </div>
               <div class="ecosystem-block">
@@ -629,6 +630,29 @@
               <span data-i18n="common.googleMap">Google Mapで開く</span>
             </a>
             <a href="tel:0152482550" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">網走圏</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">女満別空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">網走・阿寒・知床方面の周遊向け</p>
+            </div>
           </div>
         </div>
       </div>
@@ -649,6 +673,7 @@
     </div>
   </footer>
 
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
   <script src="../_shared/mock-i18n.js"></script>
   <script>
     document.querySelectorAll(".guide-trigger").forEach((btn) => {

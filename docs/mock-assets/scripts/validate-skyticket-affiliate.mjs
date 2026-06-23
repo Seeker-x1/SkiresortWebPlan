@@ -3,7 +3,7 @@
  * Keeps Skyticket rentacar affiliate config in sync across mock LPs and resort web apps.
  * Usage: node docs/mock-assets/scripts/validate-skyticket-affiliate.mjs
  */
-import { readFileSync } from "fs";
+import { readFileSync, readdirSync, statSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -38,7 +38,11 @@ const registry = loadJson(join(mockRoot, "registry.json"));
 const config = loadJson(CONFIG_PATHS[0]);
 for (const resort of registry.resorts) {
   const dest = resort.affiliates?.rentacar;
-  if (!dest) continue;
+  if (!dest) {
+    failed = true;
+    console.error(`✗ registry ${resort.id}: missing affiliates.rentacar`);
+    continue;
+  }
   if (!config.destinations?.[dest]) {
     failed = true;
     console.error(
@@ -47,13 +51,19 @@ for (const resort of registry.resorts) {
   }
 }
 
-for (const dir of ["sapporo-kokusai-lp"]) {
+for (const dir of readdirSync(mockRoot).filter((n) => n.endsWith("-lp"))) {
   const htmlPath = join(mockRoot, dir, "index.html");
+  if (!statSync(htmlPath).isFile()) continue;
   const html = readFileSync(htmlPath, "utf8");
+  const resortId = html.match(/data-mock-resort="([^"]+)"/)?.[1];
+  const resort = registry.resorts.find((r) => r.id === resortId);
+  if (!resort?.affiliates?.rentacar) continue;
+
   const checks = [
     ["skyticket-rentacar.js", /skyticket-rentacar\.js/],
     ["rentacar-link.css", /affiliates\/rentacar-link\.css/],
     ["data-skyticket-rentacar-link", /data-skyticket-rentacar-link/],
+    ["data-skyticket-rentacar-block", /data-skyticket-rentacar-block/],
   ];
   for (const [name, re] of checks) {
     if (!re.test(html)) {

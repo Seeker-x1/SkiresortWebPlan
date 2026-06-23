@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="mock.css" />
   <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
 </head>
 <body>
   <header class="site-header">
@@ -193,7 +194,7 @@
             <p class="eyebrow" data-i18n="rental.eyebrow">Book &amp; Go</p>
             <h2 id="rental-heading" class="heading-lg" data-i18n-html="rental.title">手ぶらで、<br />絶景へ。</h2>
             <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="rental.lead">
-              知床観光のついでに寄るライト観光層・インバウンド向け。スキー・スノーボードセット、ウェア上下をWeb予約。4時間券（¥2,200）や日券（¥3,200）とも組み合わせ可能。
+              知床観光のついでに寄るライト観光層・。スキー・スノーボードセット、ウェア上下をWeb予約。4時間券（¥2,200）や日券（¥3,200）とも組み合わせ可能。
             </p>
             <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="rental.whisper">
               ロッジでの対面確認負荷を軽減し、利益率の高いレンタル収益を最大化——売上倍増の核心施策。
@@ -289,7 +290,7 @@
             </button>
             <div class="guide-panel" id="panel-rental-guide" hidden>
               <p class="lead" data-i18n="guides.rentalGuide.body">
-                サイズ入力→時間券選択→クレジット決済。スキー・スノーボード・ウェアの在庫確認までWeb完結。インバウンド向け英語対応、スマホ最適化。
+                サイズ入力→時間券選択→クレジット決済。スキー・スノーボード・ウェアの在庫確認までWeb完結。英語対応、スマホ最適化。
               </p>
               <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
             </div>
@@ -338,6 +339,29 @@
               <span data-i18n="common.googleMap">Google Mapで開く</span>
             </a>
             <a href="tel:0152282225" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">知床圏</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">女満別空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">斜里・知床方面の周遊向け</p>
+            </div>
           </div>
         </div>
       </div>
@@ -358,6 +382,7 @@
     </div>
   </footer>
 
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
   <script src="../_shared/mock-i18n.js"></script>
   <script>
     document.querySelectorAll(".guide-trigger").forEach((btn) => {

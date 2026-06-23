@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="mock.css" />
   <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
 </head>
 <body>
   <header class="site-header">
@@ -199,7 +200,7 @@
             <p class="eyebrow" data-i18n="pass.eyebrow">Dual Pricing</p>
             <h2 id="pass-heading" class="heading-lg" data-i18n-html="pass.title">地元 ¥1,500、<br />Visitor ¥4,500。</h2>
             <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="pass.lead">
-              町民・地元向け日券¥1,500を維持しつつ、インバウンド・リゾート宿泊者向けにKutchan Visitor Pass（¥4,500）を設定——ニセコ周辺の相場に対する戦略的な二重料金モデル（LP案）。
+              町民・地元向け日券¥1,500を維持しつつ、リゾート宿泊者向けにKutchan Visitor Pass（¥4,500）を設定——ニセコ周辺の相場に対する戦略的な二重料金モデル（LP案）。
             </p>
             <div class="price-duet">
               <div class="price-card">
@@ -312,7 +313,7 @@
             <p class="eyebrow" data-i18n="family.eyebrow">Family First</p>
             <h2 id="family-heading" class="heading-lg" data-i18n-html="family.title">ニセコで一番、<br />ファミリーにやさしい丘。</h2>
             <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="family.lead">
-              そり専用ゾーン、コンパクトな2コース、リフト待ちなし——小さな子ども連れでも一日ストレスなく過ごせる。地元ファミリーの「日常のゲレンデ」として、インバウンドのファミリー層も受け入れる。
+              そり専用ゾーン、コンパクトな2コース、リフト待ちなし——小さな子ども連れでも一日ストレスなく過ごせる。地元ファミリーの「日常のゲレンデ」として、ファミリー層も受け入れる。
             </p>
             <ul class="spec-list">
               <li class="spec-tag" data-i18n="family.specs.0">そり専用区画</li>
@@ -441,6 +442,29 @@
               <span data-i18n="common.googleMap">Google Mapで開く</span>
             </a>
             <a href="tel:0136232743" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">ニセコ圏</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">新千歳空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">倶知安・ニセコ・小樽周遊向け</p>
+            </div>
           </div>
         </div>
       </div>
@@ -461,6 +485,7 @@
     </div>
   </footer>
 
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
   <script src="../_shared/mock-i18n.js"></script>
   <script>
     document.querySelectorAll(".guide-trigger").forEach((btn) => {

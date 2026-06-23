@@ -102,7 +102,7 @@
   "pass": {
     "eyebrow": "Dual Pricing",
     "title": "Villager AM ¥1,300,<br />Visitor ¥3,500+.",
-    "lead": "Keep the villager morning ticket at ¥1,300 while offering inbound and distant visitors the Otoifuji Visitor Pass (¥3,500–4,500)—a dual-pricing model that protects everyday local use and lifts Japow-experience ARPU (LP concept).",
+    "lead": "Keep the villager morning ticket at ¥1,300 while offering and distant visitors the Otoifuji Visitor Pass (¥3,500–4,500)—a dual-pricing model that protects everyday local use and lifts Japow-experience ARPU (LP concept).",
     "localPrice": "Villager morning ticket ¥1,300",
     "visitorPrice": "Visitor Pass ¥3,500–4,500",
     "specs": [
@@ -221,7 +221,11 @@
     "note": "About 15 minutes on foot from JR Otoineppu Station · along National Route 40",
     "phone": "TEL 01656-5-3305 (ski area · in season)",
     "phoneOffSeason": "TEL 01656-5-3313 (off-season)",
-    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>中川郡<rt>Nakagawa-gun</rt></ruby></span><span class=\"place-unit\"><ruby>音威子府村<rt>Otoifuke</rt></ruby></span><span class=\"place-unit\"><ruby>字音威子府200-6<rt>Otoifuke 200-6</rt></ruby></span>"
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>中川郡<rt>Nakagawa-gun</rt></ruby></span><span class=\"place-unit\"><ruby>音威子府村<rt>Otoifuke</rt></ruby></span><span class=\"place-unit\"><ruby>字音威子府200-6<rt>Otoifuke 200-6</rt></ruby></span>",
+    "rentacarEyebrow": "Soya region",
+    "rentacarLink": "Book a rental car at Asahikawa Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Otoineppu and Kitami long drives"
   },
   "footer": {
     "copyright": "© Otoifuji Ski Area",

@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="mock.css" />
   <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
 </head>
 <body>
   <header class="site-header">
@@ -212,7 +213,7 @@
             <p class="eyebrow" data-i18n="recovery.eyebrow">Recovery</p>
             <h2 id="handfree-heading" class="heading-lg" data-i18n-html="recovery.title">滑ったあと、<br />緑の湯へ。</h2>
             <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="recovery.lead">
-              スキー場に隣接する日帰り入浴施設「緑の湯」。Train · Powder · Onsen——3つを徒歩圏で完結する、インバウンド向けパッケージの核です。
+              スキー場に隣接する日帰り入浴施設「緑の湯」。Train · Powder · Onsen——3つを徒歩圏で完結する、パッケージの核です。
             </p>
             <div class="notice-box">
               <strong data-i18n="recovery.noticeTitle">手ぶら来場について：</strong><span data-i18n="recovery.noticeBody">ゲレンデ内レンタルはありません。ヤマト運輸「スキー宅急便」や近隣宿泊施設との用具デリバリー提携など、民間連携による手ぶらプランをWebで案内する想定です。</span>
@@ -336,6 +337,29 @@
               <span data-i18n="common.googleMap">Google Mapで開く</span>
             </a>
             <a href="tel:0152275512" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">知床圏</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">女満別空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">緑駅・知床サロマ方面へ</p>
+            </div>
           </div>
         </div>
       </div>
@@ -356,6 +380,7 @@
     </div>
   </footer>
 
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
   <script src="../_shared/mock-i18n.js"></script>
   <script>
     document.querySelectorAll(".guide-trigger").forEach((btn) => {

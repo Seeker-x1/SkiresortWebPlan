@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="mock.css" />
   <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
 </head>
 <body>
   <header class="site-header">
@@ -181,7 +182,7 @@
           <article class="highlight-secondary">
             <h3 data-i18n="highlights.secondary.title">ほのかで24時間リカバリー</h3>
             <p class="lead-whisper stack-sm" data-i18n="highlights.secondary.lead">
-              手稲スキー場直下の「ていね温泉 ほのか」——岩盤浴・食事処付きのスーパー銭湯文化を、インバウンドFITがリーズナブルに体験できるトランジット拠点。
+              手稲スキー場直下の「ていね温泉 ほのか」——岩盤浴・食事処付きのスーパー銭湯文化を、個人旅行がリーズナブルに体験できるトランジット拠点。
             </p>
             <a href="nearby-onsen.html" class="btn btn-ghost stack-md" data-i18n="highlights.secondary.cta">厳選温泉4選</a>
           </article>
@@ -259,7 +260,7 @@
         <p class="eyebrow" data-i18n="journey.eyebrow">回遊プラン</p>
         <h2 id="journey-heading" class="heading-lg" data-i18n-html="journey.title">3日間、広域コリドーを<br />自走する。</h2>
         <p class="lead lead-constrained-xl stack-sm" data-i18n="journey.lead">
-          インバウンド個人手配旅行者向け——スノー＆ウェルネス・リゾートパッケージのモデルコース。
+          自分で組み立てる——スノー＆ウェルネス・リゾートパッケージのモデルコース。
         </p>
         <span class="secret-badge" data-i18n="journey.badge">スノー＆カルチャー · FIT</span>
 
@@ -321,6 +322,29 @@
               <span data-i18n="common.googleMap">Google Mapで開く</span>
             </a>
             <a href="tel:0116812111" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">札幌圏</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">新千歳空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">手稲・札幌市内・小樽周遊向け</p>
+            </div>
           </div>
         </div>
       </div>
@@ -341,6 +365,7 @@
     </div>
   </footer>
 
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
   <script src="../_shared/mock-i18n.js"></script>
 </body>
 </html>

@@ -238,7 +238,11 @@
     "line": "北海道勇払郡占冠村字中央",
     "note": "国道237号からの狭隘堤防道路 · 占冠駅から約3km",
     "phone": "TEL 0167-56-2746（スキー場 · シーズン中）",
-    "places": ""
+    "places": "",
+    "rentacarEyebrow": "道央アクセス",
+    "rentacarLink": "新千歳空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "占冠・トマム・富良野周遊向け"
   },
   "footer": {
     "copyright": "© 国設占冠中央スキー場",

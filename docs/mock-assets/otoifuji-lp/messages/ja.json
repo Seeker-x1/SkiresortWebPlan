@@ -102,7 +102,7 @@
   "pass": {
     "eyebrow": "Dual Pricing",
     "title": "村民朝 ¥1,300、<br />Visitor ¥3,500〜。",
-    "lead": "村民・地元向け朝券¥1,300を維持しつつ、インバウンド・遠方来場者向けにOtoifuji Visitor Pass（¥3,500〜4,500）を設定——最小村の日常利用を守りながら、Japow体験のARPUを引き上げる二重料金モデル（LP案）。",
+    "lead": "村民・地元向け朝券¥1,300を維持しつつ、遠方来場者向けにOtoifuji Visitor Pass（¥3,500〜4,500）を設定——最小村の日常利用を守りながら、Japow体験のARPUを引き上げる二重料金モデル（LP案）。",
     "localPrice": "村民朝券 ¥1,300",
     "visitorPrice": "Visitor Pass ¥3,500〜4,500",
     "specs": [
@@ -221,7 +221,11 @@
     "note": "JR音威子府駅徒歩約15分 · 国道40号線沿い",
     "phone": "TEL 01656-5-3305（スキー場 · シーズン中）",
     "phoneOffSeason": "TEL 01656-5-3313（オフシーズン）",
-    "places": ""
+    "places": "",
+    "rentacarEyebrow": "宗谷圏",
+    "rentacarLink": "旭川空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "音威子府・北見方面のロングドライブ向け"
   },
   "footer": {
     "copyright": "© 音威富士スキー場",

@@ -80,7 +80,11 @@
     "line": "Hidarikumi 106-5, Sichinohe, Kamikita-gun, Aomori",
     "note": "About 10 minutes by taxi from Tohoku Shinkansen Sichinohe-Towada Station (approx.)",
     "phone": "TEL 0176-62-5612",
-    "places": "<span class=\"place-unit\"><ruby>青森県<rt>Aomori</rt></ruby></span><span class=\"place-unit\"><ruby>上北郡<rt>Kamikita-gun</rt></ruby></span><span class=\"place-unit\"><ruby>七戸町<rt>Sichinohe</rt></ruby></span><span class=\"place-unit\"><ruby>字左組106-5<rt>Hidarikumi 106-5</rt></ruby></span>"
+    "places": "<span class=\"place-unit\"><ruby>青森県<rt>Aomori</rt></ruby></span><span class=\"place-unit\"><ruby>上北郡<rt>Kamikita-gun</rt></ruby></span><span class=\"place-unit\"><ruby>七戸町<rt>Sichinohe</rt></ruby></span><span class=\"place-unit\"><ruby>字左組106-5<rt>Hidarikumi 106-5</rt></ruby></span>",
+    "rentacarEyebrow": "Shinkansen + rental car",
+    "rentacarLink": "Book a rental car at Shichinohe-Towada Station",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Towada Lake, Hakkoda, and Shichinohe loops"
   },
   "footer": {
     "copyright": "© Sichinohe Town Ski Area",
