@@ -1,6 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
-  <title id="title">Ï*°ëá</title>
-  <desc id="desc">Ï*VTnß‹hØŸnıß’hşW_'öğ(¤é¹È</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" aria-label="Suwa lake food and lodge lunch">
   <rect width="1200" height="1500" fill="#fcf6ef"/>
   <circle cx="932" cy="250" r="220" fill="#d8edf9"/>
   <ellipse cx="932" cy="308" rx="286" ry="112" fill="#b7d7ea"/>
@@ -11,6 +9,6 @@
   <path d="M734 932 C804 866 900 868 966 930 C1002 964 1010 1038 954 1078 C876 1132 756 1100 726 1020 C716 992 718 956 734 932 Z" fill="#6f4b2e"/>
   <rect x="268" y="620" width="224" height="48" rx="24" fill="#dfc09a"/>
   <rect x="642" y="636" width="270" height="44" rx="22" fill="#ccb38f"/>
-  <text x="108" y="150" font-family="Noto Sans JP, sans-serif" font-size="48" font-weight="700" fill="#5a4428">Ï*VTnT{FsTo“</text>
-  <text x="108" y="206" font-family="Noto Sans JP, sans-serif" font-size="24" fill="#7a6141">FjN]p0RêJsnà’0ßnßgtH‹</text>
+  <text x="108" y="150" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#5a4428">SUWA LAKE FOOD</text>
+  <text x="108" y="206" font-family="Arial, sans-serif" font-size="24" fill="#7a6141">Lodge lunch and lakeside dining</text>
 </svg>
