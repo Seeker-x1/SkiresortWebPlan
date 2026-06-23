@@ -304,6 +304,29 @@
       "affiliates": {
         "rentacar": "chitose_international_airport"
       }
+    },
+    {
+      "id": "pippu",
+      "slug": "pippu-lp",
+      "name": {
+        "ja": "ぴっぷスキー場",
+        "en": "Pippu Ski Area"
+      },
+      "region": {
+        "ja": "北海道上川郡比布町",
+        "en": "Pippu, Hokkaido"
+      },
+      "strategy": {
+        "ja": "雪・食・温泉の隠れ家",
+        "en": "Snow · Food · Onsen Hideaway"
+      },
+      "guidePath": "/pippu/",
+      "guideUrl": "https://guides.japowserch.com/pippu/",
+      "japowResortId": 51,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "asahikawa_airport"
+      }
     }
   ],
   "guides": {

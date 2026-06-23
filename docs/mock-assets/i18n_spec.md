@@ -94,7 +94,10 @@ npx serve docs/mock-assets -p 3456
 ```bash
 node docs/mock-assets/scripts/validate-mock-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
+node docs/mock-assets/scripts/validate-mock-lp-copy.mjs
 ```
+
+L3 評価基準（LP-Q / LP-V）: [lp_mock_requirements.md](./lp_mock_requirements.md) — **LP-Q7 コピートーン必須**
 
 ## 本番テンプレとの関係
 

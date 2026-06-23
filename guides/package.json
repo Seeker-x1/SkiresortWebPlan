@@ -3,6 +3,6 @@
   "private": true,
   "scripts": {
     "dev": "npx --yes serve public -p 3456",
-    "validate": "node ../docs/mock-assets/scripts/validate-mock-i18n.mjs"
+    "validate": "node ../docs/mock-assets/scripts/validate-mock-i18n.mjs && node ../docs/mock-assets/scripts/validate-mock-html-i18n.mjs && node ../docs/mock-assets/scripts/validate-mock-lp-shell.mjs && node ../docs/mock-assets/scripts/validate-mock-lp-copy.mjs"
   }
 }

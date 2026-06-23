@@ -32,6 +32,17 @@
   outline-offset: 2px;
 }
 
+/* LP template gate — shared focus for nav / CTA / tiles */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent, #3d5a80);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
 /* EN address: plain English line + administrative-unit place row (ja order) */
 html[lang="en"] .access-places {
   display: flex;

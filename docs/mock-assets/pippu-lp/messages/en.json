@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "Pippu Ski Area",
+    "description": "Dry powder under the Daisetsu range—lift tickets bundled with bath access, away from mega-resort crowds."
+  },
+  "logo": "Pippu Ski Area",
+  "nav": {
+    "bundle": "Tickets",
+    "wellness": "After ski"
+  },
+  "hero": {
+    "eyebrow": "Pippu, Kamikawa, Hokkaido · town of ski and strawberries",
+    "title": "Pippu<br />Ski Area",
+    "tagline": "Dry powder under the Daisetsu range—lift tickets bundled with bath access, away from mega-resort crowds.",
+    "badgePrice": "Day pass ¥3,800 (bath incl.)",
+    "badgeNight": "Night ¥1,200",
+    "badgeStrawberry": "9 courses",
+    "ctaBundle": "Tickets & bundle",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Official site & live camera network",
+    "updatedAt": "Updated Dec 13, 9:00",
+    "lift1": {
+      "label": "Pair lifts 2A·2B",
+      "value": "Operating",
+      "note": "617 m · main access"
+    },
+    "lift2": {
+      "label": "Lift 6 pair",
+      "value": "Operating",
+      "note": "1,181 m · long runs"
+    },
+    "snow": {
+      "label": "Snow quality",
+      "value": "Ultra-dry",
+      "note": "Below −10°C · uncrowded"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Until 20:30",
+      "note": "Mid-Dec–late Feb · Kappa & Silver"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Local Hideaway",
+    "title": "Dry cold powder,<br />empty runs.",
+    "lead": "A major local hill overlooking the Kamikawa basin. Inland cold down to −12°C at the summit brings silky powder without lift-line battles—the \"unspoiled\" experience mega resorts can't sell, for a ¥3,800 day pass.",
+    "specs": [
+      "9 courses · 11,700 m total",
+      "Summit 580 m · 330 m vertical",
+      "Lift 3 retired (asset-light ops)"
+    ],
+    "noticeTitle": "Operational transparency:",
+    "noticeBody": "Own domain (pippu.ski) and live cameras for snow and road conditions—rare digital openness for a town-run area. Lift 3 was retired after 2023–24 to cut maintenance and sustain long-term operations.",
+    "ctaBundle": "Tickets & bath bundle",
+    "imgAlt": "Kamikawa basin under the Daisetsu range—quiet powder runs"
+  },
+  "paths": {
+    "bundle": {
+      "label": "Tickets",
+      "title": "Lift + bath bundle"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Asahikawa hub"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Lifts · snow · night"
+    },
+    "food": {
+      "label": "Food",
+      "title": "4 slope-side picks"
+    },
+    "onsen": {
+      "label": "Onsen",
+      "title": "Yu-yu Pippu"
+    },
+    "stay": {
+      "label": "Stay",
+      "title": "Pippu vs Asahikawa hub"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Nine courses, clear zones",
+    "primary": {
+      "title": "Strawberry 2,200 m × expert 36°",
+      "lead": "30% beginner, 50% intermediate, 20% advanced. Family 2,000 m runs and the expert \"Deep Snow Veteran\" at 36° max—separate flow lines so every level skis without getting in each other's way.",
+      "cta": "Resort map",
+      "imgAlt": "Varied courses across the hill—Daisetsu panorama"
+    },
+    "secondary": {
+      "title": "Three ski schools",
+      "lead": "SAJ-certified Pippu Ski School, JSBA snowboard school, and a mogul specialty school (classroom + on-snow). Help groom the course and get a discount—a design that builds ownership of the hill.",
+      "cta": "School guide"
+    }
+  },
+  "bundle": {
+    "eyebrow": "Bundle",
+    "title": "Lift tickets<br />include the bath.",
+    "lead": "Day and night tickets include entry to adjacent Yu-yu Pippu (normally ¥600). Effective lift price ~¥3,200—about one-third of nearby mega resorts. After skiing, bath → dining and local products keep spending inside Pippu town.",
+    "specs": [
+      "Adult season pass ¥45,000",
+      "Family pack ¥4,500",
+      "Full rental ~¥13,000/day"
+    ],
+    "cta": "See price list",
+    "imgAlt": "Yu-yu Pippu—Komeiseki bath and lodging beside the slopes"
+  },
+  "wellness": {
+    "eyebrow": "After Ski",
+    "title": "Then TKG<br />and karaage.",
+    "lead": "Hokurei Lodge in the center house serves legendary karaage bowls and miso ramen beyond typical slope food. Next door, Yu-yu Pippu's Komeiseki bath eases sore legs; morning brings \"ultimate TKG\"—Kappa eggs, Yukime rice, Pippu scallion soy.",
+    "leadStation": "Pipicafe at JR Pippu Station serves TKG (¥520) for the ride home.",
+    "cta": "Food & onsen guide",
+    "imgAlt": "Yu-yu Pippu breakfast buffet—farm-direct egg over rice"
+  },
+  "tour": {
+    "eyebrow": "2-Day Model",
+    "title": "Asahikawa hub,<br />Pippu payoff.",
+    "lead": "Friday evening in Asahikawa for city food. Saturday bus to Pippu, ski, bundled bath, stay at Yu-yu Pippu, Sunday TKG breakfast—a trip that beats mega-resort price for experience quality.",
+    "badge": "SNOW · FOOD · ONSEN HIDEAWAY",
+    "steps": {
+      "01": {
+        "title": "Asahikawa hotel",
+        "body": "OMO7 Asahikawa, Dormy Inn—station-front city dining"
+      },
+      "02": {
+        "title": "Dohoku Bus direct",
+        "body": "Five daily runs from Asahikawa Station · ~1 hour"
+      },
+      "03": {
+        "title": "Pippu Ski Area",
+        "body": "¥3,800 day pass · lunch at Hokurei Lodge"
+      },
+      "04": {
+        "title": "Yu-yu Pippu",
+        "body": "Bundled bath · lodge from ¥9,500 half-board"
+      },
+      "05": {
+        "title": "Morning TKG",
+        "body": "Terroir breakfast, then midday flight home"
+      }
+    }
+  },
+  "guides": {
+    "ecosystem": {
+      "title": "Bath bundle & local economy",
+      "body": "Bundling onsen with lift tickets returns spending to Kappa eggs, scallion soy, and strawberry farms—profit stays local while avoiding overtourism. Season pass ¥45,000; buy one adult season pass and all elementary kids in the household ski free."
+    },
+    "access": {
+      "title": "Asahikawa hub & last mile",
+      "body": "Asahikawa Airport to station ~40 min; bus to the area ~1 hour. Free shuttle from JR Pippu Station (3 round trips daily)—hands-free without a rental car. Departures 08:50, 11:00, 13:50 from the station."
+    },
+    "green": {
+      "title": "Strawberries in summer, ski in winter",
+      "body": "Mid-June–early July strawberry picking at five farms. Green Park Pippu camping and park golf—winter families get a reason to return in summer.",
+      "hashtags": [
+        "#PippuPowder",
+        "#UltimateTKG",
+        "#StrawberryTown"
+      ]
+    }
+  },
+  "access": {
+    "postal": "078-0327, Japan",
+    "line": "17 Kita-7-sen, Pippu, Kamikawa-gun, Hokkaido",
+    "note": "Asahikawa Airport → station ~40 min · Dohoku Bus from station ~1 hr (5/day) · free shuttle from JR Pippu · parking available",
+    "phone": "TEL 0166-85-3056 (Pippu Ski Area)",
+    "phoneBus": "Dohoku Bus · shuttle times on official site",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>上川郡<rt>Kamikawa-gun</rt></ruby></span><span class=\"place-unit\"><ruby>比布町<rt>Pippu</rt></ruby></span><span class=\"place-unit\"><ruby>北7線<rt>Kita-7-sen</rt></ruby></span><span class=\"place-unit\">17</span>",
+    "rentacarEyebrow": "Kamikawa · Asahikawa",
+    "rentacarLink": "Book a rental car at Asahikawa Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "Pippu & Asahikawa drives · ~40–50 min one way"
+  },
+  "footer": {
+    "copyright": "© Pippu Ski Area — LP mock",
+    "location": "078-0327 · 17 Kita-7-sen, Pippu, Kamikawa-gun, Hokkaido"
+  },
+  "nearbyFood": {
+    "backLink": "Back to Pippu LP",
+    "hero": {
+      "eyebrow": "Food · Slope",
+      "title": "Four tastes<br />beyond slope food.",
+      "tagline": "From karaage bowls to ultimate TKG—Pippu terroir"
+    },
+    "notice": "Hours and menus are on each venue's official site.",
+    "introTitle": "Why food drives the trip",
+    "introLead": "Quality beyond typical ski cafeterias builds repeat visits and word of mouth.",
+    "introBody": "On the hill, after skiing, and at the station—four picks along your route.",
+    "spotsEyebrow": "4 picks",
+    "spotsTitle": "Slope food & Pippu gourmet",
+    "spotsLead": "From the center house into town, in route order.",
+    "spots": {
+      "hokurei": {
+        "tag": "On-hill · karaage · miso ramen",
+        "title": "Hokurei Lodge (Skiip)",
+        "lead": "A local institution for decades. Juicy karaage bowls, house-miso ramen (¥1,000), and agataiyaki pancakes (¥120)—skier favorites."
+      },
+      "yuyu": {
+        "tag": "Lodge · breakfast buffet",
+        "title": "Yu-yu Pippu restaurant",
+        "lead": "Half-board breakfast with unlimited \"ultimate TKG\"—Kappa eggs, Kamikawa rice, Pippu scallion soy."
+      },
+      "pipicafe": {
+        "tag": "Station · TKG · ¥520",
+        "title": "Pipicafe Pippu Station",
+        "lead": "TKG on the way home—terroir in the JR Pippu Station building."
+      },
+      "otokoyama": {
+        "tag": "Brewery · Otokoyama · town",
+        "title": "Otokoyama (Pippu)",
+        "lead": "Pair skiing with a sake brewery visit—taste Pippu's brewing tradition."
+      }
+    }
+  },
+  "nearbyOnsen": {
+    "backLink": "Back to Pippu LP",
+    "hero": {
+      "eyebrow": "Onsen · Recovery",
+      "title": "Komeiseki bath,<br />ease the legs.",
+      "tagline": "Where bundled bath tickets go—Yu-yu Pippu"
+    },
+    "notice": "Fees and hours are on each facility's official site.",
+    "introTitle": "Onsen at the core of the bundle",
+    "introLead": "Day and night tickets include bath entry—the après route is designed from the start.",
+    "introBody": "Yu-yu Pippu beside the slopes, plus Asahikawa city baths for hub-stay plans.",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "Two onsen picks",
+    "spotsLead": "Recovery after skiing and lodging bases.",
+    "spots": {
+      "yuyu": {
+        "tag": "Adjacent · Komeiseki · 74 rooms",
+        "title": "Yu-yu Pippu",
+        "lead": "Quasi-drug certified Komeiseki mineral bath. Five-minute walk from slopes; half-board from ¥9,500."
+      },
+      "kamoi": {
+        "tag": "Asahikawa · sauna · rooftop open-air",
+        "title": "Kamoi no Yu Dormy Inn Asahikawa",
+        "lead": "Hub-stay bathing—sauna and open-air bath, then bus to Pippu next morning."
+      }
+    }
+  },
+  "corridorStay": {
+    "backLink": "Back to Pippu LP",
+    "hero": {
+      "eyebrow": "Stay · Strategy",
+      "title": "Stay in Pippu,<br />or hub in Asahikawa.",
+      "tagline": "First-track vs city-night two strategies"
+    },
+    "notice": "Rooms, rates, and shuttles are on each property's booking site.",
+    "introTitle": "Two base camps",
+    "introLead": "Sleep at Yu-yu Pippu for dawn powder, or stay in Asahikawa for city food and bus commute—choose by what your trip is about.",
+    "spotsEyebrow": "4 picks",
+    "spotsTitle": "Four lodging picks",
+    "spotsLead": "Pippu town vs Asahikawa hub.",
+    "regions": {
+      "pippu": "Pippu town (slope-adjacent)",
+      "asahikawa": "Asahikawa city (regional hub)"
+    },
+    "spots": {
+      "yuyu": {
+        "tag": "5 min walk · half-board from ¥9,500 · 16-tatami",
+        "title": "Yu-yu Pippu",
+        "lead": "Closest to the hill. Maximize the bath bundle and morning TKG—built for first-track skiers."
+      },
+      "mount-city": {
+        "tag": "Town · 140 beds",
+        "title": "Mount City",
+        "lead": "In-town lodging—an alternative to Yu-yu Pippu within Pippu."
+      },
+      "omo7": {
+        "tag": "Asahikawa · Hoshino · breakfast buffet",
+        "title": "Hoshino Resorts OMO7 Asahikawa",
+        "lead": "Flagship hub stay—Asahikawa ramen and Genghis Khan at night, Dohoku Bus to Pippu in the morning."
+      },
+      "dormy": {
+        "tag": "Asahikawa · near station · sauna",
+        "title": "Kamoi no Yu Dormy Inn Asahikawa",
+        "lead": "Low friction near the station. Strong choice for bathing before the trip home."
+      }
+    }
+  }
+}
