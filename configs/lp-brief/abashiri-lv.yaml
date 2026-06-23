@@ -1,0 +1,74 @@
+resortId: abashiri-lv
+schemaVersion: "2026-06-23"
+
+name:
+  ja: 網走レークビュースキー場
+  en: Abashiri Lake View Ski Area
+region:
+  ja: 北海道網走市
+  en: Abashiri, Hokkaido
+japowResortId: 58
+
+strategy:
+  ja: 湖と海の絶景・温泉と蟹
+  en: Lake & Sea Panorama · Onsen & Crab
+archetype: local-value
+# 注: 既存 abashiri-lv-lp は tourism-hub 型の戦略モック（Winter Iron Pass 等）。
+# 本レポートは現状分析。LP 差し替え時は gokazan-lp / pippu-lp を複製元候補に。
+
+audience: both
+
+hero:
+  tagline:
+    ja: 網走湖とオホーツク海を眼下に——極寒の粉雪と、驚きの低価格。
+    en: Lake Abashiri and the Okhotsk Sea below—Okhotsk powder at strikingly low prices.
+  badges: [panorama, value, night]
+
+pillars:
+  - id: panorama
+    hook: { ja: 湖・能取湖・オホーツク海, en: Lakes & Okhotsk Sea panorama }
+  - id: value
+    hook: { ja: 1日券¥2,940・水曜600円, en: Day pass ¥2,940 · Wed 2h ¥600 }
+  - id: wellness
+    hook: { ja: 蟹・知床牛・湖畔温泉, en: Crab · Shiretoko beef · lakeside onsen }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+  - corridor-stay
+
+facts:
+  operator: 株式会社日専連オホーツク網走（指定管理者）
+  digital: 独自ドメインなし・網走市役所ポータル内（積雪APIなし）
+  lift: ペアリフト1基 · 900m · 毎時1,200人
+  courses: 6（第6はリフト外・夏は花天都）
+  season: 1月中旬〜3月中旬（天候により変動）
+  hours:
+    weekday: "10:00–21:00（18:00以降ナイター）"
+    weekend: "9:00–17:00"
+  parking: 山麓約150台 + 山頂約278台 · 24時間無料
+  access:
+    station: JR網走駅から約6km · バス・タクシー約10分
+    walk: 網走湖荘バス停から徒歩約900m（12分）
+
+pricing:
+  liftDayAdult: 2940
+  liftDayChild: 1680
+  familyFourHour: 2200
+  wednesdayTwoHour: 600
+  rentalSkiAdult: 2500
+  rentalSkiChild: 2000
+  rentalBoardHour: 1000
+  rentalWearAdult: 3000
+  rentalWearChild: 1500
+  sled: 300
+
+map:
+  sources: ["網走市公式ポータル", "現状分析レポート 2026-06"]
+  heroImage: images/maps/abashiri-lv-hero.png
+
+humanReview:
+  - 2025-2026料金・営業時間
+  - 網走バス冬季ダイヤ
+  - 市役所ポータルURL
+  - 積雪・天候は周辺予報併用の注記
