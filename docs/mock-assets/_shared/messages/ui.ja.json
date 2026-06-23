@@ -7,6 +7,7 @@
   "common": {
     "explore": "Explore",
     "read": "読む",
+    "detail": "詳細",
     "googleMap": "Google Mapで開く",
     "call": "電話する",
     "location": "所在地",

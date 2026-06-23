@@ -7,6 +7,7 @@
   "common": {
     "explore": "Explore",
     "read": "Read",
+    "detail": "Details",
     "googleMap": "Open in Google Maps",
     "call": "Call",
     "location": "Location",

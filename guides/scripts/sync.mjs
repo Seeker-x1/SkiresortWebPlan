@@ -141,6 +141,38 @@ function copyDirSimple(src, dest, opts = {}) {
   }
 }
 
+function buildResortGuidesHandoff(registry, resortGuidesData) {
+  const byRegistryId = new Map(registry.resorts.map((r) => [r.id, r]));
+  const guides = {};
+  for (const [japowId, entry] of Object.entries(resortGuidesData.guides)) {
+    const resort = byRegistryId.get(entry.registryId);
+    const next = { ...entry };
+    if (resort) {
+      next.strategy = resort.strategy;
+      next.name = resort.name;
+      next.region = resort.region;
+      next.guideUrl = `${HOST}/${resort.id}/`;
+      next.guideUrlEn = `${HOST}/${resort.id}/?lang=en`;
+      const tagline = {};
+      for (const locale of ["ja", "en"]) {
+        const msgPath = join(MOCK_ROOT, resort.slug, "messages", `${locale}.json`);
+        if (existsSync(msgPath)) {
+          const msgs = JSON.parse(readFileSync(msgPath, "utf8"));
+          if (msgs.meta?.description) tagline[locale] = msgs.meta.description;
+        }
+      }
+      if (Object.keys(tagline).length) next.tagline = tagline;
+    }
+    guides[japowId] = next;
+  }
+  return {
+    schemaVersion: "2026-06-23",
+    baseUrl: resortGuidesData.baseUrl,
+    defaultLocale: resortGuidesData.defaultLocale,
+    guides,
+  };
+}
+
 function buildRegistry(registry) {
   const langSuffix = (path, locale) =>
     locale === "en" ? `${path}${path.includes("?") ? "&" : "?"}lang=en` : path;
@@ -269,7 +301,12 @@ function main() {
   // JAPOWSERCH-facing registry + resort-guides handoff
   const extended = buildRegistry(registry);
   writeFileSync(join(OUT, "registry.json"), JSON.stringify(extended, null, 2) + "\n", "utf8");
-  cpSync(RESORT_GUIDES_SRC, join(OUT, "resort-guides.json"));
+  const resortGuidesHandoff = buildResortGuidesHandoff(registry, resortGuides.data);
+  writeFileSync(
+    join(OUT, "resort-guides.json"),
+    JSON.stringify(resortGuidesHandoff, null, 2) + "\n",
+    "utf8",
+  );
 
   // Also update source registry with paths + japowResortId
   const sourceRegistry = {
