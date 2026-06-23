@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="kirigamine">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>厳選温泉2選 — ぴっぷスキー場</title>
+  <meta name="description" content="リフト券に付く入浴券の行き先——遊湯ぴっぷと旭川ハブ" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="./" class="logo" data-i18n="logo">ぴっぷスキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="./#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=kirigamine" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="nearby-food.html" data-i18n="paths.food.title">ゲレンデ食4選</a></li>
+          <li><a href="corridor-stay.html" data-i18n="paths.stay.title">宿泊戦略</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--spot" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-kirigamine-onsen.png" alt="" width="1600" height="1100" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <a href="./" class="detail-back">← <span data-i18n="nearbyOnsen.backLink">ぴっぷ LP に戻る</span></a>
+        <p class="eyebrow" data-i18n="nearbyOnsen.hero.eyebrow">Onsen · Recovery</p>
+        <h1 class="hero-title" data-i18n-html="nearbyOnsen.hero.title">光明石の湯、<br />筋肉をゆるめる。</h1>
+        <p class="hero-tagline" data-i18n="nearbyOnsen.hero.tagline">リフト券に付く入浴券の行き先</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="inner">
+        <p role="note" class="notice-banner" data-i18n="nearbyOnsen.notice">入浴料・営業時間は各施設の公式情報が最新です。</p>
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.introTitle">温泉がバンドルの核</h2>
+        <p class="lead" style="margin-top:1.5rem; max-width:36rem" data-i18n="nearbyOnsen.introLead">1日券・ナイター券に入浴券が内包——スキー後の動線が最初から設計されている。</p>
+        <p class="lead-whisper" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.introBody">スキー場直結の遊湯ぴっぷを中心に、旭川市内の温浴も併用できる2拠点モデル。</p>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyOnsen.spotsEyebrow">2 picks</p>
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.spotsTitle">厳選温泉2選</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.spotsLead">滑走後のリカバリーと宿泊拠点として。</p>
+        <ol class="food-spot-list">
+          <li class="food-spot" id="entry-yuyu">
+            <span class="food-spot__num">01</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.yuyu.tag">隣接 · 光明石</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.yuyu.title">遊湯ぴっぷ</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.yuyu.lead">天然鉱石「光明石」人工温泉。スキー場徒歩5分、1泊2食¥9,500〜。</p>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-kamoi">
+            <span class="food-spot__num">02</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.kamoi.tag">旭川 · サウナ露天</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.kamoi.title">天然温泉 神威の湯 ドーミーイン旭川</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.kamoi.lead">旭川ハブ宿泊戦略の温浴拠点——翌朝バスでぴっぷへ。</p>
+            </div>
+          </li>
+        </ol>
+        <div style="margin-top:2rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="nearby-food.html" class="btn btn-ghost" data-i18n="paths.food.title">ゲレンデ食4選</a>
+          <a href="./" class="btn btn-secret" data-i18n="nearbyOnsen.backLink">ぴっぷ LP に戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p data-i18n="footer.copyright">© ぴっぷスキー場 — LP案モック</p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+resortId: kirigamine
+schemaVersion: "2026-06-23"
+
+name:
+  ja: ファミリーゲレンデ霧ヶ峰スキー場
+  en: Family Gerende Kirigamine Ski Area
+region:
+  ja: 長野県諏訪市
+  en: Suwa, Nagano
+japowResortId: 284
+
+strategy:
+  ja: エントリー向けファミリーゲレンデ
+  en: Entry-Level Family Snow · Panorama Plateau
+archetype: local-value
+# 複製元候補: pippu-lp（温泉付き1泊2日）/ gokazan-lp（ローカル低価格）
+
+audience: domestic
+
+hero:
+  tagline:
+    ja: 360度の山並みと、驚きの低価格——家族の雪山デビューに。
+    en: 360° mountain views at striking family prices—your safest first snow day.
+  badges: [family, value, panorama]
+
+pillars:
+  - id: family
+    hook: { ja: らくちんくん・キッズパーク・未就学児無料, en: Moving walkway · kids park · preschool free }
+  - id: value
+    hook: { ja: 1日券¥2,610・第3日曜こども無料, en: Day pass ¥2,610 · 3rd Sun kids free }
+  - id: wellness
+    hook: { ja: 上諏訪温泉・諏訪湖畔グルメ, en: Kamisuwa onsen · lakeside dining }
+
+subPages:
+  - nearby-onsen
+  - nearby-food
+  - corridor-stay
+
+facts:
+  operator: 諏訪市（公式情報は諏訪市・諏訪観光協会ポータル内）
+  digital: 独自ドメインなし・自治体ポータル依存（カテゴリー1）· 積雪APIなし
+  lift: リフト2基 · 動く歩道「らくちんくん」50m
+  courses: 3（スノーボード全面可 · そりコース分離）
+  kidsPark: スノーキッズ霧ヶ峰（2017オープン）
+  season: 2025-12-24〜2026-03-22（2・3月平日定休）
+  hours: "8:30–16:30（ナイター・早朝なし）"
+  parking: 約500台 · 無料
+  access:
+    car: 中央道諏訪ICから約17km · 30〜40分（冬季は霧ヶ峰線・ビーナスライン等の通行規制に注意）
+    train: JR上諏訪駅から車・タクシー約30〜40分
+  skiSchool: SAJ公認 霧ヶ峰スキー学校
+  activities: [スノーシュー, クロスカントリー, 車山山頂トレッキング]
+  stay: コテージ霧ヶ峰等（ゲレンデ隣接）
+
+pricing:
+  liftDayAdult: 2610
+  liftDayChild: 1570
+  liftDaySenior: 1570
+  preschoolLift: 0
+  walkwayDay: 520
+  kidsParkSetDay: 1010
+  thirdSundayChildFree: true
+
+constraints:
+  - 2月・3月の平日は定休（週末・休日に集中営業）
+  - 冬季周辺道路の冬期通行規制（冬タイヤ・ルート事前確認必須）
+  - 上級者向け大規模斜面はなし（ファミリー特化）
+
+map:
+  sources: ["諏訪市公式ポータル", "現状分析レポート 2026-06"]
+  heroImage: images/maps/kirigamine-hero.png
+
+areaMap:
+  enabled: true
+  hookStrategy:
+    primary: onsen
+    secondary: [food, sight]
+
+humanReview:
+  - japowResortId（JAPOW RESORTS一覧への掲載確認）
+  - 2025-2026料金・営業日・定休日カレンダー
+  - 諏訪市公式ポータルURL（https://www.city.suwa.lg.jp/site/enjoy/4445.html 等）
+  - 冬季道路規制の日付・代替ルート
+  - 上諏訪駅からのバス有無・冬季ダイヤ
+  - 英訳トーン（inbound 向けに audience を both へ拡張するか）

@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "kirigamine",
+  "name": {
+    "ja": "ファミリーゲレンデ霧ヶ峰スキー場",
+    "en": "Family Gerende Kirigamine Ski Area"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "諏訪市公式ポータル",
+    "現状分析レポート"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/kirigamine-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-pair-1",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "第1リフト",
+        "en": "Lift 1"
+      },
+      "shortLabel": {
+        "ja": "第1",
+        "en": "L1"
+      },
+      "meta": {
+        "ja": {
+          "種別": "ペア",
+          "状態": "運行中"
+        },
+        "en": {
+          "Type": "Pair",
+          "Status": "Operating"
+        }
+      }
+    },
+    {
+      "id": "lift-pair-2",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "第2リフト",
+        "en": "Lift 2"
+      },
+      "shortLabel": {
+        "ja": "第2",
+        "en": "L2"
+      },
+      "meta": {
+        "ja": {
+          "種別": "ペア",
+          "状態": "運行中"
+        },
+        "en": {
+          "Type": "Pair",
+          "Status": "Operating"
+        }
+      }
+    },
+    {
+      "id": "lift-walkway",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "らくちんくん（動く歩道）",
+        "en": "Rakuchinkun walkway"
+      },
+      "shortLabel": {
+        "ja": "歩道",
+        "en": "Walk"
+      },
+      "meta": {
+        "ja": {
+          "全長": "50m",
+          "区分": "初心者"
+        },
+        "en": {
+          "Length": "50 m",
+          "Zone": "Beginner"
+        }
+      }
+    },
+    {
+      "id": "trail-1",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "第1コース",
+        "en": "Course 1"
+      },
+      "shortLabel": {
+        "ja": "1",
+        "en": "1"
+      },
+      "meta": {
+        "ja": {
+          "全長": "400m",
+          "最大斜度": "15°"
+        },
+        "en": {
+          "Length": "400 m",
+          "Max slope": "15°"
+        }
+      }
+    },
+    {
+      "id": "trail-2",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "第2コース",
+        "en": "Course 2"
+      },
+      "shortLabel": {
+        "ja": "2",
+        "en": "2"
+      },
+      "meta": {
+        "ja": {
+          "全長": "350m",
+          "最大斜度": "20°"
+        },
+        "en": {
+          "Length": "350 m",
+          "Max slope": "20°"
+        }
+      }
+    },
+    {
+      "id": "trail-3",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "第3コース",
+        "en": "Course 3"
+      },
+      "shortLabel": {
+        "ja": "3",
+        "en": "3"
+      },
+      "meta": {
+        "ja": {
+          "全長": "300m",
+          "レベル": "中級"
+        },
+        "en": {
+          "Length": "300 m",
+          "Level": "Intermediate"
+        }
+      }
+    },
+    {
+      "id": "trail-sled",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "sled",
+      "label": {
+        "ja": "そりコース",
+        "en": "Sled course"
+      },
+      "shortLabel": {
+        "ja": "そり",
+        "en": "Sled"
+      },
+      "meta": {
+        "ja": {
+          "備考": "スキーと分離"
+        },
+        "en": {
+          "Note": "Separated from ski runs"
+        }
+      }
+    }
+  ]
+}

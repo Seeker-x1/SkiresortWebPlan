@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "Family Gerende Kirigamine Ski Area",
+    "description": "360° mountain views at family-friendly prices—the safest first snow day on the Kirigamine plateau."
+  },
+  "logo": "Kirigamine Ski",
+  "nav": {
+    "bundle": "Tickets",
+    "wellness": "After ski"
+  },
+  "hero": {
+    "eyebrow": "Suwa, Nagano · Kirigamine plateau",
+    "title": "Family Gerende<br />Kirigamine",
+    "tagline": "360° panoramas at striking family prices—your safest first snow day.",
+    "badgePrice": "Day pass ¥2,610",
+    "badgeNight": "Preschool lift free",
+    "badgeStrawberry": "3 courses",
+    "ctaBundle": "Tickets & family deals",
+    "ctaLive": "Today's operations"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Suwa City portal (no live snow API)",
+    "updatedAt": "Updated Dec 24, 8:30",
+    "lift1": {
+      "label": "Lift 1",
+      "value": "Operating",
+      "note": "Pair · main slope"
+    },
+    "lift2": {
+      "label": "Lift 2",
+      "value": "Operating",
+      "note": "Pair · intermediate zone"
+    },
+    "snow": {
+      "label": "Weather",
+      "value": "High sunshine",
+      "note": "Plateau · gentle terrain"
+    },
+    "night": {
+      "label": "Rakuchinkun",
+      "value": "Operating",
+      "note": "50 m moving walkway · beginners"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Family Entry",
+    "title": "No steep pitches,<br />full panoramas.",
+    "lead": "A highland resort with views of Mt. Fuji and the Japan Alps. Gentle, wide terrain built for beginners, families, and first-timers—not experts chasing steeps.",
+    "specs": [
+      "3 courses · snowboards welcome",
+      "1,600–1,650 m · 50 m vertical",
+      "Separated sled hill · kids park"
+    ],
+    "noticeTitle": "Operations note:",
+    "noticeBody": "Weekdays closed in Feb–Mar (weekends/holidays only). Winter road restrictions on Kirigamine and Venus lines—snow tires and route checks required. Official updates via Suwa City portal.",
+    "ctaBundle": "Tickets & kids' day",
+    "imgAlt": "Panorama over the Kirigamine plateau—gentle family terrain"
+  },
+  "paths": {
+    "bundle": {
+      "label": "Tickets",
+      "title": "Remarkably low prices"
+    },
+    "access": {
+      "label": "Access",
+      "title": "30 min from Suwa IC"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Lifts & closures"
+    },
+    "food": {
+      "label": "Food",
+      "title": "Lake Suwa dining"
+    },
+    "onsen": {
+      "label": "Onsen",
+      "title": "Kamisuwa hot springs"
+    },
+    "stay": {
+      "label": "Stay",
+      "title": "Plateau cottage vs lakeside"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets it apart",
+    "title": "Rakuchinkun & kids park",
+    "primary": {
+      "title": "Moving walkway × Snow Kids Kirigamine",
+      "lead": "The 50 m \"Rakuchinkun\" walkway makes sledding and first turns easy. The 2017 kids park offers snow racers and tubes—sled and ski zones are separated so little ones never cross busy slopes.",
+      "cta": "Resort map",
+      "imgAlt": "Kids park and gentle slopes—family-first design"
+    },
+    "secondary": {
+      "title": "Kirigamine Ski School",
+      "lead": "SAJ-certified school on site—from group lessons for juniors to private coaching, built to lock in basics on a first snow day.",
+      "cta": "Suwa City official site"
+    }
+  },
+  "bundle": {
+    "eyebrow": "Pricing",
+    "title": "Industry-low tickets,<br />family-first.",
+    "lead": "Adult day pass ¥2,610; child/junior high & senior (55+) ¥1,570. Preschoolers ski free with a guardian. Walkway-only ¥520; kids park bundle ¥1,010. Third Sunday each month: free lifts for junior high and below.",
+    "specs": [
+      "~500 parking spaces · free",
+      "8:30–16:30 · no night skiing",
+      "Weekday closures Feb–Mar"
+    ],
+    "cta": "Check Suwa City portal",
+    "imgAlt": "Families on gentle Kirigamine terrain—value and peace of mind"
+  },
+  "wellness": {
+    "eyebrow": "After Ski",
+    "title": "After skiing,<br />to Lake Suwa.",
+    "lead": "30–40 minutes down to Kamisuwa onsen. Soak in quality hot springs and enjoy lakeside dining—a strong add-on for a 1-night trip, not just a day visit from Tokyo or Nagoya.",
+    "leadStation": "Cottages next to the hill let kids build kamakura snow huts—a stay-and-play retreat on the plateau.",
+    "cta": "Onsen & food guide",
+    "imgAlt": "Kamisuwa onsen and Lake Suwa—after-ski wellness"
+  },
+  "tour": {
+    "eyebrow": "2-Day Model",
+    "title": "From the city,<br />snow debut + onsen.",
+    "lead": "About 30–40 minutes from Chuo Expressway Suwa IC. Realistic as a day trip from greater Tokyo or Chukyo—or pair with lakeside hot springs overnight.",
+    "badge": "FAMILY · VALUE · PANORAMA",
+    "steps": {
+      "01": {
+        "title": "Suwa IC · Kamisuwa",
+        "body": "Via Kirigamine road · snow tires required"
+      },
+      "02": {
+        "title": "Kirigamine Ski Area",
+        "body": "Day pass ¥2,610 · preschool free"
+      },
+      "03": {
+        "title": "Kids park",
+        "body": "Snow racers & tubes · Rakuchinkun"
+      },
+      "04": {
+        "title": "Kamisuwa onsen",
+        "body": "30–40 min down · lakeside baths"
+      },
+      "05": {
+        "title": "Suwa dining",
+        "body": "Eel · soba · local sake & miso"
+      }
+    }
+  },
+  "guides": {
+    "ecosystem": {
+      "title": "Pricing that widens the base",
+      "body": "Remarkably low lift prices while the industry raises rates. Free preschool lifts, free kids' day on the third Sunday, weekday closures in late season—focused operations that bring new families into snow sports."
+    },
+    "access": {
+      "title": "Suwa IC & winter roads",
+      "body": "~17 km / 30–40 min from Suwa IC. ~30–40 min by car/taxi from JR Kamisuwa Station. Winter restrictions on Venus Line and nearby routes—check conditions and use snow tires."
+    },
+    "green": {
+      "title": "Beyond downhill",
+      "body": "Snowshoe and cross-country trails too—gateway to Kirigamine nature including treks toward Mt. Kuruma-yama summit.",
+      "hashtags": [
+        "#KirigamineFamily",
+        "#Rakuchinkun",
+        "#SuwaOnsen"
+      ]
+    }
+  },
+  "access": {
+    "postal": "〒392-0003",
+    "line": "13338-1 Kirigamine, Suwa-shi, Nagano",
+    "note": "~17 km from Suwa IC · 30–40 min · JR Kamisuwa ~30–40 min by car/taxi · ~500 free parking spaces",
+    "phone": "TEL +81-266-53-1664 (Kirigamine Ski Area)",
+    "phoneBus": "Bus from Kamisuwa · check winter timetable",
+    "places": "",
+    "rentacarEyebrow": "Suwa · Chuo Expressway",
+    "rentacarLink": "Rent a car near Suwa IC",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "Watch winter closures on Kirigamine road"
+  },
+  "footer": {
+    "copyright": "© Family Gerende Kirigamine Ski Area — LP mock",
+    "location": "13338-1 Kirigamine, Suwa-shi, Nagano 392-0003"
+  },
+  "nearbyFood": {
+    "backLink": "Back to Kirigamine LP",
+    "hero": {
+      "eyebrow": "Food · Suwa",
+      "title": "Four tastes<br />by Lake Suwa.",
+      "tagline": "Shinshu flavors 30–40 minutes downhill"
+    },
+    "notice": "Hours and menus—check each venue's official site.",
+    "introTitle": "After skiing, to the lakeside",
+    "introLead": "Kamisuwa and Lake Suwa host beloved local restaurants.",
+    "introBody": "From slope-side cafés to lakeside classics—four family-friendly picks.",
+    "spotsEyebrow": "4 picks",
+    "spotsTitle": "Suwa & Kirigamine food picks",
+    "spotsLead": "Listed in downhill order.",
+    "spots": {
+      "hokurei": {
+        "tag": "Slope · plateau café",
+        "title": "Kogen no Mise (on hill)",
+        "lead": "Popular slope-side set meals—ramen combos that families return for."
+      },
+      "yuyu": {
+        "tag": "Lake Suwa · eel",
+        "title": "Lake Suwa unagi",
+        "lead": "Regional grilled eel—a classic reward after skiing."
+      },
+      "pipicafe": {
+        "tag": "Kamisuwa · soba",
+        "title": "Kirigamine hand-cut soba",
+        "lead": "Highland buckwheat noodles—light lunch or dinner."
+      },
+      "otokoyama": {
+        "tag": "Suwa · sake",
+        "title": "Miyasaka Brewery (Suwa)",
+        "lead": "Local sake and miso—souvenirs for adults."
+      }
+    }
+  },
+  "nearbyOnsen": {
+    "backLink": "Back to Kirigamine LP",
+    "hero": {
+      "eyebrow": "Onsen · Recovery",
+      "title": "Kamisuwa baths,<br />thaw out.",
+      "tagline": "Hot springs 30–40 minutes downhill"
+    },
+    "notice": "Fees and hours—check each facility.",
+    "introTitle": "Onsen anchors the trip",
+    "introLead": "Lakeside baths after skiing—what makes a 1-night itinerary worthwhile.",
+    "introBody": "Kamisuwa onsen plus lakeside ryokan—a two-base recovery model.",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "Two onsen picks",
+    "spotsLead": "Recovery and overnight bases.",
+    "spots": {
+      "yuyu": {
+        "tag": "Kamisuwa · classic",
+        "title": "Kamisuwa onsen (Katakurakan, etc.)",
+        "lead": "One of Suwa's five famous springs—open-air baths overlooking the lake."
+      },
+      "kamoi": {
+        "tag": "Lake Suwa · lakeside",
+        "title": "Lakeside onsen ryokan",
+        "lead": "Stay by the lake, return to the hill next morning—a family 1-night pattern."
+      }
+    }
+  },
+  "corridorStay": {
+    "backLink": "Back to Kirigamine LP",
+    "hero": {
+      "eyebrow": "Stay · Strategy",
+      "title": "Plateau cottage<br />or lakeside inn.",
+      "tagline": "Day trip vs 1-night strategies"
+    },
+    "notice": "Rates and rooms—check official booking sites.",
+    "introTitle": "Two base camps",
+    "introLead": "Cottage next to the hill for snow play, or lakeside onsen for a slower pace.",
+    "spotsEyebrow": "4 picks",
+    "spotsTitle": "Four stay picks",
+    "spotsLead": "Plateau-adjacent vs lakeside.",
+    "regions": {
+      "pippu": "Kirigamine plateau (next to hill)",
+      "asahikawa": "Lake Suwa (onsen & dining)"
+    },
+    "spots": {
+      "yuyu": {
+        "tag": "Adjacent · cottage",
+        "title": "Kirigamine Cottage",
+        "lead": "Closest stay to the hill—kamakura play and snow fun for kids."
+      },
+      "mount-city": {
+        "tag": "Plateau · lodge",
+        "title": "Kirigamine highland lodge",
+        "lead": "Near the ski area—first tracks for early-rising families."
+      },
+      "omo7": {
+        "tag": "Kamisuwa · onsen",
+        "title": "Katakurakan",
+        "lead": "Historic Kamisuwa onsen—maximize a ski + hot spring trip."
+      },
+      "dormy": {
+        "tag": "Lake Suwa · lakeside",
+        "title": "Lakeside onsen hotel",
+        "lead": "Lake views and Suwa dining—back to the hill next morning."
+      }
+    }
+  }
+}

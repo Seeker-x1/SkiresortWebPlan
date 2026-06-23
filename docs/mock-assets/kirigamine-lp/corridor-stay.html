@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="kirigamine">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>宿泊戦略 — ぴっぷスキー場</title>
+  <meta name="description" content="比布完結型と旭川ハブ型——2つのベースキャンプ" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="./" class="logo" data-i18n="logo">ぴっぷスキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="./#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=kirigamine" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="nearby-food.html" data-i18n="paths.food.title">ゲレンデ食4選</a></li>
+          <li><a href="nearby-onsen.html" data-i18n="paths.onsen.title">遊湯ぴっぷ</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--spot" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-kirigamine-panorama.png" alt="" width="1200" height="1500" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <a href="./" class="detail-back">← <span data-i18n="corridorStay.backLink">ぴっぷ LP に戻る</span></a>
+        <p class="eyebrow" data-i18n="corridorStay.hero.eyebrow">Stay · Strategy</p>
+        <h1 class="hero-title" data-i18n-html="corridorStay.hero.title">比布で完結、<br />または旭川ハブ。</h1>
+        <p class="hero-tagline" data-i18n="corridorStay.hero.tagline">ファーストトラック派と都市グルメ派の2戦略</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="inner">
+        <p role="note" class="notice-banner" data-i18n="corridorStay.notice">客室・料金・送迎は各施設の公式予約サイトが最新です。</p>
+        <h2 class="heading-lg" data-i18n="corridorStay.introTitle">2つのベースキャンプ</h2>
+        <p class="lead" style="margin-top:1.5rem; max-width:36rem" data-i18n="corridorStay.introLead">遊湯ぴっぷに泊まって朝イチを狙うか、旭川で夜を楽しみバス通勤するか。</p>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="corridorStay.spotsEyebrow">4 picks</p>
+        <h2 class="heading-lg" data-i18n="corridorStay.spotsTitle">厳選宿4選</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="corridorStay.spotsLead">比布町内完結型と旭川ハブ型から厳選。</p>
+
+        <h3 class="onsen-region" data-i18n="corridorStay.regions.pippu">比布町内（スキー場直結）</h3>
+        <ol class="food-spot-list">
+          <li class="food-spot" id="entry-yuyu">
+            <span class="food-spot__num">01</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="corridorStay.spots.yuyu.tag">徒歩5分 · 1泊2食 ¥9,500〜</p>
+              <h3 class="food-spot__title" data-i18n="corridorStay.spots.yuyu.title">遊湯ぴっぷ</h3>
+              <p class="food-spot__lead" data-i18n="corridorStay.spots.yuyu.lead">スキー場に最も近い拠点。入浴券バンドルと朝食TKGで一日の価値を最大化。</p>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-mount-city">
+            <span class="food-spot__num">02</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="corridorStay.spots.mount-city.tag">町内 · 定員140名</p>
+              <h3 class="food-spot__title" data-i18n="corridorStay.spots.mount-city.title">マウント・シティ</h3>
+              <p class="food-spot__lead" data-i18n="corridorStay.spots.mount-city.lead">比布町内の宿泊施設——遊湯ぴっぷ以外の町内泊オプション。</p>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="onsen-region" style="margin-top:3rem" data-i18n="corridorStay.regions.asahikawa">旭川市内（広域ハブ）</h3>
+        <ol class="food-spot-list" start="3">
+          <li class="food-spot" id="entry-omo7">
+            <span class="food-spot__num">03</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="corridorStay.spots.omo7.tag">旭川 · 星野 · 朝食ビュッフェ</p>
+              <h3 class="food-spot__title" data-i18n="corridorStay.spots.omo7.title">星野リゾート OMO7 旭川</h3>
+              <p class="food-spot__lead" data-i18n="corridorStay.spots.omo7.lead">夜は旭川ラーメン・ジンギスカン、翌朝道北バスでぴっぷへ。</p>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-dormy">
+            <span class="food-spot__num">04</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="corridorStay.spots.dormy.tag">旭川 · 駅近 · サウナ露天</p>
+              <h3 class="food-spot__title" data-i18n="corridorStay.spots.dormy.title">天然温泉 神威の湯 ドーミーイン旭川</h3>
+              <p class="food-spot__lead" data-i18n="corridorStay.spots.dormy.lead">駅近で移動の摩擦が少ない。帰路前の温浴拠点としても最適。</p>
+            </div>
+          </li>
+        </ol>
+        <div style="margin-top:2rem">
+          <a href="./#tour" class="btn btn-secret" data-i18n="tour.eyebrow">2-Day Model</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p data-i18n="footer.copyright">© ぴっぷスキー場 — LP案モック</p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+</body>
+</html>

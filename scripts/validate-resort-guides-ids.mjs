@@ -32,6 +32,7 @@ const NAME_SUBSTRINGS = {
   pippu: ["ぴっぷ", "比布"],
   sichinohe: ["七戸"],
   tsunan: ["津南"],
+  kirigamine: ["霧ヶ峰", "霧ケ峰"],
 };
 
 function loadJson(path) {

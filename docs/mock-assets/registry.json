@@ -327,6 +327,26 @@
       "affiliates": {
         "rentacar": "asahikawa_airport"
       }
+    },
+    {
+      "id": "kirigamine",
+      "slug": "kirigamine-lp",
+      "name": {
+        "ja": "ファミリーゲレンデ霧ヶ峰スキー場",
+        "en": "Family Gerende Kirigamine Ski Area"
+      },
+      "region": {
+        "ja": "長野県諏訪市",
+        "en": "Suwa, Nagano"
+      },
+      "strategy": {
+        "ja": "エントリー向けファミリーゲレンデ",
+        "en": "Entry-Level Family Snow · Panorama Plateau"
+      },
+      "guidePath": "/kirigamine/",
+      "guideUrl": "https://guides.japowserch.com/kirigamine/",
+      "japowResortId": 284,
+      "guideTier": "mock"
     }
   ],
   "guides": {

@@ -69,6 +69,7 @@ GET https://guides.japowserch.com/resort-guides.json
 | 66 | gokazan（※72 ではない） |
 | 98 | sichinohe |
 | 326 | tsunan |
+| 284 | kirigamine |
 
 ### 「詳細確認」ボタン分岐（JAPOWSERCH リポジトリ）
 
