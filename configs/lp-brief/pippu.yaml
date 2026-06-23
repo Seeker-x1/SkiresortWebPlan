@@ -7,7 +7,7 @@ name:
 region:
   ja: 北海道上川郡比布町
   en: Pippu, Kamikawa, Hokkaido
-japowResortId: 48  # 要確認
+japowResortId: 51
 
 strategy:
   ja: 雪・食・温泉の隠れ家
@@ -40,6 +40,5 @@ map:
   heroImage: images/maps/pippu-hero.png
 
 humanReview:
-  - japowResortId
   - 道北バス冬季ダイヤ
   - 2025-2026料金・営業時間

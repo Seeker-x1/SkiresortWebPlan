@@ -322,9 +322,8 @@
       },
       "guidePath": "/pippu/",
       "guideUrl": "https://guides.japowserch.com/pippu/",
-      "japowResortId": 48,
+      "japowResortId": 51,
       "guideTier": "mock",
-      "guideNote": "JAPOW ID 要確認",
       "affiliates": {
         "rentacar": "asahikawa_airport"
       }
