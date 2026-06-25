@@ -46,6 +46,8 @@ alwaysApply: true
 ## エージェント行動
 
 - 「完成」「反映」「push」依頼があっても、**上表 7 コマンドが全部 PASS するまで**配信系コミットを作らない
+- LP を JAPOWSERCH へ出す施設では、**`resort-guides.json` 契約・`validate-mock-japow-detail.mjs`・`guides/scripts/sync.mjs`・`--public` 検証**まで終わらせ、`guides.japowserch.com/{id}/` と `?lang=en` が成立する状態にしてから完了扱いにする
+- ユーザーが `push` を止めていない限り、LP Factory / JAPOW 詳細ボタン連携の作業は **検証 PASS → commit → push** までを 1 セットで実施する
 - 手順にない画像形式・省略フェーズを思いついたら **実装せず** ユーザーに確認
 - 他施設 LP を複製した直後は、**他 `{id}` 文字列が残っていないか** grep してから次 Phase へ
 - LP 変更後は `code-reviewer` または手順書どおり L3 評価を検討
