@@ -348,6 +348,25 @@ const MAPS = [
         "sled", "M 250 300 L 270 320", { ja: { 備考: "チューブ・ソリ" }, en: { Note: "Tubes & sleds" } }),
     ],
   ),
+
+  mapBase(
+    "hinode",
+    { ja: "上富良野町日の出スキー場", en: "Hinode Ski Area" },
+    ["かみふらの十勝岳観光協会", "LP戦略レポート"],
+    [
+      lift("lift-single", { ja: "リフト1基", en: "Single lift" }, { ja: "リフト", en: "Lift" },
+        "M 300 320 L 320 220 L 340 140", [[300, 320], [340, 140]],
+        { ja: { 待ち時間: "ほぼなし", 標高差: "50m" }, en: { Wait: "Virtually none", Vertical: "50 m" } }),
+      trail("trail-beginner-a", { ja: "初級コースA", en: "Beginner course A" }, { ja: "初級A", en: "Beg. A" },
+        "beginner", "M 338 145 L 320 220 L 305 320",
+        { ja: { 比率: "初級100%", 備考: "緩斜面" }, en: { Share: "100% beginner", Note: "Gentle slope" } }),
+      trail("trail-beginner-b", { ja: "初級コースB", en: "Beginner course B" }, { ja: "初級B", en: "Beg. B" },
+        "beginner", "M 345 150 L 360 230 L 375 315",
+        { ja: { 備考: "ナイター可" }, en: { Note: "Night skiing" } }),
+      trail("trail-sled", { ja: "雪の滑り台", en: "Snow slides" }, { ja: "滑り台", en: "Slides" },
+        "sled", "M 250 300 L 280 320", { ja: { 備考: "ファミリー向け" }, en: { Note: "Family zone" } }),
+    ],
+  ),
 ];
 
 mkdirSync(OUT, { recursive: true });

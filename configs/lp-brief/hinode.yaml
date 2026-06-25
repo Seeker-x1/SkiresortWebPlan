@@ -1,0 +1,41 @@
+resortId: hinode
+schemaVersion: "2026-06-25"
+
+name:
+  ja: 上富良野町日の出スキー場
+  en: Hinode Ski Area
+region:
+  ja: 北海道上富良野町
+  en: Kamifurano, Hokkaido
+japowResortId: 52
+
+strategy:
+  ja: 駅徒歩15分・待ち時間ゼロ・初雪体験
+  en: Station walk · Zero wait · First snow
+archetype: local-value
+
+audience: inbound
+
+hero:
+  tagline:
+    ja: JR上富良野駅から徒歩圏——待ち時間ゼロの、はじめての雪遊び。
+    en: A 15-minute walk from JR Kamifurano—zero queues, first snow made easy.
+  badges: [station, beginner, night]
+
+pillars:
+  - id: access
+    hook: { ja: 公共交通だけで完結, en: Public transit only }
+  - id: first-snow
+    hook: { ja: 初級100%の雪の箱庭, en: 100% beginner snow playground }
+  - id: spa
+    hook: { ja: 雪遊び＋温泉パス, en: Snow & spa pass }
+
+map:
+  sources: ["かみふらの十勝岳観光協会", "LP戦略レポート"]
+  heroImage: images/maps/hinode-hero.png
+
+humanReview:
+  - japowResortId
+  - 料金・営業時間（公式確認）
+  - レンタル・キャッシュレスは提言段階（LP案表記）
+  - 英訳の事実確認

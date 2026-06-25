@@ -105,7 +105,7 @@ map-interaction-spec
 LP モック（`docs/mock-assets/{id}-lp/`）を追加・変更する前に読むこと:
 
 - [`.cursor/rules/lp-factory-no-shortcuts.mdc`](.cursor/rules/lp-factory-no-shortcuts.mdc)
-- [docs/mock-assets/LP_FACTORY_PROCEDURE.md](docs/mock-assets/LP_FACTORY_PROCEDURE.md)
+- [docs/mock-assets/LP_FACTORY_PROCEDURE.md](docs/mock-assets/LP_FACTORY_PROCEDURE.md) — **§0.2 標準パイプライン**（テンプレ複製 → JAPOW「詳細」ボタンまで）
 
 マップ・オーバーレイに触る前に読むこと:
 

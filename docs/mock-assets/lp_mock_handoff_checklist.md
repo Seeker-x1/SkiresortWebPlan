@@ -1,41 +1,48 @@
 # LP モック — L2 Handoff Checklist
 
-**Date:** 2026-06-23  
+**Date:** 2026-06-25  
 **Author:** `resort-spec-handoff` (L1→L2)  
 **Frozen input:** [lp_mock_requirements.md](./lp_mock_requirements.md)  
+**一次手順書:** [LP_FACTORY_PROCEDURE.md](./LP_FACTORY_PROCEDURE.md) **§0.2 標準パイプライン**  
 **Implementer:** `@resort-template-implementer`  
 **L3 evaluators:** `@resort-qa-a11y`, `@resort-visual-evaluator`  
-**Canonical テンプレ:** `sichinohe-lp`（`transit-onsen`）
+**参照実装:** `hinode-lp`（`shinjo-lp` 複製 · japow `52`）
 
 ---
 
-## 0. 実装順序
+## 0. 実装順序（テンプレ → 詳細ボタン）
 
 ```
-Phase 1  複製 — アーキタイプに応じた {id}-lp/ 作成（他 id 残骸削除）
-Phase 1.5  画像 — lp-mock-{id}-*.png（専用 AI PNG）+ map hero PNG
-Phase 2  i18n — messages/ja.json + en.json（レポート由来）
-Phase 3  HTML — data-i18n 配線・セクション取捨
-Phase 4  CSS — mock.css トークン調整
-Phase 5  マップ — data/maps/{id}.json + hero PNG（任意 area-map）
-Phase 6  registry — registry.json, resort-guides.json, JAPOW 詳細連携（J1–J6）
-Phase 6.5  アフィリエイト — apply-rentacar-affiliate.mjs + validate-skyticket
-Phase 7  機械検証 — validate-mock-*.mjs + validate-resort-guides-ids + validate-mock-japow-detail
-Phase 8  L3 — qa-a11y + visual-evaluator
-Phase 9  Human Gate — 事実確認
+Step 1   brief + japowResortId（RESORTS一覧.txt）
+Step 2   アーキタイプ選定 → 複製元 LP 決定
+Step 3   {id}-lp/ テンプレ複製 · 他 id 残骸削除
+Step 4   専用 PNG（lp-mock-{id}-*.png + map hero）
+Step 5   messages/ja.json + en.json
+Step 6   HTML 配線 · mock.css
+Step 7   data/maps/{id}.json
+Step 8   registry.json + data/resort-guides.json
+Step 9   apply-rentacar-affiliate.mjs
+Step 10  機械検証 8 本（下記 §4）
+Step 11  guides/scripts/sync.mjs + hub 件数
+Step 12  JAPOWSERCH/data/resort-guides.json 同期
+Step 13  L3 + Human Gate
 ```
 
-**禁止:** 他施設 PNG 流用 · SVG/落書き画像 · アフィリエイト省略 · 検証未 PASS で push。詳細は [`.cursor/rules/lp-factory-no-shortcuts.mdc`](../../.cursor/rules/lp-factory-no-shortcuts.mdc)。
+**完了の定義:** [LP_FACTORY_PROCEDURE.md](./LP_FACTORY_PROCEDURE.md) §0.1（詳細ボタンまで含む）
+
+**禁止:** 他施設 PNG 流用 · SVG/落書き画像 · アフィリエイト省略 · 検証未 PASS で push · LP のみで「完了」宣言。  
+詳細: [`.cursor/rules/lp-factory-no-shortcuts.mdc`](../../.cursor/rules/lp-factory-no-shortcuts.mdc)。
 
 ---
 
 ## 1. 新規施設チェックリスト
 
-### 1.1 ディレクトリ・命名
+### 1.1 テンプレ複製
 
-- [ ] `id` = registry の kebab-case（`sapporo-kokusai`）
+- [ ] `id` = registry の kebab-case（`hinode`）
 - [ ] `slug` = `{id}-lp`
 - [ ] 複製元が [LP_FACTORY_PROCEDURE.md](./LP_FACTORY_PROCEDURE.md) §3 と一致
+- [ ] 複製直後 grep: 他 `{id}`・施設名・ハッシュタグの残骸なし
 
 ### 1.2 `index.html`
 
@@ -51,6 +58,7 @@ Phase 9  Human Gate — 事実確認
 - [ ] `meta.title`, `meta.description`
 - [ ] `hero.*` に戦略 tagline / badge
 - [ ] `access.*`, `footer.*` 住所・電話
+- [ ] `validate-mock-lp-copy.mjs` PASS（インバウンド等の社内語禁止）
 
 ### 1.4 `mock.css`
 
@@ -60,19 +68,19 @@ Phase 9  Human Gate — 事実確認
 
 ### 1.5 画像・アフィリエイト
 
-- [ ] `lp-mock-{id}-*.png` は**施設専用**フォトリアル AI PNG（他 `{id}` のコピー禁止）
+- [ ] `lp-mock-{id}-*.png` は**施設専用**フォトリアル AI PNG
 - [ ] `images/maps/{id}-hero.png` は焼き込み線イラスト PNG
-- [ ] `apply-rentacar-affiliate.mjs` 実行済み
+- [ ] `apply-rentacar-affiliate.mjs` の `RESORT_COPY` に `{id}` 追加済み
 - [ ] `registry.json` に `affiliates.rentacar`
-- [ ] `index.html` に Skyticket ブロック（`skyticket-rentacar.js` 等）
+- [ ] `index.html` に Skyticket ブロック
 
-### 1.6 配信・JAPOW 詳細ボタン
+### 1.6 JAPOW「詳細」ボタン（必須）
 
-- [ ] `registry.json` エントリ（`id` / `slug` / `name` / `strategy`）
-- [ ] `data/resort-guides.json`（`japowResortId` → `registryId`）
-- [ ] `node scripts/validate-resort-guides-ids.mjs` exit 0
+- [ ] `registry.json` エントリ（`id` / `slug` / `japowResortId` / `guideUrl`）
+- [ ] `data/resort-guides.json`（`"<japowId>": { "registryId": "{id}", "tier": "mock" }`）
 - [ ] `node docs/mock-assets/scripts/validate-mock-japow-detail.mjs` exit 0
 - [ ] `node guides/scripts/sync.mjs` → `validate-mock-japow-detail.mjs --public` exit 0
+- [ ] `JAPOWSERCH/data/resort-guides.json` を SkiresortWebPlan と同期
 - [ ] 仕様: [JAPOW_DETAIL_INTEGRATION.md](./JAPOW_DETAIL_INTEGRATION.md)
 
 ---
@@ -86,11 +94,11 @@ Phase 9  Human Gate — 事実確認
 | LP-Q1 | 375px DevTools、横スクロールなし、CTA 44px |
 | LP-Q2 | Tab 移動でフォーカス可視、lang group label |
 | LP-Q3 | 戦略1行が hero + paths にある |
-| LP-Q4 | **8 つ**の validate スクリプト exit 0（copy + skyticket + japow-detail 含む） |
+| LP-Q4 | **8 つ**の validate スクリプト exit 0 |
 | LP-Q5 | ヒーロー width/height 属性あり |
-| LP-Q7 | validate-mock-lp-copy.mjs exit 0（§1.1 禁止表現なし） |
-| LP-Q8 | 375px で `#highlights` の CTA がカードに被らない（`highlight-duet` grid） |
-| LP-Q9 | JAPOW 詳細: resort-guides + sync + URL 契約（`validate-mock-japow-detail.mjs`） |
+| LP-Q7 | validate-mock-lp-copy.mjs exit 0 |
+| LP-Q8 | 375px で `#highlights` の CTA がカードに被らない |
+| LP-Q9 | JAPOW 詳細: resort-guides + sync + JAPOWSERCH 同期 |
 
 ### LP-V 自己確認
 
@@ -108,45 +116,35 @@ Phase 9  Human Gate — 事実確認
 ## 3. L3 出荷ゲート
 
 ```
-implementer Phase 8 完了（機械検証 exit 0）
-  → @resort-qa-a11y     → lp_qa_report.md または lp_qa_reports/{id}.md
-  → @resort-visual-evaluator → lp_qa_visual.md または lp_qa_reports/{id}_visual.md
-  → 両方 PASS → guides sync & クライアント提示可
+機械検証 8 本 exit 0
+  → @resort-qa-a11y     → lp_qa_reports/{id}.md
+  → @resort-visual-evaluator → lp_qa_reports/{id}_visual.md
+  → 両方 PASS + Human Gate + JAPOWSERCH 同期
+  → guides 配信・詳細ボタン連携可
 ```
-
-| FAIL | 対応 |
-|------|------|
-| LP-V1 or LP-V5 | mock.css / タイポ修正 |
-| LP-Q1–Q9 | i18n・a11y・導線・コピー・**CTA 被り**・**JAPOW 詳細**修正 |
-| 機械検証 | スクリプト出力に従い修正 |
-
-**テンプレート新設時:** まず **canonical**（`sichinohe-lp` 等）に L3 を通してから、他施設を複製する。
 
 ---
 
-## 4. 検証手順
+## 4. 機械検証（8 コマンド）
 
 ```bash
-node scripts/validate-resort-guides-ids.mjs
-node docs/mock-assets/scripts/validate-mock-japow-detail.mjs
 node docs/mock-assets/scripts/validate-mock-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-lp-shell.mjs
 node docs/mock-assets/scripts/validate-mock-lp-copy.mjs
 node docs/mock-assets/scripts/validate-skyticket-affiliate.mjs
+node docs/mock-assets/scripts/validate-mock-japow-detail.mjs
 node guides/scripts/sync.mjs
 node docs/mock-assets/scripts/validate-mock-japow-detail.mjs --public
-npx serve docs/mock-assets -p 3456
 ```
 
 | # | URL | 確認 |
 |---|-----|------|
 | 1 | `/{slug}/index.html` | JA デフォルト |
 | 2 | `?lang=en` | EN・html lang |
-| 3 | 375px | レイアウト・タップ |
-| 4 | Tab | フォーカスリング |
-| 5 | `/map.html?resort={id}` | マップリンク |
+| 3 | `https://guides.japowserch.com/{id}/` | sync 後（本番 or localhost） |
+| 4 | JAPOW マップ「詳細確認」 | `{id}/` または `?lang=en` |
 
 ---
 
-**Handoff ステータス:** ✅ L1 凍結 — L2 実装・L3 評価開始可
+**Handoff ステータス:** ✅ L1 凍結 — テンプレ複製から詳細ボタンまで 1 パイプライン

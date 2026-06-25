@@ -29,24 +29,25 @@ alwaysApply: true
 
 | 順 | 作業 | コマンド / 参照 |
 |----|------|-----------------|
-| 1 | brief + アーキタイプ選定 | `configs/lp-brief/{id}.yaml` · LP_FACTORY §3 |
-| 2 | 複製元から `{id}-lp/` 作成、**コピー元残骸削除** | Phase 1（他 id の PNG・文言を残さない） |
-| 3 | 施設専用 **フォトリアル AI PNG** | `lp-mock-{id}-*.png` · `images/maps/{id}-hero.png`（焼き込み線） |
-| 4 | i18n + HTML 配線 | `validate-mock-i18n.mjs` · `validate-mock-html-i18n.mjs` |
-| 5 | Skyticket レンタカー | `apply-rentacar-affiliate.mjs` → `validate-skyticket-affiliate.mjs` |
-| 6 | registry + JAPOW 詳細 | `registry.json` · `resort-guides.json` · [JAPOW_DETAIL_INTEGRATION.md](../../docs/mock-assets/JAPOW_DETAIL_INTEGRATION.md) |
-| 7 | シェル・コピー | `validate-mock-lp-shell.mjs` · `validate-mock-lp-copy.mjs` |
-| 8 | ID + JAPOW 契約 | `validate-resort-guides-ids.mjs` · `validate-mock-japow-detail.mjs` |
-| 9 | guides 同期 | `node guides/scripts/sync.mjs` → `validate-mock-japow-detail.mjs --public` |
+| 1 | brief + アーキタイプ + **複製元 LP** | `configs/lp-brief/{id}.yaml` · LP_FACTORY §0.2 Step 1–2 |
+| 2 | テンプレ複製 `{id}-lp/` · **残骸削除** | Step 3 · grep |
+| 3 | 施設専用 **フォトリアル AI PNG** | Step 4 · Gemini MCP 推奨 |
+| 4 | i18n + HTML 配線 | Step 5–6 · validate-mock-i18n / html-i18n |
+| 5 | マップ JSON + hero | Step 7 |
+| 6 | registry + resort-guides | Step 8 · [JAPOW_DETAIL_INTEGRATION.md](../../docs/mock-assets/JAPOW_DETAIL_INTEGRATION.md) |
+| 7 | Skyticket レンタカー | Step 9 · apply-rentacar-affiliate.mjs |
+| 8 | 機械検証 8 本 | Step 10 · LP_FACTORY Phase 12 |
+| 9 | guides 同期 + hub 件数 | Step 11 |
+| 10 | **JAPOWSERCH resort-guides 同期** | Step 12 · 詳細ボタン成立 |
 
-**参照実装（直近の正しい 1 件）:** `pippu-lp` — アフィリエイト・PNG・registry を初回コミットから揃えていること。
+**参照実装:** `hinode-lp`（`shinjo-lp` 複製 · 全 Step 完了）
 
 ---
 
 ## エージェント行動
 
 - 「完成」「反映」「push」依頼があっても、**上表 7 コマンドが全部 PASS するまで**配信系コミットを作らない
-- LP を JAPOWSERCH へ出す施設では、**`resort-guides.json` 契約・`validate-mock-japow-detail.mjs`・`guides/scripts/sync.mjs`・`--public` 検証**まで終わらせ、`guides.japowserch.com/{id}/` と `?lang=en` が成立する状態にしてから完了扱いにする
+- LP を JAPOWSERCH へ出す施設では、**§0.2 Step 12（JAPOWSERCH `resort-guides.json` 同期）** まで終わらせ、`guides.japowserch.com/{id}/` と JAPOW「詳細確認」が成立してから完了扱いにする
 - ユーザーが `push` を止めていない限り、LP Factory / JAPOW 詳細ボタン連携の作業は **検証 PASS → commit → push** までを 1 セットで実施する
 - 手順にない画像形式・省略フェーズを思いついたら **実装せず** ユーザーに確認
 - 他施設 LP を複製した直後は、**他 `{id}` 文字列が残っていないか** grep してから次 Phase へ

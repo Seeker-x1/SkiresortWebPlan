@@ -91,31 +91,30 @@ function onDetailClick(japowResortId) {
 
 ---
 
-## 5. 新規施設チェックリスト（LP Factory Phase 7）
+## 5. 新規施設チェックリスト（LP Factory Phase 7–9）
 
-1. JAPOW 公式 ID を `data/japow-resort-index.tsv` で確認（推測禁止）
+1. JAPOW 公式 ID を `JAPOWSERCH/RESORTS一覧.txt` で確認（推測禁止）
 2. `data/resort-guides.json` に `"<japowId>": { "registryId": "{id}", "tier": "mock" }` を追加
-3. `docs/mock-assets/registry.json` に resort オブジェクトを追加（`id` / `slug` / `name` / `strategy` / `affiliates`）
+3. `docs/mock-assets/registry.json` に resort オブジェクトを追加（`id` / `slug` / `japowResortId` / `affiliates`）
 4. `{id}-lp/index.html` が存在（sync が `public/{id}/` にコピー）
-5. 機械検証:
+5. 機械検証（8 本）— [lp_mock_handoff_checklist.md](./lp_mock_handoff_checklist.md) §4
+6. **`JAPOWSERCH/data/resort-guides.json` を SkiresortWebPlan と同一に同期**（詳細ボタン本番成立）
+7. JAPOW マップで「詳細確認」→ `https://guides.japowserch.com/{id}/` を確認
 
 ```bash
-node scripts/validate-resort-guides-ids.mjs
 node docs/mock-assets/scripts/validate-mock-japow-detail.mjs
 node guides/scripts/sync.mjs
 node docs/mock-assets/scripts/validate-mock-japow-detail.mjs --public
 ```
 
-6. ローカル E2E（sync 後）:
+ローカル E2E（sync 後）:
 
 ```bash
 cd guides && npm run dev
+# http://localhost:3456/{id}/
+# http://localhost:3456/{id}/?lang=en
 # http://localhost:3456/resort-guides.json
-# http://localhost:3456/biei/
-# http://localhost:3456/biei/?lang=en
 ```
-
-7. JAPOWSERCH ②: `resort-guides.json` 同梱 or fetch + `onDetailClick` 配線（[HANDOFF.md](../../guides/HANDOFF.md)）
 
 ---
 
@@ -123,10 +122,10 @@ cd guides && npm run dev
 
 | ID | 合格条件 |
 |----|----------|
-| LP-Q9a | `validate-resort-guides-ids.mjs` exit 0（ID・施設名照合） |
-| LP-Q9b | `validate-mock-japow-detail.mjs` exit 0（ソース契約） |
-| LP-Q9c | `sync.mjs` 後 `validate-mock-japow-detail.mjs --public` exit 0 |
-| LP-Q9d | 375px で LP が表示され、`?lang=en` で `html[lang=en]` |
+| LP-Q9a | `validate-mock-japow-detail.mjs` exit 0（ソース契約） |
+| LP-Q9b | `sync.mjs` 後 `validate-mock-japow-detail.mjs --public` exit 0 |
+| LP-Q9c | `JAPOWSERCH/data/resort-guides.json` が SkiresortWebPlan と一致 |
+| LP-Q9d | 375px で LP 表示 · `?lang=en` で `html[lang=en]` · 詳細ボタン URL 一致 |
 
 **FAIL → guides 配信・JAPOW 詳細ボタン連携不可。**
 
@@ -146,7 +145,7 @@ cd guides && npm run dev
 
 ## 8. 掲載施設一覧（2026-06）
 
-`data/resort-guides.json` と `registry.json` が一致していること。件数変更時は本表と HANDOFF を同期。
+`data/resort-guides.json` と `registry.json` が一致していること。件数変更時は本表と hub メッセージを同期。**18 施設。**
 
 | japowResortId | registryId |
 |---------------|------------|
@@ -157,16 +156,17 @@ cd guides && npm run dev
 | 40 | minami-furano |
 | 50 | biei |
 | 51 | pippu |
+| 52 | hinode |
 | 58 | abashiri-lv |
 | 60 | unabetsu |
 | 65 | kiyosato |
 | 66 | gokazan |
 | 98 | sichinohe |
+| 163 | shinjo |
 | 284 | kirigamine |
 | 326 | tsunan |
 | 453 | sapporo-kokusai |
 | 454 | sapporo-teine |
-| 163 | shinjo |
 
 ---
 

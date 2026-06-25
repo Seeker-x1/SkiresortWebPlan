@@ -396,6 +396,29 @@
       "affiliates": {
         "rentacar": "shinjo_station"
       }
+    },
+    {
+      "id": "hinode",
+      "slug": "hinode-lp",
+      "name": {
+        "ja": "上富良野町日の出スキー場",
+        "en": "Hinode Ski Area"
+      },
+      "region": {
+        "ja": "北海道上富良野町",
+        "en": "Kamifurano, Hokkaido"
+      },
+      "strategy": {
+        "ja": "駅徒歩15分・待ち時間ゼロ・初雪体験",
+        "en": "Station walk · Zero wait · First snow"
+      },
+      "guidePath": "/hinode/",
+      "guideUrl": "https://guides.japowserch.com/hinode/",
+      "japowResortId": 52,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "asahikawa_airport"
+      }
     }
   ],
   "guides": {

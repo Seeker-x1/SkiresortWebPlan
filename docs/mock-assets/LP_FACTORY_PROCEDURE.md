@@ -1,9 +1,62 @@
-# LP Factory — 戦略レポート → ガイド LP 手順書
+# LP Factory — テンプレ複製 → ガイド LP → JAPOW「詳細」ボタンまで
 
-> **目的**: ゲレンデ向け「LP戦略レポート」（または同等の調査成果）を受け取ったあと、`docs/mock-assets/` に静的ガイド LP を追加し、`guides.japowserch.com` で配信できる状態まで進める。  
+> **目的**: 戦略レポート（または同等の調査成果）を受け取ったあと、**既存 LP テンプレを複製**して `docs/mock-assets/{id}-lp/` を作り、`guides.japowserch.com` で配信し、**JAPOW マップの「詳細確認」ボタン**からその LP が開くところまでを **1 本の手順**で完了する。  
 > **対象**: `docs/mock-assets/{id}-lp/`（モック）。ルート `src/` 本番テンプレ・七戸 `resorts/Sichinohe-CyoueiSki/web/` は **別パイプライン**。  
 > **関連**: [i18n_spec.md](./i18n_spec.md) · [AREA_MAP_FACTORY_SPEC.md](./AREA_MAP_FACTORY_SPEC.md) · [JAPOW_DETAIL_INTEGRATION.md](./JAPOW_DETAIL_INTEGRATION.md) · [guides/HANDOFF.md](../../guides/HANDOFF.md)  
 > **エージェント規範（必読）:** [`.cursor/rules/lp-factory-no-shortcuts.mdc`](../../.cursor/rules/lp-factory-no-shortcuts.mdc)
+
+---
+
+## 0.1 完了の定義（Definition of Done）
+
+新規施設 `{id}` の作業は、次が **すべて** 満たされたときのみ「完了」。
+
+| # | 完了条件 | 確認方法 |
+|---|----------|----------|
+| D1 | `{id}-lp/` がテンプレ複製＋専用 PNG・i18n・残骸なし | grep で他 `{id}` 不在 |
+| D2 | 機械検証 **8 コマンド** がすべて exit 0 | §5 Phase 10 |
+| D3 | `guides/scripts/sync.mjs` 後、`public/{id}/` が存在 | `--public` 検証 |
+| D4 | `https://guides.japowserch.com/{id}/` と `?lang=en` が成立 | sync 後ローカル or 本番 |
+| D5 | JAPOW `japowResortId` の「詳細確認」→ D4 の URL | `resort-guides.json` 契約 + JAPOWSERCH 同梱 |
+| D6 | L3 評価 PASS（a11y + visual） | Phase 10 · Human Gate（Phase 8） |
+
+**「LP だけできた」は未完了。** 詳細ボタン連携（D5）までが LP Factory のスコープ。
+
+---
+
+## 0.2 標準パイプライン（テンプレ → 詳細ボタン）
+
+新規 1 施設あたり、**この順序を変えない**。
+
+```
+Step 1   レポート → configs/lp-brief/{id}.yaml + japowResortId 確定
+Step 2   §3 アーキタイプ選定 → 複製元 LP を決める
+Step 3   複製元を {id}-lp/ にコピー · data-mock-resort · 他 id 残骸削除
+Step 4   専用 PNG（lp-mock-{id}-*.png + images/maps/{id}-hero.png）
+Step 5   messages/ja.json + en.json（レポート由来コピー）
+Step 6   index.html セクション配線 · mock.css トークン
+Step 7   data/maps/{id}.json + generate-map-data.mjs
+Step 8   registry.json + data/resort-guides.json
+Step 9   apply-rentacar-affiliate.mjs（Skyticket 必須）
+Step 10  機械検証 8 本（Phase 10 コマンドブロック）
+Step 11  guides/scripts/sync.mjs + hub 件数更新
+Step 12  JAPOWSERCH/data/resort-guides.json を SkiresortWebPlan と同期
+Step 13  L3 評価 + Human Gate → commit / push（ユーザー依頼時）
+```
+
+### エージェント依頼文（コピペ用）
+
+```
+戦略レポートに従い LP Factory 標準パイプライン（LP_FACTORY_PROCEDURE.md §0.2）を
+テンプレ複製から JAPOW 詳細ボタン連携まで実施。
+
+- registry id: {id}
+- japowResortId: {数値}（JAPOW RESORTS一覧で確認済み）
+- archetype / 複製元: {例: local-value / shinjo-lp}
+- 画像: Gemini MCP（不可時はユーザー確認のうえ代替）
+- チャット内に画像を貼らない
+- 検証 8 本 PASS → sync → JAPOWSERCH resort-guides 同期まで
+```
 
 ---
 
@@ -28,7 +81,16 @@
 
 ### 0.3 参照実装
 
-直近で手順どおり出荷した LP（例: `pippu-lp`）と **同じファイルセット・同じ検証コマンド** を新規 `{id}` にも適用する。
+直近で **§0.2 全 Step 完了** した LP を正とする（2026-06 時点）:
+
+| 施設 | 複製元 | 備考 |
+|------|--------|------|
+| `hinode` | `shinjo-lp` | 駅徒歩・Snow & Spa · japow `52` |
+| `shinjo` | `shinjo-lp` 系 | 新幹線ターミナル · japow `163` |
+| `kamikawa-nakayama` | `kamikawa-nakayama-lp` | フリーミアム · japow `36` |
+| `pippu` | `pippu-lp` | 初回からアフィリエイト・registry 完備の型 |
+
+**新規 `{id}` は上記と同じファイルセット・同じ検証コマンドを適用する。**
 
 ---
 
@@ -147,7 +209,7 @@ humanReview:
 | `pivot-campus` | `tsunan-lp` | 一般滑走休止・特化施設・教育 | — |
 | `corridor-hub` | `sapporo-kokusai-lp` / `sapporo-teine-lp` | 広域周遊・動線設計 | `golden-triangle-stay.html`, `corridor-stay.html`, `nearby-*.html` |
 | `tourism-hub` | `abashiri-lv-lp` | 流氷・観光ハブ | — |
-| `local-value` | `gokazan-lp` / `asahigaoka-lp` | ローカル密着・低価格訴求 | — |
+| `local-value` | `shinjo-lp` / `gokazan-lp` / `kamikawa-nakayama-lp` | ローカル密着・駅近・町営 | — |
 | `nap-station` | `kiyosato-lp` | 駅近・手ぶら・NAP | — |
 
 **選定ルール**
@@ -158,32 +220,41 @@ humanReview:
 
 ---
 
-## 4. 全体フロー
+## 4. 全体フロー（テンプレ → 詳細ボタン）
 
 ```
 ┌──────────────┐     ┌─────────────────┐     ┌──────────────────┐
-│ 戦略レポート  │────▶│ lp-brief.yaml   │────▶│ messages/ja,en   │
-│ (Markdown等) │     │ + archetype選定  │     │ (コピー下書き)    │
+│ 戦略レポート  │────▶│ lp-brief.yaml   │────▶│ テンプレ複製      │
+│              │     │ japowResortId   │     │ {id}-lp/         │
 └──────────────┘     └────────┬────────┘     └────────┬─────────┘
                               │                        │
                               ▼                        ▼
                      ┌─────────────────┐     ┌──────────────────┐
-                     │ {id}-lp/ 複製   │────▶│ 画像・mock.css   │
-                     │ index + 子ページ │     │ トークン調整      │
+                     │ 専用 PNG        │     │ messages ja/en   │
+                     │ map hero        │     │ HTML + mock.css  │
                      └────────┬────────┘     └────────┬─────────┘
                               │                        │
           ┌───────────────────┼────────────────────────┘
           ▼                   ▼
 ┌─────────────────┐   ┌─────────────────┐   ┌─────────────────┐
-│ map JSON        │   │ area JSON       │   │ registry 更新   │
-│ + hero PNG      │   │ (任意)          │   │ + guides sync   │
+│ map JSON        │   │ registry.json   │   │ Skyticket 配線    │
+│ data/maps/{id}  │   │ resort-guides   │   │ apply-rentacar  │
 └────────┬────────┘   └────────┬────────┘   └────────┬────────┘
          │                     │                     │
          └─────────────────────┴─────────────────────┘
                                ▼
                     ┌─────────────────────┐
-                    │ 検証 + Human Gate   │
-                    │ ローカルプレビュー   │
+                    │ 機械検証 8 本 PASS  │
+                    │ guides/sync.mjs     │
+                    └──────────┬──────────┘
+                               ▼
+                    ┌─────────────────────┐
+                    │ JAPOWSERCH 同梱     │
+                    │ 詳細ボタン → LP URL │
+                    └──────────┬──────────┘
+                               ▼
+                    ┌─────────────────────┐
+                    │ L3 + Human Gate     │
                     └─────────────────────┘
 ```
 
@@ -196,8 +267,8 @@ humanReview:
 - [ ] レポートから §2.1 必須項目を抜き出し、`configs/lp-brief/{id}.yaml` を作成（またはチャットに貼る）
 - [ ] `id` を確定: **英小文字・ハイフン**、既存と重複なし
 - [ ] `slug` = `{id}-lp`（慣例）
-- [ ] `japowResortId` を **`data/japow-resort-index.tsv` で施設名検索して確定**（推測・仮 ID 禁止）。`node scripts/validate-resort-guides-ids.mjs` が PASS すること
-- [ ] アーキタイプを §3 から 1 つ選択し、複製元フォルダを決める
+- [ ] `japowResortId` を確定: **`JAPOWSERCH/RESORTS一覧.txt`**（または `RESORTS一覧en.txt`）で施設名検索。**推測・仮 ID 禁止**
+- [ ] アーキタイプを §3 から 1 つ選択し、**複製元フォルダ**（例: `shinjo-lp`）を決める
 
 ### Phase 1 — ディレクトリ作成
 
@@ -233,7 +304,6 @@ cp -r docs/mock-assets/sapporo-teine-lp docs/mock-assets/sapporo-kokusai-lp
 - [ ] 検証:
 
 ```bash
-node scripts/validate-resort-guides-ids.mjs
 node docs/mock-assets/scripts/validate-mock-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
 ```
@@ -279,7 +349,9 @@ node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
 - [ ] LP 埋め込み: `map-embed-layers.js` / area-map リンクを index・子ページに配置
 - [ ] 詳細: [area_map_handoff_checklist.md](./area_map_handoff_checklist.md)
 
-### Phase 7 — レジストリ・配信
+### Phase 7 — レジストリ・JAPOW 詳細ボタン契約
+
+**この Phase までが「詳細ボタン」のデータ正本。** UI 実装は JAPOWSERCH 側に既にある（[JAPOW_DETAIL_INTEGRATION.md](./JAPOW_DETAIL_INTEGRATION.md)）。
 
 - [ ] `docs/mock-assets/registry.json` に resort オブジェクトを追加:
 
@@ -293,27 +365,19 @@ node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
   "guidePath": "/example-resort/",
   "guideUrl": "https://guides.japowserch.com/example-resort/",
   "japowResortId": 0,
-  "guideTier": "mock"
+  "guideTier": "mock",
+  "affiliates": { "rentacar": "asahikawa_airport" }
 }
 ```
 
-- [ ] `data/resort-guides.json` に `"japowId": { "registryId": "{id}", "tier": "mock" }` を追加
-- [ ] `node scripts/validate-resort-guides-ids.mjs` exit 0（ID 正本照合）
+- [ ] `data/resort-guides.json` に `"<japowId>": { "registryId": "{id}", "tier": "mock" }` を追加  
+  **URL は `registry.id`（`example-resort`）。`slug`（`example-resort-lp`）は使わない。**
 - [ ] `node docs/mock-assets/scripts/validate-mock-japow-detail.mjs` exit 0
-- [ ] 仕様: [JAPOW_DETAIL_INTEGRATION.md](./JAPOW_DETAIL_INTEGRATION.md)
-- [ ] `guides/hub/messages/hub.*.json` の施設数表記を更新
-- [ ] ビルド確認:
-
-```bash
-cd guides
-node scripts/sync.mjs
-node ../docs/mock-assets/scripts/validate-mock-japow-detail.mjs --public
-npm run dev    # http://localhost:3456/{id}/
-```
+- [ ] `guides/hub/messages/hub.ja.json` / `hub.en.json` の施設数（`N施設` / `N Resorts`）を更新
 
 ### Phase 7.5 — Skyticket レンタカーアフィリエイト（必須）
 
-他 14 施設と同型。**省略不可。**
+他施設と同型。**省略不可。**
 
 - [ ] `docs/mock-assets/scripts/apply-rentacar-affiliate.mjs` の `RESORT_COPY` に `{id}` と目的地コピーを追加
 - [ ] 必要なら `_shared/affiliates/skyticket-rentacar.json` に `destinations` エントリ（Skyticket URL 根拠付き）
@@ -327,7 +391,26 @@ node docs/mock-assets/scripts/validate-skyticket-affiliate.mjs
 - [ ] `registry.json` に `"affiliates": { "rentacar": "<destination_id>" }`
 - [ ] `index.html` に `rentacar-link.css` · `skyticket-rentacar.js` · `data-skyticket-rentacar-*` ブロック
 
-### Phase 8 — Human Gate（公開前必須）
+### Phase 8 — guides 同期（配信ビルド）
+
+```bash
+node guides/scripts/sync.mjs
+node docs/mock-assets/scripts/validate-mock-japow-detail.mjs --public
+```
+
+- [ ] `guides/public/{id}/index.html` が生成される
+- [ ] `guides/public/resort-guides.json` に新 `japowId` が含まれる
+- [ ] ローカル: `cd guides && npm run dev` → `http://localhost:3456/{id}/` · `?lang=en`
+
+### Phase 9 — JAPOWSERCH 本番データ同期（詳細ボタン成立）
+
+JAPOW マップは **`JAPOWSERCH/data/resort-guides.json`** を読む。SkiresortWebPlan だけ更新しても本番ボタンは動かない。
+
+- [ ] `JAPOWSERCH/data/resort-guides.json` を `SkiresortWebPlan/data/resort-guides.json` と **同一内容**に同期
+- [ ] JAPOWSERCH を push 後、マップで `japowResortId` のカード「詳細確認」→ `https://guides.japowserch.com/{id}/` を確認
+- [ ] 未掲載 ID は `null` → 従来どおりカードへスクロール（[guides/HANDOFF.md](../../guides/HANDOFF.md) §②）
+
+### Phase 10 — Human Gate（公開前必須）
 
 | 確認項目 | 担当 |
 |----------|------|
@@ -340,7 +423,7 @@ node docs/mock-assets/scripts/validate-skyticket-affiliate.mjs
 
 **モック免責**: 戦略提案用である旨は `map` の `disclaimer` および必要なら LP フッター注記で明示（[i18n_spec.md](./i18n_spec.md)）。
 
-### Phase 9 — プレビュー
+### Phase 11 — プレビュー
 
 ```bash
 npx serve docs/mock-assets -p 3456
@@ -354,25 +437,22 @@ npx serve docs/mock-assets -p 3456
 | `/area-map.html?resort={id}` | 周辺マップ（作った場合） |
 | `/`（hub） | テーブルに新施設が出る |
 
-### Phase 10 — L3 評価（必須）
+### Phase 12 — 機械検証 + L3 評価（出荷ゲート）
 
-**新規アーキタイプを追加するときは、まず canonical テンプレ（例: `sichinohe-lp`）を L3 に通す。** 個別施設 LP は PASS 済みテンプレの複製が前提。
-
-基準: [lp_mock_requirements.md](./lp_mock_requirements.md) · チェックリスト: [lp_mock_handoff_checklist.md](./lp_mock_handoff_checklist.md)
+**8 コマンドすべて exit 0 が commit / push の前提**（[lp-factory-no-shortcuts.mdc](../../.cursor/rules/lp-factory-no-shortcuts.mdc)）。
 
 ```bash
-node scripts/validate-resort-guides-ids.mjs
-node docs/mock-assets/scripts/validate-mock-japow-detail.mjs
 node docs/mock-assets/scripts/validate-mock-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-lp-shell.mjs
 node docs/mock-assets/scripts/validate-mock-lp-copy.mjs
 node docs/mock-assets/scripts/validate-skyticket-affiliate.mjs
+node docs/mock-assets/scripts/validate-mock-japow-detail.mjs
 node guides/scripts/sync.mjs
 node docs/mock-assets/scripts/validate-mock-japow-detail.mjs --public
 ```
 
-**いずれか exit ≠ 0 のまま commit / push / 配信してはならない**（[lp-factory-no-shortcuts.mdc](../../.cursor/rules/lp-factory-no-shortcuts.mdc)）。
+基準: [lp_mock_requirements.md](./lp_mock_requirements.md) · [lp_mock_handoff_checklist.md](./lp_mock_handoff_checklist.md)
 
 ```
 @resort-qa-a11y
@@ -389,10 +469,11 @@ node docs/mock-assets/scripts/validate-mock-japow-detail.mjs --public
 **出荷ゲート:**
 
 ```
-機械検証 exit 0
+機械検証 8 本 exit 0
   + resort-qa-a11y PASS (LP-Q1–Q9)
   + resort-visual-evaluator PASS (LP-V1–V6)
-  + Human Gate（Phase 8）
+  + Human Gate（Phase 10）
+  + JAPOWSERCH resort-guides.json 同期（Phase 9）
 → guides 配信・JAPOW 詳細ボタン連携可
 ```
 
@@ -424,8 +505,10 @@ docs/mock-assets/
   _shared/affiliates/           # skyticket-rentacar（apply スクリプトで配線）
 
 configs/lp-brief/{id}.yaml      # 推奨
-data/resort-guides.json         # japow 連携
-guides/scripts/sync.mjs         # EXPECTED_IDS 更新
+data/resort-guides.json         # SkiresortWebPlan 正本
+JAPOWSERCH/data/resort-guides.json  # 詳細ボタン用（Phase 9 で同期）
+guides/scripts/sync.mjs
+guides/hub/messages/hub.*.json  # 施設数
 ```
 
 ---
@@ -438,13 +521,14 @@ guides/scripts/sync.mjs         # EXPECTED_IDS 更新
 
 ```
 @resort-template-implementer
-docs/mock-assets/LP_FACTORY_PROCEDURE.md に従い、
-添付の戦略レポートから {id} の LP モックを作成。
+docs/mock-assets/LP_FACTORY_PROCEDURE.md §0.2 標準パイプラインに従い、
+添付の戦略レポートから {id} の LP をテンプレ複製し、
+JAPOW 詳細ボタン連携（resort-guides.json + sync + JAPOWSERCH 同期）まで実施。
 
-- archetype: corridor-hub
-- 複製元: sapporo-teine-lp
-- 子ページ: nearby-food, nearby-onsen, corridor-stay
-- registry id: example-resort, japowResortId: 要確認
+- archetype: local-value
+- 複製元: shinjo-lp
+- registry id: hinode, japowResortId: 52
+- 画像: Gemini MCP（チャット内に貼らない）
 ```
 
 ### 7.2 周辺マップ（並行可）
@@ -498,5 +582,6 @@ resort-ux-designer → resort-design-director → resort-spec-handoff
 
 | 日付 | 内容 |
 |------|------|
+| 2026-06-25 | §0.2 標準パイプライン追加 — テンプレ複製→詳細ボタンまでを 1 本化。Phase 9 JAPOWSERCH 同期を明記 |
+| 2026-06-23 | Phase 12 機械検証 + L3 評価 |
 | 2026-06-23 | 初版 — 戦略レポート受領〜 guides 配信までの Factory 手順 |
-| 2026-06-23 | Phase 10 L3 評価追加 — lp_mock_requirements.md 連携 |

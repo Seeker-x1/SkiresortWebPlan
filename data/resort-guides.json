@@ -18,6 +18,7 @@
     "326": { "registryId": "tsunan",         "tier": "mock" },
     "284": { "registryId": "kirigamine",     "tier": "mock" },
     "36":  { "registryId": "kamikawa-nakayama", "tier": "mock" },
-    "163": { "registryId": "shinjo",           "tier": "mock" }
+    "163": { "registryId": "shinjo",           "tier": "mock" },
+    "52":  { "registryId": "hinode",           "tier": "mock" }
   }
 }

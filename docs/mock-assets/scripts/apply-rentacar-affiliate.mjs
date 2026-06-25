@@ -290,6 +290,21 @@ const RESORT_COPY = {
       rentacarHint: "For Mogami, Tsuruoka Onsen, and ski-hill loops",
     },
   },
+  hinode: {
+    rentacar: "asahikawa_airport",
+    ja: {
+      rentacarEyebrow: "富良野・旭川圏",
+      rentacarLink: "旭川空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "富良野・美瑛・十勝岳方面の周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Furano · Asahikawa",
+      rentacarLink: "Book a rental car at Asahikawa Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Furano, Biei, and Tokachi peak drives",
+    },
+  },
 };
 
 const NEW_DESTINATIONS = {
