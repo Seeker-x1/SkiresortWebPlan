@@ -12,17 +12,20 @@
 ## 0. 実装順序
 
 ```
-Phase 1  複製 — アーキタイプに応じた {id}-lp/ 作成
+Phase 1  複製 — アーキタイプに応じた {id}-lp/ 作成（他 id 残骸削除）
+Phase 1.5  画像 — lp-mock-{id}-*.png（専用 AI PNG）+ map hero PNG
 Phase 2  i18n — messages/ja.json + en.json（レポート由来）
 Phase 3  HTML — data-i18n 配線・セクション取捨
 Phase 4  CSS — mock.css トークン調整
-Phase 5  画像 — lp-mock-{id}-*.png
-Phase 6  マップ — data/maps/{id}.json + hero PNG（任意 area-map）
-Phase 7  registry — registry.json, resort-guides.json, EXPECTED_IDS
-Phase 8  機械検証 — validate-mock-*.mjs exit 0
-Phase 9  L3 — qa-a11y + visual-evaluator
-Phase 10 Human Gate — 事実確認
+Phase 5  マップ — data/maps/{id}.json + hero PNG（任意 area-map）
+Phase 6  registry — registry.json, resort-guides.json, JAPOW 詳細連携（J1–J6）
+Phase 6.5  アフィリエイト — apply-rentacar-affiliate.mjs + validate-skyticket
+Phase 7  機械検証 — validate-mock-*.mjs + validate-resort-guides-ids + validate-mock-japow-detail
+Phase 8  L3 — qa-a11y + visual-evaluator
+Phase 9  Human Gate — 事実確認
 ```
+
+**禁止:** 他施設 PNG 流用 · SVG/落書き画像 · アフィリエイト省略 · 検証未 PASS で push。詳細は [`.cursor/rules/lp-factory-no-shortcuts.mdc`](../../.cursor/rules/lp-factory-no-shortcuts.mdc)。
 
 ---
 
@@ -55,11 +58,22 @@ Phase 10 Human Gate — 事実確認
 - [ ] `.section`, `.inner`, `.heading-lg`, `.hero-title` を維持
 - [ ] `@media (prefers-reduced-motion: reduce)` ブロック
 
-### 1.5 配信
+### 1.5 画像・アフィリエイト
 
-- [ ] `registry.json` エントリ
-- [ ] `data/resort-guides.json`（JAPOW 掲載時）
-- [ ] `guides/scripts/sync.mjs` → `EXPECTED_IDS`
+- [ ] `lp-mock-{id}-*.png` は**施設専用**フォトリアル AI PNG（他 `{id}` のコピー禁止）
+- [ ] `images/maps/{id}-hero.png` は焼き込み線イラスト PNG
+- [ ] `apply-rentacar-affiliate.mjs` 実行済み
+- [ ] `registry.json` に `affiliates.rentacar`
+- [ ] `index.html` に Skyticket ブロック（`skyticket-rentacar.js` 等）
+
+### 1.6 配信・JAPOW 詳細ボタン
+
+- [ ] `registry.json` エントリ（`id` / `slug` / `name` / `strategy`）
+- [ ] `data/resort-guides.json`（`japowResortId` → `registryId`）
+- [ ] `node scripts/validate-resort-guides-ids.mjs` exit 0
+- [ ] `node docs/mock-assets/scripts/validate-mock-japow-detail.mjs` exit 0
+- [ ] `node guides/scripts/sync.mjs` → `validate-mock-japow-detail.mjs --public` exit 0
+- [ ] 仕様: [JAPOW_DETAIL_INTEGRATION.md](./JAPOW_DETAIL_INTEGRATION.md)
 
 ---
 
@@ -72,10 +86,11 @@ Phase 10 Human Gate — 事実確認
 | LP-Q1 | 375px DevTools、横スクロールなし、CTA 44px |
 | LP-Q2 | Tab 移動でフォーカス可視、lang group label |
 | LP-Q3 | 戦略1行が hero + paths にある |
-| LP-Q4 | 4 つの validate スクリプト exit 0（copy 含む） |
+| LP-Q4 | **8 つ**の validate スクリプト exit 0（copy + skyticket + japow-detail 含む） |
 | LP-Q5 | ヒーロー width/height 属性あり |
-| LP-Q6 | 料金・住所が JSON のみ |
 | LP-Q7 | validate-mock-lp-copy.mjs exit 0（§1.1 禁止表現なし） |
+| LP-Q8 | 375px で `#highlights` の CTA がカードに被らない（`highlight-duet` grid） |
+| LP-Q9 | JAPOW 詳細: resort-guides + sync + URL 契約（`validate-mock-japow-detail.mjs`） |
 
 ### LP-V 自己確認
 
@@ -102,7 +117,7 @@ implementer Phase 8 完了（機械検証 exit 0）
 | FAIL | 対応 |
 |------|------|
 | LP-V1 or LP-V5 | mock.css / タイポ修正 |
-| LP-Q1–Q6 | i18n・a11y・導線修正 |
+| LP-Q1–Q9 | i18n・a11y・導線・コピー・**CTA 被り**・**JAPOW 詳細**修正 |
 | 機械検証 | スクリプト出力に従い修正 |
 
 **テンプレート新設時:** まず **canonical**（`sichinohe-lp` 等）に L3 を通してから、他施設を複製する。
@@ -113,9 +128,14 @@ implementer Phase 8 完了（機械検証 exit 0）
 
 ```bash
 node scripts/validate-resort-guides-ids.mjs
+node docs/mock-assets/scripts/validate-mock-japow-detail.mjs
 node docs/mock-assets/scripts/validate-mock-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-lp-shell.mjs
+node docs/mock-assets/scripts/validate-mock-lp-copy.mjs
+node docs/mock-assets/scripts/validate-skyticket-affiliate.mjs
+node guides/scripts/sync.mjs
+node docs/mock-assets/scripts/validate-mock-japow-detail.mjs --public
 npx serve docs/mock-assets -p 3456
 ```
 

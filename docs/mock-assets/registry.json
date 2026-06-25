@@ -373,6 +373,29 @@
       "affiliates": {
         "rentacar": "kamisuwa_kirigamine_kogen"
       }
+    },
+    {
+      "id": "shinjo",
+      "slug": "shinjo-lp",
+      "name": {
+        "ja": "新庄市民スキー場",
+        "en": "Shinjo Municipal Ski Area"
+      },
+      "region": {
+        "ja": "山形県新庄市",
+        "en": "Shinjo, Yamagata"
+      },
+      "strategy": {
+        "ja": "新幹線15分・ナイター・中学生以下無料",
+        "en": "Shinkansen 15 min · Night skiing · Kids free"
+      },
+      "guidePath": "/shinjo/",
+      "guideUrl": "https://guides.japowserch.com/shinjo/",
+      "japowResortId": 163,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "shinjo_station"
+      }
     }
   ],
   "guides": {

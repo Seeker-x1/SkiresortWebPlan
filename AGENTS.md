@@ -102,6 +102,11 @@ map-interaction-spec
 
 ## 横断 Rules（必読）
 
+LP モック（`docs/mock-assets/{id}-lp/`）を追加・変更する前に読むこと:
+
+- [`.cursor/rules/lp-factory-no-shortcuts.mdc`](.cursor/rules/lp-factory-no-shortcuts.mdc)
+- [docs/mock-assets/LP_FACTORY_PROCEDURE.md](docs/mock-assets/LP_FACTORY_PROCEDURE.md)
+
 マップ・オーバーレイに触る前に読むこと:
 
 - [`.cursor/rules/lift-map-no-fake-overlays.mdc`](.cursor/rules/lift-map-no-fake-overlays.mdc)
@@ -110,6 +115,7 @@ map-interaction-spec
 
 ### 絶対禁止
 
+- **LP Factory:** 他施設資産流用・画像フォーマット独自変更・アフィリエイト省略・検証未 PASS で配信（`lp-factory-no-shortcuts`）
 - 根拠なき手置き座標でコース／リフト線を描く
 - 未検証の SVG 線を `/map` 本番に載せる
 - **`NanakoCyoueiSki/` で作業する**（正は `resorts/Sichinohe-CyoueiSki/`）

@@ -10,11 +10,11 @@
     "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
   },
   "sources": [
-    "網走市公式ポータル",
+    "網走市公式",
     "日専連オホーツク網走",
-    "現状分析レポート 2026-06"
+    "LP戦略レポート"
   ],
-  "updatedAt": "2026-06-23T12:00:00+09:00",
+  "updatedAt": "2026-06-13T12:00:00+09:00",
   "viewBox": "0 0 1024 1024",
   "hero": {
     "src": "images/maps/abashiri-lv-hero.png",
@@ -83,16 +83,7 @@
         "ja": "2",
         "en": "2"
       },
-      "meta": {
-        "ja": {
-          "レベル": "中級",
-          "眺望": "オホーツク海パノラマ"
-        },
-        "en": {
-          "Level": "Intermediate",
-          "View": "Okhotsk Sea panorama"
-        }
-      }
+      "meta": {}
     },
     {
       "id": "trail-3",
@@ -137,16 +128,7 @@
         "ja": "5",
         "en": "5"
       },
-      "meta": {
-        "ja": {
-          "レベル": "中級",
-          "特徴": "全コース最長 · キタキツネ"
-        },
-        "en": {
-          "Level": "Intermediate",
-          "Note": "Longest course · red fox"
-        }
-      }
+      "meta": {}
     },
     {
       "id": "trail-6",

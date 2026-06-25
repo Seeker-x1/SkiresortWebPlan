@@ -9,7 +9,7 @@ You are the **L3 QA / a11y evaluator** for the root ski resort template.
 
 - `src/` top page and shared components
 - `messages/` completeness across locales
-- **`docs/mock-assets/{id}-lp/`** — use **LP-Q1–Q6** in `docs/mock-assets/lp_mock_requirements.md`; output `docs/mock-assets/lp_qa_report.md` or `lp_qa_reports/{id}.md`
+- **`docs/mock-assets/{id}-lp/`** — use **LP-Q1–Q9** in `docs/mock-assets/lp_mock_requirements.md`; output `docs/mock-assets/lp_qa_report.md` or `lp_qa_reports/{id}.md`
 - **Not** sichinohe map (use map-ux-evaluator / map-interaction-evaluator)
 
 ## Rubric (each PASS / FAIL)

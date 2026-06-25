@@ -4,7 +4,7 @@ JAPOWSERCH マップの「詳細確認」先。LP モックは `docs/mock-assets
 
 ## 実行順（運用）
 
-1. **① 本リポジトリ（SkiresortWebPlan）** — Vercel + DNS + 11 LP を先に稼働させる
+1. **① 本リポジトリ（SkiresortWebPlan）** — Vercel + DNS + 16 LP を先に稼働させる
 2. **② JAPOWSERCH** — マップ「詳細確認」ボタン連携（① の DNS 待ち中でもコード実装は並行可。本番確認は ① の URL が生きてから）
 
 詳細: [HANDOFF.md](./HANDOFF.md#実行順)
@@ -18,6 +18,7 @@ JAPOWSERCH マップの「詳細確認」先。LP モックは `docs/mock-assets
 | 英語 | `?lang=en`（例: `/biei/?lang=en`） |
 | ゲレンデマップ | `/map.html?resort={registry-id}` |
 | 連携レジストリ | `/registry.json` |
+| JAPOW 詳細マップ | `/resort-guides.json` · `/resort-guides.js` |
 
 `registry-id` は `docs/mock-assets/registry.json` の `id`（`biei-lp` ではない）。
 
@@ -36,7 +37,7 @@ JAPOWSERCH マップの「詳細確認」先。LP モックは `docs/mock-assets
 cd guides
 node scripts/sync.mjs   # public 生成（初回・更新時）
 npm run dev             # http://localhost:3456
-npm run validate        # mock-assets i18n 検証
+npm run validate        # mock-assets i18n + JAPOW 詳細契約
 ```
 
 ## ビルドのみ

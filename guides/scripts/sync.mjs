@@ -281,22 +281,19 @@ function main() {
   copyDirSimple(join(MOCK_ROOT, "images"), join(OUT, "images"));
 
   // Resort LPs: {slug}/ → public/{id}/  (例: biei-lp/ → public/biei/)
-  const EXPECTED_IDS = [
-    "sichinohe", "biei", "unabetsu", "kiyosato", "gokazan", "tsunan",
-    "minami-furano", "asahigaoka", "otoifuji", "shimukappu", "abashiri-lv",
-    "sapporo-teine", "sapporo-kokusai", "pippu", "kirigamine", "kamikawa-nakayama",
-  ];
-  for (const id of EXPECTED_IDS) {
-    const resort = registry.resorts.find((r) => r.id === id);
-    if (!resort) throw new Error(`registry missing id: ${id}`);
-  }
-
   for (const resort of registry.resorts) {
     const src = join(MOCK_ROOT, resort.slug);
+    const indexPath = join(src, "index.html");
+    if (!existsSync(indexPath)) {
+      throw new Error(`missing LP: ${resort.slug}/index.html (registry id ${resort.id})`);
+    }
     const dest = join(OUT, resort.id);
     copyDirSimple(src, dest, { transformHtml: true });
     console.log(`✓ /${resort.id}/ ← ${resort.slug}`);
   }
+
+  // JAPOWSERCH UMD helper (詳細確認 URL 組み立て)
+  cpSync(join(REPO_ROOT, "data", "resort-guides.js"), join(OUT, "resort-guides.js"));
 
   // JAPOWSERCH-facing registry + resort-guides handoff
   const extended = buildRegistry(registry);
@@ -341,6 +338,7 @@ function main() {
   console.log(`  Example: ${HOST}/biei/`);
   console.log(`  Registry: ${HOST}/registry.json`);
   console.log(`  JAPOW map: ${HOST}/resort-guides.json`);
+  console.log(`  JAPOW UMD: ${HOST}/resort-guides.js`);
 }
 
 main();

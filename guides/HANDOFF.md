@@ -68,10 +68,16 @@ GET https://guides.japowserch.com/resort-guides.json
 | 65 | kiyosato |
 | 66 | gokazan（※72 ではない） |
 | 98 | sichinohe |
-| 326 | tsunan |
 | 284 | kirigamine |
+| 326 | tsunan |
 | 36 | kamikawa-nakayama |
 | 51 | pippu |
+| 453 | sapporo-kokusai |
+| 454 | sapporo-teine |
+
+テンプレート契約（SkiresortWebPlan 側）: [JAPOW_DETAIL_INTEGRATION.md](../docs/mock-assets/JAPOW_DETAIL_INTEGRATION.md)
+
+UMD（fetch 可）: `https://guides.japowserch.com/resort-guides.js`
 
 ### 「詳細確認」ボタン分岐（JAPOWSERCH リポジトリ）
 

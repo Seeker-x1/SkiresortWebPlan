@@ -39,6 +39,20 @@
         "ja": "新潟空港",
         "en": "Niigata Airport"
       }
+    },
+    "kamisuwa_kirigamine_kogen": {
+      "url": "https://skyticket.jp/rentacar/koushinetsu/nagano/kamisuwa_shimosuwa_okaya_kirigamine_utsukusigahara_kogen/",
+      "label": {
+        "ja": "上諏訪・霧ヶ峰",
+        "en": "Kamisuwa · Kirigamine"
+      }
+    },
+    "shinjo_station": {
+      "url": "https://skyticket.jp/rentacar/tohoku/yamagata/shinjo_station/",
+      "label": {
+        "ja": "新庄駅",
+        "en": "Shinjo Station"
+      }
     }
   }
 }

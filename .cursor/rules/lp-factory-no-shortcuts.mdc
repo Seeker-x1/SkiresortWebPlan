@@ -1,0 +1,57 @@
+---
+description: LP Factory で他施設流用・独自ルート・検証スキップを禁止。新規ゲレンデも既存と同じゲート必須。
+globs: docs/mock-assets/**/*,configs/lp-brief/**/*,guides/**/*,data/resort-guides.json
+alwaysApply: true
+---
+
+# LP Factory — 勝手なこと禁止（厳守）
+
+**一次手順書:** [docs/mock-assets/LP_FACTORY_PROCEDURE.md](../../docs/mock-assets/LP_FACTORY_PROCEDURE.md)  
+**チェックリスト:** [docs/mock-assets/lp_mock_handoff_checklist.md](../../docs/mock-assets/lp_mock_handoff_checklist.md)
+
+新規ゲレンデが **15 件目でも N 件目でも**、既存 LP と **同じ Phase・同じ検証** を通す。件数や「急ぎ」「JAPOW まで反映」は省略理由にならない。
+
+---
+
+## 禁止（ユーザー確認なしでやってはいけない）
+
+1. **他ゲレンデ資産の流用** — 画像 PNG をファイル名だけ変えてコピー、他 `{id}` のコピー・ハッシュタグ・`messages` キー名の残骸を残す
+2. **LP 画像フォーマットの独自変更** — `lp-mock-{id}-*.png` 以外（SVG 落書き、簡易イラスト、resvg 変換のみ、手描きプレースホルダー等）への差し替え
+3. **マップ hero の簡易 SVG 線** — 焼き込みイラスト PNG 以外の新ルート（[lift-map-no-fake-overlays](./lift-map-no-fake-overlays.mdc) と同趣旨）
+4. **アフィリエイト省略** — `registry.json` の `affiliates.rentacar` なし、`index.html` に Skyticket ブロックなしで出荷
+5. **検証スキップ** — 下記 `validate-*.mjs` が **すべて exit 0** になる前の commit / push / 「完成」宣言
+6. **手順書にない独自修復** — 指摘後に Phase を飛ばして「とりあえず直す」（例: 他施設流用 → SVG → 落書き PNG の連鎖）
+7. **テンプレ複製の形骸化** — HTML/CSS 骨格だけ複製し、画像・i18n・アフィリエイト・registry を後回しにして配信
+
+---
+
+## 必須（新規 `{id}-lp` 追加のたびに全件）
+
+| 順 | 作業 | コマンド / 参照 |
+|----|------|-----------------|
+| 1 | brief + アーキタイプ選定 | `configs/lp-brief/{id}.yaml` · LP_FACTORY §3 |
+| 2 | 複製元から `{id}-lp/` 作成、**コピー元残骸削除** | Phase 1（他 id の PNG・文言を残さない） |
+| 3 | 施設専用 **フォトリアル AI PNG** | `lp-mock-{id}-*.png` · `images/maps/{id}-hero.png`（焼き込み線） |
+| 4 | i18n + HTML 配線 | `validate-mock-i18n.mjs` · `validate-mock-html-i18n.mjs` |
+| 5 | Skyticket レンタカー | `apply-rentacar-affiliate.mjs` → `validate-skyticket-affiliate.mjs` |
+| 6 | registry + JAPOW 詳細 | `registry.json` · `resort-guides.json` · [JAPOW_DETAIL_INTEGRATION.md](../../docs/mock-assets/JAPOW_DETAIL_INTEGRATION.md) |
+| 7 | シェル・コピー | `validate-mock-lp-shell.mjs` · `validate-mock-lp-copy.mjs` |
+| 8 | ID + JAPOW 契約 | `validate-resort-guides-ids.mjs` · `validate-mock-japow-detail.mjs` |
+| 9 | guides 同期 | `node guides/scripts/sync.mjs` → `validate-mock-japow-detail.mjs --public` |
+
+**参照実装（直近の正しい 1 件）:** `pippu-lp` — アフィリエイト・PNG・registry を初回コミットから揃えていること。
+
+---
+
+## エージェント行動
+
+- 「完成」「反映」「push」依頼があっても、**上表 7 コマンドが全部 PASS するまで**配信系コミットを作らない
+- 手順にない画像形式・省略フェーズを思いついたら **実装せず** ユーザーに確認
+- 他施設 LP を複製した直後は、**他 `{id}` 文字列が残っていないか** grep してから次 Phase へ
+- LP 変更後は `code-reviewer` または手順書どおり L3 評価を検討
+
+---
+
+## 再発防止（インシデント）
+
+霧ヶ峰（`kirigamine`）追加時: 比布 PNG 流用・`#PippuPowder` 残存・アフィリエイト未配線・検証未実行のあと、手順外の SVG / 落書き PNG で「修正」した。**このパターンは二度と使わない。**

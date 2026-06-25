@@ -275,6 +275,21 @@ const RESORT_COPY = {
       rentacarHint: "Watch winter closures on Kirigamine road",
     },
   },
+  shinjo: {
+    rentacar: "shinjo_station",
+    ja: {
+      rentacarEyebrow: "新幹線＋レンタカー",
+      rentacarLink: "新庄駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "最上・肘折温泉・スキー場周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Shinkansen + rental car",
+      rentacarLink: "Book a rental car at Shinjo Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Mogami, Tsuruoka Onsen, and ski-hill loops",
+    },
+  },
 };
 
 const NEW_DESTINATIONS = {
@@ -293,6 +308,10 @@ const NEW_DESTINATIONS = {
   kamisuwa_kirigamine_kogen: {
     url: "https://skyticket.jp/rentacar/koushinetsu/nagano/kamisuwa_shimosuwa_okaya_kirigamine_utsukusigahara_kogen/",
     label: { ja: "上諏訪・霧ヶ峰", en: "Kamisuwa · Kirigamine" },
+  },
+  shinjo_station: {
+    url: "https://skyticket.jp/rentacar/tohoku/yamagata/shinjo_station/",
+    label: { ja: "新庄駅", en: "Shinjo Station" },
   },
 };
 

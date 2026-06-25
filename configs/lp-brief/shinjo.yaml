@@ -1,0 +1,40 @@
+resortId: shinjo
+schemaVersion: "2026-06-25"
+
+name:
+  ja: 新庄市民スキー場
+  en: Shinjo Municipal Ski Area
+region:
+  ja: 山形県新庄市
+  en: Shinjo, Yamagata
+japowResortId: 163
+
+strategy:
+  ja: 新幹線15分・ナイター・中学生以下無料
+  en: Shinkansen 15 min · Night skiing · Kids free
+archetype: local-value
+
+audience: both
+
+hero:
+  tagline:
+    ja: 山形新幹線の終点から15分——家族にやさしい市民の丘。
+    en: Fifteen minutes from the Yamagata Shinkansen terminus—a family-friendly municipal hill.
+  badges: [family, night, shinkansen]
+
+pillars:
+  - id: transit
+    hook: { ja: 新幹線ターミナル直結, en: Shinkansen terminal access }
+  - id: family
+    hook: { ja: 中学生以下無料, en: Junior high and under free }
+  - id: night
+    hook: { ja: 21時までナイター, en: Night skiing until 21:00 }
+
+map:
+  sources: ["新庄市スポーツ協会", "LP戦略レポート"]
+  heroImage: images/maps/shinjo-hero.png
+
+humanReview:
+  - japowResortId
+  - 料金・営業時間（公式確認）
+  - 英訳の事実確認

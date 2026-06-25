@@ -2,7 +2,33 @@
 
 > **目的**: ゲレンデ向け「LP戦略レポート」（または同等の調査成果）を受け取ったあと、`docs/mock-assets/` に静的ガイド LP を追加し、`guides.japowserch.com` で配信できる状態まで進める。  
 > **対象**: `docs/mock-assets/{id}-lp/`（モック）。ルート `src/` 本番テンプレ・七戸 `resorts/Sichinohe-CyoueiSki/web/` は **別パイプライン**。  
-> **関連**: [i18n_spec.md](./i18n_spec.md) · [AREA_MAP_FACTORY_SPEC.md](./AREA_MAP_FACTORY_SPEC.md) · [guides/HANDOFF.md](../../guides/HANDOFF.md)
+> **関連**: [i18n_spec.md](./i18n_spec.md) · [AREA_MAP_FACTORY_SPEC.md](./AREA_MAP_FACTORY_SPEC.md) · [JAPOW_DETAIL_INTEGRATION.md](./JAPOW_DETAIL_INTEGRATION.md) · [guides/HANDOFF.md](../../guides/HANDOFF.md)  
+> **エージェント規範（必読）:** [`.cursor/rules/lp-factory-no-shortcuts.mdc`](../../.cursor/rules/lp-factory-no-shortcuts.mdc)
+
+---
+
+## 0. エージェント行動規範 — 勝手なこと禁止
+
+**新規ゲレンデが何件目でも、既存 LP と同じゲートを省略しない。** 「急ぎ」「JAPOW まで反映」は Phase スキップの理由にならない。
+
+### 0.1 禁止（ユーザー確認なし）
+
+| # | 禁止行為 | 正しい対応 |
+|---|----------|------------|
+| 1 | 他 `{id}` の PNG・コピーをファイル名だけ変えて流用 | 施設専用 `lp-mock-{id}-*.png` を新規生成 |
+| 2 | 複製元のハッシュタグ・`messages` キー・他施設名の残骸 | Phase 1 完了時に grep で `{id}` 以外を除去 |
+| 3 | LP 画像を SVG / 落書き / 簡易イラストに差し替え | フォトリアル AI **PNG** のみ（比布・美瑛と同型） |
+| 4 | Skyticket レンタカーアフィリエイトを抜く | Phase 7.5 必須 |
+| 5 | `validate-*.mjs` 未 PASS の commit / push | §5 Phase 10 の全コマンド exit 0 後のみ |
+| 6 | 指摘後に手順書にない独自ルートで「とりあえず直す」 | Phase 0 からやり直し |
+
+### 0.2 再発防止
+
+霧ヶ峰追加時に比布流用 → アフィリエイト欠落 → 検証スキップ → SVG / 落書き PNG という **手順外の連鎖** が発生した。以降、この回避策は使わない。
+
+### 0.3 参照実装
+
+直近で手順どおり出荷した LP（例: `pippu-lp`）と **同じファイルセット・同じ検証コマンド** を新規 `{id}` にも適用する。
 
 ---
 
@@ -16,7 +42,7 @@
 | 画像 | ⚠️ 50% | ヒーロー等は AI 生成可。**公式ロゴ・標識は要確認** |
 | ゲレンデマップ JSON | ✅ 85% | `generate-map-data.mjs` にエントリ追加（**焼き込みイラスト前提**） |
 | 周辺マップ（飲食・温泉） | ✅ 70% | [AREA_MAP_FACTORY_SPEC.md](./AREA_MAP_FACTORY_SPEC.md) の brief → Deep Research 経路 |
-| 配信・JAPOW 連携 | ✅ 95% | `registry.json` + `sync.mjs` + `resort-guides.json` |
+| 配信・JAPOW 連携 | ✅ 95% | `registry.json` + `sync.mjs` + `resort-guides.json` + [JAPOW_DETAIL_INTEGRATION.md](./JAPOW_DETAIL_INTEGRATION.md) |
 | 公開品質 | ⚠️ 必須 Human Gate | 電話・料金・道路規制・英訳の事実確認 |
 
 **一言**: 「レポート → 下書き LP → ローカルプレビュー」までは 1 セッションで回せる。**クライアント提示前に必ず Human Gate を 1 パス**。
@@ -186,6 +212,15 @@ cp -r docs/mock-assets/sapporo-teine-lp docs/mock-assets/sapporo-kokusai-lp
 - [ ] `../map.html?resort={id}` リンクを全ページで統一
 - [ ] 不要な子ページ・画像は削除（コピー元の残骸を残さない）
 - [ ] 画像ファイル名を `lp-mock-{id}-*.png` にリネームし HTML を追随
+- [ ] **他施設の PNG をコピーしない**（バイト同一・ファイル名だけ変更は禁止）。施設専用のフォトリアル AI PNG を新規用意
+- [ ] 複製直後: 他 `{id}` 文字列が残っていないか grep（例: 比布なのに `Pippu` / `pippu` が残存していないか）
+
+### Phase 1.5 — LP 画像（必須）
+
+| 種別 | パス | ルール |
+|------|------|--------|
+| セクション写真 | `{id}-lp/lp-mock-{id}-*.png` | フォトリアル AI **PNG**。SVG・落書き・他施設流用禁止 |
+| マップ hero | `images/maps/{id}-hero.png` | コース線**焼き込み**イラスト PNG（簡易 SVG オーバーレイ禁止） |
 
 ### Phase 2 — コピー（i18n）
 
@@ -263,15 +298,34 @@ node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
 ```
 
 - [ ] `data/resort-guides.json` に `"japowId": { "registryId": "{id}", "tier": "mock" }` を追加
-- [ ] `guides/scripts/sync.mjs` の `EXPECTED_IDS` 配列に `{id}` を追加（漏れるとビルド失敗）
-- [ ] `guides/hub/messages/hub.*.json` の施設数表記を更新（例: 「11施設」→ 実数）
+- [ ] `node scripts/validate-resort-guides-ids.mjs` exit 0（ID 正本照合）
+- [ ] `node docs/mock-assets/scripts/validate-mock-japow-detail.mjs` exit 0
+- [ ] 仕様: [JAPOW_DETAIL_INTEGRATION.md](./JAPOW_DETAIL_INTEGRATION.md)
+- [ ] `guides/hub/messages/hub.*.json` の施設数表記を更新
 - [ ] ビルド確認:
 
 ```bash
 cd guides
 node scripts/sync.mjs
+node ../docs/mock-assets/scripts/validate-mock-japow-detail.mjs --public
 npm run dev    # http://localhost:3456/{id}/
 ```
+
+### Phase 7.5 — Skyticket レンタカーアフィリエイト（必須）
+
+他 14 施設と同型。**省略不可。**
+
+- [ ] `docs/mock-assets/scripts/apply-rentacar-affiliate.mjs` の `RESORT_COPY` に `{id}` と目的地コピーを追加
+- [ ] 必要なら `_shared/affiliates/skyticket-rentacar.json` に `destinations` エントリ（Skyticket URL 根拠付き）
+- [ ] 実行:
+
+```bash
+node docs/mock-assets/scripts/apply-rentacar-affiliate.mjs
+node docs/mock-assets/scripts/validate-skyticket-affiliate.mjs
+```
+
+- [ ] `registry.json` に `"affiliates": { "rentacar": "<destination_id>" }`
+- [ ] `index.html` に `rentacar-link.css` · `skyticket-rentacar.js` · `data-skyticket-rentacar-*` ブロック
 
 ### Phase 8 — Human Gate（公開前必須）
 
@@ -308,15 +362,22 @@ npx serve docs/mock-assets -p 3456
 
 ```bash
 node scripts/validate-resort-guides-ids.mjs
+node docs/mock-assets/scripts/validate-mock-japow-detail.mjs
 node docs/mock-assets/scripts/validate-mock-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-lp-shell.mjs
+node docs/mock-assets/scripts/validate-mock-lp-copy.mjs
+node docs/mock-assets/scripts/validate-skyticket-affiliate.mjs
+node guides/scripts/sync.mjs
+node docs/mock-assets/scripts/validate-mock-japow-detail.mjs --public
 ```
+
+**いずれか exit ≠ 0 のまま commit / push / 配信してはならない**（[lp-factory-no-shortcuts.mdc](../../.cursor/rules/lp-factory-no-shortcuts.mdc)）。
 
 ```
 @resort-qa-a11y
 対象: docs/mock-assets/{id}-lp/
-基準: lp_mock_requirements.md LP-Q1–Q6
+基準: lp_mock_requirements.md LP-Q1–Q9
 出力: docs/mock-assets/lp_qa_reports/{id}.md
 
 @resort-visual-evaluator
@@ -329,16 +390,16 @@ node docs/mock-assets/scripts/validate-mock-lp-shell.mjs
 
 ```
 機械検証 exit 0
-  + resort-qa-a11y PASS (LP-Q1–Q6)
+  + resort-qa-a11y PASS (LP-Q1–Q9)
   + resort-visual-evaluator PASS (LP-V1–V6)
   + Human Gate（Phase 8）
-→ guides 配信・クライアント提示可
+→ guides 配信・JAPOW 詳細ボタン連携可
 ```
 
 | FAIL | ブロッカー |
 |------|------------|
 | LP-V1 or LP-V5 | ビジュアル再実装 |
-| LP-Q1–Q6 いずれか | a11y / i18n 修正 |
+| LP-Q1–Q9 いずれか | a11y / i18n / JAPOW 詳細修正 |
 
 ---
 
@@ -359,7 +420,8 @@ docs/mock-assets/
     {id}-area.json              # 周辺マップ（任意）
   images/maps/
     {id}-hero.png
-  registry.json                 # エントリ追加
+  registry.json                 # エントリ追加 + affiliates.rentacar
+  _shared/affiliates/           # skyticket-rentacar（apply スクリプトで配線）
 
 configs/lp-brief/{id}.yaml      # 推奨
 data/resort-guides.json         # japow 連携
