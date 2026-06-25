@@ -40,8 +40,8 @@ Step 8   registry.json + data/resort-guides.json
 Step 9   apply-rentacar-affiliate.mjs（Skyticket 必須）
 Step 10  機械検証 8 本（Phase 10 コマンドブロック）
 Step 11  guides/scripts/sync.mjs + hub 件数更新
-Step 12  JAPOWSERCH/data/resort-guides.json を SkiresortWebPlan と同期
-Step 13  L3 評価 + Human Gate → commit / push（ユーザー依頼時）
+Step 12  JAPOWSERCH/data/resort-guides.json 同期 + **fork へ push**
+Step 13  L3 評価 + Human Gate（並行可）· 両リポ push 完了で出荷
 ```
 
 ### エージェント依頼文（コピペ用）
@@ -55,7 +55,7 @@ Step 13  L3 評価 + Human Gate → commit / push（ユーザー依頼時）
 - archetype / 複製元: {例: local-value / shinjo-lp}
 - 画像: Gemini MCP（不可時はユーザー確認のうえ代替）
 - チャット内に画像を貼らない
-- 検証 8 本 PASS → sync → JAPOWSERCH resort-guides 同期まで
+- 検証 8 本 PASS → sync → JAPOWSERCH resort-guides 同期 → **両リポ push まで**（ユーザーが push 停止を明示しない限り）
 ```
 
 ---
@@ -404,11 +404,33 @@ node docs/mock-assets/scripts/validate-mock-japow-detail.mjs --public
 
 ### Phase 9 — JAPOWSERCH 本番データ同期（詳細ボタン成立）
 
-JAPOW マップは **`JAPOWSERCH/data/resort-guides.json`** を読む。SkiresortWebPlan だけ更新しても本番ボタンは動かない。
+JAPOW マップは **`JAPOWSERCH/data/resort-guides.json`** を読む。SkiresortWebPlan だけ push しても本番ボタンは動かない。
 
 - [ ] `JAPOWSERCH/data/resort-guides.json` を `SkiresortWebPlan/data/resort-guides.json` と **同一内容**に同期
-- [ ] JAPOWSERCH を push 後、マップで `japowResortId` のカード「詳細確認」→ `https://guides.japowserch.com/{id}/` を確認
+- [ ] **JAPOWSERCH を `fork`（`Seeker-x1/POWDER`）へ push** — rebase 衝突時は `fork/main` 上で `resort-guides.json` のみ cherry-pick / 上書きコミット可
+- [ ] push 後、マップで `japowResortId` のカード「詳細確認」→ `https://guides.japowserch.com/{id}/` を確認
 - [ ] 未掲載 ID は `null` → 従来どおりカードへスクロール（[guides/HANDOFF.md](../../guides/HANDOFF.md) §②）
+
+### Phase 9.5 — 両リポ push（出荷の最終ステップ）
+
+ユーザーが push 停止を明示しない限り、**次の 2 つをセットで完了**させる。
+
+| リポ | push 対象 | リモート |
+|------|-----------|----------|
+| SkiresortWebPlan | `{id}-lp` · registry · resort-guides · 手順書 | `origin/main` |
+| JAPOWSERCH | `data/resort-guides.json`（最低限） | `fork/main`（`Seeker-x1/POWDER`） |
+
+```bash
+# SkiresortWebPlan（検証 PASS 後）
+git push origin main
+
+# JAPOWSERCH（fork/main が先行している場合）
+cd ../JAPOWSERCH
+git fetch fork main
+git checkout fork/main -B main-push-sync
+# resort-guides.json を SkiresortWebPlan と同一にして commit
+git push fork HEAD:main
+```
 
 ### Phase 10 — Human Gate（公開前必須）
 
