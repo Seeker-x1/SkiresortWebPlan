@@ -16,6 +16,7 @@
     "51":  { "registryId": "pippu",           "tier": "mock" },
     "98":  { "registryId": "sichinohe",      "tier": "mock" },
     "326": { "registryId": "tsunan",         "tier": "mock" },
-    "284": { "registryId": "kirigamine",     "tier": "mock" }
+    "284": { "registryId": "kirigamine",     "tier": "mock" },
+    "36":  { "registryId": "kamikawa-nakayama", "tier": "mock" }
   }
 }

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "kamikawa-nakayama",
+  "name": {
+    "ja": "上川町営中山スキー場",
+    "en": "Kamikawa Nakayama Ski Area"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "上川町公式",
+    "LP戦略レポート"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/kamikawa-nakayama-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-rope",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": {
+        "ja": "ロープトゥ",
+        "en": "Rope tow"
+      },
+      "shortLabel": {
+        "ja": "ロープ",
+        "en": "Rope"
+      },
+      "meta": {
+        "ja": {
+          "料金": "無料",
+          "長さ": "約240m"
+        },
+        "en": {
+          "Price": "Free",
+          "Length": "~240 m"
+        }
+      }
+    },
+    {
+      "id": "trail-main",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "メイン斜面（初〜中級）",
+        "en": "Main slope (beginner–intermediate)"
+      },
+      "shortLabel": {
+        "ja": "メイン",
+        "en": "Main"
+      },
+      "meta": {
+        "ja": {
+          "比率": "初級70%・中級30%",
+          "雪面": "圧雪",
+          "全面ボード可": "可"
+        },
+        "en": {
+          "Share": "70% beg. · 30% inter.",
+          "Surface": "Groomed",
+          "Boards": "Allowed"
+        }
+      }
+    },
+    {
+      "id": "trail-upper",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "旧リフト上部（未圧雪・上級）",
+        "en": "Former upper lift zone (ungroomed)"
+      },
+      "shortLabel": {
+        "ja": "上部",
+        "en": "Upper"
+      },
+      "meta": {
+        "ja": {
+          "備考": "ハイクアップエリア",
+          "最大斜度": "32°",
+          "旧リフト": "非稼働"
+        },
+        "en": {
+          "Note": "Hike-up zone",
+          "Max slope": "32°",
+          "Former lift": "Abandoned"
+        }
+      }
+    },
+    {
+      "id": "trail-sled",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "sled",
+      "label": {
+        "ja": "雪遊びエリア",
+        "en": "Snow-play area"
+      },
+      "shortLabel": {
+        "ja": "雪遊び",
+        "en": "Play"
+      },
+      "meta": {
+        "ja": {
+          "備考": "チューブ・ソリ"
+        },
+        "en": {
+          "Note": "Tubes & sleds"
+        }
+      }
+    }
+  ]
+}

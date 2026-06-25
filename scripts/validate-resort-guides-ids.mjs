@@ -33,6 +33,7 @@ const NAME_SUBSTRINGS = {
   sichinohe: ["七戸"],
   tsunan: ["津南"],
   kirigamine: ["霧ヶ峰", "霧ケ峰"],
+  "kamikawa-nakayama": ["中山", "上川町営"],
 };
 
 function loadJson(path) {

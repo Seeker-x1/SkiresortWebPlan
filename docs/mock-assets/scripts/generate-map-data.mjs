@@ -329,6 +329,25 @@ const MAPS = [
         "intermediate", "M 315 275 L 330 250 L 345 230", { ja: { 全長: "700m", ナイター: "可" }, en: { Length: "700 m", "Night skiing": "Yes" } }),
     ],
   ),
+
+  mapBase(
+    "kamikawa-nakayama",
+    { ja: "上川町営中山スキー場", en: "Kamikawa Nakayama Ski Area" },
+    ["上川町公式", "LP戦略レポート"],
+    [
+      lift("lift-rope", { ja: "ロープトゥ", en: "Rope tow" }, { ja: "ロープ", en: "Rope" },
+        "M 280 320 L 300 200 L 320 120", [[280, 320], [320, 120]],
+        { ja: { 料金: "無料", 長さ: "約240m" }, en: { Price: "Free", Length: "~240 m" } }),
+      trail("trail-main", { ja: "メイン斜面（初〜中級）", en: "Main slope (beginner–intermediate)" }, { ja: "メイン", en: "Main" },
+        "intermediate", "M 318 125 L 300 200 L 285 320",
+        { ja: { 比率: "初級70%・中級30%", 雪面: "圧雪", 全面ボード可: "可" }, en: { Share: "70% beg. · 30% inter.", Surface: "Groomed", Boards: "Allowed" } }),
+      trail("trail-upper", { ja: "旧リフト上部（未圧雪・上級）", en: "Former upper lift zone (ungroomed)" }, { ja: "上部", en: "Upper" },
+        "advanced", "M 325 115 L 340 180 L 350 260",
+        { ja: { 備考: "ハイクアップエリア", 最大斜度: "32°", 旧リフト: "非稼働" }, en: { Note: "Hike-up zone", "Max slope": "32°", "Former lift": "Abandoned" } }),
+      trail("trail-sled", { ja: "雪遊びエリア", en: "Snow-play area" }, { ja: "雪遊び", en: "Play" },
+        "sled", "M 250 300 L 270 320", { ja: { 備考: "チューブ・ソリ" }, en: { Note: "Tubes & sleds" } }),
+    ],
+  ),
 ];
 
 mkdirSync(OUT, { recursive: true });

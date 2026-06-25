@@ -1,0 +1,40 @@
+resortId: kamikawa-nakayama
+schemaVersion: "2026-06-25"
+
+name:
+  ja: 上川町営中山スキー場
+  en: Kamikawa Nakayama Ski Area
+region:
+  ja: 北海道上川町
+  en: Kamikawa, Hokkaido
+japowResortId: 36
+
+strategy:
+  ja: フリーミアム · 層雲峡の雪遊び拠点
+  en: Freemium · Sounkyo snow-play hub
+archetype: local-value
+
+audience: both
+
+hero:
+  tagline:
+    ja: リフト完全無料。大雪山麓のドライパウダーと、清潔なローカルゲレンデ。
+    en: Free lifts. Dry powder at the foot of the Daisetsu—in a spotlessly clean town-run hill.
+  badges: [free, powder, night]
+
+pillars:
+  - id: freemium
+    hook: { ja: 無料滑走＋プレミアム体験, en: Free skiing + premium add-ons }
+  - id: corridor
+    hook: { ja: 層雲峡・上川ラーメン回遊, en: Sounkyo · Kamikawa ramen loop }
+  - id: powder
+    hook: { ja: ドライパウダー・旧上部エリア, en: Dry powder · former upper zone }
+
+map:
+  sources: ["上川町公式", "LP戦略レポート"]
+  heroImage: images/maps/kamikawa-nakayama-hero.png
+
+humanReview:
+  - japowResortId
+  - 営業時間（火木土ナイター）
+  - 住所表記（東町・栄町・字中山）

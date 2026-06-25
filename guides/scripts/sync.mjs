@@ -284,7 +284,7 @@ function main() {
   const EXPECTED_IDS = [
     "sichinohe", "biei", "unabetsu", "kiyosato", "gokazan", "tsunan",
     "minami-furano", "asahigaoka", "otoifuji", "shimukappu", "abashiri-lv",
-    "sapporo-teine", "sapporo-kokusai", "pippu", "kirigamine",
+    "sapporo-teine", "sapporo-kokusai", "pippu", "kirigamine", "kamikawa-nakayama",
   ];
   for (const id of EXPECTED_IDS) {
     const resort = registry.resorts.find((r) => r.id === id);

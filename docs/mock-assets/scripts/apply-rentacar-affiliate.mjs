@@ -215,6 +215,66 @@ const RESORT_COPY = {
       rentacarHint: "For Teine, downtown Sapporo, and Otaru loops",
     },
   },
+  pippu: {
+    rentacar: "asahikawa_airport",
+    ja: {
+      rentacarEyebrow: "上川・旭川圏",
+      rentacarLink: "旭川空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "比布・旭川市内周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Kamikawa · Asahikawa",
+      rentacarLink: "Book a rental car at Asahikawa Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Pippu and Asahikawa city loops",
+    },
+  },
+  "sapporo-kokusai": {
+    rentacar: "chitose_international_airport",
+    ja: {
+      rentacarEyebrow: "札幌圏",
+      rentacarLink: "新千歳空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "定山渓・小樽・札幌国際周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Sapporo gateway",
+      rentacarLink: "Book a rental car at New Chitose Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Kokusai, Jozankei, and Otaru routes",
+    },
+  },
+  "kamikawa-nakayama": {
+    rentacar: "asahikawa_airport",
+    ja: {
+      rentacarEyebrow: "上川・層雲峡圏",
+      rentacarLink: "旭川空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "層雲峡・上川町内周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Kamikawa · Sounkyo",
+      rentacarLink: "Book a rental car at Asahikawa Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Sounkyo and Kamikawa town loops",
+    },
+  },
+  kirigamine: {
+    rentacar: "kamisuwa_kirigamine_kogen",
+    ja: {
+      rentacarEyebrow: "諏訪・中央道圏",
+      rentacarLink: "諏訪IC周辺でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "霧ヶ峰線・冬期通行規制に注意",
+    },
+    en: {
+      rentacarEyebrow: "Suwa · Chuo Expressway",
+      rentacarLink: "Rent a car near Suwa IC",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "Watch winter closures on Kirigamine road",
+    },
+  },
 };
 
 const NEW_DESTINATIONS = {
@@ -229,6 +289,10 @@ const NEW_DESTINATIONS = {
   niigata_airport: {
     url: "https://skyticket.jp/rentacar/koushinetsu/niigata/niigata_airport/",
     label: { ja: "新潟空港", en: "Niigata Airport" },
+  },
+  kamisuwa_kirigamine_kogen: {
+    url: "https://skyticket.jp/rentacar/koushinetsu/nagano/kamisuwa_shimosuwa_okaya_kirigamine_utsukusigahara_kogen/",
+    label: { ja: "上諏訪・霧ヶ峰", en: "Kamisuwa · Kirigamine" },
   },
 };
 
