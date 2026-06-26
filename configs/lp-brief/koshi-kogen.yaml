@@ -1,0 +1,63 @@
+resortId: koshi-kogen
+schemaVersion: "2026-06-26"
+
+name:
+  ja: 古志高原スキー場
+  en: Koshi Kogen Ski Area
+region:
+  ja: 新潟県長岡市山古志
+  en: Yamakoshi, Nagaoka, Niigata
+japowResortId: 310
+
+strategy:
+  ja: 湯沢混雑回避・¥2,000・ファミリー85%スキー
+  en: Skip Yuzawa crowds · ¥2,000 · 85% skiers
+archetype: local-value
+
+audience: domestic
+
+hero:
+  tagline:
+    ja: 越後湯沢や苗場の行列を離れて、山古志の豪雪で家族だけの斜面へ。
+    en: Leave the Yuzawa queues behind—family-friendly snow in deep-snow Yamakoshi.
+  badges: [powder, family, rental]
+
+pillars:
+  - id: powder
+    hook: { ja: 新潟県内有数の豪雪地帯, en: One of Niigata's snowiest zones }
+  - id: family
+    hook: { ja: スキー利用85%・初級55%, en: 85% skiers · 55% beginner terrain }
+  - id: value
+    hook: { ja: 大人日券¥2,000・レンタル各¥2,000, en: ¥2,000 day ticket · ¥2,000 rentals }
+
+facts:
+  operator: 株式会社山古志観光開発公社（指定管理者）
+  lift: ペアリフト1基（550m）
+  courses: おにぎり山コース・火伏コース（初55%・中30%・上15%）
+  kidsPark: ちびっ子ゲレンデ
+  elevation: 444m / 309m（差135m）
+  longestRun: 1000m
+  maxSlope: 26
+  parking: 無料
+  access:
+    car: 関越道 小千谷IC / 長岡南越路SIC から約25分
+    train: JR長岡駅から車で約30分 · JR小千谷駅から約20分
+  pricing:
+    dayAdult: 2000
+    dayChild: 1500
+    nightAdult: 1500
+    nightChild: 1000
+  notes:
+    - 水・金・土ナイター 17:00–21:00
+    - 月・火定休
+    - 蓬平温泉・山古志DAOとの広域シナジー
+
+map:
+  sources: ["古志高原スキー場公式", "長岡市", "LP戦略レポート 2026-06-26"]
+  heroImage: images/maps/koshi-kogen-hero.png
+
+humanReview:
+  - 2025-2026営業日・機械故障による早期クローズ表記
+  - 駐車台数
+  - DAO/NFT訴求の公式表記範囲
+  - 英語表記の公式確認

@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "2026-06-26",
+  "id": "koshi-kogen",
+  "name": {
+    "ja": "古志高原スキー場",
+    "en": "Koshi Kogen Ski Area"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "古志高原スキー場公式",
+    "LP戦略レポート"
+  ],
+  "updatedAt": "2026-06-26T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/koshi-kogen-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-pair",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "ペアリフト（550m）",
+        "en": "Pair lift (550 m)"
+      },
+      "shortLabel": {
+        "ja": "ペア",
+        "en": "Pair"
+      },
+      "meta": {
+        "ja": {
+          "ナイター": "水金土"
+        },
+        "en": {
+          "Night skiing": "Wed/Fri/Sat"
+        }
+      }
+    },
+    {
+      "id": "trail-onigiri",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "おにぎり山コース",
+        "en": "Onigiri-yama course"
+      },
+      "shortLabel": {
+        "ja": "おにぎり山",
+        "en": "Onigiri"
+      },
+      "meta": {
+        "ja": {
+          "比率": "初級中心"
+        },
+        "en": {
+          "Share": "Beginner-focused"
+        }
+      }
+    },
+    {
+      "id": "trail-hibuse",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "火伏コース",
+        "en": "Hibuse course"
+      },
+      "shortLabel": {
+        "ja": "火伏",
+        "en": "Hibuse"
+      },
+      "meta": {
+        "ja": {
+          "最大斜度": "26°"
+        },
+        "en": {
+          "Max slope": "26°"
+        }
+      }
+    },
+    {
+      "id": "zone-kids",
+      "type": "zone",
+      "status": "open",
+      "label": {
+        "ja": "ちびっ子ゲレンデ",
+        "en": "Kids' hill"
+      },
+      "shortLabel": {
+        "ja": "ちびっ子",
+        "en": "Kids"
+      },
+      "meta": {
+        "ja": {
+          "おにぎり小屋": "土日祝"
+        },
+        "en": {
+          "Onigiri hut": "Weekends/holidays"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "Koshi Kogen Ski Area",
+    "description": "Skip Yuzawa and Naeba crowds—adult day ticket ¥2,000, 85% skiers, massive rentals. Yamakoshi, Nagaoka, Niigata."
+  },
+  "logo": "Koshi Kogen Ski Area",
+  "nav": {
+    "family": "Family"
+  },
+  "hero": {
+    "eyebrow": "Yamakoshi, Nagaoka · Niigata",
+    "title": "Koshi Kogen<br />Ski Area",
+    "tagline": "Leave the Yuzawa queues behind—family-friendly snow in deep-snow Yamakoshi.",
+    "badgeLocal": "Adult day ticket ¥2,000",
+    "badgeVisitor": "85% skiers",
+    "badgeSled": "Night Wed/Fri/Sat",
+    "ctaPass": "Tickets & pricing",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Yamakoshi Tourism Development Corp. info (LP concept)",
+    "updatedAt": "Updated Dec 20, 9:00",
+    "lift": {
+      "label": "Lift",
+      "value": "Operating",
+      "note": "1 pair lift · virtually no wait"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "55% beginner",
+      "note": "Up to 1,000 m · max 26°"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Until 21:00",
+      "note": "Wed/Fri/Sat from 17:00"
+    },
+    "yotei": {
+      "label": "Snow",
+      "value": "Deep-snow zone",
+      "note": "135 m vertical · base 309 m"
+    }
+  },
+  "transit": {
+    "eyebrow": "Beyond Yuzawa",
+    "title": "25 more minutes,<br />no lift lines.",
+    "lead": "~25 minutes from Ojiya IC or Nagaoka-Minami-Koshiji SIC—thirty minutes beyond Yuzawa buys free parking, no queues, and wide slopes that feel private. Joetsu Shinkansen to Nagaoka ~1h40, then ~30 minutes by car (report ch. 6).",
+    "specs": [
+      "~25 min from Ojiya IC",
+      "~30 min by car from Nagaoka Station",
+      "Free parking"
+    ],
+    "ctaPass": "View pricing",
+    "ctaLive": "Today's operations",
+    "imgAlt": "Drive from Kan-etsu Expressway toward Yamakoshi—avoiding Yuzawa crowds"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Lifts, night skiing & snow"
+    },
+    "pass": {
+      "label": "Pricing",
+      "title": "¥2,000 day · books"
+    },
+    "family": {
+      "label": "Family",
+      "title": "Kids' lessons · sled hill"
+    },
+    "rental": {
+      "label": "Rental",
+      "title": "244 skis · 209 boots"
+    },
+    "access": {
+      "label": "Access",
+      "title": "25 min from Nagaoka/Ojiya"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Koshi Kogen",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "85% skiers—family psychological safety",
+      "lead": "85% of visitors ski; 75% of reviews are families—a single-lift hill without park features screens for pure ski practice and beginner confidence. 55% beginner terrain, max 26° (report ch. 2).",
+      "cta": "Courses & visitor profile",
+      "imgAlt": "Wide mellow slope—families skiing at Koshi Kogen"
+    },
+    "secondary": {
+      "title": "Disruptive ¥2,000 and huge rentals",
+      "lead": "Adult day ¥2,000, child ¥1,500—half mega-resort pricing. 244 skis, 209 boots (15–30 cm), ¥2,000 rentals each—¥6,000 all-in for adults. Free kids' lifts on the 3rd Sunday monthly (report ch. 3).",
+      "cta": "Price & rental list"
+    }
+  },
+  "pass": {
+    "eyebrow": "Loss-Leader Pricing",
+    "title": "Adults ¥2,000,<br />children ¥1,500.",
+    "lead": "12-ride books ¥2,000/¥1,500, single rides ¥200/¥150. Night tickets ¥1,500/¥1,000 (17:00–21:00). Season with night ¥18,000/¥13,000—a municipal loss-leader wrapping regional families (report ch. 3–4).",
+    "localPrice": "Adult day ticket ¥2,000",
+    "visitorPrice": "Child ¥1,500",
+    "specs": [
+      "Wed ladies' · Thu senior half price",
+      "3rd Sun: free kids' lift",
+      "Night skiing Wed/Fri/Sat"
+    ],
+    "noticeTitle": "Strategy note:",
+    "noticeBody": "FY2024 ~¥3.5M deficit reframed as regional exchange-population cost—barbell strategy with Yomogi-hira Onsen lifts macro spend (report ch. 4–6).",
+    "cta": "Pricing details",
+    "imgAlt": "Ticket counter—disruptively low public-hill pricing"
+  },
+  "rental": {
+    "eyebrow": "Hands-Free",
+    "title": "244 skis, 209 boots,<br />¥2,000 each—travel light.",
+    "lead": "Ski set, board set, or outerwear ¥2,000 each—boots from 15 cm toddlers to 30 cm adults. Hats, goggles, and gloves BYO for hygiene and stock control.",
+    "whisper": "Lift plus full rental still ¥6,000 for a day—beats half-day mega-resort school fees (report ch. 3).",
+    "cta": "Rental guide",
+    "imgAlt": "Large rental inventory—hands-free family arrivals"
+  },
+  "yukinko": {
+    "eyebrow": "Night Skiing",
+    "title": "Wed/Fri/Sat nights,<br />17:00 to 21:00.",
+    "lead": "Night skiing Wed, Fri, Sat 17:00–21:00—the core winter activity keeping visitors in Yamakoshi after dark when terraces and alpaca farms are closed (report ch. 5).",
+    "whisper": "Closed Mon/Tue. Check koshikogen.com for latest hours.",
+    "cta": "Night skiing & hours",
+    "imgAlt": "Lit night-ski slopes in Yamakoshi winter"
+  },
+  "family": {
+    "eyebrow": "Family First",
+    "title": "Kids' ski school,<br />¥1,000 per session (lift incl.).",
+    "lead": "Kids' classes ages 5–elementary, 40 seats per session, badge-test courses ¥2,000—early success builds lifelong place attachment. Onigiri hut weekends and kids' hill with local food.",
+    "specs": [
+      "Ideal for first runs",
+      "85% skiers",
+      "75% family reviews"
+    ],
+    "noticeTitle": "Education:",
+    "noticeBody": "Vs ¥5,000–7,000 half-day schools at mega-resorts—commune pricing beats travel cost delta (report ch. 3).",
+    "cta": "Family & lesson guide",
+    "imgAlt": "Children's ski lesson—Yamakoshi education funnel"
+  },
+  "workation": {
+    "eyebrow": "Strategic Detour",
+    "title": "Skip Yuzawa queues,<br />add 30 calm minutes.",
+    "lead": "Exit Kan-etsu at Ojiya or drive from Nagaoka—free parking, no lift lines, slopes that feel yours alone vs an hour in Yuzawa queues (report ch. 6).",
+    "badge": "NO QUEUES · ¥2,000",
+    "steps": {
+      "01": {
+        "title": "Head north on Kan-etsu",
+        "body": "Bypass Yuzawa/Naeba weekend jams"
+      },
+      "02": {
+        "title": "25 min from Ojiya IC",
+        "body": "Or ~30 min from Nagaoka Station"
+      },
+      "03": {
+        "title": "¥2,000 day ticket",
+        "body": "Adult ¥2,000 · child ¥1,500"
+      },
+      "04": {
+        "title": "¥2,000 rentals",
+        "body": "Skis, boots, wear—fully stocked"
+      },
+      "05": {
+        "title": "Yomogi-hira Onsen",
+        "body": "Soak after skiing—barbell stay strategy"
+      }
+    }
+  },
+  "guides": {
+    "local": {
+      "title": "Yamakoshi DAO × ski hill guide",
+      "body": "Nishikigoi NFT and 1,000+ digital villagers—winter trial stays center on Koshi Kogen snow play. Near-zero CAC community-driven visits (report ch. 4)."
+    },
+    "schools": {
+      "title": "Yomogi-hira Onsen barbell",
+      "body": "Low-cost skiing × high-end ryokan (Izumiya, Yomoyama-kan, Fukubikiya)—maximize regional spend beyond lift revenue alone (report ch. 5–6)."
+    },
+    "summer": {
+      "title": "Winter ski to summer Yamakoshi",
+      "body": "Terraces and alpaca farms sleep in winter—the ski hill is the main active attraction. Pair with Orataru recovery museum for edu-tourism (report ch. 5).",
+      "hashtags": [
+        "#YamakoshiDAO",
+        "#KoshiKogen",
+        "#SkipYuzawa"
+      ]
+    }
+  },
+  "access": {
+    "postal": "940-2206, Japan",
+    "line": "Takesawa, Yamakoshi, Nagaoka, Niigata",
+    "note": "~25 min from Ojiya IC / Nagaoka-Minami-Koshiji SIC · ~30 min from JR Nagaoka",
+    "phone": "See official site (koshikogen.com)",
+    "places": "<span class=\"place-unit\"><ruby>新潟県<rt>Niigata</rt></ruby></span><span class=\"place-unit\"><ruby>長岡市<rt>Nagaoka</rt></ruby></span><span class=\"place-unit\"><ruby>山古志<rt>Yamakoshi</rt></ruby></span>",
+    "rentacarEyebrow": "Shinkansen + rental car",
+    "rentacarLink": "Book a rental car at Niigata Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Nagaoka, Yamakoshi, and Yomogi-hira Onsen"
+  },
+  "footer": {
+    "copyright": "© Koshi Kogen Ski Area — LP mock",
+    "location": "940-2206 · Yamakoshi, Nagaoka, Niigata"
+  }
+}

@@ -398,6 +398,29 @@
       }
     },
     {
+      "id": "koshi-kogen",
+      "slug": "koshi-kogen-lp",
+      "name": {
+        "ja": "古志高原スキー場",
+        "en": "Koshi Kogen Ski Area"
+      },
+      "region": {
+        "ja": "新潟県長岡市山古志",
+        "en": "Yamakoshi, Nagaoka, Niigata"
+      },
+      "strategy": {
+        "ja": "湯沢混雑回避・¥2,000・ファミリー85%スキー",
+        "en": "Skip Yuzawa crowds · ¥2,000 · 85% skiers"
+      },
+      "guidePath": "/koshi-kogen/",
+      "guideUrl": "https://guides.japowserch.com/koshi-kogen/",
+      "japowResortId": 310,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "niigata_airport"
+      }
+    },
+    {
       "id": "takaho",
       "slug": "takaho-lp",
       "name": {

@@ -320,6 +320,21 @@ const RESORT_COPY = {
       rentacarHint: "For Eniwa, Numata, and Horoshin Onsen loops",
     },
   },
+  "koshi-kogen": {
+    rentacar: "niigata_airport",
+    ja: {
+      rentacarEyebrow: "新幹線＋レンタカー",
+      rentacarLink: "新潟空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "長岡・山古志・蓬平温泉周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Shinkansen + rental car",
+      rentacarLink: "Book a rental car at Niigata Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Nagaoka, Yamakoshi, and Yomogi-hira Onsen",
+    },
+  },
 };
 
 const NEW_DESTINATIONS = {

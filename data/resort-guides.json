@@ -20,6 +20,7 @@
     "36":  { "registryId": "kamikawa-nakayama", "tier": "mock" },
     "163": { "registryId": "shinjo",           "tier": "mock" },
     "52":  { "registryId": "hinode",           "tier": "mock" },
-    "29":  { "registryId": "takaho",           "tier": "mock" }
+    "29":  { "registryId": "takaho",           "tier": "mock" },
+    "310": { "registryId": "koshi-kogen",      "tier": "mock" }
   }
 }
