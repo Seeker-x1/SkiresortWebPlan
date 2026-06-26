@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="nishikawa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>西川町民スキー場</title>
+  <meta name="description" content="春スキーで名高い月山への入口——西川ICから数分、周辺観光の拠点に。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="#" class="logo" data-i18n="logo">西川町民スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=nishikawa" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="#live" data-i18n="nav.live">本日</a></li>
+          <li><a href="#triangle" data-i18n="nav.triangle">広域圏</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">厳選ガイド</a></li>
+          <li><a href="#tour" data-i18n="nav.tour">周遊</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-nishikawa-hero.png" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">山形県西川町 · 月山エリア</p>
+        <h1 class="hero-title" data-i18n-html="hero.title">西川町民<br />スキー場</h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">Japowの中心で、三つの街をつなぐ。</p>
+        <span class="badge-powder" data-i18n="hero.badgePowder">Japow · 標高1,100m</span>
+        <span class="badge-triangle" data-i18n="hero.badgeTriangle">月山回廊</span>
+        <span class="badge-season" data-i18n="hero.badgeSeason">11月〜5月</span>
+        <div class="hero-cta">
+          <a href="#tour" class="btn btn-gold" data-i18n="hero.ctaTour">広域周遊プラン</a>
+          <a href="#live" class="btn btn-ghost" data-i18n="hero.ctaLive">本日のコンディション</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="live" class="live-dashboard" data-i18n-attr="aria-label:live.ariaLabel">
+      <div class="inner">
+        <div class="live-head">
+          <div>
+            <span class="live-pulse" aria-hidden="true"></span>
+            <span class="live-label" data-i18n="live.label">動線</span>
+            <span class="live-tag" data-i18n="live.subtitle">広域ハブのリアルタイム導線</span>
+          </div>
+          <p class="live-updated" data-i18n="live.updatedAt">更新 6/23 9:00</p>
+        </div>
+        <div class="status-grid">
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.sapporo.label">山形市中心部</p>
+            <p class="status-card__value" data-i18n="live.sapporo.value">約60分</p>
+            <p class="status-card__note" data-i18n="live.sapporo.note">路線バス・車</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.otaru.label">月山スキー場（春）</p>
+            <p class="status-card__value" data-i18n="live.otaru.value">約40分</p>
+            <p class="status-card__note" data-i18n="live.otaru.note">道道1号（冬期夜間規制あり）</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.jozankei.label">水沢温泉館</p>
+            <p class="status-card__value status-card__value--powder" data-i18n="live.jozankei.value">約30〜40分</p>
+            <p class="status-card__note" data-i18n="live.jozankei.note">国道112号</p>
+          </div>
+          <div class="status-card status-card--warn">
+            <p class="status-card__label" data-i18n="live.airport.label">新千歳空港</p>
+            <p class="status-card__value" data-i18n="live.airport.value">約100分</p>
+            <p class="status-card__note" data-i18n="live.airport.note">車・貸切送迎</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="triangle" class="section" aria-labelledby="triangle-heading">
+      <div class="inner">
+        <div class="transit-grid">
+          <div class="transit-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-nishikawa-jozankei.png"
+                data-i18n-attr="alt:triangle.imgAlt"
+                alt="月山への入口——西川町民スキー場と周辺観光"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="transit-card">
+            <p class="eyebrow" data-i18n="triangle.eyebrow">Gassan Corridor</p>
+            <h2 id="triangle-heading" class="heading-lg" data-i18n-html="triangle.title">都市・温泉・港町、<br />ひとつの雪でつながる。</h2>
+            <p class="lead lead-constrained" data-i18n="triangle.lead">
+              西川町民は単なるゲレンデではなく、札幌（都市の利便性とガストロノミー）、定山渓（国立公園の自然と温泉文化）、小樽（歴史的建造物と海洋文化）を結ぶ地理的ハブ。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="triangle.specs.0">7コース · 最大3.6km</li>
+              <li class="spec-tag" data-i18n="triangle.specs.1">ゴンドラ山頂1,100m</li>
+              <li class="spec-tag" data-i18n="triangle.specs.2">国道112号</li>
+            </ul>
+            <div class="notice-box">
+              <strong data-i18n="triangle.noticeTitle">冬期の動線設計：</strong><span data-i18n="triangle.noticeBody">月山スキー場（春）は4〜7月。冬は町営ゲレンデでナイター滑走が主役。</span>
+            </div>
+            <div class="transit-actions">
+              <a href="#mobility" class="btn btn-gold" data-i18n="triangle.ctaMobility">動線と制約を見る</a>
+              <a href="#guides" class="btn btn-ghost" data-i18n="triangle.ctaPicks">厳選ガイド</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top" aria-labelledby="paths-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.explore">Explore</p>
+        <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
+        <div class="path-grid path-grid--compact">
+          <a href="#tour" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.tour.label">周遊</span>
+            <span class="path-tile__title" data-i18n="paths.tour.title">月山回廊</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="nearby-food.html" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.food.label">グルメ</span>
+            <span class="path-tile__title" data-i18n="paths.food.title">厳選飲食4選</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="corridor-stay.html" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.stay.label">宿泊</span>
+            <span class="path-tile__title" data-i18n="paths.stay.title">厳選宿5選</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="../area-map.html?resort=nishikawa&layers=food,onsen,anchor" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.map.label">マップ</span>
+            <span class="path-tile__title" data-i18n="paths.map.title">広域マップ</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section" aria-labelledby="highlights-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="highlights.eyebrow">Core Hook</p>
+        <h2 id="highlights-heading" class="heading-lg" data-i18n="highlights.title">三つの街でつながる体験</h2>
+
+        <div class="highlight-duet">
+          <article class="highlight-primary">
+            <div class="frame">
+              <img
+                src="lp-mock-nishikawa-hero.png"
+                data-i18n-attr="alt:highlights.primary.imgAlt"
+                alt="手つかずのパウダーバーン——西川町民の山頂エリア"
+                width="1600"
+                height="1100"
+              />
+            </div>
+            <div class="highlight-primary-body">
+              <h3 data-i18n="highlights.primary.title">世界水準のJapow、都市から60分</h3>
+              <p class="lead stack-sm" data-i18n="highlights.primary.lead">
+                標高1,100mの山頂エリアが生む軽いパウダー。
+              </p>
+              <a href="../map.html?resort=nishikawa" class="btn btn-powder stack-lg" data-i18n="highlights.primary.cta">ゲレンデマップ</a>
+            </div>
+          </article>
+
+          <article class="highlight-secondary">
+            <h3 data-i18n="highlights.secondary.title">文化摩擦を回避する温泉設計</h3>
+            <p class="lead-whisper stack-sm" data-i18n="highlights.secondary.lead">
+              全室露天・貸切風呂、タトゥー対応の試み。
+            </p>
+            <a href="nearby-onsen.html" class="btn btn-ghost stack-md" data-i18n="highlights.secondary.cta">厳選温泉2選</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="mobility" class="section border-top" aria-labelledby="mobility-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow" data-i18n="mobility.eyebrow">Mobility</p>
+            <h2 id="mobility-heading" class="heading-lg" data-i18n-html="mobility.title">広域モビリティの<br />力学と制約。</h2>
+            <p class="lead lead-constrained-wide stack-md" data-i18n="mobility.lead">
+              動線設計は体験の質を直結的に左右します。
+            </p>
+            <div class="mobility-table-wrap">
+              <table class="mobility-table">
+                <thead>
+                  <tr>
+                    <th scope="col" data-i18n="mobility.tableHeadRoute">区間</th>
+                    <th scope="col" data-i18n="mobility.tableHeadMode">交通手段</th>
+                    <th scope="col" data-i18n="mobility.tableHeadTime">目安</th>
+                    <th scope="col" data-i18n="mobility.tableHeadNote">留意点</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-i18n="mobility.rows.jozankei.route">水沢温泉館 ⇔ 西川町民</td>
+                    <td data-i18n="mobility.rows.jozankei.mode">国道112号 / 車</td>
+                    <td data-i18n="mobility.rows.jozankei.time">約30〜40分</td>
+                    <td data-i18n="mobility.rows.jozankei.note">宿泊者専用バスでストレスフリー</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="mobility.rows.sapporo.route">山形市中心部 ⇔ 西川町民</td>
+                    <td data-i18n="mobility.rows.sapporo.mode">路線バス / 車</td>
+                    <td data-i18n="mobility.rows.sapporo.time">約60分</td>
+                    <td data-i18n="mobility.rows.sapporo.note">日帰りスキー客の主動線</td>
+                  </tr>
+                  <tr class="mobility-table__warn">
+                    <td data-i18n="mobility.rows.otaru.route">月山スキー場（春） ⇔ 西川町民</td>
+                    <td data-i18n="mobility.rows.otaru.mode">道道1号 小樽定山渓線</td>
+                    <td data-i18n="mobility.rows.otaru.time">約40〜50分</td>
+                    <td data-i18n="mobility.rows.otaru.note">冬期19:00〜翌7:00 夜間通行止め</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="mobility.rows.airport.route">新千歳空港 ⇔ 西川町民</td>
+                    <td data-i18n="mobility.rows.airport.mode">車 / 貸切送迎</td>
+                    <td data-i18n="mobility.rows.airport.time">約100分</td>
+                    <td data-i18n="mobility.rows.airport.note">HNWI向けハイヤー手配の確実性</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="mobility-rentacar stack-md" data-skyticket-rentacar-block>
+              <a
+                href="#"
+                class="mobility-rentacar__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="mobility.rentacarLink">新千歳空港でレンタカーを比較</span>
+              </a>
+            </div>
+            <a href="#tour" class="btn btn-gold stack-lg" data-i18n="mobility.cta">マルチベース滞在プラン</a>
+          </div>
+          <div class="feature-visual">
+            <div class="frame frame--wide">
+              <img
+                src="lp-mock-nishikawa-otaru.png"
+                data-i18n-attr="alt:mobility.imgAlt"
+                alt="朝里峠トンネルと冬の道道——広域周遊のボトルネック"
+                width="1600"
+                height="1100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="guidesTeasers.eyebrow">厳選ガイド</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="guidesTeasers.title">宿・温泉・飲食——詳細は各ガイドへ</h2>
+        <p class="lead lead-constrained-xl stack-sm" data-i18n="guidesTeasers.lead">
+          広域圏の厳選施設は子ページに集約。電話・公式リンク・マップ付き。
+        </p>
+
+        <div class="guide-teaser-grid">
+          <a href="corridor-stay.html" class="guide-teaser">
+            <span class="guide-teaser__count" data-i18n="guidesTeasers.stay.count">5</span>
+            <span class="guide-teaser__label" data-i18n="guidesTeasers.stay.label">宿</span>
+            <span class="guide-teaser__title" data-i18n="guidesTeasers.stay.title">厳選宿5選</span>
+            <span class="guide-teaser__hook" data-i18n="guidesTeasers.stay.hook">定山渓のラグジュアリーから小樽のヘリテージホテルまで。</span>
+            <span class="guide-teaser__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="nearby-onsen.html" class="guide-teaser">
+            <span class="guide-teaser__count" data-i18n="guidesTeasers.onsen.count">2</span>
+            <span class="guide-teaser__label" data-i18n="guidesTeasers.onsen.label">温泉</span>
+            <span class="guide-teaser__title" data-i18n="guidesTeasers.onsen.title">厳選温泉2選</span>
+            <span class="guide-teaser__hook" data-i18n="guidesTeasers.onsen.hook">雪見露天と貸切風呂——受入設計の比較。</span>
+            <span class="guide-teaser__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="nearby-food.html" class="guide-teaser">
+            <span class="guide-teaser__count" data-i18n="guidesTeasers.food.count">4</span>
+            <span class="guide-teaser__label" data-i18n="guidesTeasers.food.label">飲食</span>
+            <span class="guide-teaser__title" data-i18n="guidesTeasers.food.title">厳選飲食4選</span>
+            <span class="guide-teaser__hook" data-i18n="guidesTeasers.food.hook">政寿司・GARAKU・ビール園——回遊の動機になる食。</span>
+            <span class="guide-teaser__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tour" class="section border-top" aria-labelledby="tour-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="tour.eyebrow">周遊プラン</p>
+        <h2 id="tour-heading" class="heading-lg" data-i18n-html="tour.title">日中周遊、<br />夜はエリア内で。</h2>
+        <p class="lead lead-constrained-xl stack-sm" data-i18n="tour.lead">
+          夜間通行規制を逆手にした広域パッケージ設計。
+        </p>
+        <span class="secret-badge" data-i18n="tour.badge">月山回廊</span>
+
+        <div class="journey">
+          <div class="journey-step">
+            <p class="journey-step__num">01</p>
+            <p class="journey-step__title" data-i18n="tour.steps.01.title">西川町民スキー場</p>
+            <p class="journey-step__body" data-i18n="tour.steps.01.body">朝イチのパウダー。ゴンドラ山頂1,100m</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">02</p>
+            <p class="journey-step__title" data-i18n="tour.steps.02.title">国道112号</p>
+            <p class="journey-step__body" data-i18n="tour.steps.02.body">宿泊者バスで雪道運転を回避</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">03</p>
+            <p class="journey-step__title" data-i18n="tour.steps.03.title">小樽・政寿司</p>
+            <p class="journey-step__body" data-i18n="tour.steps.03.body">港町の職人技。サンセット前のディナー</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">04</p>
+            <p class="journey-step__title" data-i18n="tour.steps.04.title">定山渓・ゆらく草庵</p>
+            <p class="journey-step__body" data-i18n="tour.steps.04.body">貸切風呂で文化摩擦なく雪見入浴</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">05</p>
+            <p class="journey-step__title" data-i18n="tour.steps.05.title">札幌・GARAKU</p>
+            <p class="journey-step__body" data-i18n="tour.steps.05.body">翌日は都市部でスープカレー</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="access" class="access-section border-top" aria-labelledby="access-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.accessEyebrow">Access</p>
+        <h2 id="access-heading" class="heading-lg" data-i18n="common.location">所在地</h2>
+        <div class="access-grid">
+          <address class="access-address">
+            <span class="access-postal" data-i18n="access.postal">〒061-2301</span>
+            <span class="access-line" data-i18n="access.line">山形県西村山郡西川町大字間沢782-8</span>
+            <p class="access-places" data-i18n-html="access.places" hidden></p>
+            <p class="access-note" data-i18n="access.note">山形市中心部から車・バス約60分</p>
+            <p class="access-phone" data-i18n="access.phone">TEL 011-598-4511（西川町民スキー場）</p>
+          </address>
+          <div class="access-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9C%AD%E5%B9%8C%E5%9B%BD%E9%9A%9B%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E5%AE%9A%E5%B1%B1%E6%B8%93"
+              class="btn btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="common.googleMap">Google Mapで開く</span>
+            </a>
+            <a href="tel:0115984511" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">広域周遊</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">新千歳空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">西川IC・月山・山形市内周遊向け</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 西川町民スキー場 — LP案モック</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒061-2301 山形県西村山郡西川町大字間沢782-8</span> ·
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9C%AD%E5%B9%8C%E5%9B%BD%E9%9A%9B%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E5%AE%9A%E5%B1%B1%E6%B8%93" target="_blank" rel="noopener noreferrer" data-i18n="common.footerMap">Google Map</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
+  <script src="../_shared/mock-i18n.js"></script>
+</body>
+</html>

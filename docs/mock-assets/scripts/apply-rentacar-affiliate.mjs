@@ -335,6 +335,21 @@ const RESORT_COPY = {
       rentacarHint: "For Nagaoka, Yamakoshi, and Yomogi-hira Onsen",
     },
   },
+  nishikawa: {
+    rentacar: "shinjo_station",
+    ja: {
+      rentacarEyebrow: "山形・最上圏",
+      rentacarLink: "新庄駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "西川IC・月山・山形市内周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Yamagata · Mogami",
+      rentacarLink: "Book a rental car at Shinjo Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Nishikawa IC, Mt. Gassan, and Yamagata city loops",
+    },
+  },
 };
 
 const NEW_DESTINATIONS = {

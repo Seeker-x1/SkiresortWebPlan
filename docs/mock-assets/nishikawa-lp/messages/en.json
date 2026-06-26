@@ -1,0 +1,494 @@
+{
+  "meta": {
+    "title": "Nishikawa Town Ski Area",
+    "description": "Gateway to the Gassan area—minutes from Nishikawa IC, hub for regional onsen, food, and tours."
+  },
+  "logo": "Nishikawa Town Ski Area",
+  "common": {
+    "explore": "Guides",
+    "accessEyebrow": "Access"
+  },
+  "nav": {
+    "triangle": "Wide area",
+    "guides": "Curated guides",
+    "tour": "Tour plan"
+  },
+  "hero": {
+    "eyebrow": "Nishikawa, Yamagata · Gassan area",
+    "title": "Nishikawa Town<br />Ski Area",
+    "tagline": "Gateway to Mt. Gassan—minutes from Nishikawa IC, your regional hub.",
+    "badgePowder": "Japow · Adult ¥2,100 · Child ¥1,000",
+    "badgeTriangle": "Gassan Corridor",
+    "badgeSeason": "Dec–Mar · Nightly skiing",
+    "ctaTour": "Regional tour plan",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "label": "Routes",
+    "ariaLabel": "Access and routing dashboard",
+    "subtitle": "Real-time hub routing",
+    "updatedAt": "Updated Jun 26, 9:00",
+    "sapporo": {
+      "label": "Central Yamagata",
+      "value": "~30 min",
+      "note": "Yamagata Expressway · Route 112"
+    },
+    "otaru": {
+      "label": "Gassan Ski Area (spring)",
+      "value": "~40 min+",
+      "note": "Apr–Jul · spring skiing"
+    },
+    "jozankei": {
+      "label": "Mizusawa Onsenkan",
+      "value": "~5 min",
+      "note": "Next to Michi-no-Eki Nishikawa"
+    },
+    "airport": {
+      "label": "Nishikawa IC",
+      "value": "~5 min",
+      "note": "Yamagata Expressway"
+    }
+  },
+  "triangle": {
+    "eyebrow": "Wide area",
+    "title": "Winter town hill,<br />spring link to Gassan.",
+    "lead": "Nishikawa Town Ski Area is the gateway to the Gassan region. Three compact courses and nightly skiing serve locals, while Mizusawa Onsenkan and Michi-no-Eki Nishikawa anchor loops to Yamagata city dining and spring skiing on Mt. Gassan. Gassan Tourism Development operates this hill in winter and Gassan Ski Area in spring and summer—one corridor across seasons.",
+    "specs": [
+      "3 courses · 320 m summit",
+      "1 pair lift",
+      "150 free parking spaces"
+    ],
+    "noticeTitle": "Seasonal routing:",
+    "noticeBody": "Gassan Ski Area runs Apr–Jul for spring skiing only. Winter stays center on nightly skiing here plus nearby onsen; once Route 112 snow walls melt, shift base to Gassan Resort Inn for spring runs—the core rhythm of the Gassan Corridor.",
+    "ctaMobility": "Routes & constraints",
+    "ctaPicks": "Curated guides",
+    "imgAlt": "Gassan-area snowscape and slopes—the regional hub"
+  },
+  "paths": {
+    "tour": {
+      "label": "Tour",
+      "title": "Gassan Corridor"
+    },
+    "picks": {
+      "label": "Curated",
+      "title": "Stays · onsen · dining"
+    },
+    "mobility": {
+      "label": "Routes",
+      "title": "Access & seasonal routes"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Snow · lifts · conditions"
+    },
+    "food": {
+      "label": "Dining",
+      "title": "4 curated restaurants"
+    },
+    "onsen": {
+      "label": "Onsen",
+      "title": "2 curated onsen"
+    },
+    "stay": {
+      "label": "Stays",
+      "title": "5 curated hotels"
+    },
+    "map": {
+      "label": "Map",
+      "title": "Regional area map"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why here",
+    "title": "What the Gassan Corridor offers",
+    "primary": {
+      "title": "5 min from Nishikawa IC, nightly town hill",
+      "lead": "One pair lift, three courses, 320 m vertical. Day ticket ¥2,100 adults · ¥1,000 children, 150 free parking spaces. Easy loops from after-work night skiing to wider regional travel at the Gassan gateway.",
+      "cta": "Trail map",
+      "imgAlt": "Lit night slopes—Nishikawa Town Ski Area"
+    },
+    "secondary": {
+      "title": "5 minutes to Mizusawa Onsenkan",
+      "lead": "Mizusawa Onsenkan beside Michi-no-Eki Nishikawa and Umiami Onsen Unagi-yu—fold post-ski recovery and local hot-spring culture into one Nishikawa IC–adjacent hub.",
+      "cta": "Curated onsen (2)"
+    }
+  },
+  "mobility": {
+    "eyebrow": "Routes",
+    "title": "Regional routing<br />and seasons.",
+    "lead": "~30 minutes from Yamagata city, ~5 minutes from Nishikawa IC. Rent at Shinjo Station and loop the Gassan Corridor—onsen, food, and spring-ski bases—with less winter-driving stress.",
+    "rows": {
+      "jozankei": {
+        "route": "Mizusawa Onsenkan ⇔ Nishikawa Town Ski Area",
+        "mode": "Car",
+        "time": "~5 min",
+        "note": "Same-day soak after skiing"
+      },
+      "sapporo": {
+        "route": "Central Yamagata ⇔ Nishikawa Town Ski Area",
+        "mode": "Car / bus",
+        "time": "~30 min",
+        "note": "Main day-trip corridor"
+      },
+      "otaru": {
+        "route": "Gassan Ski Area (spring) ⇔ Nishikawa Town Ski Area",
+        "mode": "Route 112",
+        "time": "~40 min+",
+        "note": "Apr–Jul spring-ski season"
+      },
+      "airport": {
+        "route": "Nishikawa IC ⇔ Nishikawa Town Ski Area",
+        "mode": "Car",
+        "time": "~5 min",
+        "note": "Nearest expressway exit"
+      }
+    },
+    "tableHeadRoute": "Segment",
+    "tableHeadMode": "Transport",
+    "tableHeadTime": "Time",
+    "tableHeadNote": "Notes",
+    "cta": "Multi-base stay plan",
+    "rentacarLink": "Compare rental cars at Shinjo Station",
+    "imgAlt": "Route 112 and the Gassan range—regional travel corridor"
+  },
+  "picks": {
+    "eyebrow": "Curated",
+    "title": "Curated<br />shortlist.",
+    "lead": "Stays, onsen, and dining chosen on five axes—snowscape, local food, onsen comfort, lodging, and access. A list you can build a Gassan Corridor loop from.",
+    "categories": {
+      "stay": "Stays",
+      "onsen": "Onsen",
+      "food": "Dining"
+    },
+    "venues": {
+      "chaletIvy": {
+        "name": "Gassan Resort Inn",
+        "area": "Gassanzawa",
+        "hook": "Closest stay to Gassan Ski Area—spring-ski and hiking base. Operated by Gassan Tourism Development."
+      },
+      "kuriyasuizan": {
+        "name": "Minshuku Hashimotoso",
+        "area": "Oisawa",
+        "hook": "Inn near Oisawa Onsen Yuttari-kan. Pair 100% spring-water baths with an overnight Gassan Corridor base."
+      },
+      "yurakusoan": {
+        "name": "Michi-no-Eki Nishikawa",
+        "area": "Mizusawa",
+        "hook": "Gassan spring water and an on-site brewery. Restaurant plus Mizusawa Onsenkan for a stay-style hub visit."
+      },
+      "unwind": {
+        "name": "Hotel Metropolitan Yamagata",
+        "area": "Yamagata City",
+        "hook": "Directly at JR Yamagata Station—urban sightseeing linked to day trips to the slopes."
+      },
+      "omo5": {
+        "name": "Yamagata Grand Hotel",
+        "area": "Yamagata City",
+        "hook": "Downtown business and tourism hotel—~30 minutes to Nishikawa IC from central Yamagata."
+      },
+      "hoheikyo": {
+        "name": "Mizusawa Onsenkan",
+        "area": "Mizusawa",
+        "hook": "Gassan and Yakushi baths plus Finnish sauna \"Sauna Gassan\"—next to Michi-no-Eki Nishikawa."
+      },
+      "koganeyu": {
+        "name": "Umiami Onsen Unagi-yu",
+        "area": "Kaishu",
+        "hook": "Nishikawa's first spring—rich, silky water at a community bath rooted in the town."
+      },
+      "garaku": {
+        "name": "Michi-no-Eki Nishikawa · Gassan sansai soba",
+        "area": "Mizusawa",
+        "hook": "Local wild-plant soba—cold noodles dipped in hot broth, finished Nishikawa-style with hatto."
+      },
+      "masazushi": {
+        "name": "Midoritei",
+        "area": "Mazawa",
+        "hook": "Chinese-style noodles since 1930. Spicy miso and natto ramen are local soul food."
+      },
+      "biergarten": {
+        "name": "Gassan Beer (Michi-no-Eki Nishikawa)",
+        "area": "Mizusawa",
+        "hook": "Yamagata's only roadside-station brewery—craft beer with a view of the tanks."
+      },
+      "amenoyuki": {
+        "name": "Beer soft-serve",
+        "area": "Mizusawa",
+        "hook": "Soft-serve with Gassan Beer wort—a sweet finish after skiing."
+      }
+    }
+  },
+  "guidesTeasers": {
+    "eyebrow": "Curated guides",
+    "title": "Stays · onsen · dining — full lists inside",
+    "lead": "Gassan Corridor venue details, phones, official links, and maps live on dedicated guide pages.",
+    "stay": {
+      "count": "5",
+      "label": "Stays",
+      "title": "5 curated stays",
+      "hook": "From Gassan Resort Inn to Yamagata city hotels."
+    },
+    "onsen": {
+      "count": "2",
+      "label": "Onsen",
+      "title": "2 curated hot springs",
+      "hook": "Mizusawa Onsenkan vs Unagi-yu—compare post-ski recovery."
+    },
+    "food": {
+      "count": "4",
+      "label": "Dining",
+      "title": "4 curated restaurants",
+      "hook": "Sansai soba, niboshi ramen, local beer—food that drives circulation."
+    }
+  },
+  "tour": {
+    "eyebrow": "Day tour",
+    "title": "Night skiing in winter,<br />Gassan in spring.",
+    "lead": "Nightly runs at the IC-adjacent town hill → recovery at Mizusawa Onsenkan → Yamagata city fare—as seasons shift, connect via Gassan Resort Inn to spring skiing on Mt. Gassan.",
+    "badge": "Gassan Corridor",
+    "steps": {
+      "01": {
+        "title": "Nishikawa Town Ski Area",
+        "body": "Night skiing—1 pair lift, 3 courses"
+      },
+      "02": {
+        "title": "Mizusawa Onsenkan",
+        "body": "~5 min from the hill. Sauna Gassan recovery"
+      },
+      "03": {
+        "title": "Michi-no-Eki Nishikawa",
+        "body": "Gassan sansai soba and beer soft-serve"
+      },
+      "04": {
+        "title": "Gassan Resort Inn",
+        "body": "Pre-spring-ski base—steps from Gassan Ski Area"
+      },
+      "05": {
+        "title": "Gassan Ski Area (spring)",
+        "body": "Apr–Jul spring skiing—one of Japan's longest seasons"
+      }
+    }
+  },
+  "guides": {
+    "triangle": {
+      "title": "Complete Gassan Corridor guide",
+      "body": "Use Nishikawa Town Ski Area as the hub—onsen, food, Yamagata city, and spring Gassan skiing in one journey. Gassan Tourism Development links winter and spring hills by season."
+    },
+    "mobility": {
+      "title": "Seasonal routes and IC access",
+      "body": "Winter centers on Nishikawa IC night skiing. Spring opens Route 112 snow corridors toward Gassan—~30 min from Yamagata city, rental loops from Shinjo Station, schedules matched to the season."
+    },
+    "culture": {
+      "title": "Local food and baths—raising guest standards",
+      "body": "Michi-no-Eki local menus, Mizusawa sauna, Midoritei's ramen variety—lift individual venue efforts to area norms. Multilingual visibility at booking is the competitiveness lever.",
+      "hashtags": [
+        "#GassanCorridor",
+        "#JapowHub",
+        "#YamagataSnow"
+      ]
+    }
+  },
+  "access": {
+    "postal": "990-0703, Japan",
+    "line": "782-8 Mazawa, Nishikawa, Nishimurayama-gun, Yamagata",
+    "note": "~5 min by car from Nishikawa IC on the Yamagata Expressway · ~30 min from central Yamagata · 150 free parking spaces",
+    "phone": "TEL 0237-74-4055 (Nishikawa Town Ski Area)",
+    "places": "<span class=\"place-unit\"><ruby>山形県<rt>Yamagata</rt></ruby></span><span class=\"place-unit\"><ruby>西村山郡<rt>Nishimurayama-gun</rt></ruby></span><span class=\"place-unit\"><ruby>西川町<rt>Nishikawa</rt></ruby></span><span class=\"place-unit\"><ruby>大字間沢782-8<rt>782-8 Mazawa</rt></ruby></span>",
+    "rentacarEyebrow": "Yamagata · Mogami",
+    "rentacarLink": "Book a rental car at Shinjo Station",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Nishikawa IC, Mt. Gassan, and Yamagata city loops"
+  },
+  "footer": {
+    "copyright": "© Nishikawa Town Ski Area",
+    "location": "990-0703 · 782-8 Mazawa, Nishikawa, Nishimurayama-gun, Yamagata"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "4 curated restaurants — Nishikawa Town Ski Area",
+      "description": "Curated dining list for the Gassan Corridor with map guide"
+    },
+    "backLink": "Back to Nishikawa Town LP",
+    "navAreaMap": "Area map",
+    "hero": {
+      "eyebrow": "Food · Map",
+      "title": "Local gastronomy,<br />four faces.",
+      "tagline": "From Gassan sansai soba to niboshi ramen and craft beer—Nishikawa food culture"
+    },
+    "notice": "Hours, reservations, and dietary accommodations—check each venue's official site.",
+    "introTitle": "Why food drives regional travel",
+    "introLead": "Food rooted in local history and terroir is tourism's strongest hook.",
+    "introBody": "Four Gassan Corridor picks—local ingredients and accessible dining baked in.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Gassan Corridor dining map",
+    "mapLead": "Dining and anchor points across Nishikawa, Mizusawa, and central Yamagata.",
+    "mapEmbedTitle": "Nishikawa Town regional dining, onsen, and anchor map",
+    "mapLayers": {
+      "food": "Dining",
+      "onsen": "Onsen",
+      "anchor": "Anchors",
+      "hint": "Food and onsen layers can be shown together",
+      "mobileHint": "When pins overlap, use “View on map” in the list below"
+    },
+    "mapCta": "Open full-size map",
+    "linkOnsenGuide": "2 curated onsen guide",
+    "spotsEyebrow": "4 picks",
+    "spotsTitle": "4 curated restaurants",
+    "spotsLead": "Ordered for easy insertion before or after skiing and regional moves.",
+    "spotMapLink": "View on map",
+    "spotPhoneLabel": "Phone",
+    "spotWebsiteLabel": "Official site",
+    "spots": {
+      "masazushi": {
+        "tag": "Chinese noodles · spicy miso · natto",
+        "title": "Midoritei",
+        "lead": "Open since 1930 at the foot of Mt. Gassan—classic bowls with spicy miso and natto ramen signatures.",
+        "phone": "0237-74-2273",
+        "website": "https://midoritei.wordpress.com/"
+      },
+      "garaku": {
+        "tag": "Niboshi ramen · roadside station",
+        "title": "Michi-no-Eki Nishikawa · Niboshi Chuka Soba",
+        "lead": "Mikuro-supervised niboshi broth—restaurant-grade ramen at a roadside station.",
+        "phone": "0237-74-4582",
+        "website": "https://www.gassan.co.jp/facility/01_nishikawa"
+      },
+      "beer-garden": {
+        "tag": "Craft beer · brewery tour",
+        "title": "Gassan Beer (Michi-no-Eki Nishikawa)",
+        "lead": "Yamagata's only roadside-station brewery—fresh craft beer with local bites.",
+        "phone": "0237-74-4582",
+        "website": "https://www.gassan.co.jp/facility/01_nishikawa"
+      },
+      "ame-yuki": {
+        "tag": "Local specialty · sansai soba",
+        "title": "Michi-no-Eki Nishikawa · Gassan sansai soba",
+        "lead": "Wild plants and mushrooms in hot dipping broth—finish Nishikawa-style with hatto.",
+        "phone": "0237-74-4582",
+        "website": "https://www.gassan.co.jp/facility/01_nishikawa"
+      }
+    }
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "2 curated onsen — Nishikawa Town Ski Area",
+      "description": "Curated onsen list for the Gassan Corridor with map guide"
+    },
+    "backLink": "Back to Nishikawa Town LP",
+    "navAreaMap": "Area map",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After the snow,<br />hot-spring culture.",
+      "tagline": "Grand baths and sauna to local Unagi-yu—strategic post-ski recovery"
+    },
+    "notice": "Fees, hours, tattoo policies, and late-night surcharges—confirm on each official site.",
+    "introTitle": "The many roles of onsen",
+    "introLead": "Beyond bathing—cultural immersion, fatigue recovery, and transit hubs.",
+    "introBody": "From Mizusawa Onsenkan's sauna to Umiami Unagi-yu—two venues compared.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Gassan Corridor onsen map",
+    "mapLead": "Layer stays and ski access to design your circuit.",
+    "mapEmbedTitle": "Nishikawa Town regional dining, onsen, and anchor map",
+    "mapLayers": {
+      "food": "Dining",
+      "onsen": "Onsen",
+      "anchor": "Anchors",
+      "hint": "Food and onsen layers can be shown together",
+      "mobileHint": "When pins overlap, use “View on map” in the list below"
+    },
+    "mapCta": "Open full-size map",
+    "linkFoodGuide": "4 curated restaurants guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "2 curated hot springs",
+    "spotsLead": "Ordered for post-ski recovery and regional transit stops.",
+    "spotMapLink": "View on map",
+    "spotPhoneLabel": "Phone",
+    "spotWebsiteLabel": "Official site",
+    "spots": {
+      "hoheikyo": {
+        "tag": "Grand bath · Sauna Gassan · by Michi-no-Eki",
+        "title": "Mizusawa Onsenkan",
+        "lead": "Alternating Gassan and Yakushi baths plus Finnish sauna—the go-to after night skiing.",
+        "phone": "0237-74-4433",
+        "website": "https://www.gassan.co.jp/facility/02_mizusawa"
+      },
+      "koganeyu": {
+        "tag": "Unagi-yu · community bath · from ¥200",
+        "title": "Umiami Onsen Unagi-yu",
+        "lead": "Nishikawa's first spring—silky water at a welfare-center public bath rooted in the community.",
+        "phone": "0237-74-3232",
+        "website": "https://www.town.nishikawa.yamagata.jp/soshiki/kasegu/onsen.html"
+      }
+    }
+  },
+  "goldenTriangleStay": {
+    "meta": {
+      "title": "5 curated stays — Nishikawa Town Ski Area",
+      "description": "Curated stay list for the Gassan Corridor with map guide"
+    },
+    "backLink": "Back to Nishikawa Town LP",
+    "navAreaMap": "Area map",
+    "hero": {
+      "eyebrow": "Stay · Gassan Corridor",
+      "title": "The stay itself<br />is the destination.",
+      "tagline": "From spring-ski bases to Oisawa minshuku and Yamagata city hotels—five anchors"
+    },
+    "notice": "Room types, rates, and transfers—official booking sites are authoritative.",
+    "introTitle": "Base camps for regional loops",
+    "introLead": "Gassan Resort Inn, Oisawa hot-spring inns, and Yamagata city hotels—each stay translates the Gassan Corridor differently.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Stay anchor map",
+    "mapLead": "Layer ski, dining, and onsen to build your itinerary.",
+    "mapEmbedTitle": "Nishikawa Town regional anchor map",
+    "mapCta": "Open full-size map",
+    "linkFoodGuide": "4 curated restaurants",
+    "linkOnsenGuide": "2 curated onsen",
+    "spotsEyebrow": "5 picks",
+    "spotsTitle": "5 curated stays",
+    "spotsLead": "Spring-ski bases, onsen inns, urban hotels—by need.",
+    "spotMapLink": "View on map",
+    "spotPhoneLabel": "Phone",
+    "spotWebsiteLabel": "Official site",
+    "regions": {
+      "jozankei": "Nishikawa · Gassan area",
+      "otaru": "Central Yamagata"
+    },
+    "spots": {
+      "chalet-ivy": {
+        "tag": "Spring ski · closest to Gassan · grand bath",
+        "title": "Gassan Resort Inn",
+        "lead": "Closest lodging to Gassan Ski Area—spring skiing and hiking base. Operated by Gassan Tourism Development.",
+        "phone": "0237-75-2316",
+        "website": "https://gassan-resortinn.com/"
+      },
+      "kuriyasuizan": {
+        "tag": "Minshuku · Oisawa onsen · 100% spring water",
+        "title": "Minshuku Hashimotoso",
+        "lead": "Near Oisawa Onsen Yuttari-kan—cedar interiors and source-fed baths in quiet mountain country.",
+        "phone": "0237-76-2353",
+        "website": "https://www.gassan.co.jp/facility/04_oisawa/"
+      },
+      "yurakusoan": {
+        "tag": "Pension · ski drying room · Gassan views",
+        "title": "Gassan Resort Inn (annex plans)",
+        "lead": "Lodging amid Mt. Gassan nature—ski drying room and grand bath ideal for pre-spring-ski nights.",
+        "phone": "0237-75-2316",
+        "website": "https://gassan-resortinn.com/"
+      },
+      "unwind-otaru": {
+        "tag": "Station-linked · 224 rooms · banquet halls",
+        "title": "Hotel Metropolitan Yamagata",
+        "lead": "Directly at JR Yamagata Station—links city sightseeing to the run toward Nishikawa IC.",
+        "phone": "023-628-1111",
+        "website": "https://yamagata.metropolitan.jp/"
+      },
+      "omo5-otaru": {
+        "tag": "City center · Grand Museum · buffet",
+        "title": "Yamagata Grand Hotel",
+        "lead": "Central Honmachi address—prefectural buffet and in-house art museum as part of the stay.",
+        "phone": "023-641-2611",
+        "website": "https://www.yamagatagrandhotel.co.jp/"
+      }
+    }
+  }
+}

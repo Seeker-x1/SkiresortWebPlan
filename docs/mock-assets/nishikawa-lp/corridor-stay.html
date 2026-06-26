@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="nishikawa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>厳選宿5選 — 西川町民スキー場</title>
+  <meta name="description" content="月山回廊の宿泊厳選リストとマップ付きガイド" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="./" class="logo" data-i18n="logo">西川町民スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="./#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="/area-map.html?resort=nishikawa&layers=anchor" data-i18n="goldenTriangleStay.navAreaMap">広域マップ</a></li>
+          <li><a href="nearby-food.html" data-i18n="paths.food.title">厳選飲食4選</a></li>
+          <li><a href="nearby-onsen.html" data-i18n="paths.onsen.title">厳選温泉2選</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--spot" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-nishikawa-stay.png" alt="" width="1200" height="1500" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <a href="./" class="detail-back">← <span data-i18n="goldenTriangleStay.backLink">西川町民 LP に戻る</span></a>
+        <p class="eyebrow" data-i18n="goldenTriangleStay.hero.eyebrow">Stay · Gassan Corridor</p>
+        <h1 class="hero-title" data-i18n-html="goldenTriangleStay.hero.title">宿そのものが、<br />デスティネーション。</h1>
+        <p class="hero-tagline" data-i18n="goldenTriangleStay.hero.tagline">ラグジュアリー・ウェルネスからヘリテージホテルまで——5つの拠点</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="inner">
+        <p role="note" class="notice-banner" data-i18n="goldenTriangleStay.notice">客室タイプ・料金・送迎は各施設の公式予約サイトが最新です。</p>
+        <h2 class="heading-lg" data-i18n="goldenTriangleStay.introTitle">広域周遊のベースキャンプ</h2>
+        <p class="lead" style="margin-top:1.5rem; max-width:36rem" data-i18n="goldenTriangleStay.introLead">定山渓の森、小樽の歴史街、それぞれが北海道の魅力を異なるアプローチで翻訳する宿。</p>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="goldenTriangleStay.mapEyebrow">Area map</p>
+        <h2 class="heading-lg" data-i18n="goldenTriangleStay.mapTitle">宿泊拠点マップ</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="goldenTriangleStay.mapLead">スキー場・飲食・温泉と重ねて旅程を組み立て。</p>
+        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="/area-map.html?resort=nishikawa&layers=anchor,food,onsen" class="btn btn-primary" data-i18n="goldenTriangleStay.mapCta">フルサイズマップを開く</a>
+          <a href="nearby-food.html" class="btn btn-ghost" data-i18n="goldenTriangleStay.linkFoodGuide">厳選飲食4選</a>
+          <a href="nearby-onsen.html" class="btn btn-ghost" data-i18n="goldenTriangleStay.linkOnsenGuide">厳選温泉2選</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="goldenTriangleStay.spotsEyebrow">5 picks</p>
+        <h2 class="heading-lg" data-i18n="goldenTriangleStay.spotsTitle">厳選宿5選</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="goldenTriangleStay.spotsLead">プライベート温泉、食の宿、貸切風呂、ヘリテージ、都市観光ホテル——ニーズ別に厳選。</p>
+
+        <h3 class="onsen-region" data-i18n="goldenTriangleStay.regions.jozankei">水沢温泉館郷</h3>
+        <ol class="food-spot-list" start="1">
+          <li class="food-spot" id="entry-chalet-ivy" data-spot-entry="chalet-ivy">
+            <span class="food-spot__num">01</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="goldenTriangleStay.spots.chalet-ivy.tag">ラグジュアリー · 全室展望風呂 · EV16台</p>
+              <h3 class="food-spot__title" data-i18n="goldenTriangleStay.spots.chalet-ivy.title">シャレーアイビー定山渓</h3>
+              <p class="food-spot__lead" data-i18n="goldenTriangleStay.spots.chalet-ivy.lead">ニセコ基準のインターナショナル・ホスピタリティ。プライベート温泉体験の最高峰。</p>
+              <div class="food-spot__actions">
+                <a href="tel:0115952088" class="btn btn-ghost"><span data-i18n="goldenTriangleStay.spotPhoneLabel">電話</span> <span data-i18n="goldenTriangleStay.spots.chalet-ivy.phone">011-595-2088</span></a>
+                <a href="https://chaletivy.com/ja/jozankei/" class="btn btn-ghost btn-external" target="_blank" rel="noopener noreferrer" data-i18n="goldenTriangleStay.spotWebsiteLabel">公式サイト</a>
+                <a href="/area-map.html?resort=nishikawa&layers=anchor&focus=chalet-ivy" class="food-spot__map-link" data-i18n="goldenTriangleStay.spotMapLink">地図で見る</a>
+              </div>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-kuriyasuizan" data-spot-entry="kuriyasuizan">
+            <span class="food-spot__num">02</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="goldenTriangleStay.spots.kuriyasuizan.tag">食の宿 · 客室露天 · 系列回遊</p>
+              <h3 class="food-spot__title" data-i18n="goldenTriangleStay.spots.kuriyasuizan.title">厨翠山</h3>
+              <p class="food-spot__lead" data-i18n="goldenTriangleStay.spots.kuriyasuizan.lead">和食の神髄と翠蝶館・ベーカリーへの徒歩圏マイクロツーリズム。</p>
+              <div class="food-spot__actions">
+                <a href="tel:0115985555" class="btn btn-ghost"><span data-i18n="goldenTriangleStay.spotPhoneLabel">電話</span> <span data-i18n="goldenTriangleStay.spots.kuriyasuizan.phone">011-598-5555</span></a>
+                <a href="http://www.kuriyasuizan.com/" class="btn btn-ghost btn-external" target="_blank" rel="noopener noreferrer" data-i18n="goldenTriangleStay.spotWebsiteLabel">公式サイト</a>
+                <a href="/area-map.html?resort=nishikawa&layers=anchor&focus=kuriyasuizan" class="food-spot__map-link" data-i18n="goldenTriangleStay.spotMapLink">地図で見る</a>
+              </div>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-yurakusoan" data-spot-entry="yurakusoan">
+            <span class="food-spot__num">03</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="goldenTriangleStay.spots.yurakusoan.tag">全室温泉 · 貸切4室 · タトゥー対応</p>
+              <h3 class="food-spot__title" data-i18n="goldenTriangleStay.spots.yurakusoan.title">定山渓 ゆらく草庵</h3>
+              <p class="food-spot__lead" data-i18n="goldenTriangleStay.spots.yurakusoan.lead">全室天然温泉＋4つの無料貸切風呂——大浴場への心理的負担を構造的に回避。</p>
+              <div class="food-spot__actions">
+                <a href="tel:0115952489" class="btn btn-ghost"><span data-i18n="goldenTriangleStay.spotPhoneLabel">電話</span> <span data-i18n="goldenTriangleStay.spots.yurakusoan.phone">011-595-2489</span></a>
+                <a href="https://www.hotespa.net/hotels/yurakusoan" class="btn btn-ghost btn-external" target="_blank" rel="noopener noreferrer" data-i18n="goldenTriangleStay.spotWebsiteLabel">公式サイト</a>
+                <a href="/area-map.html?resort=nishikawa&layers=anchor&focus=yurakusoan" class="food-spot__map-link" data-i18n="goldenTriangleStay.spotMapLink">地図で見る</a>
+              </div>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="onsen-region" data-i18n="goldenTriangleStay.regions.otaru">小樽市</h3>
+        <ol class="food-spot-list" start="4">
+          <li class="food-spot" id="entry-unwind-otaru" data-spot-entry="unwind-otaru">
+            <span class="food-spot__num">04</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="goldenTriangleStay.spots.unwind-otaru.tag">ヘリテージ · 旧越中屋 · バー</p>
+              <h3 class="food-spot__title" data-i18n="goldenTriangleStay.spots.unwind-otaru.title">UNWIND HOTEL & BAR OTARU</h3>
+              <p class="food-spot__lead" data-i18n="goldenTriangleStay.spots.unwind-otaru.lead">歴史的建造物の再生——Heritage Tourismの強力なフック。</p>
+              <div class="food-spot__actions">
+                <a href="tel:0134645810" class="btn btn-ghost"><span data-i18n="goldenTriangleStay.spotPhoneLabel">電話</span> <span data-i18n="goldenTriangleStay.spots.unwind-otaru.phone">0134-64-5810</span></a>
+                <a href="https://www.livelyhotels.com/ja/unwindotaru" class="btn btn-ghost btn-external" target="_blank" rel="noopener noreferrer" data-i18n="goldenTriangleStay.spotWebsiteLabel">公式サイト</a>
+                <a href="/area-map.html?resort=nishikawa&layers=anchor&focus=unwind-otaru" class="food-spot__map-link" data-i18n="goldenTriangleStay.spotMapLink">地図で見る</a>
+              </div>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-omo5-otaru" data-spot-entry="omo5-otaru">
+            <span class="food-spot__num">05</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="goldenTriangleStay.spots.omo5-otaru.tag">星野 · バリアフリー · ご近所マップ</p>
+              <h3 class="food-spot__title" data-i18n="goldenTriangleStay.spots.omo5-otaru.title">OMO5小樽 by 星野リゾート</h3>
+              <p class="food-spot__lead" data-i18n="goldenTriangleStay.spots.omo5-otaru.lead">運河徒歩3分——地域密着型ディープ探索の都市観光ホテル。</p>
+              <div class="food-spot__actions">
+                <a href="tel:05031348095" class="btn btn-ghost"><span data-i18n="goldenTriangleStay.spotPhoneLabel">電話</span> <span data-i18n="goldenTriangleStay.spots.omo5-otaru.phone">050-3134-8095</span></a>
+                <a href="https://hoshinoresorts.com/ja/hotels/omo5otaru" class="btn btn-ghost btn-external" target="_blank" rel="noopener noreferrer" data-i18n="goldenTriangleStay.spotWebsiteLabel">公式サイト</a>
+                <a href="/area-map.html?resort=nishikawa&layers=anchor&focus=omo5-otaru" class="food-spot__map-link" data-i18n="goldenTriangleStay.spotMapLink">地図で見る</a>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p data-i18n="footer.copyright">© 西川町民スキー場 — LP案モック</p>
+      <p class="footer-location"><a href="./" data-i18n="goldenTriangleStay.backLink">西川町民 LP に戻る</a></p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+resortId: nishikawa
+schemaVersion: "2026-06-26"
+
+name:
+  ja: 西川町民スキー場
+  en: Nishikawa Town Ski Area
+region:
+  ja: 山形県西川町
+  en: Nishikawa, Yamagata
+japowResortId: 167
+
+strategy:
+  ja: 月山エリア入口・西川IC至近・周辺観光ハブ
+  en: Gassan gateway · Nishikawa IC access · Regional tourism hub
+archetype: corridor-hub
+
+audience: both
+
+hero:
+  tagline:
+    ja: 春スキーで名高い月山への入口——西川ICから数分、周辺観光の拠点に。
+    en: Gateway to legendary spring skiing on Mt. Gassan—minutes from Nishikawa IC, your hub for the region.
+  badges: [gassan, access, night]
+
+pillars:
+  - id: gassan
+    hook: { ja: 月山・春スキーの玄関口, en: Gateway to Mt. Gassan spring skiing }
+  - id: access
+    hook: { ja: 山形道西川ICから車5分, en: 5 min from Nishikawa IC }
+  - id: hub
+    hook: { ja: 温泉・食・周遊の情報拠点, en: Onsen, food & regional routing hub }
+
+subPages:
+  - corridor-stay
+  - nearby-food
+  - nearby-onsen
+
+facts:
+  operator: 西川町（月山観光開発株式会社が運営）
+  officialUrl: https://nishikawa.gassankk.co.jp/
+  lift: ペアリフト1基
+  courses: 3
+  elevation: 260–320m
+  parking: 150台 · 無料
+  access:
+    car: 山形自動車道 西川ICから約5〜8分 · 山形市から約30分 · 国道112号沿い
+    train: JR左沢線 寒河江駅から約13km（タクシー約15分・山交バス約20分）
+  hours:
+    weekday: "16:30–21:00（ナイターのみ）"
+    weekend: "9:00–16:30 / 17:30–21:00"
+  pricing:
+    liftDayAdult: 2100
+    liftDayChild: 1000
+  nearby:
+    onsen: [水沢温泉館, 海味温泉 うなぎ湯]
+    spring: 月山スキー場（4〜7月・春スキー）
+  notes:
+    - 月山観光開発は冬は西川町民スキー場、春夏は月山スキー場を運営
+    - コンパクトな町営ゲレンデ——ナイター中心のローカル利用と広域周遊のハブを両立
+
+map:
+  sources: ["西川町公式", "月山観光開発", "やまがたへの旅", "LP戦略メモ 2026-06-26"]
+  heroImage: images/maps/nishikawa-hero.png
+  copyFrom: sapporo-kokusai-lp
+
+humanReview:
+  - japowResortId（167 = JAPOW RESORTS一覧「西川町民スキー場」）
+  - 正式表記（西川町民スキー場 / 西川町民間沢スキー場 / まざわ）の統一
+  - 2025-2026営業日・火曜休・年末年始
+  - レンタカーアフィリエイト拠点（新庄駅 vs 山形市）
+  - 英訳の事実確認

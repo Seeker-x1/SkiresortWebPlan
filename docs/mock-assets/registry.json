@@ -465,6 +465,29 @@
       "affiliates": {
         "rentacar": "asahikawa_airport"
       }
+    },
+    {
+      "id": "nishikawa",
+      "slug": "nishikawa-lp",
+      "name": {
+        "ja": "西川町民スキー場",
+        "en": "Nishikawa Town Ski Area"
+      },
+      "region": {
+        "ja": "山形県西川町",
+        "en": "Nishikawa, Yamagata"
+      },
+      "strategy": {
+        "ja": "月山エリア入口・西川IC至近・周辺観光ハブ",
+        "en": "Gassan gateway · Nishikawa IC access · Regional tourism hub"
+      },
+      "guidePath": "/nishikawa/",
+      "guideUrl": "https://guides.japowserch.com/nishikawa/",
+      "japowResortId": 167,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "shinjo_station"
+      }
     }
   ],
   "guides": {
