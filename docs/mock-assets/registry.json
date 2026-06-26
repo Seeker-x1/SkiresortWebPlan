@@ -398,6 +398,29 @@
       }
     },
     {
+      "id": "takaho",
+      "slug": "takaho-lp",
+      "name": {
+        "ja": "ASHIMOI KANKO 高穂スキー場",
+        "en": "ASHIMOI KANKO Takaho Ski Resort"
+      },
+      "region": {
+        "ja": "北海道沼田町",
+        "en": "Numata, Hokkaido"
+      },
+      "strategy": {
+        "ja": "銀色リニューアル・¥1,500・ファミリー穴場",
+        "en": "Silver renewal · ¥1,500 · Family sweet spot"
+      },
+      "guidePath": "/takaho/",
+      "guideUrl": "https://guides.japowserch.com/takaho/",
+      "japowResortId": 29,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "chitose_international_airport"
+      }
+    },
+    {
       "id": "hinode",
       "slug": "hinode-lp",
       "name": {

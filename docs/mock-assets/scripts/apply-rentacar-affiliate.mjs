@@ -305,6 +305,21 @@ const RESORT_COPY = {
       rentacarHint: "For Furano, Biei, and Tokachi peak drives",
     },
   },
+  takaho: {
+    rentacar: "chitose_international_airport",
+    ja: {
+      rentacarEyebrow: "新千歳＋レンタカー",
+      rentacarLink: "新千歳空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "恵庭・沼田・ほろしん温泉周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "New Chitose + rental car",
+      rentacarLink: "Book a rental car at New Chitose Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Eniwa, Numata, and Horoshin Onsen loops",
+    },
+  },
 };
 
 const NEW_DESTINATIONS = {

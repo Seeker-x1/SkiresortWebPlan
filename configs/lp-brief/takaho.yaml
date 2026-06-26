@@ -1,0 +1,53 @@
+resortId: takaho
+schemaVersion: "2026-06-26"
+
+name:
+  ja: ASHIMOI KANKO 高穂スキー場
+  en: ASHIMOI KANKO Takaho Ski Resort
+region:
+  ja: 北海道雨竜郡沼田町
+  en: Numata, Uryu, Hokkaido
+japowResortId: 29
+
+strategy:
+  ja: 銀色リニューアル・¥1,500・ファミリー穴場
+  en: Silver renewal · ¥1,500 · Family sweet spot
+archetype: local-value
+
+audience: both
+
+hero:
+  tagline:
+    ja: 銀色に統一された町営ゲレンデ——大人日券¥1,500のファミリー向け豪雪スポット。
+    en: An all-silver municipal hill—deep-snow family skiing from ¥1,500 a day.
+  badges: [powder, family, night]
+
+pillars:
+  - id: silver
+    hook: { ja: オールシルバーのリニューアル, en: All-silver renewal }
+  - id: value
+    hook: { ja: 大人日券¥1,500, en: Adult day ticket ¥1,500 }
+  - id: mobility
+    hook: { ja: 明日萌観光バス×JR石狩沼田, en: Ashimoi bus · JR Ishikari-Numata }
+
+facts:
+  operator: 沼田町（ネーミングライツ：有限会社明日萌観光バス）
+  lift: ペアリフト1基（銀色・最新安全装置）
+  courses: 3
+  parking: 120台 · 無料
+  access:
+    car: 旭川から約60km · 恵庭（新千歳近郊）から約25km
+    train: JR石狩沼田駅 · 明日萌観光バス
+  notes:
+    - 金土ナイター 16:00–21:00（¥700/¥350）
+    - ほろしん温泉ほたる館など夏のクロスセル資産あり
+
+map:
+  sources: ["沼田町公式", "SURF&SNOW", "LP戦略レポート 2026-06-26"]
+  heroImage: images/maps/takaho-hero.png
+
+humanReview:
+  - 2025-2026営業日・営業時間（公式PDF確認）
+  - 小人料金（750円 vs 1,000円表記差）
+  - 駐車台数
+  - レンタル有無・料金

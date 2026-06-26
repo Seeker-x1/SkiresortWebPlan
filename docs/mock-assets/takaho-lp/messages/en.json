@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "ASHIMOI KANKO Takaho Ski Resort",
+    "description": "All-silver municipal renewal—adult day ticket ¥1,500, pair lift, Fri/Sat night skiing. Numata, Hokkaido · Ashimoi tourism bus."
+  },
+  "logo": "ASHIMOI KANKO Takaho",
+  "nav": {
+    "family": "Family"
+  },
+  "hero": {
+    "eyebrow": "Numata, Hokkaido · Uryu region",
+    "title": "ASHIMOI KANKO<br />Takaho Ski Resort",
+    "tagline": "An all-silver municipal hill—deep-snow family skiing from ¥1,500 a day.",
+    "badgeLocal": "Adult day ticket ¥1,500",
+    "badgeVisitor": "Pair lift · all silver",
+    "badgeSled": "Fri/Sat night 16:00–21:00",
+    "ctaPass": "Tickets & pricing",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Municipal operations info (LP concept)",
+    "updatedAt": "Updated Dec 20, 9:00",
+    "lift": {
+      "label": "Lift",
+      "value": "Operating",
+      "note": "1 silver pair lift · solo ride OK"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "3 courses",
+      "note": "80 m vertical · avg 13°"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Fri/Sat until 21:00",
+      "note": "From 16:00 · ticket ¥700/¥350"
+    },
+    "yotei": {
+      "label": "Snow",
+      "value": "Deep powder",
+      "note": "2 m+ snowfall zone"
+    }
+  },
+  "transit": {
+    "eyebrow": "Ashimoi Mobility",
+    "title": "Ashimoi bus &<br />Ishikari-Numata Station.",
+    "lead": "A naming-rights hill operated under Ashimoi Kanko Bus—about 10 minutes by car from JR Ishikari-Numata, with charter and shuttle options from the Eniwa / New Chitose area. ~60 km from Asahikawa into a wide single slope in karamatsu forest.",
+    "specs": [
+      "~10 min by car from JR Ishikari-Numata",
+      "Ashimoi Kanko Bus (Eniwa base)",
+      "120 free parking spaces"
+    ],
+    "ctaPass": "View pricing",
+    "ctaLive": "Today's operations",
+    "imgAlt": "Ashimoi tourism bus on a snowy road to Takaho Ski Resort"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Lifts, night skiing & snow"
+    },
+    "pass": {
+      "label": "Pricing",
+      "title": "¥1,500 day · season pass"
+    },
+    "family": {
+      "label": "Family",
+      "title": "Pair lift · kids' space"
+    },
+    "rental": {
+      "label": "Lodge",
+      "title": "Silver lodge · Wi-Fi"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Ishikari-Numata · Ashimoi bus"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Takaho",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "All-silver renewal",
+      "lead": "From lift towers to lodge cladding and grooming machines—everything in silver, shedding the \"dated municipal hill\" image. A modern pair lift with the latest safety gear so beginners and families can ride solo with confidence.",
+      "cta": "Facilities & courses",
+      "imgAlt": "Silver pair lift above a wide slope in karamatsu forest"
+    },
+    "secondary": {
+      "title": "Strategic ¥1,500 day ticket",
+      "lead": "While mega-resorts charge ¥6,000–10,000+ for a day, adults pay ¥1,500 and children ¥750—a municipal loss-leader that keeps a family of four under ¥2,250 for lifts. Fri/Sat night tickets at ¥700 support after-school and after-work laps.",
+      "cta": "View price list"
+    }
+  },
+  "pass": {
+    "eyebrow": "Municipal Pricing",
+    "title": "Adults ¥1,500,<br />children ¥750.",
+    "lead": "Flat post-renewal pricing—season pass ¥15,000 / ¥7,500, day tickets with night skiing ¥1,500 / ¥750. Fri/Sat night-only ¥700 / ¥350 (16:00–21:00), 3-hour ticket ¥1,000 / ¥500.",
+    "localPrice": "Adult day ticket ¥1,500",
+    "visitorPrice": "Child day ticket ¥750",
+    "specs": [
+      "Night ticket ¥700 (Fri/Sat)",
+      "Season pass ¥15,000",
+      "Single ride ¥150"
+    ],
+    "noticeTitle": "Strategy note:",
+    "noticeBody": "Move from PDF and counter-only sales to mobile-first LP, online checkout, and CRM—to maximize ROI on ¥500M+ hardware investment (report ch. 6).",
+    "cta": "Pricing details",
+    "imgAlt": "Ticket counter at the silver lodge—value and comfort combined"
+  },
+  "rental": {
+    "eyebrow": "Silver Lodge",
+    "title": "Silver lodge,<br />kids' corner & Wi-Fi.",
+    "lead": "A rebuilt center house with expanded rest space, a kids' area, and free Wi-Fi—municipal comfort that feels resort-grade between runs.",
+    "whisper": "Light meals at the lodge—pair with a soak at Horoshin Onsen Hotaru-kan on the way home (report ch. 7 cross-sell).",
+    "cta": "Lodge guide",
+    "imgAlt": "New silver-clad lodge with spacious rest area"
+  },
+  "yukinko": {
+    "eyebrow": "Night Skiing",
+    "title": "Fri/Sat nights,<br />16:00 to 21:00.",
+    "lead": "Night skiing on Fridays and Saturdays from 16:00 to 21:00—¥700 adults / ¥350 children for local after-school and after-work sport under silver-lit slopes.",
+    "whisper": "In season TEL 0164-35-1011 (ski area) · 0164-35-2132 (board of education).",
+    "cta": "Night skiing & hours",
+    "imgAlt": "Night skiing under silver lifts and slope lights"
+  },
+  "family": {
+    "eyebrow": "Family First",
+    "title": "Pair lift,<br />first snow for families.",
+    "lead": "Solo-friendly modern pair lift, three mostly mellow courses, kids' space in the lodge—positioned between Hokuryo's free rope tow and Horokanai's advanced terrain as a beginner-family sweet spot.",
+    "specs": [
+      "Solo OK on pair lift",
+      "Kids' space in lodge",
+      "120 free parking spaces"
+    ],
+    "noticeTitle": "Safety design:",
+    "noticeBody": "Replacing old single chairs and rope tows—the pair lift renewal clears the top deterrent for family visitors from beyond the town (report ch. 2).",
+    "cta": "Family guide",
+    "imgAlt": "Parent and child on the pair lift—wide beginner slope below"
+  },
+  "workation": {
+    "eyebrow": "Day Trip",
+    "title": "Day-trip powder<br />from Asahikawa or Chitose.",
+    "lead": "~60 km from Asahikawa or combine Ashimoi Kanko Bus from the New Chitose / Eniwa area—¥1,500 adult day tickets for deep snow without mega-resort crowds (LP concept).",
+    "badge": "POWDER · ¥1,500",
+    "steps": {
+      "01": {
+        "title": "Ishikari-Numata or bus",
+        "body": "~10 min by car from JR Ishikari-Numata, or Ashimoi Kanko Bus"
+      },
+      "02": {
+        "title": "To the silver hill",
+        "body": "Wide single slope in karamatsu forest—virtually no lift lines"
+      },
+      "03": {
+        "title": "¥1,500 day ticket",
+        "body": "Day ticket includes night skiing hours on eligible days"
+      },
+      "04": {
+        "title": "Silver lodge",
+        "body": "Rest, kids' space, and Wi-Fi between runs"
+      },
+      "05": {
+        "title": "Horoshin Onsen",
+        "body": "Soak at Hotaru-kan after skiing—extend your stay"
+      }
+    }
+  },
+  "guides": {
+    "local": {
+      "title": "Silver renewal × ¥1,500 guide",
+      "body": "Hardware and naming rights are in place—the bottleneck is PDF-heavy town pages. A mobile LP and live conditions make the photogenic silver resort visible at the source (report ch. 5–6)."
+    },
+    "schools": {
+      "title": "Ashimoi bus × MaaS vision",
+      "body": "Link naming-rights operator charters and taxis with the hill—JR Ishikari-Numata shuttles and New Chitose-area packages to lower last-mile friction (report ch. 3)."
+    },
+    "summer": {
+      "title": "Winter CRM → summer cross-sell",
+      "body": "Horoshin firefly festival, Youtaka lantern festival, fossil museum—use winter visitor data to invite families back in summer for a year-round Numata ecosystem (report ch. 7).",
+      "hashtags": [
+        "#TakahoSilver",
+        "#AshimoiKanko",
+        "#NumataPowder"
+      ]
+    }
+  },
+  "access": {
+    "postal": "078-2214, Japan",
+    "line": "325 Takaho, Numata, Uryu, Hokkaido",
+    "note": "~10 min by car from JR Ishikari-Numata · 120 free parking spaces",
+    "phone": "TEL 0164-35-1011 (ski area) · 0164-35-2132 (board of education)",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>沼田町<rt>Numata</rt></ruby></span><span class=\"place-unit\"><ruby>字高穂325<rt>325 Takaho</rt></ruby></span>",
+    "rentacarEyebrow": "New Chitose + rental car",
+    "rentacarLink": "Book a rental car at New Chitose Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Eniwa, Numata, and Horoshin Onsen loops"
+  },
+  "footer": {
+    "copyright": "© ASHIMOI KANKO Takaho Ski Resort — LP mock",
+    "location": "078-2214 · 325 Takaho, Numata, Uryu, Hokkaido"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "2026-06-26",
+  "id": "takaho",
+  "name": {
+    "ja": "ASHIMOI KANKO 高穂スキー場",
+    "en": "ASHIMOI KANKO Takaho Ski Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "沼田町公式",
+    "SURF&SNOW",
+    "LP戦略レポート"
+  ],
+  "updatedAt": "2026-06-26T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/takaho-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-pair",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "銀色ペアリフト",
+        "en": "Silver pair lift"
+      },
+      "shortLabel": {
+        "ja": "ペア",
+        "en": "Pair"
+      },
+      "meta": {
+        "ja": {
+          "1人乗車": "OK",
+          "ナイター": "金土"
+        },
+        "en": {
+          "Solo ride": "OK",
+          "Night skiing": "Fri/Sat"
+        }
+      }
+    },
+    {
+      "id": "trail-main",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "メインコース",
+        "en": "Main course"
+      },
+      "shortLabel": {
+        "ja": "メイン",
+        "en": "Main"
+      },
+      "meta": {
+        "ja": {
+          "平均斜度": "約13°"
+        },
+        "en": {
+          "Avg slope": "~13°"
+        }
+      }
+    },
+    {
+      "id": "trail-family",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "ファミリーコース",
+        "en": "Family course"
+      },
+      "shortLabel": {
+        "ja": "ファミリー",
+        "en": "Family"
+      },
+      "meta": {}
+    },
+    {
+      "id": "trail-upper",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "上級者コース",
+        "en": "Advanced section"
+      },
+      "shortLabel": {
+        "ja": "上級",
+        "en": "Adv."
+      },
+      "meta": {}
+    },
+    {
+      "id": "zone-kids",
+      "type": "zone",
+      "status": "open",
+      "label": {
+        "ja": "キッズエリア",
+        "en": "Kids' area"
+      },
+      "shortLabel": {
+        "ja": "キッズ",
+        "en": "Kids"
+      },
+      "meta": {
+        "ja": {
+          "ロッジ": "キッズスペース"
+        },
+        "en": {
+          "Lodge": "Kids' corner"
+        }
+      }
+    }
+  ]
+}
