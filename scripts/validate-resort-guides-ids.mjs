@@ -35,6 +35,8 @@ const NAME_SUBSTRINGS = {
   kirigamine: ["霧ヶ峰", "霧ケ峰"],
   "kamikawa-nakayama": ["中山", "上川町営"],
   shinjo: ["新庄市民", "新庄"],
+  takaho: ["高穂"],
+  hinode: ["日の出"],
 };
 
 function loadJson(path) {
