@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Tayama Ski Area",
+    "description": "Hachimantai near Appi—max pitch 37°, ¥2,720 day ticket, racing infrastructure and afternoon powder."
+  },
+  "logo": "Tayama Ski Area",
+  "hero": {
+    "eyebrow": "Hachimantai, Iwate · walk from JR Tayama",
+    "title": "Tayama<br />Ski Area",
+    "tagline": "Beside Appi—37° pitches, untouched afternoon powder, and Japan's only permanent biathlon course.",
+    "badgePrice": "Day ¥2,720",
+    "badgeNight": "Closes ~16:00",
+    "badgeXc": "80% steep",
+    "ctaPass": "Today's conditions",
+    "ctaLive": "Lifts · snow status"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Lift status, snow, and crowds at a glance",
+    "updatedAt": "Updated Jun 28, 9:00",
+    "lift1": {
+      "label": "Lift 1",
+      "value": "Operating",
+      "note": "684m pair (confirm on site)"
+    },
+    "lift2": {
+      "label": "Lift 2",
+      "value": "Check status",
+      "note": "321m · advanced side"
+    },
+    "snow": {
+      "label": "Snow",
+      "value": "Powder",
+      "note": "Untouched zones often last"
+    },
+    "night": {
+      "label": "Crowds",
+      "value": "Low",
+      "note": "Racing-practice hill"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Snow Dojo",
+    "title": "37° runs,<br />empty powder.",
+    "lead": "About 80% of three courses are intermediate to advanced. Racers focus on pole training on groomed runs, so ungroomed zones often hold fresh tracks into the afternoon—a local hill for advanced skiers avoiding Appi crowds.",
+    "specs": [
+      "Max pitch 37°",
+      "Biathlon course",
+      "Free pole rental"
+    ],
+    "noticeTitle": "Skill level:",
+    "noticeBody": "Few beginner slopes—mostly steep terrain and racing facilities. Lift operations vary with snow; check today's status before you go.",
+    "ctaPass": "Tickets & access",
+    "imgAlt": "Steep powder burn at Tayama Ski Area"
+  },
+  "paths": {
+    "pass": {
+      "label": "Tickets",
+      "title": "¥2,720 / day"
+    },
+    "access": {
+      "label": "Access",
+      "title": "~15 min from Ando IC"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Lifts · snow"
+    },
+    "hike": {
+      "label": "Loop",
+      "title": "Ramen · onsen"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Appi's shadow",
+    "primary": {
+      "title": "37° × ¥2,720 × no queues",
+      "lead": "Minutes from Appi Kogen (21 courses)—adult day ticket ¥2,720 with short lift lines. Slalom and Uma-no-se courses hit 37° for serious alpine training.",
+      "cta": "Courses & tickets",
+      "imgAlt": "Steep racing terrain on a Hachimantai local hill"
+    },
+    "secondary": {
+      "title": "Racing infrastructure",
+      "lead": "Permanent biathlon course, jump hills, and cross-country—national championship venue and daily training base for race teams.",
+      "cta": "Facilities"
+    }
+  },
+  "pass": {
+    "eyebrow": "Day Ticket",
+    "title": "¥2,720 all day,<br />beside Appi.",
+    "lead": "Adult day ticket ¥2,720 (junior/senior ¥2,090). ~15 minutes from Tohoku Expwy Ando IC, ~15-minute walk from JR Tayama—day trip option while staying at Appi. Check lift and snow status at the top of this page.",
+    "specs": [
+      "Day ¥2,720",
+      "15-min station walk",
+      "~15 min from Ando IC"
+    ],
+    "cta": "Tickets & access",
+    "imgAlt": "Tayama Ski Area lodge base"
+  },
+  "hike": {
+    "eyebrow": "After Ski",
+    "title": "After skiing,<br />ramen & salt onsen.",
+    "lead": "Danburite (mala ramen), Tayama Drive-In (mushroom ramen), Papanaashu (wagyu burger)—classic post-ski stops near the hill.",
+    "leadCurry": "Recover at Shin-Appi Onsen Seiryukaku's strong salt spring—a standard Appi-area loop.",
+    "cta": "Food · onsen map",
+    "imgAlt": "Local Hachimantai ramen after skiing"
+  },
+  "tour": {
+    "eyebrow": "Half-Day Loop",
+    "title": "From Tayama Stn.,<br />half a day.",
+    "lead": "Day trip from Appi or stay in town—ski, eat ramen, soak onsen in one Hachimantai loop.",
+    "badge": "HACHIMANTAI · TAYAMA LOOP",
+    "steps": {
+      "01": {
+        "title": "JR Tayama",
+        "body": "~15 min walk to slopes"
+      },
+      "02": {
+        "title": "Tayama Ski",
+        "body": "Steep powder (¥2,720)"
+      },
+      "03": {
+        "title": "Danburite",
+        "body": "Mala ramen lunch"
+      },
+      "04": {
+        "title": "Shin-Appi Onsen",
+        "body": "Salt spring recovery"
+      },
+      "05": {
+        "title": "Fudo Falls",
+        "body": "Power spot on the way back"
+      }
+    }
+  },
+  "guides": {
+    "sanctuary": {
+      "title": "Racing & powder guide",
+      "body": "Next to Appi—37° pitches, permanent biathlon course, afternoon ungroomed powder. Hachimantai's hill for advanced skiers and racers."
+    },
+    "workation": {
+      "title": "Appi × Tayama split stay",
+      "body": "Sleep at Appi, ski at Tayama—a day-trip model that cuts cost and crowds."
+    },
+    "lake": {
+      "title": "Hachimantai regional tour",
+      "body": "Pair with Hachimantai Resort and Okudakaya Kogen for a northern Tohoku ski loop.",
+      "hashtags": [
+        "#TayamaPowder",
+        "#AppiSpillover",
+        "#Hachimantai"
+      ]
+    }
+  },
+  "access": {
+    "postal": "028-7111, Japan",
+    "line": "8 Yagami, Hachimantai, Iwate",
+    "note": "Tohoku Expwy Ando IC ~15 min · JR Hanawa Line Tayama Stn. ~15 min walk · lodge parking",
+    "phoneLodge": "TEL 0195-73-2650 (Tayama Ski Area)",
+    "phoneOps": "Hachimantai City 0195-78-3500",
+    "places": "<span class=\"place-unit\"><ruby>岩手県<rt>Iwate</rt></ruby></span><span class=\"place-unit\"><ruby>八幡平市<rt>Hachimantai</rt></ruby></span>",
+    "rentacarEyebrow": "Iwate · Hachimantai",
+    "rentacarLink": "Book a rental car at Morioka Station",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Appi, Hachimantai, and Tayama drives"
+  },
+  "footer": {
+    "copyright": "© Tayama Ski Area — LP mock",
+    "location": "028-7111 · 8 Yagami, Hachimantai, Iwate"
+  }
+}

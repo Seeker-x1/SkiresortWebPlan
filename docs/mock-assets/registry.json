@@ -534,6 +534,29 @@
       "affiliates": {
         "rentacar": "chitose_international_airport"
       }
+    },
+    {
+      "id": "tayama",
+      "slug": "tayama-lp",
+      "name": {
+        "ja": "田山スキー場",
+        "en": "Tayama Ski Area"
+      },
+      "region": {
+        "ja": "岩手県八幡平市",
+        "en": "Hachimantai, Iwate"
+      },
+      "strategy": {
+        "ja": "安比エリアの競技・パウダー道場",
+        "en": "Racing & powder dojo near Appi"
+      },
+      "guidePath": "/tayama/",
+      "guideUrl": "https://guides.japowserch.com/tayama/",
+      "japowResortId": 116,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "morioka_station"
+      }
     }
   ],
   "guides": {

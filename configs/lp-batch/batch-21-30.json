@@ -49,13 +49,16 @@
       "nameEn": "Tayama Ski Area",
       "japowResortId": 116,
       "regionJa": "岩手県八幡平市",
-      "status": "pending",
-      "reportPath": null,
+      "status": "research",
+      "reportPath": "docs/research/inbox/tayama.md",
       "archetypeHint": "live-dashboard",
       "copyFromHint": "minami-furano-lp",
       "salesAngle": "八幡平・安比エリア。東北道アクセス良好。リアルタイム空き・運行状況発信。",
       "digitalGap": "メガリゾート溢れ客の受け皿情報が弱い",
-      "subscriptionPitch": "本日の運行・混雑状況のワンタップ更新CMS"
+      "subscriptionPitch": "本日の運行・混雑状況のワンタップ更新CMS",
+      "updatedAt": "2026-06-27",
+      "researchInteractionId": "v1_ChdJRkZBYW8za0xmcUMwLWtQeFpmdGtRYxIXSUZGQWFvM2tMZnFDMC1rUHhaZnRrUWM",
+      "researchCompletedAt": "2026-06-27T22:49:54.467Z"
     },
     {
       "rank": 24,
@@ -64,13 +67,16 @@
       "nameEn": "Tomioka Ski Area",
       "japowResortId": 5,
       "regionJa": "北海道乙部町",
-      "status": "pending",
-      "reportPath": null,
+      "status": "research",
+      "reportPath": "docs/research/inbox/tomioka.md",
       "archetypeHint": "local-value",
       "copyFromHint": "gokazan-lp",
       "salesAngle": "Tバー・ナイター・ロッジ完備。ハードは整うが情報発信が自治体ポータル依存。",
       "digitalGap": "施設画像・スマホ最適化未整備",
-      "subscriptionPitch": "公式級LPだけで近隣集客力を即改善"
+      "subscriptionPitch": "公式級LPだけで近隣集客力を即改善",
+      "updatedAt": "2026-06-27",
+      "researchInteractionId": "v1_ChdyRk5BYXBHS09jYTkwLWtQX3FMRTBBbxIXckZOQWFwR0tPY2E5MC1rUF9xTEUwQW8",
+      "researchCompletedAt": "2026-06-27T22:57:54.428Z"
     },
     {
       "rank": 25,

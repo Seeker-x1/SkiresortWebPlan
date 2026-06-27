@@ -380,6 +380,21 @@ const RESORT_COPY = {
       rentacarHint: "For Tomamu, Obihiro, and Shintoku drives",
     },
   },
+  tayama: {
+    rentacar: "morioka_station",
+    ja: {
+      rentacarEyebrow: "岩手・八幡平",
+      rentacarLink: "盛岡駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "安比・八幡平・田山周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Iwate · Hachimantai",
+      rentacarLink: "Book a rental car at Morioka Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Appi, Hachimantai, and Tayama drives",
+    },
+  },
 };
 
 const NEW_DESTINATIONS = {
@@ -402,6 +417,10 @@ const NEW_DESTINATIONS = {
   shinjo_station: {
     url: "https://skyticket.jp/rentacar/tohoku/yamagata/shinjo_station/",
     label: { ja: "新庄駅", en: "Shinjo Station" },
+  },
+  morioka_station: {
+    url: "https://skyticket.jp/rentacar/tohoku/iwate/morioka_station/",
+    label: { ja: "盛岡駅", en: "Morioka Station" },
   },
 };
 

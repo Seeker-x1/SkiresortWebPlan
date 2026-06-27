@@ -53,6 +53,13 @@
         "ja": "新庄駅",
         "en": "Shinjo Station"
       }
+    },
+    "morioka_station": {
+      "url": "https://skyticket.jp/rentacar/tohoku/iwate/morioka_station/",
+      "label": {
+        "ja": "盛岡駅",
+        "en": "Morioka Station"
+      }
     }
   }
 }
