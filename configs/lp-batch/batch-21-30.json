@@ -31,7 +31,7 @@
       "nameEn": "Mount Shintoku Ski Area",
       "japowResortId": 83,
       "regionJa": "北海道新得町",
-      "status": "research",
+      "status": "shipped",
       "reportPath": "docs/research/inbox/shintoku-yama.md",
       "archetypeHint": "local-value",
       "copyFromHint": "minami-furano-lp",

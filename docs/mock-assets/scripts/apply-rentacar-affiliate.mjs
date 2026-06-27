@@ -350,6 +350,36 @@ const RESORT_COPY = {
       rentacarHint: "For Nishikawa IC, Mt. Gassan, and Yamagata city loops",
     },
   },
+  utoro: {
+    rentacar: "memanbetsu_airport",
+    ja: {
+      rentacarEyebrow: "知床圏",
+      rentacarLink: "女満別空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "斜里・知床・ウトロ周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Shiretoko gateway",
+      rentacarLink: "Book a rental car at Memanbetsu Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Shari, Shiretoko, and Utoro loops",
+    },
+  },
+  "shintoku-yama": {
+    rentacar: "chitose_international_airport",
+    ja: {
+      rentacarEyebrow: "十勝・道東",
+      rentacarLink: "新千歳空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "トマム・帯広・新得周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Tokachi · Doto",
+      rentacarLink: "Book a rental car at New Chitose Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Tomamu, Obihiro, and Shintoku drives",
+    },
+  },
 };
 
 const NEW_DESTINATIONS = {

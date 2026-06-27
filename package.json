@@ -13,7 +13,18 @@
     "preview:site": "node scripts/build-static-preview.mjs && node scripts/build-evaluation-html.mjs",
     "preview:evaluation": "node scripts/build-evaluation-html.mjs",
     "preview:static": "node scripts/build-static-preview.mjs && node scripts/build-evaluation-html.mjs && npx --yes serve public -p 5500",
-    "preview:map": "node resorts/Sichinohe-CyoueiSki/scripts/build-map-preview.mjs && node resorts/Sichinohe-CyoueiSki/scripts/build-calibration-qa.mjs && node scripts/build-static-preview.mjs && node scripts/build-evaluation-html.mjs"
+    "preview:map": "node resorts/Sichinohe-CyoueiSki/scripts/build-map-preview.mjs && node resorts/Sichinohe-CyoueiSki/scripts/build-calibration-qa.mjs && node scripts/build-static-preview.mjs && node scripts/build-evaluation-html.mjs",
+    "lp:batch-status": "node scripts/lp-factory/batch-status.mjs",
+    "lp:research-prompt": "node scripts/lp-factory/build-deep-research-prompt.mjs",
+    "lp:cursor-handoff": "node scripts/lp-factory/cursor-handoff.mjs",
+    "lp:batch-update": "node scripts/lp-factory/batch-update.mjs",
+    "lp:import-batch": "node scripts/lp-factory/import-batch-from-gemini.mjs",
+    "lp:sales-proposal": "node scripts/lp-factory/build-sales-proposal.mjs",
+    "lp:detect-inbox": "node scripts/lp-factory/detect-inbox-reports.mjs",
+    "lp:deep-research": "node scripts/lp-factory/run-deep-research.mjs",
+    "lp:import-report": "node scripts/lp-factory/import-gem-report.mjs",
+    "lp:auto": "node scripts/lp-factory/run-lp-auto.mjs",
+    "lp:ship": "node scripts/lp-factory/ship-lp.mjs"
   },
   "dependencies": {
     "framer-motion": "^11.18.2",

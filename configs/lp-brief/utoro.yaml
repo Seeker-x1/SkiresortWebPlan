@@ -1,0 +1,63 @@
+resortId: utoro
+schemaVersion: "2026-06-27"
+
+name:
+  ja: ウトロスキー場
+  en: Utoro Ski Area
+region:
+  ja: 北海道斜里町ウトロ
+  en: Utoro, Shari, Hokkaido
+japowResortId: 59
+
+strategy:
+  ja: 知床流氷の玄関・ウナベツ連携
+  en: Shiretoko drift-ice gateway · Unabetsu pair
+archetype: tourism-hub
+
+audience: inbound
+
+hero:
+  tagline:
+    ja: 流氷観光の拠点ウトロで、気軽な雪遊び——本格滑走はウナベツへ。
+    en: Light snow play at Utoro's drift-ice gateway—full runs at Unabetsu nearby.
+  badges: [drift-ice, shiretoko, compact]
+
+pillars:
+  - id: gateway
+    hook: { ja: 知床・流氷インバウンドの玄関, en: Shiretoko drift-ice inbound gateway }
+  - id: compact
+    hook: { ja: コンパクト町営・初心者向け, en: Compact municipal · beginner-friendly }
+  - id: pair
+    hook: { ja: ウナベツと広域連携, en: Paired with Unabetsu ski area }
+
+subPages: []
+
+facts:
+  operator: 斜里町（自治体）
+  location: 斜里町ウトロ香川42
+  phone: "0152-24-3303"
+  lift: 表面リフト（ロープトウ）1基
+  courses: 1（緩斜面・初心者向け）
+  elevation: 約50–70m（体感）
+  parking: 約30台 · 無料
+  pricing:
+    liftDayAdult: 600
+    liftDayChild: 400
+  hours: "9:30–16:00（1月〜3月・積雪状況により変動）"
+  access:
+    car: 女満別空港から約2時間 · ウトロ温泉街中心
+    note: 本格3コース・ナイターはウナベツスキー場（峰浜）へ約20km
+  nearby:
+    pairResort: ウナベツスキー場（japow 60）
+    tourism: 知床五湖・流氷クルーズ・ウトロ温泉
+
+map:
+  sources: ["斜里町施設情報", "ホームメイトリサーチ", "LP batch #21"]
+  heroImage: images/maps/utoro-hero.png
+  copyFrom: unabetsu-lp
+
+humanReview:
+  - 2025-2026シーズンの運営状況（休止・縮小の有無）
+  - 料金表の最新確認（600/400円は調査時点の参考値）
+  - japowResortId 59 = ウトロスキー場
+  - 英訳・インバウンドコピーの事実確認

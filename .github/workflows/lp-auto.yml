@@ -1,0 +1,58 @@
+name: LP Factory Auto
+
+# GitHub 画面から実行 — ローカル PowerShell 不要
+# Repository → Actions → LP Factory Auto → Run workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      resort_name:
+        description: "施設名（例: 新得山スキー場）"
+        required: false
+        type: string
+      rank:
+        description: "バッチ rank（22〜30）。施設名よりこちらを優先"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  lp-auto:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: LP Auto (Deep Research → inbox → push)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -n "${{ inputs.rank }}" ]; then
+            npm run lp:auto -- --rank "${{ inputs.rank }}"
+          elif [ -n "${{ inputs.resort_name }}" ]; then
+            npm run lp:auto -- --name "${{ inputs.resort_name }}"
+          else
+            npm run lp:auto -- --next
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "If push succeeded, Cursor Automation should open lp-factory PR on main."

@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Shintokuyama Ski Area",
+    "description": "Hidden JAPOW beside Tomamu & Sahoro — 7-min station walk · ¥2,000 all day."
+  },
+  "logo": "Shintokuyama Ski Area",
+  "hero": {
+    "eyebrow": "Shintoku, Hokkaido · walk from JR Shintoku",
+    "title": "Shintokuyama<br />Ski Area",
+    "tagline": "Monopolize 32-degree uncompacted local powder at this hidden ¥2,000 gem near Sahoro and Tomamu.",
+    "badgePrice": "8 hours ¥2,000",
+    "badgeNight": "Closes 16:00",
+    "badgeXc": "7-min walk",
+    "ctaPass": "Hidden JAPOW Pass",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Transparent ops · weather-ready",
+    "updatedAt": "Updated Jun 28, 9:00",
+    "lift1": {
+      "label": "Main lift",
+      "value": "Operating",
+      "note": "Pair lift (confirm on site)"
+    },
+    "lift2": {
+      "label": "Snow",
+      "value": "Powder",
+      "note": "Local Tokachi snow"
+    },
+    "snow": {
+      "label": "Crowds",
+      "value": "Low",
+      "note": "Mega-resort bypass"
+    },
+    "night": {
+      "label": "Hours",
+      "value": "Until 16:00",
+      "note": "Then soba · onsen loop"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Hidden JAPOW",
+    "title": "Beside Tomamu,<br />empty 32° runs.",
+    "lead": "Minutes from Hoshino Tomamu and Sahoro Resort yet ¥2,000 per day and a 7-minute walk from the station—escape mega-resort prices and crowds with smart powder hunting.",
+    "specs": [
+      "Max pitch 32°",
+      "Onodera burn",
+      "Snowboards OK"
+    ],
+    "noticeTitle": "Honest reviews:",
+    "noticeBody": "The locally cut \"Onodera burn\" is the signature steep powder zone—don't hide aging lifts; win on snow quality and value.",
+    "ctaPass": "Hidden JAPOW Pass",
+    "imgAlt": "Untouched steep powder on Shintokuyama"
+  },
+  "paths": {
+    "pass": {
+      "label": "Pass",
+      "title": "Hidden JAPOW Pass"
+    },
+    "access": {
+      "label": "Access",
+      "title": "7 min from Shintoku Stn."
+    },
+    "today": {
+      "label": "Today",
+      "title": "Lifts · snow · weather"
+    },
+    "hike": {
+      "label": "Loop",
+      "title": "Soba · onsen"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Mega-resort shadow",
+    "primary": {
+      "title": "32° × ¥2,000 × 7-min walk",
+      "lead": "Three hooks for overseas and domestic core skiers: station walk, all-day ¥2,000, and 32-degree uncompacted powder—without Tomamu ticket prices.",
+      "cta": "Tickets & access",
+      "imgAlt": "Fresh powder on a compact municipal hill"
+    },
+    "secondary": {
+      "title": "Tomamu · Sahoro spillover",
+      "lead": "Capture guests staying at mega-resorts who want cheap local powder—sleep at Tomamu, ski at Shintokuyama.",
+      "cta": "Regional map"
+    }
+  },
+  "pass": {
+    "eyebrow": "Hidden JAPOW Pass",
+    "title": "Multilingual LP<br />+ weather API.",
+    "lead": "Pair EN/CN landing pages with live snow status so travelers know instantly if today's powder is on—your fastest path to reaching international powder hunters.",
+    "specs": [
+      "8 hours ¥2,000",
+      "7-min station walk",
+      "QR ticketing (DX plan)"
+    ],
+    "cta": "Pass details (draft)",
+    "imgAlt": "Shintokuyama lodge base in winter"
+  },
+  "hike": {
+    "eyebrow": "After Ski",
+    "title": "After 16:00,<br />soba · onsen.",
+    "lead": "Lift-ticket stub discounts at local soba shops and onsen—the \"Shintoku steam powder ticket\" loop raises town ARPU after lifts close.",
+    "leadCurry": "Minatoya · Sekiguchi soba, Kuttarri Onsen Lake Inn, Tokachi Shintoku Onsen Waka—classic post-ski routes mapped on the LP.",
+    "cta": "Food · onsen map",
+    "imgAlt": "Shintoku soba after skiing"
+  },
+  "tour": {
+    "eyebrow": "Half-Day Loop",
+    "title": "From Shintoku Stn.,<br />half a day.",
+    "lead": "Day trip from Tomamu/Sahoro or stay in town—ski, eat soba, soak onsen in one Tokachi loop.",
+    "badge": "HIDDEN JAPOW · SHINTOKU LOOP",
+    "steps": {
+      "01": {
+        "title": "JR Shintoku",
+        "body": "~7 min walk to slopes"
+      },
+      "02": {
+        "title": "Shintokuyama Ski",
+        "body": "8h powder (¥2,000)"
+      },
+      "03": {
+        "title": "Soba Minatoya",
+        "body": "Shintoku soba lunch"
+      },
+      "04": {
+        "title": "Kuttarri Onsen",
+        "body": "Lake inn soak"
+      },
+      "05": {
+        "title": "Sahoro Bear Mt.",
+        "body": "Next-day sightseeing"
+      }
+    }
+  },
+  "guides": {
+    "sanctuary": {
+      "title": "Hidden JAPOW guide",
+      "body": "Next to Tomamu and Sahoro—capture spillover demand with ¥2,000, uncrowded, 32-degree local powder."
+    },
+    "workation": {
+      "title": "JAPOW workation base",
+      "body": "Lodge Wi-Fi coworking concept—morning powder, afternoon remote, evening local chicken. Links to Shintoku workation guides."
+    },
+    "lake": {
+      "title": "Tomamu · Sahoro pairing",
+      "body": "Stay mega-resort, ski Shintokuyama—split-stay model for crowd and cost control.",
+      "hashtags": [
+        "#HiddenJAPOW",
+        "#ShintokuSoba",
+        "#TomamuSpillover"
+      ]
+    }
+  },
+  "access": {
+    "postal": "081-0292, Japan",
+    "line": "Shintoku, Kamikawa-gun, Hokkaido",
+    "note": "JR Nemuro Line Shintoku Stn. ~7 min walk · Doto Expwy Tomamu IC · lodge parking",
+    "phoneLodge": "TEL 0156-64-2323 (Shintokuyama Ski Lodge)",
+    "phoneOps": "Shintoku Tourism 0156-64-3181",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>上川郡<rt>Kamikawa-gun</rt></ruby></span><span class=\"place-unit\"><ruby>新得町<rt>Shintoku</rt></ruby></span>",
+    "rentacarEyebrow": "Tokachi · Doto",
+    "rentacarLink": "Book a rental car at New Chitose Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Tomamu, Obihiro, and Shintoku drives"
+  },
+  "footer": {
+    "copyright": "© Shintokuyama Ski Area — LP mock",
+    "location": "081-0292 · Shintoku, Kamikawa-gun, Hokkaido"
+  }
+}

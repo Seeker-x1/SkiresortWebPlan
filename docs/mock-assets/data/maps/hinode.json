@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "2026-06-25",
+  "schemaVersion": "2026-06-13",
   "id": "hinode",
   "name": {
     "ja": "上富良野町日の出スキー場",
@@ -13,7 +13,7 @@
     "かみふらの十勝岳観光協会",
     "LP戦略レポート"
   ],
-  "updatedAt": "2026-06-25T12:00:00+09:00",
+  "updatedAt": "2026-06-13T12:00:00+09:00",
   "viewBox": "0 0 1024 1024",
   "hero": {
     "src": "images/maps/hinode-hero.png",

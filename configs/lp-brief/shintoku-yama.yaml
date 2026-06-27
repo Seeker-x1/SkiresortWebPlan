@@ -1,0 +1,63 @@
+resortId: shintoku-yama
+schemaVersion: "2026-06-27"
+
+name:
+  ja: 新得山スキー場
+  en: Shintokuyama Ski Area
+region:
+  ja: 北海道新得町
+  en: Shintoku, Hokkaido
+japowResortId: 83
+
+strategy:
+  ja: トマム・サホロ近接のHidden JAPOW
+  en: Hidden JAPOW beside Tomamu & Sahoro
+archetype: local-value
+
+audience: both
+
+hero:
+  tagline:
+    ja: トマム・サホロに隣接する1日2000円の秘密基地、最大斜度32度の未圧雪ローカルパウダーを独占せよ。
+    en: Monopolize 32-degree uncompacted local powder at this hidden 2,000 JPY gem near Sahoro and Tomamu.
+  badges: [hidden-japow, station-walk, value]
+
+pillars:
+  - id: powder
+    hook: { ja: オノデラバーン・32度, en: Onodera burn · 32° pitch }
+  - id: value
+    hook: { ja: 8時間¥2,000, en: 8 hours · ¥2,000 }
+  - id: corridor
+    hook: { ja: 新得そば×温泉周遊, en: Shintoku soba · onsen loop }
+
+subPages: []
+
+facts:
+  operator: 新得町・NPO（町営）
+  location: 北海道上川郡新得町（JR新得駅徒歩約7分）
+  phone: "0156-64-2323"
+  lift: ペアリフト等（要シーズン確認）
+  courses: 複数（オノデラバーン等・最大斜度32度）
+  elevation: 標高差約200m級（概略）
+  parking: ロッジ前（無料想定）
+  pricing:
+    liftDayAdult: 2000
+  hours: "9:00–16:00（積雪・シーズンにより変動）"
+  access:
+    train: JR根室本線「新得駅」徒歩約7分
+    car: 道東自動車道 トマムIC・帯広方面
+    note: 星野リゾートトマム・サホロリゾートから車で近接
+  nearby:
+    megaResorts: トマム · サホロ
+    food: そば処みなとや · せきぐち
+    onsen: 湯宿くったり温泉 · 十勝新得温泉和火
+
+map:
+  sources: ["Deep Research batch #22", "configs/lp-brief/shintoku-yama.yaml"]
+  heroImage: images/maps/shintoku-yama-hero.png
+  copyFrom: minami-furano-lp
+
+humanReview:
+  - 2025-2026シーズンのリフト運行本数・料金表
+  - japowResortId 83 = 新得山スキー場
+  - 英訳・インバウンドコピーの事実確認

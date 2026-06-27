@@ -22,6 +22,8 @@
     "52":  { "registryId": "hinode",           "tier": "mock" },
     "29":  { "registryId": "takaho",           "tier": "mock" },
     "310": { "registryId": "koshi-kogen",      "tier": "mock" },
-    "167": { "registryId": "nishikawa",        "tier": "mock" }
+    "167": { "registryId": "nishikawa",        "tier": "mock" },
+    "59":  { "registryId": "utoro",            "tier": "mock" },
+    "83":  { "registryId": "shintoku-yama",    "tier": "mock" }
   }
 }

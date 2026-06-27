@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="utoro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ウトロスキー場</title>
+  <meta name="description" content="知床流氷の玄関ウトロで、気軽な雪遊び——本格滑走はウナベツへ" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="#" class="logo" data-i18n="logo">ウトロスキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=utoro" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="#live" data-i18n="nav.live">本日</a></li>
+          <li><a href="#highlights" data-i18n="nav.highlights">魅力</a></li>
+          <li><a href="#rental" data-i18n="nav.rental">手ぶら</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-utoro-drift-ice.png" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">北海道斜里町 · 知床の玄関口</p>
+        <h1 class="hero-title" data-i18n-html="hero.title">ウトロ<br />スキー場</h1>
+        <p class="hero-sub" data-i18n="hero.sub">ウトロ温泉街</p>
+        <p class="hero-tagline" data-i18n="hero.tagline">知床流氷の玄関ウトロで、気軽な雪遊び——本格滑走はウナベツへ</p>
+        <div class="hero-cta">
+          <a href="#rental" class="btn btn-ice" data-i18n="hero.ctaRental">ウナベツ連携プラン</a>
+          <a href="#live" class="btn btn-ghost" data-i18n="hero.ctaLive">本日の運行</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="live" class="live-dashboard" data-i18n-attr="aria-label:live.ariaLabel">
+      <div class="inner">
+        <div class="live-head">
+          <div>
+            <span class="live-pulse" aria-hidden="true"></span>
+            <span class="live-label">Live</span>
+            <span class="live-label" style="color:var(--muted); margin-left:0.5rem" data-i18n="live.subtitle">本日の運行</span>
+          </div>
+          <p class="live-updated" data-i18n="live.updatedAt">更新 2/7 8:45</p>
+        </div>
+        <div class="status-grid">
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.lift.label">リフト</p>
+            <p class="status-card__value" data-i18n="live.lift.value">運行中</p>
+            <p class="status-card__note" data-i18n="live.lift.note">ペアリフト1基</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.driftIce.label">流氷</p>
+            <p class="status-card__value" style="color:var(--accent-ice)" data-i18n="live.driftIce.value">接岸中</p>
+            <p class="status-card__note" data-i18n="live.driftIce.note">眼下に大迫力</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.courses.label">コース</p>
+            <p class="status-card__value" data-i18n="live.courses.value">3/3 開放</p>
+            <p class="status-card__note" data-i18n="live.courses.note">ナイター可</p>
+          </div>
+          <div class="status-card status-card--warn">
+            <p class="status-card__label" data-i18n="live.snow.label">雪質</p>
+            <p class="status-card__value" data-i18n="live.snow.value">圧雪良好</p>
+            <p class="status-card__note" data-i18n="live.snow.note">降雨時は要確認</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="quality-heading">
+      <div class="inner">
+        <div class="transit-grid">
+          <div class="transit-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-utoro-carving.png"
+                data-i18n-attr="alt:quality.imgAlt"
+                alt="カラマツ林のバーンでカービングターン——流氷を背景に"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="transit-card">
+            <p class="eyebrow" data-i18n="quality.eyebrow">Shiretoko</p>
+            <h2 id="quality-heading" class="heading-lg" data-i18n-html="quality.title">景色だけじゃ、<br />ない。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:28rem" data-i18n="quality.lead">
+              海抜約50mの超低標高から、オホーツクの流氷が眼前に迫る。同時に、サーモンコース最大31度・丁寧な圧雪——カービングを楽しむ本格派ゲレンデです。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="quality.specs.0">カラマツ 25°</li>
+              <li class="spec-tag" data-i18n="quality.specs.1">センター 29°</li>
+              <li class="spec-tag" data-i18n="quality.specs.2">サーモン 31°</li>
+              <li class="spec-tag" data-i18n="quality.specs.3">ナイター</li>
+            </ul>
+            <div class="transit-actions">
+              <a href="#access" class="btn btn-primary" data-i18n="quality.ctaMap">コース・マップ</a>
+              <a href="#" class="btn btn-ghost" data-i18n="quality.ctaPricing">料金一覧</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top" aria-labelledby="paths-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.explore">Explore</p>
+        <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
+        <div class="path-grid">
+          <a href="#live" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.today.label">今日</span>
+            <span class="path-tile__title" data-i18n="paths.today.title">本日の運営・コンディション</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#access" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.access.label">アクセス</span>
+            <span class="path-tile__title" data-i18n="paths.access.title">斜里・知床から</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.slopes.label">ゲレンデ</span>
+            <span class="path-tile__title" data-i18n="paths.slopes.title">3コース・流氷ビュー</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#rental" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.rental.label">予約</span>
+            <span class="path-tile__title" data-i18n="paths.rental.title">手ぶらレンタル</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section" aria-labelledby="highlights-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="highlights.eyebrow">ウトロの役割</p>
+        <h2 id="highlights-heading" class="heading-lg" data-i18n="highlights.title">ここが違う</h2>
+
+        <div class="highlight-duet">
+          <article class="highlight-primary">
+            <div class="frame">
+              <img
+                src="lp-mock-utoro-drift-ice.png"
+                data-i18n-attr="alt:highlights.primary.imgAlt"
+                alt="オホーツク海の流氷を眼下に望む絶景滑走"
+                width="1600"
+                height="1100"
+              />
+            </div>
+            <div class="highlight-primary-body">
+              <h3 data-i18n="highlights.primary.title">流氷への没入</h3>
+              <p class="lead" style="margin-top:1rem" data-i18n="highlights.primary.lead">
+                高地型リゾートでは決して味わえない、目線の高さに流氷が迫るダイナミズム。知床・網走周遊のついでに、2時間で絶景アクティビティ。
+              </p>
+              <a href="#" class="btn btn-primary" style="margin-top:2rem" data-i18n="highlights.primary.cta">流氷ビューを見る</a>
+            </div>
+          </article>
+
+          <article class="highlight-secondary">
+            <h3 data-i18n="highlights.secondary.title">手ぶら2時間プラン</h3>
+            <p class="lead-whisper" style="margin-top:1rem" data-i18n="highlights.secondary.lead">
+              用具・ウェアをWeb予約。身長・足サイズを入力して、2時間券とセットで事前決済——「借りられないかも」不安をゼロに。
+            </p>
+            <p class="price-inline" data-i18n="highlights.secondary.price">2時間券 ¥1,400〜 · レンタルセット別途</p>
+            <a href="../unabetsu-lp/index.html" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="highlights.secondary.cta">予約する</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="rental" class="section border-top" aria-labelledby="rental-heading">
+      <div class="inner">
+        <div class="surround-grid">
+          <div class="surround-copy">
+            <p class="eyebrow" data-i18n="rental.eyebrow">Book &amp; Go</p>
+            <h2 id="rental-heading" class="heading-lg" data-i18n-html="rental.title">手ぶらで、<br />絶景へ。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="rental.lead">
+              知床観光のついでに寄るライト観光層・。スキー・スノーボードセット、ウェア上下をWeb予約。4時間券（¥2,200）や日券（¥3,200）とも組み合わせ可能。
+            </p>
+            <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="rental.whisper">
+              ロッジでの対面確認負荷を軽減し、利益率の高いレンタル収益を最大化——売上倍増の核心施策。
+            </p>
+            <a href="../unabetsu-lp/index.html" class="btn btn-ice" style="margin-top:2rem" data-i18n="rental.cta">レンタル予約・決済</a>
+          </div>
+          <div class="surround-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-utoro-rental.png"
+                data-i18n-attr="alt:rental.imgAlt"
+                alt="ロッジのレンタル用具——手ぶら来場向け"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tour" class="section border-top" aria-labelledby="tour-heading">
+      <div class="inner">
+        <div class="surround-grid">
+          <div class="surround-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-utoro-road-heaven.png"
+                data-i18n-attr="alt:tour.imgAlt"
+                alt="天まで続く道——斜里周遊ドライブ"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="surround-copy">
+            <p class="eyebrow" data-i18n="tour.eyebrow">Shari Tour</p>
+            <h2 id="tour-heading" class="heading-lg" data-i18n-html="tour.title">知床・斜里を、<br />半日で。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="tour.lead">
+              単体施設案内から脱却。「天まで続く道」ドライブ、地元温泉、ウナベツ2時間スキーを組み合わせたモデルコース。町全体の滞在時間と消費額を伸ばす観光ハブへ。
+            </p>
+            <a href="#" class="btn btn-primary" style="margin-top:2rem" data-i18n="tour.cta">周遊プランを見る</a>
+          </div>
+        </div>
+
+        <div class="journey">
+          <div class="journey-step">
+            <p class="journey-step__num">01</p>
+            <p class="journey-step__title" data-i18n="tour.steps.01.title">到着</p>
+            <p class="journey-step__body" data-i18n="tour.steps.01.body">斜里・知床エリア。本日の運行をダッシュボードで確認</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">02</p>
+            <p class="journey-step__title" data-i18n="tour.steps.02.title">絶景滑走</p>
+            <p class="journey-step__body" data-i18n="tour.steps.02.body">手ぶらレンタル＋2時間券。流氷ビューを滑る</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">03</p>
+            <p class="journey-step__title" data-i18n="tour.steps.03.title">周遊</p>
+            <p class="journey-step__body" data-i18n="tour.steps.03.body">天まで続く道、温泉で温活</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">04</p>
+            <p class="journey-step__title" data-i18n="tour.steps.04.title">シェア</p>
+            <p class="journey-step__body" data-i18n="tour.steps.04.body">流氷背景のUGC——次の来場者へ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.guidesEyebrow">特集</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="common.guidesTitle">特集ページ</h2>
+
+        <ul class="guides-list">
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="true" data-guide="drift">
+              <span data-i18n="guides.drift.title">流氷ダイブ体験</span>
+              <span class="guide-icon" aria-hidden="true">−</span>
+            </button>
+            <div class="guide-panel is-open" id="panel-drift">
+              <p class="lead" data-i18n="guides.drift.body">
+                標高約50mからオホーツク海の流氷が眼前に。網走レークビューが遠景を見下ろすのに対し、ウナベツは「圧倒的な近接性と没入感」。世界遺産・知床の玄関口でしか味わえない体験型観光資源。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="rental-guide">
+              <span data-i18n="guides.rentalGuide.title">手ぶらレンタル完全ガイド</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-rental-guide" hidden>
+              <p class="lead" data-i18n="guides.rentalGuide.body">
+                サイズ入力→時間券選択→クレジット決済。スキー・スノーボード・ウェアの在庫確認までWeb完結。英語対応、スマホ最適化。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="shiretoko">
+              <span data-i18n="guides.shiretoko.title">知床・斜里 半日モデルコース</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-shiretoko" hidden>
+              <p class="lead" data-i18n="guides.shiretoko.body">
+                砕氷船・流氷ウォークと組み合わせた立ち寄りプラン。天まで続く道、温泉、ロッジランチ——第2次斜里町観光振興計画に沿った周遊パッケージ。
+              </p>
+              <div class="hashtags">
+                <span class="hashtag" data-i18n="guides.shiretoko.hashtags.0">#DriftIceSki</span>
+                <span class="hashtag" data-i18n="guides.shiretoko.hashtags.1">#ShiretokoGateway</span>
+                <span class="hashtag" data-i18n="guides.shiretoko.hashtags.2">#OkhotskView</span>
+              </div>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="access" class="access-section border-top" aria-labelledby="access-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.accessEyebrow">Access</p>
+        <h2 id="access-heading" class="heading-lg" data-i18n="common.location">所在地</h2>
+        <div class="access-grid">
+          <address class="access-address">
+            <span class="access-postal" data-i18n="access.postal">〒099-4351</span>
+            <span class="access-line" data-i18n="access.line">北海道斜里郡斜里町ウトロ香川42</span>
+            <p class="access-places" data-i18n-html="access.places" hidden></p>
+            <p class="access-note" data-i18n="access.note">知床半島の玄関口・斜里町内（車でのアクセスが一般的）</p>
+            <p class="access-phone" data-i18n="access.phone">TEL 0152-28-2225</p>
+          </address>
+          <div class="access-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%A6%E3%83%88%E3%83%AD%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E5%8C%97%E6%B5%B7%E9%81%93%E6%96%9C%E9%87%8C%E9%83%A1%E3%82%A6%E3%83%88%E3%83%AD"
+              class="btn btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="common.googleMap">Google Mapで開く</span>
+            </a>
+            <a href="tel:0152243303" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">知床圏</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">女満別空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">斜里・知床方面の周遊向け</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© ウナベツスキー場（ウトロ温泉街）— LP案モック</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒099-4351 北海道斜里郡斜里町ウトロ香川42</span> ·
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%A6%E3%83%88%E3%83%AD%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E5%8C%97%E6%B5%B7%E9%81%93%E6%96%9C%E9%87%8C%E9%83%A1%E3%82%A6%E3%83%88%E3%83%AD" target="_blank" rel="noopener noreferrer" data-i18n="common.footerMap">Google Map</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
+  <script src="../_shared/mock-i18n.js"></script>
+  <script>
+    document.querySelectorAll(".guide-trigger").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.guide;
+        const panel = document.getElementById("panel-" + id);
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".guide-trigger").forEach((b) => {
+          b.setAttribute("aria-expanded", "false");
+          b.querySelector(".guide-icon").textContent = "+";
+        });
+        document.querySelectorAll(".guide-panel").forEach((p) => {
+          p.classList.remove("is-open");
+          p.hidden = true;
+        });
+
+        if (!isOpen) {
+          btn.setAttribute("aria-expanded", "true");
+          btn.querySelector(".guide-icon").textContent = "−";
+          panel.classList.add("is-open");
+          panel.hidden = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

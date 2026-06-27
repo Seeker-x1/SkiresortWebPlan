@@ -48,7 +48,7 @@ alwaysApply: true
 
 - 「完成」「反映」「push」依頼があっても、**上表 7 コマンドが全部 PASS するまで**配信系コミットを作らない
 - LP を JAPOWSERCH へ出す施設では、**§0.2 Step 12（JAPOWSERCH `resort-guides.json` 同期）** まで終わらせ、`guides.japowserch.com/{id}/` と JAPOW「詳細確認」が成立してから完了扱いにする
-- ユーザーが `push` を止めていない限り、LP Factory / JAPOW 詳細ボタン連携の作業は **検証 PASS → commit → push** までを 1 セットで実施する
+- LP Factory / JAPOW 詳細ボタン連携は **検証 PASS → `npm run lp:ship`（sync · SkiresortWebPlan push · JAPOWSERCH push · Vercel デプロイ）** までを毎回自動実施する。ユーザーが「push するな」と明示したときのみ省略
 - 手順にない画像形式・省略フェーズを思いついたら **実装せず** ユーザーに確認
 - 他施設 LP を複製した直後は、**他 `{id}` 文字列が残っていないか** grep してから次 Phase へ
 - LP 変更後は `code-reviewer` または手順書どおり L3 評価を検討

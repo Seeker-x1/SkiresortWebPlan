@@ -488,6 +488,52 @@
       "affiliates": {
         "rentacar": "shinjo_station"
       }
+    },
+    {
+      "id": "utoro",
+      "slug": "utoro-lp",
+      "name": {
+        "ja": "ウトロスキー場",
+        "en": "Utoro Ski Area"
+      },
+      "region": {
+        "ja": "北海道斜里町ウトロ",
+        "en": "Utoro, Shari, Hokkaido"
+      },
+      "strategy": {
+        "ja": "知床流氷の玄関・ウナベツ連携",
+        "en": "Shiretoko drift-ice gateway · Unabetsu pair"
+      },
+      "guidePath": "/utoro/",
+      "guideUrl": "https://guides.japowserch.com/utoro/",
+      "japowResortId": 59,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "memanbetsu_airport"
+      }
+    },
+    {
+      "id": "shintoku-yama",
+      "slug": "shintoku-yama-lp",
+      "name": {
+        "ja": "新得山スキー場",
+        "en": "Shintokuyama Ski Area"
+      },
+      "region": {
+        "ja": "北海道新得町",
+        "en": "Shintoku, Hokkaido"
+      },
+      "strategy": {
+        "ja": "トマム・サホロ近接のHidden JAPOW",
+        "en": "Hidden JAPOW beside Tomamu & Sahoro"
+      },
+      "guidePath": "/shintoku-yama/",
+      "guideUrl": "https://guides.japowserch.com/shintoku-yama/",
+      "japowResortId": 83,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "chitose_international_airport"
+      }
     }
   ],
   "guides": {

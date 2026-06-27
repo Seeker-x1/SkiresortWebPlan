@@ -1,0 +1,56 @@
+---
+description: チャットだけで Deep Research → LP。Automation 不要。ユーザーに PowerShell を開かせない。
+alwaysApply: true
+---
+
+# LP Factory — チャット起動（標準ルート）
+
+**Cursor Automation は不要。** ユーザーがチャットで依頼したら、エージェントが調査・LP 実装まで **同チャット内** で完結させる。
+
+## トリガー例
+
+- 「田山スキー場を Deep Research して LP まで作って」
+- 「#23 の LP 作って」
+- 「新得山の LP を作って」（inbox 済みなら調査スキップ可）
+
+## 実行手順
+
+1. **API キー** — `C:\Users\Takum\Desktop\Cloude\SkiresortWebPlan\.env` の `GEMINI_API_KEY`。無ければ `.env` 作成を案内。
+
+2. **Deep Research（未調査のとき）** — エージェントが Shell で実行:
+
+```bash
+npm run lp:deep-research -- --name "施設名"
+# または --rank N / --next
+```
+
+- `block_until_ms` **3600000** 以上
+- 調査完了後は `--commit --push` で inbox を push 可（LP 本体は同チャットで続行）
+
+3. **LP Factory** — `docs/research/inbox/{id}.md` + `LP_FACTORY_PROCEDURE.md` §0.2 Steps 1–13 を **同チャットで実装**。検証 8 本 PASS まで。
+
+4. **出荷（必須・毎回自動）** — 検証 PASS 後、ユーザーに聞かずに実行:
+
+```bash
+npm run lp:ship -- --id {registry-id} -m "feat(guides): add {id} mock LP (japow {n})"
+```
+
+- `guides/scripts/sync.mjs` → SkiresortWebPlan `git push origin` → Vercel guides デプロイ
+- `JAPOWSERCH/data/resort-guides.json` 同期 → `fork` へ `git push fork HEAD:main`
+- `JAPOWSERCH_ROOT` 未設定時は `../JAPOWSERCH` を使用
+
+5. **完了報告** — LP URL · japowResortId · 検証結果 · **push コミット SHA** · Vercel デプロイ待ちの旨。
+
+**ユーザーが「push するな」「コミットしない」と明示したときだけ** Step 4 をスキップする。
+
+## 禁止
+
+- Automation 設定を **必須** と言わない
+- Gem UI コピペ · 手動 PowerShell を第一選択にしない
+- ユーザーに `npm run` を打たせない
+
+## 参照
+
+- `configs/lp-batch/AUTO.md`
+- `configs/lp-batch/batch-21-30.json`
+- `.cursor/rules/lp-factory-no-shortcuts.mdc`
