@@ -30,6 +30,7 @@ function parseArgs(argv) {
     id: null,
     message: null,
     noJapow: false,
+    japowOnly: false,
     dryRun: false,
   };
   for (let i = 2; i < argv.length; i++) {
@@ -37,6 +38,7 @@ function parseArgs(argv) {
     if (a === "--id") opts.id = argv[++i];
     else if (a === "--message" || a === "-m") opts.message = argv[++i];
     else if (a === "--no-japow") opts.noJapow = true;
+    else if (a === "--japow-only") opts.japowOnly = true;
     else if (a === "--dry-run") opts.dryRun = true;
     else if (a === "--help" || a === "-h") {
       console.log(`Usage: npm run lp:ship [-- --id registry-id -m "commit message"] [--no-japow] [--dry-run]`);
@@ -91,28 +93,23 @@ function shipJapowserch(dryRun) {
   const src = path.join(ROOT, "data", "resort-guides.json");
   const dest = path.join(JAPOW_ROOT, "data", "resort-guides.json");
   const srcText = readFileSync(src, "utf8");
-  const destText = existsSync(dest) ? readFileSync(dest, "utf8") : "";
-
-  if (srcText === destText) {
-    console.error("✓ JAPOWSERCH resort-guides.json already in sync");
-    const ahead = dryRun
-      ? ""
-      : execSync("git status --porcelain data/resort-guides.json", {
-          cwd: JAPOW_ROOT,
-          encoding: "utf8",
-        }).trim();
-    if (!ahead) return;
-  }
 
   if (!dryRun) {
-    copyFileSync(src, dest);
     execSync("git fetch fork main", { cwd: JAPOW_ROOT, stdio: "inherit" });
-    try {
-      execSync("git checkout fork/main", { cwd: JAPOW_ROOT, stdio: "inherit" });
-    } catch {
-      execSync("git checkout -B main-sync fork/main", { cwd: JAPOW_ROOT, stdio: "inherit" });
+    const dirty = execSync("git status --porcelain", { cwd: JAPOW_ROOT, encoding: "utf8" }).trim();
+    if (dirty) {
+      execSync("git stash push -m lp-ship-temp -- data/resort-guides.json", {
+        cwd: JAPOW_ROOT,
+        stdio: "inherit",
+      });
     }
+    execSync("git checkout fork/main", { cwd: JAPOW_ROOT, stdio: "inherit" });
     copyFileSync(src, dest);
+    const destText = readFileSync(dest, "utf8");
+    if (srcText === destText && !dirty) {
+      console.error("✓ JAPOWSERCH resort-guides.json already in sync on fork/main");
+      return;
+    }
     execSync("git add data/resort-guides.json", { cwd: JAPOW_ROOT, stdio: "inherit" });
     const staged = execSync("git diff --cached --name-only", {
       cwd: JAPOW_ROOT,
@@ -124,6 +121,15 @@ function shipJapowserch(dryRun) {
         stdio: "inherit",
       });
       execSync("git push fork HEAD:main", { cwd: JAPOW_ROOT, stdio: "inherit" });
+    } else {
+      console.error("✓ JAPOWSERCH: no resort-guides.json diff on fork/main");
+    }
+    if (dirty) {
+      try {
+        execSync("git stash pop", { cwd: JAPOW_ROOT, stdio: "inherit" });
+      } catch {
+        console.error("⚠ JAPOWSERCH stash pop conflict — resolve manually if needed");
+      }
     }
   }
   console.error("✓ JAPOWSERCH fork/main pushed — detail button fallback JSON updated");
@@ -138,11 +144,14 @@ function main() {
   console.error(" LP Factory ship (validate → sync → push → deploy)");
   console.error("═══════════════════════════════════════════════════");
 
-  for (const cmd of VALIDATORS) run(cmd, ROOT, opts.dryRun);
-  run("node guides/scripts/sync.mjs", ROOT, opts.dryRun);
-  run("node docs/mock-assets/scripts/validate-mock-japow-detail.mjs --public", ROOT, opts.dryRun);
-
-  shipSkiresortWebPlan(message, opts.dryRun);
+  for (const cmd of VALIDATORS) {
+    if (!opts.japowOnly) run(cmd, ROOT, opts.dryRun);
+  }
+  if (!opts.japowOnly) {
+    run("node guides/scripts/sync.mjs", ROOT, opts.dryRun);
+    run("node docs/mock-assets/scripts/validate-mock-japow-detail.mjs --public", ROOT, opts.dryRun);
+    shipSkiresortWebPlan(message, opts.dryRun);
+  }
 
   if (!opts.noJapow) {
     shipJapowserch(opts.dryRun);
