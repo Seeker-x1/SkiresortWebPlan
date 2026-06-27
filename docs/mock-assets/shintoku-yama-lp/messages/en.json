@@ -16,7 +16,7 @@
   },
   "live": {
     "ariaLabel": "Today's operations dashboard",
-    "subtitle": "Transparent ops · weather-ready",
+    "subtitle": "Snow, lifts, and hours at a glance",
     "updatedAt": "Updated Jun 28, 9:00",
     "lift1": {
       "label": "Main lift",
@@ -49,7 +49,7 @@
       "Snowboards OK"
     ],
     "noticeTitle": "Honest reviews:",
-    "noticeBody": "The locally cut \"Onodera burn\" is the signature steep powder zone—don't hide aging lifts; win on snow quality and value.",
+    "noticeBody": "The locally cut \"Onodera burn\" is the signature steep powder zone—simple facilities, but skiers come for snow quality and value.",
     "ctaPass": "Hidden JAPOW Pass",
     "imgAlt": "Untouched steep powder on Shintokuyama"
   },
@@ -76,33 +76,33 @@
     "title": "Mega-resort shadow",
     "primary": {
       "title": "32° × ¥2,000 × 7-min walk",
-      "lead": "Three hooks for overseas and domestic core skiers: station walk, all-day ¥2,000, and 32-degree uncompacted powder—without Tomamu ticket prices.",
+      "lead": "Three reasons to visit: 7-minute station walk, ¥2,000 all day, and 32-degree uncompacted powder—an easy day trip from Tomamu or Sahoro.",
       "cta": "Tickets & access",
       "imgAlt": "Fresh powder on a compact municipal hill"
     },
     "secondary": {
-      "title": "Tomamu · Sahoro spillover",
-      "lead": "Capture guests staying at mega-resorts who want cheap local powder—sleep at Tomamu, ski at Shintokuyama.",
+      "title": "Near Tomamu · Sahoro",
+      "lead": "A short drive from Hoshino Tomamu and Sahoro Resort—stay at the mega-resort, ski here on a day trip.",
       "cta": "Regional map"
     }
   },
   "pass": {
     "eyebrow": "Hidden JAPOW Pass",
-    "title": "Multilingual LP<br />+ weather API.",
-    "lead": "Pair EN/CN landing pages with live snow status so travelers know instantly if today's powder is on—your fastest path to reaching international powder hunters.",
+    "title": "¥2,000 all day,<br />7 min from the station.",
+    "lead": "Adult 8-hour ticket: ¥2,000. About a 7-minute walk from JR Shintoku—an easy day trip while staying at Tomamu or Sahoro. Check snow and lift status at the top of this page before you go.",
     "specs": [
       "8 hours ¥2,000",
       "7-min station walk",
-      "QR ticketing (DX plan)"
+      "Snow & weather on this page"
     ],
-    "cta": "Pass details (draft)",
+    "cta": "Tickets & access",
     "imgAlt": "Shintokuyama lodge base in winter"
   },
   "hike": {
     "eyebrow": "After Ski",
     "title": "After 16:00,<br />soba · onsen.",
-    "lead": "Lift-ticket stub discounts at local soba shops and onsen—the \"Shintoku steam powder ticket\" loop raises town ARPU after lifts close.",
-    "leadCurry": "Minatoya · Sekiguchi soba, Kuttarri Onsen Lake Inn, Tokachi Shintoku Onsen Waka—classic post-ski routes mapped on the LP.",
+    "lead": "Lifts close at 16:00. Show your ticket stub for discounts at local soba shops and onsen (when offered). After skiing, head into town for soba and a soak.",
+    "leadCurry": "Minatoya · Sekiguchi soba, Kuttarri Onsen Lake Inn, Tokachi Shintoku Onsen Waka—classic post-ski stops.",
     "cta": "Food · onsen map",
     "imgAlt": "Shintoku soba after skiing"
   },
@@ -137,15 +137,15 @@
   "guides": {
     "sanctuary": {
       "title": "Hidden JAPOW guide",
-      "body": "Next to Tomamu and Sahoro—capture spillover demand with ¥2,000, uncrowded, 32-degree local powder."
+      "body": "Right beside Tomamu and Sahoro—¥2,000, uncrowded, 32-degree local powder for a full day."
     },
     "workation": {
       "title": "JAPOW workation base",
-      "body": "Lodge Wi-Fi coworking concept—morning powder, afternoon remote, evening local chicken. Links to Shintoku workation guides."
+      "body": "Use lodge Wi-Fi—morning powder, afternoon remote work. Shintoku as a workation base in Tokachi."
     },
     "lake": {
       "title": "Tomamu · Sahoro pairing",
-      "body": "Stay mega-resort, ski Shintokuyama—split-stay model for crowd and cost control.",
+      "body": "Stay at Tomamu or Sahoro, ski at Shintokuyama—a split-stay trip that cuts cost and crowds.",
       "hashtags": [
         "#HiddenJAPOW",
         "#ShintokuSoba",
