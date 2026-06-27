@@ -410,6 +410,51 @@ const RESORT_COPY = {
       rentacarHint: "For Otobe, Atsushibe, and Hakodate drives",
     },
   },
+  sanokura: {
+    rentacar: "niigata_airport",
+    ja: {
+      rentacarEyebrow: "会津・喜多方",
+      rentacarLink: "新潟空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "喜多方・猪苗代・会津若松周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Aizu · Kitakata",
+      rentacarLink: "Book a rental car at Niigata Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Kitakata, Inawashiro, and Aizu-Wakamatsu drives",
+    },
+  },
+  niwa: {
+    rentacar: "hakodate_onuma_matsumae",
+    ja: {
+      rentacarEyebrow: "道南·檜山",
+      rentacarLink: "函館空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "北檜山·大成·函館周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Southern Hokkaido · Hakodate",
+      rentacarLink: "Book a rental car at Hakodate Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Kitahiyama, Taisei, and Hakodate drives",
+    },
+  },
+  horaguchi: {
+    rentacar: "kansai_international_airport",
+    ja: {
+      rentacarEyebrow: "関西発",
+      rentacarLink: "関西空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "大阪·奈良·吉野山周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "From Kansai",
+      rentacarLink: "Book a rental car at Kansai Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Osaka, Nara, and Yoshino drives",
+    },
+  },
 };
 
 const NEW_DESTINATIONS = {
@@ -437,11 +482,15 @@ const NEW_DESTINATIONS = {
     url: "https://skyticket.jp/rentacar/tohoku/iwate/morioka_station/",
     label: { ja: "盛岡駅", en: "Morioka Station" },
   },
-  hakodate_onuma_matsumae: {
-    url: "https://skyticket.jp/rentacar/hokkaido/hakodate_onuma_matsumae/",
-    label: { ja: "函館・大沼・松前", en: "Hakodate · Onuma · Matsumae" },
-  },
-};
+    hakodate_onuma_matsumae: {
+      url: "https://skyticket.jp/rentacar/hokkaido/hakodate_onuma_matsumae/",
+      label: { ja: "函館・大沼・松前", en: "Hakodate · Onuma · Matsumae" },
+    },
+    kansai_international_airport: {
+      url: "https://skyticket.jp/rentacar/kansai/kansai_international_airport/",
+      label: { ja: "関西空港", en: "Kansai Airport" },
+    },
+  };
 
 function patchIndexHtml(html, copy) {
   if (html.includes("data-skyticket-rentacar-block")) return html;

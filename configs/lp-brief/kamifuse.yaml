@@ -1,0 +1,61 @@
+resortId: kamifuse
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 釜臥山スキー場
+  en: Mount Kamifuse Ski Area
+region:
+  ja: 青森県むつ市
+  en: Mutsu, Aomori
+japowResortId: 96
+
+strategy:
+  ja: 陸奥湾絶景・ねこプリン
+  en: Mutsu Bay views · cat pudding cafe
+archetype: wellness-sight
+
+audience: both
+
+hero:
+  tagline:
+    ja: 陸奥湾へ向かって滑る、本州最北端の絶景ゲレンデ。
+    en: Ski toward Mutsu Bay at Honshu's northern edge.
+  badges: [kids-free, night, ocean-view]
+
+pillars:
+  - id: bay
+    hook: { ja: 海辺のダウンヒル, en: Ocean-view downhill }
+  - id: cafe
+    hook: { ja: ねこプリンカフェ, en: Cat pudding cafe }
+  - id: night
+    hook: { ja: 光のアゲハチョウ, en: Agehacho night lights }
+
+subPages: [night-view, cafe-view, nearby-food, nearby-onsen]
+
+facts:
+  operator: むつ市
+  location: 青森県むつ市大字大湊字大川守44-5
+  phone: "0175-24-1881"
+  lift: 第2ペア760m · 第1シングル609m · キッズロープトウ
+  courses: 全3コース · 最長1,500m
+  pricing:
+    liftDayAdult: 2800
+    kidsFree: true
+  hours: "9:00–21:00（16:00〜ナイター）· 12月中旬〜3月下旬"
+  access:
+    car: 大湊ICから約15分
+    note: 100%天然雪 · 人工降雪なし
+  nearby:
+    food: あらそば · Re:lax+kitchen · 大湊吉田ベーカリー
+    onsen: むつ矢立温泉 · 斗南温泉 · 奥薬研温泉
+    sight: 北洋館 · 光のアゲハチョウ展望
+
+map:
+  sources: ["Deep Research batch #25", "configs/lp-brief/kamifuse.yaml"]
+  heroImage: images/maps/kamifuse-hero.png
+  copyFrom: biei-lp
+
+humanReview:
+  - japowResortId 96 = 釜臥山スキー場（むつ市）
+  - ねこプリン平日限定の表現
+  - リフト間徒歩50mの注意書き

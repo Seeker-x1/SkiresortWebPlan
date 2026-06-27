@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "2026-06-28",
+  "id": "kamifuse",
+  "name": {
+    "ja": "釜臥山スキー場",
+    "en": "Mount Kamifuse Ski Area"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "Deep Research batch #25",
+    "configs/lp-brief/kamifuse.yaml"
+  ],
+  "updatedAt": "2026-06-28T09:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/kamifuse-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-pair2",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": { "ja": "第2リフト", "en": "Lift 2" },
+      "shortLabel": { "ja": "第2", "en": "L2" },
+      "meta": {
+        "ja": { "種別": "2人乗り760m · ナイター", "備考": "第1リフトまで徒歩約50m" },
+        "en": { "Type": "Pair 760m · night lit", "Note": "~50m walk to Lift 1" }
+      }
+    },
+    {
+      "id": "lift-single1",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": { "ja": "第1リフト", "en": "Lift 1" },
+      "shortLabel": { "ja": "第1", "en": "L1" },
+      "meta": {
+        "ja": { "種別": "1人乗り609m" },
+        "en": { "Type": "Single 609m" }
+      }
+    },
+    {
+      "id": "lift-kids",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": { "ja": "キッズ歩道", "en": "Kids rope tow" },
+      "shortLabel": { "ja": "キッズ", "en": "Kids" },
+      "meta": {
+        "ja": { "料金": "無料" },
+        "en": { "Fee": "Free" }
+      }
+    },
+    {
+      "id": "trail-main",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": { "ja": "メインコース", "en": "Main course" },
+      "shortLabel": { "ja": "メイン", "en": "Main" },
+      "meta": {
+        "ja": { "最長": "1,500m", "備考": "陸奥湾ビュー" },
+        "en": { "Longest": "1,500m", "Note": "Mutsu Bay view" }
+      }
+    },
+    {
+      "id": "trail-advanced",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": { "ja": "上級コース", "en": "Advanced course" },
+      "shortLabel": { "ja": "上級", "en": "Adv." },
+      "meta": {
+        "ja": { "最大斜度": "35°（要確認）" },
+        "en": { "Max slope": "35° (verify)" }
+      }
+    },
+    {
+      "id": "trail-beginner",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": { "ja": "初級・キッズ", "en": "Beginner / kids" },
+      "shortLabel": { "ja": "初級", "en": "Beg." },
+      "meta": {
+        "ja": { "斜度": "平均7°付近" },
+        "en": { "Slope": "~7° avg." }
+      }
+    },
+    {
+      "id": "feature-night",
+      "type": "feature",
+      "status": "open",
+      "label": { "ja": "ナイター", "en": "Night skiing" },
+      "shortLabel": { "ja": "21:00", "en": "21:00" },
+      "meta": {
+        "ja": { "備考": "第2リフト · 16:00〜" },
+        "en": { "Note": "Lift 2 · from 16:00" }
+      }
+    }
+  ]
+}

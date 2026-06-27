@@ -1,0 +1,53 @@
+resortId: niwa
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 丹羽スキー場
+  en: Niwa Ski Area
+region:
+  ja: 北海道せたな町
+  en: Setana, Hokkaido
+japowResortId: 6
+
+strategy:
+  ja: 無料ロープトウ・変則ナイター
+  en: Free rope tow · irregular night hours
+archetype: live-dashboard
+
+audience: both
+
+hero:
+  tagline:
+    ja: 腕力で登る昭和のロープトウ——平日は18時からのナイターだけ、本日営業はページ上部で確認。
+    en: A Showa-era rope tow you climb by hand — weekday nights from 18:00; check today's status at the top of this page.
+  badges: [free, rope, night]
+
+pillars:
+  - id: live
+    hook: { ja: 本日の営業, en: Today's hours }
+  - id: retro
+    hook: { ja: 純ロープトウ, en: Pure rope tow }
+  - id: setana
+    hook: { ja: 温泉×グルメ, en: Onsen · food loop }
+
+facts:
+  operator: せたな町（町営）
+  location: 北海道久遠郡せたな町北檜山区西丹羽649-2
+  phone: "0137-84-5111"
+  lift: ロープトウ（純ロープ）
+  courses: 2コース · 約200m四方
+  pricing:
+    liftDayAdult: 0
+  hours: "平日18:00–21:00（ナイターのみ）· 土日祝10:00–17:00前後（変動 · 要確認）"
+  access:
+    car: 函館から約2時間 · 駐車場はゲレンデから徒歩アプローチ
+    note: 営業情報は役場HPのPDFに埋もれがち — 出発前に電話確認推奨
+
+map:
+  sources: ["Deep Research batch #29", "configs/lp-brief/niwa.yaml"]
+  heroImage: images/maps/niwa-hero.png
+  copyFrom: minami-furano-lp
+
+humanReview:
+  - japowResortId 6
+  - 変則営業時間の最新版

@@ -580,6 +580,75 @@
       "affiliates": {
         "rentacar": "hakodate_onuma_matsumae"
       }
+    },
+    {
+      "id": "kamifuse",
+      "slug": "kamifuse-lp",
+      "name": {
+        "ja": "釜臥山スキー場",
+        "en": "Mount Kamifuse Ski Area"
+      },
+      "region": {
+        "ja": "青森県むつ市",
+        "en": "Mutsu, Aomori"
+      },
+      "strategy": {
+        "ja": "陸奥湾絶景・ねこプリン",
+        "en": "Mutsu Bay views · cat pudding cafe"
+      },
+      "guidePath": "/kamifuse/",
+      "guideUrl": "https://guides.japowserch.com/kamifuse/",
+      "japowResortId": 96,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "shichinohetowada_station"
+      }
+    },
+    {
+      "id": "sanokura",
+      "slug": "sanokura-lp",
+      "name": {
+        "ja": "三ノ倉スキー場",
+        "en": "Sanokura Ski Area"
+      },
+      "region": {
+        "ja": "福島県喜多方市",
+        "en": "Kitakata, Fukushima"
+      },
+      "strategy": {
+        "ja": "喜多方ラーメン×会津パウダー",
+        "en": "Kitakata ramen · Aizu powder loop"
+      },
+      "guidePath": "/sanokura/",
+      "guideUrl": "https://guides.japowserch.com/sanokura/",
+      "japowResortId": 183,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "niigata_airport"
+      }
+    },
+    {
+      "id": "niwa",
+      "slug": "niwa-lp",
+      "name": {
+        "ja": "丹羽スキー場",
+        "en": "Niwa Ski Area"
+      },
+      "region": {
+        "ja": "北海道せたな町",
+        "en": "Setana, Hokkaido"
+      },
+      "strategy": {
+        "ja": "無料ロープトウ・変則ナイター",
+        "en": "Free rope tow · irregular night hours"
+      },
+      "guidePath": "/niwa/",
+      "guideUrl": "https://guides.japowserch.com/niwa/",
+      "japowResortId": 6,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "hakodate_onuma_matsumae"
+      }
     }
   ],
   "guides": {

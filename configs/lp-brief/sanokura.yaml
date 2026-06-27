@@ -1,0 +1,54 @@
+resortId: sanokura
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 三ノ倉スキー場
+  en: Sanokura Ski Area
+region:
+  ja: 福島県喜多方市
+  en: Kitakata, Fukushima
+japowResortId: 183
+
+strategy:
+  ja: 喜多方ラーメン×会津パウダー
+  en: Kitakata ramen · Aizu powder loop
+archetype: corridor-hub
+
+audience: both
+
+hero:
+  tagline:
+    ja: 混雑ゼロの北向きバーン——午後まで残るパウダーと、喜多方・熱塩温泉への短いドライブ。
+    en: Quiet north-facing slopes — powder into the afternoon, then Kitakata ramen and Netsu-shio Onsen nearby.
+  badges: [powder, value, corridor]
+
+pillars:
+  - id: powder
+    hook: { ja: ローカルパウダー, en: Local powder }
+  - id: corridor
+    hook: { ja: ラーメン×温泉, en: Ramen · onsen loop }
+  - id: value
+    hook: { ja: 8時間 ¥2,500, en: 8h ¥2,500 }
+
+facts:
+  operator: 喜多方市
+  location: 福島県喜多方市熱塩加納町相田字北権現森甲857-1
+  phone: "0241-36-2071"
+  lift: ペアリフト2基
+  courses: 3コース · 最長約1,500m
+  pricing:
+    liftDayAdult: 2500
+    lift4hAdult: 1500
+  hours: 要公式確認（第2リフトはナイター営業あり）
+  access:
+    car: JR喜多方駅から約17km（車30分前後）
+    note: シャトルバスなし · レンタカーまたは自家用車推奨
+
+map:
+  sources: ["Deep Research batch #28", "configs/lp-brief/sanokura.yaml"]
+  heroImage: images/maps/sanokura-hero.png
+  copyFrom: shinjo-lp
+
+humanReview:
+  - japowResortId 183
+  - 2025-2026シーズン料金・ナイター

@@ -163,13 +163,16 @@
       "nameEn": "Snow Park Horaguchi",
       "japowResortId": 418,
       "regionJa": "奈良県天川村",
-      "status": "pending",
-      "reportPath": null,
+      "status": "research",
+      "reportPath": "docs/research/inbox/horaguchi.md",
       "archetypeHint": "live-dashboard",
       "copyFromHint": "tsunan-lp",
       "salesAngle": "関西日帰り需要。積雪不安定→「今日雪ある？営業？」問合せ集中。",
       "digitalGap": "電話・役場問合せ負担",
-      "subscriptionPitch": "天気・雪API自動連携＋ワンタップ運行更新"
+      "subscriptionPitch": "天気・雪API自動連携＋ワンタップ運行更新",
+      "updatedAt": "2026-06-27",
+      "researchInteractionId": "v1_ChdSVmxBYXBlWEplS3gycm9QMTRlSTJBcxIXUlZsQWFwZVhKZUt4MnJvUDE0ZUkyQXM",
+      "researchCompletedAt": "2026-06-27T23:23:14.852Z"
     }
   ]
 }

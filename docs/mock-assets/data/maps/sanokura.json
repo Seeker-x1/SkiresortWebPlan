@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "sanokura",
+  "name": {
+    "ja": "三ノ倉スキー場",
+    "en": "Sanokura Ski Area"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "Deep Research batch #28",
+    "configs/lp-brief/sanokura.yaml"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/sanokura-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-1",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "第1リフト",
+        "en": "Lift 1"
+      },
+      "shortLabel": {
+        "ja": "第1",
+        "en": "L1"
+      },
+      "meta": {
+        "ja": {
+          "全長": "600m"
+        },
+        "en": {
+          "Length": "600 m"
+        }
+      }
+    },
+    {
+      "id": "lift-2",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "第2リフト",
+        "en": "Lift 2"
+      },
+      "shortLabel": {
+        "ja": "第2",
+        "en": "L2"
+      },
+      "meta": {
+        "ja": {
+          "全長": "240m",
+          "ナイター": "可"
+        },
+        "en": {
+          "Length": "240 m",
+          "Night ski": "Yes"
+        }
+      }
+    },
+    {
+      "id": "trail-forest",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "林間コース",
+        "en": "Forest course"
+      },
+      "shortLabel": {
+        "ja": "林間",
+        "en": "Forest"
+      },
+      "meta": {
+        "ja": {
+          "最長": "約1,500m",
+          "平均": "6°"
+        },
+        "en": {
+          "Longest": "~1,500 m",
+          "Avg": "6°"
+        }
+      }
+    },
+    {
+      "id": "trail-1",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "第1コース",
+        "en": "Course 1"
+      },
+      "shortLabel": {
+        "ja": "第1",
+        "en": "C1"
+      },
+      "meta": {
+        "ja": {
+          "最大斜度": "24°"
+        },
+        "en": {
+          "Max slope": "24°"
+        }
+      }
+    },
+    {
+      "id": "trail-2",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "第2コース",
+        "en": "Course 2"
+      },
+      "shortLabel": {
+        "ja": "第2",
+        "en": "C2"
+      },
+      "meta": {}
+    }
+  ]
+}

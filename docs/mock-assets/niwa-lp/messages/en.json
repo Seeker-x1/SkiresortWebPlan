@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Niwa Ski Area",
+    "description": "Setana, Hokkaido — free pure rope tow, weekday night skiing 18:00–21:00. Check today's hours at the top of this page."
+  },
+  "logo": "Niwa Ski Area",
+  "hero": {
+    "eyebrow": "Setana, Hokkaido · Kitahiyama",
+    "title": "Niwa<br />Ski Area",
+    "tagline": "A Showa-era rope tow you climb by hand — weekday nights from 18:00 only; check today's status at the top of this page.",
+    "badgePrice": "Free admission",
+    "badgeNight": "Weekdays 18:00–21:00",
+    "badgeXc": "Pure rope tow",
+    "ctaPass": "Hours",
+    "ctaLive": "Open today?"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Hours · rope tow · night skiing",
+    "updatedAt": "Updated Jun 28, 9:00",
+    "lift1": {
+      "label": "Rope tow",
+      "value": "Confirm",
+      "note": "Pure rope · arm-power climb"
+    },
+    "lift2": {
+      "label": "Weekdays",
+      "value": "18:00–21:00",
+      "note": "Night only"
+    },
+    "snow": {
+      "label": "Snow",
+      "value": "Confirm",
+      "note": "Ungroomed · untracked"
+    },
+    "night": {
+      "label": "Weekends",
+      "value": "10:00–17:00",
+      "note": "Variable — confirm"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Retro Rope",
+    "title": "Pure rope,<br />still running.",
+    "lead": "No chairlift — grab the rope and climb under your own power. One of Japan's rare surviving rope tows. Staff will run it even for a solo visitor.",
+    "specs": [
+      "Free admission",
+      "~200 m square hill",
+      "Lodge on site"
+    ],
+    "noticeTitle": "Good to know:",
+    "noticeBody": "No grooming — natural snow only. Snowboards use a separate short rope course (~150 m). Hours are buried in town PDFs — call before you drive.",
+    "ctaPass": "Hours",
+    "imgAlt": "Niwa Ski Area on an open snowfield — rope tow"
+  },
+  "paths": {
+    "pass": {
+      "label": "Pricing",
+      "title": "Free admission"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Kitahiyama center"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Hours · rope"
+    },
+    "hike": {
+      "label": "Loop",
+      "title": "Onsen · food"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Free · retro · night",
+    "primary": {
+      "title": "Free · ungroomed · private",
+      "lead": "No crowds and often untracked snow — a micro hill that powder hunters and vloggers call a living fossil of Showa-era skiing.",
+      "cta": "Today's hours",
+      "imgAlt": "Ungroomed slope and rope tow at Niwa"
+    },
+    "secondary": {
+      "title": "Setana's table",
+      "lead": "After skiing, Kitahiyama Onsen Hotel or Mitsuwadiner's pork menchi curry — soak and eat in northern Setana.",
+      "cta": "Area map"
+    }
+  },
+  "pass": {
+    "eyebrow": "Free · Night Only",
+    "title": "Free —<br />weekdays, nights only.",
+    "lead": "No lift fee. Typical season: early January through late February. Weekdays 18:00–21:00 (night only); weekends/holidays ~10:00–17:00 (variable). Always check the dashboard and call 0137-84-5111 before leaving home.",
+    "specs": [
+      "Free admission",
+      "TEL 0137-84-5111",
+      "Walk from parking"
+    ],
+    "cta": "Hours · access",
+    "imgAlt": "Night-lit rope tow at Niwa Ski Area"
+  },
+  "hike": {
+    "eyebrow": "After Ski",
+    "title": "After the rope,<br />onsen and Setana food.",
+    "lead": "Sore arms? Day-use bath at Kitahiyama Onsen Hotel. Mitsuwadiner, Shippoya local sake, Kodaten's one-hour \"Iwa-shu\" cream puffs.",
+    "leadCurry": "Pair with Taisei Ski Area (same town) for a Japan Sea sunset view loop.",
+    "cta": "Onsen · food",
+    "imgAlt": "Setana onsen — recovery after Niwa"
+  },
+  "tour": {
+    "eyebrow": "Setana Loop",
+    "title": "Showa skiing,<br />Setana rewards.",
+    "lead": "Afternoon rope tow, evening onsen, local dinner — a one-night or day-trip winter model in Kitahiyama.",
+    "badge": "SETANA · ROPE · ONSEN",
+    "steps": {
+      "01": {
+        "title": "Niwa Ski Area",
+        "body": "Walk the snow path from parking"
+      },
+      "02": {
+        "title": "Rope tow",
+        "body": "Three runs can be a workout"
+      },
+      "03": {
+        "title": "Kitahiyama Onsen Hotel",
+        "body": "Day-use bath · sauna"
+      },
+      "04": {
+        "title": "Mitsuwadiner",
+        "body": "Wakamatsu pork menchi curry"
+      },
+      "05": {
+        "title": "Kodaten bakery",
+        "body": "One-hour shelf-life Iwa-shu"
+      }
+    }
+  },
+  "guides": {
+    "sanctuary": {
+      "title": "Rope tow guide",
+      "body": "How to climb, snowboard course rules, and whether first-timers should try it."
+    },
+    "workation": {
+      "title": "Reading today's hours",
+      "body": "Escaping buried PDFs — use the dashboard and a phone call."
+    },
+    "lake": {
+      "title": "Setana food & onsen",
+      "body": "Kitahiyama, Mitsuwadiner, Shippoya — classic stops after Niwa.",
+      "hashtags": [
+        "#NiwaRopeTow",
+        "#SetanaRetro",
+        "#FreeNightSki"
+      ]
+    }
+  },
+  "access": {
+    "postal": "049-5832, Japan",
+    "line": "649-2 Nishi-Niwa, Kitahiyama, Setana, Hokkaido",
+    "note": "Walk from parking along a snow path · confirm hours at town office 0137-84-5111",
+    "phoneLodge": "TEL 0137-84-5111 (Setana Town Office)",
+    "phoneOps": "Official info on Setana town website",
+    "places": "<span class=\"place-unit\"><ruby>Hokkaido<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>Setana<rt>Setana</rt></ruby></span>",
+    "rentacarEyebrow": "Southern Hokkaido · Hakodate",
+    "rentacarLink": "Book a rental car at Hakodate Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Kitahiyama, Taisei, and Hakodate drives"
+  },
+  "footer": {
+    "copyright": "© Niwa Ski Area — LP mock",
+    "location": "049-5832 · Setana, Hokkaido"
+  }
+}

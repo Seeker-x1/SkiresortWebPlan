@@ -1,0 +1,506 @@
+﻿<!DOCTYPE html>
+<html lang="ja" data-mock-resort="kamifuse">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>釜臥山スキー場</title>
+  <meta name="description" content="滑らない人のための、スノーウェルネス・ハブ" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="#" class="logo" data-i18n="logo">釜臥山スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=kamifuse" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="#highlights" data-i18n="nav.highlights">魅力</a></li>
+          <li><a href="#journey" data-i18n="nav.journey">回遊</a></li>
+          <li><a href="#recovery" data-i18n="nav.recovery">回復</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-kamifuse-hero.png" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">北海道 · 美瑛町</p>
+        <h1 class="hero-title" data-i18n-html="hero.title">釜臥山<br />スキー場</h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">滑らない人のための、スノーウェルネス・ハブ</p>
+        <span class="badge-free" data-i18n="hero.badgeFree">リフト無料</span>
+        <div class="hero-cta">
+          <a href="#" class="btn btn-primary" data-i18n="hero.ctaToday">今日の運営</a>
+          <p class="freshness"><span data-i18n="common.updated">更新</span> <time datetime="2026-02-07T09:00" data-i18n="hero.updatedAt">2/7 9:00</time></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="walk-heading">
+      <div class="inner">
+        <div class="transit-grid">
+          <div class="transit-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-kamifuse-walk.png"
+                data-i18n-attr="alt:transit.imgAlt"
+                alt="純白の丘を歩く旅人——美瑛駅からスキー場への散策ルート"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="transit-card">
+            <p class="eyebrow" data-i18n="transit.eyebrow">Walk</p>
+            <h2 id="walk-heading" class="heading-lg" data-i18n-html="transit.title">駅から、<br />雪へ歩く。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:28rem" data-i18n="transit.lead">
+              JR美瑛駅から徒歩約15分。レンタカーがなくても、手ぶらのFIT旅行者が雪に直接触れられる——郊外型リゾートにはないマイクロツーリズムの拠点です。
+            </p>
+            <div class="transit-actions">
+              <a href="#access" class="btn btn-primary" data-i18n="transit.ctaAccess">アクセス・散策ルート</a>
+              <a href="#" class="btn btn-ghost" data-i18n="transit.ctaRental">防寒レンタル案内</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="paths" class="section border-top" aria-labelledby="paths-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.explore">Explore</p>
+        <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
+        <div class="path-grid">
+          <a href="#" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.today.label">今日</span>
+            <span class="path-tile__title" data-i18n="paths.today.title">今日の運営</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#access" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.access.label">アクセス</span>
+            <span class="path-tile__title" data-i18n="paths.access.title">駅からの歩き方</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="cafe-view.html" class="path-tile path-tile--visual span-8">
+            <span class="path-tile__bg" aria-hidden="true">
+              <img src="lp-mock-kamifuse-wellness.png" alt="" width="1600" height="1100" />
+            </span>
+            <span class="path-tile__overlay" aria-hidden="true"></span>
+            <span class="path-tile__content">
+              <span class="path-tile__label" data-i18n="paths.wellness.label">雪遊び</span>
+              <span class="path-tile__title" data-i18n="paths.wellness.title">スノーウェルネス・エリア</span>
+              <span class="path-tile__arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+          <a href="#" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.pricing.label">料金</span>
+            <span class="path-tile__title" data-i18n="paths.pricing.title">リフト無料・レンタル</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="night-view.html" class="path-tile path-tile--visual span-8">
+            <span class="path-tile__bg" aria-hidden="true">
+              <img src="lp-mock-kamifuse-blue-pond-hero.png" alt="" width="1920" height="820" />
+            </span>
+            <span class="path-tile__overlay" aria-hidden="true"></span>
+            <span class="path-tile__content">
+              <span class="path-tile__label" data-i18n="paths.bluePond.label">周辺</span>
+              <span class="path-tile__title" data-i18n="paths.bluePond.title">白金青い池</span>
+              <span class="path-tile__arrow" aria-hidden="true">→</span>
+            </span>
+          </a>
+          <a href="nearby-food.html" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.food.label">グルメ</span>
+            <span class="path-tile__title" data-i18n="paths.food.title">周辺飲食10選</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="/area-map.html?resort=kamifuse&layers=food,onsen,anchor" class="path-tile span-8">
+            <span class="path-tile__label">Map</span>
+            <span class="path-tile__title" data-i18n="nearbyFood.navAreaMap">周辺マップ</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="nearby-onsen.html" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.onsen.label">温泉</span>
+            <span class="path-tile__title" data-i18n="paths.onsen.title">周辺温泉10選</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section" aria-labelledby="highlights-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="highlights.eyebrow">美瑛の魅力</p>
+        <h2 id="highlights-heading" class="heading-lg" data-i18n="highlights.title">ここが違う</h2>
+
+        <div class="highlight-duet">
+          <article class="highlight-primary">
+            <div class="frame">
+              <img
+                src="lp-mock-kamifuse-wellness.png"
+                data-i18n-attr="alt:highlights.primary.imgAlt"
+                alt="誰もいない雪原をスノーシューで歩く——スノーウェルネス体験"
+                width="1600"
+                height="1100"
+              />
+            </div>
+            <div class="highlight-primary-body">
+              <h3 data-i18n="highlights.primary.title">スノーウェルネス・ハブ</h3>
+              <p class="lead" style="margin-top:1rem" data-i18n="highlights.primary.lead">
+                滑走を主目的としない、雪に触れ・感じ・心身を回復する空間。スノーシュー瞑想歩行、雪だるま、そり遊び——巨大リゾートの喧騒がない、コクーニング・ウェルネスのサンクチュアリ。
+              </p>
+              <a href="cafe-view.html" class="btn btn-primary" style="margin-top:2rem" data-i18n="highlights.primary.cta">雪遊び体験を見る</a>
+            </div>
+          </article>
+
+          <article class="highlight-secondary">
+            <h3 data-i18n="highlights.secondary.title">歓迎の空間へ</h3>
+            <p class="lead-whisper" style="margin-top:1rem" data-i18n="highlights.secondary.lead">
+              農地への無断立ち入りは厳禁。一方、ここでは純白の深雪に飛び込み、寝転び、自由に遊べます——「禁止の空間」から「歓迎の空間」へ。オーバーツーリズム分散の受け皿として。
+            </p>
+            <a href="#" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="highlights.secondary.cta">レスポンシブル・トラベル</a>
+          </article>
+        </div>
+
+        <a href="night-view.html" class="spot-feature">
+          <div class="spot-feature__media">
+            <img
+              src="lp-mock-kamifuse-blue-pond-hero.png"
+              data-i18n-attr="alt:featuredSpot.imgAlt"
+              alt="冬の夜、ライトアップされた白金青い池——白樺とコバルトブルーの水面"
+              width="1920"
+              height="820"
+            />
+            <div class="spot-feature__overlay" aria-hidden="true"></div>
+            <div class="spot-feature__copy">
+              <p class="eyebrow" data-i18n="featuredSpot.eyebrow">Iconic nearby</p>
+              <h3 data-i18n="featuredSpot.title">白金青い池</h3>
+              <p data-i18n="featuredSpot.lead">世界が知るコバルトブルー——スノーウェルネスの一日を、冬のライトアップで締めくくる。</p>
+              <span class="spot-feature__cta" data-i18n="featuredSpot.cta">青い池ガイド</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="recovery" class="section border-top" aria-labelledby="recovery-heading">
+      <div class="inner">
+        <div class="recovery-grid">
+          <div class="recovery-copy">
+            <p class="eyebrow" data-i18n="recovery.eyebrow">温活・回復</p>
+            <h2 id="recovery-heading" class="heading-lg" data-i18n-html="recovery.title">雪のあと、<br />身体を温める</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="recovery.lead">
+              美瑛野菜を何時間も煮込んだコンソメスープやポトフ——冷え切った身体へのローカルフード・セラピー。白金温泉など周辺の温浴と組み合わせ、ホリスティック・ウェルネス・サイクルを完成させます。
+            </p>
+            <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="recovery.whisper">
+              おきらく亭をはじめ、駅周辺のカフェで湯気の立つドリンクを。白金温泉の日帰り入浴も、雪遊び後の王道です。
+            </p>
+            <div style="margin-top:2rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+              <a href="nearby-food.html" class="btn btn-primary" data-i18n="recovery.ctaFood">周辺飲食10選</a>
+              <a href="nearby-onsen.html" class="btn btn-ghost" data-i18n="recovery.ctaOnsen">周辺温泉10選</a>
+            </div>
+          </div>
+          <div class="recovery-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-kamifuse-recovery.png"
+                data-i18n-attr="alt:recovery.imgAlt"
+                alt="美瑛野菜のポトフ——滑走後の温活メニュー"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="section border-top" aria-labelledby="journey-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="journey.eyebrow">Micro Tourism</p>
+        <h2 id="journey-heading" class="heading-lg" data-i18n-html="journey.title">駅から始まる、<br />一日の回遊</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="journey.lead">
+          FIT旅行者が美瑛駅に降り立ってから、雪遊び・文化・絶景までを自立的に楽しむカスタマージャーニー。
+        </p>
+
+        <div class="journey">
+          <div class="journey-step">
+            <p class="journey-step__num">01</p>
+            <p class="journey-step__title" data-i18n="journey.steps.01.title">到着・導入</p>
+            <p class="journey-step__body" data-i18n="journey.steps.01.body">美瑛駅。防寒レンタル、ARBOLITO等でコーヒーをテイクアウト</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">02</p>
+            <p class="journey-step__title" data-i18n="journey.steps.02.title">没入・体験</p>
+            <p class="journey-step__body" data-i18n="journey.steps.02.body">徒歩15分の無料雪遊びひろば、または丘のスノーシューツアー</p>
+            <a href="cafe-view.html" class="journey-step__link" data-i18n="journey.steps.02.linkLabel">雪遊び体験ガイド</a>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">03</p>
+            <p class="journey-step__title" data-i18n="journey.steps.03.title">回復・滋養</p>
+            <p class="journey-step__body" data-i18n="journey.steps.03.body">じゅんぺいの海老丼、美瑛ファームのラクレットトースト——人気の周辺グルメ</p>
+            <a href="nearby-food.html" class="journey-step__link" data-i18n="journey.steps.03.linkLabel">周辺飲食ガイド</a>
+            <a href="nearby-onsen.html" class="journey-step__link" data-i18n="journey.steps.03.linkOnsen">周辺温泉ガイド</a>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">04</p>
+            <p class="journey-step__title" data-i18n="journey.steps.04.title">文化・内省</p>
+            <p class="journey-step__body" data-i18n="journey.steps.04.body">拓真館、白樺回廊の芸術散策</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">05</p>
+            <p class="journey-step__title" data-i18n="journey.steps.05.title">絶景・終着</p>
+            <p class="journey-step__body" data-i18n="journey.steps.05.body">白金青い池の冬ライトアップ——世界が知るコバルトブルー</p>
+            <a href="night-view.html" class="journey-step__link" data-i18n="journey.steps.05.linkLabel">青い池ガイドを読む</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.guidesEyebrow">特集</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="common.guidesTitle">特集ページ</h2>
+
+        <ul class="guides-list">
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="true" data-guide="wellness">
+              <span data-i18n="guides.wellness.title">スノーウェルネス体験</span>
+              <span class="guide-icon" aria-hidden="true">−</span>
+            </button>
+            <div class="guide-panel is-open" id="panel-wellness">
+              <div class="guide-preview">
+                <div class="guide-preview__thumb">
+                  <img
+                    src="lp-mock-kamifuse-wellness.png"
+                    data-i18n-attr="alt:guides.wellness.thumbAlt"
+                    alt="美瑛の雪原をスノーシューで歩く"
+                    width="280"
+                    height="350"
+                  />
+                </div>
+                <div>
+                  <p class="lead" data-i18n="guides.wellness.body">
+                    美瑛の丘スノーシュー「ふら～り 冬さんぽ」や Tokotoko Adventure など、公式・認定プログラムへの入口。
+                  </p>
+                  <a href="cafe-view.html" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="walk">
+              <span data-i18n="guides.walk.title">駅から歩くマイクロツーリズム</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-walk" hidden>
+              <p class="lead" data-i18n="guides.walk.body">
+                駅からスキー場までの15分を「美瑛の冬を読み解くプロムナード」へ。GPS連動オーディオガイド、手ぶらレンタル、カフェ巡り——レンタカーなしのFIT回遊導線。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="bluePond">
+              <span data-i18n="guides.bluePond.title">白金青い池 — 冬のライトアップ</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-bluePond" hidden>
+              <div class="guide-preview">
+                <div class="guide-preview__thumb">
+                  <img
+                    src="lp-mock-kamifuse-blue-pond-thumb.png"
+                    data-i18n-attr="alt:guides.bluePond.thumbAlt"
+                    alt="冬のライトアップが映える白金青い池"
+                    width="280"
+                    height="350"
+                  />
+                </div>
+                <div>
+                  <p class="lead" data-i18n="guides.bluePond.body">
+                    Mac の壁紙にもなった、コバルトブルーの池。スノーウェルネスのあと、白金温泉エリアへ——海外旅行者が最も検索する美瑛の象徴。
+                  </p>
+                  <a href="night-view.html" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="food">
+              <span data-i18n="guides.food.title">周辺飲食10選 — 雪遊びの前後に</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-food" hidden>
+              <div class="guide-preview">
+                <div class="guide-preview__thumb">
+                  <img
+                    src="lp-mock-kamifuse-recovery.png"
+                    data-i18n-attr="alt:guides.food.thumbAlt"
+                    alt="美瑛の温活ランチ"
+                    width="280"
+                    height="350"
+                  />
+                </div>
+                <div>
+                  <p class="lead" data-i18n="guides.food.body">
+                    乳製品・和牛・小麦・ラーメン——雪遊びと青い池をつなぐ周辺グルメマップ付きガイド。
+                  </p>
+                  <a href="nearby-food.html" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="onsen">
+              <span data-i18n="guides.onsen.title">周辺温泉10選 — 雪見露天</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-onsen" hidden>
+              <div class="guide-preview">
+                <div class="guide-preview__thumb">
+                  <img
+                    src="lp-mock-kamifuse-recovery.png"
+                    data-i18n-attr="alt:guides.onsen.thumbAlt"
+                    alt="雪景色と温泉"
+                    width="280"
+                    height="350"
+                  />
+                </div>
+                <div>
+                  <p class="lead" data-i18n="guides.onsen.body">
+                    白金温泉から十勝岳・旭岳まで——冷えた体を温める温泉マップ付きガイド。
+                  </p>
+                  <a href="nearby-onsen.html" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="responsible">
+              <span data-i18n="guides.responsible.title">風景は、誰かの生活</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-responsible" hidden>
+              <p class="lead" data-i18n="guides.responsible.body">
+                The landscape is someone's livelihood. 農地・私有地への立ち入り厳禁。歓迎の空間で撮る、ミニマリスト写真の作法。レスポンシブル・トラベラーとしての美瑛の楽しみ方。
+              </p>
+              <div class="hashtags">
+                <span class="hashtag" data-i18n="guides.responsible.hashtags.0">#BieiWinterAesthetic</span>
+                <span class="hashtag" data-i18n="guides.responsible.hashtags.1">#SnowGlobeVillage</span>
+                <span class="hashtag" data-i18n="guides.responsible.hashtags.2">#WinterWellnessHokkaido</span>
+              </div>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="access" class="access-section border-top" aria-labelledby="access-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.accessEyebrow">Access</p>
+        <h2 id="access-heading" class="heading-lg" data-i18n="common.location">所在地</h2>
+        <div class="access-grid">
+          <address class="access-address">
+            <span class="access-postal" data-i18n="access.postal">〒071-0218</span>
+            <span class="access-line" data-i18n="access.line">北海道上川郡美瑛町字大村村山</span>
+            <p class="access-places" data-i18n-html="access.places" hidden></p>
+            <p class="access-note" data-i18n="access.note">JR富良野線「美瑛駅」から徒歩約15分（約1.5km）</p>
+            <p class="access-phone" data-i18n="access.phone">TEL 0166-92-5808（美瑛町）</p>
+          </address>
+          <div class="access-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=%E7%BE%8E%E7%92%A6%E7%94%BA%E6%B0%91%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E5%8C%97%E6%B5%B7%E9%81%93%E4%B8%8A%E5%B7%9D%E9%83%A1%E7%BE%8E%E7%92%A6%E7%94%BA%E5%AD%97%E5%A4%A7%E6%9D%91%E6%9D%91%E5%B1%B1"
+              class="btn btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="common.googleMap">Google Mapで開く</span>
+            </a>
+            <a href="tel:0166925808" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">富良野・美瑛周遊</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">旭川空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">美瑛・白金・層雲峡方面のドライブ向け</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 釜臥山スキー場 — LP案モック</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒071-0218 北海道上川郡美瑛町字大村村山</span> ·
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%BE%8E%E7%92%A6%E7%94%BA%E6%B0%91%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E5%8C%97%E6%B5%B7%E9%81%93%E4%B8%8A%E5%B7%9D%E9%83%A1%E7%BE%8E%E7%92%A6%E7%94%BA%E5%AD%97%E5%A4%A7%E6%9D%91%E6%9D%91%E5%B1%B1" target="_blank" rel="noopener noreferrer" data-i18n="common.footerMap">Google Map</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
+  <script src="../_shared/mock-i18n.js"></script>
+  <script>
+    document.querySelectorAll(".guide-trigger").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.guide;
+        const panel = document.getElementById("panel-" + id);
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".guide-trigger").forEach((b) => {
+          b.setAttribute("aria-expanded", "false");
+          b.querySelector(".guide-icon").textContent = "+";
+        });
+        document.querySelectorAll(".guide-panel").forEach((p) => {
+          p.classList.remove("is-open");
+          p.hidden = true;
+        });
+
+        if (!isOpen) {
+          btn.setAttribute("aria-expanded", "true");
+          btn.querySelector(".guide-icon").textContent = "−";
+          panel.classList.add("is-open");
+          panel.hidden = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

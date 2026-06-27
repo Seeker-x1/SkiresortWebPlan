@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "Sanokura Ski Area",
+    "description": "Kitakata, Fukushima — 8-hour lift ticket ¥2,500, quiet north-facing slopes, Kitakata ramen and Netsu-shio Onsen 10 minutes away."
+  },
+  "logo": "Sanokura Ski Area",
+  "nav": {
+    "family": "Family"
+  },
+  "hero": {
+    "eyebrow": "Kitakata, Fukushima · Mount Sanokura",
+    "title": "Sanokura<br />Ski Area",
+    "tagline": "Quiet north-facing slopes — powder into the afternoon, then a short drive to Kitakata ramen and Netsu-shio Onsen.",
+    "badgeLocal": "8h ¥2,500",
+    "badgeVisitor": "3 courses · 2 pair lifts",
+    "badgeSled": "Night skiing (Lift 2)",
+    "ctaPass": "Pricing & hours",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Lifts, snow, and night skiing at a glance",
+    "updatedAt": "Updated Jun 28, 9:00",
+    "lift": {
+      "label": "Lifts",
+      "value": "Operating",
+      "note": "2 pair lifts · minimal queues"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "3 courses",
+      "note": "Up to ~1,500 m · forest run"
+    },
+    "night": {
+      "label": "Night ski",
+      "value": "Lift 2",
+      "note": "Seasonal · weather dependent"
+    },
+    "yotei": {
+      "label": "View",
+      "value": "Aizu Basin",
+      "note": "Sea of clouds on clear days"
+    }
+  },
+  "transit": {
+    "eyebrow": "Corridor Loop",
+    "title": "After skiing,<br />ramen and a secret onsen.",
+    "lead": "Morning powder on quiet north-facing slopes — then Kitakata's famous ramen and Netsu-shio Onsen, about 10 minutes by car. One winter day across Aizu.",
+    "specs": [
+      "~30 min from Kitakata Station",
+      "Netsu-shio Onsen ~10 min",
+      "~400 parking spaces"
+    ],
+    "ctaPass": "See pricing",
+    "ctaLive": "Today's status",
+    "imgAlt": "Panorama over the Aizu Basin from Sanokura Ski Area"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Lifts · snow"
+    },
+    "pass": {
+      "label": "Pricing",
+      "title": "8h ¥2,500"
+    },
+    "family": {
+      "label": "Family",
+      "title": "Gentle · forest runs"
+    },
+    "rental": {
+      "label": "Lodge",
+      "title": "Kurara rest house"
+    },
+    "access": {
+      "label": "Access",
+      "title": "~30 min from Kitakata"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Hidden Aizu powder",
+    "primary": {
+      "title": "No crowds · north-facing",
+      "lead": "Not competing with mega-resorts on size — almost no lift lines, ungroomed pockets, and stable snow on north-facing terrain. Locals say powder can last into the afternoon.",
+      "cta": "Courses · snow",
+      "imgAlt": "Wide view of the Aizu Basin from Sanokura"
+    },
+    "secondary": {
+      "title": "Kitakata ramen · onsen",
+      "lead": "Post-ski Kitakata ramen culture and Netsu-shio Onsen nearby — use Sanokura as a hub, not a one-stop hill.",
+      "cta": "Area map"
+    }
+  },
+  "pass": {
+    "eyebrow": "Value Pass",
+    "title": "8 hours ¥2,500,<br />4 hours ¥1,500.",
+    "lead": "Adult 8-hour ticket ¥2,500, 4-hour ¥1,500, child 8-hour ¥1,800 — strong value nationwide. Third Sunday of each month is Kids Ski Day (child ¥1,000 — confirm locally).",
+    "localPrice": "8h ¥2,500",
+    "visitorPrice": "4h ¥1,500",
+    "specs": [
+      "Child 8h ¥1,800",
+      "Free parking",
+      "TEL 0241-36-2071"
+    ],
+    "noticeTitle": "Note:",
+    "noticeBody": "Base elevation 570–780 m — warm winters can shorten the season. Call or check official info before a long drive.",
+    "cta": "Pricing · access",
+    "imgAlt": "Pair lifts and forest course at Sanokura"
+  },
+  "rental": {
+    "eyebrow": "Rest House",
+    "title": "Rest house<br />\"Kurara\"",
+    "lead": "On-hill breaks and light meals — hot drinks on cold days. Rental availability varies by season; confirm ahead.",
+    "whisper": "Cell signal can be weak on the mountain — you may upload photos after descending.",
+    "cta": "Access · contact",
+    "imgAlt": "Kurara rest house at the base"
+  },
+  "yukinko": {
+    "eyebrow": "Night Skiing",
+    "title": "Lift 2<br />night sessions.",
+    "lead": "Night skiing on Course 2 in some seasons — extra runs after work or to avoid midday crowds. Check the dashboard for today.",
+    "whisper": "TEL 0241-36-2071 (Sanokura Ski Area).",
+    "cta": "Hours",
+    "imgAlt": "Night-lit slopes at Sanokura"
+  },
+  "family": {
+    "eyebrow": "Family First",
+    "title": "Gentle terrain,<br />easy to navigate.",
+    "lead": "Mostly beginner–intermediate — the 1,500 m forest run averages about 6°. Two lifts, compact layout, popular with families.",
+    "specs": [
+      "3 courses",
+      "~400 parking spaces",
+      "Rest house on site"
+    ],
+    "noticeTitle": "Snow:",
+    "noticeBody": "Spring and warm afternoons can turn mushy — mornings are often best.",
+    "cta": "Course info",
+    "imgAlt": "Families on gentle slopes at Sanokura"
+  },
+  "workation": {
+    "eyebrow": "Day Trip",
+    "title": "Kitakata base,<br />ski then soak.",
+    "lead": "Rent a car from Kitakata Station (~30 min) — ski Sanokura in the morning, ramen and Netsu-shio Onsen in the afternoon.",
+    "badge": "KITAKATA · POWDER · ONSEN",
+    "steps": {
+      "01": {
+        "title": "Kitakata Station",
+        "body": "Ban-etsu West Line · rent a car"
+      },
+      "02": {
+        "title": "Sanokura Ski Area",
+        "body": "~30 min · 8h or 4h ticket"
+      },
+      "03": {
+        "title": "Forest · Course 1",
+        "body": "North-facing morning runs"
+      },
+      "04": {
+        "title": "Kitakata ramen",
+        "body": "Lunch in town"
+      },
+      "05": {
+        "title": "Netsu-shio Onsen",
+        "body": "~10 min drive · post-ski bath"
+      }
+    }
+  },
+  "guides": {
+    "local": {
+      "title": "Aizu powder guide",
+      "body": "Empty, affordable, north-facing — a model day loop around Sanokura without fighting Nekoma crowds."
+    },
+    "schools": {
+      "title": "Forest run & ungroomed",
+      "body": "The 1,500 m forest course and main piste — where to find powder and why lines stay short."
+    },
+    "summer": {
+      "title": "Sanokura off-season",
+      "body": "Sunflower fields and highland scenery — what to do around Mount Sanokura when the lifts are closed.",
+      "hashtags": [
+        "#SanokuraPowder",
+        "#KitakataRamen",
+        "#AizuLoop"
+      ]
+    }
+  },
+  "access": {
+    "postal": "966-0108, Japan",
+    "line": "857-1 Kita-Gongenmori Ko, Aida, Netsushio-Kano, Kitakata, Fukushima",
+    "note": "~17 km from JR Kitakata Station (~30 min by car) · no shuttle · free parking",
+    "phone": "TEL 0241-36-2071",
+    "places": "<span class=\"place-unit\"><ruby>Fukushima<rt>Fukushima</rt></ruby></span><span class=\"place-unit\"><ruby>Kitakata<rt>Kitakata</rt></ruby></span>",
+    "rentacarEyebrow": "Aizu · Kitakata",
+    "rentacarLink": "Book a rental car at Niigata Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Kitakata, Inawashiro, and Aizu-Wakamatsu drives"
+  },
+  "footer": {
+    "copyright": "© Sanokura Ski Area — LP mock",
+    "location": "966-0108 · Kitakata, Fukushima"
+  }
+}

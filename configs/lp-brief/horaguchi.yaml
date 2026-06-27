@@ -1,0 +1,53 @@
+resortId: horaguchi
+schemaVersion: "2026-06-28"
+
+name:
+  ja: スノーパーク洞川
+  en: Snow Park Horaguchi
+region:
+  ja: 奈良県天川村
+  en: Tenkawa, Nara
+japowResortId: 418
+
+strategy:
+  ja: 奈良唯一の天然雪 · 洞川温泉
+  en: Nara's natural snow · Dorogawa Onsen
+archetype: live-dashboard
+
+audience: domestic
+
+hero:
+  tagline:
+    ja: 降雪の日だけ開く、昭和の雪遊びパーク——本日の積雪・道路・リフトはLiveで確認してから出発。
+    en: A retro snow park that opens when nature cooperates — check snow, roads, and lifts on the Live strip before you leave.
+  badges: [natural, family, onsen]
+
+pillars:
+  - id: live
+    hook: { ja: 雪と道の情報, en: Snow & road status }
+  - id: family
+    hook: { ja: ソリ・雪遊び, en: Sled · snow play }
+  - id: dorogawa
+    hook: { ja: 洞川温泉街, en: Dorogawa onsen town }
+
+facts:
+  operator: 天川村
+  location: 奈良県吉野郡天川村（洞川高原）
+  phone: "0747-64-0800"
+  lift: ロープトウ（ワイヤーリフト）
+  courses: 緩斜面中心 · 最長約260m
+  pricing:
+    entryAdult: 1200
+  hours: 積雪・天候により変動（要事前確認）
+  access:
+    car: 大阪から約2.5時間 · 冬季は雪道・狭路に注意
+    note: 入場料制 · リフト非稼働日も雪遊び可の場合あり
+
+map:
+  sources: ["Deep Research batch #30", "configs/lp-brief/horaguchi.yaml"]
+  heroImage: images/maps/horaguchi-hero.png
+  copyFrom: tsunan-lp
+
+humanReview:
+  - japowResortId 418
+  - 入場料制とリフト稼働の説明

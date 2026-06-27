@@ -67,6 +67,13 @@
         "ja": "函館・大沼・松前",
         "en": "Hakodate · Onuma · Matsumae"
       }
+    },
+    "kansai_international_airport": {
+      "url": "https://skyticket.jp/rentacar/kansai/kansai_international_airport/",
+      "label": {
+        "ja": "関西空港",
+        "en": "Kansai Airport"
+      }
     }
   }
 }

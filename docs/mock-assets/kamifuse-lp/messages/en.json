@@ -1,0 +1,461 @@
+{
+  "meta": {
+    "title": "Mount Kamifuse Ski Area",
+    "description": "Honshu's northernmost ski hill with Mutsu Bay panoramas, cat pudding cafe, and night skiing."
+  },
+  "logo": "Mount Kamifuse Ski Area",
+  "nav": {
+    "journey": "Itinerary",
+    "recovery": "Recovery"
+  },
+  "hero": {
+    "eyebrow": "Mutsu, Aomori · Ominato",
+    "title": "Mount<br />Kamifuse",
+    "tagline": "Ski toward the sea at Honshu's northern edge—a rare ocean-view downhill.",
+    "badgeFree": "Kids lift free",
+    "ctaToday": "Today's status",
+    "updatedAt": "Jun 28 9:00"
+  },
+  "transit": {
+    "eyebrow": "Drive",
+    "title": "Where the road<br />meets the bay.",
+    "lead": "About 15 minutes from Ominato IC. Mutsu Bay and the naval port unfold below—a downhill run you won't find elsewhere. A natural base for Shimokita drives.",
+    "ctaAccess": "Access & parking",
+    "ctaRental": "Rental car info",
+    "imgAlt": "Snowy coastal road overlooking Mutsu Bay—approach to Kamifuse"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Ominato"
+    },
+    "wellness": {
+      "label": "Cafe",
+      "title": "Cat pudding & views"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Day & night passes"
+    },
+    "bluePond": {
+      "label": "Night",
+      "title": "Agehacho lights"
+    },
+    "food": {
+      "label": "Food",
+      "title": "Ominato dining 10"
+    },
+    "onsen": {
+      "label": "Onsen",
+      "title": "Nearby hot springs"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Kamifuse",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "Downhill toward the ocean",
+      "lead": "On clear days, panoramas stretch from the Hakkoda range toward Hokkaido. Mutsu Bay and Ominato port lie right below—a rare seaside downhill in Japan.",
+      "cta": "Trail map",
+      "imgAlt": "Groomed slope overlooking Mutsu Bay at Kamifuse"
+    },
+    "secondary": {
+      "title": "Famous cat pudding cafe",
+      "lead": "Re:lax+kitchen's cat-shaped pudding draws visitors who come just for the view and sweets. Weekday-only slots are common—check before you go.",
+      "cta": "Cafe & view guide"
+    }
+  },
+  "recovery": {
+    "eyebrow": "Warm up",
+    "title": "After skiing,<br />Ominato eats.",
+    "lead": "Morning miso ramen at Arasoba (opens 7:00), butter sandwiches at Yoshida Bakery, navy croquettes at local izakaya—classic après routes.",
+    "whisper": "Day-trip soaks at Mutsu Yatate Onsen or Tonan Onsen pair well with a ski day.",
+    "ctaFood": "Nearby dining guide",
+    "ctaOnsen": "Nearby onsen guide",
+    "imgAlt": "Steaming miso ramen in Ominato after skiing"
+  },
+  "journey": {
+    "eyebrow": "Ominato Loop",
+    "title": "A full day from<br />the port town",
+    "lead": "Combine ocean-view skiing, harbor food, maritime history, and night lights in one Shimokita loop.",
+    "steps": {
+      "01": {
+        "title": "Morning ramen",
+        "body": "Miso ramen at Arasoba—a local early-bird staple"
+      },
+      "02": {
+        "title": "Bay-view runs",
+        "body": "Downhill with Mutsu Bay below, or cat pudding at the center house",
+        "linkLabel": "Cafe & view guide"
+      },
+      "03": {
+        "title": "Harbor lunch",
+        "body": "Yoshida Bakery butter sandwiches and seafood",
+        "linkLabel": "Dining guide",
+        "linkOnsen": "Onsen guide"
+      },
+      "04": {
+        "title": "Hoppokan museum",
+        "body": "Maritime Self-Defense Force history—free entry (check winter hours)"
+      },
+      "05": {
+        "title": "Night lights & onsen",
+        "body": "Mutsu's Agehacho city lights and Yatate Onsen to finish",
+        "linkLabel": "Night view guide"
+      }
+    }
+  },
+  "guides": {
+    "wellness": {
+      "title": "Cat pudding & view cafe",
+      "body": "Re:lax+kitchen cat pudding and blue cream soda—often weekday-only and sell out early. Lift tickets reach the view deck without gear.",
+      "thumbAlt": "Cat pudding with snowy slope view through the lodge window"
+    },
+    "walk": {
+      "title": "15 minutes from Ominato",
+      "body": "Gateway for Shimokita drives via Ominato IC. Studless tires required in winter—watch coastal road conditions."
+    },
+    "responsible": {
+      "title": "Seaside slope etiquette",
+      "body": "Walk between Lift 2 and Lift 1 (~50 m). Heavy wet snow can be tiring. Confirm lift and snow reports before you travel.",
+      "hashtags": [
+        "#KamifuseSki",
+        "#MutsuBayView",
+        "#ShimokitaWinter"
+      ]
+    },
+    "bluePond": {
+      "title": "Agehacho — Mutsu night lights",
+      "body": "City lights spread like butterfly wings over the bay—visible from night skiing on the hill.",
+      "thumbAlt": "Mutsu city lights at night—the Agehacho view"
+    },
+    "food": {
+      "title": "Ominato dining 10 — before & after",
+      "body": "Miso ramen, navy croquettes, local seafood—harbor-town picks for your ski day.",
+      "thumbAlt": "Ominato miso ramen—from morning to izakaya night"
+    },
+    "onsen": {
+      "title": "Nearby onsen 10 — snow-view soaks",
+      "body": "Yatate, Okuyakken, and Tonan onsen—day-trip baths after skiing.",
+      "thumbAlt": "Snow and steam—Shimokita onsen recovery"
+    }
+  },
+  "featuredSpot": {
+    "eyebrow": "Night view",
+    "title": "Agehacho lights",
+    "lead": "Mutsu's butterfly-shaped city glow pairs with Kamifuse night skiing.",
+    "cta": "Night view guide",
+    "imgAlt": "City lights viewed from the snowy slope at night"
+  },
+  "bluePond": {
+    "meta": {
+      "title": "Shirogane Agehacho night view — Mount Kamifuse Ski Area",
+      "description": "Winter light-up, access, and pairing with snow play—guide for international visitors"
+    },
+    "backLink": "Back to Kamifuse guide",
+    "hero": {
+      "eyebrow": "Shirogane · Kamifuse",
+      "title": "Japan's Agehacho night view—<br />beyond the photo",
+      "tagline": "The cobalt blue the world knows—after snow wellness, into the winter night"
+    },
+    "notice": "Light-up dates, parking, and bus service change by season. Confirm on Kamifuse Town or tourism association official sites before you go.",
+    "introTitle": "Why is it so blue?",
+    "introLead": "Shirogane Agehacho night view (Aoiike) was created as a by-product of erosion-control work linked to Mt. Tokachi volcanic activity.",
+    "introBody": "Minerals from submerged birch and fallen leaves scatter light into cobalt blue—a Kamifuse view where nature and human intervention overlap.",
+    "whenEyebrow": "Best time",
+    "whenTitle": "Winter light-up",
+    "whenLead": "Typically from around November through April, lights come on after sunset. In crisp midwinter air, the blue sinks deep into still water—the hour overseas visitors seek most.",
+    "whenNote": "Viewing decks or parking may be restricted due to weather, snow, or crowds.",
+    "accessEyebrow": "Access",
+    "accessTitle": "From Kamifuse Station & the ski area",
+    "accessLead": "About 25 minutes by car from Kamifuse Station (Shirogane Onsen area). After the ski hill, most visitors go by rental car or winter bus/tour.",
+    "accessItems": {
+      "drive": {
+        "label": "Car",
+        "body": "Kamifuse Station → Shirogane Onsen area, approx. 25 min. Winter tires required."
+      },
+      "bus": {
+        "label": "Bus & tours",
+        "body": "Seasonal buses and day tours from Kamifuse/Furano (schedules vary by year)."
+      },
+      "pair": {
+        "label": "Itinerary",
+        "body": "Ski area → warming lunch → Shirogane Onsen → Agehacho night view light-up in one day."
+      },
+      "winter": {
+        "label": "Winter",
+        "body": "Watch for ice and blizzards. Tripods only in designated areas."
+      }
+    },
+    "responsibleTitle": "Quietly, in welcoming spaces",
+    "responsibleLead": "No trespassing on farmland—the same stance as our \"landscape is livelihood\" message. Shoot from the viewing deck, yield in crowds, and respect tripod etiquette.",
+    "responsibleHashtags": [
+      "#BluePondKamifuse",
+      "#MutsuBayView",
+      "#ShimokitaWinter"
+    ],
+    "mapsTitle": "Location",
+    "mapsBody": "Shirogane, Kamifuse-cho, Kamikawa-gun, Hokkaido. Check your route on Google Maps.",
+    "mapsCta": "Open in Google Maps",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Shirogane+Blue+Pond+Kamifuse+Hokkaido",
+    "heroImageAlt": "Shirogane Agehacho night view at night under light-up—birch silhouettes and cobalt water",
+    "galleryAlt": "Winter at Shirogane Agehacho night view—cobalt surface framed by snow"
+  },
+  "snowPlay": {
+    "meta": {
+      "title": "Snow Play Experiences — Mount Kamifuse Ski Area",
+      "description": "Furari Winter Walk snowshoe tour, Tokotoko Adventure booking, and free snow play—official links included"
+    },
+    "backLink": "Back to Kamifuse guide",
+    "hero": {
+      "eyebrow": "Snow wellness",
+      "title": "Snow play<br />without skiing",
+      "tagline": "From a free snow plaza to guided hill snowshoes—touch Kamifuse winter"
+    },
+    "notice": "Seasons, prices, and capacity change—each operator's official site is authoritative. Hill access may require a licensed guide (no trespass on farmland or private land).",
+    "introTitle": "Three entry points",
+    "introLead": "Mount Kamifuse Ski Area offers free snow play. Go further with the tourism association's hill tour or local operator bookings.",
+    "introBody": "Enjoy only in welcoming spaces—no entering patchwork farmland. Choose designated routes and guided experiences.",
+    "hubEyebrow": "Free · Walkable",
+    "hubTitle": "Town ski area snow play plaza",
+    "hubLead": "About a 15-minute walk from JR Kamifuse Station. Sledding, snowmen, deep-snow play—a wellness-oriented free zone (lift free).",
+    "hubCta": "See access",
+    "hubLink": "./#access",
+    "experiencesEyebrow": "Guided · Book",
+    "experiencesTitle": "Official & bookable programs",
+    "experiencesLead": "For hill views and adventures, check the latest info and book on the official pages below.",
+    "furari": {
+      "eyebrow": "Kamifuse Tourism Association",
+      "title": "\"Furari Winter Walk\"",
+      "subtitle": "Scenic hill snowshoe in Kamifuse",
+      "lead": "Crisp air and marshmallow hills—a picture-book snowscape on beginner-friendly snowshoes. Meet at Shiki-no-Joho-kan next to JR Kamifuse Station.",
+      "seasonLabel": "Season",
+      "season": "Typically late December–early March (varies with snow)",
+      "meetLabel": "Meet",
+      "meet": "Shiki-no-Joho-kan (Kamifuse Tourism Association) · 1 min from JR Kamifuse Station",
+      "durationLabel": "Duration",
+      "duration": "About 2 hours (morning & afternoon departures)",
+      "note": "Hill snowshoeing runs only on permitted guided tours. You cannot walk the hills without an authorized guide.",
+      "cta": "Official tourism association page",
+      "url": "https://www.biei-hokkaido.jp/ja/facility/hill-snowshoe-tours"
+    },
+    "tokotoko": {
+      "eyebrow": "Local operator",
+      "title": "Tokotoko Adventure",
+      "subtitle": "Book Kamifuse winter activities",
+      "lead": "Snowshoe and snow experiences bookable online. Check availability and courses on the reservation site.",
+      "cta": "Go to booking site",
+      "url": "https://tokotoko-adventure.stores.jp/reserve/tokotoko-adventure"
+    },
+    "pairingTitle": "Sample one-day pairing",
+    "pairingLead": "AM: Furari Winter Walk → Lunch near the station → PM: free snow play at the town ski area → Night: Shirogane Agehacho night view light-up.",
+    "pairingBluePondCta": "Agehacho night view guide",
+    "heroImageAlt": "Snowshoeing Kamifuse snowfields—a snow wellness experience",
+    "galleryAlt": "White hills and clear winter sky—Kamifuse snow wellness scenery"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "10 Nearby Eats — Mount Kamifuse Ski Area",
+      "description": "Curated food picks and area map—pair with snow play and Agehacho night view in one day"
+    },
+    "backLink": "Back to Kamifuse guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After the snow,<br />into Hokkaido food",
+      "tagline": "Dairy, wagyu, wheat, ramen—pair iconic flavors with photo-ready locations for a seamless day"
+    },
+    "notice": "Hours, closures, and winter schedules change—each venue's official site is authoritative. No trespass on farmland; enjoy only in welcoming spaces.",
+    "introTitle": "Why food completes the loop",
+    "introLead": "Visitors to Kamifuse—especially independent travel travelers—are highly sensitive to \"only-in-Hokkaido\" food and Instagram-ready settings.",
+    "introBody": "We picked ten strong food stops to hook travelers before and after snow scenes. Combined with the town ski area and Agehacho night view, they form a friction-free day-trip package.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and hub layers—show multiple at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Kamifuse food, onsen & hub map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Hubs",
+      "hint": "Food and onsen can be shown together",
+      "mobileHint": "If pins overlap, use View on map in the list below or Spot list on the map"
+    },
+    "linkOnsenGuide": "Nearby onsen guide (10 picks)",
+    "spotsEyebrow": "10 picks",
+    "spotsTitle": "10 nearby eats that resonate with Kamifuse visitors",
+    "spotsLead": "Grouped by category—easy to slot before or after snow play.",
+    "spots": {
+      "junpei": {
+        "tag": "Western · shrimp bowl",
+        "title": "Yoshoku & Cafe Junpei",
+        "lead": "A legendary western-style restaurant in Kamifuse. The signature shrimp fry bowl draws long queues from Asia-focused travelers."
+      },
+      "biei-farm": {
+        "tag": "Dairy · farm views",
+        "title": "Kamifuse Farm (grazing dairy)",
+        "lead": "Vast pasture views plus raclette toast on Kamifuse wheat bread and fresh soft-serve—dairy and scenery in one stop."
+      },
+      "aruno": {
+        "tag": "Bakery · cheese fondue",
+        "title": "Aruu no Pain",
+        "lead": "Log-house bakery café. Hollowed house-made bread filled with cheese—the fondue set is a visual hit for photo hunters."
+      },
+      "chiyoda": {
+        "tag": "Wagyu · farm restaurant",
+        "title": "Farm Restaurant Chiyoda",
+        "lead": "Farm-direct restaurant for wagyu fans—Kamifuse beef steak and hearty stews for meat-focused travelers."
+      },
+      "ferme": {
+        "tag": "Sweets · bread · dining",
+        "title": "Ferme La Terre Kamifuse",
+        "lead": "\"Live with nature\" complex with beautiful architecture, refined souvenirs, and café-hopping appeal."
+      },
+      "between": {
+        "tag": "Burger · forest takeout",
+        "title": "BETWEEN THE BREAD",
+        "lead": "A burger shop alone in the forest. Takeout burgers with local ingredients—handy between drives and scenic stops."
+      },
+      "gosh": {
+        "tag": "Coffee · roast in-house",
+        "title": "Gosh Coffee Roastery",
+        "lead": "Highly rated in Bibaushi—house-roasted coffee, bread, and antique interiors to warm up after hills and views."
+      },
+      "asperge": {
+        "tag": "French · Kamifuse vegetables",
+        "title": "Restaurant Asperges",
+        "lead": "Inside JA Kamifuse’s Kamifuse Senka—French that maximizes fresh local produce for higher-budget food travelers."
+      },
+      "sabo": {
+        "tag": "Japanese sweets · by station",
+        "title": "Kamifuse Sabo",
+        "lead": "Steps from Kamifuse Station. Kinako syrup soft-serve and drinks—Japanese dessert cues that hook overseas visitors."
+      },
+      "santouka": {
+        "tag": "Ramen · Asahikawa style",
+        "title": "Ramen Santouka Kamifuse",
+        "lead": "Ramen is killer content . The famous Asahikawa-born chain on the Kamifuse route—essential after snow play."
+      }
+    },
+    "pairingTitle": "Sample day loop",
+    "pairingLead": "Kamifuse Station → snow play (town ski area) → lunch: Junpei or Kamifuse Sabo → afternoon: Kamifuse Farm or Aruu no Pain → night: Agehacho night view light-up. Sections work even without a rental car (walk + bus/taxi).",
+    "pairingSnowCta": "Snow play guide",
+    "pairingBluePondCta": "Agehacho night view guide"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "10 Nearby Onsen — Mount Kamifuse Ski Area",
+      "description": "Snow-view open-air baths and day visits—onsen map paired with snow play"
+    },
+    "backLink": "Back to Kamifuse guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "Warm the body<br />in hot springs",
+      "tagline": "After snow play and Agehacho night view—Japanese onsen culture and snow-view roten"
+    },
+    "notice": "Day-bath availability, hours, winter closures, and mixed-bath rules change—check each facility. Use extra care at wild roten baths.",
+    "introTitle": "Why onsen anchors the loop",
+    "introLead": "visitors around Kamifuse strongly want Japanese onsen culture and open-air baths in snowy scenery.",
+    "introBody": "Ten baths that warm chilled bodies after snow play and scenic touring—designed as a digital bundle with our food map, like Japowserch set proposals.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and hub layers—show multiple at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Kamifuse food, onsen & hub map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Hubs",
+      "hint": "Food and onsen can be shown together",
+      "mobileHint": "If pins overlap, use View on map in the list below or Spot list on the map"
+    },
+    "linkFoodGuide": "Nearby food guide (10 picks)",
+    "spotsEyebrow": "10 picks",
+    "spotsTitle": "10 nearby onsen that resonate with Kamifuse visitors",
+    "spotsLead": "Centered on Shirogane Onsen—easy to pair before/after snow play and Agehacho night view.",
+    "regions": {
+      "shirogane": "Kamifuse · Shirogane Onsen",
+      "kamifurano": "Kamifurano · Mt. Tokachi",
+      "asahidake": "Mt. Asahidake · Higashikawa"
+    },
+    "spots": {
+      "ao-no-bi-yuyu": {
+        "tag": "100% source · stream roten",
+        "title": "Ao no Bi Yuyu (former Shirogane Hotel)",
+        "lead": "100% free-flowing beautifying water with a stream-view open bath—an easy stop right after Agehacho night view."
+      },
+      "park-hills": {
+        "tag": "Large resort · sauna",
+        "title": "Hotel Park Hills Shirogane",
+        "lead": "The area's largest resort hotel near Shirahige Falls—alternating Japanese/Western baths and sauna for families and groups."
+      },
+      "tsuewasure": {
+        "tag": "Pure source · local bath",
+        "title": "Tsuewasure no Yu",
+        "lead": "No dilution, reheating, circulation, or chlorine—100% free-flowing. Cloudy iron-rich water for travelers seeking real local onsen."
+      },
+      "mori-no-ryotei": {
+        "tag": "Sukiya · day visit",
+        "title": "Mori no Ryotei Kamifuse",
+        "lead": "A 17-room sukiya-style luxury inn with day baths—Japanese aesthetics and hospitality for high-end guests."
+      },
+      "mori-no-shizuku": {
+        "tag": "Free-flow · sauna",
+        "title": "Mori no Shizuku RIN",
+        "lead": "100% free-flowing roten, indoor baths, and sauna—clean, reliable comfort for international visitors."
+      },
+      "kokumin": {
+        "tag": "From ¥300 · public bath",
+        "title": "Kamifuse Kokumin Hoyojo Center",
+        "lead": "Public bath from around ¥300—unadorned local sento culture for travelers who want a deep, shareable experience."
+      },
+      "ryounkaku": {
+        "tag": "Sky roten · highest",
+        "title": "Tokachidake Onsen Ryounkaku (Kamifurano)",
+        "lead": "One of Hokkaido's highest onsen inns—iron-brown water and deep snow for ultimate photo contrast; hugely popular."
+      },
+      "hakuginso": {
+        "tag": "Aufguss · northern mecca",
+        "title": "Fukiage Onsen Hakuginso (Kamifurano)",
+        "lead": "Hiba tubs and open baths on Mt. Tokachi's mid-slope—sauna with aufguss, a pilgrimage site for sauna lovers."
+      },
+      "fukiage-roten": {
+        "tag": "24h free · wild bath",
+        "title": "Fukiage Roten no Yu (Kamifurano)",
+        "lead": "A free 24-hour wild mixed bath in the forest—the ultimate adventure soak in snowy nature."
+      },
+      "yukoma": {
+        "tag": "Asahidake · classic",
+        "title": "Asahidake Onsen Yukomanso (Higashikawa)",
+        "lead": "A famed bath at the foot of Mt. Asahidake—wooden rustic tubs and a hub for powder skiers and mountain visitors."
+      }
+    },
+    "pairingTitle": "Snow play × onsen × Agehacho night view",
+    "pairingLead": "AM: town ski snow play → lunch: Junpei or Kamifuse Sabo → PM: Shirogane onsen → evening: Agehacho night view → night: Ryounkaku or Yukomanso (stay extension).",
+    "pairingFoodCta": "Food guide (10 picks)",
+    "pairingSnowCta": "Snow play guide",
+    "pairingBluePondCta": "Agehacho night view guide"
+  },
+  "access": {
+    "postal": "〒035-0096",
+    "line": "44-5 Okawamori, Ominato, Mutsu, Aomori",
+    "note": "~15 min by car from Ominato IC · Mutsu City operated",
+    "phone": "TEL +81-175-24-1881",
+    "places": "",
+    "rentacarEyebrow": "Shimokita · Aomori",
+    "rentacarLink": "Book a rental car at Shin-Aomori Station",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Ominato and Shimokita peninsula loops"
+  },
+  "footer": {
+    "copyright": "© Mount Kamifuse Ski Area (Mutsu City)",
+    "location": "44-5 Okawamori, Ominato, Mutsu, Aomori 035-0096"
+  }
+}
