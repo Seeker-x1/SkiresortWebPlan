@@ -37,7 +37,7 @@ For the target `{id}`:
 5. Write `messages/ja.json` + `en.json` from report
 6. Wire `index.html`, `mock.css`, sub-pages if report §8 specifies
 7. Add `docs/mock-assets/data/maps/{id}.json` (baked-line illustration only)
-8. Update `docs/mock-assets/registry.json` + `data/resort-guides.json`
+8. Update `docs/mock-assets/registry.json` + `data/resort-guides.json` + **`NAME_SUBSTRINGS`** in `scripts/validate-resort-guides-ids.mjs` (run validator; paste suggested lines if FAIL)
 9. Run `node docs/mock-assets/scripts/apply-rentacar-affiliate.mjs`
 10. Run **all 8** validation commands (must exit 0):
 
@@ -47,6 +47,7 @@ node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-lp-shell.mjs
 node docs/mock-assets/scripts/validate-mock-lp-copy.mjs
 node docs/mock-assets/scripts/validate-skyticket-affiliate.mjs
+node scripts/validate-resort-guides-ids.mjs
 node docs/mock-assets/scripts/validate-mock-japow-detail.mjs
 node guides/scripts/sync.mjs
 node docs/mock-assets/scripts/validate-mock-japow-detail.mjs --public

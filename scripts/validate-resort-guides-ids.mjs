@@ -37,6 +37,10 @@ const NAME_SUBSTRINGS = {
   shinjo: ["新庄市民", "新庄"],
   takaho: ["高穂"],
   hinode: ["日の出"],
+  utoro: ["ウトロ"],
+  "shintoku-yama": ["新得山"],
+  nishikawa: ["西川町民", "西川"],
+  "koshi-kogen": ["古志高原"],
 };
 
 function loadJson(path) {
@@ -47,10 +51,35 @@ function normalize(s) {
   return String(s).replace(/\s/g, "");
 }
 
+/** Default substring candidates from JAPOW nameJa (manual aliases may still be needed). */
+function suggestNameSubstrings(nameJa) {
+  let core = normalize(nameJa);
+  for (const suffix of ["スキー場", "スキー荘", "スキー園", "スキーリゾート", "スキー"]) {
+    if (core.endsWith(suffix)) {
+      core = core.slice(0, -suffix.length);
+      break;
+    }
+  }
+  if (core.length < 2) core = normalize(nameJa);
+  return [core];
+}
+
+function formatNameSubstringsEntry(registryId, subs) {
+  const key = /^[a-z0-9-]+$/.test(registryId) && registryId.includes("-")
+    ? `"${registryId}"`
+    : registryId;
+  const quoted = subs.map((s) => JSON.stringify(s)).join(", ");
+  return `  ${key}: [${quoted}],`;
+}
+
 function nameMatches(japowNameJa, registryId) {
   const subs = NAME_SUBSTRINGS[registryId];
   if (!subs?.length) {
-    return { ok: false, reason: `missing NAME_SUBSTRINGS for registryId "${registryId}"` };
+    return {
+      ok: false,
+      reason: `missing NAME_SUBSTRINGS for registryId "${registryId}"`,
+      suggest: suggestNameSubstrings(japowNameJa),
+    };
   }
   const j = normalize(japowNameJa);
   const hit = subs.find((sub) => j.includes(normalize(sub)));
@@ -73,6 +102,7 @@ function main() {
   const guides = loadJson(GUIDES_PATH);
   const registry = loadJson(REGISTRY_PATH);
   const errors = [];
+  const suggestions = [];
 
   const guideEntries = Object.entries(guides.guides || {});
   const registryById = new Map(registry.resorts.map((r) => [r.id, r]));
@@ -99,6 +129,14 @@ function main() {
     const nm = nameMatches(resort.nameJa, entry.registryId);
     if (!nm.ok) {
       errors.push(`id ${japowId} → ${entry.registryId}: ${nm.reason}`);
+      if (nm.suggest?.length) {
+        suggestions.push({
+          japowId,
+          registryId: entry.registryId,
+          nameJa: resort.nameJa,
+          subs: nm.suggest,
+        });
+      }
     }
   }
 
@@ -128,8 +166,17 @@ function main() {
   if (errors.length) {
     console.error("validate-resort-guides-ids: FAIL\n");
     for (const e of errors) console.error(`  ✗ ${e}`);
+    if (suggestions.length) {
+      console.error("\nAdd to NAME_SUBSTRINGS in scripts/validate-resort-guides-ids.mjs:");
+      for (const s of suggestions) {
+        console.error(`${formatNameSubstringsEntry(s.registryId, s.subs)}  // id ${s.japowId} · JAPOW「${s.nameJa}」`);
+      }
+      console.error(
+        "\nIf the suggested substring is ambiguous (e.g. 中山), add manual aliases. See data/README-japow-ids.md.",
+      );
+    }
     console.error(
-      "\nFix: look up id in data/japow-resort-index.tsv (sync from JAPOWSERCH/RESORTS一覧.txt), then update data/resort-guides.json + registry.json together.",
+      "\nFix checklist: (1) japow id in data/japow-resort-index.tsv · (2) registry.json + data/resort-guides.json · (3) NAME_SUBSTRINGS above · LP_FACTORY Step 8.",
     );
     process.exit(1);
   }

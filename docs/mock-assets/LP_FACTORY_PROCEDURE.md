@@ -372,6 +372,8 @@ node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
 
 - [ ] `data/resort-guides.json` に `"<japowId>": { "registryId": "{id}", "tier": "mock" }` を追加  
   **URL は `registry.id`（`example-resort`）。`slug`（`example-resort-lp`）は使わない。**
+- [ ] `scripts/validate-resort-guides-ids.mjs` の **`NAME_SUBSTRINGS`** に `{id}` を追加（JAPOW 正式名に含まれる固有部分。失敗時は検証スクリプトがコピペ行を出力）
+- [ ] `node scripts/validate-resort-guides-ids.mjs` exit 0
 - [ ] `node docs/mock-assets/scripts/validate-mock-japow-detail.mjs` exit 0
 - [ ] `guides/hub/messages/hub.ja.json` / `hub.en.json` の施設数（`N施設` / `N Resorts`）を更新
 

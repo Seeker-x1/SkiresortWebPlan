@@ -67,7 +67,7 @@ function main() {
 ## ルール
 - LP Factory 禁止事項（lp-factory-no-shortcuts）厳守
 - 画像: Gemini MCP（不可時はユーザー確認）
-- 検証 8 本 PASS → guides sync → JAPOWSERCH resort-guides 同期
+- 検証 8 本 PASS（`validate-resort-guides-ids.mjs` 含む）→ guides sync → JAPOWSERCH resort-guides 同期
 - push はユーザーが明示した場合のみ
 
 ## レポート全文

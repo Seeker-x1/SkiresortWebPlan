@@ -96,10 +96,11 @@ function onDetailClick(japowResortId) {
 1. JAPOW 公式 ID を `JAPOWSERCH/RESORTS一覧.txt` で確認（推測禁止）
 2. `data/resort-guides.json` に `"<japowId>": { "registryId": "{id}", "tier": "mock" }` を追加
 3. `docs/mock-assets/registry.json` に resort オブジェクトを追加（`id` / `slug` / `japowResortId` / `affiliates`）
-4. `{id}-lp/index.html` が存在（sync が `public/{id}/` にコピー）
-5. 機械検証（8 本）— [lp_mock_handoff_checklist.md](./lp_mock_handoff_checklist.md) §4
-6. **`JAPOWSERCH/data/resort-guides.json` を SkiresortWebPlan と同一に同期**（詳細ボタン本番成立）
-7. JAPOW マップで「詳細確認」→ `https://guides.japowserch.com/{id}/` を確認
+4. `scripts/validate-resort-guides-ids.mjs` の **`NAME_SUBSTRINGS`** に `{id}` を追加 → `node scripts/validate-resort-guides-ids.mjs` exit 0
+5. `{id}-lp/index.html` が存在（sync が `public/{id}/` にコピー）
+6. 機械検証（8 本）— [lp_mock_handoff_checklist.md](./lp_mock_handoff_checklist.md) §4
+7. **`JAPOWSERCH/data/resort-guides.json` を SkiresortWebPlan と同一に同期**（詳細ボタン本番成立）
+8. JAPOW マップで「詳細確認」→ `https://guides.japowserch.com/{id}/` を確認
 
 ```bash
 node docs/mock-assets/scripts/validate-mock-japow-detail.mjs

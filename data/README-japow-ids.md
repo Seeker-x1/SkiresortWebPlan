@@ -16,11 +16,21 @@
    node scripts/sync-japow-resort-index.mjs
    ```
 
-3. 新規ガイド追加時は `data/resort-guides.json` と `docs/mock-assets/registry.json` を **同じ id** で更新し:
+3. 新規ガイド追加時は **3 ファイル**を同じ `registryId` / `japowId` で更新する:
+
+   | ファイル | 内容 |
+   |----------|------|
+   | `data/resort-guides.json` | `"<japowId>": { "registryId": "{id}", "tier": "mock" }` |
+   | `docs/mock-assets/registry.json` | resort オブジェクト（`japowResortId` 含む） |
+   | `scripts/validate-resort-guides-ids.mjs` | `NAME_SUBSTRINGS` に `{id}` の名称サブストリング（JAPOW `nameJa` に含まれる文字列） |
+
+   検証:
 
    ```bash
    node scripts/validate-resort-guides-ids.mjs
    ```
+
+   `missing NAME_SUBSTRINGS` が出たら、スクリプト末尾の **コピペ用行** を `NAME_SUBSTRINGS` に追加。曖昧な名称（例: 中山）は手動で別名を足す（`kamikawa-nakayama` 参照）。
 
 **推測で id を書かない。** CI（`.github/workflows/guides-validate.yml`）が失敗する。
 

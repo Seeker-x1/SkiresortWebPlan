@@ -78,6 +78,8 @@ Step 13  L3 + Human Gate
 
 - [ ] `registry.json` エントリ（`id` / `slug` / `japowResortId` / `guideUrl`）
 - [ ] `data/resort-guides.json`（`"<japowId>": { "registryId": "{id}", "tier": "mock" }`）
+- [ ] `scripts/validate-resort-guides-ids.mjs` の **`NAME_SUBSTRINGS`** に `{id}` を追加
+- [ ] `node scripts/validate-resort-guides-ids.mjs` exit 0
 - [ ] `node docs/mock-assets/scripts/validate-mock-japow-detail.mjs` exit 0
 - [ ] `node guides/scripts/sync.mjs` → `validate-mock-japow-detail.mjs --public` exit 0
 - [ ] `JAPOWSERCH/data/resort-guides.json` を SkiresortWebPlan と同期

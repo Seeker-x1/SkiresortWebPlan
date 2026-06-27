@@ -114,6 +114,7 @@ L2 implementer 完了
 > 仕様: [JAPOW_DETAIL_INTEGRATION.md](./JAPOW_DETAIL_INTEGRATION.md)
 
 - [ ] **J1** `resort-guides.guides[japowId].registryId` === `registry.id`
+- [ ] **J1b** `scripts/validate-resort-guides-ids.mjs` の `NAME_SUBSTRINGS[{id}]` が JAPOW 正式名にマッチ
 - [ ] **J2** 詳細 URL = `https://guides.japowserch.com/{id}/`（`slug` 不可）
 - [ ] **J3** 英語 = `https://guides.japowserch.com/{id}/?lang=en`
 - [ ] **J4** `validate-resort-guides-ids.mjs` exit 0
