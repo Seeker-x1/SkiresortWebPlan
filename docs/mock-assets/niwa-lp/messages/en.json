@@ -1,172 +1,172 @@
 {
   "meta": {
-    "title": "Kokusetsu Minami-Furano Ski Area",
-    "description": "Quiet powder in the heart of mega-resorts."
+    "title": "Niwa Ski Area",
+    "description": "Free rope tow in Setana, Hokkaido. Weeknight skiing 18:00–21:00, ungroomed snow, and a Showa-era local hill."
   },
-  "logo": "Minami-Furano National Ski Area",
+  "logo": "Niwa Ski Area",
   "hero": {
-    "eyebrow": "Minami-Furano, Hokkaido · south of Lake Kanayama",
-    "title": "Minami-Furano<br />National Ski Area",
-    "tagline": "Quiet powder in the heart of mega-resorts.",
-    "badgePrice": "8 hours ¥2,500",
-    "badgeNight": "Night skiing until 21:00",
-    "badgeXc": "Free XC",
-    "ctaPass": "Secret Powder Pass",
+    "eyebrow": "Setana, Hokkaido · Kitahiyama",
+    "title": "Niwa<br />Ski Area",
+    "tagline": "Free rope tow—weeknights from 18:00, a tiny hill in the middle of the snowfield.",
+    "badgePrice": "Free",
+    "badgeNight": "Weekdays 18–21",
+    "badgeXc": "Ungroomed",
+    "ctaPass": "Hours",
     "ctaLive": "Today's conditions"
   },
   "live": {
     "ariaLabel": "Today's operations dashboard",
-    "subtitle": "Transparent operations info",
-    "updatedAt": "Updated Jun 13, 9:00",
+    "subtitle": "Rope tow · hours",
+    "updatedAt": "Updated Jun 28, 9:00",
     "lift1": {
-      "label": "Lift 1",
-      "value": "Operating",
-      "note": "Including ropeway"
+      "label": "Rope tow",
+      "value": "Check status",
+      "note": "Pure rope · arm-powered ascent"
     },
     "lift2": {
-      "label": "Lift 2",
-      "value": "Closed",
-      "note": "2026 season restoration under review"
+      "label": "Weekdays",
+      "value": "18–21",
+      "note": "Night skiing only"
     },
     "snow": {
-      "label": "Snow quality",
-      "value": "Furano class",
-      "note": "Uncrowded · private feel"
+      "label": "Surface",
+      "value": "Ungroomed",
+      "note": "No grooming · fresh tracks"
     },
     "night": {
-      "label": "Night skiing",
-      "value": "Until 21:00",
-      "note": "Tue–Sat from 9:00"
+      "label": "Weekends",
+      "value": "10–17 approx.",
+      "note": "Weather dependent"
     }
   },
   "sanctuary": {
-    "eyebrow": "Local Sanctuary",
-    "title": "Furano snow quality,<br />private quiet.",
-    "lead": "A municipal hill surrounded by Furano, Tomamu, and Sahoro. World-resort snow without crowds or price spikes—the value of \"real winter sport\" for eight hours at ¥2,500.",
+    "eyebrow": "Local Hideaway",
+    "title": "A hill that appears<br />at the end of the snowfield.",
+    "lead": "Walk a snowy path from parking to a ~200 m square hill. Ungroomed natural snow and a working Showa-era rope tow—a world apart from southern Hokkaido's big resorts.",
     "specs": [
-      "5 courses",
-      "Snowboards welcome",
-      "Resident season ¥10,000"
+      "2 courses",
+      "Free admission",
+      "Rope tow only"
     ],
-    "noticeTitle": "Honest reviews say:",
-    "noticeBody": "\"Five stars if the third lift ran\"—don't hide aging infrastructure; pivot to hike-up zones and other value.",
-    "ctaPass": "Secret Powder Pass",
-    "imgAlt": "Quiet night-lit slopes—empty powder runs"
+    "noticeTitle": "Operations:",
+    "noticeBody": "Days and hours change with snow and weather. Check today's dashboard or Setana town notices before you go.",
+    "ctaPass": "Hours",
+    "imgAlt": "A small hill floating in the snowfield—Niwa Ski Area"
   },
   "paths": {
     "pass": {
-      "label": "Pass",
-      "title": "Secret Powder Pass"
+      "label": "Pricing",
+      "title": "Free · donations"
     },
     "access": {
       "label": "Access",
-      "title": "22 km from Tomamu IC"
+      "title": "From Kitahiyama"
     },
     "today": {
       "label": "Today",
-      "title": "Lifts · snow · night skiing"
+      "title": "Rope tow · hours"
     },
     "hike": {
-      "label": "BC intro",
-      "title": "Hike-up zone"
+      "label": "Rope",
+      "title": "Pure rope tow"
     }
   },
   "highlights": {
-    "eyebrow": "What sets us apart",
-    "title": "Contrarian strengths",
+    "eyebrow": "What sets it apart",
+    "title": "Free · retro",
     "primary": {
-      "title": "Furano quality × empty runs",
-      "lead": "Visitors praise \"Furano-level snow\" and \"hardly anyone there.\" Less flashy facilities, more uncrowded quality snow and simple hospitality—high loyalty to local community ties.",
-      "cta": "Tickets & passbooks",
-      "imgAlt": "Untouched powder—ski at your pace on a compact hill"
+      "title": "Completely free rope tow",
+      "lead": "No lift ticket required. Staff often run the rope tow even for solo visitors—a small municipal hill rooted in the local community.",
+      "cta": "Today's operations",
+      "imgAlt": "Riders holding the rope on Niwa's tow"
     },
     "secondary": {
-      "title": "Free cross-country",
-      "lead": "XC courses free for residents' fitness, separate from alpine. Long-term step to reduce lift dependence and expand a non-powered winter park.",
-      "cta": "XC course guide"
+      "title": "Weeknight skiing 18–21",
+      "lead": "Weekdays are lit nights only, 18:00–21:00. A quick after-work or after-school lap on an irregular schedule.",
+      "cta": "Hours calendar"
     }
   },
   "pass": {
-    "eyebrow": "Secret Powder Pass",
-    "title": "Marriott × Montbell,<br />a three-hour secret.",
-    "lead": "For Fairfield by Marriott guests beside Michi-no-Eki Minami-Furano. Bundle 4-hour lift (¥1,500), Montbell gear rental discount, and Nanpu Ezo katsu curry voucher—a half-day away from Furano crowds.",
+    "eyebrow": "Free Access",
+    "title": "Lift fees have<br />always been free.",
+    "lead": "No charge to ski. Donation boxes or sticker programs may support upkeep—check on-site notices when you arrive.",
     "specs": [
-      "Marriott 78 rooms",
-      "Flagship Montbell store",
-      "Micro-tourism"
+      "Free admission",
+      "Boarders on separate course",
+      "~150 m snowboard rope course"
     ],
-    "cta": "Book pass",
-    "imgAlt": "Beside Michi-no-Eki Minami-Furano—Marriott and major outdoor hub"
+    "cta": "Hours & rules",
+    "imgAlt": "Lodge and rope tow at the free hill"
   },
   "hike": {
-    "eyebrow": "Pivot",
-    "title": "Turn Lift 2 closure<br />into a weapon.",
-    "lead": "Don't hide 2026 Lift 2 issues—redefine slope lines as ungroomed hike-up powder zones (example entry ¥1,000). A new revenue point aligned with the BC boom.",
-    "leadCurry": "After skiing, head to Nanpu Ezo katsu curry—5 mm-cut Ezo deer local curry as a sustainability story and regional ARPU hook.",
-    "cta": "Hike-up zone & curry map",
-    "imgAlt": "Minami-Furano Ezo katsu curry—game meat as regional cuisine"
+    "eyebrow": "Rope Tow",
+    "title": "Climb with your arms,<br />pure rope tow.",
+    "lead": "Not a chair or T-bar—you grip the rope and pull yourself up the old-fashioned way. Three laps can be enough for sore arms. Snowboards use a separate ~150 m rope course, not the main slope.",
+    "leadCurry": "After skiing, Kitahiyama Onsen Hotel or Mitsuba Shokudo nearby—food and baths finish the Setana loop.",
+    "cta": "Riding rules",
+    "imgAlt": "Showa-era rope tow—the symbol of Niwa Ski Area"
   },
   "tour": {
-    "eyebrow": "Half-Day Trip",
-    "title": "Lake Kanayama area<br />in three hours.",
-    "lead": "For and workation guests—monetize \"gap time\" between mega-resort fatigue with a half-day journey.",
-    "badge": "SECRET POWDER · MICRO TOURISM",
+    "eyebrow": "Setana Loop",
+    "title": "Kitahiyama area<br />in half a day.",
+    "lead": "Rope tow at Niwa → Kitahiyama Onsen → Setana meal—enjoy the area as a small trip, not just the hill.",
+    "badge": "FREE ROPE · SETANA",
     "steps": {
       "01": {
-        "title": "Marriott Minami-Furano",
-        "body": "Comfortable base camp · remote work"
+        "title": "Niwa Ski Area",
+        "body": "Walk the snowy approach from parking"
       },
       "02": {
-        "title": "Montbell",
-        "body": "Rent latest gear"
+        "title": "Rope tow laps",
+        "body": "Ungroomed snow at your pace"
       },
       "03": {
-        "title": "Minami-Furano Ski Area",
-        "body": "Four hours of empty powder (¥1,500)"
+        "title": "Kitahiyama Onsen Hotel",
+        "body": "Day-use bath to warm up"
       },
       "04": {
-        "title": "Ezo katsu curry",
-        "body": "Svalbar / Nanputei"
+        "title": "Mitsuba Shokudo",
+        "body": "Local set meals and ramen"
       },
       "05": {
-        "title": "Lake Kanayama",
-        "body": "Optional dinner at Log Hotel Larch"
+        "title": "Sambonsugi Rock",
+        "body": "Setana scenic spot (optional)"
       }
     }
   },
   "guides": {
     "sanctuary": {
-      "title": "Complete local sanctuary guide",
-      "body": "Within 20 km of Furano Ski Area (28 courses, 9 lifts) yet smaller scale—a paradoxical edge. \"Silence,\" \"empty powder,\" \"8 hours ¥2,500\"—differentiation from Niseko-izing neighbors."
+      "title": "Niwa rope tow guide",
+      "body": "How to use the pure rope, snowboard course limits, and the walk from parking—essentials for first visits."
     },
     "workation": {
-      "title": "Workation × night powder",
-      "body": "Remote work at Marriott weekdays, night skiing until 21:00 evenings. For urban IT workers—raise ARPU with minimal capital investment."
+      "title": "Reading irregular hours",
+      "body": "Weeknights 18–21, weekends ~10–17—today's dashboard beats digging through PDF town bulletins."
     },
     "lake": {
-      "title": "Lake Kanayama winter resort concept",
-      "body": "Use development corp cross-site authority to bundle smelt fishing, fat biking, night skiing, and Log Hotel Larch stays into a 2-night/3-day adventure—beyond the ski area alone.",
+      "title": "Hidden hills of southern Hokkaido",
+      "body": "How Niwa compares with Taisei Ski Area (sea views) and Pikari in Imakane—why choose Niwa.",
       "hashtags": [
-        "#SecretPowder",
-        "#NanpuEzoCurry",
-        "#LocalSanctuary"
+        "#NiwaRopeTow",
+        "#SetanaSnow",
+        "#FreeSkiHokkaido"
       ]
     }
   },
   "access": {
-    "postal": "079-2402, Japan",
-    "line": "Kito, Minami-Furano, Sorachi-gun, Hokkaido",
-    "note": "About 22 km from Doto Expressway Tomamu IC · old Kitoro Station area, south of Lake Kanayama · 80 free parking spaces",
-    "phoneLodge": "TEL 0167-52-2143 (Minami-Furano Ski Area Lodge)",
-    "phoneOps": "Lift operations 0167-52-2267 · Development Corp 0167-52-2100",
-    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>空知郡<rt>Sorachi-gun</rt></ruby></span><span class=\"place-unit\"><ruby>南富良野町<rt>Minami-Furano</rt></ruby></span><span class=\"place-unit\"><ruby>字幾寅<rt>Kito</rt></ruby></span>",
-    "rentacarEyebrow": "Tokachi · Furano",
-    "rentacarLink": "Book a rental car at Asahikawa Airport",
+    "postal": "〒041-1512",
+    "line": "649-2 Nishi-Niwa, Kitahiyama, Setana, Hokkaido",
+    "note": "Drive from Kitahiyama center · walk from parking across snow",
+    "phoneLodge": "TEL 0137-84-5111 (Setana Town)",
+    "phoneOps": "Check today's dashboard or town notices for hours",
+    "places": "",
+    "rentacarEyebrow": "Southern Hokkaido · Hakodate",
+    "rentacarLink": "Book a rental car at Hakodate Airport",
     "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Lake Kanayama and Furano drives"
+    "rentacarHint": "For Kitahiyama, Taisei, and Hakodate drives"
   },
   "footer": {
-    "copyright": "© Kokusetsu Minami-Furano Ski Area",
-    "location": "079-2402 · Kito, Minami-Furano, Sorachi-gun, Hokkaido"
+    "copyright": "© Niwa Ski Area",
+    "location": "649-2 Nishi-Niwa, Kitahiyama, Setana, Hokkaido 041-1512"
   }
 }

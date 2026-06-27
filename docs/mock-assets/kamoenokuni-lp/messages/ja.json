@@ -122,7 +122,11 @@
     "handfree": {
       "title": "手ぶら・宿泊",
       "body": "用具レンタルは限定的——近隣宿と連携した手ぶらプランは要確認。湯ノ岱温泉宿泊とセットが定番。",
-      "hashtags": ["#KaminokuniSki", "#YunotaiOnsen", "#FreeLiftHokkaido"]
+      "hashtags": [
+        "#KaminokuniSki",
+        "#YunotaiOnsen",
+        "#FreeLiftHokkaido"
+      ]
     }
   },
   "access": {

@@ -135,13 +135,14 @@
       "nameEn": "Sanokura Ski Area",
       "japowResortId": 183,
       "regionJa": "福島県喜多方市",
-      "status": "pending",
-      "reportPath": null,
+      "status": "shipped",
+      "reportPath": "docs/research/inbox/sanokura.md",
       "archetypeHint": "corridor-hub",
       "copyFromHint": "shinjo-lp",
       "salesAngle": "ネコママウンテン会津エリア。喜多方ラーメン×ローカルパウダー。",
       "digitalGap": "広域周遊パッケージ未設計",
-      "subscriptionPitch": "滞在型観光の経由地LP"
+      "subscriptionPitch": "滞在型観光の経由地LP",
+      "updatedAt": "2026-06-27"
     },
     {
       "rank": 29,
@@ -150,13 +151,14 @@
       "nameEn": "Niwa Ski Area",
       "japowResortId": 6,
       "regionJa": "北海道せたな町",
-      "status": "pending",
-      "reportPath": null,
+      "status": "shipped",
+      "reportPath": "docs/research/inbox/niwa.md",
       "archetypeHint": "live-dashboard",
       "copyFromHint": "minami-furano-lp",
       "salesAngle": "平日18–21時ナイターのみ等変則営業。本日営業状況がPDF深層に埋もれ。",
       "digitalGap": "今日の営業有無が分からない",
-      "subscriptionPitch": "ワンタップ「本日ナイター営業中」CMS"
+      "subscriptionPitch": "ワンタップ「本日ナイター営業中」CMS",
+      "updatedAt": "2026-06-27"
     },
     {
       "rank": 30,
@@ -165,7 +167,7 @@
       "nameEn": "Snow Park Horaguchi",
       "japowResortId": 418,
       "regionJa": "奈良県天川村",
-      "status": "research",
+      "status": "shipped",
       "reportPath": "docs/research/inbox/horaguchi.md",
       "archetypeHint": "live-dashboard",
       "copyFromHint": "tsunan-lp",

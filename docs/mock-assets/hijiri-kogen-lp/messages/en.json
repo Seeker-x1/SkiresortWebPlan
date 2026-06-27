@@ -120,10 +120,22 @@
     "lead": "Morning runs at Hijiri → lunch at Sei Lakeside → afternoon soak at Mitaraishi—a Nagano day trip without crowds.",
     "badge": "HIJIRI · FAMILY VALUE",
     "steps": {
-      "am": { "title": "Omachi IC", "body": "~15 min on the Nagano Expressway · free parking" },
-      "noon": { "title": "Lunch", "body": "Sei Lakeside Hall · Komatsuya diner" },
-      "pm": { "title": "Hijiri Kogen", "body": "One lift · three courses · sled hill" },
-      "eve": { "title": "Onsen", "body": "Mitaraishi Onsen · return drive" }
+      "am": {
+        "title": "Omachi IC",
+        "body": "~15 min on the Nagano Expressway · free parking"
+      },
+      "noon": {
+        "title": "Lunch",
+        "body": "Sei Lakeside Hall · Komatsuya diner"
+      },
+      "pm": {
+        "title": "Hijiri Kogen",
+        "body": "One lift · three courses · sled hill"
+      },
+      "eve": {
+        "title": "Onsen",
+        "body": "Mitaraishi Onsen · return drive"
+      }
     },
     "cta": "Access details"
   },
@@ -139,7 +151,11 @@
     "donation": {
       "title": "Ski Kids Day",
       "body": "Third Sunday Jan–Mar: free lifts for junior high and under. Pairs with the ¥15,000 parent-child season pass.",
-      "hashtags": ["#HijiriKogen", "#FamilySki", "#NaganoValue"]
+      "hashtags": [
+        "#HijiriKogen",
+        "#FamilySki",
+        "#NaganoValue"
+      ]
     }
   },
   "access": {

@@ -120,10 +120,22 @@
     "lead": "午前：聖高原で3コース → 昼：聖レイクサイド館 → 午後：みたらし温泉——混雑を避けた長野ドライブモデル。",
     "badge": "HIJIRI · FAMILY VALUE",
     "steps": {
-      "am": { "title": "麻績IC", "body": "長野道から約15分 · 駐車場無料" },
-      "noon": { "title": "ランチ", "body": "聖レイクサイド館 · 小松屋食堂" },
-      "pm": { "title": "聖高原", "body": "1基リフトで3コース · そりエリア" },
-      "eve": { "title": "温泉", "body": "みたらし温泉 · 帰路" }
+      "am": {
+        "title": "麻績IC",
+        "body": "長野道から約15分 · 駐車場無料"
+      },
+      "noon": {
+        "title": "ランチ",
+        "body": "聖レイクサイド館 · 小松屋食堂"
+      },
+      "pm": {
+        "title": "聖高原",
+        "body": "1基リフトで3コース · そりエリア"
+      },
+      "eve": {
+        "title": "温泉",
+        "body": "みたらし温泉 · 帰路"
+      }
     },
     "cta": "アクセス詳細"
   },
@@ -139,7 +151,11 @@
     "donation": {
       "title": "第3日曜スキー子供の日",
       "body": "1〜3月の第3日曜は中学生以下リフト無料。親子シーズン券15,000円と合わせ、ファミリー層のリピート動機を強化。",
-      "hashtags": ["#HijiriKogen", "#FamilySki", "#NaganoValue"]
+      "hashtags": [
+        "#HijiriKogen",
+        "#FamilySki",
+        "#NaganoValue"
+      ]
     }
   },
   "access": {

@@ -695,6 +695,29 @@
       "affiliates": {
         "rentacar": "hakodate_onuma_matsumae"
       }
+    },
+    {
+      "id": "horaguchi",
+      "slug": "horaguchi-lp",
+      "name": {
+        "ja": "スノーパーク洞川",
+        "en": "Snow Park Horaguchi"
+      },
+      "region": {
+        "ja": "奈良県天川村",
+        "en": "Tenkawa, Nara"
+      },
+      "strategy": {
+        "ja": "天然雪 · 洞川温泉",
+        "en": "Natural snow · Dorogawa Onsen"
+      },
+      "guidePath": "/horaguchi/",
+      "guideUrl": "https://guides.japowserch.com/horaguchi/",
+      "japowResortId": 418,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "kansai_international_airport"
+      }
     }
   ],
   "guides": {

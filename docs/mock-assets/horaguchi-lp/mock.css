@@ -1,17 +1,16 @@
-/* 丹羽スキー場 — LP案モック（無料ロープトウ·変則ナイター） */
+/* スノーパーク洞川 — LP案モック（天然雪×洞川温泉） */
 
 :root {
-  --bg: #f8f6fa;
-  --fg: #1e1a2e;
-  --muted: #5c5670;
-  --accent: #5b4d7a;
-  --accent-powder: #5a8fad;
-  --accent-warm: #a66b38;
-  --accent-soft: #ebe6f2;
+  --bg: #f4f6f9;
+  --fg: #1a2332;
+  --muted: #5a6478;
+  --accent: #3d5a80;
+  --accent-camp: #b86b1f;
+  --accent-nordic: #2a6b8f;
+  --accent-soft: #e4eaf2;
   --surface: #ffffff;
-  --border: #ddd6e8;
-  --live: #3d8f6a;
-  --warn: #c47d2a;
+  --border: #d4dce8;
+  --live: #3d7a5c;
   --section: clamp(5rem, 14vw, 9rem);
   --inner: clamp(1.25rem, 4vw, 3rem);
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -38,14 +37,14 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 100;
   padding: 0.5rem 1rem;
-  background: #1e1a2e;
-  color: #c8bdd8;
+  background: #1a2332;
+  color: #b8c5d8;
   font-size: 0.75rem;
   text-align: center;
   letter-spacing: 0.04em;
 }
 
-.mock-banner strong { color: #b8a8d8; }
+.mock-banner strong { color: #8eb4d8; }
 
 .inner {
   max-width: 72rem;
@@ -86,38 +85,27 @@ a { color: inherit; text-decoration: none; }
   opacity: 0.85;
 }
 
-.badge-price {
+.badge-pivot {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background: var(--fg);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #d4dce8;
+}
+
+.badge-campus {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.35rem 0.75rem;
   border-radius: 9999px;
   background: var(--accent-soft);
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.8125rem;
   font-weight: 600;
   color: var(--accent);
-}
-
-.badge-night {
-  display: inline-block;
-  margin-left: 0.5rem;
-  padding: 0.35rem 0.75rem;
-  border-radius: 9999px;
-  background: var(--fg);
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #d4cce8;
-}
-
-.badge-xc {
-  display: inline-block;
-  margin-left: 0.5rem;
-  padding: 0.35rem 0.75rem;
-  border-radius: 9999px;
-  border: 1px solid var(--accent-powder);
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--accent-powder);
 }
 
 .site-header {
@@ -187,19 +175,19 @@ a { color: inherit; text-decoration: none; }
 .btn-primary { background: var(--fg); color: #fff; }
 .btn-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 8px 24px rgb(30 26 46 / 18%);
+  box-shadow: 0 8px 24px rgb(26 35 50 / 18%);
 }
 
-.btn-secret { background: var(--accent); color: #fff; }
-.btn-secret:hover {
+.btn-camp { background: var(--accent-camp); color: #fff; }
+.btn-camp:hover {
   transform: translateY(-1px);
-  box-shadow: 0 8px 24px rgb(91 77 122 / 28%);
+  box-shadow: 0 8px 24px rgb(184 107 31 / 28%);
 }
 
-.btn-powder { background: var(--accent-powder); color: #fff; }
-.btn-powder:hover {
+.btn-nordic { background: var(--accent-nordic); color: #fff; }
+.btn-nordic:hover {
   transform: translateY(-1px);
-  box-shadow: 0 8px 24px rgb(90 143 173 / 28%);
+  box-shadow: 0 8px 24px rgb(42 107 143 / 25%);
 }
 
 .btn-ghost {
@@ -225,7 +213,7 @@ a { color: inherit; text-decoration: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 40%;
+  object-position: center 35%;
 }
 
 .hero-overlay {
@@ -233,8 +221,8 @@ a { color: inherit; text-decoration: none; }
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgb(30 26 46 / 6%) 0%,
-    rgb(248 246 250 / 38%) 48%,
+    rgb(26 35 50 / 8%) 0%,
+    rgb(244 246 249 / 35%) 45%,
     var(--bg) 100%
   );
 }
@@ -260,7 +248,19 @@ a { color: inherit; text-decoration: none; }
   margin: 1.25rem 0 0;
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   font-weight: 500;
-  color: var(--accent-powder);
+  color: var(--accent);
+}
+
+.hero-stat {
+  margin-top: 1.5rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.hero-stat strong {
+  font-size: 1.125rem;
+  color: var(--fg);
 }
 
 .hero-cta {
@@ -271,98 +271,49 @@ a { color: inherit; text-decoration: none; }
   gap: 1.25rem;
 }
 
-.live-dashboard {
+.live-strip {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   background: var(--surface);
-  padding: 1.25rem 0;
+  padding: 1rem 0;
 }
 
-.live-head {
+.live-strip-inner {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
+  gap: 1rem;
 }
 
-.live-pulse {
-  display: inline-block;
+.live-strip-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.live-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+}
+
+.live-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: var(--live);
-  margin-right: 0.5rem;
-  animation: pulse 2s ease infinite;
 }
 
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
-}
+.live-chip strong { font-weight: 600; }
 
-@media (prefers-reduced-motion: reduce) {
-  .live-pulse { animation: none; }
-}
-
-.live-label {
-  font-size: 0.625rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--live);
-}
-
-.live-updated {
-  font-size: 0.75rem;
+.line-note {
+  font-size: 0.6875rem;
   color: var(--muted);
-  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0.04em;
 }
-
-.status-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem;
-}
-
-@media (min-width: 640px) {
-  .status-grid { grid-template-columns: repeat(4, 1fr); }
-}
-
-.status-card {
-  padding: 1rem;
-  border: 1px solid var(--border);
-  border-radius: 0.625rem;
-  background: var(--bg);
-}
-
-.status-card--warn {
-  border-color: rgb(196 125 42 / 35%);
-  background: rgb(196 125 42 / 6%);
-}
-
-.status-card__label {
-  font-size: 0.625rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.status-card__value {
-  margin: 0.35rem 0 0;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.status-card__note {
-  margin: 0.25rem 0 0;
-  font-size: 0.75rem;
-  color: var(--muted);
-}
-
-.status-card--warn .status-card__value { color: var(--warn); }
 
 .transit-grid {
   display: grid;
@@ -403,7 +354,7 @@ a { color: inherit; text-decoration: none; }
   width: 88%;
   padding: 2rem;
   background: var(--surface);
-  box-shadow: 0 24px 64px rgb(30 26 46 / 8%);
+  box-shadow: 0 24px 64px rgb(26 35 50 / 8%);
 }
 
 @media (min-width: 1024px) {
@@ -467,7 +418,7 @@ a { color: inherit; text-decoration: none; }
 
 .path-tile:hover {
   border-color: var(--accent);
-  box-shadow: 0 12px 32px rgb(91 77 122 / 10%);
+  box-shadow: 0 12px 32px rgb(61 90 128 / 10%);
 }
 
 .path-tile__label {
@@ -536,7 +487,7 @@ a { color: inherit; text-decoration: none; }
   width: 82%;
   padding: 1.75rem;
   background: var(--surface);
-  box-shadow: 0 24px 64px rgb(30 26 46 / 10%);
+  box-shadow: 0 24px 64px rgb(26 35 50 / 10%);
 }
 
 @media (min-width: 1024px) {
@@ -600,8 +551,8 @@ a { color: inherit; text-decoration: none; }
 .notice-box {
   margin-top: 1.5rem;
   padding: 1rem 1.25rem;
-  border-left: 3px solid var(--accent-powder);
-  background: rgb(90 143 173 / 6%);
+  border-left: 3px solid var(--accent);
+  background: rgb(61 90 128 / 6%);
   font-size: 0.875rem;
   color: var(--muted);
 }
@@ -633,7 +584,7 @@ a { color: inherit; text-decoration: none; }
 .journey-step__num {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.75rem;
-  color: var(--accent);
+  color: var(--accent-camp);
 }
 
 .journey-step__title {
@@ -649,7 +600,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 
-.secret-badge {
+.pivot-badge {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.3rem 0.7rem;
@@ -728,7 +679,7 @@ a { color: inherit; text-decoration: none; }
 .access-phone a { color: var(--accent); text-decoration: underline; text-underline-offset: 0.15em; }
 .access-actions { display: flex; flex-direction: column; gap: 0.75rem; }
 .btn-map { background: var(--accent); color: #fff; gap: 0.5rem; }
-.btn-map:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgb(91 77 122 / 22%); }
+.btn-map:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgb(61 90 128 / 22%); }
 .btn-map svg { flex-shrink: 0; }
 .footer-location { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border); width: 100%; font-size: 0.8125rem; line-height: 1.65; }
 .footer-location a { color: var(--accent); text-decoration: underline; text-underline-offset: 0.15em; }
