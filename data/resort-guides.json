@@ -29,6 +29,8 @@
     "5":   { "registryId": "tomioka",          "tier": "mock" },
     "96":  { "registryId": "kamifuse",         "tier": "mock" },
     "183": { "registryId": "sanokura",         "tier": "mock" },
-    "6":   { "registryId": "niwa",             "tier": "mock" }
+    "6":   { "registryId": "niwa",             "tier": "mock" },
+    "257": { "registryId": "hijiri-kogen",     "tier": "mock" },
+    "2":   { "registryId": "kamoenokuni",      "tier": "mock" }
   }
 }

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "2026-06-28",
+  "id": "kamoenokuni",
+  "name": { "ja": "上ノ国町民スキー場", "en": "Kaminokuni Town Ski Area" },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": ["Deep Research batch #27", "configs/lp-brief/kamoenokuni.yaml"],
+  "updatedAt": "2026-06-28T09:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": { "src": "images/maps/kamoenokuni-hero.png", "width": 1024, "height": 1024, "viewBox": "0 0 1024 1024" },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-tbar1",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": { "ja": "Tバー1", "en": "T-bar 1" },
+      "shortLabel": { "ja": "T1", "en": "T1" },
+      "meta": { "ja": { "備考": "12–13時休止" }, "en": { "Note": "Break 12:00–13:00" } }
+    },
+    {
+      "id": "lift-tbar2",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": { "ja": "Tバー2", "en": "T-bar 2" },
+      "shortLabel": { "ja": "T2", "en": "T2" },
+      "meta": { "ja": { "備考": "12–13時休止" }, "en": { "Note": "Break 12:00–13:00" } }
+    },
+    {
+      "id": "lift-rope",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": { "ja": "ロープトウ", "en": "Rope tow" },
+      "shortLabel": { "ja": "ロープ", "en": "Rope" },
+      "meta": { "ja": { "備考": "12–13時休止" }, "en": { "Note": "Break 12:00–13:00" } }
+    },
+    {
+      "id": "trail-main",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": { "ja": "メイン", "en": "Main" },
+      "shortLabel": { "ja": "Main", "en": "Main" },
+      "meta": { "ja": { "最長": "約300m" }, "en": { "Longest": "~300m" } }
+    },
+    {
+      "id": "feature-noon-break",
+      "type": "feature",
+      "status": "scheduled",
+      "label": { "ja": "12–13時休止", "en": "Noon break" },
+      "shortLabel": { "ja": "12–13", "en": "12–13" },
+      "meta": { "ja": { "備考": "全リフト停止" }, "en": { "Note": "All lifts stop" } }
+    },
+    {
+      "id": "feature-night",
+      "type": "feature",
+      "status": "open",
+      "label": { "ja": "ナイター", "en": "Night skiing" },
+      "shortLabel": { "ja": "21:00", "en": "21:00" },
+      "meta": { "ja": { "備考": "日曜17:00終了" }, "en": { "Note": "Sun until 17:00" } }
+    }
+  ]
+}

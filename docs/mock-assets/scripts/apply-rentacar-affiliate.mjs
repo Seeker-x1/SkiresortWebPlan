@@ -455,6 +455,51 @@ const RESORT_COPY = {
       rentacarHint: "For Osaka, Nara, and Yoshino drives",
     },
   },
+  kamifuse: {
+    rentacar: "shichinohetowada_station",
+    ja: {
+      rentacarEyebrow: "下北・青森圏",
+      rentacarLink: "七戸十和田駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "大湊・下北半島周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Shimokita · Aomori",
+      rentacarLink: "Book a rental car at Shichinohe-Towada Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Ominato and Shimokita peninsula loops",
+    },
+  },
+  "hijiri-kogen": {
+    rentacar: "kamisuwa_kirigamine_kogen",
+    ja: {
+      rentacarEyebrow: "長野・松本圏",
+      rentacarLink: "松本駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "麻績IC・白馬・志賀周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Nagano · Matsumoto",
+      rentacarLink: "Book a rental car at Matsumoto Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Omachi IC, Hakuba, and Shiga drives",
+    },
+  },
+  kamoenokuni: {
+    rentacar: "hakodate_onuma_matsumae",
+    ja: {
+      rentacarEyebrow: "道南・檜山",
+      rentacarLink: "函館空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "上ノ国・湯ノ岱周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Southern Hokkaido · Hiyama",
+      rentacarLink: "Book a rental car at Hakodate Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Kaminokuni and Yunotai loops",
+    },
+  },
 };
 
 const NEW_DESTINATIONS = {

@@ -1,0 +1,49 @@
+resortId: hijiri-kogen
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 聖高原スキー場
+  en: Hijiri Kogen Ski Area
+region:
+  ja: 長野県麻績村
+  en: Omi, Nagano
+japowResortId: 257
+
+strategy:
+  ja: 混雑回避・家族コスパ
+  en: Uncrowded · family value
+archetype: local-value
+
+audience: domestic-family
+
+hero:
+  tagline:
+    ja: 白馬・志賀の混雑を避け、家族でゆっくり滑れる——県内屈指のコスパ。
+    en: Skip mega-resort crowds—affordable skiing for families.
+  badges: [family, value, panorama]
+
+pillars:
+  - id: value
+    hook: { ja: 休日¥3,000, en: Weekend ¥3,000 }
+  - id: safe
+    hook: { ja: 1基リフト, en: Single lift hub }
+  - id: view
+    hook: { ja: 北アルプスパノラマ, en: Alps panorama }
+
+facts:
+  operator: 麻績村
+  location: 長野県東筑摩郡麻績村麻5889-1
+  phone: "0263-67-2145"
+  lift: 第1ペアリフト321m · 1基
+  courses: A270m · B270m · C260m · そり50m
+  pricing:
+    liftDayAdult: 3000
+    seasonParentChild: 15000
+  hours: "8:40–16:30 · ナイターなし"
+  access:
+    car: 長野道麻績IC約15分 · 駐車場無料
+
+map:
+  sources: ["Deep Research batch #26"]
+  heroImage: images/maps/hijiri-kogen-hero.png
+  copyFrom: kamikawa-nakayama-lp

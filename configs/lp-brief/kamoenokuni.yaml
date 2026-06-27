@@ -1,0 +1,48 @@
+resortId: kamoenokuni
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 上ノ国町民スキー場
+  en: Kaminokuni Town Ski Area
+region:
+  ja: 北海道上ノ国町
+  en: Kaminokuni, Hokkaido
+japowResortId: 2
+
+strategy:
+  ja: 無料 · 12–13時休止
+  en: Free lifts · noon break
+archetype: live-dashboard
+
+audience: both
+
+hero:
+  tagline:
+    ja: リフト無料——12:00–13:00は運行休止。湯ノ岱温泉とセットで。
+    en: Free lifts—full stop 12:00–13:00. Pair with Yunotai onsen.
+  badges: [free, noon-break, night]
+
+pillars:
+  - id: free
+    hook: { ja: 利用料無料, en: Free access }
+  - id: break
+    hook: { ja: 12–13時休止, en: Noon lift break }
+  - id: yunotai
+    hook: { ja: 湯ノ岱温泉, en: Yunotai onsen loop }
+
+facts:
+  operator: 上ノ国町
+  location: 北海道檜山郡上ノ国町字湯ノ岱240
+  phone: "0139-55-2230"
+  lift: Tバー2 · ロープトウ1
+  courses: 全長300m（初100m・中上200m）
+  pricing:
+    liftDayAdult: 0
+  hours: "9:00–21:00（日曜17:00）· 12:00–13:00リフト休止"
+  access:
+    car: 上ノ国駅から車約20分
+
+map:
+  sources: ["Deep Research batch #27"]
+  heroImage: images/maps/kamoenokuni-hero.png
+  copyFrom: kiyosato-lp

@@ -649,6 +649,52 @@
       "affiliates": {
         "rentacar": "hakodate_onuma_matsumae"
       }
+    },
+    {
+      "id": "hijiri-kogen",
+      "slug": "hijiri-kogen-lp",
+      "name": {
+        "ja": "聖高原スキー場",
+        "en": "Hijiri Kogen Ski Area"
+      },
+      "region": {
+        "ja": "長野県麻績村",
+        "en": "Omi, Nagano"
+      },
+      "strategy": {
+        "ja": "混雑回避・家族コスパ",
+        "en": "Uncrowded · family value"
+      },
+      "guidePath": "/hijiri-kogen/",
+      "guideUrl": "https://guides.japowserch.com/hijiri-kogen/",
+      "japowResortId": 257,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "kamisuwa_kirigamine_kogen"
+      }
+    },
+    {
+      "id": "kamoenokuni",
+      "slug": "kamoenokuni-lp",
+      "name": {
+        "ja": "上ノ国町民スキー場",
+        "en": "Kaminokuni Town Ski Area"
+      },
+      "region": {
+        "ja": "北海道上ノ国町",
+        "en": "Kaminokuni, Hokkaido"
+      },
+      "strategy": {
+        "ja": "無料 · 12–13時休止",
+        "en": "Free lifts · noon break"
+      },
+      "guidePath": "/kamoenokuni/",
+      "guideUrl": "https://guides.japowserch.com/kamoenokuni/",
+      "japowResortId": 2,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "hakodate_onuma_matsumae"
+      }
     }
   ],
   "guides": {
