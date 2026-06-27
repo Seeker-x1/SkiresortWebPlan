@@ -25,6 +25,7 @@
     "167": { "registryId": "nishikawa",        "tier": "mock" },
     "59":  { "registryId": "utoro",            "tier": "mock" },
     "83":  { "registryId": "shintoku-yama",    "tier": "mock" },
-    "116": { "registryId": "tayama",           "tier": "mock" }
+    "116": { "registryId": "tayama",           "tier": "mock" },
+    "5":   { "registryId": "tomioka",          "tier": "mock" }
   }
 }

@@ -1,0 +1,60 @@
+resortId: tomioka
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 富岡スキー場
+  en: Tomioka Ski Area
+region:
+  ja: 北海道乙部町
+  en: Otobe, Hokkaido
+japowResortId: 5
+
+strategy:
+  ja: 無料Tバー・21時ナイター
+  en: Free T-bar · night skiing until 21:00
+archetype: local-value
+
+audience: both
+
+hero:
+  tagline:
+    ja: 無料で滑れる稀有なTバー——21時までのナイター付き、乙部町の町営ゲレンデ。
+    en: A rare T-bar and free night skiing until 21:00 on Otobe's municipal hill.
+  badges: [free, t-bar, night]
+
+pillars:
+  - id: tbar
+    hook: { ja: 昭和のTバーリフト, en: Retro T-bar lift }
+  - id: night
+    hook: { ja: 21時までナイター, en: Night skiing until 21:00 }
+  - id: otobe
+    hook: { ja: 温泉×海の幸, en: Onsen · seafood loop }
+
+subPages: []
+
+facts:
+  operator: 乙部町（町営）
+  location: 北海道爾志郡乙部町字富岡131
+  phone: "0139-62-3214"
+  lift: Tバーリフト1基
+  courses: Aコース200m · Bコース160m
+  pricing:
+    liftDayAdult: 0
+  hours: "平日15:00–21:00 · 土日祝・冬休み10:00–21:00（積雪・天候により変動）"
+  access:
+    car: 函館空港から車で約1時間 · 太鼓山スキー場から約15分
+    note: 営業状況は自治体HP依存のため出発前の電話確認推奨
+  nearby:
+    ski: 太鼓山スキー場 · 上ノ国町民スキー場
+    onsen: おとべ温泉郷 いこいの湯 · 光林荘
+    food: しおトンコツラーメン嶋 · Guild Endeavour
+
+map:
+  sources: ["Deep Research batch #24", "configs/lp-brief/tomioka.yaml"]
+  heroImage: images/maps/tomioka-hero.png
+  copyFrom: gokazan-lp
+
+humanReview:
+  - japowResortId 5 = 富岡スキー場（乙部町）
+  - 無料開放・Tバー難易度の表現
+  - 2025-2026シーズン営業日・リフト休止時間

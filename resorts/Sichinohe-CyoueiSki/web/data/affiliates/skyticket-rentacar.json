@@ -60,6 +60,13 @@
         "ja": "盛岡駅",
         "en": "Morioka Station"
       }
+    },
+    "hakodate_onuma_matsumae": {
+      "url": "https://skyticket.jp/rentacar/hokkaido/hakodate_onuma_matsumae/",
+      "label": {
+        "ja": "函館・大沼・松前",
+        "en": "Hakodate · Onuma · Matsumae"
+      }
     }
   }
 }

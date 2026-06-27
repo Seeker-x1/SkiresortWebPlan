@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="tomioka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>富岡スキー場</title>
+  <meta name="description" content="北海道乙部町——無料のTバー、21時までのナイター。A200m・B160mの町営ゲレンデ。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="#" class="logo" data-i18n="logo">富岡スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=tomioka" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="#live" data-i18n="nav.live">本日</a></li>
+          <li><a href="#pass" data-i18n="nav.pass">パス</a></li>
+          <li><a href="#highlights" data-i18n="nav.highlights">魅力</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-tomioka-hero.png" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">北海道乙部町 · 道南日本海</p>
+        <h1 class="hero-title" data-i18n-html="hero.title">富岡<br />スキー場/>スキー場</h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">無料で滑れる、稀有なTバー——21時までのナイター付き町営ゲレンデ。</p>
+        <span class="badge-price" data-i18n="hero.badgePrice">利用料 無料</span>
+        <span class="badge-night" data-i18n="hero.badgeNight">ナイター 〜21:00</span>
+        <span class="badge-xc" data-i18n="hero.badgeXc">Tバー1基</span>
+        <div class="hero-cta">
+          <a href="#pass" class="btn btn-primary" data-i18n="hero.ctaPass">営業時間・料金</a>
+          <a href="#live" class="btn btn-ghost" data-i18n="hero.ctaLive">本日のコンディション</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="live" class="live-dashboard" data-i18n-attr="aria-label:live.ariaLabel">
+      <div class="inner">
+        <div class="live-head">
+          <div>
+            <span class="live-pulse" aria-hidden="true"></span>
+            <span class="live-label">Live</span>
+            <span style="font-size:0.75rem;color:var(--muted);margin-left:0.5rem" data-i18n="live.subtitle">リフト・ナイター・積雪の目安</span>
+          </div>
+          <p class="live-updated" data-i18n="live.updatedAt">更新 6/28 9:00</p>
+        </div>
+        <div class="status-grid">
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.lift1.label">Tバーリフト</p>
+            <p class="status-card__value" data-i18n="live.lift1.value">運行中</p>
+            <p class="status-card__note" data-i18n="live.lift1.note">国内でも稀少（要現地確認）</p>
+          </div>
+          <div class="status-card status-card--warn">
+            <p class="status-card__label" data-i18n="live.lift2.label">ナイター</p>
+            <p class="status-card__value" data-i18n="live.lift2.value">〜21:00</p>
+            <p class="status-card__note" data-i18n="live.lift2.note">平日15:00〜 · 土日祝10:00〜</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.snow.label">積雪</p>
+            <p class="status-card__value" style="color:var(--accent-powder)" data-i18n="live.snow.value">要確認</p>
+            <p class="status-card__note" data-i18n="live.snow.note">出発前に電話確認推奨</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.night.label">コース</p>
+            <p class="status-card__value" data-i18n="live.night.value">A・B 2本</p>
+            <p class="status-card__note" data-i18n="live.night.note">A200m · B160m</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="sanctuary-heading">
+      <div class="inner">
+        <div class="transit-grid">
+          <div class="transit-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-tomioka-night.png"
+                data-i18n-attr="alt:sanctuary.imgAlt"
+                alt="ナイターで照らされた静かなゲレンデ——人のいないパウダーバーン"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="transit-card">
+            <p class="eyebrow" data-i18n="sanctuary.eyebrow">Retro Lift</p>
+            <h2 id="sanctuary-heading" class="heading-lg" data-i18n-html="sanctuary.title">昭和のTバー、<br />今も動く。/>貸切の静けさ。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:28rem" data-i18n="sanctuary.lead">チェアに座らず、雪面のままT字バーに掴まって引き上げられる——日本でも数少ないTバーリフト。最初は難しくても、乗りこなしたときの達成感が、このゲレンデならではの体験です。</p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="sanctuary.specs.0">Tバー1基</li>
+              <li class="spec-tag" data-i18n="sanctuary.specs.1">A200m · B160m</li>
+              <li class="spec-tag" data-i18n="sanctuary.specs.2">ロッジ完備</li>
+            </ul>
+            <div class="notice-box">
+              <strong data-i18n="sanctuary.noticeTitle">滑走の目安：</strong><span data-i18n="sanctuary.noticeBody">Tバーは初心者にはハードルが高め。営業情報は自治体サイトに依存するため、遠方から来る場合は事前の電話確認が安心です。</span>
+            </div>
+            <div class="transit-actions">
+              <a href="#pass" class="btn btn-primary" data-i18n="sanctuary.ctaPass">営業時間・料金</a>
+              <a href="#access" class="btn btn-ghost" data-i18n="nav.access">アクセス</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top" aria-labelledby="paths-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.explore">Explore</p>
+        <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
+        <div class="path-grid">
+          <a href="#pass" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.pass.label">料金</span>
+            <span class="path-tile__title" data-i18n="paths.pass.title">利用料 無料</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#access" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.access.label">アクセス</span>
+            <span class="path-tile__title" data-i18n="paths.access.title">函館から約1時間</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#live" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.today.label">今日</span>
+            <span class="path-tile__title" data-i18n="paths.today.title">リフト・積雪</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#hike" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.hike.label">周遊</span>
+            <span class="path-tile__title" data-i18n="paths.hike.title">温泉×グルメ</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section" aria-labelledby="highlights-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="highlights.eyebrow">ここが違う</p>
+        <h2 id="highlights-heading" class="heading-lg" data-i18n="highlights.title">逆張りの強み</h2>
+
+        <div class="highlight-duet">
+          <article class="highlight-primary">
+            <div class="frame">
+              <img
+                src="lp-mock-tomioka-hero.png"
+                data-i18n-attr="alt:highlights.primary.imgAlt"
+                alt="手つかずのパウダー——こぢんまりしたゲレンデでマイペースに滑走"
+                width="1600"
+                height="1100"
+              />
+            </div>
+            <div class="highlight-primary-body">
+              <h3 data-i18n="highlights.primary.title">無料 × 21時まで × Tバー</h3>
+              <p class="lead" style="margin-top:1rem" data-i18n="highlights.primary.lead">リフト利用料無料のまま、21時までナイター営業——近年値上がり続けるリフト券とは対極の、町営ならではのコスパ。ゲレンデハンターにも「隠れた名所」として知られ始めています。</p>
+              <a href="#" class="btn btn-powder" style="margin-top:2rem" data-i18n="highlights.primary.cta">営業時間・アクセス</a>
+            </div>
+          </article>
+
+          <article class="highlight-secondary">
+            <h3 data-i18n="highlights.secondary.title">クロスカントリー無料</h3>
+            <p class="lead-whisper" style="margin-top:1rem" data-i18n="highlights.secondary.lead">隣接する厚沢部「太鼓山」や上ノ国町民スキー場と組み合わせ、道南の無料町営ゲレンデを一日で回る楽しみ方も。</p>
+            <a href="#" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="highlights.secondary.cta">周辺マップ</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pass" class="section border-top" aria-labelledby="pass-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow" data-i18n="pass.eyebrow">Free · Night Ski</p>
+            <h2 id="pass-heading" class="heading-lg" data-i18n-html="pass.title">無料開放、<br />21時まで。/>3時間の秘密。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="pass.lead">リフト利用料は無料（無料開放）。例年1月上旬〜2月末頃、平日15:00〜21:00・土日祝・冬休み10:00〜21:00（12–13時・17–18時はリフト休止等あり・要確認）。ページ上部で本日の運行目安を確認してから出発してください。</p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="pass.specs.0">利用料 無料</li>
+              <li class="spec-tag" data-i18n="pass.specs.1">ナイター 〜21:00</li>
+              <li class="spec-tag" data-i18n="pass.specs.2">電話 0139-62-3214</li>
+            </ul>
+            <a href="#" class="btn btn-primary" style="margin-top:2rem" data-i18n="pass.cta">営業時間・アクセス</a>
+          </div>
+          <div class="feature-visual">
+            <div class="frame frame--wide">
+              <img
+                src="lp-mock-tomioka-hub.png"
+                data-i18n-attr="alt:pass.imgAlt"
+                alt="富岡スキー場ロッジ——アットホームな町営ベース"
+                width="1600"
+                height="1100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hike" class="section border-top" aria-labelledby="hike-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-visual feature-visual--left">
+            <div class="frame">
+              <img
+                src="lp-mock-tomioka-onsen.png"
+                data-i18n-attr="alt:hike.imgAlt"
+                alt="おとべ温泉郷——スキー後の源泉掛け流し"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="feature-copy feature-copy--right">
+            <p class="eyebrow" data-i18n="hike.eyebrow">After Ski</p>
+            <h2 id="hike-heading" class="heading-lg" data-i18n-html="hike.title">滑ったあとは、<br />温泉と海の幸。/>武器に変える。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="hike.lead">おとべ温泉郷「いこいの湯」（入浴400円・源泉100％掛け流し）、Guild Endeavourのクラフトビールと薪窯ピザ——乙部町内の定番ルート。</p>
+            <p class="lead" style="margin-top:1rem; max-width:32rem" data-i18n="hike.leadCurry">しおトンコツラーメン嶋、宿泊体験施設 光林荘の海鮮料理——無料ゲレンデのあとに回遊しやすい温泉・飲食・宿泊。</p>
+            <a href="#" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="hike.cta">温泉・グルメマップ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tour" class="section border-top" aria-labelledby="tour-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="tour.eyebrow">Otobe Loop</p>
+        <h2 id="tour-heading" class="heading-lg" data-i18n-html="tour.title">乙部ディープ、<br />夕方から夜へ。/>3時間で完結。</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="tour.lead">昼は無料ゲレンデ、夕方は温泉、夜は地元グルメ——富岡を起点に乙部町内を回る半日〜一泊モデル。</p>
+        <span class="secret-badge" data-i18n="tour.badge">OTobe · FREE GROOMER LOOP</span>
+
+        <div class="journey">
+          <div class="journey-step">
+            <p class="journey-step__num">01</p>
+            <p class="journey-step__title" data-i18n="tour.steps.01.title">太鼓山〜富岡</p>
+            <p class="journey-step__body" data-i18n="tour.steps.01.body">無料町営ゲレンデ巡り</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">02</p>
+            <p class="journey-step__title" data-i18n="tour.steps.02.title">富岡スキー場</p>
+            <p class="journey-step__body" data-i18n="tour.steps.02.body">Tバー＋ナイター（無料）</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">03</p>
+            <p class="journey-step__title" data-i18n="tour.steps.03.title">いこいの湯</p>
+            <p class="journey-step__body" data-i18n="tour.steps.03.body">源泉掛け流し（¥400）</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">04</p>
+            <p class="journey-step__title" data-i18n="tour.steps.04.title">Guild Endeavour</p>
+            <p class="journey-step__body" data-i18n="tour.steps.04.body">クラフトビールとピザ</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">05</p>
+            <p class="journey-step__title" data-i18n="tour.steps.05.title">光林荘</p>
+            <p class="journey-step__body" data-i18n="tour.steps.05.body">海鮮ディナー・宿泊（任意）</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.guidesEyebrow">特集</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="common.guidesTitle">特集ページ</h2>
+
+        <ul class="guides-list">
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="true" data-guide="sanctuary">
+              <span data-i18n="guides.sanctuary.title">Tバー完全ガイド</span>
+              <span class="guide-icon" aria-hidden="true">−</span>
+            </button>
+            <div class="guide-panel is-open" id="panel-sanctuary">
+              <p class="lead" data-i18n="guides.sanctuary.body">乗り方のコツ、難易度、達成感——日本でも稀少なTバーリフトを富岡で体験するための基本情報。</p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="workation">
+              <span data-i18n="guides.workation.title">無料ゲレンデハシゴ</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-workation" hidden>
+              <p class="lead" data-i18n="guides.workation.body">太鼓山・上ノ国・富岡——道南の無料町営スキー場を一日で回るモデルコースと営業時間の確認ポイント。</p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="lake">
+              <span data-i18n="guides.lake.title">乙部温泉・グルメ特集</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-lake" hidden>
+              <p class="lead" data-i18n="guides.lake.body">いこいの湯、嶋ラーメン、Guild Endeavour——富岡滑走後の温泉・飲食・宿泊回遊ルート。</p>
+              <div class="hashtags">
+                <span class="hashtag" data-i18n="guides.lake.hashtags.0">#TomiokaTBar</span>
+                <span class="hashtag" data-i18n="guides.lake.hashtags.1">#OtobeOnsen</span>
+                <span class="hashtag" data-i18n="guides.lake.hashtags.2">#FreeNightSki</span>
+              </div>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="access" class="access-section border-top" aria-labelledby="access-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.accessEyebrow">Access</p>
+        <h2 id="access-heading" class="heading-lg" data-i18n="common.location">所在地</h2>
+        <div class="access-grid">
+          <address class="access-address">
+            <span class="access-postal" data-i18n="access.postal">〒049-3511</span>
+            <span class="access-line" data-i18n="access.line">北海道爾志郡乙部町字富岡131</span>
+            <p class="access-places" data-i18n-html="access.places" hidden></p>
+            <p class="access-note" data-i18n="access.note">函館空港から車で約1時間 · 太鼓山スキー場から約15分 · 出発前に電話で営業確認を</p>
+            <p class="access-phone" data-i18n="access.phoneLodge">TEL 0139-62-3214（富岡スキー場管理棟）</p>
+            <p class="access-phone" data-i18n="access.phoneOps">乙部町教育委員会 0139-62-2253</p>
+          </address>
+          <div class="access-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=41.996317,140.17809"
+              class="btn btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="common.googleMap">Google Mapで開く</span>
+            </a>
+            <a href="tel:0195732650" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">道南・函館圏</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">函館空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">乙部・厚沢部・函館周遊向け</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 富岡スキー場（乙部町）— LP案モック</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒049-3511 北海道爾志郡乙部町字富岡131</span> ·
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9B%BD%E8%A8%AD%E5%8D%97%E3%81%B5%E3%82%89%E3%81%AE%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E5%8C%97%E6%B5%B7%E9%81%93%E7%A9%BA%E7%9F%A5%E9%83%A1%E5%8D%97%E5%AF%8C%E8%89%AF%E9%87%8E%E7%94%BA%E5%AD%97%E5%B9%BE%E5%AF%85" target="_blank" rel="noopener noreferrer" data-i18n="common.footerMap">Google Map</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
+  <script src="../_shared/mock-i18n.js"></script>
+  <script>
+    document.querySelectorAll(".guide-trigger").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.guide;
+        const panel = document.getElementById("panel-" + id);
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".guide-trigger").forEach((b) => {
+          b.setAttribute("aria-expanded", "false");
+          b.querySelector(".guide-icon").textContent = "+";
+        });
+        document.querySelectorAll(".guide-panel").forEach((p) => {
+          p.classList.remove("is-open");
+          p.hidden = true;
+        });
+
+        if (!isOpen) {
+          btn.setAttribute("aria-expanded", "true");
+          btn.querySelector(".guide-icon").textContent = "−";
+          panel.classList.add("is-open");
+          panel.hidden = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

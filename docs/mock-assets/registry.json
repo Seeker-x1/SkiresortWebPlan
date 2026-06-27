@@ -557,6 +557,29 @@
       "affiliates": {
         "rentacar": "morioka_station"
       }
+    },
+    {
+      "id": "tomioka",
+      "slug": "tomioka-lp",
+      "name": {
+        "ja": "富岡スキー場",
+        "en": "Tomioka Ski Area"
+      },
+      "region": {
+        "ja": "北海道乙部町",
+        "en": "Otobe, Hokkaido"
+      },
+      "strategy": {
+        "ja": "無料Tバー・21時ナイター",
+        "en": "Free T-bar · night skiing until 21:00"
+      },
+      "guidePath": "/tomioka/",
+      "guideUrl": "https://guides.japowserch.com/tomioka/",
+      "japowResortId": 5,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "hakodate_onuma_matsumae"
+      }
     }
   ],
   "guides": {

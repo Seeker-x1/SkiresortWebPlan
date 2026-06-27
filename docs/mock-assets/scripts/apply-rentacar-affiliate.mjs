@@ -395,6 +395,21 @@ const RESORT_COPY = {
       rentacarHint: "For Appi, Hachimantai, and Tayama drives",
     },
   },
+  tomioka: {
+    rentacar: "hakodate_onuma_matsumae",
+    ja: {
+      rentacarEyebrow: "道南・函館圏",
+      rentacarLink: "函館空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "乙部・厚沢部・函館周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Southern Hokkaido · Hakodate",
+      rentacarLink: "Book a rental car at Hakodate Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Otobe, Atsushibe, and Hakodate drives",
+    },
+  },
 };
 
 const NEW_DESTINATIONS = {
@@ -421,6 +436,10 @@ const NEW_DESTINATIONS = {
   morioka_station: {
     url: "https://skyticket.jp/rentacar/tohoku/iwate/morioka_station/",
     label: { ja: "盛岡駅", en: "Morioka Station" },
+  },
+  hakodate_onuma_matsumae: {
+    url: "https://skyticket.jp/rentacar/hokkaido/hakodate_onuma_matsumae/",
+    label: { ja: "函館・大沼・松前", en: "Hakodate · Onuma · Matsumae" },
   },
 };
 

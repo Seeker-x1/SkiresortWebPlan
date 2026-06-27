@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Tomioka Ski Area",
+    "description": "Otobe, Hokkaido — free skiing on a rare T-bar lift with night skiing until 21:00."
+  },
+  "logo": "Tomioka Ski Area",
+  "hero": {
+    "eyebrow": "Otobe, Hokkaido · Japan Sea coast",
+    "title": "Tomioka<br />Ski Area",
+    "tagline": "Free skiing on a rare T-bar — municipal night skiing until 21:00.",
+    "badgePrice": "Free admission",
+    "badgeNight": "Night ski until 21:00",
+    "badgeXc": "1 T-bar lift",
+    "ctaPass": "Hours & pricing",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Lifts, night skiing, and snow at a glance",
+    "updatedAt": "Updated Jun 28, 9:00",
+    "lift1": {
+      "label": "T-bar lift",
+      "value": "Operating",
+      "note": "Rare in Japan (confirm on site)"
+    },
+    "lift2": {
+      "label": "Night skiing",
+      "value": "Until 21:00",
+      "note": "Weekdays from 15:00 · weekends from 10:00"
+    },
+    "snow": {
+      "label": "Snow",
+      "value": "Check first",
+      "note": "Call ahead recommended"
+    },
+    "night": {
+      "label": "Courses",
+      "value": "A & B",
+      "note": "A 200m · B 160m"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Retro Lift",
+    "title": "A Showa-era T-bar<br />still running.",
+    "lead": "No chair to sit on — you hold the T-bar while sliding uphill on snow. One of Japan's few remaining T-bar lifts. Tough at first, but mastering it is part of the draw.",
+    "specs": [
+      "1 T-bar",
+      "A 200m · B 160m",
+      "Lodge on site"
+    ],
+    "noticeTitle": "Good to know:",
+    "noticeBody": "The T-bar is challenging for beginners. Hours and status rely on the town website — call before a long drive.",
+    "ctaPass": "Hours & pricing",
+    "imgAlt": "T-bar under night lights at Tomioka"
+  },
+  "paths": {
+    "pass": {
+      "label": "Pricing",
+      "title": "Free admission"
+    },
+    "access": {
+      "label": "Access",
+      "title": "~1 hr from Hakodate"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Lifts · snow"
+    },
+    "hike": {
+      "label": "Loop",
+      "title": "Onsen · food"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Free · T-bar · Night ski",
+    "primary": {
+      "title": "Free · until 21:00 · T-bar",
+      "lead": "No lift ticket fee and night skiing until 21:00 — a municipal hill with retro charm that groomer hunters call a hidden gem.",
+      "cta": "Hours & access",
+      "imgAlt": "Compact municipal slopes at Tomioka"
+    },
+    "secondary": {
+      "title": "Free groomer loop",
+      "lead": "Pair with nearby Taiko-yama (Atsushibe) or Kamoenokuni town hill for a day of free municipal skiing in southern Hokkaido.",
+      "cta": "Regional map"
+    }
+  },
+  "pass": {
+    "eyebrow": "Free · Night Ski",
+    "title": "Free admission,<br />open until 21:00.",
+    "lead": "Lift use is free. Typical season: early January through late February. Weekdays 15:00–21:00; weekends and holidays 10:00–21:00 (midday and early-evening lift breaks possible — confirm locally). Check the dashboard at the top of this page before you go.",
+    "specs": [
+      "Free admission",
+      "Night ski until 21:00",
+      "TEL 0139-62-3214"
+    ],
+    "cta": "Hours & access",
+    "imgAlt": "Tomioka ski lodge — small-town base"
+  },
+  "hike": {
+    "eyebrow": "After Ski",
+    "title": "After skiing,<br />onsen and seafood.",
+    "lead": "Otobe Onsen \"Ikoi no Yu\" (¥400, 100% spring water), Guild Endeavour craft beer and wood-fired pizza — local staples after a session.",
+    "leadCurry": "Shio tonkotsu ramen at Shimae, seafood at Kourinso — easy post-ski stops around Otobe.",
+    "cta": "Onsen · food map",
+    "imgAlt": "Otobe onsen — soak after skiing"
+  },
+  "tour": {
+    "eyebrow": "Otobe Loop",
+    "title": "From slopes to<br />evening in Otobe.",
+    "lead": "Free skiing by day, hot springs at dusk, local food at night — a half-day to overnight loop starting at Tomioka.",
+    "badge": "OTobe · FREE GROOMER LOOP",
+    "steps": {
+      "01": {
+        "title": "Taiko-yama · Tomioka",
+        "body": "Free municipal groomer hop"
+      },
+      "02": {
+        "title": "Tomioka Ski Area",
+        "body": "T-bar + night ski (free)"
+      },
+      "03": {
+        "title": "Ikoi no Yu",
+        "body": "Spring-water bath (¥400)"
+      },
+      "04": {
+        "title": "Guild Endeavour",
+        "body": "Craft beer & pizza"
+      },
+      "05": {
+        "title": "Kourinso",
+        "body": "Seafood dinner · stay (optional)"
+      }
+    }
+  },
+  "guides": {
+    "sanctuary": {
+      "title": "T-bar guide",
+      "body": "How to ride, what to expect, and why skiers seek out this rare lift at Tomioka."
+    },
+    "workation": {
+      "title": "Free groomer hop",
+      "body": "Taiko-yama, Kamoenokuni, and Tomioka — a one-day loop of free town hills in southern Hokkaido."
+    },
+    "lake": {
+      "title": "Otobe onsen & food",
+      "body": "Ikoi no Yu, Shimae ramen, Guild Endeavour — where to go after skiing at Tomioka.",
+      "hashtags": [
+        "#TomiokaTBar",
+        "#OtobeOnsen",
+        "#FreeNightSki"
+      ]
+    }
+  },
+  "access": {
+    "postal": "049-3511, Japan",
+    "line": "131 Tomioka, Otobe, Shiriuchi-gun, Hokkaido",
+    "note": "~1 hr by car from Hakodate Airport · ~15 min from Taiko-yama Ski Area · call ahead to confirm operations",
+    "phoneLodge": "TEL 0139-62-3214 (Tomioka Ski Area office)",
+    "phoneOps": "Otobe Board of Education 0139-62-2253",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>爾志郡<rt>Shiriuchi-gun</rt></ruby></span><span class=\"place-unit\"><ruby>乙部町<rt>Otobe</rt></ruby></span>",
+    "rentacarEyebrow": "Southern Hokkaido · Hakodate",
+    "rentacarLink": "Book a rental car at Hakodate Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Otobe, Atsushibe, and Hakodate drives"
+  },
+  "footer": {
+    "copyright": "© Tomioka Ski Area (Otobe) — LP mock",
+    "location": "049-3511 · 131 Tomioka, Otobe, Hokkaido"
+  }
+}
