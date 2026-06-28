@@ -136,6 +136,30 @@ tr:last-child td { border-bottom: none; }
   text-underline-offset: 0.15em;
 }
 
+.hub-empty {
+  color: var(--muted);
+}
+
+.hub-section {
+  margin: 2.5rem 0 0;
+}
+
+.hub-section-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.hub-section-lead {
+  margin: 0 0 1rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.hub-section .hub-table-wrap {
+  margin-top: 0;
+}
+
 .note {
   padding: 2rem 0 4rem;
   font-size: 0.8125rem;

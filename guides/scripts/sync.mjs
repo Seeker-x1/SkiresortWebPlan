@@ -89,12 +89,24 @@ function rewriteJs(content, filename) {
 
   if (filename === "mock-hub.js") {
     out = out.replace(
-      'const href = `${r.slug}/index.html${locale === "en" ? "?lang=en" : ""}`;',
-      'const href = `/${r.id}/${locale === "en" ? "?lang=en" : ""}`;',
+      'const lpHref = `${r.slug}/index.html${locale === "en" ? "?lang=en" : ""}`;',
+      'const lpHref = `/${r.id}/${locale === "en" ? "?lang=en" : ""}`;',
     );
     out = out.replace(
-      'href="map.html?resort=${r.id}',
-      'href="/map.html?resort=${r.id}',
+      'const mapHref = `map.html?resort=${r.id}${locale === "en" ? "&lang=en" : ""}`;',
+      'const mapHref = `/map.html?resort=${r.id}${locale === "en" ? "&lang=en" : ""}`;',
+    );
+    out = out.replace(
+      'const areaHref = `area-map.html?resort=${m.resortId}${locale === "en" ? "&lang=en" : ""}`;',
+      'const areaHref = `/area-map.html?resort=${m.resortId}${locale === "en" ? "&lang=en" : ""}`;',
+    );
+    out = out.replace(
+      'fetch("registry.json")',
+      'fetch("/registry.json")',
+    );
+    out = out.replace(
+      'fetch("maps-index.json")',
+      'fetch("/maps-index.json")',
     );
   }
 
@@ -170,6 +182,48 @@ function buildResortGuidesHandoff(registry, resortGuidesData) {
     baseUrl: resortGuidesData.baseUrl,
     defaultLocale: resortGuidesData.defaultLocale,
     guides,
+  };
+}
+
+function buildMapsIndex(registry) {
+  const mapsDir = join(MOCK_ROOT, "data", "maps");
+  const byId = new Map(registry.resorts.map((r) => [r.id, r]));
+  const resortMaps = [];
+  const areaMaps = [];
+
+  for (const file of readdirSync(mapsDir)) {
+    if (!file.endsWith(".json")) continue;
+    const base = file.slice(0, -".json".length);
+    if (base.endsWith("-area")) {
+      const resortId = base.slice(0, -"-area".length);
+      const resort = byId.get(resortId);
+      if (!resort) continue;
+      areaMaps.push({
+        resortId,
+        japowResortId: resort.japowResortId ?? null,
+        name: resort.name,
+        region: resort.region,
+      });
+      continue;
+    }
+    const resort = byId.get(base);
+    if (!resort) continue;
+    resortMaps.push({
+      id: resort.id,
+      japowResortId: resort.japowResortId ?? null,
+      name: resort.name,
+      region: resort.region,
+    });
+  }
+
+  const byJapow = (a, b) => (a.japowResortId ?? 9999) - (b.japowResortId ?? 9999);
+  resortMaps.sort(byJapow);
+  areaMaps.sort(byJapow);
+
+  return {
+    schemaVersion: "2026-06-28",
+    resortMaps,
+    areaMaps,
   };
 }
 
@@ -297,7 +351,9 @@ function main() {
 
   // JAPOWSERCH-facing registry + resort-guides handoff
   const extended = buildRegistry(registry);
+  const mapsIndex = buildMapsIndex(registry);
   writeFileSync(join(OUT, "registry.json"), JSON.stringify(extended, null, 2) + "\n", "utf8");
+  writeFileSync(join(OUT, "maps-index.json"), JSON.stringify(mapsIndex, null, 2) + "\n", "utf8");
   const resortGuidesHandoff = buildResortGuidesHandoff(registry, resortGuides.data);
   writeFileSync(
     join(OUT, "resort-guides.json"),
@@ -333,7 +389,7 @@ function main() {
     "utf8",
   );
 
-  console.log(`\n✓ guides/public ready (${extended.resorts.length} resorts)`);
+  console.log(`\n✓ guides/public ready (${extended.resorts.length} resorts, ${mapsIndex.resortMaps.length} trail maps, ${mapsIndex.areaMaps.length} area maps)`);
   console.log(`  Hub:     ${HOST}/`);
   console.log(`  Example: ${HOST}/biei/`);
   console.log(`  Registry: ${HOST}/registry.json`);

@@ -1,12 +1,17 @@
 {
   "meta": {
-    "title": "Ski Resort Guides — 39 Resorts",
-    "description": "Guides for ski areas in Hokkaido, Tohoku, Yamagata, Niigata, Nagano, and Ishikawa. Resort info, access, and trail maps."
+    "title": "Ski Resort Guides — {count} resorts · {mapCount} trail maps",
+    "description": "Index of resort guides and illustrated trail maps. Open access info and lift maps from one list."
   },
   "hero": {
     "eyebrow": "JAPOWSERCH",
-    "title": "Ski Resort Guides<br />39 Resorts",
-    "lead": "Open each resort guide page."
+    "title": "Ski Resort Guides<br />{count} resorts · {mapCount} maps",
+    "lead": "Open each guide and resort map from this index."
+  },
+  "sections": {
+    "guides": "Guides",
+    "areaMaps": "Area maps",
+    "areaMapsLead": "Food, onsen, and hub layers on Leaflet maps."
   },
   "table": {
     "id": "Snow List ID",
@@ -14,7 +19,8 @@
     "region": "Region",
     "strategy": "Highlights",
     "preview": "Guide",
-    "map": "Map"
+    "map": "Trail map",
+    "areaMap": "Area map"
   },
   "back": "Back to guides",
   "lang": {

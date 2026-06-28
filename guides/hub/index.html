@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>スキー場ガイド — 11施設</title>
-  <meta name="description" content="北海道・東北・新潟のスキー場ガイド。" />
+  <title>スキー場ガイド</title>
+  <meta name="description" content="スキー場ガイドとゲレンデマップの索引。" />
   <link rel="stylesheet" href="_shared/mock-hub.css" />
   <link rel="stylesheet" href="_shared/mock-i18n.css" />
 </head>
@@ -12,7 +12,7 @@
   <header class="inner header-row">
     <div>
       <p class="eyebrow" data-i18n="hero.eyebrow">JAPOWSERCH</p>
-      <h1 class="hero-title" data-i18n-html="hero.title">スキー場ガイド<br />11施設</h1>
+      <h1 class="hero-title" data-i18n-html="hero.title">スキー場ガイド</h1>
     </div>
     <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
       <button type="button" data-lang-switch="ja" aria-pressed="true">JA</button>
@@ -21,22 +21,44 @@
   </header>
 
   <main class="inner">
-    <p class="lead" data-i18n="hero.lead">各スキー場のガイドページへ。</p>
+    <p class="lead" data-i18n="hero.lead">各スキー場のガイドとゲレンデマップへ。</p>
 
-    <div class="hub-table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th data-i18n="table.id">施設番号</th>
-            <th data-i18n="table.name">施設名</th>
-            <th data-i18n="table.region">地域</th>
-            <th data-i18n="table.strategy">特徴</th>
-            <th data-i18n="table.preview">ガイド</th>
-          </tr>
-        </thead>
-        <tbody id="resort-table-body"></tbody>
-      </table>
-    </div>
+    <section class="hub-section" aria-labelledby="hub-guides-heading">
+      <h2 class="hub-section-title" id="hub-guides-heading" data-i18n="sections.guides">ガイド一覧</h2>
+      <div class="hub-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th data-i18n="table.id">施設番号</th>
+              <th data-i18n="table.name">施設名</th>
+              <th data-i18n="table.region">地域</th>
+              <th data-i18n="table.strategy">特徴</th>
+              <th data-i18n="table.preview">ガイド</th>
+              <th data-i18n="table.map">マップ</th>
+            </tr>
+          </thead>
+          <tbody id="resort-table-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="hub-section" id="hub-area-maps-section" hidden aria-labelledby="hub-area-maps-heading">
+      <h2 class="hub-section-title" id="hub-area-maps-heading" data-i18n="sections.areaMaps">周辺マップ</h2>
+      <p class="hub-section-lead" data-i18n="sections.areaMapsLead">飲食・温泉・拠点を重ねた周辺マップ。</p>
+      <div class="hub-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th data-i18n="table.id">施設番号</th>
+              <th data-i18n="table.name">施設名</th>
+              <th data-i18n="table.region">地域</th>
+              <th data-i18n="table.areaMap">周辺マップ</th>
+            </tr>
+          </thead>
+          <tbody id="area-map-table-body"></tbody>
+        </table>
+      </div>
+    </section>
   </main>
 
   <script src="_shared/mock-hub.js"></script>

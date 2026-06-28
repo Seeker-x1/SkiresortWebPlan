@@ -61,7 +61,7 @@
 
   const UI = {
     ja: {
-      back: "← LPに戻る",
+      back: "← トップに戻る",
       mapTitle: "ゲレンデマップ",
       status: "運行状況",
       lifts: "リフト",
@@ -80,7 +80,7 @@
       reset: "表示をリセット",
     },
     en: {
-      back: "← Back to LP",
+      back: "← Back to top",
       mapTitle: "Resort map",
       status: "Operations",
       lifts: "Lifts",
@@ -110,7 +110,7 @@
 
   const el = {
     title: document.getElementById("map-resort-name"),
-    back: document.getElementById("map-back-link"),
+    back: document.getElementById("map-top-link"),
     stage: document.getElementById("map-stage"),
     list: document.getElementById("map-list"),
     detail: document.getElementById("map-detail"),

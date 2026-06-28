@@ -18,8 +18,7 @@
 
   const UI = {
     ja: {
-      backHub: "← 索引",
-      backLp: "← LPに戻る",
+      backTop: "← トップに戻る",
       title: "周辺マップ",
       lead: "町民スキー場を起点に、周辺の飲食・温泉・拠点を重ねて回遊を設計",
       filterAll: "全表示",
@@ -74,8 +73,7 @@
       railLabel: "周辺スポット",
     },
     en: {
-      backHub: "← Index",
-      backLp: "← Back to guide",
+      backTop: "← Back to top",
       title: "Area map",
       lead: "Layer food, onsen, and hubs around Biei Town Ski Area",
       filterAll: "Show all",
@@ -194,8 +192,7 @@
     title: document.getElementById("area-rail-title"),
     lead: document.getElementById("area-rail-lead"),
     resortName: document.getElementById("area-resort-name"),
-    backLink: document.getElementById("area-back-link"),
-    hubLink: document.getElementById("area-hub-link"),
+    topLink: document.getElementById("area-top-link"),
     filters: document.getElementById("area-filters"),
     filterHint: document.getElementById("area-filter-hint"),
     disclaimer: document.getElementById("area-disclaimer"),
@@ -884,14 +881,10 @@
     if (el.lead) el.lead.textContent = t("lead");
     if (el.resortName) el.resortName.textContent = pick(mapData.name);
 
-    const lpBack = `${resortId}-lp/${locale === "en" ? "?lang=en" : ""}`;
-    if (el.backLink) {
-      el.backLink.href = lpBack;
-      el.backLink.textContent = t("backLp");
-    }
-    if (el.hubLink) {
-      el.hubLink.href = `index.html${locale === "en" ? "?lang=en" : ""}`;
-      el.hubLink.textContent = t("backHub");
+    const lpTop = `${resortId}-lp/${locale === "en" ? "?lang=en" : ""}`;
+    if (el.topLink) {
+      el.topLink.href = lpTop;
+      el.topLink.textContent = t("backTop");
     }
     if (el.rail) el.rail.setAttribute("aria-label", t("railLabel"));
   }
