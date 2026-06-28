@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "2026-06-28",
+  "id": "tono-akabane",
+  "name": {
+    "ja": "遠野市赤羽根スキー場",
+    "en": "Tono City Akabane Ski Area"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "tono-sks.com",
+    "LP batch #42",
+    "configs/lp-brief/tono-akabane.yaml"
+  ],
+  "updatedAt": "2026-06-28T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/tono-akabane-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-rope-1",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": { "ja": "第1ロープトゥ", "en": "Rope tow 1" },
+      "shortLabel": { "ja": "1", "en": "1" },
+      "meta": {
+        "ja": { "種別": "アンヴァーリフト", "備考": "運行は要確認" },
+        "en": { "Type": "Surface tow", "Note": "Confirm operations" }
+      }
+    },
+    {
+      "id": "lift-rope-2",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": { "ja": "第2ロープトゥ", "en": "Rope tow 2" },
+      "shortLabel": { "ja": "2", "en": "2" },
+      "meta": {
+        "ja": { "種別": "アンヴァーリフト" },
+        "en": { "Type": "Surface tow" }
+      }
+    },
+    {
+      "id": "lift-rope-3",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": { "ja": "第3ロープトゥ", "en": "Rope tow 3" },
+      "shortLabel": { "ja": "3", "en": "3" },
+      "meta": {
+        "ja": { "種別": "アンヴァーリフト" },
+        "en": { "Type": "Surface tow" }
+      }
+    },
+    {
+      "id": "trail-beginner",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": { "ja": "初心者コース", "en": "Beginner course" },
+      "shortLabel": { "ja": "初", "en": "Beg" },
+      "meta": {
+        "ja": { "対象": "初心者・ファミリー" },
+        "en": { "For": "Beginners · families" }
+      }
+    },
+    {
+      "id": "trail-kamoshika",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": { "ja": "カモシカコース", "en": "Kamoshika course" },
+      "shortLabel": { "ja": "カモ", "en": "Kam" },
+      "meta": {
+        "ja": { "特徴": "林間", "対象": "中級者" },
+        "en": { "Feature": "Tree run", "For": "Intermediates" }
+      }
+    },
+    {
+      "id": "trail-kabe",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": { "ja": "カベコース", "en": "Kabe course" },
+      "shortLabel": { "ja": "カベ", "en": "Kabe" },
+      "meta": {
+        "ja": { "最大傾斜": "30°", "滑走距離": "約600m" },
+        "en": { "Max pitch": "30°", "Run": "~600 m" }
+      }
+    },
+    {
+      "id": "trail-kids",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "sled",
+      "label": { "ja": "ちびっこ広場", "en": "Kids sled area" },
+      "shortLabel": { "ja": "そり", "en": "Sled" },
+      "meta": {
+        "ja": { "対象": "そり・雪遊び" },
+        "en": { "For": "Sledding · snow play" }
+      }
+    }
+  ]
+}

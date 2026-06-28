@@ -440,6 +440,51 @@ const RESORT_COPY = {
       rentacarHint: "For Kitahiyama, Taisei, and Hakodate drives",
     },
   },
+  "sado-taira": {
+    rentacar: "niigata_airport",
+    ja: {
+      rentacarEyebrow: "佐渡・新潟圏",
+      rentacarLink: "新潟空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "両津港フェリー連携・島内周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Sado · Niigata gateway",
+      rentacarLink: "Book a rental car at Niigata Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Ryotsu ferry link and island drives",
+    },
+  },
+  "monbetsu-ooyama": {
+    rentacar: "memanbetsu_airport",
+    ja: {
+      rentacarEyebrow: "オホーツク圏",
+      rentacarLink: "女満別空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "紋別・網走・流氷観光周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Okhotsk region",
+      rentacarLink: "Book a rental car at Memanbetsu Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Mombetsu, Abashiri, and drift-ice touring",
+    },
+  },
+  katsurasawa: {
+    rentacar: "chitose_international_airport",
+    ja: {
+      rentacarEyebrow: "新千歳＋レンタカー",
+      rentacarLink: "新千歳空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "札幌・三笠・桂沢湖周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "New Chitose + rental car",
+      rentacarLink: "Book a rental car at New Chitose Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Sapporo, Mikasa, and Lake Katsurazawa loops",
+    },
+  },
   horaguchi: {
     rentacar: "kansai_international_airport",
     ja: {
@@ -500,6 +545,321 @@ const RESORT_COPY = {
       rentacarHint: "For Kaminokuni and Yunotai loops",
     },
   },
+  yunodai: {
+    rentacar: "shinjo_station",
+    ja: {
+      rentacarEyebrow: "新幹線＋レンタカー",
+      rentacarLink: "新庄駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "肘折温泉・湯の台周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Shinkansen + rental car",
+      rentacarLink: "Book a rental car at Shinjo Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Hijiori Onsen and Yunodai loops",
+    },
+  },
+  matsushiro: {
+    rentacar: "niigata_airport",
+    ja: {
+      rentacarEyebrow: "新潟圏ドライブ",
+      rentacarLink: "新潟空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "まつだい・松之山・越後妻有周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Niigata region drive",
+      rentacarLink: "Book a rental car at Niigata Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Matsudai, Matsunoyama, and Echigo-Tsumari loops",
+    },
+  },
+  iouzan: {
+    rentacar: "komatsu_airport_kanazawa",
+    ja: {
+      rentacarEyebrow: "金沢観光圏",
+      rentacarLink: "小松空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "金沢市街・湯涌温泉周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Kanazawa gateway",
+      rentacarLink: "Book a rental car at Komatsu Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Kanazawa city and Yuwa Onsen loops",
+    },
+  },
+  hirogawara: {
+    rentacar: "kansai_international_airport",
+    ja: {
+      rentacarEyebrow: "関西発",
+      rentacarLink: "関西空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "京都·鞍馬·貴船周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "From Kansai",
+      rentacarLink: "Book a rental car at Kansai Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Kyoto, Kurama, and Kibune loops",
+    },
+  },
+  "nanao-korosa": {
+    rentacar: "komatsu_airport_kanazawa",
+    ja: {
+      rentacarEyebrow: "北陸·能登圏",
+      rentacarLink: "小松空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "七尾·和倉温泉·能登周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Hokuriku · Noto",
+      rentacarLink: "Book a rental car at Komatsu Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Nanao, Wakura Onsen, and Noto drives",
+    },
+  },
+  wakamatsu: {
+    rentacar: "memanbetsu_airport",
+    ja: {
+      rentacarEyebrow: "オホーツク圏",
+      rentacarLink: "女満別空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "北見・網走・オホーツク周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Okhotsk region",
+      rentacarLink: "Book a rental car at Memanbetsu Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Kitami, Abashiri, and Okhotsk loops",
+    },
+  },
+  banjoga: {
+    rentacar: "kamisuwa_kirigamine_kogen",
+    ja: {
+      rentacarEyebrow: "長野・上田圏",
+      rentacarLink: "上諏訪・霧ヶ峰でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "上田・菅平・美ヶ原周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Nagano · Ueda region",
+      rentacarLink: "Book a rental car at Kamisuwa · Kirigamine",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Ueda, Sugadaira, and Utsukushigahara loops",
+    },
+  },
+  abirayama: {
+    rentacar: "chitose_international_airport",
+    ja: {
+      rentacarEyebrow: "新千歳＋レンタカー",
+      rentacarLink: "新千歳空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "安平・苫小牧・空港前後の雪遊び向け",
+    },
+    en: {
+      rentacarEyebrow: "New Chitose + rental car",
+      rentacarLink: "Book a rental car at New Chitose Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Abira, Tomakomai, and pre/post-flight snow loops",
+    },
+  },
+  "tono-akabane": {
+    rentacar: "morioka_station",
+    ja: {
+      rentacarEyebrow: "岩手・遠野圏",
+      rentacarLink: "盛岡駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "遠野・釜石・花巻周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Iwate · Tono region",
+      rentacarLink: "Book a rental car at Morioka Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Tono, Kamaishi, and Hanamaki loops",
+    },
+  },
+  toshigamine: {
+    rentacar: "yamaguchi_ube_airport",
+    ja: {
+      rentacarEyebrow: "中国・山口圏",
+      rentacarLink: "山口宇部空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "阿東・津和野周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Chugoku · Yamaguchi",
+      rentacarLink: "Book a rental car at Yamaguchi Ube Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Ato and Tsuwano loops",
+    },
+  },
+  hirogawara: {
+    rentacar: "kansai_international_airport",
+    ja: {
+      rentacarEyebrow: "京都·洛北圏",
+      rentacarLink: "関西空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "京都市内·鞍馬·貴船周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Kyoto · Rakuhoku",
+      rentacarLink: "Book a rental car at Kansai Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Kyoto city, Kurama, and Kibune loops",
+    },
+  },
+  "nanao-korosa": {
+    rentacar: "komatsu_airport_kanazawa",
+    ja: {
+      rentacarEyebrow: "能登·北陸圏",
+      rentacarLink: "小松空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "七尾·能登半島周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Noto · Hokuriku",
+      rentacarLink: "Book a rental car at Komatsu Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Nanao and Noto Peninsula loops",
+    },
+  },
+  bifuka: {
+    rentacar: "asahikawa_airport",
+    ja: {
+      rentacarEyebrow: "旭川空港圏",
+      rentacarLink: "旭川空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "名寄·士別·美深周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Asahikawa Airport area",
+      rentacarLink: "Book a rental car at Asahikawa Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Nayoro, Shibetsu, and Bifuka loops",
+    },
+  },
+  koyasan: {
+    rentacar: "kansai_international_airport",
+    ja: {
+      rentacarEyebrow: "関西·高野山圏",
+      rentacarLink: "関西空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "高野山·橋本·和歌山周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Kansai · Koyasan",
+      rentacarLink: "Book a rental car at Kansai Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Koyasan, Hashimoto, and Wakayama loops",
+    },
+  },
+  kyowa: {
+    rentacar: "shinjo_station",
+    ja: {
+      rentacarEyebrow: "秋田·大仙圏",
+      rentacarLink: "新庄駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "大仙·協和·秋田市圏周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Akita · Daisen",
+      rentacarLink: "Book a rental car at Shinjo Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Daisen, Kyowa, and Akita city loops",
+    },
+  },
+  "ringo-kyowagoku": {
+    rentacar: "yamaguchi_ube_airport",
+    ja: {
+      rentacarEyebrow: "中国山地圏",
+      rentacarLink: "山口宇部空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "庄原·三次周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Chugoku Mountains",
+      rentacarLink: "Book a rental car at Yamaguchi Ube Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Shobara and Miyoshi loops",
+    },
+  },
+  "chateau-shiozawa": {
+    rentacar: "niigata_airport",
+    ja: {
+      rentacarEyebrow: "湯沢·南魚沼圏",
+      rentacarLink: "新潟空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "塩沢·六日町·湯沢周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Yuzawa · Minami-Uonuma",
+      rentacarLink: "Book a rental car at Niigata Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Shiozawa, Muikamachi, and Yuzawa loops",
+    },
+  },
+  "morioka-ikari": {
+    rentacar: "morioka_station",
+    ja: {
+      rentacarEyebrow: "岩手·盛岡圏",
+      rentacarLink: "盛岡駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "盛岡市街·雫石周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Iwate · Morioka",
+      rentacarLink: "Book a rental car at Morioka Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Morioka city and Shizukuishi loops",
+    },
+  },
+  kaneyama: {
+    rentacar: "shinjo_station",
+    ja: {
+      rentacarEyebrow: "奥会津·只見圏",
+      rentacarLink: "新庄駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "金山町·只見線周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Oku-Aizu · Tadami",
+      rentacarLink: "Book a rental car at Shinjo Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Kaneyama and Tadami Line loops",
+    },
+  },
+  wakamatsu: {
+    rentacar: "memanbetsu_airport",
+    ja: {
+      rentacarEyebrow: "北見·網走圏",
+      rentacarLink: "女満別空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "北見市街·オホーツク周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Kitami · Abashiri",
+      rentacarLink: "Book a rental car at Memanbetsu Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Kitami city and Okhotsk loops",
+    },
+  },
+  banjoga: {
+    rentacar: "kamisuwa_kirigamine_kogen",
+    ja: {
+      rentacarEyebrow: "上田·菅平圏",
+      rentacarLink: "上諏訪·霧ヶ峰でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "菅平高原·上田周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Ueda · Sugadaira",
+      rentacarLink: "Book a rental car at Kamisuwa · Kirigamine",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Sugadaira and Ueda loops",
+    },
+  },
 };
 
 const NEW_DESTINATIONS = {
@@ -535,7 +895,15 @@ const NEW_DESTINATIONS = {
       url: "https://skyticket.jp/rentacar/kansai/kansai_international_airport/",
       label: { ja: "関西空港", en: "Kansai Airport" },
     },
-  };
+    komatsu_airport_kanazawa: {
+      url: "https://skyticket.jp/rentacar/hokuriku/ishikawa/komatsu_airport_kanazawa_airport/",
+      label: { ja: "小松空港", en: "Komatsu Airport" },
+    },
+    yamaguchi_ube_airport: {
+      url: "https://skyticket.jp/rentacar/chugoku/yamaguchi/yamaguchi_ube_airport/",
+      label: { ja: "山口宇部空港", en: "Yamaguchi Ube Airport" },
+    },
+};
 
 function patchIndexHtml(html, copy) {
   if (html.includes("data-skyticket-rentacar-block")) return html;

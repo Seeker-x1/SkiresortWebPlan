@@ -1,0 +1,17 @@
+resortId: koyasan
+schemaVersion: "2026-06-28"
+name:
+  ja: 高野山スキー場
+  en: Koyasan Ski Area
+region:
+  ja: 和歌山県高野町
+  en: Koya, Wakayama
+japowResortId: 419
+strategy:
+  ja: 和歌山唯一の天然雪——世界遺産高野山とつなぐ無料雪遊びとZen & Snow体験。
+  en: Wakayama's only natural snow—free snow play linked to UNESCO Koyasan and Zen & Snow tours.
+archetype: live-dashboard
+map:
+  sources: ["koyasan research", "LP batch #45"]
+  heroImage: images/maps/koyasan-hero.png
+  copyFrom: horaguchi-lp

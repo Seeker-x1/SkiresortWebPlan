@@ -1,0 +1,66 @@
+resortId: matsushiro
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 十日町市松代ファミリースキー場
+  en: Tokamachi City Matsudai Family Ski Resort
+region:
+  ja: 新潟県十日町市
+  en: Tokamachi, Niigata
+japowResortId: 317
+
+strategy:
+  ja: 日本初の独自スケートランプと極上ナイターを誇る、若者とローカルカルチャーの交差点。
+  en: The intersection of youth and local culture, boasting Japan's first unique skate ramp and superb night skiing.
+archetype: local-value
+
+audience: both
+
+hero:
+  tagline:
+    ja: まつだい駅徒歩圏——サーフ・スケートランプと¥1,000ナイターのローカル聖地。
+    en: Steps from Matsudai Station—a local hub with a surf-skate ramp and ¥1,000 night skiing.
+  badges: [ramp, night-ski, local-culture, terrain-park]
+
+pillars:
+  - id: ramp
+    hook: { ja: 日本初のサーフ・スケートランプ, en: Japan's first surf-skate ramp }
+  - id: night
+    hook: { ja: ナイター券¥1,000・圧雪バーン, en: ¥1,000 night ticket · groomed burn }
+  - id: culture
+    hook: { ja: Art × Snow × Skate, en: Art × Snow × Skate }
+
+subPages: []
+
+facts:
+  operator: 十日町市
+  location: 〒942-1526 新潟県十日町市松代5265
+  phone: "025-597-3330"
+  lift: ペアリフト2基（第2リフトは土日祝・ナイター日）
+  courses: 3（初級50%・中級30%・上級20%）
+  elevation: 185–380m（標高差195m）
+  area: 5.8ha
+  maxSlope: 24°
+  pricing:
+    liftDayAdult: 2500
+    nightTicket: 1000
+  parking: 120台無料
+  access:
+    train: 北越急行ほくほく線「まつだい駅」徒歩15〜20分
+    car: 関越道六日町ICから国道253号経由 約50分
+  nearby:
+    onsen: まつだい芝峠温泉 雲海、松之山温泉
+    food: 越後まつだい里山食堂、カールベンクス古民家カフェ 澁い
+    sight: まつだい「農舞台」、松代城跡公園
+
+map:
+  sources: ["matsudai.jp", "LP batch #34", "configs/lp-brief/matsushiro.yaml"]
+  heroImage: images/maps/matsushiro-hero.png
+  copyFrom: shinjo-lp
+
+humanReview:
+  - japowResortId 317
+  - スケートランプ利用料・営業時間
+  - 第2リフト運行日（土日祝・ナイター）
+  - 料金・営業時間（2025-26シーズン）
+  - 英訳の事実確認

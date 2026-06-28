@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "Kanazawa City Iouzan Ski Resort",
+    "description": "~30 minutes from Kanazawa Station—a half-day hub linking snow play and Yuwa Onsen for international visitors."
+  },
+  "logo": "Kanazawa City Iouzan Ski Resort",
+  "nav": {
+    "bundle": "Tickets",
+    "wellness": "After snow"
+  },
+  "hero": {
+    "eyebrow": "Kanazawa, Ishikawa · Mt. Iou · Gateway city",
+    "title": "Kanazawa City<br />Iouzan Ski Resort",
+    "tagline": "~30 minutes from Kanazawa Station—a half-day hub linking snow play and Yuwa Onsen for international visitors.",
+    "badgePrice": "Snow-play focus",
+    "badgeNight": "500 free parking",
+    "badgeStrawberry": "Family",
+    "ctaBundle": "See tickets",
+    "ctaLive": "Operations info"
+  },
+  "live": {
+    "ariaLabel": "Operations information dashboard",
+    "subtitle": "Check Kanazawa City sports portal",
+    "updatedAt": "Confirm snow & lifts before you go",
+    "lift1": {
+      "label": "Lift",
+      "value": "1 pair lift",
+      "note": "Family slope · confirm operation"
+    },
+    "lift2": {
+      "label": "Courses",
+      "value": "Beginner focus",
+      "note": "Intermediate runs closed for now · check city site"
+    },
+    "snow": {
+      "label": "Snow",
+      "value": "Natural snow",
+      "note": "No snowmaking · 100% natural"
+    },
+    "night": {
+      "label": "Slope food",
+      "value": "None",
+      "note": "Route guests to nearby food & onsen"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Kanazawa Snow Play",
+    "title": "A snow-play backyard<br />for a tourism city.",
+    "lead": "A municipal hill inside Iouzan Prefectural Natural Park. Gentle slopes suit children and first-time snow visitors—often uncrowded. Less a freeride destination than a half-day snow add-on to Kanazawa sightseeing.",
+    "specs": [
+      "500 parking spaces · free",
+      "No on-hill restaurant",
+      "~30 min by car from Kanazawa Station"
+    ],
+    "noticeTitle": "Where to check info:",
+    "noticeBody": "Intermediate and advanced course groups are closed for the foreseeable future per city policy. Confirm lift operation, snow, and fees on the Kanazawa City sports portal (kanazawa-sports.jp) before you travel.",
+    "ctaBundle": "Tickets & rental",
+    "imgAlt": "Snow fields and mountain views toward Kanazawa—a snow-play base near a major tourism city"
+  },
+  "paths": {
+    "bundle": {
+      "label": "Tickets",
+      "title": "Affordable municipal pricing"
+    },
+    "access": {
+      "label": "Access",
+      "title": "30 min from Kanazawa"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Lifts · snow · closures"
+    },
+    "food": {
+      "label": "Food",
+      "title": "Morinosato & Yuwa · 4 picks"
+    },
+    "onsen": {
+      "label": "Onsen",
+      "title": "Three Yuwa baths"
+    },
+    "stay": {
+      "label": "Stay",
+      "title": "Kanazawa hub vs Yuwa"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Reframed for snow play",
+    "primary": {
+      "title": "Sledding and beginner slopes for international visitors",
+      "lead": "Many Asian international visitors want snowmen, sledding, and photos more than hardcore skiing. With upper runs closed, repositioning as a Kanazawa Snow Experience for families and overseas FIT is a strategic opportunity.",
+      "cta": "Resort map",
+      "imgAlt": "Sledding and gentle slopes—an international snow-play experience"
+    },
+    "secondary": {
+      "title": "Short runs, longer trip value",
+      "lead": "The weakness of short vertical is offset by a half-day loop: Yuwa Onsen, Edo Village, and Morinosato gyoza—raising spend across the whole area.",
+      "cta": "Tickets & rental"
+    }
+  },
+  "bundle": {
+    "eyebrow": "Pricing",
+    "title": "Low-cost municipal<br />snow play.",
+    "lead": "Fees and season dates vary with snow conditions—check the official portal. The strategy report also proposes visitor packages bundling sleds, boots, and wear (e.g. ¥5,000).",
+    "specs": [
+      "500 spaces · free parking",
+      "No slope food · dine nearby",
+      "Intermediate runs closed"
+    ],
+    "cta": "Check city official site",
+    "imgAlt": "Parking and snow-play zone—500 free spaces at a municipal hill"
+  },
+  "wellness": {
+    "eyebrow": "After Snow",
+    "title": "Afternoon in<br />Yuwa Onsen.",
+    "lead": "Yuwa Onsen—1,300 years of history. Shirasagi-no-yu public bath and Kanazawa Yuwaku Edo Village turn the lack of slope dining into a regional circuit strength.",
+    "leadStation": "~15 minutes by car from Iouzan to Yuwa—the core of the Snow & Onsen Kanazawa half-day trip.",
+    "cta": "Food & onsen guide",
+    "imgAlt": "Snow-view bath at Yuwa Onsen—classic après snow play"
+  },
+  "tour": {
+    "eyebrow": "Half-Day Model",
+    "title": "Add half a day of snow<br />to Kanazawa sightseeing.",
+    "lead": "Kenrokuen and Higashi Chaya in the morning plan? Add Iouzan snow play, Morinosato gyoza for lunch, then Edo Village and Shirasagi-no-yu in the afternoon.",
+    "badge": "SNOW · GYOZA · ONSEN · KANAZAWA",
+    "steps": {
+      "01": {
+        "title": "Kanazawa Station · city",
+        "body": "~30 min by car or bus"
+      },
+      "02": {
+        "title": "Arrive at Iouzan",
+        "body": "500 free parking spaces"
+      },
+      "03": {
+        "title": "2 hours snow play",
+        "body": "Sleds · beginner slope · photos"
+      },
+      "04": {
+        "title": "Morinosato lunch",
+        "body": "7th Gyoza and more"
+      },
+      "05": {
+        "title": "Yuwa Onsen",
+        "body": "Edo Village · Shirasagi-no-yu"
+      }
+    }
+  },
+  "guides": {
+    "ecosystem": {
+      "title": "Family slopes & 500-space parking",
+      "body": "Gentle runs, sled zones, and 500 free parking spaces—right scale for a visitor's first snow. With upper runs closed, snowshoe and forest-guide reuse of unused terrain is a mid-term option."
+    },
+    "access": {
+      "title": "~30 min from Kanazawa Station · Komatsu Airport link",
+      "body": "~30 minutes by car from central Kanazawa. Rental car from Komatsu Airport loops Kenrokuen → Iouzan → Yuwa Onsen easily. Winter shuttle and MaaS integration are mid-term goals."
+    },
+    "green": {
+      "title": "Natural park in summer, snow play in winter",
+      "body": "Iouzan Prefectural Natural Park—hiking and camping (Iou-no-Sato) in green season, municipal skiing in winter. Build the Iouzan brand year-round.",
+      "hashtags": [
+        "#KanazawaSnow",
+        "#YuwaOnsen",
+        "#KanazawaHalfDay"
+      ]
+    }
+  },
+  "access": {
+    "postal": "921-8031, Japan",
+    "line": "Yasuhara, Kanazawa, Ishikawa (Mt. Iou)",
+    "note": "~30 min by car from Kanazawa Station · ~1 hour from Komatsu Airport · 500 free parking",
+    "phone": "TEL 076-299-5151 (Kanazawa City Sports Promotion Division)",
+    "phoneBus": "",
+    "places": "<span class=\"place-unit\"><ruby>石川県<rt>Ishikawa</rt></ruby></span><span class=\"place-unit\"><ruby>金沢市<rt>Kanazawa</rt></ruby></span><span class=\"place-unit\"><ruby>安原町<rt>Yasuhara</rt></ruby></span><span class=\"place-unit\">（<ruby>医王山<rt>Mt. Iou</rt></ruby>）</span>",
+    "rentacarEyebrow": "Kanazawa gateway",
+    "rentacarLink": "Book a rental car at Komatsu Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Kanazawa city and Yuwa Onsen loops"
+  },
+  "footer": {
+    "copyright": "© Kanazawa City Iouzan Ski Resort — LP mock",
+    "location": "921-8031 · Yasuhara, Kanazawa, Ishikawa (Mt. Iou)"
+  },
+  "nearbyFood": {
+    "backLink": "Back to Iouzan LP",
+    "hero": {
+      "eyebrow": "Food · Circuit",
+      "title": "No slope cafeteria—<br />so you explore.",
+      "tagline": "Morinosato to Yuwa—four lunch picks"
+    },
+    "notice": "Hours and closures are on each venue's official site.",
+    "introTitle": "Snow in the morning, Kanazawa flavors at noon",
+    "introLead": "No on-hill dining means routing guests to local food—the heart of the half-day model.",
+    "introBody": "From Morinosato gyoza to Yuwa set meals and Kanazawa regional cuisine.",
+    "spotsEyebrow": "4 picks",
+    "spotsTitle": "Four nearby food picks",
+    "spotsLead": "Easy to chain Iouzan → Morinosato → Yuwa.",
+    "spots": {
+      "slope": {
+        "tag": "Morinosato · gyoza · Chinese",
+        "title": "7th Gyoza Shop",
+        "lead": "Kanazawa's soul-food gyoza with huge popularity. Drop from Iouzan into Morinosato—affordable, filling lunch."
+      },
+      "prison": {
+        "tag": "Yuwa · Japanese · set meals",
+        "title": "Takao Shokudo",
+        "lead": "A Yuwa Onsen town staple. Warm local flavors—pairs with Edo Village and Shirasagi-no-yu."
+      },
+      "soba": {
+        "tag": "Futamatamachi · river fish · mountain veg",
+        "title": "Iwana Chaya",
+        "lead": "Regional river fish and mountain vegetables—deeper Kanazawa backcountry dining after snow play."
+      },
+      "crab": {
+        "tag": "Yuwa · café",
+        "title": "Cafe Lente",
+        "lead": "A Yuwa café for light lunch and coffee before an afternoon Edo Village stroll."
+      }
+    }
+  },
+  "nearbyOnsen": {
+    "backLink": "Back to Iouzan LP",
+    "hero": {
+      "eyebrow": "Onsen · Yuwa",
+      "title": "Yuwa Onsen—<br />Kanazawa's retreat.",
+      "tagline": "1,300 years of hot springs after snow play"
+    },
+    "notice": "Fees and hours are on each facility's official site.",
+    "introTitle": "After snow, Shirasagi-no-yu",
+    "introLead": "~15 minutes from Iouzan—the afternoon chapter of the Snow & Onsen Kanazawa half-day trip.",
+    "introBody": "Three representative Yuwa picks from day-trip baths to stays.",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "Three Yuwa Onsen picks",
+    "spotsLead": "Recovery after snow play and the core of Kanazawa touring.",
+    "spots": {
+      "kohanso": {
+        "tag": "Public bath · day trip · 1,300 years",
+        "title": "Yuwa Onsen Public Bath Shirasagi-no-yu",
+        "lead": "The symbol of Yuwa Onsen. Day-trip bathing to warm cold legs—room for lift-ticket discount tie-ins with the ski area."
+      },
+      "kanko": {
+        "tag": "Natural hot spring · Kanazawa city",
+        "title": "Share Kanazawa Natural Hot Spring",
+        "lead": "Natural baths in Kanazawa before returning to the city—an in-town recovery option."
+      },
+      "station": {
+        "tag": "Regional cuisine · day bath",
+        "title": "Zenigame (day-trip bathing)",
+        "lead": "A Itakaya classic. Regional cuisine plus day-trip bathing—food and hot springs together in Yuwa."
+      }
+    }
+  },
+  "corridorStay": {
+    "backLink": "Back to Iouzan LP",
+    "hero": {
+      "eyebrow": "Stay · Strategy",
+      "title": "Sleep near Kanazawa Station,<br />or in Yuwa.",
+      "tagline": "Sightseeing hub vs onsen stay"
+    },
+    "notice": "Rooms and rates are on each property's booking site.",
+    "introTitle": "Two base camps",
+    "introLead": "Kenrokuen and chaya districts from Kanazawa Station hotels; snow-plus-onsen focus from Yuwa lodges—choose by trip theme.",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "Three lodging picks",
+    "spotsLead": "Kanazawa city vs Yuwa Onsen.",
+    "regions": {
+      "lakeside": "Yuwa Onsen (snow + hot springs)",
+      "city": "Kanazawa city (sightseeing hub)"
+    },
+    "spots": {
+      "kohanso": {
+        "tag": "Yuwa · 1,300 years · near Edo Village",
+        "title": "Yuwa Onsen lodges",
+        "lead": "Iouzan → Yuwa → Kanazawa city next day—stay in Yuwa for a snow-and-onsen two-night model."
+      },
+      "kanko": {
+        "tag": "Kanazawa Station · sightseeing base",
+        "title": "Hotels near Kanazawa Station / Korinbo",
+        "lead": "Walkable to Kenrokuen and Higashi Chaya. Half-day Iouzan, Kanazawa food and culture at night—the classic choice for international visitors."
+      },
+      "station": {
+        "tag": "Komatsu Airport · rental car",
+        "title": "Airport → Kanazawa → Iouzan loop",
+        "lead": "Land at Komatsu, rent a car. Two nights in Kanazawa with a half-day at Iouzan and optional Noto extension."
+      }
+    }
+  }
+}

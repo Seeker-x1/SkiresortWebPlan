@@ -1,0 +1,17 @@
+resortId: kaneyama
+schemaVersion: "2026-06-28"
+name:
+  ja: フェアリーランドかねやまスキー場
+  en: Fairyland Kaneyama Ski Area
+region:
+  ja: 福島県金山町
+  en: Kaneyama, Fukushima
+japowResortId: 191
+strategy:
+  ja: 只見線沿線·奥会津——鉄道と冬景色インバウンド向け写真映えLP。
+  en: Tadami Line Oku-Aizu—photo-forward LP linking rail tourism and winter scenery.
+archetype: tourism-hub
+map:
+  sources: ["LP batch #50"]
+  heroImage: images/maps/kaneyama-hero.png
+  copyFrom: sanokura-lp

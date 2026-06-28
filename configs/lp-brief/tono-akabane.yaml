@@ -1,0 +1,66 @@
+resortId: tono-akabane
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 遠野市赤羽根スキー場
+  en: Tono City Akabane Ski Area
+region:
+  ja: 岩手県遠野市
+  en: Tono, Iwate
+japowResortId: 117
+
+strategy:
+  ja: ロープトゥ特化の昭和レトロゲレンデと、バケツジンギスカンが織りなすディープな遠野スノー体験。
+  en: Retro rope-tow skiing meets bucket Jingisukan—deep Tono snow culture beyond lift tickets.
+archetype: tourism-hub
+
+audience: both
+
+hero:
+  tagline:
+    ja: 民話の里で、アンヴァーリフトに挑戦——1日券¥1,400のレトロゲレンデ。
+    en: Folktale country, rope-tow challenge—retro hill at ¥1,400 a day.
+  badges: [rope-tow, jingisukan, folklore, budget]
+
+pillars:
+  - id: retro
+    hook: { ja: アンヴァーリフト3基, en: Three rope tows }
+  - id: food
+    hook: { ja: バケツジンギスカン, en: Bucket Jingisukan }
+  - id: folklore
+    hook: { ja: カッパ淵・伝承園, en: Kappa Pool · Denshoen }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+  - corridor-stay
+
+facts:
+  operator: 遠野市（指定管理者・遠野施設管理サービス）
+  location: 〒028-0775 岩手県遠野市上郷町平倉41地割47
+  phone: "0198-65-3535"
+  lift: アンヴァーリフト（ロープトゥ）3基
+  courses: 3コース＋ちびっこ広場
+  pricing:
+    liftDay: 1400
+    liftOnce: 60
+    rental: 1000
+  hours: 平日ナイター17:00–20:45
+  access:
+    car: 釜石自動車道・遠野住田ICから約2km
+    coastal: 釜石市中心から約45km（車約1時間）
+  nearby:
+    food: じんぎすかん あんべ、遠野食肉センター
+    onsen: 踊鹿温泉 天乃湯、たかむろ水光園
+    sight: 伝承園（カッパ淵）、道の駅 遠野風の丘
+
+map:
+  sources: ["tono-sks.com", "LP戦略レポート", "configs/lp-brief/tono-akabane.yaml"]
+  heroImage: images/maps/tono-akabane-hero.png
+  copyFrom: abashiri-lv-lp
+
+humanReview:
+  - japowResortId 117
+  - 積雪不足時の営業見通し
+  - 料金・ナイター・レンタル最新確認
+  - 英訳の事実確認

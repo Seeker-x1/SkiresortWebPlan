@@ -1,0 +1,62 @@
+resortId: monbetsu-ooyama
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 紋別市営大山スキー場
+  en: Mombetsu City Oyama Ski Area
+region:
+  ja: 北海道紋別市
+  en: Mombetsu, Hokkaido
+japowResortId: 71
+
+strategy:
+  ja: 流氷観光の空き時間に手ぶらで絶景パウダーを。オホーツクブルーに飛び込む都市型リゾート。
+  en: Dive into Okhotsk Blue—hands-free powder between drift-ice tours, five minutes from downtown.
+archetype: tourism-hub
+
+audience: both
+
+hero:
+  tagline:
+    ja: ガリンコ号の空き時間に——市街地から10分、流氷と海を見下ろす絶景スキー。
+    en: Between Garinko cruises—10 minutes from town, ski above drift ice and the Okhotsk Sea.
+  badges: [drift-ice, okhotsk, hands-free, night-ski]
+
+pillars:
+  - id: drift-ice
+    hook: { ja: 流氷×オホーツク絶景, en: Drift ice · Okhotsk views }
+  - id: urban
+    hook: { ja: 市街地至近・半日ショートトリップ, en: Downtown-adjacent · half-day loops }
+  - id: rental
+    hook: { ja: 手ぶらレンタル¥3,000, en: Hands-free rental ¥3,000 }
+
+subPages: []
+
+facts:
+  operator: 紋別市（自治体）
+  location: 〒094-0035 北海道紋別市大山町
+  phone: "0158-23-4141"
+  lift: 第1・第2リフト（ペア系）
+  courses: 第1ゲレンデ・第2ゲレンデ（海側展望）
+  pricing:
+    lift2h: 1600
+    rentalSet: 3000
+  hours: ナイター営業あり（冬季）
+  access:
+    car: 紋別市街地から約10分
+    note: 強風時は第2ゲレンデ（山頂）運休の可能性あり
+  nearby:
+    sight: 流氷砕氷観光船ガリンコ号・オホーツクとっかりセンター
+    onsen: 紋別プリンスホテル温泉・くつろぎ湯処 紋太の湯
+    food: 海鮮食堂よってけまるとみ・マルカイチ水産
+
+map:
+  sources: ["mombetsu.net", "LP batch #41", "configs/lp-brief/monbetsu-ooyama.yaml"]
+  heroImage: images/maps/monbetsu-ooyama-hero.png
+  copyFrom: utoro-lp
+
+humanReview:
+  - japowResortId 71
+  - 強風・リフト運休の最新ルール
+  - 料金・レンタル・ナイター時間
+  - 英訳の事実確認

@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "Katsurazawa Kokusetsu Ski Resort",
+    "description": "~60 minutes from Sapporo—national ski hill with kids park and snow tubes. Adult day ticket ¥2,410; senior & elementary ¥1,360."
+  },
+  "logo": "Katsurazawa Kokusetsu Ski Resort",
+  "nav": {
+    "family": "Family"
+  },
+  "hero": {
+    "eyebrow": "Mikasa, Hokkaido · Sapporo gateway",
+    "title": "Katsurazawa<br />Kokusetsu Ski",
+    "tagline": "Snow tubes and premium JAPOW—an uncrowded national hill in Mikasa.",
+    "badgeLocal": "Adult day ticket ¥2,410",
+    "badgeVisitor": "Senior & elementary ¥1,360",
+    "badgeSled": "Kids park",
+    "ctaPass": "Tickets & pricing",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "National hill operations",
+    "updatedAt": "Updated Jan 4, 9:00",
+    "lift": {
+      "label": "Lift",
+      "value": "Operating",
+      "note": "1 pair lift 811 m · virtually no wait"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "4 courses",
+      "note": "Up to 855 m · max 31°"
+    },
+    "night": {
+      "label": "Kids",
+      "value": "Park open",
+      "note": "Snow tubes · check status"
+    },
+    "yotei": {
+      "label": "Snow",
+      "value": "JAPOW holding",
+      "note": "North-facing · dry powder"
+    }
+  },
+  "transit": {
+    "eyebrow": "Sapporo Gateway",
+    "title": "~60 minutes from Sapporo<br />to Mikasa's national hill.",
+    "lead": "About 60 minutes from central Sapporo via the Doto Expressway and Mikasa IC—and about 60 minutes from New Chitose Airport. A local hill Sapporo-area families visit on weekends, skipping Teine and Sapporo Kokusai crowds. 70 ha of wide terrain with virtually no lift lines.",
+    "specs": [
+      "~60 min from Sapporo",
+      "~60 min from New Chitose Airport",
+      "On-site parking"
+    ],
+    "ctaPass": "View pricing",
+    "ctaLive": "Today's operations",
+    "imgAlt": "Winter drive from the Sapporo area to Katsurazawa Kokusetsu Ski Resort in Mikasa"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Lifts, kids park & snow"
+    },
+    "pass": {
+      "label": "Pricing",
+      "title": "National hill rates & season pass"
+    },
+    "family": {
+      "label": "Family",
+      "title": "Kids park · snow tubes"
+    },
+    "rental": {
+      "label": "Rental",
+      "title": "Ski & board ¥3,500 each"
+    },
+    "access": {
+      "label": "Access",
+      "title": "~60 min from Sapporo"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Katsurazawa Kokusetsu",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "31° wide slope & long-lasting JAPOW",
+      "lead": "North-facing terrain keeps dry, fluffy powder in shape—one wide 811 m pair-lift slope at max 31° and avg 16°, loved by carving fans. Even on holiday midweeks, virtually no lift lines at this hidden Mikasa gem (LP concept).",
+      "cta": "View courses & snow",
+      "imgAlt": "Wide powder slope at Katsurazawa Kokusetsu Ski Resort"
+    },
+    "secondary": {
+      "title": "Kids park & snow tubes",
+      "lead": "The city of Mikasa's family hook for the Sapporo belt—tube slides and beginner runs in a compact 70 ha hill that closes at 16:00, ideal for same-day trips.",
+      "cta": "Family zone guide"
+    }
+  },
+  "pass": {
+    "eyebrow": "National Hill Pricing",
+    "title": "Adults ¥2,410,<br />senior & elementary ¥1,360.",
+    "lead": "National-hill pricing at less than one-third of major resorts—adult day ¥2,410, junior high ¥1,780, senior (60+) and elementary ¥1,360. Season pass ¥15,000 for locals while welcoming Sapporo-belt family day trips (LP concept).",
+    "localPrice": "Adult day ticket ¥2,410",
+    "visitorPrice": "Senior & elementary ¥1,360",
+    "specs": [
+      "Junior high ¥1,780",
+      "Rentals ¥3,500 each",
+      "Season pass ¥15,000"
+    ],
+    "noticeTitle": "Operations note:",
+    "noticeBody": "Lifts may stop when wind exceeds 6 m/s—check the official site or TEL 01267-6-8235. Hours 9:00–16:00 (LP concept).",
+    "cta": "Pricing details",
+    "imgAlt": "~60 minutes from Sapporo—value pricing at a national hill"
+  },
+  "rental": {
+    "eyebrow": "On-site Rental",
+    "title": "Ski & snowboard sets<br />¥3,500 each—travel light.",
+    "lead": "Ski set and snowboard set ¥3,500 each—Sapporo day-trip families can gear up on site and start runs immediately. Rest and lodge meals at Yama-no-Ie and Center House.",
+    "whisper": "Hands-free arrival plus a 60-minute Sapporo drive minimizes friction for weekend family snow days (LP strategy).",
+    "cta": "Rental guide",
+    "imgAlt": "On-hill rental—hands-free arrival concept"
+  },
+  "yukinko": {
+    "eyebrow": "After Ski · Onsen",
+    "title": "After 16:00,<br />Mikasa onsen awaits.",
+    "lead": "The hill closes at 16:00—5–10 minutes by car to Yunomoto Onsen Ryokan (day bath ¥600) or Taiko-no-Yu at Michi-no-Eki Mikasa on the way back to Sapporo. Lift-ticket discounts may apply (check locally).",
+    "whisper": "TEL 01267-6-8235 (Katsurazawa Kokusetsu). Confirm kids park and tube status on official channels before visiting.",
+    "cta": "Nearby onsen & food",
+    "imgAlt": "Yunomoto Onsen in Mikasa—day-trip bath after skiing"
+  },
+  "family": {
+    "eyebrow": "Family First",
+    "title": "Snow tubes &<br />first snow for families.",
+    "lead": "Kids park tubes, four beginner-to-intermediate courses, and Lake Katsurazawa smelt fishing nearby—morning ski, afternoon lake, evening onsen: a full Mikasa winter day (LP concept). Family Land Mikasa amusement park is ~5 minutes on foot.",
+    "specs": [
+      "Kids park · snow tubes",
+      "4 courses · 70 ha",
+      "Lake Katsurazawa smelt (winter)"
+    ],
+    "noticeTitle": "Kids park:",
+    "noticeBody": "Weekend family traffic from the Sapporo belt—tube and park hours change by season; confirm by phone or official info before visiting (LP concept).",
+    "cta": "Family & kids guide",
+    "imgAlt": "Families on snow tubes at the kids park"
+  },
+  "workation": {
+    "eyebrow": "Day Trip",
+    "title": "Leave Sapporo in the morning,<br />snow by late morning.",
+    "lead": "A classic Sapporo family day trip—~60 minutes via Mikasa IC. Morning kids park, lunch at Yama-no-Ie (karaage set), afternoon at Lake Katsurazawa—a Mikasa loop pairing local food and onsen (LP concept).",
+    "badge": "SAPPRO · FAMILY DAY",
+    "steps": {
+      "01": {
+        "title": "Depart Sapporo ~8:00",
+        "body": "Doto Expressway · Mikasa IC ~60 min"
+      },
+      "02": {
+        "title": "Kids park",
+        "body": "Snow tubes and beginner runs"
+      },
+      "03": {
+        "title": "Lunch at Yama-no-Ie",
+        "body": "Popular karaage set and katsu sandwich"
+      },
+      "04": {
+        "title": "Lake Katsurazawa",
+        "body": "Winter smelt fishing (check status)"
+      },
+      "05": {
+        "title": "Yunomoto Onsen",
+        "body": "Aigamo hot pot and day bath homeward"
+      }
+    }
+  },
+  "guides": {
+    "local": {
+      "title": "Sapporo belt × national hill guide",
+      "body": "Katsurazawa as a crowd-free alternative to Teine and Sapporo Kokusai—make the physical assets visible: 70 ha, ¥2,410, no lift lines, via kids-park CMS and weekend LP (report ch. 5)."
+    },
+    "schools": {
+      "title": "Mikasa winter gourmet stamp rally",
+      "body": "Cross-promote Yama-no-Ie lodge food, Takashimaya cafeteria jumbo zangi, Yunomoto aigamo nabe, and Manpuku nanko—raising stay time and spend in Mikasa city (report ch. 5)."
+    },
+    "summer": {
+      "title": "Year-round loop: lake & amusement park",
+      "body": "Bridge summer campers at adjacent Family Land Mikasa to winter skiing—integrating green-season and winter customer bases (report ch. 6).",
+      "hashtags": [
+        "#MikasaSnow",
+        "#KatsurazawaJAPOW",
+        "#SapporoFamilySki"
+      ]
+    }
+  },
+  "access": {
+    "postal": "068-2161, Japan",
+    "line": "50 Nishi-Katsurazawa, Mikasa, Hokkaido",
+    "note": "~60 min from central Sapporo · ~60 min from New Chitose Airport · via Mikasa IC",
+    "phone": "TEL 01267-6-8235",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>三笠市<rt>Mikasa</rt></ruby></span><span class=\"place-unit\"><ruby>西桂沢50<rt>50 Nishi-Katsurazawa</rt></ruby></span>",
+    "rentacarEyebrow": "New Chitose + rental car",
+    "rentacarLink": "Book a rental car at New Chitose Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Sapporo, Mikasa, and Lake Katsurazawa loops"
+  },
+  "footer": {
+    "copyright": "© Katsurazawa Kokusetsu Ski Resort — LP mock",
+    "location": "068-2161 · 50 Nishi-Katsurazawa, Mikasa, Hokkaido"
+  }
+}

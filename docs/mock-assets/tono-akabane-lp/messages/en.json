@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "title": "Tono City Akabane Ski Area",
+    "description": "Folktale country, rope-tow challenge—retro hill at ¥1,400 a day."
+  },
+  "logo": "Tono City Akabane Ski Area",
+  "nav": {
+    "bundle": "Tickets",
+    "wellness": "After ski"
+  },
+  "hero": {
+    "eyebrow": "Tono, Iwate · Folktale country · Closest snow from Sanriku",
+    "title": "Tono City Akabane<br />Ski Area",
+    "tagline": "Folktale country, rope-tow challenge—retro hill at ¥1,400 a day.",
+    "badgePrice": "Day pass ¥1,400",
+    "badgeNight": "Weekday night ¥1,000",
+    "badgeStrawberry": "3 rope tows",
+    "ctaBundle": "See tickets",
+    "ctaLive": "Operations info"
+  },
+  "live": {
+    "ariaLabel": "Operations information dashboard",
+    "subtitle": "Check Tono City official info & on-site notices",
+    "updatedAt": "Low-snow seasons may delay or cancel opening—confirm before you go",
+    "lift1": {
+      "label": "Lifts",
+      "value": "3 rope tows",
+      "note": "Rope tow only · no chairlifts · 2–3 operating"
+    },
+    "lift2": {
+      "label": "Courses",
+      "value": "3 courses",
+      "note": "Kamoshika & Kabe runs · kids sled area"
+    },
+    "snow": {
+      "label": "Snow",
+      "value": "Weather-dependent",
+      "note": "High shortage risk in recent years · check official updates"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "17:00–20:45",
+      "note": "Weekdays only · confirm weekends/holidays"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Retro Rope Tow",
+    "title": "Showa-era rope tows,<br />snow hill in folktale country.",
+    "lead": "A rare municipal hill with three Anvár rope tows only—no chairlifts. About 45 km from the Kamaishi coast, the closest snow play spot from the sea. Compact and easy to pair with Tono Jingisukan culture and folktale sightseeing.",
+    "specs": [
+      "3 courses · 3 rope tows",
+      "Single ride ¥60 · rental ¥1,000",
+      "Operating days vary with snowfall"
+    ],
+    "noticeTitle": "About snow shortage:",
+    "noticeBody": "Warming winters have brought seasons with delayed opening or sharply fewer operating days—including 2023–24, when opening was still uncertain by mid-January. There is no live snow API; check Tono City notices, on-site boards, and weather forecasts before every trip.",
+    "ctaBundle": "Tickets & rental",
+    "imgAlt": "lp-mock-tono-akabane-lounge—retro rope-tow queue scene at the lodge"
+  },
+  "paths": {
+    "bundle": {
+      "label": "Tickets",
+      "title": "¥1,400 day pass"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Sumata IC · Kamaishi area"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Lifts · snow · night"
+    },
+    "food": {
+      "label": "Food",
+      "title": "Jingisukan & 4 nearby picks"
+    },
+    "onsen": {
+      "label": "Onsen",
+      "title": "Two Tono baths"
+    },
+    "stay": {
+      "label": "Stay",
+      "title": "Tono town vs Morioka hub"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Three rope tows, real terrain",
+    "primary": {
+      "title": "Kamoshika forest run & steep Kabe",
+      "lead": "From gentle beginner slopes to the forest Kamoshika course and advanced Kabe (max ~30°, ~500–600 m). A dedicated kids sled area too—without chairlifts, short laps make it ideal for repetition training.",
+      "cta": "Resort map",
+      "imgAlt": "lp-mock-tono-akabane-hero—panorama of rope tows and three courses"
+    },
+    "secondary": {
+      "title": "Gear rental yes, wear rental no",
+      "lead": "Ski or snowboard set ¥1,000/day each. No wear, sled, goggle, or glove rental—travel light and plan ahead. Lodge cafeteria open weekends only (Sat–Sun 11:00–14:00).",
+      "cta": "Tickets & rental"
+    }
+  },
+  "bundle": {
+    "eyebrow": "Pricing",
+    "title": "Adult ¥1,400/day,<br />single ride ¥60.",
+    "lead": "Single ride ¥60, 12-ride ¥600, morning/afternoon ¥800 each, day pass ¥1,400. Weekday night skiing (17:00–20:45) ¥1,000. Season pass ¥10,500. Preschool lift free. Ski/snowboard set rental ¥1,000 each—no clothing rental.",
+    "specs": [
+      "Day pass ¥1,400",
+      "Weekday night ¥1,000",
+      "Rental ¥1,000 (no wear)"
+    ],
+    "cta": "Check city official site",
+    "imgAlt": "lp-mock-tono-akabane-wakasagi—bucket Jingisukan snow picnic on the slopes"
+  },
+  "wellness": {
+    "eyebrow": "After Ski",
+    "title": "Then Jingisukan<br />and hot springs.",
+    "lead": "On-hill food is weekends only. For real Tono flavor: bucket Jingisukan at Jingisukan Anbe and lamb at Tono Meat Center. Soak at Odoro Onsen Ten-no-Yu, then folktale stops at Denshoen (Kappa Pool) and Michi-no-Eki Tono Kaze-no-Oka.",
+    "leadStation": "~2 km from Tono-Sumata IC—~45 km from central Kamaishi, the easiest snow hill from the Sanriku coast.",
+    "cta": "Food & onsen guide",
+    "imgAlt": "lp-mock-tono-akabane-seafood—Tono Jingisukan and local cuisine"
+  },
+  "tour": {
+    "eyebrow": "Half-Day Model",
+    "title": "Slot half a day<br />into folktale & food.",
+    "lead": "Base in Morioka or Kamaishi: morning rope-tow laps at Akabane, afternoon bucket Jingisukan at Anbe, bath at Ten-no-Yu—a Tono snow-culture loop beyond lift tickets alone.",
+    "badge": "ROPE TOW · JINGISUKAN · FOLKLORE · ONSEN",
+    "steps": {
+      "01": {
+        "title": "Morioka Station · Kamaishi area",
+        "body": "~1 hr drive from Morioka · ~45 km from Kamaishi · ~2 km from Sumata IC"
+      },
+      "02": {
+        "title": "Arrive at slopes",
+        "body": "Confirm snow & operating tows on site · bring your own wear"
+      },
+      "03": {
+        "title": "2–3 hours skiing",
+        "body": "Day pass ¥1,400 · single ¥60 · conquer the rope tows"
+      },
+      "04": {
+        "title": "Jingisukan Anbe",
+        "body": "Bucket Jingisukan · reservation required"
+      },
+      "05": {
+        "title": "Odoro Onsen Ten-no-Yu",
+        "body": "Pair with Denshoen & Kaze-no-Oka folktale route"
+      }
+    }
+  },
+  "guides": {
+    "ecosystem": {
+      "title": "Three rope tows & compact courses",
+      "body": "No chairlifts or gondolas—only three Anvár rope tows you ride by holding a bar against your back or gripping a handle. Kamoshika, Kabe, and a kids sled area—a small hill loved locally for Showa retro rarity and a ¥1,400 day pass."
+    },
+    "access": {
+      "title": "~2 km from Sumata IC · ~45 km from Kamaishi",
+      "body": "~2 km from Kamaishi Expressway Tono-Sumata IC. ~44–45 km (~55 min–1 hr drive) from central Kamaishi. ~1 hr from Morioka via national and prefectural roads—the closest snow hill from the Sanriku coast."
+    },
+    "green": {
+      "title": "Folktale in summer, rope tows in winter",
+      "body": "As snowless seasons increase, value comes from short-window ski days plus year-round Tono tourism—Denshoen, Kaze-no-Oka, and Jingisukan. Winter: retro rope-tow experience. Summer: Kappa Pool and satoyama culture—area spending, not lift tickets alone.",
+      "hashtags": [
+        "#TonoAkabane",
+        "#RopeTowRetro",
+        "#JingisukanSnow"
+      ]
+    }
+  },
+  "access": {
+    "postal": "028-0775, Japan",
+    "line": "41-47 Hirakura, Kamigo, Tono, Iwate",
+    "note": "~2 km from Tono-Sumata IC · ~45 km from Kamaishi center · no wear rental · cafeteria weekends only",
+    "phone": "TEL 0198-65-3535 (slope info · in season)",
+    "phoneBus": "TEL 0198-65-3343 (admin office)",
+    "places": "<span class=\"place-unit\"><ruby>岩手県<rt>Iwate</rt></ruby></span><span class=\"place-unit\"><ruby>遠野市<rt>Tono</rt></ruby></span><span class=\"place-unit\"><ruby>上郷町<rt>Kamigo</rt></ruby></span><span class=\"place-unit\"><ruby>平倉<rt>Hirakura</rt></ruby></span><span class=\"place-unit\">41-47</span>",
+    "rentacarEyebrow": "Iwate · Tono region",
+    "rentacarLink": "Book a rental car at Morioka Station",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Tono, Kamaishi, and Hanamaki loops"
+  },
+  "footer": {
+    "copyright": "© Tono City Akabane Ski Area — LP mock",
+    "location": "028-0775 · 41-47 Hirakura, Kamigo, Tono, Iwate"
+  },
+  "nearbyFood": {
+    "backLink": "Back to Akabane LP",
+    "hero": {
+      "eyebrow": "Food · Jingisukan",
+      "title": "From the hill<br />to Tono lamb.",
+      "tagline": "Bucket Jingisukan to roadside station"
+    },
+    "notice": "Hours and reservations are on each venue's official site.",
+    "introTitle": "Taste Tono after skiing",
+    "introLead": "From the weekend-only lodge cafeteria to signature Jingisukan and local food—four stops that fit a half-day ski plus folktale plan.",
+    "introBody": "Lunch on the hill or at Anbe; evening at onsen town or Kaze-no-Oka.",
+    "spotsEyebrow": "4 picks",
+    "spotsTitle": "Slope food & nearby gourmet",
+    "spotsLead": "From the lodge into Tono town, in route order.",
+    "spots": {
+      "slope": {
+        "tag": "On-hill · weekends only · light meals",
+        "title": "Akabane lodge cafeteria",
+        "lead": "Open Sat–Sun 11:00–14:00 only. No food on weekdays or during night skiing—bring snacks or onigiri. Note: no toilets inside the lodge; use the separate building."
+      },
+      "prison": {
+        "tag": "Bucket Jingisukan · reservation",
+        "title": "Jingisukan Anbe",
+        "lead": "Famous for bucket Jingisukan—a Tono signature. Perfect after skiing or as a snow picnic partner. Reservations required; busy in winter."
+      },
+      "soba": {
+        "tag": "Tono lamb · meat center",
+        "title": "Tono Meat Center",
+        "lead": "Local lamb at the municipal meat center—stock up for DIY Jingisukan or taste Tono's sheep culture. Core of a lamb-focused Tono food loop with Anbe."
+      },
+      "crab": {
+        "tag": "Roadside station · local products",
+        "title": "Michi-no-Eki Tono Kaze-no-Oka",
+        "lead": "Tono produce, light meals, and travel info. Pair satoyama views and folktale monuments with a post-ski break and souvenir stop—gateway to Denshoen (Kappa Pool)."
+      }
+    }
+  },
+  "nearbyOnsen": {
+    "backLink": "Back to Akabane LP",
+    "hero": {
+      "eyebrow": "Onsen · Recovery",
+      "title": "Tono baths<br />to warm cold legs.",
+      "tagline": "Odoro Onsen—classic après-ski"
+    },
+    "notice": "Fees and hours are on each facility's official site.",
+    "introTitle": "Wellness after skiing",
+    "introLead": "Hot springs within easy drive of Akabane—warm rope-tow-chilled legs in satoyama baths is this area's signature loop.",
+    "introBody": "Odoro Onsen near folktale country and Takamuro Suiko-en with lodging—two curated picks.",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "Two Tono onsen picks",
+    "spotsLead": "Recovery and lodging bases after skiing.",
+    "spots": {
+      "kohanso": {
+        "tag": "Odoro · Ten-no-Yu · satoyama",
+        "title": "Odoro Onsen Ten-no-Yu",
+        "lead": "Satoyama hot spring in Tono. Clear, soothing water for cold legs—hub of a folktale route with Denshoen and Kaze-no-Oka. The default recovery stop after skiing."
+      },
+      "kanko": {
+        "tag": "Lodging · Suiko-en · quiet",
+        "title": "Takamuro Suiko-en",
+        "lead": "Lodging with onsen in Tono city. Quiet satoyama setting for an overnight, then onward to Morioka or Kamaishi—a two-day ski + bath + folktale base."
+      }
+    }
+  },
+  "corridorStay": {
+    "backLink": "Back to Akabane LP",
+    "hero": {
+      "eyebrow": "Stay · Strategy",
+      "title": "Sleep in Tono,<br />or hub at Morioka.",
+      "tagline": "Folktale town stay vs regional loop"
+    },
+    "notice": "Rooms, rates, and shuttles are on each property's booking site.",
+    "introTitle": "Two base camps",
+    "introLead": "Stay in Tono and loop Akabane, Denshoen, and Anbe—or use Morioka Station as your Iwate hub. Choose by what your trip is about.",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "Three lodging picks",
+    "spotsLead": "Tono-connected vs Morioka hub.",
+    "regions": {
+      "lakeside": "Tono city (slopes & folktale area)",
+      "city": "Morioka (prefecture loop hub)"
+    },
+    "spots": {
+      "kohanso": {
+        "tag": "~2 km from Sumata IC · folktale · Jingisukan",
+        "title": "Hotels & inns in Tono city",
+        "lead": "Closest lodging to Akabane slopes—~2 km from Sumata IC. Easy morning laps, then Denshoen, Anbe, and Ten-no-Yu in one folktale day."
+      },
+      "kanko": {
+        "tag": "Denshoen · Kappa Pool · Kaze-no-Oka",
+        "title": "Denshoen & Kaze-no-Oka area",
+        "lead": "Stay near Kappa Pool and folktale exhibits at Denshoen and Michi-no-Eki Kaze-no-Oka—the core of a Tono experience beyond skiing."
+      },
+      "station": {
+        "tag": "Morioka Station · rental car · Shinkansen",
+        "title": "Hotels near Morioka Station",
+        "lead": "Base at Tohoku Shinkansen Morioka Station, rent a car for Tono, Kamaishi, and southern Iwate loops. Akabane ~1 hr drive—a flexible hub when snow is thin."
+      }
+    }
+  }
+}

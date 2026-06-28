@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "title": "Sado City Daira Ski Resort",
+    "description": "A hidden powder snow adventure accessed via a defense road on Japan's historical island."
+  },
+  "logo": "Sado City Daira Ski Resort",
+  "hero": {
+    "eyebrow": "Sado Island, Niigata · The island's only ski hill",
+    "title": "Daira<br />Ski Resort",
+    "sub": "Municipal · Kanai Shinbo",
+    "tagline": "Sado Island's only ski area—reach it via a JASDF defense road for a one-of-a-kind snow adventure.",
+    "ctaRental": "Hands-free snow plan",
+    "ctaLive": "Today's status"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Today's status",
+    "updatedAt": "Updated Feb 7 8:45",
+    "lift": {
+      "label": "Lifts",
+      "value": "Operating",
+      "note": "1 pair + 3 hanger"
+    },
+    "ferry": {
+      "label": "Ferry",
+      "value": "Ryotsu Port",
+      "note": "Check Sado Kisen"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "5/5 open",
+      "note": "750 m max run"
+    },
+    "access": {
+      "label": "Defense road",
+      "value": "Permit req.",
+      "note": "Chains mandatory"
+    }
+  },
+  "quality": {
+    "eyebrow": "Sado Island",
+    "title": "Small hill,<br />big story.",
+    "lead": "Only 30 m of vertical yet five varied courses. Island powder and Sea of Japan views toward Mt. Kinpoku—snow play you cannot find at mainland mega-resorts.",
+    "specs": [
+      "5 courses",
+      "30 m vertical",
+      "Day pass ¥2,000",
+      "750 m longest"
+    ],
+    "ctaMap": "Resort map",
+    "ctaPricing": "Pricing",
+    "imgAlt": "Family skiing powder snow on Sado Island"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Operations & conditions"
+    },
+    "access": {
+      "label": "Access",
+      "title": "~50 min from Ryotsu Port"
+    },
+    "slopes": {
+      "label": "Slopes",
+      "title": "5 courses · pair lift"
+    },
+    "rental": {
+      "label": "Book",
+      "title": "Hands-free rental"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What makes Daira unique",
+    "title": "Only here",
+    "primary": {
+      "title": "Defense road access",
+      "lead": "Reach the hill via an Air Self-Defense Force managed road—a rare ritual nationwide. Call from the red phone box for passage permission before climbing to the secret slope.",
+      "cta": "Read access guide",
+      "imgAlt": "Red phone box on the defense road—JASDF gate adventure"
+    },
+    "secondary": {
+      "title": "Family powder",
+      "lead": "Five compact courses with no risk of getting lost. Adult day pass ¥2,000, child ¥1,000—rentals ¥1,000 each, keeping island winter affordable.",
+      "price": "Adult day ¥2,000 · Child ¥1,000",
+      "cta": "Rental rates"
+    }
+  },
+  "rental": {
+    "eyebrow": "Book & Go",
+    "title": "Travel light to<br />island snow.",
+    "lead": "Ski or snowboard set ¥1,000, wear ¥1,000. Ferry visitors can drive from Ryotsu Port—bring your own hat and gloves.",
+    "whisper": "Proposed digital pass bundling lift, rental, and Kinpokunosato onsen—reducing cash-only counter friction.",
+    "cta": "View hands-free plan",
+    "imgAlt": "Rental desk at the lodge—visit without gear"
+  },
+  "tour": {
+    "eyebrow": "Sado Loop",
+    "title": "Snow, onsen,<br />Sadomeshi.",
+    "lead": "Morning powder at Daira, afternoon soak at Kanai Onsen Kinpokunosato, evening Sadomeshi at Chozaburo or Kanai Seiyokan—a one-day island loop beyond the ski hill alone.",
+    "cta": "Area tour plans",
+    "imgAlt": "Sado Island tour—gold mine, hot springs, local food",
+    "steps": {
+      "01": {
+        "title": "Ryotsu Port",
+        "body": "Ferry from Niigata Port. Review defense road rules first"
+      },
+      "02": {
+        "title": "Secret runs",
+        "body": "Climb with JASDF permission. Play on five courses"
+      },
+      "03": {
+        "title": "Onsen",
+        "body": "Recover at Kanai Onsen Kinpokunosato"
+      },
+      "04": {
+        "title": "Sadomeshi",
+        "body": "Chozaburo or Kanai Seiyokan—finish with island food"
+      }
+    }
+  },
+  "guides": {
+    "defense": {
+      "title": "Defense road access guide",
+      "body": "Call JASDF from the red phone box → get permission → climb per chain rules. Call again before descending; wait for a green signal at the gate. 4WD plus chains required in winter."
+    },
+    "rentalGuide": {
+      "title": "Hands-free rental guide",
+      "body": "Boards and wear ¥1,000 each. No hats, gloves, or goggles for rent—stock up in Ryotsu or Niigata. Cash only at the counter (web pass proposed)."
+    },
+    "sadoTour": {
+      "title": "Sado snow · onsen · food model course",
+      "body": "Daira skiing (AM) → Chozaburo lunch → Kinpokunosato onsen → Sado Kinzan or Toki Forest—pair UNESCO heritage tourism with snow in one day.",
+      "hashtags": [
+        "#SadoIslandSki",
+        "#DefenseRoadAdventure",
+        "#Sadomeshi"
+      ]
+    }
+  },
+  "access": {
+    "postal": "952-1208, Japan",
+    "line": "2-75 Kanai Shinbo, Sado, Niigata",
+    "note": "~50 min by car from Ryotsu Port · JASDF permit required on defense road",
+    "phone": "TEL 0259-63-4050",
+    "places": "<span class=\"place-unit\"><ruby>新潟県<rt>Niigata</rt></ruby></span><span class=\"place-unit\"><ruby>佐渡市<rt>Sado</rt></ruby></span><span class=\"place-unit\"><ruby>金井新保2-75<rt>2-75 Kanai Shinbo</rt></ruby></span>",
+    "rentacarEyebrow": "Sado · Niigata gateway",
+    "rentacarLink": "Book a rental car at Niigata Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Ryotsu ferry link and island drives"
+  },
+  "footer": {
+    "copyright": "© Sado City Daira Ski Resort — LP mock",
+    "location": "952-1208 · 2-75 Kanai Shinbo, Sado, Niigata"
+  }
+}

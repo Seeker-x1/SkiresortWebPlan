@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "Kitami Wakamatsu Municipal Ski Area",
+    "description": "Fifteen minutes from downtown Kitami—twice-daily groomed burns, city night views, and municipal night skiing until 21:00."
+  },
+  "logo": "Kitami Wakamatsu Municipal Ski Area",
+  "nav": {
+    "family": "Family"
+  },
+  "hero": {
+    "eyebrow": "Kitami, Hokkaido · Okhotsk region",
+    "title": "Kitami Wakamatsu<br />Municipal Ski Area",
+    "tagline": "Fifteen minutes from the city—after work or after school on a municipal hill of groomed burns and night views.",
+    "badgeLocal": "Adult day ticket from ¥3,000",
+    "badgeVisitor": "Night ticket from ¥700",
+    "badgeSled": "Night skiing until 21:00",
+    "ctaPass": "Tickets & pricing",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Transparent info from Kitami City operations",
+    "updatedAt": "Updated Dec 25, 9:00",
+    "lift": {
+      "label": "Lifts",
+      "value": "Operating",
+      "note": "1 pair lift · 1 rope tow · virtually no wait"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "3 courses + extras",
+      "note": "Up to 1,080 m · SAJ-certified course B"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Until 21:00",
+      "note": "From 16:00 · weekday evenings are the core"
+    },
+    "yotei": {
+      "label": "View",
+      "value": "Kitami city lights",
+      "note": "Night panorama from the summit"
+    }
+  },
+  "transit": {
+    "eyebrow": "City Adjacent",
+    "title": "Fifteen minutes from town,<br />on the hill after work.",
+    "lead": "About 15–20 minutes by car from JR Kitami Station on the Sekihoku Line—a city-adjacent municipal hill at the heart of the Okhotsk region. A local hill built around weekday night skiing, welcoming Memanbetsu Airport arrivals and Kitami residents' after-work and after-school laps alike.",
+    "specs": [
+      "~15 min from Kitami Station",
+      "Night skiing 16:00–21:00",
+      "500–700 free parking spaces"
+    ],
+    "ctaPass": "View pricing",
+    "ctaLive": "Today's operations",
+    "imgAlt": "Fifteen minutes from downtown Kitami—access to an urban municipal ski hill"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Lifts, night skiing & snow"
+    },
+    "pass": {
+      "label": "Pricing",
+      "title": "Municipal rates & books"
+    },
+    "family": {
+      "label": "Family",
+      "title": "Family hill & lessons"
+    },
+    "rental": {
+      "label": "Rental",
+      "title": "Ski center rentals"
+    },
+    "access": {
+      "label": "Access",
+      "title": "~15 min from Kitami Station"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Wakamatsu Municipal",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "Twice-daily grooming & city night views",
+      "lead": "Snowmaking plus morning and evening grooming keep a tight, edge-gripping burn—from the 1,080 m A-course long run to SAJ-certified B-course for racers. Kitami's city lights spread below the summit: a signature view of urban night skiing.",
+      "cta": "View courses & night vistas",
+      "imgAlt": "Kitami Wakamatsu Municipal Ski Area—groomed burns with Kitami city below"
+    },
+    "secondary": {
+      "title": "Family hill & kids' sled area",
+      "lead": "A mellow family slope averaging 10° and a dedicated kids' sled zone—the municipal gateway for Kitami families, school clubs, and ski school practice on an everyday, high-quality local hill.",
+      "cta": "Family zone guide"
+    }
+  },
+  "pass": {
+    "eyebrow": "Municipal Pricing",
+    "title": "Adults from ¥3,000,<br />1-hour night from ¥700.",
+    "lead": "Municipal pricing for local repeaters and weekday nights—adult day ¥3,000–3,900, 4-hour ¥2,200–2,800, 1-hour night ¥700–1,000, season pass ¥33,000. Designed for short, focused sessions and higher visit frequency (LP concept).",
+    "localPrice": "Adult day ticket from ¥3,000",
+    "visitorPrice": "1-hour night from ¥700",
+    "specs": [
+      "4-hour ticket ¥2,200–2,800",
+      "Season pass ¥33,000",
+      "Rope tow day ¥1,100"
+    ],
+    "noticeTitle": "Strategy note:",
+    "noticeBody": "Weekday night monthly passes and time-based digital tickets to offset cold-weather short visits and perceived value gaps—raising frequency and LTV (report ch. 6).",
+    "cta": "Pricing details",
+    "imgAlt": "Fifteen minutes from Kitami Station—city proximity as the weekday night lever"
+  },
+  "rental": {
+    "eyebrow": "On-site Rental",
+    "title": "Gear up at the ski center—<br />travel light.",
+    "lead": "Full ski and snowboard sets at the ski center—Memanbetsu Airport visitors can gear up on site and start runs immediately. Counter rental, no phone reservation required.",
+    "whisper": "Hands-free arrival plus a 15-minute city location supports international \"urban night ski experience\" packages (LP strategy).",
+    "cta": "Rental guide",
+    "imgAlt": "Ski center rental counter—hands-free arrival concept"
+  },
+  "yukinko": {
+    "eyebrow": "Night Skiing",
+    "title": "Night skiing<br />until 21:00.",
+    "lead": "Fully lit night skiing to the summit (16:00–21:00)—after-work laps for locals, after-school runs for students, and first runs for late arrivals. Kitami's city lights below and twice-daily groomed burns anchor weekday evenings.",
+    "whisper": "In season TEL 0157-22-2910. Official updates also on Kitami City and Okhotsk Kikaku sites.",
+    "cta": "Night skiing & hours",
+    "imgAlt": "Illuminated night-ski slopes—Kitami city lights in the background"
+  },
+  "family": {
+    "eyebrow": "Family First",
+    "title": "School practice hill &<br />first snow for families.",
+    "lead": "Three courses plus a family hill, kids' sled zone, and rope-tow learner slope—the municipal gateway for Kitami school programs, clubs, and family winter sports.",
+    "specs": [
+      "Family slope",
+      "Kids' sled zone",
+      "500–700 free parking spaces"
+    ],
+    "noticeTitle": "Lessons:",
+    "noticeBody": "Training base for local school clubs and ski schools—SAJ-certified B-course supports racers too. Nurturing the next generation of winter sports fans.",
+    "cta": "Family & lesson guide",
+    "imgAlt": "Family hill and kids' sled zone—first snow for families"
+  },
+  "workation": {
+    "eyebrow": "Evening Trip",
+    "title": "After work, 15 minutes—<br />night ski, then yakiniku.",
+    "lead": "Fifteen minutes by car from Kitami—a 1-hour night ticket for focused carving, then downtown yakiniku before 21:00. A safe weekday micro-tourism loop with designated drivers and taxis (LP concept).",
+    "badge": "KITAMI · NIGHT SKI",
+    "steps": {
+      "01": {
+        "title": "Head to Wakamatsu after work",
+        "body": "About 15 minutes from downtown Kitami—close enough for a spontaneous after-work lap"
+      },
+      "02": {
+        "title": "1-hour night ticket",
+        "body": "Use the night window from 16:00 for a focused 1–1.5 hour session"
+      },
+      "03": {
+        "title": "Carve the groomed burn",
+        "body": "Twice-daily grooming on B-course for carving practice"
+      },
+      "04": {
+        "title": "Ski center",
+        "body": "Warm up at the base lodge after runs—essential in deep Okhotsk cold"
+      },
+      "05": {
+        "title": "Kitami yakiniku",
+        "body": "After-ski at downtown favorites like Mikakuen or Hyakumanriki"
+      }
+    }
+  },
+  "guides": {
+    "local": {
+      "title": "City-adjacent municipal night ski guide",
+      "body": "Core weekday-night strategy—make the physical assets visible via mobile LP and live status: 15 minutes from Kitami Station, night skiing until 21:00, twice-daily grooming (report ch. 5)."
+    },
+    "schools": {
+      "title": "Time-based subscriptions & digital tickets",
+      "body": "Weekday night monthly passes and 15-minute digital tickets—lower the psychological barrier for short visits and dramatically raise frequency (report ch. 6)."
+    },
+    "summer": {
+      "title": "Night ski & Kitami yakiniku loop",
+      "body": "A weekday evening model pairing groomed burns with Kitami yakiniku soul food—linked to onsen routes at Kitami Onsen and Shiobetsu Tsurutsuru Onsen (report ch. 5).",
+      "hashtags": [
+        "#WakamatsuLocal",
+        "#KitamiNight",
+        "#OkhotskBurn"
+      ]
+    }
+  },
+  "access": {
+    "postal": "090-0808, Japan",
+    "line": "651 Wakamatsu, Kitami, Hokkaido",
+    "note": "About 15–20 minutes by car from JR Kitami Station · ~40 min from Memanbetsu Airport · 500–700 free parking spaces",
+    "phone": "TEL 0157-22-2910",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>北見市<rt>Kitami</rt></ruby></span><span class=\"place-unit\"><ruby>若松651<rt>651 Wakamatsu</rt></ruby></span>",
+    "rentacarEyebrow": "Kitami · Abashiri",
+    "rentacarLink": "Book a rental car at Memanbetsu Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Kitami city and Okhotsk loops"
+  },
+  "footer": {
+    "copyright": "© Kitami Wakamatsu Municipal Ski Area — LP mock",
+    "location": "090-0808 · 651 Wakamatsu, Kitami, Hokkaido"
+  }
+}

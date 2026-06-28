@@ -115,9 +115,9 @@ function writeInboxReport(registryId, content) {
   return outPath;
 }
 
-function gitCommitAndPush(registryId, rank, push) {
+function gitCommitAndPush(registryId, rank, push, batchRel) {
   const relInbox = `docs/research/inbox/${registryId}.md`;
-  const relBatch = "configs/lp-batch/batch-21-30.json";
+  const relBatch = batchRel ?? "configs/lp-batch/batch-21-30.json";
   execSync(`git add "${relInbox}" "${relBatch}"`, { cwd: ROOT, stdio: "inherit" });
   const msg = `research: ${registryId} Deep Research report (API, rank ${rank})`;
   execSync(`git commit -m "${msg.replace(/"/g, '\\"')}"`, { cwd: ROOT, stdio: "inherit" });
@@ -207,7 +207,7 @@ async function main() {
   saveBatch(abs, data);
 
   if (opts.commit) {
-    gitCommitAndPush(registryId, item.rank, opts.push);
+    gitCommitAndPush(registryId, item.rank, opts.push, opts.batch);
     console.error(opts.push ? "✓ Committed and pushed — LP Factory Automation may start." : "✓ Committed locally.");
   } else {
     console.error("\nNext:");

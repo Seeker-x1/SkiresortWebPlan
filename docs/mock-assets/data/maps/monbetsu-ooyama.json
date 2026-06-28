@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "2026-06-28",
+  "id": "monbetsu-ooyama",
+  "name": {
+    "ja": "紋別市営大山スキー場",
+    "en": "Mombetsu City Oyama Ski Area"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "紋別市施設情報",
+    "LP batch #41",
+    "configs/lp-brief/monbetsu-ooyama.yaml"
+  ],
+  "updatedAt": "2026-06-28T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/monbetsu-ooyama-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-area1",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": { "ja": "第1リフト", "en": "Area 1 lift" },
+      "shortLabel": { "ja": "第1", "en": "A1" },
+      "meta": {
+        "ja": { "区分": "第1ゲレンデ", "斜面": "ワイド緩斜面" },
+        "en": { "Zone": "Area 1", "Slope": "Wide mellow" }
+      }
+    },
+    {
+      "id": "lift-area2",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": { "ja": "第2リフト", "en": "Area 2 lift" },
+      "shortLabel": { "ja": "第2", "en": "A2" },
+      "meta": {
+        "ja": { "区分": "第2ゲレンデ", "注意": "強風時運休" },
+        "en": { "Zone": "Area 2", "Note": "May close in wind" }
+      }
+    },
+    {
+      "id": "trail-area1",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": { "ja": "第1ゲレンデ", "en": "Area 1 course" },
+      "shortLabel": { "ja": "第1", "en": "A1" },
+      "meta": {
+        "ja": { "特徴": "海側絶景", "対象": "中級者・ファミリー" },
+        "en": { "Feature": "Ocean views", "For": "Intermediates · families" }
+      }
+    },
+    {
+      "id": "trail-area2",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": { "ja": "第2ゲレンデ", "en": "Area 2 course" },
+      "shortLabel": { "ja": "第2", "en": "A2" },
+      "meta": {
+        "ja": { "特徴": "山頂展望", "対象": "上級者" },
+        "en": { "Feature": "Summit views", "For": "Advanced" }
+      }
+    }
+  ]
+}

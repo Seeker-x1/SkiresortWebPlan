@@ -1,0 +1,17 @@
+resortId: nanao-korosa
+schemaVersion: "2026-06-28"
+name:
+  ja: 七尾コロサスキー場
+  en: Nanao Korosa Ski Area
+region:
+  ja: 石川県七尾市
+  en: Nanao, Ishikawa
+japowResortId: 362
+strategy:
+  ja: 能登半島唯一——動く歩道と和倉温泉パッケージのファミリー雪遊び。
+  en: Noto's only hill—moving walkway and Wakura onsen family packages.
+archetype: local-value
+map:
+  sources: ["nanao-korosa research", "LP batch #43"]
+  heroImage: images/maps/nanao-korosa-hero.png
+  copyFrom: gokazan-lp

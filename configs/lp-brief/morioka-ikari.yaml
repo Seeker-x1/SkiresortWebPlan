@@ -1,0 +1,17 @@
+resortId: morioka-ikari
+schemaVersion: "2026-06-28"
+name:
+  ja: 盛岡市立生出スキー場
+  en: Morioka Ikari Municipal Ski Area
+region:
+  ja: 岩手県盛岡市
+  en: Morioka, Iwate
+japowResortId: 125
+strategy:
+  ja: 盛岡市街近接の市民ゲレンデ——指定管理運営とスマホ完結型市民向けLP。
+  en: Municipal hill minutes from Morioka—designated management and mobile-first citizen LP.
+archetype: local-value
+map:
+  sources: ["LP batch #49"]
+  heroImage: images/maps/morioka-ikari-hero.png
+  copyFrom: shinjo-lp

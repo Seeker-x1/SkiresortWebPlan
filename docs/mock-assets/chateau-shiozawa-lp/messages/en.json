@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "title": "Chateau Shiozawa Ski Area",
+    "description": "For skiers who want quiet runs in Yuzawa—standalone LP beyond lodging."
+  },
+  "logo": "Kamikawa Nakayama Ski Area",
+  "nav": {
+    "freemium": "Premium",
+    "tour": "Tour"
+  },
+  "hero": {
+    "eyebrow": "Minami-Uonuma, Niigata · Yuzawa area foothills",
+    "title": "Kamikawa Nakayama<br />Ski Area",
+    "tagline": "Free lifts. Dry powder at the foot of the Daisetsu—in a spotlessly clean town-run hill.",
+    "badgePrice": "Lifts completely free",
+    "badgeNight": "Night skiing Tue·Thu·Sat until 21:00",
+    "badgeCourses": "1 rope tow",
+    "ctaFreemium": "Premium experiences",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Official info & snow conditions",
+    "updatedAt": "Updated Dec 25, 9:00",
+    "lift": {
+      "label": "Rope tow",
+      "value": "Operating",
+      "note": "1 lift · ~240 m · free"
+    },
+    "snow": {
+      "label": "Snow quality",
+      "value": "Dry powder",
+      "note": "Inland cold · diamond dust"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Tue·Thu·Sat until 21:00",
+      "note": "Wed·Fri·Sun·holidays until 16:00"
+    },
+    "parking": {
+      "label": "Parking",
+      "value": "100 spaces · free",
+      "note": "5 min by car from Kamikawa Station"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Free Japow",
+    "title": "Free lifts,<br />resort-grade snow.",
+    "lead": "Inland cold at the foot of the Daisetsu range brings top-tier dry powder. While lift prices rise nationwide, skiing here is completely free—with meticulous grooming that earns reviews like \"too good to be free.\" A hidden town-run gem.",
+    "specs": [
+      "70% beginner · 30% intermediate",
+      "~240 m runs (rope tow zone)",
+      "Former upper lift zone hike-up"
+    ],
+    "noticeTitle": "Operations:",
+    "noticeBody": "Chairlift retired; one rope tow only. Snowboards allowed everywhere. Closed Mondays (except holidays). Season and hours vary with snow conditions.",
+    "ctaFreemium": "See premium experiences",
+    "imgAlt": "Dry powder on a wide gentle slope under the Daisetsu range—a free town-run hill"
+  },
+  "paths": {
+    "freemium": {
+      "label": "Premium",
+      "title": "Freemium experiences"
+    },
+    "access": {
+      "label": "Access",
+      "title": "5 min from Kamikawa Station"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Rope tow · snow · night"
+    },
+    "tour": {
+      "label": "Tour",
+      "title": "Snow & local culture"
+    },
+    "map": {
+      "label": "Map",
+      "title": "Courses · rope tow"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Strength of free",
+    "primary": {
+      "title": "Spotless lodge & restrooms",
+      "lead": "A renovated base lodge and restrooms praised in reviews—the infrastructure that matters most at small local hills. A decisive differentiator that extends stay time for families, women, and overseas guests.",
+      "cta": "Resort map",
+      "imgAlt": "Renovated clean ski lodge—a new bar for local hills"
+    },
+    "secondary": {
+      "title": "Complement to Kurodake",
+      "lead": "Kurodake in the same town targets advanced skiers. Nakayama is the safe first-snow base for beginners, families, and Sounkyo onsen guests when steep alpine terrain is too much.",
+      "cta": "See tour route"
+    }
+  },
+  "freemium": {
+    "eyebrow": "Freemium",
+    "title": "Free skiing,<br />paid experiences.",
+    "lead": "Keep free lifts for locals while monetizing overseas snow-play rental packs (tubes, sleds, wear), guided powder tours, and digital donations—a freemium model that turns external visitors into revenue.",
+    "specs": [
+      "Snow-play rental ¥3,000 / 2h",
+      "Powder tour ¥15,000 / half day",
+      "QR tips · supporter stickers"
+    ],
+    "cta": "Premium program details",
+    "imgAlt": "Snow-play rental at the lodge—tubes and sleds for hands-free fun"
+  },
+  "wellness": {
+    "eyebrow": "Local Culture",
+    "title": "After skiing,<br />Kamikawa ramen.",
+    "lead": "Kamikawa town brands itself \"Japan's best ramen town\"—authentic bowls minutes from the hill. Then Kamikawa Daiginjo brewery for tasting and premium souvenirs—the core of area circulation.",
+    "leadStation": "Lodge café and coworking on weekdays—capturing workation demand too.",
+    "cta": "See tour route",
+    "imgAlt": "Steaming Kamikawa ramen—local food after skiing"
+  },
+  "tour": {
+    "eyebrow": "Premium Route",
+    "title": "From Sounkyo,<br />snow & culture.",
+    "lead": "A half- to full-day model for Sounkyo onsen guests. Position Nakayama as a weather-resilient first-snow base when Kurodake is too steep—maximize town spending on food, sake, and night skiing.",
+    "badge": "KAMIKAWA SNOW & CULTURE",
+    "steps": {
+      "am": {
+        "title": "Nakayama Ski Area",
+        "body": "Snow play & beginner lessons from the clean base lodge"
+      },
+      "noon": {
+        "title": "Kamikawa ramen",
+        "body": "Lunch in town. Multilingual ramen map"
+      },
+      "pm": {
+        "title": "Daiginjo brewery",
+        "body": "Tasting & souvenirs at Ryokuoka storehouse"
+      },
+      "eve": {
+        "title": "Night skiing (optional)",
+        "body": "Until 21:00 Tue·Thu·Sat. Shuttle from onsen town"
+      }
+    }
+  },
+  "guides": {
+    "powderTour": {
+      "title": "Guided premium powder tour",
+      "body": "Hike-up and powder runs in the former upper lift zone with local guides (¥15,000/person half day). Flip \"no chairlift\" into \"untouched powder\"—high-margin content for core skiers and affluent overseas guests."
+    },
+    "snowPlay": {
+      "title": "Overseas snow-play rental pack",
+      "body": "Hands-free tubes, sleds, and snow wear (¥3,000/2h). Posters in English and Chinese at Sounkyo hotels—direct cash from visitors who can't use the rope tow."
+    },
+    "donation": {
+      "title": "Digital donation & supporter program",
+      "body": "Multilingual QR payment panels for tips (¥500–1,000) to maintain the hill. Supporter stickers for ¥1,000+ donations—channeling \"too good to be free\" gratitude into revenue.",
+      "hashtags": [
+        "#QuietYuzawa",
+        "#KamikawaPowder",
+        "#NakayamaNight"
+      ]
+    }
+  },
+  "access": {
+    "postal": "078-1763, Japan",
+    "line": "8 Higashi-machi, Kamikawa, Kamikawa-gun, Hokkaido",
+    "note": "Asahikawa Station ~1 hr by car · Kamikawa-Sounkyo IC ~15 min · JR Kamikawa Station taxi ~10 min, walk ~20 min · 100 free parking spaces",
+    "phone": "TEL 01658-2-2683 (Kamikawa Nakayama Ski Area)",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>上川郡<rt>Kamikawa-gun</rt></ruby></span><span class=\"place-unit\"><ruby>上川町<rt>Kamikawa</rt></ruby></span><span class=\"place-unit\"><ruby>東町<rt>Higashi-machi</rt></ruby></span><span class=\"place-unit\">8</span>",
+    "rentacarEyebrow": "Yuzawa · Minami-Uonuma",
+    "rentacarLink": "Book a rental car at Niigata Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Shiozawa, Muikamachi, and Yuzawa loops"
+  },
+  "footer": {
+    "copyright": "© Kamikawa Nakayama Ski Area — LP mock",
+    "location": "078-1763 · 8 Higashi-machi, Kamikawa, Kamikawa-gun, Hokkaido"
+  }
+}

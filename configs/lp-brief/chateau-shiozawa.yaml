@@ -1,0 +1,17 @@
+resortId: chateau-shiozawa
+schemaVersion: "2026-06-28"
+name:
+  ja: シャトー塩沢スキー場
+  en: Chateau Shiozawa Ski Area
+region:
+  ja: 新潟県南魚沼市
+  en: Minami-Uonuma, Niigata
+japowResortId: 312
+strategy:
+  ja: 湯沢激戦区で静かに滑りたい層へ——宿泊付帯から独立LPで差別化。
+  en: For skiers who want quiet runs in the Yuzawa cluster—standalone LP beyond lodging pages.
+archetype: local-value
+map:
+  sources: ["LP batch #48"]
+  heroImage: images/maps/chateau-shiozawa-hero.png
+  copyFrom: kamikawa-nakayama-lp

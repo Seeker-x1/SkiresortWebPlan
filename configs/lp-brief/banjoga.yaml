@@ -1,0 +1,33 @@
+resortId: banjoga
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 武石番所ヶ原スキー場
+  en: Takeshi Banjoga Ski Area
+region:
+  ja: 長野県上田市
+  en: Ueda, Nagano
+japowResortId: 256
+
+strategy:
+  ja: 菅平高原の穴場——1km一枚バーンで家族デビューと静かなカービング。
+  en: Sugadaira-area secret—1 km single slope for family debuts and quiet carving.
+archetype: local-value
+
+audience: domestic
+
+hero:
+  tagline:
+    ja: メガリゾートの喧騒を避けて——大人¥3,550のSecret Local Japow。
+    en: Skip the mega-resort crowds—Secret Local Japow at ¥3,550.
+  badges: [family, powder, ueda, local]
+
+map:
+  sources: ["banjoga research", "LP batch #38"]
+  heroImage: images/maps/banjoga-hero.png
+  copyFrom: kamikawa-nakayama-lp
+
+humanReview:
+  - japowResortId 256
+  - 駐車100台・混雑DX
+  - 料金・営業時間

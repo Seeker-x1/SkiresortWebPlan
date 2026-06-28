@@ -1,0 +1,62 @@
+resortId: yunodai
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 湯の台スキー場
+  en: Yunodai Ski Resort
+region:
+  ja: 山形県大蔵村
+  en: Okura, Yamagata
+japowResortId: 174
+
+strategy:
+  ja: 豪雪と秘湯・肘折温泉が織りなす、5月まで滑走可能なクロスカントリー＆レトロアルペンリゾート。
+  en: A retro alpine and cross-country resort with deep snow and access to historic Hijiori Onsen, open until May.
+archetype: live-dashboard
+
+audience: both
+
+hero:
+  tagline:
+    ja: 5月上旬まで滑れる山形の秘境——希少アンヴァーリフトとSAJ公認XC。
+    en: Yamagata's hidden hill—open until early May with a rare Anvár lift and SAJ cross-country.
+  badges: [long-season, anvar-lift, xc-saj]
+
+pillars:
+  - id: spring
+    hook: { ja: 12月〜5月上旬ロングシーズン, en: Dec–early May long season }
+  - id: retro
+    hook: { ja: 国内希少アンヴァーリフト, en: Rare Anvár surface lift }
+  - id: toji
+    hook: { ja: 肘折温泉1200年の湯治, en: 1,200-year Hijiori Onsen }
+
+subPages: []
+
+facts:
+  operator: 大蔵村
+  location: 〒996-0301 山形県最上郡大蔵村大字南山4096
+  phone: "0233-76-2636"
+  lift: アンヴァーリフト1基（450m・最大斜度16°）
+  courses: アルペン1本 + SAJ公認XC3km
+  pricing:
+    liftDayAdult: 2000
+    xcDay: 400
+  hours: 12月上旬〜5月上旬（積雪状況により変動）
+  access:
+    train: JR新庄駅から村営バス約50分「牧場前」下車徒歩2分
+    car: 東北中央道舟形ICから約30分
+  nearby:
+    onsen: 肘折温泉郷（カルデラ温泉館・いでゆ館等）
+    food: 田舎家トリモツラーメン・寿屋そば
+    sight: 肘折幻想雪回廊・湯の台高原そば畑
+
+map:
+  sources: ["kanko-mogami.jp", "LP batch #33", "configs/lp-brief/yunodai.yaml"]
+  heroImage: images/maps/yunodai-hero.png
+  copyFrom: minami-furano-lp
+
+humanReview:
+  - japowResortId 174
+  - 駐車場〜リフト動線・スノーモービル送迎の最新
+  - 料金・営業期間（積雪依存）
+  - 英訳の事実確認

@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "2026-06-28",
+  "id": "matsushiro",
+  "name": {
+    "ja": "十日町市松代ファミリースキー場",
+    "en": "Tokamachi City Matsudai Family Ski Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "matsudai.jp",
+    "LP batch #34",
+    "configs/lp-brief/matsushiro.yaml"
+  ],
+  "updatedAt": "2026-06-28T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/matsushiro-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-1",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "第1リフト",
+        "en": "Lift 1"
+      },
+      "shortLabel": {
+        "ja": "第1",
+        "en": "L1"
+      },
+      "meta": {
+        "ja": {
+          "接続": "3コース分岐"
+        },
+        "en": {
+          "Access": "3 run junction"
+        }
+      }
+    },
+    {
+      "id": "lift-2",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "第2リフト",
+        "en": "Lift 2"
+      },
+      "shortLabel": {
+        "ja": "第2",
+        "en": "L2"
+      },
+      "meta": {
+        "ja": {
+          "運行": "土日祝・ナイター日",
+          "山頂": "非圧雪パウダー"
+        },
+        "en": {
+          "Schedule": "Weekends/holidays & night",
+          "Summit": "Ungroomed powder"
+        }
+      }
+    },
+    {
+      "id": "trail-beginner",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "初級コース",
+        "en": "Beginner course"
+      },
+      "shortLabel": {
+        "ja": "初級",
+        "en": "Beg."
+      },
+      "meta": {
+        "ja": {
+          "構成": "初級50%"
+        },
+        "en": {
+          "Share": "50% beginner"
+        }
+      }
+    },
+    {
+      "id": "trail-intermediate",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "中級・ナイターゲレンデ",
+        "en": "Intermediate · night piste"
+      },
+      "shortLabel": {
+        "ja": "中級",
+        "en": "Inter."
+      },
+      "meta": {
+        "ja": {
+          "構成": "中級30%",
+          "特徴": "幅広フラット"
+        },
+        "en": {
+          "Share": "30% intermediate",
+          "Feature": "Wide flat burn"
+        }
+      }
+    },
+    {
+      "id": "trail-advanced",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "上級コース（山頂）",
+        "en": "Advanced summit run"
+      },
+      "shortLabel": {
+        "ja": "上級24°",
+        "en": "Adv. 24°"
+      },
+      "meta": {
+        "ja": {
+          "最大斜度": "24°",
+          "雪面": "非圧雪"
+        },
+        "en": {
+          "Max slope": "24°",
+          "Surface": "Ungroomed"
+        }
+      }
+    },
+    {
+      "id": "zone-park",
+      "type": "zone",
+      "status": "open",
+      "label": {
+        "ja": "テレインパーク",
+        "en": "Terrain park"
+      },
+      "shortLabel": {
+        "ja": "パーク",
+        "en": "Park"
+      },
+      "meta": {
+        "ja": {
+          "アイテム": "キッカー・レール・ボックス"
+        },
+        "en": {
+          "Features": "Kickers, rails, boxes"
+        }
+      }
+    },
+    {
+      "id": "zone-ramp",
+      "type": "zone",
+      "status": "open",
+      "label": {
+        "ja": "サーフ・スケートランプ",
+        "en": "Surf-skate ramp"
+      },
+      "shortLabel": {
+        "ja": "ランプ",
+        "en": "Ramp"
+      },
+      "meta": {
+        "ja": {
+          "場所": "センターハウス内"
+        },
+        "en": {
+          "Location": "Inside center house"
+        }
+      }
+    }
+  ]
+}
+

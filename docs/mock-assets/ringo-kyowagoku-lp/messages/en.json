@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "title": "Ringo Kyowagoku Ski Area",
+    "description": "Rare Chugoku Mountains snow—distinctive name and detail LP for western Japan skiers."
+  },
+  "logo": "Ringo Kyowagoku Ski Area",
+  "hero": {
+    "eyebrow": "Shobara, Hiroshima · Chugoku Mountains",
+    "title": "Ringo Kyowagoku<br />Ski Area",
+    "tagline": "Overlook drift ice and Lake Saroma at once.",
+    "badgePrice": "Adult day ¥1,500",
+    "badgePass": "Shobara Snow Pass from ¥4,000",
+    "badgeXc": "Cross-country",
+    "ctaPass": "Yubetsu Drift Ice Pass",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Real-time conditions",
+    "updatedAt": "Updated Feb 7, 8:30",
+    "lift": {
+      "label": "Lift",
+      "value": "Operating",
+      "note": "1 single · night skiing available"
+    },
+    "driftIce": {
+      "label": "Drift ice",
+      "value": "Shore contact",
+      "note": "Peak late Jan–Feb"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "4/4 open",
+      "note": "Okhotsk 31°"
+    },
+    "snow": {
+      "label": "Snow depth",
+      "value": "Check required",
+      "note": "Restrictions possible after rain"
+    }
+  },
+  "expert": {
+    "eyebrow": "Japow Local",
+    "title": "A local secret<br />for experts.",
+    "lead": "79% advanced skiers. Okhotsk Course up to 27° with careful grooming and larch-protected snow—the opposite of Niseko, a local powder paradise.",
+    "specs": [
+      "Panorama 1,000 m",
+      "Okhotsk 27°",
+      "XC 4,500 m"
+    ],
+    "ctaCourses": "Courses & XC",
+    "ctaAccess": "Access & location",
+    "imgAlt": "Carving on Okhotsk Course—a local expert hill where 79% are advanced"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Snow & operations"
+    },
+    "pass": {
+      "label": "Pass",
+      "title": "Shobara Snow Pass"
+    },
+    "slopes": {
+      "label": "Slopes",
+      "title": "4 courses + XC"
+    },
+    "access": {
+      "label": "Access",
+      "title": "In Yubetsu Town"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Gokazan",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "Two seas below",
+      "lead": "Drift ice on the Okhotsk Sea and Japan's largest brackish Lake Saroma—overlook both at once, a globally rare location. When ice comes ashore, ski down toward a silver sea.",
+      "cta": "View scenic runs",
+      "imgAlt": "Panorama overlooking Okhotsk drift ice and Lake Saroma together"
+    },
+    "secondary": {
+      "title": "Yubetsu Drift Ice Pass",
+      "lead": "Move beyond a ¥1,500 lift-only day ticket. Combine onsen, dining, and skiing—triple spend per guest.",
+      "price": "¥4,000–5,000",
+      "includes": [
+        "Day lift ticket (¥1,500 value)",
+        "Tulip-no-Yu bath ticket",
+        "¥1,500 partner restaurant coupon"
+      ],
+      "cta": "Buy pass"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Sawaguchi Group",
+    "title": "After skiing,<br />Tulip-no-Yu.",
+    "lead": "Ski area and Michi-no-Eki Kamiyubetsu Onsen Tulip-no-Yu—both managed by Sawaguchi Sangyo. Maximum synergy for fast packaging and shuttle networks.",
+    "cta": "Onsen & roadside station",
+    "imgAlt": "Kamiyubetsu Onsen Tulip-no-Yu—warming bath after skiing"
+  },
+  "seafood": {
+    "eyebrow": "Yubetsu Gourmet",
+    "title": "Slope food,<br />reimagined as seafood.",
+    "lead": "Scallops at Restaurant Ribbon, Ryugukan oysters—beyond ski-area curry clichés, Okhotsk seafood for high-spend visitors.",
+    "noticeTitle": "Traveling light:",
+    "noticeBody": "No permanent rentals. Weekend pop-up rental stations during drift-ice peak, or partner referrals on the web.",
+    "cta": "Pop-up rental info",
+    "imgAlt": "Yubetsu scallop dishes—premium seafood at Ribbon and more"
+  },
+  "tour": {
+    "eyebrow": "Premium Route",
+    "title": "Yubetsu winter<br />premium tour",
+    "lead": "From ¥1,500 point spending to line-and-area consumption—half- to full-day model courses to multiply ARPU.",
+    "badge": "YUBETSU DRIFT ICE PREMIUM",
+    "steps": {
+      "am": {
+        "title": "Gokazan skiing",
+        "body": "Ski drift-ice and Saroma views. XC too"
+      },
+      "noon": {
+        "title": "Yubetsu seafood",
+        "body": "Scallop & oyster lunch at Ribbon etc."
+      },
+      "pm": {
+        "title": "Ryugudai Observatory",
+        "body": "Observe and photograph drift ice up close"
+      },
+      "eve": {
+        "title": "Tulip-no-Yu",
+        "body": "Sauna and onsen. Souvenir shopping"
+      }
+    }
+  },
+  "guides": {
+    "drift": {
+      "title": "Drift ice × Japow guided tour",
+      "body": "B2B partnerships. Ungroomed runs + XC (snowshoe) + Yubetsu seafood dinner—¥30,000–50,000/person premium experiences linked from Shiretoko and Abashiri secondary transport."
+    },
+    "passGuide": {
+      "title": "Gokazan Shobara Snow Pass guide",
+      "body": "Short-term action using Sawaguchi Sangyo's portfolio. ~3× spend per guest without new capital. Integrated pass: lift + onsen + dining coupon."
+    },
+    "snowPlay": {
+      "title": "When you don't ski",
+      "body": "Turn low-snow risk into opportunity. Snow BBQ, fire pits, sledding—monetize non-ski content without lifts. Complements families split by single-chair lifts.",
+      "hashtags": [
+        "#DriftIceSki",
+        "#SaromaPanorama",
+        "#GokazanJapow"
+      ]
+    }
+  },
+  "access": {
+    "postal": "099-6323, Japan",
+    "line": "Kitahei Village Section 2, No. 100, Yubetsu, Mombetsu-gun, Hokkaido",
+    "note": "About 20 minutes by car from JR Engaru Station · about 5 minutes by car to Kamiyubetsu Onsen Tulip-no-Yu",
+    "phone": "TEL 01586-2-3111 (Ringo Kyowagoku Ski Area Lodge)",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>紋別郡<rt>Mombetsu-gun</rt></ruby></span><span class=\"place-unit\"><ruby>湧別町<rt>Yubetsu</rt></ruby></span><span class=\"place-unit\"><ruby>北兵村二区100番地<rt>Kitahei Village Section 2, No. 100</rt></ruby></span>",
+    "rentacarEyebrow": "Chugoku Mountains",
+    "rentacarLink": "Book a rental car at Yamaguchi Ube Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Shobara and Miyoshi loops"
+  },
+  "footer": {
+    "copyright": "© Ringo Kyowagoku Ski Area",
+    "location": "099-6323 · Kitahei Village Section 2, No. 100, Yubetsu, Mombetsu-gun, Hokkaido"
+  }
+}

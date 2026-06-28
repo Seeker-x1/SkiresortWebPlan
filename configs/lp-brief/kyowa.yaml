@@ -1,0 +1,17 @@
+resortId: kyowa
+schemaVersion: "2026-06-28"
+name:
+  ja: 協和スキー場
+  en: Kyowa Ski Area
+region:
+  ja: 秋田県大仙市
+  en: Daisen, Akita
+japowResortId: 140
+strategy:
+  ja: 秋田市圏から好アクセス——手頃な市営ゲレンデでファミリーと市民リピートを育てる。
+  en: Easy reach from Akita city—a affordable municipal hill for families and local repeat visits.
+archetype: local-value
+map:
+  sources: ["LP batch #46"]
+  heroImage: images/maps/kyowa-hero.png
+  copyFrom: shinjo-lp

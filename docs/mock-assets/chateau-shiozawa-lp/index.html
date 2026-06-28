@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="chateau-shiozawa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>シャトー塩沢スキー場</title>
+  <meta name="description" content="湯沢激戦区で静かに滑りたい層へ——独立LPで差別化訴求。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="#" class="logo" data-i18n="logo">上川町営中山スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=chateau-shiozawa" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="#live" data-i18n="nav.live">本日</a></li>
+          <li><a href="#freemium" data-i18n="nav.freemium">プレミアム</a></li>
+          <li><a href="#tour" data-i18n="nav.tour">周遊</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-chateau-shiozawa-hero.png" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">北海道上川町 · 大雪山麓</p>
+        <h1 class="hero-title" data-i18n-html="hero.title">上川町営<br />中山スキー場</h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">リフト完全無料。大雪山麓のドライパウダーと、清潔なローカルゲレンデ。</p>
+        <span class="badge-price" data-i18n="hero.badgePrice">リフト完全無料</span>
+        <span class="badge-night" data-i18n="hero.badgeNight">ナイター 火・木・土 21:00</span>
+        <span class="badge-courses" data-i18n="hero.badgeCourses">ロープトゥ1基</span>
+        <div class="hero-cta">
+          <a href="#freemium" class="btn btn-free" data-i18n="hero.ctaFreemium">プレミアム体験</a>
+          <a href="#live" class="btn btn-ghost" data-i18n="hero.ctaLive">本日のコンディション</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="live" class="live-dashboard" data-i18n-attr="aria-label:live.ariaLabel">
+      <div class="inner">
+        <div class="live-head">
+          <div>
+            <span class="live-pulse" aria-hidden="true"></span>
+            <span class="live-label">Live</span>
+            <span style="font-size:0.75rem;color:var(--muted);margin-left:0.5rem" data-i18n="live.subtitle">公式情報・降雪状況</span>
+          </div>
+          <p class="live-updated" data-i18n="live.updatedAt">更新 12/25 9:00</p>
+        </div>
+        <div class="status-grid">
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.lift.label">ロープトゥ</p>
+            <p class="status-card__value" data-i18n="live.lift.value">運行中</p>
+            <p class="status-card__note" data-i18n="live.lift.note">1基 · 約240m · 無料</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.snow.label">雪質</p>
+            <p class="status-card__value" style="color:var(--accent-powder)" data-i18n="live.snow.value">ドライパウダー</p>
+            <p class="status-card__note" data-i18n="live.snow.note">内陸寒冷 · ダイヤモンドダスト</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.night.label">ナイター</p>
+            <p class="status-card__value" data-i18n="live.night.value">火・木・土 21:00</p>
+            <p class="status-card__note" data-i18n="live.night.note">水金日祝は16:00まで</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.parking.label">駐車場</p>
+            <p class="status-card__value" data-i18n="live.parking.value">100台 · 無料</p>
+            <p class="status-card__note" data-i18n="live.parking.note">上川駅から車5分</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="sanctuary-heading">
+      <div class="inner">
+        <div class="transit-grid">
+          <div class="transit-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-chateau-shiozawa-powder.png"
+                data-i18n-attr="alt:sanctuary.imgAlt"
+                alt="大雪山連峰を背景に広がるドライパウダーの緩斜面"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="transit-card">
+            <p class="eyebrow" data-i18n="sanctuary.eyebrow">Free Japow</p>
+            <h2 id="sanctuary-heading" class="heading-lg" data-i18n-html="sanctuary.title">無料なのに、<br />有料級の雪。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:28rem" data-i18n="sanctuary.lead">
+              大雪山連峰麓の内陸寒冷気候がもたらす極上のドライパウダー。全国でリフト券が値上がりする中、滑走は完全無料。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="sanctuary.specs.0">初級70% · 中級30%</li>
+              <li class="spec-tag" data-i18n="sanctuary.specs.1">滑走約240m</li>
+              <li class="spec-tag" data-i18n="sanctuary.specs.2">旧上部ハイクアップ可</li>
+            </ul>
+            <div class="notice-box">
+              <strong data-i18n="sanctuary.noticeTitle">運営について：</strong><span data-i18n="sanctuary.noticeBody">チェアリフトは廃止済み。稼働はロープトゥ1基のみ。</span>
+            </div>
+            <div class="transit-actions">
+              <a href="#freemium" class="btn btn-free" data-i18n="sanctuary.ctaFreemium">プレミアム体験を見る</a>
+              <a href="#access" class="btn btn-ghost" data-i18n="nav.access">アクセス</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top" aria-labelledby="paths-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.explore">Explore</p>
+        <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
+        <div class="path-grid">
+          <a href="#freemium" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.freemium.label">プレミアム</span>
+            <span class="path-tile__title" data-i18n="paths.freemium.title">フリーミアム体験</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#access" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.access.label">アクセス</span>
+            <span class="path-tile__title" data-i18n="paths.access.title">上川駅から5分</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#live" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.today.label">今日</span>
+            <span class="path-tile__title" data-i18n="paths.today.title">ロープトゥ・雪質・ナイター</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#tour" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.tour.label">周遊</span>
+            <span class="path-tile__title" data-i18n="paths.tour.title">雪＆ローカルカルチャー</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="../map.html?resort=chateau-shiozawa" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.map.label">マップ</span>
+            <span class="path-tile__title" data-i18n="paths.map.title">コース・ロープトゥ</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section" aria-labelledby="highlights-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="highlights.eyebrow">ここが違う</p>
+        <h2 id="highlights-heading" class="heading-lg" data-i18n="highlights.title">無料の強み</h2>
+
+        <div class="highlight-duet">
+          <article class="highlight-primary">
+            <div class="frame">
+              <img
+                src="lp-mock-chateau-shiozawa-lodge.png"
+                data-i18n-attr="alt:highlights.primary.imgAlt"
+                alt="リニューアルされた清潔なスキー場管理小屋"
+                width="1600"
+                height="1100"
+              />
+            </div>
+            <div class="highlight-primary-body">
+              <h3 data-i18n="highlights.primary.title">清潔な管理小屋とトイレ</h3>
+              <p class="lead" style="margin-top:1rem" data-i18n="highlights.primary.lead">
+                リニューアルされた管理小屋と、口コミで絶賛される清潔なトイレ。
+              </p>
+              <a href="../map.html?resort=chateau-shiozawa" class="btn btn-powder" style="margin-top:2rem" data-i18n="highlights.primary.cta">ゲレンデマップ</a>
+            </div>
+          </article>
+
+          <article class="highlight-secondary">
+            <h3 data-i18n="highlights.secondary.title">黒岳との棲み分け</h3>
+            <p class="lead-whisper" style="margin-top:1rem" data-i18n="highlights.secondary.lead">
+              層雲峡温泉の宿泊客にとって、天候に左右されにくいファーストスノー体験拠点。
+            </p>
+            <a href="#tour" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="highlights.secondary.cta">周遊ルートを見る</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="freemium" class="section border-top" aria-labelledby="freemium-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow" data-i18n="freemium.eyebrow">Freemium</p>
+            <h2 id="freemium-heading" class="heading-lg" data-i18n-html="freemium.title">滑走は無料、<br />体験で収益化。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="freemium.lead">
+              地元向けの無料リフトは維持しつつ、海外からの来客向け雪遊びレンタルパック、ガイド付きパウダーツアー、デジタル・ドネーションで収益を創出。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="freemium.specs.0">雪遊びレンタル ¥3,000/2h</li>
+              <li class="spec-tag" data-i18n="freemium.specs.1">パウダーツアー ¥15,000/半日</li>
+              <li class="spec-tag" data-i18n="freemium.specs.2">QR投げ銭・サポーターステッカー</li>
+            </ul>
+            <a href="#guides" class="btn btn-free" style="margin-top:2rem" data-i18n="freemium.cta">プレミアム施策の詳細</a>
+          </div>
+          <div class="feature-visual">
+            <div class="frame frame--wide">
+              <img
+                src="lp-mock-chateau-shiozawa-hero.png"
+                data-i18n-attr="alt:freemium.imgAlt"
+                alt="管理小屋での雪遊びレンタル"
+                width="1600"
+                height="1100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="wellness" class="section border-top" aria-labelledby="wellness-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-visual feature-visual--left">
+            <div class="frame">
+              <img
+                src="lp-mock-chateau-shiozawa-ramen.png"
+                data-i18n-attr="alt:wellness.imgAlt"
+                alt="湯気の立つ上川ラーメン"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="feature-copy feature-copy--right">
+            <p class="eyebrow" data-i18n="wellness.eyebrow">Local Culture</p>
+            <h2 id="wellness-heading" class="heading-lg" data-i18n-html="wellness.title">滑ったあと、<br />上川ラーメンへ。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="wellness.lead">
+              「日本一ラーメンのおいしい町」を標榜する上川町——スキー場から数分の市街地で本場の上川ラーメンを。
+            </p>
+            <p class="lead" style="margin-top:1rem; max-width:32rem" data-i18n="wellness.leadStation">
+              管理小屋のローカル・カフェ化とコワーキング開放——平日のワーケーション需要も取り込む。
+            </p>
+            <a href="#tour" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="wellness.cta">周遊ルートを見る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tour" class="section border-top" aria-labelledby="tour-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="tour.eyebrow">Premium Route</p>
+        <h2 id="tour-heading" class="heading-lg" data-i18n-html="tour.title">層雲峡発、<br />雪＆カルチャー体験。</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="tour.lead">
+          層雲峡温泉の宿泊客向け半日〜1日モデル。黒岳が難しすぎる層に、中山をファーストスノー拠点として位置づけ。
+        </p>
+        <span class="culture-badge" data-i18n="tour.badge">KAMIKAWA SNOW & CULTURE</span>
+
+        <div class="journey">
+          <div class="journey-step">
+            <p class="journey-step__num">AM</p>
+            <p class="journey-step__title" data-i18n="tour.steps.am.title">中山スキー場</p>
+            <p class="journey-step__body" data-i18n="tour.steps.am.body">雪遊び・初心者レッスン</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">昼</p>
+            <p class="journey-step__title" data-i18n="tour.steps.noon.title">上川ラーメン</p>
+            <p class="journey-step__body" data-i18n="tour.steps.noon.body">市街地の名店でランチ</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">PM</p>
+            <p class="journey-step__title" data-i18n="tour.steps.pm.title">大雪酒造</p>
+            <p class="journey-step__body" data-i18n="tour.steps.pm.body">緑丘蔵で試飲・土産購入</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">夕</p>
+            <p class="journey-step__title" data-i18n="tour.steps.eve.title">ナイター（任意）</p>
+            <p class="journey-step__body" data-i18n="tour.steps.eve.body">火木土21時まで</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.guidesEyebrow">特集</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="common.guidesTitle">特集ページ</h2>
+
+        <ul class="guides-list">
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="true" data-guide="powder-tour">
+              <span data-i18n="guides.powderTour.title">ガイド付きプレミアムパウダーツアー</span>
+              <span class="guide-icon" aria-hidden="true">−</span>
+            </button>
+            <div class="guide-panel is-open" id="panel-powder-tour">
+              <p class="lead" data-i18n="guides.powderTour.body">
+                旧リフト上部の未圧雪エリアを、地元ガイドが引率するハイクアップ＆パウダー滑走ツアー。
+              </p>
+              <a href="#freemium" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="snow-play">
+              <span data-i18n="guides.snowPlay.title">海外向け雪遊びレンタルパック</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-snow-play" hidden>
+              <p class="lead" data-i18n="guides.snowPlay.body">
+                スノーチューブ・大型ソリ・スノーウェアの手ぶらレンタル（¥3,000/2h）。
+              </p>
+              <a href="#freemium" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="donation">
+              <span data-i18n="guides.donation.title">デジタル・ドネーションとサポーター制度</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-donation" hidden>
+              <p class="lead" data-i18n="guides.donation.body">
+                多言語QR決済パネルでゲレンデ維持への投げ銭を募る。
+              </p>
+              <div class="hashtags">
+                <span class="hashtag" data-i18n="guides.donation.hashtags.0">#FreeJapow</span>
+                <span class="hashtag" data-i18n="guides.donation.hashtags.1">#KamikawaPowder</span>
+                <span class="hashtag" data-i18n="guides.donation.hashtags.2">#NakayamaNight</span>
+              </div>
+              <a href="#freemium" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="access" class="access-section border-top" aria-labelledby="access-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.accessEyebrow">Access</p>
+        <h2 id="access-heading" class="heading-lg" data-i18n="common.location">所在地</h2>
+        <div class="access-grid">
+          <address class="access-address">
+            <span class="access-postal" data-i18n="access.postal">〒078-1763</span>
+            <span class="access-line" data-i18n="access.line">北海道上川郡上川町東町8番地</span>
+            <p class="access-places" data-i18n-html="access.places" hidden></p>
+            <p class="access-note" data-i18n="access.note">旭川駅から車約1時間 · 上川層雲峡ICから約15分</p>
+            <p class="access-phone" data-i18n="access.phone">TEL 01658-2-2683（上川町営中山スキー場）</p>
+          </address>
+          <div class="access-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%8A%E5%B7%9D%E7%94%BA%E5%96%B6%E4%B8%AD%E5%B1%B1%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4"
+              class="btn btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="common.googleMap">Google Mapで開く</span>
+            </a>
+            <a href="tel:0165822683" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">上川・層雲峡圏</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">旭川空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">層雲峡・上川町内周遊向け</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 上川町営中山スキー場 — LP案モック</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒078-1763 北海道上川郡上川町東町8番地</span> ·
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%8A%E5%B7%9D%E7%94%BA%E5%96%B6%E4%B8%AD%E5%B1%B1%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4" target="_blank" rel="noopener noreferrer" data-i18n="common.footerMap">Google Map</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
+  <script src="../_shared/mock-i18n.js"></script>
+  <script>
+    document.querySelectorAll(".guide-trigger").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.guide;
+        const panel = document.getElementById("panel-" + id);
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".guide-trigger").forEach((b) => {
+          b.setAttribute("aria-expanded", "false");
+          b.querySelector(".guide-icon").textContent = "+";
+        });
+        document.querySelectorAll(".guide-panel").forEach((p) => {
+          p.classList.remove("is-open");
+          p.hidden = true;
+        });
+
+        if (!isOpen) {
+          btn.setAttribute("aria-expanded", "true");
+          btn.querySelector(".guide-icon").textContent = "−";
+          panel.classList.add("is-open");
+          panel.hidden = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "title": "Mombetsu City Oyama Ski Area",
+    "description": "Dive into Okhotsk Blue—hands-free powder between drift-ice tours, five minutes from downtown Mombetsu."
+  },
+  "logo": "Mombetsu City Oyama Ski Area",
+  "hero": {
+    "eyebrow": "Mombetsu, Hokkaido · Gateway to the Okhotsk",
+    "title": "Oyama<br />Ski Area",
+    "sub": "Municipal · Oyama",
+    "tagline": "Fill the gap between Garinko cruises—10 minutes from town, ski above drift ice and the Okhotsk Sea.",
+    "ctaRental": "Hands-free snow plan",
+    "ctaLive": "Today's status"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Today's status",
+    "updatedAt": "Updated Feb 15 8:30",
+    "lift": {
+      "label": "Lifts",
+      "value": "Operating",
+      "note": "Areas 1 & 2"
+    },
+    "driftIce": {
+      "label": "Drift ice",
+      "value": "Shore season",
+      "note": "Summit views"
+    },
+    "courses": {
+      "label": "Areas",
+      "value": "2 zones",
+      "note": "Wide Area 1"
+    },
+    "wind": {
+      "label": "Wind",
+      "value": "Check live",
+      "note": "Summit may close"
+    }
+  },
+  "quality": {
+    "eyebrow": "Okhotsk Blue",
+    "title": "Sea views,<br />city access.",
+    "lead": "Closer than Unabetsu—10 minutes from the Garinko pier. Area 1 is wide and mellow; from the summit, drift ice and downtown lights share the horizon.",
+    "specs": [
+      "2 areas",
+      "Ocean views",
+      "2h pass ¥1,600",
+      "Night skiing"
+    ],
+    "ctaMap": "Resort map",
+    "ctaPricing": "Pricing",
+    "imgAlt": "Skiers on Oyama with the Sea of Okhotsk in the background"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Operations & conditions"
+    },
+    "access": {
+      "label": "Access",
+      "title": "~10 min from downtown"
+    },
+    "slopes": {
+      "label": "Slopes",
+      "title": "Areas 1 & 2"
+    },
+    "rental": {
+      "label": "Book",
+      "title": "Hands-free rental"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What makes Oyama unique",
+    "title": "Only here",
+    "primary": {
+      "title": "Garinko cross-sell",
+      "lead": "The best conversion moment is right after a drift-ice cruise—bundle ship ticket, 2-hour lift, and rental into a half-day Okhotsk loop.",
+      "cta": "View loop pass",
+      "imgAlt": "Garinko icebreaker and drift ice—half-day loop to Oyama"
+    },
+    "secondary": {
+      "title": "Hands-free ¥3,000",
+      "lead": "Rental set ¥3,000, 2-hour ticket ¥1,600—multilingual signage and OTA prepay remove gear and language barriers for overseas visitors.",
+      "price": "Rental set ¥3,000 · 2h ticket ¥1,600",
+      "cta": "Rental rates"
+    }
+  },
+  "rental": {
+    "eyebrow": "Book & Go",
+    "title": "Travel light into<br />Okhotsk Blue.",
+    "lead": "Full set ¥3,000. Garinko visitors can drive straight from the marine center—bring your own hat and gloves.",
+    "whisper": "Proposed \"Garinko × Oyama 2h Pass\" web presale—book your post-cruise ski window in one click.",
+    "cta": "View hands-free plan",
+    "imgAlt": "Rental desk at Oyama—visit without your own gear"
+  },
+  "tour": {
+    "eyebrow": "Okhotsk Loop",
+    "title": "Drift ice, snow,<br />seafood.",
+    "lead": "A half-day, not a full one—Garinko cruise, seafood lunch, two hours at Oyama, then Monta-no-Yu onsen. Ski as the spice in a sightseeing day.",
+    "cta": "Area tour plans",
+    "imgAlt": "Mombetsu half-day loop—drift ice, skiing, onsen, seafood",
+    "steps": {
+      "01": {
+        "title": "Garinko-go",
+        "body": "Drift-ice breaker cruise from the marine center"
+      },
+      "02": {
+        "title": "Seafood lunch",
+        "body": "Yottekemarutomi or Ramen Nishiya"
+      },
+      "03": {
+        "title": "Oyama Ski Area",
+        "body": "Hands-free rental + 2-hour ticket with summit views"
+      },
+      "04": {
+        "title": "Monta-no-Yu",
+        "body": "Natural spring water and sauna après-ski"
+      }
+    }
+  },
+  "guides": {
+    "driftIce": {
+      "title": "Drift ice × Oyama half-day guide",
+      "body": "Best Feb–Mar when ice reaches shore—Garinko in the morning, Oyama in the afternoon. If wind closes Area 2, Area 1 and the sky tower keep the day intact."
+    },
+    "rentalGuide": {
+      "title": "Hands-free rental guide",
+      "body": "Set ¥3,000, 2-hour ticket ¥1,600. Digital multilingual guides and OTA prepay solve gear and language friction for overseas visitors."
+    },
+    "okhotskTour": {
+      "title": "Okhotsk short-trip model",
+      "body": "Garinko (AM) → seafood bowl (lunch) → Oyama 2h (PM) → Monta-no-Yu (evening) → Marukaichi robata (night)—maximize spend from sightseers, not core skiers only.",
+      "hashtags": [
+        "#OkhotskBlueSki",
+        "#DriftIceMombetsu",
+        "#GarinkoLoop"
+      ]
+    }
+  },
+  "access": {
+    "postal": "094-0035, Japan",
+    "line": "Oyama, Mombetsu, Hokkaido",
+    "note": "~10 min by car from downtown · Summit lift may close in high winds",
+    "phone": "TEL 0158-23-4141",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>紋別市<rt>Mombetsu</rt></ruby></span><span class=\"place-unit\"><ruby>大山町<rt>Oyama</rt></ruby></span>",
+    "rentacarEyebrow": "Okhotsk region",
+    "rentacarLink": "Book a rental car at Memanbetsu Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Mombetsu, Abashiri, and drift-ice touring"
+  },
+  "footer": {
+    "copyright": "© Mombetsu City Oyama Ski Area — LP mock",
+    "location": "094-0035 · Oyama, Mombetsu, Hokkaido"
+  }
+}

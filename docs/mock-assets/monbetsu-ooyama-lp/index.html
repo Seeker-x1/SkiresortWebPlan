@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="monbetsu-ooyama">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>紋別市営大山スキー場</title>
+  <meta name="description" content="流氷観光の空き時間に手ぶらで絶景パウダーを。オホーツクブルーに飛び込む都市型リゾート。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="#" class="logo" data-i18n="logo">紋別市営大山スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=monbetsu-ooyama" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="#live" data-i18n="nav.live">本日</a></li>
+          <li><a href="#highlights" data-i18n="nav.highlights">魅力</a></li>
+          <li><a href="#rental" data-i18n="nav.rental">手ぶら</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-monbetsu-ooyama-hero.png" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">北海道紋別市 · オホーツクの玄関</p>
+        <h1 class="hero-title" data-i18n-html="hero.title">平<br />スキー場</h1>
+        <p class="hero-sub" data-i18n="hero.sub">紋別市営 · 大山町</p>
+        <p class="hero-tagline" data-i18n="hero.tagline">流氷観光の空き時間に手ぶらで絶景パウダーを。オホーツクブルーに飛び込む都市型リゾート。</p>
+        <div class="hero-cta">
+          <a href="#rental" class="btn btn-ice" data-i18n="hero.ctaRental">手ぶら雪遊びプラン</a>
+          <a href="#live" class="btn btn-ghost" data-i18n="hero.ctaLive">本日の運行</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="live" class="live-dashboard" data-i18n-attr="aria-label:live.ariaLabel">
+      <div class="inner">
+        <div class="live-head">
+          <div>
+            <span class="live-pulse" aria-hidden="true"></span>
+            <span class="live-label">Live</span>
+            <span class="live-label" style="color:var(--muted); margin-left:0.5rem" data-i18n="live.subtitle">本日の運行</span>
+          </div>
+          <p class="live-updated" data-i18n="live.updatedAt">更新 2/7 8:45</p>
+        </div>
+        <div class="status-grid">
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.lift.label">リフト</p>
+            <p class="status-card__value" data-i18n="live.lift.value">運行中</p>
+            <p class="status-card__note" data-i18n="live.lift.note">ペア1基＋ハンガー3</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.driftIce.label">フェリー</p>
+            <p class="status-card__value" style="color:var(--accent-ice)" data-i18n="live.driftIce.value">両津港便</p>
+            <p class="status-card__note" data-i18n="live.driftIce.note">山頂から俯瞰</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.courses.label">コース</p>
+            <p class="status-card__value" data-i18n="live.courses.value">5/5 開放</p>
+            <p class="status-card__note" data-i18n="live.courses.note">最長750m</p>
+          </div>
+          <div class="status-card status-card--warn">
+            <p class="status-card__label" data-i18n="live.wind.label">風速</p>
+            <p class="status-card__value" data-i18n="live.wind.value">要許可</p>
+            <p class="status-card__note" data-i18n="live.wind.note">チェーン携行必須</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="quality-heading">
+      <div class="inner">
+        <div class="transit-grid">
+          <div class="transit-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-monbetsu-ooyama-quality.png"
+                data-i18n-attr="alt:quality.imgAlt"
+                alt="オホーツク海を望む大山スキー場——ワイド斜面で滑走するスキーヤー"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="transit-card">
+            <p class="eyebrow" data-i18n="quality.eyebrow">Sado Island</p>
+            <h2 id="quality-heading" class="heading-lg" data-i18n-html="quality.title">小さくて、<br />濃い。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:28rem" data-i18n="quality.lead">
+              標高差30mのコンパクト設計ながら5コース。離島ならではのパウダーと、金北山を望む日本海の景色——本土メガリゾートにはない「島の雪遊び」。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="quality.specs.0">5コース</li>
+              <li class="spec-tag" data-i18n="quality.specs.1">標高差30m</li>
+              <li class="spec-tag" data-i18n="quality.specs.2">日券¥2,000</li>
+              <li class="spec-tag" data-i18n="quality.specs.3">750m最長</li>
+            </ul>
+            <div class="transit-actions">
+              <a href="../map.html?resort=monbetsu-ooyama" class="btn btn-primary" data-i18n="quality.ctaMap">コース・マップ</a>
+              <a href="#" class="btn btn-ghost" data-i18n="quality.ctaPricing">料金一覧</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top" aria-labelledby="paths-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.explore">Explore</p>
+        <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
+        <div class="path-grid">
+          <a href="#live" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.today.label">今日</span>
+            <span class="path-tile__title" data-i18n="paths.today.title">本日の運営・コンディション</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#access" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.access.label">アクセス</span>
+            <span class="path-tile__title" data-i18n="paths.access.title">両津港から約50分</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="../map.html?resort=monbetsu-ooyama" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.slopes.label">ゲレンデ</span>
+            <span class="path-tile__title" data-i18n="paths.slopes.title">5コース・ペアリフト</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#rental" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.rental.label">予約</span>
+            <span class="path-tile__title" data-i18n="paths.rental.title">手ぶらレンタル</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section" aria-labelledby="highlights-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="highlights.eyebrow">平のUSP</p>
+        <h2 id="highlights-heading" class="heading-lg" data-i18n="highlights.title">ここが違う</h2>
+
+        <div class="highlight-duet">
+          <article class="highlight-primary">
+            <div class="frame">
+              <img
+                src="lp-mock-monbetsu-ooyama-highlights-primary.png"
+                data-i18n-attr="alt:highlights.primary.imgAlt"
+                alt="ガリンコ号と流氷——大山スキー場への半日ループ"
+                width="1600"
+                height="1100"
+              />
+            </div>
+            <div class="highlight-primary-body">
+              <h3 data-i18n="highlights.primary.title">ガリンコ号クロスセル</h3>
+              <p class="lead" style="margin-top:1rem" data-i18n="highlights.primary.lead">
+                流氷砕氷船の下船直後が最大の送客チャンス——「乗船券＋2時間リフト＋手ぶらレンタル」の半日周遊パスで、観光興奮をそのまま雪上へ。
+              </p>
+              <a href="#guides" class="btn btn-primary" style="margin-top:2rem" data-i18n="highlights.primary.cta">通行ガイドを見る</a>
+            </div>
+          </article>
+
+          <article class="highlight-secondary">
+            <h3 data-i18n="highlights.secondary.title">ファミリーパウダー</h3>
+            <p class="lead-whisper" style="margin-top:1rem" data-i18n="highlights.secondary.lead">
+              こぢんまり5コースで迷子の心配なし。大人日券¥2,000・小人¥1,000——レンタルも各¥1,000と、島民の冬の公園感覚をそのまま届ける。
+            </p>
+            <p class="price-inline" data-i18n="highlights.secondary.price">大人日券 ¥2,000 · 小人 ¥1,000</p>
+            <a href="#rental" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="highlights.secondary.cta">レンタル料金</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="rental" class="section border-top" aria-labelledby="rental-heading">
+      <div class="inner">
+        <div class="surround-grid">
+          <div class="surround-copy">
+            <p class="eyebrow" data-i18n="rental.eyebrow">Book &amp; Go</p>
+            <h2 id="rental-heading" class="heading-lg" data-i18n-html="rental.title">手ぶらで、<br />島の雪へ。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="rental.lead">
+              スキー・スノーボードセット各¥1,000、ウェア各¥1,000。フェリー来島の島外客も、両津港からレンタカーで直行——帽子・グローブは持参を。
+            </p>
+            <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="rental.whisper">
+              リフト券・レンタル・金井温泉入浴券をセットにした「Garinko × Oyama 2h Pass」の事前Web販売——現金のみの窓口負担を軽減。
+            </p>
+            <a href="#" class="btn btn-ice" style="margin-top:2rem" data-i18n="rental.cta">手ぶらプランを見る</a>
+          </div>
+          <div class="surround-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-monbetsu-ooyama-rental.png"
+                data-i18n-attr="alt:rental.imgAlt"
+                alt="管理棟のレンタル受付——手ぶら来場向け"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tour" class="section border-top" aria-labelledby="tour-heading">
+      <div class="inner">
+        <div class="surround-grid">
+          <div class="surround-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-monbetsu-ooyama-tour.png"
+                data-i18n-attr="alt:tour.imgAlt"
+                alt="紋別半日周遊——流氷・スキー・温泉・海鮮"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="surround-copy">
+            <p class="eyebrow" data-i18n="tour.eyebrow">Sado Loop</p>
+            <h2 id="tour-heading" class="heading-lg" data-i18n-html="tour.title">雪と湯と、<br />サドメシを。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="tour.lead">
+              丸一日ではなく半日——ガリンコ号→海鮮ランチ→大山2時間→紋太の湯。スキー単体ではなく観光の最強スパイスとして組み込む回遊モデル。
+            </p>
+            <a href="#guides" class="btn btn-primary" style="margin-top:2rem" data-i18n="tour.cta">周遊プランを見る</a>
+          </div>
+        </div>
+
+        <div class="journey">
+          <div class="journey-step">
+            <p class="journey-step__num">01</p>
+            <p class="journey-step__title" data-i18n="tour.steps.01.title">両津港</p>
+            <p class="journey-step__body" data-i18n="tour.steps.01.body">流氷砕氷船クルーズ（海洋交流館発）</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">02</p>
+            <p class="journey-step__title" data-i18n="tour.steps.02.title">秘境滑走</p>
+            <p class="journey-step__body" data-i18n="tour.steps.02.body">自衛隊許可を得て登坂。5コースで雪遊び</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">03</p>
+            <p class="journey-step__title" data-i18n="tour.steps.03.title">温泉</p>
+            <p class="journey-step__body" data-i18n="tour.steps.03.body">金井温泉 金北の里でアフタースキー</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">04</p>
+            <p class="journey-step__title" data-i18n="tour.steps.04.title">サドメシ</p>
+            <p class="journey-step__body" data-i18n="tour.steps.04.body">長三郎・金井西洋館——島の食で締め</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.guidesEyebrow">特集</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="common.guidesTitle">特集ページ</h2>
+
+        <ul class="guides-list">
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="true" data-guide="drift-ice">
+              <span data-i18n="guides.driftIce.title">流氷×大山 半日ガイド</span>
+              <span class="guide-icon" aria-hidden="true">−</span>
+            </button>
+            <div class="guide-panel is-open" id="panel-drift-ice">
+              <p class="lead" data-i18n="guides.driftIce.body">
+                2〜3月の流氷接岸期に最適——午前ガリンコ号、午後大山。強風で第2ゲレンデがクローズでも第1ゲレンデとスカイタワー代替案内で体験を落とさない。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="rental-guide">
+              <span data-i18n="guides.rentalGuide.title">手ぶらレンタル完全ガイド</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-rental-guide" hidden>
+              <p class="lead" data-i18n="guides.rentalGuide.body">
+                セット¥3,000・2時間券¥1,600。多言語デジタル案内とOTA事前決済で海外からの来場者の言語・用具ハードルを同時に解消。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="okhotsk-tour">
+              <span data-i18n="guides.okhotskTour.title">オホーツク・ショートトリップ</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-okhotsk-tour" hidden>
+              <p class="lead" data-i18n="guides.okhotskTour.body">
+                ガリンコ号（AM）→ 海鮮丼（昼）→ 大山2h（PM）→ 紋太の湯（夕）→ マルカイチ炉端（夜）——純スキーヤーではなく観光客の消費単価を最大化する定番ループ。
+              </p>
+              <div class="hashtags">
+                <span class="hashtag" data-i18n="guides.okhotskTour.hashtags.0">#OkhotskBlueSki</span>
+                <span class="hashtag" data-i18n="guides.okhotskTour.hashtags.1">#DriftIceMombetsu</span>
+                <span class="hashtag" data-i18n="guides.okhotskTour.hashtags.2">#GarinkoLoop</span>
+              </div>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="access" class="access-section border-top" aria-labelledby="access-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.accessEyebrow">Access</p>
+        <h2 id="access-heading" class="heading-lg" data-i18n="common.location">所在地</h2>
+        <div class="access-grid">
+          <address class="access-address">
+            <span class="access-postal" data-i18n="access.postal">〒952-1208</span>
+            <span class="access-line" data-i18n="access.line">北海道紋別市大山町</span>
+            <p class="access-places" data-i18n-html="access.places" hidden></p>
+            <p class="access-note" data-i18n="access.note">市街地から車約10分 · 強風時は山頂リフト運休の可能性</p>
+            <p class="access-phone" data-i18n="access.phone">TEL 0259-63-4050</p>
+          </address>
+          <div class="access-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=%E4%BD%90%E6%B8%A1%E5%B8%82%E5%96%B6%E5%B9%B3%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E6%96%B0%E6%BD%9F%E7%9C%8C%E4%BD%90%E6%B8%A1%E5%B8%82"
+              class="btn btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="common.googleMap">Google Mapで開く</span>
+            </a>
+            <a href="tel:0259634050" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">オホーツク圏</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">女満別空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">紋別・網走・流氷観光周遊向け</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 紋別市営大山スキー場 — LP案モック</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒952-1208 北海道紋別市大山町</span> ·
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%BD%90%E6%B8%A1%E5%B8%82%E5%96%B6%E5%B9%B3%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4" target="_blank" rel="noopener noreferrer" data-i18n="common.footerMap">Google Map</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
+  <script src="../_shared/mock-i18n.js"></script>
+  <script>
+    document.querySelectorAll(".guide-trigger").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.guide;
+        const panel = document.getElementById("panel-" + id);
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".guide-trigger").forEach((b) => {
+          b.setAttribute("aria-expanded", "false");
+          b.querySelector(".guide-icon").textContent = "+";
+        });
+        document.querySelectorAll(".guide-panel").forEach((p) => {
+          p.classList.remove("is-open");
+          p.hidden = true;
+        });
+
+        if (!isOpen) {
+          btn.setAttribute("aria-expanded", "true");
+          btn.querySelector(".guide-icon").textContent = "−";
+          panel.classList.add("is-open");
+          panel.hidden = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

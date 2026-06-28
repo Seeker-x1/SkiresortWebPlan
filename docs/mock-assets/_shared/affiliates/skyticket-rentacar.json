@@ -74,6 +74,20 @@
         "ja": "関西空港",
         "en": "Kansai Airport"
       }
+    },
+    "komatsu_airport_kanazawa": {
+      "url": "https://skyticket.jp/rentacar/hokuriku/ishikawa/komatsu_airport_kanazawa_airport/",
+      "label": {
+        "ja": "小松空港",
+        "en": "Komatsu Airport"
+      }
+    },
+    "yamaguchi_ube_airport": {
+      "url": "https://skyticket.jp/rentacar/chugoku/yamaguchi/yamaguchi_ube_airport/",
+      "label": {
+        "ja": "山口宇部空港",
+        "en": "Yamaguchi Ube Airport"
+      }
     }
   }
 }

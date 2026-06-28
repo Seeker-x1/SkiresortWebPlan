@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "Fairyland Kaneyama Ski Area",
+    "description": "Tadami Line Oku-Aizu—photo-forward LP linking rail tourism and winter scenery."
+  },
+  "logo": "Fairyland Kaneyama Ski Area",
+  "nav": {
+    "family": "Loop"
+  },
+  "hero": {
+    "eyebrow": "Kaneyama, Fukushima · Tadami Line Plateau",
+    "title": "Fairyland Kaneyama<br />Ski Area",
+    "tagline": "Local powder without the queues—then Kitakata ramen and Netsu-shio Onsen.",
+    "badgeLocal": "Adult day ticket ¥2,500",
+    "badgeVisitor": "Virtually no lift lines",
+    "badgeSled": "Aizu Basin views",
+    "ctaPass": "Tickets & pricing",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Lifts · snow · parking",
+    "updatedAt": "Updated Jun 28, 9:00",
+    "lift": {
+      "label": "Lifts",
+      "value": "Operating",
+      "note": "2 pair lifts · minimal wait"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "3 courses",
+      "note": "Up to ~1,500 m · ungroomed zones"
+    },
+    "night": {
+      "label": "Hours",
+      "value": "9:00–16:00",
+      "note": "Night skiing on Course 2 when open"
+    },
+    "yotei": {
+      "label": "View",
+      "value": "Aizu Basin",
+      "note": "Sea of clouds on clear days"
+    }
+  },
+  "transit": {
+    "eyebrow": "Corridor Hub",
+    "title": "Ski · eat · soak.<br />The Kitakata loop.",
+    "lead": "About 30 minutes by car from JR Kitakata Station. Morning laps on quiet powder, afternoon ramen and hot springs—a base for day trips around Aizu and Nekoma without mega-resort crowds.",
+    "specs": [
+      "~30 min from Kitakata Station",
+      "~10 min to Netsu-shio Onsen",
+      "~400 free parking spaces"
+    ],
+    "ctaPass": "See pricing",
+    "ctaLive": "Today's operations",
+    "imgAlt": "Fairyland Kaneyama Ski Area overlooking the Aizu Basin—a hub for regional loops"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Lifts · snow · parking"
+    },
+    "pass": {
+      "label": "Pricing",
+      "title": "Day & 4-hour tickets"
+    },
+    "family": {
+      "label": "Loop",
+      "title": "Ramen · onsen"
+    },
+    "rental": {
+      "label": "Facilities",
+      "title": "Yamagoya Kurara"
+    },
+    "access": {
+      "label": "Access",
+      "title": "~30 min from Kitakata"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Sanokura",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "Local powder · no crowds",
+      "lead": "North-facing slopes hold snow well, and fresh tracks can linger after storms on this compact hill. Ideal if you want your own pace away from lift lines and tracked-out mega-resort runs.",
+      "cta": "Courses & snow",
+      "imgAlt": "Untouched powder and a panorama over the Aizu Basin"
+    },
+    "secondary": {
+      "title": "Kitakata ramen & Netsu-shio Onsen",
+      "lead": "After skiing, head to Kitakata's famous ramen shops or Netsu-shio Onsen, about 10 minutes by car—plan a half-day or overnight trip with food and baths, not just lifts.",
+      "cta": "Loop routes"
+    }
+  },
+  "pass": {
+    "eyebrow": "Pricing",
+    "title": "Adults ¥2,500,<br />4-hour ¥1,500.",
+    "lead": "8-hour tickets (adult ¥2,500 · child ¥1,800) and 4-hour tickets (adult ¥1,500)—affordable compared with major Aizu resorts. Third Sunday of each month: Kids' Ski Day (child ¥1,000).",
+    "localPrice": "Adult 8-hour ¥2,500",
+    "visitorPrice": "4-hour ¥1,500",
+    "specs": [
+      "Child 8-hour ¥1,800",
+      "Free parking",
+      "Restaurant Yamagoya Kurara"
+    ],
+    "noticeTitle": "Please note:",
+    "noticeBody": "Base elevation is around 570 m—warm winters can affect snow and opening days. Check today's operations before you leave.",
+    "cta": "Full pricing",
+    "imgAlt": "Center house and approach from the Kitakata side"
+  },
+  "rental": {
+    "eyebrow": "Center House",
+    "title": "Yamagoya Kurara<br />for meals and breaks.",
+    "lead": "Warm food and rest at restaurant Yamagoya Kurara. Enjoy views over the Aizu Basin from the hilltop lodge.",
+    "whisper": "Mobile signal can be weak in the mountains.",
+    "cta": "Facilities",
+    "imgAlt": "Yamagoya Kurara lodge with a wood-stove atmosphere"
+  },
+  "yukinko": {
+    "eyebrow": "Powder Days",
+    "title": "After storms,<br />fresh snow can last past noon.",
+    "lead": "With fewer visitors than major resorts, untracked snow sometimes lingers on powder days—especially in ungroomed areas popular with local riders.",
+    "whisper": "In season: TEL 0241-36-2071",
+    "cta": "Snow & weather",
+    "imgAlt": "Ungroomed slope—local powder at Sanokura"
+  },
+  "family": {
+    "eyebrow": "Family · Beginners",
+    "title": "Mostly gentle slopes,<br />three easy-to-navigate courses.",
+    "lead": "Three beginner- to intermediate-focused courses. Two lifts keep the hill compact—good for families and first-timers. Forest Course (~1,500 m) suits relaxed cruising.",
+    "specs": [
+      "3 courses",
+      "2 pair lifts",
+      "Free parking"
+    ],
+    "noticeTitle": "Loop tip:",
+    "noticeBody": "Afternoons pair well with Kitakata ramen and Netsu-shio Onsen—an easy family day plan from one base.",
+    "cta": "Family · regional loop",
+    "imgAlt": "Families on gentle slopes at Fairyland Kaneyama Ski Area"
+  },
+  "workation": {
+    "eyebrow": "Day Trip",
+    "title": "Morning ski,<br />afternoon ramen and onsen.",
+    "lead": "Rent a car from Kitakata Station—ski in the morning, finish with Kitakata ramen and Netsu-shio Onsen. A classic regional day loop.",
+    "badge": "KITAKATA · POWDER · ONSEN",
+    "steps": {
+      "01": {
+        "title": "Kitakata Station",
+        "body": "Access from Niigata and Aizu"
+      },
+      "02": {
+        "title": "Fairyland Kaneyama Ski Area",
+        "body": "8-hour or 4-hour ticket"
+      },
+      "03": {
+        "title": "Aizu Basin view",
+        "body": "Sea of clouds on clear days"
+      },
+      "04": {
+        "title": "Kitakata ramen",
+        "body": "Lunch at a local shop"
+      },
+      "05": {
+        "title": "Netsu-shio Onsen",
+        "body": "~10 min by car · hidden hot spring"
+      }
+    }
+  },
+  "guides": {
+    "local": {
+      "title": "Aizu local powder primer",
+      "body": "Skip Nekoma crowds and ski for ¥2,500—how Sanokura fits the Aizu map and what to expect for snow."
+    },
+    "schools": {
+      "title": "Kitakata ramen & kura streets",
+      "body": "Birthplace of Kitakata ramen—where to eat after skiing and a short walk through the historic warehouse district."
+    },
+    "summer": {
+      "title": "Netsu-shio Onsen & flower fields",
+      "body": "Hot springs in winter; Sanokura plateau flower fields in summer and autumn—the same hill transforms off-season.",
+      "hashtags": [
+        "#KaneyamaFairyland",
+        "#KitakataRamen",
+        "#NetsuShioOnsen"
+      ]
+    }
+  },
+  "access": {
+    "postal": "〒966-0108",
+    "line": "857-1 Kitagongenmori A, Aida, Atsushio Kano-machi, Kitakata, Fukushima",
+    "note": "~30 min by car from JR Kitakata Station · ~400 free parking spaces",
+    "phone": "TEL 0241-36-2071 (in season)",
+    "places": "<span class=\"place-unit\"><ruby>Fukushima<rt>Fukushima</rt></ruby></span><span class=\"place-unit\"><ruby>Kitakata<rt>Kitakata</rt></ruby></span><span class=\"place-unit\"><ruby>Atsushio Kano-machi Aida<rt>Atsushio Kano-machi Aida</rt></ruby></span>",
+    "rentacarEyebrow": "Oku-Aizu · Tadami",
+    "rentacarLink": "Book a rental car at Shinjo Station",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Kaneyama and Tadami Line loops"
+  },
+  "footer": {
+    "copyright": "© Fairyland Kaneyama Ski Area",
+    "location": "857-1 Kitagongenmori A, Aida, Atsushio Kano-machi, Kitakata, Fukushima 966-0108"
+  }
+}

@@ -697,6 +697,98 @@
       }
     },
     {
+      "id": "sado-taira",
+      "slug": "sado-taira-lp",
+      "name": {
+        "ja": "佐渡市営平スキー場",
+        "en": "Sado City Daira Ski Resort"
+      },
+      "region": {
+        "ja": "新潟県佐渡市",
+        "en": "Sado, Niigata"
+      },
+      "strategy": {
+        "ja": "離島パウダー・防衛道路アドベンチャー",
+        "en": "Island powder · defense road adventure"
+      },
+      "guidePath": "/sado-taira/",
+      "guideUrl": "https://guides.japowserch.com/sado-taira/",
+      "japowResortId": 351,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "niigata_airport"
+      }
+    },
+    {
+      "id": "katsurasawa",
+      "slug": "katsurasawa-lp",
+      "name": {
+        "ja": "桂沢国設スキー場",
+        "en": "Katsurazawa Kokusetsu Ski Resort"
+      },
+      "region": {
+        "ja": "北海道三笠市",
+        "en": "Mikasa, Hokkaido"
+      },
+      "strategy": {
+        "ja": "キッズパーク・札幌圏60分",
+        "en": "Kids park · 60 min from Sapporo"
+      },
+      "guidePath": "/katsurasawa/",
+      "guideUrl": "https://guides.japowserch.com/katsurasawa/",
+      "japowResortId": 24,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "chitose_international_airport"
+      }
+    },
+    {
+      "id": "yunodai",
+      "slug": "yunodai-lp",
+      "name": {
+        "ja": "湯の台スキー場",
+        "en": "Yunodai Ski Resort"
+      },
+      "region": {
+        "ja": "山形県大蔵村",
+        "en": "Okura, Yamagata"
+      },
+      "strategy": {
+        "ja": "5月まで春スキー×肘折秘湯",
+        "en": "Spring ski until May · Hijiori Onsen"
+      },
+      "guidePath": "/yunodai/",
+      "guideUrl": "https://guides.japowserch.com/yunodai/",
+      "japowResortId": 174,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "shinjo_station"
+      }
+    },
+    {
+      "id": "matsushiro",
+      "slug": "matsushiro-lp",
+      "name": {
+        "ja": "十日町市松代ファミリースキー場",
+        "en": "Tokamachi City Matsudai Family Ski Resort"
+      },
+      "region": {
+        "ja": "新潟県十日町市",
+        "en": "Tokamachi, Niigata"
+      },
+      "strategy": {
+        "ja": "スケートランプ×ナイター¥1,000",
+        "en": "Skate ramp · ¥1,000 night ski"
+      },
+      "guidePath": "/matsushiro/",
+      "guideUrl": "https://guides.japowserch.com/matsushiro/",
+      "japowResortId": 317,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "niigata_airport"
+      }
+    },
+    {
       "id": "horaguchi",
       "slug": "horaguchi-lp",
       "name": {
@@ -717,6 +809,374 @@
       "guideTier": "mock",
       "affiliates": {
         "rentacar": "kansai_international_airport"
+      }
+    },
+    {
+      "id": "toshigamine",
+      "slug": "toshigamine-lp",
+      "name": {
+        "ja": "十種ヶ峰スキー場",
+        "en": "Tokusagamine Ski Resort"
+      },
+      "region": {
+        "ja": "山口県山口市",
+        "en": "Yamaguchi City, Yamaguchi"
+      },
+      "strategy": {
+        "ja": "本州最西端 · 天然雪100%",
+        "en": "Westernmost Honshu · 100% natural snow"
+      },
+      "guidePath": "/toshigamine/",
+      "guideUrl": "https://guides.japowserch.com/toshigamine/",
+      "japowResortId": 442,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "yamaguchi_ube_airport"
+      }
+    },
+    {
+      "id": "monbetsu-ooyama",
+      "slug": "monbetsu-ooyama-lp",
+      "name": {
+        "ja": "紋別市営大山スキー場",
+        "en": "Monbetsu Ooyama Municipal Ski Area"
+      },
+      "region": {
+        "ja": "北海道紋別市",
+        "en": "Monbetsu, Hokkaido"
+      },
+      "strategy": {
+        "ja": "流氷観光×オホーツク",
+        "en": "Drift ice · Okhotsk views"
+      },
+      "guidePath": "/monbetsu-ooyama/",
+      "guideUrl": "https://guides.japowserch.com/monbetsu-ooyama/",
+      "japowResortId": 71,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "memanbetsu_airport"
+      }
+    },
+    {
+      "id": "iouzan",
+      "slug": "iouzan-lp",
+      "name": {
+        "ja": "金沢市営医王山スキー場",
+        "en": "Kanazawa City Iouzan Ski Resort"
+      },
+      "region": {
+        "ja": "石川県金沢市",
+        "en": "Kanazawa, Ishikawa"
+      },
+      "strategy": {
+        "ja": "金沢観光×雪遊び×湯涌温泉",
+        "en": "Kanazawa sightseeing · snow play · Yuwa Onsen"
+      },
+      "guidePath": "/iouzan/",
+      "guideUrl": "https://guides.japowserch.com/iouzan/",
+      "japowResortId": 361,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "komatsu_airport_kanazawa"
+      }
+    },
+    {
+      "id": "tono-akabane",
+      "slug": "tono-akabane-lp",
+      "name": {
+        "ja": "遠野市赤羽根スキー場",
+        "en": "Tono City Akabane Ski Area"
+      },
+      "region": {
+        "ja": "岩手県遠野市",
+        "en": "Tono, Iwate"
+      },
+      "strategy": {
+        "ja": "ロープトゥ×ジンギスカン×民話",
+        "en": "Rope tow · Jingisukan · folklore"
+      },
+      "guidePath": "/tono-akabane/",
+      "guideUrl": "https://guides.japowserch.com/tono-akabane/",
+      "japowResortId": 117,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "morioka_station"
+      }
+    },
+    {
+      "id": "abirayama",
+      "slug": "abirayama-lp",
+      "name": {
+        "ja": "安平山スキー場",
+        "en": "Abirayama Ski Area"
+      },
+      "region": {
+        "ja": "北海道安平町",
+        "en": "Abira, Hokkaido"
+      },
+      "strategy": {
+        "ja": "新千歳25分·トランジット雪",
+        "en": "Chitose 25 min · transit snow"
+      },
+      "guidePath": "/abirayama/",
+      "guideUrl": "https://guides.japowserch.com/abirayama/",
+      "japowResortId": 74,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "chitose_international_airport"
+      }
+    },
+    {
+      "id": "banjoga",
+      "slug": "banjoga-lp",
+      "name": {
+        "ja": "武石番所ヶ原スキー場",
+        "en": "Takeshi Banjoga Ski Area"
+      },
+      "region": {
+        "ja": "長野県上田市",
+        "en": "Ueda, Nagano"
+      },
+      "strategy": {
+        "ja": "菅平の穴場·1kmバーン",
+        "en": "Sugadaira secret · 1 km slope"
+      },
+      "guidePath": "/banjoga/",
+      "guideUrl": "https://guides.japowserch.com/banjoga/",
+      "japowResortId": 256,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "kamisuwa_kirigamine_kogen"
+      }
+    },
+    {
+      "id": "wakamatsu",
+      "slug": "wakamatsu-lp",
+      "name": {
+        "ja": "北見若松市民スキー場",
+        "en": "Kitami Wakamatsu Municipal Ski Area"
+      },
+      "region": {
+        "ja": "北海道北見市",
+        "en": "Kitami, Hokkaido"
+      },
+      "strategy": {
+        "ja": "市街至近·平日ナイター",
+        "en": "Downtown-adjacent · night ski"
+      },
+      "guidePath": "/wakamatsu/",
+      "guideUrl": "https://guides.japowserch.com/wakamatsu/",
+      "japowResortId": 64,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "memanbetsu_airport"
+      }
+    },
+    {
+      "id": "hirogawara",
+      "slug": "hirogawara-lp",
+      "name": {
+        "ja": "京都広河原スキー場",
+        "en": "Kyoto Hirogawara Ski Area"
+      },
+      "region": {
+        "ja": "京都府京都市",
+        "en": "Kyoto City"
+      },
+      "strategy": {
+        "ja": "京都市内唯一·天然雪遊び",
+        "en": "Only snow in Kyoto City"
+      },
+      "guidePath": "/hirogawara/",
+      "guideUrl": "https://guides.japowserch.com/hirogawara/",
+      "japowResortId": 401,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "kansai_international_airport"
+      }
+    },
+    {
+      "id": "nanao-korosa",
+      "slug": "nanao-korosa-lp",
+      "name": {
+        "ja": "七尾コロサスキー場",
+        "en": "Nanao Korosa Ski Area"
+      },
+      "region": {
+        "ja": "石川県七尾市",
+        "en": "Nanao, Ishikawa"
+      },
+      "strategy": {
+        "ja": "能登唯一·ファミリー雪遊び",
+        "en": "Noto's only · family snow play"
+      },
+      "guidePath": "/nanao-korosa/",
+      "guideUrl": "https://guides.japowserch.com/nanao-korosa/",
+      "japowResortId": 362,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "komatsu_airport_kanazawa"
+      }
+    },
+    {
+      "id": "bifuka",
+      "slug": "bifuka-lp",
+      "name": {
+        "ja": "美深スキー場",
+        "en": "Bifuka Ski Area"
+      },
+      "region": {
+        "ja": "北海道美深町",
+        "en": "Bifuka Ski Area"
+      },
+      "strategy": {
+        "ja": "道北ドライパウダーと70円リフト——クラフトビールと秘湯で完結する半日マイクロツーリズム。",
+        "en": "Northern Hokkaido dry powder at ¥70 per lift ride—half-day micro-tourism with craft beer and hot springs."
+      },
+      "guidePath": "/bifuka/",
+      "guideUrl": "https://guides.japowserch.com/bifuka/",
+      "japowResortId": 53,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "asahikawa_airport"
+      }
+    },
+    {
+      "id": "koyasan",
+      "slug": "koyasan-lp",
+      "name": {
+        "ja": "高野山スキー場",
+        "en": "Koyasan Ski Area"
+      },
+      "region": {
+        "ja": "和歌山県高野町",
+        "en": "Koyasan Ski Area"
+      },
+      "strategy": {
+        "ja": "和歌山唯一の天然雪——世界遺産高野山とつなぐ無料雪遊びとZen & Snow体験。",
+        "en": "Wakayama's only natural snow—free snow play linked to UNESCO Koyasan and Zen & Snow tours."
+      },
+      "guidePath": "/koyasan/",
+      "guideUrl": "https://guides.japowserch.com/koyasan/",
+      "japowResortId": 419,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "kansai_international_airport"
+      }
+    },
+    {
+      "id": "kyowa",
+      "slug": "kyowa-lp",
+      "name": {
+        "ja": "協和スキー場",
+        "en": "Kyowa Ski Area"
+      },
+      "region": {
+        "ja": "秋田県大仙市",
+        "en": "Kyowa Ski Area"
+      },
+      "strategy": {
+        "ja": "秋田市圏から好アクセス——手頃な市営ゲレンデでファミリーと市民リピートを育てる。",
+        "en": "Easy reach from Akita city—a affordable municipal hill for families and local repeat visits."
+      },
+      "guidePath": "/kyowa/",
+      "guideUrl": "https://guides.japowserch.com/kyowa/",
+      "japowResortId": 140,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "shinjo_station"
+      }
+    },
+    {
+      "id": "morioka-ikari",
+      "slug": "morioka-ikari-lp",
+      "name": {
+        "ja": "盛岡市立生出スキー場",
+        "en": "Morioka Ikari Municipal Ski Area"
+      },
+      "region": {
+        "ja": "岩手県盛岡市",
+        "en": "Morioka Ikari Municipal Ski Area"
+      },
+      "strategy": {
+        "ja": "盛岡市街近接の市民ゲレンデ——指定管理運営とスマホ完結型市民向けLP。",
+        "en": "Municipal hill minutes from Morioka—designated management and mobile-first citizen LP."
+      },
+      "guidePath": "/morioka-ikari/",
+      "guideUrl": "https://guides.japowserch.com/morioka-ikari/",
+      "japowResortId": 125,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "morioka_station"
+      }
+    },
+    {
+      "id": "ringo-kyowagoku",
+      "slug": "ringo-kyowagoku-lp",
+      "name": {
+        "ja": "りんご今日話国スキー場",
+        "en": "Ringo Kyowagoku Ski Area"
+      },
+      "region": {
+        "ja": "広島県庄原市",
+        "en": "Ringo Kyowagoku Ski Area"
+      },
+      "strategy": {
+        "ja": "中国山地の稀少スキー——ユニーク名称と西日本スキーヤー向けJAPOW詳細LP。",
+        "en": "Rare Chugoku Mountains snow—distinctive name and detail LP for western Japan skiers."
+      },
+      "guidePath": "/ringo-kyowagoku/",
+      "guideUrl": "https://guides.japowserch.com/ringo-kyowagoku/",
+      "japowResortId": 441,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "yamaguchi_ube_airport"
+      }
+    },
+    {
+      "id": "chateau-shiozawa",
+      "slug": "chateau-shiozawa-lp",
+      "name": {
+        "ja": "シャトー塩沢スキー場",
+        "en": "Chateau Shiozawa Ski Area"
+      },
+      "region": {
+        "ja": "新潟県南魚沼市",
+        "en": "Chateau Shiozawa Ski Area"
+      },
+      "strategy": {
+        "ja": "湯沢激戦区で静かに滑りたい層へ——宿泊付帯から独立LPで差別化。",
+        "en": "For skiers who want quiet runs in the Yuzawa cluster—standalone LP beyond lodging pages."
+      },
+      "guidePath": "/chateau-shiozawa/",
+      "guideUrl": "https://guides.japowserch.com/chateau-shiozawa/",
+      "japowResortId": 312,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "niigata_airport"
+      }
+    },
+    {
+      "id": "kaneyama",
+      "slug": "kaneyama-lp",
+      "name": {
+        "ja": "フェアリーランドかねやまスキー場",
+        "en": "Fairyland Kaneyama Ski Area"
+      },
+      "region": {
+        "ja": "福島県金山町",
+        "en": "Fairyland Kaneyama Ski Area"
+      },
+      "strategy": {
+        "ja": "只見線沿線·奥会津——鉄道と冬景色インバウンド向け写真映えLP。",
+        "en": "Tadami Line Oku-Aizu—photo-forward LP linking rail tourism and winter scenery."
+      },
+      "guidePath": "/kaneyama/",
+      "guideUrl": "https://guides.japowserch.com/kaneyama/",
+      "japowResortId": 191,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "shinjo_station"
       }
     }
   ],

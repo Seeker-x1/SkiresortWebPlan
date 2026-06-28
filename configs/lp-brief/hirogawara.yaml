@@ -1,0 +1,17 @@
+resortId: hirogawara
+schemaVersion: "2026-06-28"
+name:
+  ja: 京都広河原スキー場
+  en: Kyoto Hirogawara Ski Area
+region:
+  ja: 京都府京都市
+  en: Kyoto City
+japowResortId: 401
+strategy:
+  ja: 京都市内唯一の天然雪——鞍馬·貴船とつなぐインバウンド雪遊び。
+  en: Kyoto City's only natural snow—snow play linked to Kurama and Kibune.
+archetype: tourism-hub
+map:
+  sources: ["hirogawara research", "LP batch #40"]
+  heroImage: images/maps/hirogawara-hero.png
+  copyFrom: abashiri-lv-lp

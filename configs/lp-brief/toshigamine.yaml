@@ -1,0 +1,61 @@
+resortId: toshigamine
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 十種ヶ峰スキー場
+  en: Tokusagamine Ski Resort
+region:
+  ja: 山口県山口市
+  en: Yamaguchi City, Yamaguchi
+japowResortId: 442
+
+strategy:
+  ja: 本州最西端の天然雪100％ゲレンデと、極上のバックカントリー「ラピュタ」を体験せよ。
+  en: Experience the westernmost 100% natural snow resort in Honshu and the ultimate "Laputa" backcountry.
+archetype: live-dashboard
+
+audience: both
+
+hero:
+  tagline:
+    ja: 幻のスキー場——降雪直後の天然雪とラピュタBCを、リアルタイムで。
+    en: The phantom ski hill—100% natural snow and Laputa BC when it opens.
+  badges: [natural-snow, laputa-bc, live-snow]
+
+pillars:
+  - id: phantom
+    hook: { ja: 天然雪100%・営業日数は積雪次第, en: 100% natural snow · weather-dependent ops }
+  - id: laputa
+    hook: { ja: ラピュタゲレンデBC, en: Laputa hike-up powder zone }
+  - id: hub
+    hook: { ja: ウッドパーク通年拠点, en: Year-round wood park hub }
+
+subPages: []
+
+facts:
+  operator: 十種ヶ峰ウッドパーク
+  location: 〒754-0894 山口県山口市阿東嘉年下1505-1
+  phone: "083-958-0809"
+  lift: ペアリフト1基470m + ロープトウ
+  courses: 最長1800m・標高差320m（初30%中40%上30%）
+  pricing:
+    liftDayAdult: 4100
+    liftDayChild: 3050
+  hours: 8:00–17:00（ナイターなし）
+  access:
+    car: 中国自動車道・鹿野ICから約45分
+  nearby:
+    onsen: 願成就温泉、柚木慈生温泉
+    food: LANDMARK.、樹里庵（あとう和牛）
+    sight: 十種ヶ峰ウッドパーク、津和野
+
+map:
+  sources: ["woodpark.jp", "LP batch #36", "configs/lp-brief/toshigamine.yaml"]
+  heroImage: images/maps/toshigamine-hero.png
+  copyFrom: minami-furano-lp
+
+humanReview:
+  - japowResortId 442
+  - 営業日数・積雪状況の最新
+  - ラピュタBC安全情報
+  - 料金・駐車場料金

@@ -1,0 +1,41 @@
+resortId: abirayama
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 安平山スキー場
+  en: Abirayama Ski Area
+region:
+  ja: 北海道安平町
+  en: Abira, Hokkaido
+japowResortId: 74
+
+strategy:
+  ja: 新千歳空港から25分——フライト前後のトランジット・スノー体験。
+  en: 25 minutes from New Chitose—transit snow between flights.
+archetype: corridor-hub
+
+audience: both
+
+hero:
+  tagline:
+    ja: 新千歳から25分——1,700円で貸切に近いパウダーを。
+    en: 25 min from Chitose—near-private powder for ¥1,700.
+  badges: [airport, transit, powder, budget]
+
+pillars:
+  - id: transit
+    hook: { ja: 空港至近25分, en: 25 min from airport }
+  - id: value
+    hook: { ja: 1日券¥1,700, en: Day pass ¥1,700 }
+  - id: onsen
+    hook: { ja: ぬくもりセット, en: Nukumori onsen set }
+
+map:
+  sources: ["abira.lg.jp", "LP batch #37", "configs/lp-brief/abirayama.yaml"]
+  heroImage: images/maps/abirayama-hero.png
+  copyFrom: kiyosato-lp
+
+humanReview:
+  - japowResortId 74
+  - ナイター休止・積雪状況
+  - 料金・ぬくもりセット最新確認

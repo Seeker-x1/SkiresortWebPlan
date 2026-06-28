@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "Tokamachi City Matsudai Family Ski Resort",
+    "description": "Steps from Matsudai Station—Japan's first surf-skate ramp and ¥1,000 night skiing at a local culture ski hill."
+  },
+  "logo": "Matsudai Family Ski",
+  "nav": {
+    "family": "Family"
+  },
+  "hero": {
+    "eyebrow": "Tokamachi, Niigata · Matsudai",
+    "title": "Matsudai Family<br />Ski Resort",
+    "tagline": "Surf-skate ramp and premium night skiing—Echigo's local culture hill.",
+    "badgeLocal": "Adult day ¥2,500",
+    "badgeVisitor": "Night ¥1,000",
+    "badgeSled": "Surf-skate ramp",
+    "ctaPass": "Tickets & passes",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Municipal hill status",
+    "updatedAt": "Updated Jan 4, 9:00",
+    "lift": {
+      "label": "Lifts",
+      "value": "Running",
+      "note": "2 pair lifts · Lift 2 weekends/holidays"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "3 runs",
+      "note": "195 m vertical · max 24°"
+    },
+    "night": {
+      "label": "Night ski",
+      "value": "¥1,000",
+      "note": "Groomed burn · only in Tokamachi city"
+    },
+    "yotei": {
+      "label": "Park",
+      "value": "Terrain + ramp",
+      "note": "Kickers, rails, skate ramp"
+    }
+  },
+  "transit": {
+    "eyebrow": "Matsudai Station",
+    "title": "Matsudai Station,<br />15 minutes on foot.",
+    "lead": "Hokuhoku Line Matsudai Station is a 15–20 minute walk—or 2–3 minutes by car. A station-close local hill tied to the Echigo-Tsumari art region. About 50 minutes from Rokka-machi IC via Route 253.",
+    "specs": [
+      "15 min walk from Matsudai Stn",
+      "Night ticket ¥1,000",
+      "120 free parking spaces"
+    ],
+    "ctaPass": "See pricing",
+    "ctaLive": "Today's ops",
+    "imgAlt": "Hokuhoku Line Matsudai Station—snow-country stop within walking distance of the hill"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Lifts, night ski, snow"
+    },
+    "pass": {
+      "label": "Tickets",
+      "title": "Day ¥2,500 · Night ¥1,000"
+    },
+    "family": {
+      "label": "Family",
+      "title": "50% beginner · terrain park"
+    },
+    "rental": {
+      "label": "Rental",
+      "title": "Full center house"
+    },
+    "access": {
+      "label": "Access",
+      "title": "15 min from Matsudai Stn"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What makes Matsudai unique",
+    "title": "Only here",
+    "primary": {
+      "title": "Japan's first surf-skate ramp",
+      "lead": "A one-of-a-kind ramp inside the center-house garage—built with local carpenters and visited by pros. When snow is thin, it keeps youth on site for après sessions. A weapon no other hill has (LP concept).",
+      "cta": "Ramp & park guide",
+      "imgAlt": "Indoor surf-skate ramp at the center house—snow meets street culture"
+    },
+    "secondary": {
+      "title": "¥1,000 night skiing & groomed burn",
+      "lead": "Tokamachi's only regular night operation—fresh grooming before lights-on delivers tight corduroy at an unbeatable ¥1,000. A local night scene for after-work riders.",
+      "cta": "Night skiing info"
+    }
+  },
+  "pass": {
+    "eyebrow": "Local Pricing",
+    "title": "Adult ¥2,500,<br />night ¥1,000.",
+    "lead": "A compact 5.8 ha municipal hill—adult day ticket ¥2,500, night ticket ¥1,000. 120 free parking spaces. Pricing that supports both local families and young park riders (LP concept).",
+    "localPrice": "Adult day ¥2,500",
+    "visitorPrice": "Night ¥1,000",
+    "specs": [
+      "2 pair lifts",
+      "120 free parking spaces",
+      "Rental & shop on site"
+    ],
+    "noticeTitle": "Strategy note:",
+    "noticeBody": "Base elevation 185 m means spring snow can vary—night grooming and park upkeep protect the experience. Ramp monetization and weekend food trucks aim to lift spend per visit (report proposal).",
+    "cta": "Full pricing",
+    "imgAlt": "Access from Matsudai Station—local Echigo Matsushiro hill"
+  },
+  "rental": {
+    "eyebrow": "Center House",
+    "title": "Rental, shop,<br />all in one lodge.",
+    "lead": "Restaurant, rental shop, and retail inside the ski center—walkable from Matsudai Station for a hands-free visit. After runs, head to the surf-skate ramp in the same building.",
+    "whisper": "Terrain park (kickers, rails, boxes) plus the ramp—positioned as a third place for board and skate culture (LP strategy).",
+    "cta": "Facilities",
+    "imgAlt": "Center house—from rental counter to the skate ramp"
+  },
+  "yukinko": {
+    "eyebrow": "Night Skiing",
+    "title": "Groomed burn,<br />night ¥1,000.",
+    "lead": "Groomers run before night skiing, so riders get tight corduroy at a bargain price—highly rated by local snowboarders. Tokamachi's only regular night operation.",
+    "whisper": "TEL 025-597-3330. Check the official site for the latest night schedule and Lift 2 operations.",
+    "cta": "Hours & night ski",
+    "imgAlt": "Floodlit night piste—evening runs on groomed snow"
+  },
+  "family": {
+    "eyebrow": "Family & Park",
+    "title": "50% beginner,<br />family and park.",
+    "lead": "Course mix: 50% beginner, 30% intermediate, 20% advanced. Lift 1 splits to three runs; Lift 2 summit offers ungroomed powder (max 24°). Kickers, rails, and boxes in the terrain park.",
+    "specs": [
+      "50% beginner · 30% intermediate",
+      "Terrain park",
+      "120 free parking spaces"
+    ],
+    "noticeTitle": "Community:",
+    "noticeBody": "Regulars and locals call it \"our ski hill\"—staff watch over kids warmly. A home hill welcoming both families and young park riders.",
+    "cta": "Courses & park",
+    "imgAlt": "Family on gentle slopes—a compact beginner-friendly hill"
+  },
+  "workation": {
+    "eyebrow": "Culture Trip",
+    "title": "Art × Snow × Skate,<br />one Matsudai day.",
+    "lead": "A loop tied to the Echigo-Tsumari Matsudai Field Museum—morning runs and park, lunch at Satoyama Shokudo, afternoon ramp session, evening night ski, then soak at Shibatoge Onsen Unkai (LP concept).",
+    "badge": "MATSUDAI · ART · SNOW",
+    "steps": {
+      "01": {
+        "title": "Morning first tracks",
+        "body": "Summit powder via Lift 2 or a park session"
+      },
+      "02": {
+        "title": "Field Museum & lunch",
+        "body": "Satoyama Shokudo lunch in an art space"
+      },
+      "03": {
+        "title": "Skate ramp",
+        "body": "Après session on the indoor ramp"
+      },
+      "04": {
+        "title": "Night ski ¥1,000",
+        "body": "Freshly groomed burn under the lights"
+      },
+      "05": {
+        "title": "Shibatoge Onsen Unkai",
+        "body": "Open-air bath 7 minutes away by car"
+      }
+    }
+  },
+  "guides": {
+    "local": {
+      "title": "Surf-skate ramp deep dive",
+      "body": "Japan's first uniquely shaped ramp—built by local tradespeople and carpenters. Pro snowboarders and skaters visit for the quality. The snow×street gap is Matsudai's core differentiator (report ch. 2)."
+    },
+    "schools": {
+      "title": "Night & skate combo pass (concept)",
+      "body": "Bundle night ticket, ramp access, and hot-spring entry—sold online for young riders with #OurMatsushiro social tags (report ch. 7, working title)."
+    },
+    "summer": {
+      "title": "Year-round action sports camp",
+      "body": "Green season: full indoor ramp operation—partner with Matsushiro Castle Ruins Park camping for day school, night camp revenue (report ch. 6).",
+      "hashtags": [
+        "#MatsudaiLocal",
+        "#ArtSnowSkate",
+        "#OurMatsushiro"
+      ]
+    }
+  },
+  "access": {
+    "postal": "〒942-1526",
+    "line": "5265 Matsushiro, Tokamachi, Niigata",
+    "note": "15 min walk from Hokuhoku Matsudai Stn · 120 free parking spaces",
+    "phone": "TEL 025-597-3330",
+    "places": "<span class=\"place-unit\"><ruby>新潟県<rt>Niigata</rt></ruby></span><span class=\"place-unit\"><ruby>十日町市<rt>Tokamachi</rt></ruby></span><span class=\"place-unit\"><ruby>松代5265<rt>Matsushiro 5265</rt></ruby></span>",
+    "rentacarEyebrow": "Niigata region drive",
+    "rentacarLink": "Book a rental car at Niigata Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Matsudai, Matsunoyama, and Echigo-Tsumari loops"
+  },
+  "footer": {
+    "copyright": "© Tokamachi City Matsudai Family Ski Resort — LP mock",
+    "location": "5265 Matsushiro, Tokamachi, Niigata 942-1526"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Tokusagamine Ski Resort",
+    "description": "Honshu's westernmost 100% natural-snow ski area. Track the phantom hill and Laputa backcountry in real time."
+  },
+  "logo": "Tokusagamine Ski Resort",
+  "hero": {
+    "eyebrow": "Ato, Yamaguchi City · westernmost in Honshu",
+    "title": "Tokusagamine<br />Ski Resort",
+    "tagline": "Experience the westernmost 100% natural snow resort in Honshu and the ultimate \"Laputa\" backcountry.",
+    "badgePrice": "Day ticket ¥4,100",
+    "badgeNight": "100% natural snow",
+    "badgeXc": "Max run 1,800 m",
+    "ctaPass": "Phantom Powder Pass",
+    "ctaLive": "Live snow report"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Phantom hill · live snow",
+    "updatedAt": "Updated Jan 15, 7:30",
+    "lift1": {
+      "label": "Pair lift",
+      "value": "Operating",
+      "note": "470 m · virtually no wait"
+    },
+    "lift2": {
+      "label": "Open status",
+      "value": "Weather-dependent",
+      "note": "~10 operating days/season · check first"
+    },
+    "snow": {
+      "label": "Snow quality",
+      "value": "Natural powder",
+      "note": "No man-made snow · uncrowded"
+    },
+    "night": {
+      "label": "Laputa",
+      "value": "BC zone open",
+      "note": "Hike-up · own risk"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Phantom Powder",
+    "title": "Zero man-made snow—<br />Honshu's far west.",
+    "lead": "Unlike Megahira or Kurobuchi mega-resorts—no snow guns, 100% natural snow only. Quiet local vibe and ¥4,100 day tickets are the draw.",
+    "specs": [
+      "320 m vertical",
+      "1,800 m max run",
+      "400 parking spaces"
+    ],
+    "noticeTitle": "What riders say:",
+    "noticeBody": "\"Never know when it's open\"—own the weather dependency, push premium pricing right after storms, and win with real-time \"phantom hill\" updates.",
+    "ctaPass": "Phantom Powder Pass",
+    "imgAlt": "Untouched Laputa zone—powder and views you wouldn't expect in Yamaguchi"
+  },
+  "paths": {
+    "pass": {
+      "label": "Pass",
+      "title": "Phantom Powder Pass"
+    },
+    "access": {
+      "label": "Access",
+      "title": "45 min from Shino IC"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Snow · lifts · BC"
+    },
+    "hike": {
+      "label": "BC",
+      "title": "Laputa zone"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why it's different",
+    "title": "Hidden-gem strengths",
+    "primary": {
+      "title": "Laputa × natural powder",
+      "lead": "Hike-up \"Laputa\" above the lift—~900 m descents and views to the Japan Sea. A magnet for core riders tired of groomed mega-resorts.",
+      "cta": "BC zone guide",
+      "imgAlt": "Powder slope at Tokusagamine—untouched natural snow"
+    },
+    "secondary": {
+      "title": "Sled & family zone",
+      "lead": "The sled hill beside the pair lift fills on weekends—one of Yamaguchi's few family snow-play spots.",
+      "cta": "Family zone"
+    }
+  },
+  "pass": {
+    "eyebrow": "Phantom Powder Pass",
+    "title": "Harvest demand<br />right after storms.",
+    "lead": "Dynamic pricing tied to snowfall forecasts—premium day tickets after fresh snow, plus Atou wagyu lunch and Ganjoju onsen bundled passes.",
+    "specs": [
+      "Atou wagyu coupon",
+      "Ganjoju Onsen",
+      "Live updates"
+    ],
+    "cta": "View passes",
+    "imgAlt": "Tokusagamine Wood Park—year-round ski and camp hub"
+  },
+  "hike": {
+    "eyebrow": "Laputa BC",
+    "title": "Brand the<br />Laputa zone.",
+    "lead": "Reframe the hike-up upper slopes as guided premium BC tours—beacon rental included (safety management and local coordination required).",
+    "leadCurry": "After laps, head to Atou—Atou wagyu at Jyurian or local lunch at LANDMARK. instead of curry and udon only on the hill.",
+    "cta": "BC & food map",
+    "imgAlt": "Atou wagyu steak—brand beef lunch in the highlands"
+  },
+  "tour": {
+    "eyebrow": "Atou Snow Loop",
+    "title": "One day of<br />snow and hot springs.",
+    "lead": "Not ski-only—loop Atou wagyu, rare carbonated springs, and Tsuwano sights.",
+    "badge": "PHANTOM POWDER · ATOU ONSEN",
+    "steps": {
+      "01": {
+        "title": "Tokusagamine",
+        "body": "Natural powder or sled play"
+      },
+      "02": {
+        "title": "LANDMARK.",
+        "body": "Atou wagyu lunch · workation hub"
+      },
+      "03": {
+        "title": "Ganjoju Onsen",
+        "body": "¥520 day bath · garden roten"
+      },
+      "04": {
+        "title": "Yunoki Jisho Onsen",
+        "body": "Rare natural carbonated spring (check hours)"
+      },
+      "05": {
+        "title": "Tsuwano",
+        "body": "Little Kyoto of San'in · local products (optional)"
+      }
+    }
+  },
+  "guides": {
+    "sanctuary": {
+      "title": "Phantom hill guide",
+      "body": "~10 open days per season—flip instability into guerrilla marketing and live cameras to capture same-day bookings from Yamaguchi day-trippers."
+    },
+    "workation": {
+      "title": "Year-round wood park hub",
+      "body": "MTB downhill, auto camp, paragliding—cover winter revenue swings with green-season cash flow at the Tokusagamine mountain hub."
+    },
+    "lake": {
+      "title": "Atou food & onsen tie-in",
+      "body": "Limited hill food becomes a strength—coupons to nearby restaurants and onsen lift area-wide spend.",
+      "hashtags": [
+        "#PhantomPowder",
+        "#LaputaBC",
+        "#AtouOnsen"
+      ]
+    }
+  },
+  "access": {
+    "postal": "〒754-0894",
+    "line": "1505-1 Kaneshita, Ato, Yamaguchi City, Yamaguchi",
+    "note": "Chugoku Expwy · ~45 min from Shino IC · weekend parking ¥500 (free after 3 p.m.) · 400 spaces",
+    "phoneLodge": "TEL 083-958-0809 (campground / office)",
+    "phoneOps": "Slope info 083-958-0547",
+    "places": "1505-1|Kaneshita|Ato|Yamaguchi City|Yamaguchi",
+    "rentacarEyebrow": "Chugoku · Yamaguchi",
+    "rentacarLink": "Book a rental car at Yamaguchi Ube Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Ato and Tsuwano loops"
+  },
+  "footer": {
+    "copyright": "© Tokusagamine Ski Resort — mock LP proposal",
+    "location": "1505-1 Kaneshita, Ato, Yamaguchi City, Yamaguchi 754-0894"
+  }
+}

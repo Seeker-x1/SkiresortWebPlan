@@ -1,0 +1,67 @@
+resortId: katsurasawa
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 桂沢国設スキー場
+  en: Katsurazawa Kokusetsu Ski Resort
+region:
+  ja: 北海道三笠市
+  en: Mikasa, Hokkaido
+japowResortId: 24
+
+strategy:
+  ja: 札幌圏ファミリー向けキッズパークと、知る人ぞ知るパウダー・カービングバーン。
+  en: Sapporo-area family kids park and a secret powder carving slope.
+archetype: local-value
+
+audience: domestic
+
+hero:
+  tagline:
+    ja: 三笠の国設ゲレンデ——チューブ滑りと極上JAPOWを、札幌から約60分。
+    en: Mikasa's national ski hill—tube slides and premium powder, ~60 minutes from Sapporo.
+  badges: [family, kids-park, powder, sapporo-access]
+
+pillars:
+  - id: family
+    hook: { ja: キッズパーク・チューブ滑り, en: Kids park · snow tubes }
+  - id: value
+    hook: { ja: 大人¥2,410・シニア小学生¥1,360, en: Adult ¥2,410 · senior & kids ¥1,360 }
+  - id: powder
+    hook: { ja: 31°ワイドバーン・JAPOW, en: 31° wide slope · JAPOW }
+
+subPages: []
+
+facts:
+  operator: 三笠市（国設）
+  location: 〒068-2161 北海道三笠市西桂沢50
+  phone: "01267-6-8235"
+  lift: ペアリフト1基（全長811m・中間降り場402m）
+  courses: 4（初級20%・中級40%・上級40%）
+  elevation: 106–320m（標高差218m）
+  maxSlope: 31°
+  maxRun: 855m
+  pricing:
+    liftDayAdult: 2410
+    liftDaySeniorChild: 1360
+    rental: 3500
+  hours: "9:00–16:00（土日祝中心・要確認）"
+  access:
+    sapporo: 札幌中心から道央道・三笠IC経由 約60分
+    airport: 新千歳空港から 約60分
+  nearby:
+    onsen: 湯の元温泉旅館、三笠天然温泉 太古の湯
+    food: 山の家（ゲレ食）、高島屋食堂（ジャンボザンギ）
+    sight: 桂沢湖、ファミリーランドみかさ遊園
+
+map:
+  sources: ["三笠市公式", "LP戦略レポート", "ski-mikasa.net"]
+  heroImage: images/maps/katsurasawa-hero.png
+  copyFrom: shinjo-lp
+
+humanReview:
+  - japowResortId 24
+  - キッズパーク・チューブ営業日の最新確認
+  - 風速6m/s以上のリフト運休基準
+  - 料金・営業時間（2025-26シーズン）
+  - 英訳の事実確認

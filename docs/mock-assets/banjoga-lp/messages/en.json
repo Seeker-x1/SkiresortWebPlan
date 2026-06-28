@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "title": "Takeshi Banjoga Ski Area",
+    "description": "A secret local Japow paradise: crowd-free, retro, and perfect for your family's snowy debut."
+  },
+  "logo": "Takeshi Banjoga Ski Area",
+  "nav": {
+    "freemium": "Premium",
+    "tour": "Tour"
+  },
+  "hero": {
+    "eyebrow": "Ueda, Nagano · Mt. Utsukushigahara foothills",
+    "title": "Takeshi Banjoga<br />Ski Area",
+    "tagline": "A secret local Japow paradise: crowd-free, retro, and perfect for your family's snowy debut.",
+    "badgePrice": "Adult ¥3,550",
+    "badgeNight": "Snow escalator equipped",
+    "badgeCourses": "1 km single slope",
+    "ctaFreemium": "Premium experiences",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Official info & snow conditions",
+    "updatedAt": "Updated Dec 25, 9:00",
+    "lift": {
+      "label": "Lifts",
+      "value": "Operating",
+      "note": "2 pair lifts · 1 km max · 610 m + 410 m"
+    },
+    "snow": {
+      "label": "Snow quality",
+      "value": "Local JAPOW",
+      "note": "1,300 m base · snowmaking assisted"
+    },
+    "night": {
+      "label": "Hours",
+      "value": "8:30–16:00",
+      "note": "No night skiing · half-day loop friendly"
+    },
+    "parking": {
+      "label": "Parking",
+      "value": "100 spaces · free",
+      "note": "Shuttle from Takeshi Tourist Center when full"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Secret Local Japow",
+    "title": "Beyond the mega resorts,<br />crowd-free snow.",
+    "lead": "While Sugadaira charges ¥6,400 for 60 courses, here adults pay ¥3,550 for a full 1 km single slope. Retro Showa charm, meticulous grooming, and powder at 1,300 m—a hidden Ueda hill for family debuts and carving practice, far from mega-resort crowds.",
+    "specs": [
+      "40% beginner · 40% intermediate · 20% advanced",
+      "1,000 m max run · 200 m vertical",
+      "Wide open single slope · easy sightlines"
+    ],
+    "noticeTitle": "Operations:",
+    "noticeBody": "Two pair lifts plus a snow escalator (moving walkway). Snowboards allowed everywhere. The 100-space lot fills quickly on weekend mornings—use the free shuttle from Takeshi Tourist Center. Season and hours vary with snow conditions.",
+    "ctaFreemium": "See premium experiences",
+    "imgAlt": "A 1 km single slope at the foot of Mt. Utsukushigahara—crowd-free local powder"
+  },
+  "paths": {
+    "freemium": {
+      "label": "Premium",
+      "title": "Freemium experiences"
+    },
+    "access": {
+      "label": "Access",
+      "title": "~50 min from Ueda Station"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Lifts · snow · parking"
+    },
+    "tour": {
+      "label": "Tour",
+      "title": "Snow & Takeshi culture"
+    },
+    "map": {
+      "label": "Map",
+      "title": "Courses · lifts"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Hidden-gem strengths",
+    "primary": {
+      "title": "Lodge & snow escalator",
+      "lead": "A moving walkway from parking to the slope—no hauling gear uphill with kids. The rest house serves ¥700 ramen and ¥800 katsu curry, praised in reviews for value and taste between runs.",
+      "cta": "Resort map",
+      "imgAlt": "Takeshi Banjoga rest house—a retro local hill base lodge"
+    },
+    "secondary": {
+      "title": "Complement to mega resorts",
+      "lead": "Nearby Sugadaira (60 courses, ¥6,400) and Yunomaru (6 courses, ¥5,400) win on scale and buzz. Banjoga is the quiet alternative—zero crowds, rock-bottom prices, and a safe wide single slope for kids' debuts and seniors sharpening carves.",
+      "cta": "See tour route"
+    }
+  },
+  "freemium": {
+    "eyebrow": "Freemium",
+    "title": "Low lift prices,<br />premium experiences.",
+    "lead": "Keep the ¥3,550 day pass while monetizing through online \"hands-free snowy debut\" packages (rental + escalator + lunch), live parking availability streams, and QR coupons for nearby onsen and Maruko dining—a freemium model that lifts spend and area circulation.",
+    "specs": [
+      "Hands-free debut from ¥8,000",
+      "Live parking availability stream",
+      "Onsen & dining QR coupons"
+    ],
+    "cta": "Premium program details",
+    "imgAlt": "Family debut package on the 1 km single slope—hands-free snowy first day"
+  },
+  "wellness": {
+    "eyebrow": "Local Culture",
+    "title": "After skiing,<br />slope-side ramen.",
+    "lead": "Rest-house ramen at ¥700 and katsu curry at ¥800—affordable fuel right after runs. Fried chicken and wings also earn strong reviews. Treat the hill as a half-day activity, then route guests to Takeshi and Maruko for afternoon and evening spending.",
+    "leadStation": "With Takeshi Onsen Utsukushinoyu under renovation, digital coupons steer guests to Muroga Onsen Sasaran no Yu and the Kakeyu hot-spring area.",
+    "cta": "See tour route",
+    "imgAlt": "Steaming slope-side ramen—local food after skiing"
+  },
+  "tour": {
+    "eyebrow": "Premium Route",
+    "title": "From Ueda,<br />snow & Takeshi culture.",
+    "lead": "A half- to full-day loop in the Ueda–Takeshi area. Morning powder and carving at Banjoga, then Tomoshibi Museum, Suguri Gorge, Maruko onsen, and local dining—turning a half-day hill into a regional itinerary.",
+    "badge": "UEDA TAKESHI SNOW ROUTE",
+    "steps": {
+      "am": {
+        "title": "Banjoga Ski Area",
+        "body": "First-track powder and carving practice. Easy access via snow escalator"
+      },
+      "noon": {
+        "title": "Slope-side lunch",
+        "body": "Ramen or katsu curry at the rest house. ¥700–800 refuel"
+      },
+      "pm": {
+        "title": "Takeshi Tomoshibi Museum",
+        "body": "Ice candles and nostalgic light displays"
+      },
+      "eve": {
+        "title": "Sasaran no Yu · Maruko (optional)",
+        "body": "Warm up at the onsen, then local dining in Maruko town"
+      }
+    }
+  },
+  "guides": {
+    "powderTour": {
+      "title": "Secret Local Japow international strategy",
+      "body": "Target overseas skiers tired of Hakuba and Niseko crowds and prices. Promote \"zero crowds, retro vibe, top snow\" in English on social—affordable lodge food and untouched powder are compelling content for core influencers and a high-margin international blue ocean."
+    },
+    "snowPlay": {
+      "title": "Hands-free snowy debut package",
+      "body": "Bundle full ski rental, snow-escalator pass, and lunch voucher for families with preschool and elementary kids. Pre-sell on Asoview! and Webket—lowering the barrier for total beginners who can't ride lifts yet while securing bookings and higher spend per visit."
+    },
+    "donation": {
+      "title": "Real-time parking DX",
+      "body": "Stream live parking availability via YouTube Live or network cameras on busy weekends. Prevent stress and mountain-road congestion from guests who arrive when full, and strongly promote the free shuttle from Takeshi Tourist Center—eliminating peak-time lost visits.",
+      "hashtags": [
+        "#SecretLocalJapow",
+        "#BanjogaPowder",
+        "#UedaFamilySki"
+      ]
+    }
+  },
+  "access": {
+    "postal": "386-1312, Japan",
+    "line": "2386-1 Kamishi-Kamihoniri, Ueda, Nagano",
+    "note": "Joshin-Etsu Expwy · Tobu-Yunomaru IC ~60 min (43 km) · Ueda Station ~50–60 min by car · 100 free parking spaces · free shuttle from Takeshi Tourist Center when full",
+    "phone": "TEL 0268-86-2213 (Takeshi Banjoga Ski Area)",
+    "places": "<span class=\"place-unit\"><ruby>長野県<rt>Nagano</rt></ruby></span><span class=\"place-unit\"><ruby>上田市<rt>Ueda</rt></ruby></span><span class=\"place-unit\"><ruby>武石<rt>Takeshi</rt></ruby></span><span class=\"place-unit\"><ruby>上本入<rt>Kamihoniri</rt></ruby></span><span class=\"place-unit\">2386-1</span>",
+    "rentacarEyebrow": "Ueda · Sugadaira",
+    "rentacarLink": "Book a rental car at Kamisuwa · Kirigamine",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Sugadaira and Ueda loops"
+  },
+  "footer": {
+    "copyright": "© Takeshi Banjoga Ski Area — LP mock",
+    "location": "386-1312 · 2386-1 Kamishi-Kamihoniri, Ueda, Nagano"
+  }
+}

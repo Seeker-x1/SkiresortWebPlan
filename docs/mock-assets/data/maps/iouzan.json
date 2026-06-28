@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "2026-06-28",
+  "id": "iouzan",
+  "name": {
+    "ja": "金沢市営医王山スキー場",
+    "en": "Kanazawa City Iouzan Ski Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "kanazawa-sports.jp",
+    "LP batch #35",
+    "configs/lp-brief/iouzan.yaml"
+  ],
+  "updatedAt": "2026-06-28T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/iouzan-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-pair",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": { "ja": "ペアリフト", "en": "Pair lift" },
+      "shortLabel": { "ja": "ペア", "en": "Pair" },
+      "meta": {
+        "ja": { "備考": "ファミリー向け斜面" },
+        "en": { "Note": "Family slope access" }
+      }
+    },
+    {
+      "id": "trail-beginner",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": { "ja": "初級・ファミリーコース", "en": "Beginner · family course" },
+      "shortLabel": { "ja": "初級", "en": "Beg." },
+      "meta": {
+        "ja": { "備考": "緩斜面 · ソリ可" },
+        "en": { "Note": "Gentle · sledding OK" }
+      }
+    },
+    {
+      "id": "trail-sled",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "sled",
+      "label": { "ja": "ソリ・雪遊びエリア", "en": "Sled · snow-play zone" },
+      "shortLabel": { "ja": "ソリ", "en": "Sled" },
+      "meta": {
+        "ja": { "用途": "インバウンド雪体験" },
+        "en": { "Use": "Inbound snow experience" }
+      }
+    },
+    {
+      "id": "trail-closed",
+      "type": "trail",
+      "status": "closed",
+      "difficulty": "intermediate",
+      "label": { "ja": "中・上級コース（閉鎖中）", "en": "Intermediate runs (closed)" },
+      "shortLabel": { "ja": "閉鎖", "en": "Closed" },
+      "meta": {
+        "ja": { "備考": "当分の間閉鎖 · 市公式要確認" },
+        "en": { "Note": "Closed for now · check city site" }
+      }
+    },
+    {
+      "id": "poi-parking",
+      "type": "poi",
+      "status": "open",
+      "label": { "ja": "駐車場（500台）", "en": "Parking (500 spaces)" },
+      "shortLabel": { "ja": "P", "en": "P" },
+      "meta": {
+        "ja": { "料金": "無料" },
+        "en": { "Fee": "Free" }
+      }
+    }
+  ]
+}

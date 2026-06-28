@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Yunodai Ski Resort",
+    "description": "A retro alpine and cross-country resort with deep snow and access to historic Hijiori Onsen, open until May."
+  },
+  "logo": "Yunodai Ski Resort",
+  "hero": {
+    "eyebrow": "Okura, Yamagata · Hijiori Onsen area",
+    "title": "Yunodai<br />Ski Resort",
+    "tagline": "A retro alpine and cross-country resort with deep snow and access to historic Hijiori Onsen, open until May.",
+    "badgePrice": "Day ticket ¥2,000",
+    "badgeNight": "Dec–early May",
+    "badgeXc": "3 km SAJ XC",
+    "ctaPass": "Snow & Toji Pass",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Spring ski · long season info",
+    "updatedAt": "Updated Apr 28, 8:30",
+    "lift1": {
+      "label": "Anvár lift",
+      "value": "Operating",
+      "note": "Rare sliding surface lift in Japan"
+    },
+    "lift2": {
+      "label": "Season",
+      "value": "Until early May",
+      "note": "Among Yamagata's longest runs"
+    },
+    "snow": {
+      "label": "Snow quality",
+      "value": "Spring corn",
+      "note": "Deep-snow zone · uncrowded"
+    },
+    "night": {
+      "label": "XC course",
+      "value": "SAJ 3 km",
+      "note": "Day ticket ¥400 · race camps"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Retro Alpine",
+    "title": "Showa heritage—<br />master the Anvár.",
+    "lead": "No chairlift, no gondola—just one dwindling Anvár surface lift on a compact 5 ha hill. Reviews praise snow quality and slope; the antidote to commoditized mega-resorts for core skiers who want spring laps in peace.",
+    "specs": [
+      "Max run 450 m",
+      "Max grade 16°",
+      "50 free parking spaces"
+    ],
+    "noticeTitle": "Honest reviews say:",
+    "noticeBody": "\"Parking to the lift is too far\"—formalizing paid snowmobile shuttles turns the pain point into revenue and better UX. Don't hide the friction; reframe it as value.",
+    "ctaPass": "Snow & Toji Pass",
+    "imgAlt": "Spring corn snow—a quiet run at Yunodai Ski Resort"
+  },
+  "paths": {
+    "pass": {
+      "label": "Pass",
+      "title": "Snow & Toji Pass"
+    },
+    "access": {
+      "label": "Access",
+      "title": "50 min bus from Shinjo"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Lift · snow · XC"
+    },
+    "hike": {
+      "label": "Shuttle",
+      "title": "Snowmobile express"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Niche but passionate demand",
+    "primary": {
+      "title": "Until early May × deep snow",
+      "lead": "Yamagata's earliest open and latest close—spring skiing is the headline weapon. Don't fight Mt. Gassan on scale; win with Hijiori Onsen packaging.",
+      "cta": "Tickets & season pass",
+      "imgAlt": "Late-season Yunodai—spring skiing under blue skies"
+    },
+    "secondary": {
+      "title": "SAJ cross-country course",
+      "lead": "Independent value from alpine—a full 3 km XC loop hosting national events. Foundation for Nordic & Toji wellness tourism.",
+      "cta": "XC course guide"
+    }
+  },
+  "pass": {
+    "eyebrow": "Snow & Toji Pass",
+    "title": "Hijiori Onsen—<br />snow and hot spring in one day.",
+    "lead": "Bundle a Yunodai day lift ticket, lunch at partner eateries (torimotsu ramen, etc.), and a day-use onsen voucher—moving beyond a two-hour ski stop into a 1,200-year toji economy.",
+    "specs": [
+      "Hijiori Onsen town",
+      "Caldera Onsen Hall",
+      "Inakaya ramen"
+    ],
+    "cta": "View pass",
+    "imgAlt": "Hijiori fantasy snow corridor—historic onsen street lit by snow walls"
+  },
+  "hike": {
+    "eyebrow": "Access Fix",
+    "title": "Snowmobile<br />Express.",
+    "lead": "The walk from parking to the lift is the top complaint—reviews celebrate informal snowmobile rides. A paid official option (e.g. ¥500 round trip) fixes UX and adds revenue.",
+    "leadCurry": "After skiing, head to Hijiori—Inakaya's torimotsu ramen or Kotobuki soba to warm up before the baths.",
+    "cta": "Shuttle & food map",
+    "imgAlt": "Hijiori torimotsu ramen—local snow-country comfort food"
+  },
+  "tour": {
+    "eyebrow": "Detox Loop",
+    "title": "Deep snow and secret onsen—<br />one-day detox.",
+    "lead": "For core skiers and wellness travelers—a full-day snow-and-soak loop, not a ski-only visit.",
+    "badge": "SPRING SKI · HIJIORI TOJI",
+    "steps": {
+      "01": {
+        "title": "Yunodai Ski Resort",
+        "body": "Spring corn or XC (shuttle option)"
+      },
+      "02": {
+        "title": "Inakaya / Kotobuki",
+        "body": "Torimotsu ramen or hand-cut soba"
+      },
+      "03": {
+        "title": "Caldera Onsen Hall",
+        "body": "Open-air bath with snow views"
+      },
+      "04": {
+        "title": "Hijiori Onsen town",
+        "body": "Snow corridor stroll · Kaneyama liquor shop"
+      },
+      "05": {
+        "title": "Ryokan stay",
+        "body": "Optional Hijiori morning market next day"
+      }
+    }
+  },
+  "guides": {
+    "sanctuary": {
+      "title": "Complete spring ski guide",
+      "body": "Open from early December through early May—don't compete with Kamimuro (March close) or Gassan on scale. Own the niche: longest season plus Hijiori Onsen."
+    },
+    "workation": {
+      "title": "Anvár Survivor certification",
+      "body": "\"Conquer Yamagata's last secret lift\"—gamify the tricky Anvár. Share on SNS for a survivor sticker and tap core skiers' bragging rights."
+    },
+    "lake": {
+      "title": "Nordic & Toji wellness",
+      "body": "Pair SAJ XC aerobic training with 1,200-year Hijiori toji—modern health tourism. The Nordic hall has no Wi-Fi or showers; use onsen lodgings as base camp.",
+      "hashtags": [
+        "#SpringSkiYunodai",
+        "#AnvarSurvivor",
+        "#HijioriToji"
+      ]
+    }
+  },
+  "access": {
+    "postal": "996-0301, Japan",
+    "line": "4096 Minamiyama, Okura, Mogami-gun, Yamagata",
+    "note": "Village bus from JR Shinjo ~50 min, alight Makiba-mae + 2 min walk · ~30 min from Funagata IC · 50 free parking spaces",
+    "phoneLodge": "TEL 0233-76-2636 (Nordic hall)",
+    "phoneOps": "Okura tourism 0233-75-2105",
+    "places": "<span class=\"place-unit\"><ruby>山形県<rt>Yamagata</rt></ruby></span><span class=\"place-unit\"><ruby>最上郡<rt>Mogami-gun</rt></ruby></span><span class=\"place-unit\"><ruby>大蔵村<rt>Okura</rt></ruby></span><span class=\"place-unit\"><ruby>大字南山<rt>Minamiyama</rt></ruby></span>",
+    "rentacarEyebrow": "Shinkansen + rental car",
+    "rentacarLink": "Book a rental car at Shinjo Station",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Hijiori Onsen and Yunodai loops"
+  },
+  "footer": {
+    "copyright": "© Yunodai Ski Resort — LP mock",
+    "location": "996-0301 · 4096 Minamiyama, Okura, Mogami-gun, Yamagata"
+  }
+}

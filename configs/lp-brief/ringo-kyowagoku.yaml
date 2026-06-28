@@ -1,0 +1,17 @@
+resortId: ringo-kyowagoku
+schemaVersion: "2026-06-28"
+name:
+  ja: りんご今日話国スキー場
+  en: Ringo Kyowagoku Ski Area
+region:
+  ja: 広島県庄原市
+  en: Shobara, Hiroshima
+japowResortId: 441
+strategy:
+  ja: 中国山地の稀少スキー——ユニーク名称と西日本スキーヤー向けJAPOW詳細LP。
+  en: Rare Chugoku Mountains snow—distinctive name and detail LP for western Japan skiers.
+archetype: local-value
+map:
+  sources: ["LP batch #47"]
+  heroImage: images/maps/ringo-kyowagoku-hero.png
+  copyFrom: gokazan-lp

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "2026-06-28",
+  "id": "banjoga",
+  "name": { "ja": "武石番所ヶ原スキー場", "en": "Takeshi Banjoga Ski Area" },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": ["banjoga research", "LP batch #38"],
+  "updatedAt": "2026-06-28T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/banjoga-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-pair",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": { "ja": "ペアリフト", "en": "Pair lift" },
+      "shortLabel": { "ja": "ペア", "en": "Pair" },
+      "meta": { "ja": { "最長": "約1,000m" }, "en": { "Longest run": "~1,000 m" } }
+    },
+    {
+      "id": "trail-main",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": { "ja": "メインバーン", "en": "Main slope" },
+      "shortLabel": { "ja": "メイン", "en": "Main" },
+      "meta": { "ja": { "特徴": "一枚バーン" }, "en": { "Feature": "Single wide run" } }
+    }
+  ]
+}

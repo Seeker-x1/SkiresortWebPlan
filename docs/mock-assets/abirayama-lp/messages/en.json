@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "title": "Abirayama Ski Area",
+    "description": "Airport · Powder · Onsen"
+  },
+  "logo": "Abirayama Ski Area",
+  "hero": {
+    "eyebrow": "Abira, Hokkaido · 25 min from CTS",
+    "title": "Abirayama<br />Ski Area",
+    "tagline": "Airport · Powder · Onsen",
+    "badgePrice": "Adult day ¥1,700",
+    "badgeNight": "Open until 16:00 · No night skiing",
+    "ctaTrip": "Transit snow plan",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's status",
+    "chipOpen": "Open · Lifts running",
+    "chipPowder": "Snow cover · Check first",
+    "chipPark": "Town kids · Free",
+    "lineNote": "Low-snow risk · Confirm before you go"
+  },
+  "transit": {
+    "eyebrow": "Transit Skiing",
+    "title": "25 minutes<br />from New Chitose Airport.",
+    "lead": "About 25 minutes by car from New Chitose Airport—one of Hokkaido's closest ski areas to the terminal. A niche ~1.5-hour private-powder stop between flights with virtually no lift lines. JR Muroran Line Oiwake Station is ~5 km away; Nukumori-no-Yu combo tickets available.",
+    "specs": [
+      "Pair chairlift",
+      "5 courses",
+      "Nukumori set ¥1,700"
+    ],
+    "ctaAccess": "Access from the airport",
+    "ctaPricing": "Pricing (adult ¥1,700)",
+    "imgAlt": "Long turns on an empty run—ideal practice at Abirayama Ski Area"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Snow & operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "25 min from CTS"
+    },
+    "slopes": {
+      "label": "Slopes",
+      "title": "5 courses · 166 m"
+    },
+    "nearby": {
+      "label": "Nearby",
+      "title": "Nukumori-no-Yu · rest hut"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Abirayama",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "Rail-side slopes near the airport",
+      "lead": "A town-run hill along the Oiwake tracks—25 minutes from New Chitose Airport plus snow views beyond the crossing make a rare transit location. Empty runs perfect for a quick powder session.",
+      "cta": "View the slopes",
+      "imgAlt": "Abirayama Ski Area beside the railway—Oiwake tracks and snow"
+    },
+    "secondary": {
+      "title": "¥1,700 private powder",
+      "lead": "Adult day ticket ¥1,700; Abira town kids aged 3–15 ski free. About one-fifth of Tomamu's lift price on uncrowded local terrain—built for a short ski between flights.",
+      "cta": "Tickets & Nukumori set"
+    }
+  },
+  "nap": {
+    "eyebrow": "Local",
+    "title": "Rest-hut lunch,<br />local flavors.",
+    "lead": "Free rest hut and snack shop—then stretch into Abira udon or cheese-country dining. With ~1.5-hour average stays, the value is the town loop after skiing, not the hill alone.",
+    "cta": "Local food & roadside station",
+    "imgAlt": "Rest-hut shop—local lunch and hot drinks after skiing"
+  },
+  "recovery": {
+    "eyebrow": "Recovery",
+    "title": "After skiing,<br />Nukumori-no-Yu.",
+    "lead": "Day-use bath Nukumori-no-Yu in central Oiwake. The Nukumori set (adult ¥1,700) bundles lift and soak—Airport · Powder · Onsen for a short pre- or post-flight trip.",
+    "noticeTitle": "Snow cover & traveling light:",
+    "noticeBody": "At 166 m with natural snow only, seasons can start late or close early. On-site ski and snowboard rentals available—Web guides for hands-free airport packages. Always check snow before you go.",
+    "cta": "Nukumori set info",
+    "imgAlt": "Nukumori-no-Yu—day-use onsen after skiing"
+  },
+  "trip": {
+    "eyebrow": "Day Trip",
+    "title": "A powder stop<br />around your flight.",
+    "lead": "Arrival afternoon or departure morning—a model ~1.5-hour powder stop 25 minutes from New Chitose Airport.",
+    "badge": "TRANSIT SNOW TRIP",
+    "steps": {
+      "01": {
+        "title": "New Chitose Airport",
+        "body": "Rental car or taxi ~25 min after landing"
+      },
+      "02": {
+        "title": "Private powder",
+        "body": "One pair lift, five courses, ~1.5 hours"
+      },
+      "03": {
+        "title": "Rest-hut lunch",
+        "body": "Shop snack or Abira udon in town"
+      },
+      "04": {
+        "title": "Nukumori-no-Yu",
+        "body": "Combo ticket soak and recovery"
+      },
+      "05": {
+        "title": "Back to airport",
+        "body": "~25 min to CTS. Make your flight"
+      }
+    }
+  },
+  "guides": {
+    "transit": {
+      "title": "Complete Transit Snow guide",
+      "body": "25 minutes from New Chitose Airport—don't compete head-on with Tomamu or Teine; sell private powder in the gap before or after your flight. Pair Oiwake Station access and Nukumori sets for a global transit rebrand."
+    },
+    "night": {
+      "title": "Night skiing suspended",
+      "body": "Night operations are currently suspended due to aging lighting (day skiing until 16:00). Full replacement would require major investment—for now, focus on daytime transit demand around flights."
+    },
+    "handfree": {
+      "title": "How to visit hands-free",
+      "body": "Bundle on-site rentals with the Nukumori set for an airport all-in-one package. Always verify snow cover before departure—when lifts can't run, guide snowshoe tours and other alternatives.",
+      "hashtags": [
+        "#TransitSkiing",
+        "#JapowLocal",
+        "#AirportSkiArea"
+      ]
+    }
+  },
+  "access": {
+    "postal": "059-1987, Japan",
+    "line": "193 Toyosaka, Oiwake, Abira, Yuufutsu-gun, Hokkaido",
+    "note": "~25 min by car from New Chitose Airport · ~5 km from JR Oiwake Station (taxi ~5 min)",
+    "phone": "TEL 0145-25-2514",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>勇払郡<rt>Yuufutsu-gun</rt></ruby></span><span class=\"place-unit\"><ruby>安平町<rt>Abira</rt></ruby></span><span class=\"place-unit\"><ruby>追分豊栄193<rt>193 Toyosaka, Oiwake</rt></ruby></span>",
+    "rentacarEyebrow": "New Chitose + rental car",
+    "rentacarLink": "Book a rental car at New Chitose Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Abira, Tomakomai, and pre/post-flight snow loops"
+  },
+  "footer": {
+    "copyright": "© Abirayama Ski Area — LP mock draft",
+    "location": "059-1987 · 193 Toyosaka, Oiwake, Abira, Yuufutsu-gun, Hokkaido"
+  }
+}

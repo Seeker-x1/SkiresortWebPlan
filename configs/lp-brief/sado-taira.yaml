@@ -1,0 +1,64 @@
+resortId: sado-taira
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 佐渡市営平スキー場
+  en: Sado City Daira Ski Resort
+region:
+  ja: 新潟県佐渡市
+  en: Sado, Niigata
+japowResortId: 351
+
+strategy:
+  ja: 離島で楽しむ秘密のパウダースノーと、自衛隊基地を抜ける非日常の雪上アドベンチャー。
+  en: A hidden powder snow adventure accessed via a defense road on Japan's historical island.
+archetype: tourism-hub
+
+audience: both
+
+hero:
+  tagline:
+    ja: フェリーで渡る佐渡島唯一のゲレンデ——防衛道路を抜けて辿り着く、秘境の雪遊び。
+    en: Sado Island's only ski hill—reach it via a JASDF defense road for a one-of-a-kind snow adventure.
+  badges: [island, ferry, defense-road, family]
+
+pillars:
+  - id: island
+    hook: { ja: 日本海最大の離島・唯一のゲレンデ, en: Japan's largest island · only ski area }
+  - id: adventure
+    hook: { ja: 自衛隊防衛道路アクセス, en: JASDF defense road access }
+  - id: family
+    hook: { ja: 標高差30m・5コース・ファミリー, en: 30m vertical · 5 courses · families }
+
+subPages: []
+
+facts:
+  operator: 佐渡市（自治体）
+  location: 〒952-1208 新潟県佐渡市金井新保2-75
+  phone: "0259-63-4050"
+  lift: ドリーム・ペアリフト1基（289m）+ ハンガーリフト3基
+  courses: 5（ファミリー・ユートピア・ジェット・ハミング・カメラ）
+  elevation: 370–400m（標高差30m）
+  maxRun: 750m
+  pricing:
+    liftDayAdult: 2000
+    liftDayChild: 1000
+  hours: "木・金・土・日・祝（12月下旬〜2月下旬）"
+  access:
+    ferry: 両津港から車で約50分
+    note: 防衛道路通行には自衛隊への事前連絡・タイヤチェーン携行が必要
+  nearby:
+    onsen: 金井温泉 金北の里
+    food: サドメシ（長三郎・金井西洋館等）
+    sight: 史跡 佐渡金山
+
+map:
+  sources: ["佐渡市施設情報", "LP戦略レポート", "ski-gelende.com"]
+  heroImage: images/maps/sado-taira-hero.png
+  copyFrom: utoro-lp
+
+humanReview:
+  - japowResortId 351
+  - 防衛道路通行ルール・チェーン規制の最新確認
+  - 料金・営業日（現金のみ等）
+  - 英訳の事実確認

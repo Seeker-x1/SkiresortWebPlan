@@ -1,0 +1,17 @@
+resortId: bifuka
+schemaVersion: "2026-06-28"
+name:
+  ja: 美深スキー場
+  en: Bifuka Ski Area
+region:
+  ja: 北海道中川郡美深町
+  en: Bifuka, Nakagawa, Hokkaido
+japowResortId: 53
+strategy:
+  ja: 道北ドライパウダーと70円リフト——クラフトビールと秘湯で完結する半日マイクロツーリズム。
+  en: Northern Hokkaido dry powder at ¥70 per lift ride—half-day micro-tourism with craft beer and hot springs.
+archetype: local-value
+map:
+  sources: ["bifuka research", "LP batch #44"]
+  heroImage: images/maps/bifuka-hero.png
+  copyFrom: minami-furano-lp

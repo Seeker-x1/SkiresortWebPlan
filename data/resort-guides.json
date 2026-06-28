@@ -2,36 +2,210 @@
   "baseUrl": "https://guides.japowserch.com",
   "defaultLocale": "ja",
   "guides": {
-    "8":   { "registryId": "asahigaoka",     "tier": "mock" },
-    "35":  { "registryId": "otoifuji",       "tier": "mock" },
-    "39":  { "registryId": "shimukappu",     "tier": "mock" },
-    "40":  { "registryId": "minami-furano",  "tier": "mock" },
-    "50":  { "registryId": "biei",           "tier": "mock" },
-    "58":  { "registryId": "abashiri-lv",    "tier": "mock" },
-    "60":  { "registryId": "unabetsu",       "tier": "mock" },
-    "65":  { "registryId": "kiyosato",       "tier": "mock" },
-    "66":  { "registryId": "gokazan",        "tier": "mock", "note": "id 72 湧別町五鹿山ではなく 66" },
-    "453": { "registryId": "sapporo-kokusai", "tier": "mock" },
-    "454": { "registryId": "sapporo-teine",   "tier": "mock" },
-    "51":  { "registryId": "pippu",           "tier": "mock" },
-    "98":  { "registryId": "sichinohe",      "tier": "mock" },
-    "326": { "registryId": "tsunan",         "tier": "mock" },
-    "284": { "registryId": "kirigamine",     "tier": "mock" },
-    "36":  { "registryId": "kamikawa-nakayama", "tier": "mock" },
-    "163": { "registryId": "shinjo",           "tier": "mock" },
-    "52":  { "registryId": "hinode",           "tier": "mock" },
-    "29":  { "registryId": "takaho",           "tier": "mock" },
-    "310": { "registryId": "koshi-kogen",      "tier": "mock" },
-    "167": { "registryId": "nishikawa",        "tier": "mock" },
-    "59":  { "registryId": "utoro",            "tier": "mock" },
-    "83":  { "registryId": "shintoku-yama",    "tier": "mock" },
-    "116": { "registryId": "tayama",           "tier": "mock" },
-    "5":   { "registryId": "tomioka",          "tier": "mock" },
-    "96":  { "registryId": "kamifuse",         "tier": "mock" },
-    "183": { "registryId": "sanokura",         "tier": "mock" },
-    "6":   { "registryId": "niwa",             "tier": "mock" },
-    "257": { "registryId": "hijiri-kogen",     "tier": "mock" },
-    "2":   { "registryId": "kamoenokuni",      "tier": "mock" },
-    "418": { "registryId": "horaguchi",        "tier": "mock" }
+    "2": {
+      "registryId": "kamoenokuni",
+      "tier": "mock"
+    },
+    "5": {
+      "registryId": "tomioka",
+      "tier": "mock"
+    },
+    "6": {
+      "registryId": "niwa",
+      "tier": "mock"
+    },
+    "8": {
+      "registryId": "asahigaoka",
+      "tier": "mock"
+    },
+    "24": {
+      "registryId": "katsurasawa",
+      "tier": "mock"
+    },
+    "29": {
+      "registryId": "takaho",
+      "tier": "mock"
+    },
+    "35": {
+      "registryId": "otoifuji",
+      "tier": "mock"
+    },
+    "36": {
+      "registryId": "kamikawa-nakayama",
+      "tier": "mock"
+    },
+    "39": {
+      "registryId": "shimukappu",
+      "tier": "mock"
+    },
+    "40": {
+      "registryId": "minami-furano",
+      "tier": "mock"
+    },
+    "50": {
+      "registryId": "biei",
+      "tier": "mock"
+    },
+    "51": {
+      "registryId": "pippu",
+      "tier": "mock"
+    },
+    "52": {
+      "registryId": "hinode",
+      "tier": "mock"
+    },
+    "53": {
+      "registryId": "bifuka",
+      "tier": "mock"
+    },
+    "58": {
+      "registryId": "abashiri-lv",
+      "tier": "mock"
+    },
+    "59": {
+      "registryId": "utoro",
+      "tier": "mock"
+    },
+    "60": {
+      "registryId": "unabetsu",
+      "tier": "mock"
+    },
+    "64": {
+      "registryId": "wakamatsu",
+      "tier": "mock"
+    },
+    "65": {
+      "registryId": "kiyosato",
+      "tier": "mock"
+    },
+    "66": {
+      "registryId": "gokazan",
+      "tier": "mock",
+      "note": "id 72 湧別町五鹿山ではなく 66"
+    },
+    "71": {
+      "registryId": "monbetsu-ooyama",
+      "tier": "mock"
+    },
+    "74": {
+      "registryId": "abirayama",
+      "tier": "mock"
+    },
+    "83": {
+      "registryId": "shintoku-yama",
+      "tier": "mock"
+    },
+    "96": {
+      "registryId": "kamifuse",
+      "tier": "mock"
+    },
+    "98": {
+      "registryId": "sichinohe",
+      "tier": "mock"
+    },
+    "116": {
+      "registryId": "tayama",
+      "tier": "mock"
+    },
+    "117": {
+      "registryId": "tono-akabane",
+      "tier": "mock"
+    },
+    "125": {
+      "registryId": "morioka-ikari",
+      "tier": "mock"
+    },
+    "140": {
+      "registryId": "kyowa",
+      "tier": "mock"
+    },
+    "163": {
+      "registryId": "shinjo",
+      "tier": "mock"
+    },
+    "167": {
+      "registryId": "nishikawa",
+      "tier": "mock"
+    },
+    "174": {
+      "registryId": "yunodai",
+      "tier": "mock"
+    },
+    "183": {
+      "registryId": "sanokura",
+      "tier": "mock"
+    },
+    "191": {
+      "registryId": "kaneyama",
+      "tier": "mock"
+    },
+    "256": {
+      "registryId": "banjoga",
+      "tier": "mock"
+    },
+    "257": {
+      "registryId": "hijiri-kogen",
+      "tier": "mock"
+    },
+    "284": {
+      "registryId": "kirigamine",
+      "tier": "mock"
+    },
+    "310": {
+      "registryId": "koshi-kogen",
+      "tier": "mock"
+    },
+    "312": {
+      "registryId": "chateau-shiozawa",
+      "tier": "mock"
+    },
+    "317": {
+      "registryId": "matsushiro",
+      "tier": "mock"
+    },
+    "326": {
+      "registryId": "tsunan",
+      "tier": "mock"
+    },
+    "351": {
+      "registryId": "sado-taira",
+      "tier": "mock"
+    },
+    "361": {
+      "registryId": "iouzan",
+      "tier": "mock"
+    },
+    "362": {
+      "registryId": "nanao-korosa",
+      "tier": "mock"
+    },
+    "401": {
+      "registryId": "hirogawara",
+      "tier": "mock"
+    },
+    "418": {
+      "registryId": "horaguchi",
+      "tier": "mock"
+    },
+    "419": {
+      "registryId": "koyasan",
+      "tier": "mock"
+    },
+    "441": {
+      "registryId": "ringo-kyowagoku",
+      "tier": "mock"
+    },
+    "442": {
+      "registryId": "toshigamine",
+      "tier": "mock"
+    },
+    "453": {
+      "registryId": "sapporo-kokusai",
+      "tier": "mock"
+    },
+    "454": {
+      "registryId": "sapporo-teine",
+      "tier": "mock"
+    }
   }
 }

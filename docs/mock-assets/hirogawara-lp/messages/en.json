@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "title": "Kyoto Hirogawara Ski Area",
+    "description": "The only natural snow in Kyoto City—a quiet snow-play hideaway linked to Kurama and Kibune."
+  },
+  "logo": "Kyoto Hirogawara Ski Area",
+  "nav": {
+    "bundle": "Tickets",
+    "wellness": "After snow"
+  },
+  "hero": {
+    "eyebrow": "Kyoto City · Sakyo Ward · Northern Kyoto",
+    "title": "Kyoto Hirogawara<br />Ski Area",
+    "tagline": "The only natural snow in Kyoto City—a quiet snow-play hideaway linked to Kurama and Kibune.",
+    "badgePrice": "Entry ¥1,000",
+    "badgeNight": "Snow play area",
+    "badgeStrawberry": "Only in Kyoto City",
+    "ctaBundle": "See tickets",
+    "ctaLive": "Operations info"
+  },
+  "live": {
+    "ariaLabel": "Operations information dashboard",
+    "subtitle": "075-746-0850 · check official notices",
+    "updatedAt": "Confirm lift status & snow before you go",
+    "lift1": {
+      "label": "Lift",
+      "value": "1 pair lift 354 m",
+      "note": "Often suspended since 2021-22 · confirm operation"
+    },
+    "lift2": {
+      "label": "Courses",
+      "value": "1 course, 3 zones",
+      "note": "Summit 450 m · mid 250 m · snow play 50 m"
+    },
+    "snow": {
+      "label": "Snow quality",
+      "value": "Only natural snow in Kyoto City",
+      "note": "Warm winters vary · use weather forecasts too"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Confirm",
+      "note": "Depends on snow & ops · ~¥2,500 when open"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Kyoto Snow Hideaway",
+    "title": "Natural snow<br />inside Kyoto City.",
+    "lead": "A quiet hill at 635 m in the Tamba highlands—the only natural-snow spot within Kyoto City limits. The bowl-shaped slope is easy to overview, so families rarely lose sight of each other. Uncrowded and private, it appeals to international visitors pairing temple town sightseeing with a half-day in real Japanese snow. Warm up in the lodge-style hut with a hearth between runs.",
+    "specs": [
+      "635 m summit · 700 m max run",
+      "30 parking spaces · free",
+      "Only natural snow in Kyoto City"
+    ],
+    "noticeTitle": "Lift & access notes:",
+    "noticeBody": "Since the 2021-22 season, lift operation has often been suspended due to insufficient snow. The Hanase Pass route has sections under 4 m wide—icy winter roads and stranded cars are common. Shuttle from Kurama Station is safer than driving. There is no live snow feed; call 075-746-0850 and check weather forecasts before you travel.",
+    "ctaBundle": "Tickets & snow play",
+    "imgAlt": "lp-mock-hirogawara-lounge—lodge-style hut with hearth and a quiet local hill"
+  },
+  "paths": {
+    "bundle": {
+      "label": "Tickets",
+      "title": "Snow play & entry"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Hanase Pass · Kurama"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Lifts · snow · ops"
+    },
+    "food": {
+      "label": "Food",
+      "title": "Rakuhoku kaiseki & 4 picks"
+    },
+    "onsen": {
+      "label": "Onsen",
+      "title": "Two Kurama · Ohara baths"
+    },
+    "stay": {
+      "label": "Stay",
+      "title": "Kurama stay vs Kyoto Station"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Snow play in northern Kyoto",
+    "primary": {
+      "title": "Snow play zone and forest beginner runs",
+      "lead": "The 50 m snow-play area (8° pitch) is core for sledding and snowmen—even when the lift is down. The 250 m mid slope (12–13° avg.) is a wide beginner main run; the 450 m summit course (15° avg.) winds through forest for novice–intermediate riders. One course, three functional zones in a compact layout.",
+      "cta": "Resort map",
+      "imgAlt": "lp-mock-hirogawara-hero—forest hill and natural snow in northern Kyoto"
+    },
+    "secondary": {
+      "title": "Kyoto × Snow for overseas visitors families",
+      "lead": "Not a mega resort for hardcore skiers—a premium snow-play park for families who want their first touch of snow while touring Kyoto. Package sleds, tubes, and boots; book a shuttle from Kurama Station to skip the treacherous pass—multilingual LP and ops are the growth lever.",
+      "cta": "Tickets & snow play"
+    }
+  },
+  "bundle": {
+    "eyebrow": "Pricing",
+    "title": "Entry ¥1,000,<br />day pass ¥3,000.",
+    "lead": "Typical rates when fully open—entry adult ¥1,000, child ¥500; day pass adult ¥3,000, child ¥2,000; night ticket ~¥2,500. Parking free for 30 cars. Since 2021-22 many seasons focus on snow play with the lift suspended—confirm snow and hours at 075-746-0850.",
+    "specs": [
+      "Entry adult ¥1,000",
+      "Day pass adult ¥3,000",
+      "30 spaces · free parking"
+    ],
+    "cta": "Call 075-746-0850",
+    "imgAlt": "lp-mock-hirogawara-wakasagi—sledding in the snow play zone, Kyoto winter experience"
+  },
+  "wellness": {
+    "eyebrow": "After Snow",
+    "title": "Then Kurama onsen<br />and Rakuhoku flavors.",
+    "lead": "Rest in the hearth lodge on the hill. Afterward, warm up at Kurama Onsen (reopened 2024), then Kibune favorites Ryogen-tei kaiseki or Hirobun nagashi somen with winter botan nabe. Michelin-starred wild-herb kaiseki at Miyamasou in Hanase completes a high-value dinner loop—link snow and Kyoto sightseeing in one day.",
+    "leadStation": "~45–60 min from Kurama Station via Hanase Pass—shuttle avoids pass risk. ~90 min from central Kyoto.",
+    "cta": "Food & onsen guide",
+    "imgAlt": "lp-mock-hirogawara-seafood—Rakuhoku kaiseki and Kibune winter cuisine"
+  },
+  "tour": {
+    "eyebrow": "Half-Day Model",
+    "title": "Add half a day<br />of snow to Kyoto.",
+    "lead": "The “Kyoto Winter Hideaway Snow & Retreat Route”—Eizan Railway to Kurama, shuttle to Hirogawara snow play, Kurama Onsen in the afternoon, Kibune Shrine at dusk, botan nabe at a famous inn. A high-yield international day-trip model.",
+    "badge": "KYOTO · SNOW · ONSEN · KIFUNE",
+    "steps": {
+      "01": {
+        "title": "Kurama Station · Kyoto Station",
+        "body": "Eizan Kurama Line · ~1 hr from Kyoto Station · ~2 hr rental car from KIX"
+      },
+      "02": {
+        "title": "Shuttle to the hill",
+        "body": "Self-drive over Hanase Pass not recommended · book shuttle · 30 parking spaces"
+      },
+      "03": {
+        "title": "2–3 hours snow play",
+        "body": "Sledding · snowmen · entry from ¥1,000"
+      },
+      "04": {
+        "title": "Kurama Onsen",
+        "body": "Reopened 2024 · Kurama Honmachi 520"
+      },
+      "05": {
+        "title": "Kibune · Rakuhoku dining",
+        "body": "Ryogen-tei · Hirobun · Miyamasou"
+      }
+    }
+  },
+  "guides": {
+    "ecosystem": {
+      "title": "Kyoto City's only natural snow, compact hill",
+      "body": "~2 hectares, 135 m vertical, one 354 m pair lift—small in scale, but “natural snow inside Kyoto City” alone drives international demand. During lift suspension, redefine as a snow-play zone and bundle with Kurama, Kibune, and Ohara sightseeing."
+    },
+    "access": {
+      "title": "Via Hanase Pass · ~90 min from central Kyoto",
+      "body": "From Kurama over Hanase Pass (Route 477 / Pref. Route 38)—narrow, icy, often no mobile signal. ~90 min from central Kyoto. Rental car from Kansai Airport for a Rakuhoku loop, or Kyoto Station → Eizan → Kurama → shuttle for a safer public-transit model."
+    },
+    "green": {
+      "title": "Matsuoage in summer, snow play in winter",
+      "body": "August 24 Matsuoage fire festival at Atago Shrine—mountain flames and starry skies. Green season opens MTB and glamping potential. Winter shifts toward high-value snow play and joint tickets with Kurama Onsen while trimming lift fixed costs.",
+      "hashtags": [
+        "#KyotoHirogawara",
+        "#KyotoSnow",
+        "#SnowPlayInKyoto"
+      ]
+    }
+  },
+  "access": {
+    "postal": "601-1101, Japan",
+    "line": "286 Obanacho Hirogawara, Sakyo Ward, Kyoto",
+    "note": "Via Hanase Pass · ~45–60 min from Kurama · ~90 min from central Kyoto · 30 free parking · self-drive over pass not recommended",
+    "phone": "TEL 075-746-0850 (ski area · in season)",
+    "phoneBus": "TEL 075-746-0850 (snow & operations)",
+    "places": "<span class=\"place-unit\"><ruby>京都府<rt>Kyoto Pref.</rt></ruby></span><span class=\"place-unit\"><ruby>京都市<rt>Kyoto City</rt></ruby></span><span class=\"place-unit\"><ruby>左京区<rt>Sakyo Ward</rt></ruby></span><span class=\"place-unit\"><ruby>広河原尾花町<rt>Hirogawara Obanacho</rt></ruby></span><span class=\"place-unit\">286</span>",
+    "rentacarEyebrow": "Kyoto · Rakuhoku",
+    "rentacarLink": "Book a rental car at Kansai Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Kyoto city, Kurama, and Kibune loops"
+  },
+  "footer": {
+    "copyright": "© Kyoto Hirogawara Ski Area — LP mock",
+    "location": "601-1101 · 286 Obanacho Hirogawara, Sakyo Ward, Kyoto"
+  },
+  "nearbyFood": {
+    "backLink": "Back to Hirogawara LP",
+    "hero": {
+      "eyebrow": "Food · Rakuhoku",
+      "title": "From the hill<br />to northern Kyoto flavors.",
+      "tagline": "Lodge break to Miyamasou & Kibune inns"
+    },
+    "notice": "Hours and reservations are on each venue's official site.",
+    "introTitle": "Taste Kyoto winter after snow play",
+    "introLead": "From lodge rest stops to Michelin wild-herb kaiseki, Kurama soba, and Kibune river-deck cuisine—four stops that fit a half-day snow play plus Rakuhoku sightseeing.",
+    "introBody": "Lunch on the hill or in Kurama; dinner at Kibune or Hanase favorites.",
+    "spotsEyebrow": "4 picks",
+    "spotsTitle": "Slope food & nearby gourmet",
+    "spotsLead": "From the hill to Kurama, Kibune, and Hanase—in route order.",
+    "spots": {
+      "slope": {
+        "tag": "On-hill · lodge · hearth",
+        "title": "Hirogawara Lodge",
+        "lead": "A lodge-style hut with a hearth—warm up between runs and snow play. The compact hill feels homely; reviews praise the cozy atmosphere local families love."
+      },
+      "prison": {
+        "tag": "Wild-herb kaiseki · Michelin",
+        "title": "Miyamasou",
+        "lead": "A high-end ryokan in Hanase known for mountain-foraged kaiseki and Michelin recognition—a reward dinner after snow play and the anchor of a premium Rakuhoku winter night."
+      },
+      "soba": {
+        "tag": "Shojin soba · Kurama",
+        "title": "Yoshushuji",
+        "lead": "A Kurama Honmachi institution for shojin cuisine and soba—pair a temple visit to Kurama-dera with northern Kyoto's mountain food culture."
+      },
+      "crab": {
+        "tag": "River deck · botan nabe · somen",
+        "title": "Ryogen-tei · Hirobun",
+        "lead": "Kibune favorites—Ryogen-tei for kaiseki, river decks, and winter botan nabe (wild boar hot pot); Hirobun for nagashi somen in the Kibune stream. Kyoto winter atmosphere after the snow."
+      }
+    }
+  },
+  "nearbyOnsen": {
+    "backLink": "Back to Hirogawara LP",
+    "hero": {
+      "eyebrow": "Onsen · Recovery",
+      "title": "Kurama baths<br />to warm cold legs.",
+      "tagline": "Kurama Onsen—classic après snow play"
+    },
+    "notice": "Fees and hours are on each facility's official site.",
+    "introTitle": "Wellness after snow play",
+    "introLead": "Kurama Onsen, reopened late 2024, pairs best with Hirogawara snow play—joint “snow + bath” tickets are a natural international product.",
+    "introBody": "Kurama's famous bath plus an Ohara lodging onsen—two curated picks.",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "Two Rakuhoku onsen picks",
+    "spotsLead": "Recovery and lodging bases after snow play.",
+    "spots": {
+      "kohanso": {
+        "tag": "Kurama · reopened 2024 · day visit",
+        "title": "Kurama Onsen",
+        "lead": "Kurama Honmachi 520. Back after typhoon damage with a grand reopening in late 2024—~25 km south of Hirogawara, ~45 min by car. Core of the classic loop: snow play, bath, and Kurama-dera."
+      },
+      "kanko": {
+        "tag": "Ohara · stay · seasonal cuisine",
+        "title": "Seryo · Ohara Onsen",
+        "lead": "Lodging onsen in Ohara with seasonal mountain-vegetable cuisine and quiet satoyama baths—stay overnight and add Sanzen-in and Jikko-in the next day."
+      }
+    }
+  },
+  "corridorStay": {
+    "backLink": "Back to Hirogawara LP",
+    "hero": {
+      "eyebrow": "Stay · Strategy",
+      "title": "Sleep in Kurama,<br />or hub at Kyoto Station.",
+      "tagline": "Rakuhoku base vs international loop hub"
+    },
+    "notice": "Rooms, rates, and shuttles are on each property's booking site.",
+    "introTitle": "Two base camps",
+    "introLead": "Stay in Kurama/Kibune for snow, onsen, and shrine visits—or use Kyoto Station as your hub for Kansai loops—choose by what your trip is about.",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "Three lodging picks",
+    "spotsLead": "Rakuhoku-linked vs Kyoto Station hub.",
+    "regions": {
+      "lakeside": "Kurama · Kibune (snow play zone)",
+      "city": "Kyoto city (station · loop hub)"
+    },
+    "spots": {
+      "kohanso": {
+        "tag": "Kurama Station · shuttle · Kurama Onsen",
+        "title": "Inns in Kurama · Kibune",
+        "lead": "Lodging along the Eizan Kurama Line—morning shuttle to Hirogawara snow play, Kurama Onsen in the afternoon, Kibune Shrine at dusk. Complete a Rakuhoku snow day from one base."
+      },
+      "kanko": {
+        "tag": "Hanase · wild-herb kaiseki · premium",
+        "title": "Miyamasou",
+        "lead": "Hanase's high-end ryokan. Wild-herb kaiseki dinner in quiet mountains—core of a one-night model where Rakuhoku dining, not skiing, is the star for affluent international guests."
+      },
+      "station": {
+        "tag": "Kyoto Station · Shinkansen · Eizan",
+        "title": "Hotels near Kyoto Station",
+        "lead": "Base at JR Kyoto Station on the Tokaido–Sanyo Shinkansen—Eizan to Kurama or rental car from KIX for Rakuhoku loops. Many multilingual hotels; easy to pivot if snow is thin."
+      }
+    }
+  }
+}

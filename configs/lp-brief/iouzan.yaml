@@ -1,0 +1,60 @@
+resortId: iouzan
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 金沢市営医王山スキー場
+  en: Kanazawa City Iouzan Ski Resort
+region:
+  ja: 石川県金沢市
+  en: Kanazawa, Ishikawa
+japowResortId: 361
+
+strategy:
+  ja: 金沢駅からわずか30分、インバウンドとファミリーに特化した「雪遊び＆温泉」のマイクロツーリズム拠点へ。
+  en: Just 30 minutes from Kanazawa Station—a micro-tourism hub for snow play and hot springs tailored for inbound travelers and families.
+archetype: tourism-hub
+
+audience: inbound
+
+hero:
+  tagline:
+    ja: 金沢観光の半日オプション——ソリと雪景色、湯涌温泉まで。
+    en: A half-day add-on to Kanazawa sightseeing—sledding, snow views, and Yuwa Onsen.
+  badges: [snow-play, kanazawa-hub, yuwa-onsen]
+
+pillars:
+  - id: snowplay
+    hook: { ja: インバウンド雪遊び体験, en: Inbound snow-play experience }
+  - id: circuit
+    hook: { ja: 湯涌温泉・もりの里グルメ, en: Yuwa Onsen · Morinosato food }
+  - id: access
+    hook: { ja: 金沢駅から約30分, en: ~30 min from Kanazawa Station }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+  - corridor-stay
+
+facts:
+  operator: 金沢市
+  location: 石川県金沢市（医王山県立自然公園内）
+  parking: 500台無料
+  restaurant: ゲレンデ内飲食施設なし（周辺送客モデル）
+  access:
+    car: 金沢市中心部から約30分
+    bus: 金沢駅から路線バス（冬季）
+  nearby:
+    onsen: 湯涌温泉総湯 白鷺の湯
+    food: 第7ギョーザの店（もりの里）
+    sight: 金沢湯涌江戸村
+
+map:
+  sources: ["kanazawa-sports.jp", "LP batch #35", "configs/lp-brief/iouzan.yaml"]
+  heroImage: images/maps/iouzan-hero.png
+  copyFrom: abashiri-lv-lp
+
+humanReview:
+  - japowResortId 361
+  - 閉鎖コース・リフト運行の最新
+  - 料金・営業期間
+  - 英訳の事実確認

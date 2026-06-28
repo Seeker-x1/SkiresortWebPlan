@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "2026-06-28",
+  "id": "hirogawara",
+  "name": { "ja": "京都広河原スキー場", "en": "Kyoto Hirogawara Ski Area" },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": ["hirogawara research", "LP batch #40"],
+  "updatedAt": "2026-06-28T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": { "src": "images/maps/hirogawara-hero.png", "width": 1024, "height": 1024, "viewBox": "0 0 1024 1024" },
+  "bakedLines": true,
+  "features": [
+    { "id": "lift-pair", "type": "lift", "status": "closed", "liftKind": "pair", "label": { "ja": "ペアリフト", "en": "Pair lift" }, "shortLabel": { "ja": "ペア", "en": "Pair" }, "meta": { "ja": { "備考": "運休期あり·要確認" }, "en": { "Note": "May be suspended" } } },
+    { "id": "trail-summit", "type": "trail", "status": "open", "difficulty": "intermediate", "label": { "ja": "山頂コース", "en": "Summit course" }, "shortLabel": { "ja": "山頂", "en": "Summit" }, "meta": {} },
+    { "id": "trail-main", "type": "trail", "status": "open", "difficulty": "beginner", "label": { "ja": "中間コース", "en": "Main course" }, "shortLabel": { "ja": "中間", "en": "Main" }, "meta": {} },
+    { "id": "trail-play", "type": "trail", "status": "open", "difficulty": "sled", "label": { "ja": "雪遊び広場", "en": "Snow play area" }, "shortLabel": { "ja": "雪遊び", "en": "Play" }, "meta": {} }
+  ]
+}

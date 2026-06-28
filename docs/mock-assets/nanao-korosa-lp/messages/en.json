@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "title": "Nanao Korosa Ski Area",
+    "description": "The only ski resort on the Noto Peninsula, perfect for a family snow debut paired with exquisite local seafood and Wakura Onsen."
+  },
+  "logo": "Nanao Korosa Ski Area",
+  "hero": {
+    "eyebrow": "Nanao, Ishikawa · Noto Peninsula",
+    "title": "Nanao Korosa<br />Ski Area",
+    "tagline": "The only ski resort on the Noto Peninsula, perfect for a family snow debut paired with exquisite local seafood and Wakura Onsen.",
+    "badgePrice": "Adult day ¥2,000",
+    "badgePass": "Area pass from ¥5,000",
+    "badgeXc": "Sled & snow play",
+    "ctaPass": "First Snow Mountain Pack",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Real-time conditions",
+    "updatedAt": "Updated Feb 7, 8:30",
+    "lift": {
+      "label": "Lift",
+      "value": "Operating",
+      "note": "1 pair · moving walkway"
+    },
+    "driftIce": {
+      "label": "Moving walkway",
+      "value": "Running",
+      "note": "102 m · sled-friendly"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "4/4 open",
+      "note": "430 m max run"
+    },
+    "snow": {
+      "label": "Snow depth",
+      "value": "Check required",
+      "note": "Restrictions possible in mild winters"
+    }
+  },
+  "expert": {
+    "eyebrow": "Japow Local",
+    "title": "A family snow<br />debut.",
+    "lead": "The Noto Peninsula's only full ski hill. Watch the sled area from the glass-walled center, climb easily on a 102 m moving walkway, and practice on compact 430 m runs where kids never get lost.",
+    "specs": [
+      "Moving walkway 102 m",
+      "Longest run 430 m",
+      "Beginner runs 50%"
+    ],
+    "ctaCourses": "Courses & facilities",
+    "ctaAccess": "Access & location",
+    "imgAlt": "Panorama over Lake Tane—Noto Peninsula's only family-friendly ski area"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Snow & operations"
+    },
+    "pass": {
+      "label": "Pass",
+      "title": "Area tour pass"
+    },
+    "slopes": {
+      "label": "Slopes",
+      "title": "4 courses + sled hill"
+    },
+    "access": {
+      "label": "Access",
+      "title": "~25 min from Nanao city"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Korosa",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "Noto's only ski resort",
+      "lead": "Ishikawa's largest municipal hill beside Lake Tane in Korosa Lakeside Park. Parents can watch sled play from warm indoor spaces with full slope views from the parking area.",
+      "cta": "View scenic runs",
+      "imgAlt": "Panorama over Lake Tane—the Noto Peninsula's only ski area"
+    },
+    "secondary": {
+      "title": "First Snow Mountain Pack",
+      "lead": "Move beyond a ¥2,000 lift-only ticket. Bundle moving-walkway access, sled rental, and Wakura Onsen bath tickets—triple spend per guest with snow play and hot springs.",
+      "price": "¥5,000–8,000",
+      "includes": [
+        "Day lift ticket (¥2,000 value)",
+        "Wakura Onsen public bath ticket",
+        "¥1,500 Nanao dining coupon"
+      ],
+      "cta": "Buy pass"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Wakura Onsen",
+    "title": "After skiing,<br />Wakura Onsen.",
+    "lead": "About 30 minutes by car from Korosa. Wakura Onsen Sōyū offers day baths from ¥500—one of the Hokuriku region's finest ways to warm up after a cold day on the slopes.",
+    "cta": "Wakura Onsen & nearby",
+    "imgAlt": "Wakura Onsen atmosphere—post-ski bathing and Hokuriku winter scenery"
+  },
+  "seafood": {
+    "eyebrow": "Nanao Gourmet",
+    "title": "Slope food,<br />reimagined as sushi.",
+    "lead": "Matsuno Sushi nigiri from ¥1,600, Hachiban Ramen with vegetables—¥500 curry at the ticket machine is beloved, but Nanao Bay seafood downtown raises the whole trip.",
+    "noticeTitle": "Traveling light:",
+    "noticeBody": "On-site ski rental ¥3,000/day. Web guides for Komatsu Airport rental loops: Nanao city → Korosa → Wakura Onsen.",
+    "cta": "Nanao dining guide",
+    "imgAlt": "Noto-mae sushi from Nanao Bay—premium seafood at Matsuno Sushi and more"
+  },
+  "tour": {
+    "eyebrow": "Premium Route",
+    "title": "Noto winter<br />premium tour",
+    "lead": "From ¥2,000 point spending to line-and-area consumption—half- to full-day model courses combining snow play, Nanao dining, and Wakura Onsen.",
+    "badge": "NANAO KOROSA NOTO PREMIUM",
+    "steps": {
+      "am": {
+        "title": "Nanao Korosa",
+        "body": "Sled on the moving walkway. Snow debut"
+      },
+      "noon": {
+        "title": "Nanao gourmet",
+        "body": "Noto-mae sushi lunch at Matsuno Sushi"
+      },
+      "pm": {
+        "title": "Notojima Aquarium",
+        "body": "All-weather sightseeing on Notojima"
+      },
+      "eve": {
+        "title": "Wakura Onsen Sōyū",
+        "body": "Day-bath recovery. Ryokan stay optional"
+      }
+    }
+  },
+  "guides": {
+    "drift": {
+      "title": "Moving walkway × sled guide",
+      "body": "A 102 m domed snow escalator lets toddlers and lift-anxious families climb with ease. During the transition until the pair lift fully reopens in December 2025, promote Korosa as Japan's safest sled-focused snow park."
+    },
+    "passGuide": {
+      "title": "First Snow Mountain Pack guide",
+      "body": "Sell integrated digital tickets via Asoview! and similar platforms: moving walkway, sled rental, Wakura Onsen bath, and Nanao dining coupons. Redirect guests to nearby attractions on low-snow days."
+    },
+    "snowPlay": {
+      "title": "When you don't ski",
+      "body": "Turn low-snow risk into opportunity. Sledding, warm indoor breaks at Yamabiko-so—monetize non-ski content without lifts. A symbol of Noto earthquake recovery supporting winter in the region.",
+      "hashtags": [
+        "#NotoSki",
+        "#KorosaFamily",
+        "#NanaoKorosaJapow"
+      ]
+    }
+  },
+  "access": {
+    "postal": "926-0034, Japan",
+    "line": "555-7 Hakanotani, Tane-machi, Nanao, Ishikawa",
+    "note": "About 20–30 minutes by car from Nanao city · about 30 minutes to Wakura Onsen",
+    "phone": "TEL 0767-57-0022",
+    "places": "<span class=\"place-unit\"><ruby>石川県<rt>Ishikawa</rt></ruby></span><span class=\"place-unit\"><ruby>七尾市<rt>Nanao</rt></ruby></span><span class=\"place-unit\"><ruby>多根町ハカノ谷内555-7<rt>555-7 Hakanotani, Tane-machi</rt></ruby></span>",
+    "rentacarEyebrow": "Noto · Hokuriku",
+    "rentacarLink": "Book a rental car at Komatsu Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Nanao and Noto Peninsula loops"
+  },
+  "footer": {
+    "copyright": "© Nanao Korosa Ski Area — LP mock",
+    "location": "926-0034 · 555-7 Hakanotani, Tane-machi, Nanao, Ishikawa"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "title": "Koyasan Ski Area",
+    "description": "Wakayama's only natural snow—free snow play next to UNESCO Koyasan and Zen & Snow experiences."
+  },
+  "logo": "Koyasan Ski Area",
+  "nav": {
+    "schedule": "Snow",
+    "pillars": "Two pillars",
+    "camp": "Warmth"
+  },
+  "hero": {
+    "eyebrow": "Koya, Wakayama · Tenjikusan Forest Park",
+    "title": "Koyasan<br />Ski Area",
+    "tagline": "Wakayama's only natural snow—free entry and parking. A snow picnic beside a World Heritage site.",
+    "badgePivot": "Free · no lifts",
+    "badgeCampus": "1 natural slope",
+    "stat": "Snow play <strong>sleds · families</strong> · loop <strong>shukubo · onsen</strong>",
+    "ctaCamp": "Zen & Snow Pass",
+    "ctaNordic": "Today's snow"
+  },
+  "live": {
+    "ariaLabel": "Snow conditions dashboard",
+    "chip1": "<strong>Snow</strong> · natural · check before you go",
+    "chip2": "<strong>Fee</strong> · free entry · free parking",
+    "chip3": "<strong>Facilities</strong> · 0 lifts · toilets · ~100 parking",
+    "lineNote": "Updated Jan 20, 8:00 · Koyasan Tourism Association"
+  },
+  "pivot": {
+    "eyebrow": "Free Snow Play",
+    "title": "Kansai's hidden<br />free snow field.",
+    "lead": "No lifts, no snowmaking—Wakayama's only natural snow on a forest-park slope. You won't beat Rokko or Biwako Valley on facilities, but uncrowded privacy plus World Heritage context is a different game.",
+    "specs": [
+      "Free entry",
+      "~100 free parking",
+      "Dogs welcome"
+    ],
+    "noticeTitle": "Before you visit:",
+    "noticeBody": "Snow is unpredictable—the top question is \"is there snow today?\" Check the live dashboard and the tourism association (0736-56-2616) before leaving home.",
+    "ctaNordic": "Today's snow report",
+    "imgAlt": "Koyasan snow field—children sledding near sacred forest"
+  },
+  "paths": {
+    "camp": {
+      "label": "Warmth",
+      "title": "Shukubo · onsen"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Koyasan Cable"
+    },
+    "nordic": {
+      "label": "Snow play",
+      "title": "Sled · picnic"
+    },
+    "schedule": {
+      "label": "Snow",
+      "title": "Live conditions"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Two Pillars",
+    "title": "Two pillars",
+    "primary": {
+      "title": "World Heritage × natural snow",
+      "lead": "Steps from sacred Koyasan—snow-temple walks and snow play in one day. \"Snow × Japanese Buddhism\" for international visitors is impossible to copy elsewhere.",
+      "cta": "Zen & Snow tours",
+      "imgAlt": "Danjo Garan in snow—Koyasan winter pilgrimage"
+    },
+    "secondary": {
+      "title": "All-free value",
+      "lead": "Rokko charges ¥2,800 plus ¥1,500 parking; Biwako Valley ¥4,000+—Koyasan is free. Low friction for first-snow families and dog owners.",
+      "cta": "Access · parking"
+    }
+  },
+  "camp": {
+    "eyebrow": "Zen & Snow Pass",
+    "title": "Warm up at<br />shukubo · onsen.",
+    "lead": "Fix the top complaint—no warm food on hill—with area partners: Fukuchi-in onsen, Yadori Iyashi no Yu, Tsukumo kamameshi lunch via snow-play × warmth coupons.",
+    "specs": [
+      "Fukuchi-in natural onsen",
+      "Tsukumo kamameshi",
+      "Kasen shojin cuisine"
+    ],
+    "cta": "Warmth · food map",
+    "imgAlt": "Koyasan shojin meal—warming lunch after snow play"
+  },
+  "nordic": {
+    "eyebrow": "Snow Picnic",
+    "title": "Bring a tent—<br />snow picnic OK.",
+    "lead": "Hike-up only—parents need stamina, but tent, burner, and bento freedom beats commercial resorts. Sleds, snowmen, and dogs are the stars.",
+    "noticeTitle": "Facilities:",
+    "noticeBody": "No lodge, rental, or regular food trucks—routing guests to nearby shops plus live snow DX raises satisfaction and area spend.",
+    "cta": "Snow play guide",
+    "imgAlt": "Snow picnic—family with tent and sleds"
+  },
+  "journey": {
+    "eyebrow": "Kansai Day Trip",
+    "title": "From Osaka,<br />one Zen & Snow day.",
+    "lead": "Day trip from Kansai—free morning snow play, shojin or kamameshi lunch, snowy temple walk, optional onsen finish.",
+    "badge": "FREE SNOW · WORLD HERITAGE",
+    "steps": {
+      "01": {
+        "title": "Kansai region",
+        "body": "Nankai Koya Line · cable to Koyasan"
+      },
+      "02": {
+        "title": "Tenjikusan Forest Park",
+        "body": "Free sled play (snow required)"
+      },
+      "03": {
+        "title": "Tsukumo",
+        "body": "Famous kamameshi lunch"
+      },
+      "04": {
+        "title": "Danjo Garan · Okunoin",
+        "body": "Snow pilgrimage · photos"
+      },
+      "05": {
+        "title": "Yadori Onsen",
+        "body": "Day bath ¥750 (optional)"
+      }
+    }
+  },
+  "guides": {
+    "pivot": {
+      "title": "How to read a free hill",
+      "body": "Zero direct revenue—work as a magnet and double area spend at shukubo, dining, and onsen."
+    },
+    "nordicGuide": {
+      "title": "Family & dog snow guide",
+      "body": "Sled tips, tent etiquette, hike-up pacing—a realistic half-day with kids."
+    },
+    "campGuide": {
+      "title": "Complete Zen & Snow guide",
+      "body": "Snow × Shingon sacred ground—premium international tours and flash marketing on fresh snow alerts.",
+      "hashtags": [
+        "#KoyasanSnow",
+        "#ZenAndSnow",
+        "#WakayamaNaturalSnow"
+      ]
+    }
+  },
+  "access": {
+    "postal": "648-0211, Japan",
+    "line": "45-17 Koyasan, Koya, Ito-gun, Wakayama (Tenjikusan Forest Park)",
+    "note": "Bus from Nankai Koyasan Cable Koyasan Sta. · alight Nakanohashi cemetery etc. · ~100 free parking",
+    "phone": "TEL 0736-56-2616 (Koyasan Tourism Association)",
+    "places": "<span class=\"place-unit\"><ruby>和歌山県<rt>Wakayama</rt></ruby></span><span class=\"place-unit\"><ruby>伊都郡<rt>Ito-gun</rt></ruby></span><span class=\"place-unit\"><ruby>高野町<rt>Koya</rt></ruby></span>",
+    "rentacarEyebrow": "Kansai · Koyasan",
+    "rentacarLink": "Book a rental car at Kansai Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Koyasan, Hashimoto, and Wakayama loops"
+  },
+  "footer": {
+    "copyright": "© Koyasan Ski Area — LP mock",
+    "location": "648-0211 · 45-17 Koyasan, Koya, Ito-gun, Wakayama"
+  }
+}

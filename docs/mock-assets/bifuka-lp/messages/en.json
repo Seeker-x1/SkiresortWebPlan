@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Bifuka Ski Area",
+    "description": "Northern Hokkaido dry powder at ¥70 per lift ride—FIS aerial site and half-day gastro micro-tourism with craft beer and hot springs."
+  },
+  "logo": "Bifuka Ski Area",
+  "hero": {
+    "eyebrow": "Bifuka, Hokkaido · northern inland",
+    "title": "Bifuka<br />Ski Area",
+    "tagline": "Dry powder and ¥70 lift rides—a tiny municipal hill where you own the untracked lines.",
+    "badgePrice": "Single ride ¥70",
+    "badgeNight": "Night ski 5–8 PM",
+    "badgeXc": "FIS aerial site",
+    "ctaPass": "Gastro Powder Pass",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Municipal · transparent ops info",
+    "updatedAt": "Updated Jan 15, 9:00",
+    "lift1": {
+      "label": "Single chair",
+      "value": "Operating",
+      "note": "One lift only · no queues"
+    },
+    "lift2": {
+      "label": "Longest run",
+      "value": "~350 m",
+      "note": "Up to ~1,000 m with glades"
+    },
+    "snow": {
+      "label": "Snow quality",
+      "value": "Dry powder",
+      "note": "Uncrowded · private feel"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Until 8 PM",
+      "note": "Town lights view · from 5 PM"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Micro Powder",
+    "title": "Hidden from Nayoro—<br />own the untracked.",
+    "lead": "One single lift, ~141 m vertical—a compact town-run hill with inland dry powder and wide intermediate pitches. Reviews praise carving practice conditions; zero crowds make it a powder hunter's secret.",
+    "specs": [
+      "3 courses",
+      "Max grade 25°",
+      "11-ride ticket ¥700"
+    ],
+    "noticeTitle": "Honest reviews say:",
+    "noticeBody": "\"Nobody stays all day\"—don't hide the scale; design for a focused morning ski plus afternoon gastro loop.",
+    "ctaPass": "Gastro Powder Pass",
+    "imgAlt": "Night-lit Bifuka slope—quiet runs overlooking town lights"
+  },
+  "paths": {
+    "pass": {
+      "label": "Pass",
+      "title": "Gastro Powder Pass"
+    },
+    "access": {
+      "label": "Access",
+      "title": "~1.5 hr from Asahikawa"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Lift · snow · night ski"
+    },
+    "hike": {
+      "label": "Loop",
+      "title": "Onsen & food map"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Small is the weapon",
+    "primary": {
+      "title": "¥70 × dry powder",
+      "lead": "Adult single ride ¥70, 11-ride ticket ¥700—among Japan's cheapest. Inland cold creates low-moisture snow; hidden from Nayoro Piyashiri, lines stay fresh. A secret carving gym for locals in the know.",
+      "cta": "Tickets & passes",
+      "imgAlt": "Untouched dry powder—carving wide turns on Bifuka's compact bowl"
+    },
+    "secondary": {
+      "title": "FIS aerial site",
+      "lead": "International-level jump on a tiny municipal hill—built in 2005 on Bifuka's trampoline tradition. No public skiing on the jump, but a unique landmark and event draw.",
+      "cta": "Facility & events"
+    }
+  },
+  "pass": {
+    "eyebrow": "Gastro Powder Pass",
+    "title": "After skiing,<br />eat the whole town.",
+    "lead": "Bundle 11 lift rides (¥700), Matatabi Curry lunch, Bifuka Onsen day entry, and Restaurant BSB craft beer—turn a ¥700 ski stop into a ¥20,000 half-day area journey.",
+    "specs": [
+      "Japan's northernmost craft brewery",
+      "Sturgeon & caviar",
+      "Aoi Hoshi Tsushinsha lodge"
+    ],
+    "cta": "View pass",
+    "imgAlt": "Bifuka red-brick warehouse—Restaurant BSB craft brewery"
+  },
+  "hike": {
+    "eyebrow": "After Ski",
+    "title": "Spice curry &<br />natural hot springs.",
+    "lead": "No on-hill restaurant—high-quality town eateries fill the gap. Matatabi Curry's Taiwanese mince topping and ¥500 day-use Bifuka Onsen sauna are the classic après loop.",
+    "leadCurry": "Lunch at Matatabi Curry, dinner at Niku BAR Minami lamb or Bibliothéque wood-fired pizza—a town of 4,000 with surprising food density.",
+    "cta": "Food & onsen map",
+    "imgAlt": "Bifuka spice curry—popular shop run by transplanted chefs"
+  },
+  "tour": {
+    "eyebrow": "Half-Day Loop",
+    "title": "Northern powder,<br />done in half a day.",
+    "lead": "For powder hunters and gastro travelers—2–3 hours of focused laps, then a town food-and-bath circuit.",
+    "badge": "DRY POWDER · GASTRO TOURISM",
+    "steps": {
+      "01": {
+        "title": "Bifuka Ski Area",
+        "body": "11 untracked laps (¥700)"
+      },
+      "02": {
+        "title": "Matatabi Curry",
+        "body": "Spice-forward lunch"
+      },
+      "03": {
+        "title": "Bifuka Onsen",
+        "body": "Day bath & sauna (¥500)"
+      },
+      "04": {
+        "title": "Restaurant BSB",
+        "body": "Craft beer + iron-pot lamb"
+      },
+      "05": {
+        "title": "Aoi Hoshi Tsushinsha",
+        "body": "Boutique stay (optional)"
+      }
+    }
+  },
+  "guides": {
+    "sanctuary": {
+      "title": "Powder hunter guide",
+      "body": "Vs Nayoro Piyashiri (13 courses, 2,000 m) you lose on scale—you win on price and privacy. Long-term play: pitch \"unknown local JAPOW\" to international hunters avoiding Niseko crowds."
+    },
+    "workation": {
+      "title": "Private hill rental concept",
+      "body": "Flip ¥70 rides into hourly hill buyouts—tiny size becomes exclusive private powder for affluent guests at premium pricing."
+    },
+    "lake": {
+      "title": "FIS aerial camp vision",
+      "body": "2005 Bifuka Aerial Project—winter sport built on trampoline town heritage. Training camps and spectator tours as a dual athlete-tourism pipeline.",
+      "hashtags": [
+        "#BifukaPowder",
+        "#GastroPowderPass",
+        "#FISAerial"
+      ]
+    }
+  },
+  "access": {
+    "postal": "098-2243, Japan",
+    "line": "347-4 Shikishima, Bifuka, Nakagawa-gun, Hokkaido",
+    "note": "~53 km from Shibetsu-Kembuchi IC via Route 40 · ~1.5 hr from Asahikawa · ~3 hr from Sapporo · free parking",
+    "phoneLodge": "TEL 01656-2-2382 (Bifuka Ski Area)",
+    "phoneOps": "Bifuka Board of Education, sports division",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>中川郡<rt>Nakagawa-gun</rt></ruby></span><span class=\"place-unit\"><ruby>美深町<rt>Bifuka</rt></ruby></span>",
+    "rentacarEyebrow": "Asahikawa Airport area",
+    "rentacarLink": "Book a rental car at Asahikawa Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Nayoro, Shibetsu, and Bifuka loops"
+  },
+  "footer": {
+    "copyright": "© Bifuka Ski Area — LP mock",
+    "location": "098-2243 · 347-4 Shikishima, Bifuka, Nakagawa-gun, Hokkaido"
+  }
+}
