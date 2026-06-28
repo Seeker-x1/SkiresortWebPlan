@@ -1,256 +1,154 @@
-# 櫛引たらのきだいスキー場 売上倍増戦略および深掘り調査レポート
+**【競合に対する「優位性」】**
+櫛引たらのきだいスキー場の最大の優位性は、**「鶴岡市街地からの圧倒的な近さと、平日ナイターの手軽さ」**である。例えば、庄内エリア最大の湯殿山スキー場は雪質や規模（最長2000m、最大斜度35度）で勝るものの、市街地から車で約40分かかり、山間部へ入るため心理的ハードルがある [cite: 19, 20, 21]。対して当スキー場は市街地から約20〜30分でアクセスでき [cite: 6, 7]、仕事終わりにフラッと立ち寄れる利便性で勝る。また、後述するように、当スキー場は「自然の沢や壁」といったナチュラルな地形遊びに特化しており、ローカルライダーのニッチなニーズを満たしている [cite: 3, 30]。
 
-## Executive Summary
-本レポートは、山形県鶴岡市に位置する小規模ローカルゲレンデ「櫛引たらのきだいスキー場（JAPOW ID: 157）」の売上倍増に向けた包括的マーケティング戦略を提示するものである。ユーザーの要求に基づく各項目の結論は以下の通りである。
-
-*   **基礎データと現状:** リフト1基・全7コース、標高260〜365mの超コンパクト設計。地元ファミリー層と平日ナイターを滑る若年層をメインターゲットとする「庄内市民の冬の足」である。
-*   **強みと弱み:** 最大の武器は「庄内平野の夜景を一望できるナイター営業」と「多彩でマニアックな地形（壁、沢、ウェーブ）」。致命的な弱点は「低標高による雪質悪化リスク」と「二次交通（公共交通機関）の完全な欠如」である。
-*   **競合優位性:** 湯殿山や羽黒山などの近隣ゲレンデに対し、規模や雪質では劣るものの「仕事終わりにサクッと遊べる利便性」と「スケートパークのような地形遊びの密集度」で独自のポジションを確立できる。
-*   **ターゲットインサイト:** コアなスノーボーダーからは「狭いが地形が面白い」と評価される一方、雪の硬さやアクセス難に対する潜在的な不満が口コミから浮き彫りになっている。
-*   **シナジーとトレンド:** 「くしびき温泉 ゆ〜Town」や「たけ雀」など近隣の強力な食・温泉リソースとのパッケージ化、およびグリーンシーズンの「マウンテンバイク（MTB）コース化」が通年収益化の鍵を握る。
-*   **売上倍増戦略（ボトムライン）:** 本施設が売上を倍増させるための根本戦略は、雪質と規模での勝負を捨て、**「夜景 × 地形パーク × 温泉サ飯」のニッチなマイクロツーリズム拠点へとリブランディング**することである。さらに、SaaSツールを用いた徹底的なDX（デジタル・トランスフォーメーション）による人件費削減と、グリーンシーズンのコース転用により、通年での高い利益率を実現する。
-
-*免責事項：本レポートで提案される財務見積もり、事業計画、および法務・安全管理に関する施策（MTBコース造成など）は情報提供のみを目的としており、実行にあたっては専門家による事業性評価や関係省庁の許認可確認を推奨する。*
-
----
-
-本稿では、客観的なデータに基づき、施設の現状から競合比較、ターゲットインサイト、そして具体的なアクションプランまでを網羅的に分析・考察する。
-
-## 0. 歴史的背景と将来展望 (Temporal Context)
-本施設の戦略を立案する上で、現在地に至る歴史的文脈と、不可避な環境変化を見据えた将来展望を定義することは極めて重要である。
-*   **歴史的文脈（History）:** 櫛引たらのきだいスキー場は、長年にわたり「庄内市民の冬の足」として機能してきた。バブル期のスキーブームにおいては、手軽なレジャー施設として重宝されたが、人口減少と若者のスキー離れが進む現在、「スキーこどもの日」などの無料イベントに依存する、極めて局所的なコミュニティ維持装置としての側面が強くなっている。
-*   **将来展望（Future Outlook）:** 標高260m〜365mという低標高ゲレンデにとって、地球温暖化に伴う雪不足は存続を脅かす最大のクリティカルリスクである。「冬の数ヶ月間、雪が降ることを祈る」という従来のビジネスモデルはすでに破綻しつつある。今後は、雪がなくても成立するグリーンシーズンの収益化（通年化）と、少雪でも楽しめる「アイテム・地形特化型」へのシフト、さらには無人化・省力化による損益分岐点の引き下げが、施設存続の絶対条件となる。
-
-## 1. 基礎データと現状のポジショニング
-
-施設の基本スペックと現在の市場における立ち位置を正確に把握することは、マーケティング戦略の出発点となる。本施設は小規模ながらも、多様なニーズに応えるポテンシャルを秘めている。
-
-### 基本情報と主要設備
-本施設は、鶴岡市街地から車で約20〜30分という好立地にあり、気軽に訪れることができる環境が整っている [cite: 1]。以下に詳細な基本データを示す。
-
-*   **所在地・連絡先:**
-    *   住所: 〒997-0303 山形県鶴岡市たらのき代字西野469-1 [cite: 2, 3, 4]
-    *   電話番号: 0235-57-5470 [cite: 2, 3, 4]
-    *   Google MAP: [https://maps.google.com/?q=38.652592,139.912682](https://maps.google.com/?q=38.652592,139.912682) (緯度経度に基づく推測リンク [cite: 2])
-*   **規模とアクセス:**
-    *   標高: 365m（山頂）〜260m（山麓） [cite: 5]
-    *   アクセス: JR鶴岡駅から車で約30分、山形自動車道・庄内あさひICから車で15分 [cite: 4, 6]。駐車場は無料で300台収容可能 [cite: 4, 5, 7]。
-    *   営業時間: 平日はナイターのみ（17:00〜21:00）、土日祝・年末年始は日中から営業（9:00〜21:00） [cite: 2, 4]。
-*   **コース構成と設備（全7コース・リフト1基）:**
-    *   **リフト:** 1基のみの稼働 [cite: 5, 7]。
-    *   **スーパーコース・チャレンジコース:** 最初は幅が狭く急な斜面だが、中腹からなだらかなうねり斜面に変わり、キッカー（ジャンプ台）やウェーブなどのアイテムも設置されている [cite: 5]。
-    *   **天狗の壁コース:** 最大斜度34度の上級者向け非圧雪（コブ）コース [cite: 1, 5, 8]。
-    *   **石割桜コース:** 壁地形があり、終盤には大きな2連ウェーブが連続する特徴的なレイアウト [cite: 5]。
-    *   **ボーダーコース・ルートスリーナイン:** 石割桜コースから分岐し、自然の沢地形を活かしたコースや、壁遊びができる細く緩やかなコース [cite: 5]。
-    *   **その他設備:** ロッジ、食堂のほか、リフト乗り場付近には就学前幼児でも楽しめる無料のソリ乗り場が完備されている [cite: 1, 3, 9]。山形県内でも珍しいカラー照明によるナイター設備を有する [cite: 1]。
-*   **料金体系:**
-    *   リフト1日券: 大人2,800円、中学生以下2,000円 [cite: 2]。
-    *   シーズン券: 大人20,400円、シニア（60歳以上）16,500円、中学生以下10,200円（鶴岡市内の小中学生は半額） [cite: 10]。
-    *   ※近年の物価上昇に伴い、2026年10月1日（2026-2027シーズン）より大人および新たに設定される高校生のリフト料金が改定される予定である [cite: 11]。
-
-小規模ながら多彩な地形とコースバリエーションを備えており、単なる緩斜面にとどまらない遊び心が組み込まれている。平日はナイター営業に特化することで、日中の稼働コストを抑えつつ、仕事終わりの地元層を取り込む合理的な運営形態をとっている。
-
-### 現状のポジショニング
-現在のメインターゲットは「鶴岡市内に住むファミリー層」および「仕事終わりに滑りに来る地元の若年層〜中年層」である。特に「スキーこどもの日」や「ファン感謝デー」などの無料開放イベントを通じて、地元住民の冬のレジャー拠点としての地位を確立している [cite: 2, 3, 10]。しかし、これは裏を返せば「商圏が極めて局所的である」ことを意味しており、市外や県外からの新規顧客獲得には至っていないのが現状である。
-
-## 2. 強みと弱み (内部環境)
-
-施設の内部環境を客観的に評価することで、集客のフックとなる強力な武器と、顧客体験を阻害するボトルネックが明確になる。
-
-### 強み (Strengths)
-*   **圧倒的な景観とナイター特化の利便性:** 日中は庄内平野と雄大な日本海を見渡す大パノラマ、夜は鶴岡市街地の夜景を一望できる絶好のロケーションである [cite: 1, 4]。平日ナイター営業を行っているため、地元層の「アフター5」のレジャー需要を確実に捉えている。
-*   **コンパクトながら飽きさせない「地形遊び」の充実:** リフト1基・コース幅が狭いという制約を逆手に取り、キッカー、大きな2連ウェーブ（*※ウェーブ：波のように連続する雪の起伏。サーフィンやスケートボードのように地形に合わせて体を上下に伸縮させる「パンピング」という動作で加速しながら遊ぶことができるアイテム*）、自然の沢地形、壁地形など、スノーボーダーやフリースキーヤーが好む「地形遊び（トリックやジャンプ）」の要素が豊富に詰まっている [cite: 5]。
-*   **ファミリー層への高い親和性:** 駐車場の目の前に無料のソリ乗り場があり、小さな子供連れでも安全に雪遊びができる「キッズフレンドリー」な設計である [cite: 1, 12]。
-
-### 弱み (Weaknesses)
-*   **標高の低さと気候変動リスク:** ゲレンデの標高が260m〜365mと低く [cite: 5]、近年の暖冬傾向においては雪不足や雪質の悪化（アイスバーン化など）のリスクが極めて高い。実際、雪が硬いために上級者向けの「天狗の壁」への進入を断念したという利用者の声も存在する [cite: 5]。
-*   **アクセスの脆弱性:** 公共交通機関（電車・路線バス）でのアクセスルートが存在せず、冬季は住民用のスクールバスすら運休するため、自家用車またはタクシー・レンタカーの利用が必須となる「完全な車社会依存」の施設である [cite: 13]。
-*   **リフト1基によるキャパシティの限界:** 混雑時の輸送力が低く、またコース幅が狭いため、初心者と上級者の滑走ラインが交錯する安全上のリスクが潜んでいる [cite: 5]。
-
-## 3. 競合比較
-
-鶴岡市周辺には複数のスキー場が存在する。顧客がどのスキー場を選ぶかの判断基準を分析し、本施設の独自の立ち位置を浮き彫りにする。以下に、本施設と主要競合施設の比較をまとめる。
-
-| 施設名 | 標高スペック | リフト・コース数 | 料金体系（1日券目安） | メインターゲット | 競合に対する戦略的差異（優位性・劣後要因） |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **櫛引たらのきだい** | 260m〜365m | 1基 / 7コース | 2,800円 | 地元ファミリー層、仕事帰りの若年・中年層 | **【優位性】** 圧倒的な夜景、平日ナイターの利便性、密集した地形アイテムによるパーク的遊び方。<br>**【劣後要因】** 絶対的なスケール不足、低標高による雪質の不安定さ。 |
-| **羽黒山スキー場** | 低〜中標高 | 複数基 | (近隣相場準拠) | ファミリー層、合宿・宿泊客 | **【優位性】** 宿泊施設が併設されており合宿等の滞在型に対応可能。月山を望む景観。<br>**【劣後要因】** ナイター時の独自のエンタメ性や、地形特化型のニッチな魅力では櫛引に劣る。 |
-| **湯殿山スキー場** | 高標高 | 複数基 / ロングコース | (中〜高価格帯) | 本格派スキーヤー、パウダー狙い | **【優位性】** 圧倒的な雪質の良さと積雪量によるロングシーズン営業。コースのスケール感。<br>**【劣後要因】** 市街地からの距離があり、平日の仕事帰りに短時間で利用する気軽さでは櫛引に大きく劣る。 |
-
-### 競合に対するポジショニング戦略
-上記の比較表からも明らかなように、大規模なゲレンデや雪質を求める層（ガチ勢）と競合するのは得策ではない。本施設は「仕事終わりに夜景を見ながらサクッと滑れる利便性」と「地形を舐めるように遊べるスケートパーク的な楽しさ」に特化することで、競合との棲み分けを図るべきである。
+**【競合に対する「劣後要因」】**
+絶対的な**「滑走距離」と「雪質」**では湯殿山スキー場に大きく劣後する [cite: 7]。また、初心者やファミリー向けの設備充実度においては、同じくリフト2基と6本のコースを持ち、スノーボード専用コースなども備える羽黒山スキー場とパイの奪い合いになる可能性が高い [cite: 7, 23]。1基のペアリフトのみという設備面では、長時間の滞在における「飽き」を防ぐのが難しく、滞在時間が短くなりがちである。
 
 ## 4. ターゲット層のインサイト（口コミ分析）
 
-実際の来場者のレビューやSNSの動向から、顧客が本施設に対して抱いている顕在的・潜在的なニーズを分析する。
+SNSやレビューサイト等における実際の顧客の声を分析し、顕在化している評価と、隠れたニーズや不満点を抽出する。
 
-### ポジティブな傾向
-*   **「遊べる地形」への高い評価:** スノーボーダー層からは「全体的にコース幅は狭いが、特色があり地形を使いながら遊べるので飽きない」「石割桜コースの2連ウェーブでトリックを出して楽しめる」といった、コースの起伏やアイテムに対するマニアックな高評価が見受けられる [cite: 5]。
-*   **夜景とアフタースキーの満足度:** 鶴岡市街の夜景の美しさと、滑走後に立ち寄れる近隣の温泉（くしびき温泉ゆ〜Town）の入浴割引サービスが、高い満足度を生み出している [cite: 1, 3]。
+**【ポジティブな傾向】**
+*   **地形遊びへの高評価:** スノーボーダーからは「コース幅は狭いが、大きなうねりや自然の沢、ウェーブがあり、地形を使いながら飽きずに遊べる」「トリックを出して楽しめる」といった、コース設計に対する具体的な賛辞が多く見受けられる [cite: 3]。
+*   **景観の良さ:** 「駐車場からすでに楽しそうな雰囲気」「日中は庄内平野が見渡せる大パノラマ」といった景観に対する評価が高い [cite: 3, 6, 11]。
+*   **ファミリーの利便性:** 「ゲレンデ下の無料ソリ乗り場が幼児に十分」「アットホームな印象」など、子連れ層にとっての精神的・経済的ハードルの低さが評価されている [cite: 11, 12]。
 
-### ネガティブな傾向・隠れた不満点
-*   **雪質へのシビアな評価:** 「雪が硬い」という口コミが散見され、アイスバーン化した急斜面（天狗の壁など）は危険を伴うため滑走を避けるユーザーもいる [cite: 5]。これは標高の低さに起因する避けられない課題である。
-*   **二次交通の断絶:** 車を持たない学生や、雪道運転に不慣れな観光客にとっては「アクセス手段がない」という点が大きな障壁となっている [cite: 13]。
-
-### 隠れたニーズの抽出
-ユーザーは単に「滑る」ことだけを求めているのではなく、リフト1本だからこその「アットホームな居心地の良さ」や「パーク感覚での反復練習」を求めている。また、雪質が悪い日であっても楽しめる代替のエンターテインメント（食や温泉とのセット体験）が求められていると言える。
+**【ネガティブな傾向・顕在化していない隠れたニーズ】**
+*   **雪質・コースコンディションへの不満:** 「雪が硬いために滑るのを断念したコースがあった」など、標高の低さに起因するコンディション不良に関する言及がある [cite: 3]。
+*   **飲食・アフタースキー情報の不足:** ロッジや食堂は存在するものの [cite: 12]、名物となるゲレンデ食（ゲレ食）に関する強い口コミが見当たらない。滑走以外の「食」に対する体験価値が十分に提供されていない、もしくは認知されていない可能性がある。
+*   **隠れたニーズ:** 顧客は「滑った後の冷えた体を温める場所」を求めている。口コミの中には「スキーを楽しんだ後には、近くの『ゆ～Town』で温泉も楽しめる」との言及があり [cite: 12]、スキーと温泉のセット利用は極めて強い潜在ニーズ（隠れた不満の解消手段）であることがわかる。
 
 ## 5. 周辺観光資源とのシナジー（エリア回遊性）
 
-スキー単体での滞在時間が短いという弱点を補うため、鶴岡市櫛引エリアの強力な周辺資源と連携した「回遊ルート」を構築し、エリア全体の消費単価を上げる戦略が必要である。
+売上倍増のためには、スキー場単体での収益だけでなく、エリア全体の回遊性を高め、顧客一人当たりの消費単価（LTV）を向上させることが不可欠である。櫛引エリアには、これを実現するための強力な観光資源が存在する。この回遊性を高める手段として、**「マイクロツーリズム」**の概念が有効である。
+*   **定義:** マイクロツーリズムとは、自宅から1〜2時間圏内の地元や近隣地域を対象とした旅行形態を指す。
+*   **アナロジー:** 週末に近所のショッピングモールや大きな公園に遊びに行くような「気軽さ」で、本格的な非日常体験（温泉やアクティビティ）を味わう旅行スタイルである。
+*   **本スキー場への関連性:** 鶴岡市民にとって、移動時間と交通費を極小化しつつ、スキー場での雪遊び、本格的な天然温泉、地元の美食を短時間・低予算で完結できる理想的なエリアパッケージとして機能する。
 
-### 有望な周辺観光資源
-*   **温泉施設:**
-    *   **くしびき温泉 ゆ〜Town:** 施設から近く、スキー場利用者には入浴料の割引（リフト1日券提示で半額など）がある。1階の赤茶色のあったまりの湯、2階の無色透明な湯とサウナがあり、月山や鳥海山を望む絶景露天が特徴 [cite: 3, 7, 14, 15]。
-*   **ご当地グルメ:**
-    *   **和風旬菜 たけ雀（安野旅館隣）:** 2019年にオープンした古民家風の居酒屋・定食屋。ジャンボチキンカツ定食など、大ボリュームでコストパフォーマンスに優れたランチやディナーが地元で大人気である [cite: 16, 17, 18, 19]。
-    *   **アル・ケッチァーノ:** 地産地消を牽引する奥田シェフの世界的イタリアンレストラン。国内外から美食家が訪れる [cite: 20, 21, 22, 23]。
-    *   **穂波街道 緑のイスキア:** 本格ナポリピッツァを提供する人気店 [cite: 24, 25, 26]。
-*   **周辺スポット:**
-    *   **黒川能の里 王祇会館:** 500年以上の歴史を持つ国指定重要無形民俗文化財「黒川能」の伝承施設 [cite: 3, 27, 28, 29, 30]。
-    *   **フルーツタウンの強み:** 櫛引エリアは県下有数の果樹栽培地（観光果樹園案内所・産直あぐり等）であり、食の豊かさが際立っている [cite: 27, 28, 31, 32]。
+**【近隣の有望な観光資源】**
+1.  **温泉施設「くしびき温泉 ゆ～Town」:**
+    スキー場近隣に位置する公共の日帰り温泉施設。地下1300mから湧き出す源泉100%のかけ流し温泉であり、サウナも完備している [cite: 31, 32, 33, 34]。スキー場利用者はリフト券の提示で入浴料（通常大人500円）から80円引きなどの割引サービスを受けられる特典があり、アフタースキーの強力な受け皿となっている [cite: 2, 12, 34]。
+2.  **フルーツタウンくしびき（産直あぐり・観光果樹園）:**
+    「産直あぐり」では地元農産物や加工品（ジュース、ゼリー）が販売されており、併設の農家レストラン「食彩あぐり」での食事も可能である [cite: 35, 36, 37]。
+3.  **ご当地グルメ・飲食店:**
+    周辺には、地域密着型の高評価飲食店が点在している。
+    *   **知憩軒:** 庄内の食材を活かした農家レストラン。昔ながらの庄内地方の伝統料理を中心にしたコース一種類（1,000円〜1,999円帯）を提供しており、1泊2食付きの農家民宿（6,000円〜）も併設している [cite: 38, 39, 40]。
+    *   **中華料理 なるみ:** 手作り調味料にこだわる本格中華店。看板メニューの「担々マーボーメン」（990円）は、ピリ辛マーボーあんとゴマの風味が合わさり、冷えた体を温めるのに最適である [cite: 41, 42, 43]。
+    *   **和風旬菜 たけ雀:** 居酒屋・日本料理店。（※具体的なメニュー名や価格帯の詳細データは本調査内では確認できないが、地元客に親しまれている施設である） [cite: 44]。
 
-### 回遊ルート構築案（消費単価向上モデル）
-**【平日夜の仕事帰り・若者向けルート】**
-18:00 本施設でナイター滑走（地形遊び・夜景撮影）
-20:00 「くしびき温泉ゆ〜Town」でサウナ＆冷水浴（井戸水使用で通年13度 [cite: 33]）による「ととのい」体験
-21:30 「たけ雀」または鶴岡市内の居酒屋でサ飯（サウナ飯）と地元食材を楽しむ
-*効果:* スキー券＋温泉＋飲食で、1人当たりの客単価を2,000円から6,000円以上に引き上げる。
+**【滞在時間と消費単価を上げる「回遊ルート構築案」】**
+*   **「雪遊び×温浴×地元飯」半日完結型マイクロツーリズム:**
+    鶴岡駅から車でわずか30分のエリア内にスキー、絶品中華、天然温泉、産直といった充実した体験が密集している利点を活かし、鶴岡市民や庄内エリアの住民に向け、休日の半日をフルに活用してこれらを円環状に巡るルートを提案する。
+    *   *午前:* 櫛引たらのきだいスキー場でソリ遊びやスキー講習。
+    *   *昼食:* スキー場を降りて「中華料理 なるみ」で「担々マーボーメン」を堪能。
+    *   *午後:* 「くしびき温泉 ゆ～Town」で冷えた体を温め、サウナでリフレッシュ。
+    *   *夕方:* 「産直あぐり」で夕食用の地元野菜や名物ジュースを購入して帰宅。
+    このルートを「くしびき冬の満喫パス」としてパッケージ化することで、エリア全体への送客と消費単価の大幅な向上が見込める。
 
 ## 6. 最新トレンドの適応可能性
 
-社会的な最新トレンドを本施設にどう適応させるか、現実的な視点で分析する。
+現代の観光市場における最新トレンドを、当スキー場にどのように適用できるかを分析する。
 
-### インバウンドの取り込み余地
-鶴岡市は「アル・ケッチァーノ」に代表されるガストロノミー（美食）ツーリズムや、羽黒山（ミシュラン三つ星の国宝五重塔）など、欧米の富裕層や個人旅行客（FIT）を惹きつける強力なコンテンツを持っている [cite: 20, 21, 34, 35, 36]。本施設が大型バスで団体客を受け入れることは困難だが、「日本のローカルな雪山で遊び、極上の日本食と温泉を楽しむ」という体験型ニッチツアーを企画すれば、高単価なインバウンド層（主にオセアニアや欧米のディープなスノーボーダー）を誘致できる余地は十分にある。
+**【インバウンド (訪日外国人客)】**
+現状、小規模なローカルゲレンデである当スキー場単体で、北海道や長野のようなスキー目的のインバウンド層を直接集客するのは困難である。しかし、文化体験と組み合わせたアプローチには余地がある。例えば、櫛引エリアの国重要無形民俗文化財「黒川能」 [cite: 45, 46] の鑑賞や、「知憩軒」のような日本の原風景を味わえる農家民宿での宿泊 [cite: 47, 48, 49] と「ローカルゲレンデでの雪遊び体験」をセットにすることで、欧米豪の富裕層が求める「オーセンティック（本物）な日本体験」を提供することが可能である。
 
-### 通年化（グリーンシーズンの活用）
-櫛引エリアは「フルーツタウン」としてグリーンシーズンの集客力が元々高い [cite: 27, 28]。ゲレンデのなだらかな地形と自然の沢、ウェーブ地形は、そのまま**マウンテンバイク（MTB）向けのパンプトラック**（*※パンプトラック：自転車のペダルを漕がず、体重移動の「パンピング」動作だけで進むことができる波状の起伏や連続するカーブを備えた専用コース。雪上のウェーブをそのまま夏場の土のコースとして活用できる*）やダウンヒルコースへの転用が極めて容易である。果物狩りとセットにしたアウトドア事業は、少ない投資で通年収益化を図る現実的な一手となる。
+**【通年化 (グリーンシーズンの活用)】**
+スキー場に隣接する「ほのかたらのきだい」は、夏季にグリーンツーリズムの拠点として活用されている [cite: 13]。これをさらに発展させ、起伏（ウェーブや壁）をそのまま活かした「マウンテンバイク（MTB）のパンプトラックコース（起伏のあるコブや土手を利用し、ペダルを漕がずに体重移動のみで進む自転車用コース）」として整備することで、フルーツタウン櫛引の収穫期（夏〜秋）との強力な相乗効果を生み出すことができる。
 
-## 7. DX導入の財務ロジスティクスと投資対効果 (Financial Logistics for DX)
-リフト1基のみのマイクロリゾートにおいて、高額なシステム開発は不可能である。しかし、低コストなSaaS（Software as a Service）を組み合わせることで、極めて高い投資対効果（ROI）を生み出すことができる。
-*   **コスト構造の試算:**
-    *   **オンラインチケット・予約管理:** 「Nutmeg」や「STORES 予約」などのクラウドサービスを利用。初期費用0円、月額固定費0円〜約10,000円（＋決済手数料数％）で導入可能。
-    *   **現地でのキャッシュレス決済:** 「Square POSレジ」や「Airペイ」を導入。端末代金はキャンペーン等で実質無料化でき、月額固定費もかからない。
-*   **投資対効果 (ROI) の算出:**
-    *   これらのツールを導入することで、これまでチケット窓口に張り付けていたスタッフを最低1名削減、あるいは他業務（ゲレンデパトロールやレストラン業務）へ配置転換することが可能となる。
-    *   スタッフ1名分の人件費（仮に時給1,000円×8時間×月20日＝月額160,000円）を削減できるため、システムの月額維持費（約10,000円程度）と決済手数料を差し引いても、**導入初月から毎月10万円以上のキャッシュフロー改善**が見込める。資金力が乏しいローカルゲレンデにおいて、この「無人化・省力化」は売上増加と同等のインパクトを持つ。
+**【新規軸 (サステナビリティ・最新テクノロジー・DX)】**
+*   **DX（デジタルトランスフォーメーション）:** チケット販売のオンライン化や、自動発券機・無人ゲートの導入により、限られた人員での運営効率化を図るべきである。
+*   **サステナビリティ:** 「ゆ〜Town」での源泉かけ流しエネルギーの活用 [cite: 34] や、地元産食材（産直あぐり）のゲレンデ食への積極導入により、「地産地消・ゼロカーボン」を意識したサステナブルなローカルリゾートとしてのブランディングが可能である。
 
 ---
 
 ## 結論：売上倍増に向けたアクションプラン
 
-上記のリサーチに基づき、弱みを補い強みを最大化するための、現実的かつインパクトのある施策を以下のステップで提案する。
+上記のリサーチと分析に基づき、櫛引たらのきだいスキー場が売上を倍増させるための現実的かつインパクトのある施策を提案する。
 
-### 短期アクション（1年以内で実行可能・即効性重視）
+**【短期アクション（1年以内で実行可能・即効性重視）】**
+*   **「ナイター＆サウナ」デジタルパッケージチケットの販売:**
+    仕事帰りの若者や社会人をターゲットに、スキー場のナイター券と「ゆ～Town」の入浴券（サウナ利用含む）をセットにしたデジタル共通券を販売する。実行に向けた実務ロジスティクスとして、「アソビュー！」や「Webket」などのデジタルチケットプラットフォームを導入し、販売額から手数料を控除したのち、両施設間で利用実績に基づいたレベニューシェア（収益分配）ロジックをシステム上で自動化する。「雪山からサウナへ直行」という現代のサウナブームに乗せたキャッチコピーでSNS広告を展開し、平日の客単価と来場頻度を向上させる。
+*   **「地形成分特化型」ゲレンデとしてのSNSリブランディング（ニッチ戦略）:**
+    コース幅の狭さを隠すのではなく、「自然の沢、壁、２連ウェーブが連続するルーティンコース」として再定義する。実際に、同じ庄内エリアの「湯殿山スキー場」はゲレンデ中にR形状の壁を数多く造設し「R天国」としてブランディングすることで、プロやコア層から注目を集めることに成功している [cite: 17]。この成功事例に倣い、地元のインフルエンサーライダーをアンバサダーに任命し、GoPro等で撮影した「地形遊びのPOV（主観）動画」をInstagramやTikTokで拡散させ、ニッチなコア層を周辺市町村からも呼び込む。
+*   **ゲレ食の地元コラボレーション化:**
+    食堂のメニューに、「産直あぐり」のオリジナルフルーツジュースや、「なるみ」「知憩軒」等の地元人気飲食店の監修による特別メニュー（例：なるみ監修の特製スパイスラーメン等）を期間限定で導入し、手薄だった飲食単価を向上させる。
 
-1.  **「地形パーク化」宣言とSNS動画マーケティング**
-    *   **Step 1:** 施設最大の強みである「ウェーブ」「壁」「沢」といった地形アイテムを意図的に整備・ブラッシュアップする。
-    *   **Step 2:** 地元の有力なスノーボーダーやインフルエンサーをアンバサダーとして起用し、石割桜コース等での「地形遊び」に特化したショート動画を制作する。
-    *   **Step 3:** 「Instagram Reels」および「TikTok」を用いて、「#たらのきだいスケートパーク」「#日本一地形が面白いローカルゲレンデ」といったハッシュタグと共に動画を広告配信する。
-    *   *【Case Study・実例】* 新潟県のNinox Snow Park（ニノックス）は、斜面長が短く規模が小さいという弱点を逆手に取り、若者向けに特化した「スノーパーク（アイテム）」と「ナイター」に資源を集中させることで、V字回復を果たした成功例がある。
-
-2.  **「夜景スキー × 温泉 × サ飯」のデジタルパッケージ販売**
-    *   **Step 1:** くしびき温泉ゆ〜Town及び近隣飲食店（たけ雀等）と協業体制を構築する。
-    *   **Step 2:** 体験予約プラットフォーム「Asoview! (アソビュー)」や「Klook」に事業者登録し、ナイター券・入浴券・食事クーポンを統合した「極上アフター5パック」をオンライン販売する。
-    *   **Step 3:** 顧客はスマホのQRコードを各施設で提示するだけでシームレスに利用できる（Square等のモバイル決済端末で消込処理）。
-    *   *【Case Study・実例】* 地方の交通機関や観光施設を一つのアプリで予約・決済できる「観光MaaS」の仕組みは、近年各地で成功を収めており、個別の単価（リフト券2,800円）からパッケージ単価（6,000円以上）への引き上げを容易にする。
-
-### 中長期アクション（1〜3年スパン・根本的な価値向上）
-
-3.  **グリーンシーズンの「パンプトラック＆MTBコース」化**
-    *   **Step 1:** 雪解け後の春先に、既存のウェーブ地形や緩斜面の土砂を専用重機で成形し、マウンテンバイク用のパンプトラックおよび初心者向けダウンヒルコースを造成する。
-    *   **Step 2:** 大手MTBメーカー（例: TrekやSpecialized）のディーラーと提携し、最新のe-MTB（電動アシスト付きマウンテンバイク）のレンタル拠点を設ける。
-    *   **Step 3:** 近隣の「産直あぐり」やフルーツ狩り農園と連携し、食とスポーツを掛け合わせた夏のアウトドアパッケージを販売する。
-    *   *【Case Study・実例】* 群馬県のパルコール嬬恋リゾートや、全国で展開される「Trail Adventure（トレイルアドベンチャー）」は、スキー場の遊休地や緩斜面をMTBやバギーコースに転用することで、グリーンシーズンの爆発的な集客に成功している。
-
-4.  **二次交通課題の解決策（オンデマンド相乗りタクシーの導入）**
-    *   **Step 1:** 庄内交通などの地元タクシー会社、および鶴岡市と連携協議を開始する。
-    *   **Step 2:** AIオンデマンド配車アプリ（例: 「mobi」や「NearMe」）を導入し、鶴岡駅とスキー場、温泉をダイレクトに結ぶ「スキー場直行・相乗り定額タクシー」を運行する。
-    *   **Step 3:** インバウンド層（FIT）向けに、多言語対応の予約アプリ経由で送迎からスキー体験、アル・ケッチァーノ等での夕食までをワンストップで手配する。
-    *   *【Case Study・実例】* 京都府京丹後市や北海道の地方リゾートでは、定額制の乗り放題AI相乗り交通「mobi」の導入により、車を持たない若者や外国人観光客の足の確保と、地域経済の回遊性向上に劇的な成果を上げている。
+**【中長期アクション（1〜3年スパン・根本的な価値向上）】**
+*   **戦略的価格改定による単価向上と付加価値提供:**
+    予定されている大人リフト料金の改定 [cite: 10] に際し、単価向上が急務である。現在2,900円の1日券について [cite: 14, 15]、競合の湯殿山（3,700円）[cite: 17, 18]や羽黒山（3,000円）[cite: 22, 23]の価格帯を考慮すると、「3,300円〜3,500円」の範囲が客離れを防ぎつつ収益性を確保できる妥当なターゲット価格帯の仮説となる。ただし、単なる値上げではなく、前述の「サウナ割引」や「地産地消グルメの充実」、「地形コースの定期的メンテ」といった付加価値の向上をセットで訴求し、顧客の支払い意欲（WTP）を満たす必要がある。
+*   **省力化・無人化インフラへの投資（DX化）:**
+    今後予想される労働力不足と、上記価格改定への顧客納得度を高めるため、WEB事前決済システムやICリフト券（無人ゲート）を導入する。これにより窓口の混雑を緩和し、スタッフを初心者サポートや地形整備などの高付加価値業務へシフトさせる。
+*   **「フルーツ＆スノー」通年型マイクロリゾートへの転換:**
+    隣接する「ほのかたらのきだい」を中心とし、グリーンシーズンはゲレンデを活用した「MTBパンプトラックコース」、ウィンターシーズンは「スノースポーツ」を提供する通年型施設へ進化させる。春先の「雪遊び×イチゴ狩り」など、フルーツタウン櫛引の農産物収穫体験と組み合わせた宿泊パッケージを開発する。
 
 ---
 
 ## 0. LP Factory メタデータ
 
 | 項目 | 値 |
-| :--- | :--- |
+|------|-----|
 | JAPOW ID | 157 |
 | registry id | kushibiki-taranokidai |
 | 正式名 (ja) | 櫛引たらのきだいスキー場 |
-| 正式名 (en) | Kushibiki Taranokidai Ski Resort |
+| 正式名 (en) | Kushibiki Taranokidai Ski Area |
 | 都道府県 | 山形県 |
 | 推奨 LP 複製元 | shinjo-lp |
-| 戦略1行 (ja) | 庄内平野の夜景を独り占めするナイターと、多彩な地形遊びが魅力のアットホームなローカルゲレンデ。 |
-| 戦略1行 (en) | A cozy local ski resort featuring stunning night views of the Shonai Plain and exceptionally playful terrain. |
-
-### 周辺飲食
-
-| 店名 | ジャンル | 住所 | TEL | URL |
-| :--- | :--- | :--- | :--- | :--- |
-| 和風旬菜 たけ雀 | 居酒屋・定食 | 山形県鶴岡市中田字追分28 | 0235-57-2071 | https://yasunoryokan.com/izakaya/ |
-| アル・ケッチァーノ | イタリアン | 山形県鶴岡市下山添一里塚83 | 0235-78-7230 | http://www.alchecciano.com/ |
-| みどり食堂 | 食堂・ラーメン | 山形県鶴岡市みどり町13-18 | 0235-23-9222 | https://tararira.com/omouma-midorisyokudo/ |
-| MOGITEN もぎてん | カレーとお酒 | 山形県鶴岡市本町一丁目3-37 | 0234-68-9843 | - |
-| 鶏とおでん さだえん | 居酒屋・焼き鳥 | 山形県鶴岡市錦町1-31-2 | 070-4495-6436 | - |
-| 和定食処 あら川 | 日本料理・食堂 | 山形県鶴岡市羽黒町荒川字前田元131-4 | 0235-64-1922 | - |
-| 穂波街道 緑のイスキア | ピザ・イタリアン | 山形県鶴岡市羽黒町押口字川端37-7 | 0235-23-0303 | http://www.honamikaido.com/ |
-| かたばみ | 神社カフェ | 山形県鶴岡市馬場町4-5（荘内神社境内） | 非公開 (メール受付) | https://www.visityamagata.jp/event-yamagata-akimatsuri_sep2024/ |
-
-### 周辺温泉
-
-| 店名 | 住所 | TEL | URL |
-| :--- | :--- | :--- | :--- |
-| くしびき温泉 ゆ～Town | 山形県鶴岡市三千刈字清和159 | 0235-57-4313 | http://www.u-town.info/ |
-| 湯野浜温泉 | 山形県鶴岡市湯野浜 | 0235-75-2258 | https://yunohama100.com/ |
-| あつみ温泉 | 山形県鶴岡市湯温海 | 0235-43-3547 | http://www.atsumi-spa.or.jp/ |
-
-### 周辺観光
-
-| 店名 | 住所 | TEL | URL |
-| :--- | :--- | :--- | :--- |
-| 黒川能の里 王祇会館 | 山形県鶴岡市黒川宮の下253 | 0235-57-5310 | - |
-| 国宝 羽黒山五重塔 | 山形県鶴岡市羽黒町手向 | 0235-62-2355 | http://www.dewasanzan.jp/ |
-| 産直あぐり | 山形県鶴岡市西荒屋字杉下106-3 | 0235-57-3300 | https://santyokuagri.jp |
+| 戦略1行 (ja) | 庄内平野の絶景パノラマと地形遊びを満喫し、冷えた体は極上の天然温泉で癒す、鶴岡市民のための冬の特等席。 |
+| 戦略1行 (en) | A premium winter spot for Tsuruoka locals, offering panoramic views of the Shonai Plain, unique terrain runs, and ultimate relaxation in natural hot springs. |
+| 周辺飲食 | <table><tr><th>店名</th><th>ジャンル</th><th>住所</th><th>TEL</th><th>URL</th></tr><tr><td>中華料理 なるみ</td><td>中華・ラーメン</td><td>山形県鶴岡市中田追分80-1</td><td>0235-57-4486</td><td>https://guru-kozo.jp/narumi/</td></tr><tr><td>知憩軒</td><td>農家レストラン・郷土料理</td><td>山形県鶴岡市西荒屋宮の根91</td><td>0235-57-2130</td><td>https://syokunomiyakoshounai.com/syounai-food/shop_g/s0790.html</td></tr><tr><td>和風旬菜 たけ雀</td><td>和食・居酒屋</td><td>山形県鶴岡市中田字追分28</td><td>0235-57-2071</td><td>https://yasunoryokan.com/izakaya/</td></tr><tr><td>温もり中華そば 銀河</td><td>ラーメン</td><td>山形県鶴岡市下山添一里塚152</td><td>不明</td><td>https://ameblo.jp/kuishinbo-issy/entry-12790646130.html</td></tr><tr><td>ラーメンのもり</td><td>ラーメン・牛丼</td><td>山形県鶴岡市西荒屋字川原田34-2</td><td>090-7663-9469</td><td>https://www.tsuruoka-cpn.jp/archives/stores/%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E3%81%AE%E3%82%82%E3%82%8A</td></tr><tr><td>手打ちそば しげ庵</td><td>そば</td><td>山形県鶴岡市羽黒町黒瀬字黒瀬263</td><td>0235-62-3313</td><td>https://mokkedano.net/spot/31050</td></tr><tr><td>農家レストラン 食彩あぐり</td><td>定食・軽食</td><td>山形県鶴岡市西荒屋字杉下106-3</td><td>0235-57-3300</td><td>https://santyokuagri.jp/</td></tr><tr><td>アル・ケッチャーノ</td><td>イタリアン</td><td>山形県鶴岡市下山添一里塚83</td><td>0235-78-7230</td><td>https://hitosara.com/0006045968/</td></tr></table> |
+| 周辺温泉 | <table><tr><th>施設名</th><th>住所</th><th>TEL</th></tr><tr><td>くしびき温泉 ゆ～Town</td><td>山形県鶴岡市三千刈字清和159</td><td>0235-57-4313</td></tr><tr><td>やまぶし温泉 ゆぽか</td><td>山形県鶴岡市羽黒町後田谷地田188</td><td>0235-62-4855</td></tr><tr><td>奥湯野浜温泉 龍の湯</td><td>山形県鶴岡市湯野浜2-4-47</td><td>不明</td></tr></table> |
+| 周辺観光 | <table><tr><th>施設名</th><th>住所</th><th>TEL</th></tr><tr><td>フルーツタウン 産直あぐり</td><td>山形県鶴岡市西荒屋字杉下106-3</td><td>0235-57-3300</td></tr><tr><td>黒川能の里 王祇会館</td><td>山形県鶴岡市黒川</td><td>不明</td></tr></table> |
 
 **Sources:**
-1. [snowsearch.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjrMIu5Pki8DX_O83nhc_q0JsW5qensJb2BZ4y6wZk_W0mwspp6MjYBwu244opU7AD-4W5ToGuw0hjo24hFP_nRSKAKx1wW-HezEIGvzVEGgGGJpljZ321awYY1b-r6Pb8pf4tlRU=)
-2. [navitime.co.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgpw1MsUAxzxr4d18EmYZJxCkrRrRnSwkux2FtLRdiMbGUxpTWA3ZhCfBq6j47VM2c42px1Ykx6q-KqjequL7TZPXpkFtK9y_35Phb77DpChLJ07vtHXM0-ZkdllGXd3I9i4gBZG9TCrR7FA==)
-3. [iko-yo.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGalsYuzsLVIcxJ59Fet8__QAtKr9TGXyBDA0BDTGtKw3kiRFxBp09EEZjuemHOOvnvG-99WU7236JHaHbQpx-RI90lQodSHjng17olVFkYjZsMODC8NXJGrQ==)
-4. [yamagatakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRmRYeheNrPL4-WDmtdXDRap2Lbd2BVVQzX7AHcj2hRX3fhmGWQBRXuxbBWsoBIef_DZyOYmj2SJEQycRx9iwysibMiyf8ggbe7PTKfstJidb7Zltzxkf4rM3Oyg3z0KF12CyrYw8HNziL1ik=)
-5. [gelanding.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvz3tgeqzS3GUGF-_DXGDpiWKhD9xXRUbMAkTxK7ShkJKPATAv_52AA0lIXZk6QrgBob1bvayMAmcQTwEcjYfshjPj4vJs3MTxt1-nn1KSjc2KdXU3sIZSEklzd9kpw2o_C3S9KeQKfMriMT00DzWc)
-6. [mokkedano.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBXfUd_kQrguMwCAagutjUgal383aiuy7uqGAL8jgJQWQkKA0OttyBZC9QCjaP5Svi95VGrrXEvbjVCCVxONE2yDGycqgX6xfQ5pQ4iniX-Mab_TjFvg==)
-7. [jalan.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAPrGXDzRqDQl4id2XAA1mROdTzRgv5xFeRCuFvDrW5-6RTkxljZLJFo1YMFxR33Y7EzuR8IpVyKA6pNo9PBij-SDiWhuSFLSOWdZoMmX6NWMv8xh30Gtn9h_oucnCa2dRDCEF1EW8nuswzgM=)
-8. [homemate-research-ski.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFd1yYRdI9IykXVfpnvr71XoTuk6Loz4_-PipDtmm6Bul6IMzH1mHll7udQuPdlmjrP-P-xjWT8V0DTUoquvk6tt4nBR3t2J_JREbxNM7LLQHASg1_2xGcEWfMgCft5z0vC6s5Sge9ufQI5Yvrr_qQMlg==)
-9. [tenki.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExzCr1Dzr65Exa9MytkzKQYjtWvOs7aMMckgnpiAiSbUOTHBqnB_PI80vPzAP2cqo3ySARv0VqwZC-bhAoLRazN6lhX_zl9pIX6IftVusQKu6iQlojjFvRvnEvEfguYvsyxz9Cuv2afsQeOUQ=)
-10. [sakura.ne.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRr3tVxe2ZTKvg14-gWdt-32AZSNiF3DGkLGu3ALKXd09Ax9nVSIavoQ9lYHAFv2m37UH2eD5xzcUUeoTCTR6adhQ0-_Devrex1Vxnqz__M_GvEy2PxnLZn5c5X7EydK6AvvhHJNVuEspLQw==)
-11. [tsuruoka.lg.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFApQuzv8xCAlpgaMjLQ6XfZ5rU831kzjxjR3lL5jeIwd74y9wSTcJz0T_JOWWdHqyzgII9OCuyNlYph3jouHCT_moNyVEHyQUmhzBQd2LcgIQ4Z7rujbij2lFZIO4S1wCgLI9ZWRmYCdkCOLen9DtuVgMLJrED8bYUhNXF2_6L9BjWHsOTvJFseZ5bbiKPiayXEI5FdTZJKq-FEg==)
-12. [tsuruokakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaud4kRvSWos0HXGI-iFvL0jg1uwj8pJoBcFQZMV9jhYKNLc575BdOIxE9ifj4fYlwRVqzt77CN4nH3KuhE-HDw1sK0nbykfkWBEox_qbNNXI6HOiANd1hKBzqUBk=)
-13. [bus-tabi.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqlAaD43GmJVWcKqwfc0FtxuWNM9CZlRYxVk7W6p1fpJBXp9PCINVYyO6sFB7-r7AXpvaeCw_P8PuzlrWzJvP3-jAeCbqE1W4fTF-4vhsl0RxR5EeN_d3k0NzvxBJurDWOXjpLbWXePM2M44yR6BK4qOeZm2ewWR1-NQ5bSD0gQw==)
-14. [tsuruoka.lg.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGokT6WQyjAuqNPRFrUa1dfbzBcWXarHwM-vCnCXamzqkIkSSOFv6SlqdycWxfc2iRy1ezMA6VjELHuXTiWeSFDa5fY0wFg1s0gVAd-iCILiCGn7vJ_4F18AiPcEN-PYzqJAMH471QHKrwVpd2ysSUX7_LFR5JQDjyhWWkQo_hyjQ_iBQf9wzXlpRcLkozjdxDpHG-7)
-15. [mokkedano.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAJbE87V-Bd5-6V1ae2wQSJD_2ylB4xLJKUQEMKA9MJN1c9_vxcO0EUPjx5tU6FJY9x88IAmLK1Q6dgBK8xNBx8qVt2IBdcfWD7-kMJ7tIQy0eV78SqQ==)
-16. [yasunoryokan.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4A9Ua7cHNb92wR93XLMYJXhJ60oyDHMYHDVNb8Xg2tzc5jZt0gcNpFFJ8KZ9mYhZbHCb-oi7zjGPKILmQ72BIhk6r2oe2Fn6UHVqcjE3zhqt_Le9ZePI=)
-17. [yasunoryokan.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-TOegAimiuUED-3BqVTudHr_zqdaighw0OfBgT32QZzwTMoFQXtHPFTT5NCScNjHX0V4rSQNkfpe-LVfp1oIAwHRn73nZHf0hXL1O9uw33fXHFjhD9w==)
-18. [shonai2.fun](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsng81M8pGZc99edXb4SvGs06bCGH_cwVm4HdGCV-O0_C6AuFZb0pVhZUrJDrqjlg51SXkqXJ7ehfddU3qhymFbMvb6nPcFUvvshpxjzNIjdCxxvOfDDh0A7zHykQ=)
-19. [tabelog.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEj9nyJUYKBrKHZcgsD6S1ZAAVBTOaFSRLWvpwrHiDMa9JugY5TbGeGT0U0VkBorQKeCUB22alCg3BWbdM9uOKl0fWjSMgSu7RzYBqLkMEhWVOnwaJ28TdL_gMEtnYfpYs2q9Iftkj-cwQ=)
-20. [jalan.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtesNP1OSQRwLu4VbD_mlziXTix4Iz4YEuowQT1_B8mThqxiXy268ioB--_G6IxncegEkhlBd3hSSwzMn_8S39mveQzZC9uwXnMxdWxSj4iIcIcR0Z3qaxD8Qc9R28WBF50hU-Y-YKJe9v2y023iguhQ==)
-21. [tabiiro.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuLWh9tWNxU6L6JJfw-ZQOqMsCmT9vvDbxNNnF4CkSQGq01UL7evVNiT8LVtFQ9RJydORrXLXb8vHhMEdg_GnvIpkkKurIiBmBcR4QuoyLcOxMZVdhz-VGyUk4zhnl6zHzwAxlheFkHg==)
-22. [cocolocala.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSRVjFWMP6c7rTM70FNMuFmpfzj6A5P4xAazi6Ju_nuAK5AATEsRPr9w1XMlTgJSFfH118FNhOHLmKatTv5sqy_WlOSH1pS__T77vEf4f0KIMkAzQYCnjgIE6C)
-23. [a-c-c-i.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5zFnj9mAQvIwm6-FDhNdMxwZ17MCvY3FjQix5vpprVjYwvboRRCiKF_VCAfl-rEXylpzoOoFCjvxL9qHqUGoDfHAYM9LomU2FnY008gEYoYFOaFdGdt0SnCjAMer2UEHf8w==)
-24. [shonai-yamagata.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHoSE6WqUPXYDUjN4T-D36jYENNfhdWqTQ6FJsOABBLTJi7G9bzB_fw7vJRbAzKp7jSMHh_uTCJXeaJG9suqP4pvABXT-brnDwPh1AarzhD4PPUZ8lSDvBfyEe6aidORXU0_BeMGKfq9lPrEtbAF16FlSzcHQ==)
-25. [tsuruokagas.co.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESPJif9MbahRAjRZkzQ6rMiyp4X_RKPoCaoTC0Iv8XYp9okKg3tAPGGU0QKRu4MprXe74pt6YvkGuYqqh65_MGefMdt3D-tQ1S2dlPNY6tSDFobohi3QJHiex73jVW-WHiI6oVVzKrRROLOBFIPo6jygWHFx5h9ynvBNg79oU=)
-26. [e-yamagata.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFv64axRHjlFmZh2mqjYAI5CKBhTE3-wxghXywkYPCzRCRWH05oqL_x2PkEeDkOg99HoEhfHqY2hVu3gVIm4c47Rx5Yrzm4utZcU5SzSXfNtlp-m1_oeUJb4WGVJlH9GvTHj2k=)
-27. [tsuruokakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7qnpww3agK5MeE5q1lquRCOI4rWHxq9fVJsKvn3cY6v0_jZwlwz0YXOFz0pFZaGu5c71dp1UCNERmN_YnwT3sXsD_rTdroHLv0IdJFt2ESzGayzxPT5gqnXKpJAPZ3FkrvA==)
-28. [sakura.ne.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEy7J3RvlD6JMkzOJAO-fcZrVj6SNbH00Twi3XkY4lbfhI_SAHEyvzMIqcmx9WN7SE902RKIuSpCiE2PvELEnc7vTg2tkPhREEtOrLUXb6-MopQC-1DqTzmZYoeSEDj)
-29. [pref.yamagata.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHxdQNw-vJVCqdiDV8jcuL7nMpacS8IxOYEnrVlamIbcSNCWcFNdNuOD2kvr_lRlA8FLNWz1CrJs1B3Kw5Z0msVCNxOr5PSFebiEWD4FuG2or9Nb26KhhYshCOcu-NP2jkwDvif9UCsquukTzL9wiDbJ6zRjPgGYEQ1xSN9ratxbgmLu_pD4isC0Foe8u4CCR_V0Pkqnpn1-DqpXe-C3it9cZnSQJA=)
-30. [yamagatakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFOCt1YLYvvPHjzOGjTN7g5KW70dVF4Bj3W4CelPlUt_7YlEG26xuV7PGu0-HycgBFOiGUNiSRUV2ZHlMBd--Txjt5b14cx589po2rXGch9XDOlslvSMCAzhd6CtEE89ZqkrP-usIfDu7S7Gw=)
-31. [santyokuagri.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCRrNrsRP6uZvlVAo4Y0af2EIxWJD92JIHZIrxcWHOvIvQbhWu3odZ2SFUdx9c7U149uvGrlkFxAggvmCWNMSkzcrQujyM-22B-lh56KzIR_dmVR_KGw==)
-32. [tsuruokakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQLAgl9Qzj_hywqbpjTByJg_YmhAarRh0iO5e5JUxMF1hv2vt8CaOpaK4nD1hBIP2sy1oLVGAoJ7a9IXvcPiSpJZBtEaM5DYyc2TBEQqyBVwcCc-cTI6OWItIskg==)
-33. [tsuruokakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEG4kSNd3WmrCi7CqjkRlXxy2kTgk9CELafmAGvxEQrQIsSV3k9h_kHFoQdj5MxHS0C4A3V44uB3cpH7o24q784zV_zvbGkGeTSlt36wEQN77Rz9PnROvyQ1z_m9AE=)
-34. [rtrp.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdG-7176cdz_mb6dJp1Gcf-uH4_3x7XZ9H3EeU6yckiIax-sqHx3EVXHcwjJZ4fbjiTCrgpTitf5uTCrIwEDm3c8s8-bhNtEB-ok8z8FgGmCP7XXBE4o3ZHw3AlKR68Q==)
-35. [mokkedano.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTj2WNGAF1nESof77JGypnizUPLzbQq7q4byqSHS-F7yA7RFJEB-MCXlqdzW1hjcD0BZqEpsg_ViL1tMhTVcWvOZ3mr32lHCPzQ15l_kNUhLkeGpqnXA==)
-36. [tsuruokakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEr8xzeL41YKbCMzfzV3IsuyyBCkd5lC_-Ma23YsG09nELT8w_3rtnKC-nm5ZFqikmU1Jc66nDY-Z_trBiMO3D8xc62N02YgcAAScG05EiwSeuyF_2u9UhiNih6WA==)
+1. [tsuruoka.lg.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFIA_AgFcyfIDCG080LK4HYkYpVXIFjMX-0eX7gOo2S4G3bkQ-PmpH1C4loIzCD2yAptClLVZaF1G75dzyNtxew25ZfmKxU5WM01OiHs2koyvgTwh5xcC5qcUTjeZFrjAPCf4zhIFXY3eiKZ6ri4MbPHDdcySgpfUC0QljCLWGZQHZFIY5clPrj6iTkiuMd7BROPLjHe2nHz4TR-qx3S304AvTXsrFBDirUpphHCZuSSvPslMOjDQ==)
+2. [sakura.ne.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGP_wbJTHhnrzpqN0czyMCUSzoHbOC4mQykNOA8j10CB4f6a6z64NuqQy5ZobmrHWZ3JvitB7bJ1wWkqpzqS_GnVdmCy1p7eqdwL07mfVDH3we6x4XJLrPaKvNLnU9MAVomaWuxCDSkcSFh)
+3. [gelanding.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHEZdkIy3Qw2hCXeW_Dn0IoHPToNS7ElAqv7klmWrWU_FXKA4q3CaXpok9I94tRqEahnTw9Lu--FtAbDXKnUlK7xCwQM9cwx2DZsMapHe_3cJkD73U-TtvB95u093UjAunfE8_Q23hNzn5It9Mhts=)
+4. [pref.yamagata.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHa0n7EwmlkWQVL73aot64RJ-sTffbcR8keTFnHgN9c4nP8mHDsPYt-4q74kzwiEaTV8t0KXaxlMx9UReGBtt2h5o2sL8SneOxrH2zM354l10urOv3iyRgbks6InahziDjDktT-ZUrnS83PFQ==)
+5. [Link](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxRqEsjtiNcYy_gpHj7a8m9FZ7c7n8iAw3_LRJiM-qK2pkGq32L2CyVxT3lRpWFT-RChIzb2X231m8Tv9rdWQg)
+6. [tsuruokakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGweZUoPk-bfFmCZ9xofqpNbMvnwgdWdgtykb1wFtYfnPh_Ooey7kUFOgeC2GscMnSKbHb-OGHn_599tcXisHerEsbdJ-T-JoOPKbARl5SepmBhth5erPYz0OEbWQ==)
+7. [shonai-yamagata.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIIQaq1ZlkH5QepIqS94l8lqiUIZYWs83xaHojgpeYDwEbd7lTKYh3ZDYWljMT7lFurqF4dq5pOY9otA9RJEabsb1_zDsKzBMx5Y0wLbhHnEQ_A9vXncTZuS5AhWYP2sdB0GGKwHCNpwDW3vWWkbt0EZCes3B2gzJW_wAe3l-MrA==)
+8. [navitime.co.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaTuwVAPzp8GNlGOYcYdKSzU1X_JUInervNf4XzZRqcgOU7ZArKnQjkAxh4o5p-kd8BhK_r10pIS_2KiQykSVTy5SgjKv7dySkmTKCo2l9qFiQGeT8P58e8TtZL3m74Jt0WGDwLkgeuyPv)
+9. [yamagatakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBfo-ysz4eITlf2JAGxOnz4sB_DWqNwZ5FqSIJ--vHS8gq9TXcwE-rSiFYtWShLkNoX8Gwz3dMlpL9yciDuXpircS53hY3Kc9S__pFWxY2cfyopFrtJ27rFGX8WLucQto33hRG4JbLpgj4cQ==)
+10. [tsuruoka.lg.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgks4Fr10aDXY-bN5ZLCjpK5X2HmqS2IknAvs1YY1Z_lnbxCK2bXtOhROu1Y9ZXgb7h3nSNkxvK_ovPNNojYgjtHUkMWh4xjwDCpKhlXHYt0fzz342RDUZo-UD4acBU0qglCJhO_alH6AqFSUbArBpXN_j1Go3q9ODXpQQUqyNwmvyPuVUl53vPAZUg9_fNaUkTRRYNVFW9Idp)
+11. [tenki.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGu3_JdJMPaLTbtf1xlDLB9gkaQvU2k_hADtV6XtcrSBmZO4g-_d0_djuCXHA-E9V5hFABnT34bumDAS9aNAQfZ1F_Xd8i9vPmlx_7RYGnjKwBEbGVDtS4zViDuxLBcmSEgaDVAv6he4W-EKg==)
+12. [iko-yo.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaj0okKlWh8HOT9rXiXhuHFQDsBjzePhA7QSK0PhCpxC8D-H9ukBU3qRElL0Oy2qldXCuDPJeR2pmPcCnhZ4B06fWA-xWe4mqLgNxMn1M7ubEFAYCF8rhS)
+13. [japan47go.travel](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcmyXIBnRQ55tdR94YxOXjtKUA3rINTSVepaLltHh4htimAqwUzOwCPjlAcfBkhVuYJKTimjtxtm29dk8pRCRuqN54Or4ZHUDIfIlso6WxlWfXxlknWJbTO-6-uGTRU8JHGhvz88QfJx4PcHWYEeB_ocsc7cq98kNmLUSsyb-2Lw==)
+14. [yukiyama-web.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6fpXr5IvBVvx0PfKTFYeePy74a-jy4j90VLTuyKtqDYB7xv30fDd6YiLUI-W8YrZNOqzFXzIYFO961qbUWFWVaGTMiABMsgEJoswvx5nUHTkGN1YClaUz)
+15. [surfsnow.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJigQZAawkU54I97OOqMWk0gNSFzGGNHWW5Dps0dXQg_SUy6Gxv7oACSLyr1lgy0moU-lC8y9X4d_2K6VLaeVQ0rOaCOw-N706SbXRpxNK2gdPC3BL2uh8s3JQWMw1eQ==)
+16. [sakura.ne.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHT0FWyk6cxWLrvdMKSFRTXUxrqAxtFQ_TZz7TmGnZqM9nXhrmv2XVZBeMYrfIS7EAyMKzy2IXWdA54nQ1857KG7M2hKAB3Dwb1nM3icWPffFoNNXLMfcJ5TK7AJX90yuo6vDaJdUvdTQch)
+17. [yukiyama-web.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAEgKKKM-3BDeHJtBTHW_4Zj7pBW4uQ9y50iFg2ORE9UIvP6mKsVb2CD4d-4uO8ycB4Tzjn827uU91YTi0pxDCKbiKmjaLQnoMOkLvhgyY0jhUPB3ahgBq)
+18. [surfsnow.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUi6elHu9LqUJnSak0Lo8uzAf4s5jrzGUXfKy1IQwp32w2_dcNwp27McSirve25ule2mElzYAsV2PfnjY2pzJC7xLd-dZSaimfiPL0E3oqSi-AgMNeRHbewDqwnqk=)
+19. [hotel-symphony.co.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0bI7HmZIvnEJ_QVmjgB7eDT-oY5Gp9ArNDsM_k436EeEy6PBcnPd323CCgR9UkYJFJGYnfZunufy0RAAdXKsQuEpQKe4phM5uHRhYofE73Z5JqSLcuh_xijPXIVlUHaCsZaGwSmA=)
+20. [tsuruokakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4RJcuD9GgxkVxAvqxArx1R8-jsDhiSQUeYFwxmcd5GhY_Y6I4y8t2nK8p4uN2wagpd9oYKOBonxhoin3U8HaC-H6Ep28_Gksg7WEtSJw2H9F08VddMS0q4z9EdQ==)
+21. [tsuruokakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEn_bPIjWeiPtTaVdmr3-bYO9jJ_PwKHLwGGkksSVgDEY26OGlyhoCXhSfNYHoVTcImgL5hnPLr9YPUlqgcbOkaK4DHb6vIjakju8_0K8MbcNbN0KeeODLK1xZyddTt)
+22. [surfsnow.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsSVOYS4wy_PYn3XdOjXgeOtvYO7HtGL4tzN2U5uFkqCSgY3bidEIedM5Oyi0itydQCkcBnUgeSUqZiHYXHUbxsgAEyFFM5kgdllMGs6L-elMcyjRtk6Z7HV8zCN0=)
+23. [ski-gelende.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyM__dSbUVtdTlNTVN4FcUEfNbwsJInJl0XVk2P1Y-U4sGBFEfc2I2H-6WNhr6_3n_a3fg6yto8j-zTcwE5NiW4vxT172-sPGVpIyq0tkjXmHF_Hp1TaRAKqs8_meMjCI6-Y-qL3oQJm1fE5CRlg==)
+24. [snoway.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZYbaQekJxA5HX3aIS2GzZ3Xo5uRp8Cm8E-si57eBYTfu5sRtLHCByBphvSTwHuh2bLWhRZI6aJNGcDpBc2NK-9TvuHrGqT8Oo3NPTNai9CgCoIQ2T)
+25. [yukiyama-web.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsx9Cxd4bi9620lykw-1fg9qCcZIBRyoH0zUxFBsHTlQxQbpIvjlb-BFtqq9ZEIF-rLD7H4kwlE7EGadvMahWnr9zEkhWLE6NtB4Fgy1ITPFHZ4f3szDcy_Vc-R4Q=)
+26. [tsuruokakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQNO6wDSoK6r9LGl6hj3nAfdvFOX_PT2ITE6eZ6-7po1rJCvBfvdCEp8ktph0WXZ3E8IqujKabVjA5yWl0806Ozz60BT590YNwqOQkj5jV5OHZcw8u6UlExbmhQA==)
+27. [sanze.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-z3VDKW3gr4XSAJahlY3_oeSYI6HjyuQcqHYNVvItNWasSKDopR1Z1IxWWXmF1z5kM_RTr6POSHO6hH-xESinhdUJmYv0g31q_B9-Znh_c-7VMThg9TI=)
+28. [snoway.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELUnSOzf4saAFX7V1ZrxFwqgs1jsMJj1rYK_pyyTxLM2tdsM_c7rbF0iHCrjf7BW12HP3F6xkuNWjLKp7N1jtnCfGG0hTuTwn4TbOflg67Ln5n2RU0)
+29. [yamareco.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqDustoEqFBJKTtnc_Fu-NCF4jXd9p2WiIfNt3ITHEYpkOElBSDBEfB4c1HQK-XhLTWwLz6MT43trjMG3BAwaWRXv0EOqZ1YcgjlydpLyrOfhKJrCTWT_qpol1vQcVfEyqOMfRUk7Wl5ES3zJto69I7Nc=)
+30. [mokkedano.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSouujNoMRrxqDAsCqfaQuuHd_MY_fiWgrosLcoEf6mx5YAqixPrsOY7xFzBk2Fo3cJWEpdHAeqTMYDsege1_U_ZD-vOB56zVBGBs-FW5b73_wLNgA6JZtGu-i5EfWbgJul-DU)
+31. [tsuruokakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZMW4TzKEDmeGQfp2PqEaQH6KT753anMJgyKooa1dctYW1YDuCxiSBgUPvqWYN-id8tujo8O8_p7ZnhqIFd8RT9GJVpodgvo-WsYZjRQZ1mK9qZq684WoFlhpr5A==)
+32. [yamagatakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERGy0ycwVBgwjm69S4IT2TGWeGDJhdD4Iw9wHeko7RlCtsigi0m-l1azqa8hNsXtvubf40Xr9qtHB7wBi0WeTjiihmGX0UhI51KnlQdvx1DsQ7TXsaKAWdmHNP5Gmnbj5ubsWk4plyFZZWmg==)
+33. [mokkedano.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRXbdYgXvroJHSKugGTypedloAzw7znMFdJ5LtOfzY3qxGcmpTG8tofL_Hltl4AJ6eN2TXCcw3gIno6NAQA4RW_QP77xj6hQB41JaOtIi6h1wcxoyF)
+34. [iko-yo.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGt5Vsqjn-1uqVIMdmce5nRU3mhxHQkkIrk_Cpk-t3ESj69iVGexF5rBQ978BFba1ndQLxmJ9HXOyN0QyO_KXyzmYo_7A5oom-LCSnweZlsxi1hC-AVXX4)
+35. [santyokuagri.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJj08uXO_bpTz2eQ1bSYoPNlGM7qLGjdd4cGJc92Ok5OQLef-lI1j5Af45IQlexbroyaQIkucCo2wEiPbnZH30PVfaKHm3hLbhsyG1zw==)
+36. [tsuruokakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZhKj5odzpbIjL37cIdw5vcpE780Qpz67lnRzK9QcJjqk22V1RMr71lJRlOgG89Ac5-zKS_d2JofE7aRt4gsUWJHYrCrqTKI8vU_9f3Ld7iqL6qSbo81RkUn4X)
+37. [yamagatakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-jrbCuCOrK1gQNMx-R1M5oe8qQkfRUnFcBjPgJ5lZTSdlXT8pzclN70Z_TPOE0TtfoPhoL0yfMaYHdGNBu6X8JIuKsVknezPHeCG_ilj3PkQgUPUwTduooRwSZatXBwsoxylbnzFlyWEHiA==)
+38. [retty.me](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKgXDbUS9YlVUyAw66gflklJjWlMTbjZYkmTd4kskdOmt4t0RmMApCDE-Sc2RX1kd0doFvCETAJb2V1Uko0c_T4fWXyB-EUNIAljHvboieFvI1TBBKXTwoIhE5Xd2RyOlGxRaWD75wtexikOZ-JQ==)
+39. [jalan.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvAhGwd2V9hTdhAZLye7h7bgRZSWxPgGsz_8dPcN0GZ270a8EKrK1AKk2Vrsbpd05ePL26GxzbejdK0UZidg5Mj4VN-JnejDJU2scxaI5lK6AmAC_rMwqdCUwerThg5ljyqCmdvLWAO_s=)
+40. [maff.go.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHGDhz5yrSbeRaL4lmLb3GbpzSJGCn8DJwchOUpYGic9wsUu8d2HQp7MAYNUSdbSU46PU8KHMZrLsPs-YyA7CsljD4jgANaG3q_OslZ1u8ibjDwW-TOEER7H0VDvMv1Y2-swcHs15rsv1xCH4AsL10mP15fyPy)
+41. [guru-kozo.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGqW84HicUIAKncgX3Lq-6eFjep8ptgQoUMa14pY0lkoFfczEE8rLGQujS3goqkaMTk15R0CxIO3KIKa9COoZAgiMajZ6-xNNHbN6IBOd8ZjMc=)
+42. [tamanekotravel.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpGxqq2RrwQ67j7QlPVJA-0ZS1e9dyTJx-nahG5TaD8lvdqXYmUWGkx6aH__nWcBi1osYz_4HBjxaw4iEEqpQ_UYCqOaZeTdXiwhmsRnjhRXSDfet4nDboUORVS127HiH9Vw8fzt_l3pNj7pxu1_I6OKC8VcQlHE6L)
+43. [retty.me](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFESzwTXZL-8V1A7uvxcpH2InCoaFNo3hLrNUmZRB4GXrtZowc986yqfpHjqZlpJdiIcz5GCGnuSS2orY22QllAl6xwEQAueHzfcD22b4FDk9EDHDhFuXWvnXCDP0oButzGrmrVlYkqGXRs1ajylMq6Zyx_)
+44. [tabelog.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYKk3nVIn14yG_n6Tpbkg0HmZ0i05o5WtmsqdCnzJAVqH9qrn7RlzGyy_o5Ccjang9pmdxeZ4sWQ3ilB10guG6kHoyqGXZNMsKykWBUe9Cs4sGfzQGYocgQB6q_w_wys5NRj8A0pMtzg==)
+45. [tsuruokakanko.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg-CPkQ2ZvFaPGmfJnggPCSrnyPyeaxHNggbZQv5NU1TJxAYE-FZflAl8AVRDQG2TY0tdmNU8ccyoyEYudWzUEp3RWshuHIAe_-cU4eJtbRK9IKYSHGrrNYZ2OenKCHjt4)
+46. [sakura.ne.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpogQ-6q9NaXGG64_42WeC8EGqYlQ-LZvUSeeuCnvhjlKE5GG9fkUNQY397U5rYBppx9hD_ZTkFtooXcav82i0DJsYa6MCrWXYOiJGgknmVjKxiRv8YtVEZWZhDd8=)
+47. [asahi.co.jp](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF42f-fE6Y-RVOzX0h404n2oN6CA0mOkM0Hchd2PpKBpVR7jF7roFkYRxAn6WwgvjFaGolEZh1yPsCm1I2gaT7BT59zbgeEVKuNy3QrBlrx4M7QYZtQ5KgmpllDryBO)
+48. [mokkedano.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4z7yGPJk9gj76U8RzTSwkGJFlgQvEZ1rgVEMXaePx5ICcUBVtU1-H_bDD-NZ7qPRCb-vIv5RZt3K-FCu418E_JZ6l_Jf1fnIsc-pSC613I-MOeLVNmb4oAMw13knN6oFNZvc=)
+49. [syokunomiyakoshounai.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHi_BKtYg7Tv7c6yAF95tv-tpgp5jv0ug7eHoh4ddGjwm0CSI0Rf4-tpKNRi9D-ubRQlGHMdgqVenzZIDLPi-DC6u4E7ZDfRrq7qLhSOPkfEDLa1746zaq6vDCfjEgqDnJVfQ2_WVDH6PKTXANsEu_AhJYjRg==)
 
 ---
-*Deep Research via Gemini Interactions API · 2026-06-28T05:58:07.362Z · batch rank #83*
+*Deep Research via Gemini Interactions API · 2026-06-28T06:04:58.278Z · batch rank #83*

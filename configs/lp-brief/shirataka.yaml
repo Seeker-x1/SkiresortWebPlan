@@ -1,0 +1,25 @@
+resortId: shirataka
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 白鷹町営スキー場
+  en: Shirataka Municipal Ski Area
+region:
+  ja: 山形県白鷹町
+  en: 山形県白鷹町
+japowResortId: 162
+
+strategy:
+  ja: 置賜エリア。保護者向け本日営業確認。
+  en: 置賜エリア。保護者向け本日営業確認。
+archetype: live-dashboard
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/shirataka.md", "LP batch #90"]
+  heroImage: images/maps/shirataka-hero.png
+  copyFrom: horaguchi-lp
+
+humanReview:
+  - japowResortId 162

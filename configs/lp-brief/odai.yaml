@@ -1,0 +1,25 @@
+resortId: odai
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 大台スキー場
+  en: Odai Ski Area
+region:
+  ja: 秋田県大仙市
+  en: 秋田県大仙市
+japowResortId: 139
+
+strategy:
+  ja: 内陸南部ファミリー向け広斜面。
+  en: 内陸南部ファミリー向け広斜面。
+archetype: live-dashboard
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/odai.md", "LP batch #87"]
+  heroImage: images/maps/odai-hero.png
+  copyFrom: shinjo-lp
+
+humanReview:
+  - japowResortId 139

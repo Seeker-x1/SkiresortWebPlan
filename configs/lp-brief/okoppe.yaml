@@ -1,0 +1,25 @@
+resortId: okoppe
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 興部町営スキー場
+  en: Okoppe Municipal Ski Area
+region:
+  ja: 北海道興部町
+  en: 北海道興部町
+japowResortId: 63
+
+strategy:
+  ja: 流氷沿岸移動経路上。外部ポータル依存。
+  en: 流氷沿岸移動経路上。外部ポータル依存。
+archetype: tourism-hub
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/okoppe.md", "LP batch #89"]
+  heroImage: images/maps/okoppe-hero.png
+  copyFrom: utoro-lp
+
+humanReview:
+  - japowResortId 63

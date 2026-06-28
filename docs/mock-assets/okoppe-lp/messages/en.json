@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "title": "Okoppe Municipal Ski Area",
+    "description": "北海道興部町 — 流氷沿岸移動経路上。外部ポータル依存。"
+  },
+  "logo": "Okoppe Municipal Ski Area",
+  "hero": {
+    "eyebrow": "北海道興部町",
+    "title": "Okoppe Municipal<br />Ski Area",
+    "sub": "Utoro Onsen Town",
+    "tagline": "流氷沿岸移動経路上。外部ポータル依存。",
+    "ctaRental": "Unabetsu pair plan",
+    "ctaLive": "Today's status"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Today's status",
+    "updatedAt": "Updated Jan 15 7:30",
+    "lift": {
+      "label": "Lift",
+      "value": "Check first",
+      "note": "1 surface lift"
+    },
+    "driftIce": {
+      "label": "Drift ice",
+      "value": "Season highlight",
+      "note": "Check Okhotsk shore"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "1 course",
+      "note": "Gentle · beginners"
+    },
+    "snow": {
+      "label": "Snow",
+      "value": "Snow-dependent",
+      "note": "Mainly Jan–Mar"
+    }
+  },
+  "quality": {
+    "eyebrow": "Compact",
+    "title": "Small hill,<br />big context.",
+    "lead": "Steps from Utoro onsen town—a tiny municipal slope perfect for \"try snow while here for drift ice.\" Full runs, night skiing, and rentals at sister area Unabetsu (~20 km)—two stops complete a Shiretoko ski day.",
+    "specs": [
+      "1 gentle course",
+      "Surface lift",
+      "Day pass ref. ¥600",
+      "Unabetsu pair"
+    ],
+    "ctaMap": "Resort map",
+    "ctaPricing": "Reference pricing",
+    "imgAlt": "Gentle beginner slope at compact Utoro hill"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Operations & snow"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Utoro onsen town"
+    },
+    "slopes": {
+      "label": "Slopes",
+      "title": "Compact single course"
+    },
+    "rental": {
+      "label": "Pair",
+      "title": "To Unabetsu"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Utoro's role",
+    "title": "Shiretoko gateway",
+    "primary": {
+      "title": "Drift-ice tourism front door",
+      "lead": "UNESCO Shiretoko starts at Utoro onsen town. Before or after icebreaker cruises and the Five Lakes, free parking and a gentle hill for international visitors who want snow without a mega-resort commitment.",
+      "cta": "Drift-ice season",
+      "imgAlt": "Okhotsk drift ice and Utoro coast—Shiretoko gateway"
+    },
+    "secondary": {
+      "title": "Pair with Unabetsu",
+      "lead": "Unabetsu Ski Area (Minehama) offers three courses, pair lift, and night skiing. Package Utoro for first-timers and Unabetsu for the iconic drift-ice view runs—a classic two-stop Shiretoko ski loop.",
+      "price": "Utoro day ref. ¥600 · Unabetsu day ¥3,200",
+      "cta": "View Unabetsu"
+    }
+  },
+  "rental": {
+    "eyebrow": "Pair with Unabetsu",
+    "title": "Full runs at<br />Unabetsu.",
+    "lead": "Rentals, night skiing, and advanced terrain are at Unabetsu Ski Area (Minehama 110). Utoro stays the compact snow-play node—market both as one Shiretoko ski loop.",
+    "whisper": "Replace buried municipal PDFs with mobile-first status and today's dashboard—cut phone inquiries.",
+    "cta": "Unabetsu guide",
+    "imgAlt": "Utoro onsen town—drift-ice stay hub"
+  },
+  "tour": {
+    "eyebrow": "Shiretoko Loop",
+    "title": "Shiretoko in<br />one day.",
+    "lead": "Icebreaker cruise → Utoro snow play → onsen → Unabetsu night skiing. Or combine with the Road to Heaven drive—a stayover hub for eastern Hokkaido.",
+    "cta": "Area tour plans",
+    "imgAlt": "Winter drive on Shiretoko coast",
+    "steps": {
+      "01": {
+        "title": "Arrive",
+        "body": "Memanbetsu Airport to Utoro. Check today's status"
+      },
+      "02": {
+        "title": "Snow play",
+        "body": "Easy runs at Utoro—families and first-timers"
+      },
+      "03": {
+        "title": "Full runs",
+        "body": "Head to Unabetsu—drift-ice view courses"
+      },
+      "04": {
+        "title": "Onsen",
+        "body": "Utoro hot springs—reset for tomorrow's Shiretoko"
+      }
+    }
+  },
+  "guides": {
+    "drift": {
+      "title": "Drift ice × snow play",
+      "body": "Utoro is the stay-and-launch base for drift-ice tourism. The ski hill is compact but captures overseas visitor demand for \"I came for Shiretoko—let me touch snow too.\" Dashboard tracks Okhotsk shore conditions."
+    },
+    "rentalGuide": {
+      "title": "Unabetsu pairing guide",
+      "body": "Rentals, night skiing, and steeper terrain at Unabetsu (Minehama 110). Sell both facilities as one Shiretoko ski package to extend time in Shari."
+    },
+    "shiretoko": {
+      "title": "Shiretoko & Shari loop model",
+      "body": "Stay Utoro → icebreaker → Utoro ski → Unabetsu. A half- to full-day plan that adds skiing to UNESCO Shiretoko itineraries.",
+      "hashtags": [
+        "#UtoroGateway",
+        "#DriftIceTour",
+        "#ShiretokoSki"
+      ]
+    }
+  },
+  "access": {
+    "postal": "099-4351, Japan",
+    "line": "Utoro Kaigan 42, Shari, Shari-gun, Hokkaido",
+    "note": "Central Utoro onsen town · ~20 km to Unabetsu Ski Area (Minehama)",
+    "phone": "TEL 0152-24-3303",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>斜里郡<rt>Shari-gun</rt></ruby></span><span class=\"place-unit\"><ruby>斜里町<rt>Shari</rt></ruby></span><span class=\"place-unit\"><ruby>ウトロ香川42<rt>Utoro Kaigan 42</rt></ruby></span>",
+    "rentacarEyebrow": "Shiretoko gateway",
+    "rentacarLink": "Book a rental car at Memanbetsu Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Shari, Shiretoko, and Utoro loops"
+  },
+  "footer": {
+    "copyright": "© Okoppe Municipal Ski Area — mock LP",
+    "location": "099-4351 · Utoro Kaigan 42, Shari, Shari-gun, Hokkaido"
+  }
+}

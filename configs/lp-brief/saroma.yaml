@@ -1,0 +1,25 @@
+resortId: saroma
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 佐呂間町営スキー場
+  en: Saroma Municipal Ski Area
+region:
+  ja: 北海道佐呂間町
+  en: 北海道佐呂間町
+japowResortId: 67
+
+strategy:
+  ja: サロマ湖近接。道東レンタカー周遊ルート。
+  en: サロマ湖近接。道東レンタカー周遊ルート。
+archetype: corridor-hub
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/saroma.md", "LP batch #84"]
+  heroImage: images/maps/saroma-hero.png
+  copyFrom: utoro-lp
+
+humanReview:
+  - japowResortId 67

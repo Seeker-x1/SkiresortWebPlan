@@ -15,7 +15,7 @@
       "nameEn": "Hanakasa Kogen Ski Area",
       "japowResortId": 169,
       "regionJa": "山形県尾花沢市",
-      "status": "lp-built",
+      "status": "research",
       "archetypeHint": "tourism-hub",
       "copyFromHint": "abashiri-lv-lp",
       "salesAngle": "銀山温泉至近。インバウンド昼間雪遊びオプション。",
@@ -33,7 +33,7 @@
       "nameEn": "Toma Municipal Ski Area",
       "japowResortId": 46,
       "regionJa": "北海道当麻町",
-      "status": "lp-built",
+      "status": "research",
       "archetypeHint": "tourism-hub",
       "copyFromHint": "kiyosato-lp",
       "salesAngle": "旭山動物園・旭川北IC近接。ファミリー雪遊び受け皿。",
@@ -51,7 +51,7 @@
       "nameEn": "Ueno-no Ski Area",
       "japowResortId": 127,
       "regionJa": "宮城県大崎市",
-      "status": "lp-built",
+      "status": "research",
       "archetypeHint": "transit-onsen",
       "copyFromHint": "sichinohe-lp",
       "salesAngle": "鳴子温泉郷至近。温泉×スキーパッケージ。",
@@ -69,7 +69,7 @@
       "nameEn": "Nihonmatsu Shiozawa Ski Area",
       "japowResortId": 193,
       "regionJa": "福島県二本松市",
-      "status": "lp-built",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "shinjo-lp",
       "salesAngle": "東北サファリパークドメイン内同居。独立サイト化。",
@@ -87,7 +87,7 @@
       "nameEn": "Tateyama Alpine Ski Area",
       "japowResortId": 353,
       "regionJa": "富山県立山町",
-      "status": "lp-built",
+      "status": "research",
       "archetypeHint": "live-dashboard",
       "copyFromHint": "tayama-lp",
       "salesAngle": "立山黒部周辺。BC・春スキー・インバウンドコア層。",
@@ -95,8 +95,8 @@
       "subscriptionPitch": "API連携・多言語BCサイト",
       "updatedAt": "2026-06-28",
       "reportPath": "docs/research/inbox/tateyama-alpine.md",
-      "researchInteractionId": "v1_Chd6S1ZBYXR5aUxyTEpyZmNQd0lEaXdBMBIXektWQWF0eWlMckxKcmZjUHdJRGl3QTA",
-      "researchCompletedAt": "2026-06-28T04:49:59.495Z"
+      "researchInteractionId": "v1_ChdpNlZBYW9LWUpwREswLWtQeU9lazhBNBIXaTZWQWFvS1lKcERLMC1rUHlPZWs4QTQ",
+      "researchCompletedAt": "2026-06-28T04:48:59.085Z"
     },
     {
       "rank": 76,
@@ -105,7 +105,7 @@
       "nameEn": "Dogoyama Kogen Ski Area",
       "japowResortId": 434,
       "regionJa": "広島県庄原市",
-      "status": "lp-built",
+      "status": "research",
       "archetypeHint": "live-dashboard",
       "copyFromHint": "horaguchi-lp",
       "salesAngle": "中国地方。雪の有無が来場直結。",
@@ -113,8 +113,8 @@
       "subscriptionPitch": "本日営業CMS・電話削減",
       "updatedAt": "2026-06-28",
       "reportPath": "docs/research/inbox/dogoyama-kogen.md",
-      "researchInteractionId": "v1_ChctYWRBYXR5ZkdQS2p2cjBQeU92YW9BYxIXLWFkQWF0eWZHUEtqdnIwUHlPdmFvQWM",
-      "researchCompletedAt": "2026-06-28T04:59:43.930Z"
+      "researchInteractionId": "v1_Chd2S2RBYW9MdU91T0R2cjBQb0x2aXNRURIXdktkQWFvTHVPdU9EdnIwUG9MdmlzUVE",
+      "researchCompletedAt": "2026-06-28T04:58:36.594Z"
     },
     {
       "rank": 77,
@@ -123,7 +123,7 @@
       "nameEn": "Shakotan Outdoor Sports Forest Ski Area",
       "japowResortId": 13,
       "regionJa": "北海道積丹町",
-      "status": "lp-built",
+      "status": "research",
       "archetypeHint": "tourism-hub",
       "copyFromHint": "biei-lp",
       "salesAngle": "積丹ブルー・海鮮観光地の冬コンテンツ。",
@@ -131,8 +131,8 @@
       "subscriptionPitch": "小樽・札幌圏ドライブLP",
       "updatedAt": "2026-06-28",
       "reportPath": "docs/research/inbox/shakotan.md",
-      "researchInteractionId": "v1_ChdSNnBBYXBuZkhNN1cycm9Qa3NEQi1BdxIXUjZwQWFwbmZITTdXMnJvUGtzREItQXc",
-      "researchCompletedAt": "2026-06-28T05:09:00.078Z"
+      "researchInteractionId": "v1_ChdfNmxBYXFyRE9maTEwLWtQdklES3dRRRIXXzZsQWFxckRPZmkxMC1rUHZJREt3UUU",
+      "researchCompletedAt": "2026-06-28T05:08:19.864Z"
     },
     {
       "rank": 78,
@@ -141,7 +141,7 @@
       "nameEn": "Akago Ski Area",
       "japowResortId": 399,
       "regionJa": "滋賀県長浜市",
-      "status": "lp-built",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "shinjo-lp",
       "salesAngle": "関西・中京圏アクセス。ファミリー雪遊びデビュー。",
@@ -149,8 +149,8 @@
       "subscriptionPitch": "優しいスマホLP",
       "updatedAt": "2026-06-28",
       "reportPath": "docs/research/inbox/akago.md",
-      "researchInteractionId": "v1_ChdjS3hBYXZ2QkM3anYycm9QZ0thamdBbxIXY0t4QWF2dkJDN2p2MnJvUGdLYWpnQW8",
-      "researchCompletedAt": "2026-06-28T05:16:11.940Z"
+      "researchInteractionId": "v1_ChdSNnhBYXMtMEx1S3gycm9QMTRlSTJBcxIXUjZ4QWFzLTBMdUt4MnJvUDE0ZUkyQXM",
+      "researchCompletedAt": "2026-06-28T05:17:30.031Z"
     },
     {
       "rank": 79,
@@ -159,7 +159,7 @@
       "nameEn": "Anzo Park Ski Area",
       "japowResortId": 424,
       "regionJa": "鳥取県鳥取市",
-      "status": "lp-built",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "gokazan-lp",
       "salesAngle": "鳥取砂丘観光の延長。公園案内に埋没。",
@@ -167,8 +167,8 @@
       "subscriptionPitch": "冬期ポップアップサイト",
       "updatedAt": "2026-06-28",
       "reportPath": "docs/research/inbox/anzo-koen.md",
-      "researchInteractionId": "v1_ChdINjVBYW9QeER0QzMycm9Qdk5IenNBSRIXSDY1QWFvUHhEdEMzMnJvUHZOSHpzQUk",
-      "researchCompletedAt": "2026-06-28T05:23:53.236Z"
+      "researchInteractionId": "v1_ChdhNjVBYXRDSkpfS2oycm9QeFAtTzJBdxIXYTY1QWF0Q0pKX0tqMnJvUHhQLU8yQXc",
+      "researchCompletedAt": "2026-06-28T05:26:02.508Z"
     },
     {
       "rank": 80,
@@ -177,7 +177,7 @@
       "nameEn": "Imakane Tane Ski Area",
       "japowResortId": 1,
       "regionJa": "北海道今金町",
-      "status": "lp-built",
+      "status": "research",
       "archetypeHint": "live-dashboard",
       "copyFromHint": "shinjo-lp",
       "salesAngle": "道南・ナイター。ピリカ連携広域。",
@@ -185,8 +185,8 @@
       "subscriptionPitch": "ナイターCMS",
       "updatedAt": "2026-06-28",
       "reportPath": "docs/research/inbox/imakane-tane.md",
-      "researchInteractionId": "v1_Chc2cTlBYXVudkxvck0wLWtQbzhlOGtBMBIXNnE5QWF1bnZMb3JNMC1rUG84ZThrQTA",
-      "researchCompletedAt": "2026-06-28T05:31:17.361Z"
+      "researchInteractionId": "v1_ChdiTEJBYW9udENJYUMycm9QNTZHSG1BMBIXYkxCQWFvbnRDSWFDMnJvUDU2R0htQTA",
+      "researchCompletedAt": "2026-06-28T05:34:48.114Z"
     },
     {
       "rank": 81,
@@ -195,7 +195,7 @@
       "nameEn": "Shibetsu Hinata Ski Area",
       "japowResortId": 43,
       "regionJa": "北海道士別市",
-      "status": "lp-built",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "shinjo-lp",
       "salesAngle": "あさひスキー場廃止で流入期待。残存者利益。",
@@ -203,8 +203,8 @@
       "subscriptionPitch": "移行期インフラ整備",
       "updatedAt": "2026-06-28",
       "reportPath": "docs/research/inbox/shibetsu-hinata.md",
-      "researchInteractionId": "v1_ChdxTEZBYXNQTEs0SFoxZThQZzVmR3NRVRIXcUxGQWFzUExLNEhaMWU4UGc1ZkdzUVU",
-      "researchCompletedAt": "2026-06-28T05:39:49.473Z"
+      "researchInteractionId": "v1_ChdlYkpBYXFmcE1wT3MwLWtQek9HVDBBMBIXZWJKQWFxZnBNcE9zMC1rUHpPR1QwQTA",
+      "researchCompletedAt": "2026-06-28T05:46:03.232Z"
     },
     {
       "rank": 82,
@@ -213,7 +213,7 @@
       "nameEn": "Tochio Family Ski Area",
       "japowResortId": 318,
       "regionJa": "新潟県長岡市",
-      "status": "lp-built",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "shinjo-lp",
       "salesAngle": "栃尾の油揚げ×休日プチお出かけ。",
@@ -221,8 +221,8 @@
       "subscriptionPitch": "SNS連動LP",
       "updatedAt": "2026-06-28",
       "reportPath": "docs/research/inbox/tochio.md",
-      "researchInteractionId": "v1_Chdwck5BYW9yaU9wR0UwLWtQOHFfTG1BdxIXcHJOQWFvcmlPcEdFMC1rUDhxX0xtQXc",
-      "researchCompletedAt": "2026-06-28T05:48:59.304Z"
+      "researchInteractionId": "v1_ChdITFZBYXBISUk5X1QxZThQb1lYa21BURIXSExWQWFwSElJOV9UMWU4UG9ZWGttQVE",
+      "researchCompletedAt": "2026-06-28T05:54:20.396Z"
     },
     {
       "rank": 83,
@@ -231,7 +231,7 @@
       "nameEn": "Kushibiki Taranokidai Ski Area",
       "japowResortId": 157,
       "regionJa": "山形県鶴岡市",
-      "status": "lp-built",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "shinjo-lp",
       "salesAngle": "庄内市民の冬の足。スクール予定カレンダー。",
@@ -239,8 +239,8 @@
       "subscriptionPitch": "カレンダーCMS",
       "updatedAt": "2026-06-28",
       "reportPath": "docs/research/inbox/kushibiki-taranokidai.md",
-      "researchInteractionId": "v1_Chd6YlZBYXRxTEFmcUMwLWtQeFpmdGtRYxIXemJWQWF0cUxBZnFDMC1rUHhaZnRrUWM",
-      "researchCompletedAt": "2026-06-28T05:58:07.370Z"
+      "researchInteractionId": "v1_ChdGcmRBYXJXbEpkRG0xZThQd2YyZXlBYxIXRnJkQWFyV2xKZERtMWU4UHdmMmV5QWM",
+      "researchCompletedAt": "2026-06-28T06:04:58.280Z"
     },
     {
       "rank": 84,
@@ -255,7 +255,10 @@
       "salesAngle": "サロマ湖近接。道東レンタカー周遊ルート。",
       "digitalGap": "網走・北見からのニッチ需要未獲得",
       "subscriptionPitch": "周遊ルートLP",
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/saroma.md",
+      "researchInteractionId": "v1_ChdpN2xBYXEzM09LbUUwLWtQOE1PS3lBbxIXaTdsQWFxMzNPS21FMC1rUDhNT0t5QW8",
+      "researchCompletedAt": "2026-06-28T06:14:17.839Z"
     },
     {
       "rank": 85,
@@ -264,12 +267,16 @@
       "nameEn": "Nakadomari Miyanozawa Ski Area",
       "japowResortId": 102,
       "regionJa": "青森県中泊町",
-      "status": "pending",
+      "status": "lp-built",
       "archetypeHint": "tourism-hub",
       "copyFromHint": "abashiri-lv-lp",
       "salesAngle": "津軽鉄道ストーブ列車×雪国体験。",
       "digitalGap": "ディープ津軽観光との連携弱い",
-      "subscriptionPitch": "冬の津軽オプションLP"
+      "subscriptionPitch": "冬の津軽オプションLP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/nakadomari-miyanozawa.md",
+      "researchInteractionId": "v1_Chd2THRBYXAtNkNjYTkwLWtQX3FMRTBBbxIXdkx0QWFwLTZDY2E5MC1rUF9xTEUwQW8",
+      "researchCompletedAt": "2026-06-28T06:25:00.685Z"
     },
     {
       "rank": 86,
@@ -278,12 +285,16 @@
       "nameEn": "Hobetsu Ski Area",
       "japowResortId": 78,
       "regionJa": "北海道むかわ町",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "gokazan-lp",
       "salesAngle": "むかわ竜・化石博物館×ファミリー周遊。",
       "digitalGap": "恐竜ブランドと雪遊び未連動",
-      "subscriptionPitch": "ファミリー特化ポータル"
+      "subscriptionPitch": "ファミリー特化ポータル",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/hobetsu.md",
+      "researchInteractionId": "v1_ChdUNzVBYXR1akVkRE0ycm9QcU52aG9RaxIXVDc1QWF0dWpFZERNMnJvUHFOdmhvUWs",
+      "researchCompletedAt": "2026-06-28T06:36:18.251Z"
     },
     {
       "rank": 87,
@@ -292,12 +303,16 @@
       "nameEn": "Odai Ski Area",
       "japowResortId": 139,
       "regionJa": "秋田県大仙市",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "live-dashboard",
       "copyFromHint": "shinjo-lp",
       "salesAngle": "内陸南部ファミリー向け広斜面。",
       "digitalGap": "営業・イベント情報更新負担",
-      "subscriptionPitch": "ワンタップ更新CMS"
+      "subscriptionPitch": "ワンタップ更新CMS",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/odai.md",
+      "researchInteractionId": "v1_Chc1TUJBYW9qRUZKRDgycm9QckluejBBdxIXNU1CQWFvakVGSkQ4MnJvUHJJbnowQXc",
+      "researchCompletedAt": "2026-06-28T06:47:26.743Z"
     },
     {
       "rank": 88,
@@ -306,12 +321,16 @@
       "nameEn": "Yokone Ski Area",
       "japowResortId": 175,
       "regionJa": "山形県小国町",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "minami-furano-lp",
       "salesAngle": "新潟県境豪雪地帯。パウダー訴求。",
       "digitalGap": "降雪情報の全国露出不足",
-      "subscriptionPitch": "API連携コンディションLP"
+      "subscriptionPitch": "API連携コンディションLP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/yokone.md",
+      "researchInteractionId": "v1_ChdnTU5BYXRDeUo2Zk9yZmNQcHMtbjJBSRIXZ01OQWF0Q3lKNmZPcmZjUHBzLW4yQUk",
+      "researchCompletedAt": "2026-06-28T06:56:38.897Z"
     },
     {
       "rank": 89,
@@ -320,12 +339,16 @@
       "nameEn": "Okoppe Municipal Ski Area",
       "japowResortId": 63,
       "regionJa": "北海道興部町",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "tourism-hub",
       "copyFromHint": "utoro-lp",
       "salesAngle": "流氷沿岸移動経路上。外部ポータル依存。",
       "digitalGap": "自社情報発信基盤なし",
-      "subscriptionPitch": "独立LP・オホーツク周遊"
+      "subscriptionPitch": "独立LP・オホーツク周遊",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/okoppe.md",
+      "researchInteractionId": "v1_ChdxOFZBYXJEaktmaTMwLWtQaUtmZzBBSRIXcThWQWFyRGpLZmkzMC1rUGlLZmcwQUk",
+      "researchCompletedAt": "2026-06-28T07:06:46.991Z"
     },
     {
       "rank": 90,
@@ -334,12 +357,16 @@
       "nameEn": "Shirataka Municipal Ski Area",
       "japowResortId": 162,
       "regionJa": "山形県白鷹町",
-      "status": "pending",
+      "status": "lp-built",
       "archetypeHint": "live-dashboard",
       "copyFromHint": "horaguchi-lp",
       "salesAngle": "置賜エリア。保護者向け本日営業確認。",
       "digitalGap": "保護者のスマホ確認需要",
-      "subscriptionPitch": "本日営業ダッシュボード"
+      "subscriptionPitch": "本日営業ダッシュボード",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/shirataka.md",
+      "researchInteractionId": "v1_ChdDTWhBYXEydkxLLWYycm9QNG9Xam9BMBIXQ01oQWFxMnZMSy1mMnJvUDRvV2pvQTA",
+      "researchCompletedAt": "2026-06-28T07:16:50.825Z"
     }
   ]
 }

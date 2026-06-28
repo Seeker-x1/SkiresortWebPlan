@@ -1,0 +1,25 @@
+resortId: hobetsu
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 穂別スキー場
+  en: Hobetsu Ski Area
+region:
+  ja: 北海道むかわ町
+  en: 北海道むかわ町
+japowResortId: 78
+
+strategy:
+  ja: むかわ竜・化石博物館×ファミリー周遊。
+  en: むかわ竜・化石博物館×ファミリー周遊。
+archetype: local-value
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/hobetsu.md", "LP batch #86"]
+  heroImage: images/maps/hobetsu-hero.png
+  copyFrom: gokazan-lp
+
+humanReview:
+  - japowResortId 78

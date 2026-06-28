@@ -86,6 +86,10 @@
       "registryId": "unabetsu",
       "tier": "mock"
     },
+    "63": {
+      "registryId": "okoppe",
+      "tier": "mock"
+    },
     "64": {
       "registryId": "wakamatsu",
       "tier": "mock"
@@ -99,12 +103,20 @@
       "tier": "mock",
       "note": "id 72 湧別町五鹿山ではなく 66"
     },
+    "67": {
+      "registryId": "saroma",
+      "tier": "mock"
+    },
     "71": {
       "registryId": "monbetsu-ooyama",
       "tier": "mock"
     },
     "74": {
       "registryId": "abirayama",
+      "tier": "mock"
+    },
+    "78": {
+      "registryId": "hobetsu",
       "tier": "mock"
     },
     "83": {
@@ -117,6 +129,10 @@
     },
     "98": {
       "registryId": "sichinohe",
+      "tier": "mock"
+    },
+    "102": {
+      "registryId": "nakadomari-miyanozawa",
       "tier": "mock"
     },
     "116": {
@@ -135,12 +151,20 @@
       "registryId": "ueno-no",
       "tier": "mock"
     },
+    "139": {
+      "registryId": "odai",
+      "tier": "mock"
+    },
     "140": {
       "registryId": "kyowa",
       "tier": "mock"
     },
     "157": {
       "registryId": "kushibiki-taranokidai",
+      "tier": "mock"
+    },
+    "162": {
+      "registryId": "shirataka",
       "tier": "mock"
     },
     "163": {
@@ -157,6 +181,10 @@
     },
     "174": {
       "registryId": "yunodai",
+      "tier": "mock"
+    },
+    "175": {
+      "registryId": "yokone",
       "tier": "mock"
     },
     "183": {

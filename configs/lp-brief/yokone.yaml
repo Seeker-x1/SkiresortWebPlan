@@ -1,0 +1,25 @@
+resortId: yokone
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 横根スキー場
+  en: Yokone Ski Area
+region:
+  ja: 山形県小国町
+  en: 山形県小国町
+japowResortId: 175
+
+strategy:
+  ja: 新潟県境豪雪地帯。パウダー訴求。
+  en: 新潟県境豪雪地帯。パウダー訴求。
+archetype: local-value
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/yokone.md", "LP batch #88"]
+  heroImage: images/maps/yokone-hero.png
+  copyFrom: minami-furano-lp
+
+humanReview:
+  - japowResortId 175

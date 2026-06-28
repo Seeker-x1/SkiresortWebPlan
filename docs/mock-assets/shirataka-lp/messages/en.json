@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "title": "Shirataka Municipal Ski Area",
+    "description": "山形県白鷹町 — 置賜エリア。保護者向け本日営業確認。"
+  },
+  "logo": "Shirataka Municipal Ski Area",
+  "nav": {
+    "schedule": "Today",
+    "pillars": "Two pillars",
+    "camp": "Dorogawa Onsen"
+  },
+  "hero": {
+    "eyebrow": "山形県白鷹町",
+    "title": "Shirataka Municipal<br />Ski Area",
+    "tagline": "置賜エリア。保護者向け本日営業確認。",
+    "badgePivot": "Natural snow · entry fee",
+    "badgeCampus": "Up to ~260 m",
+    "stat": "Snow play <strong>sleds · families</strong> · loop <strong>Dorogawa Onsen</strong>",
+    "ctaCamp": "Dorogawa onsen town",
+    "ctaNordic": "Today's operations"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "chip1": "<strong>Snow</strong> · natural · check status",
+    "chip2": "<strong>Lift</strong> · wire rope tow · check status",
+    "chip3": "<strong>Entry</strong> · adult ¥1,200 · winter roads",
+    "lineNote": "Updated Jun 28, 7:00 · Tenkawa"
+  },
+  "pivot": {
+    "eyebrow": "Natural Snow",
+    "title": "A park that opens<br />when it snows.",
+    "lead": "No snowmaking—operations depend on snowfall and weather. Not a battle of lifts and artificial snow like Rokko or Biwako Valley, but a small Showa-era hill with rare natural snow in Nara Prefecture.",
+    "specs": [
+      "Entry ¥1,200",
+      "Mostly gentle slopes",
+      "Free parking"
+    ],
+    "noticeTitle": "About the entry fee:",
+    "noticeBody": "The entry fee covers use of the snow park. On days when the lift is idle, an entry fee may still apply if snow play is possible—confirm today's status before you leave.",
+    "ctaNordic": "Today's snow & lift",
+    "imgAlt": "Lodge wood stove—the retro feel of Shirataka Municipal Ski Area"
+  },
+  "paths": {
+    "camp": {
+      "label": "Onsen",
+      "title": "Dorogawa town"
+    },
+    "access": {
+      "label": "Access",
+      "title": "~2.5 h from Osaka"
+    },
+    "nordic": {
+      "label": "Snow play",
+      "title": "Sleds · families"
+    },
+    "schedule": {
+      "label": "Today",
+      "title": "Snow · roads"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Two Pillars",
+    "title": "Two pillars",
+    "primary": {
+      "title": "Private feel on natural snow",
+      "lead": "Fewer crowds than major Kansai hills, with lodge wood stoves and warm local service—for visitors who want snow and mountain-hut atmosphere more than the latest lifts.",
+      "cta": "Today's operations",
+      "imgAlt": "Children sledding on gentle slopes"
+    },
+    "secondary": {
+      "title": "Loop with Dorogawa Onsen",
+      "lead": "The onsen town called \"Kansai's Karuizawa\"—day-use baths, famous-water soba, and shugendo heritage for a half- or full-day trip after snow play.",
+      "cta": "Onsen · dining"
+    }
+  },
+  "camp": {
+    "eyebrow": "Dorogawa Onsen",
+    "title": "Warm up at<br />Dorogawa Onsen.",
+    "lead": "Dorogawa Onsen Visitor Center (opened 2024), historic Kakujin, Atarashiya Ryokan, and more—a classic finish with day-use baths after playing in the snow.",
+    "specs": [
+      "Day-use baths",
+      "Famous-water tofu · soba",
+      "Showa-era onsen street"
+    ],
+    "cta": "Onsen · dining map",
+    "imgAlt": "Dorogawa onsen town—Gyoja Street and classic inns"
+  },
+  "nordic": {
+    "eyebrow": "Snow Play",
+    "title": "Gentle slopes<br />for families.",
+    "lead": "Up to ~260 m, max gradient around 20°—good for sledding, snowmen, and first runs. The rope tow can take practice if you're new to it.",
+    "noticeTitle": "Before you go:",
+    "noticeBody": "Operations may stop when snow is insufficient. Winter roads are narrow and snowy—check chains or winter tires and today's road info.",
+    "cta": "Today's snow · lift",
+    "imgAlt": "Oden at the lodge shop—a break after snow play"
+  },
+  "journey": {
+    "eyebrow": "Kansai Day Trip",
+    "title": "From Osaka,<br />one day in Dorogawa.",
+    "lead": "About 2.5 hours by car from Kansai—morning snow play, famous-water lunch, then limestone cave or onsen to finish.",
+    "badge": "NATURAL SNOW · DOROGAWA",
+    "steps": {
+      "01": {
+        "title": "From Kansai",
+        "body": "~2.5 h from Osaka · early start in winter"
+      },
+      "02": {
+        "title": "Shirataka Municipal Ski Area",
+        "body": "Confirm snow and lift before entry"
+      },
+      "03": {
+        "title": "Lodge break",
+        "body": "Wood stove · oden at the shop"
+      },
+      "04": {
+        "title": "Menshodo Cave",
+        "body": "Monorail \"Dorokko\" into the cave"
+      },
+      "05": {
+        "title": "Dorogawa Onsen",
+        "body": "Visitor center or inn day-use bath"
+      }
+    }
+  },
+  "guides": {
+    "pivot": {
+      "title": "Reading a natural-snow hill",
+      "body": "Operations work differently from artificial-snow resorts—how snow depth, lift status, and the entry-fee system relate."
+    },
+    "nordicGuide": {
+      "title": "Family snow-play guide",
+      "body": "Sled areas, rope-tow tips, lodge snacks—a realistic half-day plan with kids."
+    },
+    "campGuide": {
+      "title": "Dorogawa onsen & food guide",
+      "body": "Seikuro soba, Yamaguchiya tofu, Cafe Luna—winter Dorogawa is best with a walk through the onsen town.",
+      "hashtags": [
+        "#HoraguchiSnow",
+        "#DorogawaOnsen",
+        "#NaraNaturalSnow"
+      ]
+    }
+  },
+  "access": {
+    "postal": "〒638-0301",
+    "line": "Dorogawa, Dorogawa Plateau, Tenkawa, Nara",
+    "note": "~2.5 h from Osaka · narrow snowy roads in winter · free parking",
+    "phone": "TEL 0747-64-0800 (Dorogawa Onsen Visitor Center)",
+    "places": "",
+    "rentacarEyebrow": "From Kansai",
+    "rentacarLink": "Book a rental car at Kansai Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Osaka, Nara, and Yoshino drives"
+  },
+  "footer": {
+    "copyright": "© Shirataka Municipal Ski Area — mock LP",
+    "location": "Dorogawa, Tenkawa, Nara 638-0301"
+  }
+}

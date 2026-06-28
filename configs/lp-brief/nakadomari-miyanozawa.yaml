@@ -1,0 +1,25 @@
+resortId: nakadomari-miyanozawa
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 中泊町営宮野沢スキー場
+  en: Nakadomari Miyanozawa Ski Area
+region:
+  ja: 青森県中泊町
+  en: 青森県中泊町
+japowResortId: 102
+
+strategy:
+  ja: 津軽鉄道ストーブ列車×雪国体験。
+  en: 津軽鉄道ストーブ列車×雪国体験。
+archetype: tourism-hub
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/nakadomari-miyanozawa.md", "LP batch #85"]
+  heroImage: images/maps/nakadomari-miyanozawa-hero.png
+  copyFrom: abashiri-lv-lp
+
+humanReview:
+  - japowResortId 102
