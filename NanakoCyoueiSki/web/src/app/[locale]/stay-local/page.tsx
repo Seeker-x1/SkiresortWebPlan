@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getResortData } from "@/lib/resort-data";
 import { AwardPageShell } from "@/components/AwardPageShell";
+import { Link } from "@/i18n/navigation";
 
 export const metadata: Metadata = {
   title: "周辺情報",
@@ -19,6 +20,13 @@ export default async function StayLocalPage() {
     >
       <p role="note" className="notice-banner">
         {data.stayLocal.notice}
+      </p>
+
+      <p className="lead max-w-2xl">
+        <Link href="/area-map" className="font-semibold underline underline-offset-4">
+          周辺マップ（温泉・食・拠点）
+        </Link>
+        で、新幹線駅から十和田湖方面までの回遊を地図で確認できます。
       </p>
 
       <div className="space-y-0 border-t border-[color:var(--award-color-border)]">

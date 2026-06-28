@@ -8,6 +8,7 @@
     "access": "アクセス",
     "courses": "コース",
     "map": "マップ",
+    "areaMap": "周辺マップ",
     "liveCams": "ライブカメラ",
     "tickets": "料金",
     "faq": "FAQ",
@@ -37,5 +38,38 @@
   "faq": {
     "title": "よくある質問",
     "description": "来場前によくいただく質問をまとめています。"
+  },
+  "areaMap": {
+    "title": "周辺マップ",
+    "lead": "町営スキー場を起点に、新幹線駅・温泉・十和田湖方面の回遊を設計",
+    "filterAll": "全表示",
+    "filterFood": "飲食",
+    "filterOnsen": "温泉",
+    "filterAnchor": "拠点",
+    "filterLabel": "レイヤーフィルタ",
+    "filterHint": "表示中のスポットがすべて地図に収まります。温泉のみのときは十和田・八甲田方面に切り替わります",
+    "spotCount": "{n}件",
+    "railLabel": "周辺スポット",
+    "fixedToggleGroup": "地図の表示",
+    "fixedSki": "スキー場",
+    "fixedStation": "駅",
+    "popup": {
+      "close": "ポップアップを閉じる",
+      "viewMap": "Google マップで開く →",
+      "viewMapAria": "{name}を Google マップで開く",
+      "website": "公式サイト",
+      "phoneAria": "電話 {phone} に発信"
+    },
+    "category": {
+      "anchor": "拠点",
+      "cafe": "カフェ",
+      "onsen-hotel": "温泉ホテル",
+      "onsen-day": "日帰り温泉",
+      "onsen-ryokan": "高級旅館",
+      "onsen-public": "公衆浴場",
+      "ski": "スキー場",
+      "transit": "駅",
+      "view": "絶景"
+    }
   }
 }

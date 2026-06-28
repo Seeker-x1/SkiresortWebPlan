@@ -16,6 +16,20 @@
   const DEFAULT_LAYERS = ["food", "anchor"];
   const FIXED_ANCHOR_IDS = new Set(["ski", "biei-station"]);
 
+  function resolvedFixedAnchorIds() {
+    if (mapData?.fixedAnchorIds?.length) {
+      return new Set(mapData.fixedAnchorIds);
+    }
+    const ids = new Set(["ski"]);
+    if (featureById("biei-station")) ids.add("biei-station");
+    if (featureById("station")) ids.add("station");
+    return ids;
+  }
+
+  function fixedAnchorIds() {
+    return mapData ? resolvedFixedAnchorIds() : FIXED_ANCHOR_IDS;
+  }
+
   const UI = {
     ja: {
       backTop: "← トップに戻る",
@@ -213,7 +227,7 @@
   }
 
   function isFixedAnchor(id) {
-    return FIXED_ANCHOR_IDS.has(id);
+    return fixedAnchorIds().has(id);
   }
 
   function isFixedAnchorVisible(id) {
@@ -230,7 +244,7 @@
   function markersForRender() {
     const visible = filteredFeatures();
     const ids = new Set(visible.map((f) => f.id));
-    for (const id of FIXED_ANCHOR_IDS) {
+    for (const id of fixedAnchorIds()) {
       if (!isFixedAnchorVisible(id) || ids.has(id)) continue;
       const f = featureById(id);
       if (f) visible.push(f);
@@ -241,7 +255,7 @@
   function appendVisibleFixedAnchors(feats) {
     const result = [...feats];
     const ids = new Set(result.map((f) => f.id));
-    for (const id of FIXED_ANCHOR_IDS) {
+    for (const id of fixedAnchorIds()) {
       if (!isFixedAnchorVisible(id) || ids.has(id)) continue;
       const f = featureById(id);
       if (f) result.push(f);
@@ -278,7 +292,8 @@
 
   function markerKeyFor(feature) {
     if (!markerManifest) return feature.group === "food" ? "food" : feature.group;
-    const mapping = markerManifest.bieiAreaMapping || {};
+    const resortMapping = markerManifest[`${resortId}AreaMapping`];
+    const mapping = resortMapping || markerManifest.bieiAreaMapping || {};
     if (feature.group === "food") return mapping.food || "food";
     if (feature.group === "onsen") return mapping.onsen || "onsen";
     return mapping[`anchor.${feature.id}`] || "food";
@@ -395,7 +410,7 @@
     bar.setAttribute("role", "group");
     bar.setAttribute("aria-label", t("fixedToggleGroup"));
 
-    for (const id of FIXED_ANCHOR_IDS) {
+    for (const id of fixedAnchorIds()) {
       if (!featureById(id)) continue;
       const label = document.createElement("label");
       label.className = "area-map-fixed-toggle";
@@ -406,7 +421,12 @@
       input.checked = isFixedAnchorVisible(id);
 
       const span = document.createElement("span");
-      span.textContent = id === "ski" ? t("fixedSki") : t("fixedStation");
+      span.textContent =
+        id === "ski"
+          ? t("fixedSki")
+          : id === "biei-station" || id === "station"
+            ? t("fixedStation")
+            : pick(featureById(id)?.shortLabel) || pick(featureById(id)?.label);
 
       input.addEventListener("change", () => {
         fixedAnchorVisible[id] = input.checked;
@@ -668,7 +688,7 @@
   }
 
   function sortForList(items) {
-    return items.filter((f) => !FIXED_ANCHOR_IDS.has(f.id));
+    return items.filter((f) => !fixedAnchorIds().has(f.id));
   }
 
   function renderList() {
@@ -877,8 +897,8 @@
   }
 
   function bindChrome() {
-    if (el.title) el.title.textContent = t("title");
-    if (el.lead) el.lead.textContent = t("lead");
+    if (el.title) el.title.textContent = pick(mapData.ui?.title) || t("title");
+    if (el.lead) el.lead.textContent = pick(mapData.ui?.lead) || t("lead");
     if (el.resortName) el.resortName.textContent = pick(mapData.name);
 
     const lpTop = `${resortId}-lp/${locale === "en" ? "?lang=en" : ""}`;

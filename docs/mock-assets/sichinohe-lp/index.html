@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja" data-mock-resort="sichinohe">
 <head>
   <meta charset="UTF-8" />
@@ -20,6 +20,7 @@
         <ul class="nav">
           <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
           <li><a href="../map.html?resort=sichinohe" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="../area-map.html?resort=sichinohe&layers=food,onsen,anchor" data-i18n="nav.areaMap">周辺マップ</a></li>
           <li><a href="#highlights" data-i18n="nav.highlights">魅力</a></li>
           <li><a href="#paths" data-i18n="nav.paths">導線</a></li>
           <li><a href="#onsen" data-i18n="nav.onsen">温泉</a></li>
@@ -100,9 +101,9 @@
             <span class="path-tile__title" data-i18n="paths.map.title">ゲレンデマップ</span>
             <span class="path-tile__arrow" aria-hidden="true">→</span>
           </a>
-          <a href="#" class="path-tile span-4">
-            <span class="path-tile__label" data-i18n="paths.pricing.label">料金</span>
-            <span class="path-tile__title" data-i18n="paths.pricing.title">料金・レンタル</span>
+          <a href="../area-map.html?resort=sichinohe&layers=food,onsen,anchor" class="path-tile span-4">
+            <span class="path-tile__label">周辺</span>
+            <span class="path-tile__title">周辺マップ</span>
             <span class="path-tile__arrow" aria-hidden="true">→</span>
           </a>
         </div>
@@ -157,7 +158,7 @@
             <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="onsen.whisper">
               入浴料300円台から、地元の方と一緒に2〜3軒はしごするのも、滑走後の定番です。
             </p>
-            <a href="#" class="btn btn-primary" style="margin-top:2rem" data-i18n="onsen.cta">七戸周辺の温泉特集</a>
+            <a href="../area-map.html?resort=sichinohe&layers=onsen,anchor" class="btn btn-primary" style="margin-top:2rem" data-i18n="onsen.cta">七戸周辺の温泉特集</a>
           </div>
           <div class="onsen-visual">
             <div class="frame">

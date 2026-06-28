@@ -8,6 +8,7 @@
     "access": "Access",
     "courses": "Courses",
     "map": "Map",
+    "areaMap": "Area map",
     "liveCams": "Live Cams",
     "tickets": "Tickets",
     "faq": "FAQ",
@@ -37,5 +38,38 @@
   "faq": {
     "title": "FAQ",
     "description": "Common questions before your visit."
+  },
+  "areaMap": {
+    "title": "Area map",
+    "lead": "Plan trips from the town ski area to the station, onsen, and Lake Towada",
+    "filterAll": "Show all",
+    "filterFood": "Food",
+    "filterOnsen": "Onsen",
+    "filterAnchor": "Hubs",
+    "filterLabel": "Layer filters",
+    "filterHint": "All visible spots fit on the map. Onsen-only snaps to the Towada / Hakkoda area",
+    "spotCount": "{n} spots",
+    "railLabel": "Nearby spots",
+    "fixedToggleGroup": "Map overlays",
+    "fixedSki": "Ski area",
+    "fixedStation": "Station",
+    "popup": {
+      "close": "Close popup",
+      "viewMap": "Open in Google Maps →",
+      "viewMapAria": "Open {name} in Google Maps",
+      "website": "Official site",
+      "phoneAria": "Call {phone}"
+    },
+    "category": {
+      "anchor": "Hub",
+      "cafe": "Café",
+      "onsen-hotel": "Onsen hotel",
+      "onsen-day": "Day bath",
+      "onsen-ryokan": "Ryokan",
+      "onsen-public": "Public bath",
+      "ski": "Ski area",
+      "transit": "Station",
+      "view": "View"
+    }
   }
 }

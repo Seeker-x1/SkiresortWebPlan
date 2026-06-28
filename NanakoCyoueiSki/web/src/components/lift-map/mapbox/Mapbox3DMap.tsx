@@ -128,7 +128,10 @@ export function Mapbox3DMap({
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
   const onSelectRef = useRef(onSelectFeature);
-  onSelectRef.current = onSelectFeature;
+
+  useEffect(() => {
+    onSelectRef.current = onSelectFeature;
+  }, [onSelectFeature]);
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return;

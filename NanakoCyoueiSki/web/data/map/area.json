@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "2026-06-23",
+  "id": "sichinohe-area",
+  "resortId": "sichinohe",
+  "name": {
+    "ja": "七戸・十和田周辺マップ",
+    "en": "Shichinohe & Towada area map"
+  },
+  "disclaimer": {
+    "ja": "位置は OpenStreetMap 等の公開情報に基づく概略です。冬季の営業時間・入浴可否・道路規制は各施設の公式情報でご確認ください。",
+    "en": "Locations are approximate from public sources. Confirm winter hours and road conditions with each facility."
+  },
+  "sources": ["OpenStreetMap", "OpenSkiMap", "七戸町観光情報"],
+  "updatedAt": "2026-06-23T12:00:00+09:00",
+  "fixedAnchorIds": ["ski", "station"],
+  "boundsProfiles": {
+    "skiFood": {
+      "includeGroups": ["food", "anchor"],
+      "excludeAnchorIds": ["towada-lake"],
+      "maxZoom": 11
+    },
+    "onsen": {
+      "includeGroups": ["onsen"],
+      "maxZoom": 11
+    },
+    "onsenAnchor": {
+      "includeGroups": ["onsen", "anchor"],
+      "excludeAnchorIds": ["towada-lake", "ski"],
+      "maxZoom": 10
+    },
+    "foodOnsen": {
+      "includeGroups": ["food", "onsen", "anchor"],
+      "excludeAnchorIds": ["towada-lake"],
+      "maxZoom": 9
+    },
+    "anchorAll": {
+      "includeGroups": ["anchor"],
+      "maxZoom": 9
+    }
+  },
+  "anchors": [
+    {
+      "id": "ski",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "ski",
+      "fixedOnMap": true,
+      "listExclude": true,
+      "lat": 40.69839,
+      "lon": 141.099714,
+      "source": "OpenSkiMap",
+      "label": { "ja": "七戸町営スキー場", "en": "Shichinohe Town Ski Area" },
+      "shortLabel": { "ja": "町営スキー場", "en": "Town ski" },
+      "district": { "ja": "七戸町", "en": "Shichinohe" },
+      "mapsQuery": "七戸町営スキー場 青森県上北郡七戸町字左組"
+    },
+    {
+      "id": "station",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "transit",
+      "fixedOnMap": true,
+      "listExclude": true,
+      "lat": 40.6871,
+      "lon": 141.1374,
+      "source": "OpenStreetMap",
+      "label": { "ja": "七戸十和田駅", "en": "Shichinohe-Towada Station" },
+      "shortLabel": { "ja": "七戸十和田", "en": "Stn." },
+      "district": { "ja": "七戸町", "en": "Shichinohe" },
+      "mapsQuery": "七戸十和田駅 青森県七戸町"
+    },
+    {
+      "id": "michi-no-eki",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "anchor",
+      "lat": 40.6779,
+      "lon": 141.1215,
+      "source": "OpenStreetMap",
+      "label": { "ja": "道の駅しちのへ", "en": "Michi no Eki Shichinohe" },
+      "shortLabel": { "ja": "道の駅", "en": "Roadside" },
+      "website": "https://www.shichinohe-kankou.jp/",
+      "mapsQuery": "道の駅しちのへ 青森県七戸町"
+    },
+    {
+      "id": "towada-lake",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "view",
+      "lat": 40.4483,
+      "lon": 140.8833,
+      "source": "OpenStreetMap",
+      "label": { "ja": "十和田湖", "en": "Lake Towada" },
+      "shortLabel": { "ja": "十和田湖", "en": "Towada" },
+      "district": { "ja": "十和田市", "en": "Towada" },
+      "mapsQuery": "十和田湖 青森県"
+    }
+  ],
+  "food": [
+    {
+      "id": "hutte",
+      "group": "food",
+      "category": "cafe",
+      "lat": 40.6986,
+      "lon": 141.0992,
+      "source": "公式概要",
+      "label": { "ja": "町営ヒュッテ", "en": "Town Hutte" },
+      "shortLabel": { "ja": "ヒュッテ", "en": "Hutte" },
+      "district": { "ja": "ゲレンデ内", "en": "On slope" },
+      "mapsQuery": "七戸町営スキー場 ヒュッテ"
+    },
+    {
+      "id": "tabikura",
+      "group": "food",
+      "category": "cafe",
+      "lat": 40.6775,
+      "lon": 141.121,
+      "source": "七戸町観光",
+      "label": { "ja": "旅の蔵（道の駅しちのへ）", "en": "Tabikura at Michi no Eki" },
+      "shortLabel": { "ja": "旅の蔵", "en": "Tabikura" },
+      "website": "https://www.shichinohe-kankou.jp/",
+      "mapsQuery": "道の駅しちのへ 旅の蔵"
+    }
+  ],
+  "onsen": [
+    {
+      "id": "higashi-hakkoda",
+      "group": "onsen",
+      "category": "onsen-public",
+      "lat": 40.6608,
+      "lon": 140.9542,
+      "source": "OpenStreetMap",
+      "label": { "ja": "東八甲田温泉", "en": "Higashi-Hakkoda Onsen" },
+      "shortLabel": { "ja": "東八甲田", "en": "Hakkoda E." },
+      "phone": "0176-62-2214",
+      "district": { "ja": "七戸町", "en": "Shichinohe" },
+      "mapsQuery": "東八甲田温泉 青森県七戸町"
+    },
+    {
+      "id": "tsuta",
+      "group": "onsen",
+      "category": "onsen-ryokan",
+      "lat": 40.6225,
+      "lon": 140.9753,
+      "source": "OpenStreetMap",
+      "label": { "ja": "蔦温泉旅館", "en": "Tsuta Onsen Ryokan" },
+      "shortLabel": { "ja": "蔦温泉", "en": "Tsuta" },
+      "phone": "0178-56-2314",
+      "website": "https://www.tsutaonsen.com/",
+      "mapsQuery": "蔦温泉旅館 青森県"
+    },
+    {
+      "id": "yakeyama",
+      "group": "onsen",
+      "category": "onsen-day",
+      "lat": 40.451,
+      "lon": 140.885,
+      "source": "OpenStreetMap",
+      "label": { "ja": "十和田湖温泉", "en": "Towadako Onsen" },
+      "shortLabel": { "ja": "十和田湖温泉", "en": "Towada spa" },
+      "district": { "ja": "十和田市", "en": "Towada" },
+      "mapsQuery": "十和田湖温泉 青森県"
+    }
+  ]
+}

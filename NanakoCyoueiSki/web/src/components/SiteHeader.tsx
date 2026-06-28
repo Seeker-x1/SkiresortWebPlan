@@ -26,6 +26,12 @@ export async function SiteHeader() {
           <Link href="/access" className="award-btn-ghost">
             {nav("access")}
           </Link>
+          <Link href="/map" className="award-btn-ghost">
+            {nav("map")}
+          </Link>
+          <Link href="/area-map" className="award-btn-ghost">
+            {nav("areaMap")}
+          </Link>
         </nav>
 
         <LangSwitcher />
