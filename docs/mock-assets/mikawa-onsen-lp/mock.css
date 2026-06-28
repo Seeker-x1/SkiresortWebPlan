@@ -1,0 +1,678 @@
+/* 七戸町営スキー場 — LP案モック（テンプレート実装プレビュー） */
+
+:root {
+  --bg: #f8f9fb;
+  --fg: #141a26;
+  --muted: #64748b;
+  --accent: #0b5f8c;
+  --accent-soft: #e8f4fa;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --section: clamp(5rem, 14vw, 9rem);
+  --inner: clamp(1.25rem, 4vw, 3rem);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+
+a { color: inherit; text-decoration: none; }
+
+.font-display {
+  font-family: Syne, "Helvetica Neue", sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.font-mono {
+  font-family: "IBM Plex Mono", "SF Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Mock banner ── */
+.mock-banner {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background: #1a2438;
+  color: #e2e8f0;
+  font-size: 0.75rem;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.mock-banner strong { color: #7ec8e3; }
+
+/* ── Layout ── */
+.inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding-left: var(--inner);
+  padding-right: var(--inner);
+}
+
+.section { padding: var(--section) 0; }
+
+.eyebrow {
+  font-family: Syne, sans-serif;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.heading-lg {
+  margin: 1rem 0 0;
+  font-size: clamp(1.75rem, 5vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.lead {
+  font-size: clamp(0.9375rem, 2.5vw, 1.125rem);
+  line-height: 1.85;
+  color: var(--muted);
+}
+
+.lead-whisper {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  line-height: 1.75;
+  color: var(--muted);
+  opacity: 0.85;
+}
+
+/* ── Header ── */
+.site-header {
+  position: sticky;
+  top: 1.75rem;
+  z-index: 50;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 3.5rem;
+  gap: 1rem;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.nav {
+  display: none;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.nav a:hover { color: var(--fg); }
+
+.lang-btn {
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .nav { display: flex; }
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--fg);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgb(20 26 38 / 18%);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--fg);
+  border: 1px solid var(--border);
+}
+
+.btn-ghost:hover { background: var(--accent-soft); }
+
+/* ── Hero ── */
+.hero {
+  position: relative;
+  min-height: 92svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgb(255 255 255 / 10%) 0%,
+    rgb(255 255 255 / 20%) 40%,
+    var(--bg) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 2.5rem;
+  padding-top: 7rem;
+}
+
+.hero-title {
+  margin: 1rem 0 0;
+  font-size: clamp(2.75rem, 11vw, 5rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.045em;
+  line-break: strict;
+  word-break: keep-all;
+}
+
+.hero-stat-label {
+  margin: 3.5rem 0 0;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.hero-stat-value {
+  margin: 0.5rem 0 0;
+  font-size: clamp(3.25rem, 16vw, 6rem);
+  font-weight: 500;
+  line-height: 0.92;
+  letter-spacing: -0.05em;
+}
+
+.hero-cta {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.freshness {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.freshness time { font-family: "IBM Plex Mono", monospace; }
+
+/* ── Transit band ── */
+.transit-grid {
+  display: grid;
+  gap: 0;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .transit-grid {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.transit-visual {
+  position: relative;
+  width: 88%;
+}
+
+@media (min-width: 1024px) {
+  .transit-visual {
+    grid-column: 1 / 8;
+    width: 100%;
+  }
+}
+
+.transit-visual .frame {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .transit-visual .frame { aspect-ratio: 3 / 4; }
+}
+
+.transit-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.transit-card {
+  position: relative;
+  z-index: 2;
+  margin-top: -4rem;
+  margin-left: 12%;
+  width: 88%;
+  padding: 2rem;
+  background: var(--surface);
+  box-shadow: 0 24px 64px rgb(20 26 38 / 8%);
+}
+
+@media (min-width: 1024px) {
+  .transit-card {
+    grid-column: 7 / 13;
+    margin-top: 0;
+    margin-left: 0;
+    transform: translateY(-3rem);
+    padding: 3rem;
+  }
+}
+
+.transit-actions {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .transit-actions { flex-direction: row; align-items: center; }
+}
+
+/* ── Path magnet ── */
+.path-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  margin-top: clamp(2rem, 6vw, 4rem);
+}
+
+.path-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 10rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  transition: border-color 0.2s, box-shadow 0.2s var(--ease);
+}
+
+.path-tile:hover {
+  border-color: var(--accent);
+  box-shadow: 0 12px 32px rgb(11 95 140 / 8%);
+}
+
+.path-tile__label {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.path-tile__title {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.path-tile__arrow {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.25rem;
+  color: var(--muted);
+}
+
+.span-8 { grid-column: span 12; }
+.span-4 { grid-column: span 12; }
+
+@media (min-width: 640px) {
+  .span-8 { grid-column: span 8; }
+  .span-4 { grid-column: span 4; }
+  .path-tile { min-height: 12rem; }
+}
+
+/* ── LP Highlight Duet ── */
+.highlight-duet {
+  position: relative;
+  margin-top: 4rem;
+}
+
+.highlight-primary {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .highlight-primary { width: 68%; }
+}
+
+.highlight-primary .frame {
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+}
+
+.highlight-primary img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.highlight-primary-body {
+  margin-top: 2rem;
+  max-width: 28rem;
+}
+
+.highlight-primary-body h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.highlight-secondary {
+  position: relative;
+  z-index: 2;
+  margin-top: -2.5rem;
+  margin-left: auto;
+  width: 82%;
+  padding: 1.75rem;
+  background: var(--surface);
+  box-shadow: 0 24px 64px rgb(20 26 38 / 10%);
+}
+
+@media (min-width: 1024px) {
+  .highlight-secondary {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-top: 0;
+    width: 42%;
+    padding: 2.25rem;
+  }
+}
+
+.highlight-secondary h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* ── Onsen teaser ── */
+.onsen-grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .onsen-grid {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3.5rem;
+  }
+}
+
+.onsen-visual {
+  order: 2;
+}
+
+@media (min-width: 1024px) {
+  .onsen-visual {
+    grid-column: 8 / 13;
+    order: 2;
+  }
+  .onsen-copy {
+    grid-column: 1 / 7;
+    order: 1;
+  }
+}
+
+.onsen-visual .frame {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .onsen-visual .frame { aspect-ratio: 3 / 4; }
+}
+
+.onsen-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── Guides accordion ── */
+.guides-list {
+  list-style: none;
+  margin: 3.5rem 0 0;
+  padding: 0;
+}
+
+.guide-item {
+  border-top: 1px solid var(--border);
+}
+
+.guide-item:last-child { border-bottom: 1px solid var(--border); }
+
+.guide-trigger {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.75rem 0;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--fg);
+  cursor: pointer;
+}
+
+.guide-icon {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--muted);
+}
+
+.guide-panel {
+  display: none;
+  padding-bottom: 2rem;
+}
+
+.guide-panel.is-open { display: block; }
+
+.guide-panel .lead { max-width: 32rem; }
+
+/* ── Access / location ── */
+.access-section {
+  padding: clamp(3rem, 8vw, 5rem) 0;
+}
+
+.access-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .access-grid {
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 2.5rem;
+  }
+}
+
+.access-address {
+  font-style: normal;
+  line-height: 1.85;
+}
+
+.access-postal {
+  display: block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.access-line {
+  display: block;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.access-note {
+  margin: 1rem 0 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.access-phone {
+  margin: 0.5rem 0 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.access-phone a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.access-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.btn-map {
+  background: var(--accent);
+  color: #fff;
+  gap: 0.5rem;
+}
+
+.btn-map:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgb(11 95 140 / 22%);
+}
+
+.btn-map svg {
+  flex-shrink: 0;
+}
+
+.footer-location {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  width: 100%;
+  font-size: 0.8125rem;
+  line-height: 1.65;
+}
+
+.footer-location a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+/* ── Footer ── */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 3rem 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+/* ── Section borders ── */
+.border-top { border-top: 1px solid var(--border); }
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn:hover { transform: none; }
+}

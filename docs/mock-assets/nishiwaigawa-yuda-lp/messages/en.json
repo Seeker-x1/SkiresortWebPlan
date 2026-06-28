@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "Choei Yuda Ski Area",
+    "description": "Private-feel Japow powder and Yuda Onsenkyo—adult day ticket ¥2,130 at a hidden micro-resort."
+  },
+  "logo": "Yuda Ski Area",
+  "nav": {
+    "family": "Onsen"
+  },
+  "hero": {
+    "eyebrow": "Nishiwaga, Iwate · Yuda Onsenkyo",
+    "title": "Yuda<br />Ski Area",
+    "tagline": "Deep snow with almost no crowds—and legendary tofu at Rest House Yunosawa in the Ou Mountains.",
+    "badgeLocal": "Adult day ticket ¥2,130",
+    "badgeVisitor": "Half-day ¥1,250",
+    "badgeSled": "Max pitch 34°",
+    "ctaPass": "Tickets & pricing",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Municipal hill operations",
+    "updatedAt": "Updated Jun 28, 9:00",
+    "lift": {
+      "label": "Lifts",
+      "value": "Operating",
+      "note": "705 m pair lift · 1 rope tow"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "A & C",
+      "note": "Up to 820 m · max 34°"
+    },
+    "night": {
+      "label": "Snow depth",
+      "value": "Heavy-snow zone",
+      "note": "~100 cm+ typical in season"
+    },
+    "yotei": {
+      "label": "Snow quality",
+      "value": "Premium powder",
+      "note": "Untracked zones available"
+    }
+  },
+  "transit": {
+    "eyebrow": "Yuda Onsenkyo",
+    "title": "7 minutes from Yuda IC,<br />bus from Hotto-Yuda Station.",
+    "lead": "About 7–15 minutes by car from the Yuda IC on the Akita Expressway, or 7–10 minutes by bus from JR Kitakami Line Hotto-Yuda Station—unusually good access for a deep-snow local hill. A second choice for riders avoiding crowds at larger resorts.",
+    "specs": [
+      "~7 min from Yuda IC",
+      "Bus from Hotto-Yuda Sta.",
+      "Tickets at Rest House Yunosawa"
+    ],
+    "ctaPass": "View pricing",
+    "ctaLive": "Today's operations",
+    "imgAlt": "Snow road in Yuda Onsenkyo—access to the ski hill"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Lifts, snow depth & quality"
+    },
+    "pass": {
+      "label": "Pricing",
+      "title": "Day & half-day tickets"
+    },
+    "family": {
+      "label": "Onsen",
+      "title": "Yuda Onsenkyo loop"
+    },
+    "rental": {
+      "label": "Loop",
+      "title": "Ski × food × hot springs"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Yuda IC · Hotto-Yuda"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Yuda",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "Private-feel premium powder",
+      "lead": "Low visitation means untracked zones and deep snow when timing aligns—a premium experience for powder hunters skipping crowded, pricey mega-resorts.",
+      "cta": "Snow & courses",
+      "imgAlt": "Deep powder at Yuda Ski Area—near-private laps"
+    },
+    "secondary": {
+      "title": "Carving heaven on Course A",
+      "lead": "Open views and moderate pitch—ideal for carving repetition. Up to ~820 m run length and 34° max pitch on a serious municipal hill.",
+      "cta": "Course guide"
+    }
+  },
+  "pass": {
+    "eyebrow": "Municipal Pricing",
+    "title": "Adults ¥2,130,<br />half-day ¥1,250.",
+    "lead": "Nationwide-bargain pricing—day ticket ¥2,130, half-day ¥1,250. Built for core riders who want focused short sessions. Buy lift tickets at the Rest House Yunosawa cafeteria counter.",
+    "localPrice": "Adult day ticket ¥2,130",
+    "visitorPrice": "Half-day ¥1,250",
+    "specs": [
+      "Pair lift + rope tow",
+      "Courses A & C",
+      "No on-site rental"
+    ],
+    "noticeTitle": "Ticket purchase:",
+    "noticeBody": "There is no dedicated ticket booth—buy at the Yunosawa cafeteria counter before the hill. First-timers: follow on-site signage.",
+    "cta": "Pricing details",
+    "imgAlt": "Yuda Ski Area—serious skiing at low cost"
+  },
+  "rental": {
+    "eyebrow": "Ski × Onsen",
+    "title": "Ski, eat,<br />soak in one day.",
+    "lead": "Morning half-day laps for powder and carving, lunch with tofu steak at Yunosawa, afternoon at Sunayukko sand bath or Hotto-Yuda onsen—a Yuda Onsenkyo loop that lifts spend per visitor.",
+    "whisper": "No official rental on site—hands-free packs via local lodgings are a growth lever (report recommendation).",
+    "cta": "Loop plan",
+    "imgAlt": "Yuda Onsenkyo—pairing skiing with hot springs"
+  },
+  "yukinko": {
+    "eyebrow": "Gourmet Base",
+    "title": "Yunosawa<br />tofu steak.",
+    "lead": "Rest House Yunosawa at the base—famous tofu steak set using Gen-suke cotton tofu and natto-jiru ramen. Quality worth a visit even without skiing.",
+    "whisper": "In season TEL 0197-82-2410 (ski area office).",
+    "cta": "Rest house guide",
+    "imgAlt": "Rest House Yunosawa—signature tofu dishes"
+  },
+  "family": {
+    "eyebrow": "Onsen Loop",
+    "title": "Hotto-Yuda &<br />Sunayukko.",
+    "lead": "Minutes away: Kawajiri Onsen Hotto-Yuda (station with baths and train signal lights) and Tsuzusawa Onsen Sunayukko (Tōhoku's first day-trip sand bath)—perfect après detox.",
+    "specs": [
+      "Hotto-Yuda ~6 min by car",
+      "Sunayukko ~15 min by car",
+      "Bath from ¥440 adults"
+    ],
+    "noticeTitle": "Loop plan:",
+    "noticeBody": "Morning ski → Yunosawa lunch → afternoon onsen—target ¥5,000–7,000 per person town spend (report recommendation).",
+    "cta": "Onsen & area guide",
+    "imgAlt": "Yuda Onsenkyo hot springs—post-ski soaking"
+  },
+  "workation": {
+    "eyebrow": "Powder Day",
+    "title": "First tracks AM,<br />sand bath PM.",
+    "lead": "Half-day ticket 9:00–12:00 for fresh-track powder, then Sunayukko sand bath for deep detox—the Powder & Detox one-day trip.",
+    "badge": "POWDER · ONSEN",
+    "steps": {
+      "01": {
+        "title": "To Yuda IC",
+        "body": "~7 min by car from Yuda IC"
+      },
+      "02": {
+        "title": "Morning half-day",
+        "body": "9:00–12:00 · near-private powder"
+      },
+      "03": {
+        "title": "Lunch at Yunosawa",
+        "body": "Tofu steak set"
+      },
+      "04": {
+        "title": "Sunayukko",
+        "body": "Natural silica sand bath detox"
+      },
+      "05": {
+        "title": "Hotto-Yuda",
+        "body": "Soak at the station onsen"
+      }
+    }
+  },
+  "guides": {
+    "local": {
+      "title": "Private powder × Yuda Onsenkyo guide",
+      "body": "Position as a second choice to crowded mega-resorts—low price, silence, deep snow. Tickets at Yunosawa cafeteria, no rental—honest disclosure for core riders (report ch. 5)."
+    },
+    "schools": {
+      "title": "Rest House Yunosawa synergy",
+      "body": "Hill and cafeteria operate as one—tofu cuisine draws food-only visitors. Digital ticket redemption without blocking kitchen ops (report ch. 6)."
+    },
+    "summer": {
+      "title": "Lake Kinshuko & green season",
+      "body": "Kinshuko Lake canoeing/SUP, Yunosawa campground—year-round potential on existing nature assets (report ch. 6).",
+      "hashtags": [
+        "#PrivateJapow",
+        "#YudaOnsen",
+        "#NishiwagaPowder"
+      ]
+    }
+  },
+  "access": {
+    "postal": "029-5506, Japan",
+    "line": "Yunozawa 35, Nishiwaga, Waga, Iwate",
+    "note": "~7–15 min by car from Yuda IC · ~7–10 min bus from JR Hotto-Yuda Station",
+    "phone": "TEL 0197-82-2410 (ski area office, in season)",
+    "places": "<span class=\"place-unit\"><ruby>Iwate<rt>Iwate</rt></ruby></span><span class=\"place-unit\"><ruby>Nishiwaga<rt>Nishiwaga</rt></ruby></span><span class=\"place-unit\"><ruby>Yunozawa<rt>Yunozawa</rt></ruby></span>",
+    "rentacarEyebrow": "Kitakami Line + rental car",
+    "rentacarLink": "Book a rental car at Morioka Station",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Yuda Onsenkyo and regional loops"
+  },
+  "footer": {
+    "copyright": "© Choei Yuda Ski Area — LP mock",
+    "location": "029-5506 · Yunozawa 35, Nishiwaga, Waga, Iwate"
+  }
+}

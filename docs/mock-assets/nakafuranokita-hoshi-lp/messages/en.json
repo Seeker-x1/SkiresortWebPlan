@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Nakafurano Kita-Hoshi Ski Area",
+    "description": "Escape Furano crowds—Tokachi views and untracked powder from ¥1,030 adult day ticket at a local hill."
+  },
+  "logo": "Kita-Hoshi Ski Area",
+  "nav": {
+    "family": "Snow play",
+    "spa": "Onsen"
+  },
+  "hero": {
+    "eyebrow": "Nakafurano, Hokkaido · Mt. Kita-Hoshi",
+    "title": "Kita-Hoshi<br />Ski Area",
+    "tagline": "The lavender hill becomes a powder hideout in winter—a Furano mega-resort spin-off.",
+    "badgeLocal": "Adult day ticket ¥1,030",
+    "badgeVisitor": "40% untracked",
+    "badgeSled": "Night skiing",
+    "ctaPass": "Tickets & pricing",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Operated by Nakafurano Tourism Association",
+    "updatedAt": "Updated Jun 28, 9:00",
+    "lift": {
+      "label": "Lift",
+      "value": "Operating",
+      "note": "1 single chair · almost no wait"
+    },
+    "courses": {
+      "label": "Course",
+      "value": "1 run",
+      "note": "Up to ~400 m · max 21°"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Until ~20:30",
+      "note": "Weekdays & Saturdays"
+    },
+    "yotei": {
+      "label": "View",
+      "value": "Tokachi range",
+      "note": "Furano basin panorama"
+    }
+  },
+  "transit": {
+    "eyebrow": "Furano Spin-off",
+    "title": "15 minutes on foot<br />from Nakafurano Station.",
+    "lead": "For riders skipping Furano Ski Resort crowds and ¥8,000 day tickets—one single chair, one pitch, but fresh tracks in the untracked zone and a mega-resort-grade panorama.",
+    "specs": [
+      "~15 min walk from Nakafurano Sta.",
+      "Free parking",
+      "Snow-play area on site"
+    ],
+    "ctaPass": "View pricing",
+    "ctaLive": "Today's operations",
+    "imgAlt": "Panorama of Furano basin and Tokachi peaks from Kita-Hoshi"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Lifts, snow & night skiing"
+    },
+    "pass": {
+      "label": "Pricing",
+      "title": "Day & time tickets"
+    },
+    "family": {
+      "label": "Snow play",
+      "title": "Sled & tube area"
+    },
+    "spa": {
+      "label": "Onsen",
+      "title": "Banka no Yu · Poplar Farm"
+    },
+    "access": {
+      "label": "Access",
+      "title": "15 min from Nakafurano Sta."
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Kita-Hoshi",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "Mega-resort-grade views",
+      "lead": "Tokachi peaks and the Furano basin from the summit—compact hill, panorama that rivals the big resort.",
+      "cta": "Views & course",
+      "imgAlt": "Tokachi panorama from Kita-Hoshi Ski Area"
+    },
+    "secondary": {
+      "title": "Hidden untracked powder",
+      "lead": "~40% of the run left ungroomed—fresh tracks on powder mornings with near-private feel in the Furano area.",
+      "cta": "Snow quality guide"
+    }
+  },
+  "pass": {
+    "eyebrow": "Local Pricing",
+    "title": "Adults ¥1,030,<br />children ¥510.",
+    "lead": "A fraction of Furano Ski Resort pricing—local municipal rates for short powder sessions and night laps.",
+    "localPrice": "Adult day ticket ¥1,030",
+    "visitorPrice": "Child ¥510",
+    "specs": [
+      "1 single chairlift",
+      "Night skiing weekdays & Sat.",
+      "No on-hill restaurant"
+    ],
+    "noticeTitle": "Food:",
+    "noticeBody": "No restaurant on the hill—use Popura Farm, town eateries, or Manpuku no Yu nearby.",
+    "cta": "Pricing details",
+    "imgAlt": "Kita-Hoshi—a Furano area hideout"
+  },
+  "rental": {
+    "eyebrow": "Furano Loop",
+    "title": "Ski, then<br />onsen and sweets.",
+    "lead": "Morning powder at Kita-Hoshi, lunch at Popura Farm, afternoon at Manpuku no Yu—a spin-off loop that lifts spend per visitor.",
+    "whisper": "Differentiate from Farm Tomita and Furano Ski Resort via crowd avoidance, low price, and views (report).",
+    "cta": "Loop plan",
+    "imgAlt": "Onsen and cafés in Nakafurano—post-ski loop"
+  },
+  "yukinko": {
+    "eyebrow": "Night Ski",
+    "title": "Night skiing<br />after work.",
+    "lead": "Night skiing on weekdays and Saturdays until ~20:10–20:30—short focused laps between Furano sightseeing or after work.",
+    "whisper": "TEL 0167-39-3033 (Nakafurano Tourism Association).",
+    "cta": "Night skiing & hours",
+    "imgAlt": "Illuminated night-ski slope at Kita-Hoshi"
+  },
+  "family": {
+    "eyebrow": "Snow Play",
+    "title": "Sled & tube<br />snow-play area.",
+    "lead": "Dedicated snow-play zone with sleds and tubes—not only alpine skiing—a light snow experience for Furano day-trip visitors.",
+    "specs": [
+      "Snow-play area on site",
+      "Beginner-friendly single run",
+      "Free parking"
+    ],
+    "noticeTitle": "Families:",
+    "noticeBody": "Single chair can feel daunting for young children riding alone—staff assist at load/unload (well reviewed).",
+    "cta": "Snow-play guide",
+    "imgAlt": "Snow-play area at Kita-Hoshi—family friendly"
+  },
+  "spa": {
+    "eyebrow": "Snow & Spa",
+    "title": "After skiing,<br />Banka no Yu awaits.",
+    "lead": "Furano Latteur Banka no Yu and Poplar Farm—ski Kita-Hoshi in the morning, then loop through town for onsen and sweets.",
+    "whisper": "No restaurant on the hill—pair with nearby Furano town stops.",
+    "cta": "Onsen loop guide",
+    "imgAlt": "Furano onsen and café—post-ski recovery"
+  },
+  "workation": {
+    "eyebrow": "Half Day",
+    "title": "Morning powder,<br />afternoon in town.",
+    "lead": "Skip all-day mega-resort laps—2–3 hours on fresh untracked snow, then onsen and lavender-related sights—a half-day spin-off model.",
+    "badge": "FURANO · POWDER",
+    "steps": {
+      "01": {
+        "title": "To Nakafurano Sta.",
+        "body": "Access from Furano and Asahikawa"
+      },
+      "02": {
+        "title": "First-chair laps",
+        "body": "Fresh tracks in untracked zone"
+      },
+      "03": {
+        "title": "Popura Farm",
+        "body": "Sweets and café break"
+      },
+      "04": {
+        "title": "Manpuku no Yu",
+        "body": "Natural hot spring recovery"
+      },
+      "05": {
+        "title": "Farm Tomita",
+        "body": "Pair with classic Furano sightseeing"
+      }
+    }
+  },
+  "guides": {
+    "local": {
+      "title": "Furano spin-off guide",
+      "body": "Honest LP for riders avoiding Furano Ski Resort crowds and prices—low cost, space, untracked snow, views (report ch. 5)."
+    },
+    "schools": {
+      "title": "Kita-Hoshi lavender brand",
+      "body": "Summer lavender garden and winter ski hill—one Mt. Kita-Hoshi brand for year-round digital touchpoints (report ch. 6)."
+    },
+    "summer": {
+      "title": "Lavender in summer, powder in winter",
+      "body": "Leverage lavender garden summer awareness for winter skiing—#FuranoOffPeak hashtag strategy (report).",
+      "hashtags": [
+        "#FuranoOffPeak",
+        "#KitahoshiPowder",
+        "#Nakafurano"
+      ]
+    }
+  },
+  "access": {
+    "postal": "071-0473, Japan",
+    "line": "1-41 Miyamachi, Nakafurano, Sorachi, Hokkaido",
+    "note": "~15 min walk from JR Nakafurano Station · free parking",
+    "phone": "TEL 0167-39-3033 (Nakafurano Tourism Association)",
+    "places": "<span class=\"place-unit\"><ruby>Hokkaido<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>Nakafurano<rt>Nakafurano</rt></ruby></span>",
+    "rentacarEyebrow": "Asahikawa Airport + rental car",
+    "rentacarLink": "Book a rental car at Asahikawa Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Furano, Biei, and Sounkyo drives"
+  },
+  "footer": {
+    "copyright": "© Nakafurano Kita-Hoshi Ski Area — LP mock",
+    "location": "071-0473 · 1-41 Miyamachi, Nakafurano, Sorachi, Hokkaido"
+  }
+}

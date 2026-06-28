@@ -1,0 +1,546 @@
+﻿<!DOCTYPE html>
+<html lang="ja" data-mock-resort="taisei">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>上富良野町日の出スキー場</title>
+  <meta name="description" content="JR上富良野駅から徒歩圏——待ち時間ゼロ・初級100%・ナイター20:30までの町営ゲレンデ。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="#" class="logo" data-i18n="logo">日の出スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
+
+          <li><a href="#live" data-i18n="nav.live">本日</a></li>
+          <li><a href="#pass" data-i18n="nav.pass">パス</a></li>
+          <li><a href="#family" data-i18n="nav.family">ファミリー</a></li>
+          <li><a href="#spa" data-i18n="nav.spa">温泉</a></li>
+          <li><a href="#highlights" data-i18n="nav.highlights">魅力</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-taisei-hero.png" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">北海道上富良野町 · 日の出公園</p>
+        <h1 class="hero-title" data-i18n-html="hero.title">日の出<br />スキー場</h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">JR上富良野駅から徒歩圏——待ち時間ゼロの、はじめての雪遊び。</p>
+        <span class="badge-price" data-i18n="hero.badgeLocal">大人日券 ¥1,000</span>
+        <span class="badge-visitor" data-i18n="hero.badgeVisitor">Snow & Spa Pass</span>
+        <span class="badge-sled" data-i18n="hero.badgeSled">ナイター〜20:30</span>
+        <div class="hero-cta">
+          <a href="#pass" class="btn btn-gold" data-i18n="hero.ctaPass">パス・料金</a>
+          <a href="#live" class="btn btn-ghost" data-i18n="hero.ctaLive">本日のコンディション</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="live" class="live-dashboard" data-i18n-attr="aria-label:live.ariaLabel">
+      <div class="inner">
+        <div class="live-head">
+          <div>
+            <span class="live-pulse" aria-hidden="true"></span>
+            <span class="live-label">Live</span>
+            <span style="font-size:0.75rem;color:var(--muted);margin-left:0.5rem" data-i18n="live.subtitle">町営施設の運営情報</span>
+          </div>
+          <p class="live-updated" data-i18n="live.updatedAt">更新 12/25 9:00</p>
+        </div>
+        <div class="status-grid">
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.lift.label">リフト</p>
+            <p class="status-card__value" data-i18n="live.lift.value">運行中</p>
+            <p class="status-card__note" data-i18n="live.lift.note">リフト1基 · 待ち時間ほぼなし</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.courses.label">コース</p>
+            <p class="status-card__value" data-i18n="live.courses.value">初級100%</p>
+            <p class="status-card__note" data-i18n="live.courses.note">標高差50m · 2コース</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.night.label">ナイター</p>
+            <p class="status-card__value" data-i18n="live.night.value">20:30まで</p>
+            <p class="status-card__note" data-i18n="live.night.note">9:00〜 · ナイター16:00〜</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.yotei.label">ビュー</p>
+            <p class="status-card__value" style="color:var(--accent-yotei)" data-i18n="live.yotei.value">十勝岳連峰</p>
+            <p class="status-card__note" data-i18n="live.yotei.note">晴天時は大パノラマ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="transit-heading">
+      <div class="inner">
+        <div class="transit-grid">
+          <div class="transit-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-taisei-transit.png"
+                data-i18n-attr="alt:transit.imgAlt"
+                alt="JR上富良野駅から日の出公園へ向かう雪道——徒歩圏の町営ゲレンデ"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="transit-card">
+            <p class="eyebrow" data-i18n="transit.eyebrow">Station Walk</p>
+            <h2 id="transit-heading" class="heading-lg" data-i18n-html="transit.title">駅から徒歩、<br />そのまま雪へ。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:28rem" data-i18n="transit.lead">
+              JR富良野線「上富良野駅」から徒歩約13〜15分。レンタカーを使わない旅行者にとって、日本のスキー場でも稀有な「公共交通だけで完結する」立地——富良野メガリゾートのロープウェイ待ちを避け、到着してすぐアスピリンスノーを楽しめる。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="transit.specs.0">上富良野駅から徒歩約15分</li>
+              <li class="spec-tag" data-i18n="transit.specs.1">市街地から約400m</li>
+              <li class="spec-tag" data-i18n="transit.specs.2">駐車場60台（無料）</li>
+            </ul>
+            <div class="transit-actions">
+              <a href="#pass" class="btn btn-gold" data-i18n="transit.ctaPass">パスを見る</a>
+              <a href="#live" class="btn btn-ghost" data-i18n="transit.ctaLive">本日の運営</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top" aria-labelledby="paths-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.explore">Explore</p>
+        <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
+        <div class="path-grid">
+          <a href="#live" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.today.label">今日</span>
+            <span class="path-tile__title" data-i18n="paths.today.title">リフト・ナイター・雪質</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#access" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.access.label">アクセス</span>
+            <span class="path-tile__title" data-i18n="paths.access.title">上富良野駅から徒歩圏</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#pass" class="path-tile span-6">
+            <span class="path-tile__label" data-i18n="paths.pass.label">パス</span>
+            <span class="path-tile__title" data-i18n="paths.pass.title">Snow & Spa Pass</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#family" class="path-tile span-6">
+            <span class="path-tile__label" data-i18n="paths.family.label">ファミリー</span>
+            <span class="path-tile__title" data-i18n="paths.family.title">雪の滑り台・初雪体験</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#spa" class="path-tile span-8" style="grid-column: 1 / -1">
+            <span class="path-tile__label" data-i18n="paths.spa.label">温泉</span>
+            <span class="path-tile__title" data-i18n="paths.spa.title">フラヌイ温泉・十勝岳温泉郷</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section" aria-labelledby="highlights-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="highlights.eyebrow">日の出の魅力</p>
+        <h2 id="highlights-heading" class="heading-lg" data-i18n="highlights.title">ここが違う</h2>
+
+        <div class="highlight-duet">
+          <article class="highlight-primary">
+            <div class="frame">
+              <img
+                src="lp-mock-taisei-hero.png"
+                data-i18n-attr="alt:highlights.primary.imgAlt"
+                alt="十勝岳連峰を背景に広がる日の出スキー場——コンパクトな初級ゲレンデ"
+                width="1600"
+                height="1100"
+              />
+            </div>
+            <div class="highlight-primary-body">
+              <h3 data-i18n="highlights.primary.title">待ち時間ゼロ × 十勝岳ビュー</h3>
+              <p class="lead" style="margin-top:1rem" data-i18n="highlights.primary.lead">
+                リフト1本・初級100%・標高差50m——恐怖心を与えない「雪の箱庭」。富良野スキー場の混雑や長時間待ちを避け、十勝岳連峰を背景に静かに雪遊びを楽しむ隠れた名所（Hidden Gem）。
+              </p>
+              <a href="#" class="btn btn-gold" style="margin-top:2rem" data-i18n="highlights.primary.cta">コース・ビューを見る</a>
+            </div>
+          </article>
+
+          <article class="highlight-secondary">
+            <h3 data-i18n="highlights.secondary.title">アスピリンスノーと雪の滑り台</h3>
+            <p class="lead-whisper" style="margin-top:1rem" data-i18n="highlights.secondary.lead">
+              吹けば飛ぶような軽い雪質と、口コミで評価される雪の滑り台——スポーツ的な滑走より「雪景色と安全な雪遊び」を求める初めての雪体験層に最適。
+            </p>
+            <a href="#family" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="highlights.secondary.cta">ファミリーゾーン案内</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pass" class="section border-top" aria-labelledby="pass-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow" data-i18n="pass.eyebrow">Visitor Pass</p>
+            <h2 id="pass-heading" class="heading-lg" data-i18n-html="pass.title">Snow & Spa Pass、<br />¥5,000〜。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="pass.lead">
+              町民向けの大人日券¥1,000は維持しつつ、海外旅行者向けにレンタル連携・1日リフト券・フラヌイ温泉入浴をセットにした高付加価値パスを新設する提言（LP案）。客単価を5〜7倍に引き上げ、売上倍増の即効レバー。
+            </p>
+            <div class="price-duet">
+              <div class="price-card">
+                <p class="price-card__label">Local</p>
+                <p class="price-card__value" data-i18n="pass.localPrice">大人日券 ¥1,000</p>
+              </div>
+              <div class="price-card price-card--visitor">
+                <p class="price-card__label">Pass</p>
+                <p class="price-card__value" data-i18n="pass.visitorPrice">Snow & Spa Pass ¥5,000〜</p>
+              </div>
+            </div>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="pass.specs.0">ナイター券 大人¥700</li>
+              <li class="spec-tag" data-i18n="pass.specs.1">11回券 大人¥500</li>
+              <li class="spec-tag" data-i18n="pass.specs.2">手ぶらレンタル連携（提言）</li>
+            </ul>
+            <div class="notice-box">
+              <strong data-i18n="pass.noticeTitle">受入インフラ（提言）：</strong><span data-i18n="pass.noticeBody">キャッシュレス決済・多言語QR案内・外部レンタル事業者との手ぶらパッケージ——現状の摩擦を解消し、手ぶらで訪れるFIT層を受け入れる短期施策（レポート第7章）。</span>
+            </div>
+            <a href="#" class="btn btn-gold" style="margin-top:2rem" data-i18n="pass.cta">パス詳細</a>
+          </div>
+          <div class="feature-visual">
+            <div class="frame frame--wide">
+              <img
+                src="lp-mock-taisei-onsen.png"
+                data-i18n-attr="alt:pass.imgAlt"
+                alt="雪遊びと温泉をセットにした訪日旅行者向けパス——上富良野の回遊モデル"
+                width="1600"
+                height="1100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rental" class="section border-top" aria-labelledby="rental-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-visual feature-visual--left">
+            <div class="frame">
+              <img
+                src="lp-mock-taisei-food.png"
+                data-i18n-attr="alt:rental.imgAlt"
+                alt="ロッジでのレンタル受け取り——手ぶら来場の雪遊び体験"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="feature-copy feature-copy--right">
+            <p class="eyebrow" data-i18n="rental.eyebrow">Hands-free Package</p>
+            <h2 id="rental-heading" class="heading-lg" data-i18n-html="rental.title">手ぶらパッケージ、<br />到着時に受け取り。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="rental.lead">
+              施設内レンタルは現状なし——富良野エリアの民間レンタル事業者と連携し、事前オンライン決済でウェア・板をロッジ内またはロッカー受け取りにする「手ぶらパッケージ」提言（LP案）。
+            </p>
+            <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="rental.whisper">
+              在庫リスクを施設が抱えず、海外からのお客様の受入を実現する外部連携モデル。
+            </p>
+            <a href="#" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="rental.cta">手ぶら案内</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="yukinko" class="section border-top" aria-labelledby="yukinko-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow" data-i18n="yukinko.eyebrow">Night Skiing</p>
+            <h2 id="yukinko-heading" class="heading-lg" data-i18n-html="yukinko.title">20:30まで、<br />ナイター営業。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="yukinko.lead">
+              9:00〜20:30の通し営業（ナイター16:00〜）——夕方到着の旅行者も幻想的な雪景色を楽しめる。滑走後は徒歩圏の市街地へ誘導し、ナイトタイムエコノミーを創出。
+            </p>
+            <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="yukinko.whisper">
+              公式情報はかみふらの十勝岳観光協会・かみふらいふポータルでも確認できます。
+            </p>
+            <a href="#" class="btn btn-gold" style="margin-top:2rem" data-i18n="yukinko.cta">ナイター・営業時間</a>
+          </div>
+          <div class="feature-visual">
+            <div class="frame frame--wide">
+              <img
+                src="lp-mock-taisei-night.png"
+                data-i18n-attr="alt:yukinko.imgAlt"
+                alt="照明に照らされたナイターゲレンデ——十勝岳連峰のシルエット"
+                width="1600"
+                height="1100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="family" class="section border-top" aria-labelledby="family-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-visual feature-visual--left">
+            <div class="frame">
+              <img
+                src="lp-mock-taisei-family.png"
+                data-i18n-attr="alt:family.imgAlt"
+                alt="雪の滑り台で遊ぶ家族——緩やかな初級斜面"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="feature-copy feature-copy--right">
+            <p class="eyebrow" data-i18n="family.eyebrow">First Snow</p>
+            <h2 id="family-heading" class="heading-lg" data-i18n-html="family.title">初めての雪、<br />怖くない箱庭。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="family.lead">
+              初級者向け100%・標高差50m——東南アジアや台湾からの「初雪体験」層にとって、急斜面の恐怖なく雪景色と記念写真、そりや軽い滑走を楽しめる安全なプレイグラウンド。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="family.specs.0">初級コース2本</li>
+              <li class="spec-tag" data-i18n="family.specs.1">雪の滑り台</li>
+              <li class="spec-tag" data-i18n="family.specs.2">クロスカントリー無料貸出（公園内）</li>
+            </ul>
+            <div class="notice-box">
+              <strong data-i18n="family.noticeTitle">雪遊び：</strong><span data-i18n="family.noticeBody">大きな雪の滑り台やクロスカントリーコース——リフトに乗らない層も楽しめる雪上公園としての機能が強い（口コミ分析より）。</span>
+            </div>
+            <a href="#" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="family.cta">ファミリー・初雪案内</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="spa" class="section border-top" aria-labelledby="spa-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow" data-i18n="spa.eyebrow">Snow & Spa</p>
+            <h2 id="spa-heading" class="heading-lg" data-i18n-html="spa.title">滑ったあと、<br />徒歩圏の温泉へ。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="spa.lead">
+              日の出公園すぐそばの「フロンティア フラヌイ温泉」——炭酸美肌の湯と地元食材の食事。スキー後の疲労回復をセットにした日帰りモデルは、交通に制約のあるFIT層への最強のキラーコンテンツ。
+            </p>
+            <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="spa.whisper">
+              町営バスで十勝岳温泉郷（カミホロ荘・凌雲閣など）への周遊も可能。
+            </p>
+            <a href="#access" class="btn btn-gold" style="margin-top:2rem" data-i18n="spa.cta">温泉ルートを見る</a>
+          </div>
+          <div class="feature-visual">
+            <div class="frame frame--wide">
+              <img
+                src="lp-mock-taisei-onsen.png"
+                data-i18n-attr="alt:spa.imgAlt"
+                alt="源泉かけ流しのフラヌイ温泉——スキー後の癒し"
+                width="1600"
+                height="1100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="workation" class="section border-top" aria-labelledby="workation-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="workation.eyebrow">Night Ski & Dine</p>
+        <h2 id="workation-heading" class="heading-lg" data-i18n-html="workation.title">17時から雪、<br />そのあと町で夕食。</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="workation.lead">
+          17:00〜19:00のナイター帯で幻想的な雪景色を楽しみ、徒歩圏の居酒屋や「ぶたさがり」提供店へ——チケット半券でワンドリンク特典など、地域経済への波及を狙うNight Ski & Dineキャンペーン（LP案）。
+        </p>
+        <span class="work-badge" data-i18n="workation.badge">NIGHT SKI · LOCAL DINE</span>
+
+        <div class="journey">
+          <div class="journey-step">
+            <p class="journey-step__num">01</p>
+            <p class="journey-step__title" data-i18n="workation.steps.01.title">JR上富良野駅</p>
+            <p class="journey-step__body" data-i18n="workation.steps.01.body">富良野線 · 旭川・富良野方面からアクセス</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">02</p>
+            <p class="journey-step__title" data-i18n="workation.steps.02.title">徒歩約15分</p>
+            <p class="journey-step__body" data-i18n="workation.steps.02.body">雪道を歩いて日の出公園スキー場へ</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">03</p>
+            <p class="journey-step__title" data-i18n="workation.steps.03.title">ナイター滑走</p>
+            <p class="journey-step__body" data-i18n="workation.steps.03.body">16:00〜のナイター帯 · 待ち時間ほぼなし</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">04</p>
+            <p class="journey-step__title" data-i18n="workation.steps.04.title">フラヌイ温泉</p>
+            <p class="journey-step__body" data-i18n="workation.steps.04.body">徒歩圏の源泉100%温泉でリカバリー</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">05</p>
+            <p class="journey-step__title" data-i18n="workation.steps.05.title">市街地で夕食</p>
+            <p class="journey-step__body" data-i18n="workation.steps.05.body">ぶたさがりなど上富良野のローカルグルメへ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.guidesEyebrow">特集</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="common.guidesTitle">特集ページ</h2>
+
+        <ul class="guides-list">
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="true" data-guide="local">
+              <span data-i18n="guides.local.title">富良野オーバーフローの受け皿</span>
+              <span class="guide-icon" aria-hidden="true">−</span>
+            </button>
+            <div class="guide-panel is-open" id="panel-local">
+              <p class="lead" data-i18n="guides.local.body">
+                富良野スキー場の混雑・長時間待ち・過密化に対し、「静寂」「待ち時間ゼロ」「地域との近接性」を提供するブルーオーシャン戦略の拠点——メガリゾートから疲弊した層と初雪体験層の受け皿（レポート第3章）。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="schools">
+              <span data-i18n="guides.schools.title">エコ・スノーパークとしての物語</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-schools" hidden>
+              <p class="lead" data-i18n="guides.schools.body">
+                リフト1本・公園地形活用・JR徒歩アクセス——大規模リゾートと対比する低環境負荷の「ゼロエミッションでアクセスできるエコ・スノーパーク」ストーリー。サステナブルツーリズム志向の欧米豪・Z世代にも訴求（レポート第6章）。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="summer">
+              <span data-i18n="guides.summer.title">十勝岳温泉郷と広域周遊</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-summer" hidden>
+              <p class="lead" data-i18n="guides.summer.body">
+                午前は日の出で雪遊び、午後は町営バスで十勝岳温泉郷へ——カミホロ荘・凌雲閣など源泉100%の温泉宿と組み合わせた1泊2日モデル（レポート第5章）。
+              </p>
+              <div class="hashtags">
+                <span class="hashtag" data-i18n="guides.summer.hashtags.0">#KamifuranoSnow</span>
+                <span class="hashtag" data-i18n="guides.summer.hashtags.1">#FirstSnowJapan</span>
+                <span class="hashtag" data-i18n="guides.summer.hashtags.2">#HiddenGemHokkaido</span>
+              </div>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="access" class="access-section border-top" aria-labelledby="access-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.accessEyebrow">Access</p>
+        <h2 id="access-heading" class="heading-lg" data-i18n="common.location">所在地</h2>
+        <div class="access-grid">
+          <address class="access-address">
+            <span class="access-postal" data-i18n="access.postal">〒071-0521</span>
+            <span class="access-line" data-i18n="access.line">北海道空知郡上富良野町東1線北27号1（日の出公園内）</span>
+            <p class="access-places" data-i18n-html="access.places" hidden></p>
+            <p class="access-note" data-i18n="access.note">JR上富良野駅から徒歩約13〜15分 · 駐車場60台（無料）</p>
+            <p class="access-phone" data-i18n-html="access.phone">指定管理者：株式会社上富良野振興公社 · 公式情報は観光協会サイト参照</p>
+          </address>
+          <div class="access-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=%E6%97%A5%E3%81%AE%E5%87%BA%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E4%B8%8A%E5%AF%8C%E8%89%AF%E9%87%8E"
+              class="btn btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="common.googleMap">Google Mapで開く</span>
+            </a>
+            <a href="#access" class="btn btn-ghost" data-i18n="common.call">お問い合わせ</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">富良野・旭川圏</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">旭川空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">富良野・美瑛・十勝岳方面の周遊向け</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 上富良野町日の出スキー場 — LP案モック</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒071-0521 北海道空知郡上富良野町東1線北27号1</span> ·
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8C%97%E6%B5%B7%E9%81%93%E7%A9%BA%E7%9F%A5%E9%83%A1%E4%B8%8A%E5%AF%8C%E8%89%AF%E9%87%8E%E7%94%BA%E6%9D%B11%E7%B7%9A%E5%8C%97427%E5%8F%B71" target="_blank" rel="noopener noreferrer" data-i18n="common.footerMap">Google Map</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
+  <script src="../_shared/mock-i18n.js"></script>
+  <script>
+    document.querySelectorAll(".guide-trigger").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.guide;
+        const panel = document.getElementById("panel-" + id);
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".guide-trigger").forEach((b) => {
+          b.setAttribute("aria-expanded", "false");
+          b.querySelector(".guide-icon").textContent = "+";
+        });
+        document.querySelectorAll(".guide-panel").forEach((p) => {
+          p.classList.remove("is-open");
+          p.hidden = true;
+        });
+
+        if (!isOpen) {
+          btn.setAttribute("aria-expanded", "true");
+          btn.querySelector(".guide-icon").textContent = "−";
+          panel.classList.add("is-open");
+          panel.hidden = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

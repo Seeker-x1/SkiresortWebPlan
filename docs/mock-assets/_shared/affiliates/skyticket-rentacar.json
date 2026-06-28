@@ -59,6 +59,20 @@
       "label": {
         "ja": "盛岡駅",
         "en": "Morioka Station"
+      },
+      "takasaki_station": {
+        "url": "https://skyticket.jp/rentacar/kanto/gunma/takasaki_station/",
+        "label": {
+          "ja": "高崎駅",
+          "en": "Takasaki Station"
+        }
+      }
+    },
+    "takasaki_station": {
+      "url": "https://skyticket.jp/rentacar/kanto/gunma/takasaki_station/",
+      "label": {
+        "ja": "高崎駅",
+        "en": "Takasaki Station"
       }
     },
     "hakodate_onuma_matsumae": {

@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "Takayanagi Garuru Ski Area",
+    "description": "個人運営・ユニークネーム"
+  },
+  "logo": "Takayanagi Garuru",
+  "nav": {
+    "schedule": "Schedule",
+    "pillars": "Two pillars"
+  },
+  "hero": {
+    "eyebrow": "Niigata",
+    "title": "Takayanagi Garuru<br />Ski Area",
+    "tagline": "個人運営・ユニークネーム",
+    "badgePivot": "General skiing suspended · specialized facility",
+    "badgeCampus": "40 ha site",
+    "stat": "Competition hub <strong>CC · roller</strong> · Education hub <strong>English Adventure</strong>",
+    "ctaCamp": "English Adventure",
+    "ctaNordic": "Race courses & events"
+  },
+  "live": {
+    "ariaLabel": "Events & camp schedule",
+    "chip1": "<strong>Mar 27</strong> · Tsunan CC race (SAJ certified)",
+    "chip2": "<strong>Aug 24</strong> · Roller ski race",
+    "chip3": "<strong>Summer</strong> · Summer camp registration open",
+    "lineNote": "Panorama LLC · Updated Jun 13"
+  },
+  "pivot": {
+    "eyebrow": "Strategic Pivot",
+    "title": "Lifts stopped.<br />Space rewritten.",
+    "lead": "The former mass-market ski area ended public alpine skiing. ~400,000 m² reallocated to competition training and English immersion camps—a year-round specialized infrastructure built for unstable snowfall.",
+    "specs": [
+      "SAJ certified events",
+      "Roller skiing",
+      "40 ha campus"
+    ],
+    "noticeTitle": "Public alpine skiing:",
+    "noticeBody": "We do not operate lift-served public downhill skiing. We guide Nordic programs, education, and course use by advance reservation.",
+    "ctaNordic": "Using competition courses",
+    "imgAlt": "Athletes on a cross-country course reusing former ski terrain"
+  },
+  "paths": {
+    "camp": {
+      "label": "Education",
+      "title": "English Adventure"
+    },
+    "access": {
+      "label": "Access",
+      "title": "10 min from Echigo-Tanaka"
+    },
+    "nordic": {
+      "label": "Competition",
+      "title": "CC · roller ski"
+    },
+    "schedule": {
+      "label": "Events",
+      "title": "Schedule"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Two Pillars",
+    "title": "Two pillars",
+    "primary": {
+      "title": "Climate-adaptive competition hub",
+      "lead": "Dedicated XC courses on former ski terrain. Flex to 2.5 km / 2 km special courses in low snow. Summer roller-ski course hosts SEIKO SPORTSLINK timed events—from machine-intensive to terrain-capital model.",
+      "cta": "Course use & event info",
+      "imgAlt": "Summer roller-ski course—year-round competition infrastructure against snow risk"
+    },
+    "secondary": {
+      "title": "40 ha isolation space",
+      "lead": "Hills, lake, cedar forest, low elements—former ski land becomes one of Japan's largest outdoor education campuses. Five screen-free immersion days offer premium exclusivity for urban families.",
+      "cta": "Camp programs"
+    }
+  },
+  "camp": {
+    "eyebrow": "English Adventure",
+    "title": "Put down screens,<br />immerse in English.",
+    "lead": "English outdoor camps run by Panorama LLC. Year-round from 4-night/5-day to 8-night/9-day for grades 1–9 through winter break. Former lodge base with nurse on site, multipurpose hall, craft house—glamping from summer 2025.",
+    "specs": [
+      "Charter bus transfer",
+      "~3 hours from Tokyo",
+      "¥6,000 private-car discount"
+    ],
+    "cta": "Programs & dates",
+    "imgAlt": "Children at camp fire communicating in English—English Adventure"
+  },
+  "nordic": {
+    "eyebrow": "Nordic · Roller",
+    "title": "Terrain is<br />competitive capital.",
+    "lead": "Regular top-tier SAJ races including the 28th Tsunan Cross-Country Ski Championship (SAJ23-CC-49/97). NPO Tap runs operations with thorough regional flow management to Kagan Port Shimodai parking. Trial runs ¥800 adults, ¥500 students (season pass may apply).",
+    "noticeTitle": "Course use:",
+    "noticeBody": "XC and roller-ski courses require advance reservation. Contact Panorama LLC.",
+    "cta": "Applications & race info",
+    "imgAlt": "Cross-country course hosting SAJ certified events"
+  },
+  "journey": {
+    "eyebrow": "Camp Journey",
+    "title": "From Tokyo,<br />five days apart.",
+    "lead": "For education-focused urban families—charter buses and private-car discounts designed to trigger family trips around Tsunan.",
+    "badge": "SPACE ARBITRAGE · EDUCATION",
+    "steps": {
+      "01": {
+        "title": "Shinjuku · Nagoya · Osaka",
+        "body": "Official charter bus (~3 hours via Kan-Etsu)"
+      },
+      "02": {
+        "title": "40 ha campus",
+        "body": "English experiences among lake, hills, low elements"
+      },
+      "03": {
+        "title": "Lodge life",
+        "body": "Dining hall, showers, nurse station"
+      },
+      "04": {
+        "title": "Craft & camp fire",
+        "body": "Nights to sing, make, and talk in English"
+      },
+      "05": {
+        "title": "Family Tsunan tour",
+        "body": "¥6,000 discount with private-car pickup"
+      }
+    }
+  },
+  "guides": {
+    "pivot": {
+      "title": "Pivot—from ski area to education campus",
+      "body": "Suspending public skiing is pivot, not decline. Escape lift maintenance and snow dependence; reallocate 40 ha isolation to English immersion and competition training. Soft (purpose) shift over hard renovation—a climate-change survival model."
+    },
+    "nordicGuide": {
+      "title": "Nordic & roller—climate-adaptive competition infrastructure",
+      "body": "Special-course shortening in low snow, summer roller events, Tap + town center governance. From machine-intensive alpine to terrain-capital Nordic—a blueprint for low-cost year-round competition hubs."
+    },
+    "campGuide": {
+      "title": "Complete English Adventure guide",
+      "body": "Five screen-free days, glamping, charter bus and car discounts. How former ski land became a blue ocean in education—a premium package for urban families.",
+      "hashtags": [
+        "#TsunanPivot",
+        "#EnglishAdventure",
+        "#SpaceArbitrage"
+      ]
+    }
+  },
+  "access": {
+    "postal": "949-8122, Japan",
+    "line": "Kamigo Kamida Ko 1745-1, Tsunan, Nakauonuma-gun, Niigata",
+    "note": "About 50 minutes by car from Kan-Etsu Shiozawa-Ishiuchi IC · about 10 minutes by car from JR Echigo-Tanaka Station · 300 parking spaces",
+    "phone": "TEL 025-765-2040 (Panorama LLC)",
+    "places": "<span class=\"place-unit\"><ruby>新潟県<rt>Niigata</rt></ruby></span><span class=\"place-unit\"><ruby>中魚沼郡<rt>Nakauonuma-gun</rt></ruby></span><span class=\"place-unit\"><ruby>津南町<rt>Tsunan</rt></ruby></span><span class=\"place-unit\"><ruby>大字上郷上田甲1745-1<rt>Kamigo Kamida Ko 1745-1</rt></ruby></span>",
+    "rentacarEyebrow": "Niigata Airport + rental car",
+    "rentacarLink": "Book a rental car at Niigata Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Niigata prefecture drives"
+  },
+  "footer": {
+    "copyright": "© Takayanagi Garuru Ski Area — mock LP",
+    "location": "949-8122 · Kamigo Kamida Ko 1745-1, Tsunan, Nakauonuma-gun, Niigata"
+  }
+}

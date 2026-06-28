@@ -34,19 +34,12 @@
     return out;
   }
 
-  function mapSet(mapsIndex) {
-    return new Set((mapsIndex?.resortMaps || []).map((m) => m.id));
-  }
-
   function apply(messages, registry, mapsIndex, locale) {
     const resortCount = registry.resorts.length;
-    const mapCount = mapsIndex?.resortMaps?.length ?? resortCount;
     const areaMapCount = mapsIndex?.areaMaps?.length ?? 0;
     const counts = {
       count: resortCount,
-      mapCount: locale === "en" ? String(mapCount) : `${mapCount}件`,
     };
-    const hasResortMap = mapSet(mapsIndex);
 
     document.documentElement.lang = locale;
     document.querySelectorAll("[data-i18n]").forEach((el) => {
@@ -79,22 +72,16 @@
       rows.forEach((r) => {
         const tr = document.createElement("tr");
         const lpHref = `${r.slug}/index.html${locale === "en" ? "?lang=en" : ""}`;
-        const mapHref = `map.html?resort=${r.id}${locale === "en" ? "&lang=en" : ""}`;
         const idCell =
           r.japowResortId != null
             ? `<td class="hub-id">${r.japowResortId}</td>`
             : `<td class="hub-id hub-id--empty">—</td>`;
-        const mapCell =
-          hasResortMap.size === 0 || hasResortMap.has(r.id)
-            ? `<a class="hub-link" href="${mapHref}">${get(messages, "table.map")}</a>`
-            : `<span class="hub-empty">—</span>`;
         tr.innerHTML = `
           ${idCell}
           <td><strong>${r.name[locale]}</strong></td>
           <td>${r.region[locale]}</td>
           <td>${r.strategy[locale]}</td>
           <td><a class="hub-link" href="${lpHref}">${get(messages, "table.preview")}</a></td>
-          <td>${mapCell}</td>
         `;
         tbody.appendChild(tr);
       });

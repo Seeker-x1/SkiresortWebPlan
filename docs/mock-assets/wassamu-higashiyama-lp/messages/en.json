@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "title": "Wassamu Higashiyama Ski Area",
+    "description": "Uncrowded powder slopes meet retro local diners—discover the ultimate 2000-yen hidden gem in Hokkaido."
+  },
+  "logo": "Wassamu Higashiyama",
+  "hero": {
+    "eyebrow": "Hokkaido",
+    "title": "Wassamu Higashiyama<br />Ski Area",
+    "tagline": "Uncrowded powder slopes meet retro local diners—discover the ultimate 2000-yen hidden gem in Hokkaido.",
+    "badgePrice": "Adult day ¥2,000",
+    "badgeNight": "Night skiing Tue–Sat until 21:00",
+    "ctaTrip": "Rail day-trip plan",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's status",
+    "chipOpen": "Open · Lifts running",
+    "chipPowder": "Powder · Good",
+    "chipPark": "Snow park · Open",
+    "lineNote": "LINE integration · Updated Feb 7, 9:10"
+  },
+  "transit": {
+    "eyebrow": "Transit Skiing",
+    "title": "Five minutes<br />from Midori Station.",
+    "lead": "About 0.5 km from JR Senmo Line Midori Station. For rail travelers without a car, a rare station-adjacent ski area nationwide. Walk to adjacent day-use bath Midori-no-Yu.",
+    "specs": [
+      "Single chairlift",
+      "2 courses",
+      "Midori-no-Yu adjacent"
+    ],
+    "ctaAccess": "Access & walk from station",
+    "ctaPricing": "Pricing (3-hour ticket ¥1,200)",
+    "imgAlt": "Long turns on an empty run—ideal practice at Midori Ski Area"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Snow & operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "5 min from Midori Station"
+    },
+    "slopes": {
+      "label": "Slopes",
+      "title": "Courses & snow park"
+    },
+    "nearby": {
+      "label": "Nearby",
+      "title": "Midori-no-Yu · NAP"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Midori Ski",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "Slopes beside the tracks",
+      "lead": "Ski terrain beyond the crossing—a nationally rare scene where the location itself is the photo op. Empty runs perfect for long-turn fundamentals.",
+      "cta": "View the slopes",
+      "imgAlt": "Slopes along the railway—a rare location beyond the crossing"
+    },
+    "secondary": {
+      "title": "¥2,000 powder practice hill",
+      "lead": "Uncrowded local slopes with Honshu-beating snow quality for ¥2,000/day. Japow seekers get both value and a training environment.",
+      "cta": "Tickets & passbooks"
+    }
+  },
+  "nap": {
+    "eyebrow": "Local",
+    "title": "NAP sandwiches,<br />snow park nights.",
+    "lead": "Local sandwich shop NAP at the rest hut—stay value beyond skiing. Revived snow park from Feb 2026 plus Tue–Sat night skiing until 21:00—a community hub for young riders from outside town.",
+    "cta": "Night skiing & events",
+    "imgAlt": "NAP at the rest hut—local sandwiches and hot drinks"
+  },
+  "recovery": {
+    "eyebrow": "Recovery",
+    "title": "After skiing,<br />Midori-no-Yu.",
+    "lead": "Day-use bath Midori-no-Yu adjacent to the ski area. Train · Powder · Onsen—the core of an package completable on foot.",
+    "noticeTitle": "Traveling light:",
+    "noticeBody": "No on-site rentals. Plans to guide hands-free options via Yamato Ski Ta-Q-Bin and gear delivery partnerships with nearby lodging.",
+    "cta": "Hands-free plan info",
+    "imgAlt": "Adjacent Midori-no-Yu—day-use onsen after skiing"
+  },
+  "trip": {
+    "eyebrow": "Day Trip",
+    "title": "A full day<br />by rail alone.",
+    "lead": "Model course for car-free travelers and youth—a zero-emission day snow trip.",
+    "badge": "ZERO EMISSION SKI TRIP",
+    "steps": {
+      "01": {
+        "title": "JR Midori Station",
+        "body": "Arrive on Senmo Line. Five-minute walk to slopes"
+      },
+      "02": {
+        "title": "Powder & park",
+        "body": "Practice on empty runs. Snow park experience"
+      },
+      "03": {
+        "title": "NAP",
+        "body": "Local sandwich lunch at the rest hut"
+      },
+      "04": {
+        "title": "Midori-no-Yu",
+        "body": "Recover at adjacent onsen"
+      },
+      "05": {
+        "title": "Return by JR",
+        "body": "Walk back to station. No rental car needed"
+      }
+    }
+  },
+  "guides": {
+    "transit": {
+      "title": "Complete Transit Skiing guide",
+      "body": "Five minutes from Midori Station, Midori-no-Yu next door. While Unabetsu and Abashiri competitors assume cars, rebrand this rail-advantaged location globally as Train, Powder, Onsen."
+    },
+    "night": {
+      "title": "Night skiing & snow park",
+      "body": "Night skiing Tue–Sat until 21:00. Pair revived Feb 2026 snow park with NAP—photo sessions and freestyle events to draw visitors from outside town."
+    },
+    "handfree": {
+      "title": "How to visit hands-free",
+      "body": "Offset no on-site rental with Ski Ta-Q-Bin and lodging delivery partnerships. Web pages to remove the top barrier for new guests: \"you must bring your own gear.\"",
+      "hashtags": [
+        "#TransitSkiing",
+        "#JapowLocal",
+        "#RailwaySkiArea"
+      ]
+    }
+  },
+  "access": {
+    "postal": "099-4525, Japan",
+    "line": "Midori 51-1, Kiyosato, Shari-gun, Hokkaido",
+    "note": "About a 5-minute walk (~0.5 km) from JR Senmo Line Midori Station · adjacent Midori-no-Yu",
+    "phone": "TEL 0152-27-5512 (Kiyosato Town)",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>斜里郡<rt>Shari-gun</rt></ruby></span><span class=\"place-unit\"><ruby>清里町<rt>Kiyosato</rt></ruby></span><span class=\"place-unit\"><ruby>緑町51-1<rt>Midori 51-1</rt></ruby></span>",
+    "rentacarEyebrow": "Memanbetsu Airport + rental car",
+    "rentacarLink": "Book a rental car at Memanbetsu Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+  },
+  "footer": {
+    "copyright": "© Wassamu Higashiyama Ski Area — mock LP",
+    "location": "099-4525 · Midori 51-1, Kiyosato, Shari-gun, Hokkaido"
+  }
+}

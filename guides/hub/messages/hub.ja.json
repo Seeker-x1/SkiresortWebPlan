@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "スキー場ガイド — {count}施設 · ゲレンデマップ {mapCount}",
-    "description": "スキー場ガイドとゲレンデマップの索引。施設情報・アクセス・リフトコース図を一覧から開けます。"
+    "title": "スキー場ガイド — {count}施設",
+    "description": "スキー場ガイドの索引。施設情報・アクセスを一覧から開けます。"
   },
   "hero": {
     "eyebrow": "JAPOWSERCH",
-    "title": "スキー場ガイド<br />{count}施設 · マップ {mapCount}",
-    "lead": "ガイドページとゲレンデマップを一覧から開けます。"
+    "title": "スキー場ガイド<br />{count}施設",
+    "lead": "各スキー場のガイドへ。"
   },
   "sections": {
     "guides": "ガイド一覧",
@@ -19,7 +19,6 @@
     "region": "地域",
     "strategy": "特徴",
     "preview": "ガイド",
-    "map": "ゲレンデ",
     "areaMap": "周辺マップ"
   },
   "back": "ガイド一覧に戻る",

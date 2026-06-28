@@ -1,0 +1,10 @@
+resortId: akagiyama
+schemaVersion: "2026-06-28"
+name:
+  ja: 赤城山スキー場
+  en: Mt. Akagi Ski Area
+japowResortId: 216
+strategy:
+  ja: 「日本一小さなスキー場」で安心の雪遊びデビュー。赤城神社参拝とワカサギ釣りを巡る、冬の家族満足度120%のマイクロツーリズム。
+  en: Safe and fun snow debuts at "Japan's smallest ski resort." Enjoy a winter family trip combining ice fishing and Akagi Shrine visits.
+copyFrom: gokazan-lp

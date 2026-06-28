@@ -3,7 +3,7 @@
  * Validates LP mock HTML shell: i18n wiring, resort id, map links.
  * Usage: node docs/mock-assets/scripts/validate-mock-lp-shell.mjs
  */
-import { readFileSync, readdirSync, statSync } from "fs";
+import { readFileSync, readdirSync, statSync, existsSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -44,7 +44,11 @@ function checkHtml(filePath, expectedId, errors, label) {
   } else if (resortAttr[1] !== expectedId) {
     errors.push(`${label}: data-mock-resort="${resortAttr[1]}" expected "${expectedId}"`);
   }
-  if (filePath.endsWith("index.html") && !html.includes(`map.html?resort=${expectedId}`)) {
+  if (
+    filePath.endsWith("index.html") &&
+    existsSync(join(root, "data", "maps", `${expectedId}.json`)) &&
+    !html.includes(`map.html?resort=${expectedId}`)
+  ) {
     errors.push(`${label}: missing map.html?resort=${expectedId} link`);
   }
 }

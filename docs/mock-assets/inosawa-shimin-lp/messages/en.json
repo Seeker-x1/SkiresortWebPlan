@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Inosawa Municipal Ski Area",
+    "description": "市民スキー場・地元密着"
+  },
+  "logo": "Inosawa Municipal",
+  "nav": {
+    "family": "Family",
+    "spa": "Onsen"
+  },
+  "hero": {
+    "eyebrow": "Hokkaido",
+    "title": "Inosawa Municipal<br />Ski Area",
+    "tagline": "市民スキー場・地元密着",
+    "badgeLocal": "Adult day ticket ¥1,000",
+    "badgeVisitor": "Snow & Spa Pass",
+    "badgeSled": "Night skiing until 20:30",
+    "ctaPass": "Passes & pricing",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Town-run facility updates",
+    "updatedAt": "Updated Dec 25, 9:00",
+    "lift": {
+      "label": "Lift",
+      "value": "Operating",
+      "note": "1 lift · virtually no wait"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "100% beginner",
+      "note": "50 m vertical · 2 courses"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Until 20:30",
+      "note": "9:00–20:30 · night from 16:00"
+    },
+    "yotei": {
+      "label": "View",
+      "value": "Tokachi peaks",
+      "note": "Panorama on clear days"
+    }
+  },
+  "transit": {
+    "eyebrow": "Station Walk",
+    "title": "Walk from the station,<br />straight into snow.",
+    "lead": "About 13–15 minutes on foot from JR Furano Line Kamifurano Station—a rare Hokkaido hill you can reach by public transit alone. Skip Furano mega-resort ropeway queues and enjoy feather-light powder almost as soon as you arrive.",
+    "specs": [
+      "~15 min walk from Kamifurano Station",
+      "~400 m from downtown",
+      "60 free parking spaces"
+    ],
+    "ctaPass": "View passes",
+    "ctaLive": "Today's operations",
+    "imgAlt": "Snowy path from JR Kamifurano Station toward Hinode Park—a walkable town-run hill"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Lift · night skiing · snow"
+    },
+    "pass": {
+      "label": "Pass",
+      "title": "Snow & Spa Pass"
+    },
+    "family": {
+      "label": "Family",
+      "title": "Snow slides · first snow"
+    },
+    "spa": {
+      "label": "Onsen",
+      "title": "Flanui Onsen · Tokachi peaks"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Walking distance from the station"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Hinode",
+    "title": "What makes it different",
+    "primary": {
+      "title": "Zero wait × Tokachi views",
+      "lead": "One lift, 100% beginner terrain, 50 m vertical—a safe snow playground without steep-slope fear. A hidden gem for travelers avoiding Furano crowds and long lift lines, with the Tokachi peaks as your backdrop.",
+      "cta": "Courses & views",
+      "imgAlt": "Inosawa Municipal Ski Area with the Tokachi mountain range—compact beginner hill"
+    },
+    "secondary": {
+      "title": "Feather-light snow & snow slides",
+      "lead": "Aspen-light powder and popular snow slides—ideal for first-timers who want scenery and safe snow play more than long downhill runs.",
+      "cta": "Family zone guide"
+    }
+  },
+  "pass": {
+    "eyebrow": "Visitor Pass",
+    "title": "Snow & Spa Pass,<br />from ¥5,000.",
+    "lead": "Keep the local adult day ticket at ¥1,000 while offering overseas visitors a bundled pass—rental partner, day lift ticket, and Flanui Onsen entry—for higher per-guest revenue (LP proposal).",
+    "localPrice": "Adult day ticket ¥1,000",
+    "visitorPrice": "Snow & Spa Pass from ¥5,000",
+    "specs": [
+      "Night ticket adult ¥700",
+      "11-ride book adult ¥500",
+      "Hands-free rental bundle (proposed)"
+    ],
+    "noticeTitle": "Guest infrastructure (proposed):",
+    "noticeBody": "Cashless payments, multilingual QR guides, and partner rental hand-off packages—short-term fixes to welcome luggage-free FIT travelers (report ch. 7).",
+    "cta": "Pass details",
+    "imgAlt": "Snow play plus onsen bundle—visitor pass for Kamifurano loops"
+  },
+  "rental": {
+    "eyebrow": "Hands-free Package",
+    "title": "Arrive empty-handed,<br />pick up on site.",
+    "lead": "No on-hill rental today—partner with Furano-area shops for pre-paid online booking and lodge or locker pickup (LP proposal).",
+    "whisper": "External partners carry inventory risk so the public facility can still welcome overseas guests.",
+    "cta": "Hands-free guide",
+    "imgAlt": "Rental pickup at the lodge—luggage-free snow play"
+  },
+  "yukinko": {
+    "eyebrow": "Night Skiing",
+    "title": "Open until 20:30,<br />night skiing included.",
+    "lead": "Open 9:00–20:30 (night from 16:00)—late arrivals can still enjoy lit snow before heading to downtown Kamifurano for dinner.",
+    "whisper": "Check the Kamifurano tourism association and Kamifulife portal for official hours.",
+    "cta": "Night hours",
+    "imgAlt": "Night-lit ski hill with Tokachi peaks silhouetted"
+  },
+  "family": {
+    "eyebrow": "First Snow",
+    "title": "First snow,<br />without the fear.",
+    "lead": "100% beginner terrain and just 50 m vertical—a safe playground for Asia-Pacific first-snow travelers who want photos, sledding, and gentle slides rather than steep alpine runs.",
+    "specs": [
+      "2 beginner courses",
+      "Snow slides",
+      "Free XC ski loan (park)"
+    ],
+    "noticeTitle": "Snow play:",
+    "noticeBody": "Large snow slides and a cross-country loop—strong as a snow park even for guests who never ride the lift (review analysis).",
+    "cta": "Family · first snow",
+    "imgAlt": "Family on snow slides—gentle beginner slope"
+  },
+  "spa": {
+    "eyebrow": "Snow & Spa",
+    "title": "After skiing,<br />onsen within walking distance.",
+    "lead": "Frontier Flanui Onsen beside Hinode Park—carbonated spring water and local food. Pair snow play with recovery for FIT guests who rely on public transit.",
+    "whisper": "Town buses also reach Tokachi Onsen Village (Kamihoro-so, Ryogoku-kaku, and more).",
+    "cta": "Onsen routes",
+    "imgAlt": "Flanui Onsen spring bath—recovery after snow play"
+  },
+  "workation": {
+    "eyebrow": "Night Ski & Dine",
+    "title": "Snow from 17:00,<br />then dinner in town.",
+    "lead": "Enjoy the 17:00–19:00 night window, then walk to downtown izakaya and buta-sagari pork spots—ticket-stub drink perks tie the hill to local dining (LP proposal).",
+    "badge": "NIGHT SKI · LOCAL DINE",
+    "steps": {
+      "01": {
+        "title": "JR Kamifurano Station",
+        "body": "Furano Line · links to Asahikawa and Furano"
+      },
+      "02": {
+        "title": "~15 min walk",
+        "body": "Snowy footpath to Hinode Park ski hill"
+      },
+      "03": {
+        "title": "Night skiing",
+        "body": "Night window from 16:00 · virtually no wait"
+      },
+      "04": {
+        "title": "Flanui Onsen",
+        "body": "Walkable 100% spring onsen for recovery"
+      },
+      "05": {
+        "title": "Dinner downtown",
+        "body": "Buta-sagari and local Kamifurano cuisine"
+      }
+    }
+  },
+  "guides": {
+    "local": {
+      "title": "Overflow from Furano mega-resorts",
+      "body": "A blue-ocean counterpoint to Furano crowding—quiet slopes, zero wait, and village proximity for tired mega-resort guests and first-snow travelers (report ch. 3)."
+    },
+    "schools": {
+      "title": "Eco snow park story",
+      "body": "One lift, park terrain, walkable from JR—a low-impact “zero-emission snow park” narrative for sustainability-minded travelers (report ch. 6)."
+    },
+    "summer": {
+      "title": "Tokachi onsen village loop",
+      "body": "Snow play in the morning, town bus to Tokachi Onsen Village in the afternoon—Kamihoro-so, Ryogoku-kaku, and more for a 1–2 night model (report ch. 5).",
+      "hashtags": [
+        "#KamifuranoSnow",
+        "#FirstSnowJapan",
+        "#HiddenGemHokkaido"
+      ]
+    }
+  },
+  "access": {
+    "postal": "〒071-0521",
+    "line": "Hinode Park, Kamifurano, Hokkaido (town ski area)",
+    "note": "~13–15 min walk from JR Kamifurano · 60 free parking spaces",
+    "phone": "Managed by Kamifurano Shinko Kosha · see tourism association for contacts",
+    "places": "<span class=\"place-unit\"><ruby>Hokkaido<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>Kamifurano<rt>Kamifurano</rt></ruby></span><span class=\"place-unit\"><ruby>Hinode Park<rt>Hinode Park</rt></ruby></span>",
+    "rentacarEyebrow": "Memanbetsu Airport + rental car",
+    "rentacarLink": "Book a rental car at Memanbetsu Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+  },
+  "footer": {
+    "copyright": "© Inosawa Municipal Ski Area — mock LP",
+    "location": "〒071-0521 Kamifurano, Hokkaido"
+  }
+}

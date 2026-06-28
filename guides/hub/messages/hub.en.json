@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "Ski Resort Guides — {count} resorts · {mapCount} trail maps",
-    "description": "Index of resort guides and illustrated trail maps. Open access info and lift maps from one list."
+    "title": "Ski Resort Guides — {count} resorts",
+    "description": "Index of resort guides. Open access info and highlights from one list."
   },
   "hero": {
     "eyebrow": "JAPOWSERCH",
-    "title": "Ski Resort Guides<br />{count} resorts · {mapCount} maps",
-    "lead": "Open each guide and resort map from this index."
+    "title": "Ski Resort Guides<br />{count} resorts",
+    "lead": "Open each resort guide from this index."
   },
   "sections": {
     "guides": "Guides",
@@ -19,7 +19,6 @@
     "region": "Region",
     "strategy": "Highlights",
     "preview": "Guide",
-    "map": "Trail map",
     "areaMap": "Area map"
   },
   "back": "Back to guides",

@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<html lang="ja" data-mock-resort="rubeshibe-happodai">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>七戸町営スキー場</title>
+  <meta name="description" content="七戸町営スキー場" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="#" class="logo" data-i18n="logo">七戸町営スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
+
+          <li><a href="#highlights" data-i18n="nav.highlights">魅力</a></li>
+          <li><a href="#paths" data-i18n="nav.paths">導線</a></li>
+          <li><a href="#onsen" data-i18n="nav.onsen">温泉</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-powder-champion.png" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">青森県 · 七戸町</p>
+        <h1 class="hero-title" data-i18n-html="hero.title">七戸町営<br />スキー場</h1>
+        <p class="hero-stat-label" data-i18n="hero.statLabel">積雪（山麓）</p>
+        <p class="hero-stat-value font-mono"><span data-i18n="hero.statValue">128</span><span style="font-size:0.35em; margin-left:0.1em" data-i18n="hero.statUnit">cm</span></p>
+        <div class="hero-cta">
+          <a href="#" class="btn btn-primary" data-i18n="hero.ctaToday">今日の運営</a>
+          <p class="freshness"><span data-i18n="common.updated">更新</span> <time datetime="2026-02-07T08:30" data-i18n="hero.updatedAt">2/7 8:30</time></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="transit-heading">
+      <div class="inner">
+        <div class="transit-grid">
+          <div class="transit-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-transit-shinkansen.png"
+                data-i18n-attr="alt:transit.imgAlt"
+                alt="東北新幹線の車内から雪景色を望む旅のイメージ"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="transit-card">
+            <p class="eyebrow" data-i18n="transit.eyebrow">Transit</p>
+            <h2 id="transit-heading" class="heading-lg" data-i18n-html="transit.title">新幹線で、<br />雪山へ。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:28rem" data-i18n="transit.lead">
+              東京から約3時間。七戸十和田駅を降りてタクシー約10分——移動の摩擦を最小化した、トランジット・リゾート体験。
+            </p>
+            <div class="transit-actions">
+              <a href="#" class="btn btn-primary" data-i18n="transit.ctaToday">今日の運営</a>
+              <a href="#access" class="btn btn-ghost" data-i18n="nav.access">アクセス</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="paths" class="section border-top" aria-labelledby="paths-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.explore">Explore</p>
+        <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
+        <div class="path-grid">
+          <a href="#" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.today.label">今日</span>
+            <span class="path-tile__title" data-i18n="paths.today.title">今日の運営</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#access" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.access.label">アクセス</span>
+            <span class="path-tile__title" data-i18n="paths.access.title">アクセス</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.map.label">ゲレンデ</span>
+            <span class="path-tile__title" data-i18n="paths.map.title">ゲレンデマップ</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.pricing.label">料金</span>
+            <span class="path-tile__title" data-i18n="paths.pricing.title">料金・レンタル</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section" aria-labelledby="highlights-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="highlights.eyebrow">七戸の魅力</p>
+        <h2 id="highlights-heading" class="heading-lg" data-i18n="highlights.title">ここが違う</h2>
+
+        <div class="highlight-duet">
+          <article class="highlight-primary">
+            <div class="frame">
+              <img
+                src="lp-mock-transit-shinkansen.png"
+                data-i18n-attr="alt:highlights.primary.imgAlt"
+                alt="新幹線の車内から雪景色を望む旅のイメージ"
+                width="1600"
+                height="1100"
+              />
+            </div>
+            <div class="highlight-primary-body">
+              <h3 data-i18n="highlights.primary.title">新幹線駅から約10分</h3>
+              <p class="lead" style="margin-top:1rem" data-i18n="highlights.primary.lead">
+                東北新幹線「七戸十和田駅」からタクシーで約10分。旅の途中でも立ち寄りやすい、町営スキー場です。日券2,500円なら数時間のショートステイも十分に元が取れます。
+              </p>
+              <a href="#" class="btn btn-primary" style="margin-top:2rem" data-i18n="highlights.primary.cta">アクセスを見る</a>
+            </div>
+          </article>
+
+          <article class="highlight-secondary">
+            <h3 data-i18n="highlights.secondary.title">源泉掛け流し天国へ</h3>
+            <p class="lead-whisper" style="margin-top:1rem" data-i18n="highlights.secondary.lead">
+              滑ったあと、48度の源泉がそのまま浴槽に注がれる東八甲田温泉。大人300円台から——地元の方と同じ銭湯で、ツルツル湯を味わえます。
+            </p>
+            <a href="#" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="highlights.secondary.cta">温泉特集を読む</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="onsen" class="section border-top" aria-labelledby="onsen-heading">
+      <div class="inner">
+        <div class="onsen-grid">
+          <div class="onsen-copy">
+            <p class="eyebrow" data-i18n="onsen.eyebrow">付近の温泉</p>
+            <h2 id="onsen-heading" class="heading-lg" data-i18n-html="onsen.title">源泉掛け流しが<br />日常にあるエリア</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="onsen.lead">
+              七戸周辺は、温泉好きからも「掛け流し天国」と評されるエリア。モール泉やアルカリ性単純温泉——琥珀色の湯が浴槽からシャワーまで惜しみなく流れる施設もあります。
+            </p>
+            <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="onsen.whisper">
+              入浴料300円台から、地元の方と一緒に2〜3軒はしごするのも、滑走後の定番です。
+            </p>
+            <a href="#" class="btn btn-primary" style="margin-top:2rem" data-i18n="onsen.cta">七戸周辺の温泉特集</a>
+          </div>
+          <div class="onsen-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-onsen-teaser.png"
+                data-i18n-attr="alt:onsen.imgAlt"
+                alt="森に囲まれた露天風呂のイメージ"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.guidesEyebrow">特集</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="common.guidesTitle">特集ページ</h2>
+
+        <ul class="guides-list">
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="powder">
+              <span data-i18n="guides.powder.title">駅から狙うパウダー</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-powder" hidden>
+              <p class="lead" data-i18n="guides.powder.body">
+                チャンピオンコース最大35度・非圧雪。パウダーパニックのない環境で、フレッシュな深雪を独占。八甲田運休時のバックアップゲレンデとしても機能します。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="true" data-guide="shinkansen">
+              <span data-i18n="guides.shinkansen.title">新幹線で行く</span>
+              <span class="guide-icon" aria-hidden="true">−</span>
+            </button>
+            <div class="guide-panel is-open" id="panel-shinkansen">
+              <p class="lead" data-i18n="guides.shinkansen.body">
+                東京約3時間 → 駅 → タクシー10分。JR EAST PASS を使った本州〜北海道縦断ルートの戦略的経由地。午前東京、午後ゲレンデ、夕方温泉——極端なコントラストの一日を設計できます。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="beginners">
+              <span data-i18n="guides.beginners.title">初心者・ファミリー向け</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-beginners" hidden>
+              <p class="lead" data-i18n="guides.beginners.body">
+                最大斜度10度の広大な圧雪ワイドバーン。木曜19時からの無料ナイター講習、町営ヒュッテの素朴なゲレンデ食——ローカルオーセンティシティを味わえる初心者向けガイド。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="access" class="access-section border-top" aria-labelledby="access-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.accessEyebrow">Access</p>
+        <h2 id="access-heading" class="heading-lg" data-i18n="common.location">所在地</h2>
+        <div class="access-grid">
+          <address class="access-address">
+            <span class="access-postal" data-i18n="access.postal">〒039-2568</span>
+            <span class="access-line" data-i18n="access.line">青森県上北郡七戸町字左組106-5</span>
+            <p class="access-places" data-i18n-html="access.places" hidden></p>
+            <p class="access-note" data-i18n="access.note">東北新幹線「七戸十和田駅」からタクシー約10分（目安）</p>
+            <p class="access-phone" data-i18n="access.phone">TEL 0176-62-5612</p>
+          </address>
+          <div class="access-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%83%E6%88%B8%E7%94%BA%E5%96%B6%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E9%9D%92%E6%A3%AE%E7%9C%8C%E4%B8%8A%E5%8C%97%E9%83%A1%E4%B8%83%E6%88%B8%E7%94%BA%E5%AD%97%E5%B7%A6%E7%B5%84106-5"
+              class="btn btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="common.googleMap">Google Mapで開く</span>
+            </a>
+            <a href="tel:0176625612" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">新幹線＋レンタカー</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">七戸十和田駅でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">十和田湖・八甲田・七戸周遊向け</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 七戸町営スキー場 — LP案モック</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒039-2568 青森県上北郡七戸町字左組106-5</span> ·
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%83%E6%88%B8%E7%94%BA%E5%96%B6%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E9%9D%92%E6%A3%AE%E7%9C%8C%E4%B8%8A%E5%8C%97%E9%83%A1%E4%B8%83%E6%88%B8%E7%94%BA%E5%AD%97%E5%B7%A6%E7%B5%84106-5" target="_blank" rel="noopener noreferrer" data-i18n="common.footerMap">Google Map</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
+  <script src="../_shared/mock-i18n.js"></script>
+  <script>
+    document.querySelectorAll(".guide-trigger").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.guide;
+        const panel = document.getElementById("panel-" + id);
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".guide-trigger").forEach((b) => {
+          b.setAttribute("aria-expanded", "false");
+          b.querySelector(".guide-icon").textContent = "+";
+        });
+        document.querySelectorAll(".guide-panel").forEach((p) => {
+          p.classList.remove("is-open");
+          p.hidden = true;
+        });
+
+        if (!isOpen) {
+          btn.setAttribute("aria-expanded", "true");
+          btn.querySelector(".guide-icon").textContent = "−";
+          panel.classList.add("is-open");
+          panel.hidden = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -860,6 +860,36 @@ const RESORT_COPY = {
       rentacarHint: "For Naruko Onsen and Osaki drives",
     },
   },
+  "nishiwaigawa-yuda": {
+    rentacar: "morioka_station",
+    ja: {
+      rentacarEyebrow: "北上線＋レンタカー",
+      rentacarLink: "盛岡駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "湯田温泉峡·夏油高原周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Kitakami Line + rental car",
+      rentacarLink: "Book a rental car at Morioka Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Yuda Onsenkyo and regional loops",
+    },
+  },
+  "nakafuranokita-hoshi": {
+    rentacar: "asahikawa_airport",
+    ja: {
+      rentacarEyebrow: "旭川空港＋レンタカー",
+      rentacarLink: "旭川空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "富良野·美瑛·層雲峡周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Asahikawa Airport + rental car",
+      rentacarLink: "Book a rental car at Asahikawa Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Furano, Biei, and Sounkyo drives",
+    },
+  },
   "hanakasa-kogen": {
     rentacar: "shinjo_station",
     ja: {
@@ -905,6 +935,456 @@ const RESORT_COPY = {
       rentacarHint: "For Sugadaira and Ueda loops",
     },
   },
+  "shibetsu-kaneyama": {
+    rentacar: "memanbetsu_airport",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "akagiyama": {
+    rentacar: "takasaki_station",
+    ja: {
+          "rentacarEyebrow": "高崎駅＋レンタカー",
+          "rentacarLink": "高崎駅でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "赤城山・前橋周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Takasaki Station + rental car",
+          "rentacarLink": "Book a rental car at Takasaki Station",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Mt. Akagi and Maebashi loops"
+    },
+  },
+  "wassamu-higashiyama": {
+    rentacar: "asahikawa_airport",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "oketo-minamigaoka": {
+    rentacar: "memanbetsu_airport",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "socchidake": {
+    rentacar: "asahikawa_airport",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "taikozan": {
+    rentacar: "asahikawa_airport",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "taisei": {
+    rentacar: "asahikawa_airport",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "shinbo-family": {
+    rentacar: "komatsu_airport_kanazawa",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "fuyutorigoe": {
+    rentacar: "niigata_airport",
+    ja: {
+          "rentacarEyebrow": "新潟空港＋レンタカー",
+          "rentacarLink": "新潟空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "新潟県内周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Niigata Airport + rental car",
+          "rentacarLink": "Book a rental car at Niigata Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Niigata prefecture drives"
+    },
+  },
+  "hakugindai": {
+    rentacar: "asahikawa_airport",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "takayanagi-garuru": {
+    rentacar: "niigata_airport",
+    ja: {
+          "rentacarEyebrow": "新潟空港＋レンタカー",
+          "rentacarLink": "新潟空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "新潟県内周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Niigata Airport + rental car",
+          "rentacarLink": "Book a rental car at Niigata Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Niigata prefecture drives"
+    },
+  },
+  "kunimidaira": {
+    rentacar: "morioka_station",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "mikawa-onsen": {
+    rentacar: "niigata_airport",
+    ja: {
+          "rentacarEyebrow": "新潟空港＋レンタカー",
+          "rentacarLink": "新潟空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "新潟県内周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Niigata Airport + rental car",
+          "rentacarLink": "Book a rental car at Niigata Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Niigata prefecture drives"
+    },
+  },
+  "bibai-kokusetsu": {
+    rentacar: "chitose_international_airport",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "inosawa-shimin": {
+    rentacar: "asahikawa_airport",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "yakushiyama": {
+    rentacar: "shinjo_station",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "tenkamori": {
+    rentacar: "shinjo_station",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "inagawa": {
+    rentacar: "shinjo_station",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "gosannen": {
+    rentacar: "shinjo_station",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "soyujima-229": {
+    rentacar: "shichinohetowada_station",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "takinoue-sakuragaoka": {
+    rentacar: "memanbetsu_airport",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "shimokawa": {
+    rentacar: "asahikawa_airport",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "根室・標津・網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    },
+  },
+  "shizenkoen-swiss": {
+    rentacar: "kansai_international_airport",
+    ja: {
+          "rentacarEyebrow": "関西空港＋レンタカー",
+          "rentacarLink": "関西空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "京都·丹後周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Kansai Airport + rental car",
+          "rentacarLink": "Book a rental car at Kansai Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Kyoto and Tango drives"
+    },
+  },
+  "muroran-danpara": {
+    rentacar: "chitose_international_airport",
+    ja: {
+          "rentacarEyebrow": "新千歳空港＋レンタカー",
+          "rentacarLink": "新千歳空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "道央·道南周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "New Chitose Airport + rental car",
+          "rentacarLink": "Book a rental car at New Chitose Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For central and southern Hokkaido drives"
+    },
+  },
+  "akenogaoka": {
+    rentacar: "chitose_international_airport",
+    ja: {
+          "rentacarEyebrow": "新千歳空港＋レンタカー",
+          "rentacarLink": "新千歳空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "道央·道南周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "New Chitose Airport + rental car",
+          "rentacarLink": "Book a rental car at New Chitose Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For central and southern Hokkaido drives"
+    },
+  },
+  "rubeshibe-happodai": {
+    rentacar: "memanbetsu_airport",
+    ja: {
+          "rentacarEyebrow": "女満別空港＋レンタカー",
+          "rentacarLink": "女満別空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "オホーツク·網走周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Memanbetsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Memanbetsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Okhotsk and Abashiri drives"
+    },
+  },
+  "usazawa": {
+    rentacar: "morioka_station",
+    ja: {
+          "rentacarEyebrow": "盛岡駅＋レンタカー",
+          "rentacarLink": "盛岡駅でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "岩手·秋田周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Morioka Station + rental car",
+          "rentacarLink": "Book a rental car at Morioka Station",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Iwate and Akita drives"
+    },
+  },
+  "ohotakedake": {
+    rentacar: "shichinohetowada_station",
+    ja: {
+          "rentacarEyebrow": "七戸十和田駅＋レンタカー",
+          "rentacarLink": "七戸十和田駅でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "青森南部·十和田周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Shichinohe-Towada Station + rental car",
+          "rentacarLink": "Book a rental car at Shichinohe-Towada Station",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For southern Aomori and Towada drives"
+    },
+  },
+  "akiyama": {
+    rentacar: "shinjo_station",
+    ja: {
+          "rentacarEyebrow": "新庄駅＋レンタカー",
+          "rentacarLink": "新庄駅でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "山形·最上周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Shinjo Station + rental car",
+          "rentacarLink": "Book a rental car at Shinjo Station",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Yamagata and Mogami drives"
+    },
+  },
+  "kujuo": {
+    rentacar: "komatsu_airport_kanazawa",
+    ja: {
+          "rentacarEyebrow": "小松空港＋レンタカー",
+          "rentacarLink": "小松空港でレンタカー予約",
+          "rentacarNote": "スカイチケット（外部サイト）",
+          "rentacarHint": "北陸·福井周遊向け"
+    },
+    en: {
+          "rentacarEyebrow": "Komatsu Airport + rental car",
+          "rentacarLink": "Book a rental car at Komatsu Airport",
+          "rentacarNote": "Skyticket (external site)",
+          "rentacarHint": "For Hokuriku and Fukui drives"
+    },
+  },
 };
 
 const NEW_DESTINATIONS = {
@@ -931,6 +1411,10 @@ const NEW_DESTINATIONS = {
   morioka_station: {
     url: "https://skyticket.jp/rentacar/tohoku/iwate/morioka_station/",
     label: { ja: "盛岡駅", en: "Morioka Station" },
+  takasaki_station: {
+    url: "https://skyticket.jp/rentacar/kanto/gunma/takasaki_station/",
+    label: { ja: "高崎駅", en: "Takasaki Station" },
+  },
   },
     hakodate_onuma_matsumae: {
       url: "https://skyticket.jp/rentacar/hokkaido/hakodate_onuma_matsumae/",

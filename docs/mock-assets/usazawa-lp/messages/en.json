@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "Usazawa Ski Area",
+    "description": "八戸圏ファミリー・リアルタイム営業確認"
+  },
+  "logo": "Usazawa",
+  "nav": {
+    "family": "Family"
+  },
+  "hero": {
+    "eyebrow": "Aomori",
+    "title": "Usazawa<br />Ski Area",
+    "tagline": "八戸圏ファミリー・リアルタイム営業確認",
+    "badgeLocal": "Adult day ticket ¥2,000",
+    "badgeVisitor": "Junior high & under free",
+    "badgeSled": "Night skiing until 21:00",
+    "ctaPass": "Tickets & pricing",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Transparent info from the designated manager",
+    "updatedAt": "Updated Dec 25, 9:00",
+    "lift": {
+      "label": "Lift",
+      "value": "Operating",
+      "note": "1 lift · virtually no wait"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "3 courses",
+      "note": "Up to 800 m · max 21°"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Until 21:00",
+      "note": "Weekdays from 12:00 · weekends from 9:00"
+    },
+    "yotei": {
+      "label": "View",
+      "value": "Chokai & Gassan",
+      "note": "Panorama from the hill"
+    }
+  },
+  "transit": {
+    "eyebrow": "Shinkansen Terminal",
+    "title": "Step off the Shinkansen,<br />15 minutes to snow.",
+    "lead": "About 15 minutes by car from Shinjo Station—the Yamagata Shinkansen terminus reachable from Tokyo in as little as ~3h15. Night skiing means arrivals in the late afternoon still work—a transit-friendly local hill for day trips and after-work laps alike.",
+    "specs": [
+      "~15 min from Shinjo Station",
+      "Night skiing until 21:00",
+      "130 free parking spaces"
+    ],
+    "ctaPass": "View pricing",
+    "ctaLive": "Today's operations",
+    "imgAlt": "Yamagata Shinkansen at Shinjo Station—15 minutes to the ski hill"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Lifts, night skiing & snow"
+    },
+    "pass": {
+      "label": "Pricing",
+      "title": "Municipal rates & books"
+    },
+    "family": {
+      "label": "Family",
+      "title": "Kids' hill & lessons"
+    },
+    "rental": {
+      "label": "Rental",
+      "title": "Ski & board ¥3,000 each"
+    },
+    "access": {
+      "label": "Access",
+      "title": "~15 min from Shinjo Station"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Shinjo Municipal",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "Three gentle courses & Chokai views",
+      "lead": "Mostly mellow terrain—max pitch 21°, averages around 10–15°—ideal for beginners, families, and local school ski classes. A compact municipal hill with Mt. Chokai and Gassan in view: three courses, one lift.",
+      "cta": "View courses & vistas",
+      "imgAlt": "Panorama of Mt. Chokai and Gassan from Shinjo Municipal slopes"
+    },
+    "secondary": {
+      "title": "Kids' hill & free lift for junior high and under",
+      "lead": "Free sled play on the kids' hill and free lift tickets through junior high—lowering the barrier for families while lift and rental revenue from parents sustains the public-facility model.",
+      "cta": "Family zone guide"
+    }
+  },
+  "pass": {
+    "eyebrow": "Municipal Pricing",
+    "title": "Adults ¥2,000,<br />junior high & under free.",
+    "lead": "Strategic low pricing as public sports infrastructure—adult day ¥2,000, high school ¥1,000, senior ¥1,500, 11-ride book ¥3,300 for locals, while welcoming visitors from the wider region (LP concept).",
+    "localPrice": "Adult day ticket ¥2,000",
+    "visitorPrice": "Junior high & under free",
+    "specs": [
+      "2-hour ticket ¥1,800",
+      "4-hour ticket ¥2,800",
+      "Rentals ¥3,000 each"
+    ],
+    "noticeTitle": "Strategy note:",
+    "noticeBody": "Phase from counter cash to online prepay and digital season passes—build CRM and customer data for LTV in a shrinking youth population (report recommendation).",
+    "cta": "Pricing details",
+    "imgAlt": "15 minutes from Shinjo Station—Shinkansen access as the growth lever"
+  },
+  "rental": {
+    "eyebrow": "On-site Rental",
+    "title": "Ski & snowboard sets<br />¥3,000 each—travel light.",
+    "lead": "Ski set, snowboard set, and outerwear ¥3,000 each—Shinkansen travelers can gear up on site and start runs immediately. No phone reservation required (counter rental).",
+    "whisper": "Hands-free arrival plus a Shinkansen terminus location enables low-friction winter day trips from Sendai and Tokyo (LP strategy).",
+    "cta": "Rental guide",
+    "imgAlt": "On-hill rental counter—hands-free arrival concept"
+  },
+  "yukinko": {
+    "eyebrow": "Night Skiing",
+    "title": "Night skiing<br />until 21:00.",
+    "lead": "Fully lit night skiing until 21:00—first runs for late Shinkansen arrivals and after-work laps for residents. Rest and light meals at the base lodge.",
+    "whisper": "In season TEL 0233-25-3915 (ski office). Official updates also on the Shinjo City Sports Association site.",
+    "cta": "Night skiing & hours",
+    "imgAlt": "Illuminated night-ski slopes—evening runs under the lights"
+  },
+  "family": {
+    "eyebrow": "Family First",
+    "title": "School ski classes &<br />first snow for families.",
+    "lead": "Three mellow courses, free kids' sled hill, weekend junior lessons—the municipal gateway for winter sports education. Jump features and wide boxes for snowboard progression too.",
+    "specs": [
+      "Free lift through junior high",
+      "Kids' sled hill",
+      "130 free parking spaces"
+    ],
+    "noticeTitle": "Lessons:",
+    "noticeBody": "Weekend junior ski lessons from beginners through SAJ junior badge level 1—nurturing the next generation of winter sports fans.",
+    "cta": "Family & lesson guide",
+    "imgAlt": "Families sledding on the kids' hill—separated from ski slopes"
+  },
+  "workation": {
+    "eyebrow": "Evening Trip",
+    "title": "Shinkansen PM,<br />night skiing after dark.",
+    "lead": "Yamagata Shinkansen to Shinjo from Tokyo or Sendai—15 minutes by car to the hill. A ¥1,800 two-hour ticket for night laps until 21:00: a regional evening ski day-trip model (LP concept).",
+    "badge": "SHINKANSEN · NIGHT SKI",
+    "steps": {
+      "01": {
+        "title": "Shinkansen to Shinjo",
+        "body": "Tokyo–Shinjo in as little as ~3h15. Terminus with Yumeria complex"
+      },
+      "02": {
+        "title": "Rental car at the station",
+        "body": "Pick up near Shinjo Station—~15 minutes to the hill"
+      },
+      "03": {
+        "title": "Two-hour night ticket",
+        "body": "Use the 2-hour pass in the 17:00+ night window"
+      },
+      "04": {
+        "title": "Base lodge",
+        "body": "Rest and light food after runs"
+      },
+      "05": {
+        "title": "Shinjo & Mogami",
+        "body": "Pair with Mogami Park, onsen, and lodging"
+      }
+    }
+  },
+  "guides": {
+    "local": {
+      "title": "Shinkansen terminus × municipal hill guide",
+      "body": "Core asset in a DX pivot from Category 1 (no standalone domain)—make the physical strengths visible via mobile LP and live status: 15 minutes from Shinjo Station, night skiing until 21:00, free lift through junior high (report ch. 5)."
+    },
+    "schools": {
+      "title": "Designated manager & year-round sports pass",
+      "body": "Shinjo City Sports Association manages the ski hill, Sportia indoor facility, and municipal stadium—proposed integrated \"Shinjo lifetime sports pass\" spanning winter skiing and green-season indoor sport (report ch. 7, working title)."
+    },
+    "summer": {
+      "title": "Winter trips paired with Mogami sights",
+      "body": "A 1-night model linking Shinkansen access with Mogami Park, Tsuruoka Onsen, and Semei Onsen—targeting international and domestic regional visitors (report ch. 3).",
+      "hashtags": [
+        "#ShinjoLocal",
+        "#MogamiSnow",
+        "#ShinkansenSki"
+      ]
+    }
+  },
+  "access": {
+    "postal": "996-0001, Japan",
+    "line": "5919-3 Shibakusayama, Itsukamachi, Shinjo, Yamagata",
+    "note": "About 15 minutes by car from JR Shinjo Station · 130 free parking spaces",
+    "phone": "TEL 0233-25-3915 (in season) · 0233-22-0681 (off season, gym office)",
+    "places": "<span class=\"place-unit\"><ruby>山形県<rt>Yamagata</rt></ruby></span><span class=\"place-unit\"><ruby>新庄市<rt>Shinjo</rt></ruby></span><span class=\"place-unit\"><ruby>五日町字柴草山5919-3<rt>5919-3 Shibakusayama, Itsukamachi</rt></ruby></span>",
+    "rentacarEyebrow": "Morioka Station + rental car",
+    "rentacarLink": "Book a rental car at Morioka Station",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Iwate and Akita drives"
+  },
+  "footer": {
+    "copyright": "© Usazawa Ski Area — mock LP",
+    "location": "996-0001 · 5919-3 Shibakusayama, Itsukamachi, Shinjo, Yamagata"
+  }
+}

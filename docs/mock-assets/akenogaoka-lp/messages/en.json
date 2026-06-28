@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Akenogaoka Ski Area",
+    "description": "Just 20 minutes from Obihiro. The perfect ski debut for your family, followed by a relaxing Moor hot spring."
+  },
+  "logo": "Akenogaoka",
+  "hero": {
+    "eyebrow": "Hokkaido",
+    "title": "Akenogaoka<br />Ski Area",
+    "tagline": "Just 20 minutes from Obihiro. The perfect ski debut for your family, followed by a relaxing Moor hot spring.",
+    "badgePrice": "8 hours ¥2,500",
+    "badgeNight": "Night skiing until 21:00",
+    "badgeXc": "Free XC",
+    "ctaPass": "Secret Powder Pass",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Transparent operations info",
+    "updatedAt": "Updated Jun 13, 9:00",
+    "lift1": {
+      "label": "Lift 1",
+      "value": "Operating",
+      "note": "Including ropeway"
+    },
+    "lift2": {
+      "label": "Lift 2",
+      "value": "Closed",
+      "note": "2026 season restoration under review"
+    },
+    "snow": {
+      "label": "Snow quality",
+      "value": "Furano class",
+      "note": "Uncrowded · private feel"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Until 21:00",
+      "note": "Tue–Sat from 9:00"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Local Sanctuary",
+    "title": "Furano snow quality,<br />private quiet.",
+    "lead": "A municipal hill surrounded by Furano, Tomamu, and Sahoro. World-resort snow without crowds or price spikes—the value of \"real winter sport\" for eight hours at ¥2,500.",
+    "specs": [
+      "5 courses",
+      "Snowboards welcome",
+      "Resident season ¥10,000"
+    ],
+    "noticeTitle": "Honest reviews say:",
+    "noticeBody": "\"Five stars if the third lift ran\"—don't hide aging infrastructure; pivot to hike-up zones and other value.",
+    "ctaPass": "Secret Powder Pass",
+    "imgAlt": "Quiet night-lit slopes—empty powder runs"
+  },
+  "paths": {
+    "pass": {
+      "label": "Pass",
+      "title": "Secret Powder Pass"
+    },
+    "access": {
+      "label": "Access",
+      "title": "22 km from Tomamu IC"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Lifts · snow · night skiing"
+    },
+    "hike": {
+      "label": "BC intro",
+      "title": "Hike-up zone"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Contrarian strengths",
+    "primary": {
+      "title": "Furano quality × empty runs",
+      "lead": "Visitors praise \"Furano-level snow\" and \"hardly anyone there.\" Less flashy facilities, more uncrowded quality snow and simple hospitality—high loyalty to local community ties.",
+      "cta": "Tickets & passbooks",
+      "imgAlt": "Untouched powder—ski at your pace on a compact hill"
+    },
+    "secondary": {
+      "title": "Free cross-country",
+      "lead": "XC courses free for residents' fitness, separate from alpine. Long-term step to reduce lift dependence and expand a non-powered winter park.",
+      "cta": "XC course guide"
+    }
+  },
+  "pass": {
+    "eyebrow": "Secret Powder Pass",
+    "title": "Marriott × Montbell,<br />a three-hour secret.",
+    "lead": "For Fairfield by Marriott guests beside Michi-no-Eki Minami-Furano. Bundle 4-hour lift (¥1,500), Montbell gear rental discount, and Nanpu Ezo katsu curry voucher—a half-day away from Furano crowds.",
+    "specs": [
+      "Marriott 78 rooms",
+      "Flagship Montbell store",
+      "Micro-tourism"
+    ],
+    "cta": "Book pass",
+    "imgAlt": "Beside Michi-no-Eki Minami-Furano—Marriott and major outdoor hub"
+  },
+  "hike": {
+    "eyebrow": "Pivot",
+    "title": "Turn Lift 2 closure<br />into a weapon.",
+    "lead": "Don't hide 2026 Lift 2 issues—redefine slope lines as ungroomed hike-up powder zones (example entry ¥1,000). A new revenue point aligned with the BC boom.",
+    "leadCurry": "After skiing, head to Nanpu Ezo katsu curry—5 mm-cut Ezo deer local curry as a sustainability story and regional ARPU hook.",
+    "cta": "Hike-up zone & curry map",
+    "imgAlt": "Minami-Furano Ezo katsu curry—game meat as regional cuisine"
+  },
+  "tour": {
+    "eyebrow": "Half-Day Trip",
+    "title": "Lake Kanayama area<br />in three hours.",
+    "lead": "For and workation guests—monetize \"gap time\" between mega-resort fatigue with a half-day journey.",
+    "badge": "SECRET POWDER · MICRO TOURISM",
+    "steps": {
+      "01": {
+        "title": "Marriott Minami-Furano",
+        "body": "Comfortable base camp · remote work"
+      },
+      "02": {
+        "title": "Montbell",
+        "body": "Rent latest gear"
+      },
+      "03": {
+        "title": "Minami-Furano Ski Area",
+        "body": "Four hours of empty powder (¥1,500)"
+      },
+      "04": {
+        "title": "Ezo katsu curry",
+        "body": "Svalbar / Nanputei"
+      },
+      "05": {
+        "title": "Lake Kanayama",
+        "body": "Optional dinner at Log Hotel Larch"
+      }
+    }
+  },
+  "guides": {
+    "sanctuary": {
+      "title": "Complete local sanctuary guide",
+      "body": "Within 20 km of Furano Ski Area (28 courses, 9 lifts) yet smaller scale—a paradoxical edge. \"Silence,\" \"empty powder,\" \"8 hours ¥2,500\"—differentiation from Niseko-izing neighbors."
+    },
+    "workation": {
+      "title": "Workation × night powder",
+      "body": "Remote work at Marriott weekdays, night skiing until 21:00 evenings. For urban IT workers—raise ARPU with minimal capital investment."
+    },
+    "lake": {
+      "title": "Lake Kanayama winter resort concept",
+      "body": "Use development corp cross-site authority to bundle smelt fishing, fat biking, night skiing, and Log Hotel Larch stays into a 2-night/3-day adventure—beyond the ski area alone.",
+      "hashtags": [
+        "#SecretPowder",
+        "#NanpuEzoCurry",
+        "#LocalSanctuary"
+      ]
+    }
+  },
+  "access": {
+    "postal": "079-2402, Japan",
+    "line": "Kito, Minami-Furano, Sorachi-gun, Hokkaido",
+    "note": "About 22 km from Doto Expressway Tomamu IC · old Kitoro Station area, south of Lake Kanayama · 80 free parking spaces",
+    "phoneLodge": "TEL 0167-52-2143 (Minami-Furano Ski Area Lodge)",
+    "phoneOps": "Lift operations 0167-52-2267 · Development Corp 0167-52-2100",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>空知郡<rt>Sorachi-gun</rt></ruby></span><span class=\"place-unit\"><ruby>南富良野町<rt>Minami-Furano</rt></ruby></span><span class=\"place-unit\"><ruby>字幾寅<rt>Kito</rt></ruby></span>",
+    "rentacarEyebrow": "New Chitose Airport + rental car",
+    "rentacarLink": "Book a rental car at New Chitose Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For central and southern Hokkaido drives"
+  },
+  "footer": {
+    "copyright": "© Akenogaoka Ski Area — mock LP",
+    "location": "079-2402 · Kito, Minami-Furano, Sorachi-gun, Hokkaido"
+  }
+}

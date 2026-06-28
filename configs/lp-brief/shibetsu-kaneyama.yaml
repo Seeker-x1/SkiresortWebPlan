@@ -1,0 +1,10 @@
+resortId: shibetsu-kaneyama
+schemaVersion: "2026-06-28"
+name:
+  ja: 標津町営金山スキー場
+  en: Shibetsu Kaneyama Municipal Ski Area
+japowResortId: 89
+strategy:
+  ja: 国後島と流氷を眼下に望む。日本最東端エリアで味わう極上パウダーと昭和レトロな非日常体験。
+  en: Experience premium powder and Showa-retro vibes with breathtaking views of Kunashir Island and drift ice.
+copyFrom: shibetsu-hinata-lp

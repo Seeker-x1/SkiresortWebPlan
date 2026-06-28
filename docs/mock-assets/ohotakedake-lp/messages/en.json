@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Ohotakedake Ski Area",
+    "description": "七戸十和田駅圏・町内スキー包括DX"
+  },
+  "logo": "Ohotakedake",
+  "hero": {
+    "eyebrow": "Aomori",
+    "title": "Ohotakedake<br />Ski Area",
+    "statLabel": "Snow depth (base)",
+    "statValue": "128",
+    "statUnit": "cm",
+    "ctaToday": "Today's operations",
+    "updatedAt": "Feb 7, 8:30",
+    "tagline": "七戸十和田駅圏・町内スキー包括DX"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "Shinkansen to<br />the snow.",
+    "lead": "About three hours from Tokyo. Exit Sichinohe-Towada Station and a roughly 10-minute taxi ride—transit-resort travel with minimal friction.",
+    "ctaToday": "Today's operations",
+    "imgAlt": "Travel image of snowy scenery seen from a Tohoku Shinkansen car"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Access"
+    },
+    "map": {
+      "label": "Slopes",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Pricing",
+      "title": "Tickets & rentals"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Sichinohe",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "About 10 minutes from the Shinkansen",
+      "lead": "Roughly 10 minutes by taxi from Tohoku Shinkansen Sichinohe-Towada Station. A municipal ski area that's easy to stop at mid-journey. At ¥2,500 for a day ticket, even a short visit pays for itself.",
+      "cta": "View access",
+      "imgAlt": "Travel image of snowy scenery seen from a Shinkansen car"
+    },
+    "secondary": {
+      "title": "To a gensen onsen paradise",
+      "lead": "After skiing, soak at Higashi-Hakkoda Onsen where 48°C spring water flows straight into the bath. From around ¥300 for adults—enjoy silky water at a local sento alongside residents.",
+      "cta": "Read the onsen feature"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby onsen",
+    "title": "An area where<br />gensen flows daily",
+    "lead": "Around Sichinohe, onsen lovers call it a \"gensen paradise.\" Moor springs and simple alkaline springs—some facilities pour amber water generously from tub to shower.",
+    "whisper": "From around ¥300 entry, hopping between two or three local baths after skiing is a classic post-run ritual.",
+    "cta": "Sichinohe area onsen feature",
+    "imgAlt": "Image of an outdoor bath surrounded by forest"
+  },
+  "guides": {
+    "powder": {
+      "title": "Powder from the station",
+      "body": "Champion Course up to 35° on ungroomed snow. Fresh deep snow without powder panic. Also serves as a backup slope when Hakkoda is closed."
+    },
+    "shinkansen": {
+      "title": "Go by Shinkansen",
+      "body": "Tokyo ~3 hours → station → 10-minute taxi. A strategic stop on a Honshu–Hokkaido route with JR EAST PASS. Design a day of extremes: Tokyo morning, slopes afternoon, onsen evening."
+    },
+    "beginners": {
+      "title": "Beginners & families",
+      "body": "A wide groomed run with a maximum pitch of 10°. Free night-lesson Thursdays from 19:00 and simple lodge food—an authentic local guide for newcomers."
+    }
+  },
+  "access": {
+    "postal": "039-2568, Japan",
+    "line": "Hidarikumi 106-5, Sichinohe, Kamikita-gun, Aomori",
+    "note": "About 10 minutes by taxi from Tohoku Shinkansen Sichinohe-Towada Station (approx.)",
+    "phone": "TEL 0176-62-5612",
+    "places": "<span class=\"place-unit\"><ruby>青森県<rt>Aomori</rt></ruby></span><span class=\"place-unit\"><ruby>上北郡<rt>Kamikita-gun</rt></ruby></span><span class=\"place-unit\"><ruby>七戸町<rt>Sichinohe</rt></ruby></span><span class=\"place-unit\"><ruby>字左組106-5<rt>Hidarikumi 106-5</rt></ruby></span>",
+    "rentacarEyebrow": "Shichinohe-Towada Station + rental car",
+    "rentacarLink": "Book a rental car at Shichinohe-Towada Station",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For southern Aomori and Towada drives"
+  },
+  "footer": {
+    "copyright": "© Ohotakedake Ski Area — mock LP",
+    "location": "039-2568 · Hidarikumi 106-5, Sichinohe, Kamikita-gun, Aomori"
+  }
+}

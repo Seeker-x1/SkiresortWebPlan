@@ -1,0 +1,35 @@
+resortId: nishiwaigawa-yuda
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 西和賀町営湯田スキー場
+  en: Choei Yuda Ski Area
+
+japowResortId: 118
+region:
+  ja: 岩手県西和賀町
+  en: Iwate
+
+strategy:
+  ja: 貸切状態の極上パウダーと、湯田温泉峡のディープな湯めぐりを堪能する秘境マイクロリゾート。
+  en: A hidden micro-resort offering private deep powder and the authentic hot springs of Yuda Onsenkyo.
+
+archetype: local-value
+copyFrom: shinjo-lp
+
+highlights:
+  - 貸切感の極上パウダー
+  - レストハウスゆのさわの豆腐料理
+  - 湯田温泉峡（ほっとゆだ・砂ゆっこ）
+
+pricing:
+  adultDay: 2130
+  halfDay: 1250
+
+access:
+  - 湯田ICから車で約7〜15分
+  - JRほっとゆだ駅からバス約7〜10分
+
+notes:
+  - ゲレンデマップ索引・trail map JSON は作成しない（2026-06-28 方針）
+  - レンタルなし（宿泊連携パックは今後の成長軸）

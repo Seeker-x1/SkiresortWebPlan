@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html>
+<html lang="ja" data-mock-resort="oketo-minamigaoka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>清里町営緑スキー場</title>
+  <meta name="description" content="Train · Powder · Onsen" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="#" class="logo" data-i18n="logo">清里町営緑スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
+
+          <li><a href="#live" data-i18n="nav.live">本日</a></li>
+          <li><a href="#highlights" data-i18n="nav.highlights">魅力</a></li>
+          <li><a href="#trip" data-i18n="nav.trip">日帰り</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-oketo-minamigaoka-railway.png" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">北海道清里町 · JR緑駅</p>
+        <h1 class="hero-title" data-i18n-html="hero.title">清里町営<br />緑スキー場</h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">Train · Powder · Onsen</p>
+        <span class="badge-price" data-i18n="hero.badgePrice">大人1日 ¥2,000</span>
+        <span class="badge-night" data-i18n="hero.badgeNight">ナイター 火〜土 21:00</span>
+        <div class="hero-cta">
+          <a href="#trip" class="btn btn-green" data-i18n="hero.ctaTrip">鉄道で行く日帰りプラン</a>
+          <a href="#live" class="btn btn-ghost" data-i18n="hero.ctaLive">本日のコンディション</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="live" class="live-strip" data-i18n-attr="aria-label:live.ariaLabel">
+      <div class="inner live-strip-inner">
+        <div class="live-strip-left">
+          <div class="live-chip">
+            <span class="live-dot" aria-hidden="true"></span>
+            <span data-i18n="live.chipOpen">営業中 · リフト運行</span>
+          </div>
+          <div class="live-chip">
+            <span data-i18n="live.chipPowder">パウダー · 良好</span>
+          </div>
+          <div class="live-chip">
+            <span data-i18n="live.chipPark">スノーパーク · オープン</span>
+          </div>
+        </div>
+        <p class="line-note font-mono" data-i18n="live.lineNote">LINE連携 · 更新 2/7 9:10</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="walk-heading">
+      <div class="inner">
+        <div class="transit-grid">
+          <div class="transit-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-oketo-minamigaoka-practice.png"
+                data-i18n-attr="alt:transit.imgAlt"
+                alt="空いたバーンでロングターン——練習に最適な緑スキー場"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="transit-card">
+            <p class="eyebrow" data-i18n="transit.eyebrow">Transit Skiing</p>
+            <h2 id="walk-heading" class="heading-lg" data-i18n-html="transit.title">緑駅から、<br />徒歩5分。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:28rem" data-i18n="transit.lead">
+              JR釧網本線「緑駅」から約0.5km。車不要の鉄道旅行者にとって、全国でも稀有な駅チカゲレンデ。隣接する日帰り温泉「緑の湯」まで歩いて行けます。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="transit.specs.0">1人乗りリフト</li>
+              <li class="spec-tag" data-i18n="transit.specs.1">コース2本</li>
+              <li class="spec-tag" data-i18n="transit.specs.2">緑の湯 隣接</li>
+            </ul>
+            <div class="transit-actions">
+              <a href="#access" class="btn btn-primary" data-i18n="transit.ctaAccess">アクセス・駅からの歩き方</a>
+              <a href="#" class="btn btn-ghost" data-i18n="transit.ctaPricing">料金（3時間券¥1,200）</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top" aria-labelledby="paths-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.explore">Explore</p>
+        <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
+        <div class="path-grid">
+          <a href="#live" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.today.label">今日</span>
+            <span class="path-tile__title" data-i18n="paths.today.title">積雪・営業状況</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#access" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.access.label">アクセス</span>
+            <span class="path-tile__title" data-i18n="paths.access.title">緑駅から5分</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.slopes.label">ゲレンデ</span>
+            <span class="path-tile__title" data-i18n="paths.slopes.title">コース・スノーパーク</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.nearby.label">周辺</span>
+            <span class="path-tile__title" data-i18n="paths.nearby.title">緑の湯・NAP</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section" aria-labelledby="highlights-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="highlights.eyebrow">緑スキーの魅力</p>
+        <h2 id="highlights-heading" class="heading-lg" data-i18n="highlights.title">ここが違う</h2>
+
+        <div class="highlight-duet">
+          <article class="highlight-primary">
+            <div class="frame">
+              <img
+                src="lp-mock-oketo-minamigaoka-railway.png"
+                data-i18n-attr="alt:highlights.primary.imgAlt"
+                alt="線路沿いのゲレンデ——踏切の向こう側という珍しいロケーション"
+                width="1600"
+                height="1100"
+              />
+            </div>
+            <div class="highlight-primary-body">
+              <h3 data-i18n="highlights.primary.title">線路沿いゲレンデ</h3>
+              <p class="lead" style="margin-top:1rem" data-i18n="highlights.primary.lead">
+                踏切の向こう側に広がるスキー場——ロケーション自体が「映え」として評価される、全国でも珍しい風景。空いているバーンでロングターンの基礎練習に最適です。
+              </p>
+              <a href="#" class="btn btn-primary" style="margin-top:2rem" data-i18n="highlights.primary.cta">ゲレンデを見る</a>
+            </div>
+          </article>
+
+          <article class="highlight-secondary">
+            <h3 data-i18n="highlights.secondary.title">¥2,000のパウダー練習場</h3>
+            <p class="lead-whisper" style="margin-top:1rem" data-i18n="highlights.secondary.lead">
+              混雑しないローカルゲレンデで、本州とは比べられない雪質を1日2,000円で。Japowを求める層にとって、コスパと練習環境の両立が魅力です。
+            </p>
+            <a href="#" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="highlights.secondary.cta">料金・回数券</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top" aria-labelledby="nap-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow" data-i18n="nap.eyebrow">Local</p>
+            <h2 id="nap-heading" class="heading-lg" data-i18n-html="nap.title">NAPのサンドイッチ、<br />スノーパークの夜。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="nap.lead">
+              休憩小屋で営業する地元サンドイッチ店「NAP」——スキー場以上の滞在価値。2026年2月より復活したスノーパークと、火〜土のナイター（21時まで）で、町外の若年ボーダーもフックするコミュニティハブへ。
+            </p>
+            <a href="#" class="btn btn-green" style="margin-top:2rem" data-i18n="nap.cta">ナイター・イベント</a>
+          </div>
+          <div class="feature-visual">
+            <div class="frame frame--wide">
+              <img
+                src="lp-mock-oketo-minamigaoka-nap.png"
+                data-i18n-attr="alt:nap.imgAlt"
+                alt="休憩所のNAP——地元サンドイッチと温かい飲み物"
+                width="1600"
+                height="1100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="handfree" class="section border-top" aria-labelledby="handfree-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-visual feature-visual--left">
+            <div class="frame">
+              <img
+                src="lp-mock-oketo-minamigaoka-onsen.png"
+                data-i18n-attr="alt:recovery.imgAlt"
+                alt="隣接する緑の湯——滑走後の日帰り温泉"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="feature-copy feature-copy--right">
+            <p class="eyebrow" data-i18n="recovery.eyebrow">Recovery</p>
+            <h2 id="handfree-heading" class="heading-lg" data-i18n-html="recovery.title">滑ったあと、<br />緑の湯へ。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="recovery.lead">
+              スキー場に隣接する日帰り入浴施設「緑の湯」。Train · Powder · Onsen——3つを徒歩圏で完結する、パッケージの核です。
+            </p>
+            <div class="notice-box">
+              <strong data-i18n="recovery.noticeTitle">手ぶら来場について：</strong><span data-i18n="recovery.noticeBody">ゲレンデ内レンタルはありません。ヤマト運輸「スキー宅急便」や近隣宿泊施設との用具デリバリー提携など、民間連携による手ぶらプランをWebで案内する想定です。</span>
+            </div>
+            <a href="#" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="recovery.cta">手ぶらプランの案内</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trip" class="section border-top" aria-labelledby="trip-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="trip.eyebrow">Day Trip</p>
+        <h2 id="trip-heading" class="heading-lg" data-i18n-html="trip.title">鉄道だけで完結する、<br />一日。</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="trip.lead">
+          車を持たない旅行者・若年層向け「ゼロエミッション日帰りスノートリップ」のモデルコース。
+        </p>
+        <span class="zero-badge" data-i18n="trip.badge">ZERO EMISSION SKI TRIP</span>
+
+        <div class="journey">
+          <div class="journey-step">
+            <p class="journey-step__num">01</p>
+            <p class="journey-step__title" data-i18n="trip.steps.01.title">JR緑駅</p>
+            <p class="journey-step__body" data-i18n="trip.steps.01.body">釧網本線で到着。徒歩5分でゲレンデ</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">02</p>
+            <p class="journey-step__title" data-i18n="trip.steps.02.title">パウダー＆パーク</p>
+            <p class="journey-step__body" data-i18n="trip.steps.02.body">空いたバーンで練習。スノーパーク体験</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">03</p>
+            <p class="journey-step__title" data-i18n="trip.steps.03.title">NAP</p>
+            <p class="journey-step__body" data-i18n="trip.steps.03.body">休憩小屋で地元サンドイッチランチ</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">04</p>
+            <p class="journey-step__title" data-i18n="trip.steps.04.title">緑の湯</p>
+            <p class="journey-step__body" data-i18n="trip.steps.04.body">隣接温泉で疲労回復</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">05</p>
+            <p class="journey-step__title" data-i18n="trip.steps.05.title">JRで帰路</p>
+            <p class="journey-step__body" data-i18n="trip.steps.05.body">そのまま駅へ。レンタカー不要</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.guidesEyebrow">特集</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="common.guidesTitle">特集ページ</h2>
+
+        <ul class="guides-list">
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="true" data-guide="transit">
+              <span data-i18n="guides.transit.title">Transit Skiing 完全ガイド</span>
+              <span class="guide-icon" aria-hidden="true">−</span>
+            </button>
+            <div class="guide-panel is-open" id="panel-transit">
+              <p class="lead" data-i18n="guides.transit.body">
+                緑駅徒歩5分・緑の湯隣接。ウナベツや網走エリアの競合が車前提の中、公共交通利用者に圧倒的な優位性を持つ立地を「Train, Powder, Onsen」としてグローバルにリブランディング。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="night">
+              <span data-i18n="guides.night.title">ナイター＆スノーパーク</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-night" hidden>
+              <p class="lead" data-i18n="guides.night.body">
+                火〜土 21時までナイター営業。2026年2月復活のスノーパークとNAPを掛け合わせ、撮影会・フリースタイル大会などコミュニティイベントで町外客を誘致。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="handfree-guide">
+              <span data-i18n="guides.handfree.title">手ぶらで来る方法</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-handfree-guide" hidden>
+              <p class="lead" data-i18n="guides.handfree.body">
+                レンタル設備がない弱みを、スキー宅急便・近隣宿とのデリバリー提携で補う短期アクション。新規客獲得の最大障壁「道具を持参しなければならない」をWeb上で解消する案内ページ。
+              </p>
+              <div class="hashtags">
+                <span class="hashtag" data-i18n="guides.handfree.hashtags.0">#TransitSkiing</span>
+                <span class="hashtag" data-i18n="guides.handfree.hashtags.1">#JapowLocal</span>
+                <span class="hashtag" data-i18n="guides.handfree.hashtags.2">#RailwaySkiArea</span>
+              </div>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="access" class="access-section border-top" aria-labelledby="access-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.accessEyebrow">Access</p>
+        <h2 id="access-heading" class="heading-lg" data-i18n="common.location">所在地</h2>
+        <div class="access-grid">
+          <address class="access-address">
+            <span class="access-postal" data-i18n="access.postal">〒099-4525</span>
+            <span class="access-line" data-i18n="access.line">北海道斜里郡清里町緑町51-1</span>
+            <p class="access-places" data-i18n-html="access.places" hidden></p>
+            <p class="access-note" data-i18n="access.note">JR釧網本線「緑駅」から徒歩約5分（約0.5km）· 隣接「緑の湯」</p>
+            <p class="access-phone" data-i18n="access.phone">TEL 0152-27-5512（清里町）</p>
+          </address>
+          <div class="access-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B8%85%E9%87%8C%E7%94%BA%E5%96%B6%E7%B7%91%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E5%8C%97%E6%B5%B7%E9%81%93%E6%96%9C%E9%87%8C%E9%83%A1%E6%B8%85%E9%87%8C%E7%94%BA%E7%B7%91%E7%94%BA51-1"
+              class="btn btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="common.googleMap">Google Mapで開く</span>
+            </a>
+            <a href="tel:0152275512" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">知床圏</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">女満別空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">緑駅・知床サロマ方面へ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 清里町営緑スキー場 — LP案モック</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒099-4525 北海道斜里郡清里町緑町51-1</span> ·
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B8%85%E9%87%8C%E7%94%BA%E5%96%B6%E7%B7%91%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E5%8C%97%E6%B5%B7%E9%81%93%E6%96%9C%E9%87%8C%E9%83%A1%E6%B8%85%E9%87%8C%E7%94%BA%E7%B7%91%E7%94%BA51-1" target="_blank" rel="noopener noreferrer" data-i18n="common.footerMap">Google Map</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
+  <script src="../_shared/mock-i18n.js"></script>
+  <script>
+    document.querySelectorAll(".guide-trigger").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.guide;
+        const panel = document.getElementById("panel-" + id);
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".guide-trigger").forEach((b) => {
+          b.setAttribute("aria-expanded", "false");
+          b.querySelector(".guide-icon").textContent = "+";
+        });
+        document.querySelectorAll(".guide-panel").forEach((p) => {
+          p.classList.remove("is-open");
+          p.hidden = true;
+        });
+
+        if (!isOpen) {
+          btn.setAttribute("aria-expanded", "true");
+          btn.querySelector(".guide-icon").textContent = "−";
+          panel.classList.add("is-open");
+          panel.hidden = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
