@@ -1,0 +1,25 @@
+resortId: toma-choei
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 当麻町営スキー場
+  en: Toma Municipal Ski Area
+region:
+  ja: 北海道当麻町
+  en: 北海道当麻町
+japowResortId: 46
+
+strategy:
+  ja: 旭山動物園・旭川北IC近接。ファミリー雪遊び受け皿。
+  en: 旭山動物園・旭川北IC近接。ファミリー雪遊び受け皿。
+archetype: tourism-hub
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/toma-choei.md", "LP batch #72"]
+  heroImage: images/maps/toma-choei-hero.png
+  copyFrom: kiyosato-lp
+
+humanReview:
+  - japowResortId 46

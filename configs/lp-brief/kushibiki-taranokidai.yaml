@@ -1,0 +1,25 @@
+resortId: kushibiki-taranokidai
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 櫛引たらのきだいスキー場
+  en: Kushibiki Taranokidai Ski Area
+region:
+  ja: 山形県鶴岡市
+  en: 山形県鶴岡市
+japowResortId: 157
+
+strategy:
+  ja: 庄内市民の冬の足。スクール予定カレンダー。
+  en: 庄内市民の冬の足。スクール予定カレンダー。
+archetype: local-value
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/kushibiki-taranokidai.md", "LP batch #83"]
+  heroImage: images/maps/kushibiki-taranokidai-hero.png
+  copyFrom: shinjo-lp
+
+humanReview:
+  - japowResortId 157

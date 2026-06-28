@@ -2,6 +2,10 @@
   "baseUrl": "https://guides.japowserch.com",
   "defaultLocale": "ja",
   "guides": {
+    "1": {
+      "registryId": "imakane-tane",
+      "tier": "mock"
+    },
     "2": {
       "registryId": "kamoenokuni",
       "tier": "mock"
@@ -16,6 +20,10 @@
     },
     "8": {
       "registryId": "asahigaoka",
+      "tier": "mock"
+    },
+    "13": {
+      "registryId": "shakotan",
       "tier": "mock"
     },
     "24": {
@@ -40,6 +48,14 @@
     },
     "40": {
       "registryId": "minami-furano",
+      "tier": "mock"
+    },
+    "43": {
+      "registryId": "shibetsu-hinata",
+      "tier": "mock"
+    },
+    "46": {
+      "registryId": "toma-choei",
       "tier": "mock"
     },
     "50": {
@@ -115,8 +131,16 @@
       "registryId": "morioka-ikari",
       "tier": "mock"
     },
+    "127": {
+      "registryId": "ueno-no",
+      "tier": "mock"
+    },
     "140": {
       "registryId": "kyowa",
+      "tier": "mock"
+    },
+    "157": {
+      "registryId": "kushibiki-taranokidai",
       "tier": "mock"
     },
     "163": {
@@ -125,6 +149,10 @@
     },
     "167": {
       "registryId": "nishikawa",
+      "tier": "mock"
+    },
+    "169": {
+      "registryId": "hanakasa-kogen",
       "tier": "mock"
     },
     "174": {
@@ -137,6 +165,10 @@
     },
     "191": {
       "registryId": "kaneyama",
+      "tier": "mock"
+    },
+    "193": {
+      "registryId": "nihonmatsu-shiozawa",
       "tier": "mock"
     },
     "256": {
@@ -163,6 +195,10 @@
       "registryId": "matsushiro",
       "tier": "mock"
     },
+    "318": {
+      "registryId": "tochio",
+      "tier": "mock"
+    },
     "326": {
       "registryId": "tsunan",
       "tier": "mock"
@@ -171,12 +207,20 @@
       "registryId": "sado-taira",
       "tier": "mock"
     },
+    "353": {
+      "registryId": "tateyama-alpine",
+      "tier": "mock"
+    },
     "361": {
       "registryId": "iouzan",
       "tier": "mock"
     },
     "362": {
       "registryId": "nanao-korosa",
+      "tier": "mock"
+    },
+    "399": {
+      "registryId": "akago",
       "tier": "mock"
     },
     "401": {
@@ -189,6 +233,14 @@
     },
     "419": {
       "registryId": "koyasan",
+      "tier": "mock"
+    },
+    "424": {
+      "registryId": "anzo-koen",
+      "tier": "mock"
+    },
+    "434": {
+      "registryId": "dogoyama-kogen",
       "tier": "mock"
     },
     "441": {

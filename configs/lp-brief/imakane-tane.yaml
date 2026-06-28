@@ -1,0 +1,25 @@
+resortId: imakane-tane
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 今金町種川スキー場
+  en: Imakane Tane Ski Area
+region:
+  ja: 北海道今金町
+  en: 北海道今金町
+japowResortId: 1
+
+strategy:
+  ja: 道南・ナイター。ピリカ連携広域。
+  en: 道南・ナイター。ピリカ連携広域。
+archetype: live-dashboard
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/imakane-tane.md", "LP batch #80"]
+  heroImage: images/maps/imakane-tane-hero.png
+  copyFrom: shinjo-lp
+
+humanReview:
+  - japowResortId 1

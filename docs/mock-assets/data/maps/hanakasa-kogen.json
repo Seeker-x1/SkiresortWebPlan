@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "2026-06-28",
+  "id": "hanakasa-kogen",
+  "name": { "ja": "花笠高原スキー場", "en": "Hanakasa Kogen Ski Area" },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": ["docs/research/inbox/hanakasa-kogen.md", "LP batch #71", "configs/lp-brief/hanakasa-kogen.yaml"],
+  "updatedAt": "2026-06-28T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/hanakasa-kogen-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-pair",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": { "ja": "ペアリフト", "en": "Pair lift" },
+      "shortLabel": { "ja": "ペア", "en": "Pair" },
+      "meta": { "ja": { "全長": "811m" }, "en": { "Length": "811 m" } }
+    },
+    {
+      "id": "lift-rope",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": { "ja": "アンヴァーリフト", "en": "Rope tow" },
+      "shortLabel": { "ja": "アンヴァー", "en": "Tow" },
+      "meta": { "ja": { "全長": "75m" }, "en": { "Length": "75 m" } }
+    },
+    {
+      "id": "trail-a",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": { "ja": "Aコース（初級）", "en": "Course A (beginner)" },
+      "shortLabel": { "ja": "A", "en": "A" },
+      "meta": { "ja": { "全長": "918m", "最大斜度": "17°" }, "en": { "Length": "918 m", "Max pitch": "17°" } }
+    },
+    {
+      "id": "trail-b",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": { "ja": "Bコース（中級）", "en": "Course B (intermediate)" },
+      "shortLabel": { "ja": "B", "en": "B" },
+      "meta": { "ja": { "全長": "1,373m", "雪面": "非圧雪ゾーン" }, "en": { "Length": "1,373 m", "Surface": "Ungroomed zone" } }
+    },
+    {
+      "id": "trail-c",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": { "ja": "Cコース（上級）", "en": "Course C (advanced)" },
+      "shortLabel": { "ja": "C", "en": "C" },
+      "meta": { "ja": { "全長": "417m", "最大斜度": "23°" }, "en": { "Length": "417 m", "Max pitch": "23°" } }
+    },
+    {
+      "id": "trail-xc",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": { "ja": "クロスカントリーコース", "en": "Cross-country course" },
+      "shortLabel": { "ja": "XC", "en": "XC" },
+      "meta": {}
+    }
+  ]
+}

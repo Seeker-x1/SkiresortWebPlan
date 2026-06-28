@@ -1,0 +1,25 @@
+resortId: anzo-koen
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 安蔵公園スキー場
+  en: Anzo Park Ski Area
+region:
+  ja: 鳥取県鳥取市
+  en: 鳥取県鳥取市
+japowResortId: 424
+
+strategy:
+  ja: 鳥取砂丘観光の延長。公園案内に埋没。
+  en: 鳥取砂丘観光の延長。公園案内に埋没。
+archetype: local-value
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/anzo-koen.md", "LP batch #79"]
+  heroImage: images/maps/anzo-koen-hero.png
+  copyFrom: gokazan-lp
+
+humanReview:
+  - japowResortId 424

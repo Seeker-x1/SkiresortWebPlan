@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "2026-06-28",
+  "id": "anzo-koen",
+  "name": {
+    "ja": "安蔵公園スキー場",
+    "en": "Anzo Park Ski Area"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "LP batch #79",
+    "configs/lp-batch/batch-71-90.json"
+  ],
+  "updatedAt": "2026-06-28T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/anzo-koen-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-pair",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "ペアリフト",
+        "en": "Pair lift"
+      },
+      "shortLabel": {
+        "ja": "ペア",
+        "en": "Pair"
+      },
+      "meta": {
+        "ja": {
+          "全長": "約300m"
+        },
+        "en": {
+          "Length": "~300 m"
+        }
+      }
+    },
+    {
+      "id": "trail-beginner",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "初級コース",
+        "en": "Beginner"
+      },
+      "shortLabel": {
+        "ja": "初",
+        "en": "Beg"
+      },
+      "meta": {}
+    },
+    {
+      "id": "trail-forest",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "林間コース",
+        "en": "Forest course"
+      },
+      "shortLabel": {
+        "ja": "林",
+        "en": "For"
+      },
+      "meta": {}
+    },
+    {
+      "id": "trail-intermediate",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "中級コース",
+        "en": "Intermediate"
+      },
+      "shortLabel": {
+        "ja": "中",
+        "en": "Int"
+      },
+      "meta": {}
+    },
+    {
+      "id": "trail-advanced",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "上級コース",
+        "en": "Advanced"
+      },
+      "shortLabel": {
+        "ja": "上",
+        "en": "Adv"
+      },
+      "meta": {
+        "ja": {
+          "最大斜度": "22°"
+        },
+        "en": {
+          "Max pitch": "22°"
+        }
+      }
+    },
+    {
+      "id": "trail-sled",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "sled",
+      "label": {
+        "ja": "無料ソリコース",
+        "en": "Free sled slope"
+      },
+      "shortLabel": {
+        "ja": "そり",
+        "en": "Sled"
+      },
+      "meta": {}
+    }
+  ]
+}

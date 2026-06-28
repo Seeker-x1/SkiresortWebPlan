@@ -1,0 +1,25 @@
+resortId: tateyama-alpine
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 立山山岳スキー場
+  en: Tateyama Alpine Ski Area
+region:
+  ja: 富山県立山町
+  en: 富山県立山町
+japowResortId: 353
+
+strategy:
+  ja: 立山黒部周辺。BC・春スキー・インバウンドコア層。
+  en: 立山黒部周辺。BC・春スキー・インバウンドコア層。
+archetype: live-dashboard
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/tateyama-alpine.md", "LP batch #75"]
+  heroImage: images/maps/tateyama-alpine-hero.png
+  copyFrom: tayama-lp
+
+humanReview:
+  - japowResortId 353

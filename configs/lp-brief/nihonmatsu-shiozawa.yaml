@@ -1,0 +1,25 @@
+resortId: nihonmatsu-shiozawa
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 二本松塩沢スキー場
+  en: Nihonmatsu Shiozawa Ski Area
+region:
+  ja: 福島県二本松市
+  en: 福島県二本松市
+japowResortId: 193
+
+strategy:
+  ja: 東北サファリパークドメイン内同居。独立サイト化。
+  en: 東北サファリパークドメイン内同居。独立サイト化。
+archetype: local-value
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/nihonmatsu-shiozawa.md", "LP batch #74"]
+  heroImage: images/maps/nihonmatsu-shiozawa-hero.png
+  copyFrom: shinjo-lp
+
+humanReview:
+  - japowResortId 193

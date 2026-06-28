@@ -1,0 +1,461 @@
+{
+  "meta": {
+    "title": "Shakotan Outdoor Sports Forest Ski Area",
+    "description": "北海道積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町 — 積丹ブルー・海鮮観光地の冬コンテンツ。"
+  },
+  "logo": "Shakotan Outdoor Sports Forest Ski Area",
+  "nav": {
+    "journey": "Itinerary",
+    "recovery": "Recovery"
+  },
+  "hero": {
+    "eyebrow": "北海道積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町",
+    "title": "Shakotan Outdoor Sports Forest<br />Ski Area",
+    "tagline": "積丹ブルー・海鮮観光地の冬コンテンツ。",
+    "badgeFree": "Free lift",
+    "ctaToday": "Today's operations",
+    "updatedAt": "Feb 7, 9:00"
+  },
+  "transit": {
+    "eyebrow": "Walk",
+    "title": "From the station,<br />walk into snow.",
+    "lead": "About a 15-minute walk from JR Biei Station. Even without a rental car, independent FIT travelers can touch snow directly—a micro-tourism base you won't find at suburban resorts.",
+    "ctaAccess": "Access & walking route",
+    "ctaRental": "Cold-weather rental info",
+    "imgAlt": "Traveler walking white hills—the stroll route from Biei Station to the ski area"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Walking from the station"
+    },
+    "wellness": {
+      "label": "Snow play",
+      "title": "Snow wellness area"
+    },
+    "pricing": {
+      "label": "Pricing",
+      "title": "Free lift & rentals"
+    },
+    "bluePond": {
+      "label": "Nearby",
+      "title": "Shirogane Blue Pond"
+    },
+    "food": {
+      "label": "Food",
+      "title": "10 nearby eats"
+    },
+    "onsen": {
+      "label": "Onsen",
+      "title": "10 nearby onsen"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Biei",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "Snow wellness hub",
+      "lead": "A space to touch, feel, and restore body and mind—not centered on downhill skiing. Snowshoe meditation walks, snowmen, sledding—a cocooning wellness sanctuary without mega-resort noise.",
+      "cta": "View snow play experiences",
+      "imgAlt": "Snowshoeing an empty snowfield—a snow wellness experience"
+    },
+    "secondary": {
+      "title": "Into a welcoming space",
+      "lead": "Trespassing on farmland is strictly forbidden. Here, you can dive into deep white snow, lie down, and play freely—from \"no entry\" to \"welcome.\" A outlet for dispersing overtourism.",
+      "cta": "Responsible travel"
+    }
+  },
+  "recovery": {
+    "eyebrow": "Warmth & recovery",
+    "title": "After the snow,<br />warm the body",
+    "lead": "Consommé and pot-au-feu simmered for hours with Biei vegetables—local food therapy for chilled bodies. Pair with nearby baths like Shirogane Onsen to complete a holistic wellness cycle.",
+    "whisper": "From Okiraku-tei to steaming station cafés—and Shirogane Onsen day baths are a classic after snow play.",
+    "ctaFood": "Nearby food (10 picks)",
+    "ctaOnsen": "Nearby onsen (10 picks)",
+    "imgAlt": "Biei vegetable pot-au-feu—a warming post-ski menu"
+  },
+  "journey": {
+    "eyebrow": "Micro Tourism",
+    "title": "A full day<br />starting at the station",
+    "lead": "A customer journey where FIT travelers explore snow play, culture, and views independently after arriving at Biei Station.",
+    "steps": {
+      "01": {
+        "title": "Arrival & intro",
+        "body": "Biei Station. Cold-weather rentals, coffee to-go at ARBOLITO and more"
+      },
+      "02": {
+        "title": "Immersion",
+        "body": "Free snow play plaza (15-min walk) or a guided hill snowshoe tour",
+        "linkLabel": "Snow play guide"
+      },
+      "03": {
+        "title": "Restore & nourish",
+        "body": "Junpei's shrimp bowl, Biei Farm raclette toast—local food worth the detour after snow play",
+        "linkLabel": "Nearby food guide",
+        "linkOnsen": "Nearby onsen guide"
+      },
+      "04": {
+        "title": "Culture & reflection",
+        "body": "Art walks at Takuma-kan and Birch Tree Corridor"
+      },
+      "05": {
+        "title": "Views & finale",
+        "body": "Shirogane Blue Pond winter light-up—the cobalt blue the world knows",
+        "linkLabel": "Read the Blue Pond guide"
+      }
+    }
+  },
+  "guides": {
+    "wellness": {
+      "title": "Snow wellness experiences",
+      "body": "Gateway to official programs like the Furari Winter Walk hill snowshoe tour and Tokotoko Adventure—plus a one-day model pairing free play at the town ski area.",
+      "thumbAlt": "Snowshoeing Biei snowfields—a snow wellness experience"
+    },
+    "walk": {
+      "title": "Micro-tourism on foot from the station",
+      "body": "Turn the 15 minutes from station to ski area into a \"promenade to read Biei winter.\" GPS audio guides, hands-free rentals, café hopping—an FIT loop without a rental car."
+    },
+    "responsible": {
+      "title": "The landscape is someone's livelihood",
+      "body": "The landscape is someone's livelihood. No entry to farmland or private property. How to shoot minimalist photos in welcoming spaces. Enjoying Biei as a responsible traveler.",
+      "hashtags": [
+        "#BieiWinterAesthetic",
+        "#SnowGlobeVillage",
+        "#WinterWellnessHokkaido"
+      ]
+    },
+    "bluePond": {
+      "title": "Shirogane Blue Pond — winter light-up",
+      "body": "The cobalt pond that became a Mac wallpaper. After snow wellness, head to the Shirogane onsen area—the icon overseas visitors search for most in Biei.",
+      "thumbAlt": "Shirogane Blue Pond under winter light-up—cobalt water and snowfields"
+    },
+    "food": {
+      "title": "10 nearby eats — before & after snow",
+      "body": "Dairy, wagyu, wheat, ramen—Hokkaido flavors plus photo-ready spots. A friction-free day-trip loop with the town ski area and Blue Pond.",
+      "thumbAlt": "Biei vegetable pot-au-feu—a warming post-snow lunch"
+    },
+    "onsen": {
+      "title": "10 nearby onsen — snow-view roten",
+      "body": "From Shirogane Onsen to Tokachidake and Asahidake—warm up with our onsen map. Layer with food pins at once.",
+      "thumbAlt": "Snow scenery and hot springs—recovery after snow wellness"
+    }
+  },
+  "featuredSpot": {
+    "eyebrow": "Iconic nearby",
+    "title": "Shirogane Blue Pond",
+    "lead": "The cobalt blue the world knows—close a snow wellness day with a winter light-up finale.",
+    "cta": "Blue Pond guide",
+    "imgAlt": "Shirogane Blue Pond at night under light-up—birch trees and cobalt water"
+  },
+  "bluePond": {
+    "meta": {
+      "title": "Shirogane Blue Pond — Shakotan Outdoor Sports Forest Ski Area",
+      "description": "Winter light-up, access, and pairing with snow play—guide for international visitors"
+    },
+    "backLink": "Back to Biei guide",
+    "hero": {
+      "eyebrow": "Shirogane · Biei",
+      "title": "Japan's Blue Pond—<br />beyond the photo",
+      "tagline": "The cobalt blue the world knows—after snow wellness, into the winter night"
+    },
+    "notice": "Light-up dates, parking, and bus service change by season. Confirm on Biei Town or tourism association official sites before you go.",
+    "introTitle": "Why is it so blue?",
+    "introLead": "Shirogane Blue Pond (Aoiike) was created as a by-product of erosion-control work linked to Mt. Tokachi volcanic activity.",
+    "introBody": "Minerals from submerged birch and fallen leaves scatter light into cobalt blue—a Biei view where nature and human intervention overlap.",
+    "whenEyebrow": "Best time",
+    "whenTitle": "Winter light-up",
+    "whenLead": "Typically from around November through April, lights come on after sunset. In crisp midwinter air, the blue sinks deep into still water—the hour overseas visitors seek most.",
+    "whenNote": "Viewing decks or parking may be restricted due to weather, snow, or crowds.",
+    "accessEyebrow": "Access",
+    "accessTitle": "From Biei Station & the ski area",
+    "accessLead": "About 25 minutes by car from Biei Station (Shirogane Onsen area). After the ski hill, most visitors go by rental car or winter bus/tour.",
+    "accessItems": {
+      "drive": {
+        "label": "Car",
+        "body": "Biei Station → Shirogane Onsen area, approx. 25 min. Winter tires required."
+      },
+      "bus": {
+        "label": "Bus & tours",
+        "body": "Seasonal buses and day tours from Biei/Furano (schedules vary by year)."
+      },
+      "pair": {
+        "label": "Itinerary",
+        "body": "Ski area → warming lunch → Shirogane Onsen → Blue Pond light-up in one day."
+      },
+      "winter": {
+        "label": "Winter",
+        "body": "Watch for ice and blizzards. Tripods only in designated areas."
+      }
+    },
+    "responsibleTitle": "Quietly, in welcoming spaces",
+    "responsibleLead": "No trespassing on farmland—the same stance as our \"landscape is livelihood\" message. Shoot from the viewing deck, yield in crowds, and respect tripod etiquette.",
+    "responsibleHashtags": [
+      "#BluePondBiei",
+      "#ShiroganeBluePond",
+      "#WinterWellnessHokkaido"
+    ],
+    "mapsTitle": "Location",
+    "mapsBody": "Shirogane, Biei-cho, Kamikawa-gun, Hokkaido. Check your route on Google Maps.",
+    "mapsCta": "Open in Google Maps",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Shirogane+Blue+Pond+Biei+Hokkaido",
+    "heroImageAlt": "Shirogane Blue Pond at night under light-up—birch silhouettes and cobalt water",
+    "galleryAlt": "Winter at Shirogane Blue Pond—cobalt surface framed by snow"
+  },
+  "snowPlay": {
+    "meta": {
+      "title": "Snow Play Experiences — Shakotan Outdoor Sports Forest Ski Area",
+      "description": "Furari Winter Walk snowshoe tour, Tokotoko Adventure booking, and free snow play—official links included"
+    },
+    "backLink": "Back to Biei guide",
+    "hero": {
+      "eyebrow": "Snow wellness",
+      "title": "Snow play<br />without skiing",
+      "tagline": "From a free snow plaza to guided hill snowshoes—touch Biei winter"
+    },
+    "notice": "Seasons, prices, and capacity change—each operator's official site is authoritative. Hill access may require a licensed guide (no trespass on farmland or private land).",
+    "introTitle": "Three entry points",
+    "introLead": "Shakotan Outdoor Sports Forest Ski Area offers free snow play. Go further with the tourism association's hill tour or local operator bookings.",
+    "introBody": "Enjoy only in welcoming spaces—no entering patchwork farmland. Choose designated routes and guided experiences.",
+    "hubEyebrow": "Free · Walkable",
+    "hubTitle": "Town ski area snow play plaza",
+    "hubLead": "About a 15-minute walk from JR Biei Station. Sledding, snowmen, deep-snow play—a wellness-oriented free zone (lift free).",
+    "hubCta": "See access",
+    "hubLink": "./#access",
+    "experiencesEyebrow": "Guided · Book",
+    "experiencesTitle": "Official & bookable programs",
+    "experiencesLead": "For hill views and adventures, check the latest info and book on the official pages below.",
+    "furari": {
+      "eyebrow": "Biei Tourism Association",
+      "title": "\"Furari Winter Walk\"",
+      "subtitle": "Scenic hill snowshoe in Biei",
+      "lead": "Crisp air and marshmallow hills—a picture-book snowscape on beginner-friendly snowshoes. Meet at Shiki-no-Joho-kan next to JR Biei Station.",
+      "seasonLabel": "Season",
+      "season": "Typically late December–early March (varies with snow)",
+      "meetLabel": "Meet",
+      "meet": "Shiki-no-Joho-kan (Biei Tourism Association) · 1 min from JR Biei Station",
+      "durationLabel": "Duration",
+      "duration": "About 2 hours (morning & afternoon departures)",
+      "note": "Hill snowshoeing runs only on permitted guided tours. You cannot walk the hills without an authorized guide.",
+      "cta": "Official tourism association page",
+      "url": "https://www.shakotan-hokkaido.jp/ja/facility/hill-snowshoe-tours"
+    },
+    "tokotoko": {
+      "eyebrow": "Local operator",
+      "title": "Tokotoko Adventure",
+      "subtitle": "Book Biei winter activities",
+      "lead": "Snowshoe and snow experiences bookable online. Check availability and courses on the reservation site.",
+      "cta": "Go to booking site",
+      "url": "https://tokotoko-adventure.stores.jp/reserve/tokotoko-adventure"
+    },
+    "pairingTitle": "Sample one-day pairing",
+    "pairingLead": "AM: Furari Winter Walk → Lunch near the station → PM: free snow play at the town ski area → Night: Shirogane Blue Pond light-up.",
+    "pairingBluePondCta": "Blue Pond guide",
+    "heroImageAlt": "Snowshoeing Biei snowfields—a snow wellness experience",
+    "galleryAlt": "White hills and clear winter sky—Biei snow wellness scenery"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "10 Nearby Eats — Shakotan Outdoor Sports Forest Ski Area",
+      "description": "Curated food picks and area map—pair with snow play and Blue Pond in one day"
+    },
+    "backLink": "Back to Biei guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After the snow,<br />into Hokkaido food",
+      "tagline": "Dairy, wagyu, wheat, ramen—pair iconic flavors with photo-ready locations for a seamless day"
+    },
+    "notice": "Hours, closures, and winter schedules change—each venue's official site is authoritative. No trespass on farmland; enjoy only in welcoming spaces.",
+    "introTitle": "Why food completes the loop",
+    "introLead": "Visitors to Biei—especially independent travel travelers—are highly sensitive to \"only-in-Hokkaido\" food and Instagram-ready settings.",
+    "introBody": "We picked ten strong food stops to hook travelers before and after snow scenes. Combined with the town ski area and Blue Pond, they form a friction-free day-trip package.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and hub layers—show multiple at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Biei food, onsen & hub map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Hubs",
+      "hint": "Food and onsen can be shown together",
+      "mobileHint": "If pins overlap, use View on map in the list below or Spot list on the map"
+    },
+    "linkOnsenGuide": "Nearby onsen guide (10 picks)",
+    "spotsEyebrow": "10 picks",
+    "spotsTitle": "10 nearby eats that resonate with Biei visitors",
+    "spotsLead": "Grouped by category—easy to slot before or after snow play.",
+    "spots": {
+      "junpei": {
+        "tag": "Western · shrimp bowl",
+        "title": "Yoshoku & Cafe Junpei",
+        "lead": "A legendary western-style restaurant in Biei. The signature shrimp fry bowl draws long queues from Asia-focused travelers."
+      },
+      "shakotan-farm": {
+        "tag": "Dairy · farm views",
+        "title": "Biei Farm (grazing dairy)",
+        "lead": "Vast pasture views plus raclette toast on Biei wheat bread and fresh soft-serve—dairy and scenery in one stop."
+      },
+      "aruno": {
+        "tag": "Bakery · cheese fondue",
+        "title": "Aruu no Pain",
+        "lead": "Log-house bakery café. Hollowed house-made bread filled with cheese—the fondue set is a visual hit for photo hunters."
+      },
+      "chiyoda": {
+        "tag": "Wagyu · farm restaurant",
+        "title": "Farm Restaurant Chiyoda",
+        "lead": "Farm-direct restaurant for wagyu fans—Biei beef steak and hearty stews for meat-focused travelers."
+      },
+      "ferme": {
+        "tag": "Sweets · bread · dining",
+        "title": "Ferme La Terre Biei",
+        "lead": "\"Live with nature\" complex with beautiful architecture, refined souvenirs, and café-hopping appeal."
+      },
+      "between": {
+        "tag": "Burger · forest takeout",
+        "title": "BETWEEN THE BREAD",
+        "lead": "A burger shop alone in the forest. Takeout burgers with local ingredients—handy between drives and scenic stops."
+      },
+      "gosh": {
+        "tag": "Coffee · roast in-house",
+        "title": "Gosh Coffee Roastery",
+        "lead": "Highly rated in Bibaushi—house-roasted coffee, bread, and antique interiors to warm up after hills and views."
+      },
+      "asperge": {
+        "tag": "French · Biei vegetables",
+        "title": "Restaurant Asperges",
+        "lead": "Inside JA Biei’s Biei Senka—French that maximizes fresh local produce for higher-budget food travelers."
+      },
+      "sabo": {
+        "tag": "Japanese sweets · by station",
+        "title": "Biei Sabo",
+        "lead": "Steps from Biei Station. Kinako syrup soft-serve and drinks—Japanese dessert cues that hook overseas visitors."
+      },
+      "santouka": {
+        "tag": "Ramen · Asahikawa style",
+        "title": "Ramen Santouka Biei",
+        "lead": "Ramen is killer content . The famous Asahikawa-born chain on the Biei route—essential after snow play."
+      }
+    },
+    "pairingTitle": "Sample day loop",
+    "pairingLead": "Biei Station → snow play (town ski area) → lunch: Junpei or Biei Sabo → afternoon: Biei Farm or Aruu no Pain → night: Blue Pond light-up. Sections work even without a rental car (walk + bus/taxi).",
+    "pairingSnowCta": "Snow play guide",
+    "pairingBluePondCta": "Blue Pond guide"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "10 Nearby Onsen — Shakotan Outdoor Sports Forest Ski Area",
+      "description": "Snow-view open-air baths and day visits—onsen map paired with snow play"
+    },
+    "backLink": "Back to Biei guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "Warm the body<br />in hot springs",
+      "tagline": "After snow play and Blue Pond—Japanese onsen culture and snow-view roten"
+    },
+    "notice": "Day-bath availability, hours, winter closures, and mixed-bath rules change—check each facility. Use extra care at wild roten baths.",
+    "introTitle": "Why onsen anchors the loop",
+    "introLead": "visitors around Biei strongly want Japanese onsen culture and open-air baths in snowy scenery.",
+    "introBody": "Ten baths that warm chilled bodies after snow play and scenic touring—designed as a digital bundle with our food map, like Japowserch set proposals.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and hub layers—show multiple at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Biei food, onsen & hub map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Hubs",
+      "hint": "Food and onsen can be shown together",
+      "mobileHint": "If pins overlap, use View on map in the list below or Spot list on the map"
+    },
+    "linkFoodGuide": "Nearby food guide (10 picks)",
+    "spotsEyebrow": "10 picks",
+    "spotsTitle": "10 nearby onsen that resonate with Biei visitors",
+    "spotsLead": "Centered on Shirogane Onsen—easy to pair before/after snow play and Blue Pond.",
+    "regions": {
+      "shirogane": "Biei · Shirogane Onsen",
+      "kamifurano": "Kamifurano · Mt. Tokachi",
+      "asahidake": "Mt. Asahidake · Higashikawa"
+    },
+    "spots": {
+      "ao-no-bi-yuyu": {
+        "tag": "100% source · stream roten",
+        "title": "Ao no Bi Yuyu (former Shirogane Hotel)",
+        "lead": "100% free-flowing beautifying water with a stream-view open bath—an easy stop right after Blue Pond."
+      },
+      "park-hills": {
+        "tag": "Large resort · sauna",
+        "title": "Hotel Park Hills Shirogane",
+        "lead": "The area's largest resort hotel near Shirahige Falls—alternating Japanese/Western baths and sauna for families and groups."
+      },
+      "tsuewasure": {
+        "tag": "Pure source · local bath",
+        "title": "Tsuewasure no Yu",
+        "lead": "No dilution, reheating, circulation, or chlorine—100% free-flowing. Cloudy iron-rich water for travelers seeking real local onsen."
+      },
+      "mori-no-ryotei": {
+        "tag": "Sukiya · day visit",
+        "title": "Mori no Ryotei Biei",
+        "lead": "A 17-room sukiya-style luxury inn with day baths—Japanese aesthetics and hospitality for high-end guests."
+      },
+      "mori-no-shizuku": {
+        "tag": "Free-flow · sauna",
+        "title": "Mori no Shizuku RIN",
+        "lead": "100% free-flowing roten, indoor baths, and sauna—clean, reliable comfort for international visitors."
+      },
+      "kokumin": {
+        "tag": "From ¥300 · public bath",
+        "title": "Biei Kokumin Hoyojo Center",
+        "lead": "Public bath from around ¥300—unadorned local sento culture for travelers who want a deep, shareable experience."
+      },
+      "ryounkaku": {
+        "tag": "Sky roten · highest",
+        "title": "Tokachidake Onsen Ryounkaku (Kamifurano)",
+        "lead": "One of Hokkaido's highest onsen inns—iron-brown water and deep snow for ultimate photo contrast; hugely popular."
+      },
+      "hakuginso": {
+        "tag": "Aufguss · northern mecca",
+        "title": "Fukiage Onsen Hakuginso (Kamifurano)",
+        "lead": "Hiba tubs and open baths on Mt. Tokachi's mid-slope—sauna with aufguss, a pilgrimage site for sauna lovers."
+      },
+      "fukiage-roten": {
+        "tag": "24h free · wild bath",
+        "title": "Fukiage Roten no Yu (Kamifurano)",
+        "lead": "A free 24-hour wild mixed bath in the forest—the ultimate adventure soak in snowy nature."
+      },
+      "yukoma": {
+        "tag": "Asahidake · classic",
+        "title": "Asahidake Onsen Yukomanso (Higashikawa)",
+        "lead": "A famed bath at the foot of Mt. Asahidake—wooden rustic tubs and a hub for powder skiers and mountain visitors."
+      }
+    },
+    "pairingTitle": "Snow play × onsen × Blue Pond",
+    "pairingLead": "AM: town ski snow play → lunch: Junpei or Biei Sabo → PM: Shirogane onsen → evening: Blue Pond → night: Ryounkaku or Yukomanso (stay extension).",
+    "pairingFoodCta": "Food guide (10 picks)",
+    "pairingSnowCta": "Snow play guide",
+    "pairingBluePondCta": "Blue Pond guide"
+  },
+  "access": {
+    "postal": "071-0218, Japan",
+    "line": "Omura-Murayama, Biei-cho, Kamikawa-gun, Hokkaido",
+    "note": "About a 15-minute walk (approx. 1.5 km) from JR Furano Line Biei Station",
+    "phone": "TEL 0166-92-5808 (Biei Town)",
+    "places": "<span class=\"place-unit\"><ruby>北海道積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町積丹町<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>上川郡<rt>Kamikawa-gun</rt></ruby></span><span class=\"place-unit\"><ruby>美瑛町<rt>Biei-cho</rt></ruby></span><span class=\"place-unit\"><ruby>字大村村山<rt>Omura-Murayama</rt></ruby></span>",
+    "rentacarEyebrow": "Furano · Biei touring",
+    "rentacarLink": "Book a rental car at Asahikawa Airport",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Biei, Shirogane, and Sounkyo drives"
+  },
+  "footer": {
+    "copyright": "© Shakotan Outdoor Sports Forest Ski Area — mock LP",
+    "location": "071-0218 · Omura-Murayama, Biei-cho, Kamikawa-gun, Hokkaido"
+  }
+}

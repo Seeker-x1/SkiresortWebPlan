@@ -830,6 +830,51 @@ const RESORT_COPY = {
       rentacarHint: "For Kaneyama and Tadami Line loops",
     },
   },
+  "toma-choei": {
+    rentacar: "asahikawa_airport",
+    ja: {
+      rentacarEyebrow: "旭川·当麻圏",
+      rentacarLink: "旭川空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "旭山動物園·当麻·層雲峡周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Asahikawa · Toma",
+      rentacarLink: "Book a rental car at Asahikawa Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Asahiyama Zoo, Toma, and Sounkyo drives",
+    },
+  },
+  "ueno-no": {
+    rentacar: "morioka_station",
+    ja: {
+      rentacarEyebrow: "盛岡·鳴子圏",
+      rentacarLink: "盛岡駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "鳴子温泉·大崎市周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Morioka · Naruko",
+      rentacarLink: "Book a rental car at Morioka Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Naruko Onsen and Osaki drives",
+    },
+  },
+  "hanakasa-kogen": {
+    rentacar: "shinjo_station",
+    ja: {
+      rentacarEyebrow: "山形·銀山圏",
+      rentacarLink: "新庄駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "銀山温泉·尾花沢·蔵王周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Yamagata · Ginzan",
+      rentacarLink: "Book a rental car at Shinjo Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Ginzan, Obanazawa, and Zao drives",
+    },
+  },
   wakamatsu: {
     rentacar: "memanbetsu_airport",
     ja: {

@@ -1,0 +1,25 @@
+resortId: dogoyama-kogen
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 道後山高原スキー場
+  en: Dogoyama Kogen Ski Area
+region:
+  ja: 広島県庄原市
+  en: 広島県庄原市
+japowResortId: 434
+
+strategy:
+  ja: 中国地方。雪の有無が来場直結。
+  en: 中国地方。雪の有無が来場直結。
+archetype: live-dashboard
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/dogoyama-kogen.md", "LP batch #76"]
+  heroImage: images/maps/dogoyama-kogen-hero.png
+  copyFrom: horaguchi-lp
+
+humanReview:
+  - japowResortId 434

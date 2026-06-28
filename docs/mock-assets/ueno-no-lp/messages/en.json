@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Ueno-no Ski Area",
+    "description": "Osaki, Miyagi — minutes from Naruko Onsen. Hot springs × snow play packages."
+  },
+  "logo": "Ueno-no Ski Area",
+  "hero": {
+    "eyebrow": "Osaki, Miyagi",
+    "title": "Ueno-no<br />Ski Area",
+    "statLabel": "Snow depth (base)",
+    "statValue": "128",
+    "statUnit": "cm",
+    "ctaToday": "Today's operations",
+    "updatedAt": "Feb 7, 8:30",
+    "tagline": "About 3 minutes from Naruko Onsen — a hidden hot-spring × snow-play park."
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "Shinkansen to<br />the snow.",
+    "lead": "About three hours from Tokyo. Exit Naruko-Onsen Station and a roughly 10-minute taxi ride—transit-resort travel with minimal friction.",
+    "ctaToday": "Today's operations",
+    "imgAlt": "Travel image of snowy scenery seen from a Tohoku Shinkansen car"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Access"
+    },
+    "map": {
+      "label": "Slopes",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Pricing",
+      "title": "Tickets & rentals"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Naruko Onsen",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "About 3 minutes from the onsen town",
+      "lead": "Close enough for Naruko Onsen hotel guests to visit during the day. At ¥2,500 for a day ticket, even a short visit pays for itself.",
+      "cta": "View access",
+      "imgAlt": "Travel image of snowy scenery seen from a Shinkansen car"
+    },
+    "secondary": {
+      "title": "Hot-spring hopping × snow play",
+      "lead": "After skiing, head to the communal bath Taki-no-Yu—Naruko's iconic acidic spring with a thousand years of history.",
+      "cta": "Read the onsen feature"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby onsen",
+    "title": "Naruko Onsen<br />is next door",
+    "lead": "Naruko Onsen brings together 17 springs and varied water types. Hop between Waseda-sajiki-yu and Naruko Hotel's famous \"eel hot spring.\"",
+    "whisper": "Bundled \"onsen tour × snow play\" packages with local inns are a fast path to higher revenue.",
+    "cta": "Naruko Onsen feature",
+    "imgAlt": "Image of an outdoor bath surrounded by forest"
+  },
+  "guides": {
+    "powder": {
+      "title": "Snow-play park for the onsen town",
+      "body": "Lead with sledding and tubing zones. Position as a Snow Play Area for Naruko hotel guests who want snow without expert ski skills."
+    },
+    "shinkansen": {
+      "title": "Go by Shinkansen",
+      "body": "Tokyo ~3 hours → Naruko-Onsen Station → 10-minute taxi. Design a day of extremes: Tokyo morning, slopes afternoon, onsen evening."
+    },
+    "beginners": {
+      "title": "Beginners & families",
+      "body": "Gentle pitches suited to families with small children. Pair first-time snow play with Naruko inn packages for international visitors."
+    }
+  },
+  "access": {
+    "postal": "989-6101, Japan",
+    "line": "106-5 Uenono, Naruko Onsen, Osaki, Miyagi",
+    "note": "About 10 minutes by taxi from Tohoku Shinkansen Naruko-Onsen Station (approx.)",
+    "phone": "TEL 0229-83-3611",
+    "places": "<span class=\"place-unit\"><ruby>宮城県大崎市<rt>Osaki, Miyagi</rt></ruby></span><span class=\"place-unit\"><ruby>鳴子温泉上野々<rt>Naruko Onsen Uenono</rt></ruby></span><span class=\"place-unit\"><ruby>字上野々106-5<rt>106-5 Uenono</rt></ruby></span>",
+    "rentacarEyebrow": "Morioka · Naruko",
+    "rentacarLink": "Book a rental car at Morioka Station",
+    "rentacarNote": "Skyticket (external site)",
+    "rentacarHint": "For Naruko Onsen and Osaki drives"
+  },
+  "footer": {
+    "copyright": "© Ueno-no Ski Area — mock LP",
+    "location": "989-6101 · 106-5 Uenono, Naruko Onsen, Osaki, Miyagi"
+  }
+}

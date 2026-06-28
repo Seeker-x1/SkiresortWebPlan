@@ -1178,6 +1178,305 @@
       "affiliates": {
         "rentacar": "shinjo_station"
       }
+    },
+    {
+      "id": "hanakasa-kogen",
+      "slug": "hanakasa-kogen-lp",
+      "name": {
+        "ja": "花笠高原スキー場",
+        "en": "Hanakasa Kogen Ski Area"
+      },
+      "region": {
+        "ja": "山形県尾花沢市",
+        "en": "Obanazawa, Yamagata"
+      },
+      "strategy": {
+        "ja": "銀山温泉至近——昼間の雪遊びオプション。",
+        "en": "Near Ginzan Onsen — daytime snow play add-on."
+      },
+      "guidePath": "/hanakasa-kogen/",
+      "guideUrl": "https://guides.japowserch.com/hanakasa-kogen/",
+      "japowResortId": 169,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "shinjo_station"
+      }
+    },
+    {
+      "id": "toma-choei",
+      "slug": "toma-choei-lp",
+      "name": {
+        "ja": "当麻町営スキー場",
+        "en": "Toma Municipal Ski Area"
+      },
+      "region": {
+        "ja": "北海道当麻町",
+        "en": "北海道当麻町"
+      },
+      "strategy": {
+        "ja": "旭山動物園・旭川北IC近接。ファミリー雪遊び受け皿。",
+        "en": "旭山動物園・旭川北IC近接。ファミリー雪遊び受け皿。"
+      },
+      "guidePath": "/toma-choei/",
+      "guideUrl": "https://guides.japowserch.com/toma-choei/",
+      "japowResortId": 46,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "asahikawa_airport"
+      }
+    },
+    {
+      "id": "ueno-no",
+      "slug": "ueno-no-lp",
+      "name": {
+        "ja": "上野々スキー場",
+        "en": "Ueno-no Ski Area"
+      },
+      "region": {
+        "ja": "宮城県大崎市",
+        "en": "宮城県大崎市"
+      },
+      "strategy": {
+        "ja": "鳴子温泉郷至近。温泉×スキーパッケージ。",
+        "en": "鳴子温泉郷至近。温泉×スキーパッケージ。"
+      },
+      "guidePath": "/ueno-no/",
+      "guideUrl": "https://guides.japowserch.com/ueno-no/",
+      "japowResortId": 127,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "morioka_station"
+      }
+    },
+    {
+      "id": "nihonmatsu-shiozawa",
+      "slug": "nihonmatsu-shiozawa-lp",
+      "name": {
+        "ja": "二本松塩沢スキー場",
+        "en": "Nihonmatsu Shiozawa Ski Area"
+      },
+      "region": {
+        "ja": "福島県二本松市",
+        "en": "福島県二本松市"
+      },
+      "strategy": {
+        "ja": "東北サファリパークドメイン内同居。独立サイト化。",
+        "en": "東北サファリパークドメイン内同居。独立サイト化。"
+      },
+      "guidePath": "/nihonmatsu-shiozawa/",
+      "guideUrl": "https://guides.japowserch.com/nihonmatsu-shiozawa/",
+      "japowResortId": 193,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "shinjo_station"
+      }
+    },
+    {
+      "id": "tateyama-alpine",
+      "slug": "tateyama-alpine-lp",
+      "name": {
+        "ja": "立山山岳スキー場",
+        "en": "Tateyama Alpine Ski Area"
+      },
+      "region": {
+        "ja": "富山県立山町",
+        "en": "富山県立山町"
+      },
+      "strategy": {
+        "ja": "立山黒部周辺。BC・春スキー・インバウンドコア層。",
+        "en": "立山黒部周辺。BC・春スキー・インバウンドコア層。"
+      },
+      "guidePath": "/tateyama-alpine/",
+      "guideUrl": "https://guides.japowserch.com/tateyama-alpine/",
+      "japowResortId": 353,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "komatsu_airport_kanazawa"
+      }
+    },
+    {
+      "id": "dogoyama-kogen",
+      "slug": "dogoyama-kogen-lp",
+      "name": {
+        "ja": "道後山高原スキー場",
+        "en": "Dogoyama Kogen Ski Area"
+      },
+      "region": {
+        "ja": "広島県庄原市",
+        "en": "広島県庄原市"
+      },
+      "strategy": {
+        "ja": "中国地方。雪の有無が来場直結。",
+        "en": "中国地方。雪の有無が来場直結。"
+      },
+      "guidePath": "/dogoyama-kogen/",
+      "guideUrl": "https://guides.japowserch.com/dogoyama-kogen/",
+      "japowResortId": 434,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "yamaguchi_ube_airport"
+      }
+    },
+    {
+      "id": "shakotan",
+      "slug": "shakotan-lp",
+      "name": {
+        "ja": "積丹町野外スポーツ林スキー場",
+        "en": "Shakotan Outdoor Sports Forest Ski Area"
+      },
+      "region": {
+        "ja": "北海道積丹町",
+        "en": "北海道積丹町"
+      },
+      "strategy": {
+        "ja": "積丹ブルー・海鮮観光地の冬コンテンツ。",
+        "en": "積丹ブルー・海鮮観光地の冬コンテンツ。"
+      },
+      "guidePath": "/shakotan/",
+      "guideUrl": "https://guides.japowserch.com/shakotan/",
+      "japowResortId": 13,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "chitose_international_airport"
+      }
+    },
+    {
+      "id": "akago",
+      "slug": "akago-lp",
+      "name": {
+        "ja": "赤子山スキー場",
+        "en": "Akago Ski Area"
+      },
+      "region": {
+        "ja": "滋賀県長浜市",
+        "en": "滋賀県長浜市"
+      },
+      "strategy": {
+        "ja": "関西・中京圏アクセス。ファミリー雪遊びデビュー。",
+        "en": "関西・中京圏アクセス。ファミリー雪遊びデビュー。"
+      },
+      "guidePath": "/akago/",
+      "guideUrl": "https://guides.japowserch.com/akago/",
+      "japowResortId": 399,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "kansai_international_airport"
+      }
+    },
+    {
+      "id": "anzo-koen",
+      "slug": "anzo-koen-lp",
+      "name": {
+        "ja": "安蔵公園スキー場",
+        "en": "Anzo Park Ski Area"
+      },
+      "region": {
+        "ja": "鳥取県鳥取市",
+        "en": "鳥取県鳥取市"
+      },
+      "strategy": {
+        "ja": "鳥取砂丘観光の延長。公園案内に埋没。",
+        "en": "鳥取砂丘観光の延長。公園案内に埋没。"
+      },
+      "guidePath": "/anzo-koen/",
+      "guideUrl": "https://guides.japowserch.com/anzo-koen/",
+      "japowResortId": 424,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "kansai_international_airport"
+      }
+    },
+    {
+      "id": "imakane-tane",
+      "slug": "imakane-tane-lp",
+      "name": {
+        "ja": "今金町種川スキー場",
+        "en": "Imakane Tane Ski Area"
+      },
+      "region": {
+        "ja": "北海道今金町",
+        "en": "北海道今金町"
+      },
+      "strategy": {
+        "ja": "道南・ナイター。ピリカ連携広域。",
+        "en": "道南・ナイター。ピリカ連携広域。"
+      },
+      "guidePath": "/imakane-tane/",
+      "guideUrl": "https://guides.japowserch.com/imakane-tane/",
+      "japowResortId": 1,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "hakodate_onuma_matsumae"
+      }
+    },
+    {
+      "id": "shibetsu-hinata",
+      "slug": "shibetsu-hinata-lp",
+      "name": {
+        "ja": "士別市日向スキー場",
+        "en": "Shibetsu Hinata Ski Area"
+      },
+      "region": {
+        "ja": "北海道士別市",
+        "en": "北海道士別市"
+      },
+      "strategy": {
+        "ja": "あさひスキー場廃止で流入期待。残存者利益。",
+        "en": "あさひスキー場廃止で流入期待。残存者利益。"
+      },
+      "guidePath": "/shibetsu-hinata/",
+      "guideUrl": "https://guides.japowserch.com/shibetsu-hinata/",
+      "japowResortId": 43,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "asahikawa_airport"
+      }
+    },
+    {
+      "id": "tochio",
+      "slug": "tochio-lp",
+      "name": {
+        "ja": "とちおファミリースキー場",
+        "en": "Tochio Family Ski Area"
+      },
+      "region": {
+        "ja": "新潟県長岡市",
+        "en": "新潟県長岡市"
+      },
+      "strategy": {
+        "ja": "栃尾の油揚げ×休日プチお出かけ。",
+        "en": "栃尾の油揚げ×休日プチお出かけ。"
+      },
+      "guidePath": "/tochio/",
+      "guideUrl": "https://guides.japowserch.com/tochio/",
+      "japowResortId": 318,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "niigata_airport"
+      }
+    },
+    {
+      "id": "kushibiki-taranokidai",
+      "slug": "kushibiki-taranokidai-lp",
+      "name": {
+        "ja": "櫛引たらのきだいスキー場",
+        "en": "Kushibiki Taranokidai Ski Area"
+      },
+      "region": {
+        "ja": "山形県鶴岡市",
+        "en": "山形県鶴岡市"
+      },
+      "strategy": {
+        "ja": "庄内市民の冬の足。スクール予定カレンダー。",
+        "en": "庄内市民の冬の足。スクール予定カレンダー。"
+      },
+      "guidePath": "/kushibiki-taranokidai/",
+      "guideUrl": "https://guides.japowserch.com/kushibiki-taranokidai/",
+      "japowResortId": 157,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "shinjo_station"
+      }
     }
   ],
   "guides": {

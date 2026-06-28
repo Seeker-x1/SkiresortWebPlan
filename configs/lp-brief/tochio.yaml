@@ -1,0 +1,25 @@
+resortId: tochio
+schemaVersion: "2026-06-28"
+
+name:
+  ja: とちおファミリースキー場
+  en: Tochio Family Ski Area
+region:
+  ja: 新潟県長岡市
+  en: 新潟県長岡市
+japowResortId: 318
+
+strategy:
+  ja: 栃尾の油揚げ×休日プチお出かけ。
+  en: 栃尾の油揚げ×休日プチお出かけ。
+archetype: local-value
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/tochio.md", "LP batch #82"]
+  heroImage: images/maps/tochio-hero.png
+  copyFrom: shinjo-lp
+
+humanReview:
+  - japowResortId 318

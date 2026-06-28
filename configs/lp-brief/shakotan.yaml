@@ -1,0 +1,25 @@
+resortId: shakotan
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 積丹町野外スポーツ林スキー場
+  en: Shakotan Outdoor Sports Forest Ski Area
+region:
+  ja: 北海道積丹町
+  en: 北海道積丹町
+japowResortId: 13
+
+strategy:
+  ja: 積丹ブルー・海鮮観光地の冬コンテンツ。
+  en: 積丹ブルー・海鮮観光地の冬コンテンツ。
+archetype: tourism-hub
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/shakotan.md", "LP batch #77"]
+  heroImage: images/maps/shakotan-hero.png
+  copyFrom: biei-lp
+
+humanReview:
+  - japowResortId 13

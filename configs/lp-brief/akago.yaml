@@ -1,0 +1,25 @@
+resortId: akago
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 赤子山スキー場
+  en: Akago Ski Area
+region:
+  ja: 滋賀県長浜市
+  en: 滋賀県長浜市
+japowResortId: 399
+
+strategy:
+  ja: 関西・中京圏アクセス。ファミリー雪遊びデビュー。
+  en: 関西・中京圏アクセス。ファミリー雪遊びデビュー。
+archetype: local-value
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/akago.md", "LP batch #78"]
+  heroImage: images/maps/akago-hero.png
+  copyFrom: shinjo-lp
+
+humanReview:
+  - japowResortId 399

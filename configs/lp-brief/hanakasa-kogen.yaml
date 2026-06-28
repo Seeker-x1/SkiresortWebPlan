@@ -1,0 +1,41 @@
+resortId: hanakasa-kogen
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 花笠高原スキー場
+  en: Hanakasa Kogen Ski Area
+region:
+  ja: 山形県尾花沢市
+  en: Obanazawa, Yamagata
+japowResortId: 169
+
+strategy:
+  ja: 銀山温泉至近——昼間の雪遊びオプション。
+  en: Near Ginzan Onsen — daytime snow play add-on.
+archetype: tourism-hub
+
+audience: both
+
+hero:
+  tagline:
+    ja: 銀山温泉から20分——パウダーとパーク、平日ナイター特化のローカル丘。
+    en: 20 min from Ginzan Onsen — powder, park, and weekday night skiing.
+  badges: [ginzan, powder, night, park]
+
+pillars:
+  - id: ginzan
+    hook: { ja: 銀山温泉連動, en: Ginzan Onsen loop }
+  - id: park
+    hook: { ja: 3連キッカー, en: Triple kicker park }
+  - id: value
+    hook: { ja: 日券¥1,900, en: Day pass ¥1,900 }
+
+map:
+  sources: ["docs/research/inbox/hanakasa-kogen.md", "LP batch #71"]
+  heroImage: images/maps/hanakasa-kogen-hero.png
+  copyFrom: abashiri-lv-lp
+
+humanReview:
+  - japowResortId 169
+  - 月〜木平日ナイターのみ営業
+  - 料金・バナナボート最新確認

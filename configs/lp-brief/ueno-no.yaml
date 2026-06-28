@@ -1,0 +1,25 @@
+resortId: ueno-no
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 上野々スキー場
+  en: Ueno-no Ski Area
+region:
+  ja: 宮城県大崎市
+  en: 宮城県大崎市
+japowResortId: 127
+
+strategy:
+  ja: 鳴子温泉郷至近。温泉×スキーパッケージ。
+  en: 鳴子温泉郷至近。温泉×スキーパッケージ。
+archetype: transit-onsen
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/ueno-no.md", "LP batch #73"]
+  heroImage: images/maps/ueno-no-hero.png
+  copyFrom: sichinohe-lp
+
+humanReview:
+  - japowResortId 127

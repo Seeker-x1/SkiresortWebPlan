@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="hanakasa-kogen">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>宿泊 — 花笠高原スキー場</title>
+  <meta name="description" content="湖畔徒歩圏と尾花沢駅前——2つのベースキャンプ" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="./" class="logo" data-i18n="logo">花笠高原スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="./#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=hanakasa-kogen" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="nearby-food.html" data-i18n="paths.food.title">ゲレンデ食・周辺4選</a></li>
+          <li><a href="nearby-onsen.html" data-i18n="paths.onsen.title">湖畔温泉2選</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--spot" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-hanakasa-kogen-hero.png" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <a href="./" class="detail-back">← <span data-i18n="corridorStay.backLink">レークビュー LP に戻る</span></a>
+        <p class="eyebrow" data-i18n="corridorStay.hero.eyebrow">Stay · Strategy</p>
+        <h1 class="hero-title" data-i18n-html="corridorStay.hero.title">湖畔に泊まる、<br />または駅前で。</h1>
+        <p class="hero-tagline" data-i18n="corridorStay.hero.tagline">徒歩アクセス派と広域周遊派</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="inner">
+        <p role="note" class="notice-banner" data-i18n="corridorStay.notice">客室・料金・送迎は各施設の公式予約サイトが最新です。</p>
+        <h2 class="heading-lg" data-i18n="corridorStay.introTitle">2つのベースキャンプ</h2>
+        <p class="lead" style="margin-top:1.5rem; max-width:36rem" data-i18n="corridorStay.introLead">湖荘に泊まって徒歩でゲレンデへ行くか、尾花沢駅前で道東周遊のハブにするか。</p>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="corridorStay.spotsEyebrow">3 picks</p>
+        <h2 class="heading-lg" data-i18n="corridorStay.spotsTitle">厳選宿3選</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="corridorStay.spotsLead">湖畔直結型と尾花沢市内型から厳選。</p>
+
+        <h3 class="onsen-region" data-i18n="corridorStay.regions.lakeside">尾花沢湖畔（ゲレンデ徒歩圏）</h3>
+        <ol class="food-spot-list">
+          <li class="food-spot" id="entry-kohanso">
+            <span class="food-spot__num">01</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="corridorStay.spots.kohanso.tag">徒歩12分 · 蟹づくし</p>
+              <h3 class="food-spot__title" data-i18n="corridorStay.spots.kohanso.title">ホテル尾花沢湖荘</h3>
+              <p class="food-spot__lead" data-i18n="corridorStay.spots.kohanso.lead">ゲレンデに最も近い湖畔宿——ファミリー・カップル向け。</p>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-kanko">
+            <span class="food-spot__num">02</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="corridorStay.spots.kanko.tag">高台 · かに御膳</p>
+              <h3 class="food-spot__title" data-i18n="corridorStay.spots.kanko.title">天都の宿 尾花沢観光ホテル</h3>
+              <p class="food-spot__lead" data-i18n="corridorStay.spots.kanko.lead">眺望と食事の質で選ぶ湖畔ホテル。</p>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="onsen-region" style="margin-top:3rem" data-i18n="corridorStay.regions.city">尾花沢市内（駅・周遊ハブ）</h3>
+        <ol class="food-spot-list" start="3">
+          <li class="food-spot" id="entry-station">
+            <span class="food-spot__num">03</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="corridorStay.spots.station.tag">尾花沢駅 · バス10分</p>
+              <h3 class="food-spot__title" data-i18n="corridorStay.spots.station.title">尾花沢駅周辺ホテル</h3>
+              <p class="food-spot__lead" data-i18n="corridorStay.spots.station.lead">道東周遊の起点——バス・タクシーでゲレンデへ。</p>
+            </div>
+          </li>
+        </ol>
+        <div style="margin-top:2rem">
+          <a href="./#tour" class="btn btn-secret" data-i18n="tour.eyebrow">Half-Day Model</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p data-i18n="footer.copyright">© 花笠高原スキー場 — LP案モック</p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+</body>
+</html>

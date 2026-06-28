@@ -1,0 +1,25 @@
+resortId: shibetsu-hinata
+schemaVersion: "2026-06-28"
+
+name:
+  ja: 士別市日向スキー場
+  en: Shibetsu Hinata Ski Area
+region:
+  ja: 北海道士別市
+  en: 北海道士別市
+japowResortId: 43
+
+strategy:
+  ja: あさひスキー場廃止で流入期待。残存者利益。
+  en: あさひスキー場廃止で流入期待。残存者利益。
+archetype: local-value
+
+audience: both
+
+map:
+  sources: ["docs/research/inbox/shibetsu-hinata.md", "LP batch #81"]
+  heroImage: images/maps/shibetsu-hinata-hero.png
+  copyFrom: shinjo-lp
+
+humanReview:
+  - japowResortId 43
