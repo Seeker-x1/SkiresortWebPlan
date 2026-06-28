@@ -1,0 +1,10 @@
+resortId: tenkamori
+schemaVersion: "2026-06-28"
+name:
+  ja: 天下森スキー場
+  en: Tenkamori Ski Area
+japowResortId: 147
+strategy:
+  ja: 家族のスキーデビューに最適！見晴らしの良いゲレンデと増田の歴史・温泉を巡る冬のローカル体験。
+  en: Perfect for family ski debuts! Enjoy a gentle slope, followed by historic Masuda walks and hot springs.
+copyFrom: shinjo-lp

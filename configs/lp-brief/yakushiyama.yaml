@@ -1,0 +1,10 @@
+resortId: yakushiyama
+schemaVersion: "2026-06-28"
+name:
+  ja: 薬師山スキー場
+  en: Yakushiyama Ski Area
+japowResortId: 150
+strategy:
+  ja: 絶品自家製ラーメンと1回100円のレトロなTバーリフトで、心もお腹も満たす超ローカル雪上体験を。
+  en: Enjoy a retro T-bar lift experience and legendary local ramen at this hidden gem in Akita.
+copyFrom: shinjo-lp

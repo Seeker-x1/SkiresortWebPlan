@@ -1,0 +1,10 @@
+resortId: shinbo-family
+schemaVersion: "2026-06-28"
+name:
+  ja: 新保ファミリースキー場
+  en: Shinbo Family Ski Area
+japowResortId: 368
+strategy:
+  ja: 週末スノボ禁止の絶対的安心感で、子どもの雪山デビューを飾る「西日本一優しい」ファミリースキー場。
+  en: The most family-friendly ski resort in Western Japan, offering a perfectly safe, snowboard-free weekend environment for your child's snow debut.
+copyFrom: kamikawa-nakayama-lp

@@ -14,13 +14,17 @@
       "nameEn": "Kamikawa Nakayama Municipal Ski Area",
       "japowResortId": 36,
       "regionJa": "北海道上川町",
-      "status": "lp_done",
+      "status": "research",
       "archetypeHint": "local-value",
-      "copyFromHint": "kamikawa-nakayama-lp",
+      "copyFromHint": "kiyosato-lp",
       "salesAngle": "層雲峡近接・ナイター21時・リフト無料",
       "digitalGap": "既存LPあり",
       "subscriptionPitch": "—",
-      "note": "LP済み・本バッチではスキップ"
+      "note": "LP済み・本バッチではスキップ",
+      "reportPath": "docs/research/inbox/kamikawa-nakayama.md",
+      "researchInteractionId": "v1_ChdreGhCYXY2YUJPakh2cjBQNDZDbDRBURIXa3hoQmF2NmFCT2pIdnIwUDQ2Q2w0QVE",
+      "researchCompletedAt": "2026-06-28T12:59:45.849Z",
+      "updatedAt": "2026-06-28"
     },
     {
       "rank": 92,
@@ -125,7 +129,10 @@
       "salesAngle": "八戸圏ファミリー・リアルタイム営業確認",
       "digitalGap": "自治体ページ埋没",
       "subscriptionPitch": "本日営業LP",
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/usazawa.md",
+      "researchInteractionId": "v1_ChdYLTFBYXRHbkdyaTIycm9Qb3RQN3NBRRIXWC0xQWF0R25HcmkyMnJvUG90UDdzQUU",
+      "researchCompletedAt": "2026-06-28T09:56:31.233Z"
     },
     {
       "rank": 98,
@@ -134,12 +141,16 @@
       "nameEn": "Ohotakedake Ski Area",
       "japowResortId": 94,
       "regionJa": "青森県七戸町",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "transit-onsen",
       "copyFromHint": "sichinohe-lp",
       "salesAngle": "七戸十和田駅圏・町内スキー包括DX",
       "digitalGap": "七戸町営とセット提案可",
-      "subscriptionPitch": "新幹線×スキーLP"
+      "subscriptionPitch": "新幹線×スキーLP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/ohotakedake.md",
+      "researchInteractionId": "v1_ChcwTzlBYXBTRk45Zk0ycm9QLWNMTjJBOBIXME85QWFwU0ZOOWZNMnJvUC1jTE4yQTg",
+      "researchCompletedAt": "2026-06-28T10:06:29.768Z"
     },
     {
       "rank": 99,
@@ -148,12 +159,16 @@
       "nameEn": "Akiyama Ski Area",
       "japowResortId": 153,
       "regionJa": "山形県最上町",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "transit-onsen",
       "copyFromHint": "shinjo-lp",
       "salesAngle": "赤倉温泉隣接・温泉×ローカルスキー",
       "digitalGap": "インバウンド未訴求",
-      "subscriptionPitch": "多言語温泉パッケージLP"
+      "subscriptionPitch": "多言語温泉パッケージLP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/akiyama.md",
+      "researchInteractionId": "v1_ChdKX0pBYW8tZEQ1Mmk5dE1QLWVibjRRYxIXSl9KQWFvLWRENTJpOXRNUC1lYm40UWM",
+      "researchCompletedAt": "2026-06-28T10:15:51.627Z"
     },
     {
       "rank": 100,
@@ -162,12 +177,16 @@
       "nameEn": "Kujuo Ski Area",
       "japowResortId": 365,
       "regionJa": "福井県",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "live-dashboard",
       "copyFromHint": "shinjo-lp",
       "salesAngle": "北陸ローカル・本日滑れるか即答",
       "digitalGap": "積雪変動・電話対応多",
-      "subscriptionPitch": "積雪API連動LP"
+      "subscriptionPitch": "積雪API連動LP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/kujuo.md",
+      "researchInteractionId": "v1_ChdXZlJBYXZDU0RfU2Uycm9QM29xMDhRaxIXV2ZSQWF2Q1NEX1NlMnJvUDNvcTA4UWs",
+      "researchCompletedAt": "2026-06-28T10:23:54.905Z"
     }
   ]
 }

@@ -1,0 +1,10 @@
+resortId: gosannen
+schemaVersion: "2026-06-28"
+name:
+  ja: 後三年スキー場
+  en: Gosannen Ski Area
+japowResortId: 141
+strategy:
+  ja: 完全無料のプライベートゲレンデから広がる、名湯と絶品グルメの冬の隠れ家リゾート。
+  en: A hidden winter outdoor resort expanding from a free local slope to natural hot springs and local gastronomy.
+copyFrom: shinjo-lp

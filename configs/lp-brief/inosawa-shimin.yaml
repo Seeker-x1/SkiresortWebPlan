@@ -1,0 +1,10 @@
+resortId: inosawa-shimin
+schemaVersion: "2026-06-28"
+name:
+  ja: 伊ノ沢市民スキー場
+  en: Inosawa Municipal Ski Area
+japowResortId: 34
+strategy:
+  ja: 旭川の街並みを一望！大正時代から地元で愛される、家族に優しいノスタルジックな市民ゲレンデ。
+  en: A nostalgic, family-friendly local ski slope loved since the Taisho era, offering panoramic views of Asahikawa city.
+copyFrom: hinode-lp

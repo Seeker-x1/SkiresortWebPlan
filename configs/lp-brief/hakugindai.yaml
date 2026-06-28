@@ -1,0 +1,10 @@
+resortId: hakugindai
+schemaVersion: "2026-06-28"
+name:
+  ja: 白銀台スキー場
+  en: Hakugindai Ski Area
+japowResortId: 85
+strategy:
+  ja: 十勝の空と大地を満喫。日本最大級のソリコースと源泉かけ流し温泉で心温まるファミリーリゾート
+  en: Enjoy the vast Tokachi sky and earth. A heartwarming family resort featuring one of Japan's largest sledding courses and natural hot springs.
+copyFrom: hinode-lp

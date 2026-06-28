@@ -128,7 +128,10 @@
       "salesAngle": "小規模・地元密着",
       "digitalGap": "公式Webなし",
       "subscriptionPitch": "独立LP",
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/taikozan.md",
+      "researchInteractionId": "v1_ChdodTFBYXFLNkRfS1EwLWtQc0xXVXdBOBIXaHUxQWFxSzZEX0tRMC1rUHNMV1V3QTg",
+      "researchCompletedAt": "2026-06-28T09:59:55.920Z"
     },
     {
       "rank": 55,
@@ -137,12 +140,16 @@
       "nameEn": "Taisei Ski Area",
       "japowResortId": 4,
       "regionJa": "北海道",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "hinode-lp",
       "salesAngle": "小規模ローカル",
       "digitalGap": "情報不足",
-      "subscriptionPitch": "基本情報LP"
+      "subscriptionPitch": "基本情報LP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/taisei.md",
+      "researchInteractionId": "v1_ChduZkJBYXJtUUZiU1F2cjBQdU9ldXVBTRIXbmZCQWFybVFGYlNRdnIwUHVPZXV1QU0",
+      "researchCompletedAt": "2026-06-28T10:09:04.025Z"
     },
     {
       "rank": 56,
@@ -151,12 +158,16 @@
       "nameEn": "Shinbo Family Ski Area",
       "japowResortId": 368,
       "regionJa": "福井県",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
-      "copyFromHint": "kamikawa-nakayama-lp",
+      "copyFromHint": "hinode-lp",
       "salesAngle": "ファミリー特化・西日本",
       "digitalGap": "雪情報発信不足",
-      "subscriptionPitch": "ファミリー向けLP"
+      "subscriptionPitch": "ファミリー向けLP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/shinbo-family.md",
+      "researchInteractionId": "v1_Chd3ZkpBYXRxaURjLUQwLWtQb3ZxbGlBNBIXd2ZKQWF0cWlEYy1EMC1rUG92cWxpQTQ",
+      "researchCompletedAt": "2026-06-28T10:18:05.687Z"
     },
     {
       "rank": 57,
@@ -165,12 +176,16 @@
       "nameEn": "Fuyutorigoe Ski Garden",
       "japowResortId": 349,
       "regionJa": "新潟県",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "tsunan-lp",
       "salesAngle": "新潟ローカル・ガーデン型",
       "digitalGap": "露出弱い",
-      "subscriptionPitch": "西日本雪情報LP"
+      "subscriptionPitch": "西日本雪情報LP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/fuyutorigoe.md",
+      "researchInteractionId": "v1_ChczX1JBYXZPUEtLbUUwLWtQOE1PS3lBbxIXM19SQWF2T1BLS21FMC1rUDhNT0t5QW8",
+      "researchCompletedAt": "2026-06-28T10:26:38.964Z"
     },
     {
       "rank": 58,
@@ -179,12 +194,16 @@
       "nameEn": "Hakugindai Ski Area",
       "japowResortId": 85,
       "regionJa": "北海道",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "hinode-lp",
       "salesAngle": "小規模町営",
       "digitalGap": "自治体依存",
-      "subscriptionPitch": "ローカルLP"
+      "subscriptionPitch": "ローカルLP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/hakugindai.md",
+      "researchInteractionId": "v1_Chc0UFpBYXBtdkRKR28wLWtQNzVlT3VBdxIXNFBaQWFwbXZESkdvMC1rUDc1ZU91QXc",
+      "researchCompletedAt": "2026-06-28T10:49:24.853Z"
     },
     {
       "rank": 59,
@@ -193,12 +212,16 @@
       "nameEn": "Takayanagi Garuru Ski Area",
       "japowResortId": 316,
       "regionJa": "新潟県",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "tsunan-lp",
       "salesAngle": "個人運営・ユニークネーム",
       "digitalGap": "SNS以外情報少",
-      "subscriptionPitch": "ブランドLP"
+      "subscriptionPitch": "ブランドLP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/takayanagi-garuru.md",
+      "researchInteractionId": "v1_ChdOdnhBYXVlRktMTEpyZmNQd0lEaXdBMBIXTnZ4QWF1ZUZLTExKcmZjUHdJRGl3QTA",
+      "researchCompletedAt": "2026-06-28T10:57:42.439Z"
     },
     {
       "rank": 60,
@@ -207,12 +230,16 @@
       "nameEn": "Kunimidaira Ski Area",
       "japowResortId": 113,
       "regionJa": "岩手県",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "sichinohe-lp",
       "salesAngle": "岩手内陸・ローカル",
       "digitalGap": "公式弱い",
-      "subscriptionPitch": "東北ローカルLP"
+      "subscriptionPitch": "東北ローカルLP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/kunimidaira.md",
+      "researchInteractionId": "v1_ChdKXzVBYXFQS0hjYWwwLWtQMWFLNzRRdxIXSl81QWFxUEtIY2FsMC1rUDFhSzc0UXc",
+      "researchCompletedAt": "2026-06-28T11:08:45.309Z"
     },
     {
       "rank": 61,
@@ -221,12 +248,16 @@
       "nameEn": "Mikawa Onsen Ski Area",
       "japowResortId": 350,
       "regionJa": "新潟県",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "transit-onsen",
       "copyFromHint": "sichinohe-lp",
       "salesAngle": "温泉×スキー",
       "digitalGap": "温泉宿情報に埋没",
-      "subscriptionPitch": "温泉連動LP"
+      "subscriptionPitch": "温泉連動LP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/mikawa-onsen.md",
+      "researchInteractionId": "v1_Chd2Z0JCYXVMV0taT0Eycm9Qc2RHWDRRSRIXdmdCQmF1TFdLWk9BMnJvUHNkR1g0UUk",
+      "researchCompletedAt": "2026-06-28T11:16:58.540Z"
     },
     {
       "rank": 62,
@@ -235,12 +266,16 @@
       "nameEn": "Bibai National Ski Area",
       "japowResortId": 30,
       "regionJa": "北海道美唄市",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "hinode-lp",
       "salesAngle": "国設・空知エリア",
       "digitalGap": "国設情報の陳腐化",
-      "subscriptionPitch": "国設リニューアルLP"
+      "subscriptionPitch": "国設リニューアルLP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/bibai-kokusetsu.md",
+      "researchInteractionId": "v1_Chdxd0pCYW9xcU1iWGQycm9Qby12T3dBRRIXcXdKQmFvcXFNYlhkMnJvUG8tdk93QUU",
+      "researchCompletedAt": "2026-06-28T11:27:36.648Z"
     },
     {
       "rank": 63,
@@ -249,12 +284,16 @@
       "nameEn": "Inosawa Municipal Ski Area",
       "japowResortId": 34,
       "regionJa": "北海道",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "hinode-lp",
       "salesAngle": "市民スキー場・地元密着",
       "digitalGap": "市民向け情報のみ",
-      "subscriptionPitch": "市民＋観光LP"
+      "subscriptionPitch": "市民＋観光LP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/inosawa-shimin.md",
+      "researchInteractionId": "v1_ChdLUVZCYXVuMk9xZk9yZmNQdDgtbjJBSRIXS1FWQmF1bjJPcWZPcmZjUHQ4LW4yQUk",
+      "researchCompletedAt": "2026-06-28T11:37:13.918Z"
     },
     {
       "rank": 64,
@@ -263,12 +302,16 @@
       "nameEn": "Yakushiyama Ski Area",
       "japowResortId": 150,
       "regionJa": "秋田県",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "shinjo-lp",
       "salesAngle": "秋田内陸・ローカル",
       "digitalGap": "露出不足",
-      "subscriptionPitch": "秋田雪LP"
+      "subscriptionPitch": "秋田雪LP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/yakushiyama.md",
+      "researchInteractionId": "v1_ChdhZ2RCYXFXUE80Nld2cjBQOUxxaTRBTRIXYWdkQmFxV1BPNDZXdnIwUDlMcWk0QU0",
+      "researchCompletedAt": "2026-06-28T11:48:48.702Z"
     },
     {
       "rank": 65,
@@ -277,12 +320,16 @@
       "nameEn": "Tenkamori Ski Area",
       "japowResortId": 147,
       "regionJa": "秋田県",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "shinjo-lp",
       "salesAngle": "秋田ローカル",
       "digitalGap": "情報少",
-      "subscriptionPitch": "ローカルLP"
+      "subscriptionPitch": "ローカルLP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/tenkamori.md",
+      "researchInteractionId": "v1_ChdJZ3BCYXI2VUJORG0xZThQd2YyZXlBYxIXSWdwQmFyNlVCTkRtMWU4UHdmMmV5QWM",
+      "researchCompletedAt": "2026-06-28T11:58:04.842Z"
     },
     {
       "rank": 66,
@@ -291,12 +338,16 @@
       "nameEn": "Inagawa Ski Area",
       "japowResortId": 137,
       "regionJa": "秋田県",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "shinjo-lp",
       "salesAngle": "秋田内陸",
       "digitalGap": "Web弱い",
-      "subscriptionPitch": "基本LP"
+      "subscriptionPitch": "基本LP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/inagawa.md",
+      "researchInteractionId": "v1_ChdUUXhCYW9PNk9xNmhyZmNQcXJUSHNBSRIXVFF4QmFvTzZPcTZocmZjUHFyVEhzQUk",
+      "researchCompletedAt": "2026-06-28T12:07:37.620Z"
     },
     {
       "rank": 67,
@@ -305,12 +356,16 @@
       "nameEn": "Gosannen Ski Area",
       "japowResortId": 141,
       "regionJa": "秋田県",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "shinjo-lp",
       "salesAngle": "後三年地域",
       "digitalGap": "地域ポータル依存",
-      "subscriptionPitch": "地域連動LP"
+      "subscriptionPitch": "地域連動LP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/gosannen.md",
+      "researchInteractionId": "v1_ChdpZzVCYXZPSUw0cnIycm9QbDZhbmtRMBIXaWc1QmF2T0lMNHJyMnJvUGw2YW5rUTA",
+      "researchCompletedAt": "2026-06-28T12:16:55.883Z"
     },
     {
       "rank": 68,
@@ -319,12 +374,16 @@
       "nameEn": "Soyujima 229 Ski Land",
       "japowResortId": 100,
       "regionJa": "青森県",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "tourism-hub",
       "copyFromHint": "sichinohe-lp",
       "salesAngle": "レジャー複合・229",
       "digitalGap": "複合施設に埋没",
-      "subscriptionPitch": "スキー特化LP"
+      "subscriptionPitch": "スキー特化LP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/soyujima-229.md",
+      "researchInteractionId": "v1_ChdmeEpCYXJtTEZyTEpyZmNQd0lEaXdBMBIXZnhKQmFybUxGckxKcmZjUHdJRGl3QTA",
+      "researchCompletedAt": "2026-06-28T12:33:35.437Z"
     },
     {
       "rank": 69,
@@ -333,12 +392,16 @@
       "nameEn": "Takinoue Sakuragaoka Municipal Ski Area",
       "japowResortId": 68,
       "regionJa": "北海道滝上町",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "kiyosato-lp",
       "salesAngle": "紋別エリア・町営",
       "digitalGap": "自治体ページのみ",
-      "subscriptionPitch": "町営LP"
+      "subscriptionPitch": "町営LP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/takinoue-sakuragaoka.md",
+      "researchInteractionId": "v1_ChdxeFJCYXFxNEZjUEUwLWtQNXZpS3lBcxIXcXhSQmFxcTRGY1BFMC1rUDV2aUt5QXM",
+      "researchCompletedAt": "2026-06-28T12:41:44.357Z"
     },
     {
       "rank": 70,
@@ -347,12 +410,16 @@
       "nameEn": "Shimokawa Ski Area",
       "japowResortId": 44,
       "regionJa": "北海道下川町",
-      "status": "pending",
+      "status": "research",
       "archetypeHint": "local-value",
       "copyFromHint": "kiyosato-lp",
       "salesAngle": "宗谷内陸・ローカル",
       "digitalGap": "情報不足",
-      "subscriptionPitch": "ローカルLP"
+      "subscriptionPitch": "ローカルLP",
+      "updatedAt": "2026-06-28",
+      "reportPath": "docs/research/inbox/shimokawa.md",
+      "researchInteractionId": "v1_ChdpaFpCYXJTRU5QLWgycm9QZ2R2SC1BOBIXaWhaQmFyU0VOUC1oMnJvUGdkdkgtQTg",
+      "researchCompletedAt": "2026-06-28T12:49:43.592Z"
     }
   ]
 }

@@ -1,0 +1,10 @@
+resortId: socchidake
+schemaVersion: "2026-06-28"
+name:
+  ja: そっち岳スキー場
+  en: Socchidake Ski Area
+japowResortId: 27
+strategy:
+  ja: 秘境の極上パウダーと完全無欠のプライベート感で、家族の雪山デビューを一生の思い出に。
+  en: The perfect private powder slope for your family's first uncrowded snow adventure.
+copyFrom: hinode-lp

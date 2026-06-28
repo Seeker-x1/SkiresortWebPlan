@@ -1,0 +1,10 @@
+resortId: kunimidaira
+schemaVersion: "2026-06-28"
+name:
+  ja: 国見平スキー場
+  en: Kunimidaira Ski Area
+japowResortId: 113
+strategy:
+  ja: 岩手ローカルが秘める極上パウダーと、滑走後の「前沢牛×温泉」で叶える最高の冬旅。
+  en: Discover the hidden JAPOW of Iwate's locals, followed by world-class Maesawa Beef and natural hot springs.
+copyFrom: sichinohe-lp

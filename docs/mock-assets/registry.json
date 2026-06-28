@@ -333,15 +333,15 @@
       "slug": "kamikawa-nakayama-lp",
       "name": {
         "ja": "上川町営中山スキー場",
-        "en": "Kamikawa Nakayama Ski Area"
+        "en": "Kamikawa Nakayama Municipal Ski Area"
       },
       "region": {
         "ja": "北海道上川町",
-        "en": "Kamikawa, Hokkaido"
+        "en": "Hokkaido"
       },
       "strategy": {
-        "ja": "フリーミアム · 層雲峡の雪遊び拠点",
-        "en": "Freemium · Sounkyo snow-play hub"
+        "ja": "大雪山の麓、星空の下で貸切パウダーを。リフト無料のローカルゲレンデで雪と遊ぶ。",
+        "en": "Experience private powder under the starry sky at the foot of Daisetsuzan. A free local slope for pure snow fun."
       },
       "guidePath": "/kamikawa-nakayama/",
       "guideUrl": "https://guides.japowserch.com/kamikawa-nakayama/",
@@ -1812,8 +1812,8 @@
         "en": "Hokkaido"
       },
       "strategy": {
-        "ja": "小規模・地元密着",
-        "en": "小規模・地元密着"
+        "ja": "圧倒的コスパと毎日21時までのナイター営業。温泉とローカルグルメを巡る厚沢部ディープスノートリップ。",
+        "en": "Unbeatable value with night skiing until 9 PM—Experience deep local snow, hot springs, and authentic cuisine in Assabu."
       },
       "guidePath": "/taikozan/",
       "guideUrl": "https://guides.japowserch.com/taikozan/",
@@ -1835,8 +1835,8 @@
         "en": "Hokkaido"
       },
       "strategy": {
-        "ja": "小規模ローカル",
-        "en": "小規模ローカル"
+        "ja": "日本海と奥尻島に沈む夕日に飛び込む。北海道で最も小さく、最も美しい無料の絶景ローカルゲレンデ。",
+        "en": "Dive into the sunset over the Sea of Japan—Hokkaido's smallest and most beautiful free local ski resort."
       },
       "guidePath": "/taisei/",
       "guideUrl": "https://guides.japowserch.com/taisei/",
@@ -1858,8 +1858,8 @@
         "en": "Fukui"
       },
       "strategy": {
-        "ja": "ファミリー特化・西日本",
-        "en": "ファミリー特化・西日本"
+        "ja": "週末スノボ禁止の絶対的安心感で、子どもの雪山デビューを飾る「西日本一優しい」ファミリースキー場。",
+        "en": "The most family-friendly ski resort in Western Japan, offering a perfectly safe, snowboard-free weekend environment for your child's snow debut."
       },
       "guidePath": "/shinbo-family/",
       "guideUrl": "https://guides.japowserch.com/shinbo-family/",
@@ -1881,8 +1881,8 @@
         "en": "Niigata"
       },
       "strategy": {
-        "ja": "新潟ローカル・ガーデン型",
-        "en": "新潟ローカル・ガーデン型"
+        "ja": "家族の雪遊びデビューを飾る、大正ロマンの木造電車と白銀のローカルゲレンデ。",
+        "en": "A perfect local slope for family snow debuts, featuring nostalgic retro wooden trains on snow."
       },
       "guidePath": "/fuyutorigoe/",
       "guideUrl": "https://guides.japowserch.com/fuyutorigoe/",
@@ -1904,8 +1904,8 @@
         "en": "Hokkaido"
       },
       "strategy": {
-        "ja": "小規模町営",
-        "en": "小規模町営"
+        "ja": "十勝の空と大地を満喫。日本最大級のソリコースと源泉かけ流し温泉で心温まるファミリーリゾート",
+        "en": "Enjoy the vast Tokachi sky and earth. A heartwarming family resort featuring one of Japan's largest sledding courses and natural hot springs."
       },
       "guidePath": "/hakugindai/",
       "guideUrl": "https://guides.japowserch.com/hakugindai/",
@@ -1927,8 +1927,8 @@
         "en": "Niigata"
       },
       "strategy": {
-        "ja": "個人運営・ユニークネーム",
-        "en": "個人運営・ユニークネーム"
+        "ja": "ファミリーのスキーデビューと温泉・絶品グルメを満喫する、安心のローカルスノーリゾート。",
+        "en": "A family-friendly local snow resort perfect for ski debuts, combined with relaxing hot springs and local gourmet food."
       },
       "guidePath": "/takayanagi-garuru/",
       "guideUrl": "https://guides.japowserch.com/takayanagi-garuru/",
@@ -1950,8 +1950,8 @@
         "en": "Iwate"
       },
       "strategy": {
-        "ja": "岩手内陸・ローカル",
-        "en": "岩手内陸・ローカル"
+        "ja": "岩手ローカルが秘める極上パウダーと、滑走後の「前沢牛×温泉」で叶える最高の冬旅。",
+        "en": "Discover the hidden JAPOW of Iwate's locals, followed by world-class Maesawa Beef and natural hot springs."
       },
       "guidePath": "/kunimidaira/",
       "guideUrl": "https://guides.japowserch.com/kunimidaira/",
@@ -1973,8 +1973,8 @@
         "en": "Niigata"
       },
       "strategy": {
-        "ja": "温泉×スキー",
-        "en": "温泉×スキー"
+        "ja": "温泉街と直結する隠れ家ローカルリゾート。初心者向けワイドコースから最大斜度38度のオフピステまで揃う全10コース。",
+        "en": "A hidden local gem directly connected to natural hot springs, featuring 10 diverse courses including a thrilling 38-degree uncompacted slope."
       },
       "guidePath": "/mikawa-onsen/",
       "guideUrl": "https://guides.japowserch.com/mikawa-onsen/",
@@ -1996,8 +1996,8 @@
         "en": "Hokkaido"
       },
       "strategy": {
-        "ja": "国設・空知エリア",
-        "en": "国設・空知エリア"
+        "ja": "札幌から約1時間、極上のパウダースノーと地形遊びを独占できるローカルのための「秘境ゲレンデ」。",
+        "en": "A hidden local gem just an hour from Sapporo, offering pure JAPOW powder and uncrowded terrain for core riders."
       },
       "guidePath": "/bibai-kokusetsu/",
       "guideUrl": "https://guides.japowserch.com/bibai-kokusetsu/",
@@ -2019,8 +2019,8 @@
         "en": "Hokkaido"
       },
       "strategy": {
-        "ja": "市民スキー場・地元密着",
-        "en": "市民スキー場・地元密着"
+        "ja": "旭川の街並みを一望！大正時代から地元で愛される、家族に優しいノスタルジックな市民ゲレンデ。",
+        "en": "A nostalgic, family-friendly local ski slope loved since the Taisho era, offering panoramic views of Asahikawa city."
       },
       "guidePath": "/inosawa-shimin/",
       "guideUrl": "https://guides.japowserch.com/inosawa-shimin/",
@@ -2042,8 +2042,8 @@
         "en": "Akita"
       },
       "strategy": {
-        "ja": "秋田内陸・ローカル",
-        "en": "秋田内陸・ローカル"
+        "ja": "絶品自家製ラーメンと1回100円のレトロなTバーリフトで、心もお腹も満たす超ローカル雪上体験を。",
+        "en": "Enjoy a retro T-bar lift experience and legendary local ramen at this hidden gem in Akita."
       },
       "guidePath": "/yakushiyama/",
       "guideUrl": "https://guides.japowserch.com/yakushiyama/",
@@ -2065,8 +2065,8 @@
         "en": "Akita"
       },
       "strategy": {
-        "ja": "秋田ローカル",
-        "en": "秋田ローカル"
+        "ja": "家族のスキーデビューに最適！見晴らしの良いゲレンデと増田の歴史・温泉を巡る冬のローカル体験。",
+        "en": "Perfect for family ski debuts! Enjoy a gentle slope, followed by historic Masuda walks and hot springs."
       },
       "guidePath": "/tenkamori/",
       "guideUrl": "https://guides.japowserch.com/tenkamori/",
@@ -2088,8 +2088,8 @@
         "en": "Akita"
       },
       "strategy": {
-        "ja": "秋田内陸",
-        "en": "秋田内陸"
+        "ja": "サウナ併設の天然温泉に隣接！初心者に優しい全見渡しの超安心ローカルゲレンデで雪・湯・食を満喫。",
+        "en": "A super-safe, beginner-friendly local ski hill with a newly renewed sauna & hot spring right next door!"
       },
       "guidePath": "/inagawa/",
       "guideUrl": "https://guides.japowserch.com/inagawa/",
@@ -2111,8 +2111,8 @@
         "en": "Akita"
       },
       "strategy": {
-        "ja": "後三年地域",
-        "en": "後三年地域"
+        "ja": "完全無料のプライベートゲレンデから広がる、名湯と絶品グルメの冬の隠れ家リゾート。",
+        "en": "A hidden winter outdoor resort expanding from a free local slope to natural hot springs and local gastronomy."
       },
       "guidePath": "/gosannen/",
       "guideUrl": "https://guides.japowserch.com/gosannen/",
@@ -2134,8 +2134,8 @@
         "en": "Aomori"
       },
       "strategy": {
-        "ja": "レジャー複合・229",
-        "en": "レジャー複合・229"
+        "ja": "田子牛とニンニクの美食を満喫した後、極上のナイター非圧雪パウダーを独占する大人のローカルステイ。",
+        "en": "Monopolize uncrowded powder snow at night after savoring premium Takko beef and garlic in Japan's garlic capital."
       },
       "guidePath": "/soyujima-229/",
       "guideUrl": "https://guides.japowserch.com/soyujima-229/",
@@ -2157,8 +2157,8 @@
         "en": "Hokkaido"
       },
       "strategy": {
-        "ja": "紋別エリア・町営",
-        "en": "紋別エリア・町営"
+        "ja": "ニセコが忘れた「本物のローカルパウダー」を独占する、紋別の隠れ家ゲレンデ。",
+        "en": "Monbetsu's Hidden Gem: Exclusive pristine powder awaits at Takinoue Sakuragaoka."
       },
       "guidePath": "/takinoue-sakuragaoka/",
       "guideUrl": "https://guides.japowserch.com/takinoue-sakuragaoka/",
@@ -2180,8 +2180,8 @@
         "en": "Hokkaido"
       },
       "strategy": {
-        "ja": "宗谷内陸・ローカル",
-        "en": "宗谷内陸・ローカル"
+        "ja": "7人のオリンピアンを生んだ「スキージャンプの聖地」で、レジェンド達の軌跡と地元グルメを辿る特別な体験を。",
+        "en": "Experience the sacred birthplace of ski jumping Olympians, tracing the legends' paths with local gastronomy and historical charm."
       },
       "guidePath": "/shimokawa/",
       "guideUrl": "https://guides.japowserch.com/shimokawa/",
@@ -2295,8 +2295,8 @@
         "en": "Aomori"
       },
       "strategy": {
-        "ja": "八戸圏ファミリー・リアルタイム営業確認",
-        "en": "八戸圏ファミリー・リアルタイム営業確認"
+        "ja": "本州最北端の称号と名物グルメが彩る、家族のための極上雪遊び＆アウトドアパーク",
+        "en": "The northernmost family snow park in Honshu, offering safe slopes, local food, and year-round outdoor fun."
       },
       "guidePath": "/usazawa/",
       "guideUrl": "https://guides.japowserch.com/usazawa/",
@@ -2318,8 +2318,8 @@
         "en": "Aomori"
       },
       "strategy": {
-        "ja": "七戸十和田駅圏・町内スキー包括DX",
-        "en": "七戸十和田駅圏・町内スキー包括DX"
+        "ja": "閉鎖された旧ゲレンデをDXで無人開放！完全貸切のJAPOWパウダーと秘湯・川内温泉を巡るエクストリーム＆エコツアー。",
+        "en": "Experience untracked JAPOW at an exclusive, unmanned backcountry mountain, seamlessly connected with local hot springs and retro cuisine via digital pass."
       },
       "guidePath": "/ohotakedake/",
       "guideUrl": "https://guides.japowserch.com/ohotakedake/",
@@ -2341,8 +2341,8 @@
         "en": "Yamagata"
       },
       "strategy": {
-        "ja": "赤倉温泉隣接・温泉×ローカルスキー",
-        "en": "赤倉温泉隣接・温泉×ローカルスキー"
+        "ja": "雄大な鳥海山を望む絶景と、美肌の湯・地元グルメで心満たされる、初心者・ファミリーに優しい白銀のローカルゲレンデ。",
+        "en": "A family-friendly local ski slope offering spectacular views of Mt. Chokai, paired with relaxing hot springs and deep cultural gastronomy."
       },
       "guidePath": "/akiyama/",
       "guideUrl": "https://guides.japowserch.com/akiyama/",
@@ -2364,8 +2364,8 @@
         "en": "Fukui"
       },
       "strategy": {
-        "ja": "北陸ローカル・本日滑れるか即答",
-        "en": "北陸ローカル・本日滑れるか即答"
+        "ja": "圧雪車故障のピンチをチャンスに。鯖江市民の遊び場をスマートロック導入で「完全無人の通年型アウトドアパーク」として再興せよ。",
+        "en": "Turn crisis into opportunity: Reviving Sabae's local playground as a fully unstaffed, year-round outdoor park with smart tech."
       },
       "guidePath": "/kujuo/",
       "guideUrl": "https://guides.japowserch.com/kujuo/",

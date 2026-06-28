@@ -1,0 +1,10 @@
+resortId: shimokawa
+schemaVersion: "2026-06-28"
+name:
+  ja: 下川スキー場
+  en: Shimokawa Ski Area
+japowResortId: 44
+strategy:
+  ja: 7人のオリンピアンを生んだ「スキージャンプの聖地」で、レジェンド達の軌跡と地元グルメを辿る特別な体験を。
+  en: Experience the sacred birthplace of ski jumping Olympians, tracing the legends' paths with local gastronomy and historical charm.
+copyFrom: kiyosato-lp

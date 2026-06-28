@@ -1,0 +1,10 @@
+resortId: fuyutorigoe
+schemaVersion: "2026-06-28"
+name:
+  ja: 冬鳥越スキーガーデン
+  en: Fuyutorigoe Ski Garden
+japowResortId: 349
+strategy:
+  ja: 家族の雪遊びデビューを飾る、大正ロマンの木造電車と白銀のローカルゲレンデ。
+  en: A perfect local slope for family snow debuts, featuring nostalgic retro wooden trains on snow.
+copyFrom: tsunan-lp

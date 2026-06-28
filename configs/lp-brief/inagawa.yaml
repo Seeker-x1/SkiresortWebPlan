@@ -1,0 +1,10 @@
+resortId: inagawa
+schemaVersion: "2026-06-28"
+name:
+  ja: 稲川スキー場
+  en: Inagawa Ski Area
+japowResortId: 137
+strategy:
+  ja: サウナ併設の天然温泉に隣接！初心者に優しい全見渡しの超安心ローカルゲレンデで雪・湯・食を満喫。
+  en: A super-safe, beginner-friendly local ski hill with a newly renewed sauna & hot spring right next door!
+copyFrom: shinjo-lp

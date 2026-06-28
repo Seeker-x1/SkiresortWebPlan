@@ -1,0 +1,10 @@
+resortId: taisei
+schemaVersion: "2026-06-28"
+name:
+  ja: 大成スキー場
+  en: Taisei Ski Area
+japowResortId: 4
+strategy:
+  ja: 日本海と奥尻島に沈む夕日に飛び込む。北海道で最も小さく、最も美しい無料の絶景ローカルゲレンデ。
+  en: Dive into the sunset over the Sea of Japan—Hokkaido's smallest and most beautiful free local ski resort.
+copyFrom: hinode-lp

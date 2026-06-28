@@ -1,175 +1,212 @@
 {
   "meta": {
     "title": "Shinbo Family Ski Area",
-    "description": "ファミリー特化・西日本"
+    "description": "The most family-friendly ski resort in Western Japan, offering a perfectly safe, snowboard-free weekend environment for your child's snow debut."
   },
   "logo": "Shinbo Family",
   "nav": {
-    "freemium": "Premium",
-    "tour": "Tour"
+    "family": "Family",
+    "spa": "Onsen"
   },
   "hero": {
     "eyebrow": "Fukui",
     "title": "Shinbo Family<br />Ski Area",
-    "tagline": "ファミリー特化・西日本",
-    "badgePrice": "Lifts completely free",
-    "badgeNight": "Night skiing Tue·Thu·Sat until 21:00",
-    "badgeCourses": "1 rope tow",
-    "ctaFreemium": "Premium experiences",
+    "tagline": "The most family-friendly ski resort in Western Japan, offering a perfectly safe, snowboard-free weekend environment for your child's snow debut.",
+    "badgeLocal": "Adult day ticket ¥1,000",
+    "badgeVisitor": "Snow & Spa Pass",
+    "badgeSled": "Night skiing until 20:30",
+    "ctaPass": "Passes & pricing",
     "ctaLive": "Today's conditions"
   },
   "live": {
     "ariaLabel": "Today's operations dashboard",
-    "subtitle": "Official info & snow conditions",
+    "subtitle": "Town-run facility updates",
     "updatedAt": "Updated Dec 25, 9:00",
     "lift": {
-      "label": "Rope tow",
+      "label": "Lift",
       "value": "Operating",
-      "note": "1 lift · ~240 m · free"
+      "note": "1 lift · virtually no wait"
     },
-    "snow": {
-      "label": "Snow quality",
-      "value": "Dry powder",
-      "note": "Inland cold · diamond dust"
+    "courses": {
+      "label": "Courses",
+      "value": "100% beginner",
+      "note": "50 m vertical · 2 courses"
     },
     "night": {
       "label": "Night skiing",
-      "value": "Tue·Thu·Sat until 21:00",
-      "note": "Wed·Fri·Sun·holidays until 16:00"
+      "value": "Until 20:30",
+      "note": "9:00–20:30 · night from 16:00"
     },
-    "parking": {
-      "label": "Parking",
-      "value": "100 spaces · free",
-      "note": "5 min by car from Kamikawa Station"
+    "yotei": {
+      "label": "View",
+      "value": "Tokachi peaks",
+      "note": "Panorama on clear days"
     }
   },
-  "sanctuary": {
-    "eyebrow": "Free Japow",
-    "title": "Free lifts,<br />resort-grade snow.",
-    "lead": "Inland cold at the foot of the Daisetsu range brings top-tier dry powder. While lift prices rise nationwide, skiing here is completely free—with meticulous grooming that earns reviews like \"too good to be free.\" A hidden town-run gem.",
+  "transit": {
+    "eyebrow": "Station Walk",
+    "title": "Walk from the station,<br />straight into snow.",
+    "lead": "About 13–15 minutes on foot from JR Furano Line Kamifurano Station—a rare Hokkaido hill you can reach by public transit alone. Skip Furano mega-resort ropeway queues and enjoy feather-light powder almost as soon as you arrive.",
     "specs": [
-      "70% beginner · 30% intermediate",
-      "~240 m runs (rope tow zone)",
-      "Former upper lift zone hike-up"
+      "~15 min walk from Kamifurano Station",
+      "~400 m from downtown",
+      "60 free parking spaces"
     ],
-    "noticeTitle": "Operations:",
-    "noticeBody": "Chairlift retired; one rope tow only. Snowboards allowed everywhere. Closed Mondays (except holidays). Season and hours vary with snow conditions.",
-    "ctaFreemium": "See premium experiences",
-    "imgAlt": "Dry powder on a wide gentle slope under the Daisetsu range—a free town-run hill"
+    "ctaPass": "View passes",
+    "ctaLive": "Today's operations",
+    "imgAlt": "Snowy path from JR Kamifurano Station toward Hinode Park—a walkable town-run hill"
   },
   "paths": {
-    "freemium": {
-      "label": "Premium",
-      "title": "Freemium experiences"
+    "today": {
+      "label": "Today",
+      "title": "Lift · night skiing · snow"
+    },
+    "pass": {
+      "label": "Pass",
+      "title": "Snow & Spa Pass"
+    },
+    "family": {
+      "label": "Family",
+      "title": "Snow slides · first snow"
+    },
+    "spa": {
+      "label": "Onsen",
+      "title": "Flanui Onsen · Tokachi peaks"
     },
     "access": {
       "label": "Access",
-      "title": "5 min from Kamikawa Station"
-    },
-    "today": {
-      "label": "Today",
-      "title": "Rope tow · snow · night"
-    },
-    "tour": {
-      "label": "Tour",
-      "title": "Snow & local culture"
-    },
-    "map": {
-      "label": "Map",
-      "title": "Courses · rope tow"
+      "title": "Walking distance from the station"
     }
   },
   "highlights": {
-    "eyebrow": "What sets us apart",
-    "title": "Strength of free",
+    "eyebrow": "Why Hinode",
+    "title": "What makes it different",
     "primary": {
-      "title": "Spotless lodge & restrooms",
-      "lead": "A renovated base lodge and restrooms praised in reviews—the infrastructure that matters most at small local hills. A decisive differentiator that extends stay time for families, women, and overseas guests.",
-      "cta": "Resort map",
-      "imgAlt": "Renovated clean ski lodge—a new bar for local hills"
+      "title": "Zero wait × Tokachi views",
+      "lead": "One lift, 100% beginner terrain, 50 m vertical—a safe snow playground without steep-slope fear. A hidden gem for travelers avoiding Furano crowds and long lift lines, with the Tokachi peaks as your backdrop.",
+      "cta": "Courses & views",
+      "imgAlt": "Shinbo Family Ski Area with the Tokachi mountain range—compact beginner hill"
     },
     "secondary": {
-      "title": "Complement to Kurodake",
-      "lead": "Kurodake in the same town targets advanced skiers. Nakayama is the safe first-snow base for beginners, families, and Sounkyo onsen guests when steep alpine terrain is too much.",
-      "cta": "See tour route"
+      "title": "Feather-light snow & snow slides",
+      "lead": "Aspen-light powder and popular snow slides—ideal for first-timers who want scenery and safe snow play more than long downhill runs.",
+      "cta": "Family zone guide"
     }
   },
-  "freemium": {
-    "eyebrow": "Freemium",
-    "title": "Free skiing,<br />paid experiences.",
-    "lead": "Keep free lifts for locals while monetizing overseas snow-play rental packs (tubes, sleds, wear), guided powder tours, and digital donations—a freemium model that turns external visitors into revenue.",
+  "pass": {
+    "eyebrow": "Visitor Pass",
+    "title": "Snow & Spa Pass,<br />from ¥5,000.",
+    "lead": "Keep the local adult day ticket at ¥1,000 while offering overseas visitors a bundled pass—rental partner, day lift ticket, and Flanui Onsen entry—for higher per-guest revenue (LP proposal).",
+    "localPrice": "Adult day ticket ¥1,000",
+    "visitorPrice": "Snow & Spa Pass from ¥5,000",
     "specs": [
-      "Snow-play rental ¥3,000 / 2h",
-      "Powder tour ¥15,000 / half day",
-      "QR tips · supporter stickers"
+      "Night ticket adult ¥700",
+      "11-ride book adult ¥500",
+      "Hands-free rental bundle (proposed)"
     ],
-    "cta": "Premium program details",
-    "imgAlt": "Snow-play rental at the lodge—tubes and sleds for hands-free fun"
+    "noticeTitle": "Guest infrastructure (proposed):",
+    "noticeBody": "Cashless payments, multilingual QR guides, and partner rental hand-off packages—short-term fixes to welcome luggage-free FIT travelers (report ch. 7).",
+    "cta": "Pass details",
+    "imgAlt": "Snow play plus onsen bundle—visitor pass for Kamifurano loops"
   },
-  "wellness": {
-    "eyebrow": "Local Culture",
-    "title": "After skiing,<br />Kamikawa ramen.",
-    "lead": "Kamikawa town brands itself \"Japan's best ramen town\"—authentic bowls minutes from the hill. Then Kamikawa Daiginjo brewery for tasting and premium souvenirs—the core of area circulation.",
-    "leadStation": "Lodge café and coworking on weekdays—capturing workation demand too.",
-    "cta": "See tour route",
-    "imgAlt": "Steaming Kamikawa ramen—local food after skiing"
+  "rental": {
+    "eyebrow": "Hands-free Package",
+    "title": "Arrive empty-handed,<br />pick up on site.",
+    "lead": "No on-hill rental today—partner with Furano-area shops for pre-paid online booking and lodge or locker pickup (LP proposal).",
+    "whisper": "External partners carry inventory risk so the public facility can still welcome overseas guests.",
+    "cta": "Hands-free guide",
+    "imgAlt": "Rental pickup at the lodge—luggage-free snow play"
   },
-  "tour": {
-    "eyebrow": "Premium Route",
-    "title": "From Sounkyo,<br />snow & culture.",
-    "lead": "A half- to full-day model for Sounkyo onsen guests. Position Nakayama as a weather-resilient first-snow base when Kurodake is too steep—maximize town spending on food, sake, and night skiing.",
-    "badge": "KAMIKAWA SNOW & CULTURE",
+  "yukinko": {
+    "eyebrow": "Night Skiing",
+    "title": "Open until 20:30,<br />night skiing included.",
+    "lead": "Open 9:00–20:30 (night from 16:00)—late arrivals can still enjoy lit snow before heading to downtown Kamifurano for dinner.",
+    "whisper": "Check the Kamifurano tourism association and Kamifulife portal for official hours.",
+    "cta": "Night hours",
+    "imgAlt": "Night-lit ski hill with Tokachi peaks silhouetted"
+  },
+  "family": {
+    "eyebrow": "First Snow",
+    "title": "First snow,<br />without the fear.",
+    "lead": "100% beginner terrain and just 50 m vertical—a safe playground for Asia-Pacific first-snow travelers who want photos, sledding, and gentle slides rather than steep alpine runs.",
+    "specs": [
+      "2 beginner courses",
+      "Snow slides",
+      "Free XC ski loan (park)"
+    ],
+    "noticeTitle": "Snow play:",
+    "noticeBody": "Large snow slides and a cross-country loop—strong as a snow park even for guests who never ride the lift (review analysis).",
+    "cta": "Family · first snow",
+    "imgAlt": "Family on snow slides—gentle beginner slope"
+  },
+  "spa": {
+    "eyebrow": "Snow & Spa",
+    "title": "After skiing,<br />onsen within walking distance.",
+    "lead": "Frontier Flanui Onsen beside Hinode Park—carbonated spring water and local food. Pair snow play with recovery for FIT guests who rely on public transit.",
+    "whisper": "Town buses also reach Tokachi Onsen Village (Kamihoro-so, Ryogoku-kaku, and more).",
+    "cta": "Onsen routes",
+    "imgAlt": "Flanui Onsen spring bath—recovery after snow play"
+  },
+  "workation": {
+    "eyebrow": "Night Ski & Dine",
+    "title": "Snow from 17:00,<br />then dinner in town.",
+    "lead": "Enjoy the 17:00–19:00 night window, then walk to downtown izakaya and buta-sagari pork spots—ticket-stub drink perks tie the hill to local dining (LP proposal).",
+    "badge": "NIGHT SKI · LOCAL DINE",
     "steps": {
-      "am": {
-        "title": "Nakayama Ski Area",
-        "body": "Snow play & beginner lessons from the clean base lodge"
+      "01": {
+        "title": "JR Kamifurano Station",
+        "body": "Furano Line · links to Asahikawa and Furano"
       },
-      "noon": {
-        "title": "Kamikawa ramen",
-        "body": "Lunch in town. Multilingual ramen map"
+      "02": {
+        "title": "~15 min walk",
+        "body": "Snowy footpath to Hinode Park ski hill"
       },
-      "pm": {
-        "title": "Daiginjo brewery",
-        "body": "Tasting & souvenirs at Ryokuoka storehouse"
+      "03": {
+        "title": "Night skiing",
+        "body": "Night window from 16:00 · virtually no wait"
       },
-      "eve": {
-        "title": "Night skiing (optional)",
-        "body": "Until 21:00 Tue·Thu·Sat. Shuttle from onsen town"
+      "04": {
+        "title": "Flanui Onsen",
+        "body": "Walkable 100% spring onsen for recovery"
+      },
+      "05": {
+        "title": "Dinner downtown",
+        "body": "Buta-sagari and local Kamifurano cuisine"
       }
     }
   },
   "guides": {
-    "powderTour": {
-      "title": "Guided premium powder tour",
-      "body": "Hike-up and powder runs in the former upper lift zone with local guides (¥15,000/person half day). Flip \"no chairlift\" into \"untouched powder\"—high-margin content for core skiers and affluent overseas guests."
+    "local": {
+      "title": "Overflow from Furano mega-resorts",
+      "body": "A blue-ocean counterpoint to Furano crowding—quiet slopes, zero wait, and village proximity for tired mega-resort guests and first-snow travelers (report ch. 3)."
     },
-    "snowPlay": {
-      "title": "Overseas snow-play rental pack",
-      "body": "Hands-free tubes, sleds, and snow wear (¥3,000/2h). Posters in English and Chinese at Sounkyo hotels—direct cash from visitors who can't use the rope tow."
+    "schools": {
+      "title": "Eco snow park story",
+      "body": "One lift, park terrain, walkable from JR—a low-impact “zero-emission snow park” narrative for sustainability-minded travelers (report ch. 6)."
     },
-    "donation": {
-      "title": "Digital donation & supporter program",
-      "body": "Multilingual QR payment panels for tips (¥500–1,000) to maintain the hill. Supporter stickers for ¥1,000+ donations—channeling \"too good to be free\" gratitude into revenue.",
+    "summer": {
+      "title": "Tokachi onsen village loop",
+      "body": "Snow play in the morning, town bus to Tokachi Onsen Village in the afternoon—Kamihoro-so, Ryogoku-kaku, and more for a 1–2 night model (report ch. 5).",
       "hashtags": [
-        "#FreeJapow",
-        "#KamikawaPowder",
-        "#NakayamaNight"
+        "#KamifuranoSnow",
+        "#FirstSnowJapan",
+        "#HiddenGemHokkaido"
       ]
     }
   },
   "access": {
-    "postal": "078-1763, Japan",
-    "line": "8 Higashi-machi, Kamikawa, Kamikawa-gun, Hokkaido",
-    "note": "Asahikawa Station ~1 hr by car · Kamikawa-Sounkyo IC ~15 min · JR Kamikawa Station taxi ~10 min, walk ~20 min · 100 free parking spaces",
-    "phone": "TEL 01658-2-2683 (Shinbo Family Ski Area)",
-    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>上川郡<rt>Kamikawa-gun</rt></ruby></span><span class=\"place-unit\"><ruby>上川町<rt>Kamikawa</rt></ruby></span><span class=\"place-unit\"><ruby>東町<rt>Higashi-machi</rt></ruby></span><span class=\"place-unit\">8</span>",
-    "rentacarEyebrow": "Memanbetsu Airport + rental car",
-    "rentacarLink": "Book a rental car at Memanbetsu Airport",
+    "postal": "〒071-0521",
+    "line": "Hinode Park, Kamifurano, Hokkaido (town ski area)",
+    "note": "~13–15 min walk from JR Kamifurano · 60 free parking spaces",
+    "phone": "Managed by Kamifurano Shinko Kosha · see tourism association for contacts",
+    "places": "<span class=\"place-unit\"><ruby>Hokkaido<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>Kamifurano<rt>Kamifurano</rt></ruby></span><span class=\"place-unit\"><ruby>Hinode Park<rt>Hinode Park</rt></ruby></span>",
+    "rentacarEyebrow": "Furano · Asahikawa",
+    "rentacarLink": "Book a rental car at Asahikawa Airport",
     "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Nemuro, Shibetsu, and Abashiri drives"
+    "rentacarHint": "For Furano, Biei, and Tokachi peak drives"
   },
   "footer": {
     "copyright": "© Shinbo Family Ski Area — mock LP",
-    "location": "078-1763 · 8 Higashi-machi, Kamikawa, Kamikawa-gun, Hokkaido"
+    "location": "〒071-0521 Kamifurano, Hokkaido"
   }
 }

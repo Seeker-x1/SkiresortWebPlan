@@ -1,0 +1,10 @@
+resortId: bibai-kokusetsu
+schemaVersion: "2026-06-28"
+name:
+  ja: 美唄国設スキー場
+  en: Bibai National Ski Area
+japowResortId: 30
+strategy:
+  ja: 札幌から約1時間、極上のパウダースノーと地形遊びを独占できるローカルのための「秘境ゲレンデ」。
+  en: A hidden local gem just an hour from Sapporo, offering pure JAPOW powder and uncrowded terrain for core riders.
+copyFrom: hinode-lp

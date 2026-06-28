@@ -1,0 +1,10 @@
+resortId: takayanagi-garuru
+schemaVersion: "2026-06-28"
+name:
+  ja: 高柳ガルルのスキー場
+  en: Takayanagi Garuru Ski Area
+japowResortId: 316
+strategy:
+  ja: ファミリーのスキーデビューと温泉・絶品グルメを満喫する、安心のローカルスノーリゾート。
+  en: A family-friendly local snow resort perfect for ski debuts, combined with relaxing hot springs and local gourmet food.
+copyFrom: tsunan-lp

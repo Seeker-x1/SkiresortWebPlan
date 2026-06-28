@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Build all pending sales-ranking LPs (batch 51-70 + 93-100). No trail maps.
- * Usage: node scripts/lp-factory/build-pending-batch.mjs [--scaffold-only]
+ * Usage: node scripts/lp-factory/build-pending-batch.mjs [--relocalize] [--scaffold-only]
  */
 import {
   existsSync,
@@ -28,7 +28,8 @@ const GUIDES_PATH = join(ROOT, "data/resort-guides.json");
 const VALIDATE_IDS = join(ROOT, "scripts/validate-resort-guides-ids.mjs");
 const APPLY_RENTACAR = join(MOCK, "scripts/apply-rentacar-affiliate.mjs");
 
-const SKIP_IDS = new Set(["nishiwaigawa-yuda", "shibetsu-kaneyama", "akagiyama", "kamikawa-nakayama", "nakafuranokita-hoshi"]);
+const SKIP_IDS = new Set(["nishiwaigawa-yuda", "shibetsu-kaneyama", "akagiyama", "nakafuranokita-hoshi"]);
+const RELOCALIZE = process.argv.includes("--relocalize");
 
 const RENTACAR = {
   "wassamu-higashiyama": "asahikawa_airport",
@@ -59,6 +60,7 @@ const RENTACAR = {
   ohotakedake: "shichinohetowada_station",
   akiyama: "shinjo_station",
   kujuo: "komatsu_airport_kanazawa",
+  "kamikawa-nakayama": "asahikawa_airport",
 };
 
 const RENTACAR_COPY = {
@@ -339,6 +341,13 @@ function isPending(resort) {
 const resorts = [];
 for (const bp of BATCH_PATHS) {
   for (const r of loadJson(join(ROOT, bp)).resorts) {
+    if (SKIP_IDS.has(r.id)) continue;
+    if (RELOCALIZE) {
+      const inbox = join(ROOT, "docs/research/inbox", `${r.id}.md`);
+      const hasLp = existsSync(join(MOCK, `${r.id}-lp`, "index.html"));
+      if (existsSync(inbox) && hasLp) resorts.push(r);
+      continue;
+    }
     if (isPending(r)) resorts.push(r);
   }
 }
@@ -349,12 +358,14 @@ patchRentacarScript();
 let built = 0;
 for (const resort of resorts) {
   const fromLp = resort.copyFromHint || "shinjo-lp";
-  console.log(`\n▶ #${resort.rank} ${resort.id} ← ${fromLp}`);
+  console.log(`\n▶ #${resort.rank} ${resort.id} ← ${fromLp}${RELOCALIZE ? " (relocalize)" : ""}`);
   try {
-    scaffold(resort.id, fromLp);
-    cloneTemplatePngs(resort.id, fromLp);
+    if (!RELOCALIZE) {
+      scaffold(resort.id, fromLp);
+      cloneTemplatePngs(resort.id, fromLp);
+      addGuides(resort);
+    }
     addRegistry(resort);
-    addGuides(resort);
     localizeMessages(resort.id, resort, fromLp);
     built++;
   } catch (e) {
@@ -363,4 +374,4 @@ for (const resort of resorts) {
 }
 
 execSync("node docs/mock-assets/scripts/apply-rentacar-affiliate.mjs", { cwd: ROOT, stdio: "inherit" });
-console.log(`\n✓ Built ${built}/${resorts.length} pending LPs`);
+console.log(`\n✓ ${RELOCALIZE ? "Relocalized" : "Built"} ${built}/${resorts.length} LPs`);
