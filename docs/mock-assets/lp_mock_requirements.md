@@ -96,7 +96,7 @@ L2 implementer 完了
 - [ ] **F3** `_shared/mock-i18n.js` + `_shared/mock-i18n.css` を読み込み
 - [ ] **F4** `registry.json` に `id` / `slug` / `name` / `strategy` / `japowResortId`（または `guideNote`）
 - [ ] **F5** 子ページがある場合、同じ `data-mock-resort` と i18n 配線
-- [ ] **F11** Skyticket レンタカー: `registry.affiliates.rentacar` + `index.html` の `data-skyticket-rentacar-*`（`validate-skyticket-affiliate.mjs` PASS）
+- [ ] **F11** Skyticket レンタカー: `registry.affiliates.rentacar` · 目的地 `url`/`urlEn`/`label.en` · EN `rentacarLink` が `label.en` を含む · `sync-skyticket-rentacar-i18n.mjs` → `validate-skyticket-affiliate.mjs` PASS
 
 ### 3.2 ナビ・導線
 

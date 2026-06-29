@@ -2,6 +2,8 @@
 /**
  * Wire Skyticket rentacar affiliate blocks into mock LP index.html + messages.
  * Usage: node docs/mock-assets/scripts/apply-rentacar-affiliate.mjs
+ *
+ * 新規ゲレンデのコピー・urlEn 同期は sync-skyticket-rentacar-i18n.mjs を使う（全103施設対応）。
  */
 import { readFileSync, writeFileSync, readdirSync } from "fs";
 import { join, dirname } from "path";
@@ -1461,7 +1463,7 @@ function patchIndexHtml(html, copy) {
   if (!html.includes("skyticket-rentacar.js")) {
     html = html.replace(
       '<script src="../_shared/mock-i18n.js"></script>',
-      '<script src="../_shared/affiliates/skyticket-rentacar.js"></script>\n  <script src="../_shared/mock-i18n.js"></script>',
+      '<script src="../_shared/mock-i18n.js"></script>\n  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>',
     );
   }
   return html;

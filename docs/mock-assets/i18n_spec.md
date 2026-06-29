@@ -103,6 +103,27 @@ L3 評価基準（LP-Q / LP-V）: [lp_mock_requirements.md](./lp_mock_requiremen
 
 ルート `messages/ja.json` のキー設計を参考にするが、モックは独立管理。本番実装時は `resort-template-implementer` へ別途 handoff。
 
+## Skyticket レンタカー（アフィリエイト）
+
+| 項目 | JA | EN（`?lang=en`） |
+|------|----|------------------|
+| リンク文言 | `messages/ja.json` `access.rentacar*` | `messages/en.json`（目的地 `label.en` を含む） |
+| 遷移先 | `destinations.*.url` | `destinations.*.urlEn`（**必須**） |
+| 計測 | ValueCommerce `sid` / `pid` 共通、`vc_url` のみロケール切替 |
+
+### テンプレート契約（全ゲレンデ）
+
+1. `registry.json` → `affiliates.rentacar` = 目的地 ID
+2. `skyticket-rentacar.json` の当該目的地に `url` · `urlEn` · `label.ja` · `label.en`
+3. EN リンク文言: `Book a rental car at {label.en}`
+4. JA リンク文言: `{label.ja}でレンタカー予約`
+5. 同期: `node docs/mock-assets/scripts/sync-skyticket-rentacar-i18n.mjs`
+6. 検証: `node docs/mock-assets/scripts/validate-skyticket-affiliate.mjs`
+
+実装: `_shared/affiliates/skyticket-rentacar.js` — `mock-i18n-ready` で `urlEn` を `vc_url` に設定。
+
+新規ゲレンデ追加時は **sync を必ず実行**（手書きだけにしない）。
+
 ## guides.japowserch.com 配信
 
 | 項目 | 値 |

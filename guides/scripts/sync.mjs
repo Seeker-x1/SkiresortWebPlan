@@ -14,6 +14,7 @@ import {
 } from "fs";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
+import { ensureSkyticketScriptOrder } from "../../docs/mock-assets/scripts/ensure-skyticket-script-order.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const GUIDES_ROOT = join(__dirname, "..");
@@ -78,6 +79,7 @@ function rewriteHtml(content) {
     .replaceAll('src="_shared/', 'src="/_shared/');
   // Internal dev banner (docs/mock-assets preview only) — not for public guides host
   out = out.replace(/<p class="mock-banner">[\s\S]*?<\/p>\s*/g, "");
+  out = ensureSkyticketScriptOrder(out);
   return out;
 }
 
@@ -131,6 +133,12 @@ function rewriteJs(content, filename) {
 
   if (filename === "map-embed-layers.js") {
     out = out.replaceAll('"../area-map.html"', '"/area-map.html"');
+  }
+
+  if (filename === "skyticket-rentacar.js") {
+    out = out
+      .replaceAll('"../_shared/affiliates/skyticket-rentacar.json"', '"/_shared/affiliates/skyticket-rentacar.json"')
+      .replaceAll('"../registry.json"', '"/registry.json"');
   }
 
   return out;

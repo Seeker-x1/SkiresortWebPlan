@@ -160,10 +160,10 @@
     "phoneLodge": "TEL 0139-62-3214（富岡スキー場管理棟）",
     "phoneOps": "乙部町教育委員会 0139-62-2253",
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>爾志郡<rt>Shiriuchi-gun</rt></ruby></span><span class=\"place-unit\"><ruby>乙部町<rt>Otobe</rt></ruby></span>",
-    "rentacarEyebrow": "道南・函館圏",
-    "rentacarLink": "函館空港でレンタカー予約",
+    "rentacarEyebrow": "無料Tバー・21時ナイター",
+    "rentacarLink": "函館・大沼・松前でレンタカー予約",
     "rentacarNote": "スカイチケット（外部サイト）",
-    "rentacarHint": "乙部・厚沢部・函館周遊向け"
+    "rentacarHint": "富岡スキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© 富岡スキー場（乙部町）— LP案モック",

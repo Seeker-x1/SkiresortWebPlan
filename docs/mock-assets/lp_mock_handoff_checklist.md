@@ -70,9 +70,10 @@ Step 13  L3 + Human Gate
 
 - [ ] `lp-mock-{id}-*.png` は**施設専用**フォトリアル AI PNG
 - [ ] `images/maps/{id}-hero.png` は焼き込み線イラスト PNG
-- [ ] `apply-rentacar-affiliate.mjs` の `RESORT_COPY` に `{id}` 追加済み
-- [ ] `registry.json` に `affiliates.rentacar`
+- [ ] `registry.json` に `affiliates.rentacar`（目的地 ID）
 - [ ] `index.html` に Skyticket ブロック
+- [ ] `node docs/mock-assets/scripts/sync-skyticket-rentacar-i18n.mjs`（`urlEn` + ja/en コピー同期）
+- [ ] `messages/en.json` の `rentacarLink` が目的地 `label.en` を含む
 
 ### 1.6 JAPOW「詳細」ボタン（必須）
 
@@ -134,6 +135,7 @@ node docs/mock-assets/scripts/validate-mock-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-lp-shell.mjs
 node docs/mock-assets/scripts/validate-mock-lp-copy.mjs
+node docs/mock-assets/scripts/sync-skyticket-rentacar-i18n.mjs
 node docs/mock-assets/scripts/validate-skyticket-affiliate.mjs
 node docs/mock-assets/scripts/validate-mock-japow-detail.mjs
 node guides/scripts/sync.mjs

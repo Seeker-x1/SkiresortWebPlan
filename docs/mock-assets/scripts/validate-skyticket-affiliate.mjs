@@ -3,9 +3,11 @@
  * Keeps Skyticket rentacar affiliate config in sync across mock LPs and resort web apps.
  * Usage: node docs/mock-assets/scripts/validate-skyticket-affiliate.mjs
  */
-import { readFileSync, readdirSync, statSync } from "fs";
+import { readFileSync, readdirSync, statSync, existsSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { buildRentacarCopy, deriveUrlEn } from "./sync-skyticket-rentacar-i18n.mjs";
+import { ensureSkyticketScriptOrder } from "./ensure-skyticket-script-order.mjs";
 
 const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "../../..");
 const mockRoot = join(repoRoot, "docs/mock-assets");
@@ -19,8 +21,16 @@ const CONFIG_PATHS = [
   ),
 ];
 
+const RENTACAR_KEYS = ["rentacarEyebrow", "rentacarLink", "rentacarNote", "rentacarHint"];
+
 function loadJson(path) {
   return JSON.parse(readFileSync(path, "utf8"));
+}
+
+function linkMatchesLabel(link, labelEn) {
+  if (!link || !labelEn) return false;
+  const tokens = labelEn.split(/[·,]/).map((s) => s.trim()).filter(Boolean);
+  return tokens.some((t) => link.includes(t));
 }
 
 let failed = false;
@@ -36,18 +46,84 @@ for (const path of CONFIG_PATHS.slice(1)) {
 
 const registry = loadJson(join(mockRoot, "registry.json"));
 const config = loadJson(CONFIG_PATHS[0]);
+
+for (const [id, dest] of Object.entries(config.destinations ?? {})) {
+  if (!dest?.url) {
+    failed = true;
+    console.error(`✗ destination ${id}: missing url`);
+    continue;
+  }
+  if (!dest.urlEn) {
+    failed = true;
+    console.error(`✗ destination ${id}: missing urlEn (run sync-skyticket-rentacar-i18n.mjs)`);
+  } else if (!dest.urlEn.startsWith("https://skyticket.jp/en/rentacar/")) {
+    failed = true;
+    console.error(`✗ destination ${id}: urlEn must be skyticket.jp/en/rentacar/...`);
+  }
+  if (!dest.label?.ja || !dest.label?.en) {
+    failed = true;
+    console.error(`✗ destination ${id}: missing label.ja or label.en`);
+  }
+  for (const key of Object.keys(dest)) {
+    if (!["url", "urlEn", "label"].includes(key)) {
+      failed = true;
+      console.error(`✗ destination ${id}: unexpected field "${key}"`);
+    }
+  }
+}
+
 for (const resort of registry.resorts) {
-  const dest = resort.affiliates?.rentacar;
-  if (!dest) {
+  const destId = resort.affiliates?.rentacar;
+  if (!destId) {
     failed = true;
     console.error(`✗ registry ${resort.id}: missing affiliates.rentacar`);
     continue;
   }
-  if (!config.destinations?.[dest]) {
+  const destination = config.destinations?.[destId];
+  if (!destination) {
     failed = true;
-    console.error(
-      `✗ registry ${resort.id}: unknown affiliates.rentacar "${dest}"`,
-    );
+    console.error(`✗ registry ${resort.id}: unknown affiliates.rentacar "${destId}"`);
+    continue;
+  }
+
+  const expected = buildRentacarCopy(resort, destination);
+  for (const locale of ["ja", "en"]) {
+    const msgPath = join(mockRoot, resort.slug, "messages", `${locale}.json`);
+    if (!existsSync(msgPath)) {
+      failed = true;
+      console.error(`✗ ${resort.slug}: missing messages/${locale}.json`);
+      continue;
+    }
+    const json = loadJson(msgPath);
+    const access = json.access ?? {};
+    for (const key of RENTACAR_KEYS) {
+      if (!access[key]) {
+        failed = true;
+        console.error(`✗ ${resort.id} ${locale}: missing access.${key}`);
+      }
+    }
+    if (locale === "en") {
+      if (/[\u3040-\u30ff\u4e00-\u9fff]/.test(access.rentacarLink ?? "")) {
+        failed = true;
+        console.error(`✗ ${resort.id} en: rentacarLink contains Japanese`);
+      }
+      if (!linkMatchesLabel(access.rentacarLink, destination.label.en)) {
+        failed = true;
+        console.error(
+          `✗ ${resort.id} en: rentacarLink must mention "${destination.label.en}"`,
+        );
+      }
+      if (access.rentacarNote !== expected.en.rentacarNote) {
+        failed = true;
+        console.error(`✗ ${resort.id} en: rentacarNote must be "${expected.en.rentacarNote}"`);
+      }
+    }
+    if (locale === "ja" && access.rentacarLink !== expected.ja.rentacarLink) {
+      failed = true;
+      console.error(
+        `✗ ${resort.id} ja: rentacarLink must be "${expected.ja.rentacarLink}"`,
+      );
+    }
   }
 }
 
@@ -75,14 +151,22 @@ for (const dir of readdirSync(mockRoot).filter((n) => n.endsWith("-lp"))) {
     failed = true;
     console.error(`✗ ${dir}: hardcoded ValueCommerce URL (use template)`);
   }
+  if (ensureSkyticketScriptOrder(html) !== html) {
+    failed = true;
+    console.error(
+      `✗ ${dir}: mock-i18n.js must load before skyticket-rentacar.js (run ensure-skyticket-script-order.mjs)`,
+    );
+  }
 }
 
 if (failed) {
   console.error("\nSkyticket affiliate validation FAILED");
+  console.error("Fix: node docs/mock-assets/scripts/sync-skyticket-rentacar-i18n.mjs");
   process.exit(1);
 }
 
 console.log("✓ skyticket-rentacar configs in sync");
-console.log("✓ registry destinations valid");
+console.log(`✓ ${Object.keys(config.destinations).length} destinations with urlEn + label.en`);
+console.log(`✓ ${registry.resorts.length} resorts — ja/en rentacar copy aligned`);
 console.log("✓ LP affiliate wiring OK");
 console.log("\nValidation PASSED");

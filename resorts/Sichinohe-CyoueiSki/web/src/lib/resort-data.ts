@@ -284,21 +284,22 @@ type ResortDataRaw = Omit<ResortData, "access"> & {
 
 function resolveRentacarAffiliate(
   rentacar: AccessRentacarAffiliateConfig | undefined,
+  locale: AppLocale = "ja",
 ): AccessRentacarAffiliate | undefined {
   if (!rentacar) return undefined;
   if ("href" in rentacar && "trackingPixel" in rentacar) return rentacar;
   if ("destination" in rentacar) {
-    return buildSkyticketRentacarAffiliate(rentacar.destination) ?? undefined;
+    return buildSkyticketRentacarAffiliate(rentacar.destination, locale) ?? undefined;
   }
   return undefined;
 }
 
-function normalizeResortData(raw: ResortDataRaw): ResortData {
+function normalizeResortData(raw: ResortDataRaw, locale: AppLocale = "ja"): ResortData {
   return {
     ...raw,
     access: {
       ...raw.access,
-      rentacar: resolveRentacarAffiliate(raw.access.rentacar),
+      rentacar: resolveRentacarAffiliate(raw.access.rentacar, locale),
     },
   };
 }
@@ -353,13 +354,13 @@ export async function getResortData(locale?: AppLocale): Promise<ResortData> {
       console.error(`[resort-data] invalid schema in ${filePath}`);
       return FALLBACK_RESORT_DATA;
     }
-    return normalizeResortData(parsed);
+    return normalizeResortData(parsed, resolvedLocale);
   } catch (error) {
     if (resolvedLocale === "en") {
       try {
         const raw = await fs.readFile(DATA_FILE_PATH, "utf-8");
         const parsed = JSON.parse(raw) as unknown;
-        if (isValidResortData(parsed)) return normalizeResortData(parsed);
+        if (isValidResortData(parsed)) return normalizeResortData(parsed, resolvedLocale);
       } catch {
         // fall through
       }
