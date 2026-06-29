@@ -163,19 +163,30 @@
       if (status === "hold") {
         return { show: true, stroke: STATUS_COLORS.hold, width: selected ? 3 : 2, opacity: selected ? 0.95 : 0.72, dash: "4 3" };
       }
+      // 焼き込みリフト: イラストの線をそのまま表示（色線オーバーレイで内側が黒く見えるのを防ぐ）
+      if (baked) {
+        return { show: false };
+      }
       if (status === "operating") {
         return { show: true, stroke: STATUS_COLORS.operating, width: selected ? 3.5 : 2.5, opacity: selected ? 0.98 : 0.72 };
       }
-      return { show: baked ? selected : true, stroke: accent, width: selected ? 3 : 1.5, opacity: 1 };
+      return { show: true, stroke: accent, width: selected ? 3 : 1.5, opacity: 1 };
     }
 
     if (status === "closed") {
       return { show: true, stroke: STATUS_COLORS.closed, width: selected ? 3 : 2, opacity: 0.35, dash: "5 4" };
     }
+    if (status === "partial") {
+      return { show: !baked || selected, stroke: accent, width: selected ? 3 : 1.5, opacity: 0.65, dash: "8 4" };
+    }
+    // 焼き込みコース: 通常時はオーバーレイなし（ループ内が黒く塗られるのを防ぐ）
+    if (baked) {
+      return { show: false };
+    }
     if (status === "open") {
       return { show: true, stroke: STATUS_COLORS.open, width: selected ? 3.5 : 2.5, opacity: selected ? 0.98 : 0.72 };
     }
-    return { show: baked ? selected : true, stroke: accent, width: selected ? 3 : 1.5, opacity: 1 };
+    return { show: true, stroke: accent, width: selected ? 3 : 1.5, opacity: 1 };
   }
 
   function formatUpdated(iso) {
@@ -259,7 +270,7 @@
         }
 
         if (selected && baked) {
-          overlayPaths += `<path class="map-select-ring" d="${f.path}" stroke="${accentColor(f.id, f.type)}" pointer-events="none" />`;
+          overlayPaths += `<path class="map-select-ring" d="${f.path}" stroke="#ffffff" pointer-events="none" />`;
         }
       }
     }
