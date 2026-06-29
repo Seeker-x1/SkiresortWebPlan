@@ -211,10 +211,10 @@
     "note": "~40 min from downtown Sapporo · ~80 min from New Chitose · Bus from JR Teine · Parking available",
     "phone": "TEL 011-681-2111 (Sapporo Teine Ski Resort)",
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>札幌市<rt>Sapporo</rt></ruby></span><span class=\"place-unit\"><ruby>手稲区<rt>Teine-ku</rt></ruby></span><span class=\"place-unit\"><ruby>手稲本町<rt>Teinehoncho</rt></ruby></span>",
-    "rentacarEyebrow": "Sapporo gateway",
-    "rentacarLink": "Book a rental car at New Chitose Airport",
-    "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Teine, downtown Sapporo, and Otaru loops"
+    "rentacarEyebrow": "スノー＆カルチャー",
+    "rentacarLink": "新千歳空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "札幌手稲スキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© Sapporo Teine Ski Resort — LP mock",

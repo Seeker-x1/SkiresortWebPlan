@@ -163,10 +163,10 @@
     "note": "Asahikawa Station ~1 hr by car · Kamikawa-Sounkyo IC ~15 min · JR Kamikawa Station taxi ~10 min, walk ~20 min · 100 free parking spaces",
     "phone": "TEL 01658-2-2683 (Kamikawa Nakayama Ski Area)",
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>上川郡<rt>Kamikawa-gun</rt></ruby></span><span class=\"place-unit\"><ruby>上川町<rt>Kamikawa</rt></ruby></span><span class=\"place-unit\"><ruby>東町<rt>Higashi-machi</rt></ruby></span><span class=\"place-unit\">8</span>",
-    "rentacarEyebrow": "Kamikawa · Sounkyo",
-    "rentacarLink": "Book a rental car at Asahikawa Airport",
-    "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Sounkyo and Kamikawa town loops"
+    "rentacarEyebrow": "大雪山の麓、星空の下で貸切パウダーを。リフト無料のローカルゲレンデで雪と遊ぶ。",
+    "rentacarLink": "旭川空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "上川町営中山スキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© Kamikawa Nakayama Ski Area — LP mock",

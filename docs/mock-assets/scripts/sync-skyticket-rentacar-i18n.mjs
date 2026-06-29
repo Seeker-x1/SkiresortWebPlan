@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 /**
- * Sync Skyticket rentacar: urlEn on destinations + per-resort ja/en access copy.
+ * Sync Skyticket rentacar: JA link copy on all LP locales + destination labels.
  * Source of truth: registry.json affiliates.rentacar → skyticket-rentacar.json
  *
  * Usage: node docs/mock-assets/scripts/sync-skyticket-rentacar-i18n.mjs
  */
 import { readFileSync, writeFileSync, existsSync } from "fs";
 import { join, dirname } from "path";
-import { fileURLToPath } from "url";
+import { fileURLToPath, pathToFileURL } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const mockRoot = join(__dirname, "..");
@@ -21,13 +21,7 @@ const CONFIG_PATHS = [
 
 const REGISTRY_PATH = join(mockRoot, "registry.json");
 
-export function deriveUrlEn(jaUrl) {
-  const parsed = new URL(jaUrl);
-  if (!parsed.pathname.startsWith("/en/")) {
-    parsed.pathname = `/en${parsed.pathname}`;
-  }
-  return parsed.href;
-}
+const RENTACAR_KEYS = ["rentacarEyebrow", "rentacarLink", "rentacarNote", "rentacarHint"];
 
 function firstSegment(text) {
   if (!text) return "";
@@ -36,34 +30,18 @@ function firstSegment(text) {
 
 export function buildRentacarCopy(resort, destination) {
   const labelJa = destination.label.ja;
-  const labelEn = destination.label.en;
   const regionJa = resort.region?.ja ?? "";
-  const regionEn = resort.region?.en ?? "";
   const strategyJa = firstSegment(resort.strategy?.ja);
-  const strategyEn = firstSegment(resort.strategy?.en);
   const nameJa = resort.name?.ja ?? resort.id;
-  const nameEn = resort.name?.en ?? resort.id;
 
-  return {
-    ja: {
-      rentacarEyebrow: strategyJa || regionJa || "レンタカー",
-      rentacarLink: `${labelJa}でレンタカー予約`,
-      rentacarNote: "スカイチケット（外部サイト）",
-      rentacarHint: `${nameJa}周辺のドライブ向け`,
-    },
-    en: {
-      rentacarEyebrow: strategyEn || regionEn || "Rental car",
-      rentacarLink: `Book a rental car at ${labelEn}`,
-      rentacarNote: "Skyticket (external site)",
-      rentacarHint: `For ${nameEn} and surrounding drives`,
-    },
+  const ja = {
+    rentacarEyebrow: strategyJa || regionJa || "レンタカー",
+    rentacarLink: `${labelJa}でレンタカー予約`,
+    rentacarNote: "スカイチケット（外部サイト）",
+    rentacarHint: `${nameJa}周辺のドライブ向け`,
   };
-}
 
-function linkMatchesLabel(link, labelEn) {
-  if (!link || !labelEn) return false;
-  const tokens = labelEn.split(/[·,]/).map((s) => s.trim()).filter(Boolean);
-  return tokens.some((t) => link.includes(t));
+  return { ja, en: { ...ja } };
 }
 
 function patchConfig(config) {
@@ -71,14 +49,10 @@ function patchConfig(config) {
   for (const [id, dest] of Object.entries(config.destinations ?? {})) {
     if (!dest?.url) continue;
     for (const key of Object.keys(dest)) {
-      if (!["url", "urlEn", "label"].includes(key)) {
+      if (!["url", "label"].includes(key)) {
         delete dest[key];
         changed++;
       }
-    }
-    if (!dest.urlEn) {
-      dest.urlEn = deriveUrlEn(dest.url);
-      changed++;
     }
     if (!dest.label?.en) {
       throw new Error(`destination ${id}: missing label.en`);
@@ -87,12 +61,16 @@ function patchConfig(config) {
   return changed;
 }
 
-function patchMessages(json, copy, locale) {
+function patchMessages(json, copy) {
   json.access = {
     ...json.access,
-    ...copy[locale],
+    ...copy,
   };
   return json;
+}
+
+function rentacarCopyMatches(access, expected) {
+  return RENTACAR_KEYS.every((key) => access[key] === expected[key]);
 }
 
 function main() {
@@ -105,7 +83,9 @@ function main() {
   for (const path of CONFIG_PATHS) {
     writeFileSync(path, canonicalBody, "utf8");
   }
-  console.log(`✓ urlEn on ${Object.keys(config.destinations).length} destinations (${configChanges} added)`);
+  console.log(
+    `✓ ${Object.keys(config.destinations).length} destinations (${configChanges} config field(s) cleaned)`,
+  );
 
   let updated = 0;
   let skipped = 0;
@@ -129,18 +109,13 @@ function main() {
 
       const json = JSON.parse(readFileSync(msgPath, "utf8"));
       const current = json.access ?? {};
-      const next = copy[locale];
 
-      const needsUpdate =
-        locale === "en"
-          ? !linkMatchesLabel(current.rentacarLink, destination.label.en) ||
-            current.rentacarNote !== next.rentacarNote ||
-            /[\u3040-\u30ff\u4e00-\u9fff]/.test(current.rentacarLink ?? "")
-          : current.rentacarLink !== next.rentacarLink ||
-            current.rentacarNote !== next.rentacarNote;
-
-      if (needsUpdate) {
-        writeFileSync(msgPath, `${JSON.stringify(patchMessages(json, copy, locale), null, 2)}\n`, "utf8");
+      if (!rentacarCopyMatches(current, copy.ja)) {
+        writeFileSync(
+          msgPath,
+          `${JSON.stringify(patchMessages(json, copy.ja), null, 2)}\n`,
+          "utf8",
+        );
         updated++;
       } else {
         skipped++;
@@ -150,8 +125,6 @@ function main() {
 
   console.log(`✓ messages: ${updated} file(s) updated, ${skipped} unchanged`);
 }
-
-import { pathToFileURL } from "url";
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main();

@@ -143,10 +143,10 @@
     "note": "Central Utoro onsen town · ~20 km to Unabetsu Ski Area (Minehama)",
     "phone": "TEL 0152-24-3303",
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>斜里郡<rt>Shari-gun</rt></ruby></span><span class=\"place-unit\"><ruby>斜里町<rt>Shari</rt></ruby></span><span class=\"place-unit\"><ruby>ウトロ香川42<rt>Utoro Kaigan 42</rt></ruby></span>",
-    "rentacarEyebrow": "Shiretoko gateway",
-    "rentacarLink": "Book a rental car at Memanbetsu Airport",
-    "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Shari, Shiretoko, and Utoro loops"
+    "rentacarEyebrow": "知床流氷の玄関・ウナベツ連携",
+    "rentacarLink": "女満別空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "ウトロスキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© Utoro Ski Area",

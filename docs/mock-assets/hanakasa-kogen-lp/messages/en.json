@@ -172,10 +172,10 @@
     "phone": "TEL 0152-48-2550 (ski area · in season)",
     "phoneBus": "TEL 0152-45-5655 (off-season · admin office)",
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>尾花沢市<rt>Abashiri</rt></ruby></span><span class=\"place-unit\"><ruby>字呼人<rt>Yobito</rt></ruby></span><span class=\"place-unit\">28-3</span>",
-    "rentacarEyebrow": "Yamagata · Ginzan",
-    "rentacarLink": "Book a rental car at Shinjo Station",
-    "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Ginzan, Obanazawa, and Zao drives"
+    "rentacarEyebrow": "銀山温泉至近——昼間の雪遊びオプション。",
+    "rentacarLink": "新庄駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "花笠高原スキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© Hanakasa Kogen Ski Area — mock LP",

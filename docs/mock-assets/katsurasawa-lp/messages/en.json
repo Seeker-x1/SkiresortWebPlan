@@ -191,10 +191,10 @@
     "note": "~60 min from central Sapporo · ~60 min from New Chitose Airport · via Mikasa IC",
     "phone": "TEL 01267-6-8235",
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>三笠市<rt>Mikasa</rt></ruby></span><span class=\"place-unit\"><ruby>西桂沢50<rt>50 Nishi-Katsurazawa</rt></ruby></span>",
-    "rentacarEyebrow": "New Chitose + rental car",
-    "rentacarLink": "Book a rental car at New Chitose Airport",
-    "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Sapporo, Mikasa, and Lake Katsurazawa loops"
+    "rentacarEyebrow": "キッズパーク・札幌圏60分",
+    "rentacarLink": "新千歳空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "桂沢国設スキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© Katsurazawa Kokusetsu Ski Resort — LP mock",

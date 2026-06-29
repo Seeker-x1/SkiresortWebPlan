@@ -172,10 +172,10 @@
     "phone": "TEL 076-299-5151 (Kanazawa City Sports Promotion Division)",
     "phoneBus": "",
     "places": "<span class=\"place-unit\"><ruby>石川県<rt>Ishikawa</rt></ruby></span><span class=\"place-unit\"><ruby>金沢市<rt>Kanazawa</rt></ruby></span><span class=\"place-unit\"><ruby>安原町<rt>Yasuhara</rt></ruby></span><span class=\"place-unit\">（<ruby>医王山<rt>Mt. Iou</rt></ruby>）</span>",
-    "rentacarEyebrow": "Kanazawa gateway",
-    "rentacarLink": "Book a rental car at Komatsu Airport",
-    "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Kanazawa city and Yuwa Onsen loops"
+    "rentacarEyebrow": "金沢観光×雪遊び×湯涌温泉",
+    "rentacarLink": "小松空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "金沢市営医王山スキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© Kanazawa City Iouzan Ski Resort — LP mock",

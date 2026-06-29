@@ -289,7 +289,7 @@ function resolveRentacarAffiliate(
   if (!rentacar) return undefined;
   if ("href" in rentacar && "trackingPixel" in rentacar) return rentacar;
   if ("destination" in rentacar) {
-    return buildSkyticketRentacarAffiliate(rentacar.destination, locale) ?? undefined;
+    return buildSkyticketRentacarAffiliate(rentacar.destination) ?? undefined;
   }
   return undefined;
 }

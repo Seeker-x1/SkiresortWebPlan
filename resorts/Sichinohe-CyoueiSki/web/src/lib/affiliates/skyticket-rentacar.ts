@@ -27,31 +27,23 @@ function buildTrackingPixel(): string {
   return `${skyticketConfig.pixelBase}?${params.toString()}`;
 }
 
-/** Skyticket landing URL for locale (ValueCommerce vc_url). EN → /en/rentacar/... */
+/** Skyticket rentacar is Japanese-only. */
 export function resolveSkyticketDestinationUrl(
-  destination: Pick<Destination, "url"> & { urlEn?: string },
-  locale: string,
+  destination: Pick<Destination, "url">,
 ): string {
-  if (locale !== "en") return destination.url;
-  if (destination.urlEn) return destination.urlEn;
-  const parsed = new URL(destination.url);
-  if (!parsed.pathname.startsWith("/en/")) {
-    parsed.pathname = `/en${parsed.pathname}`;
-  }
-  return parsed.href;
+  return destination.url;
 }
 
 /** Resolve a registry destination ID into ValueCommerce + Skyticket URLs. */
 export function buildSkyticketRentacarAffiliate(
   destinationId: string,
-  locale: string = "ja",
 ): SkyticketRentacarAffiliate | null {
   const destination =
     skyticketConfig.destinations[
       destinationId as SkyticketRentacarDestinationId
     ];
   if (!destination?.url) return null;
-  const skyticketUrl = resolveSkyticketDestinationUrl(destination, locale);
+  const skyticketUrl = resolveSkyticketDestinationUrl(destination);
   return {
     href: buildReferralHref(skyticketUrl),
     trackingPixel: buildTrackingPixel(),

@@ -200,10 +200,10 @@
     "note": "~15 min walk from JR Nakafurano Station · free parking",
     "phone": "TEL 0167-39-3033 (Nakafurano Tourism Association)",
     "places": "<span class=\"place-unit\"><ruby>Hokkaido<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>Nakafurano<rt>Nakafurano</rt></ruby></span>",
-    "rentacarEyebrow": "Asahikawa Airport + rental car",
-    "rentacarLink": "Book a rental car at Asahikawa Airport",
-    "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Furano, Biei, and Sounkyo drives"
+    "rentacarEyebrow": "富良野スピンオフ・十勝岳ビュー",
+    "rentacarLink": "旭川空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "中富良野北星スキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© Nakafurano Kita-Hoshi Ski Area — LP mock",

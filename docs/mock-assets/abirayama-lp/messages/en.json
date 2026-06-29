@@ -135,10 +135,10 @@
     "note": "~25 min by car from New Chitose Airport · ~5 km from JR Oiwake Station (taxi ~5 min)",
     "phone": "TEL 0145-25-2514",
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>勇払郡<rt>Yuufutsu-gun</rt></ruby></span><span class=\"place-unit\"><ruby>安平町<rt>Abira</rt></ruby></span><span class=\"place-unit\"><ruby>追分豊栄193<rt>193 Toyosaka, Oiwake</rt></ruby></span>",
-    "rentacarEyebrow": "New Chitose + rental car",
-    "rentacarLink": "Book a rental car at New Chitose Airport",
-    "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Abira, Tomakomai, and pre/post-flight snow loops"
+    "rentacarEyebrow": "新千歳25分",
+    "rentacarLink": "新千歳空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "安平山スキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© Abirayama Ski Area — LP mock draft",

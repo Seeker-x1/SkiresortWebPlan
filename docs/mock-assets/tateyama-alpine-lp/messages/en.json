@@ -161,9 +161,9 @@
     "phoneOps": "Hachimantai City 0195-78-3500",
     "places": "<span class=\"place-unit\"><ruby>岩手県<rt>Iwate</rt></ruby></span><span class=\"place-unit\"><ruby>八幡平市<rt>Hachimantai</rt></ruby></span>",
     "rentacarEyebrow": "立山黒部周辺。BC・春スキー・インバウンドコア層。",
-    "rentacarLink": "Book a rental car at Komatsu Airport",
-    "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Tateyama Alpine Ski Area and surrounding drives"
+    "rentacarLink": "小松空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "立山山岳スキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© Tateyama Alpine Ski Area — mock LP",

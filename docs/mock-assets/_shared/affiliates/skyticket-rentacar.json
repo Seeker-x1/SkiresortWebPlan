@@ -10,104 +10,91 @@
       "label": {
         "ja": "新千歳空港",
         "en": "New Chitose Airport"
-      },
-      "urlEn": "https://skyticket.jp/en/rentacar/hokkaido/chitose_international_airport/"
+      }
     },
     "shichinohetowada_station": {
       "url": "https://skyticket.jp/rentacar/tohoku/aomori/shichinohetowada_station/",
       "label": {
         "ja": "七戸十和田駅",
         "en": "Shichinohe-Towada Station"
-      },
-      "urlEn": "https://skyticket.jp/en/rentacar/tohoku/"
+      }
     },
     "asahikawa_airport": {
       "url": "https://skyticket.jp/rentacar/hokkaido/asahikawa_airport/",
       "label": {
         "ja": "旭川空港",
         "en": "Asahikawa Airport"
-      },
-      "urlEn": "https://skyticket.jp/en/rentacar/hokkaido/asahikawa_airport/"
+      }
     },
     "memanbetsu_airport": {
       "url": "https://skyticket.jp/rentacar/hokkaido/memanbetsu_airport/",
       "label": {
         "ja": "女満別空港",
         "en": "Memanbetsu Airport"
-      },
-      "urlEn": "https://skyticket.jp/en/rentacar/hokkaido/memanbetsu_airport/"
+      }
     },
     "niigata_airport": {
       "url": "https://skyticket.jp/rentacar/koushinetsu/niigata/niigata_airport/",
       "label": {
         "ja": "新潟空港",
         "en": "Niigata Airport"
-      },
-      "urlEn": "https://skyticket.jp/en/rentacar/koushinetsu/niigata/niigata_airport/"
+      }
     },
     "kamisuwa_kirigamine_kogen": {
       "url": "https://skyticket.jp/rentacar/koushinetsu/nagano/kamisuwa_shimosuwa_okaya_kirigamine_utsukusigahara_kogen/",
       "label": {
         "ja": "上諏訪・霧ヶ峰",
         "en": "Kamisuwa · Kirigamine"
-      },
-      "urlEn": "https://skyticket.jp/en/rentacar/koushinetsu/nagano/kamisuwa_shimosuwa_okaya_kirigamine_utsukusigahara_kogen/"
+      }
     },
     "shinjo_station": {
       "url": "https://skyticket.jp/rentacar/tohoku/yamagata/shinjo_station/",
       "label": {
         "ja": "新庄駅",
         "en": "Shinjo Station"
-      },
-      "urlEn": "https://skyticket.jp/en/rentacar/tohoku/yamagata/shinjo_station/"
+      }
     },
     "morioka_station": {
       "url": "https://skyticket.jp/rentacar/tohoku/iwate/morioka_station/",
       "label": {
         "ja": "盛岡駅",
         "en": "Morioka Station"
-      },
-      "urlEn": "https://skyticket.jp/en/rentacar/tohoku/iwate/morioka_station/"
+      }
     },
     "takasaki_station": {
       "url": "https://skyticket.jp/rentacar/kanto/gunma/takasaki_station/",
       "label": {
         "ja": "高崎駅",
         "en": "Takasaki Station"
-      },
-      "urlEn": "https://skyticket.jp/en/rentacar/kanto/gunma/takasaki_station/"
+      }
     },
     "hakodate_onuma_matsumae": {
       "url": "https://skyticket.jp/rentacar/hokkaido/hakodate_onuma_matsumae/",
       "label": {
         "ja": "函館・大沼・松前",
         "en": "Hakodate · Onuma · Matsumae"
-      },
-      "urlEn": "https://skyticket.jp/en/rentacar/hokkaido/hakodate_onuma_matsumae/"
+      }
     },
     "kansai_international_airport": {
       "url": "https://skyticket.jp/rentacar/kansai/kansai_international_airport/",
       "label": {
         "ja": "関西空港",
         "en": "Kansai Airport"
-      },
-      "urlEn": "https://skyticket.jp/en/rentacar/kansai/kansai_international_airport/"
+      }
     },
     "komatsu_airport_kanazawa": {
       "url": "https://skyticket.jp/rentacar/hokuriku/ishikawa/komatsu_airport_kanazawa_airport/",
       "label": {
         "ja": "小松空港",
         "en": "Komatsu Airport"
-      },
-      "urlEn": "https://skyticket.jp/en/rentacar/hokuriku/ishikawa/komatsu_airport_kanazawa_airport/"
+      }
     },
     "yamaguchi_ube_airport": {
       "url": "https://skyticket.jp/rentacar/chugoku/yamaguchi/yamaguchi_ube_airport/",
       "label": {
         "ja": "山口宇部空港",
         "en": "Yamaguchi Ube Airport"
-      },
-      "urlEn": "https://skyticket.jp/en/rentacar/chugoku/yamaguchi/yamaguchi_ube_airport/"
+      }
     }
   }
 }

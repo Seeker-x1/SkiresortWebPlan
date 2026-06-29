@@ -157,9 +157,9 @@
     "phone": "TEL 01586-2-3111 (Anzo Park Ski Area Lodge)",
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>紋別郡<rt>Mombetsu-gun</rt></ruby></span><span class=\"place-unit\"><ruby>湧別町<rt>Yubetsu</rt></ruby></span><span class=\"place-unit\"><ruby>北兵村二区100番地<rt>Kitahei Village Section 2, No. 100</rt></ruby></span>",
     "rentacarEyebrow": "鳥取砂丘観光の延長。公園案内に埋没。",
-    "rentacarLink": "Book a rental car at Kansai Airport",
-    "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Anzo Park Ski Area and surrounding drives"
+    "rentacarLink": "関西空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "安蔵公園スキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© Anzo Park Ski Area — mock LP",

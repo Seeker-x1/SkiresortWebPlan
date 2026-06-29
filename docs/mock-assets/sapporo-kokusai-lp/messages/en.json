@@ -294,10 +294,10 @@
     "note": "~60 min from central Sapporo by bus or car · ~40–50 min from Otaru · ~30–40 min from Jozankei Onsen · parking available",
     "phone": "TEL 011-598-4511 (Sapporo Kokusai Ski Resort)",
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>札幌市<rt>Sapporo</rt></ruby></span><span class=\"place-unit\"><ruby>南区<rt>Minami-ku</rt></ruby></span><span class=\"place-unit\"><ruby>定山渓<rt>Jozankei</rt></ruby></span><span class=\"place-unit\">937</span>",
-    "rentacarEyebrow": "Sapporo gateway",
-    "rentacarLink": "Book a rental car at New Chitose Airport",
-    "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Kokusai, Jozankei, and Otaru routes"
+    "rentacarEyebrow": "ゴールデントライアングル",
+    "rentacarLink": "新千歳空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "札幌国際スキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© Sapporo Kokusai Ski Resort",

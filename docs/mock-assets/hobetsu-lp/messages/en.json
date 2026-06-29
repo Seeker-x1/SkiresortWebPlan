@@ -157,9 +157,9 @@
     "phone": "TEL 01586-2-3111 (Hobetsu Ski Area Lodge)",
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>紋別郡<rt>Mombetsu-gun</rt></ruby></span><span class=\"place-unit\"><ruby>湧別町<rt>Yubetsu</rt></ruby></span><span class=\"place-unit\"><ruby>北兵村二区100番地<rt>Kitahei Village Section 2, No. 100</rt></ruby></span>",
     "rentacarEyebrow": "むかわ竜・化石博物館×ファミリー周遊。",
-    "rentacarLink": "Book a rental car at New Chitose Airport",
-    "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Hobetsu Ski Area and surrounding drives"
+    "rentacarLink": "新千歳空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "穂別スキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© Hobetsu Ski Area — mock LP",

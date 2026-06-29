@@ -3,7 +3,7 @@
  * Config: ./_shared/affiliates/skyticket-rentacar.json
  * Resort destination: registry.json → affiliates.rentacar
  *
- * Locale: EN LP → skyticket.jp/en/rentacar/... (same ValueCommerce sid/pid)
+ * Skyticket rentacar is Japanese-only; link copy is JA on all LP locales.
  */
 (function () {
   const CONFIG_PATH = "../_shared/affiliates/skyticket-rentacar.json";
@@ -11,41 +11,8 @@
   const LINK_SELECTOR = "[data-skyticket-rentacar-link]";
   const BLOCK_SELECTOR = "[data-skyticket-rentacar-block]";
   const PIXEL_SELECTOR = "[data-skyticket-rentacar-pixel]";
-  const LOCALE_STORAGE_KEY = "mock-lp-locale";
 
   let cachedData = null;
-
-  function detectLocale() {
-    const fromUrl = new URLSearchParams(window.location.search).get("lang");
-    if (fromUrl === "en" || fromUrl === "ja") return fromUrl;
-    try {
-      const stored = localStorage.getItem(LOCALE_STORAGE_KEY);
-      if (stored === "en" || stored === "ja") return stored;
-    } catch (_) {
-      /* private mode */
-    }
-    const htmlLang = document.documentElement.lang;
-    return htmlLang === "en" ? "en" : "ja";
-  }
-
-  /**
-   * @param {{ url: string, urlEn?: string }} destination
-   * @param {"ja"|"en"|string} locale
-   */
-  function resolveSkyticketDestinationUrl(destination, locale) {
-    if (!destination?.url) return null;
-    if (locale !== "en") return destination.url;
-    if (destination.urlEn) return destination.urlEn;
-    try {
-      const parsed = new URL(destination.url);
-      if (!parsed.pathname.startsWith("/en/")) {
-        parsed.pathname = `/en${parsed.pathname}`;
-      }
-      return parsed.href;
-    } catch {
-      return destination.url;
-    }
-  }
 
   function buildReferralHref(config, skyticketUrl) {
     const params = new URLSearchParams({
@@ -80,7 +47,7 @@
     return cachedData;
   }
 
-  function applyAffiliate({ config, resort }, locale) {
+  function applyAffiliate({ config, resort }) {
     const destinationId = resort?.affiliates?.rentacar;
     const blocks = document.querySelectorAll(BLOCK_SELECTOR);
 
@@ -92,20 +59,13 @@
     }
 
     const destination = config.destinations?.[destinationId];
-    const skyticketUrl = resolveSkyticketDestinationUrl(destination, locale);
+    const skyticketUrl = destination?.url;
     if (!skyticketUrl) {
       console.error("[skyticket-rentacar] unknown destination:", destinationId);
       blocks.forEach((block) => {
         block.hidden = true;
       });
       return;
-    }
-    if (locale === "en" && !destination.urlEn) {
-      console.warn(
-        "[skyticket-rentacar] missing urlEn for",
-        destinationId,
-        "— run sync-skyticket-rentacar-i18n.mjs",
-      );
     }
 
     const href = buildReferralHref(config, skyticketUrl);
@@ -122,22 +82,16 @@
     });
   }
 
-  async function refresh(locale) {
+  async function refresh() {
     const resortId = document.documentElement.dataset.mockResort;
     if (!resortId) return;
     const data = await loadData(resortId);
     const resort = data.registry.resorts.find((entry) => entry.id === resortId);
-    applyAffiliate({ config: data.config, resort }, locale || detectLocale());
+    applyAffiliate({ config: data.config, resort });
   }
 
-  window.addEventListener("mock-i18n-ready", (event) => {
-    refresh(event.detail?.locale).catch((err) => {
-      console.error("[skyticket-rentacar]", err);
-    });
-  });
-
   document.addEventListener("DOMContentLoaded", () => {
-    refresh(detectLocale()).catch((err) => {
+    refresh().catch((err) => {
       console.error("[skyticket-rentacar]", err);
     });
   });

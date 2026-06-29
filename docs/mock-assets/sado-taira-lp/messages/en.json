@@ -143,10 +143,10 @@
     "note": "~50 min by car from Ryotsu Port · JASDF permit required on defense road",
     "phone": "TEL 0259-63-4050",
     "places": "<span class=\"place-unit\"><ruby>新潟県<rt>Niigata</rt></ruby></span><span class=\"place-unit\"><ruby>佐渡市<rt>Sado</rt></ruby></span><span class=\"place-unit\"><ruby>金井新保2-75<rt>2-75 Kanai Shinbo</rt></ruby></span>",
-    "rentacarEyebrow": "Sado · Niigata gateway",
-    "rentacarLink": "Book a rental car at Niigata Airport",
-    "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Ryotsu ferry link and island drives"
+    "rentacarEyebrow": "離島パウダー・防衛道路アドベンチャー",
+    "rentacarLink": "新潟空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "佐渡市営平スキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© Sado City Daira Ski Resort — LP mock",

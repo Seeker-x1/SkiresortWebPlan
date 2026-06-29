@@ -191,10 +191,10 @@
     "note": "About 15–20 minutes by car from JR Kitami Station · ~40 min from Memanbetsu Airport · 500–700 free parking spaces",
     "phone": "TEL 0157-22-2910",
     "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>北見市<rt>Kitami</rt></ruby></span><span class=\"place-unit\"><ruby>若松651<rt>651 Wakamatsu</rt></ruby></span>",
-    "rentacarEyebrow": "Kitami · Abashiri",
-    "rentacarLink": "Book a rental car at Memanbetsu Airport",
-    "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Kitami city and Okhotsk loops"
+    "rentacarEyebrow": "市街至近",
+    "rentacarLink": "女満別空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "北見若松市民スキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© Kitami Wakamatsu Municipal Ski Area — LP mock",

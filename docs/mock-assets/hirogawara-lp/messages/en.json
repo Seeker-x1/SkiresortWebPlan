@@ -172,10 +172,10 @@
     "phone": "TEL 075-746-0850 (ski area · in season)",
     "phoneBus": "TEL 075-746-0850 (snow & operations)",
     "places": "<span class=\"place-unit\"><ruby>京都府<rt>Kyoto Pref.</rt></ruby></span><span class=\"place-unit\"><ruby>京都市<rt>Kyoto City</rt></ruby></span><span class=\"place-unit\"><ruby>左京区<rt>Sakyo Ward</rt></ruby></span><span class=\"place-unit\"><ruby>広河原尾花町<rt>Hirogawara Obanacho</rt></ruby></span><span class=\"place-unit\">286</span>",
-    "rentacarEyebrow": "Kyoto · Rakuhoku",
-    "rentacarLink": "Book a rental car at Kansai Airport",
-    "rentacarNote": "Skyticket (external site)",
-    "rentacarHint": "For Kyoto city, Kurama, and Kibune loops"
+    "rentacarEyebrow": "京都市内唯一",
+    "rentacarLink": "関西空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "京都広河原スキー場周辺のドライブ向け"
   },
   "footer": {
     "copyright": "© Kyoto Hirogawara Ski Area — LP mock",
