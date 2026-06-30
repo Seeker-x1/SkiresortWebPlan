@@ -178,11 +178,11 @@
     "rentacarHint": "ぴっぷスキー場周辺のドライブ向け"
   },
   "footer": {
-    "copyright": "© Pippu Ski Area — LP mock",
+    "copyright": "© Pippu Ski Area",
     "location": "078-0327 · 17 Kita-7-sen, Pippu, Kamikawa-gun, Hokkaido"
   },
   "nearbyFood": {
-    "backLink": "Back to Pippu LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Food · Slope",
       "title": "Four tastes<br />beyond slope food.",
@@ -219,7 +219,7 @@
     }
   },
   "nearbyOnsen": {
-    "backLink": "Back to Pippu LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Onsen · Recovery",
       "title": "Komeiseki bath,<br />ease the legs.",
@@ -246,7 +246,7 @@
     }
   },
   "corridorStay": {
-    "backLink": "Back to Pippu LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Stay · Strategy",
       "title": "Stay in Pippu,<br />or hub in Asahikawa.",

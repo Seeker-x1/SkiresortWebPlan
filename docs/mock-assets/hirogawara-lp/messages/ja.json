@@ -178,11 +178,11 @@
     "rentacarHint": "京都広河原スキー場周辺のドライブ向け"
   },
   "footer": {
-    "copyright": "© 京都広河原スキー場 — LP案モック",
+    "copyright": "© 京都広河原スキー場",
     "location": "〒601-1101 京都府京都市左京区広河原尾花町286"
   },
   "nearbyFood": {
-    "backLink": "広河原 LP に戻る",
+    "backLink": "広河原ガイドトップへ戻る",
     "hero": {
       "eyebrow": "Food · Rakuhoku",
       "title": "ゲレンデから、<br />洛北の味へ。",
@@ -219,7 +219,7 @@
     }
   },
   "nearbyOnsen": {
-    "backLink": "広河原 LP に戻る",
+    "backLink": "広河原ガイドトップへ戻る",
     "hero": {
       "eyebrow": "Onsen · Recovery",
       "title": "鞍馬の湯で、<br />冷えた体をほぐす。",
@@ -246,7 +246,7 @@
     }
   },
   "corridorStay": {
-    "backLink": "広河原 LP に戻る",
+    "backLink": "広河原ガイドトップへ戻る",
     "hero": {
       "eyebrow": "Stay · Strategy",
       "title": "鞍馬に泊まる、<br />または京都駅で。",

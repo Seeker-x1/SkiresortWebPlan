@@ -178,11 +178,11 @@
     "rentacarHint": "ファミリーゲレンデ霧ヶ峰スキー場周辺のドライブ向け"
   },
   "footer": {
-    "copyright": "© Family Gerende Kirigamine Ski Area — LP mock",
+    "copyright": "© Family Gerende Kirigamine Ski Area",
     "location": "13338-1 Kirigamine, Suwa-shi, Nagano 392-0003"
   },
   "nearbyFood": {
-    "backLink": "Back to Kirigamine LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Food · Suwa",
       "title": "Four tastes<br />by Lake Suwa.",
@@ -219,7 +219,7 @@
     }
   },
   "nearbyOnsen": {
-    "backLink": "Back to Kirigamine LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Onsen · Recovery",
       "title": "Kamisuwa baths,<br />thaw out.",
@@ -246,7 +246,7 @@
     }
   },
   "corridorStay": {
-    "backLink": "Back to Kirigamine LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Stay · Strategy",
       "title": "Plateau cottage<br />or lakeside inn.",

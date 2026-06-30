@@ -79,6 +79,7 @@ L2 implementer 完了
 | **LP-Q1–Q7** いずれか | a11y / i18n / 導線 / コピー修正 |
 | **LP-Q8** レイアウト非破壊 | CTA 被り・オーバーラップ CSS 修正 |
 | **LP-Q9** JAPOW 詳細連携 | `resort-guides.json` + sync + URL 契約 |
+| **LP-Q10** コンテンツ信頼性 | `footer.guideNotice` · `nav.mapHint` · `map.fidelityNotice` · ユーザー向け「LP」表記なし |
 | 機械検証 exit ≠ 0 | JSON / HTML 配線 / コピートーン修正 |
 | **LP-Q7** コピートーン | 戦略内部語の直出し |
 | Human Gate 未完了 | 事実誤り（料金・規制・URL） |
@@ -212,6 +213,17 @@ L2 implementer 完了
 - `getResortGuideUrl(japowId)` が `/{registryId}/` と `?lang=en` を返す
 - **FAIL例:** `japowResortId` 誤り、`/biei-lp/` のような slug URL、sync 前の「JAPOW 反映完了」
 
+### LP-Q10 Content fidelity（必須）
+
+> [content_fidelity_disclaimer_spec.md](./content_fidelity_disclaimer_spec.md)
+
+- `footer.guideNotice` が全 LP `index.html`（子ページ含む site-footer）に `data-i18n` 配線
+- `nav.mapHint` が index ヘッダー「ゲレンデマップ」導線に配線（モバイルは `title`、768px+ で span）
+- `map.html` に `map.fidelityNotice` 帯 + stage バッジ「概略」
+- `validate-mock-lp-copy.mjs` → ユーザー向け「LP」「LP案モック」「LP mock」なし
+- `sync-content-fidelity-notices.mjs` 実行済み
+- **FAIL例:** フッター「© … — LP案モック」、戻りリンク「七戸 LP に戻る」、`map.html` title に「LP案モック」
+
 ---
 
 ## 5. L3 ルーブリック — `resort-visual-evaluator`（LP-V1–V6）
@@ -287,6 +299,7 @@ node docs/mock-assets/scripts/validate-mock-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
 node docs/mock-assets/scripts/validate-mock-lp-shell.mjs
 node docs/mock-assets/scripts/validate-mock-lp-copy.mjs
+node docs/mock-assets/scripts/sync-content-fidelity-notices.mjs
 ```
 
 ---

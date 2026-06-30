@@ -178,11 +178,11 @@
     "rentacarHint": "ぴっぷスキー場周辺のドライブ向け"
   },
   "footer": {
-    "copyright": "© ぴっぷスキー場 — LP案モック",
+    "copyright": "© ぴっぷスキー場",
     "location": "〒078-0327 北海道上川郡比布町北7線17号"
   },
   "nearbyFood": {
-    "backLink": "ぴっぷ LP に戻る",
+    "backLink": "ぴっぷガイドトップへ戻る",
     "hero": {
       "eyebrow": "Food · Slope",
       "title": "ゲレンデを超える、<br />4つの味。",
@@ -219,7 +219,7 @@
     }
   },
   "nearbyOnsen": {
-    "backLink": "ぴっぷ LP に戻る",
+    "backLink": "ぴっぷガイドトップへ戻る",
     "hero": {
       "eyebrow": "Onsen · Recovery",
       "title": "光明石の湯、<br />筋肉をゆるめる。",
@@ -246,7 +246,7 @@
     }
   },
   "corridorStay": {
-    "backLink": "ぴっぷ LP に戻る",
+    "backLink": "ぴっぷガイドトップへ戻る",
     "hero": {
       "eyebrow": "Stay · Strategy",
       "title": "比布で完結、<br />または旭川ハブ。",

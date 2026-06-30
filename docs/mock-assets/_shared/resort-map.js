@@ -61,8 +61,11 @@
 
   const UI = {
     ja: {
-      back: "← トップに戻る",
+      back: "← ガイドトップへ戻る",
       mapTitle: "ゲレンデマップ",
+      fidelityNotice:
+        "コース・リフトの配置は概略です。正確な滑走区域・運行状況は、ゲレンデの公式サイトと現地の案内を正としてください。",
+      stageBadge: "概略",
       status: "運行状況",
       lifts: "リフト",
       trails: "コース",
@@ -80,8 +83,11 @@
       reset: "表示をリセット",
     },
     en: {
-      back: "← Back to top",
+      back: "← Back to guide home",
       mapTitle: "Resort map",
+      fidelityNotice:
+        "Trail and lift positions are approximate. For accurate runs and lift status, follow the resort’s official site and on-mountain signage.",
+      stageBadge: "Overview",
       status: "Operations",
       lifts: "Lifts",
       trails: "Trails",
@@ -119,6 +125,7 @@
     sheet: document.getElementById("map-sheet"),
     backdrop: document.getElementById("map-sheet-backdrop"),
     tabs: document.querySelectorAll(".map-tab[data-filter]"),
+    fidelity: document.getElementById("map-fidelity-notice"),
   };
 
   function t(key) {
@@ -225,6 +232,7 @@
     document.title = `${pick(mapData.name)} — ${t("mapTitle")}`;
     if (el.title) el.title.textContent = pick(mapData.name);
     if (el.updated) el.updated.textContent = formatUpdated(mapData.updatedAt);
+    if (el.fidelity) el.fidelity.textContent = t("fidelityNotice");
 
     const registryRes = await fetch("registry.json").catch(() => null);
     if (registryRes?.ok && el.back) {
@@ -276,6 +284,7 @@
     }
 
     el.stage.innerHTML = `
+      <span class="map-stage-badge" aria-hidden="true">${t("stageBadge")}</span>
       <div class="map-canvas">
         <div class="map-canvas-content${imageReady ? " is-ready" : ""}">
           <img class="map-hero" src="${hero.src}" alt="${alt}" width="${hero.width || 1024}" height="${hero.height || 1024}" decoding="async" fetchpriority="high" />

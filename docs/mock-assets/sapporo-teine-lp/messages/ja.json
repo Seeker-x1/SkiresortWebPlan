@@ -217,11 +217,11 @@
     "rentacarHint": "札幌手稲スキー場周辺のドライブ向け"
   },
   "footer": {
-    "copyright": "© 札幌手稲スキー場 — LP案モック",
+    "copyright": "© 札幌手稲スキー場",
     "location": "〒006-0021 北海道札幌市手稲区手稲本町593番地"
   },
   "nearbyFood": {
-    "backLink": "札幌手稲 LP に戻る",
+    "backLink": "札幌手稲ガイドトップへ戻る",
     "navAreaMap": "広域マップ",
     "hero": {
       "eyebrow": "Food · Map",
@@ -283,7 +283,7 @@
     }
   },
   "nearbyOnsen": {
-    "backLink": "札幌手稲 LP に戻る",
+    "backLink": "札幌手稲ガイドトップへ戻る",
     "navAreaMap": "広域マップ",
     "hero": {
       "eyebrow": "Onsen · Map",
@@ -335,7 +335,7 @@
     }
   },
   "corridorStay": {
-    "backLink": "札幌手稲 LP に戻る",
+    "backLink": "札幌手稲ガイドトップへ戻る",
     "navAreaMap": "広域マップ",
     "hero": {
       "eyebrow": "Stay · Corridor",

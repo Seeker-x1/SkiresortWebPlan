@@ -178,11 +178,11 @@
     "rentacarHint": "京都広河原スキー場周辺のドライブ向け"
   },
   "footer": {
-    "copyright": "© Kyoto Hirogawara Ski Area — LP mock",
+    "copyright": "© Kyoto Hirogawara Ski Area",
     "location": "601-1101 · 286 Obanacho Hirogawara, Sakyo Ward, Kyoto"
   },
   "nearbyFood": {
-    "backLink": "Back to Hirogawara LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Food · Rakuhoku",
       "title": "From the hill<br />to northern Kyoto flavors.",
@@ -219,7 +219,7 @@
     }
   },
   "nearbyOnsen": {
-    "backLink": "Back to Hirogawara LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Onsen · Recovery",
       "title": "Kurama baths<br />to warm cold legs.",
@@ -246,7 +246,7 @@
     }
   },
   "corridorStay": {
-    "backLink": "Back to Hirogawara LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Stay · Strategy",
       "title": "Sleep in Kurama,<br />or hub at Kyoto Station.",

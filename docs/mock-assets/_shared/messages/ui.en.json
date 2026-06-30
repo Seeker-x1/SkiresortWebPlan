@@ -18,7 +18,8 @@
     "guidesEyebrow": "Guides",
     "updated": "Updated",
     "mainNav": "Main",
-    "firstView": "Hero"
+    "firstView": "Hero",
+    "backToGuide": "Back to guide home"
   },
   "nav": {
     "access": "Access",
@@ -35,6 +36,14 @@
     "schedule": "Schedule",
     "pillars": "Two pillars",
     "map": "Resort map",
-    "areaMap": "Area map"
+    "areaMap": "Area map",
+    "mapHint": "Overview (may be unverified)"
+  },
+  "footer": {
+    "guideNotice": "This resort guide is a preview. Photos and illustrations are for atmosphere only and may differ from the actual ski area. For hours, prices, and road conditions, rely on each venue’s official sources."
+  },
+  "map": {
+    "fidelityNotice": "Trail and lift positions are approximate. For accurate runs and lift status, follow the resort’s official site and on-mountain signage.",
+    "stageBadge": "Overview"
   }
 }

@@ -178,11 +178,11 @@
     "rentacarHint": "花笠高原スキー場周辺のドライブ向け"
   },
   "footer": {
-    "copyright": "© 花笠高原スキー場 — LP案モック",
+    "copyright": "© 花笠高原スキー場",
     "location": "〒099-2421 山形県尾花沢市字呼人28-3"
   },
   "nearbyFood": {
-    "backLink": "レークビュー LP に戻る",
+    "backLink": "レークビューガイドトップへ戻る",
     "hero": {
       "eyebrow": "Food · Slope",
       "title": "ゲレンデから、<br />道東の味へ。",
@@ -219,7 +219,7 @@
     }
   },
   "nearbyOnsen": {
-    "backLink": "レークビュー LP に戻る",
+    "backLink": "レークビューガイドトップへ戻る",
     "hero": {
       "eyebrow": "Onsen · Recovery",
       "title": "湖畔の湯で、<br />冷えた体をほぐす。",
@@ -246,7 +246,7 @@
     }
   },
   "corridorStay": {
-    "backLink": "レークビュー LP に戻る",
+    "backLink": "レークビューガイドトップへ戻る",
     "hero": {
       "eyebrow": "Stay · Strategy",
       "title": "湖畔に泊まる、<br />または駅前で。",

@@ -178,11 +178,11 @@
     "rentacarHint": "金沢市営医王山スキー場周辺のドライブ向け"
   },
   "footer": {
-    "copyright": "© Kanazawa City Iouzan Ski Resort — LP mock",
+    "copyright": "© Kanazawa City Iouzan Ski Resort",
     "location": "921-8031 · Yasuhara, Kanazawa, Ishikawa (Mt. Iou)"
   },
   "nearbyFood": {
-    "backLink": "Back to Iouzan LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Food · Circuit",
       "title": "No slope cafeteria—<br />so you explore.",
@@ -219,7 +219,7 @@
     }
   },
   "nearbyOnsen": {
-    "backLink": "Back to Iouzan LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Onsen · Yuwa",
       "title": "Yuwa Onsen—<br />Kanazawa's retreat.",
@@ -251,7 +251,7 @@
     }
   },
   "corridorStay": {
-    "backLink": "Back to Iouzan LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Stay · Strategy",
       "title": "Sleep near Kanazawa Station,<br />or in Yuwa.",

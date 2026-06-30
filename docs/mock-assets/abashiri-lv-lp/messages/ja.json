@@ -178,11 +178,11 @@
     "rentacarHint": "網走レークビュースキー場周辺のドライブ向け"
   },
   "footer": {
-    "copyright": "© 網走レークビュースキー場 — LP案モック",
+    "copyright": "© 網走レークビュースキー場",
     "location": "〒099-2421 北海道網走市字呼人28-3"
   },
   "nearbyFood": {
-    "backLink": "レークビュー LP に戻る",
+    "backLink": "レークビューガイドトップへ戻る",
     "hero": {
       "eyebrow": "Food · Slope",
       "title": "ゲレンデから、<br />道東の味へ。",
@@ -219,7 +219,7 @@
     }
   },
   "nearbyOnsen": {
-    "backLink": "レークビュー LP に戻る",
+    "backLink": "レークビューガイドトップへ戻る",
     "hero": {
       "eyebrow": "Onsen · Recovery",
       "title": "湖畔の湯で、<br />冷えた体をほぐす。",
@@ -246,7 +246,7 @@
     }
   },
   "corridorStay": {
-    "backLink": "レークビュー LP に戻る",
+    "backLink": "レークビューガイドトップへ戻る",
     "hero": {
       "eyebrow": "Stay · Strategy",
       "title": "湖畔に泊まる、<br />または駅前で。",

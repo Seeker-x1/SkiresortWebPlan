@@ -24,6 +24,9 @@ const JA_FORBIDDEN = [
   "インバウンドの",
   "インバウンドが愛",
   "インバウンドが",
+  "LP案モック",
+  " LP に戻る",
+  "ランディングページ",
 ];
 
 const EN_FORBIDDEN = [
@@ -39,6 +42,9 @@ const EN_FORBIDDEN = [
   /inbound onsen/i,
   /inbound stay/i,
   /\binbound\b/i,
+  / LP mock/i,
+  /Back to .+ LP/i,
+  /\blanding page\b/i,
 ];
 
 function findResortDirs() {

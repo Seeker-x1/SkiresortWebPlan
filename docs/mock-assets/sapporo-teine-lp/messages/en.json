@@ -217,11 +217,11 @@
     "rentacarHint": "札幌手稲スキー場周辺のドライブ向け"
   },
   "footer": {
-    "copyright": "© Sapporo Teine Ski Resort — LP mock",
+    "copyright": "© Sapporo Teine Ski Resort",
     "location": "006-0021 · 593 Teinehoncho, Teine-ku, Sapporo, Hokkaido"
   },
   "nearbyFood": {
-    "backLink": "Back to Sapporo Teine LP",
+    "backLink": "Back to guide home",
     "navAreaMap": "Area map",
     "hero": {
       "eyebrow": "Food · Map",
@@ -283,7 +283,7 @@
     }
   },
   "nearbyOnsen": {
-    "backLink": "Back to Sapporo Teine LP",
+    "backLink": "Back to guide home",
     "navAreaMap": "Area map",
     "hero": {
       "eyebrow": "Onsen · Map",
@@ -335,7 +335,7 @@
     }
   },
   "corridorStay": {
-    "backLink": "Back to Sapporo Teine LP",
+    "backLink": "Back to guide home",
     "navAreaMap": "Area map",
     "hero": {
       "eyebrow": "Stay · Corridor",

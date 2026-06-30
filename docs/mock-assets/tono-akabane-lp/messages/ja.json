@@ -178,11 +178,11 @@
     "rentacarHint": "遠野市赤羽根スキー場周辺のドライブ向け"
   },
   "footer": {
-    "copyright": "© 遠野市赤羽根スキー場 — LP案モック",
+    "copyright": "© 遠野市赤羽根スキー場",
     "location": "〒028-0775 岩手県遠野市上郷町平倉41地割47"
   },
   "nearbyFood": {
-    "backLink": "赤羽根 LP に戻る",
+    "backLink": "赤羽根ガイドトップへ戻る",
     "hero": {
       "eyebrow": "Food · Jingisukan",
       "title": "ゲレンデから、<br />遠野の羊へ。",
@@ -219,7 +219,7 @@
     }
   },
   "nearbyOnsen": {
-    "backLink": "赤羽根 LP に戻る",
+    "backLink": "赤羽根ガイドトップへ戻る",
     "hero": {
       "eyebrow": "Onsen · Recovery",
       "title": "遠野の湯で、<br />冷えた体をほぐす。",
@@ -246,7 +246,7 @@
     }
   },
   "corridorStay": {
-    "backLink": "赤羽根 LP に戻る",
+    "backLink": "赤羽根ガイドトップへ戻る",
     "hero": {
       "eyebrow": "Stay · Strategy",
       "title": "遠野に泊まる、<br />または盛岡で。",

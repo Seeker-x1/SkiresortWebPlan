@@ -75,7 +75,7 @@
       "title": "3 nearby onsen — Sichinohe Town Ski Area",
       "description": "Higashi-Hakkoda, Tsuta, and Towadako — gensen onsen guide with area map"
     },
-    "backLink": "Back to Sichinohe LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Onsen · Map",
       "title": "After skiing,<br />soak in gensen.",
@@ -112,17 +112,20 @@
       "higashi-hakkoda": {
         "tag": "Gensen · 5 min walk from station",
         "title": "Higashi-Hakkoda Onsen",
-        "lead": "Alkaline simple spring at about 47°C, poured straight into the tubs. Hiba bath, reclining tub, and cold plunge. About 5 minutes on foot from Sichinohe-Towada Station. Day use around ¥400 for adults, 9:00–21:00 (per official info)."
+        "lead": "Alkaline simple spring at about 47°C, poured straight into the tubs. Hiba bath, reclining tub, and cold plunge. About 5 minutes on foot from Sichinohe-Towada Station. Day use around ¥400 for adults, 9:00–21:00 (per official info).",
+        "imgAlt": "Hiba bath and indoor tubs at Higashi-Hakkoda Onsen"
       },
       "tsuta": {
         "tag": "Floor spring · Secret bath",
         "title": "Tsuta Onsen Ryokan",
-        "lead": "Rare baths where water wells up through the tub floor. A single-inn retreat in beech forest. Day use ¥1,000, 10:00–15:00 (last entry 14:30). Long winter closure—check the official site before visiting."
+        "lead": "Rare baths where water wells up through the tub floor. A single-inn retreat in beech forest. Day use ¥1,000, 10:00–15:00 (last entry 14:30). Long winter closure—check the official site before visiting.",
+        "imgAlt": "Wooden bath hall at Tsuta Onsen Ryokan in the forest"
       },
       "yakeyama": {
         "tag": "Lakeside · With sightseeing",
         "title": "Towadako Onsen",
-        "lead": "Spa cluster around Yasumiya on Lake Towada. Hotels such as Hotel Towadaso offer day bathing—handy before or after lake and Oirase outings."
+        "lead": "Spa cluster around Yasumiya on Lake Towada. Hotels such as Hotel Towadaso offer day bathing—handy before or after lake and Oirase outings.",
+        "imgAlt": "Snow-view outdoor bath overlooking Lake Towada"
       }
     },
     "pairingTitle": "Shinkansen × ski × onsen",
@@ -134,7 +137,7 @@
       "title": "2 nearby food spots — Sichinohe Town Ski Area",
       "description": "Slope-side hutte and Michi no Eki Shichinohe — food guide with area map"
     },
-    "backLink": "Back to Sichinohe LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Eat · Map",
       "title": "After snow,<br />eat local.",
@@ -167,12 +170,14 @@
       "hutte": {
         "tag": "On slope · Classics",
         "title": "Town Hutte",
-        "lead": "Cafeteria beside the first pair lift. Soy ramen ¥700, curry rice ¥700, beef bowl ¥600, and other slope staples. Weekdays 10:30–14:00, weekends & holidays 10:30–15:00 (per official info)."
+        "lead": "Cafeteria beside the first pair lift. Soy ramen ¥700, curry rice ¥700, beef bowl ¥600, and other slope staples. Weekdays 10:30–14:00, weekends & holidays 10:30–15:00 (per official info).",
+        "imgAlt": "Soy ramen at the town hutte slope cafeteria"
       },
       "tabikura": {
         "tag": "Michi no Eki · Horse ramen",
         "title": "Tabikura (Michi no Eki Shichinohe)",
-        "lead": "Restaurant Ema inside the Tabikura hall is known for horse-meat ramen, plus local keiran and hand-cut soba. About 5 minutes on foot from Sichinohe-Towada Station; restaurant weekdays 11:00–15:00 (per official info)."
+        "lead": "Restaurant Ema inside the Tabikura hall is known for horse-meat ramen, plus local keiran and hand-cut soba. About 5 minutes on foot from Sichinohe-Towada Station; restaurant weekdays 11:00–15:00 (per official info).",
+        "imgAlt": "Horse-meat ramen at Michi no Eki Shichinohe restaurant Ema"
       }
     },
     "pairingTitle": "One-day loop",

@@ -178,11 +178,11 @@
     "rentacarHint": "金沢市営医王山スキー場周辺のドライブ向け"
   },
   "footer": {
-    "copyright": "© 金沢市営医王山スキー場 — LP案モック",
+    "copyright": "© 金沢市営医王山スキー場",
     "location": "〒921-8031 石川県金沢市安原町（医王山）"
   },
   "nearbyFood": {
-    "backLink": "医王山 LP に戻る",
+    "backLink": "医王山ガイドトップへ戻る",
     "hero": {
       "eyebrow": "Food · Circuit",
       "title": "ゲレンデに食堂なし、<br />だから回遊する。",
@@ -219,7 +219,7 @@
     }
   },
   "nearbyOnsen": {
-    "backLink": "医王山 LP に戻る",
+    "backLink": "医王山ガイドトップへ戻る",
     "hero": {
       "eyebrow": "Onsen · Yuwa",
       "title": "金沢の奥座敷、<br />湯涌温泉へ。",
@@ -251,7 +251,7 @@
     }
   },
   "corridorStay": {
-    "backLink": "医王山 LP に戻る",
+    "backLink": "医王山ガイドトップへ戻る",
     "hero": {
       "eyebrow": "Stay · Strategy",
       "title": "金沢駅前に泊まる、<br />または湯涌に。",

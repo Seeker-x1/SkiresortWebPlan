@@ -178,11 +178,11 @@
     "rentacarHint": "ファミリーゲレンデ霧ヶ峰スキー場周辺のドライブ向け"
   },
   "footer": {
-    "copyright": "© ファミリーゲレンデ霧ヶ峰スキー場 — LP案モック",
+    "copyright": "© ファミリーゲレンデ霧ヶ峰スキー場",
     "location": "〒392-0003 長野県諏訪市霧ヶ峰13338-1"
   },
   "nearbyFood": {
-    "backLink": "霧ヶ峰 LP に戻る",
+    "backLink": "霧ヶ峰ガイドトップへ戻る",
     "hero": {
       "eyebrow": "Food · Suwa",
       "title": "諏訪湖畔の、<br />4つの味。",
@@ -219,7 +219,7 @@
     }
   },
   "nearbyOnsen": {
-    "backLink": "霧ヶ峰 LP に戻る",
+    "backLink": "霧ヶ峰ガイドトップへ戻る",
     "hero": {
       "eyebrow": "Onsen · Recovery",
       "title": "上諏訪の湯、<br />冷えた体を癒す。",
@@ -246,7 +246,7 @@
     }
   },
   "corridorStay": {
-    "backLink": "霧ヶ峰 LP に戻る",
+    "backLink": "霧ヶ峰ガイドトップへ戻る",
     "hero": {
       "eyebrow": "Stay · Strategy",
       "title": "高原コテージ、<br />または湖畔宿泊。",

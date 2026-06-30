@@ -178,11 +178,11 @@
     "rentacarHint": "遠野市赤羽根スキー場周辺のドライブ向け"
   },
   "footer": {
-    "copyright": "© Tono City Akabane Ski Area — LP mock",
+    "copyright": "© Tono City Akabane Ski Area",
     "location": "028-0775 · 41-47 Hirakura, Kamigo, Tono, Iwate"
   },
   "nearbyFood": {
-    "backLink": "Back to Akabane LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Food · Jingisukan",
       "title": "From the hill<br />to Tono lamb.",
@@ -219,7 +219,7 @@
     }
   },
   "nearbyOnsen": {
-    "backLink": "Back to Akabane LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Onsen · Recovery",
       "title": "Tono baths<br />to warm cold legs.",
@@ -246,7 +246,7 @@
     }
   },
   "corridorStay": {
-    "backLink": "Back to Akabane LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Stay · Strategy",
       "title": "Sleep in Tono,<br />or hub at Morioka.",

@@ -178,11 +178,11 @@
     "rentacarHint": "網走レークビュースキー場周辺のドライブ向け"
   },
   "footer": {
-    "copyright": "© Abashiri Lake View Ski Area — LP mock",
+    "copyright": "© Abashiri Lake View Ski Area",
     "location": "099-2421 · 28-3 Yobito, Abashiri, Hokkaido"
   },
   "nearbyFood": {
-    "backLink": "Back to Lake View LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Food · Slope",
       "title": "From the hill<br />to Okhotsk flavors.",
@@ -219,7 +219,7 @@
     }
   },
   "nearbyOnsen": {
-    "backLink": "Back to Lake View LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Onsen · Recovery",
       "title": "Lakeside baths<br />to warm cold legs.",
@@ -246,7 +246,7 @@
     }
   },
   "corridorStay": {
-    "backLink": "Back to Lake View LP",
+    "backLink": "Back to guide home",
     "hero": {
       "eyebrow": "Stay · Strategy",
       "title": "Sleep lakeside,<br />or hub at the station.",

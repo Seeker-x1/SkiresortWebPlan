@@ -19,7 +19,7 @@
       <nav data-i18n-attr="aria-label:common.mainNav">
         <ul class="nav">
           <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
-          <li><a href="../map.html?resort=kiyosato" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li class="nav-map-item"><a href="../map.html?resort=kiyosato" data-i18n="nav.map" data-i18n-attr="title:nav.mapHint">ゲレンデマップ</a><span class="nav-map-hint" data-i18n="nav.mapHint" aria-hidden="true">概略（未検証の場合あり）</span></li>
           <li><a href="#live" data-i18n="nav.live">本日</a></li>
           <li><a href="#highlights" data-i18n="nav.highlights">魅力</a></li>
           <li><a href="#trip" data-i18n="nav.trip">日帰り</a></li>
@@ -368,9 +368,10 @@
 
   <footer class="site-footer">
     <div class="inner">
-      <div class="footer-row">
+      <p class="footer-notice" role="note" data-i18n="footer.guideNotice">本ガイドは制作中の案です。写真・イラストは雰囲気の参考であり、実際のゲレンデ・施設と異なる場合があります。料金・営業・道路規制は各施設の公式情報を優先してください。</p>
+<div class="footer-row">
         <div class="footer-meta">
-          <p data-i18n="footer.copyright">© 清里町営緑スキー場 — LP案モック</p>
+          <p data-i18n="footer.copyright">© 清里町営緑スキー場</p>
         </div>
       </div>
       <p class="footer-location">
