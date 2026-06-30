@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="asahidake">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>周辺温泉10選 — 釜臥山スキー場</title>
+  <meta name="description" content="雪景色の露天風呂と日帰り入浴——温泉マップ付き回遊ガイド" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="./" class="logo" data-i18n="logo">釜臥山スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="./#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=asahidake" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="/area-map.html?resort=asahidake&layers=onsen,anchor" data-i18n="nearbyOnsen.navAreaMap">周辺マップ</a></li>
+          <li><a href="./#journey" data-i18n="nav.journey">回遊</a></li>
+          <li><a href="./#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--spot" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img
+          src="lp-mock-asahidake-recovery.png"
+          data-i18n-attr="alt:recovery.imgAlt"
+          alt="美瑛野菜のポトフ"
+          width="1200"
+          height="1500"
+        />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <a href="./" class="detail-back">← <span data-i18n="nearbyOnsen.backLink">美瑛ガイドトップへ戻る</span></a>
+        <p class="eyebrow" data-i18n="nearbyOnsen.hero.eyebrow">Onsen · Map</p>
+        <h1 class="hero-title" data-i18n-html="nearbyOnsen.hero.title">冷えた体を、<br />温泉で満たす</h1>
+        <p class="hero-tagline" data-i18n="nearbyOnsen.hero.tagline">雪遊びと青い池のあと——日本の温泉文化と雪見露天をセットで</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="inner">
+        <p role="note" class="notice-banner" data-i18n="nearbyOnsen.notice">
+          日帰り入浴の可否・営業時間・冬季閉鎖・混浴ルールは各施設の公式情報が最新です。
+        </p>
+
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.introTitle">なぜ、温泉が回遊の要になるのか</h2>
+        <p class="lead" style="margin-top:1.5rem; max-width:36rem" data-i18n="nearbyOnsen.introLead">
+          美瑛周辺の訪れる旅人にとって、雪景色の露天と日本の湯治文化は大きな魅力です。
+        </p>
+        <p class="lead-whisper" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.introBody">
+          雪遊びや絶景観光で冷えた体を温める温泉10箇所をピックアップしました。
+        </p>
+      </div>
+    </section>
+
+    <section class="section border-top" id="onsen-map">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyOnsen.mapEyebrow">Area map</p>
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.mapTitle">付近の温泉マップ</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.mapLead">
+          飲食・温泉・拠点をボタンで切り替え——複数レイヤーの同時表示に対応。
+        </p>
+
+        <div data-map-embed data-default-layers="onsen,anchor">
+          <div class="map-layer-toggles" role="group" data-i18n-attr="aria-label:nearbyOnsen.mapEmbedTitle">
+            <button type="button" class="map-layer-btn" data-map-layer="food" aria-pressed="false" data-i18n="nearbyOnsen.mapLayers.food">飲食</button>
+            <button type="button" class="map-layer-btn" data-map-layer="onsen" aria-pressed="true" data-i18n="nearbyOnsen.mapLayers.onsen">温泉</button>
+            <button type="button" class="map-layer-btn" data-map-layer="anchor" aria-pressed="true" data-i18n="nearbyOnsen.mapLayers.anchor">拠点</button>
+          </div>
+          <p class="map-layer-hint" data-i18n="nearbyOnsen.mapLayers.hint">飲食と温泉は同時に表示できます</p>
+          <p class="map-layer-hint map-layer-hint--mobile" data-i18n="nearbyOnsen.mapLayers.mobileHint">ピンが重なるときは下の温泉一覧の「地図で見る」か、地図右下の「スポット一覧」をご利用ください</p>
+
+          <div class="map-embed">
+            <iframe
+              title="美瑛周辺の飲食・温泉・拠点マップ"
+              data-i18n-attr="title:nearbyOnsen.mapEmbedTitle"
+              src="/area-map.html?resort=asahidake&embed=1&layers=onsen,anchor"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="/area-map.html?resort=asahidake&layers=onsen,anchor" class="btn btn-primary" data-i18n="nearbyOnsen.mapCta">フルサイズマップを開く</a>
+          <a href="nearby-food.html" class="btn btn-ghost" data-i18n="nearbyOnsen.linkFoodGuide">周辺飲食10選ガイド</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyOnsen.spotsEyebrow">10 picks</p>
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.spotsTitle">美瑛の観光客に刺さる周辺温泉10選</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.spotsLead">
+          白金温泉エリアを中心に、雪遊び・青い池の前後で組み合わせやすい順に掲載。
+        </p>
+
+        <h3 class="onsen-region" data-i18n="nearbyOnsen.regions.shirogane">美瑛・白金温泉エリア</h3>
+        <ol class="food-spot-list" start="1">
+          <li class="food-spot" id="entry-ao-no-bi-yuyu" data-spot-entry="ao-no-bi-yuyu">
+            <span class="food-spot__num">01</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.ao-no-bi-yuyu.tag">源泉100% · 渓流露天</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.ao-no-bi-yuyu.title">碧の美 ゆゆ</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.ao-no-bi-yuyu.lead">源泉100％かけ流しの美肌の湯。</p>
+              <a href="/area-map.html?resort=asahidake&layers=onsen,anchor&focus=ao-no-bi-yuyu" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-park-hills" data-spot-entry="park-hills">
+            <span class="food-spot__num">02</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.park-hills.tag">大規模リゾート · サウナ</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.park-hills.title">美瑛白金四季の森ホテルパークヒルズ</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.park-hills.lead">白金エリア最大級のホテル。</p>
+              <a href="/area-map.html?resort=asahidake&layers=onsen,anchor&focus=park-hills" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-tsuewasure" data-spot-entry="tsuewasure">
+            <span class="food-spot__num">03</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.tsuewasure.tag">純源泉 · ローカル温泉</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.tsuewasure.title">湯処 杖忘れの湯</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.tsuewasure.lead">加水・加温なしの源泉かけ流し100%。</p>
+              <a href="/area-map.html?resort=asahidake&layers=onsen,anchor&focus=tsuewasure" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-mori-no-ryotei" data-spot-entry="mori-no-ryotei">
+            <span class="food-spot__num">04</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.mori-no-ryotei.tag">数寄屋 · 日帰り可</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.mori-no-ryotei.title">森の旅亭 びえい</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.mori-no-ryotei.lead">17室の数寄屋造り高級宿。日帰り入浴も可能。</p>
+              <a href="/area-map.html?resort=asahidake&layers=onsen,anchor&focus=mori-no-ryotei" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-mori-no-shizuku" data-spot-entry="mori-no-shizuku">
+            <span class="food-spot__num">05</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.mori-no-shizuku.tag">掛け流し · サウナ</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.mori-no-shizuku.title">森の雫 RIN</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.mori-no-shizuku.lead">源泉100％掛け流しの露天・大浴場・サウナ。</p>
+              <a href="/area-map.html?resort=asahidake&layers=onsen,anchor&focus=mori-no-shizuku" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-kokumin" data-spot-entry="kokumin">
+            <span class="food-spot__num">06</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.kokumin.tag">300円〜 · 銭湯文化</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.kokumin.title">白金温泉 美瑛町国民保養センター</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.kokumin.lead">大人300円からの公衆浴場。</p>
+              <a href="/area-map.html?resort=asahidake&layers=onsen,anchor&focus=kokumin" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="onsen-region" data-i18n="nearbyOnsen.regions.kamifurano">上富良野・十勝岳エリア</h3>
+        <ol class="food-spot-list" start="7">
+          <li class="food-spot" id="entry-ryounkaku" data-spot-entry="ryounkaku">
+            <span class="food-spot__num">07</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.ryounkaku.tag">天空の露天 · 最高所</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.ryounkaku.title">十勝岳温泉 湯元 凌雲閣</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.ryounkaku.lead">北海道で最も高所にある温泉の一つ。</p>
+              <a href="/area-map.html?resort=asahidake&layers=onsen,anchor&focus=ryounkaku" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-hakuginso" data-spot-entry="hakuginso">
+            <span class="food-spot__num">08</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.hakuginso.tag">ロウリュ · 北の聖地</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.hakuginso.title">吹上温泉保養センター 白銀荘</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.hakuginso.lead">十勝岳中腹のヒバ浴槽と露天。ロウリュサウナを備える。</p>
+              <a href="/area-map.html?resort=asahidake&layers=onsen,anchor&focus=hakuginso" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-fukiage-roten" data-spot-entry="fukiage-roten">
+            <span class="food-spot__num">09</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.fukiage-roten.tag">24h無料 · 野湯</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.fukiage-roten.title">吹上露天の湯</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.fukiage-roten.lead">森の中に湧く24時間無料の天然野湯（混浴）。</p>
+              <a href="/area-map.html?resort=asahidake&layers=onsen,anchor&focus=fukiage-roten" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="onsen-region" data-i18n="nearbyOnsen.regions.asahidake">旭岳・東川エリア</h3>
+        <ol class="food-spot-list" start="10">
+          <li class="food-spot" id="entry-yukoma" data-spot-entry="yukoma">
+            <span class="food-spot__num">10</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.yukoma.tag">旭岳麓 · 秘湯</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.yukoma.title">旭岳温泉 湯元 湧駒荘</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.yukoma.lead">大雪山旭岳麓の名湯。木造りの野趣あふれる浴場。</p>
+              <a href="/area-map.html?resort=asahidake&layers=onsen,anchor&focus=yukoma" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.pairingTitle">雪遊び × 温泉 × 青い池</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.pairingLead">
+          午前：町民スキー場の雪遊び → 昼：じゅんぺい → 午後：白金温泉 → 夕方：青い池。
+        </p>
+        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="nearby-food.html" class="btn btn-ghost" data-i18n="nearbyOnsen.pairingFoodCta">飲食10選ガイド</a>
+          <a href="cafe-view.html" class="btn btn-ghost" data-i18n="nearbyOnsen.pairingSnowCta">雪遊びガイド</a>
+          <a href="night-view.html" class="btn btn-ghost" data-i18n="nearbyOnsen.pairingBluePondCta">青い池ガイド</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p class="footer-notice" role="note" data-i18n="footer.guideNotice">本ガイドは制作中の案です。写真・イラストは雰囲気の参考であり、実際のゲレンデ・施設と異なる場合があります。料金・営業・道路規制は各施設の公式情報を優先してください。</p>
+<div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 釜臥山スキー場</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒071-0218 北海道上川郡美瑛町字大村村山</span> ·
+        <a href="./" data-i18n="nearbyOnsen.backLink">美瑛ガイドトップへ戻る</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+  <script src="../_shared/map-embed-layers.js"></script>
+  <script>
+    window.addEventListener("mock-i18n-ready", (e) => {
+      const m = e.detail.messages;
+      const meta = m.nearbyOnsen && m.nearbyOnsen.meta;
+      if (meta && meta.title) document.title = meta.title;
+      if (meta && meta.description) {
+        const tag = document.querySelector('meta[name="description"]');
+        if (tag) tag.setAttribute("content", meta.description);
+      }
+    });
+  </script>
+</body>
+</html>

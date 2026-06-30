@@ -30,6 +30,7 @@ const NAME_SUBSTRINGS = {
   "sapporo-kokusai": ["札幌国際"],
   "sapporo-teine": ["テイネ", "サッポロテイネ"],
   pippu: ["ぴっぷ", "比布"],
+  asahidake: ["旭岳"],
   "kamui-ski-links": ["カムイ", "スキーリンクス"],
   furano: ["富良野スキー場", "富良野"],
   canmore: ["キャンモア"],

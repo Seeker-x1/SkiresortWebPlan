@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="asahidake">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>周辺飲食10選 — 釜臥山スキー場</title>
+  <meta name="description" content="グルメスポットと周辺マップ——雪遊び・青い池と組み合わせる日帰り回遊" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="./" class="logo" data-i18n="logo">釜臥山スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="./#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=asahidake" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="/area-map.html?resort=asahidake&layers=food,anchor" data-i18n="nearbyFood.navAreaMap">周辺マップ</a></li>
+          <li><a href="./#journey" data-i18n="nav.journey">回遊</a></li>
+          <li><a href="./#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--spot" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img
+          src="lp-mock-asahidake-recovery.png"
+          data-i18n-attr="alt:recovery.imgAlt"
+          alt="美瑛野菜のポトフ"
+          width="1200"
+          height="1500"
+        />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <a href="./" class="detail-back">← <span data-i18n="nearbyFood.backLink">美瑛ガイドトップへ戻る</span></a>
+        <p class="eyebrow" data-i18n="nearbyFood.hero.eyebrow">Eat · Map</p>
+        <h1 class="hero-title" data-i18n-html="nearbyFood.hero.title">雪のあと、<br />北海道の食へ</h1>
+        <p class="hero-tagline" data-i18n="nearbyFood.hero.tagline">乳製品・和牛・小麦・ラーメン——摩擦のない一日へ</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="inner">
+        <p role="note" class="notice-banner" data-i18n="nearbyFood.notice">
+          営業時間・定休は各店舗の公式情報が最新です。
+        </p>
+
+        <h2 class="heading-lg" data-i18n="nearbyFood.introTitle">なぜ、食で回遊が完結するのか</h2>
+        <p class="lead" style="margin-top:1.5rem; max-width:36rem" data-i18n="nearbyFood.introLead">
+          美瑛に集まる観光客は、北海道らしさの食と写真映えに敏感です。
+        </p>
+        <p class="lead-whisper" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyFood.introBody">
+          10店舗をピックアップし、町民スキー場と青い池と組み合わせました。
+        </p>
+      </div>
+    </section>
+
+    <section class="section border-top" id="food-map">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyFood.mapEyebrow">Area map</p>
+        <h2 class="heading-lg" data-i18n="nearbyFood.mapTitle">付近の飲食マップ</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyFood.mapLead">
+          飲食・温泉・拠点をボタンで切り替え——複数レイヤーの同時表示に対応。
+        </p>
+
+        <div data-map-embed data-default-layers="food,anchor">
+          <div class="map-layer-toggles" role="group" data-i18n-attr="aria-label:nearbyFood.mapEmbedTitle">
+            <button type="button" class="map-layer-btn" data-map-layer="food" aria-pressed="true" data-i18n="nearbyFood.mapLayers.food">飲食</button>
+            <button type="button" class="map-layer-btn" data-map-layer="onsen" aria-pressed="false" data-i18n="nearbyFood.mapLayers.onsen">温泉</button>
+            <button type="button" class="map-layer-btn" data-map-layer="anchor" aria-pressed="true" data-i18n="nearbyFood.mapLayers.anchor">拠点</button>
+          </div>
+          <p class="map-layer-hint" data-i18n="nearbyFood.mapLayers.hint">飲食と温泉は同時に表示できます</p>
+          <p class="map-layer-hint map-layer-hint--mobile" data-i18n="nearbyFood.mapLayers.mobileHint">ピンが重なるときは下の店舗一覧の「地図で見る」か、地図右下の「スポット一覧」をご利用ください</p>
+
+          <div class="map-embed">
+            <iframe
+              title="美瑛周辺の飲食・温泉・拠点マップ"
+              data-i18n-attr="title:nearbyFood.mapEmbedTitle"
+              src="/area-map.html?resort=asahidake&embed=1&layers=food,anchor"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="/area-map.html?resort=asahidake&layers=food,anchor" class="btn btn-primary" data-i18n="nearbyFood.mapCta">フルサイズマップを開く</a>
+          <a href="nearby-onsen.html" class="btn btn-ghost" data-i18n="nearbyFood.linkOnsenGuide">周辺温泉10選ガイド</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyFood.spotsEyebrow">10 picks</p>
+        <h2 class="heading-lg" data-i18n="nearbyFood.spotsTitle">美瑛の観光客に刺さる周辺グルメ10選</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyFood.spotsLead">
+          雪遊びの前後で組み合わせやすい順に掲載。
+        </p>
+
+        <ol class="food-spot-list">
+          <li class="food-spot" id="entry-junpei" data-spot-entry="junpei">
+            <span class="food-spot__num">01</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.junpei.tag">洋食 · 海老丼</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.junpei.title">洋食とCafe じゅんぺい</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.junpei.lead">老舗洋食店の海老丼。</p>
+              <a href="/area-map.html?resort=asahidake&layers=food,anchor&focus=junpei" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-biei-farm" data-spot-entry="biei-farm">
+            <span class="food-spot__num">02</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.biei-farm.tag">乳製品 · 絶景牧場</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.biei-farm.title">美瑛放牧酪農場（美瑛ファーム）</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.biei-farm.lead">ラクレットトーストとソフトクリーム。</p>
+              <a href="/area-map.html?resort=asahidake&layers=food,anchor&focus=biei-farm" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-aruno" data-spot-entry="aruno">
+            <span class="food-spot__num">03</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.aruno.tag">パン · チーズフォンデュ</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.aruno.title">あるうのぱいん</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.aruno.lead">チーズフォンデュセットが人気。</p>
+              <a href="/area-map.html?resort=asahidake&layers=food,anchor&focus=aruno" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-chiyoda" data-spot-entry="chiyoda">
+            <span class="food-spot__num">04</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.chiyoda.tag">和牛 · 農場直営</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.chiyoda.title">ファームレストラン千代田</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.chiyoda.lead">びえい和牛のステーキ。</p>
+              <a href="/area-map.html?resort=asahidake&layers=food,anchor&focus=chiyoda" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-ferme" data-spot-entry="ferme">
+            <span class="food-spot__num">05</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.ferme.tag">菓子 · パン · レストラン</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.ferme.title">フェルム ラ・テール 美瑛 本店</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.ferme.lead">自然と生きる複合施設。</p>
+              <a href="/area-map.html?resort=asahidake&layers=food,anchor&focus=ferme" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-between" data-spot-entry="between">
+            <span class="food-spot__num">06</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.between.tag">バーガー · 森</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.between.title">BETWEEN THE BREAD</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.between.lead">森のハンバーガーショップ。</p>
+              <a href="/area-map.html?resort=asahidake&layers=food,anchor&focus=between" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-gosh" data-spot-entry="gosh">
+            <span class="food-spot__num">07</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.gosh.tag">珈琲 · 自家焙煎</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.gosh.title">自家焙煎珈琲店 Gosh（ゴーシュ）</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.gosh.lead">美馬牛の人気カフェ。</p>
+              <a href="/area-map.html?resort=asahidake&layers=food,anchor&focus=gosh" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-asperge" data-spot-entry="asperge">
+            <span class="food-spot__num">08</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.asperge.tag">フレンチ · 美瑛野菜</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.asperge.title">レストラン・アスペルジュ</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.asperge.lead">美瑛選果内のフレンチ。</p>
+              <a href="/area-map.html?resort=asahidake&layers=food,anchor&focus=asperge" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-sabo" data-spot-entry="sabo">
+            <span class="food-spot__num">09</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.sabo.tag">和スイーツ · 駅近</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.sabo.title">美瑛茶房</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.sabo.lead">きな粉シロップソフトクリーム。</p>
+              <a href="/area-map.html?resort=asahidake&layers=food,anchor&focus=sabo" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-santouka" data-spot-entry="santouka">
+            <span class="food-spot__num">10</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.santouka.tag">ラーメン · 旭川系</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.santouka.title">らーめん山頭火 美瑛店</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.santouka.lead">雪遊び後のラーメン。</p>
+              <a href="/area-map.html?resort=asahidake&layers=food,anchor&focus=santouka" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <h2 class="heading-lg" data-i18n="nearbyFood.pairingTitle">一日の回遊モデル</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyFood.pairingLead">
+          美瑛駅 → 雪遊び → 昼食 → 絶景 → 青い池。
+        </p>
+        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="cafe-view.html" class="btn btn-ghost" data-i18n="nearbyFood.pairingSnowCta">雪遊びガイド</a>
+          <a href="night-view.html" class="btn btn-ghost" data-i18n="nearbyFood.pairingBluePondCta">青い池ガイド</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p class="footer-notice" role="note" data-i18n="footer.guideNotice">本ガイドは制作中の案です。写真・イラストは雰囲気の参考であり、実際のゲレンデ・施設と異なる場合があります。料金・営業・道路規制は各施設の公式情報を優先してください。</p>
+<div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 釜臥山スキー場</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒071-0218 北海道上川郡美瑛町字大村村山</span> ·
+        <a href="./" data-i18n="nearbyFood.backLink">美瑛ガイドトップへ戻る</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+  <script src="../_shared/map-embed-layers.js"></script>
+  <script>
+    window.addEventListener("mock-i18n-ready", (e) => {
+      const m = e.detail.messages;
+      const meta = m.nearbyFood && m.nearbyFood.meta;
+      if (meta && meta.title) document.title = meta.title;
+      if (meta && meta.description) {
+        const tag = document.querySelector('meta[name="description"]');
+        if (tag) tag.setAttribute("content", meta.description);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -398,6 +398,29 @@
       }
     },
     {
+      "id": "asahidake",
+      "slug": "asahidake-lp",
+      "name": {
+        "ja": "旭岳スキーコース",
+        "en": "Asahidake Ski Course"
+      },
+      "region": {
+        "ja": "北海道上川郡東川町",
+        "en": "Higashikawa, Hokkaido"
+      },
+      "strategy": {
+        "ja": "ロープウェイ×大雪山パウダー",
+        "en": "Ropeway × Daisetsuzan powder"
+      },
+      "guidePath": "/asahidake/",
+      "guideUrl": "https://guides.japowserch.com/asahidake/",
+      "japowResortId": 33,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "asahikawa_airport"
+      }
+    },
+    {
       "id": "kamikawa-nakayama",
       "slug": "kamikawa-nakayama-lp",
       "name": {

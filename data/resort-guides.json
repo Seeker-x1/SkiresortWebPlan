@@ -94,6 +94,10 @@
       "registryId": "pippu",
       "tier": "mock"
     },
+    "33": {
+      "registryId": "asahidake",
+      "tier": "mock"
+    },
     "37": {
       "registryId": "kamui-ski-links",
       "tier": "mock"

@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "asahidake",
+  "name": {
+    "ja": "旭岳スキーコース",
+    "en": "Asahidake Ski Course"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "大雪山旭岳ロープウェイ公式",
+    "LP戦略レポート"
+  ],
+  "updatedAt": "2026-06-30T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/asahidake-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-ropeway",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": { "ja": "大雪山旭岳ロープウェイ", "en": "Asahidake Ropeway" },
+      "shortLabel": { "ja": "ロープウェイ", "en": "Ropeway" },
+      "meta": {
+        "ja": { "標高": "1100m→1600m", "所要": "約10分", "定員": "101人" },
+        "en": { "Elevation": "1100→1600 m", "Duration": "~10 min", "Capacity": "101" }
+      }
+    },
+    {
+      "id": "trail-upper",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": { "ja": "山頂エリア（上級）", "en": "Summit zone (advanced)" },
+      "shortLabel": { "ja": "山頂", "en": "Summit" },
+      "meta": {
+        "ja": { "雪面": "非圧雪・パウダー", "備考": "山岳スキー" },
+        "en": { "Surface": "Ungroomed powder", "Note": "Mountain skiing" }
+      }
+    },
+    {
+      "id": "trail-mid",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate-advanced",
+      "label": { "ja": "中斜面コース（中〜上級）", "en": "Mid slope (inter–advanced)" },
+      "shortLabel": { "ja": "中斜面", "en": "Mid" },
+      "meta": {
+        "ja": { "特徴": "緩急変化", "林帯": "針葉樹林" },
+        "en": { "Feature": "Varied pitch", "Forest": "Conifer" }
+      }
+    },
+    {
+      "id": "trail-sugatami",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": { "ja": "姿見の池周遊（散策）", "en": "Sugatami Pond loop (walk)" },
+      "shortLabel": { "ja": "姿見", "en": "Sugatami" },
+      "meta": {
+        "ja": { "所要": "約1時間", "備考": "噴気口あり" },
+        "en": { "Duration": "~1 hour", "Note": "Fumaroles" }
+      }
+    }
+  ]
+}

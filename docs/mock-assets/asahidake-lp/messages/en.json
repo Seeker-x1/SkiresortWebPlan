@@ -1,0 +1,461 @@
+{
+  "meta": {
+    "title": "Asahidake Ski Course",
+    "description": "Ropeway × Daisetsuzan powder—northern Hokkaido's alpine ski mecca in a national park. Sugatami Pond, fumaroles, and Asahidake Onsen in one day."
+  },
+  "logo": "Asahidake Ski Course",
+  "nav": {
+    "journey": "Itinerary",
+    "recovery": "Recovery"
+  },
+  "hero": {
+    "eyebrow": "Higashikawa, Hokkaido · Asahidake Onsen",
+    "title": "Asahidake<br />Ski Course",
+    "tagline": "Ropeway × Daisetsuzan powder—northern Hokkaido's alpine ski sanctuary.",
+    "badgeFree": "Adult day pass from ¥6,800",
+    "ctaToday": "Today's status",
+    "updatedAt": "Jun 30 9:00"
+  },
+  "transit": {
+    "eyebrow": "Drive",
+    "title": "From Asahikawa<br />into the mountains.",
+    "lead": "About one hour by car from Asahikawa Airport, or roughly 85 minutes by bus from Asahikawa Station—a 101-passenger gondola climbs from 1,100 m at the base to 1,600 m at Sugatami in about 10 minutes. This is mountain skiing, not a groomed resort.",
+    "ctaAccess": "Access & parking",
+    "ctaRental": "Rental car info",
+    "imgAlt": "Snow road toward the Daisetsuzan range—approach to Mt. Asahidake Ropeway"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Asahikawa"
+    },
+    "wellness": {
+      "label": "Walk",
+      "title": "Sugatami & vents"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Ropeway & day pass"
+    },
+    "bluePond": {
+      "label": "Scenery",
+      "title": "Sugatami Pond"
+    },
+    "food": {
+      "label": "Food",
+      "title": "Asahidake dining 10"
+    },
+    "onsen": {
+      "label": "Onsen",
+      "title": "Nearby hot springs"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Asahidake",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "Powder in a national park",
+      "lead": "Inside Daisetsuzan National Park, the ropeway runs from 1,100 m at the base to 1,600 m at Sugatami—ungroomed alpine terrain, not machine-packed runs. With Mt. Asahidake (2,291 m), Hokkaido's highest peak, as your backdrop, this is where dry Daisetsuzan powder earns its reputation.",
+      "cta": "Trail map",
+      "imgAlt": "Powder slopes seen from Mt. Asahidake Ropeway—alpine skiing in the Daisetsuzan range"
+    },
+    "secondary": {
+      "title": "Fumaroles & Sugatami Pond",
+      "lead": "At Sugatami, steam vents (fumaroles) dot the snowfield and the Sugatami Pond loop is a classic. Non-skiers can ride the ropeway for volcanic highland scenery and snow wellness walks.",
+      "cta": "Sugatami & fumarole guide"
+    }
+  },
+  "recovery": {
+    "eyebrow": "Warm up",
+    "title": "After skiing,<br />Asahidake Onsen.",
+    "lead": "Sanzoku-yaki and Asahidake beer at Yukomanso, buffet dining at La Vista Daisetsuzan, local dishes at Kitoron—the hot-spring village at the ropeway base has classic après routes.",
+    "whisper": "Soak at Yukomanso or La Vista Daisetsuzan's open-air bath with national-park snow views to warm up after a cold day.",
+    "ctaFood": "Nearby dining guide",
+    "ctaOnsen": "Nearby onsen guide",
+    "imgAlt": "Sanzoku-yaki at Yukomanso—warming lunch after skiing"
+  },
+  "journey": {
+    "eyebrow": "Asahidake Loop",
+    "title": "A full day from<br />Asahikawa",
+    "lead": "Alpine skiing, Sugatami walks, fumaroles, onsen, and photo-town Higashikawa—one loop through the Mt. Asahidake area.",
+    "steps": {
+      "01": {
+        "title": "Bus from Asahikawa",
+        "body": "Asahidake Line bus to the ropeway base—about 85 minutes; early departures beat the crowds"
+      },
+      "02": {
+        "title": "Ropeway runs",
+        "body": "Gondola to 1,600 m Sugatami and Daisetsuzan powder skiing",
+        "linkLabel": "Sugatami & fumarole guide"
+      },
+      "03": {
+        "title": "Onsen village lunch",
+        "body": "Sanzoku-yaki at Yukomanso, local set meals at Kitoron",
+        "linkLabel": "Dining guide",
+        "linkOnsen": "Onsen guide"
+      },
+      "04": {
+        "title": "Sugatami Pond loop",
+        "body": "Winter walk past fumaroles and the alpine lake—ropeway-only visits possible (check official info)"
+      },
+      "05": {
+        "title": "Onsen & Higashikawa",
+        "body": "Soak at Yukomanso and explore photo-town Higashikawa—a winter finale",
+        "linkLabel": "Read Sugatami guide"
+      }
+    }
+  },
+  "guides": {
+    "wellness": {
+      "title": "Sugatami & fumarole walks",
+      "body": "Ride the ropeway to the Sugatami deck—steam vents and Mt. Asahidake panoramas. Separate sightseeing routes may apply (confirm officially).",
+      "thumbAlt": "Steam from fumaroles on the snowfield—volcanic scenery at Sugatami"
+    },
+    "walk": {
+      "title": "85 minutes by bus from Asahikawa Station",
+      "body": "About one hour by car from Asahikawa Airport. Studless tires required in winter—watch for blizzards and low visibility inside the national park. Confirm operations and snow reports before you travel."
+    },
+    "responsible": {
+      "title": "Alpine ski etiquette",
+      "body": "Respect no-entry zones, sudden weather changes, and avalanche risk in the national park. This is not a groomed resort—check gear, fitness, and official closure notices before you go.",
+      "hashtags": [
+        "#AsahidakeSki",
+        "#DaisetsuzanPowder",
+        "#Higashikawa"
+      ]
+    },
+    "bluePond": {
+      "title": "Sugatami Pond — alpine mirror",
+      "body": "The Sugatami Pond loop reflects Mt. Asahidake and stays popular in winter. Steam from fumaroles over snowfields—volcanic scenery unique to Daisetsuzan.",
+      "thumbAlt": "Mt. Asahidake reflected in Sugatami Pond—winter alpine lake"
+    },
+    "food": {
+      "title": "Asahidake dining 10 — before & after",
+      "body": "Sanzoku-yaki, local beer, mountain cuisine—hot-spring village picks for your ski day.",
+      "thumbAlt": "Sanzoku-yaki at Yukomanso—classic Asahidake Onsen lunch"
+    },
+    "onsen": {
+      "title": "Nearby onsen 10 — snow-view soaks",
+      "body": "Yukomanso, La Vista Daisetsuzan, and Kitoron—day-trip baths after skiing.",
+      "thumbAlt": "Snow and steam—warming up at Asahidake Onsen"
+    }
+  },
+  "featuredSpot": {
+    "eyebrow": "Alpine view",
+    "title": "Sugatami Pond & fumaroles",
+    "lead": "Volcanic steam vents and an alpine lake reflecting Mt. Asahidake—after ropeway skiing.",
+    "cta": "Sugatami guide",
+    "imgAlt": "Steam from fumaroles and snowfields viewed from Sugatami"
+  },
+  "bluePond": {
+    "meta": {
+      "title": "Sugatami Pond & fumaroles — Asahidake Ski Course",
+      "description": "Alpine lake loop, volcanic scenery, ropeway walks—guide for international visitors"
+    },
+    "backLink": "Back to Asahidake guide",
+    "hero": {
+      "eyebrow": "Sugatami · Asahidake",
+      "title": "Sugatami Pond—<br />beyond the photo",
+      "tagline": "Daisetsuzan's volcanic scenery—after alpine skiing, into highland walks"
+    },
+    "notice": "Loop routes, ropeway operations, and snow conditions change daily. Confirm on the Mt. Asahidake Ropeway and national-park official sites before you go.",
+    "introTitle": "Why is this place special?",
+    "introLead": "Sugatami Pond mirrors Mt. Asahidake on still days. Active fumaroles nearby release steam over the snow—a landscape you cannot get at a groomed resort.",
+    "introBody": "The loop from 1,600 m Sugatami works with skiing or as a ropeway-only visit—signature volcanic scenery in Daisetsuzan National Park.",
+    "whenEyebrow": "Best time",
+    "whenTitle": "Crisp winter air",
+    "whenLead": "Typically mid-December through early May during ski season, clear mornings offer sharp outlines of Mt. Asahidake and reflections on the pond—the highland panorama international visitors seek most.",
+    "whenNote": "Blizzards, strong wind, or poor visibility may suspend the ropeway or close the loop.",
+    "accessEyebrow": "Access",
+    "accessTitle": "From the ropeway base & ski course",
+    "accessLead": "After skiing or by ropeway only to Sugatami. About 10 minutes from the base station—stay on designated loop routes around Sugatami.",
+    "accessItems": {
+      "drive": {
+        "label": "Car",
+        "body": "Asahikawa Airport → ropeway base, approx. 1 hour. Asahikawa Station → bus approx. 85 min. Winter tires required."
+      },
+      "bus": {
+        "label": "Bus",
+        "body": "Asahidake Line from Asahikawa Station (limited daily departures). Winter schedules vary by year—check officially."
+      },
+      "pair": {
+        "label": "Itinerary",
+        "body": "Ropeway skiing → Sugatami Pond loop → Yukomanso lunch → onsen soak in one day."
+      },
+      "winter": {
+        "label": "Winter",
+        "body": "Watch for sudden weather inside the national park. Stay on marked routes near fumaroles and the pond."
+      }
+    },
+    "responsibleTitle": "Quietly, in welcoming spaces",
+    "responsibleLead": "Follow national-park rules—no dangerous behavior at fumaroles or the lakeshore. Stay on designated routes and yield to other walkers.",
+    "responsibleHashtags": [
+      "#SugatamiPond",
+      "#DaisetsuzanPowder",
+      "#Asahidake"
+    ],
+    "mapsTitle": "Location",
+    "mapsBody": "Asahidake Onsen, Higashikawa-cho, Kamikawa-gun, Hokkaido. Check your route on Google Maps.",
+    "mapsCta": "Open in Google Maps",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sugatami+Pond+Mt+Asahidake+Hokkaido",
+    "heroImageAlt": "Sugatami Pond in winter—alpine lake reflecting Mt. Asahidake",
+    "galleryAlt": "Fumaroles at Sugatami—steam and Daisetsuzan snowscape"
+  },
+  "snowPlay": {
+    "meta": {
+      "title": "Snow Experiences — Asahidake Ski Course",
+      "description": "Sugatami Pond loop, ropeway walks, winter alpine tours—official links included"
+    },
+    "backLink": "Back to Asahidake guide",
+    "hero": {
+      "eyebrow": "Snow wellness",
+      "title": "Mountain winter<br />without skiing",
+      "tagline": "Ropeway to Sugatami walks and fumaroles—touch Daisetsuzan winter"
+    },
+    "notice": "Ropeway operations, loop routes, and prices change—the official site is authoritative. Entry restrictions may apply inside the national park due to weather or snow.",
+    "introTitle": "Three entry points",
+    "introLead": "Asahidake Ski Course is an alpine-ski base. Even without skis, the ropeway and Sugatami walks let you experience Daisetsuzan winter.",
+    "introBody": "Enjoy only in welcoming spaces—no entering restricted zones or approaching fumaroles off-route. Follow official guidance.",
+    "hubEyebrow": "Ropeway · View",
+    "hubTitle": "Ropeway to Sugatami",
+    "hubLead": "A 101-passenger gondola climbs from 1,100 m to 1,600 m in about 10 minutes. Fumaroles and Mt. Asahidake panoramas—a highland entry without skis.",
+    "hubCta": "See access",
+    "hubLink": "./#access",
+    "experiencesEyebrow": "Guided · Book",
+    "experiencesTitle": "Official & bookable programs",
+    "experiencesLead": "For Sugatami loops and winter alpine programs, check the latest info on the official pages below.",
+    "furari": {
+      "eyebrow": "Mt. Asahidake Ropeway",
+      "title": "Sugatami Pond loop walk",
+      "subtitle": "Alpine lake hike from Sugatami station",
+      "lead": "Sugatami Pond reflecting Mt. Asahidake and steam from fumaroles—winter highland walking in deep snow. Confirm ropeway operations and routes officially.",
+      "seasonLabel": "Season",
+      "season": "Typically Dec 11–May 10 (ski season; varies with snow)",
+      "meetLabel": "Meet",
+      "meet": "Mt. Asahidake Ropeway base station · Bus from Asahikawa Station approx. 85 min",
+      "durationLabel": "Duration",
+      "duration": "Ropeway round trip approx. 20 min plus loop (depends on fitness and weather)",
+      "note": "Inside a national park—operations may suspend in bad weather. Always check official ropeway status.",
+      "cta": "Official ropeway page",
+      "url": "https://asahidake.hokkaido.jp/"
+    },
+    "tokotoko": {
+      "eyebrow": "Higashikawa Town",
+      "title": "Higashikawa tourism info",
+      "subtitle": "Photo town & Asahidake area itineraries",
+      "lead": "From Asahidake Onsen to cafés, galleries, and lodging in town—check the official site for the latest winter programs.",
+      "cta": "Official town website",
+      "url": "https://www.higashikawa-town.jp/"
+    },
+    "pairingTitle": "Sample one-day pairing",
+    "pairingLead": "AM: ropeway alpine skiing → Lunch: Sanzoku-yaki at Yukomanso → PM: Sugatami Pond loop → Night: soak at Yukomanso.",
+    "pairingBluePondCta": "Sugatami Pond guide",
+    "heroImageAlt": "Walking Sugatami snowfields—a Daisetsuzan snow wellness experience",
+    "galleryAlt": "Fumarole steam and clear winter sky—Asahidake snow wellness scenery"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "10 Nearby Eats — Asahidake Ski Course",
+      "description": "Curated food picks and area map—pair with alpine skiing and Sugatami walks in one day"
+    },
+    "backLink": "Back to Asahidake guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After the snow,<br />into mountain food",
+      "tagline": "Sanzoku-yaki, local beer, regional dishes—hot-spring village and Higashikawa eats for a seamless day"
+    },
+    "notice": "Hours, closures, and winter schedules change—each venue's official site is authoritative. No entering restricted national-park zones; enjoy only in welcoming spaces.",
+    "introTitle": "Why food completes the loop",
+    "introLead": "Visitors to Asahidake—especially international visitors—are highly sensitive to Hokkaido mountain cuisine and volcanic alpine settings.",
+    "introBody": "We picked ten strong food stops before and after alpine skiing. Combined with ropeway walks and Sugatami Pond, they form a friction-free day-trip package.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and hub layers—show multiple at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Asahidake food, onsen & hub map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Hubs",
+      "hint": "Food and onsen can be shown together",
+      "mobileHint": "If pins overlap, use View on map in the list below or Spot list on the map"
+    },
+    "linkOnsenGuide": "Nearby onsen guide (10 picks)",
+    "spotsEyebrow": "10 picks",
+    "spotsTitle": "10 nearby eats that resonate with Asahidake visitors",
+    "spotsLead": "Grouped by category—easy to slot before or after skiing and walks.",
+    "spots": {
+      "junpei": {
+        "tag": "Ryokan · sanzoku-yaki",
+        "title": "Asahidake Onsen Yukomanso",
+        "lead": "The icon of Asahidake Onsen. Signature sanzoku-yaki and house Asahidake beer draw long queues from core skiers to international visitors."
+      },
+      "biei-farm": {
+        "tag": "Resort · buffet",
+        "title": "La Vista Daisetsuzan",
+        "lead": "Resort hotel facing Mt. Asahidake. Buffet and course dining with alpine views—lodging and lunch in one scenic stop."
+      },
+      "aruno": {
+        "tag": "Ryokan · local cuisine",
+        "title": "Asahidake Onsen Kitoron",
+        "lead": "Classic wooden inn. Game and mountain-vegetable set meals—hits travelers who want authentic hot-spring village food culture."
+      },
+      "chiyoda": {
+        "tag": "Western · ropeway station",
+        "title": "Ropeway base restaurant",
+        "lead": "Cafeteria at the gondola base. Curry and set meals—essential for skiers who want a quick meal before or after the lift."
+      },
+      "ferme": {
+        "tag": "Café · Higashikawa",
+        "title": "Higashikawa cafés & galleries",
+        "lead": "Cafés and galleries in photo-town Higashikawa. Daisetsuzan-themed exhibits and local lunches—a cultural stop on the way back."
+      },
+      "between": {
+        "tag": "Ramen · Asahikawa",
+        "title": "Asahikawa Ramen Village",
+        "lead": "Ramen cluster near Asahikawa Station. Shoyu, miso, shio—Japanese ramen is killer content for travelers. Warm up before or after the bus."
+      },
+      "gosh": {
+        "tag": "Coffee · roast in-house",
+        "title": "Higashikawa roast café",
+        "lead": "Highly rated in photo-town Higashikawa—house-roasted coffee and handmade sweets to rest after cold mountain hours."
+      },
+      "asperge": {
+        "tag": "Fine dining · alpine",
+        "title": "Asahidake highland restaurant",
+        "lead": "Serious cuisine using Daisetsuzan ingredients—for higher-budget food travelers who want quality after skiing."
+      },
+      "sabo": {
+        "tag": "Japanese sweets · station",
+        "title": "Asahikawa Station tea house",
+        "lead": "Steps from Asahikawa Station. Hokkaido soft-serve and drinks—Japanese dessert cues that hook international visitors."
+      },
+      "santouka": {
+        "tag": "Ramen · Asahikawa style",
+        "title": "Ramen Santouka Asahikawa",
+        "lead": "Famous birthplace of the chain. Salt ramen is known worldwide—essential warming food before or after a ski expedition."
+      }
+    },
+    "pairingTitle": "Sample day loop",
+    "pairingLead": "Asahikawa Station → bus to Asahidake → AM: alpine skiing → Lunch: sanzoku-yaki at Yukomanso → PM: Sugatami Pond loop → Night: soak at Yukomanso. Rental car from Asahikawa Airport in about one hour.",
+    "pairingSnowCta": "Snow experience guide",
+    "pairingBluePondCta": "Sugatami Pond guide"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "10 Nearby Onsen — Asahidake Ski Course",
+      "description": "Snow-view open-air baths and day visits—onsen map paired with alpine skiing"
+    },
+    "backLink": "Back to Asahidake guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "Warm the body<br />in hot springs",
+      "tagline": "After alpine skiing and Sugatami walks—Japanese onsen culture and snow-view roten"
+    },
+    "notice": "Day-bath availability, hours, winter closures, and mixed-bath rules change—check each facility. Use extra care at wild roten baths.",
+    "introTitle": "Why onsen anchors the loop",
+    "introLead": "Visitors around Asahidake strongly want Japanese onsen culture and open-air baths in snowy scenery.",
+    "introBody": "Ten baths that warm chilled bodies after alpine skiing and highland walks—designed as a digital bundle with our food map.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and hub layers—show multiple at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Asahidake food, onsen & hub map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Hubs",
+      "hint": "Food and onsen can be shown together",
+      "mobileHint": "If pins overlap, use View on map in the list below or Spot list on the map"
+    },
+    "linkFoodGuide": "Nearby food guide (10 picks)",
+    "spotsEyebrow": "10 picks",
+    "spotsTitle": "10 nearby onsen that resonate with Asahidake visitors",
+    "spotsLead": "Centered on Asahidake Onsen—easy to pair before/after alpine skiing and Sugatami walks.",
+    "regions": {
+      "shirogane": "Asahidake Onsen area",
+      "kamifurano": "Higashikawa · Sounkyo area",
+      "asahidake": "Asahikawa · Tenninkyo area"
+    },
+    "spots": {
+      "ao-no-bi-yuyu": {
+        "tag": "Classic · wooden baths",
+        "title": "Asahidake Onsen Yukomanso",
+        "lead": "Famed bath at the foot of Mt. Asahidake—rustic wooden tubs and sanzoku-yaki. The standard stop for powder skiers and mountain visitors."
+      },
+      "park-hills": {
+        "tag": "View roten · resort",
+        "title": "La Vista Daisetsuzan",
+        "lead": "Open-air bath facing Mt. Asahidake. Large resort baths—a family and group favorite after skiing."
+      },
+      "tsuewasure": {
+        "tag": "Classic · local ryokan",
+        "title": "Asahidake Onsen Kitoron",
+        "lead": "Calm free-flowing water in wooden baths and regional cuisine—for travelers seeking a real mountain onsen."
+      },
+      "mori-no-ryotei": {
+        "tag": "Base · day visit",
+        "title": "Asahidake Lodge",
+        "lead": "Lodging near the ropeway base with day baths—handy for early-morning mountain access."
+      },
+      "mori-no-shizuku": {
+        "tag": "Sounkyo · gorge roten",
+        "title": "Sounkyo Onsen hotel",
+        "lead": "Open baths over the Sounkyo gorge. An easy drive from Asahidake with reliable facilities."
+      },
+      "kokumin": {
+        "tag": "Day trip · casual",
+        "title": "Asahidake day-bath facility",
+        "lead": "Day-use baths in the hot-spring village—an unadorned mountain soak after skiing."
+      },
+      "ryounkaku": {
+        "tag": "Tenninkyo · hidden bath",
+        "title": "Tenninkyo Onsen (Higashikawa)",
+        "lead": "Secluded gorge onsen reachable by car from Asahidake—deep snow and steam for strong photo contrast."
+      },
+      "hakuginso": {
+        "tag": "Sounkyo · large baths",
+        "title": "Sounkyo large hot-spring hotel",
+        "lead": "Major Sounkyo facility with wide baths and sauna—a stop on the way back toward Asahikawa."
+      },
+      "fukiage-roten": {
+        "tag": "Rustic · open-air",
+        "title": "Higashikawa outdoor bath",
+        "lead": "Open-air bath in the Daisetsuzan foothills—adventure soaking with extra care for manners and safety."
+      },
+      "yukoma": {
+        "tag": "Asahikawa · urban bath",
+        "title": "Asahikawa city onsen & sento",
+        "lead": "Day baths near Asahikawa Station—warm up in the city before or after the bus leg of a ski trip."
+      }
+    },
+    "pairingTitle": "Alpine ski × onsen × Sugatami Pond",
+    "pairingLead": "AM: ropeway alpine skiing → Lunch: sanzoku-yaki at Yukomanso → PM: Sugatami Pond loop → Evening: soak at Yukomanso → Night: stay in Asahikawa (extension).",
+    "pairingFoodCta": "Food guide (10 picks)",
+    "pairingSnowCta": "Snow experience guide",
+    "pairingBluePondCta": "Sugatami Pond guide"
+  },
+  "access": {
+    "postal": "〒071-1472",
+    "line": "Yukomanso 1418, Asahidake Onsen, Higashikawa-cho, Kamikawa-gun, Hokkaido",
+    "note": "~85 min by bus from Asahikawa Station · ~1 hr by car from Asahikawa Airport · Ropeway 1,100 m→1,600 m · Gondola for ski ticket holders only",
+    "phone": "TEL +81-166-68-9111",
+    "places": "",
+    "rentacarEyebrow": "ロープウェイ×大雪山パウダー",
+    "rentacarLink": "旭川空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "旭岳スキーコース周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Mt. Asahidake Ropeway",
+    "location": "Yukomanso 1418, Asahidake Onsen, Higashikawa-cho, Kamikawa-gun, Hokkaido 071-1472"
+  }
+}

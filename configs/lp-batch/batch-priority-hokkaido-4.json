@@ -58,17 +58,22 @@
       "researchCompletedAt": "2026-06-30T08:35:01.360Z"
     },
     {
-      "rank": 4,
-      "id": "pippu",
-      "nameJa": "ぴっぷスキー場",
-      "nameEn": "Pippu Ski Area",
-      "japowResortId": 51,
-      "regionJa": "北海道上川郡比布町",
-      "status": "shipped",
-      "archetypeHint": "local-value",
-      "copyFromHint": "pippu-lp",
-      "salesAngle": "ローカル穴場・入浴券バンドル",
-      "reportPath": "docs/mock-assets/pippu-lp/"
+      "rank": 5,
+      "id": "asahidake",
+      "nameJa": "旭岳スキーコース",
+      "nameEn": "Asahidake Ski Course",
+      "japowResortId": 33,
+      "regionJa": "北海道上川郡東川町",
+      "status": "research",
+      "archetypeHint": "wellness-sight",
+      "copyFromHint": "kamifuse-lp",
+      "salesAngle": "ロープウェイ×大雪山パウダー・山岳温泉",
+      "digitalGap": "バックカントリー訴求の英語LP不足",
+      "subscriptionPitch": "旭岳温泉・東川町文化連動LP",
+      "updatedAt": "2026-06-30",
+      "reportPath": "docs/research/inbox/asahidake.md",
+      "researchInteractionId": "v1_Chc3cXhEYXRPMkpPbTAycm9QMTRXSGlRbxIXN3F4RGF0TzJKT20wMnJvUDE0V0hpUW8",
+      "researchCompletedAt": "2026-06-30T11:59:36.831Z"
     }
   ]
 }
