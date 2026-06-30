@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="sichinohe">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>周辺温泉3選 — 七戸町営スキー場</title>
+  <meta name="description" content="東八甲田・蔦・十和田湖——源泉掛け流しと温泉マップ付き回遊ガイド" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="./" class="logo" data-i18n="logo">七戸町営スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="./#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=sichinohe" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="../area-map.html?resort=sichinohe&layers=onsen,anchor" data-i18n="nearbyOnsen.navAreaMap">周辺マップ</a></li>
+          <li><a href="nearby-food.html" data-i18n="nearbyOnsen.linkFoodGuide">周辺飲食2選</a></li>
+          <li><a href="./#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--spot" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img
+          src="lp-mock-hachikoma-onsen.png"
+          data-i18n-attr="alt:nearbyOnsen.hero.imgAlt"
+          alt="森に囲まれた露天風呂のイメージ"
+          width="1200"
+          height="1500"
+        />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <a href="./" class="detail-back">← <span data-i18n="nearbyOnsen.backLink">七戸 LP に戻る</span></a>
+        <p class="eyebrow" data-i18n="nearbyOnsen.hero.eyebrow">Onsen · Map</p>
+        <h1 class="hero-title" data-i18n-html="nearbyOnsen.hero.title">滑ったあと、<br />掛け流しへ。</h1>
+        <p class="hero-tagline" data-i18n="nearbyOnsen.hero.tagline">新幹線10分・源泉天国——七戸と十和田の湯めぐり</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="inner">
+        <p role="note" class="notice-banner" data-i18n="nearbyOnsen.notice">
+          日帰り入浴の可否・営業時間・冬季休業・道路規制は各施設の公式情報が最新です。
+        </p>
+
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.introTitle">なぜ、温泉が七戸の核になるのか</h2>
+        <p class="lead" style="margin-top:1.5rem; max-width:36rem" data-i18n="nearbyOnsen.introLead">
+          七戸周辺は源泉掛け流しの銭湯から、森の秘湯まで密度が高いエリアです。
+        </p>
+        <p class="lead-whisper" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.introBody">
+          町営スキー場から車で30〜50分圏の温泉3箇所を、滑走後の動線に沿って厳選しました。
+        </p>
+      </div>
+    </section>
+
+    <section class="section border-top" id="onsen-map">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyOnsen.mapEyebrow">Area map</p>
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.mapTitle">付近の温泉マップ</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.mapLead">
+          飲食・温泉・拠点をボタンで切り替え——複数レイヤーの同時表示に対応。
+        </p>
+
+        <div data-map-embed data-default-layers="onsen,anchor">
+          <div class="map-layer-toggles" role="group" data-i18n-attr="aria-label:nearbyOnsen.mapEmbedTitle">
+            <button type="button" class="map-layer-btn" data-map-layer="food" aria-pressed="false" data-i18n="nearbyOnsen.mapLayers.food">飲食</button>
+            <button type="button" class="map-layer-btn" data-map-layer="onsen" aria-pressed="true" data-i18n="nearbyOnsen.mapLayers.onsen">温泉</button>
+            <button type="button" class="map-layer-btn" data-map-layer="anchor" aria-pressed="true" data-i18n="nearbyOnsen.mapLayers.anchor">拠点</button>
+          </div>
+          <p class="map-layer-hint" data-i18n="nearbyOnsen.mapLayers.hint">飲食と温泉は同時に表示できます</p>
+          <p class="map-layer-hint map-layer-hint--mobile" data-i18n="nearbyOnsen.mapLayers.mobileHint">ピンが重なるときは下の温泉一覧の「地図で見る」か、地図右下の「スポット一覧」をご利用ください</p>
+
+          <div class="map-embed">
+            <iframe
+              title="七戸周辺の飲食・温泉・拠点マップ"
+              data-i18n-attr="title:nearbyOnsen.mapEmbedTitle"
+              src="../area-map.html?resort=sichinohe&embed=1&layers=onsen,anchor"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="../area-map.html?resort=sichinohe&layers=onsen,anchor" class="btn btn-primary" data-i18n="nearbyOnsen.mapCta">フルサイズマップを開く</a>
+          <a href="nearby-food.html" class="btn btn-ghost" data-i18n="nearbyOnsen.linkFoodGuide">周辺飲食2選ガイド</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyOnsen.spotsEyebrow">3 picks</p>
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.spotsTitle">七戸・十和田周辺温泉3選</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.spotsLead">
+          駅近の銭湯から秘湯、湖畔温泉まで——滑走後に組み込みやすい順に掲載。
+        </p>
+
+        <h3 class="onsen-region" data-i18n="nearbyOnsen.regions.shichinohe">七戸・八甲田山麓</h3>
+        <ol class="food-spot-list" start="1">
+          <li class="food-spot" id="entry-higashi-hakkoda" data-spot-entry="higashi-hakkoda">
+            <span class="food-spot__num">01</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.higashi-hakkoda.tag">源泉掛け流し · 駅徒歩5分</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.higashi-hakkoda.title">東八甲田温泉</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.higashi-hakkoda.lead">47度のアルカリ性単純温泉を源泉そのまま注ぐローカル銭湯。ヒバ風呂・寝湯・水風呂があり、七戸十和田駅から徒歩約5分。日帰り大人400円・9:00〜21:00（公式案内）。</p>
+              <a href="../area-map.html?resort=sichinohe&layers=onsen,anchor&focus=higashi-hakkoda" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-tsuta" data-spot-entry="tsuta">
+            <span class="food-spot__num">02</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.tsuta.tag">足元湧出 · 千年の秘湯</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.tsuta.title">蔦温泉旅館</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.tsuta.lead">浴槽の底板から源泉が湧き出す希少な構造。ブナ林に囲まれた一軒宿で、日帰り1,000円・10:00〜15:00（14:30受付終了）。冬季は長期休業あり——訪問前に公式で要確認。</p>
+              <a href="../area-map.html?resort=sichinohe&layers=onsen,anchor&focus=tsuta" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="onsen-region" data-i18n="nearbyOnsen.regions.towada">十和田湖エリア</h3>
+        <ol class="food-spot-list" start="3">
+          <li class="food-spot" id="entry-yakeyama" data-spot-entry="yakeyama">
+            <span class="food-spot__num">03</span>
+            <div class="food-spot__body">
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.yakeyama.tag">湖畔 · 観光とセット</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.yakeyama.title">十和田湖温泉</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.yakeyama.lead">休屋・湖畔に点在する温泉郷。ホテル十和田荘など日帰り入浴が可能な施設があり、十和田湖観光や奥入瀬散策の前後に組み込みやすいリカバリー拠点です。</p>
+              <a href="../area-map.html?resort=sichinohe&layers=onsen,anchor&focus=yakeyama" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.pairingTitle">新幹線 × スキー × 温泉</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.pairingLead">
+          午前：東京発新幹線 → 午後：七戸町営スキー場 → 夕方：東八甲田温泉 → 翌日：蔦温泉 or 十和田湖。
+        </p>
+        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="nearby-food.html" class="btn btn-ghost" data-i18n="nearbyOnsen.pairingFoodCta">飲食2選ガイド</a>
+          <a href="./" class="btn btn-ghost" data-i18n="nearbyOnsen.backLink">七戸 LP に戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 七戸町営スキー場</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒039-2568 青森県上北郡七戸町字左組106-5</span> ·
+        <a href="./" data-i18n="nearbyOnsen.backLink">七戸 LP に戻る</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+  <script src="../_shared/map-embed-layers.js"></script>
+  <script>
+    window.addEventListener("mock-i18n-ready", (e) => {
+      const m = e.detail.messages;
+      const meta = m.nearbyOnsen && m.nearbyOnsen.meta;
+      if (meta && meta.title) document.title = meta.title;
+      if (meta && meta.description) {
+        const tag = document.querySelector('meta[name="description"]');
+        if (tag) tag.setAttribute("content", meta.description);
+      }
+    });
+  </script>
+</body>
+</html>

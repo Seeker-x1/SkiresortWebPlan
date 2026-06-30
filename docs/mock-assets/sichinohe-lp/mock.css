@@ -676,3 +676,231 @@ a { color: inherit; text-decoration: none; }
   html { scroll-behavior: auto; }
   .btn:hover { transform: none; }
 }
+
+/* Detail pages — nearby-food, nearby-onsen */
+.detail-page .hero--spot {
+  min-height: clamp(20rem, 55vh, 32rem);
+}
+
+.detail-page .hero--spot .hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgb(31 26 28 / 15%) 0%,
+    rgb(31 26 28 / 55%) 55%,
+    var(--bg) 100%
+  );
+}
+
+.detail-page .hero--spot .hero-content {
+  padding-top: 5rem;
+  color: #fff;
+}
+
+.detail-page .hero--spot .eyebrow { color: rgb(245 200 210); }
+.detail-page .hero--spot .hero-tagline { color: rgb(250 245 246 / 90%); }
+
+.detail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgb(245 200 210);
+}
+
+.detail-back:hover { text-decoration: underline; text-underline-offset: 0.15em; }
+
+.notice-banner {
+  margin: 0 0 2rem;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.map-embed {
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: min(22rem, 56vw);
+  min-height: 11rem;
+  height: auto;
+  background: #e8edf2;
+}
+
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  .map-embed { max-height: min(25rem, 42vw); }
+}
+
+@media (max-width: 768px) {
+  .map-embed {
+    max-height: min(24rem, 45dvh);
+    min-height: 13rem;
+  }
+}
+
+#food-map,
+#onsen-map {
+  scroll-margin-top: 5.5rem;
+}
+
+.map-layer-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.map-layer-btn {
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  font-family: Syne, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 0.2s var(--ease), color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.map-layer-btn:hover {
+  border-color: var(--accent);
+  color: var(--fg);
+}
+
+.map-layer-btn[aria-pressed="true"] {
+  background: var(--fg);
+  border-color: var(--fg);
+  color: var(--surface);
+}
+
+.map-layer-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.map-layer-hint {
+  margin: 0.75rem 0 0;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.map-layer-hint--mobile { display: none; }
+
+@media (max-width: 768px) {
+  .map-layer-hint--mobile { display: block; }
+}
+
+.onsen-region {
+  margin: 2.5rem 0 0;
+  font-family: Syne, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.onsen-region + .food-spot-list { margin-top: 1rem; }
+
+.food-spot-list {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--border);
+}
+
+.food-spot {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: 5rem;
+  transition: background 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+
+.food-spot.is-map-focused {
+  background: var(--accent-soft);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+@media (min-width: 640px) {
+  .food-spot { grid-template-columns: 3.5rem 1fr; gap: 1.5rem; }
+}
+
+.food-spot__num {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+}
+
+.food-spot__tag {
+  margin: 0;
+  font-family: Syne, sans-serif;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.food-spot__title {
+  margin: 0.5rem 0 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.food-spot__lead {
+  margin: 0.75rem 0 0;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: var(--muted);
+  max-width: 40rem;
+}
+
+.food-spot__map-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
+  min-height: 44px;
+  padding: 0.35rem 0;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.food-spot__map-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 0.2rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .food-spot { transition: none; }
+  .map-layer-btn { transition: none; }
+}

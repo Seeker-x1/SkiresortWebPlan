@@ -3,6 +3,15 @@
     "title": "Sichinohe Town Ski Area",
     "description": "Sichinohe Town Ski Area"
   },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Explore",
+    "onsen": "Onsen",
+    "guides": "Features"
+  },
   "logo": "Sichinohe Town Ski Area",
   "hero": {
     "eyebrow": "Sichinohe, Aomori",
@@ -60,6 +69,115 @@
     "whisper": "From around ¥300 entry, hopping between two or three local baths after skiing is a classic post-run ritual.",
     "cta": "Sichinohe area onsen feature",
     "imgAlt": "Image of an outdoor bath surrounded by forest"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 nearby onsen — Sichinohe Town Ski Area",
+      "description": "Higashi-Hakkoda, Tsuta, and Towadako — gensen onsen guide with area map"
+    },
+    "backLink": "Back to Sichinohe LP",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />soak in gensen.",
+      "tagline": "10 min from Shinkansen — onsen loop around Sichinohe and Towada",
+      "imgAlt": "Image of an onsen at the Hakkoda foothills"
+    },
+    "notice": "Day-use hours, winter closures, and road conditions change—check each facility's official site. Higashi-Hakkoda Onsen may reorganize operations; confirm before you visit.",
+    "introTitle": "Why onsen defines Sichinohe",
+    "introLead": "Around Sichinohe, local sento with gensen flow sit close to forest hideaway baths.",
+    "introBody": "Three baths within roughly 30–50 minutes by car from the ski area, ordered for a post-run loop.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchor layers—or show several at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Sichinohe area food, onsen, and hubs map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Hubs",
+      "hint": "Food and onsen layers can be shown together",
+      "mobileHint": "If pins overlap, use “View on map” below or the spot list on the map"
+    },
+    "linkFoodGuide": "2 nearby food picks",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "3 onsen around Sichinohe & Towada",
+    "spotsLead": "From a station-side sento to a secret forest bath and lakeside spas—easy to slot after skiing.",
+    "regions": {
+      "shichinohe": "Sichinohe & Hakkoda foothills",
+      "towada": "Lake Towada area"
+    },
+    "spots": {
+      "higashi-hakkoda": {
+        "tag": "Gensen · 5 min walk from station",
+        "title": "Higashi-Hakkoda Onsen",
+        "lead": "Alkaline simple spring at about 47°C, poured straight into the tubs. Hiba bath, reclining tub, and cold plunge. About 5 minutes on foot from Sichinohe-Towada Station. Day use around ¥400 for adults, 9:00–21:00 (per official info)."
+      },
+      "tsuta": {
+        "tag": "Floor spring · Secret bath",
+        "title": "Tsuta Onsen Ryokan",
+        "lead": "Rare baths where water wells up through the tub floor. A single-inn retreat in beech forest. Day use ¥1,000, 10:00–15:00 (last entry 14:30). Long winter closure—check the official site before visiting."
+      },
+      "yakeyama": {
+        "tag": "Lakeside · With sightseeing",
+        "title": "Towadako Onsen",
+        "lead": "Spa cluster around Yasumiya on Lake Towada. Hotels such as Hotel Towadaso offer day bathing—handy before or after lake and Oirase outings."
+      }
+    },
+    "pairingTitle": "Shinkansen × ski × onsen",
+    "pairingLead": "Morning: Shinkansen from Tokyo → afternoon: Sichinohe slopes → evening: Higashi-Hakkoda → next day: Tsuta or Lake Towada.",
+    "pairingFoodCta": "2 food picks"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 nearby food spots — Sichinohe Town Ski Area",
+      "description": "Slope-side hutte and Michi no Eki Shichinohe — food guide with area map"
+    },
+    "backLink": "Back to Sichinohe LP",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />eat local.",
+      "tagline": "Slope classics to horse-meat ramen—all near the station",
+      "imgAlt": "Image of a skier on the slopes"
+    },
+    "notice": "Hours, holidays, and menus change—check each venue's official information.",
+    "introTitle": "Why food completes the loop",
+    "introLead": "Sichinohe pairs a simple slope cafeteria with Michi no Eki dining a short walk from the Shinkansen stop.",
+    "introBody": "Lunch on the hill and a reward meal on the way back—two stops matched to a ski day.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchor layers—or show several at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Sichinohe area food, onsen, and hubs map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Hubs",
+      "hint": "Food and onsen layers can be shown together",
+      "mobileHint": "If pins overlap, use “View on map” below or the spot list on the map"
+    },
+    "linkOnsenGuide": "3 nearby onsen picks",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "2 food spots around Sichinohe",
+    "spotsLead": "From on-slope lunch to station-side Michi no Eki—ordered for a snow day.",
+    "spots": {
+      "hutte": {
+        "tag": "On slope · Classics",
+        "title": "Town Hutte",
+        "lead": "Cafeteria beside the first pair lift. Soy ramen ¥700, curry rice ¥700, beef bowl ¥600, and other slope staples. Weekdays 10:30–14:00, weekends & holidays 10:30–15:00 (per official info)."
+      },
+      "tabikura": {
+        "tag": "Michi no Eki · Horse ramen",
+        "title": "Tabikura (Michi no Eki Shichinohe)",
+        "lead": "Restaurant Ema inside the Tabikura hall is known for horse-meat ramen, plus local keiran and hand-cut soba. About 5 minutes on foot from Sichinohe-Towada Station; restaurant weekdays 11:00–15:00 (per official info)."
+      }
+    },
+    "pairingTitle": "One-day loop",
+    "pairingLead": "Morning: Shinkansen to Sichinohe-Towada → lunch: hutte ramen → afternoon: ski → return: horse ramen at Michi no Eki → evening: Higashi-Hakkoda Onsen.",
+    "pairingOnsenCta": "3 onsen picks"
   },
   "guides": {
     "powder": {
