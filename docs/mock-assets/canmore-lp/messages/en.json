@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Canmore Ski Village",
+    "description": "15 minutes from Asahikawa Airport—relaxed family skiing and night sessions."
+  },
+  "logo": "Canmore Ski Village",
+  "hero": {
+    "eyebrow": "Higashikawa, Kamikawa-gun, Hokkaido · Mt. Kitaushi Forest Park",
+    "title": "Canmore<br />Ski Village",
+    "tagline": "15 minutes from Asahikawa Airport—relaxed family skiing and night sessions.",
+    "badgePrice": "Day ticket ¥3,000",
+    "badgeNight": "Night skiing ¥500",
+    "badgeXc": "8 courses",
+    "ctaPass": "Day & Night Combo",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Transparent operations info",
+    "updatedAt": "Updated Jun 30, 9:00",
+    "lift1": {
+      "label": "Quad lift",
+      "value": "Operating",
+      "note": "Main lift"
+    },
+    "lift2": {
+      "label": "Pair lift",
+      "value": "Operating",
+      "note": "Beginner & kids zone"
+    },
+    "snow": {
+      "label": "Snow quality",
+      "value": "Family-friendly",
+      "note": "Well groomed · uncrowded"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Until 20:30",
+      "note": "From 16:30 · ¥500 one coin"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Family Hill",
+    "title": "15 minutes from Asahikawa,<br />a relaxed family hill.",
+    "lead": "A community-focused hill inside Mt. Kitaushi Forest Park. Eight varied courses across 246 m vertical—easygoing for beginners yet fun for advanced skiers. ¥3,000 by day, ¥500 night skiing from 16:30.",
+    "specs": [
+      "8 courses",
+      "2 lifts",
+      "Night ¥500"
+    ],
+    "noticeTitle": "Honest reviews say:",
+    "noticeBody": "\"¥500 night skiing is a steal\" and \"great with kids, no rush\"—local community warmth and quick airport access keep families coming back.",
+    "ctaPass": "Day & Night Combo",
+    "imgAlt": "Night-lit slopes in Mt. Kitaushi Forest Park—families skiing at an easy pace"
+  },
+  "paths": {
+    "pass": {
+      "label": "Pass",
+      "title": "Day & Night Combo"
+    },
+    "access": {
+      "label": "Access",
+      "title": "15 min from Asahikawa Airport"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Lifts · snow · night skiing"
+    },
+    "hike": {
+      "label": "Nearby",
+      "title": "Higashikawa & Asahiyama Zoo"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Family & night skiing strengths",
+    "primary": {
+      "title": "Mellow slopes × community feel",
+      "lead": "Visitors praise \"not crowded, great for families\" and \"friendly staff.\" Less mega-resort noise, more well-groomed courses and local hospitality—a neighborhood hill within easy reach of Asahikawa.",
+      "cta": "Tickets & pricing",
+      "imgAlt": "Slopes in Mt. Kitaushi Forest Park—families skiing at their own pace"
+    },
+    "secondary": {
+      "title": "One-coin night skiing",
+      "lead": "Night sessions from 16:30 are ¥500 all you can ride. Pair with the ¥3,000 day ticket for a full day through evening—popular for after-work runs and families on a budget.",
+      "cta": "Night ticket info"
+    }
+  },
+  "pass": {
+    "eyebrow": "Day & Night Value",
+    "title": "Full day + night,<br />¥3,500 well spent.",
+    "lead": "Ski eight courses at your pace by day (adult day ticket ¥3,000), then hit night skiing from 16:30 for just ¥500. Canmore's best value combo—enjoy a full family day for less than half a major resort ticket.",
+    "specs": [
+      "Day ticket ¥3,000",
+      "Night ¥500",
+      "9:00–20:30"
+    ],
+    "cta": "View tickets & pricing",
+    "imgAlt": "Canmore Ski Village center house—base in Mt. Kitaushi Forest Park"
+  },
+  "hike": {
+    "eyebrow": "Nearby",
+    "title": "Higashikawa photo town<br />after skiing.",
+    "lead": "About 15 minutes by car, Higashikawa is Japan's \"photography town\"—galleries and cafés line artful streets. Asahiyama Zoo is roughly 30 minutes away, ideal for a family half- or full-day loop.",
+    "leadCurry": "After skiing, use official spa & stay discounts—pair on-mountain spa lodging with an evening photo walk through Higashikawa.",
+    "cta": "Higashikawa & zoo map",
+    "imgAlt": "Higashikawa photography town—art and camera culture"
+  },
+  "tour": {
+    "eyebrow": "One-Day Trip",
+    "title": "From Asahikawa Airport,<br />all in one day.",
+    "lead": "For families—land, ski, optional zoo visit, and night skiing with mostly driving between stops in the Asahikawa area.",
+    "badge": "FAMILY · NIGHT SKIING · HIGASHIKAWA",
+    "steps": {
+      "01": {
+        "title": "Asahikawa Airport",
+        "body": "About 15 min by rental car"
+      },
+      "02": {
+        "title": "Canmore (daytime)",
+        "body": "Eight courses at your pace (¥3,000)"
+      },
+      "03": {
+        "title": "Asahiyama Zoo",
+        "body": "About 30 min by car (optional)"
+      },
+      "04": {
+        "title": "Night skiing",
+        "body": "From 16:30 · ¥500 one coin"
+      },
+      "05": {
+        "title": "Higashikawa town",
+        "body": "Optional dinner in photo town"
+      }
+    }
+  },
+  "guides": {
+    "sanctuary": {
+      "title": "Complete family hill guide",
+      "body": "One of the closest ski areas to Asahikawa Airport. Eight courses, 246 m vertical (210–456 m), quad plus pair lifts—resort-level variety with a mellow vibe and ¥3,000 day tickets."
+    },
+    "workation": {
+      "title": "Family × night skiing package",
+      "body": "Sightsee in Asahikawa by day, ¥500 night skiing in the evening. For families with kids—zoo in the afternoon, slopes at night—raising stay value without heavy capital spend."
+    },
+    "lake": {
+      "title": "Mt. Kitaushi Forest Park winter concept",
+      "body": "Bundle skiing, spa, and lodging inside the forest park with Higashikawa photo town and Asahiyama Zoo into a 2-night/3-day family product—beyond the ski hill alone as a regional hub.",
+      "hashtags": [
+        "#CanmoreSkiVillage",
+        "#HigashikawaPhoto",
+        "#OneCoinNight"
+      ]
+    }
+  },
+  "access": {
+    "postal": "071-1405, Japan",
+    "line": "Nishi 5-go Kita 44, Higashikawa, Kamikawa-gun, Hokkaido",
+    "note": "About 15 min by car from Asahikawa Airport · inside Mt. Kitaushi Forest Park · open 9:00–20:30 (night from 16:30)",
+    "phoneLodge": "TEL 0166-82-5001 (Canmore Ski Village)",
+    "phoneOps": "Tickets 8:50–20:00 · Official site canmore-ski.jp",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>上川郡<rt>Kamikawa-gun</rt></ruby></span><span class=\"place-unit\"><ruby>東川町<rt>Higashikawa</rt></ruby></span><span class=\"place-unit\"><ruby>西5号北44番地<rt>Nishi 5-go Kita 44</rt></ruby></span>",
+    "rentacarEyebrow": "旭川空港15分・のんびりファミリー",
+    "rentacarLink": "旭川空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "キャンモアスキービレッジ周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Canmore Ski Village",
+    "location": "071-1405 · Nishi 5-go Kita 44, Higashikawa, Kamikawa-gun, Hokkaido"
+  }
+}

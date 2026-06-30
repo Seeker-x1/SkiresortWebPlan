@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "kamui-ski-links",
+  "name": {
+    "ja": "カムイスキーリンクス",
+    "en": "Kamui Ski Links"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "公式 kamui-skilinks.com",
+    "LP戦略レポート"
+  ],
+  "updatedAt": "2026-06-30T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/kamui-ski-links-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": { "ja": "カムイ・アイ", "en": "Kamui Eye gondola" },
+      "shortLabel": { "ja": "ゴンドラ", "en": "Gondola" },
+      "meta": {
+        "ja": { "区分": "メインアクセス", "所要": "約8分" },
+        "en": { "Zone": "Main access", "Duration": "~8 min" }
+      }
+    },
+    {
+      "id": "lift-5",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": { "ja": "第5リフト", "en": "Lift 5" },
+      "shortLabel": { "ja": "第5", "en": "L5" },
+      "meta": {
+        "ja": { "長さ": "約1,200m", "区分": "ロングラン" },
+        "en": { "Length": "~1,200 m", "Zone": "Long run" }
+      }
+    },
+    {
+      "id": "trail-long",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": { "ja": "ロンググルーム（中級）", "en": "Long groomer (intermediate)" },
+      "shortLabel": { "ja": "ロング", "en": "Long" },
+      "meta": {
+        "ja": { "最長": "約4,000m", "雪面": "圧雪" },
+        "en": { "Longest": "~4,000 m", "Surface": "Groomed" }
+      }
+    },
+    {
+      "id": "trail-powder",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": { "ja": "パウダーゾーン（上級）", "en": "Powder zone (advanced)" },
+      "shortLabel": { "ja": "パウダー", "en": "Powder" },
+      "meta": {
+        "ja": { "雪面": "非圧雪", "最大斜度": "35°" },
+        "en": { "Surface": "Ungroomed", "Max slope": "35°" }
+      }
+    },
+    {
+      "id": "trail-beginner",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": { "ja": "ファミリーゾーン（初級）", "en": "Family zone (beginner)" },
+      "shortLabel": { "ja": "初級", "en": "Beg." },
+      "meta": {
+        "ja": { "比率": "初級35%", "雪面": "圧雪" },
+        "en": { "Share": "35% beginner", "Surface": "Groomed" }
+      }
+    }
+  ]
+}

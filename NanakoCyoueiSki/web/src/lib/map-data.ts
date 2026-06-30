@@ -55,6 +55,7 @@ export async function getTrailGeoJson(): Promise<LiftFeatureCollection | null> {
 
 export type OverlayPathsFile = {
   viewBox: string;
+  bakedLines?: boolean;
   projection?: string;
   bbox?: { west: number; east: number; south: number; north: number };
   image?: { width: number; height: number; src: string };
@@ -79,6 +80,39 @@ export async function getOverlayPaths(): Promise<OverlayPathsFile | null> {
   try {
     const raw = await fs.readFile(path.join(MAP_DIR, "overlay-paths.json"), "utf-8");
     return JSON.parse(raw) as OverlayPathsFile;
+  } catch {
+    return null;
+  }
+}
+
+export type LiftMarkersFile = {
+  hero?: {
+    width: number;
+    height: number;
+    viewBox: string;
+    src?: string;
+  };
+  lifts: Array<{
+    id: string;
+    label: string;
+    source: string;
+    path: string;
+    stations: [number, number][];
+  }>;
+  trails?: Array<{
+    id: string;
+    label: string;
+    source: string;
+    path: string;
+    stations?: [number, number][];
+  }>;
+};
+
+export async function getLiftMarkers(): Promise<LiftMarkersFile | null> {
+  noStore();
+  try {
+    const raw = await fs.readFile(path.join(MAP_DIR, "lift-markers.json"), "utf-8");
+    return JSON.parse(raw) as LiftMarkersFile;
   } catch {
     return null;
   }

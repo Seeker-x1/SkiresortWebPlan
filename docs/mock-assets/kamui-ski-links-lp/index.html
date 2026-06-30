@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html>
+<html lang="ja" data-mock-resort="kamui-ski-links">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ぴっぷスキー場</title>
+  <meta name="description" content="大雪山を借景に、超乾雪と入浴券つきリフト——メガリゾートの対抗軸。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="#" class="logo" data-i18n="logo">ぴっぷスキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
+          <li class="nav-map-item"><a href="../map.html?resort=kamui-ski-links" data-i18n="nav.map" data-i18n-attr="title:nav.mapHint">ゲレンデマップ</a><span class="nav-map-hint" data-i18n="nav.mapHint" aria-hidden="true">概略（未検証の場合あり）</span></li>
+          <li><a href="#live" data-i18n="nav.live">本日</a></li>
+          <li><a href="#bundle" data-i18n="nav.bundle">料金</a></li>
+          <li><a href="#highlights" data-i18n="nav.highlights">魅力</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-kamui-ski-links-hero.png" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">北海道上川郡比布町 · スキーといちごのまち</p>
+        <h1 class="hero-title" data-i18n-html="hero.title">ぴっぷ<br />スキー場</h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">大雪山を借景に、超乾雪と入浴券つきリフト——メガリゾートの対抗軸。</p>
+        <span class="badge-price" data-i18n="hero.badgePrice">1日券 ¥3,800（入浴券付）</span>
+        <span class="badge-night" data-i18n="hero.badgeNight">ナイター ¥1,200</span>
+        <span class="badge-strawberry" data-i18n="hero.badgeStrawberry">9コース</span>
+        <div class="hero-cta">
+          <a href="#bundle" class="btn btn-secret" data-i18n="hero.ctaBundle">料金・バンドル</a>
+          <a href="#live" class="btn btn-ghost" data-i18n="hero.ctaLive">本日のコンディション</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="live" class="live-dashboard" data-i18n-attr="aria-label:live.ariaLabel">
+      <div class="inner">
+        <div class="live-head">
+          <div>
+            <span class="live-pulse" aria-hidden="true"></span>
+            <span class="live-label">Live</span>
+            <span style="font-size:0.75rem;color:var(--muted);margin-left:0.5rem" data-i18n="live.subtitle">公式サイト・ライブカメラ連携</span>
+          </div>
+          <p class="live-updated" data-i18n="live.updatedAt">更新 12/13 9:00</p>
+        </div>
+        <div class="status-grid">
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.lift1.label">第2ペア（A・B）</p>
+            <p class="status-card__value" data-i18n="live.lift1.value">運行中</p>
+            <p class="status-card__note" data-i18n="live.lift1.note">617m · メインアクセス</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.lift2.label">第6ペア</p>
+            <p class="status-card__value" data-i18n="live.lift2.value">運行中</p>
+            <p class="status-card__note" data-i18n="live.lift2.note">1,181m · ロングラン</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.snow.label">雪質</p>
+            <p class="status-card__value" style="color:var(--accent-powder)" data-i18n="live.snow.value">超乾雪</p>
+            <p class="status-card__note" data-i18n="live.snow.note">氷点下10℃級 · 非混雑</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.night.label">ナイター</p>
+            <p class="status-card__value" data-i18n="live.night.value">〜20:30</p>
+            <p class="status-card__note" data-i18n="live.night.note">12月中旬〜2月末</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="sanctuary-heading">
+      <div class="inner">
+        <div class="transit-grid">
+          <div class="transit-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-kamui-ski-links-night.png"
+                data-i18n-attr="alt:sanctuary.imgAlt"
+                alt="大雪山連峰を背景に広がる上川盆地"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="transit-card">
+            <p class="eyebrow" data-i18n="sanctuary.eyebrow">Local Hideaway</p>
+            <h2 id="sanctuary-heading" class="heading-lg" data-i18n-html="sanctuary.title">極寒の乾雪、<br />貸切のバーン。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:28rem" data-i18n="sanctuary.lead">
+              上川盆地を一望する道北屈指のローカルゲレンデ。山頂−12℃級の内陸気候がもたらすサラサラのパウダーを、トラック争いなく楽しめる。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="sanctuary.specs.0">全9コース · 11,700m</li>
+              <li class="spec-tag" data-i18n="sanctuary.specs.1">最高580m · 落差330m</li>
+              <li class="spec-tag" data-i18n="sanctuary.specs.2">第3リフト廃止</li>
+            </ul>
+            <div class="notice-box">
+              <strong data-i18n="sanctuary.noticeTitle">運営の透明性：</strong><span data-i18n="sanctuary.noticeBody">独自ドメイン（kamui-ski-links.ski）とライブカメラで降雪・路面を事前確認できる。</span>
+            </div>
+            <div class="transit-actions">
+              <a href="#bundle" class="btn btn-secret" data-i18n="sanctuary.ctaBundle">料金・入浴券バンドル</a>
+              <a href="#access" class="btn btn-ghost" data-i18n="nav.access">アクセス</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top" aria-labelledby="paths-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.explore">Explore</p>
+        <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
+        <div class="path-grid">
+          <a href="#bundle" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.bundle.label">料金</span>
+            <span class="path-tile__title" data-i18n="paths.bundle.title">入浴券つきリフト</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#access" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.access.label">アクセス</span>
+            <span class="path-tile__title" data-i18n="paths.access.title">旭川空港ハブ</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#live" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.today.label">今日</span>
+            <span class="path-tile__title" data-i18n="paths.today.title">リフト・雪質・ナイター</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="nearby-food.html" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.food.label">グルメ</span>
+            <span class="path-tile__title" data-i18n="paths.food.title">ゲレンデ食4選</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="nearby-onsen.html" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.onsen.label">温泉</span>
+            <span class="path-tile__title" data-i18n="paths.onsen.title">遊湯ぴっぷ</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="corridor-stay.html" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.stay.label">宿泊</span>
+            <span class="path-tile__title" data-i18n="paths.stay.title">比布完結 vs 旭川ハブ</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section" aria-labelledby="highlights-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="highlights.eyebrow">ここが違う</p>
+        <h2 id="highlights-heading" class="heading-lg" data-i18n="highlights.title">9コースの棲み分け</h2>
+
+        <div class="highlight-duet">
+          <article class="highlight-primary">
+            <div class="frame">
+              <img
+                src="lp-mock-kamui-ski-links-hero.png"
+                data-i18n-attr="alt:highlights.primary.imgAlt"
+                alt="多彩なコースが広がるゲレンデ"
+                width="1600"
+                height="1100"
+              />
+            </div>
+            <div class="highlight-primary-body">
+              <h3 data-i18n="highlights.primary.title">ストロベリー2,200m × 深雪36°</h3>
+              <p class="lead" style="margin-top:1rem" data-i18n="highlights.primary.lead">
+                初級30%・中級50%・上級20%の黄金比率。ファミリー2,000m、最難関「深雪・ベテラン」最大36°。
+              </p>
+              <a href="../map.html?resort=kamui-ski-links" class="btn btn-powder" style="margin-top:2rem" data-i18n="highlights.primary.cta">ゲレンデマップ</a>
+            </div>
+          </article>
+
+          <article class="highlight-secondary">
+            <h3 data-i18n="highlights.secondary.title">3つのスキー学校</h3>
+            <p class="lead-whisper" style="margin-top:1rem" data-i18n="highlights.secondary.lead">
+              SAJ公認比布スキー学校、JSBAぴっぷスノーボードスクール、コブ専門スクール。
+            </p>
+            <a href="https://kamui-ski-links.ski/" class="btn btn-ghost" style="margin-top:1.5rem" target="_blank" rel="noopener noreferrer" data-i18n="highlights.secondary.cta">スクール案内</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="bundle" class="section border-top" aria-labelledby="bundle-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow" data-i18n="bundle.eyebrow">Bundle</p>
+            <h2 id="bundle-heading" class="heading-lg" data-i18n-html="bundle.title">リフト券に、<br />温泉がつく。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="bundle.lead">
+              1日券・ナイター券に隣接温浴施設「遊湯ぴっぷ」の入浴券が内包。実質リフトは3,200円相当。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="bundle.specs.0">大人シーズン券 ¥45,000</li>
+              <li class="spec-tag" data-i18n="bundle.specs.1">ファミリーパック ¥4,500</li>
+              <li class="spec-tag" data-i18n="bundle.specs.2">雪番屋フルセット約¥13,000</li>
+            </ul>
+            <a href="https://kamui-ski-links.ski/" class="btn btn-secret" style="margin-top:2rem" target="_blank" rel="noopener noreferrer" data-i18n="bundle.cta">料金表を見る</a>
+          </div>
+          <div class="feature-visual">
+            <div class="frame frame--wide">
+              <img
+                src="lp-mock-kamui-ski-links-onsen.png"
+                data-i18n-attr="alt:bundle.imgAlt"
+                alt="遊湯ぴっぷ——光明石温泉"
+                width="1600"
+                height="1100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="wellness" class="section border-top" aria-labelledby="wellness-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-visual feature-visual--left">
+            <div class="frame">
+              <img
+                src="lp-mock-kamui-ski-links-food.png"
+                data-i18n-attr="alt:wellness.imgAlt"
+                alt="遊湯ぴっぷの朝食ビュッフェ"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="feature-copy feature-copy--right">
+            <p class="eyebrow" data-i18n="wellness.eyebrow">After Ski</p>
+            <h2 id="wellness-heading" class="heading-lg" data-i18n-html="wellness.title">滑ったあと、<br />TKGとから揚げへ。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="wellness.lead">
+              ほくれいロッジのから揚げ丼、遊湯ぴっぷの光明石温泉、翌朝の究極TKG。
+            </p>
+            <p class="lead" style="margin-top:1rem; max-width:32rem" data-i18n="wellness.leadStation">
+              JR比布駅のピピカフェでもTKG（520円）。
+            </p>
+            <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+              <a href="nearby-food.html" class="btn btn-ghost" data-i18n="paths.food.title">ゲレンデ食4選</a>
+              <a href="nearby-onsen.html" class="btn btn-ghost" data-i18n="paths.onsen.title">遊湯ぴっぷ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tour" class="section border-top" aria-labelledby="tour-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="tour.eyebrow">2-Day Model</p>
+        <h2 id="tour-heading" class="heading-lg" data-i18n-html="tour.title">旭川ハブ、<br />比布で完結。</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="tour.lead">
+          金曜夕方に旭川入り→都市グルメ。翌朝バスでぴっぷへ、夕方は入浴券で温泉。
+        </p>
+        <span class="secret-badge" data-i18n="tour.badge">SNOW · FOOD · ONSEN HIDEAWAY</span>
+
+        <div class="journey">
+          <div class="journey-step">
+            <p class="journey-step__num">01</p>
+            <p class="journey-step__title" data-i18n="tour.steps.01.title">旭川市内ホテル</p>
+            <p class="journey-step__body" data-i18n="tour.steps.01.body">OMO7旭川・ドーミーイン等</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">02</p>
+            <p class="journey-step__title" data-i18n="tour.steps.02.title">道北バス直行</p>
+            <p class="journey-step__body" data-i18n="tour.steps.02.body">旭川駅前から1日5便</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">03</p>
+            <p class="journey-step__title" data-i18n="tour.steps.03.title">ぴっぷスキー場</p>
+            <p class="journey-step__body" data-i18n="tour.steps.03.body">1日券¥3,800で超乾雪</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">04</p>
+            <p class="journey-step__title" data-i18n="tour.steps.04.title">遊湯ぴっぷ</p>
+            <p class="journey-step__body" data-i18n="tour.steps.04.body">付属入浴券で光明石温泉</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">05</p>
+            <p class="journey-step__title" data-i18n="tour.steps.05.title">翌朝TKG</p>
+            <p class="journey-step__body" data-i18n="tour.steps.05.body">比布町テロワールの朝食</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.guidesEyebrow">特集</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="common.guidesTitle">特集ページ</h2>
+
+        <ul class="guides-list">
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="true" data-guide="ecosystem">
+              <span data-i18n="guides.ecosystem.title">入浴券バンドルと地域経済循環</span>
+              <span class="guide-icon" aria-hidden="true">−</span>
+            </button>
+            <div class="guide-panel is-open" id="panel-ecosystem">
+              <p class="lead" data-i18n="guides.ecosystem.body">
+                リフト券に温泉を内包し、かっぱの健卵・小ねぎ醤油・いちご農園へ消費を還流。
+              </p>
+              <a href="nearby-food.html" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="access">
+              <span data-i18n="guides.access.title">旭川ハブと二次交通</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-access" hidden>
+              <p class="lead" data-i18n="guides.access.body">
+                旭川空港→駅40分、駅→スキー場バス約1時間。JR比布駅から無料送迎バスも。
+              </p>
+              <a href="#access" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="nav.access">アクセス</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="green">
+              <span data-i18n="guides.green.title">夏はいちご、冬はスキー</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-green" hidden>
+              <p class="lead" data-i18n="guides.green.body">
+                6月中旬〜7月上旬、町内5農園でいちご狩り。グリーンパークぴっぷのキャンプ・パークゴルフ。
+              </p>
+              <div class="hashtags">
+                <span class="hashtag" data-i18n="guides.green.hashtags.0">#PippuPowder</span>
+                <span class="hashtag" data-i18n="guides.green.hashtags.1">#UltimateTKG</span>
+                <span class="hashtag" data-i18n="guides.green.hashtags.2">#StrawberryTown</span>
+              </div>
+              <a href="corridor-stay.html" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="access" class="access-section border-top" aria-labelledby="access-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.accessEyebrow">Access</p>
+        <h2 id="access-heading" class="heading-lg" data-i18n="common.location">所在地</h2>
+        <div class="access-grid">
+          <address class="access-address">
+            <span class="access-postal" data-i18n="access.postal">〒078-0327</span>
+            <span class="access-line" data-i18n="access.line">北海道上川郡比布町北7線17号</span>
+            <p class="access-places" data-i18n-html="access.places" hidden></p>
+            <p class="access-note" data-i18n="access.note">旭川空港→旭川駅約40分 · 道北バス約1時間</p>
+            <p class="access-phone" data-i18n="access.phone">TEL 0166-85-3056（ぴっぷスキー場）</p>
+            <p class="access-phone" data-i18n="access.phoneBus">道北バス · 比布駅送迎は公式で要確認</p>
+          </address>
+          <div class="access-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%B4%E3%81%A3%E3%81%B7%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E5%8C%97%E6%B5%B7%E9%81%93%E4%B8%8A%E5%B7%9D%E9%83%A1%E6%AF%94%E5%B8%83%E7%94%BA"
+              class="btn btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="common.googleMap">Google Mapで開く</span>
+            </a>
+            <a href="tel:0166853056" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">上川・旭川圏</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">旭川空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">比布・旭川市内周遊向け</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p class="footer-notice" role="note" data-i18n="footer.guideNotice">本ガイドは制作中の案です。写真・イラストは雰囲気の参考であり、実際のゲレンデ・施設と異なる場合があります。料金・営業・道路規制は各施設の公式情報を優先してください。</p>
+<div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© ぴっぷスキー場</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒078-0327 北海道上川郡比布町北7線17号</span> ·
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%B4%E3%81%A3%E3%81%B7%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4" target="_blank" rel="noopener noreferrer" data-i18n="common.footerMap">Google Map</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
+  <script>
+    document.querySelectorAll(".guide-trigger").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.guide;
+        const panel = document.getElementById("panel-" + id);
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".guide-trigger").forEach((b) => {
+          b.setAttribute("aria-expanded", "false");
+          b.querySelector(".guide-icon").textContent = "+";
+        });
+        document.querySelectorAll(".guide-panel").forEach((p) => {
+          p.classList.remove("is-open");
+          p.hidden = true;
+        });
+
+        if (!isOpen) {
+          btn.setAttribute("aria-expanded", "true");
+          btn.querySelector(".guide-icon").textContent = "−";
+          panel.classList.add("is-open");
+          panel.hidden = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

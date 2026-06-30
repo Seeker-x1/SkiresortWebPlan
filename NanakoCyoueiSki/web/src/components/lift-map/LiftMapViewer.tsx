@@ -12,7 +12,6 @@ type HeroImage = {
   src: string;
   width: number;
   height: number;
-  viewBox: string;
 };
 
 type MapApiResponse = {

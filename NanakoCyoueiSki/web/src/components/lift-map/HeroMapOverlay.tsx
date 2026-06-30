@@ -18,23 +18,38 @@ type Props = {
   selectedId: string | null;
   showLifts: boolean;
   showTrails: boolean;
+  bakedLines?: boolean;
   onSelect: (id: string) => void;
 };
+
+function shouldDrawStatusLine(
+  id: string,
+  feature: OverlayFeature,
+  statusById: Record<string, MapFeature | undefined>,
+  selectedId: string | null,
+  bakedLines: boolean,
+): boolean {
+  if (!bakedLines) return true;
+
+  const selected = selectedId === id;
+  if (selected) return false;
+
+  const status = statusById[id]?.status;
+  if (feature.type === "lift") {
+    return isStoppedLift(id, statusById) || status === "hold";
+  }
+
+  return status === "closed" || status === "partial";
+}
 
 function InteractivePath({
   id,
   label,
-  feature,
-  statusById,
-  selectedId,
   onSelect,
   children,
 }: {
   id: string;
   label: string;
-  feature: OverlayFeature;
-  statusById: Record<string, MapFeature | undefined>;
-  selectedId: string | null;
   onSelect: (id: string) => void;
   children: ReactNode;
 }) {
@@ -67,35 +82,16 @@ export function HeroMapOverlay({
   selectedId,
   showLifts,
   showTrails,
+  bakedLines = false,
   onSelect,
 }: Props) {
   return (
     <svg
       viewBox={viewBox}
-      className="absolute inset-0 h-full w-full touch-none select-none"
+      preserveAspectRatio="xMidYMid slice"
+      className="pointer-events-none absolute inset-0 h-full w-full touch-none select-none"
       aria-hidden={false}
     >
-      <defs>
-        <filter id="lift-glow" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur stdDeviation="3" result="blur" />
-          <feMerge>
-            <feMergeNode in="blur" />
-            <feMergeNode in="SourceGraphic" />
-          </feMerge>
-        </filter>
-        <filter id="trail-glow" x="-30%" y="-30%" width="160%" height="160%">
-          <feGaussianBlur stdDeviation="2" result="blur" />
-          <feMerge>
-            <feMergeNode in="blur" />
-            <feMergeNode in="SourceGraphic" />
-          </feMerge>
-        </filter>
-        <linearGradient id="trail-shine" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#ffffff" stopOpacity="0.55" />
-          <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
-        </linearGradient>
-      </defs>
-
       {Object.entries(features).map(([id, feature]) => {
         const meta = statusById[id];
         const label = meta?.label ?? id;
@@ -107,15 +103,19 @@ export function HeroMapOverlay({
         const stopped = isLift && isStoppedLift(id, statusById);
         const selected = selectedId === id;
         const width = feature.strokeWidth * (selected ? 1.15 : 1);
+        const drawLine = shouldDrawStatusLine(
+          id,
+          feature,
+          statusById,
+          selectedId,
+          bakedLines,
+        );
 
         return (
           <InteractivePath
             key={id}
             id={id}
             label={label}
-            feature={feature}
-            statusById={statusById}
-            selectedId={selectedId}
             onSelect={onSelect}
           >
             <path
@@ -125,50 +125,60 @@ export function HeroMapOverlay({
               strokeWidth={width + 18}
               strokeLinecap="round"
               strokeLinejoin="round"
+              className="pointer-events-auto"
             />
-            <path
-              d={feature.path}
-              fill="none"
-              stroke={stroke}
-              strokeWidth={width}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeDasharray={stopped ? "10 8" : undefined}
-              opacity={
-                feature.type === "trail"
-                  ? trailOpacity(id, statusById)
-                  : stopped
-                    ? 0.65
-                    : 0.95
-              }
-              filter={isLift ? "url(#lift-glow)" : "url(#trail-glow)"}
-              style={{
-                transition: "stroke 0.35s ease, opacity 0.35s ease, stroke-width 0.2s ease",
-              }}
-            />
+            {drawLine ? (
+              <path
+                d={feature.path}
+                fill="none"
+                stroke={stroke}
+                strokeWidth={width}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeDasharray={stopped ? "10 8" : undefined}
+                opacity={
+                  feature.type === "trail"
+                    ? trailOpacity(id, statusById)
+                    : stopped
+                      ? 0.65
+                      : 0.95
+                }
+                style={{
+                  transition: "stroke 0.35s ease, opacity 0.35s ease, stroke-width 0.2s ease",
+                }}
+              />
+            ) : null}
             {selected ? (
               <path
                 d={feature.path}
                 fill="none"
-                stroke="#ffffff"
-                strokeWidth={width + 4}
+                stroke={bakedLines ? stroke : "#ffffff"}
+                strokeWidth={bakedLines ? 4 : width + 4}
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                opacity={0.85}
+                opacity={bakedLines ? 1 : 0.85}
+                style={
+                  bakedLines
+                    ? {
+                        filter: "drop-shadow(0 0 6px rgba(255,255,255,0.95))",
+                      }
+                    : undefined
+                }
               />
             ) : null}
-            {feature.markers?.map(([cx, cy], i) => (
-              <circle
-                key={i}
-                cx={cx}
-                cy={cy}
-                r={selected ? 11 : 8}
-                fill={stroke}
-                stroke="#fff"
-                strokeWidth={2.5}
-                filter="url(#lift-glow)"
-              />
-            ))}
+            {!bakedLines && selected
+              ? feature.markers?.map(([cx, cy], i) => (
+                  <circle
+                    key={i}
+                    cx={cx}
+                    cy={cy}
+                    r={11}
+                    fill={stroke}
+                    stroke="#fff"
+                    strokeWidth={2.5}
+                  />
+                ))
+              : null}
           </InteractivePath>
         );
       })}

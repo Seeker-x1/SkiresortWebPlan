@@ -2,20 +2,20 @@
   "schemaVersion": "2026-06-01",
   "resortId": "nanako-choei-ski",
   "name": "七戸町営スキー場",
-  "mapAsset": "/maps/nanako-hero.png",
+  "mapAsset": "/maps/sichinohe-hero-v5.png",
   "heroImage": {
-    "src": "/maps/nanako-hero.png",
-    "width": 1536,
+    "src": "/maps/sichinohe-hero-v5.png",
+    "width": 1024,
     "height": 1024,
-    "viewBox": "0 0 1536 1024",
-    "projection": "gsi-skimap-illustrated-similarity",
-    "attribution": "パンフレット風俯瞰イラスト",
-    "credit": "リフト: OSM + skimap照合キャリブ"
+    "viewBox": "0 0 1024 1024",
+    "projection": "illustrated-baked-lines",
+    "attribution": "パンフレット風俯瞰イラスト（v5）",
+    "credit": "コース・リフトはイラスト内描画 + タップ用ヒットボックス"
   },
-  "disclaimer": "パンフレット風イラスト。リフト位置は Google Earth Studio + skimap + OSM で調整中。",
+  "disclaimer": "コース・リフトはイラスト内に描画済み。地図タップまたはリストで運行状況を確認できます。",
   "sources": [
-    "Skimap.org SkiAreas/view/1345（参考イラスト）",
-    "OpenStreetMap way/631879096（ペアリフト概略）"
+    "sichinohe-hero-v5.png（layout-v5 Gemini イラスト）",
+    "hitboxes-hero-v5.json 手トレース"
   ],
   "features": [
     {
@@ -48,7 +48,7 @@
       "difficulty": "advanced",
       "meta": {
         "距離": "約400m",
-        "雪面": "非圧雪（上部）",
+        "雪面": "非圧雪",
         "最大斜度": "35度（要確認）"
       }
     },
@@ -73,9 +73,19 @@
       }
     },
     {
+      "id": "trail-forest",
+      "type": "trail",
+      "label": "林間周回（初級・コース4）",
+      "shortLabel": "林間",
+      "difficulty": "beginner",
+      "meta": {
+        "特徴": "森を周回"
+      }
+    },
+    {
       "id": "trail-pony",
       "type": "trail",
-      "label": "ポニーリフト周辺（初級）",
+      "label": "ポニー周辺（初級）",
       "shortLabel": "初級",
       "difficulty": "beginner",
       "meta": {

@@ -8,6 +8,7 @@
     { "id": "trail-champion", "status": "open" },
     { "id": "trail-upper", "status": "open" },
     { "id": "trail-intermediate", "status": "open" },
+    { "id": "trail-forest", "status": "open" },
     { "id": "trail-pony", "status": "open" }
   ]
 }

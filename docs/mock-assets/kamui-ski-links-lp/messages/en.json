@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "Kamui Ski Links",
+    "description": "About 30 minutes from Sapporo—urban-edge powder and 4,000 m groomed runs. The go-to day-trip hill."
+  },
+  "logo": "Kamui Ski Links",
+  "nav": {
+    "bundle": "Tickets",
+    "wellness": "After ski"
+  },
+  "hero": {
+    "eyebrow": "Ishikari, Hokkaido · ~30–40 min from Sapporo",
+    "title": "Kamui<br />Ski Links",
+    "tagline": "Urban-edge powder and long groomers—the Sapporo day-trip default.",
+    "badgePrice": "Day pass ¥5,300 (2025–26)",
+    "badgeNight": "Night skiing",
+    "badgeStrawberry": "26 courses",
+    "ctaBundle": "Tickets & season pass",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Official site & live camera network",
+    "updatedAt": "Updated Dec 20, 8:00",
+    "lift1": {
+      "label": "Kamui Eye gondola",
+      "value": "Operating",
+      "note": "Summit 751 m · main access"
+    },
+    "lift2": {
+      "label": "Lift 5 pair",
+      "value": "Operating",
+      "note": "4,000 m max · King Course"
+    },
+    "snow": {
+      "label": "Snow quality",
+      "value": "Powder + groomed",
+      "note": "Inland cold over Ishikari plain · quieter zones"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Until 20:30",
+      "note": "In season · gondola + main pairs"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Urban Powder Corridor",
+    "title": "Sapporo's backyard,<br />4,000 m groomers.",
+    "lead": "A big hill on the Ishikari hills, ~30–40 minutes by car from central Sapporo. Morning powder and 4,000 m groomed runs in one day—a rare urban-edge setup. Real snow and 601 m vertical without staying at a mega resort or driving to Niseko.",
+    "specs": [
+      "26 courses · 4,000 m max run",
+      "1,150–2,465 ft (150–751 m) · 601 m vertical",
+      "6 lifts (5 pairs + 1 gondola)"
+    ],
+    "noticeTitle": "Corridor-hub advantage:",
+    "noticeBody": "Direct ski buses from Sapporo Station and Sapporo TV Tower, Hanakawa Station shuttles, and 4,000 parking spaces—shortest links between city and slopes. Check snow and roads on kamui-skilinks.com and live cameras before you go; easy day trips even the day after your flight.",
+    "ctaBundle": "Tickets & season pass",
+    "imgAlt": "Long groomers over the Ishikari plain—urban-edge powder runs"
+  },
+  "paths": {
+    "bundle": {
+      "label": "Tickets",
+      "title": "Day-trip lift tickets"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Sapporo corridor hub"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Lifts · snow · night"
+    },
+    "food": {
+      "label": "Food",
+      "title": "4 Ishikari & Sapporo picks"
+    },
+    "onsen": {
+      "label": "Onsen",
+      "title": "Jozankei Onsen"
+    },
+    "stay": {
+      "label": "Stay",
+      "title": "Sapporo hub vs near-hill"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets us apart",
+    "title": "Twenty-six courses, clear zones",
+    "primary": {
+      "title": "4,000 m max × 601 m vertical",
+      "lead": "Kamui Eye gondola to the summit—King Course and more, with ~30% beginner, 50% intermediate, 20% advanced. Powder stashes and long groomers in one day; rare scale this close to a major city.",
+      "cta": "Resort map",
+      "imgAlt": "Ishikari plain from the gondola—long groomers and powder lanes"
+    },
+    "secondary": {
+      "title": "Sapporo day-trip flow",
+      "lead": "~30–40 minutes from central Sapporo; direct buses and Hanakawa shuttles mean no car required. Morning powder → afternoon groomers → Jozankei onsen → Sapporo ramen at night—high density without resort lodging.",
+      "cta": "Access guide"
+    }
+  },
+  "bundle": {
+    "eyebrow": "Tickets",
+    "title": "Day trip,<br />serious vertical.",
+    "lead": "Adult day pass ¥5,300 (2025–26)—Niseko-grade snow and 4,000 m runs while staying in Sapporo. Season passes, multi-day tickets, and family deals cut repeat-visit cost; built for weekend commuters from the city.",
+    "specs": [
+      "Adult season pass ¥66,000",
+      "Child day pass ¥3,200",
+      "Full rental ~¥5,500/day"
+    ],
+    "cta": "See price list",
+    "imgAlt": "Kamui Center House—on-hill rest and dining base"
+  },
+  "wellness": {
+    "eyebrow": "After Ski",
+    "title": "Then Ishikari nabe<br />and ramen.",
+    "lead": "Lunch at Kamui Center House on the hill, Ishikari nabe with local seafood in Ishikari city on the way back, miso ramen in Susukino or Jozankei onsen to recover—ski, food, and baths within 30–60 minutes.",
+    "leadStation": "Ramen alley near Sapporo Station fits bus and JR connections on the way home.",
+    "cta": "Food & onsen guide",
+    "imgAlt": "Ishikari nabe and Sapporo miso ramen—corridor après-ski"
+  },
+  "tour": {
+    "eyebrow": "Day-Trip Model",
+    "title": "Stay in Sapporo,<br />ski Kamui.",
+    "lead": "Hotel in Sapporo the night before. ~30 minutes by bus or car, morning powder and afternoon groomers. Jozankei onsen at dusk, Sapporo ramen at night—maximize experience density without resort lodging.",
+    "badge": "POWDER · GROOMER · SAPPORO CORRIDOR",
+    "steps": {
+      "01": {
+        "title": "Sapporo city hotel",
+        "body": "Near Sapporo Station or Odori—city food and early departure"
+      },
+      "02": {
+        "title": "Bus or car ~30 min",
+        "body": "Direct ski bus from station & TV Tower · Hanakawa shuttles"
+      },
+      "03": {
+        "title": "Kamui Ski Links",
+        "body": "¥5,300 day pass · powder and 4,000 m groomers"
+      },
+      "04": {
+        "title": "Jozankei Onsen",
+        "body": "Stop on the way back · open-air bath recovery"
+      },
+      "05": {
+        "title": "Sapporo ramen",
+        "body": "Miso, shio, or shoyu—finish in Susukino"
+      }
+    }
+  },
+  "guides": {
+    "ecosystem": {
+      "title": "Sapporo corridor & local economy",
+      "body": "Lodging, dining, and baths center on Sapporo and Ishikari town while the hill serves day trips—spending flows to Ishikari nabe, Sapporo ramen, and Jozankei without overtourism pressure. Season pass ¥66,000 supports weekend commuters balancing city life and real skiing."
+    },
+    "access": {
+      "title": "Sapporo hub & last mile",
+      "body": "~30–40 minutes by car from central Sapporo. Seasonal direct buses from Sapporo Station and TV Tower, shuttles from JR Hanakawa on the Ishikari Line, 4,000 parking spaces—~70–90 minutes from New Chitose Airport by car with straightforward rental routes."
+    },
+    "green": {
+      "title": "Ishikari food culture year-round",
+      "body": "Winter brings Ishikari nabe and Kamui snow; summer brings salmon fishing on the Ishikari River and camping—the plain's terroir extends beyond ski season. Day-trip skiers become year-round regional fans.",
+      "hashtags": [
+        "#KamuiPowder",
+        "#SapporoDayTrip",
+        "#IshikariNabe"
+      ]
+    }
+  },
+  "access": {
+    "postal": "061-1111, Japan",
+    "line": "1-40 Hanakawa-Kita 6-jo 1-chome, Ishikari, Hokkaido",
+    "note": "Central Sapporo ~30–40 min by car · seasonal direct buses from station & TV Tower · JR Hanakawa shuttles · 4,000 parking spaces",
+    "phone": "TEL 0124-58-3000 (Kamui Ski Links)",
+    "phoneBus": "Bus & shuttle times on official site",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>石狩市<rt>Ishikari</rt></ruby></span><span class=\"place-unit\"><ruby>花川北6条<rt>Hanakawa-Kita 6-jo</rt></ruby></span><span class=\"place-unit\">1-40</span>",
+    "rentacarEyebrow": "都市近郊のパウダー＆ロンググルーム",
+    "rentacarLink": "新千歳空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "カムイスキーリンクス周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Kamui Ski Links",
+    "location": "061-1111 · 1-40 Hanakawa-Kita 6-jo 1-chome, Ishikari, Hokkaido"
+  },
+  "nearbyFood": {
+    "backLink": "Back to guide home",
+    "hero": {
+      "eyebrow": "Food · Corridor",
+      "title": "Four tastes<br />beyond slope food.",
+      "tagline": "Center House to Ishikari nabe and Sapporo ramen—corridor dining"
+    },
+    "notice": "Hours and menus are on each venue's official site.",
+    "introTitle": "Why food drives the day trip",
+    "introLead": "From on-hill lunch to rewards on the way home—real local food within 30–60 minutes is the urban-edge ski advantage.",
+    "introBody": "On the hill, après-ski, and Sapporo transit—four picks along your route.",
+    "spotsEyebrow": "4 picks",
+    "spotsTitle": "Slope food & Ishikari · Sapporo gourmet",
+    "spotsLead": "From the hill into Ishikari town and Sapporo, in route order.",
+    "spots": {
+      "hokurei": {
+        "tag": "On-hill · Center House · lunch",
+        "title": "Kamui Center House",
+        "lead": "Slope-side rest and dining. Curry udon, ramen, rice bowls—warm skier fare, ideal after morning powder."
+      },
+      "yuyu": {
+        "tag": "Ishikari · local · Ishikari nabe",
+        "title": "Ishikari nabe specialty (Ishikari city)",
+        "lead": "Cod, salmon, scallops, and vegetables in miso broth—Hokkaido's signature winter pot. Stop in Ishikari city on the way back for the real thing."
+      },
+      "pipicafe": {
+        "tag": "Sapporo · miso ramen · Susukino",
+        "title": "Sapporo ramen (Susukino & station area)",
+        "lead": "Finish with Sapporo miso ramen. Classic shops in Susukino and station-area favorites—easy to pair with bus or JR connections."
+      },
+      "otokoyama": {
+        "tag": "Ishikari · seafood · salmon",
+        "title": "Ishikari River salmon & seafood",
+        "lead": "Salmon from the Ishikari River and Sea of Japan catch—for travelers who want ski and Hokkaido seafood in one day. Local izakaya in Ishikari city."
+      }
+    }
+  },
+  "nearbyOnsen": {
+    "backLink": "Back to guide home",
+    "hero": {
+      "eyebrow": "Onsen · Recovery",
+      "title": "Jozankei baths,<br />ease the legs.",
+      "tagline": "Default stop after Kamui—Sapporo's premier onsen village"
+    },
+    "notice": "Fees and hours are on each facility's official site.",
+    "introTitle": "Onsen at the core of the corridor",
+    "introLead": "~40–50 minutes from the hill—Jozankei onsen village is the après anchor for Sapporo-stay plans.",
+    "introBody": "From classic ryokan to day-use baths—two bases that fit Sapporo lodging itineraries.",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "Two onsen picks",
+    "spotsLead": "Recovery after skiing and lodging bases.",
+    "spots": {
+      "yuyu": {
+        "tag": "Jozankei · day use · open-air",
+        "title": "Jozankei Onsen (Hoheikyo etc.)",
+        "lead": "~50 minutes from Sapporo, en route from Kamui. Open-air baths and sauna for sore legs—day visit or overnight."
+      },
+      "kamoi": {
+        "tag": "Sapporo · near station · natural spring",
+        "title": "Natural onsen hotels near Sapporo Station",
+        "lead": "For Sapporo city stays—station-area hotels with natural baths. Urban après, then direct bus to Kamui next morning."
+      }
+    }
+  },
+  "corridorStay": {
+    "backLink": "Back to guide home",
+    "hero": {
+      "eyebrow": "Stay · Strategy",
+      "title": "Stay in Sapporo,<br />commute to Kamui.",
+      "tagline": "City stay + day ski vs near-hill lodging"
+    },
+    "notice": "Rooms, rates, and shuttles are on each property's booking site.",
+    "introTitle": "Two base camps",
+    "introLead": "Sleep in Sapporo and bus commute, or stay near Ishikari for dawn powder—choose by what your trip is about.",
+    "spotsEyebrow": "4 picks",
+    "spotsTitle": "Four lodging picks",
+    "spotsLead": "Near-hill Ishikari vs Sapporo hub.",
+    "regions": {
+      "pippu": "Near Ishikari (slope-access focus)",
+      "asahikawa": "Sapporo city (corridor hub)"
+    },
+    "spots": {
+      "yuyu": {
+        "tag": "Near Hanakawa · early start · parking",
+        "title": "Hanakawa · Ishikari area lodging",
+        "lead": "~10 minutes to the hill by car—first-track powder for core skiers. Near-hill hotels and ryokan with parking beat city commute time."
+      },
+      "mount-city": {
+        "tag": "Ishikari city · Ishikari nabe night",
+        "title": "Ishikari city hotels",
+        "lead": "Ishikari nabe after skiing, sleep nearby—good access to both hill and town dining in the Ishikari area."
+      },
+      "omo7": {
+        "tag": "Sapporo · station-front · dining",
+        "title": "Sapporo Station hotels (JR Tower · Odori)",
+        "lead": "Flagship corridor stay—Sapporo ramen and Genghis Khan at night, direct bus to Kamui in the morning."
+      },
+      "dormy": {
+        "tag": "Sapporo · near station · natural onsen",
+        "title": "Natural onsen hotel near Sapporo Station",
+        "lead": "Low friction near the station. Post-ski bath and morning bus—strong choice before the trip home."
+      }
+    }
+  }
+}

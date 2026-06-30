@@ -1,0 +1,494 @@
+{
+  "meta": {
+    "title": "Furano Ski Resort",
+    "description": "A 28-course mega resort linking Furano, Biei, Tomamu, and Asahikawa."
+  },
+  "logo": "Furano Ski Resort",
+  "common": {
+    "explore": "Guides",
+    "accessEyebrow": "Access"
+  },
+  "nav": {
+    "triangle": "Wide area",
+    "guides": "Curated guides",
+    "tour": "Tour plan"
+  },
+  "hero": {
+    "eyebrow": "Furano, Hokkaido · Furano & Kitanomine",
+    "title": "Furano<br />Ski Resort",
+    "tagline": "Mega-resort snow linking four distinct worlds.",
+    "badgePowder": "Japow · 28 courses",
+    "badgeTriangle": "Furano Corridor",
+    "badgeSeason": "Nov 29–May 6",
+    "ctaTour": "Regional tour plan",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "label": "Routes",
+    "ariaLabel": "Access and routing dashboard",
+    "subtitle": "Real-time Furano Corridor routing",
+    "updatedAt": "Updated Jun 30, 9:00",
+    "sapporo": {
+      "label": "Central Asahikawa",
+      "value": "~60 min",
+      "note": "Furano Line train or car"
+    },
+    "otaru": {
+      "label": "Biei",
+      "value": "~35 min",
+      "note": "Route 237 · hill-country drive"
+    },
+    "jozankei": {
+      "label": "Tomamu",
+      "value": "~40 min",
+      "note": "Shuttle bus or car"
+    },
+    "airport": {
+      "label": "Asahikawa Airport",
+      "value": "~60 min",
+      "note": "Limousine bus or car"
+    }
+  },
+  "triangle": {
+    "eyebrow": "Furano Corridor",
+    "title": "Ski, hills, resort, mountains—<br />one snow links all four.",
+    "lead": "Furano Ski Resort is more than a ski hill: a geographic hub tying Furano (28-course mega resort and Prince Hotels), Biei (patchwork hills and photo culture), Tomamu (Hoshino Resorts ice village), and Asahikawa–Mt. Asahidake (ramen culture and alpine hot springs). Ski as your anchor and blend four distinct experiences seamlessly.",
+    "specs": [
+      "28 courses · 2 zones, 9 lifts",
+      "Ropeway summit 941 m",
+      "Adult day ticket ¥8,000"
+    ],
+    "noticeTitle": "Winter routing:",
+    "noticeBody": "Public transit between Furano, Biei, and Tomamu is limited—check Route 237 winter conditions and shuttle timetables. \"Ramen in Asahikawa → Biei hills → Furano night skiing\" needs a car or hotel transfer. Rental cars from Asahikawa Airport offer the most flexibility for multi-base stays.",
+    "ctaMobility": "Routes & constraints",
+    "ctaPicks": "Curated guides",
+    "imgAlt": "Furano snowscape and Kitanomine zone—the corridor hub"
+  },
+  "paths": {
+    "tour": {
+      "label": "Tour",
+      "title": "Furano Corridor"
+    },
+    "picks": {
+      "label": "Curated",
+      "title": "Stays · onsen · dining"
+    },
+    "mobility": {
+      "label": "Routes",
+      "title": "Access & winter roads"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Snow · lifts · conditions"
+    },
+    "food": {
+      "label": "Dining",
+      "title": "4 curated restaurants"
+    },
+    "onsen": {
+      "label": "Onsen",
+      "title": "2 curated onsen"
+    },
+    "stay": {
+      "label": "Stays",
+      "title": "5 curated hotels"
+    },
+    "map": {
+      "label": "Map",
+      "title": "Regional area map"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why here",
+    "title": "What this mega resort offers",
+    "primary": {
+      "title": "28 courses of Japow—inland light powder",
+      "lead": "Light powder from the Furano and Kitanomine zones, ropeway summit 941 m. Prince Hotels operation with 9 lifts, night skiing, and free elementary passes—one hour from Asahikawa Airport, then Biei hills, Tomamu ice village, and Asahidake hot springs. World-class mega-resort facilities with central Hokkaido calm.",
+      "cta": "Trail map",
+      "imgAlt": "Powder burn in Kitanomine zone—Furano Ski Resort"
+    },
+    "secondary": {
+      "title": "Two-zone design and night skiing",
+      "lead": "Furano zone (ropeway, night skiing) and Kitanomine zone (long cruisers) are clearly split—beginners through experts each get dedicated terrain. Slope-side Prince Hotels deliver ski-in/out and international-grade hospitality.",
+      "cta": "Curated onsen (2)"
+    }
+  },
+  "mobility": {
+    "eyebrow": "Routes",
+    "title": "Furano Corridor<br />routing and constraints.",
+    "lead": "Routing directly shapes experience quality. Rental cars from Asahikawa Airport are ideal for multi-base loops across Furano, Biei, and Tomamu. Furano Station–resort shuttles (for guests and day-ticket holders) and Tomamu–Furano shuttles lower the barrier of winter driving.",
+    "rows": {
+      "jozankei": {
+        "route": "Tomamu ⇔ Furano Ski Resort",
+        "mode": "Shuttle bus / car",
+        "time": "~40 min",
+        "note": "Key inter-resort corridor"
+      },
+      "sapporo": {
+        "route": "Central Asahikawa ⇔ Furano Ski Resort",
+        "mode": "Furano Line / car",
+        "time": "~60 min",
+        "note": "Hub for ramen village and airport"
+      },
+      "otaru": {
+        "route": "Biei ⇔ Furano Ski Resort",
+        "mode": "Route 237",
+        "time": "~35 min",
+        "note": "Hill drive · winter road caution"
+      },
+      "airport": {
+        "route": "Asahikawa Airport ⇔ Furano Ski Resort",
+        "mode": "Limousine / car",
+        "time": "~60 min",
+        "note": "Main international gateway"
+      }
+    },
+    "tableHeadRoute": "Segment",
+    "tableHeadMode": "Transport",
+    "tableHeadTime": "Time",
+    "tableHeadNote": "Notes",
+    "cta": "Multi-base stay plan",
+    "rentacarLink": "Compare rental cars at Asahikawa Airport",
+    "imgAlt": "Route 237 and Tokachi mountains—winter corridor driving"
+  },
+  "picks": {
+    "eyebrow": "Curated",
+    "title": "Curated<br />shortlist.",
+    "lead": "Stays, onsen, and dining chosen on five axes—snowscape, resort life, local food, onsen comfort, and access. A list you can build a Furano Corridor loop from.",
+    "categories": {
+      "stay": "Stays",
+      "onsen": "Onsen",
+      "food": "Dining"
+    },
+    "venues": {
+      "chaletIvy": {
+        "name": "New Furano Prince Hotel",
+        "area": "Furano",
+        "hook": "Flagship slope-side hotel—ski-in/out and scenic baths at the core of mega-resort stays."
+      },
+      "kuriyasuizan": {
+        "name": "Furano Natulux Hotel",
+        "area": "Furano",
+        "hook": "Designer hotel near Furano Station—base for town strolls and slope access."
+      },
+      "yurakusoan": {
+        "name": "Ningle Terrace Hotel",
+        "area": "Furano",
+        "hook": "Log-cabin rooms in the forest—hideaway for Furano's creative culture."
+      },
+      "unwind": {
+        "name": "Hoshino Resorts Tomamu The Tower",
+        "area": "Tomamu",
+        "hook": "Ice village and sea-of-clouds terrace—resort winter entertainment anchor."
+      },
+      "omo5": {
+        "name": "OMO7 Asahikawa by Hoshino Resorts",
+        "area": "Asahikawa",
+        "hook": "Gateway to Asahikawa Airport and Ramen Village—urban hub for corridor loops."
+      },
+      "hoheikyo": {
+        "name": "Furanui Onsen (Furano Vessel Hotel)",
+        "area": "Furano",
+        "hook": "100% spring-fed open-air baths—post-ski recovery and town stopover."
+      },
+      "koganeyu": {
+        "name": "Tokachidake Onsen Ryounkaku",
+        "area": "Kamifurano",
+        "hook": "Sulfur snow-view baths at the foot of Mt. Asahidake—alpine hot-spring peak."
+      },
+      "garaku": {
+        "name": "Furano Cheese Factory",
+        "area": "Furano",
+        "hook": "Local dairy soul food—factory tour and tasting staple."
+      },
+      "masazushi": {
+        "name": "Furano Kankanhoro",
+        "area": "Furano",
+        "hook": "Famous omurice and soup curry—gastronomy anchor for locals and visitors alike."
+      },
+      "biergarten": {
+        "name": "Asahikawa Ramen Village (Aji no Tokeidai)",
+        "area": "Asahikawa",
+        "hook": "Northern ramen pilgrimage—easy food hub on corridor return legs."
+      },
+      "amenoyuki": {
+        "name": "Biei Farm",
+        "area": "Biei",
+        "hook": "Raclette toast and hill panoramas—where photo culture meets local food."
+      }
+    }
+  },
+  "guidesTeasers": {
+    "eyebrow": "Curated guides",
+    "title": "Stays · onsen · dining — full lists inside",
+    "lead": "Venue details, phones, official links, and maps live on dedicated guide pages.",
+    "stay": {
+      "count": "5",
+      "label": "Stays",
+      "title": "5 curated stays",
+      "hook": "From Prince Hotels to Tomamu and Asahikawa hubs."
+    },
+    "onsen": {
+      "count": "2",
+      "label": "Onsen",
+      "title": "2 curated hot springs",
+      "hook": "Town baths vs Tokachidake sulfur—compare guest policies."
+    },
+    "food": {
+      "count": "4",
+      "label": "Dining",
+      "title": "4 curated restaurants",
+      "hook": "Kankanhoro, cheese factory, ramen village—food that drives circulation."
+    }
+  },
+  "tour": {
+    "eyebrow": "Day tour",
+    "title": "Three-base stay,<br />snow quality at Furano.",
+    "lead": "Enter via Asahikawa ramen, photograph Biei hills, ski Furano mega resort and night slopes—multi-base design with Tomamu ice village in between. One rental car covers the full corridor.",
+    "badge": "Furano Corridor",
+    "steps": {
+      "01": {
+        "title": "Furano Ski Resort",
+        "body": "First-track powder—Furano zone ropeway 941 m"
+      },
+      "02": {
+        "title": "Kitanomine zone",
+        "body": "Long cruisers and wide burns—two-zone circuit"
+      },
+      "03": {
+        "title": "Biei · Patchwork Hills",
+        "body": "Afternoon photo drive—35 min on Route 237"
+      },
+      "04": {
+        "title": "Tokachidake Onsen Ryounkaku",
+        "body": "Sulfur snow-view bath at the foot of Mt. Asahidake"
+      },
+      "05": {
+        "title": "Asahikawa · Ramen Village",
+        "body": "Next day: miso ramen, then airport limousine home"
+      }
+    }
+  },
+  "guides": {
+    "triangle": {
+      "title": "Complete Furano Corridor guide",
+      "body": "Link Furano, Biei, Tomamu, and Asahikawa through a ski hub. A 28-course mega resort as spine—Japow, hill photography, resort entertainment, and ramen culture in one journey."
+    },
+    "mobility": {
+      "title": "Winter roads and multi-base routing",
+      "body": "Route 237 winter conditions, limited transit between Furano and Biei, Asahikawa Airport rental logistics—schedules that match infrastructure reality. Confirm hotel shuttles and Tomamu link bus timetables."
+    },
+    "culture": {
+      "title": "Mega resort meets local culture",
+      "body": "Prince Hotels international standards alongside Kankanhoro, cheese factory, and Biei Farm local food—unifying experiences of different scale in one corridor. Multilingual visibility at booking is the competitiveness lever.",
+      "hashtags": [
+        "#FuranoCorridor",
+        "#JapowMegaResort",
+        "#VisitHokkaido"
+      ]
+    }
+  },
+  "access": {
+    "postal": "076-8511, Japan",
+    "line": "28-47 Nakagawa, Yamabe, Furano, Hokkaido",
+    "note": "~60 min from Asahikawa Airport by bus or car · ~60 min from central Asahikawa · ~35 min from Biei · parking available",
+    "phone": "TEL 0167-22-1111 (Furano Ski Resort)",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>富良野市<rt>Furano</rt></ruby></span><span class=\"place-unit\"><ruby>字山部中町<rt>Yamabe-nakamachi</rt></ruby></span><span class=\"place-unit\">28-47</span>",
+    "rentacarEyebrow": "メガリゾート・28コース・施設充実",
+    "rentacarLink": "旭川空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "富良野スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Furano Ski Resort",
+    "location": "076-8511 · 28-47 Nakagawa, Yamabe, Furano, Hokkaido"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "4 curated restaurants — Furano Ski Resort",
+      "description": "Curated dining list for the Furano Corridor with map guide"
+    },
+    "backLink": "Back to guide home",
+    "navAreaMap": "Area map",
+    "hero": {
+      "eyebrow": "Food · Map",
+      "title": "Local gastronomy,<br />four faces.",
+      "tagline": "From Furano omurice to cheese factory, Asahikawa ramen, and Biei hill cafés"
+    },
+    "notice": "Hours, reservations, and dietary accommodations—check each venue's official site.",
+    "introTitle": "Why food drives regional travel",
+    "introLead": "Food rooted in local history and terroir is tourism's strongest hook.",
+    "introBody": "Four Furano Corridor picks—multilingual service, diversity, and accessibility baked in.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Furano Corridor dining map",
+    "mapLead": "Dining and anchor points across Furano, Biei, Tomamu, and Asahikawa.",
+    "mapEmbedTitle": "Furano regional dining, onsen, and anchor map",
+    "mapLayers": {
+      "food": "Dining",
+      "onsen": "Onsen",
+      "anchor": "Anchors",
+      "hint": "Food and onsen layers can be shown together",
+      "mobileHint": "When pins overlap, use “View on map” in the list below"
+    },
+    "mapCta": "Open full-size map",
+    "linkOnsenGuide": "2 curated onsen guide",
+    "spotsEyebrow": "4 picks",
+    "spotsTitle": "4 curated restaurants",
+    "spotsLead": "Ordered for easy insertion before or after skiing and regional moves.",
+    "spotMapLink": "View on map",
+    "spotPhoneLabel": "Phone",
+    "spotWebsiteLabel": "Official site",
+    "spots": {
+      "masazushi": {
+        "tag": "Omurice · soup curry · Furano icon",
+        "title": "Furano Kankanhoro",
+        "lead": "Furano's signature Western restaurant—dual mastery of omurice and soup curry, beloved by locals.",
+        "phone": "0167-23-1401",
+        "website": "http://www.kankanhoro.com/"
+      },
+      "garaku": {
+        "tag": "Cheese · factory tour · tasting",
+        "title": "Furano Cheese Factory",
+        "lead": "Experience Furano dairy culture—factory tour and tasting sets, a family favorite.",
+        "phone": "0167-22-5510",
+        "website": "https://www.furano-cheese.jp/"
+      },
+      "beer-garden": {
+        "tag": "Miso ramen · Asahikawa-born",
+        "title": "Asahikawa Ramen Village (Aji no Tokeidai)",
+        "lead": "Northern ramen pilgrimage—easy food hub on corridor return legs.",
+        "phone": "0166-48-1253",
+        "website": "https://www.aji-no-tokeidai.com/"
+      },
+      "ame-yuki": {
+        "tag": "Hill café · Biei",
+        "title": "Biei Farm",
+        "lead": "Raclette toast and hill panoramas—where photo culture meets local food.",
+        "phone": "0166-95-2754",
+        "website": "https://www.biei-farm.jp/"
+      }
+    }
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "2 curated onsen — Furano Ski Resort",
+      "description": "Curated onsen list for the Furano Corridor with map guide"
+    },
+    "backLink": "Back to guide home",
+    "navAreaMap": "Area map",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After the snow,<br />hot-spring culture.",
+      "tagline": "Town baths to Tokachidake sulfur springs—strategically placed recovery"
+    },
+    "notice": "Fees, hours, tattoo policies, and late-night surcharges—confirm on each official site.",
+    "introTitle": "The many roles of onsen",
+    "introLead": "Beyond bathing—cultural immersion, fatigue recovery, and transit hubs.",
+    "introBody": "From Furano town baths to Tokachidake sulfur springs—two venues compared.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Furano Corridor onsen map",
+    "mapLead": "Layer stays and ski access to design your circuit.",
+    "mapEmbedTitle": "Furano regional dining, onsen, and anchor map",
+    "mapLayers": {
+      "food": "Dining",
+      "onsen": "Onsen",
+      "anchor": "Anchors",
+      "hint": "Food and onsen layers can be shown together",
+      "mobileHint": "When pins overlap, use “View on map” in the list below"
+    },
+    "mapCta": "Open full-size map",
+    "linkFoodGuide": "4 curated restaurants guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "2 curated hot springs",
+    "spotsLead": "Ordered for post-ski recovery and regional transit stops.",
+    "spotMapLink": "View on map",
+    "spotPhoneLabel": "Phone",
+    "spotWebsiteLabel": "Official site",
+    "spots": {
+      "hoheikyo": {
+        "tag": "Spring-fed · open-air · in town",
+        "title": "Furanui Onsen (Furano Vessel Hotel)",
+        "lead": "In-town hot spring facility—post-ski recovery and town stopover.",
+        "phone": "0167-22-4126",
+        "website": "https://www.furanui.jp/"
+      },
+      "koganeyu": {
+        "tag": "Sulfur · snow-view · Mt. Asahidake",
+        "title": "Tokachidake Onsen Ryounkaku",
+        "lead": "Sulfur baths at 1,280 m on the slopes of Mt. Asahidake—alpine hot-spring peak.",
+        "phone": "0167-45-2244",
+        "website": "http://www.ryounkaku.com/"
+      }
+    }
+  },
+  "goldenTriangleStay": {
+    "meta": {
+      "title": "5 curated stays — Furano Ski Resort",
+      "description": "Curated stay list for the Furano Corridor with map guide"
+    },
+    "backLink": "Back to guide home",
+    "navAreaMap": "Area map",
+    "hero": {
+      "eyebrow": "Stay · Furano Corridor",
+      "title": "The stay itself<br />is the destination.",
+      "tagline": "From mega resort to resort tower and urban hub—five anchor bases"
+    },
+    "notice": "Room types, rates, and transfers—official booking sites are authoritative.",
+    "introTitle": "Base camps for regional loops",
+    "introLead": "Slope-side Furano hotels, Tomamu resort, and Asahikawa urban bases—each stay translates the corridor differently.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Stay anchor map",
+    "mapLead": "Layer ski, dining, and onsen to build your itinerary.",
+    "mapEmbedTitle": "Furano regional anchor map",
+    "mapCta": "Open full-size map",
+    "linkFoodGuide": "4 curated restaurants",
+    "linkOnsenGuide": "2 curated onsen",
+    "spotsEyebrow": "5 picks",
+    "spotsTitle": "5 curated stays",
+    "spotsLead": "Ski-in/out, designer, log cabin, resort tower, urban hub—by need.",
+    "spotMapLink": "View on map",
+    "spotPhoneLabel": "Phone",
+    "spotWebsiteLabel": "Official site",
+    "regions": {
+      "jozankei": "Furano area",
+      "otaru": "Tomamu · Asahikawa"
+    },
+    "spots": {
+      "chalet-ivy": {
+        "tag": "Slope-side · scenic bath · Prince",
+        "title": "New Furano Prince Hotel",
+        "lead": "Flagship hotel directly on Furano slopes—the peak of mega-resort stays.",
+        "phone": "0167-22-1111",
+        "website": "https://www.princehotels.co.jp/furano/"
+      },
+      "kuriyasuizan": {
+        "tag": "Designer · near station · town walks",
+        "title": "Furano Natulux Hotel",
+        "lead": "Modern hotel near Furano Station—access to both slopes and town.",
+        "phone": "0167-23-4111",
+        "website": "https://www.natulux.com/"
+      },
+      "yurakusoan": {
+        "tag": "Log cabin · forest · creative",
+        "title": "Ningle Terrace Hotel",
+        "lead": "Log-cabin rooms inside New Furano Prince Hotel—forest creative culture up close.",
+        "phone": "0167-22-1111",
+        "website": "https://www.princehotels.co.jp/furano/ningle/"
+      },
+      "unwind-otaru": {
+        "tag": "Hoshino · ice village · resort",
+        "title": "Hoshino Resorts Tomamu The Tower",
+        "lead": "Winter ice village and sea-of-clouds terrace—resort entertainment anchor.",
+        "phone": "0167-58-1111",
+        "website": "https://hoshinoresorts.com/ja/hotels/tomamu/"
+      },
+      "omo5-otaru": {
+        "tag": "Hoshino · airport access · ramen",
+        "title": "OMO7 Asahikawa by Hoshino Resorts",
+        "lead": "Gateway to Asahikawa Airport and Ramen Village—urban hub for corridor loops.",
+        "phone": "0166-38-9600",
+        "website": "https://hoshinoresorts.com/ja/hotels/omo7asahikawa/"
+      }
+    }
+  }
+}

@@ -94,6 +94,18 @@
       "registryId": "pippu",
       "tier": "mock"
     },
+    "37": {
+      "registryId": "kamui-ski-links",
+      "tier": "mock"
+    },
+    "38": {
+      "registryId": "canmore",
+      "tier": "mock"
+    },
+    "54": {
+      "registryId": "furano",
+      "tier": "mock"
+    },
     "52": {
       "registryId": "hinode",
       "tier": "mock"

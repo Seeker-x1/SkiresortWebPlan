@@ -10,6 +10,7 @@ export type FeatureManifestEntry = {
   type: "lift" | "trail";
   label: string;
   shortLabel?: string;
+  difficulty?: string;
   meta?: Record<string, string | number>;
 };
 
@@ -68,6 +69,8 @@ export async function getMapStatusPayload(): Promise<MapStatusPayload | null> {
       id: entry.id,
       type: entry.type,
       label: entry.label,
+      shortLabel: entry.shortLabel,
+      difficulty: entry.difficulty,
       status: live?.status ?? "unknown",
       reason: live?.reason ?? null,
       meta: entry.meta,

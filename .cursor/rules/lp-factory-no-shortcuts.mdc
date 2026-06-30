@@ -35,7 +35,7 @@ alwaysApply: true
 | 4 | i18n + HTML 配線 | Step 5–6 · validate-mock-i18n / html-i18n |
 | 5 | マップ JSON + hero | Step 7 |
 | 6 | registry + resort-guides + **NAME_SUBSTRINGS** | Step 8 · [JAPOW_DETAIL_INTEGRATION.md](../../docs/mock-assets/JAPOW_DETAIL_INTEGRATION.md) · `scripts/validate-resort-guides-ids.mjs` |
-| 7 | Skyticket レンタカー | Step 9 · apply-rentacar-affiliate.mjs |
+| 7 | Skyticket レンタカー | `sync-skyticket-rentacar-i18n.mjs` → `validate-skyticket-affiliate.mjs` |
 | 8 | 機械検証 8 本 | Step 10 · LP_FACTORY Phase 12 |
 | 9 | guides 同期 + hub 件数 | Step 11 |
 | 10 | **JAPOWSERCH resort-guides 同期** | Step 12 · 詳細ボタン成立 |

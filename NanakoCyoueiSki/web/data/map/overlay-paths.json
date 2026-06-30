@@ -1,106 +1,48 @@
 {
-  "viewBox": "0 0 1536 1024",
-  "projection": "similarity-from-pair-lift",
-  "similarity": {
-    "originLng": 141.0997309,
-    "originLat": 40.69845,
-    "scale": 1.6357016630718382,
-    "cos": 0.2983380828720835,
-    "sin": 0.9544602602037499,
-    "tx": 688,
-    "ty": 782
-  },
+  "viewBox": "0 0 1024 1024",
+  "bakedLines": true,
   "image": {
-    "width": 1536,
+    "width": 1024,
     "height": 1024,
-    "src": "/maps/nanako-hero.png"
-  },
-  "controlPoints": {
-    "lift-pair-bottom": {
-      "lng": 141.0997309,
-      "lat": 40.69845,
-      "role": "ペアリフト下駅（イラスト基部）",
-      "pixel": [
-        688,
-        782
-      ],
-      "target": [
-        688,
-        782
-      ]
-    },
-    "lift-pair-top": {
-      "lng": 141.0952757,
-      "lat": 40.6976589,
-      "role": "ペアリフト上駅（イラスト山頂）",
-      "pixel": [
-        642,
-        152
-      ],
-      "target": [
-        642,
-        152
-      ]
-    },
-    "lift-pony-bottom": {
-      "lng": 141.0995,
-      "lat": 40.69726,
-      "role": "ポニー下（東側バーン）",
-      "pixel": [
-        885.3,
-        686.9
-      ],
-      "target": [
-        1272,
-        688
-      ]
-    },
-    "lift-pony-top": {
-      "lng": 141.1003,
-      "lat": 40.69744,
-      "role": "ポニー上",
-      "pixel": [
-        887,
-        802.1
-      ],
-      "target": [
-        1208,
-        538
-      ]
-    }
+    "src": "/maps/sichinohe-hero.png"
   },
   "features": {
     "lift-pair": {
       "type": "lift",
-      "strokeWidth": 7,
-      "path": "M 688.0 782.0 L 686.3 756.7 L 680.8 686.9 L 673.2 582.7 L 669.3 525.6 L 664.5 464.8 L 659.3 379.9 L 653.2 318.2 L 650.0 241.6 L 644.4 175.1 L 642.0 152.0",
-      "markers": [
-        [
-          688,
-          782
-        ],
-        [
-          642,
-          152
-        ]
-      ],
-      "source": "OpenStreetMap way/631879096"
+      "strokeWidth": 4,
+      "path": "M 429 379.3 L 454 401.3 L 486 435.3 L 512 474.3 L 544 513.3 L 580 534.3 L 661 595.3 L 709 632.3",
+      "markers": [[429, 379.3], [709, 632.3]]
     },
     "lift-pony": {
       "type": "lift",
-      "strokeWidth": 7,
-      "path": "M 885.3 686.9 L 887.0 802.1",
-      "markers": [
-        [
-          885.3,
-          686.9
-        ],
-        [
-          887,
-          802.1
-        ]
-      ],
-      "source": "国土地理院正射東側ベース + skimap照合（OSM未登録・要現地確認）"
+      "strokeWidth": 4,
+      "path": "M 644 447.3 L 775 545.3",
+      "markers": [[644, 447.3], [775, 545.3]]
+    },
+    "trail-champion": {
+      "type": "trail",
+      "strokeWidth": 6,
+      "path": "M 539 349.3 L 551 360.3 L 621 414.3 L 619 431.3 L 630 455.3 L 676 492.3 L 725 535.3 L 764 552.3"
+    },
+    "trail-upper": {
+      "type": "trail",
+      "strokeWidth": 6,
+      "path": "M 446 356.3 L 411 405.3 L 491 480.3 L 509 487.3 L 541 492.3 L 560 500.3 L 681 596.3"
+    },
+    "trail-intermediate": {
+      "type": "trail",
+      "strokeWidth": 6,
+      "path": "M 474 359.3 L 738 608.3"
+    },
+    "trail-forest": {
+      "type": "trail",
+      "strokeWidth": 6,
+      "path": "M 412 349.3 L 331 386.3 L 314 397.3 L 302 412.3 L 240 509.3 L 239 525.3 L 357 574.3 L 391 585.3 L 436 577.3 L 542 554.3 L 564 554.3 L 606 579.3"
+    },
+    "trail-pony": {
+      "type": "trail",
+      "strokeWidth": 6,
+      "path": "M 679 440.3 L 775 522.3"
     }
   }
 }

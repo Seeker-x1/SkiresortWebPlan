@@ -10,6 +10,8 @@ export interface MapFeature {
   type: FeatureType;
   status: MapFeatureStatus;
   label: string;
+  shortLabel?: string;
+  difficulty?: string;
   reason?: string | null;
   meta?: Record<string, string | number>;
 }
@@ -22,8 +24,8 @@ export interface MapStatusPayload {
 }
 
 export const STATUS_COLORS: Record<string, string> = {
-  operating: "#16a34a",
-  open: "#16a34a",
+  operating: "#7ec8e3",
+  open: "#7ec8e3",
   stopped: "#64748b",
   closed: "#64748b",
   hold: "#f59e0b",
