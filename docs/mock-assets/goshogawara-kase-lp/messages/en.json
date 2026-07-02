@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "Goshogawara City Kase Ski Area",
+    "description": "A completely free local ski hill within walking distance of Kase Station on the Tsugaru Railway—your gateway to Kanagi onsen, comfort food, and deep Tsugaru winter culture."
+  },
+  "logo": "Goshogawara City Kase Ski Area",
+  "nav": {
+    "family": "Family"
+  },
+  "hero": {
+    "eyebrow": "Kanagi, Goshogawara · Aomori",
+    "title": "Goshogawara City Kase<br />Ski Area",
+    "tagline": "A free local ski hill linked to the Tsugaru Railway—play in the snow, then loop into Kanagi for onsen, food, and culture.",
+    "badgeLocal": "Free to use",
+    "badgeVisitor": "Walkable from Kase Station",
+    "badgeSled": "Night lighting available",
+    "ctaPass": "Tickets & planning",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Community-run free snow hill",
+    "updatedAt": "Updated Jan 20, 9:00",
+    "lift": {
+      "label": "Uphill",
+      "value": "Anver lift",
+      "note": "1 surface-style lift · local setup"
+    },
+    "courses": {
+      "label": "Terrain",
+      "value": "Snow-play friendly",
+      "note": "Alpine slope + K20 jump hill"
+    },
+    "night": {
+      "label": "Night hours",
+      "value": "18:00–21:00",
+      "note": "Weeknight focus · afternoon hours on weekends"
+    },
+    "yotei": {
+      "label": "Nearby",
+      "value": "Kanagi area",
+      "note": "Dazai, onsen, and shijimi comfort food"
+    }
+  },
+  "transit": {
+    "eyebrow": "Tsugaru Railway Access",
+    "title": "Hop off the Stove Train,<br />then walk to snow.",
+    "lead": "Kase is one of the rare small ski hills you can realistically pair with a local railway stop. The hill is tiny and simple, but its free entry and closeness to Kanagi's food, onsen, and cultural stops make it a strong deep-local winter detour.",
+    "specs": [
+      "Walkable from Kase Station",
+      "~15 min by car from Goshogawara-kita IC",
+      "About 10 parking spaces"
+    ],
+    "ctaPass": "Plan the visit",
+    "ctaLive": "Today's operations",
+    "imgAlt": "Winter approach from Kase Station on the Tsugaru Railway toward Goshogawara City Kase Ski Area"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Anver lift, hours & snow-play info"
+    },
+    "pass": {
+      "label": "Planning",
+      "title": "Free access & rental concept"
+    },
+    "family": {
+      "label": "Family",
+      "title": "Sledding & first snow play"
+    },
+    "rental": {
+      "label": "Rental",
+      "title": "Hands-free snow hub"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Kase Station to Kanagi loop"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Kase",
+    "title": "What makes it different",
+    "primary": {
+      "title": "Free entry × railway nostalgia",
+      "lead": "Kase cannot compete with commercial resorts on scale. Its advantage is different: completely free access and a story-rich position near the Tsugaru Railway. It feels less like a resort and more like stepping into everyday winter life in rural Tsugaru.",
+      "cta": "See the local appeal",
+      "imgAlt": "Local snow scene at Goshogawara City Kase Ski Area"
+    },
+    "secondary": {
+      "title": "A snow gateway feeding the Kanagi loop",
+      "lead": "The value is not in lift-ticket revenue. It is in sending people onward—to Kanagi Onsen, Poppo-ya, Shayokan, and the Tsugaru Shamisen Hall—after their first snow touch or quick local run.",
+      "cta": "Family zone guide"
+    }
+  },
+  "pass": {
+    "eyebrow": "Free Local Value",
+    "title": "¥0 to enter,<br />more room to explore.",
+    "lead": "Because the hill is free, visitors can shift budget toward sled rentals, onsen baths, local meals, and cultural stops in Kanagi. That is the real value proposition: use the hill as a winter entry point, not as a standalone paid resort.",
+    "localPrice": "Hill access: free",
+    "visitorPrice": "Spend on the local loop",
+    "specs": [
+      "Season usually early Jan to late Feb",
+      "Weekdays 18:00–21:00",
+      "Weekend afternoon sessions"
+    ],
+    "noticeTitle": "Strategy note:",
+    "noticeBody": "Any paid rentals or sales tied directly to the hill need public-property permission. In practice, station pickup, partner shops, and nearby tourism businesses are the cleanest first step.",
+    "cta": "Planning details",
+    "imgAlt": "A local winter trip built around the Tsugaru Railway and Kanagi area"
+  },
+  "rental": {
+    "eyebrow": "Hands-free Snow",
+    "title": "Make snow play easy,<br />through the town.",
+    "lead": "The hill itself has limited rental infrastructure, so the better model is a town-wide one: pre-book sleds, snowshoes, and kid-friendly snow gear through Kanagi partners, then collect them near the station or local lodging.",
+    "whisper": "Even a tiny free hill can feel visitor-ready when booking and handoff are handled by the wider area rather than the slope alone.",
+    "cta": "Rental guide",
+    "imgAlt": "Hands-free snow-play concept linked to Kase Station and the Kanagi area"
+  },
+  "yukinko": {
+    "eyebrow": "Night Snow",
+    "title": "A small lit hill,<br />quiet Tsugaru at night.",
+    "lead": "With about 10 lighting units and evening hours on weekdays, Kase can offer a different kind of winter night—less resort energy, more intimate local atmosphere for children, residents, and curious travelers.",
+    "whisper": "Link it with Kanagi Onsen and local dinners, and even a short evening visit becomes a full winter experience.",
+    "cta": "Night skiing & hours",
+    "imgAlt": "Evening snow scene at Goshogawara City Kase Ski Area under local night lighting"
+  },
+  "family": {
+    "eyebrow": "Family First",
+    "title": "First snow,<br />without the pressure.",
+    "lead": "There is no long resort-style terrain here, but that is exactly why Kase works for families and first-timers. The scale is small, the barrier is low, and visitors can focus on snow touch, sledding, and simple first runs.",
+    "specs": [
+      "Free snow-play base",
+      "Good for sleds and first steps",
+      "Local jump and XC culture nearby"
+    ],
+    "noticeTitle": "Family note:",
+    "noticeBody": "The Anver lift behaves more like a rope/surface system and may be awkward for snowboarders or very small kids. For many visitors, snow play is the best-fit way to enjoy the hill.",
+    "cta": "Family & first-snow guide",
+    "imgAlt": "Family snow play and first snow experience at Goshogawara City Kase Ski Area"
+  },
+  "workation": {
+    "eyebrow": "Tsugaru Loop",
+    "title": "Snow at Kase,<br />then Kanagi culture and baths.",
+    "lead": "Kase is best treated as part of a half-day or full-day Tsugaru loop: Tsugaru Railway, free snow play, Shayokan, shamisen culture, onsen, and local comfort food. The hill is the start of the story, not the whole story.",
+    "badge": "SNOW · FOOD · CULTURE",
+    "steps": {
+      "01": {
+        "title": "Morning: hop off at Kase",
+        "body": "Add a free snow stop to your Tsugaru Railway journey"
+      },
+      "02": {
+        "title": "Midday: snow play at the hill",
+        "body": "Sledding, first turns, or night snow if you visit later"
+      },
+      "03": {
+        "title": "Afternoon: Shayokan & shamisen",
+        "body": "Shift from snow into the cultural heart of Kanagi"
+      },
+      "04": {
+        "title": "Late afternoon: Kanagi Onsen",
+        "body": "Warm back up in a local bath"
+      },
+      "05": {
+        "title": "Evening: local dinner",
+        "body": "Finish with shijimi ramen or a classic local diner"
+      }
+    }
+  },
+  "guides": {
+    "local": {
+      "title": "Tsugaru Railway × free hill guide",
+      "body": "The core edit is to frame Kase not as a competitor to larger resorts, but as an ultra-local snow gateway linked to station access and the Kanagi area’s onsen, food, and culture."
+    },
+    "schools": {
+      "title": "Unstaffed-station digital stamp loop",
+      "body": "Connect Kase Station, the hill, and Kanagi partner businesses through a smartphone stamp rally with etiquette tips and local offers. It is a practical way to turn unstaffed infrastructure into measurable circulation."
+    },
+    "summer": {
+      "title": "Deep Tsugaru Snow Stop",
+      "body": "For travelers who want local rail, snow, diners, and baths—not just big-resort mileage. Kase works best as a gentle first snow touch inside a richer Tsugaru winter story.",
+      "hashtags": [
+        "#KaseSnowStop",
+        "#TsugaruRailway",
+        "#DeepTsugaru"
+      ]
+    }
+  },
+  "access": {
+    "postal": "037-0204, Japan",
+    "line": "115-3 Kamihata Yamazaki, Kase, Kanagi, Goshogawara, Aomori",
+    "note": "Walkable from Kase Station on the Tsugaru Railway · about 15 min by car from Goshogawara-kita IC · around 10 parking spaces",
+    "phone": "TEL 0173-53-3581 (via Kanagi Community Center; verify latest seasonal details)",
+    "places": "<span class=\"place-unit\"><ruby>青森県<rt>Aomori</rt></ruby></span><span class=\"place-unit\"><ruby>五所川原市<rt>Goshogawara</rt></ruby></span><span class=\"place-unit\"><ruby>金木町嘉瀬上端山崎115-3<rt>115-3 Kamihata Yamazaki, Kase, Kanagi</rt></ruby></span>",
+    "rentacarEyebrow": "津軽鉄道で途中下車し、無料のローカルゲレンデと金木エリアの温泉・食堂を一日でめぐるディープ津軽旅。",
+    "rentacarLink": "盛岡駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "五所川原市嘉瀬スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Goshogawara City Kase Ski Area",
+    "location": "037-0204 · 115-3 Kamihata Yamazaki, Kase, Kanagi, Goshogawara, Aomori"
+  }
+}

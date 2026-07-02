@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "title": "Kotoriyama Ski Area",
+    "description": "Rope-tow gentle slopes with a private, crowd-free feel—pair first snow play with Terume Hakuryo onsen and Oe town dining in one Yamagata local day."
+  },
+  "logo": "Kotoriyama Ski Area",
+  "nav": {
+    "family": "Family",
+    "spa": "Onsen"
+  },
+  "hero": {
+    "eyebrow": "Oe, Yamagata · Nishimurayama",
+    "title": "Kotoriyama<br />Ski Area",
+    "tagline": "Experience a private local snow resort perfect for beginners, paired with premium hot springs in Yamagata.",
+    "badgeLocal": "Rope tow only",
+    "badgeVisitor": "Private feel · value",
+    "badgeSled": "~5 min to onsen",
+    "ctaPass": "Tickets & pricing",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Compact local hill",
+    "updatedAt": "Updated Jan 15, 9:00",
+    "lift": {
+      "label": "Rope tow",
+      "value": "Operating",
+      "note": "No chairlifts · surface tow"
+    },
+    "courses": {
+      "label": "Terrain",
+      "value": "Mostly gentle",
+      "note": "Max ~22° · short runs"
+    },
+    "night": {
+      "label": "Crowds",
+      "value": "Near private",
+      "note": "Weekdays often feel yours alone"
+    },
+    "yotei": {
+      "label": "Nearby",
+      "value": "Terume Hakuryo",
+      "note": "~5 min by car · Funauta onsen"
+    }
+  },
+  "transit": {
+    "eyebrow": "Local Access",
+    "title": "From Shinjo into Oe—<br />a local snow-play hill.",
+    "lead": "Drive from JR Shinjo Station toward Oe town on the Yamagata Shinkansen line—signage can be tricky in winter, so check official detour maps and map pin locations before you go. Once you arrive, enjoy uncrowded snow debut and sled play at Kotoriyama.",
+    "specs": [
+      "~40 min by car from Shinjo Station",
+      "~5 min to Terume Hakuryo",
+      "Watch for winter road closures"
+    ],
+    "ctaPass": "View pricing",
+    "ctaLive": "Today's operations",
+    "imgAlt": "Snow-country road toward Kotoriyama Ski Area in Oe, Yamagata"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Rope tow, snow & crowds"
+    },
+    "pass": {
+      "label": "Pricing",
+      "title": "High-value day tickets"
+    },
+    "family": {
+      "label": "Family",
+      "title": "Snow debut & sledding"
+    },
+    "spa": {
+      "label": "Onsen",
+      "title": "Terume Hakuryo · Oe loop"
+    },
+    "rental": {
+      "label": "Rental",
+      "title": "Hands-free snow play"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Shinjo to Oe town"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Kotoriyama",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "Private feel × standout value",
+      "lead": "Smaller than nearby major hills—but \"no one watching when you wipe out\" privacy and low prices are the draw. Ideal for beginners and families making their snow debut.",
+      "cta": "View terrain & snow play",
+      "imgAlt": "Uncrowded Kotoriyama slopes—gentle snow field and rope tow"
+    },
+    "secondary": {
+      "title": "Rope-tow-only peace of mind",
+      "lead": "No chairlifts, mostly surface tows—less fear on steep terrain, highly rated for teaching kids their first turns. Lower collision risk reassures families.",
+      "cta": "Family & first-snow guide"
+    }
+  },
+  "pass": {
+    "eyebrow": "Local Value",
+    "title": "Small hill,<br />big value.",
+    "lead": "Short runs won't satisfy advanced skiers—but low day-ticket prices and no crowds make it perfect for first snow play or sled-only days.",
+    "localPrice": "Day ticket (budget tier)",
+    "visitorPrice": "Snow + onsen bundle",
+    "priceDayLabel": "Day ticket",
+    "priceBundleLabel": "Bundle",
+    "specs": [
+      "Rope tow ticket",
+      "Road-station / onsen bundle",
+      "Online prepay"
+    ],
+    "noticeTitle": "Partner perks:",
+    "noticeBody": "Show your rope-tow ticket for Terume Hakuryo bath discounts and road-station perks—reach nearby families via #PrivateGelende #FirstSnowPlay.",
+    "cta": "Pricing details",
+    "imgAlt": "Value-focused day trip—Kotoriyama and Oe town loop"
+  },
+  "rental": {
+    "eyebrow": "Hands-free Snow",
+    "title": "Travel light,<br />play in the snow.",
+    "lead": "Few full ski shops in Oe town—proposed hub linking large sports stores in Sagae, Tendo, and Yamagata City plus lodgings for advance rental and on-site delivery.",
+    "whisper": "Enable hands-free snow play by coordinating rental inventory across the area.",
+    "cta": "Hands-free guide",
+    "imgAlt": "Family starting snow play with rental gear—hub delivery concept"
+  },
+  "spa": {
+    "eyebrow": "Snow · Onsen",
+    "title": "After runs,<br />Funauta onsen in 5 min.",
+    "lead": "Terume Hakuryo Health Spa ~3 km away (~5 min by car)—high dissolved-mineral content; water shifts through six hues from emerald to milky white. Sauna plus Restaurant Kawakaze for Yamagata beef and local chicken.",
+    "whisper": "Adjacent to Michi-no-Eki Oe Koramagase (2024 renewal)—weekly lunch specials pair well with the loop.",
+    "cta": "Onsen & loop route",
+    "imgAlt": "Terume Hakuryo high-mineral onsen—Oe town spa after snow play"
+  },
+  "family": {
+    "eyebrow": "Snow Debut",
+    "title": "First snow,<br />without the pressure.",
+    "lead": "Gentle pitch ideal for beginners—reviews praise it for kids and as \"the best place to teach your first ski lesson.\" Rope tows need arm strength; younger kids may prefer the sled zone.",
+    "specs": [
+      "Rope tow & flip lift",
+      "Sled & snow-play friendly",
+      "Near-private crowd levels"
+    ],
+    "noticeTitle": "Access:",
+    "noticeBody": "Signage can be hard to spot and nav apps may misroute—check official winter detour maps and map pin locations before you go.",
+    "cta": "Family & first-snow guide",
+    "imgAlt": "Sledding and first runs—uncrowded family zone at Kotoriyama"
+  },
+  "workation": {
+    "eyebrow": "Snow & Spa Day",
+    "title": "Oe local<br />one-day loop.",
+    "lead": "Kotoriyama alone makes for a short stay—bundle Terume Hakuryo, the road station, and Tazawamori Castle Ruins Park for a full day in Oe town.",
+    "badge": "SNOW · FOOD · SPA",
+    "steps": {
+      "01": {
+        "title": "Morning: Kotoriyama",
+        "body": "Snow debut and sledding on private-feel rope-tow slopes"
+      },
+      "02": {
+        "title": "Lunch: road station or soba",
+        "body": "Oe Koramagase weekly lunch or Soba Cafe Kanya"
+      },
+      "03": {
+        "title": "Afternoon: castle ruins park",
+        "body": "Mogami River and Zao snow views at \"Japan's #1 Park\""
+      },
+      "04": {
+        "title": "Evening: Terume Hakuryo",
+        "body": "High-mineral baths and sauna to warm up"
+      },
+      "05": {
+        "title": "Night: Restaurant Kawakaze",
+        "body": "Yamagata beef and local chicken dinner in Oe"
+      }
+    }
+  },
+  "guides": {
+    "local": {
+      "title": "Private hill × Oe town loop guide",
+      "body": "Pair snow play with onsen in one day—Kotoriyama's low prices, uncrowded slopes, and rope-tow focus fit families making their first turns."
+    },
+    "schools": {
+      "title": "Snow + onsen cross-promotion",
+      "body": "Tow ticket holders get Terume Hakuryo bath discounts and road-station perks—#PrivateGelende #FirstSnowPlay for nearby families."
+    },
+    "summer": {
+      "title": "Private Snow Playground",
+      "body": "Not for hardcore skiers—for families wanting everyday Japanese snow-country life or overseas visitors seeking a private playground culture—position as a family niche.",
+      "hashtags": [
+        "#KotoriyamaSnow",
+        "#OeOnsen",
+        "#PrivateGelende"
+      ]
+    }
+  },
+  "access": {
+    "postal": "999-0601, Japan",
+    "line": "Oe, Nishimurayama District, Yamagata (Kotoriyama Ski Area)",
+    "note": "~40 min by car from JR Shinjo Station · ~5 min to Terume Hakuryo · confirm winter detour routes",
+    "phone": "TEL Oe Tourism Association 0237-62-2111 · check official / tourism sites for facility updates",
+    "places": "<span class=\"place-unit\"><ruby>山形県<rt>Yamagata</rt></ruby></span><span class=\"place-unit\"><ruby>大江町<rt>Oe</rt></ruby></span><span class=\"place-unit\"><ruby>小鳥山<rt>Kotoriyama</rt></ruby></span>",
+    "rentacarEyebrow": "貸切状態のプライベートゲレンデで、初めての雪遊びと極上温泉を満喫する山形ローカル旅。",
+    "rentacarLink": "新庄駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "小鳥山スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Kotoriyama Ski Area",
+    "location": "999-0601 · Oe, Nishimurayama District, Yamagata (Kotoriyama Ski Area)"
+  }
+}

@@ -50,6 +50,10 @@
       "registryId": "bibai-kokusetsu",
       "tier": "mock"
     },
+    "33": {
+      "registryId": "asahidake",
+      "tier": "mock"
+    },
     "34": {
       "registryId": "inosawa-shimin",
       "tier": "mock"
@@ -60,6 +64,14 @@
     },
     "36": {
       "registryId": "kamikawa-nakayama",
+      "tier": "mock"
+    },
+    "37": {
+      "registryId": "kamui-ski-links",
+      "tier": "mock"
+    },
+    "38": {
+      "registryId": "canmore",
       "tier": "mock"
     },
     "39": {
@@ -82,6 +94,10 @@
       "registryId": "toma-choei",
       "tier": "mock"
     },
+    "47": {
+      "registryId": "nakagawa-town",
+      "tier": "mock"
+    },
     "48": {
       "registryId": "nakafuranokita-hoshi",
       "tier": "mock"
@@ -94,28 +110,16 @@
       "registryId": "pippu",
       "tier": "mock"
     },
-    "33": {
-      "registryId": "asahidake",
-      "tier": "mock"
-    },
-    "37": {
-      "registryId": "kamui-ski-links",
-      "tier": "mock"
-    },
-    "38": {
-      "registryId": "canmore",
-      "tier": "mock"
-    },
-    "54": {
-      "registryId": "furano",
-      "tier": "mock"
-    },
     "52": {
       "registryId": "hinode",
       "tier": "mock"
     },
     "53": {
       "registryId": "bifuka",
+      "tier": "mock"
+    },
+    "54": {
+      "registryId": "furano",
       "tier": "mock"
     },
     "57": {
@@ -207,8 +211,16 @@
       "registryId": "ohotakedake",
       "tier": "mock"
     },
+    "95": {
+      "registryId": "kanegasawa",
+      "tier": "mock"
+    },
     "96": {
       "registryId": "kamifuse",
+      "tier": "mock"
+    },
+    "97": {
+      "registryId": "goshogawara-kase",
       "tier": "mock"
     },
     "98": {
@@ -221,6 +233,10 @@
     },
     "102": {
       "registryId": "nakadomari-miyanozawa",
+      "tier": "mock"
+    },
+    "106": {
+      "registryId": "midori-roman-mori",
       "tier": "mock"
     },
     "113": {
@@ -279,12 +295,20 @@
       "registryId": "kushibiki-taranokidai",
       "tier": "mock"
     },
+    "159": {
+      "registryId": "kotori-yama",
+      "tier": "mock"
+    },
     "162": {
       "registryId": "shirataka",
       "tier": "mock"
     },
     "163": {
       "registryId": "shinjo",
+      "tier": "mock"
+    },
+    "166": {
+      "registryId": "tenoko",
       "tier": "mock"
     },
     "167": {
@@ -327,8 +351,16 @@
       "registryId": "hijiri-kogen",
       "tier": "mock"
     },
+    "265": {
+      "registryId": "asahi-prime",
+      "tier": "mock"
+    },
     "284": {
       "registryId": "kirigamine",
+      "tier": "mock"
+    },
+    "308": {
+      "registryId": "oide",
       "tier": "mock"
     },
     "310": {
@@ -399,6 +431,10 @@
       "registryId": "shizenkoen-swiss",
       "tier": "mock"
     },
+    "406": {
+      "registryId": "tajima-bokujo",
+      "tier": "mock"
+    },
     "418": {
       "registryId": "horaguchi",
       "tier": "mock"
@@ -409,6 +445,10 @@
     },
     "424": {
       "registryId": "anzo-koen",
+      "tier": "mock"
+    },
+    "426": {
+      "registryId": "miino-no-hara",
       "tier": "mock"
     },
     "434": {

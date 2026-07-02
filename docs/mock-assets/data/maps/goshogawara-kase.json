@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "goshogawara-kase",
+  "name": {
+    "ja": "五所川原市嘉瀬スキー場",
+    "en": "Goshogawara City Kase Ski Area"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "Deep Research batch #109",
+    "configs/lp-brief/goshogawara-kase.yaml"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/goshogawara-kase-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-anver",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "アンヴァーリフト",
+        "en": "Anver lift"
+      },
+      "shortLabel": {
+        "ja": "アンヴァー",
+        "en": "Anver"
+      },
+      "meta": {
+        "ja": {
+          "種別": "滑走式",
+          "備考": "地元向け1基"
+        },
+        "en": {
+          "Type": "Surface-style",
+          "Note": "Single local lift"
+        }
+      }
+    },
+    {
+      "id": "trail-local",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "ローカル斜面（初級）",
+        "en": "Local slope (beginner)"
+      },
+      "shortLabel": {
+        "ja": "初級",
+        "en": "Beginner"
+      },
+      "meta": {
+        "ja": {
+          "特徴": "短距離・雪遊び向き"
+        },
+        "en": {
+          "Feature": "Short, beginner-friendly snow play"
+        }
+      }
+    },
+    {
+      "id": "trail-jump",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "K20ジャンプ台エリア",
+        "en": "K20 jump area"
+      },
+      "shortLabel": {
+        "ja": "ジャンプ",
+        "en": "Jump"
+      },
+      "meta": {
+        "ja": {
+          "備考": "競技・見学向け"
+        },
+        "en": {
+          "Note": "Competition / viewing area"
+        }
+      }
+    },
+    {
+      "id": "trail-sled",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "sled",
+      "label": {
+        "ja": "ソリ・雪遊びエリア",
+        "en": "Sled & snow-play area"
+      },
+      "shortLabel": {
+        "ja": "そり",
+        "en": "Sled"
+      },
+      "meta": {
+        "ja": {
+          "備考": "ファミリー向け"
+        },
+        "en": {
+          "Note": "Family-friendly"
+        }
+      }
+    }
+  ]
+}

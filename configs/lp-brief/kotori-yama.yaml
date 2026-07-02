@@ -1,0 +1,54 @@
+resortId: kotori-yama
+schemaVersion: "2026-07-02"
+
+name:
+  ja: 小鳥山スキー場
+  en: Kotoriyama Ski Area
+region:
+  ja: 山形県大江町
+  en: Oe, Yamagata
+japowResortId: 159
+
+strategy:
+  ja: 貸切状態のプライベートゲレンデで、初めての雪遊びと極上温泉を満喫する山形ローカル旅。
+  en: Experience a private local snow resort perfect for beginners, paired with premium hot springs in Yamagata.
+archetype: local-value
+copyFrom: shinjo-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 人混みのない貸切感——ロープトーだけの緩斜面で、はじめての雪遊びと舟唄温泉へ。
+    en: A crowd-free private hill—rope-tow gentle slopes for first snow play, then premium onsen nearby.
+  badges: [private-hill, snow-debut, snow-spa]
+
+pillars:
+  - id: value
+    hook: { ja: 圧倒的コスパと貸切感, en: Value · private feel }
+  - id: snow-debut
+    hook: { ja: ロープトーだけのスノーデビュー, en: Rope tow · snow debut }
+  - id: snow-spa
+    hook: { ja: テルメ柏陵×大江町回遊, en: Terume Hakuryo · Oe loop }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+map:
+  sources: ["Deep Research batch #106", "configs/lp-brief/kotori-yama.yaml"]
+  heroImage: images/maps/kotori-yama-hero.png
+
+areaMap:
+  enabled: true
+  hookStrategy:
+    primary: mixed
+    secondary: [food, onsen, sight]
+
+affiliates:
+  rentacar: shinjo_station
+
+humanReview:
+  - japowResortId
+  - 冬季迂回ルート・看板案内
+  - ロープトー営業日・料金

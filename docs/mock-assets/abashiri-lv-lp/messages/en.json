@@ -167,11 +167,11 @@
   },
   "access": {
     "postal": "099-2421, Japan",
-    "line": "28-3 Yobito, Abashiri, Hokkaido",
+    "line": "Yobito 28-3, Abashiri, Hokkaido",
     "note": "~6 km from JR Abashiri Station · ~40 km from Memanbetsu Airport · 428 free parking · ~900 m walk from Kohanso bus stop",
     "phone": "TEL 0152-48-2550 (ski area · in season)",
     "phoneBus": "TEL 0152-45-5655 (off-season · admin office)",
-    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>網走市<rt>Abashiri</rt></ruby></span><span class=\"place-unit\"><ruby>字呼人<rt>Yobito</rt></ruby></span><span class=\"place-unit\">28-3</span>",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>網走市<rt>Abashiri</rt></ruby></span><span class=\"place-unit\"><ruby>字呼人28-3<rt>Yobito 28-3</rt></ruby></span>",
     "rentacarEyebrow": "湖と海の絶景・温泉と蟹",
     "rentacarLink": "女満別空港でレンタカー予約",
     "rentacarNote": "スカイチケット（外部サイト）",
@@ -179,7 +179,7 @@
   },
   "footer": {
     "copyright": "© Abashiri Lake View Ski Area",
-    "location": "099-2421 · 28-3 Yobito, Abashiri, Hokkaido"
+    "location": "099-2421 · Yobito 28-3, Abashiri, Hokkaido"
   },
   "nearbyFood": {
     "backLink": "Back to guide home",

@@ -2466,6 +2466,236 @@
       "affiliates": {
         "rentacar": "komatsu_airport_kanazawa"
       }
+    },
+    {
+      "id": "tenoko",
+      "slug": "tenoko-lp",
+      "name": {
+        "ja": "手ノ子スキー場",
+        "en": "Tenoko Ski Resort"
+      },
+      "region": {
+        "ja": "山形県飯豊町",
+        "en": "Iide, Yamagata"
+      },
+      "strategy": {
+        "ja": "昭和レトロな食堂と珍しいシュレップリフトがエモい、完全貸切感覚のローカルスノーパーク。",
+        "en": "Experience authentic retro Japan and untouched local snow at our uncrowded, nostalgic snow park."
+      },
+      "guidePath": "/tenoko/",
+      "guideUrl": "https://guides.japowserch.com/tenoko/",
+      "japowResortId": 166,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "shinjo_station"
+      }
+    },
+    {
+      "id": "kanegasawa",
+      "slug": "kanegasawa-lp",
+      "name": {
+        "ja": "金ヶ沢スキー場",
+        "en": "Kanegasawa Ski Area"
+      },
+      "region": {
+        "ja": "青森県新郷村",
+        "en": "Shingo, Aomori"
+      },
+      "strategy": {
+        "ja": "キリストの里にひっそり佇む、完全プライベート＆パウダー確定の秘境ローカルゲレンデ。",
+        "en": "A hidden local ski area with perfect powder and private night skiing, located in the mysterious village of Shingo."
+      },
+      "guidePath": "/kanegasawa/",
+      "guideUrl": "https://guides.japowserch.com/kanegasawa/",
+      "japowResortId": 95,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "morioka_station"
+      }
+    },
+    {
+      "id": "midori-roman-mori",
+      "slug": "midori-roman-mori-lp",
+      "name": {
+        "ja": "みどりの大地とロマンの森公園スキー場",
+        "en": "Midori-no-daichi to Roman-no-mori Koen Ski Area"
+      },
+      "region": {
+        "ja": "青森県東北町",
+        "en": "Tohoku, Aomori"
+      },
+      "strategy": {
+        "ja": "1日110円から。上級者ゼロの安心空間で、日本一黒い温泉と楽しむ雪山デビューパーク。",
+        "en": "A safe first-snow park from ¥110."
+      },
+      "guidePath": "/midori-roman-mori/",
+      "guideUrl": "https://guides.japowserch.com/midori-roman-mori/",
+      "japowResortId": 106,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "morioka_station"
+      }
+    },
+    {
+      "id": "asahi-prime",
+      "slug": "asahi-prime-lp",
+      "name": {
+        "ja": "あさひプライムスキー場",
+        "en": "Asahi Prime Ski Resort"
+      },
+      "region": {
+        "ja": "長野県朝日村",
+        "en": "Asahi, Nagano"
+      },
+      "strategy": {
+        "ja": "はじめての雪遊びからスキーデビューまで、家族の笑顔を約束する安心・安全のプライベートゲレンデ。",
+        "en": "The perfect and safest private slope for your family's very first ski debut and snow experience."
+      },
+      "guidePath": "/asahi-prime/",
+      "guideUrl": "https://guides.japowserch.com/asahi-prime/",
+      "japowResortId": 265,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "kamisuwa_kirigamine_kogen"
+      }
+    },
+    {
+      "id": "goshogawara-kase",
+      "slug": "goshogawara-kase-lp",
+      "name": {
+        "ja": "五所川原市嘉瀬スキー場",
+        "en": "Goshogawara City Kase Ski Area"
+      },
+      "region": {
+        "ja": "青森県五所川原市",
+        "en": "Goshogawara, Aomori"
+      },
+      "strategy": {
+        "ja": "津軽鉄道で途中下車し、無料のローカルゲレンデと金木エリアの温泉・食堂を一日でめぐるディープ津軽旅。",
+        "en": "Hop off the Tsugaru Railway for a free local ski hill, then loop through Kanagi onsen, culture, and comfort food in one deep-Tsugaru winter day."
+      },
+      "guidePath": "/goshogawara-kase/",
+      "guideUrl": "https://guides.japowserch.com/goshogawara-kase/",
+      "japowResortId": 97,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "morioka_station"
+      }
+    },
+    {
+      "id": "kotori-yama",
+      "slug": "kotori-yama-lp",
+      "name": {
+        "ja": "小鳥山スキー場",
+        "en": "Kotoriyama Ski Area"
+      },
+      "region": {
+        "ja": "山形県大江町",
+        "en": "Oe, Yamagata"
+      },
+      "strategy": {
+        "ja": "貸切状態のプライベートゲレンデで、初めての雪遊びと極上温泉を満喫する山形ローカル旅。",
+        "en": "Experience a private local snow resort perfect for beginners, paired with premium hot springs in Yamagata."
+      },
+      "guidePath": "/kotori-yama/",
+      "guideUrl": "https://guides.japowserch.com/kotori-yama/",
+      "japowResortId": 159,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "shinjo_station"
+      }
+    },
+    {
+      "id": "miino-no-hara",
+      "slug": "miino-no-hara-lp",
+      "name": {
+        "ja": "三井野原スキー場",
+        "en": "Miinohara Ski Resort"
+      },
+      "region": {
+        "ja": "島根県奥出雲町",
+        "en": "Okuizumo, Shimane"
+      },
+      "strategy": {
+        "ja": "リフトが無いからこそ安全・安心！JR秘境駅から徒歩2分、温泉と出雲そばも満喫できる「雪遊び・スノーデビュー」の聖地。",
+        "en": "Zero chairlifts, zero worries! Japan's premier snow-debut park just 2 minutes from a snowy station, perfectly paired with local hot springs and legendary Soba."
+      },
+      "guidePath": "/miino-no-hara/",
+      "guideUrl": "https://guides.japowserch.com/miino-no-hara/",
+      "japowResortId": 426,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "yamaguchi_ube_airport"
+      }
+    },
+    {
+      "id": "nakagawa-town",
+      "slug": "nakagawa-town-lp",
+      "name": {
+        "ja": "中川町民スキー場",
+        "en": "Nakagawa Town Ski Area"
+      },
+      "region": {
+        "ja": "北海道中川町",
+        "en": "Nakagawa, Hokkaido"
+      },
+      "strategy": {
+        "ja": "道北良質パウダーを400円で。降雪API直結のライブダッシュボードで、町民スキー場の運営情報を透明に開示する。",
+        "en": "Northern Hokkaido powder for ¥400. A live dashboard wired to snowfall data—transparent ops for a true town hill."
+      },
+      "guidePath": "/nakagawa-town/",
+      "guideUrl": "https://guides.japowserch.com/nakagawa-town/",
+      "japowResortId": 47,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "asahikawa_airport"
+      }
+    },
+    {
+      "id": "oide",
+      "slug": "oide-lp",
+      "name": {
+        "ja": "小出スキー場",
+        "en": "Koide Ski Resort"
+      },
+      "region": {
+        "ja": "新潟県魚沼市",
+        "en": "Uonuma, Niigata"
+      },
+      "strategy": {
+        "ja": "「迷子ゼロ」の安心安全な斜面と絶景温泉で、家族の雪山デビューを最高の思い出に。",
+        "en": "The perfect family snow debut with zero-lost-children slopes and a scenic hot spring."
+      },
+      "guidePath": "/oide/",
+      "guideUrl": "https://guides.japowserch.com/oide/",
+      "japowResortId": 308,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "niigata_airport"
+      }
+    },
+    {
+      "id": "tajima-bokujo",
+      "slug": "tajima-bokujo-lp",
+      "name": {
+        "ja": "但馬牧場公園スキー場",
+        "en": "Tajima Bokujo Park Ski Area"
+      },
+      "region": {
+        "ja": "兵庫県新温泉町",
+        "en": "Shinonsen, Hyogo"
+      },
+      "strategy": {
+        "ja": "牧場公園冬季営業・関西ファミリー・レディースデー",
+        "en": "Ranch park winter ops · Kansai families · Ladies Day"
+      },
+      "guidePath": "/tajima-bokujo/",
+      "guideUrl": "https://guides.japowserch.com/tajima-bokujo/",
+      "japowResortId": 406,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "kansai_international_airport"
+      }
     }
   ],
   "guides": {

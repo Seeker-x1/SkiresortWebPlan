@@ -277,6 +277,21 @@ const RESORT_COPY = {
       rentacarHint: "Watch winter closures on Kirigamine road",
     },
   },
+  "asahi-prime": {
+    rentacar: "kamisuwa_kirigamine_kogen",
+    ja: {
+      rentacarEyebrow: "長野・松本圏",
+      rentacarLink: "上諏訪・霧ヶ峰でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "塩尻IC・朝日村・松本周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Nagano · Matsumoto area",
+      rentacarLink: "Book a rental car at Kamisuwa · Kirigamine",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Shiojiri IC, Asahi village, and Matsumoto loops",
+    },
+  },
   shinjo: {
     rentacar: "shinjo_station",
     ja: {

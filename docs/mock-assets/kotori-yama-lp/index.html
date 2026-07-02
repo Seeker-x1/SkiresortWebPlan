@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html>
+<html lang="ja" data-mock-resort="kotori-yama">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>小鳥山スキー場</title>
+  <meta name="description" content="貸切感のロープトーだけの緩斜面——初めての雪遊びとテルメ柏陵・大江町グルメを1日で回遊する山形ローカル旅。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="#" class="logo" data-i18n="logo">小鳥山スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
+          <li class="nav-map-item"><a href="../map.html?resort=kotori-yama" data-i18n="nav.map" data-i18n-attr="title:nav.mapHint">ゲレンデマップ</a><span class="nav-map-hint" data-i18n="nav.mapHint" aria-hidden="true">概略（未検証の場合あり）</span></li>
+          <li><a href="#live" data-i18n="nav.live">本日</a></li>
+          <li><a href="#pass" data-i18n="nav.pass">パス</a></li>
+          <li><a href="#family" data-i18n="nav.family">ファミリー</a></li>
+          <li><a href="#spa" data-i18n="nav.spa">温泉</a></li>
+          <li><a href="#highlights" data-i18n="nav.highlights">魅力</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-kotori-yama-hero.png" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">山形県大江町 · 西村山</p>
+        <h1 class="hero-title" data-i18n-html="hero.title">小鳥山<br />スキー場</h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">貸切状態のプライベートゲレンデで、初めての雪遊びと極上温泉を満喫する山形ローカル旅。</p>
+        <span class="badge-price" data-i18n="hero.badgeLocal">ロープトーのみ</span>
+        <span class="badge-visitor" data-i18n="hero.badgeVisitor">貸切感・コスパ</span>
+        <span class="badge-sled" data-i18n="hero.badgeSled">温泉まで約5分</span>
+        <div class="hero-cta">
+          <a href="#pass" class="btn btn-gold" data-i18n="hero.ctaPass">料金・パス</a>
+          <a href="#live" class="btn btn-ghost" data-i18n="hero.ctaLive">本日のコンディション</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="live" class="live-dashboard" data-i18n-attr="aria-label:live.ariaLabel">
+      <div class="inner">
+        <div class="live-head">
+          <div>
+            <span class="live-pulse" aria-hidden="true"></span>
+            <span class="live-label">Live</span>
+            <span style="font-size:0.75rem;color:var(--muted);margin-left:0.5rem" data-i18n="live.subtitle">小規模ローカルゲレンデ</span>
+          </div>
+          <p class="live-updated" data-i18n="live.updatedAt">更新 1/15 9:00</p>
+        </div>
+        <div class="status-grid">
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.lift.label">ロープトー</p>
+            <p class="status-card__value" data-i18n="live.lift.value">運行中</p>
+            <p class="status-card__note" data-i18n="live.lift.note">リフトなし · ロープトー中心</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.courses.label">斜面</p>
+            <p class="status-card__value" data-i18n="live.courses.value">緩斜面中心</p>
+            <p class="status-card__note" data-i18n="live.courses.note">最大22° · 短距離滑走</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.night.label">混雑</p>
+            <p class="status-card__value" data-i18n="live.night.value">貸切に近い</p>
+            <p class="status-card__note" data-i18n="live.night.note">平日は人目を気にせず雪遊び</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.yotei.label">周辺</p>
+            <p class="status-card__value" style="color:var(--accent-yotei)" data-i18n="live.yotei.value">テルメ柏陵</p>
+            <p class="status-card__note" data-i18n="live.yotei.note">車で約5分 · 舟唄温泉</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="transit-heading">
+      <div class="inner">
+        <div class="transit-grid">
+          <div class="transit-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-kotori-yama-transit.png"
+                data-i18n-attr="alt:transit.imgAlt"
+                alt="雪国の道——大江町・小鳥山スキー場方面の冬のドライブ"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="transit-card">
+            <p class="eyebrow" data-i18n="transit.eyebrow">Local Access</p>
+            <h2 id="transit-heading" class="heading-lg" data-i18n-html="transit.title">新庄から大江町へ、<br />ローカル雪遊びの丘へ。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:28rem" data-i18n="transit.lead">
+              山形新幹線・新庄駅から車で大江町方面へ——看板が見つけにくい冬季ルートは公式の迂回案内とGoogleマップのピン位置を事前確認。到着後は混雑のない小鳥山で、気兼ねないスノーデビューとソリ遊びを。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="transit.specs.0">新庄駅から車で約40分</li>
+              <li class="spec-tag" data-i18n="transit.specs.1">テルメ柏陵まで約5分</li>
+              <li class="spec-tag" data-i18n="transit.specs.2">冬季通行止めルートに注意</li>
+            </ul>
+            <div class="transit-actions">
+              <a href="#pass" class="btn btn-gold" data-i18n="transit.ctaPass">料金を見る</a>
+              <a href="#live" class="btn btn-ghost" data-i18n="transit.ctaLive">本日の運営</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top" aria-labelledby="paths-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.explore">Explore</p>
+        <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
+        <div class="path-grid">
+          <a href="#live" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.today.label">今日</span>
+            <span class="path-tile__title" data-i18n="paths.today.title">ロープトー・雪質・混雑</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#access" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.access.label">アクセス</span>
+            <span class="path-tile__title" data-i18n="paths.access.title">新庄から大江町方面</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#pass" class="path-tile span-6">
+            <span class="path-tile__label" data-i18n="paths.pass.label">料金</span>
+            <span class="path-tile__title" data-i18n="paths.pass.title">コスパの良い日券</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#family" class="path-tile span-6">
+            <span class="path-tile__label" data-i18n="paths.family.label">ファミリー</span>
+            <span class="path-tile__title" data-i18n="paths.family.title">スノーデビュー・ソリ</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#spa" class="path-tile span-6">
+            <span class="path-tile__label" data-i18n="paths.spa.label">温泉</span>
+            <span class="path-tile__title" data-i18n="paths.spa.title">テルメ柏陵・大江回遊</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#rental" class="path-tile span-6">
+            <span class="path-tile__label" data-i18n="paths.rental.label">レンタル</span>
+            <span class="path-tile__title" data-i18n="paths.rental.title">手ぶら雪遊び</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section" aria-labelledby="highlights-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="highlights.eyebrow">小鳥山の魅力</p>
+        <h2 id="highlights-heading" class="heading-lg" data-i18n="highlights.title">ここが違う</h2>
+
+        <div class="highlight-duet">
+          <article class="highlight-primary">
+            <div class="frame">
+              <img
+                src="lp-mock-kotori-yama-hero.png"
+                data-i18n-attr="alt:highlights.primary.imgAlt"
+                alt="人混みのない小鳥山スキー場——緩やかな雪原とロープトー"
+                width="1600"
+                height="1100"
+              />
+            </div>
+            <div class="highlight-primary-body">
+              <h3 data-i18n="highlights.primary.title">貸切感 × 圧倒的コスパ</h3>
+              <p class="lead" style="margin-top:1rem" data-i18n="highlights.primary.lead">
+                近隣の大型ゲレンデと比べ設備は小規模だが、「人目を気にせず大ボーゲンで転んでも恥ずかしくない」プライベート空間と低価格が最大の武器——初心者・家族のスノーデビューに最適なローカルゲレンデ。
+              </p>
+              <a href="#" class="btn btn-gold" style="margin-top:2rem" data-i18n="highlights.primary.cta">コース・雪遊びを見る</a>
+            </div>
+          </article>
+
+          <article class="highlight-secondary">
+            <h3 data-i18n="highlights.secondary.title">ロープトーだけの安心設計</h3>
+            <p class="lead-whisper" style="margin-top:1rem" data-i18n="highlights.secondary.lead">
+              チェアリフトがなくロープトー中心——急斜面の恐怖が少なく、子どもにスキーを教える「最初の1本」として口コミで高評価。衝突リスクの低さがファミリー層の安心材料。
+            </p>
+            <a href="#family" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="highlights.secondary.cta">ファミリー・初雪案内</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pass" class="section border-top" aria-labelledby="pass-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow" data-i18n="pass.eyebrow">Local Value</p>
+            <h2 id="pass-heading" class="heading-lg" data-i18n-html="pass.title">小さな丘、<br />大きなコスパ。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="pass.lead">
+              滑走距離は短く中級者以上の満足度は限定的だが、日券の低価格と混雑のなさで「初めての雪遊び」「ソリだけの日」に最適——近隣大型店と差別化する価格帯。
+            </p>
+            <div class="price-duet">
+              <div class="price-card">
+                <p class="price-card__label" data-i18n="pass.priceDayLabel">日券</p>
+                <p class="price-card__value" data-i18n="pass.localPrice">日券（低価格帯）</p>
+              </div>
+              <div class="price-card price-card--visitor">
+                <p class="price-card__label" data-i18n="pass.priceBundleLabel">セット</p>
+                <p class="price-card__value" data-i18n="pass.visitorPrice">温泉×雪遊びセット</p>
+              </div>
+            </div>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="pass.specs.0">ロープトー利用券</li>
+              <li class="spec-tag" data-i18n="pass.specs.1">道の駅・温泉連携割引</li>
+              <li class="spec-tag" data-i18n="pass.specs.2">事前オンライン決済</li>
+            </ul>
+            <div class="notice-box">
+              <strong data-i18n="pass.noticeTitle">パートナー施策：</strong><span data-i18n="pass.noticeBody">ロープトー利用券の提示でテルメ柏陵入浴割引や道の駅特典が受けられる相互送客——#貸切ゲレンデ #はじめての雪遊び で近隣ファミリー層へリーチ。</span>
+            </div>
+            <a href="#" class="btn btn-gold" style="margin-top:2rem" data-i18n="pass.cta">料金詳細</a>
+          </div>
+          <div class="feature-visual">
+            <div class="frame frame--wide">
+              <img
+                src="lp-mock-kotori-yama-transit.png"
+                data-i18n-attr="alt:pass.imgAlt"
+                alt="コスパ重視の日帰り雪遊び——小鳥山と大江町回遊"
+                width="1600"
+                height="1100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rental" class="section border-top" aria-labelledby="rental-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-visual feature-visual--left">
+            <div class="frame">
+              <img
+                src="lp-mock-kotori-yama-family.png"
+                data-i18n-attr="alt:rental.imgAlt"
+                alt="手ぶら来場で雪遊びを始める家族——レンタル連携イメージ"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="feature-copy feature-copy--right">
+            <p class="eyebrow" data-i18n="rental.eyebrow">Hands-free Snow</p>
+            <h2 id="rental-heading" class="heading-lg" data-i18n-html="rental.title">手ぶらで来て、<br />そのまま雪遊び。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="rental.lead">
+              大江町内に本格的スキー用品店が少ない——寒河江・天童・山形の大型スポーツ店や宿泊施設と連携し、用具・ウェアの事前レンタル・現地配達を整備する構想。
+            </p>
+            <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="rental.whisper">
+              旅行者が「手ぶらで雪遊び」できる環境で、エリア全体のレンタル在庫を最適化。
+            </p>
+            <a href="#" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="rental.cta">手ぶら案内</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="spa" class="section border-top" aria-labelledby="spa-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow" data-i18n="spa.eyebrow">Snow · Onsen</p>
+            <h2 id="spa-heading" class="heading-lg" data-i18n-html="spa.title">滑ったあと、<br />舟唄温泉へ5分。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="spa.lead">
+              スキー場から約3km・車5分のテルメ柏陵健康温泉館——溶存成分量が高く、日によってエメラルドグリーンや乳白色など6色に変わる舟唄温泉。サウナ完備、レストラン川かぜで山形牛・地鶏も。
+            </p>
+            <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="spa.whisper">
+              道の駅おおえコラマガセ（2024リニューアル）と隣接——週替わりランチとセットの回遊向け。
+            </p>
+            <a href="#" class="btn btn-gold" style="margin-top:2rem" data-i18n="spa.cta">温泉・回遊ルート</a>
+          </div>
+          <div class="feature-visual">
+            <div class="frame frame--wide">
+              <img
+                src="lp-mock-kotori-yama-spa.png"
+                data-i18n-attr="alt:spa.imgAlt"
+                alt="テルメ柏陵の高濃度温泉——雪遊び後の大江町スパ"
+                width="1600"
+                height="1100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="family" class="section border-top" aria-labelledby="family-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-visual feature-visual--left">
+            <div class="frame">
+              <img
+                src="lp-mock-kotori-yama-family.png"
+                data-i18n-attr="alt:family.imgAlt"
+                alt="ソリと初滑り——混雑のない小鳥山のファミリーゾーン"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="feature-copy feature-copy--right">
+            <p class="eyebrow" data-i18n="family.eyebrow">Snow Debut</p>
+            <h2 id="family-heading" class="heading-lg" data-i18n-html="family.title">初めての雪、<br />恥ずかしくない丘。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="family.lead">
+              緩やかな傾斜で初心者に最適——「子供と遊ぶには丁度いい」「最初にスキーを教える場所として最高」との声。ロープトーは腕力が要るため、小さな子はソリゾーン中心の設計が安心。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="family.specs.0">ロープトー・フリップリフト</li>
+              <li class="spec-tag" data-i18n="family.specs.1">ソリ・雪遊び向け</li>
+              <li class="spec-tag" data-i18n="family.specs.2">貸切に近い混雑度</li>
+            </ul>
+            <div class="notice-box">
+              <strong data-i18n="family.noticeTitle">アクセス：</strong><span data-i18n="family.noticeBody">看板が見つけにくい・ナビ迷走の声あり——冬季通行止めルートに入らないよう、公式迂回マップとGoogleマップのピン位置を出発前に確認してください。</span>
+            </div>
+            <a href="#" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="family.cta">ファミリー・初雪案内</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="workation" class="section border-top" aria-labelledby="workation-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="workation.eyebrow">Snow & Spa Day</p>
+        <h2 id="workation-heading" class="heading-lg" data-i18n-html="workation.title">大江町ローカル<br />1Dayトリップ。</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="workation.lead">
+          小鳥山単体では滞在が短くなりがち——テルメ柏陵・道の駅・左沢楯山城史跡公園と組み合わせ、大江町内で一日を完結する回遊モデル。
+        </p>
+        <span class="work-badge" data-i18n="workation.badge">SNOW · FOOD · SPA</span>
+
+        <div class="journey">
+          <div class="journey-step">
+            <p class="journey-step__num">01</p>
+            <p class="journey-step__title" data-i18n="workation.steps.01.title">午前：小鳥山</p>
+            <p class="journey-step__body" data-i18n="workation.steps.01.body">貸切感のロープトー斜面でスノーデビュー・ソリ</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">02</p>
+            <p class="journey-step__title" data-i18n="workation.steps.02.title">昼：道の駅 or 蕎麦</p>
+            <p class="journey-step__body" data-i18n="workation.steps.02.body">おおえコラマガセの週替わりランチ、または蕎麦cafe閑や</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">03</p>
+            <p class="journey-step__title" data-i18n="workation.steps.03.title">午後：楯山城史跡</p>
+            <p class="journey-step__body" data-i18n="workation.steps.03.body">最上川と蔵王の雪景色——日本一公園で記念撮影</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">04</p>
+            <p class="journey-step__title" data-i18n="workation.steps.04.title">夕方：テルメ柏陵</p>
+            <p class="journey-step__body" data-i18n="workation.steps.04.body">高濃度温泉とサウナで冷えを癒す</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">05</p>
+            <p class="journey-step__title" data-i18n="workation.steps.05.title">夜：レストラン川かぜ</p>
+            <p class="journey-step__body" data-i18n="workation.steps.05.body">山形牛・地鶏の夕食で大江町消費を完結</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.guidesEyebrow">特集</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="common.guidesTitle">特集ページ</h2>
+
+        <ul class="guides-list">
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="true" data-guide="local">
+              <span data-i18n="guides.local.title">貸切ゲレンデ×大江町回遊完全ガイド</span>
+              <span class="guide-icon" aria-hidden="true">−</span>
+            </button>
+            <div class="guide-panel is-open" id="panel-local">
+              <p class="lead" data-i18n="guides.local.body">
+                温泉×雪遊びのパッケージで小鳥山の強み——低価格・混雑なし・ロープトー中心——を一日の旅に組み込む。ライブ混雑度とアクセス案内で、初めての来場も安心。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="schools">
+              <span data-i18n="guides.schools.title">温泉×雪遊び提携キャンペーン</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-schools" hidden>
+              <p class="lead" data-i18n="guides.schools.body">
+                ロープトー利用券の提示でテルメ柏陵入浴割引・道の駅特典——#貸切ゲレンデ #はじめての雪遊び で近隣ファミリー層へ届ける相互送客。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="summer">
+              <span data-i18n="guides.summer.title">Private Snow Playground</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-summer" hidden>
+              <p class="lead" data-i18n="guides.summer.body">
+                本格スキー客向けではなく、雪国の日常や子連れファミリーに「貸切雪遊び場」としての文化体験価値を訴求——気兼ねない初雪デビュー向けのニッチな立地。
+              </p>
+              <div class="hashtags">
+                <span class="hashtag" data-i18n="guides.summer.hashtags.0">#KotoriyamaSnow</span>
+                <span class="hashtag" data-i18n="guides.summer.hashtags.1">#OeOnsen</span>
+                <span class="hashtag" data-i18n="guides.summer.hashtags.2">#PrivateGelende</span>
+              </div>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="access" class="access-section border-top" aria-labelledby="access-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.accessEyebrow">Access</p>
+        <h2 id="access-heading" class="heading-lg" data-i18n="common.location">所在地</h2>
+        <div class="access-grid">
+          <address class="access-address">
+            <span class="access-postal" data-i18n="access.postal">〒999-0601</span>
+            <span class="access-line" data-i18n="access.line">山形県西村山郡大江町（小鳥山スキー場）</span>
+            <p class="access-places" data-i18n-html="access.places" hidden></p>
+            <p class="access-note" data-i18n="access.note">JR新庄駅から車で約40分 · テルメ柏陵まで約5分 · 冬季迂回ルート要確認</p>
+            <p class="access-phone" data-i18n-html="access.phone">TEL 大江町観光協会 0237-62-2111 · 施設情報は公式・観光協会サイト参照</p>
+          </address>
+          <div class="access-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B0%8F%E9%B3%A5%E5%B1%B1%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4"
+              class="btn btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="common.googleMap">Google Mapで開く</span>
+            </a>
+            <a href="tel:0237622111" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">新幹線＋レンタカー</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">新庄駅でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">小鳥山スキー場・大江町周遊向け</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p class="footer-notice" role="note" data-i18n="footer.guideNotice">本ガイドは制作中の案です。写真・イラストは雰囲気の参考であり、実際のゲレンデ・施設と異なる場合があります。料金・営業・道路規制は各施設の公式情報を優先してください。</p>
+      <div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 小鳥山スキー場</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒999-0601 山形県西村山郡大江町（小鳥山スキー場）</span> ·
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B0%8F%E9%B3%A5%E5%B1%B1%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4" target="_blank" rel="noopener noreferrer" data-i18n="common.footerMap">Google Map</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
+  <script>
+    document.querySelectorAll(".guide-trigger").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.guide;
+        const panel = document.getElementById("panel-" + id);
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".guide-trigger").forEach((b) => {
+          b.setAttribute("aria-expanded", "false");
+          b.querySelector(".guide-icon").textContent = "+";
+        });
+        document.querySelectorAll(".guide-panel").forEach((p) => {
+          p.classList.remove("is-open");
+          p.hidden = true;
+        });
+
+        if (!isOpen) {
+          btn.setAttribute("aria-expanded", "true");
+          btn.querySelector(".guide-icon").textContent = "−";
+          panel.classList.add("is-open");
+          panel.hidden = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

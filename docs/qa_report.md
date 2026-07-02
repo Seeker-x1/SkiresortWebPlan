@@ -1,15 +1,17 @@
-# QA / a11y Report — Biei LP area map mock
+# QA / a11y Report — Root template
 
-**Date:** 2026-06-14  
-**Scope:** `docs/mock-assets` — `area-map.html`, `nearby-food.html` embed, `map-embed-layers.js`  
-**Evaluator:** [resort-qa-a11y](e93d5a1a) (L3) → parent P0 remediation  
-**Out of scope:** Root `src/` template, Sichinohe `/map`
+**Date:** 2026-07-02  
+**Scope:** `src/` root template pages and shared components, plus `messages/ja.json` and `messages/en.json`  
+**Evaluator:** `resort-qa-a11y` (L3)  
+**Out of scope:** `docs/mock-assets/*`, Sichinohe production `/map`
 
 ---
 
 ## Verdict
 
-**PASS (post-remediation)** — initial subagent run was **FAIL**; P0 items below were fixed in mock assets.
+**FAIL** — the root template is not shippable yet because **Q4 i18n** fails in a shared component.
+
+`resort-qa-a11y` PASS alone is not sufficient for ship; `resort-visual-evaluator` must also PASS.
 
 ---
 
@@ -17,37 +19,36 @@
 
 | ID | Result | Evidence |
 |----|--------|----------|
-| **Q1** Mobile-first | **PASS** | `.map-embed { min-height: 50dvh }` (`mock.css`). `.area-filter-btn`, `.map-layer-btn` `min-height: 44px`. `.food-spot__map-link` inline-flex + `min-height: 44px`. Leaflet zoom controls `min-width/height: 44px` (`area-map.css`). |
-| **Q2** Accessibility | **PASS** | `:focus-visible` on filter/list/detail/topbar controls (`area-map.css`, `mock.css`). Embed keyboard path via `<select>` POI picker (`area-map.js` `renderEmbedPicker`). `prefers-reduced-motion` on pins, scroll, layer buttons. List remains primary keyboard path for full-page map. |
-| **Q3** Conversion path | **PASS** | LP → embed → spot `地図で見る` → full map CTA within 2–3 interactions. |
-| **Q4** i18n | **PASS** | `syncDocumentLang()` sets `html lang` + `aria-current` (`area-map.js`). Early inline `lang` in `area-map.html` head reduces FOUC on `?lang=en`. |
-| **Q5** Performance | **PASS (scoped)** | Static HTML mock; Leaflet CDN; iframe `loading="lazy"`. `next/image` N/A for static mock. |
-| **Q6** Data separation | **PASS** | POI in `biei-area.json`; icons in `marker-icons.json`. |
+| **Q1** Mobile-first | **PASS** | Mobile controls meet target sizing in reviewed code: `LangSwitcher` buttons use `min-h-[44px] min-w-[44px]`, header menu button is `h-11 w-11`, `Button` enforces `min-h-[44px]`, and bottom nav links use `min-h-[56px]` with safe-area padding via `pb-[env(safe-area-inset-bottom)]`. Layout primitives are fluid (`max-w-6xl`, grid/flex) and no fixed-width overflow risk was found in the root home page components. |
+| **Q2** Accessibility | **PASS** | Keyboard focus is visible through shared focus styles in `src/app/globals.css` and `src/components/ui/Button.tsx`. Skip link is present in `src/app/[locale]/page.tsx`. Meaningful hero imagery uses translated `alt` text in `messages/*.json` and decorative card images use `alt=""` in `src/components/sections/BentoExploreGrid.tsx`. Reduced-motion handling exists in `src/app/globals.css`, `src/lib/use-scroll-reveal.ts`, `src/components/sections/HeroSection.tsx`, and `src/components/ui/AnimatedCounter.tsx`. Lang switcher has `role="group"` and an accessible label in `src/components/layout/LangSwitcher.tsx`. |
+| **Q3** Conversion path | **PASS** | The home flow is linear and visible: hero → live status → dual CTA → ticket pricing in `src/app/[locale]/page.tsx`. Users can reach status and ticket actions within the first scroll and tickets within three taps or fewer. |
+| **Q4** i18n | **FAIL** | Shared component `src/components/sections/PrimaryCtaBand.tsx` hardcodes Japanese in `aria-label="主要アクション"`. This violates the root-template rule of no hardcoded Japanese in components and means `/en` still serves Japanese component copy. Locale routing itself is correct (`/` default ja, `/en` explicit en) via `src/i18n/routing.ts`, `src/middleware.ts`, and `src/app/[locale]/layout.tsx`. |
+| **Q5** Performance | **PASS** | Hero uses `next/image` with `priority` in `src/components/sections/HeroSection.tsx`. Motion loops are guarded for reduced motion (`live-pulse` CSS override, reveal hooks, hero image motion, animated counter). `npm run build` completed successfully on 2026-07-02. |
+| **Q6** Data separation | **PASS** | Locale-dependent copy lives in `messages/ja.json` and `messages/en.json`, while prices, URLs, counts, and other non-locale data are centralized in `src/data/resort-template.ts` and combined in `src/lib/get-resort-data.ts`. No duplicated price/URL constants were found across locale message files. |
 
 ---
 
-## Remediation log (from initial FAIL)
+## Failing items
 
-1. Fixed broken `markerKeyFor()` syntax in `area-map.js`.
-2. Preserved embed toolbar when `initLeafletMap()` rebuilds stage.
-3. Added embed toolbar CSS + 44px zoom controls.
-4. Added focus rings and reduced-motion guards across map/LP controls.
-5. Synced `document.documentElement.lang` and `aria-current` on lang switch.
+1. **Q4 i18n**  
+   `src/components/sections/PrimaryCtaBand.tsx` contains hardcoded Japanese in a shared component:
+   - `aria-label="主要アクション"`
+
+This is a ship blocker for the root template because the English route should not expose Japanese-only component strings.
 
 ---
 
-## Non-blocking findings
+## Verification notes
 
-1. Map pin markers remain click-only (no `tabindex`); list + embed `<select>` cover keyboard selection.
-2. Iframe layer toggle reload may flash (`map-embed-layers.js`).
-3. Re-run formal `resort-qa-a11y` subagent before `src/` port if rubric tightens.
+- Reviewed locale routing and message wiring in `src/i18n/*`, `src/app/[locale]/*`, and `messages/*.json`.
+- Reviewed shared mobile navigation, buttons, footer, and section components under `src/components/`.
+- Ran `npm run build` successfully.  
+- Build warning observed: Next.js reports that `middleware` is deprecated in favor of `proxy`; this is **not** a Q1–Q6 blocker for this QA pass.
 
 ---
 
 ## Ship gate
 
 ```
-resort-qa-a11y PASS + resort-visual-evaluator PASS → mock LP map shippable
+resort-qa-a11y PASS + resort-visual-evaluator PASS → root template UI shippable
 ```
-
-Paired with [map-ux-evaluator](b9ed0d8e) PASS and [resort-visual-evaluator](838d37cf) PASS.

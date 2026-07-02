@@ -1,0 +1,54 @@
+resortId: goshogawara-kase
+schemaVersion: "2026-07-02"
+
+name:
+  ja: 五所川原市嘉瀬スキー場
+  en: Goshogawara City Kase Ski Area
+region:
+  ja: 青森県五所川原市
+  en: Goshogawara, Aomori
+japowResortId: 97
+
+strategy:
+  ja: 津軽鉄道で途中下車し、無料のローカルゲレンデと金木エリアの温泉・食堂を一日でめぐるディープ津軽旅。
+  en: Hop off the Tsugaru Railway for a free local ski hill, then loop through Kanagi onsen, culture, and comfort food in one deep-Tsugaru winter day.
+archetype: local-value
+copyFrom: shinjo-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: ストーブ列車の先にある、無料の雪遊び拠点——津軽のローカル冬景色へ。
+    en: Beyond the Stove Train lies a free snow-play base—an intimate gateway to Tsugaru winter.
+  badges: [free-hill, tsugaru-railway, local-loop]
+
+pillars:
+  - id: free-local
+    hook: { ja: 完全無料 × 地元密着, en: Free hill · local roots }
+  - id: station-access
+    hook: { ja: 嘉瀬駅徒歩圏の雪遊び, en: Walkable from Kase Station }
+  - id: kanagi-loop
+    hook: { ja: 金木の温泉・食堂・文化回遊, en: Kanagi food · onsen · culture loop }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+map:
+  sources: ["Deep Research batch #109", "configs/lp-brief/goshogawara-kase.yaml"]
+  heroImage: images/maps/goshogawara-kase-hero.png
+
+areaMap:
+  enabled: true
+  hookStrategy:
+    primary: mixed
+    secondary: [food, onsen, sight]
+
+affiliates:
+  rentacar: morioka_station
+
+humanReview:
+  - japowResortId
+  - 営業日・ナイター時間
+  - 行政財産でのレンタル実施可否

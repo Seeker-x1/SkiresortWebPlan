@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "title": "Tajima Bokujo Park Ski Area",
+    "description": "Tajima cattle in summer — family slopes in winter."
+  },
+  "logo": "Tajima Bokujo Park Ski Area",
+  "nav": {
+    "schedule": "Hours",
+    "pillars": "Two pillars",
+    "camp": "Ranch park"
+  },
+  "hero": {
+    "eyebrow": "Shinonsen, Hyogo · Tajima Ranch Park",
+    "title": "Tajima Bokujo Park<br />Ski Area",
+    "tagline": "Tajima cattle in summer — family slopes in winter.",
+    "badgePivot": "Ranch park · winter season",
+    "badgeCampus": "Expansive grounds",
+    "stat": "Snow play <strong>4 courses</strong> · Ranch <strong>Tajima cattle · nature</strong>",
+    "ctaCamp": "Ranch park",
+    "ctaNordic": "Slopes · Ladies Day"
+  },
+  "live": {
+    "ariaLabel": "Hours & events",
+    "chip1": "<strong>Dec 20–Mar 8</strong> · Winter season (planned)",
+    "chip2": "<strong>Thu</strong> · Ladies Day (half-price lift)",
+    "chip3": "<strong>Parking</strong> · 200 spaces free",
+    "lineNote": "Tajima Ranch Park · Updated Jul 2"
+  },
+  "pivot": {
+    "eyebrow": "Seasonal Campus",
+    "title": "The ranch becomes<br />slopes in winter.",
+    "lead": "Summer brings Tajima cattle grazing and animal encounters—the same grounds turn into Hyogo's compact family ski area in winter. One pair lift, four courses, a park-style winter day trip from Kansai.",
+    "specs": [
+      "1 pair lift",
+      "4 courses",
+      "Boards allowed"
+    ],
+    "noticeTitle": "Before you go:",
+    "noticeBody": "Operations may change with snow and weather. Closed Thursdays (verify Ladies Day weeks on the official site). Call 0796-92-1005 or check online before departure.",
+    "ctaNordic": "Courses & fees",
+    "imgAlt": "Winter at Tajima Ranch Park—families on gentle slopes"
+  },
+  "paths": {
+    "camp": {
+      "label": "Ranch",
+      "title": "Tajima cattle · park"
+    },
+    "access": {
+      "label": "Access",
+      "title": "60 min from Yoka-Hinozan IC"
+    },
+    "nordic": {
+      "label": "Slopes",
+      "title": "4 courses · Ladies Day"
+    },
+    "schedule": {
+      "label": "Hours",
+      "title": "Winter schedule"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Two Pillars",
+    "title": "Two pillars",
+    "primary": {
+      "title": "Kansai family snow hub",
+      "lead": "One pair lift with a mid-station—Paradise (beginner) through World (advanced, up to 36°). Roughly 30% beginner, 50% intermediate, 20% advanced for first-timers and step-up skiers in one day.",
+      "cta": "Course guide",
+      "imgAlt": "Tajima Bokujo slopes—intermediate tree run with coastal views"
+    },
+    "secondary": {
+      "title": "Ladies Day & après-ski",
+      "lead": "Half-price lift tickets for women junior-high and up on Ladies Day (often Thursday—confirm officially). After skiing, Yumura Onsen Refresh Park is ~15 minutes by car with tatami rest rooms.",
+      "cta": "Onsen & access"
+    }
+  },
+  "camp": {
+    "eyebrow": "Tajima Ranch Park",
+    "title": "Tajima cattle,<br />wide pasture sky.",
+    "lead": "Tajima Ranch Park is a prefectural park for nature and animals. Summer grazing, lawns, and viewpoints—the ski area brand is quiet, but the park campus drives year-round visits.",
+    "specs": [
+      "Tajima cattle grazing",
+      "Animal encounters",
+      "Views · lawns"
+    ],
+    "cta": "Official park site",
+    "imgAlt": "Tajima Ranch Park—cattle and summer pasture"
+  },
+  "nordic": {
+    "eyebrow": "Slopes · Ladies Day",
+    "title": "Four courses,<br />one lift.",
+    "lead": "Paradise (beginner), Sky Road & Pasture (intermediate), World (advanced)—fresh snow on ungroomed sections from the summit. Snowboards allowed everywhere. Weekday all-day lift from ¥2,500 adults (¥2,000 children).",
+    "noticeTitle": "Ladies Day:",
+    "noticeBody": "Half-price lift for women junior-high and up on Ladies Day (day and eligibility—verify officially). May shift when it overlaps regular closure days.",
+    "cta": "Fees & course details",
+    "imgAlt": "Tajima Bokujo Ski Area—pair lift and four-course overview"
+  },
+  "journey": {
+    "eyebrow": "Kansai Day Trip",
+    "title": "From Kansai,<br />snow in a day.",
+    "lead": "From Osaka or Kobe via the Bantan Expressway—~60 minutes from Yoka-Hinozan IC on the Kitakinki-Toyooka Expressway. JR Hamasaka plus local bus also works. 200 free parking spaces suit family drives.",
+    "badge": "KANSAI FAMILY · RANCH PARK",
+    "steps": {
+      "01": {
+        "title": "Osaka · Kobe · KIX",
+        "body": "Bantan route → Yoka-Hinozan IC (~3 h zone)"
+      },
+      "02": {
+        "title": "Tajima Ranch Park",
+        "body": "200 free spaces · compact 1-lift area"
+      },
+      "03": {
+        "title": "Four courses",
+        "body": "Paradise beginner to World advanced"
+      },
+      "04": {
+        "title": "Yumura Onsen",
+        "body": "15 min drive · tatami après-ski"
+      },
+      "05": {
+        "title": "Tajima food & views",
+        "body": "Snow crab · Tajima beef on the way home"
+      }
+    }
+  },
+  "guides": {
+    "pivot": {
+      "title": "Winter pivot at the ranch park",
+      "body": "Seasonal campus ops—cattle pasture becomes ski slopes. Sales focus: Kansai family awareness and a snow-info/mobile refresh where the legacy site is weak."
+    },
+    "nordicGuide": {
+      "title": "Four courses & Ladies Day—compact design",
+      "body": "One pair lift with mid-station—wide beginner to 36° advanced. Thursday half-price Ladies Day builds repeat visits. LP fills the gap where live snow status is thin."
+    },
+    "campGuide": {
+      "title": "Tajima Ranch Park—summer draw",
+      "body": "Tajima cattle and animal programs—year-round park branding supports weak ski-only awareness. Winter slopes plus summer ranch is the differentiator.",
+      "hashtags": [
+        "#TajimaBokujo",
+        "#LadiesDay",
+        "#KansaiFamily"
+      ]
+    }
+  },
+  "access": {
+    "postal": "669-6813, Japan",
+    "line": "1033 Tando, Shinonsen, Mikata-gun, Hyogo",
+    "note": "~60 min by car from Yoka-Hinozan IC · ~45 min by bus from JR Hamasaka · 200 free parking spaces",
+    "phone": "TEL 0796-92-1005 (Tajima Ranch Park)",
+    "places": "<span class=\"place-unit\"><ruby>Hyogo<rt>兵庫県</rt></ruby></span><span class=\"place-unit\"><ruby>Shinonsen<rt>新温泉町</rt></ruby></span><span class=\"place-unit\"><ruby>Tando 1033<rt>丹土1033</rt></ruby></span>",
+    "rentacarEyebrow": "牧場公園冬季営業・関西ファミリー・レディースデー",
+    "rentacarLink": "関西空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "但馬牧場公園スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Tajima Bokujo Park Ski Area",
+    "location": "669-6813 · 1033 Tando, Shinonsen, Mikata-gun, Hyogo"
+  }
+}

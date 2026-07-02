@@ -125,6 +125,16 @@ const EN_ADDRESSES = {
       ["Minehama 110", "字峰浜110番地"],
     ],
   },
+  "nakagawa-town-lp": {
+    postal: "098-0321, Japan",
+    line: "540 Nakagawa, Nakagawa-cho, Nakagawa-gun, Hokkaido",
+    places: [
+      ["Hokkaido", "北海道"],
+      ["Nakagawa-gun", "中川郡"],
+      ["Nakagawa-cho", "中川町"],
+      ["Nakagawa 540", "字中川540"],
+    ],
+  },
 };
 
 const dirs = readdirSync(ROOT).filter((d) => d.endsWith("-lp"));

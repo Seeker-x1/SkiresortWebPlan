@@ -1,0 +1,41 @@
+resortId: asahi-prime
+schemaVersion: "2026-07-02"
+
+name:
+  ja: あさひプライムスキー場
+  en: Asahi Prime Ski Resort
+region:
+  ja: 長野県朝日村
+  en: Asahi, Nagano
+japowResortId: 265
+
+strategy:
+  ja: はじめての雪遊びからスキーデビューまで、家族の笑顔を約束する安心・安全のプライベートゲレンデ。
+  en: The perfect and safest private slope for your family's very first ski debut and snow experience.
+archetype: local-value
+copyFrom: shinjo-lp
+
+audience: domestic
+
+hero:
+  tagline:
+    ja: 塩尻ICから約20分——22基の造雪機で雪質安定、コンパクトだから迷子知らずのファミリーデビュー。
+    en: ~20 min from Shiojiri IC — 22 snow guns, compact layout, worry-free family ski debut.
+  badges: [family, snow-making, shiojiri-ic]
+
+pillars:
+  - id: family
+    hook: { ja: コンパクト×キッズパーク, en: Compact · kids park }
+  - id: school
+    hook: { ja: 無料レッスン・丁寧指導, en: Free lessons · caring coaches }
+  - id: area
+    hook: { ja: そば・クラフト・温泉回遊, en: Soba · craft · onsen loop }
+
+map:
+  sources: ["Deep Research batch #104", "asahivalley.jp"]
+  heroImage: images/maps/asahi-prime-hero.png
+
+humanReview:
+  - japowResortId 265
+  - 料金・営業時間（大人4,600円・ファミリー7,500円）
+  - 塩尻ICからの経路案内

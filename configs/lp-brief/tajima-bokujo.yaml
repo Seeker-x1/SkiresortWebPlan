@@ -1,0 +1,39 @@
+resortId: tajima-bokujo
+schemaVersion: "2026-07-02"
+
+name:
+  ja: 但馬牧場公園スキー場
+  en: Tajima Bokujo Park Ski Area
+region:
+  ja: 兵庫県新温泉町
+  en: Shinonsen, Hyogo
+japowResortId: 406
+
+strategy:
+  ja: 牧場公園冬季営業・関西ファミリー・レディースデー
+  en: Ranch park winter ops · Kansai families · Ladies Day
+archetype: pivot-campus
+
+audience: domestic
+
+hero:
+  tagline:
+    ja: 夏は但馬牛、冬はファミリーゲレンデ。
+    en: Tajima cattle in summer — family slopes in winter.
+  badges: [ranch, ladies-day, kansai]
+
+pillars:
+  - id: ranch
+    hook: { ja: 牧場公園・但馬牛, en: Ranch park · Tajima cattle }
+  - id: slopes
+    hook: { ja: 4コース・レディースデー, en: 4 courses · Ladies Day }
+
+map:
+  sources: ["configs/lp-batch/batch-101-120.json", "www.bokujyo.com/winter/slope.html"]
+  heroImage: images/maps/tajima-bokujo-hero.png
+  copyFrom: tsunan-lp
+
+humanReview:
+  - japowResortId 406
+  - レディースデー実施曜日（木曜半額の記載あり・要公式確認）
+  - 料金・営業時間

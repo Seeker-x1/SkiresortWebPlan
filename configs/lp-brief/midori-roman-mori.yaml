@@ -1,0 +1,51 @@
+﻿resortId: midori-roman-mori
+schemaVersion: "2026-07-02"
+
+name:
+  ja: みどりの大地とロマンの森公園スキー場
+  en: Midori-no-daichi to Roman-no-mori Koen Ski Area
+region:
+  ja: 青森県東北町
+  en: Tohoku, Aomori
+japowResortId: 106
+
+strategy:
+  ja: 1日110円から。上級者ゼロの安心空間で、日本一黒い温泉と楽しむ雪山デビューパーク。
+  en: A safe first-snow park from ¥110, paired with Japan's blackest hot spring.
+archetype: pivot-campus
+copyFrom: tsunan-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 上級者ゼロの緩斜面で雪遊びデビュー。滑ったあとは、日本一黒い東北温泉へ。
+    en: Start snow play on gentle slopes with no advanced riders, then soak in Japan's blackest onsen.
+  badges: [snow-debut, black-onsen, local-value]
+
+pillars:
+  - id: pivot
+    hook: { ja: 雪遊びデビューパーク, en: Snow-debut park }
+  - id: camp
+    hook: { ja: 公園まるごと冬体験, en: Winter park experience }
+  - id: nordic
+    hook: { ja: 110円ローカル練習場, en: ¥110 local practice hill }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+map:
+  sources: ["Deep Research batch #108", "docs/research/inbox/midori-roman-mori.md"]
+  heroImage: images/maps/midori-roman-mori-hero.png
+
+areaMap:
+  enabled: false
+
+affiliates:
+  rentacar: morioka_station
+
+humanReview:
+  - japowResortId
+  - 営業期間・ナイター実施日
+  - ロープトゥ運行ルール

@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html lang="ja" data-mock-resort="nakagawa-town">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>中川町民スキー場</title>
+  <meta name="description" content="400円で味わう、道北の町民パウダー。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="#" class="logo" data-i18n="logo">中川町民スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
+          <li class="nav-map-item"><a href="../map.html?resort=nakagawa-town" data-i18n="nav.map" data-i18n-attr="title:nav.mapHint">ゲレンデマップ</a><span class="nav-map-hint" data-i18n="nav.mapHint" aria-hidden="true">概略（未検証の場合あり）</span></li>
+          <li><a href="#live" data-i18n="nav.live">本日</a></li>
+          <li><a href="#pass" data-i18n="nav.pass">パス</a></li>
+          <li><a href="#highlights" data-i18n="nav.highlights">魅力</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-nakagawa-town-hero.png" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">北海道中川町 · 天塩中川駅徒歩10分</p>
+        <h1 class="hero-title" data-i18n-html="hero.title">中川町民<br />スキー場</h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">400円で味わう、道北の町民パウダー。</p>
+        <span class="badge-price" data-i18n="hero.badgePrice">1日券 ¥400</span>
+        <span class="badge-night" data-i18n="hero.badgeNight">ナイター 月水金</span>
+        <span class="badge-xc" data-i18n="hero.badgeXc">中学生以下無料</span>
+        <div class="hero-cta">
+          <a href="#pass" class="btn btn-secret" data-i18n="hero.ctaPass">Powder400 Pass</a>
+          <a href="#live" class="btn btn-ghost" data-i18n="hero.ctaLive">本日のコンディション</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="live" class="live-dashboard" data-i18n-attr="aria-label:live.ariaLabel">
+      <div class="inner">
+        <div class="live-head">
+          <div>
+            <span class="live-pulse" aria-hidden="true"></span>
+            <span class="live-label">Live</span>
+            <span style="font-size:0.75rem;color:var(--muted);margin-left:0.5rem" data-i18n="live.subtitle">降雪・運営を透明に開示</span>
+          </div>
+          <p class="live-updated" data-i18n="live.updatedAt">更新 7/2 9:00</p>
+        </div>
+        <div class="status-grid">
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.lift1.label">ロープトウ</p>
+            <p class="status-card__value" data-i18n="live.lift1.value">運行中</p>
+            <p class="status-card__note" data-i18n="live.lift1.note">1基 · 昼休みあり</p>
+          </div>
+          <div class="status-card status-card--warn">
+            <p class="status-card__label" data-i18n="live.lift2.label">開館状況</p>
+            <p class="status-card__value" data-i18n="live.lift2.value">積雪次第</p>
+            <p class="status-card__note" data-i18n="live.lift2.note">12月下旬〜3/31（要確認）</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.snow.label">雪質</p>
+            <p class="status-card__value" style="color:var(--accent-powder)" data-i18n="live.snow.value">道北パウダー</p>
+            <p class="status-card__note" data-i18n="live.snow.note">降雪API連携（案）</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.night.label">ナイター</p>
+            <p class="status-card__value" data-i18n="live.night.value">17:30〜20:30</p>
+            <p class="status-card__note" data-i18n="live.night.note">月・水・金のみ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="sanctuary-heading">
+      <div class="inner">
+        <div class="transit-grid">
+          <div class="transit-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-nakagawa-town-night.png"
+                data-i18n-attr="alt:sanctuary.imgAlt"
+                alt="ナイターで照らされた町民ゲレンデ——静かな道北の雪面"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="transit-card">
+            <p class="eyebrow" data-i18n="sanctuary.eyebrow">Town Powder</p>
+            <h2 id="sanctuary-heading" class="heading-lg" data-i18n-html="sanctuary.title">道北の雪質、<br />町民の価格。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:28rem" data-i18n="sanctuary.lead">
+              市街地近郊の小さな町民スキー場。ロープトウ1基・2コースながら、道北ならではの良質な雪を400円で。地元小学校の授業でも使われる、本物の「お砂場」的スキー場です。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="sanctuary.specs.0">2コース</li>
+              <li class="spec-tag" data-i18n="sanctuary.specs.1">ロープトウ1基</li>
+              <li class="spec-tag" data-i18n="sanctuary.specs.2">シーズン券¥4,000</li>
+            </ul>
+            <div class="notice-box">
+              <strong data-i18n="sanctuary.noticeTitle">ご利用の前に：</strong><span data-i18n="sanctuary.noticeBody">ロープトウに昼休みがあり、来場時間によっては待ち時間が発生します。開館日は積雪状況により変わるため、出発前に教育委員会（01656-7-2877）へご確認ください。</span>
+            </div>
+            <div class="transit-actions">
+              <a href="#pass" class="btn btn-secret" data-i18n="sanctuary.ctaPass">Powder400 Pass</a>
+              <a href="#access" class="btn btn-ghost" data-i18n="nav.access">アクセス</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top" aria-labelledby="paths-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.explore">Explore</p>
+        <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
+        <div class="path-grid">
+          <a href="#pass" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.pass.label">パス</span>
+            <span class="path-tile__title" data-i18n="paths.pass.title">Powder400 Pass</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#access" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.access.label">アクセス</span>
+            <span class="path-tile__title" data-i18n="paths.access.title">天塩中川駅徒歩10分</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#live" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.today.label">今日</span>
+            <span class="path-tile__title" data-i18n="paths.today.title">降雪・リフト・ナイター</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#hike" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.hike.label">駅近</span>
+            <span class="path-tile__title" data-i18n="paths.hike.title">JR天塩中川</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section" aria-labelledby="highlights-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="highlights.eyebrow">ここが違う</p>
+        <h2 id="highlights-heading" class="heading-lg" data-i18n="highlights.title">ライブダッシュボード型</h2>
+
+        <div class="highlight-duet">
+          <article class="highlight-primary">
+            <div class="frame">
+              <img
+                src="lp-mock-nakagawa-town-hero.png"
+                data-i18n-attr="alt:highlights.primary.imgAlt"
+                alt="手つかずのパウダー——こぢんまりした町民ゲレンデ"
+                width="1600"
+                height="1100"
+              />
+            </div>
+            <div class="highlight-primary-body">
+              <h3 data-i18n="highlights.primary.title">降雪API × 町公式ポータル</h3>
+              <p class="lead" style="margin-top:1rem" data-i18n="highlights.primary.lead">
+                公式サイトでは間接配信のみの降雪・天候情報を、LP上のライブダッシュボードで直接開示（案）。運休・ナイター・ロープトウ昼休みも隠さず——サブスク型集客の信頼基盤に。
+              </p>
+              <a href="#" class="btn btn-powder" style="margin-top:2rem" data-i18n="highlights.primary.cta">料金・開館時間</a>
+            </div>
+          </article>
+
+          <article class="highlight-secondary">
+            <h3 data-i18n="highlights.secondary.title">400円の町民スキー</h3>
+            <p class="lead-whisper" style="margin-top:1rem" data-i18n="highlights.secondary.lead">
+              大人1日券400円・1回40円、中学生以下無料。大規模リゾートの喧騒から離れ、道北のローカル雪文化をそのまま体験できる——デジタルギャップを埋める価値提案。
+            </p>
+            <a href="#" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="highlights.secondary.cta">シーズン券案内</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pass" class="section border-top" aria-labelledby="pass-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow" data-i18n="pass.eyebrow">Powder400 Pass</p>
+            <h2 id="pass-heading" class="heading-lg" data-i18n-html="pass.title">400円、<br />道北パウダーの入場券。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="pass.lead">
+              旭川空港からレンタカーで国道40号を北上——天塩中川駅近くの町民ゲレンデへ。1日券400円で道北の良質な雪を味わう、海外旅行者向け半日トリップパッケージ（案）。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="pass.specs.0">1日券¥400</li>
+              <li class="spec-tag" data-i18n="pass.specs.1">シーズン¥4,000</li>
+              <li class="spec-tag" data-i18n="pass.specs.2">駐車場20台</li>
+            </ul>
+            <a href="#" class="btn btn-secret" style="margin-top:2rem" data-i18n="pass.cta">開館情報を確認</a>
+          </div>
+          <div class="feature-visual">
+            <div class="frame frame--wide">
+              <img
+                src="lp-mock-nakagawa-town-hub.png"
+                data-i18n-attr="alt:pass.imgAlt"
+                alt="天塩中川駅周辺——雪の道北の町並み"
+                width="1600"
+                height="1100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hike" class="section border-top" aria-labelledby="hike-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-visual feature-visual--left">
+            <div class="frame">
+              <img
+                src="lp-mock-nakagawa-town-station.png"
+                data-i18n-attr="alt:hike.imgAlt"
+                alt="JR天塩中川駅——雪景色の道北ローカル線"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="feature-copy feature-copy--right">
+            <p class="eyebrow" data-i18n="hike.eyebrow">Station Walk</p>
+            <h2 id="hike-heading" class="heading-lg" data-i18n-html="hike.title">駅から10分、<br />町民スキーへ。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="hike.lead">
+              JR天塩中川駅から徒歩10分（車3分）。案内板は少ないが、地元民に密着したひっそりとしたゲレンデ——「存在すら知らない」道北の隠れスキー場体験。
+            </p>
+            <p class="lead" style="margin-top:1rem; max-width:32rem" data-i18n="hike.leadCurry">
+              滑走後は天塩川温泉（音威子府村）や美深のびふか温泉へ——道北周遊の拠点として中川町を位置づける。
+            </p>
+            <a href="#" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="hike.cta">アクセス・周辺MAP</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tour" class="section border-top" aria-labelledby="tour-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="tour.eyebrow">Half-Day Trip</p>
+        <h2 id="tour-heading" class="heading-lg" data-i18n-html="tour.title">旭川空港から、<br />半日で完結。</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="tour.lead">
+          大規模ゲレンデ疲れの「隙間時間」をマネタイズ——400円の町民パウダー半日ジャーニー。
+        </p>
+        <span class="secret-badge" data-i18n="tour.badge">POWDER400 · NORTHERN HOKKAIDO</span>
+
+        <div class="journey">
+          <div class="journey-step">
+            <p class="journey-step__num">01</p>
+            <p class="journey-step__title" data-i18n="tour.steps.01.title">旭川空港</p>
+            <p class="journey-step__body" data-i18n="tour.steps.01.body">レンタカーで国道40号北上</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">02</p>
+            <p class="journey-step__title" data-i18n="tour.steps.02.title">天塩中川駅</p>
+            <p class="journey-step__body" data-i18n="tour.steps.02.body">徒歩10分でゲレンデ</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">03</p>
+            <p class="journey-step__title" data-i18n="tour.steps.03.title">中川町民スキー場</p>
+            <p class="journey-step__body" data-i18n="tour.steps.03.body">ロープトウで400円パウダー</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">04</p>
+            <p class="journey-step__title" data-i18n="tour.steps.04.title">天塩川温泉</p>
+            <p class="journey-step__body" data-i18n="tour.steps.04.body">滑走後の道北温泉（任意）</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">05</p>
+            <p class="journey-step__title" data-i18n="tour.steps.05.title">美深・音威子府</p>
+            <p class="journey-step__body" data-i18n="tour.steps.05.body">道北周遊拠点として（任意）</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.guidesEyebrow">特集</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="common.guidesTitle">特集ページ</h2>
+
+        <ul class="guides-list">
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="true" data-guide="sanctuary">
+              <span data-i18n="guides.sanctuary.title">町民スキー場完全ガイド</span>
+              <span class="guide-icon" aria-hidden="true">−</span>
+            </button>
+            <div class="guide-panel is-open" id="panel-sanctuary">
+              <p class="lead" data-i18n="guides.sanctuary.body">
+                ロープトウ1基・2コース・標高差約20m。スキー場ガイドにも載らない規模ながら、地元小学校の授業利用や400円の1日券——道北ローカル雪文化の縮図。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="workation">
+              <span data-i18n="guides.workation.title">降雪API直結ダッシュボード構想</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-workation" hidden>
+              <p class="lead" data-i18n="guides.workation.body">
+                町公式ポータルでは間接配信のみの降雪・天候を、LP上でリアルタイム開示。運休・ナイター・ロープトウ昼休みも透明化——サブスク型集客の信頼基盤。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="lake">
+              <span data-i18n="guides.lake.title">道北パウダー回廊</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-lake" hidden>
+              <p class="lead" data-i18n="guides.lake.body">
+                美深・音威子府・中川——国道40号沿いの小規模町民ゲレンデ群を周遊する2泊3日モデル。大規模リゾートとの差別化は「静寂」「ローカル価格」「透明な運営情報」。
+              </p>
+              <div class="hashtags">
+                <span class="hashtag" data-i18n="guides.lake.hashtags.0">#Powder400</span>
+                <span class="hashtag" data-i18n="guides.lake.hashtags.1">#NakagawaTown</span>
+                <span class="hashtag" data-i18n="guides.lake.hashtags.2">#NorthernHokkaido</span>
+              </div>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="access" class="access-section border-top" aria-labelledby="access-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.accessEyebrow">Access</p>
+        <h2 id="access-heading" class="heading-lg" data-i18n="common.location">所在地</h2>
+        <div class="access-grid">
+          <address class="access-address">
+            <span class="access-postal" data-i18n="access.postal">〒098-0321</span>
+            <span class="access-line" data-i18n="access.line">北海道中川郡中川町字中川540番地</span>
+            <p class="access-places" data-i18n-html="access.places" hidden></p>
+            <p class="access-note" data-i18n="access.note">JR天塩中川駅より徒歩10分 · 自動車3分 · 駐車場20台</p>
+            <p class="access-phone" data-i18n="access.phoneLodge">TEL 01656-7-2877（中川町教育委員会）</p>
+            <p class="access-phone" data-i18n="access.phoneOps">開館・積雪確認は教育委員会へ</p>
+          </address>
+          <div class="access-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%AD%E5%B7%9D%E7%94%BA%E6%B0%91%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E5%8C%97%E6%B5%B7%E9%81%93%E4%B8%AD%E5%B7%9D%E7%94%BA%E5%AD%97%E4%B8%AD%E5%B7%9D540"
+              class="btn btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="common.googleMap">Google Mapで開く</span>
+            </a>
+            <a href="tel:0165672877" class="btn btn-ghost" data-i18n="common.call">電話する</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">道北良質パウダーを400円で。降雪API直結のライブダッシュボードで、町民スキー場の運営情報を透明に開示する。</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">旭川空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">中川町民スキー場周辺のドライブ向け</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p class="footer-notice" role="note" data-i18n="footer.guideNotice">本ガイドは制作中の案です。写真・イラストは雰囲気の参考であり、実際のゲレンデ・施設と異なる場合があります。料金・営業・道路規制は各施設の公式情報を優先してください。</p>
+      <div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 中川町民スキー場</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒098-0321 北海道中川郡中川町字中川540番地</span> ·
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%AD%E5%B7%9D%E7%94%BA%E6%B0%91%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4+%E5%8C%97%E6%B5%B7%E9%81%93%E4%B8%AD%E5%B7%9D%E7%94%BA%E5%AD%97%E4%B8%AD%E5%B7%9D540" target="_blank" rel="noopener noreferrer" data-i18n="common.footerMap">Google Map</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
+  <script>
+    document.querySelectorAll(".guide-trigger").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.guide;
+        const panel = document.getElementById("panel-" + id);
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".guide-trigger").forEach((b) => {
+          b.setAttribute("aria-expanded", "false");
+          b.querySelector(".guide-icon").textContent = "+";
+        });
+        document.querySelectorAll(".guide-panel").forEach((p) => {
+          p.classList.remove("is-open");
+          p.hidden = true;
+        });
+
+        if (!isOpen) {
+          btn.setAttribute("aria-expanded", "true");
+          btn.querySelector(".guide-icon").textContent = "−";
+          panel.classList.add("is-open");
+          panel.hidden = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

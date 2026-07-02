@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "tajima-bokujo",
+  "name": {
+    "ja": "但馬牧場公園スキー場",
+    "en": "Tajima Bokujo Park Ski Area"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "configs/lp-batch/batch-101-120.json",
+    "www.bokujyo.com/winter/slope.html"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/tajima-bokujo-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-pair",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "ペアリフト",
+        "en": "Pair lift"
+      },
+      "shortLabel": {
+        "ja": "ペア",
+        "en": "Pair"
+      },
+      "meta": {
+        "ja": {
+          "中間駅": "あり",
+          "全長": "約1km"
+        },
+        "en": {
+          "Mid-station": "Yes",
+          "Length": "~1 km"
+        }
+      }
+    },
+    {
+      "id": "trail-paradise",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "パラダイスコース（初級）",
+        "en": "Paradise (beginner)"
+      },
+      "shortLabel": {
+        "ja": "パラダイス",
+        "en": "Paradise"
+      },
+      "meta": {
+        "ja": {
+          "特徴": "ワイド・フラット"
+        },
+        "en": {
+          "Feature": "Wide · flat"
+        }
+      }
+    },
+    {
+      "id": "trail-skyroad",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "スカイロードコース（中級）",
+        "en": "Sky Road (intermediate)"
+      },
+      "shortLabel": {
+        "ja": "スカイロード",
+        "en": "Sky Road"
+      },
+      "meta": {
+        "ja": {
+          "特徴": "眺望・非圧雪あり"
+        },
+        "en": {
+          "Feature": "Views · ungroomed sections"
+        }
+      }
+    },
+    {
+      "id": "trail-pasture",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "パスチャーコース（中級）",
+        "en": "Pasture (intermediate)"
+      },
+      "shortLabel": {
+        "ja": "パスチャー",
+        "en": "Pasture"
+      },
+      "meta": {
+        "ja": {
+          "特徴": "林間・急斜面"
+        },
+        "en": {
+          "Feature": "Tree run · steeper"
+        }
+      }
+    },
+    {
+      "id": "trail-world",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "ワールドコース（上級）",
+        "en": "World (advanced)"
+      },
+      "shortLabel": {
+        "ja": "ワールド",
+        "en": "World"
+      },
+      "meta": {
+        "ja": {
+          "最大斜度": "36°",
+          "雪面": "非圧雪"
+        },
+        "en": {
+          "Max slope": "36°",
+          "Surface": "Ungroomed"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "Tenoko Ski Resort",
+    "description": "Right off Route 113—Showa retro Kamoshika Lodge, a rare schlepplift, uncrowded local snow play, and an Iide onsen loop."
+  },
+  "logo": "Tenoko Ski Resort",
+  "nav": {
+    "family": "Family"
+  },
+  "hero": {
+    "eyebrow": "Iide, Yamagata · Route 113",
+    "title": "Tenoko<br />Ski Resort",
+    "tagline": "Retro cafeteria charm and a rare schlepplift—enjoy uncrowded local snow at a private-feel ski park.",
+    "badgeLocal": "Adult day ticket ¥2,100",
+    "badgeVisitor": "Snow & Spa loop",
+    "badgeSled": "Near Route 113",
+    "ctaPass": "Passes & prices",
+    "ctaLive": "Today conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Town-run local ski area",
+    "updatedAt": "Updated 7/2 9:00",
+    "lift": {
+      "label": "Lift",
+      "value": "2 operating",
+      "note": "Schlepplift 445 m · Rope tow 1"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "3–4 runs",
+      "note": "Max ~450 m · max 18–19°"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Tue Thu Fri Sat",
+      "note": "Night ticket ¥1,200"
+    },
+    "yotei": {
+      "label": "View",
+      "value": "Quiet private-feel runs",
+      "note": "Virtually no lift lines"
+    }
+  },
+  "transit": {
+    "eyebrow": "Route 113 & Station",
+    "title": "Right off Route 113,<br />walkable from Tenoko Station.",
+    "lead": "Past Michi-no-Eki Iide on Route 113—flat access makes it easier to reach by car without steep snowy roads. From Tenoko Station (JR Uetsu Main Line), it is about 15–20 minutes on foot (~1.2 km). After flood damage, replacement buses may run—check service before you go.",
+    "specs": [
+      "Near Route 113",
+      "15–20 min walk from Tenoko Station (~1.2 km)",
+      "Free parking 50–200 spaces"
+    ],
+    "ctaPass": "View pricing",
+    "ctaLive": "Today operations",
+    "imgAlt": "Winter drive on Route 113 toward Tenoko Ski Resort in Iide, Yamagata"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Lifts, night skiing & snow"
+    },
+    "pass": {
+      "label": "Pricing",
+      "title": "Iide winter full-set"
+    },
+    "family": {
+      "label": "Family",
+      "title": "Kamoshika lodge · snow play"
+    },
+    "rental": {
+      "label": "Rental",
+      "title": "Hands-free snow play"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Route 113 · Tenoko Station"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Tenoko",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "Showa retro × private-feel snow",
+      "lead": "At the center house Kamoshika Lodge, ramen and curry are around ¥700. With fewer visitors, the slopes stay fresh—enjoy quality wet snow and powder in a near-private atmosphere.",
+      "cta": "See terrain & snow play",
+      "imgAlt": "Retro cafeteria charm at Kamoshika Lodge and quiet Tenoko snow"
+    },
+    "secondary": {
+      "title": "Rare schlepplift with mid-station drop",
+      "lead": "No chairlifts—only a 445 m schlepplift and rope tow. The nationally rare mid-station drop lets less-fit beginners start partway down.",
+      "cta": "Family & first-snow guide"
+    }
+  },
+  "pass": {
+    "eyebrow": "Iide Winter Set",
+    "title": "After skiing,<br />Yonezawa beef & onsen.",
+    "lead": "Bundle concept: Tenoko lift ticket + Kaminoyu Hotel or Shirasagi Onsen entry + Michi-no-Eki Iide product coupons. Turn single-site spend into an area tour.",
+    "localPrice": "Adult day ticket ¥2,100",
+    "visitorPrice": "Winter full-set",
+    "specs": [
+      "Junior high & below ¥1,200",
+      "Night ticket ¥1,200",
+      "Onsen & roadside station tie-in"
+    ],
+    "noticeTitle": "Before you visit:",
+    "noticeBody": "No single-ride tickets are available. To use lifts, you generally need at least a coupon book (adult ¥1,100). This is a short-term proposal to reduce opportunity loss for light visitors.",
+    "cta": "Pass details",
+    "imgAlt": "Skiing paired with Iide onsen and local Yonezawa beef—an easy day-trip model"
+  },
+  "rental": {
+    "eyebrow": "Hands-free Snow",
+    "title": "Arrive empty-handed,<br />play in the snow.",
+    "lead": "For Route 113 drive visitors—rent a car near Shinjo Station and reach the hill via flat winter roads. Promote sled and tube snow play that does not require ski skills.",
+    "whisper": "QR payments (PayPay, etc.) are proposed to remove cash friction (report ch.6).",
+    "cta": "Hands-free guide",
+    "imgAlt": "Families starting snow play with rental gear—hands-free visit image"
+  },
+  "yukinko": {
+    "eyebrow": "Night Skiing",
+    "title": "Tue Thu Fri Sat<br />night skiing.",
+    "lead": "Lit night skiing on Tue Thu Fri Sat—locals after work and Route 113 road visitors can practice basics comfortably.",
+    "whisper": "Kamoshika Lodge offers ramen/curry around ¥700 after your runs.",
+    "cta": "Night ski info",
+    "imgAlt": "Night-lit slopes at Tenoko Ski Resort—quiet local winter evening"
+  },
+  "family": {
+    "eyebrow": "Retro Snow Park",
+    "title": "Local warmth,<br />room to play.",
+    "lead": "A gentle family slope and a wide central run—practice without crowd pressure. Tube sliding, popular during the 2022 lift outage, is recommended as a permanent attraction.",
+    "specs": [
+      "Mid-station schlepplift",
+      "Kamoshika lodge cafeteria",
+      "Parking right in front of the slopes"
+    ],
+    "noticeTitle": "Family note:",
+    "noticeBody": "Surface lifts are tough for snowboard beginners—snow-play stays (ski, sled, tubes) fit best.",
+    "cta": "Family & first-snow guide",
+    "imgAlt": "Families snow-playing near Kamoshika Lodge—uncrowded local resort feel"
+  },
+  "workation": {
+    "eyebrow": "Area Loop",
+    "title": "Morning snow,<br />lunch at the lodge, evening bath.",
+    "lead": "Morning snow at Tenoko → lunch at Kamoshika Lodge or nearby diners → soak at Kaminoyu or Shirasagi → Michi-no-Eki Iide for souvenirs. A day-trip winter loop model.",
+    "badge": "SKI · FOOD · ONSEN",
+    "steps": {
+      "01": {
+        "title": "Route 113 or Tenoko Station",
+        "body": "Near Michi-no-Eki Iide · replacement buses may run"
+      },
+      "02": {
+        "title": "Tenoko Ski Resort",
+        "body": "Snow play with schlepplift and rope tow"
+      },
+      "03": {
+        "title": "Kamoshika Lodge",
+        "body": "Retro ramen & curry around ¥700"
+      },
+      "04": {
+        "title": "Kaminoyu Hotel",
+        "body": "Sauna and hot spring recovery"
+      },
+      "05": {
+        "title": "Shirasagi Onsen · Michi-no-Eki",
+        "body": "Yonezawa beef and doburoku finale"
+      }
+    }
+  },
+  "guides": {
+    "local": {
+      "title": "Showa retro × near-private local guide",
+      "body": "700-yen ramen at Kamoshika Lodge, 44+ year schlepplift, and fresh uncrowded snow—share with #ShowaRetro and #EmoSki."
+    },
+    "schools": {
+      "title": "Iide winter full-set ticket",
+      "body": "Mutual discounts linking onsen, Michi-no-Eki coupons, and lift tickets—aim for higher area spending per person."
+    },
+    "summer": {
+      "title": "Real Japan winter trip for curious travelers",
+      "body": "A Showa-era local hill with virtually no foreign visitors—pair ¥700 ramen with an English-friendly menu and Michi-no-Eki tie-ins as a deep local JAPOW experience.",
+      "hashtags": [
+        "#TenokoLocal",
+        "#ShowaRetro",
+        "#IideWinter"
+      ]
+    }
+  },
+  "access": {
+    "postal": "〒999-1111",
+    "line": "2555 Tenoko, Iide, Yamagata",
+    "note": "Near Route 113 · 15–20 min walk from JR Tenoko Station (replacement buses may run)",
+    "phone": "TEL +81-238-75-2811 (ski area) · +81-238-72-3111 (Iide Town education dept.)",
+    "places": "",
+    "rentacarEyebrow": "昭和レトロな食堂と珍しいシュレップリフトがエモい、完全貸切感覚のローカルスノーパーク。",
+    "rentacarLink": "新庄駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "手ノ子スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Tenoko Ski Resort",
+    "location": "〒999-1111 2555 Tenoko, Iide, Yamagata"
+  }
+}

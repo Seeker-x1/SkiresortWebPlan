@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Kanegasawa Ski Area",
+    "description": "A hidden local ski area with perfect powder and private night skiing, located in the mysterious village of Shingo."
+  },
+  "logo": "Kanegasawa Ski Area",
+  "hero": {
+    "eyebrow": "Shingo, Aomori · Deep in the mountains off Route 454",
+    "title": "Kanegasawa<br />Ski Area",
+    "tagline": "A hidden local ski area with perfect powder and private night skiing, located in the mysterious village of Shingo.",
+    "badgePrice": "Free admission",
+    "badgeNight": "Night skiing",
+    "badgeXc": "Ungroomed powder",
+    "ctaPass": "Secret Powder Pass",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Transparent ops & snow info",
+    "updatedAt": "Updated Jul 2, 9:00",
+    "lift1": {
+      "label": "Rope tow",
+      "value": "When visitors arrive",
+      "note": "1 surface lift · bowl terrain"
+    },
+    "lift2": {
+      "label": "Opening status",
+      "value": "Confirm ahead",
+      "note": "Weekends too—staff if visitors (confirm)"
+    },
+    "snow": {
+      "label": "Snow quality",
+      "value": "Shade powder",
+      "note": "Ungroomed bowl · snowfall API (plan)"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "Lights installed",
+      "note": "Quiet night runs (confirm)"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Secret Bowl",
+    "title": "Shade bowl terrain<br />keeps miracle snow.",
+    "lead": "One rope tow, 120–200 m runs in a village-run bowl. Built to avoid direct sun, snow holds well—often untouched ungroomed powder. When few visit, staff may start the tow just for you. Warm, deeply local hospitality.",
+    "specs": [
+      "1 rope tow",
+      "Ungroomed bowl",
+      "Free admission"
+    ],
+    "noticeTitle": "Before you go:",
+    "noticeBody": "Mountain roads off Route 454 may close in blizzards. Do not rely on car nav alone—call Shingo Village (0178-78-2111) for snow and opening status. No cafeteria or rentals on site.",
+    "ctaPass": "Secret Powder Pass",
+    "imgAlt": "Night-lit secret bowl—quiet Shingo village snow"
+  },
+  "paths": {
+    "pass": {
+      "label": "Pass",
+      "title": "Secret Powder Pass"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Route 454 · winter roads"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Ops · snow · night skiing"
+    },
+    "hike": {
+      "label": "Winter drive",
+      "title": "45–60 min from Hachinohe"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets it apart",
+    "title": "Live-dashboard model",
+    "primary": {
+      "title": "Ops status × snowfall API",
+      "lead": "\"No visitors, no staff\"—disclosed honestly on a live LP dashboard (plan). Cut the risk of driving out and finding closed runs; build trust with powder hunters.",
+      "cta": "Check opening & snow",
+      "imgAlt": "Untouched powder on a quiet village bowl"
+    },
+    "secondary": {
+      "title": "Free hidden gem",
+      "lead": "Village-run and free. Skip mega-resort crowds—no-track ungroomed powder and near-private sessions. Inconvenience becomes the value.",
+      "cta": "Donation box (plan)"
+    }
+  },
+  "pass": {
+    "eyebrow": "Secret Powder Pass",
+    "title": "Free—your ticket<br />to secret powder.",
+    "lead": "Rent a car at Morioka or Hachinohe and head north on Route 454 to Shingo's secret bowl. Admission is free—leave a coffee-sized donation after your runs (plan): QR plus physical box.",
+    "specs": [
+      "Free admission",
+      "1 rope tow",
+      "Night lights"
+    ],
+    "cta": "Check opening info",
+    "imgAlt": "Snowy Route 454—winter road toward Shingo village"
+  },
+  "hike": {
+    "eyebrow": "Winter Drive",
+    "title": "Cross winter roads<br />to the secret bowl.",
+    "lead": "About 45–60 minutes by car from Hachinohe Station. Public transit is effectively impossible—Route 454 is the lifeline. Nav apps may mislead; check access videos and maps first.",
+    "leadCurry": "After runs, Shingo Onsen (Washi-no-Yu) or Ebisuya Christ Ramen—extend your stay with area loops, not the hill alone.",
+    "cta": "Access & area map",
+    "imgAlt": "Route 454 in deep snow—mountain road to the hills"
+  },
+  "tour": {
+    "eyebrow": "Mystery Retreat",
+    "title": "Mystery & powder,<br />one-day retreat.",
+    "lead": "Christ's Tomb and secret powder in one day—a deep Shingo loop that turns inconvenience into the story (plan).",
+    "badge": "MYSTERY × POWDER · SHINGO",
+    "steps": {
+      "01": {
+        "title": "Christ's Tomb",
+        "body": "Morning: B-grade mystery landmark walk"
+      },
+      "02": {
+        "title": "Ebisuya",
+        "body": "Lunch: Christ Ramen (~¥750)"
+      },
+      "03": {
+        "title": "Kanegasawa Ski",
+        "body": "Afternoon: ungroomed bowl · rope tow"
+      },
+      "04": {
+        "title": "Night skiing",
+        "body": "Dusk: quiet lit runs (confirm)"
+      },
+      "05": {
+        "title": "Shingo Onsen",
+        "body": "Evening: outdoor soak (optional)"
+      }
+    }
+  },
+  "guides": {
+    "sanctuary": {
+      "title": "Secret bowl complete guide",
+      "body": "One rope tow, bowl-shaped ungroomed terrain, free admission. Also a local racing team training hill—a phantom local gem known only to insiders."
+    },
+    "workation": {
+      "title": "Live ops disclosure plan",
+      "body": "Post weekend opening, night skiing, and snow status each morning on X and the LP dashboard (plan). Reduce \"drove out for nothing\" anxiety for distant visitors."
+    },
+    "lake": {
+      "title": "Mystery × powder corridor",
+      "body": "Christ's Tomb, Oishigami Pyramid, Ogata horse-meat sakura nabe—link Shingo with Gonohe and Towada in a 2-night model. Free skiing as the hook for regional spend.",
+      "hashtags": [
+        "#SecretNinjaPowder",
+        "#Kanegasawa",
+        "#ShingoVillage"
+      ]
+    }
+  },
+  "access": {
+    "postal": "〒039-1801",
+    "line": "28-9 Yatsuyaku, Tochigai, Shingo, Sannohe-gun, Aomori",
+    "note": "~45–60 min by car from Hachinohe Sta. · via Route 454 · winter closures possible",
+    "phoneLodge": "TEL 0178-78-2111 (Shingo Village Board of Education)",
+    "phoneOps": "Opening & snow checks via Shingo Village",
+    "places": "<span class=\"place-unit\"><ruby>青森県<rt>Aomori</rt></ruby></span><span class=\"place-unit\"><ruby>三戸郡<rt>Sannohe-gun</rt></ruby></span><span class=\"place-unit\"><ruby>新郷村<rt>Shingo</rt></ruby></span><span class=\"place-unit\"><ruby>戸来八ツ役28-9<rt>28-9 Yatsuyaku, Tochigai</rt></ruby></span>",
+    "rentacarEyebrow": "キリストの里にひっそり佇む、完全プライベート＆パウダー確定の秘境ローカルゲレンデ。",
+    "rentacarLink": "盛岡駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "金ヶ沢スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Kanegasawa Ski Area",
+    "location": "28-9 Yatsuyaku, Tochigai, Shingo, Sannohe-gun, Aomori 039-1801"
+  }
+}

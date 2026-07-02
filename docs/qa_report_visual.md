@@ -1,15 +1,15 @@
 # Visual QA Report — `resort-visual-evaluator` (L3)
 
-**Date:** 2026-06-14  
-**Scope:** Biei LP mock — `nearby-food.html` embedded area map (Leaflet Plan A) + custom marker icons  
-**Files reviewed:** `docs/mock-assets/biei-lp/nearby-food.html`, `docs/mock-assets/biei-lp/mock.css` (map-embed block), `docs/mock-assets/_shared/area-map.js`, `docs/mock-assets/_shared/area-map.css`, `docs/mock-assets/_shared/icons/marker-icons.json`, `docs/mock-assets/_shared/icons/*.png`  
-**Out of scope:** Root template `src/`, `resorts/Sichinohe-CyoueiSki/web/` map fleet
+**Date:** 2026-07-02  
+**Scope:** Root template `src/` top page and shared UI  
+**Files reviewed:** `src/app/[locale]/page.tsx`, `src/app/[locale]/layout.tsx`, `src/app/globals.css`, `src/data/resort-template.ts`, `src/lib/motion.ts`, `src/lib/use-scroll-reveal.ts`, `src/components/layout/*`, `src/components/sections/*`, `src/components/ui/*`  
+**Out of scope:** `resorts/Sichinohe-CyoueiSki/web/` map fleet, LP mock assets
 
 ---
 
 ## Verdict
 
-**PASS**
+**FAIL**
 
 ---
 
@@ -17,33 +17,26 @@
 
 | ID | Result | Evidence |
 |----|--------|----------|
-| **V1** Typography hierarchy | **PASS** | Parent page (`nearby-food.html` § `#food-map`): clear stack — `.eyebrow` (Syne 0.625rem, uppercase) → `.heading-lg` (`clamp(1.75rem, 5vw, 2.75rem)`) → `.lead` (`clamp(0.9375rem, 2.5vw, 1.125rem)`). Layer toggles reuse Syne at 0.6875rem (`mock.css` L993–1010). Food list uses editorial ladder: `.food-spot__tag` → `.food-spot__title` (1.125rem) → `.food-spot__lead` — not BBS flat `text-sm` repetition. Full `area-map.html` rail (non-embed) uses smaller utility scale (`area-rail-title` 0.875rem, list title 0.8125rem) appropriate to sidebar; embed iframe shows map + pin tooltips only (0.6875rem, `area-map.css` L112–118). Japanese hero uses `line-break: strict; word-break: keep-all` on `.hero-title` (mock.css L233–234). |
-| **V2** Spacing rhythm | **PASS** | Section rhythm via `--section: clamp(5rem, 14vw, 9rem)` (mock.css L11, L65) — aligns with 8px grid and Alpine Clarity+ vertical breathing room. Map block: toggles `margin-top: 2rem`, `gap: 0.5rem` (8px); `.map-embed` `margin-top: 1rem`, `border-radius: 0.75rem`, `min-height: 50dvh` (L977–991). CTA row `margin-top: 1.5rem`, `gap: 0.75rem` (nearby-food.html L96). Embed fit padding `[24, 24]` px (`area-map.js` L241). Minor: inline `style="margin-top:1rem"` on leads (nearby-food.html L74–75) duplicates tokenized spacing — not a grid break. |
-| **V3** Photo / visual assets | **PASS** | Leaflet Plan A uses custom Mapular PNG pins via `marker-icons.json` — not default Leaflet blue markers (`area-map.js` L175–198, manifest L6–48). Category differentiation: food `#5a6f85`, onsen `#7ec8e3`, transit `#2f8f8f`, ski `#5e6f8a`, blue-pond `#4588b5` (manifest + PNG review). Ski anchor renders at 40px vs 32px peers; active selection scales to 48px (`area-map.js` L181–185). Hero on page uses resort mock `lp-mock-biei-recovery.png` with `.hero-overlay` gradient (nearby-food.html L36–44; mock.css L209–218) — not generic Unsplash placeholder. OSM raster tiles are acceptable base layer for area mock. |
-| **V4** Micro-interactions | **PASS** | Layer toggles: explicit `transition` + `--ease: cubic-bezier(0.22, 1, 0.36, 1)` (mock.css L13, L1012–1017) — matches `final_requirements.md` motion easing. Active pin: `area-pin--active` drop-shadow + 32→48px icon swap (`area-map.css` L104–110; `area-map.js` L257–265). Buttons: `.btn-primary:hover` `translateY(-1px)` + shadow (mock.css L178–181). `prefers-reduced-motion` partially implemented (mock.css L1118–1121: scroll + `.btn` only); pin/toggle transitions omit reduced-motion — **non-blocking** for mock static HTML (no Framer reveal). Iframe layer sync reloads `src` (`map-embed-layers.js` L38–39) — functional, may flash; acceptable for mock embed. |
-| **V5** Brand consistency | **PASS** | Light Alpine Clarity+ baseline: `--bg: #fafbfc`, `--fg: #1a2332`, `--accent: #5a6f85` (mock.css L3–8) mirrors mock area map `--area-accent: #5a6f85` (`area-map.css` L3–9). Food marker color matches `--accent` (manifest L9). No emoji as UI icons in map chrome; `↗` is typographic suffix only (`mock.css` L957–960; `area-map.js` L336). Pressed layer pill uses `--fg` fill (mock.css L1020–1024) — consistent with `.btn-primary`. Embed hides dark chrome (`area-map-page--embed .area-topbar`, `.area-rail` display none — `area-map.css` L46, L178). |
-| **V6** Benchmark alignment | **PASS** | Identifiable Alpine Clarity+ / LAAX-adjacent patterns: (1) multi-layer map filter UX — food / onsen / anchor toggles with simultaneous layers (`nearby-food.html` L78–84; Plan A bounds profiles in `area-map.js` L201–207); (2) Syne display on eyebrows + map filters; (3) IBM Plex Mono on numbered `.food-spot__num` / `.area-list-item__num`; (4) editorial numbered list vs uniform card grid; (5) custom resort pins (Niseko “real asset” principle) vs stock map markers. |
+| **V1** Typography hierarchy | **PASS** | `src/app/[locale]/layout.tsx` loads **Syne**, **DM Sans**, **IBM Plex Mono**, and **Noto Sans JP**. `src/app/globals.css` sets body to `1rem / 1.75`, defines `.font-display` and `.font-mono-metrics`, and `HeroSection` uses `font-display text-4xl md:text-5xl lg:text-6xl` with editorial line control. `SectionHeading` keeps a single H2 style across `BentoExploreGrid`, `TicketPricing`, `NewsSection`, and `AccessSection`. |
+| **V2** Spacing rhythm | **FAIL** | Major content sections mostly follow `py-16 md:py-24` (`BentoExploreGrid`, `TicketPricing`, `NewsSection`, `AccessSection`), but `PrimaryCtaBand` breaks the page rhythm with `py-6` in `src/components/sections/PrimaryCtaBand.tsx`. The bento grid also drops to `gap-3` on mobile in `src/components/sections/BentoExploreGrid.tsx`, while the spec calls for `gap-4` consistency. |
+| **V3** Photo / visual assets | **FAIL** | `src/data/resort-template.ts` points the hero to `/images/hero-sichinohe.png`, while `docs/final_requirements.md` specifies the v2 approved hero asset as `/public/images/hero-sichinohe.svg`. The local asset is not an Unsplash blocker, but the implementation currently diverges from the approved canonical hero asset. Bento thumbnails remain Unsplash-hosted in the same file; that is WARN-level only per spec. |
+| **V4** Micro-interactions | **PASS** | `src/lib/motion.ts` matches the required reveal curve (`y:24→0`, ease `[0.22, 1, 0.36, 1]`, stagger `0.08`). `HeroSection` implements a one-way `scale: 1.04` over 12s and disables it with `useReducedMotion`. `AnimatedCounter` falls back to static values under reduced motion, and `use-scroll-reveal.ts` swaps to static variants when motion should be reduced. `BentoExploreGrid` adds explicit hover lift `y:-4` rather than relying on default-only Tailwind states. |
+| **V5** Brand consistency | **FAIL** | `src/components/ui/Badge.tsx` uses hardcoded Tailwind color families (`bg-amber-50`, `text-amber-800`, `bg-emerald-50`, `bg-red-50`) instead of the approved token system (`--gold`, `--success`, `--danger`, `--alpine-soft`). This breaks the “globals.css tokens only” requirement and causes shared badges to drift away from the Alpine Clarity+ palette. No emoji UI icons were found; `MobileBottomNav` correctly uses SVG paths. |
+| **V6** Benchmark alignment | **PASS** | The page clearly shows at least three benchmark-derived elements from `docs/design_concepts.md`: a LAAX-style three-metric `LiveStatusStrip`, an Awwwards-style asymmetric bento in `BentoExploreGrid`, and mono tabular metrics for snow/ticket values via `.font-mono-metrics`. |
 
 ---
 
 ## Blockers
 
-None. All mandatory items (V1, V5) pass.
-
----
-
-## Non-blocking findings
-
-1. **Reduced-motion gap:** Add `@media (prefers-reduced-motion: reduce)` rules for `.area-pin`, `.map-layer-btn`, and `.path-tile` transitions before production port to `src/`.
-2. **Inline spacing:** Replace inline `margin-top` / `max-width` on map-section leads with utility classes for V2 consistency.
-3. **Iframe reload flash:** Layer toggle rebuilds iframe `src` — consider `postMessage` layer sync if ported to Next embed without full reload.
-4. **PNG transparency QA:** Verify 32/48px exports on live OSM tiles under both light map and `#e8edf2` embed chrome (manifest notes baked circle+glyph; black matte in asset previews is likely alpha, not a halo defect).
+- **V5 ship blocker:** Refactor `src/components/ui/Badge.tsx` to use the approved design tokens instead of raw Tailwind amber/emerald/red utility colors.
+- **V3 ship blocker:** Align `src/data/resort-template.ts` hero selection with the approved v2 hero asset (`/images/hero-sichinohe.svg`) or update the visual spec if the PNG is the new canonical production asset.
+- **V2 quality blocker:** Normalize section rhythm in `src/components/sections/PrimaryCtaBand.tsx` and restore mobile bento spacing in `src/components/sections/BentoExploreGrid.tsx` to the approved grid cadence.
 
 ---
 
 ## Re-occurrence prevention
 
-Mock map UI must keep **one accent source of truth** — `marker-icons.json` `color` fields must match CSS `--accent` / `--area-accent` when adding categories.
+Shared UI primitives must consume only `globals.css` design tokens; do not introduce raw palette utilities into reusable components.
 
 ---
 
@@ -52,5 +45,3 @@ Mock map UI must keep **one accent source of truth** — `marker-icons.json` `co
 ```
 resort-qa-a11y PASS + resort-visual-evaluator PASS → root template UI shippable
 ```
-
-**Note:** This report covers **Biei LP mock assets** only. Root `src/` template requires a separate evaluation pass before monorepo UI ship.

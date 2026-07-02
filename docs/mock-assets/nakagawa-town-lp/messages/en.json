@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Nakagawa Town Ski Area",
+    "description": "Northern Hokkaido town powder—for ¥400 a day."
+  },
+  "logo": "Nakagawa Town Ski Area",
+  "hero": {
+    "eyebrow": "Nakagawa, Hokkaido · 10 min walk from Teshio-Nakagawa Sta.",
+    "title": "Nakagawa Town<br />Ski Area",
+    "tagline": "Northern Hokkaido town powder—for ¥400 a day.",
+    "badgePrice": "Day ticket ¥400",
+    "badgeNight": "Night skiing Mon/Wed/Fri",
+    "badgeXc": "Free for junior high & under",
+    "ctaPass": "Powder400 Pass",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "Transparent snow & ops info",
+    "updatedAt": "Updated Jul 2, 9:00",
+    "lift1": {
+      "label": "Rope tow",
+      "value": "Operating",
+      "note": "1 surface lift · midday break"
+    },
+    "lift2": {
+      "label": "Opening status",
+      "value": "Snow-dependent",
+      "note": "Late Dec–Mar 31 (confirm)"
+    },
+    "snow": {
+      "label": "Snow quality",
+      "value": "Northern powder",
+      "note": "Snowfall API link (plan)"
+    },
+    "night": {
+      "label": "Night skiing",
+      "value": "17:30–20:30",
+      "note": "Mon · Wed · Fri only"
+    }
+  },
+  "sanctuary": {
+    "eyebrow": "Town Powder",
+    "title": "Northern snow quality,<br />town-run prices.",
+    "lead": "A small municipal hill near downtown Nakagawa—one rope tow, two runs, and genuine northern Hokkaido snow for ¥400. Local elementary schools train here; a true neighborhood \"snow sandbox.\"",
+    "specs": [
+      "2 runs",
+      "1 rope tow",
+      "Season pass ¥4,000"
+    ],
+    "noticeTitle": "Before you go:",
+    "noticeBody": "The rope tow takes a midday break—arrival timing matters. Opening dates depend on snow cover; call the Board of Education (01656-7-2877) before you drive.",
+    "ctaPass": "Powder400 Pass",
+    "imgAlt": "Night-lit town hill—quiet northern Hokkaido snow"
+  },
+  "paths": {
+    "pass": {
+      "label": "Pass",
+      "title": "Powder400 Pass"
+    },
+    "access": {
+      "label": "Access",
+      "title": "10 min from Teshio-Nakagawa"
+    },
+    "today": {
+      "label": "Today",
+      "title": "Snow · lift · night skiing"
+    },
+    "hike": {
+      "label": "Station",
+      "title": "JR Teshio-Nakagawa"
+    }
+  },
+  "highlights": {
+    "eyebrow": "What sets it apart",
+    "title": "Live-dashboard model",
+    "primary": {
+      "title": "Snowfall API × town portal",
+      "lead": "Snow and weather data that the official site only relays indirectly—surfaced on a live LP dashboard (plan). Closures, night hours, and rope-tow breaks disclosed openly—the trust layer for subscription-style outreach.",
+      "cta": "Prices & hours",
+      "imgAlt": "Untouched powder on a compact town hill"
+    },
+    "secondary": {
+      "title": "¥400 town skiing",
+      "lead": "Adult day ticket ¥400, single ride ¥40, free for junior high and under. Skip mega-resort crowds and prices—experience northern Hokkaido's local snow culture as-is.",
+      "cta": "Season pass info"
+    }
+  },
+  "pass": {
+    "eyebrow": "Powder400 Pass",
+    "title": "¥400—your ticket<br />to northern powder.",
+    "lead": "Rent a car at Asahikawa Airport and head north on Route 40 to the hill beside Teshio-Nakagawa Station. A half-day package (plan): ¥400 for authentic northern snow.",
+    "specs": [
+      "Day ticket ¥400",
+      "Season ¥4,000",
+      "20 parking spaces"
+    ],
+    "cta": "Check opening info",
+    "imgAlt": "Teshio-Nakagawa area—snowy northern Hokkaido townscape"
+  },
+  "hike": {
+    "eyebrow": "Station Walk",
+    "title": "10 minutes from the station,<br />into town skiing.",
+    "lead": "10 minutes on foot from JR Teshio-Nakagawa (3 by car). Few signs, deeply local—a quiet hill even guidebooks skip. The \"hidden\" northern Hokkaido experience.",
+    "leadCurry": "After runs, Teshio River Onsen (Otoifuke) or Bifuka Onsen—position Nakagawa as a base for a northern Hokkaido loop.",
+    "cta": "Access & area map",
+    "imgAlt": "JR Teshio-Nakagawa Station in winter snow"
+  },
+  "tour": {
+    "eyebrow": "Half-Day Trip",
+    "title": "From Asahikawa Airport,<br />done in half a day.",
+    "lead": "Monetize the gap between mega-resort days—a half-day journey to ¥400 town powder.",
+    "badge": "POWDER400 · NORTHERN HOKKAIDO",
+    "steps": {
+      "01": {
+        "title": "Asahikawa Airport",
+        "body": "Rental car north on Route 40"
+      },
+      "02": {
+        "title": "Teshio-Nakagawa Sta.",
+        "body": "10-minute walk to the hill"
+      },
+      "03": {
+        "title": "Nakagawa Town Ski",
+        "body": "Rope-tow powder for ¥400"
+      },
+      "04": {
+        "title": "Teshio River Onsen",
+        "body": "Optional post-run soak"
+      },
+      "05": {
+        "title": "Bifuka · Otoifuke",
+        "body": "Optional northern loop stops"
+      }
+    }
+  },
+  "guides": {
+    "sanctuary": {
+      "title": "Town hill complete guide",
+      "body": "One rope tow, two runs, ~20 m vertical. Too small for most guidebooks—yet local schools train here and day tickets cost ¥400. A microcosm of northern local snow culture."
+    },
+    "workation": {
+      "title": "Snowfall-linked dashboard plan",
+      "body": "Surface snow and weather that the town portal only relays indirectly—shown live on the LP. Transparent closures, night skiing, and rope-tow breaks as the trust base for subscription outreach."
+    },
+    "lake": {
+      "title": "Northern powder corridor",
+      "body": "Bifuka, Otoifuke, Nakagawa—small municipal hills along Route 40. Differentiate from mega-resorts with quiet runs, local prices, and transparent ops info.",
+      "hashtags": [
+        "#Powder400",
+        "#NakagawaTown",
+        "#NorthernHokkaido"
+      ]
+    }
+  },
+  "access": {
+    "postal": "〒098-0321",
+    "line": "540 Nakagawa, Nakagawa-cho, Nakagawa-gun, Hokkaido",
+    "note": "10 min walk from JR Teshio-Nakagawa · 3 min by car · 20 parking spaces",
+    "phoneLodge": "TEL 01656-7-2877 (Nakagawa Board of Education)",
+    "phoneOps": "Opening & snow checks via Board of Education",
+    "places": "<span class=\"place-unit\"><ruby>北海道<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>中川郡<rt>Nakagawa-gun</rt></ruby></span><span class=\"place-unit\"><ruby>中川町<rt>Nakagawa-cho</rt></ruby></span><span class=\"place-unit\"><ruby>字中川540<rt>Nakagawa 540</rt></ruby></span>",
+    "rentacarEyebrow": "道北良質パウダーを400円で。降雪API直結のライブダッシュボードで、町民スキー場の運営情報を透明に開示する。",
+    "rentacarLink": "旭川空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "中川町民スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Nakagawa Town Ski Area",
+    "location": "540 Nakagawa, Nakagawa-cho, Nakagawa-gun, Hokkaido 098-0321"
+  }
+}

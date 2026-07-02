@@ -1,0 +1,51 @@
+resortId: miino-no-hara
+schemaVersion: "2026-07-02"
+
+name:
+  ja: 三井野原スキー場
+  en: Miinohara Ski Resort
+region:
+  ja: 島根県奥出雲町
+  en: Okuizumo, Shimane
+japowResortId: 426
+
+strategy:
+  ja: リフトが無いからこそ安全・安心！JR秘境駅から徒歩2分、温泉と出雲そばも満喫できる「雪遊び・スノーデビュー」の聖地。
+  en: Zero chairlifts, zero worries! Japan's premier snow-debut park just 2 minutes from a snowy station, perfectly paired with local hot springs and legendary Soba.
+archetype: transit-onsen
+copyFrom: shinjo-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: JR木次線・三井野原駅から徒歩2分——ロープトーだけの、はじめての雪遊び。
+    en: Two minutes from Miinohara Station on the JR Kisuki Line — rope-tow snow play for first-timers.
+  badges: [snow-debut, station-walk, onsen-soba]
+
+pillars:
+  - id: transit
+    hook: { ja: JR秘境駅から徒歩2分, en: Hidden station · 2-min walk }
+  - id: snow-debut
+    hook: { ja: ロープトーだけのスノーデビュー, en: Rope tow · safe snow debut }
+  - id: onsen-soba
+    hook: { ja: 斐乃上温泉と高原そば, en: Onsen · Okuizumo soba }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+map:
+  sources: ["Deep Research batch #101", "configs/lp-brief/miino-no-hara.yaml"]
+  heroImage: images/maps/miino-no-hara-hero.png
+
+areaMap:
+  enabled: true
+  hookStrategy:
+    primary: mixed
+    secondary: [food, onsen, sight]
+
+humanReview:
+  - japowResortId
+  - ロープトー営業日・料金
+  - 冬季列車ダイヤ

@@ -1,0 +1,51 @@
+resortId: oide
+schemaVersion: "2026-07-02"
+
+name:
+  ja: 小出スキー場
+  en: Koide Ski Resort
+region:
+  ja: 新潟県魚沼市
+  en: Uonuma, Niigata
+japowResortId: 308
+
+strategy:
+  ja: 「迷子ゼロ」の安心安全な斜面と絶景温泉で、家族の雪山デビューを最高の思い出に。
+  en: The perfect family snow debut with zero-lost-children slopes and a scenic hot spring.
+archetype: transit-onsen
+copyFrom: shinjo-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 魚沼ICから5分・小出駅徒歩圏——コンパクトな斜面と隣接温泉で、家族の雪山デビュー。
+    en: Five minutes from Uonuma IC and a short walk from Koide Station — compact slopes and an adjacent hot spring for family snow debuts.
+  badges: [family-safe, ic-access, onsen-komami]
+
+pillars:
+  - id: transit
+    hook: { ja: 魚沼IC5分・小出駅徒歩10分, en: Uonuma IC · station walk }
+  - id: family
+    hook: { ja: 迷子ゼロのコンパクト斜面, en: Zero-lost-children terrain }
+  - id: onsen
+    hook: { ja: 見晴らしの湯こまみ隣接, en: Michibra no Yu Komami }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+map:
+  sources: ["Deep Research batch #103", "configs/lp-brief/oide.yaml"]
+  heroImage: images/maps/oide-hero.png
+
+areaMap:
+  enabled: true
+  hookStrategy:
+    primary: mixed
+    secondary: [food, onsen, sight]
+
+humanReview:
+  - japowResortId
+  - ナイター営業日（土曜中心）
+  - 料金・未就学児無料

@@ -1,0 +1,52 @@
+resortId: kanegasawa
+schemaVersion: "2026-07-02"
+
+name:
+  ja: 金ヶ沢スキー場
+  en: Kanegasawa Ski Area
+region:
+  ja: 青森県新郷村
+  en: Shingo, Aomori
+japowResortId: 95
+
+strategy:
+  ja: キリストの里にひっそり佇む、完全プライベート＆パウダー確定の秘境ローカルゲレンデ。
+  en: A hidden local ski area with perfect powder and private night skiing, located in the mysterious village of Shingo.
+archetype: live-dashboard
+copyFrom: nakagawa-town-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: キリストの里にひっそり佇む、完全プライベート＆パウダー確定の秘境ローカルゲレンデ。
+    en: A hidden local ski area with perfect powder and private night skiing, located in the mysterious village of Shingo.
+  badges: [free, night, powder]
+
+pillars:
+  - id: live
+    hook: { ja: 運営透明性・ライブ開示, en: Transparent ops · live dashboard }
+  - id: powder
+    hook: { ja: 非圧雪ボウル・日陰雪質, en: Ungroomed bowl · shade snow }
+  - id: mystery
+    hook: { ja: ミステリー×パウダー回遊, en: Mystery × powder loop }
+
+subPages: []
+
+map:
+  sources: ["Deep Research batch #110", "configs/lp-brief/kanegasawa.yaml"]
+  heroImage: images/maps/kanegasawa-hero.png
+
+areaMap:
+  enabled: true
+  hookStrategy:
+    primary: mixed
+    secondary: [food, onsen, sight]
+
+affiliates:
+  rentacar: morioka_station
+
+humanReview:
+  - japowResortId
+  - 国道454号冬季通行止め
+  - 無料利用・ロープトゥ稼働日

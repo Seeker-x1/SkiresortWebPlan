@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "tenoko",
+  "name": {
+    "ja": "手ノ子スキー場",
+    "en": "Tenoko Ski Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "Deep Research batch #107",
+    "configs/lp-brief/tenoko.yaml"
+  ],
+  "updatedAt": "2026-07-02T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/tenoko-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-schlepp",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": {
+        "ja": "シュレップリフト",
+        "en": "Schlepplift"
+      },
+      "shortLabel": {
+        "ja": "シュレップ",
+        "en": "Schlepp"
+      },
+      "meta": {
+        "ja": {
+          "長さ": "445m",
+          "備考": "中間降車場あり"
+        },
+        "en": {
+          "Length": "445 m",
+          "Note": "Mid-station drop-off"
+        }
+      }
+    },
+    {
+      "id": "lift-rope",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": {
+        "ja": "ロープトー（Jバー）",
+        "en": "Rope tow (J-bar)"
+      },
+      "shortLabel": {
+        "ja": "ロープ",
+        "en": "Rope"
+      },
+      "meta": {
+        "ja": {
+          "種別": "滑走式",
+          "備考": "チェアリフトなし"
+        },
+        "en": {
+          "Type": "Surface lift",
+          "Note": "No chairlifts"
+        }
+      }
+    },
+    {
+      "id": "trail-family",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "ファミリーゲレンデ",
+        "en": "Family slope"
+      },
+      "shortLabel": {
+        "ja": "ファミリー",
+        "en": "Family"
+      },
+      "meta": {
+        "ja": {
+          "特徴": "緩斜面中心"
+        },
+        "en": {
+          "Feature": "Gentle terrain"
+        }
+      }
+    },
+    {
+      "id": "trail-central",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "中央ゲレンデ",
+        "en": "Central slope"
+      },
+      "shortLabel": {
+        "ja": "中央",
+        "en": "Central"
+      },
+      "meta": {
+        "ja": {
+          "滑走距離": "約450m",
+          "最大斜度": "18〜19°"
+        },
+        "en": {
+          "Length": "~450 m",
+          "Max slope": "18–19°"
+        }
+      }
+    },
+    {
+      "id": "trail-trial",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "トライアルコース",
+        "en": "Trial course"
+      },
+      "shortLabel": {
+        "ja": "トライアル",
+        "en": "Trial"
+      },
+      "meta": {
+        "ja": {
+          "特徴": "やや急斜面"
+        },
+        "en": {
+          "Feature": "Steeper pitch"
+        }
+      }
+    },
+    {
+      "id": "trail-beech",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "ブナ森コース",
+        "en": "Beech forest run"
+      },
+      "shortLabel": {
+        "ja": "ブナ森",
+        "en": "Beech"
+      },
+      "meta": {
+        "ja": {
+          "備考": "迂回ルート"
+        },
+        "en": {
+          "Note": "Scenic detour"
+        }
+      }
+    }
+  ]
+}

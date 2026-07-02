@@ -1,0 +1,54 @@
+resortId: tenoko
+schemaVersion: "2026-07-02"
+
+name:
+  ja: 手ノ子スキー場
+  en: Tenoko Ski Resort
+region:
+  ja: 山形県飯豊町
+  en: Iide, Yamagata
+japowResortId: 166
+
+strategy:
+  ja: 昭和レトロな食堂と珍しいシュレップリフトがエモい、完全貸切感覚のローカルスノーパーク。
+  en: Experience authentic retro Japan and untouched local snow at our uncrowded, nostalgic snow park.
+archetype: transit-onsen
+copyFrom: shinjo-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 国道113号からすぐ・手ノ子駅徒歩圏——かもしかロッジのレトロ食堂と飯豊温泉で、貸切感のローカル雪遊び。
+    en: Right off Route 113 near Tenoko Station — retro lodge dining and Iide onsen after uncrowded local snow play.
+  badges: [retro-lodge, route-113, snow-spa]
+
+pillars:
+  - id: transit
+    hook: { ja: 国道113号至近・手ノ子駅, en: Route 113 · Tenoko Station }
+  - id: retro
+    hook: { ja: かもしかロッジの昭和食堂, en: Kamoshika retro lodge }
+  - id: onsen
+    hook: { ja: 神乃湯・しらさぎ荘回遊, en: Kaminoyu · Shirasagi onsen loop }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+map:
+  sources: ["Deep Research batch #107", "configs/lp-brief/tenoko.yaml"]
+  heroImage: images/maps/tenoko-hero.png
+
+areaMap:
+  enabled: true
+  hookStrategy:
+    primary: mixed
+    secondary: [food, onsen, sight]
+
+affiliates:
+  rentacar: shinjo_station
+
+humanReview:
+  - japowResortId
+  - 米坂線代行バス・冬季運休
+  - シュレップリフト・料金（1回券なし）

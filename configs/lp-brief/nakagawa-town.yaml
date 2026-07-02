@@ -1,0 +1,46 @@
+resortId: nakagawa-town
+schemaVersion: "2026-07-02"
+
+name:
+  ja: 中川町民スキー場
+  en: Nakagawa Town Ski Area
+region:
+  ja: 北海道中川町
+  en: Nakagawa, Hokkaido
+japowResortId: 47
+
+strategy:
+  ja: 道北良質パウダーを400円で。降雪API直結のライブダッシュボードで、町民スキー場の運営情報を透明に開示する。
+  en: Northern Hokkaido powder for ¥400. A live dashboard wired to snowfall data—transparent ops for a true town hill.
+archetype: live-dashboard
+copyFrom: minami-furano-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 400円で味わう、道北の町民パウダー。
+    en: Northern Hokkaido town powder—for ¥400 a day.
+  badges: [powder400, night-ski, rope-tow]
+
+pillars:
+  - id: live
+    hook: { ja: 降雪API直結ダッシュボード, en: Snowfall-linked live board }
+  - id: local
+    hook: { ja: 町民の雪遊び場, en: Town-run snow play }
+  - id: transit
+    hook: { ja: 天塩中川駅徒歩10分, en: 10 min from Teshio-Nakagawa Sta. }
+
+subPages: []
+
+map:
+  sources: ["configs/lp-batch/batch-101-120.json", "中川町教育委員会公式"]
+  heroImage: images/maps/nakagawa-town-hero.png
+
+areaMap:
+  enabled: false
+
+humanReview:
+  - japowResortId
+  - 積雪次第の開館日
+  - ロープトウ昼休み時間帯
