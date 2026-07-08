@@ -28,25 +28,30 @@ body.has-mock-banner .site-header {
   scroll-margin-top: var(--lp-header-offset);
 }
 
+/* highlight-duet: モバイル overlap 廃止（全幅で縦積み） */
+.highlight-duet {
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+}
+
+.highlight-secondary {
+  position: static;
+  margin-top: 1.5rem;
+  margin-left: 0;
+  width: 100%;
+  z-index: auto;
+}
+
+.highlight-primary-body {
+  margin-bottom: 0.5rem;
+}
+
+.highlight-secondary h3 {
+  text-wrap: balance;
+}
+
 @media (max-width: 1023px) {
   .highlight-duet {
     margin-top: 2.5rem;
-  }
-
-  .highlight-secondary {
-    position: static;
-    margin-top: 1.5rem;
-    margin-left: 0;
-    width: 100%;
-    z-index: auto;
-  }
-
-  .highlight-primary-body {
-    margin-bottom: 0.5rem;
-  }
-
-  .highlight-secondary h3 {
-    text-wrap: balance;
   }
 }
 
