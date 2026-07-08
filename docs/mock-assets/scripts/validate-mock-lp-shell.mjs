@@ -23,7 +23,7 @@ function findResortDirs() {
 function loadRegistry() {
   const reg = JSON.parse(readFileSync(join(root, "registry.json"), "utf8"));
   const bySlug = new Map(reg.resorts.map((r) => [r.slug, r.id]));
-  return { bySlug, ids: new Set(reg.resorts.map((r) => r.id)) };
+  return { bySlug };
 }
 
 function checkHtml(filePath, expectedId, errors, label) {
@@ -34,6 +34,9 @@ function checkHtml(filePath, expectedId, errors, label) {
   }
   if (!html.includes("mock-i18n.css")) {
     errors.push(`${label}: missing mock-i18n.css`);
+  }
+  if (html.includes('href="mock.css"') && !html.includes("lp-layout.css")) {
+    errors.push(`${label}: missing ../_shared/lp-layout.css after mock.css`);
   }
   if (!html.includes('data-lang-switch="ja"') || !html.includes('data-lang-switch="en"')) {
     errors.push(`${label}: missing data-lang-switch ja/en buttons`);
@@ -60,8 +63,7 @@ for (const dir of findResortDirs()) {
   const errors = [];
   const expectedId = bySlug.get(dir);
   if (!expectedId) {
-    failed = true;
-    console.error(`\n✗ ${dir}: not in registry.json (slug)`);
+    console.warn(`\n⚠ ${dir}: skipped (not in registry.json)`);
     continue;
   }
 

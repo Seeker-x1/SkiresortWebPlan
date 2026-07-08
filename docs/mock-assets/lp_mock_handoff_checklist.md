@@ -50,6 +50,7 @@ Step 13  L3 + Human Gate
 - [ ] `mock-i18n.js` / `mock-i18n.css` 読み込み
 - [ ] `data-lang-switch` × 2（ja / en）
 - [ ] `../map.html?resort={id}` ナビリンク
+- [ ] `../_shared/lp-layout.css` 読み込み（`mock.css` の直後）
 - [ ] ユーザー向け文言は `data-i18n*` のみ
 
 ### 1.3 `messages/*.json`
@@ -64,6 +65,7 @@ Step 13  L3 + Human Gate
 
 - [ ] `:root` トークン（`--accent` 等）を施設トーンに調整
 - [ ] `.section`, `.inner`, `.heading-lg`, `.hero-title` を維持
+- [ ] `.site-header` の `top: 1.75rem` は持たない（lp-layout.css が担当）
 - [ ] `@media (prefers-reduced-motion: reduce)` ブロック
 
 ### 1.5 画像・アフィリエイト

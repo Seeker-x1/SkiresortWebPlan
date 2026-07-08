@@ -35,6 +35,7 @@ Step 3   複製元を {id}-lp/ にコピー · data-mock-resort · 他 id 残骸
 Step 4   専用 PNG（lp-mock-{id}-*.png + images/maps/{id}-hero.png）
 Step 5   messages/ja.json + en.json（レポート由来コピー）
 Step 6   index.html セクション配線 · mock.css トークン
+Step 6.5 `node docs/mock-assets/scripts/apply-lp-layout-fix.mjs --id {id}`（mobile overlap と lp-layout 配線）
 Step 7   data/maps/{id}.json + generate-map-data.mjs
 Step 8   registry.json + data/resort-guides.json
 Step 9   apply-rentacar-affiliate.mjs（Skyticket 必須）
