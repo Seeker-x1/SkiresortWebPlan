@@ -1,0 +1,66 @@
+/* LP shared layout — mobile overlap prevention (Phase 1) */
+
+:root {
+  --lp-header-offset: 3.5rem;
+}
+
+html {
+  scroll-padding-top: var(--lp-header-offset);
+}
+
+.site-header {
+  top: 0;
+}
+
+body.has-mock-banner {
+  --lp-header-offset: 5.25rem;
+}
+
+body.has-mock-banner .site-header {
+  top: 1.75rem;
+}
+
+#highlights,
+#paths,
+#access,
+#food-map,
+#onsen-map {
+  scroll-margin-top: var(--lp-header-offset);
+}
+
+@media (max-width: 1023px) {
+  .highlight-duet {
+    margin-top: 2.5rem;
+  }
+
+  .highlight-secondary {
+    position: static;
+    margin-top: 1.5rem;
+    margin-left: 0;
+    width: 100%;
+    z-index: auto;
+  }
+
+  .highlight-primary-body {
+    margin-bottom: 0.5rem;
+  }
+
+  .highlight-secondary h3 {
+    text-wrap: balance;
+  }
+}
+
+@media (max-width: 768px) {
+  .map-embed-actions,
+  .map-embed-cta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .map-embed-cta-row .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

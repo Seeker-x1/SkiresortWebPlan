@@ -196,6 +196,7 @@
   let embedRailOpen = false;
   let embedMobileMq = null;
   let fixedAnchorVisible = { ski: true, "biei-station": true };
+  let embedPopupOpen = false;
 
   const el = {
     shell: document.querySelector(".area-shell"),
@@ -290,6 +291,25 @@
     return [32, 32];
   }
 
+  function popupAutoPanPaddingBottomRight() {
+    if (isEmbedMobile()) return [72, 72];
+    if (embed) return [56, 56];
+    return [32, 32];
+  }
+
+  function syncEmbedFabVisibility() {
+    if (!el.embedListFab) return;
+    const show = isEmbedMobile() && !embedRailOpen && !embedPopupOpen;
+    el.embedListFab.classList.toggle("is-hidden", !show);
+    if (show) {
+      el.embedListFab.removeAttribute("aria-hidden");
+      el.embedListFab.tabIndex = 0;
+    } else {
+      el.embedListFab.setAttribute("aria-hidden", "true");
+      el.embedListFab.tabIndex = -1;
+    }
+  }
+
   function markerKeyFor(feature) {
     if (!markerManifest) return feature.group === "food" ? "food" : feature.group;
     const resortMapping = markerManifest[`${resortId}AreaMapping`];
@@ -361,6 +381,7 @@
       el.embedListFab.setAttribute("aria-expanded", open ? "true" : "false");
       el.embedListFab.textContent = open ? t("embedListFabClose") : t("embedListFab");
     }
+    syncEmbedFabVisibility();
     requestAnimationFrame(() => leafletMap?.invalidateSize());
   }
 
@@ -387,6 +408,7 @@
       btn.addEventListener("click", () => setEmbedRailOpen(!embedRailOpen));
       el.stage.appendChild(btn);
       el.embedListFab = btn;
+      syncEmbedFabVisibility();
     }
 
     embedMobileMq.addEventListener("change", () => {
@@ -580,8 +602,10 @@
       markerById.get(selectedId)?.closePopup();
     }
     selectedId = null;
+    embedPopupOpen = false;
     syncMarkerStyles();
     syncListActive();
+    syncEmbedFabVisibility();
     notifyParentFocus(null);
   }
 
@@ -612,6 +636,7 @@
         minWidth: 240,
         autoPan: true,
         autoPanPadding: popupAutoPanPadding(),
+        autoPanPaddingBottomRight: popupAutoPanPaddingBottomRight(),
         offset: popupOffset(),
         closeButton: false,
       });
@@ -831,11 +856,18 @@
     leafletMap.on("click", () => closePopup());
 
     leafletMap.on("popupopen", (e) => {
+      embedPopupOpen = true;
+      syncEmbedFabVisibility();
       const popupEl = e.popup.getElement();
       if (!popupEl || !window.L) return;
       window.L.DomEvent.disableClickPropagation(popupEl);
       const inner = popupEl.querySelector(".area-map-popup");
       if (inner) window.L.DomEvent.disableClickPropagation(inner);
+    });
+
+    leafletMap.on("popupclose", () => {
+      embedPopupOpen = false;
+      syncEmbedFabVisibility();
     });
 
     leafletMap.on("moveend", () => {

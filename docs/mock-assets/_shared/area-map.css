@@ -265,6 +265,12 @@ body.area-map-page:not(.area-map-page--embed) .area-leaflet-wrap {
     outline-offset: 2px;
   }
 
+  .area-embed-list-fab.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
   .area-map-page--embed.area-embed-rail-open .area-embed-list-fab {
     bottom: calc(min(58%, 20rem) + 0.5rem);
   }
@@ -363,20 +369,20 @@ body.area-map-page:not(.area-map-page--embed) .area-leaflet-wrap {
   justify-content: center;
   width: 100%;
   margin-top: 0.55rem;
-  padding: 0.32rem 0.5rem;
-  min-height: 0;
+  padding: 0.5rem 0.65rem;
+  min-height: 44px;
   border: 1px solid var(--area-popup-cta-border);
   border-radius: 0;
   background: var(--area-popup-cta-bg);
   color: var(--area-popup-cta-fg);
   font-family: Syne, "Noto Sans JP", sans-serif;
-  font-size: 0.5625rem;
+  font-size: 0.6875rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-transform: none;
   text-decoration: none;
   text-align: center;
-  line-height: 1.15;
+  line-height: 1.25;
 }
 
 .area-map-popup__cta:hover {
@@ -395,18 +401,18 @@ body.area-map-page:not(.area-map-page--embed) .area-leaflet-wrap {
   justify-content: center;
   width: 100%;
   margin-top: 0.25rem;
-  padding: 0.28rem 0.5rem;
-  min-height: 0;
+  padding: 0.45rem 0.65rem;
+  min-height: 44px;
   border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: 0;
   background: transparent;
   color: var(--area-popup-fg);
-  font-size: 0.5625rem;
+  font-size: 0.6875rem;
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-decoration: none;
   text-align: center;
-  line-height: 1.15;
+  line-height: 1.25;
 }
 
 .area-map-popup__close {
