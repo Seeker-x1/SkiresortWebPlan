@@ -1,8 +1,9 @@
 /**
  * Generate schematic map JSON for all mock LP resorts.
  * Paths are topological schematics — NOT georeferenced (see disclaimer).
+ * Skips existing mapMode:calibrated files (Map Factory hand-trace).
  */
-import { writeFileSync, mkdirSync } from "fs";
+import { writeFileSync, mkdirSync, existsSync, readFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -30,6 +31,8 @@ function mapBase(id, name, sources, features) {
       viewBox: "0 0 1024 1024",
     },
     bakedLines: true,
+    /** schematic = LP default (no hitbox QA). calibrated = Map Factory only. */
+    mapMode: "schematic",
     features: features.map((f) => {
       const { path, stations, ...rest } = f;
       return rest;
@@ -451,6 +454,26 @@ const MAPS = [
   ),
 
   mapBase(
+    "tatsugomori",
+    { ja: "達子森スキー場", en: "Tatsugomori Ski Area" },
+    ["達子森スキー場 深掘りレポート", "SnowJapan 施設概要", "大館市・指定管理者案内"],
+    [
+      lift("tow-rope", { ja: "ロープトウ", en: "Rope tow" }, { ja: "ロープ", en: "Rope" },
+        "M 300 315 L 320 240 L 338 170", [[300, 315], [338, 170]],
+        { ja: { 料金: "1回50円", 本数: "1基" }, en: { Price: "¥50 per ride", Count: "1 tow" } }),
+      trail("trail-main", { ja: "メイン斜面（初〜中級）", en: "Main slope (beginner–intermediate)" }, { ja: "メイン", en: "Main" },
+        "intermediate", "M 335 175 L 315 240 L 295 315",
+        { ja: { 最長: "約150m", 最大斜度: "18°" }, en: { Length: "~150 m", "Max slope": "18°" } }),
+      trail("trail-upper", { ja: "上部非圧雪エリア", en: "Upper ungroomed zone" }, { ja: "上部", en: "Upper" },
+        "advanced", "M 340 168 L 360 225 L 375 285",
+        { ja: { 備考: "自力登坂前提・雪遊び再定義候補" }, en: { Note: "Hike-up only · possible snow-play zone" } }),
+      trail("trail-family", { ja: "ファミリー雪遊びゾーン", en: "Family snow-play zone" }, { ja: "雪遊び", en: "Play" },
+        "sled", "M 245 300 L 275 320 L 305 332",
+        { ja: { 備考: "そり・初滑り向け" }, en: { Note: "Sleds and first turns" } }),
+    ],
+  ),
+
+  mapBase(
     "asahi-prime",
     { ja: "あさひプライムスキー場", en: "Asahi Prime Ski Resort" },
     ["Deep Research batch #104", "asahivalley.jp", "configs/lp-brief/asahi-prime.yaml"],
@@ -473,6 +496,33 @@ const MAPS = [
     ],
   ),
 
+  mapBase("kutsuki", { ja: "朽木スキー場", en: "Kutsuki Snowpark" },
+    ["朽木スキー場公式", "LP戦略レポート", "高島市観光情報"],
+    [
+      lift("lift-pair-1", { ja: "第1ペアリフト", en: "Lift 1 pair" }, { ja: "第1", en: "L1" },
+        "M 250 310 L 265 220 L 282 130", [[250, 310], [282, 130]],
+        { ja: { 長さ: "628m", 区分: "メイン" }, en: { Length: "628 m", Zone: "Main" } }),
+      lift("lift-pair-2", { ja: "第2ペアリフト", en: "Lift 2 pair" }, { ja: "第2", en: "L2" },
+        "M 300 295 L 315 220 L 330 155", [[300, 295], [330, 155]],
+        { ja: { 長さ: "390m", 区分: "展望側" }, en: { Length: "390 m", Zone: "View side" } }),
+      lift("lift-3", { ja: "第3リフト", en: "Lift 3" }, { ja: "第3", en: "L3" },
+        "M 360 290 L 372 235 L 380 190", [[360, 290], [380, 190]],
+        { ja: { 長さ: "265m", 区分: "キッズ周辺" }, en: { Length: "265 m", Zone: "Kids side" } }),
+      trail("trail-romance", { ja: "ロマンスコース", en: "Romance course" }, { ja: "ロマンス", en: "Romance" },
+        "beginner", "M 284 135 L 300 210 L 318 300",
+        { ja: { 斜度: "5〜15°", 特徴: "ウォームアップ向け" }, en: { Slope: "5–15°", Feature: "Warm-up run" } }),
+      trail("trail-second", { ja: "第2ゲレンデ", en: "Second slope" }, { ja: "第2", en: "Second" },
+        "intermediate", "M 332 160 L 348 220 L 365 290",
+        { ja: { 斜度: "15°", 特徴: "琵琶湖ビュー" }, en: { Slope: "15°", Feature: "Lake Biwa view" } }),
+      trail("trail-challenge", { ja: "チャレンジ・ダウンヒル", en: "Challenge downhill" }, { ja: "チャレンジ", en: "Challenge" },
+        "advanced", "M 280 130 L 255 190 L 230 285",
+        { ja: { 最大斜度: "35°", 雪面: "降雪時パウダー" }, en: { "Max slope": "35°", Surface: "Powder after snowfall" } }),
+      trail("trail-kids", { ja: "キッズゲレンデ", en: "Kids slope" }, { ja: "キッズ", en: "Kids" },
+        "sled", "M 390 230 L 420 280 L 435 305",
+        { ja: { 特徴: "ソリ専用・キッズウェイ60m" }, en: { Feature: "Sled only · 60 m kids walkway" } }),
+    ],
+  ),
+
   mapBase("tajima-bokujo", { ja: "但馬牧場公園スキー場", en: "Tajima Bokujo Park Ski Area" },
     ["configs/lp-batch/batch-101-120.json", "www.bokujyo.com/winter/slope.html"],
     [
@@ -491,6 +541,28 @@ const MAPS = [
       trail("trail-world", { ja: "ワールドコース（上級）", en: "World (advanced)" }, { ja: "ワールド", en: "World" },
         "advanced", "M 322 142 L 310 200 L 295 300",
         { ja: { 最大斜度: "36°", 雪面: "非圧雪" }, en: { "Max slope": "36°", Surface: "Ungroomed" } }),
+    ],
+  ),
+
+  mapBase(
+    "midori-roman-mori",
+    { ja: "みどりの大地とロマンの森公園スキー場", en: "Midori-no-daichi to Roman-no-mori Koen Ski Area" },
+    ["Deep Research batch #108", "東北町観光協会", "Amazing AOMORI"],
+    [
+      lift("tow-west", { ja: "ロープトゥ西側", en: "West rope tow" }, { ja: "西側", en: "West" },
+        "M 300 760 L 360 470", [[300, 760], [360, 470]],
+        { ja: { 種別: "ロープトゥ", 備考: "初心者は補助推奨" }, en: { Type: "Rope tow", Note: "Assistance helps beginners" } }),
+      lift("tow-east", { ja: "ロープトゥ東側", en: "East rope tow" }, { ja: "東側", en: "East" },
+        "M 560 760 L 620 470", [[560, 760], [620, 470]],
+        { ja: { 種別: "ロープトゥ", 備考: "ナイター対応" }, en: { Type: "Rope tow", Note: "Lit for night sessions" } }),
+      trail("trail-main", { ja: "メイン緩斜面", en: "Main gentle slope" }, { ja: "メイン", en: "Main" },
+        "beginner", "M 350 470 L 320 600 L 285 790",
+        { ja: { 最長: "約300m", 最大斜度: "20°", 比率: "初級80%" }, en: { Length: "~300 m", "Max slope": "20°", Share: "80% beginner" } }),
+      trail("trail-training", { ja: "練習斜面", en: "Practice slope" }, { ja: "練習", en: "Practice" },
+        "intermediate", "M 615 470 L 650 610 L 690 790",
+        { ja: { 比率: "中級20%", 備考: "ロープトゥに慣れたら" }, en: { Share: "20% intermediate", Note: "After getting used to the tow" } }),
+      trail("trail-sled", { ja: "雪遊び・ソリエリア", en: "Snow-play & sled zone" }, { ja: "そり", en: "Sled" },
+        "sled", "M 735 725 L 820 785", { ja: { 備考: "ファミリー向け" }, en: { Note: "Family zone" } }),
     ],
   ),
 
@@ -538,6 +610,57 @@ const MAPS = [
     ],
   ),
 
+  mapBase("hida-kawai", { ja: "飛騨かわいスキー場", en: "Hida Kawai Ski Resort" },
+    ["Deep Research batch #113", "configs/lp-brief/hida-kawai.yaml", "hidakawai.com"],
+    [
+      lift("lift-main", { ja: "第1リフト", en: "Lift 1" }, { ja: "第1", en: "L1" },
+        "M 310 820 L 360 610 L 410 390 L 455 180", [[310, 820], [455, 180]],
+        { ja: { 種別: "メインリフト", 備考: "週末の基幹動線" }, en: { Type: "Main lift", Note: "Core weekend access" } }),
+      lift("lift-second", { ja: "第2リフト", en: "Lift 2" }, { ja: "第2", en: "L2" },
+        "M 560 700 L 590 530 L 620 360", [[560, 700], [620, 360]],
+        { ja: { 種別: "補助リフト", 備考: "土日祝中心の想定" }, en: { Type: "Aux lift", Note: "Typically weekends and holidays" } }, "hold"),
+      trail("trail-powder", { ja: "急斜面パウダーライン", en: "Steep powder line" }, { ja: "急斜面", en: "Steep" },
+        "advanced", "M 450 190 L 430 320 L 395 500 L 355 820",
+        { ja: { 雪面: "非圧雪", 最大斜度: "35°級", 特徴: "週末パウダーの主役" }, en: { Surface: "Ungroomed", "Max slope": "35° class", Feature: "Main weekend powder line" } }),
+      trail("trail-forest", { ja: "林間ルート", en: "Forest route" }, { ja: "林間", en: "Forest" },
+        "intermediate-advanced", "M 505 205 L 520 360 L 520 560 L 500 760",
+        { ja: { 特徴: "ツリー脇の流れ", 備考: "地形遊び向き" }, en: { Feature: "Flowing line beside the trees", Note: "Good for terrain play" } }),
+      trail("trail-main", { ja: "メイン整地ライン", en: "Main groomed line" }, { ja: "メイン", en: "Main" },
+        "intermediate", "M 455 185 L 490 340 L 530 560 L 565 805",
+        { ja: { 備考: "滑り込みやすい主動線" }, en: { Note: "Most approachable primary route" } }),
+      trail("trail-kids", { ja: "キッズパーク", en: "Kids park" }, { ja: "キッズ", en: "Kids" },
+        "sled", "M 705 690 L 790 760",
+        { ja: { 備考: "本線と分離した雪遊び帯" }, en: { Note: "Separate snow-play zone away from the main runs" } }),
+    ],
+  ),
+
+  mapBase("tenoko", { ja: "手ノ子スキー場", en: "Tenoko Ski Resort" },
+    ["Deep Research batch #107", "configs/lp-brief/tenoko.yaml", "飯豊町公式・観光情報"],
+    [
+      lift("lift-schlep", { ja: "シュレップリフト", en: "Schlep lift" }, { ja: "シュレップ", en: "Schlep" },
+        "M 310 320 L 325 250 L 342 185 L 360 130", [[310, 320], [360, 130]],
+        { ja: { 長さ: "445m", 特徴: "中間降車あり" }, en: { Length: "445 m", Feature: "Mid-station unload" } }),
+      lift("lift-rope-tow", { ja: "ロープトウ", en: "Rope tow" }, { ja: "ロープ", en: "Rope" },
+        "M 390 300 L 405 245", [[390, 300], [405, 245]],
+        { ja: { 区分: "下部練習" }, en: { Zone: "Lower practice area" } }),
+      trail("trail-family", { ja: "ファミリーゲレンデ", en: "Family slope" }, { ja: "ファミリー", en: "Family" },
+        "beginner", "M 360 135 L 345 210 L 330 320",
+        { ja: { 特徴: "緩斜面・雪遊び向け" }, en: { Feature: "Gentle and family-friendly" } }),
+      trail("trail-center", { ja: "中央ゲレンデ", en: "Center slope" }, { ja: "中央", en: "Center" },
+        "intermediate", "M 350 132 L 370 215 L 382 305",
+        { ja: { 備考: "ワイドな中斜面" }, en: { Note: "Wide mid-slope line" } }),
+      trail("trail-trial", { ja: "トライアルコース", en: "Trial course" }, { ja: "トライアル", en: "Trial" },
+        "intermediate-advanced", "M 340 128 L 320 205 L 305 285",
+        { ja: { 最大斜度: "18〜19°", 備考: "やや斜度あり" }, en: { "Max slope": "18-19°", Note: "Slightly steeper pitch" } }),
+      trail("trail-buna", { ja: "ブナ森コース", en: "Buna forest course" }, { ja: "ブナ森", en: "Buna" },
+        "beginner", "M 300 145 L 270 205 L 250 285 L 275 315",
+        { ja: { 備考: "迂回ルート的" }, en: { Note: "Bypass-style forest line" } }),
+      trail("trail-tube", { ja: "雪遊び・チューブ想定エリア", en: "Snow-play / tube area" }, { ja: "雪遊び", en: "Play" },
+        "sled", "M 430 295 L 465 315",
+        { ja: { 備考: "代替チューブ運用の想定帯" }, en: { Note: "Tube-play concept area" } }),
+    ],
+  ),
+
   mapBase("goshogawara-kase", { ja: "五所川原市嘉瀬スキー場", en: "Goshogawara City Kase Ski Area" },
     ["Deep Research batch #109", "configs/lp-brief/goshogawara-kase.yaml"],
     [
@@ -555,15 +678,47 @@ const MAPS = [
         { ja: { 備考: "ファミリー向け" }, en: { Note: "Family-friendly" } }),
     ],
   ),
+
+  mapBase("kanegasawa", { ja: "金ヶ沢スキー場", en: "Kanegasawa Ski Area" },
+    ["Deep Research batch #110", "configs/lp-brief/kanegasawa.yaml"],
+    [
+      lift("tow-main", { ja: "ロープトゥ", en: "Rope tow" }, { ja: "ロープ", en: "Rope" },
+        "M 520 820 L 430 230", [[520, 820], [430, 230]],
+        { ja: { 種別: "表面牽引", 備考: "来場者がいれば稼働することがある" }, en: { Type: "Surface tow", Note: "May run when visitors arrive" } }, "hold"),
+      trail("trail-bowl-west", { ja: "日陰ボウル西側", en: "Shade bowl west" }, { ja: "西側", en: "West" },
+        "advanced", "M 390 160 L 310 340 L 330 620 L 350 815",
+        { ja: { 雪面: "非圧雪", 特徴: "日陰で雪質保持" }, en: { Surface: "Ungroomed", Feature: "Shade-kept powder" } }),
+      trail("trail-bowl-center", { ja: "中央ボウルライン", en: "Center bowl line" }, { ja: "中央", en: "Center" },
+        "intermediate", "M 450 150 L 455 340 L 470 620 L 510 840",
+        { ja: { 滑走距離: "約120〜200m", 備考: "メイン導線" }, en: { Length: "~120–200 m", Note: "Main line" } }),
+      trail("trail-bowl-east", { ja: "日陰ボウル東側", en: "Shade bowl east" }, { ja: "東側", en: "East" },
+        "intermediate-advanced", "M 520 170 L 590 350 L 610 600 L 600 815",
+        { ja: { 雪面: "圧雪/非圧雪混在", 備考: "状況次第" }, en: { Surface: "Mixed groomed/ungroomed", Note: "Depends on conditions" } }),
+    ],
+  ),
 ];
 
 mkdirSync(OUT, { recursive: true });
 for (const m of MAPS) {
+  const outPath = join(OUT, `${m.id}.json`);
+  if (existsSync(outPath)) {
+    try {
+      const prev = JSON.parse(readFileSync(outPath, "utf8"));
+      if (prev.mapMode === "calibrated" || prev.mapFactory) {
+        console.log(
+          `⊘ ${m.id}.json — kept calibrated (mapMode=${prev.mapMode || "calibrated"}; regenerate via npm run map:promote)`,
+        );
+        continue;
+      }
+    } catch {
+      /* overwrite if unreadable */
+    }
+  }
   if (m.id === "sichinohe") {
     console.log("⊘ sichinohe.json — kept hand-synced (calibrated hitboxes)");
     continue;
   }
-  writeFileSync(join(OUT, `${m.id}.json`), JSON.stringify(m, null, 2) + "\n", "utf8");
+  writeFileSync(outPath, JSON.stringify(m, null, 2) + "\n", "utf8");
   console.log(`✓ ${m.id}.json (${m.features.length} features, hero PNG)`);
 }
 console.log("\nHero images: docs/mock-assets/images/maps/{id}-hero.png");

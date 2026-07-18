@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "2026-07-06",
+  "resortId": "sapporo-kokusai",
+  "fetchedAt": "2026-07-06T17:30:00+09:00",
+  "sources": [
+    {
+      "id": "official-slopemap",
+      "role": "primary",
+      "file": "official-slopemap.png",
+      "url": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+      "width": 1781,
+      "height": 1421,
+      "bytes": 3874222,
+      "note": "公式ゲレンデページ掲載の現行コースマップ（一次根拠）"
+    },
+    {
+      "id": "gelanding-2016",
+      "role": "secondary",
+      "file": "gelanding-2016.webp",
+      "url": "https://gelanding.com/_src/85830088/img20161219021101577279.webp",
+      "pageUrl": "https://gelanding.com/japanskiarea/hokkaido/sapporokokusai.html",
+      "width": 930,
+      "height": 599,
+      "bytes": 89304,
+      "publishedApprox": "2016-12",
+    {
+      "id": "hero-promoted",
+      "role": "production",
+      "file": "../images/maps/sapporo-kokusai-hero.png",
+      "width": 1024,
+      "height": 817,
+      "derivedFrom": "official-slopemap.png",
+      "authority": "official-only",
+      "approvedAt": "2026-07-06",
+      "note": "公式コースマップを 1024px 幅でリサイズ採用"
+    }
+  ]
+}

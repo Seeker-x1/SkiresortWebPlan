@@ -1,0 +1,30 @@
+{
+  "id": "sapporo-kokusai",
+  "name_ja": "札幌国際スキー場",
+  "name_en": "Sapporo Kokusai Ski Resort",
+  "center": {
+    "lat": 43.0730147,
+    "lng": 141.0702386
+  },
+  "center_source": "nominatim",
+  "osm": {
+    "type": "way",
+    "id": 672881398
+  },
+  "bbox": {
+    "south": 43.0672206,
+    "west": 141.0570121,
+    "north": 43.0787954,
+    "east": 141.0836871
+  },
+  "candidates": [
+    {
+      "display_name": "札幌国際スキー場, 札幌市, 石狩振興局, 北海道, 北海道地方, 日本",
+      "lat": 43.0730147,
+      "lng": 141.0702386,
+      "osm_type": "way",
+      "osm_id": 672881398
+    }
+  ],
+  "researched_at": "2026-07-18T05:45:23.891Z"
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "2026-07-18",
+  "resortId": "sapporo-kokusai",
+  "mapStyle": "official-illustrated-slopemap",
+  "authority": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+  "notes": [
+    "このパレットは札幌国際の公式図専用。他施設にコピーしない。",
+    "リフト線は青シアン破線。橙はゴンドラアイコン／禁止エリア枠であり lift ではない。",
+    "滑走禁止エリアの薄い青塗りは stroke から除外する（彩度・明度で弾く）。"
+  ],
+  "classes": {
+    "advanced": {
+      "role": "trail",
+      "stroke": "solid",
+      "closeR": 1,
+      "minSkelPts": 18,
+      "minLenPx": 20,
+      "rgbHint": "near-black",
+      "test": "max(r,g,b)<70 && |r-g|<25 && |g-b|<25"
+    },
+    "intermediate": {
+      "role": "trail",
+      "stroke": "solid",
+      "closeR": 1,
+      "minSkelPts": 16,
+      "minLenPx": 18,
+      "rgbHint": "red",
+      "test": "r>160 && g<100 && b<110 && r-g>70"
+    },
+    "beginner": {
+      "role": "trail",
+      "stroke": "solid|dashed",
+      "closeR": 3,
+      "minSkelPts": 14,
+      "minLenPx": 16,
+      "rgbHint": "green",
+      "test": "g>110 && r<100 && b<130 && g-r>50"
+    },
+    "lift": {
+      "role": "lift",
+      "stroke": "dashed",
+      "closeR": 9,
+      "minSkelPts": 12,
+      "minLenPx": 40,
+      "rgbHint": "cyan stroke r≈0 g≈150-170 b≈230+",
+      "test": "r<50 && g>120 && g<200 && b>200 && b-r>140",
+      "exclude": "pale blue fills (滑走禁止) where r>100"
+    }
+  },
+  "humanSteps": [
+    "map:extract-lines で候補生成",
+    "assign-hitboxes.html で cand→feature 紐づけ（破線は Shift+クリックで継ぎ足し）",
+    "calibration-qa → signoff"
+  ],
+  "portability": "low — 他ゲレンデは別 palette.json をサンプリングして作る。色抽出は Route C の省力化であり、汎用の幾何ソースではない。"
+}

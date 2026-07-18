@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>sapporo-kokusai — 線候補の紐づけ</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    body { font-family: system-ui, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100dvh; display: flex; flex-direction: column; }
+    .bar { padding: 10px 12px; border-bottom: 1px solid #334155; }
+    .bar h1 { font-size: 14px; }
+    .bar p { font-size: 11px; color: #94a3b8; margin-top: 6px; line-height: 1.5; }
+    .bar button { margin-top: 8px; margin-right: 6px; padding: 6px 10px; border-radius: 8px; border: 1px solid #475569; background: #1e293b; color: #f8fafc; cursor: pointer; }
+    .bar button.primary { background: #166534; border-color: #16a34a; }
+    .main { flex: 1; display: grid; grid-template-columns: 1fr 340px; min-height: 0; }
+    .stage-wrap { overflow: auto; padding: 12px; }
+    .stage { position: relative; display: inline-block; max-width: 100%; line-height: 0; }
+    .stage img { display: block; width: 100%; height: auto; }
+    .stage svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+    path.cand { fill: none; stroke-width: 3.5; stroke-linecap: round; cursor: pointer; opacity: 0.7; }
+    path.cand:hover, path.cand.sel { opacity: 1; stroke-width: 6; }
+    path.cand.assigned { opacity: 0.3; stroke-dasharray: 5 4; }
+    .filter { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+    .filter button { font-size: 11px; padding: 4px 8px; }
+    .filter button.on { background: #334155; }
+    .panel { border-left: 1px solid #334155; padding: 12px; overflow: auto; font-size: 12px; }
+    .panel h2 { font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: .08em; margin: 12px 0 8px; }
+    .panel h2:first-child { margin-top: 0; }
+    .feat { padding: 6px 8px; border-radius: 6px; border: 1px solid transparent; margin-bottom: 4px; cursor: pointer; }
+    .feat:hover { background: #1e293b; }
+    .feat.sel { border-color: #38bdf8; background: #1e3a5f; }
+    .feat.done { color: #86efac; }
+    .feat.opt { color: #64748b; }
+    pre { background: #020617; border: 1px solid #334155; border-radius: 8px; padding: 8px; font-size: 10px; white-space: pre-wrap; max-height: 200px; overflow: auto; }
+    .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; }
+    .hint { font-size: 11px; color: #94a3b8; line-height: 1.45; }
+  </style>
+</head>
+<body>
+  <header class="bar">
+    <h1>色抽出（破線クローズ＋骨格分割）→ 紐づけ — sapporo-kokusai</h1>
+    <p>
+      リフト=<strong>青破線</strong>（橙は無視）。並列同色は別候補に分割。
+      作業: 右で地物を選ぶ → 候補をクリック（<strong>Shift+クリックでセグメント追加</strong>＝破線の継ぎ足し）。
+      フィルタでクラス絞り込み可。
+    </p>
+    <button type="button" id="toggleMask">色マスク</button>
+    <button type="button" id="toggleSkel">骨格プレビュー画像</button>
+    <button type="button" id="clearAssign">紐づけ解除</button>
+    <button type="button" class="primary" id="download">JSON保存</button>
+    <div class="filter" id="filters"></div>
+  </header>
+  <div class="main">
+    <div class="stage-wrap">
+      <div class="stage" id="stage">
+        <img id="hero" src="./sapporo-kokusai-hero.png" width="1024" height="817" alt="hero" />
+        <img id="mask" src="./color-mask-preview.png" width="1024" height="817" alt="mask" hidden style="position:absolute;inset:0;width:100%;height:auto;opacity:.5;pointer-events:none" />
+        <img id="skelImg" src="./skeleton-preview.png" width="1024" height="817" alt="skel" hidden style="position:absolute;inset:0;width:100%;height:auto;opacity:.7;pointer-events:none" />
+        <svg id="svg" viewBox="0 0 1024 817" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+    </div>
+    <aside class="panel">
+      <h2>凡例</h2>
+      <div><span class="swatch" style="background:#1e1e1e"></span>advanced 黒</div>
+      <div><span class="swatch" style="background:#e62828"></span>intermediate 赤</div>
+      <div><span class="swatch" style="background:#14b43c"></span>beginner 緑（破線含む）</div>
+      <div><span class="swatch" style="background:#1ea0f0"></span>lift 青破線</div>
+      <p class="hint" style="margin-top:8px">橙は禁止エリア／アイコンなのでリフト候補にしません。</p>
+      <h2>地物</h2>
+      <div id="featList"></div>
+      <h2>選択中候補</h2>
+      <div id="candInfo">（線をクリック）</div>
+      <h2>出力 76 candidates</h2>
+      <pre id="out"></pre>
+    </aside>
+  </div>
+  <script>
+    const CANDIDATES = [{"id":"cand-001","class":"intermediate","pixelCount":351,"pointCount":64,"lengthPx":390,"bbox":{"minX":609,"minY":286,"maxX":903,"maxY":479},"path":"M 882 286 L 886 290 L 890 295 L 894 300 L 897 305 L 899 311 L 901 317 L 902 323 L 903 329 L 902 335 L 900 341 L 897 347 L 893 352 L 889 356 L 884 359 L 878 362 L 872 364 L 866 366 L 860 369 L 854 371 L 848 373 L 842 376 L 836 378 L 830 380 L 824 382 L 818 384 L 812 385 L 806 387 L 800 388 L 794 390 L 788 391 L 782 393 L 776 395 L 770 396 L 764 398 L 758 399 L 752 401 L 746 403 L 740 405 L 734 407 L 728 409 L 722 411 L 716 413 L 710 415 L 705 418 L 699 420 L 694 423 L 688 425 L 683 428 L 677 431 L 672 434 L 666 437 L 661 440 L 656 443 L 651 446 L 646 449 L 641 453 L 636 457 L 631 461 L 626 465 L 621 469 L 616 473 L 611 477 L 609 479","points":[[882,286],[886,290],[890,295],[894,300],[897,305],[899,311],[901,317],[902,323],[903,329],[902,335],[900,341],[897,347],[893,352],[889,356],[884,359],[878,362],[872,364],[866,366],[860,369],[854,371],[848,373],[842,376],[836,378],[830,380],[824,382],[818,384],[812,385],[806,387],[800,388],[794,390],[788,391],[782,393],[776,395],[770,396],[764,398],[758,399],[752,401],[746,403],[740,405],[734,407],[728,409],[722,411],[716,413],[710,415],[705,418],[699,420],[694,423],[688,425],[683,428],[677,431],[672,434],[666,437],[661,440],[656,443],[651,446],[646,449],[641,453],[636,457],[631,461],[626,465],[621,469],[616,473],[611,477],[609,479]]},{"id":"cand-002","class":"intermediate","pixelCount":316,"pointCount":58,"lengthPx":349,"bbox":{"minX":271,"minY":497,"maxX":586,"maxY":623},"path":"M 586 497 L 582 501 L 578 505 L 573 509 L 568 513 L 563 516 L 558 520 L 553 524 L 548 527 L 543 531 L 538 534 L 533 537 L 528 541 L 523 544 L 518 548 L 513 551 L 508 554 L 503 558 L 498 561 L 493 564 L 487 567 L 482 570 L 476 573 L 470 576 L 464 579 L 458 581 L 452 584 L 446 586 L 441 589 L 435 591 L 429 594 L 423 596 L 417 599 L 411 601 L 405 604 L 399 606 L 393 608 L 387 610 L 381 611 L 375 612 L 369 614 L 363 616 L 357 617 L 351 618 L 345 620 L 339 620 L 333 621 L 327 621 L 321 621 L 315 621 L 309 621 L 303 621 L 297 621 L 291 622 L 285 622 L 279 622 L 273 622 L 271 623","points":[[586,497],[582,501],[578,505],[573,509],[568,513],[563,516],[558,520],[553,524],[548,527],[543,531],[538,534],[533,537],[528,541],[523,544],[518,548],[513,551],[508,554],[503,558],[498,561],[493,564],[487,567],[482,570],[476,573],[470,576],[464,579],[458,581],[452,584],[446,586],[441,589],[435,591],[429,594],[423,596],[417,599],[411,601],[405,604],[399,606],[393,608],[387,610],[381,611],[375,612],[369,614],[363,616],[357,617],[351,618],[345,620],[339,620],[333,621],[327,621],[321,621],[315,621],[309,621],[303,621],[297,621],[291,622],[285,622],[279,622],[273,622],[271,623]]},{"id":"cand-003","class":"intermediate","pixelCount":287,"pointCount":53,"lengthPx":321,"bbox":{"minX":324,"minY":435,"maxX":610,"maxY":576},"path":"M 610 435 L 605 438 L 600 441 L 595 445 L 590 448 L 585 452 L 580 455 L 575 458 L 570 461 L 565 464 L 560 467 L 555 470 L 550 473 L 545 476 L 539 479 L 534 482 L 528 485 L 522 488 L 517 491 L 512 494 L 507 498 L 502 501 L 497 505 L 492 509 L 487 513 L 482 516 L 477 519 L 472 522 L 466 525 L 460 527 L 455 530 L 449 532 L 443 534 L 437 536 L 431 539 L 425 541 L 419 544 L 413 546 L 407 548 L 401 551 L 395 553 L 389 555 L 383 557 L 377 559 L 371 561 L 365 563 L 359 565 L 353 567 L 347 569 L 341 570 L 335 572 L 329 574 L 324 576","points":[[610,435],[605,438],[600,441],[595,445],[590,448],[585,452],[580,455],[575,458],[570,461],[565,464],[560,467],[555,470],[550,473],[545,476],[539,479],[534,482],[528,485],[522,488],[517,491],[512,494],[507,498],[502,501],[497,505],[492,509],[487,513],[482,516],[477,519],[472,522],[466,525],[460,527],[455,530],[449,532],[443,534],[437,536],[431,539],[425,541],[419,544],[413,546],[407,548],[401,551],[395,553],[389,555],[383,557],[377,559],[371,561],[365,563],[359,565],[353,567],[347,569],[341,570],[335,572],[329,574],[324,576]]},{"id":"cand-004","class":"intermediate","pixelCount":224,"pointCount":41,"lengthPx":249,"bbox":{"minX":685,"minY":235,"maxX":837,"maxY":376},"path":"M 805 235 L 808 240 L 812 244 L 816 249 L 819 254 L 823 259 L 826 264 L 829 269 L 832 274 L 834 280 L 836 286 L 837 292 L 837 298 L 836 304 L 833 309 L 829 314 L 824 318 L 819 321 L 813 324 L 807 327 L 801 329 L 795 332 L 789 334 L 783 336 L 777 338 L 771 339 L 765 341 L 759 342 L 753 344 L 747 346 L 741 348 L 735 350 L 729 353 L 723 355 L 717 358 L 711 361 L 705 364 L 700 367 L 695 370 L 690 373 L 685 376","points":[[805,235],[808,240],[812,244],[816,249],[819,254],[823,259],[826,264],[829,269],[832,274],[834,280],[836,286],[837,292],[837,298],[836,304],[833,309],[829,314],[824,318],[819,321],[813,324],[807,327],[801,329],[795,332],[789,334],[783,336],[777,338],[771,339],[765,341],[759,342],[753,344],[747,346],[741,348],[735,350],[729,353],[723,355],[717,358],[711,361],[705,364],[700,367],[695,370],[690,373],[685,376]]},{"id":"cand-005","class":"beginner","pixelCount":241,"pointCount":42,"lengthPx":245,"bbox":{"minX":613,"minY":562,"maxX":853,"maxY":591},"path":"M 853 562 L 848 566 L 842 569 L 836 571 L 830 573 L 824 575 L 818 577 L 812 578 L 806 579 L 800 580 L 794 581 L 788 581 L 782 582 L 776 582 L 770 582 L 764 582 L 758 583 L 752 583 L 746 583 L 740 584 L 734 584 L 728 584 L 722 584 L 716 585 L 710 585 L 704 585 L 698 585 L 692 585 L 686 586 L 680 586 L 674 586 L 668 586 L 662 586 L 656 586 L 650 587 L 644 587 L 638 588 L 632 588 L 626 589 L 620 589 L 614 590 L 613 591","points":[[853,562],[848,566],[842,569],[836,571],[830,573],[824,575],[818,577],[812,578],[806,579],[800,580],[794,581],[788,581],[782,582],[776,582],[770,582],[764,582],[758,583],[752,583],[746,583],[740,584],[734,584],[728,584],[722,584],[716,585],[710,585],[704,585],[698,585],[692,585],[686,586],[680,586],[674,586],[668,586],[662,586],[656,586],[650,587],[644,587],[638,588],[632,588],[626,589],[620,589],[614,590],[613,591]]},{"id":"cand-006","class":"beginner","pixelCount":187,"pointCount":32,"lengthPx":189,"bbox":{"minX":257,"minY":632,"maxX":443,"maxY":656},"path":"M 257 634 L 263 633 L 269 632 L 275 632 L 281 632 L 287 632 L 293 632 L 299 633 L 305 633 L 311 634 L 317 635 L 323 635 L 329 636 L 335 637 L 341 637 L 347 638 L 353 639 L 359 640 L 365 641 L 371 642 L 377 644 L 383 645 L 389 646 L 395 648 L 401 650 L 407 652 L 413 653 L 419 654 L 425 655 L 431 655 L 437 656 L 443 656","points":[[257,634],[263,633],[269,632],[275,632],[281,632],[287,632],[293,632],[299,633],[305,633],[311,634],[317,635],[323,635],[329,636],[335,637],[341,637],[347,638],[353,639],[359,640],[365,641],[371,642],[377,644],[383,645],[389,646],[395,648],[401,650],[407,652],[413,653],[419,654],[425,655],[431,655],[437,656],[443,656]]},{"id":"cand-007","class":"intermediate","pixelCount":136,"pointCount":25,"lengthPx":151,"bbox":{"minX":659,"minY":159,"maxX":794,"maxY":226},"path":"M 659 159 L 665 161 L 671 163 L 677 166 L 683 168 L 688 171 L 694 174 L 700 176 L 705 179 L 711 182 L 717 185 L 723 188 L 729 191 L 735 194 L 741 197 L 747 200 L 752 203 L 758 206 L 764 209 L 769 212 L 775 215 L 780 218 L 786 221 L 791 224 L 794 226","points":[[659,159],[665,161],[671,163],[677,166],[683,168],[688,171],[694,174],[700,176],[705,179],[711,182],[717,185],[723,188],[729,191],[735,194],[741,197],[747,200],[752,203],[758,206],[764,209],[769,212],[775,215],[780,218],[786,221],[791,224],[794,226]]},{"id":"cand-008","class":"advanced","pixelCount":135,"pointCount":25,"lengthPx":147,"bbox":{"minX":466,"minY":184,"maxX":600,"maxY":243},"path":"M 600 184 L 594 186 L 589 189 L 583 192 L 577 194 L 572 197 L 566 200 L 560 202 L 555 205 L 549 207 L 543 210 L 537 212 L 532 215 L 526 217 L 520 220 L 514 222 L 508 225 L 502 227 L 496 229 L 491 232 L 485 234 L 479 237 L 473 239 L 468 242 L 466 243","points":[[600,184],[594,186],[589,189],[583,192],[577,194],[572,197],[566,200],[560,202],[555,205],[549,207],[543,210],[537,212],[532,215],[526,217],[520,220],[514,222],[508,225],[502,227],[496,229],[491,232],[485,234],[479,237],[473,239],[468,242],[466,243]]},{"id":"cand-009","class":"intermediate","pixelCount":114,"pointCount":25,"lengthPx":140,"bbox":{"minX":682,"minY":229,"maxX":739,"maxY":335},"path":"M 715 229 L 719 233 L 723 237 L 727 241 L 731 245 L 735 250 L 738 256 L 739 262 L 739 268 L 739 274 L 738 280 L 736 286 L 733 291 L 729 295 L 725 299 L 720 303 L 715 306 L 710 310 L 705 314 L 700 318 L 696 322 L 691 326 L 687 330 L 683 334 L 682 335","points":[[715,229],[719,233],[723,237],[727,241],[731,245],[735,250],[738,256],[739,262],[739,268],[739,274],[738,280],[736,286],[733,291],[729,295],[725,299],[720,303],[715,306],[710,310],[705,314],[700,318],[696,322],[691,326],[687,330],[683,334],[682,335]]},{"id":"cand-010","class":"lift","pixelCount":130,"pointCount":28,"lengthPx":132,"bbox":{"minX":661,"minY":217,"maxX":669,"maxY":346},"path":"M 661 217 L 662 222 L 661 227 L 662 232 L 662 237 L 662 242 L 663 247 L 664 252 L 664 257 L 665 262 L 665 267 L 666 272 L 666 277 L 667 282 L 667 287 L 667 292 L 667 297 L 667 302 L 666 307 L 664 311 L 662 315 L 662 320 L 662 325 L 663 330 L 664 335 L 667 339 L 669 344 L 669 346","points":[[661,217],[662,222],[661,227],[662,232],[662,237],[662,242],[663,247],[664,252],[664,257],[665,262],[665,267],[666,272],[666,277],[667,282],[667,287],[667,292],[667,297],[667,302],[666,307],[664,311],[662,315],[662,320],[662,325],[663,330],[664,335],[667,339],[669,344],[669,346]]},{"id":"cand-011","class":"beginner","pixelCount":108,"pointCount":20,"lengthPx":116,"bbox":{"minX":807,"minY":190,"maxX":914,"maxY":231},"path":"M 807 190 L 813 193 L 818 196 L 823 199 L 828 202 L 834 204 L 840 206 L 846 208 L 852 210 L 858 212 L 864 213 L 870 215 L 876 216 L 882 218 L 888 220 L 894 221 L 900 224 L 906 226 L 911 229 L 914 231","points":[[807,190],[813,193],[818,196],[823,199],[828,202],[834,204],[840,206],[846,208],[852,210],[858,212],[864,213],[870,215],[876,216],[882,218],[888,220],[894,221],[900,224],[906,226],[911,229],[914,231]]},{"id":"cand-012","class":"beginner","pixelCount":83,"pointCount":17,"lengthPx":96,"bbox":{"minX":914,"minY":232,"maxX":962,"maxY":314},"path":"M 914 232 L 918 236 L 922 241 L 925 246 L 928 251 L 931 256 L 935 261 L 938 266 L 941 271 L 944 276 L 947 281 L 950 286 L 953 292 L 956 297 L 959 302 L 962 308 L 962 314","points":[[914,232],[918,236],[922,241],[925,246],[928,251],[931,256],[935,261],[938,266],[941,271],[944,276],[947,281],[950,286],[953,292],[956,297],[959,302],[962,308],[962,314]]},{"id":"cand-013","class":"beginner","pixelCount":82,"pointCount":17,"lengthPx":96,"bbox":{"minX":840,"minY":421,"maxX":865,"maxY":502},"path":"M 863 421 L 859 426 L 855 431 L 851 436 L 848 441 L 845 446 L 842 451 L 841 457 L 840 463 L 842 469 L 845 474 L 848 479 L 852 483 L 856 488 L 860 493 L 863 499 L 865 502","points":[[863,421],[859,426],[855,431],[851,436],[848,441],[845,446],[842,451],[841,457],[840,463],[842,469],[845,474],[848,479],[852,483],[856,488],[860,493],[863,499],[865,502]]},{"id":"cand-014","class":"intermediate","pixelCount":77,"pointCount":17,"lengthPx":93,"bbox":{"minX":805,"minY":233,"maxX":881,"maxY":285},"path":"M 805 233 L 811 235 L 816 238 L 821 241 L 826 245 L 831 248 L 836 251 L 841 254 L 846 257 L 851 261 L 856 264 L 861 268 L 866 272 L 871 276 L 876 280 L 880 284 L 881 285","points":[[805,233],[811,235],[816,238],[821,241],[826,245],[831,248],[836,251],[841,254],[846,257],[851,261],[856,264],[861,268],[866,272],[871,276],[876,280],[880,284],[881,285]]},{"id":"cand-015","class":"advanced","pixelCount":77,"pointCount":14,"lengthPx":80,"bbox":{"minX":136,"minY":590,"maxX":148,"maxY":666},"path":"M 148 590 L 145 596 L 143 602 L 140 608 L 138 614 L 137 620 L 136 626 L 136 632 L 136 638 L 137 644 L 138 650 L 140 656 L 143 662 L 145 666","points":[[148,590],[145,596],[143,602],[140,608],[138,614],[137,620],[136,626],[136,632],[136,638],[137,644],[138,650],[140,656],[143,662],[145,666]]},{"id":"cand-016","class":"intermediate","pixelCount":74,"pointCount":14,"lengthPx":80,"bbox":{"minX":245,"minY":577,"maxX":318,"maxY":608},"path":"M 318 577 L 312 578 L 306 580 L 300 582 L 294 583 L 288 585 L 282 587 L 276 589 L 270 592 L 264 595 L 258 598 L 253 601 L 248 605 L 245 608","points":[[318,577],[312,578],[306,580],[300,582],[294,583],[288,585],[282,587],[276,589],[270,592],[264,595],[258,598],[253,601],[248,605],[245,608]]},{"id":"cand-017","class":"intermediate","pixelCount":55,"pointCount":12,"lengthPx":69,"bbox":{"minX":659,"minY":159,"maxX":700,"maxY":213},"path":"M 659 159 L 660 165 L 664 170 L 668 175 L 672 180 L 676 185 L 680 190 L 684 195 L 688 200 L 692 205 L 696 209 L 700 213","points":[[659,159],[660,165],[664,170],[668,175],[672,180],[676,185],[680,190],[684,195],[688,200],[692,205],[696,209],[700,213]]},{"id":"cand-018","class":"beginner","pixelCount":56,"pointCount":12,"lengthPx":65,"bbox":{"minX":906,"minY":315,"maxX":961,"maxY":349},"path":"M 961 315 L 956 319 L 951 323 L 946 327 L 941 330 L 936 333 L 931 336 L 926 339 L 920 342 L 915 345 L 909 348 L 906 349","points":[[961,315],[956,319],[951,323],[946,327],[941,330],[936,333],[931,336],[926,339],[920,342],[915,345],[909,348],[906,349]]},{"id":"cand-019","class":"beginner","pixelCount":57,"pointCount":12,"lengthPx":65,"bbox":{"minX":511,"minY":595,"maxX":567,"maxY":626},"path":"M 567 595 L 561 597 L 555 599 L 549 601 L 544 604 L 538 607 L 533 610 L 528 613 L 523 616 L 518 620 L 513 624 L 511 626","points":[[567,595],[561,597],[555,599],[549,601],[544,604],[538,607],[533,610],[528,613],[523,616],[518,620],[513,624],[511,626]]},{"id":"cand-020","class":"intermediate","pixelCount":59,"pointCount":11,"lengthPx":63,"bbox":{"minX":588,"minY":436,"maxX":611,"maxY":494},"path":"M 611 436 L 609 442 L 606 447 L 603 452 L 600 458 L 597 464 L 595 470 L 594 476 L 592 482 L 589 488 L 588 494","points":[[611,436],[609,442],[606,447],[603,452],[600,458],[597,464],[595,470],[594,476],[592,482],[589,488],[588,494]]},{"id":"cand-021","class":"beginner","pixelCount":56,"pointCount":12,"lengthPx":62,"bbox":{"minX":448,"minY":632,"maxX":503,"maxY":657},"path":"M 503 632 L 498 635 L 493 639 L 488 642 L 483 645 L 478 648 L 473 651 L 467 653 L 461 655 L 455 655 L 449 656 L 448 657","points":[[503,632],[498,635],[493,639],[488,642],[483,645],[478,648],[473,651],[467,653],[461,655],[455,655],[449,656],[448,657]]},{"id":"cand-022","class":"beginner","pixelCount":52,"pointCount":11,"lengthPx":59,"bbox":{"minX":866,"minY":365,"maxX":896,"maxY":416},"path":"M 896 365 L 893 370 L 890 375 L 887 380 L 884 386 L 881 391 L 878 396 L 875 401 L 872 406 L 869 411 L 866 416","points":[[896,365],[893,370],[890,375],[887,380],[884,386],[881,391],[878,396],[875,401],[872,406],[869,411],[866,416]]},{"id":"cand-023","class":"advanced","pixelCount":56,"pointCount":11,"lengthPx":58,"bbox":{"minX":419,"minY":272,"maxX":436,"maxY":327},"path":"M 436 272 L 434 278 L 431 284 L 430 290 L 429 296 L 428 302 L 426 308 L 424 314 L 422 320 L 419 326 L 419 327","points":[[436,272],[434,278],[431,284],[430,290],[429,296],[428,302],[426,308],[424,314],[422,320],[419,326],[419,327]]},{"id":"cand-024","class":"lift","pixelCount":56,"pointCount":13,"lengthPx":58,"bbox":{"minX":277,"minY":694,"maxX":332,"maxY":711},"path":"M 332 694 L 328 696 L 323 697 L 318 699 L 313 700 L 308 701 L 304 703 L 299 704 L 294 706 L 289 707 L 284 709 L 279 711 L 277 711","points":[[332,694],[328,696],[323,697],[318,699],[313,700],[308,701],[304,703],[299,704],[294,706],[289,707],[284,709],[279,711],[277,711]]},{"id":"cand-025","class":"beginner","pixelCount":49,"pointCount":10,"lengthPx":52,"bbox":{"minX":871,"minY":456,"maxX":889,"maxY":504},"path":"M 889 456 L 886 461 L 883 466 L 880 471 L 877 477 L 875 483 L 874 489 L 873 495 L 872 501 L 871 504","points":[[889,456],[886,461],[883,466],[880,471],[877,477],[875,483],[874,489],[873,495],[872,501],[871,504]]},{"id":"cand-026","class":"beginner","pixelCount":50,"pointCount":10,"lengthPx":51,"bbox":{"minX":962,"minY":344,"maxX":999,"maxY":361},"path":"M 962 346 L 968 347 L 974 346 L 980 345 L 986 344 L 992 344 L 997 347 L 999 353 L 996 359 L 995 361","points":[[962,346],[968,347],[974,346],[980,345],[986,344],[992,344],[997,347],[999,353],[996,359],[995,361]]},{"id":"cand-027","class":"beginner","pixelCount":50,"pointCount":10,"lengthPx":51,"bbox":{"minX":860,"minY":506,"maxX":870,"maxY":555},"path":"M 869 506 L 870 512 L 870 518 L 870 524 L 870 530 L 869 536 L 867 542 L 864 548 L 861 554 L 860 555","points":[[869,506],[870,512],[870,518],[870,524],[870,530],[869,536],[867,542],[864,548],[861,554],[860,555]]},{"id":"cand-028","class":"intermediate","pixelCount":43,"pointCount":9,"lengthPx":48,"bbox":{"minX":640,"minY":363,"maxX":662,"maxY":405},"path":"M 662 363 L 660 369 L 657 374 L 654 379 L 651 385 L 648 390 L 645 395 L 642 400 L 640 405","points":[[662,363],[660,369],[657,374],[654,379],[651,385],[648,390],[645,395],[642,400],[640,405]]},{"id":"cand-029","class":"lift","pixelCount":46,"pointCount":11,"lengthPx":48,"bbox":{"minX":844,"minY":187,"maxX":884,"maxY":207},"path":"M 844 187 L 847 191 L 849 195 L 852 199 L 856 202 L 860 204 L 865 205 L 870 206 L 875 207 L 880 207 L 884 206","points":[[844,187],[847,191],[849,195],[852,199],[856,202],[860,204],[865,205],[870,206],[875,207],[880,207],[884,206]]},{"id":"cand-030","class":"beginner","pixelCount":46,"pointCount":9,"lengthPx":45,"bbox":{"minX":912,"minY":349,"maxX":957,"maxY":355},"path":"M 957 349 L 951 349 L 945 350 L 939 351 L 933 352 L 927 353 L 921 354 L 915 355 L 912 355","points":[[957,349],[951,349],[945,350],[939,351],[933,352],[927,353],[921,354],[915,355],[912,355]]},{"id":"cand-031","class":"advanced","pixelCount":43,"pointCount":8,"lengthPx":42,"bbox":{"minX":17,"minY":41,"maxX":40,"maxY":65},"path":"M 18 41 L 17 47 L 18 53 L 19 59 L 22 64 L 28 65 L 34 65 L 40 64","points":[[18,41],[17,47],[18,53],[19,59],[22,64],[28,65],[34,65],[40,64]]},{"id":"cand-032","class":"beginner","pixelCount":34,"pointCount":8,"lengthPx":42,"bbox":{"minX":896,"minY":415,"maxX":923,"maxY":447},"path":"M 923 415 L 918 419 L 915 424 L 911 428 L 907 433 L 903 438 L 899 443 L 896 447","points":[[923,415],[918,419],[915,424],[911,428],[907,433],[903,438],[899,443],[896,447]]},{"id":"cand-033","class":"beginner","pixelCount":37,"pointCount":8,"lengthPx":41,"bbox":{"minX":942,"minY":373,"maxX":978,"maxY":391},"path":"M 978 373 L 973 376 L 968 379 L 963 382 L 958 385 L 953 388 L 947 391 L 942 391","points":[[978,373],[973,376],[968,379],[963,382],[958,385],[953,388],[947,391],[942,391]]},{"id":"cand-034","class":"lift","pixelCount":39,"pointCount":10,"lengthPx":40,"bbox":{"minX":346,"minY":678,"maxX":384,"maxY":690},"path":"M 384 678 L 380 680 L 375 681 L 371 683 L 366 684 L 361 685 L 357 687 L 352 688 L 347 690 L 346 690","points":[[384,678],[380,680],[375,681],[371,683],[366,684],[361,685],[357,687],[352,688],[347,690],[346,690]]},{"id":"cand-035","class":"advanced","pixelCount":36,"pointCount":8,"lengthPx":39,"bbox":{"minX":607,"minY":163,"maxX":642,"maxY":180},"path":"M 642 163 L 637 166 L 631 169 L 625 172 L 619 174 L 614 177 L 608 180 L 607 180","points":[[642,163],[637,166],[631,169],[625,172],[619,174],[614,177],[608,180],[607,180]]},{"id":"cand-036","class":"intermediate","pixelCount":37,"pointCount":8,"lengthPx":39,"bbox":{"minX":229,"minY":622,"maxX":265,"maxY":633},"path":"M 265 622 L 259 622 L 253 623 L 247 624 L 241 626 L 236 629 L 231 633 L 229 633","points":[[265,622],[259,622],[253,623],[247,624],[241,626],[236,629],[231,633],[229,633]]},{"id":"cand-037","class":"lift","pixelCount":38,"pointCount":9,"lengthPx":38,"bbox":{"minX":797,"minY":185,"maxX":834,"maxY":192},"path":"M 797 185 L 801 187 L 806 188 L 811 189 L 815 191 L 820 192 L 825 192 L 830 192 L 834 191","points":[[797,185],[801,187],[806,188],[811,189],[815,191],[820,192],[825,192],[830,192],[834,191]]},{"id":"cand-038","class":"advanced","pixelCount":33,"pointCount":7,"lengthPx":36,"bbox":{"minX":361,"minY":351,"maxX":393,"maxY":367},"path":"M 393 351 L 388 354 L 382 356 L 377 359 L 371 362 L 365 365 L 361 367","points":[[393,351],[388,354],[382,356],[377,359],[371,362],[365,365],[361,367]]},{"id":"cand-039","class":"lift","pixelCount":34,"pointCount":9,"lengthPx":35,"bbox":{"minX":398,"minY":662,"maxX":431,"maxY":674},"path":"M 431 662 L 427 664 L 423 666 L 418 667 L 414 669 L 409 670 L 404 672 L 399 674 L 398 674","points":[[431,662],[427,664],[423,666],[418,667],[414,669],[409,670],[404,672],[399,674],[398,674]]},{"id":"cand-040","class":"lift","pixelCount":33,"pointCount":8,"lengthPx":34,"bbox":{"minX":902,"minY":195,"maxX":934,"maxY":204},"path":"M 902 196 L 907 195 L 912 196 L 916 199 L 920 201 L 925 202 L 930 203 L 934 204","points":[[902,196],[907,195],[912,196],[916,199],[920,201],[925,202],[930,203],[934,204]]},{"id":"cand-041","class":"beginner","pixelCount":33,"pointCount":7,"lengthPx":33,"bbox":{"minX":962,"minY":314,"maxX":965,"maxY":346},"path":"M 962 314 L 965 319 L 965 325 L 964 331 L 963 337 L 962 343 L 962 346","points":[[962,314],[965,319],[965,325],[964,331],[963,337],[962,343],[962,346]]},{"id":"cand-042","class":"beginner","pixelCount":33,"pointCount":7,"lengthPx":32,"bbox":{"minX":654,"minY":139,"maxX":686,"maxY":141},"path":"M 686 139 L 680 140 L 674 140 L 668 139 L 662 139 L 656 140 L 654 141","points":[[686,139],[680,140],[674,140],[668,139],[662,139],[656,140],[654,141]]},{"id":"cand-043","class":"lift","pixelCount":31,"pointCount":7,"lengthPx":30,"bbox":{"minX":669,"minY":347,"maxX":672,"maxY":377},"path":"M 669 347 L 671 352 L 671 357 L 671 362 L 672 367 L 672 372 L 672 377","points":[[669,347],[671,352],[671,357],[671,362],[672,367],[672,372],[672,377]]},{"id":"cand-044","class":"intermediate","pixelCount":28,"pointCount":6,"lengthPx":29,"bbox":{"minX":213,"minY":640,"maxX":223,"maxY":667},"path":"M 223 640 L 220 646 L 217 652 L 215 658 L 214 664 L 213 667","points":[[223,640],[220,646],[217,652],[215,658],[214,664],[213,667]]},{"id":"cand-045","class":"beginner","pixelCount":28,"pointCount":6,"lengthPx":29,"bbox":{"minX":949,"minY":349,"maxX":959,"maxY":376},"path":"M 959 349 L 958 355 L 956 361 L 953 367 L 950 373 L 949 376","points":[[959,349],[958,355],[956,361],[953,367],[950,373],[949,376]]},{"id":"cand-046","class":"advanced","pixelCount":21,"pointCount":6,"lengthPx":28,"bbox":{"minX":180,"minY":527,"maxX":200,"maxY":547},"path":"M 200 527 L 196 531 L 192 535 L 188 539 L 184 543 L 180 547","points":[[200,527],[196,531],[192,535],[188,539],[184,543],[180,547]]},{"id":"cand-047","class":"intermediate","pixelCount":23,"pointCount":6,"lengthPx":28,"bbox":{"minX":641,"minY":390,"maxX":663,"maxY":406},"path":"M 663 390 L 658 394 L 653 398 L 648 402 L 643 406 L 641 406","points":[[663,390],[658,394],[653,398],[648,402],[643,406],[641,406]]},{"id":"cand-048","class":"lift","pixelCount":27,"pointCount":7,"lengthPx":27,"bbox":{"minX":742,"minY":169,"maxX":768,"maxY":177},"path":"M 742 169 L 746 171 L 751 172 L 756 174 L 761 175 L 766 176 L 768 177","points":[[742,169],[746,171],[751,172],[756,174],[761,175],[766,176],[768,177]]},{"id":"cand-049","class":"lift","pixelCount":22,"pointCount":7,"lengthPx":27,"bbox":{"minX":474,"minY":309,"maxX":490,"maxY":330},"path":"M 490 309 L 487 313 L 485 317 L 481 321 L 478 325 L 475 329 L 474 330","points":[[490,309],[487,313],[485,317],[481,321],[478,325],[475,329],[474,330]]},{"id":"cand-050","class":"advanced","pixelCount":27,"pointCount":6,"lengthPx":26,"bbox":{"minX":144,"minY":26,"maxX":147,"maxY":52},"path":"M 144 26 L 145 32 L 146 38 L 147 44 L 147 50 L 147 52","points":[[144,26],[145,32],[146,38],[147,44],[147,50],[147,52]]},{"id":"cand-051","class":"advanced","pixelCount":27,"pointCount":6,"lengthPx":26,"bbox":{"minX":69,"minY":34,"maxX":71,"maxY":60},"path":"M 70 34 L 69 40 L 69 46 L 70 52 L 71 58 L 71 60","points":[[70,34],[69,40],[69,46],[70,52],[71,58],[71,60]]},{"id":"cand-052","class":"intermediate","pixelCount":27,"pointCount":6,"lengthPx":26,"bbox":{"minX":833,"minY":141,"maxX":859,"maxY":143},"path":"M 833 141 L 839 143 L 845 143 L 851 143 L 857 143 L 859 143","points":[[833,141],[839,143],[845,143],[851,143],[857,143],[859,143]]},{"id":"cand-053","class":"intermediate","pixelCount":23,"pointCount":6,"lengthPx":26,"bbox":{"minX":228,"minY":610,"maxX":242,"maxY":632},"path":"M 242 610 L 238 615 L 234 620 L 231 625 L 228 630 L 228 632","points":[[242,610],[238,615],[234,620],[231,625],[228,630],[228,632]]},{"id":"cand-054","class":"lift","pixelCount":24,"pointCount":7,"lengthPx":26,"bbox":{"minX":903,"minY":197,"maxX":914,"maxY":220},"path":"M 903 197 L 905 202 L 908 206 L 910 211 L 912 215 L 914 219 L 914 220","points":[[903,197],[905,202],[908,206],[910,211],[912,215],[914,219],[914,220]]},{"id":"cand-055","class":"lift","pixelCount":22,"pointCount":7,"lengthPx":26,"bbox":{"minX":359,"minY":522,"maxX":374,"maxY":543},"path":"M 374 522 L 372 526 L 369 530 L 367 534 L 364 538 L 360 542 L 359 543","points":[[374,522],[372,526],[369,530],[367,534],[364,538],[360,542],[359,543]]},{"id":"cand-056","class":"beginner","pixelCount":25,"pointCount":5,"lengthPx":25,"bbox":{"minX":222,"minY":660,"maxX":227,"maxY":684},"path":"M 227 660 L 225 666 L 224 672 L 223 678 L 222 684","points":[[227,660],[225,666],[224,672],[223,678],[222,684]]},{"id":"cand-057","class":"lift","pixelCount":25,"pointCount":6,"lengthPx":25,"bbox":{"minX":252,"minY":711,"maxX":276,"maxY":718},"path":"M 276 711 L 272 713 L 267 714 L 262 716 L 257 717 L 252 718","points":[[276,711],[272,713],[267,714],[262,716],[257,717],[252,718]]},{"id":"cand-058","class":"advanced","pixelCount":25,"pointCount":5,"lengthPx":24,"bbox":{"minX":107,"minY":31,"maxX":110,"maxY":55},"path":"M 107 31 L 109 37 L 110 43 L 110 49 L 110 55","points":[[107,31],[109,37],[110,43],[110,49],[110,55]]},{"id":"cand-059","class":"advanced","pixelCount":25,"pointCount":5,"lengthPx":24,"bbox":{"minX":53,"minY":37,"maxX":55,"maxY":61},"path":"M 53 37 L 54 43 L 55 49 L 55 55 L 55 61","points":[[53,37],[54,43],[55,49],[55,55],[55,61]]},{"id":"cand-060","class":"intermediate","pixelCount":19,"pointCount":5,"lengthPx":24,"bbox":{"minX":589,"minY":480,"maxX":607,"maxY":495},"path":"M 607 480 L 603 484 L 598 488 L 594 492 L 589 495","points":[[607,480],[603,484],[598,488],[594,492],[589,495]]},{"id":"cand-061","class":"intermediate","pixelCount":24,"pointCount":5,"lengthPx":23,"bbox":{"minX":157,"minY":732,"maxX":176,"maxY":740},"path":"M 157 732 L 160 737 L 166 737 L 171 740 L 176 740","points":[[157,732],[160,737],[166,737],[171,740],[176,740]]},{"id":"cand-062","class":"beginner","pixelCount":22,"pointCount":5,"lengthPx":23,"bbox":{"minX":773,"minY":163,"maxX":789,"maxY":177},"path":"M 773 163 L 774 169 L 779 173 L 785 176 L 789 177","points":[[773,163],[774,169],[779,173],[785,176],[789,177]]},{"id":"cand-063","class":"lift","pixelCount":23,"pointCount":6,"lengthPx":23,"bbox":{"minX":691,"minY":154,"maxX":713,"maxY":161},"path":"M 691 154 L 695 156 L 700 157 L 705 159 L 710 160 L 713 161","points":[[691,154],[695,156],[700,157],[705,159],[710,160],[713,161]]},{"id":"cand-064","class":"advanced","pixelCount":23,"pointCount":5,"lengthPx":22,"bbox":{"minX":70,"minY":31,"maxX":92,"maxY":34},"path":"M 92 31 L 86 32 L 80 32 L 74 33 L 70 34","points":[[92,31],[86,32],[80,32],[74,33],[70,34]]},{"id":"cand-065","class":"beginner","pixelCount":22,"pointCount":5,"lengthPx":22,"bbox":{"minX":746,"minY":158,"maxX":767,"maxY":164},"path":"M 746 158 L 752 161 L 758 163 L 764 164 L 767 163","points":[[746,158],[752,161],[758,163],[764,164],[767,163]]},{"id":"cand-066","class":"lift","pixelCount":19,"pointCount":6,"lengthPx":22,"bbox":{"minX":500,"minY":275,"maxX":512,"maxY":293},"path":"M 512 275 L 510 279 L 507 283 L 505 287 L 501 291 L 500 293","points":[[512,275],[510,279],[507,283],[505,287],[501,291],[500,293]]},{"id":"cand-067","class":"advanced","pixelCount":22,"pointCount":5,"lengthPx":21,"bbox":{"minX":145,"minY":24,"maxX":166,"maxY":25},"path":"M 145 25 L 151 25 L 157 24 L 163 25 L 166 25","points":[[145,25],[151,25],[157,24],[163,25],[166,25]]},{"id":"cand-068","class":"beginner","pixelCount":18,"pointCount":5,"lengthPx":21,"bbox":{"minX":923,"minY":398,"maxX":934,"maxY":415},"path":"M 934 398 L 930 403 L 927 408 L 923 413 L 923 415","points":[[934,398],[930,403],[927,408],[923,413],[923,415]]},{"id":"cand-069","class":"lift","pixelCount":22,"pointCount":6,"lengthPx":21,"bbox":{"minX":869,"minY":185,"maxX":890,"maxY":186},"path":"M 869 185 L 874 186 L 879 186 L 884 186 L 889 186 L 890 186","points":[[869,185],[874,186],[879,186],[884,186],[889,186],[890,186]]},{"id":"cand-070","class":"advanced","pixelCount":21,"pointCount":5,"lengthPx":20,"bbox":{"minX":166,"minY":25,"maxX":168,"maxY":45},"path":"M 166 25 L 167 31 L 168 37 L 168 43 L 168 45","points":[[166,25],[167,31],[168,37],[168,43],[168,45]]},{"id":"cand-071","class":"beginner","pixelCount":18,"pointCount":5,"lengthPx":20,"bbox":{"minX":235,"minY":636,"maxX":252,"maxY":646},"path":"M 252 636 L 246 638 L 241 641 L 236 645 L 235 646","points":[[252,636],[246,638],[241,641],[236,645],[235,646]]},{"id":"cand-072","class":"lift","pixelCount":18,"pointCount":5,"lengthPx":19,"bbox":{"minX":518,"minY":251,"maxX":527,"maxY":268},"path":"M 527 251 L 525 256 L 522 260 L 520 264 L 518 268","points":[[527,251],[525,256],[522,260],[520,264],[518,268]]},{"id":"cand-073","class":"lift","pixelCount":19,"pointCount":5,"lengthPx":18,"bbox":{"minX":846,"minY":183,"maxX":864,"maxY":184},"path":"M 846 184 L 851 184 L 856 183 L 861 183 L 864 184","points":[[846,184],[851,184],[856,183],[861,183],[864,184]]},{"id":"cand-074","class":"lift","pixelCount":19,"pointCount":5,"lengthPx":18,"bbox":{"minX":667,"minY":382,"maxX":669,"maxY":400},"path":"M 669 382 L 668 387 L 667 392 L 667 397 L 667 400","points":[[669,382],[668,387],[667,392],[667,397],[667,400]]},{"id":"cand-075","class":"beginner","pixelCount":15,"pointCount":4,"lengthPx":16,"bbox":{"minX":790,"minY":178,"maxX":804,"maxY":186},"path":"M 790 178 L 795 181 L 800 184 L 804 186","points":[[790,178],[795,181],[800,184],[804,186]]},{"id":"cand-076","class":"beginner","pixelCount":17,"pointCount":4,"lengthPx":16,"bbox":{"minX":572,"minY":593,"maxX":588,"maxY":595},"path":"M 588 593 L 582 594 L 576 595 L 572 595","points":[[588,593],[582,594],[576,595],[572,595]]}];
+    const FEATURES = [{"id":"lift-sky-cabin-8","type":"lift","label":"スカイキャビン8","difficulty":null,"optional":false,"suggestedClass":"lift"},{"id":"lift-marchen-quad","type":"lift","label":"メルヘンクワッドリフト","difficulty":null,"optional":false,"suggestedClass":"lift"},{"id":"lift-echo-quad","type":"lift","label":"エコークワッドリフト","difficulty":null,"optional":false,"suggestedClass":"lift"},{"id":"lift-woody-pair","type":"lift","label":"ウッディーペアリフト","difficulty":null,"optional":false,"suggestedClass":"lift"},{"id":"lift-snow-escalator","type":"lift","label":"スノーエスカレーター","difficulty":null,"optional":true,"suggestedClass":"lift"},{"id":"trail-downhill","type":"trail","label":"ダウンヒルコース","difficulty":"advanced","optional":false,"suggestedClass":"advanced"},{"id":"trail-echo","type":"trail","label":"エコーコース","difficulty":"advanced","optional":false,"suggestedClass":"advanced"},{"id":"trail-swing","type":"trail","label":"スイングコース","difficulty":"intermediate","optional":false,"suggestedClass":"intermediate"},{"id":"trail-forest","type":"trail","label":"林間コース","difficulty":"beginner","optional":false,"suggestedClass":"beginner"},{"id":"trail-woody","type":"trail","label":"ウッディーコース","difficulty":"intermediate","optional":false,"suggestedClass":"intermediate"},{"id":"trail-family","type":"trail","label":"ファミリーコース","difficulty":"intermediate","optional":false,"suggestedClass":"intermediate"},{"id":"trail-marchen","type":"trail","label":"メルヘンコース","difficulty":"beginner","optional":false,"suggestedClass":"beginner"}];
+    const COLORS = {
+      advanced: "#111111",
+      intermediate: "#e62828",
+      beginner: "#14b43c",
+      lift: "#1ea0f0",
+    };
+    const svg = document.getElementById("svg");
+    const featList = document.getElementById("featList");
+    const candInfo = document.getElementById("candInfo");
+    const out = document.getElementById("out");
+    const maskImg = document.getElementById("mask");
+    const skelImg = document.getElementById("skelImg");
+    const filtersEl = document.getElementById("filters");
+
+    let selCand = null;
+    let selFeat = FEATURES.find((f) => !f.optional)?.id || FEATURES[0]?.id;
+    /** @type {Record<string, string[]>} featureId -> candidateIds (multi for dashed) */
+    const assign = {};
+    const classOn = { advanced: true, intermediate: true, beginner: true, lift: true };
+
+    for (const cls of Object.keys(classOn)) {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.textContent = cls;
+      b.className = "on";
+      b.onclick = () => {
+        classOn[cls] = !classOn[cls];
+        b.classList.toggle("on", classOn[cls]);
+        renderCands();
+      };
+      filtersEl.appendChild(b);
+    }
+
+    FEATURES.forEach((f) => {
+      const el = document.createElement("div");
+      el.className = "feat" + (f.optional ? " opt" : "");
+      el.dataset.id = f.id;
+      el.dataset.base =
+        (f.type === "lift" ? "[L] " : "[T] ") + f.label +
+        (f.suggestedClass ? " · " + f.suggestedClass : "") +
+        (f.optional ? "（任意）" : "");
+      el.textContent = el.dataset.base;
+      el.onclick = () => {
+        selFeat = f.id;
+        renderFeats();
+      };
+      featList.appendChild(el);
+    });
+
+    function allAssignedCandIds() {
+      const s = new Set();
+      for (const ids of Object.values(assign)) {
+        for (const id of ids) s.add(id);
+      }
+      return s;
+    }
+
+    function renderFeats() {
+      featList.querySelectorAll(".feat").forEach((el) => {
+        el.classList.toggle("sel", el.dataset.id === selFeat);
+        const n = (assign[el.dataset.id] || []).length;
+        el.classList.toggle("done", n > 0);
+        el.textContent = n > 1 ? el.dataset.base + " ×" + n : el.dataset.base;
+      });
+    }
+
+    function renderCands() {
+      const taken = allAssignedCandIds();
+      svg.innerHTML = "";
+      for (const c of CANDIDATES) {
+        if (!classOn[c.class]) continue;
+        const p = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        p.setAttribute("d", c.path);
+        p.setAttribute("stroke", COLORS[c.class] || "#fff");
+        p.classList.add("cand");
+        if (c.id === selCand) p.classList.add("sel");
+        if (taken.has(c.id)) p.classList.add("assigned");
+        p.onclick = (e) => {
+          e.stopPropagation();
+          selCand = c.id;
+          candInfo.textContent = c.id + " · " + c.class + " · " + c.lengthPx + "px"
+            + (e.shiftKey ? " （追加）" : "");
+          if (selFeat) link(selFeat, selCand, e.shiftKey);
+          renderCands();
+        };
+        svg.appendChild(p);
+      }
+      buildOut();
+    }
+
+    function link(featId, candId, append) {
+      const feat = FEATURES.find((f) => f.id === featId);
+      if (feat?.optional) return;
+      // remove cand from any other feature
+      for (const [fid, ids] of Object.entries(assign)) {
+        assign[fid] = ids.filter((id) => id !== candId);
+        if (!assign[fid].length) delete assign[fid];
+      }
+      const cur = assign[featId] ? [...assign[featId]] : [];
+      if (append) {
+        if (!cur.includes(candId)) cur.push(candId);
+      } else {
+        cur.length = 0;
+        cur.push(candId);
+      }
+      assign[featId] = cur;
+      renderFeats();
+      renderCands();
+    }
+
+    function mergePaths(cands) {
+      // Join SVG path strings; order by descending length (good enough for hitboxes)
+      const sorted = [...cands].sort((a, b) => b.lengthPx - a.lengthPx);
+      return sorted.map((c) => c.path).join(" ");
+    }
+
+    function buildOut() {
+      const features = [];
+      for (const f of FEATURES) {
+        if (f.optional) continue;
+        const ids = assign[f.id];
+        if (!ids?.length) continue;
+        const cands = ids.map((id) => CANDIDATES.find((x) => x.id === id)).filter(Boolean);
+        if (!cands.length) continue;
+        const pts = cands.flatMap((c) => c.points);
+        features.push({
+          id: f.id,
+          type: f.type,
+          label: f.label,
+          source: "color-extract v2 + human-assign",
+          path: mergePaths(cands),
+          stations: f.type === "lift" && pts.length >= 2
+            ? [cands[0].points[0], cands[0].points[cands[0].points.length - 1]]
+            : [],
+          extractClass: cands[0].class,
+          candidateIds: ids,
+        });
+      }
+      const required = FEATURES.filter((f) => !f.optional);
+      const payload = {
+        schemaVersion: "2026-07-18",
+        coordinateAuthority: "sapporo-kokusai-hero.png color-extract-v2 assign",
+        status: required.every((f) => assign[f.id]?.length) ? "complete" : "incomplete",
+        hero: { width: 1024, height: 817, viewBox: "0 0 1024 817" },
+        features,
+        assignment: assign,
+      };
+      out.textContent = JSON.stringify(payload, null, 2);
+      return payload;
+    }
+
+    document.getElementById("toggleMask").onclick = () => { maskImg.hidden = !maskImg.hidden; };
+    document.getElementById("toggleSkel").onclick = () => { skelImg.hidden = !skelImg.hidden; };
+    document.getElementById("clearAssign").onclick = () => {
+      if (selFeat) delete assign[selFeat];
+      renderFeats();
+      renderCands();
+    };
+    document.getElementById("download").onclick = () => {
+      const payload = buildOut();
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "hitboxes-hero.json";
+      a.click();
+    };
+
+    renderFeats();
+    renderCands();
+  </script>
+</body>
+</html>

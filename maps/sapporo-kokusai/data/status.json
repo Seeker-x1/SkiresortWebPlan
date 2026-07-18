@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026-07-18",
+  "updatedAt": "2026-07-18T15:34:00+09:00",
+  "features": {
+    "lift-sky-cabin-8": "operating",
+    "lift-marchen-quad": "operating",
+    "lift-echo-quad": "operating",
+    "lift-woody-pair": "operating",
+    "lift-snow-escalator": "stopped",
+    "trail-downhill": "open",
+    "trail-echo": "open",
+    "trail-swing": "open",
+    "trail-forest": "open",
+    "trail-woody": "open",
+    "trail-family": "open",
+    "trail-marchen": "open"
+  },
+  "notes": {
+    "lift-snow-escalator": "稼働停止中のためグレーアウト。ヒットボックスなし。"
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "schemaVersion": "2026-07-18",
+  "resortId": "sapporo-kokusai",
+  "name": "札幌国際スキー場",
+  "name_en": "Sapporo Kokusai Ski Resort",
+  "route": "C",
+  "mapAsset": "/maps/sapporo-kokusai-hero.png",
+  "heroImage": {
+    "src": "/maps/sapporo-kokusai-hero.png",
+    "width": 1024,
+    "height": 817,
+    "viewBox": "0 0 1024 817",
+    "projection": "official-slopemap-direct",
+    "bakedLines": true,
+    "attribution": "公式ゲレンデマップ（sapporo-kokusai.jp）を hero に採用"
+  },
+  "disclaimer": "コース・リフトは公式マップ内に描画済み。ヒットボックス確定後にタップ操作が可能になります。",
+  "sources": [
+    "official-slopemap.png（https://www.sapporo-kokusai.jp/slopes/images/slopemap.png）",
+    "OpenStreetMap Overpass（aerialway / piste:type in Nominatim bbox）",
+    "gelanding-2016.webp（拓扑照合のみ・非正本）"
+  ],
+  "features": [
+    {
+      "id": "lift-sky-cabin-8",
+      "type": "lift",
+      "label": "スカイキャビン8",
+      "label_en": "Sky Cabin 8",
+      "shortLabel": "スカイキャビン8",
+      "liftKind": "gondola",
+      "meta": {
+        "距離": "2000m",
+        "種別": "gondola"
+      },
+      "source": {
+        "type": "official",
+        "id": "sapporo-kokusai.jp/slopes",
+        "url": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+        "retrieved_at": "2026-07-06"
+      }
+    },
+    {
+      "id": "lift-marchen-quad",
+      "type": "lift",
+      "label": "メルヘンクワッドリフト",
+      "label_en": "Märchen Quad",
+      "shortLabel": "メルヘンクワッドリフト",
+      "liftKind": "quad",
+      "meta": {
+        "距離": "1300m",
+        "種別": "quad"
+      },
+      "source": {
+        "type": "official",
+        "id": "sapporo-kokusai.jp/slopes",
+        "url": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+        "retrieved_at": "2026-07-06"
+      }
+    },
+    {
+      "id": "lift-echo-quad",
+      "type": "lift",
+      "label": "エコークワッドリフト",
+      "label_en": "Echo Quad",
+      "shortLabel": "エコークワッドリフト",
+      "liftKind": "quad",
+      "meta": {
+        "距離": "1005m",
+        "種別": "quad"
+      },
+      "source": {
+        "type": "official",
+        "id": "sapporo-kokusai.jp/slopes",
+        "url": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+        "retrieved_at": "2026-07-06"
+      }
+    },
+    {
+      "id": "lift-woody-pair",
+      "type": "lift",
+      "label": "ウッディーペアリフト",
+      "label_en": "Woody Pair",
+      "shortLabel": "ウッディーペアリフト",
+      "liftKind": "pair",
+      "meta": {
+        "距離": "810m",
+        "種別": "pair"
+      },
+      "source": {
+        "type": "official",
+        "id": "sapporo-kokusai.jp/slopes",
+        "url": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+        "retrieved_at": "2026-07-06"
+      }
+    },
+    {
+      "id": "lift-snow-escalator",
+      "type": "lift",
+      "label": "スノーエスカレーター",
+      "label_en": "Snow escalator",
+      "shortLabel": "スノーエスカレーター",
+      "liftKind": "surface",
+      "operationalStatus": "stopped",
+      "ui": { "greyOut": true },
+      "hitboxRequired": false,
+      "meta": {
+        "種別": "surface",
+        "運行": "稼働停止中（グレーアウト表示）"
+      },
+      "source": {
+        "type": "official",
+        "id": "sapporo-kokusai.jp/slopes",
+        "url": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+        "retrieved_at": "2026-07-06"
+      }
+    },
+    {
+      "id": "trail-downhill",
+      "type": "trail",
+      "label": "ダウンヒルコース",
+      "label_en": "Downhill course",
+      "shortLabel": "ダウンヒルコース",
+      "difficulty": "advanced",
+      "mapNumber": 1,
+      "meta": {
+        "最大斜度": "30°",
+        "平均斜度": "15°",
+        "距離": "2.2km"
+      },
+      "source": {
+        "type": "official",
+        "id": "sapporo-kokusai.jp/slopes",
+        "url": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+        "retrieved_at": "2026-07-06"
+      }
+    },
+    {
+      "id": "trail-echo",
+      "type": "trail",
+      "label": "エコーコース",
+      "label_en": "Echo course",
+      "shortLabel": "エコーコース",
+      "difficulty": "advanced",
+      "mapNumber": 2,
+      "meta": {
+        "最大斜度": "22°",
+        "平均斜度": "12°",
+        "距離": "1.0km"
+      },
+      "source": {
+        "type": "official",
+        "id": "sapporo-kokusai.jp/slopes",
+        "url": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+        "retrieved_at": "2026-07-06"
+      }
+    },
+    {
+      "id": "trail-swing",
+      "type": "trail",
+      "label": "スイングコース",
+      "label_en": "Swing course",
+      "shortLabel": "スイングコース",
+      "difficulty": "intermediate",
+      "mapNumber": 3,
+      "meta": {
+        "最大斜度": "28°",
+        "平均斜度": "10°",
+        "距離": "2.0km"
+      },
+      "source": {
+        "type": "official",
+        "id": "sapporo-kokusai.jp/slopes",
+        "url": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+        "retrieved_at": "2026-07-06"
+      }
+    },
+    {
+      "id": "trail-forest",
+      "type": "trail",
+      "label": "林間コース",
+      "label_en": "Forest course",
+      "shortLabel": "林間コース",
+      "difficulty": "beginner",
+      "mapNumber": 4,
+      "meta": {
+        "最大斜度": "12°",
+        "平均斜度": "8°",
+        "距離": "1.2km"
+      },
+      "source": {
+        "type": "official",
+        "id": "sapporo-kokusai.jp/slopes",
+        "url": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+        "retrieved_at": "2026-07-06"
+      }
+    },
+    {
+      "id": "trail-woody",
+      "type": "trail",
+      "label": "ウッディーコース",
+      "label_en": "Woody course",
+      "shortLabel": "ウッディーコース",
+      "difficulty": "intermediate",
+      "mapNumber": 5,
+      "meta": {
+        "最大斜度": "16°",
+        "平均斜度": "11°",
+        "距離": "1.2km"
+      },
+      "source": {
+        "type": "official",
+        "id": "sapporo-kokusai.jp/slopes",
+        "url": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+        "retrieved_at": "2026-07-06"
+      }
+    },
+    {
+      "id": "trail-family",
+      "type": "trail",
+      "label": "ファミリーコース",
+      "label_en": "Family course",
+      "shortLabel": "ファミリーコース",
+      "difficulty": "intermediate",
+      "mapNumber": 6,
+      "meta": {
+        "最大斜度": "20°",
+        "平均斜度": "11°",
+        "距離": "1.6km"
+      },
+      "source": {
+        "type": "official",
+        "id": "sapporo-kokusai.jp/slopes",
+        "url": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+        "retrieved_at": "2026-07-06"
+      }
+    },
+    {
+      "id": "trail-marchen",
+      "type": "trail",
+      "label": "メルヘンコース",
+      "label_en": "Märchen course",
+      "shortLabel": "メルヘンコース",
+      "difficulty": "beginner",
+      "mapNumber": 7,
+      "meta": {
+        "最大斜度": "12°",
+        "平均斜度": "8°",
+        "距離": "2.4km"
+      },
+      "source": {
+        "type": "official",
+        "id": "sapporo-kokusai.jp/slopes",
+        "url": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+        "retrieved_at": "2026-07-06"
+      }
+    }
+  ]
+}

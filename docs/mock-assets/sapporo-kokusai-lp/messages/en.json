@@ -11,7 +11,9 @@
   "nav": {
     "triangle": "Wide area",
     "guides": "Curated guides",
-    "tour": "Tour plan"
+    "tour": "Tour plan",
+    "map": "Slope map",
+    "mapHint": "Calibrated (official map trace)"
   },
   "hero": {
     "eyebrow": "Minami-ku, Sapporo · Jozankei",

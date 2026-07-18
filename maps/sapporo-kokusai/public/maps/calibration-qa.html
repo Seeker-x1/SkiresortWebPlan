@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>sapporo-kokusai — calibration QA</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    body { font-family: system-ui, sans-serif; background: #0f172a; color: #e2e8f0; }
+    header { padding: 12px 16px; border-bottom: 1px solid #334155; }
+    header p { font-size: 12px; color: #94a3b8; margin-top: 6px; line-height: 1.5; }
+    .stage { position: relative; max-width: 1024px; margin: 12px auto; line-height: 0; }
+    img { width: 100%; height: auto; display: block; }
+    svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .legend { padding: 12px 16px; font-size: 12px; color: #94a3b8; columns: 2; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>calibration-qa — sapporo-kokusai</strong>
+    <p>緑=リフト / 青=コース。公式図の焼き込み線と端点が概ね一致するか目視（目安 ±20px）。停止設備はヒットボックスなしで可。</p>
+  </header>
+  <div class="stage">
+    <img src="./sapporo-kokusai-hero.png" alt="hero" width="1024" height="817" />
+    <svg id="overlay" viewBox="0 0 1024 817" xmlns="http://www.w3.org/2000/svg"></svg>
+  </div>
+  <div class="legend" id="legend"></div>
+  <script>
+    const FEATURES = [{"id":"lift-sky-cabin-8","type":"lift","path":"M 158 718.1 L 359 544.1 L 628 146.1"},{"id":"lift-marchen-quad","type":"lift","path":"M 252 720.1 L 428 665.3 L 558 609.3 L 736 477.3 L 942 385.3 L 991 353.3"},{"id":"lift-echo-quad","type":"lift","path":"M 667 406.3 L 647 152.3"},{"id":"lift-woody-pair","type":"lift","path":"M 914 221.3 L 667 146.3"},{"id":"trail-downhill","type":"trail","path":"M 645 162.1 L 623 174.1 L 567 199.1 L 524 219.1 L 476 237.1 L 452 254.1 L 431 279.1 L 425 312.1 L 418 330.1 L 396 349.1 L 361 367.1 L 330 385.1 L 298 416.1 L 276 446.1 L 254 474.1 L 228 504.1 L 192 535.1 L 166 562.1 L 146 596.1 L 134 625.1 L 138 653.1 L 151 678.1 L 168 693.1 L 188 707.1"},{"id":"trail-echo","type":"trail","path":"M 657 159.3 L 685 196.3 L 713 225.3 L 731 246.3 L 742 263.3 L 739 282.3 L 725 301.3 L 698 322.3 L 676 345.3 L 660 368.3 L 652 390.3 L 631 414.3 L 609 441.3 L 596 468.3 L 584 503.3"},{"id":"trail-swing","type":"trail","path":"M 797 225.3 L 820 255.3 L 834 278.3 L 837 295.3 L 834 309.3 L 823 319.3 L 790 335.3 L 772 339.3 L 738 350.3 L 711 360.3 L 689 374.3 L 656 396.3 L 625 421.3 L 582 453.3 L 553 471.3 L 522 489.3 L 513 492.3 L 488 513.3 L 467 523.3 L 428 540.3 L 382 558.3 L 325 575.3 L 282 585.3 L 259 597.3 L 235 618.3 L 226 637.3 L 217 651.3 L 213 674.3 L 212 686.3"},{"id":"trail-forest","type":"trail","path":"M 672 140.3 L 699 142.3 L 736 151.3 L 758 161.3 L 784 175.3 L 813 194.3 L 836 207.3 L 864 215.3 L 897 224.3 L 921 236.3 L 938 268.3 L 957 297.3 L 964 311.3 L 952 321.3 L 930 337.3 L 890 357.3"},{"id":"trail-woody","type":"trail","path":"M 655 156.3 L 704 178.3 L 766 209.3 L 835 250.3 L 891 294.3 L 900 311.3 L 904 331.3 L 896 346.3 L 886 358.3"},{"id":"trail-family","type":"trail","path":"M 886 359.3 L 831 378.3 L 777 393.3 L 734 406.3 L 694 423.3 L 663 439.3 L 622 469.3 L 592 493.3 L 549 525.3 L 521 545.3 L 481 571.3 L 445 586.3 L 409 602.3 L 361 617.3 L 331 621.3 L 283 621.3 L 257 623.3 L 234 630.3 L 222 642.3 L 213 667.3 L 213 686.3"},{"id":"trail-marchen","type":"trail","path":"M 1000 358.3 L 954 389.3 L 937 397.3 L 922 413.3 L 908 437.3 L 887 458.3 L 879 471.3 L 874 485.3 L 870 515.3 L 870 534.3 L 864 549.3 L 849 564.3 L 826 576.3 L 796 581.3 L 755 585.3 L 645 587.3 L 603 593.3 L 563 597.3 L 537 607.3 L 515 622.3 L 491 638.3 L 470 651.3 L 453 657.3 L 426 657.3 L 384 646.3 L 326 638.3 L 278 633.3 L 256 634.3 L 242 642.3 L 229 653.3 L 225 668.3 L 224 680.3 L 222 689.3"}];
+    const svg = document.getElementById("overlay");
+    const legend = document.getElementById("legend");
+    for (const f of FEATURES) {
+      if (!f.path) continue;
+      const color = f.type === "lift" ? "#22c55e" : "#38bdf8";
+      const p = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      p.setAttribute("d", f.path);
+      p.setAttribute("fill", "none");
+      p.setAttribute("stroke", color);
+      p.setAttribute("stroke-width", "3");
+      p.setAttribute("stroke-linecap", "round");
+      p.setAttribute("opacity", "0.9");
+      svg.appendChild(p);
+      legend.innerHTML += "<div>" + f.id + "</div>";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "2026-07-06",
+  "source": "official-slopemap.png",
+  "sourceUrl": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+  "authority": "official-only",
+  "width": 1024,
+  "height": 817,
+  "viewBox": "0 0 1024 817",
+  "projection": "official-slopemap-direct",
+  "bakedLines": true,
+  "note": "公式コースマップをそのまま hero に使用（ユーザー承認 2026-07-06）",
+  "promotedAt": "2026-07-06T09:31:23.354Z"
+}

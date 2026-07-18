@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "2026-07-06",
+  "base": "official-slopemap.png",
+  "overlay": "gelanding-2016.webp",
+  "opacity": 0.5,
+  "scale": 1.88,
+  "rotateDeg": -0.5,
+  "translatePx": {
+    "x": 12,
+    "y": -28
+  },
+  "status": "superseded",
+  "note": "公式ベース承認により gelanding 重ね合わせは参照用のみ。hero は official-slopemap 直使用。"
+}

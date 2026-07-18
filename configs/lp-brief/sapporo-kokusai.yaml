@@ -1,0 +1,27 @@
+resortId: sapporo-kokusai
+schemaVersion: "2026-07-18"
+
+name:
+  ja: 札幌国際スキー場
+  en: Sapporo Kokusai Ski Resort
+region:
+  ja: 北海道札幌市
+  en: Sapporo, Hokkaido
+japowResortId: 453
+
+strategy:
+  ja: ゴールデントライアングル
+  en: Golden Triangle · Regional
+archetype: regional-hub
+
+map:
+  mode: calibrated
+  sources:
+    - https://www.sapporo-kokusai.jp/slopes/images/slopemap.png
+    - maps/sapporo-kokusai (Map Factory hand-trace)
+  heroImage: images/maps/sapporo-kokusai-hero.png
+  mapHref: sapporo-kokusai-map.html
+
+humanReview:
+  - japowResortId
+  - mapMode calibrated hitboxes signoff

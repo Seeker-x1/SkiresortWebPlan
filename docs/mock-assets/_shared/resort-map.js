@@ -3,9 +3,44 @@
  */
 (function () {
   const STORAGE_KEY = "mock-lp-locale";
-  const params = new URLSearchParams(location.search);
-  const resortId = params.get("resort") || "sichinohe";
-  const locale = params.get("lang") || localStorage.getItem(STORAGE_KEY) || "ja";
+  /**
+   * Resolve resort id. Do NOT silently fall back to sichinohe when the query
+   * was lost (e.g. serve cleanUrls 301 /map.html?resort=x → /map).
+   * Also recover mangled forms like ?resort%3Dsapporo-kokusai
+   */
+  function resolveResortId() {
+    // 1) Hard-pinned pages (no query string needed)
+    if (typeof window.__RESORT_ID__ === "string" && window.__RESORT_ID__) {
+      return window.__RESORT_ID__;
+    }
+    const pinned = document.body?.dataset?.resort;
+    if (pinned) return pinned;
+
+    // 2) Query ?resort=
+    const params = new URLSearchParams(location.search);
+    let id = params.get("resort");
+    if (id) return id;
+    for (const [k, v] of params.entries()) {
+      if (k.startsWith("resort=") && !v) return k.slice("resort=".length);
+      if (k === "resort" && v) return v;
+    }
+    const m = location.search.match(/[?&]resort=([^&]+)/);
+    if (m) return decodeURIComponent(m[1]);
+    const mangled = location.search.match(/resort%3D([^&]+)/i);
+    if (mangled) return decodeURIComponent(mangled[1]);
+
+    // 3) Filename map-{id}.html / {id}-map.html
+    const file = (location.pathname.split("/").pop() || "").replace(/\.html$/i, "");
+    const fileMap = file.match(/^map-(.+)$/) || file.match(/^(.+)-map$/);
+    if (fileMap) return fileMap[1];
+
+    return null;
+  }
+  const resortId = resolveResortId();
+  const locale =
+    new URLSearchParams(location.search).get("lang") ||
+    localStorage.getItem(STORAGE_KEY) ||
+    "ja";
 
   const STATUS_COLORS = {
     operating: "#7ec8e3",
@@ -57,6 +92,18 @@
     "trail-4": "#d62839",
     "trail-5": "#d62839",
     "trail-6": "#64748b",
+    "lift-sky-cabin-8": "#1a1a1a",
+    "lift-marchen-quad": "#1a1a1a",
+    "lift-echo-quad": "#1a1a1a",
+    "lift-woody-pair": "#1a1a1a",
+    "lift-snow-escalator": "#64748b",
+    "trail-downhill": "#1a1a1a",
+    "trail-echo": "#1a1a1a",
+    "trail-swing": "#d62839",
+    "trail-forest": "#2fa84a",
+    "trail-woody": "#d62839",
+    "trail-family": "#d62839",
+    "trail-marchen": "#2fa84a",
   };
 
   const UI = {
@@ -65,7 +112,10 @@
       mapTitle: "ゲレンデマップ",
       fidelityNotice:
         "コース・リフトの配置は概略です。正確な滑走区域・運行状況は、ゲレンデの公式サイトと現地の案内を正としてください。",
+      fidelityNoticeCalibrated:
+        "公式コースマップ上にヒット領域を校正済みです。運行状況の最終判断は公式サイトと現地案内を正としてください。",
       stageBadge: "概略",
+      stageBadgeCalibrated: "校正済",
       status: "運行状況",
       lifts: "リフト",
       trails: "コース",
@@ -87,7 +137,10 @@
       mapTitle: "Resort map",
       fidelityNotice:
         "Trail and lift positions are approximate. For accurate runs and lift status, follow the resort’s official site and on-mountain signage.",
+      fidelityNoticeCalibrated:
+        "Hit areas are calibrated on the official course map. For final operating status, follow the resort’s official site and on-mountain signage.",
       stageBadge: "Overview",
+      stageBadgeCalibrated: "Calibrated",
       status: "Operations",
       lifts: "Lifts",
       trails: "Trails",
@@ -150,7 +203,12 @@
   }
 
   function accentColor(id, type) {
-    return FEATURE_COLORS[id] || (type === "lift" ? "#1a1a1a" : "#2fa84a");
+    if (FEATURE_COLORS[id]) return FEATURE_COLORS[id];
+    const f = mapData?.features?.find((x) => x.id === id);
+    if (f?.difficulty === "advanced") return "#1a1a1a";
+    if (f?.difficulty === "intermediate") return "#d62839";
+    if (f?.difficulty === "beginner") return "#2fa84a";
+    return type === "lift" ? "#1a1a1a" : "#2fa84a";
   }
 
   function isStoppedLift(id) {
@@ -219,10 +277,17 @@
 
   async function init() {
     document.documentElement.lang = locale;
+    if (!resortId) {
+      el.stage.innerHTML = `<p class="map-error">${t("loadFailed")}<br><small>resort パラメータがありません。<code>map.html?resort=sapporo-kokusai</code> のように指定してください（URLから resort が消えると別施設のマップが出ます）。</small></p>`;
+      return;
+    }
     try {
       const res = await fetch(`data/maps/${resortId}.json`);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status} data/maps/${resortId}.json`);
       mapData = await res.json();
+      if (mapData.id && mapData.id !== resortId) {
+        throw new Error(`JSON id mismatch: expected ${resortId}, got ${mapData.id}`);
+      }
     } catch (e) {
       const hint = location.protocol === "file:" ? `<br><small>${t("loadFailedHint")}</small>` : "";
       el.stage.innerHTML = `<p class="map-error">${t("loadFailed")}<br><small>${e.message}</small>${hint}</p>`;
@@ -232,7 +297,14 @@
     document.title = `${pick(mapData.name)} — ${t("mapTitle")}`;
     if (el.title) el.title.textContent = pick(mapData.name);
     if (el.updated) el.updated.textContent = formatUpdated(mapData.updatedAt);
-    if (el.fidelity) el.fidelity.textContent = t("fidelityNotice");
+    const mapMode =
+      mapData.mapMode || (mapData.mapFactory ? "calibrated" : "schematic");
+    if (el.fidelity) {
+      el.fidelity.textContent =
+        mapMode === "calibrated"
+          ? t("fidelityNoticeCalibrated")
+          : t("fidelityNotice");
+    }
 
     const registryRes = await fetch("registry.json").catch(() => null);
     if (registryRes?.ok && el.back) {
@@ -278,13 +350,17 @@
         }
 
         if (selected && baked) {
-          overlayPaths += `<path class="map-select-ring" d="${f.path}" stroke="#ffffff" pointer-events="none" />`;
+          // Dark halo + amber core — readable on white snow (avoid pure white ring)
+          overlayPaths += `<path class="map-select-ring map-select-ring--halo" d="${f.path}" />`;
+          overlayPaths += `<path class="map-select-ring map-select-ring--core" d="${f.path}" />`;
         }
       }
     }
 
+    const badge =
+      mapMode === "calibrated" ? t("stageBadgeCalibrated") : t("stageBadge");
     el.stage.innerHTML = `
-      <span class="map-stage-badge" aria-hidden="true">${t("stageBadge")}</span>
+      <span class="map-stage-badge" aria-hidden="true">${badge}</span>
       <div class="map-canvas">
         <div class="map-canvas-content${imageReady ? " is-ready" : ""}">
           <img class="map-hero" src="${hero.src}" alt="${alt}" width="${hero.width || 1024}" height="${hero.height || 1024}" decoding="async" fetchpriority="high" />

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "2026-07-18",
+  "type": "identity",
+  "route": "C",
+  "reason": "hero は公式 slopemap のリサイズであり、ピクセル空間が公式図そのもの。GeoJSON→画像投影は未実施（OSM は根拠対照用）。",
+  "hero": {
+    "width": 1024,
+    "height": 817,
+    "viewBox": "0 0 1024 817"
+  },
+  "controlPointsRequired": false,
+  "geoProjection": null
+}

@@ -77,6 +77,12 @@ function rewriteHtml(content) {
     .replaceAll('href="index.html"', 'href="/"')
     .replaceAll('href="_shared/', 'href="/_shared/')
     .replaceAll('src="_shared/', 'src="/_shared/');
+  // Calibrated pinned maps: ../{id}-map.html → /{id}-map.html
+  out = out.replace(/href="\.\.\/([a-z0-9-]+-map\.html)/g, 'href="/$1');
+  out = out.replace(/href="([a-z0-9-]+-lp)\/index\.html/g, (_, slug) => {
+    const id = slug.replace(/-lp$/, "");
+    return `href="/${id}/`;
+  });
   // Internal dev banner (docs/mock-assets preview only) — not for public guides host
   out = out.replace(/<p class="mock-banner">[\s\S]*?<\/p>\s*/g, "");
   out = ensureSkyticketScriptOrder(out);
@@ -251,11 +257,16 @@ function buildRegistry(registry) {
     },
     resorts: registry.resorts.map((r) => {
       const lpPath = `/${r.id}/`;
-      const mapPath = `/map.html?resort=${r.id}`;
+      const mapMode = r.mapMode || "schematic";
+      const mapPath =
+        mapMode === "calibrated" && r.mapHref
+          ? `/${String(r.mapHref).replace(/^\//, "")}`
+          : `/map.html?resort=${r.id}`;
       const guideUrl = `${HOST}${lpPath}`;
       const guideUrlEn = `${HOST}${langSuffix(lpPath, "en")}`;
       return {
         ...r,
+        mapMode,
         guideUrl,
         guideUrlEn,
         japowResortId: r.japowResortId ?? null,
@@ -330,6 +341,19 @@ function main() {
     rewriteHtml(readFileSync(join(MOCK_ROOT, "area-map.html"), "utf8")),
     "utf8",
   );
+
+  // Calibrated pinned maps ({id}-map.html) — query-free, no cleanUrls risk
+  for (const resort of registry.resorts) {
+    if (resort.mapMode !== "calibrated") continue;
+    const href = resort.mapHref || `${resort.id}-map.html`;
+    const name = String(href).replace(/^\//, "");
+    const src = join(MOCK_ROOT, name);
+    if (!existsSync(src)) {
+      throw new Error(`calibrated map page missing: ${name} (registry id ${resort.id})`);
+    }
+    writeFileSync(join(OUT, name), rewriteHtml(readFileSync(src, "utf8")), "utf8");
+    console.log(`✓ /${name} ← calibrated map`);
+  }
 
   // Shared JS/CSS + hub messages
   copyDirSimple(join(MOCK_ROOT, "_shared"), join(OUT, "_shared"), { transformJs: true });

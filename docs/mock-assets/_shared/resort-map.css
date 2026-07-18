@@ -317,12 +317,23 @@ body.map-page {
   opacity: 0.25 !important;
 }
 
+/* Selection on snow: dark halo + amber core (white disappears on piste) */
 .map-select-ring {
   fill: none;
-  stroke-width: 4;
   stroke-linecap: round;
   stroke-linejoin: round;
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9));
+  pointer-events: none;
+}
+.map-select-ring--halo {
+  stroke: #0b1220;
+  stroke-width: 9;
+  stroke-opacity: 0.92;
+}
+.map-select-ring--core {
+  stroke: #f59e0b;
+  stroke-width: 4;
+  stroke-opacity: 1;
+  filter: drop-shadow(0 0 4px rgba(245, 158, 11, 0.75));
 }
 
 .map-loading {

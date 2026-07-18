@@ -301,6 +301,8 @@
       "guideUrl": "https://guides.japowserch.com/sapporo-kokusai/",
       "japowResortId": 453,
       "guideTier": "mock",
+      "mapMode": "calibrated",
+      "mapHref": "sapporo-kokusai-map.html",
       "affiliates": {
         "rentacar": "chitose_international_airport"
       }

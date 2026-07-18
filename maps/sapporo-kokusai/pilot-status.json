@@ -1,0 +1,26 @@
+{
+  "id": "sapporo-kokusai",
+  "spec": "docs/MAP_FACTORY_SPEC.md",
+  "phase": "complete",
+  "steps_done": ["0", "1", "2", "3", "5", "6", "7", "8", "9"],
+  "human_gates": {
+    "A": "not_required_for_route_C_identity",
+    "B": "approved",
+    "C": "approved"
+  },
+  "hitboxes": {
+    "traced": 11,
+    "optional_skip": ["lift-snow-escalator"],
+    "source": "official-slopemap hand-trace"
+  },
+  "promoted": {
+    "guidesMap": "docs/mock-assets/data/maps/sapporo-kokusai.json",
+    "standalone": "maps/sapporo-kokusai/public/maps/index.html"
+  },
+  "shippable": true,
+  "urls": {
+    "localStandalone": "maps/sapporo-kokusai/public/maps/index.html",
+    "localMock": "http://localhost:3456/map.html?resort=sapporo-kokusai",
+    "guides": "https://guides.japowserch.com/map.html?resort=sapporo-kokusai"
+  }
+}

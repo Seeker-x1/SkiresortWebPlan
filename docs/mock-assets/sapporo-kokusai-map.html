@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>札幌国際スキー場 — ゲレンデマップ</title>
+  <meta name="description" content="札幌国際スキー場の校正済みゲレンデマップ（手トレースヒットボックス）。" />
+  <link rel="stylesheet" href="_shared/resort-map.css" />
+  <link rel="stylesheet" href="_shared/mock-i18n.css" />
+</head>
+<body class="map-page" data-resort="sapporo-kokusai">
+  <header class="map-topbar">
+    <div>
+      <a href="sapporo-kokusai-lp/index.html" id="map-top-link">← ガイドトップへ戻る</a>
+      <span aria-hidden="true"> · </span>
+      <span class="logo" id="map-resort-name">札幌国際スキー場</span>
+    </div>
+    <div class="map-topbar-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-switch="ja">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <p id="map-fidelity-notice" class="map-fidelity-notice" role="note"></p>
+
+  <div class="map-shell">
+    <div class="map-stage" id="map-stage">
+      <p class="map-error">読み込み中…</p>
+    </div>
+
+    <aside class="map-rail" id="map-rail" aria-label="運行状況">
+      <div class="map-rail-head">
+        <h1 class="map-rail-title">運行状況</h1>
+        <p class="map-rail-updated" id="map-updated">—</p>
+        <div class="map-tabs" role="tablist">
+          <button type="button" class="map-tab" role="tab" data-filter="trail" aria-selected="true">コース</button>
+          <button type="button" class="map-tab" role="tab" data-filter="lift" aria-selected="false">リフト</button>
+        </div>
+      </div>
+      <div class="map-list" id="map-list"></div>
+      <div class="map-detail" id="map-detail"></div>
+      <div class="map-legend">
+        <strong>凡例</strong>
+        <div class="map-legend-row">
+          <span><i class="map-legend-swatch" style="background:#4ade80"></i>初級</span>
+          <span><i class="map-legend-swatch" style="background:#facc15"></i>中級</span>
+          <span><i class="map-legend-swatch" style="background:#374151"></i>上級</span>
+          <span><i class="map-legend-swatch" style="background:#3b82f6"></i>リフト</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <button type="button" class="map-mobile-fab" id="map-fab">運行状況</button>
+  <div class="map-sheet-backdrop" id="map-sheet-backdrop"></div>
+  <aside class="map-sheet" id="map-sheet">
+    <div class="map-rail-head" style="display:flex;justify-content:space-between;align-items:center">
+      <h2 class="map-rail-title" style="margin:0">運行状況</h2>
+      <button type="button" class="map-tab map-sheet-close">閉じる</button>
+    </div>
+    <div class="map-list" id="map-list-mobile"></div>
+    <div class="map-detail" id="map-detail-mobile"></div>
+  </aside>
+
+  <script>
+    window.__RESORT_ID__ = "sapporo-kokusai";
+    document.querySelectorAll("[data-lang-switch]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const lang = btn.dataset.langSwitch;
+        const u = new URL(location.href);
+        u.searchParams.set("lang", lang);
+        localStorage.setItem("mock-lp-locale", lang);
+        location.href = u.toString();
+      });
+    });
+    const cur = new URLSearchParams(location.search).get("lang") || localStorage.getItem("mock-lp-locale") || "ja";
+    document.querySelectorAll("[data-lang-switch]").forEach((b) => {
+      b.setAttribute("aria-pressed", b.dataset.langSwitch === cur ? "true" : "false");
+    });
+  </script>
+  <script src="_shared/resort-map.js"></script>
+</body>
+</html>

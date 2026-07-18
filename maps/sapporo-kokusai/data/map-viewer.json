@@ -19,14 +19,12 @@
   "updatedAt": "2026-07-18T06:41:05.370Z",
   "viewBox": "0 0 1024 817",
   "hero": {
-    "src": "images/maps/sapporo-kokusai-hero.png",
+    "src": "./sapporo-kokusai-hero.png",
     "width": 1024,
     "height": 817,
     "viewBox": "0 0 1024 817"
   },
   "bakedLines": true,
-  "mapMode": "calibrated",
-  "mapHref": "sapporo-kokusai-map.html",
   "features": [
     {
       "id": "lift-sky-cabin-8",

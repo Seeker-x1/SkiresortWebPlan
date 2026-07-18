@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>札幌国際 — ヒットボックストレース</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+    }
+    .bar {
+      padding: 10px 12px;
+      border-bottom: 1px solid #334155;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .bar h1 { font-size: 14px; width: 100%; }
+    .bar p { font-size: 11px; color: #94a3b8; width: 100%; line-height: 1.5; }
+    .bar button, .bar select {
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 8px;
+      border: 1px solid #475569;
+      background: #1e293b;
+      color: #f8fafc;
+    }
+    .bar button { cursor: pointer; }
+    .bar button.primary { background: #166534; border-color: #16a34a; }
+    .main { flex: 1; display: grid; grid-template-columns: 1fr 320px; min-height: 0; }
+    .stage-wrap { overflow: auto; padding: 12px; }
+    .stage {
+      position: relative;
+      display: inline-block;
+      max-width: 100%;
+      cursor: crosshair;
+      line-height: 0;
+    }
+    .stage img {
+      display: block;
+      width: 100%;
+      height: auto;
+      user-select: none;
+      pointer-events: none;
+    }
+    .stage svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    .panel {
+      border-left: 1px solid #334155;
+      padding: 12px;
+      overflow: auto;
+      font-size: 12px;
+    }
+    .panel h2 {
+      font-size: 12px;
+      margin-bottom: 8px;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+    .panel pre {
+      background: #020617;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 8px;
+      white-space: pre-wrap;
+      word-break: break-all;
+      font-size: 10px;
+      max-height: 240px;
+      overflow: auto;
+    }
+    .feat-list { list-style: none; margin: 0 0 12px; padding: 0; }
+    .feat-list li {
+      padding: 6px 8px;
+      border-radius: 6px;
+      margin-bottom: 4px;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+    .feat-list li:hover { background: #1e293b; }
+    .feat-list li.sel { background: #1e3a5f; border-color: #38bdf8; }
+    .feat-list li.done { color: #86efac; }
+    @media (max-width: 900px) { .main { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="bar">
+    <h1>ヒットボックス トレース — sapporo-kokusai-hero.png 1024×817</h1>
+    <p>
+      手順: ①プルダウン／右リストで対象を選ぶ → ②地図をクリックして点を打つ（黄点が見える）→
+      ③「パス確定」で保存 → 全12本完了後「JSON保存」。
+      出力先: <code>maps/sapporo-kokusai/data/hitboxes-hero.json</code>
+    </p>
+    <select id="featSelect" aria-label="トレース対象"></select>
+    <button type="button" id="undoBtn">1点戻す</button>
+    <button type="button" id="clearBtn">下書きクリア</button>
+    <button type="button" class="primary" id="commitBtn">パス確定</button>
+    <button type="button" id="copyBtn">JSONコピー</button>
+    <button type="button" id="downloadBtn">JSON保存</button>
+  </header>
+  <div class="main">
+    <div class="stage-wrap">
+      <div class="stage" id="stage">
+        <img id="hero" src="./sapporo-kokusai-hero.png" alt="札幌国際公式コースマップ" width="1024" height="817" />
+        <svg id="overlay" viewBox="0 0 1024 817" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+    </div>
+    <aside class="panel">
+      <h2>対象一覧（12本）</h2>
+      <ul class="feat-list" id="featList"></ul>
+      <h2>いま描いている点</h2>
+      <pre id="draft">（クリックで点を追加）</pre>
+      <h2>出力 JSON</h2>
+      <pre id="out"></pre>
+    </aside>
+  </div>
+  <script>
+    // file:// でも動くよう FEATURES を埋め込み（fetch 不要）
+    const HERO_W = 1024;
+    const HERO_H = 817;
+    const OUT_FILE = "hitboxes-hero.json";
+    const SOURCE_TAG = "official-slopemap hand-trace";
+
+    const FEATURES = [
+      { id: "lift-sky-cabin-8", type: "lift", label: "スカイキャビン8" },
+      { id: "lift-marchen-quad", type: "lift", label: "メルヘンクワッドリフト" },
+      { id: "lift-echo-quad", type: "lift", label: "エコークワッドリフト" },
+      { id: "lift-woody-pair", type: "lift", label: "ウッディーペアリフト" },
+      { id: "lift-snow-escalator", type: "lift", label: "スノーエスカレーター（停止・任意）", optional: true },
+      { id: "trail-downhill", type: "trail", label: "ダウンヒルコース" },
+      { id: "trail-echo", type: "trail", label: "エコーコース" },
+      { id: "trail-swing", type: "trail", label: "スイングコース" },
+      { id: "trail-forest", type: "trail", label: "林間コース" },
+      { id: "trail-woody", type: "trail", label: "ウッディーコース" },
+      { id: "trail-family", type: "trail", label: "ファミリーコース" },
+      { id: "trail-marchen", type: "trail", label: "メルヘンコース" },
+    ];
+
+    const stage = document.getElementById("stage");
+    const hero = document.getElementById("hero");
+    const overlay = document.getElementById("overlay");
+    const featSelect = document.getElementById("featSelect");
+    const featList = document.getElementById("featList");
+    const draftEl = document.getElementById("draft");
+    const outEl = document.getElementById("out");
+
+    let currentId = FEATURES[0].id;
+    let draftPoints = [];
+    const saved = Object.fromEntries(FEATURES.map((f) => [f.id, null]));
+
+    FEATURES.forEach((f) => {
+      const opt = document.createElement("option");
+      opt.value = f.id;
+      opt.textContent = `${f.type === "lift" ? "リフト" : "コース"}: ${f.label}`;
+      if (f.optional) opt.style.color = "#94a3b8";
+      featSelect.appendChild(opt);
+
+      const li = document.createElement("li");
+      li.dataset.id = f.id;
+      li.textContent = `${f.type === "lift" ? "[L]" : "[T]"} ${f.label}`;
+      if (f.optional) {
+        li.style.color = "#94a3b8";
+        li.title = "稼働停止中 — ヒットボックス任意（グレーアウト）";
+      }
+      li.onclick = () => selectFeature(f.id);
+      featList.appendChild(li);
+    });
+
+    function selectFeature(id) {
+      currentId = id;
+      featSelect.value = id;
+      draftPoints = [];
+      featList.querySelectorAll("li").forEach((li) => {
+        li.classList.toggle("sel", li.dataset.id === id);
+      });
+      updateDraft();
+      redraw();
+    }
+
+    function toHeroCoords(clientX, clientY) {
+      const r = hero.getBoundingClientRect();
+      if (r.width < 1 || r.height < 1) return [0, 0];
+      const x = ((clientX - r.left) / r.width) * HERO_W;
+      const y = ((clientY - r.top) / r.height) * HERO_H;
+      return [Math.round(x * 10) / 10, Math.round(y * 10) / 10];
+    }
+
+    function pathFromPoints(pts) {
+      if (!pts.length) return "";
+      return pts
+        .map((p, i) => (i === 0 ? `M ${p[0]} ${p[1]}` : `L ${p[0]} ${p[1]}`))
+        .join(" ");
+    }
+
+    function stationsFor(id, pts) {
+      if (id.startsWith("lift-") && pts.length >= 2) {
+        return [pts[0], pts[pts.length - 1]];
+      }
+      return [];
+    }
+
+    function updateDraft() {
+      draftEl.textContent = draftPoints.length
+        ? draftPoints.map((p, i) => `${i + 1}: [${p[0]}, ${p[1]}]`).join("\n")
+        : "（クリックで点を追加）";
+    }
+
+    function buildOutput() {
+      const features = FEATURES.map((f) => saved[f.id]).filter(Boolean);
+      const required = FEATURES.filter((f) => !f.optional);
+      const allDone = required.every((f) => saved[f.id]);
+      return {
+        schemaVersion: "2026-07-18",
+        coordinateAuthority: "sapporo-kokusai-hero.png（公式図）直トレース",
+        status: allDone ? "complete" : "incomplete",
+        hero: { width: HERO_W, height: HERO_H, viewBox: `0 0 ${HERO_W} ${HERO_H}` },
+        features,
+        note: "optional features (e.g. stopped lifts) may omit hitbox paths",
+      };
+    }
+
+    function redraw() {
+      let html = "";
+      for (const f of FEATURES) {
+        const data = saved[f.id];
+        const isCurrent = f.id === currentId;
+        const pts = isCurrent ? draftPoints : [];
+        const path =
+          isCurrent && pts.length
+            ? pathFromPoints(pts)
+            : data?.path || "";
+        if (!path && !pts.length) continue;
+        const color = f.type === "lift" ? "#22c55e" : "#38bdf8";
+        if (path) {
+          html += `<path d="${path}" fill="none" stroke="${color}" stroke-width="${isCurrent ? 4 : 2.5}" stroke-linecap="round" stroke-linejoin="round" opacity="${isCurrent ? 1 : 0.55}"/>`;
+        }
+        const stations =
+          isCurrent && pts.length >= 2
+            ? stationsFor(f.id, pts)
+            : data?.stations || [];
+        for (const [cx, cy] of stations) {
+          html += `<circle cx="${cx}" cy="${cy}" r="8" fill="${color}" stroke="#fff" stroke-width="2"/>`;
+        }
+        pts.forEach(([cx, cy], i) => {
+          html += `<circle cx="${cx}" cy="${cy}" r="6" fill="#fbbf24" stroke="#000" stroke-width="1.5"/>`;
+          html += `<text x="${cx + 8}" y="${cy - 8}" fill="#fbbf24" font-size="14" font-weight="700">${i + 1}</text>`;
+        });
+      }
+      overlay.innerHTML = html;
+      outEl.textContent = JSON.stringify(buildOutput(), null, 2);
+      featList.querySelectorAll("li").forEach((li) => {
+        const meta = FEATURES.find((f) => f.id === li.dataset.id);
+        const done = !!saved[li.dataset.id] || meta?.optional;
+        li.classList.toggle("done", done);
+      });
+    }
+
+    stage.addEventListener("click", (e) => {
+      draftPoints.push(toHeroCoords(e.clientX, e.clientY));
+      updateDraft();
+      redraw();
+    });
+
+    document.getElementById("undoBtn").onclick = () => {
+      draftPoints.pop();
+      updateDraft();
+      redraw();
+    };
+    document.getElementById("clearBtn").onclick = () => {
+      draftPoints = [];
+      updateDraft();
+      redraw();
+    };
+    document.getElementById("commitBtn").onclick = () => {
+      if (draftPoints.length < 2) {
+        alert("2点以上クリックしてから「パス確定」してください");
+        return;
+      }
+      const meta = FEATURES.find((f) => f.id === currentId);
+      saved[currentId] = {
+        id: currentId,
+        type: meta.type,
+        label: meta.label,
+        source: SOURCE_TAG,
+        path: pathFromPoints(draftPoints),
+        stations: stationsFor(currentId, draftPoints),
+      };
+      draftPoints = [];
+      updateDraft();
+      redraw();
+    };
+    document.getElementById("copyBtn").onclick = async () => {
+      await navigator.clipboard.writeText(outEl.textContent);
+      alert("コピーしました → data/hitboxes-hero.json に貼り付け");
+    };
+    document.getElementById("downloadBtn").onclick = () => {
+      const blob = new Blob([outEl.textContent], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = OUT_FILE;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    };
+
+    featSelect.onchange = () => selectFeature(featSelect.value);
+    selectFeature(FEATURES[0].id);
+  </script>
+</body>
+</html>

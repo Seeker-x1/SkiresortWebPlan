@@ -24,7 +24,12 @@
     "lp:deep-research": "node scripts/lp-factory/run-deep-research.mjs",
     "lp:import-report": "node scripts/lp-factory/import-gem-report.mjs",
     "lp:auto": "node scripts/lp-factory/run-lp-auto.mjs",
-    "lp:ship": "node scripts/lp-factory/ship-lp.mjs"
+    "lp:ship": "node scripts/lp-factory/ship-lp.mjs",
+    "map:research": "node scripts/map-factory/research.mjs",
+    "map:validate": "node scripts/map-factory/validate.mjs",
+    "map:extract-lines": "node scripts/map-factory/extract-line-candidates.mjs",
+    "map:promote": "node scripts/map-factory/promote-hitboxes.mjs",
+    "map:validate-mode": "node docs/mock-assets/scripts/validate-map-mode.mjs"
   },
   "dependencies": {
     "framer-motion": "^11.18.2",

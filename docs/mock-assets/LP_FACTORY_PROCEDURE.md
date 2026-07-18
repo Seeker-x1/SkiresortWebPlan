@@ -82,16 +82,18 @@ Step 13  L3 評価 + Human Gate（並行可）· 両リポ push 完了で出荷
 
 ### 0.3 参照実装
 
-直近で **§0.2 全 Step 完了** した LP を正とする（2026-06 時点）:
+直近で **§0.2 全 Step 完了** した LP を正とする。**ビジュアル canonical** は `sichinohe-lp`（LAAX Flat Editorial・2026-07-16 凍結）:
 
 | 施設 | 複製元 | 備考 |
 |------|--------|------|
-| `hinode` | `shinjo-lp` | 駅徒歩・Snow & Spa · japow `52` |
+| `sichinohe` | `sichinohe-lp` | **`transit-onsen` canonical** · 白黒赤フラット · 角なし CTA · paths フォトカード · japow 連携済み |
+| `hinode` | `shinjo-lp` | 駅徒歩・Snow & Spa · japow `52`（pipeline 参照。見た目は `local-value` 系） |
 | `shinjo` | `shinjo-lp` 系 | 新幹線ターミナル · japow `163` |
 | `kamikawa-nakayama` | `kamikawa-nakayama-lp` | フリーミアム · japow `36` |
 | `pippu` | `pippu-lp` | 初回からアフィリエイト・registry 完備の型 |
 
-**新規 `{id}` は上記と同じファイルセット・同じ検証コマンドを適用する。**
+**新規 `{id}` は上記と同じファイルセット・同じ検証コマンドを適用する。**  
+`transit-onsen` を選ぶ場合は **必ず `sichinohe-lp` を複製**し、`mock.css` の LAAX トークン（`--accent: #d81f2a`・`.btn` 角なし・`.path-tile__img`）を崩さない。
 
 ---
 
@@ -204,7 +206,7 @@ humanReview:
 
 | `archetype` | 複製元 | 特徴 | サブページ例 |
 |-------------|--------|------|----------------|
-| `transit-onsen` | `sichinohe-lp` | 新幹線・駅アクセス + 温泉 | — |
+| `transit-onsen` | `sichinohe-lp` | 新幹線・駅アクセス + 温泉。**LAAX Flat Editorial**（白黒赤・角なし CTA・paths フォトカード） | — |
 | `wellness-sight` | `biei-lp` | スノーウェルネス + 観光目玉 | `blue-pond.html`, `snow-play.html`, `nearby-*.html` |
 | `live-dashboard` | `unabetsu-lp` / `minami-furano-lp` | 運営透明性・ライブ風チップ | — |
 | `pivot-campus` | `tsunan-lp` | 一般滑走休止・特化施設・教育 | — |
@@ -326,20 +328,41 @@ node docs/mock-assets/scripts/validate-mock-html-i18n.mjs
 
 **禁止**: 手置きピクセル座標の SVG オーバーレイを「本番品質」として載せること（[lift-map-no-fake-overlays](../../.cursor/rules/lift-map-no-fake-overlays.mdc)）。
 
-モックでは次のパターンのみ:
+**既定は模式図（schematic）。** 400+ 施設すべてに手トレースはしない。詳細マップが必要なときだけ校正（calibrated）を選ぶ。
 
-| 方式 | 条件 |
-|------|------|
-| **焼き込みイラスト** | `images/maps/{id}-hero.png` にコース線込み。JSON はリスト・ヒットボックスのみ |
-| 七戸同等 | 手トレース済み `hitboxes-*.json` がある場合のみ |
+| mapMode | いつ使う | 作業 |
+|---------|----------|------|
+| **schematic**（既定） | 通常の LP | `generate-map-data.mjs` のみ。ヒットボックス QA 不要 |
+| **calibrated**（オプトイン） | 公式図＋手トレース／Map Factory で詳細マップを出す施設だけ | [MAP_FACTORY_SPEC.md](../MAP_FACTORY_SPEC.md) M1–M8 → `npm run map:promote` → `{id}-map.html` |
 
-手順:
+brief（`configs/lp-brief/{id}.yaml`）:
 
-- [ ] `docs/mock-assets/scripts/generate-map-data.mjs` に `mapBase("{id}", ...)` エントリを追加
-- [ ] `sources` にレポート・公式の参照元を列挙
-- [ ] `bakedLines: true` を維持
-- [ ] 実行: `node docs/mock-assets/scripts/generate-map-data.mjs`
+```yaml
+map:
+  mode: schematic   # または calibrated（明示したときだけ）
+  sources: [...]
+  heroImage: images/maps/{id}-hero.png
+```
+
+`mode` 省略時は **schematic**。エージェントはユーザーが「詳細マップまで」「手トレースする」と明示しない限り calibrated にしない。
+
+#### 5A — schematic（標準）
+
+- [ ] `generate-map-data.mjs` に `mapBase("{id}", ...)`（`mapMode: "schematic"` 自動）
+- [ ] `bakedLines: true` · hero PNG
+- [ ] LP リンク: `../map.html?resort={id}`（概略ヒント可）
 - [ ] プレビュー: `http://localhost:3456/map.html?resort={id}`
+
+#### 5B — calibrated（オプトイン・稀）
+
+- [ ] brief `map.mode: calibrated`
+- [ ] Map Factory: `npm run map:research -- --id {id}` → 手トレース / extract+assign → signoff
+- [ ] `npm run map:validate -- --id {id}`（M1–M8）
+- [ ] `npm run map:promote -- --id {id}`（`data/maps/{id}.json` に path・`mapMode: calibrated`）
+- [ ] `{id}-map.html`（クエリ不要の固定ページ）を用意
+- [ ] LP のマップリンクを `../{id}-map.html` に変更（`map.html?resort=` は使わない）
+- [ ] `registry.json` に `"mapMode": "calibrated"`
+- [ ] `node docs/mock-assets/scripts/validate-map-mode.mjs`
 
 ### Phase 6 — 周辺マップ（任意）
 
@@ -473,9 +496,12 @@ node docs/mock-assets/scripts/validate-mock-lp-shell.mjs
 node docs/mock-assets/scripts/validate-mock-lp-copy.mjs
 node docs/mock-assets/scripts/validate-skyticket-affiliate.mjs
 node docs/mock-assets/scripts/validate-mock-japow-detail.mjs
+node docs/mock-assets/scripts/validate-map-mode.mjs
 node guides/scripts/sync.mjs
 node docs/mock-assets/scripts/validate-mock-japow-detail.mjs --public
 ```
+
+`validate-map-mode.mjs` は schematic を素通りし、`mapMode: calibrated` のみ signoff / path / `{id}-map.html` を要求する。
 
 基準: [lp_mock_requirements.md](./lp_mock_requirements.md) · [lp_mock_handoff_checklist.md](./lp_mock_handoff_checklist.md)
 
@@ -607,6 +633,7 @@ resort-ux-designer → resort-design-director → resort-spec-handoff
 
 | 日付 | 内容 |
 |------|------|
+| 2026-07-16 | `sichinohe-lp` を LAAX Flat Editorial に改変し visual canonical 凍結（`lp_mock_requirements.md` / `lp_qa_visual.md`）。paths フォトカード・角なしスリム CTA |
 | 2026-06-25 | §0.2 標準パイプライン追加 — テンプレ複製→詳細ボタンまでを 1 本化。Phase 9 JAPOWSERCH 同期を明記 |
 | 2026-06-23 | Phase 12 機械検証 + L3 評価 |
 | 2026-06-23 | 初版 — 戦略レポート受領〜 guides 配信までの Factory 手順 |

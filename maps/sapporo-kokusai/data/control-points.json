@@ -1,0 +1,7 @@
+{
+  "schemaVersion": "2026-07-18",
+  "route": "C",
+  "status": "not_required_for_identity",
+  "points": [],
+  "note": "Route C identity（公式図=hero）。Geo 投影を行う場合は ≥3 点必須。"
+}

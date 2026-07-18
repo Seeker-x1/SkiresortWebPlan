@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>札幌国際スキー場 — ゲレンデマップ</title>
+  <style>/* LP案モック — 概略ゲレンデマップ（七戸 /map レイアウト参考） */
+
+:root {
+  --map-bg: #0f1419;
+  --map-slope: #1a2332;
+  --map-slope-mid: #243044;
+  --map-rail-bg: #f8f9fb;
+  --map-rail-border: #e2e6ec;
+  --map-rail-text: #1a1f26;
+  --map-rail-muted: #5c6570;
+  --map-lift: #3b82f6;
+  --map-trail-beginner: #4ade80;
+  --map-trail-intermediate: #facc15;
+  --map-trail-advanced: #374151;
+  --map-trail-mixed: #f97316;
+  --map-status-op: #22c55e;
+  --map-status-stop: #ef4444;
+  --map-status-hold: #eab308;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body.map-page {
+  margin: 0;
+  min-height: 100dvh;
+  font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+  background: var(--map-bg);
+  color: var(--map-rail-text);
+  display: flex;
+  flex-direction: column;
+}
+
+.map-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.65rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid var(--map-rail-border);
+  flex-shrink: 0;
+}
+
+.map-topbar a { color: inherit; text-decoration: none; font-size: 0.8125rem; }
+.map-topbar .logo { font-weight: 700; font-size: 0.875rem; }
+.map-topbar-actions { display: flex; align-items: center; gap: 0.75rem; }
+
+.map-fidelity-notice {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--map-rail-muted);
+  background: #f3f5f8;
+  border-bottom: 1px solid var(--map-rail-border);
+  flex-shrink: 0;
+}
+
+.map-shell {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+  min-height: calc(100dvh - 52px);
+}
+
+.map-stage {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  background: #0f1419;
+  overflow: hidden;
+}
+
+.map-stage-badge {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  z-index: 4;
+  padding: 0.2rem 0.45rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #e2e8f0;
+  background: rgba(15, 20, 25, 0.72);
+  border: 1px solid rgba(226, 232, 240, 0.25);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.map-canvas {
+  position: absolute;
+  inset: 0;
+}
+
+.map-hero {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.map-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.map-hit {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 18;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: stroke;
+  cursor: pointer;
+}
+
+.map-highlight {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.95));
+}
+
+.map-highlight--lift {
+  stroke: #60a5fa;
+  stroke-width: 6;
+  stroke-dasharray: 8 6;
+}
+
+.map-highlight--trail {
+  stroke-width: 10;
+}
+
+.map-highlight--trail[data-difficulty="beginner"] { stroke: #4ade80; }
+.map-highlight--trail[data-difficulty="intermediate"] { stroke: #facc15; }
+.map-highlight--trail[data-difficulty="advanced"] { stroke: #f8fafc; }
+.map-highlight--trail[data-difficulty="intermediate-advanced"] { stroke: #fb923c; }
+.map-highlight--trail[data-difficulty="nordic"] { stroke: #c4b5fd; }
+.map-highlight--trail[data-difficulty="sled"] { stroke: #cbd5e1; }
+
+/* legacy schematic classes removed — hero image + overlay */
+
+.map-disclaimer {
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
+  max-width: min(22rem, 70%);
+  padding: 0.5rem 0.65rem;
+  background: rgba(15, 20, 25, 0.72);
+  color: #cbd5e1;
+  font-size: 0.6875rem;
+  line-height: 1.5;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.map-rail {
+  width: 20rem;
+  max-width: 42vw;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--map-rail-bg);
+  border-left: 1px solid var(--map-rail-border);
+}
+
+.map-rail-head {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--map-rail-border);
+}
+
+.map-rail-title {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.map-rail-updated {
+  margin: 0.25rem 0 0;
+  font-size: 0.625rem;
+  color: var(--map-rail-muted);
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.map-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  border-bottom: 1px solid var(--map-rail-border);
+}
+
+.map-tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--map-rail-muted);
+  cursor: pointer;
+}
+
+.map-tab[aria-selected="true"] {
+  color: var(--map-rail-text);
+  border-bottom-color: var(--map-rail-text);
+}
+
+.map-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem 0;
+}
+
+.map-group-title {
+  padding: 0.5rem 1rem 0.25rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--map-rail-muted);
+}
+
+.map-list-item {
+  display: grid;
+  grid-template-columns: 8px 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.8125rem;
+  color: var(--map-rail-text);
+}
+
+.map-list-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.map-list-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.map-list-badge {
+  font-size: 0.625rem;
+  font-weight: 600;
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+  background: #e2e8f0;
+  color: #475569;
+  flex-shrink: 0;
+}
+
+.map-list-badge.is-live {
+  background: #7ec8e3;
+  color: #0f172a;
+}
+
+.map-detail-status {
+  margin: 0.35rem 0 0;
+  font-size: 0.75rem;
+  color: var(--map-rail-muted);
+}
+
+.map-canvas-content {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.map-canvas-content.is-ready {
+  opacity: 1;
+}
+
+.map-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map-hit {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 22;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: stroke;
+  cursor: pointer;
+}
+
+.map-hit.is-dimmed {
+  opacity: 0.35;
+}
+
+.map-status-line.is-dimmed {
+  opacity: 0.25 !important;
+}
+
+/* Selection on snow: dark halo + amber core (white disappears on piste) */
+.map-select-ring {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.map-select-ring--halo {
+  stroke: #0b1220;
+  stroke-width: 9;
+  stroke-opacity: 0.92;
+}
+.map-select-ring--core {
+  stroke: #f59e0b;
+  stroke-width: 4;
+  stroke-opacity: 1;
+  filter: drop-shadow(0 0 4px rgba(245, 158, 11, 0.75));
+}
+
+.map-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f1419;
+}
+
+.map-loading::after {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-top-color: rgba(255, 255, 255, 0.8);
+  animation: map-spin 0.8s linear infinite;
+}
+
+@keyframes map-spin {
+  to { transform: rotate(360deg); }
+}
+
+.map-zoom-fabs {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  pointer-events: none;
+}
+
+.map-zoom-btn {
+  pointer-events: auto;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--map-rail-border);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--map-rail-text);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.map-zoom-btn:hover {
+  background: #fff;
+}
+
+.map-list-item:hover { background: #eef1f5; }
+.map-list-item.is-selected { background: #e8edf4; }
+
+.map-detail {
+  border-top: 1px solid var(--map-rail-border);
+  padding: 1rem;
+  background: #fff;
+}
+
+.map-detail h3 {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.map-detail-meta {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--map-rail-muted);
+}
+
+.map-detail-meta li { display: flex; gap: 0.5rem; }
+.map-detail-meta strong { color: var(--map-rail-text); min-width: 4.5rem; font-weight: 600; }
+
+.map-legend {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--map-rail-border);
+  font-size: 0.625rem;
+  color: var(--map-rail-muted);
+}
+
+.map-legend-row { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin-top: 0.35rem; }
+.map-legend-swatch {
+  display: inline-block;
+  width: 12px;
+  height: 3px;
+  vertical-align: middle;
+  margin-right: 0.25rem;
+}
+
+.map-mobile-fab {
+  display: none;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 10;
+  padding: 0.6rem 1rem;
+  background: var(--map-rail-bg);
+  border: 1px solid var(--map-rail-border);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.map-sheet-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 30;
+}
+
+.map-sheet {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: min(70dvh, 520px);
+  z-index: 40;
+  flex-direction: column;
+  background: var(--map-rail-bg);
+  border-top: 1px solid var(--map-rail-border);
+  box-shadow: 0 -8px 24px rgba(0,0,0,0.12);
+}
+
+.map-sheet.is-open,
+.map-sheet-backdrop.is-open { display: flex; }
+
+.map-error {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #94a3b8;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .map-rail { display: none; }
+  .map-mobile-fab { display: block; }
+  .map-sheet .map-rail {
+    display: flex;
+    width: 100%;
+    max-width: none;
+    border-left: none;
+    max-height: min(70dvh, 520px);
+  }
+}
+
+  .map-topbar a { pointer-events: none; opacity: .5; }
+  </style>
+</head>
+<body class="map-page">
+  <header class="map-topbar">
+    <div>
+      <a href="#" id="map-top-link">Map Factory</a>
+      <span aria-hidden="true"> · </span>
+      <span class="logo" id="map-resort-name">ゲレンデマップ</span>
+    </div>
+    <div class="map-topbar-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-switch="ja">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+  <p id="map-fidelity-notice" class="map-fidelity-notice" role="note"></p>
+  <div class="map-shell">
+    <div class="map-stage" id="map-stage"><p class="map-error">読み込み中…</p></div>
+    <aside class="map-rail" id="map-rail" aria-label="運行状況">
+      <div class="map-rail-head">
+        <h1 class="map-rail-title">運行状況</h1>
+        <p class="map-rail-updated" id="map-updated">—</p>
+        <div class="map-tabs" role="tablist">
+          <button type="button" class="map-tab" role="tab" data-filter="trail" aria-selected="true">コース</button>
+          <button type="button" class="map-tab" role="tab" data-filter="lift" aria-selected="false">リフト</button>
+        </div>
+      </div>
+      <div class="map-list" id="map-list"></div>
+      <div class="map-detail" id="map-detail"></div>
+    </aside>
+  </div>
+  <button type="button" class="map-mobile-fab" id="map-fab">運行状況</button>
+  <div class="map-sheet-backdrop" id="map-sheet-backdrop"></div>
+  <aside class="map-sheet" id="map-sheet">
+    <div class="map-rail-head" style="display:flex;justify-content:space-between;align-items:center">
+      <h2 class="map-rail-title" style="margin:0">運行状況</h2>
+      <button type="button" class="map-tab map-sheet-close">閉じる</button>
+    </div>
+    <div class="map-list" id="map-list-mobile"></div>
+    <div class="map-detail" id="map-detail-mobile"></div>
+  </aside>
+  <script>
+    window.__MAP_DATA__ = {"schemaVersion":"2026-07-06","id":"sapporo-kokusai","name":{"ja":"札幌国際スキー場","en":"Sapporo Kokusai Ski Resort"},"disclaimer":{"ja":"コース・リフトは公式マップ内に描画済み。リストで運行状況を確認できます（公式図・現地表示優先）。","en":"Trails and lifts are drawn on the official course map. Use the list for status (official map; on-site signage prevails)."},"sources":["official-slopemap.png（sapporo-kokusai.jp/slopes/images/slopemap.png）","official-map-layout.json","gelanding-2016.webp（拓扑照合のみ・2026-07-06）","Map Factory hitboxes (sapporo-kokusai-hero.png（公式図）直トレース)","signoff 2026-07-18T15:12:00+09:00"],"updatedAt":"2026-07-18T06:41:05.370Z","viewBox":"0 0 1024 817","hero":{"src":"./sapporo-kokusai-hero.png","width":1024,"height":817,"viewBox":"0 0 1024 817"},"bakedLines":true,"features":[{"id":"lift-sky-cabin-8","type":"lift","status":"operating","liftKind":"gondola","label":{"ja":"スカイキャビン8","en":"Sky Cabin 8"},"shortLabel":{"ja":"ゴンドラ","en":"Gondola"},"meta":{"ja":{"種別":"8人乗り","距離":"2,000m","山頂":"標高1,100m"},"en":{"Type":"8-person","Length":"2,000 m","Summit":"1,100 m"}},"path":"M 158 718.1 L 359 544.1 L 628 146.1","stations":[[158,718.1],[628,146.1]]},{"id":"lift-marchen-quad","type":"lift","status":"operating","liftKind":"quad","label":{"ja":"メルヘンクワッドリフト","en":"Märchen Quad"},"shortLabel":{"ja":"メルヘン","en":"Märchen"},"meta":{"ja":{"種別":"4人乗り","距離":"1,300m"},"en":{"Type":"4-person","Length":"1,300 m"}},"path":"M 252 720.1 L 428 665.3 L 558 609.3 L 736 477.3 L 942 385.3 L 991 353.3","stations":[[252,720.1],[991,353.3]]},{"id":"lift-echo-quad","type":"lift","status":"operating","liftKind":"quad","label":{"ja":"エコークワッドリフト","en":"Echo Quad"},"shortLabel":{"ja":"エコー","en":"Echo"},"meta":{"ja":{"種別":"4人乗り","距離":"1,005m"},"en":{"Type":"4-person","Length":"1,005 m"}},"path":"M 667 406.3 L 647 152.3","stations":[[667,406.3],[647,152.3]]},{"id":"lift-woody-pair","type":"lift","status":"operating","liftKind":"pair","label":{"ja":"ウッディーペアリフト","en":"Woody Pair"},"shortLabel":{"ja":"ウッディー","en":"Woody"},"meta":{"ja":{"種別":"2人乗り","距離":"810m"},"en":{"Type":"2-person","Length":"810 m"}},"path":"M 914 221.3 L 667 146.3","stations":[[914,221.3],[667,146.3]]},{"id":"lift-snow-escalator","type":"lift","status":"stopped","liftKind":"surface","label":{"ja":"スノーエスカレーター","en":"Snow escalator"},"shortLabel":{"ja":"エスカレーター","en":"Escalator"},"meta":{"ja":{"区分":"初級エリア"},"en":{"Zone":"Beginner area"}}},{"id":"trail-downhill","type":"trail","status":"open","difficulty":"advanced","label":{"ja":"ダウンヒルコース","en":"Downhill course"},"shortLabel":{"ja":"DH","en":"DH"},"meta":{"ja":{"最大斜度":"30°","距離":"2.2km","特徴":"最長滑走の一部・ダイナミック"},"en":{"Max pitch":"30°","Length":"2.2 km","Feature":"Dynamic long run"}},"path":"M 645 162.1 L 623 174.1 L 567 199.1 L 524 219.1 L 476 237.1 L 452 254.1 L 431 279.1 L 425 312.1 L 418 330.1 L 396 349.1 L 361 367.1 L 330 385.1 L 298 416.1 L 276 446.1 L 254 474.1 L 228 504.1 L 192 535.1 L 166 562.1 L 146 596.1 L 134 625.1 L 138 653.1 L 151 678.1 L 168 693.1 L 188 707.1"},{"id":"trail-echo","type":"trail","status":"open","difficulty":"advanced","label":{"ja":"エコーコース","en":"Echo course"},"shortLabel":{"ja":"エコー","en":"Echo"},"meta":{"ja":{"最大斜度":"22°","距離":"1.0km","特徴":"山頂付近パウダー"},"en":{"Max pitch":"22°","Length":"1.0 km","Feature":"Summit powder"}},"path":"M 657 159.3 L 685 196.3 L 713 225.3 L 731 246.3 L 742 263.3 L 739 282.3 L 725 301.3 L 698 322.3 L 676 345.3 L 660 368.3 L 652 390.3 L 631 414.3 L 609 441.3 L 596 468.3 L 584 503.3"},{"id":"trail-swing","type":"trail","status":"open","difficulty":"intermediate","label":{"ja":"スイングコース","en":"Swing course"},"shortLabel":{"ja":"スイング","en":"Swing"},"meta":{"ja":{"最大斜度":"28°","距離":"2.0km","特徴":"28°急斜面"},"en":{"Max pitch":"28°","Length":"2.0 km","Feature":"28° steep section"}},"path":"M 797 225.3 L 820 255.3 L 834 278.3 L 837 295.3 L 834 309.3 L 823 319.3 L 790 335.3 L 772 339.3 L 738 350.3 L 711 360.3 L 689 374.3 L 656 396.3 L 625 421.3 L 582 453.3 L 553 471.3 L 522 489.3 L 513 492.3 L 488 513.3 L 467 523.3 L 428 540.3 L 382 558.3 L 325 575.3 L 282 585.3 L 259 597.3 L 235 618.3 L 226 637.3 L 217 651.3 L 213 674.3 L 212 686.3"},{"id":"trail-forest","type":"trail","status":"open","difficulty":"beginner","label":{"ja":"林間コース","en":"Forest course"},"shortLabel":{"ja":"林間","en":"Forest"},"meta":{"ja":{"最大斜度":"12°","距離":"1.2km","特徴":"山頂周回"},"en":{"Max pitch":"12°","Length":"1.2 km","Feature":"Summit loop"}},"path":"M 672 140.3 L 699 142.3 L 736 151.3 L 758 161.3 L 784 175.3 L 813 194.3 L 836 207.3 L 864 215.3 L 897 224.3 L 921 236.3 L 938 268.3 L 957 297.3 L 964 311.3 L 952 321.3 L 930 337.3 L 890 357.3"},{"id":"trail-woody","type":"trail","status":"open","difficulty":"intermediate","label":{"ja":"ウッディーコース","en":"Woody course"},"shortLabel":{"ja":"ウッディー","en":"Woody"},"meta":{"ja":{"最大斜度":"16°","距離":"1.2km"},"en":{"Max pitch":"16°","Length":"1.2 km"}},"path":"M 655 156.3 L 704 178.3 L 766 209.3 L 835 250.3 L 891 294.3 L 900 311.3 L 904 331.3 L 896 346.3 L 886 358.3"},{"id":"trail-family","type":"trail","status":"open","difficulty":"intermediate","label":{"ja":"ファミリーコース","en":"Family course"},"shortLabel":{"ja":"ファミリー","en":"Family"},"meta":{"ja":{"最大斜度":"20°","距離":"1.6km","幅":"100m超"},"en":{"Max pitch":"20°","Length":"1.6 km","Width":"100 m+"}},"path":"M 886 359.3 L 831 378.3 L 777 393.3 L 734 406.3 L 694 423.3 L 663 439.3 L 622 469.3 L 592 493.3 L 549 525.3 L 521 545.3 L 481 571.3 L 445 586.3 L 409 602.3 L 361 617.3 L 331 621.3 L 283 621.3 L 257 623.3 L 234 630.3 L 222 642.3 L 213 667.3 L 213 686.3"},{"id":"trail-marchen","type":"trail","status":"open","difficulty":"beginner","label":{"ja":"メルヘンコース","en":"Märchen course"},"shortLabel":{"ja":"メルヘン","en":"Märchen"},"meta":{"ja":{"最大斜度":"12°","距離":"2.4km","特徴":"最大3.6kmロングの一部"},"en":{"Max pitch":"12°","Length":"2.4 km","Feature":"Part of 3.6 km long run"}},"path":"M 1000 358.3 L 954 389.3 L 937 397.3 L 922 413.3 L 908 437.3 L 887 458.3 L 879 471.3 L 874 485.3 L 870 515.3 L 870 534.3 L 864 549.3 L 849 564.3 L 826 576.3 L 796 581.3 L 755 585.3 L 645 587.3 L 603 593.3 L 563 597.3 L 537 607.3 L 515 622.3 L 491 638.3 L 470 651.3 L 453 657.3 L 426 657.3 L 384 646.3 L 326 638.3 L 278 633.3 L 256 634.3 L 242 642.3 L 229 653.3 L 225 668.3 L 224 680.3 L 222 689.3"}],"mapFactory":{"package":"maps/sapporo-kokusai","signoffAt":"2026-07-18T15:12:00+09:00","hitboxSource":"sapporo-kokusai-hero.png（公式図）直トレース","route":"C"}};
+  </script>
+  <script>
+(function () {
+  const STORAGE_KEY = "mock-lp-locale";
+  const params = new URLSearchParams(location.search);
+  const locale = params.get("lang") || localStorage.getItem(STORAGE_KEY) || "ja";
+  const STATUS_COLORS = { operating: "#7ec8e3", open: "#7ec8e3", stopped: "#64748b", closed: "#64748b", hold: "#f59e0b", unknown: "#94a3b8" };
+  const UI = {
+    ja: { mapTitle: "ゲレンデマップ", fidelityNoticeCalibrated: "公式コースマップ上にヒット領域を校正済みです。運行状況の最終判断は公式サイトと現地案内を正としてください。", stageBadgeCalibrated: "校正済", status: "運行状況", lifts: "リフト", trails: "コース", operating: "運転中", open: "滑走可", stopped: "停止", closed: "閉鎖", hold: "確認中", zoomIn: "拡大", zoomOut: "縮小", reset: "表示をリセット" },
+    en: { mapTitle: "Resort map", fidelityNoticeCalibrated: "Hit areas are calibrated on the official course map.", stageBadgeCalibrated: "Calibrated", status: "Operations", lifts: "Lifts", trails: "Trails", operating: "Running", open: "Open", stopped: "Stopped", closed: "Closed", hold: "Checking", zoomIn: "Zoom in", zoomOut: "Zoom out", reset: "Reset view" },
+  };
+  const mapData = window.__MAP_DATA__;
+  let selectedId = null;
+  let filter = "trail";
+  let scale = 1, panX = 0, panY = 0, imageReady = false;
+  const el = {
+    title: document.getElementById("map-resort-name"),
+    stage: document.getElementById("map-stage"),
+    list: document.getElementById("map-list"),
+    detail: document.getElementById("map-detail"),
+    updated: document.getElementById("map-updated"),
+    fab: document.getElementById("map-fab"),
+    sheet: document.getElementById("map-sheet"),
+    backdrop: document.getElementById("map-sheet-backdrop"),
+    fidelity: document.getElementById("map-fidelity-notice"),
+  };
+  function t(k) { return (UI[locale] || UI.ja)[k] || k; }
+  function pick(o) { return !o ? "" : (o[locale] || o.ja || o); }
+  function statusLabel(s) { return ({ operating: t("operating"), open: t("open"), stopped: t("stopped"), closed: t("closed"), hold: t("hold") })[s] || t("hold"); }
+  function accent(f) {
+    if (f.difficulty === "advanced") return "#1a1a1a";
+    if (f.difficulty === "intermediate") return "#d62839";
+    if (f.difficulty === "beginner") return "#2fa84a";
+    if (f.status === "stopped" || f.status === "closed") return "#64748b";
+    return f.type === "lift" ? "#1a1a1a" : "#2fa84a";
+  }
+  function isStopped(f) { return f.status === "stopped" || f.status === "closed"; }
+  document.documentElement.lang = locale;
+  document.title = pick(mapData.name) + " — " + t("mapTitle");
+  if (el.title) el.title.textContent = pick(mapData.name);
+  if (el.updated) el.updated.textContent = mapData.updatedAt ? new Date(mapData.updatedAt).toLocaleString("ja-JP") : "—";
+  if (el.fidelity) el.fidelity.textContent = t("fidelityNoticeCalibrated");
+
+  function renderStage() {
+    const hero = mapData.hero;
+    const vb = hero.viewBox || "0 0 1024 817";
+    let overlay = "";
+    for (const f of mapData.features) {
+      if (!f.path) continue;
+      const selected = selectedId === f.id;
+      const dimmed = filter !== "all" && f.type !== (filter === "lift" ? "lift" : "trail");
+      overlay += '<path class="map-hit' + (dimmed ? " is-dimmed" : "") + '" data-feature-id="' + f.id + '" d="' + f.path + '" />';
+      if (f.type === "lift" && isStopped(f)) {
+        overlay += '<path d="' + f.path + '" fill="none" stroke="' + STATUS_COLORS.stopped + '" stroke-width="' + (selected ? 3 : 2) + '" stroke-dasharray="6 4" stroke-opacity="0.85" pointer-events="none" />';
+      }
+      if (selected) {
+        overlay += '<path class="map-select-ring map-select-ring--halo" d="' + f.path + '" />';
+        overlay += '<path class="map-select-ring map-select-ring--core" d="' + f.path + '" />';
+      }
+    }
+    el.stage.innerHTML = '<span class="map-stage-badge">' + t("stageBadgeCalibrated") + '</span><div class="map-canvas"><div class="map-canvas-content' + (imageReady ? " is-ready" : "") + '"><img class="map-hero" src="' + hero.src + '" alt="" width="' + hero.width + '" height="' + hero.height + '" /><svg class="map-overlay" viewBox="' + vb + '" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">' + overlay + '</svg></div><div class="map-zoom-fabs"><button type="button" class="map-zoom-btn" data-zoom="in">+</button><button type="button" class="map-zoom-btn" data-zoom="out">−</button><button type="button" class="map-zoom-btn" data-zoom="reset">⊡</button></div></div><p class="map-disclaimer">' + pick(mapData.disclaimer) + '</p>';
+    const content = el.stage.querySelector(".map-canvas-content");
+    content.style.transform = "translate(" + panX + "px," + panY + "px) scale(" + scale + ")";
+    const img = el.stage.querySelector(".map-hero");
+    img.onload = () => { imageReady = true; content.classList.add("is-ready"); };
+    if (img.complete) { imageReady = true; content.classList.add("is-ready"); }
+    el.stage.querySelectorAll("[data-feature-id]").forEach((n) => n.onclick = (e) => { e.stopPropagation(); select(n.dataset.featureId); });
+    el.stage.querySelectorAll("[data-zoom]").forEach((btn) => {
+      btn.onclick = () => {
+        const a = btn.dataset.zoom;
+        if (a === "in") scale = Math.min(scale * 1.25, 4);
+        else if (a === "out") scale = Math.max(scale / 1.25, 1);
+        else { scale = 1; panX = 0; panY = 0; }
+        content.style.transform = "translate(" + panX + "px," + panY + "px) scale(" + scale + ")";
+      };
+    });
+  }
+
+  function select(id) {
+    selectedId = selectedId === id ? null : id;
+    renderStage();
+    renderList();
+    renderDetail();
+  }
+
+  function renderList() {
+    const items = mapData.features.filter((f) => f.type === (filter === "lift" ? "lift" : "trail"));
+    const html = items.map((f) => {
+      const live = f.status === "operating" || f.status === "open";
+      return '<button type="button" class="map-list-item' + (selectedId === f.id ? " is-selected" : "") + '" data-id="' + f.id + '"><span class="map-list-dot" style="background:' + accent(f) + '"></span><span class="map-list-label">' + pick(f.label) + '</span><span class="map-list-badge' + (live ? " is-live" : "") + '">' + statusLabel(f.status) + '</span></button>';
+    }).join("");
+    el.list.innerHTML = '<p class="map-group-title">' + (filter === "lift" ? t("lifts") : t("trails")) + '</p>' + html;
+    const mobile = document.getElementById("map-list-mobile");
+    if (mobile) mobile.innerHTML = el.list.innerHTML;
+    document.querySelectorAll(".map-list-item").forEach((b) => b.onclick = () => select(b.dataset.id));
+  }
+
+  function renderDetail() {
+    const f = mapData.features.find((x) => x.id === selectedId);
+    const box = el.detail;
+    const mobile = document.getElementById("map-detail-mobile");
+    if (!f) {
+      if (box) box.innerHTML = "";
+      if (mobile) mobile.innerHTML = "";
+      return;
+    }
+    let meta = "";
+    const m = f.meta && (f.meta[locale] || f.meta.ja || f.meta);
+    if (m && typeof m === "object") {
+      meta = Object.entries(m).map(([k, v]) => "<div><strong>" + k + "</strong> " + v + "</div>").join("");
+    }
+    const html = '<div class="map-detail-card"><h2>' + pick(f.label) + '</h2><p>' + statusLabel(f.status) + '</p>' + meta + '</div>';
+    if (box) box.innerHTML = html;
+    if (mobile) mobile.innerHTML = html;
+  }
+
+  document.querySelectorAll(".map-tab[data-filter]").forEach((tab) => {
+    tab.onclick = () => {
+      filter = tab.dataset.filter;
+      document.querySelectorAll(".map-tab[data-filter]").forEach((t2) => t2.setAttribute("aria-selected", t2 === tab ? "true" : "false"));
+      renderList();
+    };
+  });
+  if (el.fab) el.fab.onclick = () => { el.sheet.classList.add("is-open"); el.backdrop.classList.add("is-open"); };
+  document.querySelectorAll(".map-sheet-close, #map-sheet-backdrop").forEach((n) => {
+    n.onclick = () => { el.sheet.classList.remove("is-open"); el.backdrop.classList.remove("is-open"); };
+  });
+  document.querySelectorAll("[data-lang-switch]").forEach((btn) => {
+    btn.setAttribute("aria-pressed", btn.dataset.langSwitch === locale ? "true" : "false");
+    btn.onclick = () => {
+      const u = new URL(location.href);
+      u.searchParams.set("lang", btn.dataset.langSwitch);
+      localStorage.setItem(STORAGE_KEY, btn.dataset.langSwitch);
+      location.href = u.toString();
+    };
+  });
+
+  renderStage();
+  renderList();
+})();
+  </script>
+</body>
+</html>

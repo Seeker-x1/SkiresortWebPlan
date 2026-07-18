@@ -1,0 +1,9 @@
+{
+  "id": "sapporo-kokusai",
+  "calibration_qa": "pass",
+  "endpoint_tolerance_px": 20,
+  "visual_ok": true,
+  "approved_by": "human",
+  "approved_at": "2026-07-18T15:12:00+09:00",
+  "notes": "User visual OK on calibration-qa.html. 11 hitboxes traced on official slopemap; lift-snow-escalator stopped/grey-out without hitbox."
+}

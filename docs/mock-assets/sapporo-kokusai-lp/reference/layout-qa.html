@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>札幌国際 — 公式 × gelanding レイアウト照合</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans JP", system-ui, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 16px;
+    }
+    h1 { font-size: 18px; margin: 0 0 4px; }
+    .meta { font-size: 13px; color: #94a3b8; margin-bottom: 16px; line-height: 1.6; }
+    .controls {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
+      padding: 12px;
+      background: #1e293b;
+      border-radius: 8px;
+    }
+    label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; }
+    input[type="range"] { width: 100%; }
+    .val { font-variant-numeric: tabular-nums; color: #7ec8e3; }
+    .btns { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    button {
+      padding: 8px 14px;
+      border: 1px solid #334155;
+      border-radius: 6px;
+      background: #334155;
+      color: #f8fafc;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    button:hover { background: #475569; }
+    button.primary { background: #0369a1; border-color: #0284c7; }
+    .stage-wrap {
+      overflow: auto;
+      max-height: calc(100vh - 280px);
+      border: 1px solid #334155;
+      border-radius: 8px;
+      background: #1e293b;
+    }
+    .stage {
+      position: relative;
+      width: 1781px;
+      height: 1421px;
+      margin: 0 auto;
+      background: #fff;
+    }
+    .stage img.base {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .stage img.overlay {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform-origin: center center;
+      pointer-events: none;
+      image-rendering: auto;
+    }
+    .checklist {
+      margin-top: 16px;
+      font-size: 13px;
+      line-height: 1.7;
+      color: #cbd5e1;
+    }
+    .checklist h2 { font-size: 14px; color: #f1f5f9; margin: 0 0 8px; }
+    .checklist ul { margin: 0; padding-left: 20px; }
+    code { background: #334155; padding: 1px 5px; border-radius: 3px; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <h1>札幌国際 — 公式 slopemap × gelanding 2016 照合</h1>
+  <p class="meta">
+    下層: <code>official-slopemap.png</code>（1781×1421）·
+    上層: <code>gelanding-2016.webp</code>（930×599）·
+    スライダーで位置合わせ → チェックリストを目視で確認。
+    保存値は <code>overlay-transform.json</code> に書き出し可。
+  </p>
+
+  <div class="controls">
+    <label>上層不透明度 <span class="val" id="v-opacity">50%</span>
+      <input type="range" id="opacity" min="0" max="100" value="50" />
+    </label>
+    <label>スケール <span class="val" id="v-scale">1.85</span>
+      <input type="range" id="scale" min="50" max="300" value="185" />
+    </label>
+    <label>回転（度） <span class="val" id="v-rotate">0°</span>
+      <input type="range" id="rotate" min="-15" max="15" value="0" step="0.1" />
+    </label>
+    <label>水平位置 X <span class="val" id="v-x">0px</span>
+      <input type="range" id="tx" min="-400" max="400" value="0" />
+    </label>
+    <label>垂直位置 Y <span class="val" id="v-y">-20px</span>
+      <input type="range" id="ty" min="-400" max="400" value="-20" />
+    </label>
+  </div>
+
+  <div class="btns">
+    <button type="button" class="primary" id="btn-swap">下層/上層を入替</button>
+    <button type="button" id="btn-reset">リセット</button>
+    <button type="button" id="btn-preset">初期プリセット</button>
+    <button type="button" id="btn-export">transform JSON 表示</button>
+  </div>
+
+  <div class="stage-wrap">
+    <div class="stage" id="stage">
+      <img class="base" id="base" src="official-slopemap.png" alt="公式 slopemap" width="1781" height="1421" />
+      <img class="overlay" id="overlay" src="gelanding-2016.webp" alt="gelanding 2016" width="930" height="599" />
+    </div>
+  </div>
+
+  <div class="checklist">
+    <h2>照合チェックリスト（layout-QA.md と同期）</h2>
+    <ul>
+      <li>スカイキャビン8（左〜中央の長い索道）の向きが一致するか</li>
+      <li>①ダウンヒル（左端・黒）の大ループが一致するか</li>
+      <li>②エコー・③スイング（中央赤）の位置関係</li>
+      <li>④林間（山頂右）・⑤ウッディ（右上ジグザグ）</li>
+      <li>⑥ファミリー（中央下・幅広）・⑦メルヘン（右端縦長）</li>
+      <li>基地（630m）・山頂（1,100m）の上下関係</li>
+      <li>gelanding に無い要素（禁止エリア・スノーエスカレーター等）は公式のみで正</li>
+    </ul>
+  </div>
+
+  <pre id="export" hidden style="margin-top:12px;padding:12px;background:#1e293b;border-radius:8px;font-size:12px;overflow:auto"></pre>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+    const overlay = $("overlay");
+    const base = $("base");
+    let swapped = false;
+
+    const DEFAULT = { opacity: 50, scale: 185, rotate: 0, tx: 0, ty: -20 };
+
+    function apply() {
+      const opacity = $("opacity").value / 100;
+      const scale = $("scale").value / 100;
+      const rot = $("rotate").value;
+      const tx = +$("tx").value;
+      const ty = +$("ty").value;
+
+      $("v-opacity").textContent = Math.round(opacity * 100) + "%";
+      $("v-scale").textContent = scale.toFixed(2);
+      $("v-rotate").textContent = rot + "°";
+      $("v-x").textContent = tx + "px";
+      $("v-y").textContent = ty + "px";
+
+      overlay.style.opacity = opacity;
+      overlay.style.transform =
+        "translate(calc(-50% + " + tx + "px), calc(-50% + " + ty + "px)) " +
+        "rotate(" + rot + "deg) scale(" + scale + ")";
+    }
+
+    ["opacity", "scale", "rotate", "tx", "ty"].forEach((id) => {
+      $(id).addEventListener("input", apply);
+    });
+
+    $("btn-reset").onclick = () => {
+      $("opacity").value = DEFAULT.opacity;
+      $("scale").value = DEFAULT.scale;
+      $("rotate").value = DEFAULT.rotate;
+      $("tx").value = DEFAULT.tx;
+      $("ty").value = DEFAULT.ty;
+      apply();
+    };
+
+    $("btn-preset").onclick = () => {
+      $("opacity").value = 50;
+      $("scale").value = 188;
+      $("rotate").value = -0.5;
+      $("tx").value = 12;
+      $("ty").value = -28;
+      apply();
+    };
+
+    $("btn-swap").onclick = () => {
+      swapped = !swapped;
+      if (swapped) {
+        base.src = "gelanding-2016.webp";
+        overlay.src = "official-slopemap.png";
+        overlay.style.width = "1781px";
+        overlay.style.height = "1421px";
+        $("scale").value = 52;
+      } else {
+        base.src = "official-slopemap.png";
+        overlay.src = "gelanding-2016.webp";
+        overlay.style.width = "930px";
+        overlay.style.height = "599px";
+        $("scale").value = DEFAULT.scale;
+      }
+      apply();
+    };
+
+    $("btn-export").onclick = () => {
+      const data = {
+        schemaVersion: "2026-07-06",
+        base: swapped ? "gelanding-2016.webp" : "official-slopemap.png",
+        overlay: swapped ? "official-slopemap.png" : "gelanding-2016.webp",
+        opacity: $("opacity").value / 100,
+        scale: $("scale").value / 100,
+        rotateDeg: +$("rotate").value,
+        translatePx: { x: +$("tx").value, y: +$("ty").value },
+        note: "layout-qa.html スライダー値。目視 OK 後に overlay-transform.json として保存",
+      };
+      const pre = $("export");
+      pre.hidden = false;
+      pre.textContent = JSON.stringify(data, null, 2);
+    };
+
+    apply();
+  </script>
+</body>
+</html>

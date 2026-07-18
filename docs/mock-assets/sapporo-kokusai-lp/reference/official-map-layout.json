@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "2026-07-06",
+  "resortId": "sapporo-kokusai",
+  "purpose": "公式 slopemap.png の位置関係。guides hero は公式図を直接使用（焼き込み線済み）。",
+  "layoutReference": "official-slopemap.png",
+  "layoutReferenceUrl": "https://www.sapporo-kokusai.jp/slopes/images/slopemap.png",
+  "authority": "official-only",
+  "approvedAt": "2026-07-06",
+  "canvas": { "width": 1024, "height": 817 },
+  "elevation": { "baseM": 630, "summitM": 1100, "verticalM": 470 },
+  "courses": [
+    {
+      "id": "trail-downhill",
+      "mapNumber": 1,
+      "name": { "ja": "ダウンヒルコース", "en": "Downhill course" },
+      "difficulty": "advanced",
+      "maxSlope": "30°",
+      "avgSlope": "15°",
+      "length": "2.2km",
+      "pathHint": "summit-left → far-left long loop → base",
+      "source": "sapporo-kokusai.jp/slopes"
+    },
+    {
+      "id": "trail-echo",
+      "mapNumber": 2,
+      "name": { "ja": "エコーコース", "en": "Echo course" },
+      "difficulty": "advanced",
+      "maxSlope": "22°",
+      "avgSlope": "12°",
+      "length": "1.0km",
+      "pathHint": "summit near cafe → along echo quad → mid-mountain",
+      "source": "sapporo-kokusai.jp/slopes"
+    },
+    {
+      "id": "trail-swing",
+      "mapNumber": 3,
+      "name": { "ja": "スイングコース", "en": "Swing course" },
+      "difficulty": "intermediate",
+      "maxSlope": "28°",
+      "avgSlope": "10°",
+      "length": "2.0km",
+      "pathHint": "center face, 28° steep section mid-run",
+      "source": "sapporo-kokusai.jp/slopes"
+    },
+    {
+      "id": "trail-forest",
+      "mapNumber": 4,
+      "name": { "ja": "林間コース", "en": "Forest course" },
+      "difficulty": "beginner",
+      "maxSlope": "12°",
+      "avgSlope": "8°",
+      "length": "1.2km",
+      "pathHint": "summit-right perimeter loop",
+      "source": "sapporo-kokusai.jp/slopes"
+    },
+    {
+      "id": "trail-woody",
+      "mapNumber": 5,
+      "name": { "ja": "ウッディーコース", "en": "Woody course" },
+      "difficulty": "intermediate",
+      "maxSlope": "16°",
+      "avgSlope": "11°",
+      "length": "1.2km",
+      "pathHint": "upper-right zigzag beside woody pair lift",
+      "source": "sapporo-kokusai.jp/slopes"
+    },
+    {
+      "id": "trail-family",
+      "mapNumber": 6,
+      "name": { "ja": "ファミリーコース", "en": "Family course" },
+      "difficulty": "intermediate",
+      "maxSlope": "20°",
+      "avgSlope": "11°",
+      "length": "1.6km",
+      "pathHint": "lower-center wide 100m+ piste",
+      "source": "sapporo-kokusai.jp/slopes"
+    },
+    {
+      "id": "trail-marchen",
+      "mapNumber": 7,
+      "name": { "ja": "メルヘンコース", "en": "Märchen course" },
+      "difficulty": "beginner",
+      "maxSlope": "12°",
+      "avgSlope": "8°",
+      "length": "2.4km",
+      "pathHint": "far-right vertical wall run → base east",
+      "source": "sapporo-kokusai.jp/slopes"
+    }
+  ],
+  "lifts": [
+    {
+      "id": "lift-sky-cabin-8",
+      "name": { "ja": "スカイキャビン8", "en": "Sky Cabin 8" },
+      "kind": "gondola",
+      "capacity": 8,
+      "lengthM": 2000,
+      "pathHint": "base center-left → summit SKS INTERNATIONAL",
+      "source": "sapporo-kokusai.jp/slopes"
+    },
+    {
+      "id": "lift-marchen-quad",
+      "name": { "ja": "メルヘンクワッドリフト", "en": "Märchen Quad" },
+      "kind": "quad",
+      "capacity": 4,
+      "lengthM": 1300,
+      "pathHint": "lower-right → mid-mountain marchen zone",
+      "source": "sapporo-kokusai.jp/slopes"
+    },
+    {
+      "id": "lift-echo-quad",
+      "name": { "ja": "エコークワッドリフト", "en": "Echo Quad" },
+      "kind": "quad",
+      "capacity": 4,
+      "lengthM": 1005,
+      "pathHint": "mid-right → upper echo face",
+      "source": "sapporo-kokusai.jp/slopes"
+    },
+    {
+      "id": "lift-woody-pair",
+      "name": { "ja": "ウッディーペアリフト", "en": "Woody Pair" },
+      "kind": "pair",
+      "capacity": 2,
+      "lengthM": 810,
+      "pathHint": "upper-right shoulder short line",
+      "source": "sapporo-kokusai.jp/slopes"
+    },
+    {
+      "id": "lift-snow-escalator",
+      "name": { "ja": "スノーエスカレーター", "en": "Snow escalator" },
+      "kind": "surface",
+      "lengthM": null,
+      "pathHint": "beginner zone near base",
+      "source": "sapporo-kokusai.jp/slopes"
+    }
+  ],
+  "facilities": {
+    "skiCenter": "base left — red-roof cluster",
+    "summitCafe": "SKS INTERNATIONAL 1,100m",
+    "snowPlayground": "base marker G",
+    "marchenInn": "base east marker F"
+  },
+  "forbiddenZones": ["滑走禁止エリア×3", "管理区域外（左右林帯）"],
+  "notes": [
+    "gelanding 2016 は照合済みだが正本は公式のみ",
+    "hitbox path は別途イラスト上で手トレース",
+    "パーク（ビギナーズ/チャレンジ等）は slopes/parkinfo 参照・マップ JSON には未収録"
+  ]
+}
