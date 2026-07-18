@@ -131,14 +131,20 @@
       zoomIn: "拡大",
       zoomOut: "縮小",
       reset: "表示をリセット",
+      legend: "凡例",
+      legendBeginner: "初級",
+      legendIntermediate: "中級",
+      legendAdvanced: "上級",
+      close: "閉じる",
+      loading: "読み込み中…",
     },
     en: {
       back: "← Back to guide home",
       mapTitle: "Resort map",
       fidelityNotice:
-        "Trail and lift positions are approximate. For accurate runs and lift status, follow the resort’s official site and on-mountain signage.",
+        "Trail and lift positions are approximate. For accurate runs and lift status, follow the resort's official site and on-mountain signage.",
       fidelityNoticeCalibrated:
-        "Hit areas are calibrated on the official course map. For final operating status, follow the resort’s official site and on-mountain signage.",
+        "Hit areas are calibrated on the official course map. For final operating status, follow the resort's official site and on-mountain signage.",
       stageBadge: "Overview",
       stageBadgeCalibrated: "Calibrated",
       status: "Operations",
@@ -156,10 +162,17 @@
       zoomIn: "Zoom in",
       zoomOut: "Zoom out",
       reset: "Reset view",
+      legend: "Legend",
+      legendBeginner: "Beginner",
+      legendIntermediate: "Intermediate",
+      legendAdvanced: "Advanced",
+      close: "Close",
+      loading: "Loading…",
     },
   };
 
   let mapData = null;
+  let mapMode = "schematic";
   let selectedId = null;
   let filter = "trail";
   let scale = 1;
@@ -297,7 +310,7 @@
     document.title = `${pick(mapData.name)} — ${t("mapTitle")}`;
     if (el.title) el.title.textContent = pick(mapData.name);
     if (el.updated) el.updated.textContent = formatUpdated(mapData.updatedAt);
-    const mapMode =
+    mapMode =
       mapData.mapMode || (mapData.mapFactory ? "calibrated" : "schematic");
     if (el.fidelity) {
       el.fidelity.textContent =
@@ -316,10 +329,36 @@
       }
     }
 
+    applyChromeI18n();
     renderStage();
     renderList();
     bindTabs();
     bindMobile();
+  }
+
+  /** Update static HTML chrome (rail titles / tabs / legend) for locale. */
+  function applyChromeI18n() {
+    document.querySelectorAll(".map-rail-title").forEach((node) => {
+      node.textContent = t("status");
+    });
+    document.querySelectorAll(".map-tab[data-filter='trail']").forEach((node) => {
+      node.textContent = t("trails");
+    });
+    document.querySelectorAll(".map-tab[data-filter='lift']").forEach((node) => {
+      node.textContent = t("lifts");
+    });
+    document.querySelectorAll(".map-sheet-close").forEach((node) => {
+      node.textContent = t("close");
+    });
+    const legendStrong = document.querySelector(".map-legend > strong");
+    if (legendStrong) legendStrong.textContent = t("legend");
+    const swatches = document.querySelectorAll(".map-legend-row > span");
+    if (swatches[0]) swatches[0].lastChild.textContent = t("legendBeginner");
+    if (swatches[1]) swatches[1].lastChild.textContent = t("legendIntermediate");
+    if (swatches[2]) swatches[2].lastChild.textContent = t("legendAdvanced");
+    if (swatches[3]) swatches[3].lastChild.textContent = t("lifts");
+    const rail = document.getElementById("map-rail");
+    if (rail) rail.setAttribute("aria-label", t("status"));
   }
 
   function renderStage() {
