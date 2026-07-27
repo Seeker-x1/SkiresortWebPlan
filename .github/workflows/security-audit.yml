@@ -12,11 +12,14 @@ on:
 permissions:
   contents: read
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   config-encoding:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Verify config UTF-8 encoding
         run: node .github/scripts/check-config-encoding.cjs
 
@@ -41,7 +44,7 @@ jobs:
             lockfile: resorts/Sichinohe-CyoueiSki/scripts/package-lock.json
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -82,7 +85,7 @@ jobs:
            (matrix.name == 'sichinohe-scripts' && steps.changed.outputs.scripts != 'true'))
         run: echo "Skipping ${{ matrix.name }} (unchanged in this PR)"
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         if: >-
           github.event_name != 'pull_request' ||
           (matrix.name == 'root-template' && steps.changed.outputs.root == 'true') ||
