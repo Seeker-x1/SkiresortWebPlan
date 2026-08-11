@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "title": "Maiko Snow Resort",
+    "description": "~1 min from Shiozawa-Ishiuchi IC — 26 courses and 6,000 m runs for families. ~30 min by car or bus from Echigo-Yuzawa Station, Spa Maiko onsen, and local food loops."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides",
+    "mapHint": "Schematic (may be unverified)"
+  },
+  "logo": "Maiko Snow Resort",
+  "hero": {
+    "eyebrow": "Minamiuonuma · Niigata",
+    "title": "Maiko<br />Snow Resort",
+    "statLabel": "From IC",
+    "statValue": "1",
+    "statUnit": "min",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Aug 11 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "From Echigo-Yuzawa,<br />~30 min by car or bus.",
+    "lead": "~20–30 minutes by free shuttle from JR Echigo-Yuzawa Station — pair with the Joetsu Shinkansen for day-trip snow. By car, ~1 minute from Kan-Etsu Shiozawa-Ishiuchi IC, minimizing snowy-road stress.",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Snowy Echigo-Yuzawa Station and shuttle bus — winter trip to Maiko Snow Resort"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Echigo-Yuzawa Station"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Lifts & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Maiko",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "26 courses · 6,000 m big resort",
+      "lead": "196 ha with 80% beginner–intermediate terrain across Maiko, Nagamine, and Okusoechi zones — gentle wide slopes and the 6,000 m Ranran long cruise. IC-adjacent convenience makes it a Tokyo-area family staple.",
+      "cta": "Open trail map",
+      "imgAlt": "Maiko Snow Resort gentle slopes and long runs — Minamiuonuma mountain panorama"
+    },
+    "secondary": {
+      "title": "After skiing, Spa Maiko",
+      "lead": "Spa Maiko inside Maiko Kogen Hotel plus Majidon rice-bowl shops at the base and Ishiuchi onsen villages — easy food and bath loops beyond the slopes.",
+      "cta": "Onsen guide"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby hot springs",
+    "title": "Spa Maiko &<br />Minamiuonuma baths",
+    "lead": "From slope-side day baths to Hatsukaishi Onsen and Rokujomachi Yuraria — stitch recovery and area touring into one snow day.",
+    "whisper": "Confirm day-use rules and hours on each facility's official site before visiting.",
+    "cta": "3 onsen picks guide",
+    "imgAlt": "Spa Maiko — hot spring with snowy mountain view"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 onsen picks — Maiko Snow Resort",
+      "description": "Spa Maiko, Hatsukaishi Onsen, Yuraria — Minamiuonuma bath circuit guide"
+    },
+    "backLink": "Back to Maiko guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />soak.",
+      "tagline": "Echigo-Yuzawa 30 min · Spa Maiko & Ishiuchi baths",
+      "imgAlt": "Snow-view bathhouse — Minamiuonuma onsen circuit"
+    },
+    "notice": "Bath manners, hours, and day-use rules are on each facility's official site. Check winter road conditions in advance.",
+    "introTitle": "Why baths anchor the Maiko stay",
+    "introLead": "From Spa Maiko on the slopes to Ishiuchi onsen villages — day-trip guests can finish or extend après without a slope-side hotel.",
+    "introBody": "Three picks from on-mountain baths to nearby soaks, ordered for post-ski routing.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Maiko",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links"
+    },
+    "linkFoodGuide": "2 food picks guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "3 Minamiuonuma onsen picks",
+    "spotsLead": "From Spa Maiko on-mountain to Ishiuchi and Rokujomachi — ordered for post-ski loops.",
+    "regions": {
+      "resort": "On-mountain",
+      "area": "Nearby area"
+    },
+    "spots": {
+      "spa-maiko": {
+        "tag": "On-mountain · day SPA",
+        "title": "Spa Maiko (Maiko Kogen Hotel)",
+        "lead": "2056-108 Maiko, Minamiuonuma, Niigata. Day-use baths inside Maiko Kogen Hotel — immediate post-ski recovery. TEL 025-783-3511 (verify).",
+        "imgAlt": "Spa Maiko — day-use hot spring inside Maiko Kogen Hotel"
+      },
+      "hatsukaishi": {
+        "tag": "Ishiuchi · onsen village",
+        "title": "Hatsukaishi Onsen (Ishiuchi Young Palnas)",
+        "lead": "946 Tsuchido, Ishiuchi, Minamiuonuma. Legacy Ishiuchi onsen village — confirm day-use fees and hours. TEL 025-783-7888.",
+        "imgAlt": "Hatsukaishi Onsen — Ishiuchi onsen village"
+      },
+      "yuraria": {
+        "tag": "Rokujomachi · day bath",
+        "title": "Rokujomachi Onsen Yuraria",
+        "lead": "105-1 Rokujomachi, Minamiuonuma. Day-use facility in Rokujomachi — car access typical. TEL 025-773-3450 (verify).",
+        "imgAlt": "Yuraria — Rokujomachi day-use hot spring"
+      }
+    },
+    "pairingTitle": "Maiko × ski × baths",
+    "pairingLead": "Morning: gentle Maiko slopes from IC → afternoon: Okusoechi powder → evening: Spa Maiko → night: Tanashoku Majidon → Echigo-Yuzawa Station.",
+    "pairingFoodCta": "2 food picks guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 food picks — Maiko Snow Resort",
+      "description": "Tanashoku and Restaurant IIHO — Minamiuonuma dining guide with area map"
+    },
+    "backLink": "Back to Maiko guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />Minamiuonuma flavors",
+      "tagline": "Majidon rice bowls & slope food — IC 1 min food loop",
+      "imgAlt": "Minamiuonuma snow scenery and local food"
+    },
+    "notice": "Hours, closures, reservations, and menus are on each facility's official site. Expect lunch crowds on peak weekends.",
+    "introTitle": "Why food completes the Maiko day",
+    "introLead": "Uonuma Koshihikari Majidon campaign shops and on-slope restaurants — total comfort beyond skiing is Maiko's repeat-driver.",
+    "introBody": "Two picks from lunch to dinner along your route.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Maiko",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links"
+    },
+    "linkOnsenGuide": "3 onsen picks guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "2 Minamiuonuma food picks",
+    "spotsLead": "Base Majidon shops to on-slope dining — ordered for snow-trip meals.",
+    "spots": {
+      "tanashoku": {
+        "tag": "Diner · Majidon",
+        "title": "Tanashoku",
+        "lead": "2056-151 Maiko, Minamiuonuma. Local Majidon campaign diner — hearty rice and regional ingredients. TEL 025-783-2265. https://tanasyoku.com/",
+        "imgAlt": "Tanashoku Majidon — popular base diner near Maiko"
+      },
+      "iiho": {
+        "tag": "Slope food · Maiko zone",
+        "title": "Restaurant IIHO",
+        "lead": "2056-108 Maiko (Maiko zone). On-slope Majidon participant — check official app for lunch crowds. TEL 025-783-4100 (resort main line).",
+        "imgAlt": "Restaurant IIHO — on-slope dining in Maiko zone"
+      }
+    },
+    "pairingTitle": "One-day loop model",
+    "pairingLead": "Morning: Maiko zone from IC → lunch: IIHO slope food → afternoon: Ranran long run → evening: Spa Maiko → night: Tanashoku Majidon → Echigo-Yuzawa Station.",
+    "pairingOnsenCta": "3 onsen picks guide"
+  },
+  "guides": {
+    "ic-access": {
+      "title": "~1 min from Shiozawa-Ishiuchi IC",
+      "body": "Exit Kan-Etsu Expressway and you're there — the biggest reassurance for urban drivers on snowy roads. A 2,000-space day-trip center and hotel-linked Maiko zone deliver unmatched short access."
+    },
+    "longrun": {
+      "title": "6,000 m Ranran long run",
+      "body": "Nagamine's signature cruise — 6,000 m at gentle 6–7° average pitch so beginners enjoy summit views. Okusoechi adds Guigui, Gungan, and off-piste zones for stronger riders."
+    },
+    "gastro": {
+      "title": "Majidon & slope dining",
+      "body": "Tanashoku and on-slope IIHO join the Minamiuonuma Majidon campaign — high-rated slope food with Koshihikari rice. Repeat visits come from ski-plus-food-plus-rest totals, not runs alone."
+    }
+  },
+  "access": {
+    "postal": "〒949-6213",
+    "line": "2056-108 Maiko, Minamiuonuma, Niigata",
+    "note": "~30 min by car or bus from Echigo-Yuzawa Station (typical); ~1 min from Shiozawa-Ishiuchi IC",
+    "phone": "TEL 025-783-4100",
+    "places": "",
+    "rentacarEyebrow": "ICから1分の究極アクセスと、多彩なコース・充実の施設を誇るオールシーズン・ビッグリゾート。",
+    "rentacarLink": "越後湯沢駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "舞子スノーリゾート周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Maiko Snow Resort (mock)",
+    "location": "〒949-6213 2056-108 Maiko, Minamiuonuma, Niigata",
+    "guideNotice": "Draft guide for planning. Photos and illustrations are atmospheric references — actual slopes and facilities may differ. Confirm fees, hours, and road rules on official sources."
+  }
+}

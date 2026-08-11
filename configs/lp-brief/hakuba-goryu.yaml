@@ -1,0 +1,49 @@
+resortId: hakuba-goryu
+schemaVersion: "2026-08-11"
+
+name:
+  ja: エイブル白馬五竜スキー場
+  en: ABLE Hakuba GORYU
+region:
+  ja: 長野県白馬村
+  en: Hakuba, Nagano
+japowResortId: 296
+
+strategy:
+  ja: 24時間ベースセンターと極上パウダーで、全世代・全季節を満たすオールラウンド・サステナブルリゾート。
+  en: An all-around, sustainable resort featuring a 24-hour base center and premium powder snow for every generation and season.
+archetype: transit-onsen
+copyFrom: sichinohe-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 北アルプスと極上パウダー、24時間のエスカルプラザ。
+    en: Northern Alps powder and a 24-hour base center.
+  badges: [powder, gondola, sustainable]
+
+pillars:
+  - id: powder
+    hook: { ja: アルプス平の極上パウダー, en: "Alps-daira powder" }
+  - id: transit
+    hook: { ja: 北陸新幹線長野駅, en: "Hokuriku Shinkansen · Nagano" }
+  - id: onsen
+    hook: { ja: 竜神の湯・エスカルプラザ, en: "Ryujin no Yu · Escal Plaza" }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+map:
+  mode: schematic
+  sources: ["hakubaescal.com", "docs/research/inbox/hakuba-goryu.md"]
+  heroImage: images/maps/hakuba-goryu-hero.png
+
+affiliates:
+  rentacar: nagano_station
+
+humanReview:
+  - japowResortId
+  - リフト料金・営業時間
+  - Hakuba47連結券の条件

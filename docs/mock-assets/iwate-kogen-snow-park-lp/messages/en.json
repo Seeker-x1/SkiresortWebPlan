@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Iwate Kogen Snow Park",
+    "description": "35–45 minutes from Morioka — family snow park with free lifts for elementary kids and daily night skiing."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides"
+  },
+  "logo": "Iwate Kogen Snow Park",
+  "hero": {
+    "eyebrow": "Shizukuishi · Iwate",
+    "title": "Iwate Kogen<br />Snow Park",
+    "statLabel": "Longest run",
+    "statValue": "2.6",
+    "statUnit": "km",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Feb 11 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "From Morioka,<br />into the snow.",
+    "lead": "~35–45 minutes from JR Morioka by car or bus — the closest family snow park to the Tohoku Shinkansen terminal. Free shuttle buses also run (reservation required).",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Winter drive from Morioka toward Iwate Kogen — Mt. Iwate scenery"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Morioka"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Lifts & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Iwate Kogen",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "Kids ride free, every day",
+      "lead": "Elementary school kids and younger ride all lifts and the gondola free all day — standout value for families. A ~2 km gondola carries you to a 2.6 km cruise without biting wind.",
+      "cta": "Trail map",
+      "imgAlt": "Family boarding the gondola at Iwate Kogen Snow Park"
+    },
+    "secondary": {
+      "title": "After skiing — Shizukuishi food & onsen",
+      "lead": "From Komakusa miso ramen to Matsubokkuri gelato and Tsunagi onsen — the Shizukuishi–Morioka loop is easy to build around a ski day.",
+      "cta": "Read the onsen feature"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby onsen",
+    "title": "After skiing,<br />Shizukuishi baths.",
+    "lead": "Tsunagi, Amihari, and Uguisuyu onsen within ~30 minutes by car — from lakeside gensen flows to foothill classics for post-run recovery.",
+    "whisper": "Day-use hours and winter operations vary — check each facility's official site.",
+    "cta": "3 nearby onsen picks",
+    "imgAlt": "Snow-view outdoor bath — Shizukuishi onsen image"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 nearby onsen — Iwate Kogen Snow Park",
+      "description": "Tsunagi, Amihari, Uguisuyu — Shizukuishi onsen loop guide"
+    },
+    "backLink": "Back to guide home",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />soak.",
+      "tagline": "Morioka 45 min · Shizukuishi onsen country",
+      "imgAlt": "Snow-view bath — Shizukuishi onsen"
+    },
+    "notice": "Day-use hours, fees, and winter closures change — verify on each facility's official site.",
+    "introTitle": "Why onsen completes the Iwate Kogen loop",
+    "introLead": "Without slope-side hotels, pairing nearby famous baths with skiing is the area's strength.",
+    "introBody": "Three baths within ~30 minutes by car, ordered for an easy post-run loop.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchor layers — or show several at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Iwate Kogen area food, onsen, and hubs map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Hubs",
+      "hint": "Food and onsen layers can be shown together",
+      "mobileHint": "If pins overlap, use “View on map” in the list"
+    },
+    "linkFoodGuide": "2 nearby food picks",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "3 onsen on the way back",
+    "spotsLead": "Along the return route toward Morioka and Shizukuishi — easy to slot after skiing.",
+    "regions": {
+      "shizukuishi": "Shizukuishi · Mt. Iwate",
+      "morioka": "Morioka · Tsunagi"
+    },
+    "spots": {
+      "tsunagi": {
+        "tag": "Lake Gosho · Gensen",
+        "title": "Tsunagi Onsen Yukimori Hotel Daikan",
+        "lead": "Historic Tsunagi onsen overlooking Lake Gosho — a classic stop on the way back toward Morioka (confirm hours officially).",
+        "imgAlt": "Outdoor bath overlooking Lake Gosho — Tsunagi onsen"
+      },
+      "amihari": {
+        "tag": "Foothills · View",
+        "title": "Kyukamura Iwate Amihari Onsen",
+        "lead": "Famous bath with Mt. Iwate views — about 50 minutes from the slopes, ideal after advanced runs (verify officially).",
+        "imgAlt": "Snow-view bath at Amihari Onsen"
+      },
+      "uguisu": {
+        "tag": "Uguisuyu · Kaiseki",
+        "title": "Hotel Mori no Kaze Uguisuyu",
+        "lead": "Uguisuyu onsen in rich nature — lavish rotenburo and creative kaiseki for stay or day-use (check winter hours).",
+        "imgAlt": "Rotenburo at Uguisuyu Onsen"
+      }
+    },
+    "pairingTitle": "Ski × food × onsen",
+    "pairingLead": "Morning: leave Morioka → afternoon: ski Iwate Kogen → evening: Matsubokkuri gelato → night: Tsunagi onsen.",
+    "pairingFoodCta": "2 food picks"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 nearby food spots — Iwate Kogen Snow Park",
+      "description": "Komakusa and Matsubokkuri — Shizukuishi food guide with area map"
+    },
+    "backLink": "Back to guide home",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />Shizukuishi flavors.",
+      "tagline": "Slope classics to handmade gelato",
+      "imgAlt": "Shizukuishi food — warm meal after skiing"
+    },
+    "notice": "Hours, holidays, and menus change — check each venue's official information.",
+    "introTitle": "Why food completes the loop",
+    "introLead": "A large Center Plaza restaurant pairs with famous Shizukuishi sweets and soba nearby.",
+    "introBody": "Lunch on the hill and a sweet stop on the way back — two picks matched to a ski day.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchor layers — or show several at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Iwate Kogen area food, onsen, and hubs map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Hubs",
+      "hint": "Food and onsen layers can be shown together",
+      "mobileHint": "If pins overlap, use “View on map” in the list"
+    },
+    "linkOnsenGuide": "3 nearby onsen picks",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "2 Shizukuishi food picks",
+    "spotsLead": "From on-slope lunch to town sweets — ordered for a snow day.",
+    "spots": {
+      "komakusa": {
+        "tag": "On slope · Dining hall",
+        "title": "Restaurant Komakusa",
+        "lead": "Center Plaza's 600-seat main dining room. Crunchy bean-sprout miso ramen and house chashu bowls are classics for mid-run lunch (verify on site).",
+        "imgAlt": "Miso ramen at Restaurant Komakusa"
+      },
+      "matsubokkuri": {
+        "tag": "Shizukuishi · Gelato",
+        "title": "Matsubokkuri Ice Cream Farm",
+        "lead": "Popular gelato from fresh milk and local vegetables. A few minutes downhill — a sweet reward after cold runs (check hours officially).",
+        "imgAlt": "Handmade gelato at Matsubokkuri"
+      }
+    },
+    "pairingTitle": "One-day loop",
+    "pairingLead": "Morning: rental car at Morioka → lunch: Komakusa ramen → afternoon: gondola runs → return: Matsubokkuri → evening: Tsunagi onsen.",
+    "pairingOnsenCta": "3 onsen picks"
+  },
+  "guides": {
+    "family": {
+      "title": "Kids ride free every day",
+      "body": "Elementary kids and younger ride all lifts and the gondola free. Kids room and nursing space in Center Plaza, 2,800 free parking spaces — a Morioka-area family staple."
+    },
+    "morioka": {
+      "title": "Go from Morioka Station",
+      "body": "~45 minutes by free shuttle from Morioka West Exit (reservation required), or ~35–45 minutes by rental car. Easy day-trip add-on to Morioka sightseeing."
+    },
+    "night": {
+      "title": "Daily night skiing",
+      "body": "Iwate's only resort with nightly skiing every day in season. Until 21:00 weekdays and 22:00 Fri/Sat/holiday eves — for locals after work and travelers who toured until dusk."
+    }
+  },
+  "access": {
+    "postal": "020-0585, Japan",
+    "line": "Nagayama Iwatesan, Shizukuishi, Iwate-gun, Iwate",
+    "note": "~35–45 min from Morioka Station by car or bus. Free shuttle requires reservation (check official site).",
+    "phone": "TEL 019-693-4000",
+    "places": "",
+    "rentacarEyebrow": "小学生以下いつでも無料！盛岡から一番近くて便利な、家族の笑顔があふれる雪の遊び場。",
+    "rentacarLink": "盛岡駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "岩手高原スノーパーク周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Iwate Kogen Snow Park",
+    "location": "020-0585 · Nagayama Iwatesan, Shizukuishi, Iwate"
+  }
+}

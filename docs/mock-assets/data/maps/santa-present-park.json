@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "santa-present-park",
+  "name": {
+    "ja": "サンタプレゼントパーク・マロースゲレンデ",
+    "en": "Santa Present Park Marose Ski Area"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "公式 asahikawasantapresentpark.com",
+    "batch-asahikawa-area-6.json"
+  ],
+  "updatedAt": "2026-08-11T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/santa-present-park-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "features": [
+    {
+      "id": "lift-red",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": { "ja": "レッドリフト", "en": "Red lift" },
+      "shortLabel": { "ja": "レッド", "en": "Red" },
+      "meta": {
+        "ja": { "運行": "9:00〜21:00", "区分": "メイン" },
+        "en": { "Hours": "9:00–21:00", "Zone": "Main" }
+      }
+    },
+    {
+      "id": "lift-black",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": { "ja": "ブラックリフト", "en": "Black lift" },
+      "shortLabel": { "ja": "ブラック", "en": "Black" },
+      "meta": {
+        "ja": { "運行": "9:00〜20:45", "備考": "ローディングカーペット" },
+        "en": { "Hours": "9:00–20:45", "Note": "Loading carpet" }
+      }
+    },
+    {
+      "id": "lift-green",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": { "ja": "グリーンリフト", "en": "Green lift" },
+      "shortLabel": { "ja": "グリーン", "en": "Green" },
+      "meta": {
+        "ja": { "運行": "9:00〜20:45", "区分": "初級" },
+        "en": { "Hours": "9:00–20:45", "Zone": "Beginner" }
+      }
+    },
+    {
+      "id": "trail-beginner",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": { "ja": "初級コース", "en": "Beginner course" },
+      "shortLabel": { "ja": "初級", "en": "Beg." },
+      "meta": {
+        "ja": { "備考": "緩斜面・キッズ近接" },
+        "en": { "Note": "Gentle pitch near kids zone" }
+      }
+    },
+    {
+      "id": "trail-intermediate",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": { "ja": "中級コース", "en": "Intermediate course" },
+      "shortLabel": { "ja": "中級", "en": "Inter." },
+      "meta": {
+        "ja": { "最長": "約1,000m", "雪面": "圧雪" },
+        "en": { "Longest": "~1,000 m", "Surface": "Groomed" }
+      }
+    },
+    {
+      "id": "trail-advanced",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": { "ja": "上級・非圧雪", "en": "Advanced ungroomed" },
+      "shortLabel": { "ja": "上級", "en": "Adv." },
+      "meta": {
+        "ja": { "最大斜度": "25°", "備考": "W杯開催コース" },
+        "en": { "Max pitch": "25°", "Note": "World Cup course" }
+      }
+    },
+    {
+      "id": "trail-kids",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "sled",
+      "label": { "ja": "キッズゲレンデ（無料）", "en": "Kids area (free)" },
+      "shortLabel": { "ja": "キッズ", "en": "Kids" },
+      "meta": {
+        "ja": { "備考": "ソリ・初めての雪遊び" },
+        "en": { "Note": "Sledding and first snow play" }
+      }
+    }
+  ]
+}

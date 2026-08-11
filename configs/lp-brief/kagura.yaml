@@ -1,0 +1,47 @@
+resortId: kagura
+schemaVersion: "2026-08-11"
+
+name:
+  ja: かぐらスキー場
+  en: Kagura Ski Resort
+region:
+  ja: 新潟県湯沢町
+  en: Yuzawa, Niigata
+japowResortId: 324
+
+strategy:
+  ja: 本州屈指のパウダースノーとロングシーズン営業を誇る、極上のネイチャーアドベンチャーリゾート。
+  en: The ultimate nature adventure resort boasting Japan's finest powder snow and the longest skiing season.
+archetype: transit-onsen
+
+audience: both
+
+hero:
+  tagline:
+    ja: 標高1,845mのドライパウダーと、11月下旬から5月下旬までのロングシーズン。
+    en: Dry powder at 1,845 m and a season from late November through late May.
+  badges: [powder, long-season, naeba-link]
+
+pillars:
+  - id: powder
+    hook: { ja: 湯沢エリア最高標高の雪質, en: Yuzawa's highest-elevation snow }
+  - id: access
+    hook: { ja: 越後湯沢駅からバス20〜45分, en: Bus 20–45 min from Echigo-Yuzawa }
+  - id: apres
+    hook: { ja: 温泉街と地酒の回遊, en: Onsen town & local sake loop }
+
+map:
+  sources: ["公式パンフレット", "LP戦略レポート"]
+  heroImage: images/maps/kagura-hero.png
+
+areaMap:
+  enabled: true
+  hookStrategy:
+    primary: mixed
+    secondary: [food, onsen, sight]
+
+humanReview:
+  - japowResortId
+  - バス時刻・運休（冬季版）
+  - 料金・営業時間
+  - 英訳の事実確認

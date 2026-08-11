@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "2026-08-11",
+  "id": "madarao-kogen-area",
+  "resortId": "madarao-kogen",
+  "name": {
+    "ja": "斑尾高原周辺マップ",
+    "en": "Madarao Kogen area map"
+  },
+  "disclaimer": {
+    "ja": "位置は OpenStreetMap 等の公開情報に基づく概略です。冬季の営業時間・入浴可否・道路規制は各施設の公式情報でご確認ください。",
+    "en": "Locations are approximate from public sources. Confirm winter hours and road conditions with each facility."
+  },
+  "sources": ["OpenStreetMap", "madarao.jp", "docs/research/inbox/madarao-kogen.md"],
+  "updatedAt": "2026-08-11T12:00:00+09:00",
+  "fixedAnchorIds": ["ski", "station"],
+  "boundsProfiles": {
+    "skiFood": {
+      "includeGroups": ["food", "anchor"],
+      "maxZoom": 12
+    },
+    "onsen": {
+      "includeGroups": ["onsen"],
+      "maxZoom": 12
+    },
+    "onsenAnchor": {
+      "includeGroups": ["onsen", "anchor"],
+      "excludeAnchorIds": ["ski"],
+      "maxZoom": 11
+    },
+    "foodOnsen": {
+      "includeGroups": ["food", "onsen", "anchor"],
+      "maxZoom": 10
+    },
+    "anchorAll": {
+      "includeGroups": ["anchor"],
+      "maxZoom": 10
+    }
+  },
+  "anchors": [
+    {
+      "id": "ski",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "ski",
+      "fixedOnMap": true,
+      "listExclude": true,
+      "lat": 36.8483,
+      "lon": 138.2958,
+      "source": "OpenStreetMap",
+      "label": { "ja": "斑尾高原スキー場", "en": "Madarao Mountain Resort" },
+      "shortLabel": { "ja": "斑尾高原", "en": "Madarao" },
+      "district": { "ja": "飯山市", "en": "Iiyama" },
+      "mapsQuery": "斑尾高原スキー場 長野県飯山市"
+    },
+    {
+      "id": "station",
+      "group": "anchor",
+      "type": "anchor",
+      "category": "transit",
+      "fixedOnMap": true,
+      "listExclude": true,
+      "lat": 36.8531,
+      "lon": 138.3633,
+      "source": "OpenStreetMap",
+      "label": { "ja": "飯山駅", "en": "Iiyama Station" },
+      "shortLabel": { "ja": "飯山駅", "en": "Iiyama Stn." },
+      "district": { "ja": "飯山市", "en": "Iiyama" },
+      "mapsQuery": "飯山駅 長野県飯山市"
+    }
+  ],
+  "food": [
+    {
+      "id": "troisanc",
+      "group": "food",
+      "category": "cafe",
+      "lat": 36.8492,
+      "lon": 138.2975,
+      "source": "madarao.jp",
+      "label": { "ja": "トワサンク", "en": "Trois An Cinq" },
+      "shortLabel": { "ja": "トワサンク", "en": "Trois An Cinq" },
+      "mapsQuery": "トワサンク 斑尾高原スキー場",
+      "district": { "ja": "斑尾高原", "en": "Madarao Kogen" },
+      "phone": "0269-64-3835"
+    },
+    {
+      "id": "rudolf",
+      "group": "food",
+      "category": "italian",
+      "lat": 36.851,
+      "lon": 138.291,
+      "source": "OpenStreetMap",
+      "label": { "ja": "レストラン ルドルフ", "en": "Restaurant Rudolf" },
+      "shortLabel": { "ja": "ルドルフ", "en": "Rudolf" },
+      "mapsQuery": "レストラン ルドルフ 斑尾高原 飯山市",
+      "district": { "ja": "斑尾高原", "en": "Madarao Kogen" },
+      "phone": "0269-64-3153"
+    }
+  ],
+  "onsen": [
+    {
+      "id": "hoteibukuro",
+      "group": "onsen",
+      "category": "hotel",
+      "lat": 36.8502,
+      "lon": 138.2962,
+      "source": "madarao.jp",
+      "label": { "ja": "斑尾高原温泉（布袋の湯）", "en": "Madarao Kogen Onsen (Hoteibukuro)" },
+      "shortLabel": { "ja": "布袋の湯", "en": "Hoteibukuro" },
+      "mapsQuery": "斑尾高原温泉 斑尾高原ホテル 飯山市",
+      "district": { "ja": "斑尾高原", "en": "Madarao Kogen" },
+      "phone": "0269-64-3311"
+    },
+    {
+      "id": "madaraono",
+      "group": "onsen",
+      "category": "dayuse",
+      "lat": 36.8498,
+      "lon": 138.2945,
+      "source": "madarao.jp",
+      "label": { "ja": "まだらおの湯", "en": "Madarao-no-Yu" },
+      "shortLabel": { "ja": "まだらおの湯", "en": "Madarao-no-Yu" },
+      "mapsQuery": "斑尾高原体験交流施設 まだらおの湯 飯山市",
+      "district": { "ja": "斑尾高原", "en": "Madarao Kogen" },
+      "phone": "0269-64-3311"
+    },
+    {
+      "id": "tangram",
+      "group": "onsen",
+      "category": "resort",
+      "lat": 36.858,
+      "lon": 138.28,
+      "source": "tangram.jp",
+      "label": { "ja": "タングラム斑尾 温泉大浴場", "en": "Tangram Madarao Onsen" },
+      "shortLabel": { "ja": "タングラム", "en": "Tangram" },
+      "mapsQuery": "タングラムスキーサーカス 信濃町",
+      "district": { "ja": "信濃町", "en": "Shinano" },
+      "phone": "026-258-3511"
+    }
+  ]
+}

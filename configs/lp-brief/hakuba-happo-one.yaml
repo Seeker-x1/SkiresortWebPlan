@@ -1,0 +1,62 @@
+resortId: hakuba-happo-one
+schemaVersion: "2026-08-11"
+
+name:
+  ja: 白馬八方尾根スキー場
+  en: Hakuba Happo-One Snow Resort
+region:
+  ja: 長野県北安曇郡白馬村
+  en: Hakuba, Nagano
+japowResortId: 299
+
+strategy:
+  ja: 世界が認めた極上のパウダーと全長8kmのロングライド。北アルプスの絶景に飛び込む国際山岳リゾート。
+  en: Dive into the ultimate international mountain resort with world-class powder, an 8km long ride, and panoramic views of the Northern Alps.
+archetype: transit-onsen
+
+audience: both
+
+hero:
+  tagline:
+    ja: 長野駅から車約1時間4分——北アルプス最大級のビッグゲレンデへ。
+    en: Nagano Station ~64 min by car — into one of Japan's grandest Northern Alps resorts.
+  badges: [powder, olympic, scale]
+
+pillars:
+  - id: powder
+    hook: { ja: 極上パウダー, en: World-class powder }
+  - id: longride
+    hook: { ja: 最長8km, en: 8 km long ride }
+  - id: onsen
+    hook: { ja: 八方温泉, en: Happo onsen }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+facts:
+  operator: 八方尾根開発株式会社
+  location: 〒399-9301 長野県北安曇郡白馬村大字北城八方5734-1
+  phone: "0261-72-3066"
+  lift: ゴンドラ「アダム」他 全21基
+  courses: 16コース・総滑走面積220ha
+  elevation: 標高760〜1,831m（標高差1,071m）
+  parking: 名木山・白樺・咲花など複数（公式要確認）
+  pricing:
+    dayTicketAdult: 8700
+    note: ハイシーズン1日券大人8,700円（公式要確認）
+  hours: "8:00–16:30（リフト・公式要確認）"
+  access:
+    train: JR長野駅からバス・シャトル等
+    car: 長野駅から車で約1時間4分
+    note: 冬季はスタッドレスタイヤ必須・強風時はリフト運休あり（公式確認）
+
+map:
+  mode: schematic
+  sources: ["公式パンフレット", "configs/lp-brief/hakuba-happo-one.yaml"]
+  heroImage: images/maps/hakuba-happo-one-hero.png
+
+humanReview:
+  - japowResortId 299 = 白馬八方尾根スキー場
+  - 2025-2026シーズン料金・リフト運行
+  - 2027年新ゴンドラ建設計画のティーザー表現

@@ -1,0 +1,66 @@
+resortId: iwate-kogen-snow-park
+schemaVersion: "2026-08-11"
+
+name:
+  ja: 岩手高原スノーパーク
+  en: Iwate Kogen Snow Park
+region:
+  ja: 岩手県岩手郡雫石町
+  en: Shizukuishi, Iwate
+japowResortId: 111
+
+strategy:
+  ja: 小学生以下いつでも無料！盛岡から一番近くて便利な、家族の笑顔があふれる雪の遊び場。
+  en: The most accessible and family-friendly snow resort from Morioka, where kids ride free every day.
+archetype: transit-onsen
+copyFrom: sichinohe-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 盛岡45分——ゴンドラと毎日ナイターのファミリースノーパーク。
+    en: Morioka in 45 minutes — gondola rides and daily night skiing for families.
+  badges: [family, gondola, night]
+
+pillars:
+  - id: family
+    hook: { ja: 小学生以下無料, en: Kids ride free }
+  - id: gondola
+    hook: { ja: 約2kmゴンドラ, en: ~2 km gondola }
+  - id: night
+    hook: { ja: 毎日ナイター, en: Daily night skiing }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+facts:
+  operator: 株式会社鈴木商会
+  location: 〒020-0585 岩手県岩手郡雫石町長山岩手山
+  phone: "019-693-4000"
+  lift: ゴンドラ1基・ペアリフト6基
+  courses: 10コース・最長滑走距離約2,600m
+  elevation: 標高630〜1,213m（標高差約583m）
+  parking: 2,800台（無料・公式要確認）
+  pricing:
+    dayTicketAdult: 5800
+    note: 小学生以下リフト・ゴンドラ全日無料（公式要確認）
+  hours: "8:30–16:30（ナイター別・公式要確認）"
+  access:
+    train: JR盛岡駅西口バスターミナルから無料シャトルバス約45分（要予約）
+    car: 盛岡駅から車で約35〜45分
+    note: 東北自動車道盛岡ICから約35分
+
+map:
+  mode: schematic
+  sources: ["iwatekogen.jp", "configs/lp-brief/iwate-kogen-snow-park.yaml"]
+  heroImage: images/maps/iwate-kogen-snow-park-hero.png
+
+affiliates:
+  rentacar: morioka_station
+
+humanReview:
+  - japowResortId 111 = 岩手高原スノーパーク
+  - 無料シャトルバス予約・冬季道路
+  - ナイター営業時間（平日・土日で異なる）

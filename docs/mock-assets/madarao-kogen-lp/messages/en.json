@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Madarao Mountain Resort",
+    "description": "30 min from Iiyama Station — 100% natural \"Madapow\" powder and Japan's largest official tree-run network (15 courses)."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides"
+  },
+  "logo": "Madarao Mountain Resort",
+  "hero": {
+    "eyebrow": "Iiyama · Nagano",
+    "title": "Madarao<br />Mountain Resort",
+    "statLabel": "Official tree runs",
+    "statValue": "15",
+    "statUnit": "",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Aug 11 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "30 minutes<br />from Iiyama Station.",
+    "lead": "About 30 minutes by car or bus from Hokuriku Shinkansen Iiyama Station — Madapow glades reachable in ~2h20 from Tokyo. Rent at Iiyama Station for loops to Madarao, Nozawa Onsen, and Lake Nojiri.",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Snowy countryside from the Hokuriku Shinkansen — winter trip from Iiyama to Madarao"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Iiyama Station"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Lifts & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Madarao",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "Madapow & 15 official tree runs",
+      "lead": "100% natural \"Madapow\" snow — 15 in-bounds ungroomed tree runs (among Japan's largest). Thinned glades and managed entrances draw everyone from experts to families.",
+      "cta": "Open trail map",
+      "imgAlt": "Skier in deep powder tree run at Madarao — Madapow and snow-covered larch forest"
+    },
+    "secondary": {
+      "title": "After skiing, food & hot springs",
+      "lead": "From Trois An Cinq apple pie on the slopes to Rudolf's stone-oven pizza in the pension village — après food and Madarao onsen are easy to plan for day trips or stays.",
+      "cta": "Food guide"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby hot springs",
+    "title": "Madarao onsen &<br />Madarao-no-Yu",
+    "lead": "From alkaline Hoteibukuro baths at Madarao Kogen Hotel to day-use Madarao-no-Yu and Tangram's large bath — post-ski recovery is easy to design.",
+    "whisper": "No onsen-town stroll like Nozawa — but slope-side hotels and day baths cover recovery well.",
+    "cta": "3 onsen picks guide",
+    "imgAlt": "Steam from snow-view outdoor bath — Madarao highland onsen"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 onsen picks — Madarao Mountain Resort",
+      "description": "Hoteibukuro, Madarao-no-Yu, Tangram baths — hot-spring loop guide for Madarao"
+    },
+    "backLink": "Back to Madarao guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />soak.",
+      "tagline": "Iiyama Station 30 min · Madarao highland baths",
+      "imgAlt": "Steam from snow-view outdoor bath — Madarao area onsen"
+    },
+    "notice": "Day-use hours, fees, and seasonal closures are on each facility's official site.",
+    "introTitle": "Why onsen anchors the Madarao stay",
+    "introLead": "No walking onsen town — but slope-linked baths and day facilities make après easy to plan.",
+    "introBody": "Three picks within ~30 minutes by car, ordered for post-ski routing.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Madarao",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links or the map spot list at bottom right"
+    },
+    "linkFoodGuide": "2 food picks guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "3 onsen near Madarao Kogen",
+    "spotsLead": "Hotel-linked classics to day baths — ordered for post-ski loops.",
+    "regions": {
+      "madarao": "Madarao Kogen",
+      "tangram": "Tangram Madarao"
+    },
+    "spots": {
+      "hoteibukuro": {
+        "tag": "Alkaline · Hoteibukuro",
+        "title": "Madarao Kogen Onsen (Madarao Kogen Hotel)",
+        "lead": "Madarao Kogen, Iiyama. Golden alkaline spring at Hoteibukuro in Madarao Kogen Hotel. Day use available (verify). TEL 0269-64-3311.",
+        "imgAlt": "Steam at Madarao Kogen Onsen — Hoteibukuro bath"
+      },
+      "madaraono": {
+        "tag": "Day use · community bath",
+        "title": "Madarao Kogen Experience Center Madarao-no-Yu",
+        "lead": "Madarao Kogen, Iiyama. Day-use bath in the Madarao area — easy après stop. TEL 0269-64-3311 (resort main; verify).",
+        "imgAlt": "Madarao-no-Yu exterior — experience center"
+      },
+      "tangram": {
+        "tag": "Resort-linked · large bath",
+        "title": "Tangram Madarao Onsen Large Bath",
+        "lead": "3575-8 Furukai, Shinano, Nagano. Large bath at Tangram Ski Circus — fits mountain-pass days linking Madarao. TEL 026-258-3511.",
+        "imgAlt": "Tangram Madarao large hot spring bath"
+      }
+    },
+    "pairingTitle": "Iiyama × ski × onsen",
+    "pairingLead": "Morning: Iiyama → Madarao → afternoon: Madapow tree runs → Trois An Cinq lunch → evening: Hoteibukuro bath → next day: Teramachi Iiyama walk.",
+    "pairingFoodCta": "2 food picks guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 food picks — Madarao Mountain Resort",
+      "description": "Trois An Cinq and Rudolf — Madarao dining guide with area map"
+    },
+    "backLink": "Back to Madarao guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />Madarao flavors",
+      "tagline": "Slope food and stone-oven pizza — Iiyama Station 30 min food loop",
+      "imgAlt": "Madarao snow scenery and local food"
+    },
+    "notice": "Hours, closures, reservations, and menus are on each facility's official site.",
+    "introTitle": "Why food completes the Madarao loop",
+    "introLead": "From Trois An Cinq apple pie on the mountain to Rudolf's stone-oven pizza — you don't have to rely on slope cafeterias alone.",
+    "introBody": "Two picks for on-mountain lunch and evening meals along your route.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Madarao",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links or the map spot list at bottom right"
+    },
+    "linkOnsenGuide": "3 onsen picks guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "2 food picks near Madarao",
+    "spotsLead": "Slope classics to pension-district favorites — ordered for snow-trip loops.",
+    "spots": {
+      "troisanc": {
+        "tag": "On-slope · apple pie",
+        "title": "Trois An Cinq",
+        "lead": "Madarao Kogen Ski Area, Iiyama. Famous Shinshu apple pie and curry — perfect mid-run lunch. TEL 0269-64-3835.",
+        "imgAlt": "Apple pie and curry at Trois An Cinq — Madarao ski area"
+      },
+      "rudolf": {
+        "tag": "Stone oven · Italian",
+        "title": "Restaurant Rudolf",
+        "lead": "1101-152 Madarao Kogen, Iiyama. Stone-oven pizza specialty — dinner after leaving the slopes. TEL 0269-64-3153.",
+        "imgAlt": "Stone-oven pizza at Rudolf — Madarao pension area"
+      }
+    },
+    "pairingTitle": "One-day loop model",
+    "pairingLead": "Morning: Iiyama → Madarao Madapow → Trois An Cinq apple pie → Hoteibukuro onsen → Rudolf pizza for dinner.",
+    "pairingOnsenCta": "3 onsen picks guide"
+  },
+  "guides": {
+    "madapow": {
+      "title": "Madapow & 15 official tree runs",
+      "body": "100% natural \"Madapow\" — 15 in-bounds tree runs including Powder Wave 2 (max 35°, 1,500 m), Ninja, and SAWA. With linked Tangram, the mountain pass covers 51 runs across both areas."
+    },
+    "iiyama": {
+      "title": "Within 30 min of Iiyama Station",
+      "body": "~30 min by bus or car from Hokuriku Shinkansen Iiyama Station — ~2h20 from Tokyo total. Rent at Iiyama for wider loops to Nozawa Onsen and Lake Nojiri."
+    },
+    "family": {
+      "title": "Preschool lift tickets free",
+      "body": "Preschool children ski free at Madarao — plus free snowboard beginner lessons (3× daily). Tangram next door does not match kids-free rules, so check before using a shared pass."
+    }
+  },
+  "access": {
+    "postal": "〒389-2257",
+    "line": "Madarao Kogen, Iiyama, Nagano",
+    "note": "Within ~30 min by car or bus from Iiyama Station (typical)",
+    "phone": "TEL 0269-64-3214",
+    "places": "",
+    "rentacarEyebrow": "天然100%パウダー「マダパウ」と日本最大級のツリーランを誇る、世界基準へ進化する極上スノーリゾート。",
+    "rentacarLink": "飯山駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "斑尾高原スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Madarao Mountain Resort (mock)",
+    "location": "〒389-2257 Madarao Kogen, Iiyama, Nagano"
+  }
+}

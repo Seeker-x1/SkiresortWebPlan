@@ -1,0 +1,60 @@
+resortId: gala-yuzawa
+schemaVersion: "2026-08-11"
+
+name:
+  ja: GALA湯沢スキー場
+  en: GALA Yuzawa Snow Resort
+region:
+  ja: 新潟県湯沢町
+  en: Yuzawa, Niigata
+japowResortId: 306
+
+strategy:
+  ja: 新幹線駅直結の圧倒的利便性と、通年型マウンテンフィールド化による顧客単価の最大化。
+  en: Maximizing yield through unmatched Shinkansen access and an all-season mountain field transition.
+archetype: transit-onsen
+copyFrom: sichinohe-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 改札を出たら、すぐスキー場——東京から最短約70分台の駅直結リゾート。
+    en: Step off the Shinkansen onto the slopes — Tokyo to GALA in ~70 minutes, zero transfer.
+  badges: [shinkansen, onsen, family]
+
+pillars:
+  - id: access
+    hook: { ja: ガーラ湯沢駅直結0分, en: 0 min from Gala Yuzawa Station }
+  - id: courses
+    hook: { ja: 16コース・標高差823m, en: 16 courses · 823 m vertical }
+  - id: onsen
+    hook: { ja: ガーラの湯と温泉街, en: GALA no Yu & onsen town }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+facts:
+  operator: GALA湯沢スキー場（JR東日本グループ）
+  location: 〒949-6101 新潟県南魚沼郡湯沢町大字湯沢字茅平1039-2
+  phone: "025-785-6543"
+  lift: ゴンドラ1・ロープウェイ1・リフト9（公式要確認）
+  courses: 全16コース（初35%・中45%・上20%）
+  elevation: 標高1,181m（山頂）〜358m（山麓）
+  access:
+    train: 上越新幹線「ガーラ湯沢駅」直結（徒歩0分）
+    note: 関越自動車道 湯沢I.Cより約3km（約5分）
+
+map:
+  mode: schematic
+  sources: ["公式パンフレット", "configs/lp-brief/gala-yuzawa.yaml"]
+  heroImage: images/maps/gala-yuzawa-hero.png
+
+affiliates:
+  rentacar: echigoyuzawa_station
+
+humanReview:
+  - japowResortId 306 = GALA湯沢スキー場
+  - 2025-2026シーズン料金・ゴンドラ運行
+  - 三山共通券・湯沢スノーリンク料金

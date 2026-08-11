@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "2026-08-11",
+  "id": "iwate-kogen-snow-park",
+  "name": { "ja": "岩手高原スノーパーク", "en": "Iwate Kogen Snow Park" },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "configs/lp-brief/iwate-kogen-snow-park.yaml",
+    "docs/research/inbox/iwate-kogen-snow-park.md"
+  ],
+  "updatedAt": "2026-08-11T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/iwate-kogen-snow-park-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": { "ja": "ゴンドラ", "en": "Gondola" },
+      "shortLabel": { "ja": "ゴンドラ", "en": "Gondola" },
+      "meta": {
+        "ja": { "全長": "約2,000m", "区分": "盛岡・雫石エリア唯一" },
+        "en": { "Length": "~2,000 m", "Zone": "Only gondola in Morioka–Shizukuishi" }
+      }
+    },
+    {
+      "id": "lift-east-pair",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": { "ja": "イーストペア", "en": "East pair lift" },
+      "shortLabel": { "ja": "Eペア", "en": "E Pair" },
+      "meta": {
+        "ja": { "区分": "イーストエリア" },
+        "en": { "Zone": "East area" }
+      }
+    },
+    {
+      "id": "lift-west-pair",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": { "ja": "ウェストペア", "en": "West pair lift" },
+      "shortLabel": { "ja": "Wペア", "en": "W Pair" },
+      "meta": {
+        "ja": { "区分": "ウェストエリア" },
+        "en": { "Zone": "West area" }
+      }
+    },
+    {
+      "id": "trail-e1",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": { "ja": "E1コース", "en": "E1 course" },
+      "shortLabel": { "ja": "E1", "en": "E1" },
+      "meta": {
+        "ja": { "最大斜度": "34°", "雪面": "非圧雪" },
+        "en": { "Max slope": "34°", "Surface": "Ungroomed" }
+      }
+    },
+    {
+      "id": "trail-e4",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner-intermediate",
+      "label": { "ja": "E4コース", "en": "E4 course" },
+      "shortLabel": { "ja": "E4", "en": "E4" },
+      "meta": {
+        "ja": { "備考": "ナイター毎日対応" },
+        "en": { "Note": "Open for nightly skiing" }
+      }
+    },
+    {
+      "id": "trail-w3",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": { "ja": "W3コース", "en": "W3 course" },
+      "shortLabel": { "ja": "W3", "en": "W3" },
+      "meta": {
+        "ja": { "雪面": "非圧雪パウダー" },
+        "en": { "Surface": "Ungroomed powder" }
+      }
+    },
+    {
+      "id": "trail-family",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": { "ja": "ファミリーゲレンデ", "en": "Family slope" },
+      "shortLabel": { "ja": "ファミリー", "en": "Family" },
+      "meta": {
+        "ja": { "備考": "キッズパーク隣接" },
+        "en": { "Note": "Adjacent kids park" }
+      }
+    }
+  ]
+}

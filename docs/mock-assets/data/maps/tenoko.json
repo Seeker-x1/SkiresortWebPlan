@@ -11,9 +11,10 @@
   },
   "sources": [
     "Deep Research batch #107",
-    "configs/lp-brief/tenoko.yaml"
+    "configs/lp-brief/tenoko.yaml",
+    "飯豊町公式・観光情報"
   ],
-  "updatedAt": "2026-07-02T12:00:00+09:00",
+  "updatedAt": "2026-06-13T12:00:00+09:00",
   "viewBox": "0 0 1024 1024",
   "hero": {
     "src": "images/maps/tenoko-hero.png",
@@ -22,39 +23,40 @@
     "viewBox": "0 0 1024 1024"
   },
   "bakedLines": true,
+  "mapMode": "schematic",
   "features": [
     {
-      "id": "lift-schlepp",
+      "id": "lift-schlep",
       "type": "lift",
       "status": "operating",
-      "liftKind": "surface",
+      "liftKind": "pair",
       "label": {
         "ja": "シュレップリフト",
-        "en": "Schlepplift"
+        "en": "Schlep lift"
       },
       "shortLabel": {
         "ja": "シュレップ",
-        "en": "Schlepp"
+        "en": "Schlep"
       },
       "meta": {
         "ja": {
           "長さ": "445m",
-          "備考": "中間降車場あり"
+          "特徴": "中間降車あり"
         },
         "en": {
           "Length": "445 m",
-          "Note": "Mid-station drop-off"
+          "Feature": "Mid-station unload"
         }
       }
     },
     {
-      "id": "lift-rope",
+      "id": "lift-rope-tow",
       "type": "lift",
       "status": "operating",
       "liftKind": "surface",
       "label": {
-        "ja": "ロープトー（Jバー）",
-        "en": "Rope tow (J-bar)"
+        "ja": "ロープトウ",
+        "en": "Rope tow"
       },
       "shortLabel": {
         "ja": "ロープ",
@@ -62,12 +64,10 @@
       },
       "meta": {
         "ja": {
-          "種別": "滑走式",
-          "備考": "チェアリフトなし"
+          "区分": "下部練習"
         },
         "en": {
-          "Type": "Surface lift",
-          "Note": "No chairlifts"
+          "Zone": "Lower practice area"
         }
       }
     },
@@ -86,34 +86,32 @@
       },
       "meta": {
         "ja": {
-          "特徴": "緩斜面中心"
+          "特徴": "緩斜面・雪遊び向け"
         },
         "en": {
-          "Feature": "Gentle terrain"
+          "Feature": "Gentle and family-friendly"
         }
       }
     },
     {
-      "id": "trail-central",
+      "id": "trail-center",
       "type": "trail",
       "status": "open",
       "difficulty": "intermediate",
       "label": {
         "ja": "中央ゲレンデ",
-        "en": "Central slope"
+        "en": "Center slope"
       },
       "shortLabel": {
         "ja": "中央",
-        "en": "Central"
+        "en": "Center"
       },
       "meta": {
         "ja": {
-          "滑走距離": "約450m",
-          "最大斜度": "18〜19°"
+          "備考": "ワイドな中斜面"
         },
         "en": {
-          "Length": "~450 m",
-          "Max slope": "18–19°"
+          "Note": "Wide mid-slope line"
         }
       }
     },
@@ -121,7 +119,7 @@
       "id": "trail-trial",
       "type": "trail",
       "status": "open",
-      "difficulty": "intermediate",
+      "difficulty": "intermediate-advanced",
       "label": {
         "ja": "トライアルコース",
         "en": "Trial course"
@@ -132,32 +130,56 @@
       },
       "meta": {
         "ja": {
-          "特徴": "やや急斜面"
+          "最大斜度": "18〜19°",
+          "備考": "やや斜度あり"
         },
         "en": {
-          "Feature": "Steeper pitch"
+          "Max slope": "18-19°",
+          "Note": "Slightly steeper pitch"
         }
       }
     },
     {
-      "id": "trail-beech",
+      "id": "trail-buna",
       "type": "trail",
       "status": "open",
       "difficulty": "beginner",
       "label": {
         "ja": "ブナ森コース",
-        "en": "Beech forest run"
+        "en": "Buna forest course"
       },
       "shortLabel": {
         "ja": "ブナ森",
-        "en": "Beech"
+        "en": "Buna"
       },
       "meta": {
         "ja": {
-          "備考": "迂回ルート"
+          "備考": "迂回ルート的"
         },
         "en": {
-          "Note": "Scenic detour"
+          "Note": "Bypass-style forest line"
+        }
+      }
+    },
+    {
+      "id": "trail-tube",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "sled",
+      "label": {
+        "ja": "雪遊び・チューブ想定エリア",
+        "en": "Snow-play / tube area"
+      },
+      "shortLabel": {
+        "ja": "雪遊び",
+        "en": "Play"
+      },
+      "meta": {
+        "ja": {
+          "備考": "代替チューブ運用の想定帯"
+        },
+        "en": {
+          "Note": "Tube-play concept area"
         }
       }
     }

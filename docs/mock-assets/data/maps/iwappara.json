@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "iwappara",
+  "name": {
+    "ja": "岩原スキー場",
+    "en": "Iwappara Ski Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "公式パンフレット",
+    "configs/lp-brief/iwappara.yaml"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/iwappara-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-central-pair",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "中央ペアリフト",
+        "en": "Central pair lift"
+      },
+      "shortLabel": {
+        "ja": "中央",
+        "en": "Central"
+      },
+      "meta": {
+        "ja": {
+          "区分": "メイン輸送"
+        },
+        "en": {
+          "Zone": "Main uplift"
+        }
+      }
+    },
+    {
+      "id": "lift-kids-tow",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": {
+        "ja": "キッズ牽引",
+        "en": "Kids tow"
+      },
+      "shortLabel": {
+        "ja": "キッズ",
+        "en": "Kids"
+      },
+      "meta": {
+        "ja": {
+          "区分": "キッズエリア"
+        },
+        "en": {
+          "Zone": "Kids area"
+        }
+      }
+    },
+    {
+      "id": "lift-west-quad",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "西クワッド",
+        "en": "West quad"
+      },
+      "shortLabel": {
+        "ja": "西",
+        "en": "West"
+      },
+      "meta": {
+        "ja": {
+          "区分": "西エリア"
+        },
+        "en": {
+          "Zone": "West area"
+        }
+      }
+    },
+    {
+      "id": "trail-wide-burn",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "ワイドバーン（初級）",
+        "en": "Wide burn (beginner)"
+      },
+      "shortLabel": {
+        "ja": "ワイド",
+        "en": "Wide"
+      },
+      "meta": {
+        "ja": {
+          "幅": "最大200m",
+          "備考": "一枚バーン"
+        },
+        "en": {
+          "Width": "Up to 200 m",
+          "Note": "Open face"
+        }
+      }
+    },
+    {
+      "id": "trail-sori-land",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "ソリランド",
+        "en": "Sori Land"
+      },
+      "shortLabel": {
+        "ja": "ソリ",
+        "en": "Sled"
+      },
+      "meta": {
+        "ja": {
+          "距離": "634m",
+          "備考": "ソリ専用"
+        },
+        "en": {
+          "Distance": "634 m",
+          "Note": "Sledding course"
+        }
+      }
+    },
+    {
+      "id": "trail-family",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "ファミリーゲレンデ",
+        "en": "Family area"
+      },
+      "shortLabel": {
+        "ja": "ファミリー",
+        "en": "Family"
+      },
+      "meta": {
+        "ja": {
+          "備考": "初心者・家族向け"
+        },
+        "en": {
+          "Note": "Beginner & family"
+        }
+      }
+    },
+    {
+      "id": "trail-intermediate",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "中斜面コース",
+        "en": "Intermediate slope"
+      },
+      "shortLabel": {
+        "ja": "中斜面",
+        "en": "Intermediate"
+      },
+      "meta": {
+        "ja": {
+          "備考": "中級者向け"
+        },
+        "en": {
+          "Note": "Intermediate terrain"
+        }
+      }
+    }
+  ]
+}

@@ -67,6 +67,36 @@ const RESORT_COPY = {
       rentacarHint: "For Biei, Shirogane, and Sounkyo drives",
     },
   },
+  kurodake: {
+    rentacar: "asahikawa_airport",
+    ja: {
+      rentacarEyebrow: "層雲峡・大雪山周遊",
+      rentacarLink: "旭川空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "層雲峡・旭岳・美瑛方面のドライブ向け",
+    },
+    en: {
+      rentacarEyebrow: "Sounkyo · Daisetsuzan loop",
+      rentacarLink: "Book a rental car at Asahikawa Airport",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Sounkyo, Asahidake, and Biei drives",
+    },
+  },
+  "iwate-kogen-snow-park": {
+    rentacar: "morioka_station",
+    ja: {
+      rentacarEyebrow: "新幹線＋レンタカー",
+      rentacarLink: "盛岡駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "雫石・小岩井農場・岩手高原周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Shinkansen + rental car",
+      rentacarLink: "Book a rental car at Morioka Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Shizukuishi, Koiwai Farm, and Iwate Kogen drives",
+    },
+  },
   unabetsu: {
     rentacar: "memanbetsu_airport",
     ja: {
@@ -817,6 +847,21 @@ const RESORT_COPY = {
       rentacarHint: "For Shiozawa, Muikamachi, and Yuzawa loops",
     },
   },
+  "appi-kogen": {
+    rentacar: "morioka_station",
+    ja: {
+      rentacarEyebrow: "盛岡60分・東北最大級リゾート",
+      rentacarLink: "盛岡駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "安比高原・八幡平周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Morioka 60 min · Tohoku's grand resort",
+      rentacarLink: "Book a rental car at Morioka Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Appi Kogen and Hachimantai loops",
+    },
+  },
   "morioka-ikari": {
     rentacar: "morioka_station",
     ja: {
@@ -1400,6 +1445,126 @@ const RESORT_COPY = {
           "rentacarLink": "Book a rental car at Komatsu Airport",
           "rentacarNote": "Skyticket (external site)",
           "rentacarHint": "For Hokuriku and Fukui drives"
+    },
+  },
+  togakushi: {
+    rentacar: "nagano_station",
+    ja: {
+      rentacarEyebrow: "長野駅＋レンタカー",
+      rentacarLink: "長野駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "戸隠スキー場・戸隠神社周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Nagano Station + rental car",
+      rentacarLink: "Book a rental car at Nagano Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Togakushi Ski Resort and shrine loops",
+    },
+  },
+  shizukuishi: {
+    rentacar: "morioka_station",
+    ja: {
+      rentacarEyebrow: "盛岡駅＋レンタカー",
+      rentacarLink: "盛岡駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "雫石・盛岡市街・安比周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Morioka Station + rental car",
+      rentacarLink: "Book a rental car at Morioka Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Shizukuishi, Morioka city, and Appi loops",
+    },
+  },
+  "nozawa-onsen": {
+    rentacar: "iiyama_station",
+    ja: {
+      rentacarEyebrow: "飯山駅＋レンタカー",
+      rentacarLink: "飯山駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "野沢温泉・志賀・斑尾周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Iiyama Station + rental car",
+      rentacarLink: "Book a rental car at Iiyama Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Nozawa, Shiga Kogen, and Madarao loops",
+    },
+  },
+  "gala-yuzawa": {
+    rentacar: "echigoyuzawa_station",
+    ja: {
+      rentacarEyebrow: "新幹線＋レンタカー",
+      rentacarLink: "越後湯沢駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "湯沢高原・石打丸山・苗場方面の周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Shinkansen + rental car",
+      rentacarLink: "Book a rental car at Echigo-Yuzawa Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Yuzawa Kogen, Ishiuchi Maruyama, and Naeba loops",
+    },
+  },
+  "ishiuchi-maruyama": {
+    rentacar: "echigoyuzawa_station",
+    ja: {
+      rentacarEyebrow: "新幹線＋レンタカー",
+      rentacarLink: "越後湯沢駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "石打丸山・GALA湯沢・苗場方面の周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Shinkansen + rental car",
+      rentacarLink: "Book a rental car at Echigo-Yuzawa Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Ishiuchi Maruyama, GALA Yuzawa, and Naeba loops",
+    },
+  },
+  naeba: {
+    rentacar: "echigoyuzawa_station",
+    ja: {
+      rentacarEyebrow: "圧倒的スケールのゲレンデと直結ホテルの利便性に、地元温泉と美食の回遊性を加えた「24時間遊べるエンタメスノーリゾート」への進化。",
+      rentacarLink: "越後湯沢駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "苗場スキー場周辺のドライブ向け",
+    },
+    en: {
+      rentacarEyebrow: "圧倒的スケールのゲレンデと直結ホテルの利便性に、地元温泉と美食の回遊性を加えた「24時間遊べるエンタメスノーリゾート」への進化。",
+      rentacarLink: "Book a rental car at Echigo-Yuzawa Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "苗場スキー場周辺のドライブ向け",
+    },
+  },
+  kagura: {
+    rentacar: "echigoyuzawa_station",
+    ja: {
+      rentacarEyebrow: "新幹線＋レンタカー",
+      rentacarLink: "越後湯沢駅でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "かぐら・苗場・石打丸山方面の周遊向け",
+    },
+    en: {
+      rentacarEyebrow: "Shinkansen + rental car",
+      rentacarLink: "Book a rental car at Echigo-Yuzawa Station",
+      rentacarNote: "Skyticket (external site)",
+      rentacarHint: "For Kagura, Naeba, and Ishiuchi Maruyama loops",
+    },
+  },
+  "santa-present-park": {
+    rentacar: "asahikawa_airport",
+    ja: {
+      rentacarEyebrow: "旭川市内15〜20分・ファミリー雪遊び",
+      rentacarLink: "旭川空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "サンタプレゼントパーク・マロースゲレンデ周辺のドライブ向け",
+    },
+    en: {
+      rentacarEyebrow: "旭川市内15〜20分・ファミリー雪遊び",
+      rentacarLink: "旭川空港でレンタカー予約",
+      rentacarNote: "スカイチケット（外部サイト）",
+      rentacarHint: "サンタプレゼントパーク・マロースゲレンデ周辺のドライブ向け",
     },
   },
 };

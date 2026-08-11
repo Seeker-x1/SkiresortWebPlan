@@ -1,0 +1,45 @@
+resortId: horotachi
+schemaVersion: "2026-08-11"
+
+name:
+  ja: ほろたちスキー場
+  en: Horotachi Ski Area
+region:
+  ja: 北海道幌加内町
+  en: Horokanai, Hokkaido
+japowResortId: 56
+
+strategy:
+  ja: 旭川から1時間強・44°パウダー
+  en: Asahikawa drive · 44° powder
+archetype: transit-onsen
+copyFrom: sichinohe-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 幌加内の深雪と、そばのあと。
+    en: Deep Horokanai snow—and soba after the runs.
+  badges: [powder, steep, soba]
+
+pillars:
+  - id: powder
+    hook: { ja: 最大44°・非圧雪, en: "Max 44° · ungroomed" }
+  - id: drive
+    hook: { ja: 旭川空港レンタカー, en: "Asahikawa Airport rental" }
+  - id: soba
+    hook: { ja: そば王国の食, en: "Buckwheat soba kingdom" }
+
+map:
+  mode: schematic
+  sources: ["北海道庁施設一覧", "horokanai-kankou.com"]
+  heroImage: images/maps/horotachi-hero.png
+
+affiliates:
+  rentacar: asahikawa_airport
+
+humanReview:
+  - japowResortId
+  - 峠の冬季通行・天候
+  - 営業日（金土日中心の時期あり）

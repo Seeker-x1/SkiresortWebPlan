@@ -1,0 +1,42 @@
+resortId: santa-present-park
+schemaVersion: "2026-08-11"
+
+name:
+  ja: サンタプレゼントパーク・マロースゲレンデ
+  en: Santa Present Park Marose Ski Area
+region:
+  ja: 北海道旭川市
+  en: Asahikawa, Hokkaido
+japowResortId: 41
+
+strategy:
+  ja: 旭川市内15〜20分・ファミリー雪遊び
+  en: 15–20 min from Asahikawa · family snow play
+archetype: transit-onsen
+copyFrom: sichinohe-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 市内からすぐ、夜景ナイターまで。
+    en: City-close slopes and night views until 21:00.
+  badges: [family, night, city]
+
+pillars:
+  - id: access
+    hook: { ja: 旭川駅・空港から好アクセス, en: Easy from station & airport }
+  - id: family
+    hook: { ja: キッズゲレンデ・スノーエスカレーター, en: Kids area & snow escalator }
+
+map:
+  sources: ["公式 asahikawasantapresentpark.com", "batch-asahikawa-area-6.json"]
+  heroImage: images/maps/santa-present-park-hero.png
+
+affiliates:
+  rentacar: asahikawa_airport
+
+humanReview:
+  - japowResortId
+  - 料金・ナイター営業時間
+  - 道北バス時刻

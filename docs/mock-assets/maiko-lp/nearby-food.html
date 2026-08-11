@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="maiko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>周辺飲食2選 — 舞子スノーリゾート</title>
+  <meta name="description" content="保よしととんかつ人参亭——湯沢エリアの食ガイド" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/lp-layout.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="./" class="logo" data-i18n="logo">舞子スノーリゾート</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="./#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=maiko" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="../area-map.html?resort=maiko&layers=food,anchor" data-i18n="nearbyFood.navAreaMap">周辺マップ</a></li>
+          <li><a href="nearby-onsen.html" data-i18n="nearbyFood.linkOnsenGuide">周辺温泉3選</a></li>
+          <li><a href="./#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--spot" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-maiko-highlight.png" data-i18n-attr="alt:nearbyFood.hero.imgAlt" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <p class="eyebrow" data-i18n="nearbyFood.hero.eyebrow">Eat · Map</p>
+        <h1 class="hero-title" data-i18n-html="nearbyFood.hero.title">雪のあと、<br />温泉街の食へ</h1>
+        <p class="lead hero-tagline" data-i18n="nearbyFood.hero.tagline">舞茸御膳と行列とんかつ</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="inner">
+        <p class="notice" role="note" data-i18n="nearbyFood.notice">営業時間は各施設の公式情報が最新です。</p>
+        <h2 class="heading-lg" data-i18n="nearbyFood.introTitle">なぜ、食も湯沢の核になるのか</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyFood.introLead">ゲレンデから温泉街の食へ。</p>
+        <p class="lead-whisper" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyFood.introBody">夕食に組み込みやすい2施設を厳選しました。</p>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyFood.spotsEyebrow">2 picks</p>
+        <h2 class="heading-lg" data-i18n="nearbyFood.spotsTitle">湯沢グルメ2選</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyFood.spotsLead">郷土料理からとんかつまで。</p>
+
+        <ol class="food-spot-list">
+          <li class="food-spot" id="entry-tanashoku" data-spot-entry="tanashoku">
+            <span class="food-spot__num">01</span>
+            <div class="food-spot__body">
+              <figure class="food-spot__figure">
+                <img src="lp-mock-maiko-onsen.png" data-i18n-attr="alt:nearbyFood.spots.tanashoku.imgAlt" alt="" width="960" height="600" loading="lazy" />
+              </figure>
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.tanashoku.tag">食堂 · 本気丼</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.tanashoku.title">たなか食堂</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.tanashoku.lead">地元南魚沼の本気丼参加店。</p>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-iiho" data-spot-entry="iiho">
+            <span class="food-spot__num">02</span>
+            <div class="food-spot__body">
+              <figure class="food-spot__figure">
+                <img src="lp-mock-maiko-transit.png" data-i18n-attr="alt:nearbyFood.spots.iiho.imgAlt" alt="" width="960" height="600" loading="lazy" />
+              </figure>
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.iiho.tag">ゲレ食 · 舞子エリア</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.iiho.title">レストラン IIHO</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.iiho.lead">舞子エリア内のゲレ食。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <h2 class="heading-lg" data-i18n="nearbyFood.pairingTitle">一日の回遊モデル</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyFood.pairingLead">スキー → 温泉街 → 夕食 → ぽんしゅ館。</p>
+        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="nearby-onsen.html" class="btn btn-ghost" data-i18n="nearbyFood.pairingOnsenCta">温泉3選ガイド</a>
+          <a href="./" class="btn btn-ghost" data-i18n="nearbyFood.backLink">舞子ガイドトップへ戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p class="footer-notice" role="note" data-i18n="footer.guideNotice">本ガイドは制作中の案です。</p>
+      <div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 舞子スノーリゾート（案）</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒949-6101 新潟県南魚沼郡湯沢町</span> ·
+        <a href="./" data-i18n="nearbyFood.backLink">舞子ガイドトップへ戻る</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+  <script>
+    window.addEventListener("mock-i18n-ready", (e) => {
+      const m = e.detail.messages;
+      const meta = m.nearbyFood && m.nearbyFood.meta;
+      if (meta && meta.title) document.title = meta.title;
+      if (meta && meta.description) {
+        const tag = document.querySelector('meta[name="description"]');
+        if (tag) tag.setAttribute("content", meta.description);
+      }
+    });
+  </script>
+</body>
+</html>

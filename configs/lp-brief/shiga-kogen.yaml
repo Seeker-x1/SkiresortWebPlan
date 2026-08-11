@@ -1,0 +1,61 @@
+resortId: shiga-kogen
+schemaVersion: "2026-08-11"
+
+name:
+  ja: 志賀高原スキー場
+  en: Shiga Kogen Mountain Resort
+region:
+  ja: 長野県山ノ内町
+  en: Yamanouchi, Nagano
+japowResortId: 235
+
+strategy:
+  ja: 圧倒的スケールと極上パウダーを誇る日本最大の山岳リゾートを、DXと回遊性強化で世界水準の滞在型エコリゾートへ進化させる。
+  en: Transforming Japan's largest mountain resort, boasting unparalleled scale and premium powder, into a world-class, stay-oriented eco-resort through DX and enhanced mobility.
+archetype: transit-onsen
+copyFrom: sichinohe-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 長野駅から車1〜1.2時間——18エリア・84コースのメガリゾートへ。
+    en: Nagano Station 1–1.2 hours by car — into Japan's mega mountain resort.
+  badges: [powder, scale, eco]
+
+pillars:
+  - id: scale
+    hook: { ja: 18エリア・84コース, en: "18 areas · 84 runs" }
+  - id: transit
+    hook: { ja: 長野駅からバス約70分, en: "~70 min bus from Nagano" }
+  - id: onsen
+    hook: { ja: 熊の湯・渋温泉, en: "Kumanoyu · Shibu onsen" }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+facts:
+  operator: 志賀高原観光協会
+  location: 〒381-0401 長野県下高井郡山ノ内町大字平穏7148
+  phone: "0269-34-2404"
+  lift: 索道48基（ゴンドラ6基）
+  courses: 全84コース・総滑走面積425ha
+  elevation: 標高1,341〜2,307m（日本最高標高のスキー場）
+  access:
+    car: 長野駅から車で約1〜1.2時間
+    bus: 長野駅から急行バス約70分
+    note: 冬季はスタッドレスタイヤ必須・エリア間移動に時間を見込む（公式確認）
+
+map:
+  mode: schematic
+  sources: ["公式パンフレット", "configs/lp-brief/shiga-kogen.yaml"]
+  heroImage: images/maps/shiga-kogen-hero.png
+
+affiliates:
+  rentacar: nagano_station
+
+humanReview:
+  - japowResortId 235 = ジャイアント（志賀高原エリア代表）
+  - 2025-2026シーズン料金・リフト運行
+  - エリア間横移動の複雑さ

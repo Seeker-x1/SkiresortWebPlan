@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "kutsuki",
+  "name": {
+    "ja": "朽木スキー場",
+    "en": "Kutsuki Snowpark"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "朽木スキー場公式",
+    "LP戦略レポート",
+    "高島市観光情報"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/kutsuki-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-pair-1",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "第1ペアリフト",
+        "en": "Lift 1 pair"
+      },
+      "shortLabel": {
+        "ja": "第1",
+        "en": "L1"
+      },
+      "meta": {
+        "ja": {
+          "長さ": "628m",
+          "区分": "メイン"
+        },
+        "en": {
+          "Length": "628 m",
+          "Zone": "Main"
+        }
+      }
+    },
+    {
+      "id": "lift-pair-2",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "第2ペアリフト",
+        "en": "Lift 2 pair"
+      },
+      "shortLabel": {
+        "ja": "第2",
+        "en": "L2"
+      },
+      "meta": {
+        "ja": {
+          "長さ": "390m",
+          "区分": "展望側"
+        },
+        "en": {
+          "Length": "390 m",
+          "Zone": "View side"
+        }
+      }
+    },
+    {
+      "id": "lift-3",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "第3リフト",
+        "en": "Lift 3"
+      },
+      "shortLabel": {
+        "ja": "第3",
+        "en": "L3"
+      },
+      "meta": {
+        "ja": {
+          "長さ": "265m",
+          "区分": "キッズ周辺"
+        },
+        "en": {
+          "Length": "265 m",
+          "Zone": "Kids side"
+        }
+      }
+    },
+    {
+      "id": "trail-romance",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "ロマンスコース",
+        "en": "Romance course"
+      },
+      "shortLabel": {
+        "ja": "ロマンス",
+        "en": "Romance"
+      },
+      "meta": {
+        "ja": {
+          "斜度": "5〜15°",
+          "特徴": "ウォームアップ向け"
+        },
+        "en": {
+          "Slope": "5–15°",
+          "Feature": "Warm-up run"
+        }
+      }
+    },
+    {
+      "id": "trail-second",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "第2ゲレンデ",
+        "en": "Second slope"
+      },
+      "shortLabel": {
+        "ja": "第2",
+        "en": "Second"
+      },
+      "meta": {
+        "ja": {
+          "斜度": "15°",
+          "特徴": "琵琶湖ビュー"
+        },
+        "en": {
+          "Slope": "15°",
+          "Feature": "Lake Biwa view"
+        }
+      }
+    },
+    {
+      "id": "trail-challenge",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "チャレンジ・ダウンヒル",
+        "en": "Challenge downhill"
+      },
+      "shortLabel": {
+        "ja": "チャレンジ",
+        "en": "Challenge"
+      },
+      "meta": {
+        "ja": {
+          "最大斜度": "35°",
+          "雪面": "降雪時パウダー"
+        },
+        "en": {
+          "Max slope": "35°",
+          "Surface": "Powder after snowfall"
+        }
+      }
+    },
+    {
+      "id": "trail-kids",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "sled",
+      "label": {
+        "ja": "キッズゲレンデ",
+        "en": "Kids slope"
+      },
+      "shortLabel": {
+        "ja": "キッズ",
+        "en": "Kids"
+      },
+      "meta": {
+        "ja": {
+          "特徴": "ソリ専用・キッズウェイ60m"
+        },
+        "en": {
+          "Feature": "Sled only · 60 m kids walkway"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "maiko",
+  "name": {
+    "ja": "舞子スノーリゾート",
+    "en": "Maiko Snow Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "公式パンフレット",
+    "configs/lp-brief/maiko.yaml"
+  ],
+  "updatedAt": "2026-08-11T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/maiko-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "gondola-main",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "メインゴンドラ",
+        "en": "Main gondola"
+      },
+      "shortLabel": {
+        "ja": "ゴンドラ",
+        "en": "Gondola"
+      },
+      "meta": {
+        "ja": {
+          "区分": "長峰エリア輸送"
+        },
+        "en": {
+          "Zone": "Nagamine uplift"
+        }
+      }
+    },
+    {
+      "id": "lift-maiko-quad",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "quad",
+      "label": {
+        "ja": "舞子クワッド",
+        "en": "Maiko quad"
+      },
+      "shortLabel": {
+        "ja": "舞子",
+        "en": "Maiko"
+      },
+      "meta": {
+        "ja": {
+          "区分": "舞子エリア"
+        },
+        "en": {
+          "Zone": "Maiko zone"
+        }
+      }
+    },
+    {
+      "id": "lift-okusoechi",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "奥添地リフト",
+        "en": "Okusoechi lift"
+      },
+      "shortLabel": {
+        "ja": "奥添地",
+        "en": "Okusoechi"
+      },
+      "meta": {
+        "ja": {
+          "区分": "奥添地エリア"
+        },
+        "en": {
+          "Zone": "Okusoechi bowl"
+        }
+      }
+    },
+    {
+      "id": "trail-ranran",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "ランランコース",
+        "en": "Ranran Course"
+      },
+      "shortLabel": {
+        "ja": "ランラン",
+        "en": "Ranran"
+      },
+      "meta": {
+        "ja": {
+          "距離": "最長6,000m",
+          "備考": "ロングクルーズ"
+        },
+        "en": {
+          "Distance": "Up to 6,000 m",
+          "Note": "Long cruise"
+        }
+      }
+    },
+    {
+      "id": "trail-paradise",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "パラダイスコース",
+        "en": "Paradise Course"
+      },
+      "shortLabel": {
+        "ja": "パラダイス",
+        "en": "Paradise"
+      },
+      "meta": {
+        "ja": {
+          "斜度": "平均10度",
+          "備考": "ファミリー向け"
+        },
+        "en": {
+          "Pitch": "Avg 10°",
+          "Note": "Family zone"
+        }
+      }
+    },
+    {
+      "id": "trail-guigui",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "グイグイコース",
+        "en": "Guigui Course"
+      },
+      "shortLabel": {
+        "ja": "グイグイ",
+        "en": "Guigui"
+      },
+      "meta": {
+        "ja": {
+          "斜度": "最大23度",
+          "備考": "中級向け"
+        },
+        "en": {
+          "Pitch": "Up to 23°",
+          "Note": "Intermediate"
+        }
+      }
+    },
+    {
+      "id": "trail-offpiste",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "オフピステゾーン",
+        "en": "Off-piste zone"
+      },
+      "shortLabel": {
+        "ja": "オフピステ",
+        "en": "Off-piste"
+      },
+      "meta": {
+        "ja": {
+          "斜度": "最大32度",
+          "雪面": "非圧雪"
+        },
+        "en": {
+          "Pitch": "Up to 32°",
+          "Surface": "Ungroomed"
+        }
+      }
+    }
+  ]
+}

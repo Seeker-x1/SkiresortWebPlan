@@ -1,0 +1,60 @@
+resortId: maiko
+schemaVersion: "2026-08-11"
+
+name:
+  ja: 舞子スノーリゾート
+  en: Maiko Snow Resort
+region:
+  ja: 新潟県南魚沼市
+  en: Minamiuonuma, Niigata
+japowResortId: 315
+
+strategy:
+  ja: ICから1分の究極アクセスと、多彩なコース・充実の施設を誇るオールシーズン・ビッグリゾート。
+  en: The ultimate all-season big resort boasting 1-minute access from the IC, diverse courses, and extensive facilities.
+archetype: transit-onsen
+copyFrom: sichinohe-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 塩沢石打ICから約1分——26コース・最長6,000mのファミリー向けビッグリゾート。
+    en: ~1 min from Shiozawa-Ishiuchi IC — 26 courses and 6,000 m runs for families and beginners.
+  badges: [access, family, onsen]
+
+pillars:
+  - id: access
+    hook: { ja: 塩沢石打ICから約1分, en: ~1 min from Shiozawa-Ishiuchi IC }
+  - id: courses
+    hook: { ja: 26コース・最長6,000m, en: 26 courses · 6,000 m runs }
+  - id: onsen
+    hook: { ja: スパ舞子温泉と南魚沼食, en: Spa Maiko & local food }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+facts:
+  operator: 舞子スノーリゾート（株式会社スマイルスキーリゾート）
+  location: 〒949-6213 新潟県南魚沼市舞子2056-108
+  phone: "025-783-4100"
+  lift: ゴンドラ1・リフト複数（公式要確認）
+  courses: 全26コース（初40%・中40%・上20%）
+  elevation: 標高260〜920m（標高差660m）
+  access:
+    train: JR越後湯沢駅から無料シャトルバス約20〜30分
+    car: 関越道塩沢石打ICから約1km（約1分）
+
+map:
+  mode: schematic
+  sources: ["公式パンフレット", "configs/lp-brief/maiko.yaml"]
+  heroImage: images/maps/maiko-hero.png
+
+affiliates:
+  rentacar: echigoyuzawa_station
+
+humanReview:
+  - japowResortId 315 = 舞子スノーリゾート
+  - 2025-2026シーズン料金・ゴンドラ運行
+  - シャトルバス時刻・駐車場

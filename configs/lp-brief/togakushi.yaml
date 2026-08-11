@@ -1,0 +1,60 @@
+resortId: togakushi
+schemaVersion: "2026-08-11"
+
+name:
+  ja: 戸隠スキー場
+  en: Togakushi Ski Resort
+region:
+  ja: 長野県長野市
+  en: Nagano City, Nagano
+japowResortId: 253
+
+strategy:
+  ja: 「魔法の粉雪」と戸隠神社の神秘を巡る、歴史と絶景のスノーリゾート。
+  en: A historical snow resort combining magical powder snow and the spiritual mystery of Togakushi Shrine.
+archetype: transit-onsen
+copyFrom: sichinohe-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 長野駅から車約42分——粉雪と神社の戸隠へ。
+    en: ~42 min by car from Nagano Station — powder snow and shrine country.
+  badges: [powder, shrine, family]
+
+pillars:
+  - id: powder
+    hook: { ja: 魔法の粉雪・チャンピオン, en: "Magical powder · Champion run" }
+  - id: drive
+    hook: { ja: 長野駅から車約42分, en: "~42 min from Nagano Station" }
+  - id: culture
+    hook: { ja: 戸隠そばと神社, en: "Togakushi soba & shrines" }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+facts:
+  operator: 長野市（公設民営・株式会社戸隠が指定管理）
+  location: 〒381-4101 長野県長野市戸隠3682
+  phone: "026-254-2106"
+  lift: クワッド2・ペア4・シングル1（計7〜8本）
+  courses: 全19コース・最長滑走3,000m
+  elevation: 標高1,220〜1,748m（標高差約528m）
+  access:
+    car: 長野駅から車約42分
+    bus: 長野駅から路線バス約60〜80分（アルピコ交通）
+
+map:
+  mode: schematic
+  sources: ["公式パンフレット", "configs/lp-brief/togakushi.yaml"]
+  heroImage: images/maps/togakushi-hero.png
+
+affiliates:
+  rentacar: nagano_station
+
+humanReview:
+  - japowResortId 253 = 戸隠スキー場
+  - 2025-2026シーズン料金・リフト運行
+  - 冬季道路・バス時刻

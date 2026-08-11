@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "ABLE Hakuba GORYU",
+    "description": "Northern Alps powder and a 24-hour base center—Hakuba from Nagano Station."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Explore",
+    "onsen": "Onsen",
+    "guides": "Features"
+  },
+  "logo": "ABLE Hakuba GORYU",
+  "hero": {
+    "eyebrow": "Hakuba, Nagano",
+    "title": "ABLE Hakuba<br />GORYU",
+    "statLabel": "Vertical",
+    "statValue": "926",
+    "statUnit": "m",
+    "ctaToday": "Today's operations",
+    "updatedAt": "Aug 11, 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "Shinkansen to<br />Hakuba.",
+    "lead": "About one hour by express bus from Hokuriku Shinkansen Nagano Station, or roughly 60 minutes by car from Azumino IC—an all-around Hakuba resort within reach of a Tokyo day trip.",
+    "ctaToday": "Today's operations",
+    "imgAlt": "Winter scenery from a Shinkansen window—journey from Nagano toward Hakuba"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Access"
+    },
+    "map": {
+      "label": "Slopes",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Pricing",
+      "title": "Tickets & rentals"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why GORYU",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "Alps-daira powder",
+      "lead": "Above 1,500 m on Alps-daira, Northern Alps views meet premium powder. The Goryu Telecabin reaches the summit in about eight minutes—linked with Hakuba47 for 24 courses and up to 5,000 m of skiing in a day.",
+      "cta": "Trail map",
+      "imgAlt": "Skier on powder with Northern Alps panorama from Alps-daira"
+    },
+    "secondary": {
+      "title": "24-hour Escal Plaza",
+      "lead": "Escal Plaza runs 24 hours in winter—day-use onsen Ryujin no Yu, restaurants, rentals, and nap rooms in Hakuba's largest base hub.",
+      "cta": "Nearby food guide"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Warm-up after skiing",
+    "title": "After skiing,<br />Ryujin no Yu.",
+    "lead": "Ryujin no Yu hot spring connects directly to Escal Plaza—recover after skiing without leaving the resort.",
+    "whisper": "Village restaurants and baths like Juro no Yu also anchor a wider Hakuba loop.",
+    "cta": "Nearby onsen guide",
+    "imgAlt": "Snow-view bath at Hakuba Himekawa Onsen Ryujin no Yu"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "Nearby onsen — ABLE Hakuba GORYU",
+      "description": "Ryujin no Yu and Juro no Yu—Hakuba baths with map"
+    },
+    "backLink": "Back to GORYU guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />hot springs.",
+      "tagline": "Escal Plaza · village baths",
+      "imgAlt": "Snow-view outdoor bath in Hakuba"
+    },
+    "notice": "Day-use hours, winter closures, and fees—official sources first.",
+    "introTitle": "Why onsen fits the return route",
+    "introLead": "Besides Ryujin no Yu at the base, day-use baths dot Hakuba village.",
+    "introBody": "Three recovery stops in easy order after your runs.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchor layers.",
+    "mapCta": "Open full map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Hakuba food · onsen · anchor map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Base",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use map links in the list"
+    },
+    "linkFoodGuide": "Food guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "Three Hakuba onsen picks",
+    "spotsLead": "From Escal Plaza to village baths—in trip-friendly order.",
+    "regions": {
+      "shichinohe": "Escal Plaza · Kamishiro",
+      "towada": "Hakuba village"
+    },
+    "spots": {
+      "higashi-hakkoda": {
+        "tag": "Base · sauna",
+        "title": "Hakuba Himekawa Onsen Ryujin no Yu",
+        "lead": "Day-use bath inside Escal Plaza with sauna—no extra drive after skiing (check official hours).",
+        "imgAlt": "Ryujin no Yu at Escal Plaza"
+      },
+      "tsuta": {
+        "tag": "Day-use · village",
+        "title": "Hakuba Katakuri Onsen Juro no Yu",
+        "lead": "Kamishiro day-use bath with private rest rooms—good for a short stop on the way down (verify current spring status).",
+        "imgAlt": "Indoor bath at Juro no Yu"
+      },
+      "yakeyama": {
+        "tag": "Near slopes · inn",
+        "title": "Hakuba Ryujin Onsen Nagomi no Yuyado",
+        "lead": "Hot-spring inn near the slopes—day-use may be available depending on season (check each property).",
+        "imgAlt": "Bath at Nagomi no Yuyado"
+      }
+    },
+    "pairingTitle": "Ski × food × onsen",
+    "pairingLead": "Morning powder on Alps-daira → lunch at Escal Plaza → Hakuba47 → Ryujin no Yu → village dinner.",
+    "pairingFoodCta": "Food guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "Nearby food — ABLE Hakuba GORYU",
+      "description": "Yamato soba and Yukimaru izakaya—with area map"
+    },
+    "backLink": "Back to GORYU guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />Hakuba food.",
+      "tagline": "Soba to izakaya—local Shinshu flavors",
+      "imgAlt": "Hand-cut soba after skiing in Hakuba"
+    },
+    "notice": "Hours, holidays, and menus—check each venue's official site.",
+    "introTitle": "Why food matters on this trip",
+    "introLead": "Hakuba village is rich in Shinshu dining—from Escal Plaza restaurants to local favorites.",
+    "introBody": "Lunch and a return-route reward—two picks along the drive.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchor layers.",
+    "mapCta": "Open full map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Hakuba food · onsen · anchor map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Base",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use map links in the list below"
+    },
+    "linkOnsenGuide": "Nearby onsen guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "Two Hakuba food picks",
+    "spotsLead": "From village soba to izakaya—in trip-friendly order.",
+    "spots": {
+      "hutte": {
+        "tag": "Village · soba",
+        "title": "Soba-dokoro Yamato",
+        "lead": "Famous walnut-topped soba in Hakuba—warm hand-cut noodles after skiing (check each shop).",
+        "imgAlt": "Hand-cut soba at Yamato"
+      },
+      "tabikura": {
+        "tag": "Village · izakaya",
+        "title": "Sakana Saibo Yukimaru",
+        "lead": "Izakaya with kotatsu seating—local food and sake for a village dinner after the hill (official hours first).",
+        "imgAlt": "Warm dishes at Yukimaru izakaya"
+      }
+    },
+    "pairingTitle": "One-day loop",
+    "pairingLead": "Morning bus from Nagano → warm up at Toomi → Alps-daira powder → Hakuba47 → Ryujin no Yu → dinner at Yukimaru.",
+    "pairingOnsenCta": "Onsen guide"
+  },
+  "guides": {
+    "powder": {
+      "title": "Alps-daira powder",
+      "body": "16 courses, 926 m vertical. Grand Prix and Technical runs serve ungroomed powder; Iimori is family-friendly—link to Hakuba47 for 24 courses in one day."
+    },
+    "drive": {
+      "title": "From Nagano Station",
+      "body": "Express bus about one hour from Hokuriku Shinkansen Nagano Station. Rent a car at Nagano Station for village loops via Azumino IC—or walk/shuttle from Kamishiro Station on the Oito Line."
+    },
+    "soba": {
+      "title": "Sustainable resort",
+      "body": "100% renewable energy, multilingual QRSKI concierge, and a 24-hour Escal Plaza—GORYU pairs environmental care with resort-scale convenience."
+    }
+  },
+  "access": {
+    "postal": "〒399-9211",
+    "line": "22184-10 Kamishiro, Hakuba, Kitaazumi, Nagano",
+    "note": "Express bus ~1 hr from Nagano Station · ~60 min by car from Azumino IC · Kamishiro Station walk/shuttle",
+    "phone": "TEL +81-261-75-2101",
+    "places": "",
+    "rentacarEyebrow": "24時間ベースセンターと極上パウダーで、全世代・全季節を満たすオールラウンド・サステナブルリゾート。",
+    "rentacarLink": "長野駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "エイブル白馬五竜スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© ABLE Hakuba GORYU (draft guide)",
+    "location": "〒399-9211 22184-10 Kamishiro, Hakuba, Kitaazumi, Nagano"
+  }
+}

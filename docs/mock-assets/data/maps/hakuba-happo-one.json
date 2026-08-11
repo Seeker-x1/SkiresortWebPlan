@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "hakuba-happo-one",
+  "name": {
+    "ja": "白馬八方尾根スキー場",
+    "en": "Hakuba Happo-One Snow Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "公式パンフレット",
+    "configs/lp-brief/hakuba-happo-one.yaml"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/hakuba-happo-one-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-adam-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "ゴンドラ「アダム」",
+        "en": "Adam Gondola"
+      },
+      "shortLabel": {
+        "ja": "アダム",
+        "en": "Adam"
+      },
+      "meta": {
+        "ja": {
+          "区分": "白樺〜うさぎ平"
+        },
+        "en": {
+          "Zone": "Shirakaba–Usagidaira"
+        }
+      }
+    },
+    {
+      "id": "lift-riesen-quad",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "リーゼンクワッド",
+        "en": "Riesen Quad"
+      },
+      "shortLabel": {
+        "ja": "リーゼン",
+        "en": "Riesen"
+      },
+      "meta": {
+        "ja": {
+          "区分": "山頂エリア"
+        },
+        "en": {
+          "Zone": "Summit area"
+        }
+      }
+    },
+    {
+      "id": "lift-sakka-quad",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "咲花北尾根クワッド",
+        "en": "Sakka North Ridge Quad"
+      },
+      "shortLabel": {
+        "ja": "咲花",
+        "en": "Sakka"
+      },
+      "meta": {
+        "ja": {
+          "区分": "初心者エリア"
+        },
+        "en": {
+          "Zone": "Beginner area"
+        }
+      }
+    },
+    {
+      "id": "trail-skyline",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "スカイラインコース",
+        "en": "Skyline course"
+      },
+      "shortLabel": {
+        "ja": "スカイライン",
+        "en": "Skyline"
+      },
+      "meta": {
+        "ja": {
+          "距離": "最長8km（迂回路含む）",
+          "備考": "ロングクルーズ"
+        },
+        "en": {
+          "Distance": "Up to 8 km",
+          "Note": "Long cruise"
+        }
+      }
+    },
+    {
+      "id": "trail-riesen-slalom",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate-advanced",
+      "label": {
+        "ja": "リーゼンスラローム",
+        "en": "Riesen slalom"
+      },
+      "shortLabel": {
+        "ja": "リーゼン",
+        "en": "Riesen"
+      },
+      "meta": {
+        "ja": {
+          "備考": "看板コース"
+        },
+        "en": {
+          "Note": "Signature run"
+        }
+      }
+    },
+    {
+      "id": "trail-olympic",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "オリンピックコースI",
+        "en": "Olympic Course I"
+      },
+      "shortLabel": {
+        "ja": "五輪",
+        "en": "Olympic"
+      },
+      "meta": {
+        "ja": {
+          "最大斜度": "35°",
+          "備考": "競技コース"
+        },
+        "en": {
+          "Max slope": "35°",
+          "Note": "Race course"
+        }
+      }
+    },
+    {
+      "id": "trail-sakka",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "咲花ゲレンデ",
+        "en": "Sakka area"
+      },
+      "shortLabel": {
+        "ja": "咲花",
+        "en": "Sakka"
+      },
+      "meta": {
+        "ja": {
+          "備考": "初心者・家族向け"
+        },
+        "en": {
+          "Note": "Beginner & family"
+        }
+      }
+    }
+  ]
+}

@@ -74,6 +74,10 @@
       "registryId": "canmore",
       "tier": "mock"
     },
+    "41": {
+      "registryId": "santa-present-park",
+      "tier": "mock"
+    },
     "39": {
       "registryId": "shimukappu",
       "tier": "mock"
@@ -88,6 +92,10 @@
     },
     "44": {
       "registryId": "shimokawa",
+      "tier": "mock"
+    },
+    "45": {
+      "registryId": "kurodake",
       "tier": "mock"
     },
     "46": {
@@ -237,6 +245,14 @@
     },
     "106": {
       "registryId": "midori-roman-mori",
+      "tier": "mock"
+    },
+    "109": {
+      "registryId": "appi-kogen",
+      "tier": "mock"
+    },
+    "111": {
+      "registryId": "iwate-kogen-snow-park",
       "tier": "mock"
     },
     "113": {
@@ -469,6 +485,66 @@
     },
     "454": {
       "registryId": "sapporo-teine",
+      "tier": "mock"
+    },
+    "56": {
+      "registryId": "horotachi",
+      "tier": "mock"
+    },
+    "296": {
+      "registryId": "hakuba-goryu",
+      "tier": "mock"
+    },
+    "299": {
+      "registryId": "hakuba-happo-one",
+      "tier": "mock"
+    },
+    "115": {
+      "registryId": "shizukuishi",
+      "tier": "mock"
+    },
+    "258": {
+      "registryId": "madarao-kogen",
+      "tier": "mock"
+    },
+    "235": {
+      "registryId": "shiga-kogen",
+      "tier": "mock"
+    },
+    "255": {
+      "registryId": "nozawa-onsen",
+      "tier": "mock"
+    },
+    "253": {
+      "registryId": "togakushi",
+      "tier": "mock"
+    },
+    "307": {
+      "registryId": "kandatsu",
+      "tier": "mock"
+    },
+    "306": {
+      "registryId": "gala-yuzawa",
+      "tier": "mock"
+    },
+    "302": {
+      "registryId": "ishiuchi-maruyama",
+      "tier": "mock"
+    },
+    "304": {
+      "registryId": "iwappara",
+      "tier": "mock"
+    },
+    "315": {
+      "registryId": "maiko",
+      "tier": "mock"
+    },
+    "324": {
+      "registryId": "kagura",
+      "tier": "mock"
+    },
+    "325": {
+      "registryId": "naeba",
       "tier": "mock"
     }
   }

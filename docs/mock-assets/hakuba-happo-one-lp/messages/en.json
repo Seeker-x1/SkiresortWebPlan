@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Hakuba Happo-One Snow Resort",
+    "description": "~64 min by car from Nagano Station — 220 ha of Northern Alps terrain, an 8 km long ride, and world-class powder at an international mountain resort."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides"
+  },
+  "logo": "Hakuba Happo-One Snow Resort",
+  "hero": {
+    "eyebrow": "Hakuba · Nagano",
+    "title": "Hakuba Happo-One<br />Snow Resort",
+    "statLabel": "Longest run",
+    "statValue": "8",
+    "statUnit": "km",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Feb 11 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "From Nagano,<br />into the Alps.",
+    "lead": "~64 minutes by car from JR Nagano Station — Olympic legacy terrain, 1,071 m vertical, and premium powder. A rental car unlocks Hakuba Valley onsen and dining loops.",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Winter drive from Nagano toward Hakuba Happo-One — Northern Alps ahead"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Nagano"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Lifts & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Happo-One",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "8 km long-ride scale",
+      "lead": "220 ha and 16 courses — among Japan's grandest resorts. Cruise from Usagidaira with Hakuba Sanzan panoramas and premium powder on iconic runs including the Skyline course.",
+      "cta": "Open trail map",
+      "imgAlt": "Skier on vast Happo-One slopes with Northern Alps panorama"
+    },
+    "secondary": {
+      "title": "After skiing, Happo onsen",
+      "lead": "Ultra-alkaline baths at Happo-no-Yu and Mimizuku-no-Yu — design post-ski recovery and skin-care soaks across the Hakuba hot-spring cluster.",
+      "cta": "Onsen guide"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby hot springs",
+    "title": "Happo onsen &<br />Hakuba bath loop",
+    "lead": "Happo-no-Yu, Mimizuku-no-Yu, and Obinata-no-Yu at the resort foot — among Japan's strongest alkaline beauty baths for après-ski recovery.",
+    "whisper": "Pair evening soaks with the Jump Stadium or Snow Peak LAND STATION HAKUBA for a full valley day.",
+    "cta": "Hakuba onsen guide",
+    "imgAlt": "Steam from snow-view outdoor bath — Hakuba Happo onsen image"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 onsen picks — Hakuba Happo-One Snow Resort",
+      "description": "Happo-no-Yu, Mimizuku-no-Yu, Obinata-no-Yu — Hakuba Happo hot-spring loop guide"
+    },
+    "backLink": "Back to Happo-One guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />soak.",
+      "tagline": "Nagano 64 min · ultra-alkaline Happo baths",
+      "imgAlt": "Steam from snow-view bath — Hakuba Happo onsen"
+    },
+    "notice": "Day-use hours, fees, and seasonal closures are on each facility's official site. Allow buffer time when lifts close for wind.",
+    "introTitle": "Why onsen anchors the Happo stay",
+    "introLead": "Ultra-alkaline springs cluster at the resort foot — recovery fits naturally after skiing.",
+    "introBody": "Three picks within ~15–20 minutes by car, ordered for easy post-ski routing.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Hakuba Happo-One",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links or the map spot list at bottom right"
+    },
+    "linkFoodGuide": "2 food picks guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "3 Hakuba Happo onsen",
+    "spotsLead": "Signature alkaline baths to local soaks — ordered for post-ski loops.",
+    "regions": {
+      "happo": "Happo-One area",
+      "hakuba": "Hakuba village"
+    },
+    "spots": {
+      "happo-no-yu": {
+        "tag": "Ultra-alkaline · signature",
+        "title": "Happo Happo Onsen Happo-no-Yu",
+        "lead": "Hakuba, Kitaazumi, Nagano. Among Japan's strongest alkaline simple springs — natural peeling beauty bath. TEL 0261-72-5705 (official — verify).",
+        "imgAlt": "Open-air bath at Happo-no-Yu — signature Hakuba hot spring"
+      },
+      "mimizuku": {
+        "tag": "Beauty bath · local",
+        "title": "Happo Happo Onsen Mimizuku-no-Yu",
+        "lead": "Hakuba Hokujo area. Strong alkaline water for muscle recovery after skiing. TEL 0261-72-6542 (official — verify).",
+        "imgAlt": "Indoor bath at Mimizuku-no-Yu — local Hakuba spring"
+      },
+      "obinata": {
+        "tag": "Day-use · village",
+        "title": "Happo Happo Onsen Obinata-no-Yu",
+        "lead": "Day-use bath near Hakuba village — easy to slot into your return route. TEL 0261-72-3745 (official — verify).",
+        "imgAlt": "Snow-view bath at Obinata-no-Yu — village hot spring"
+      }
+    },
+    "pairingTitle": "Nagano × ski × onsen",
+    "pairingLead": "Morning: Nagano → afternoon: long cruise at Happo-One → evening: Happo-no-Yu → dinner at BLIZZARD → next day: Jump Stadium visit.",
+    "pairingFoodCta": "2 food picks guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 food picks — Hakuba Happo-One Snow Resort",
+      "description": "Usagidaira Terrace and BLIZZARD — Hakuba dining guide with area map"
+    },
+    "backLink": "Back to Happo-One guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />Hakuba flavors",
+      "tagline": "Summit lunch to global dining — Nagano 64 min zone",
+      "imgAlt": "Snow resort scenery and dining at Hakuba Happo-One"
+    },
+    "notice": "Hours, closures, reservations, and menus are on each facility's official site.",
+    "introTitle": "Why food completes the international resort stay",
+    "introLead": "From summit terraces to multinational restaurants — Hakuba dining where international and domestic guests meet.",
+    "introBody": "Two picks for on-slope lunch and reward dinners along your route.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Hakuba Happo-One",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links or the map spot list at bottom right"
+    },
+    "linkOnsenGuide": "3 onsen picks guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "2 food picks near Hakuba",
+    "spotsLead": "On-mountain to village favorites — ordered for snow-trip loops.",
+    "spots": {
+      "usagidaira": {
+        "tag": "On-mountain · panorama lunch",
+        "title": "Usagidaira Terrace",
+        "lead": "4487-12 Hokujo, Hakuba — inside Happo-One resort. Summit terrace restaurant with Northern Alps views — a sunny-day lunch classic. TEL 0261-72-3280 (official — verify).",
+        "imgAlt": "Northern Alps view from Usagidaira Terrace — on-mountain restaurant"
+      },
+      "blizzard": {
+        "tag": "Wood-fired pizza · global dining",
+        "title": "BLIZZARD",
+        "lead": "4257 Hokujo, Hakuba. Wood-oven pizza by an international chef — resort-style dinner with global vibes. TEL 0261-85-0017 (official — verify).",
+        "imgAlt": "Wood-fired pizza at BLIZZARD — Hakuba international dining"
+      }
+    },
+    "pairingTitle": "One-day loop model",
+    "pairingLead": "Morning: Nagano → Happo-One → lunch at Usagidaira → Skyline long cruise → Happo-no-Yu → BLIZZARD pizza dinner.",
+    "pairingOnsenCta": "3 onsen picks guide"
+  },
+  "guides": {
+    "powder": {
+      "title": "Premium powder at scale",
+      "body": "760–1,831 m elevation across 220 ha — stable snowfall (Jan ~210 cm, Feb ~240 cm monthly average). Signature advanced runs include Riesen Slalom and Skyline. Gondolas may close in high wind (check official ops)."
+    },
+    "nagano": {
+      "title": "~64 minutes from Nagano",
+      "body": "~64 min by car from JR Nagano — realistic weekend skiing via Hokuriku Shinkansen. Rent at Nagano Station to hub Hakuba Valley's 5–10 resorts plus onsen and dining loops."
+    },
+    "olympic": {
+      "title": "Olympic legacy",
+      "body": "1998 Nagano Winter Games alpine venue — Olympic Courses I & II (up to 35°) still in service. A new 10-person gondola targeting December 2027 will boost capacity (official — verify)."
+    }
+  },
+  "access": {
+    "postal": "〒399-9301",
+    "line": "5734-1 Hokujo Happo, Hakuba, Kitaazumi, Nagano",
+    "note": "~64 min by car from JR Nagano Station (typical)",
+    "phone": "TEL 0261-72-3066",
+    "places": "",
+    "rentacarEyebrow": "世界が認めた極上のパウダーと全長8kmのロングライド。北アルプスの絶景に飛び込む国際山岳リゾート。",
+    "rentacarLink": "長野駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "白馬八方尾根スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Hakuba Happo-One Snow Resort (mock)",
+    "location": "〒399-9301 5734-1 Hokujo Happo, Hakuba, Kitaazumi, Nagano"
+  }
+}

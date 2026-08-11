@@ -1,0 +1,62 @@
+resortId: appi-kogen
+schemaVersion: "2026-08-11"
+
+name:
+  ja: 安比高原スキー場
+  en: Appi Kogen Ski Resort
+region:
+  ja: 岩手県八幡平市安比高原
+  en: Appi Kogen, Hachimantai, Iwate
+japowResortId: 109
+
+strategy:
+  ja: 東北屈指のスケールと極上アスピリンスノー、世界基準のプレミアムリゾートへ。
+  en: Discover Tohoku's grandest scale and ultimate aspirin snow at our world-class premium resort.
+archetype: transit-onsen
+
+audience: both
+
+hero:
+  tagline:
+    ja: 盛岡60分——東北最大級のゲレンデとリゾートホテルが一体の雪山。
+    en: Morioka in 60 minutes — Tohoku's grandest slopes meet world-class resort hotels.
+  badges: [powder, scale, resort]
+
+pillars:
+  - id: scale
+    hook: { ja: 21コース・45km, en: 21 courses · 45 km }
+  - id: powder
+    hook: { ja: アスピリンスノー, en: Aspirin snow }
+  - id: resort
+    hook: { ja: リゾートホテル一体, en: Integrated resort stay }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+facts:
+  operator: 安比高原リゾート株式会社
+  location: 〒028-7301 岩手県八幡平市安比高原117-17
+  phone: "0195-73-1111"
+  lift: セントラルクワッド・セイラーゴンドラ他
+  courses: 21コース・滑走可能距離約45km
+  elevation: 標高約700〜1,325m
+  parking: 複数駐車場（公式要確認）
+  pricing:
+    dayTicketAdult: 7700
+    note: 1日券大人7,700円〜（シーズン・公式要確認）
+  hours: "8:30–16:30（リフト・公式要確認）"
+  access:
+    train: JR盛岡駅から安比高原線・バス等で約60分
+    car: 盛岡駅から車で約60分
+    note: 冬季はスタッドレスタイヤ推奨・強風時はリフト運休あり（公式確認）
+
+map:
+  mode: schematic
+  sources: ["公式パンフレット", "configs/lp-brief/appi-kogen.yaml"]
+  heroImage: images/maps/appi-kogen-hero.png
+
+humanReview:
+  - japowResortId 109 = 安比高原スキー場
+  - 2025-2026シーズン料金表・リフト運行
+  - 強風時の運休ポリシー・BLACK PASS等VIP商品

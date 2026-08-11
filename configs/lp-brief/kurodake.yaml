@@ -1,0 +1,60 @@
+resortId: kurodake
+schemaVersion: "2026-08-11"
+
+name:
+  ja: 大雪山黒岳スキー場
+  en: Daisetsuzan Kurodake Ski Area
+region:
+  ja: 北海道上川町層雲峡
+  en: Sounkyo, Kamikawa, Hokkaido
+japowResortId: 45
+
+strategy:
+  ja: 旭川90分・層雲峡ロープウェイ山岳パウダー
+  en: Asahikawa 90 min · Sounkyo ropeway alpine powder
+archetype: transit-onsen
+
+audience: both
+
+hero:
+  tagline:
+    ja: ロープウェイで1984m——大雪山国立公園の山岳パウダーを、旭川から90分で。
+    en: Ropeway to 1,984 m — Daisetsuzan alpine powder, 90 minutes from Asahikawa.
+  badges: [powder, ropeway, sounkyo]
+
+pillars:
+  - id: ropeway
+    hook: { ja: ロープウェイ×リフト, en: Ropeway × lift }
+  - id: powder
+    hook: { ja: 山岳パウダー・1.2km, en: Alpine powder · 1.2 km }
+  - id: onsen
+    hook: { ja: 層雲峡温泉, en: Sounkyo onsen }
+
+subPages: []
+
+facts:
+  operator: 株式会社りんゆう観光
+  location: 〒078-1701 北海道上川郡上川町層雲峡
+  phone: "01658-5-3031"
+  lift: 黒岳ロープウェイ・ペアリフト1基
+  courses: 1本（林間・雪庇等に分岐・最大斜度約30度）
+  elevation: 標高1984m（黒岳）· 五合目駅舎
+  parking: 60台（無料）
+  pricing:
+    dayTicketAdult: 5200
+    note: ロープウェイ往復＋リフト乗り放題1日券（公式要確認）
+  hours: "9:00–15:20（リフト・公式要確認）"
+  access:
+    train: JR旭川駅→特急大雪で上川約40分＋道北バス層雲峡行約30分
+    car: 旭川空港から約90分・上川層雲峡ICから約30分
+    note: 冬季はスタッドレスタイヤ必須・運休期間あり（公式確認）
+
+map:
+  mode: schematic
+  sources: ["公式パンフレット", "configs/lp-brief/kurodake.yaml"]
+  heroImage: images/maps/kurodake-hero.png
+
+humanReview:
+  - japowResortId 45 = 大雪山黒岳スキー場
+  - 2025-2026シーズン運休期間・料金表
+  - 入山承諾書・管理区域外滑走の注意

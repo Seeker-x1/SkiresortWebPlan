@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "midori-roman-mori",
+  "name": {
+    "ja": "みどりの大地とロマンの森公園スキー場",
+    "en": "Midori-no-daichi to Roman-no-mori Koen Ski Area"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "Deep Research batch #108",
+    "東北町観光協会",
+    "Amazing AOMORI"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/midori-roman-mori-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "tow-west",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": {
+        "ja": "ロープトゥ西側",
+        "en": "West rope tow"
+      },
+      "shortLabel": {
+        "ja": "西側",
+        "en": "West"
+      },
+      "meta": {
+        "ja": {
+          "種別": "ロープトゥ",
+          "備考": "初心者は補助推奨"
+        },
+        "en": {
+          "Type": "Rope tow",
+          "Note": "Assistance helps beginners"
+        }
+      }
+    },
+    {
+      "id": "tow-east",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": {
+        "ja": "ロープトゥ東側",
+        "en": "East rope tow"
+      },
+      "shortLabel": {
+        "ja": "東側",
+        "en": "East"
+      },
+      "meta": {
+        "ja": {
+          "種別": "ロープトゥ",
+          "備考": "ナイター対応"
+        },
+        "en": {
+          "Type": "Rope tow",
+          "Note": "Lit for night sessions"
+        }
+      }
+    },
+    {
+      "id": "trail-main",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "メイン緩斜面",
+        "en": "Main gentle slope"
+      },
+      "shortLabel": {
+        "ja": "メイン",
+        "en": "Main"
+      },
+      "meta": {
+        "ja": {
+          "最長": "約300m",
+          "最大斜度": "20°",
+          "比率": "初級80%"
+        },
+        "en": {
+          "Length": "~300 m",
+          "Max slope": "20°",
+          "Share": "80% beginner"
+        }
+      }
+    },
+    {
+      "id": "trail-training",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "練習斜面",
+        "en": "Practice slope"
+      },
+      "shortLabel": {
+        "ja": "練習",
+        "en": "Practice"
+      },
+      "meta": {
+        "ja": {
+          "比率": "中級20%",
+          "備考": "ロープトゥに慣れたら"
+        },
+        "en": {
+          "Share": "20% intermediate",
+          "Note": "After getting used to the tow"
+        }
+      }
+    },
+    {
+      "id": "trail-sled",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "sled",
+      "label": {
+        "ja": "雪遊び・ソリエリア",
+        "en": "Snow-play & sled zone"
+      },
+      "shortLabel": {
+        "ja": "そり",
+        "en": "Sled"
+      },
+      "meta": {
+        "ja": {
+          "備考": "ファミリー向け"
+        },
+        "en": {
+          "Note": "Family zone"
+        }
+      }
+    }
+  ]
+}

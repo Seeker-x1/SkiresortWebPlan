@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "2026-08-11",
+  "id": "hakuba-goryu",
+  "name": { "ja": "エイブル白馬五竜スキー場", "en": "ABLE Hakuba GORYU" },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "configs/lp-brief/hakuba-goryu.yaml",
+    "docs/research/inbox/hakuba-goryu.md",
+    "hakubaescal.com"
+  ],
+  "updatedAt": "2026-08-11T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/hakuba-goryu-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": { "ja": "五竜テレキャビン", "en": "Goryu Telecabin" },
+      "shortLabel": { "ja": "ゴンドラ", "en": "Gondola" },
+      "meta": {
+        "ja": { "所要": "約8分", "定員": "8人乗り" },
+        "en": { "Duration": "~8 min", "Capacity": "8-person" }
+      }
+    },
+    {
+      "id": "trail-panorama",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner-intermediate",
+      "label": { "ja": "パノラマコース", "en": "Panorama course" },
+      "shortLabel": { "ja": "パノラマ", "en": "Panorama" },
+      "meta": {
+        "ja": { "滑走距離": "850m", "最大斜度": "18°" },
+        "en": { "Length": "850 m", "Max slope": "18°" }
+      }
+    },
+    {
+      "id": "trail-grandprix",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate-advanced",
+      "label": { "ja": "グランプリコース", "en": "Grand Prix course" },
+      "shortLabel": { "ja": "GP", "en": "GP" },
+      "meta": {
+        "ja": { "滑走距離": "900m", "最大斜度": "23°" },
+        "en": { "Length": "900 m", "Max slope": "23°" }
+      }
+    },
+    {
+      "id": "trail-technical",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": { "ja": "テクニカルコース", "en": "Technical course" },
+      "shortLabel": { "ja": "テクニカル", "en": "Technical" },
+      "meta": {
+        "ja": { "滑走距離": "300m", "雪面": "非圧雪" },
+        "en": { "Length": "300 m", "Surface": "Ungroomed" }
+      }
+    },
+    {
+      "id": "trail-champion-expert",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "expert",
+      "label": { "ja": "チャンピオンエキスパート", "en": "Champion Expert" },
+      "shortLabel": { "ja": "エキスパート", "en": "Expert" },
+      "meta": {
+        "ja": { "最長距離": "700m", "最大斜度": "35°" },
+        "en": { "Length": "700 m", "Max slope": "35°" }
+      }
+    },
+    {
+      "id": "trail-iimori",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": { "ja": "いいもりゲレンデ", "en": "Iimori area" },
+      "shortLabel": { "ja": "いいもり", "en": "Iimori" },
+      "meta": {
+        "ja": { "区分": "ファミリー・キッズ", "雪面": "圧雪" },
+        "en": { "Zone": "Family & kids", "Surface": "Groomed" }
+      }
+    }
+  ]
+}

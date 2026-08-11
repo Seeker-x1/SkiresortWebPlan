@@ -1,0 +1,59 @@
+resortId: madarao-kogen
+schemaVersion: "2026-08-11"
+
+name:
+  ja: 斑尾高原スキー場
+  en: Madarao Mountain Resort
+region:
+  ja: 長野県飯山市
+  en: Iiyama, Nagano
+japowResortId: 258
+
+strategy:
+  ja: 天然100%パウダー「マダパウ」と日本最大級のツリーランを誇る、世界基準へ進化する極上スノーリゾート。
+  en: Experience "Madapow" and Japan's largest tree run terrain at a rapidly evolving world-class snow resort.
+archetype: transit-onsen
+copyFrom: sichinohe-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 飯山駅から30分、マダパウの樹氷林へ。
+    en: Madapow tree runs — 30 minutes from Iiyama Station.
+  badges: [powder, treerun, shinkansen]
+
+pillars:
+  - id: madapow
+    hook: { ja: 公式ツリーラン15コース, en: "15 official tree runs" }
+  - id: transit
+    hook: { ja: 北陸新幹線・飯山駅, en: "Hokuriku Shinkansen · Iiyama" }
+  - id: onsen
+    hook: { ja: 斑尾高原温泉, en: "Madarao highland onsen" }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+facts:
+  location: 〒389-2257 長野県飯山市斑尾高原
+  phone: "0269-64-3214"
+  lift: リフト11基（ゴンドラ0）
+  courses: 32コース・最長滑走2,500m
+  elevation: 山頂1,350m・ベース910m（標高差440m）
+  access:
+    train: 北陸新幹線飯山駅から路線バス約30分
+    car: 上信越道豊田飯山ICから約25分
+
+map:
+  mode: schematic
+  sources: ["madarao.jp", "docs/research/inbox/madarao-kogen.md"]
+  heroImage: images/maps/madarao-kogen-hero.png
+
+affiliates:
+  rentacar: iiyama_station
+
+humanReview:
+  - japowResortId 258 = 斑尾高原スキー場
+  - タングラム共通券と未就学児無料ルールの差異
+  - 2025-2026シーズン料金・リフト運行

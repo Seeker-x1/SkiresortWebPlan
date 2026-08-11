@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "title": "Ishiuchi Maruyama Ski Resort",
+    "description": "~10 min by car or bus from Echigo-Yuzawa Station — a 236 ha legacy resort with 4,000 m runs, Sunrise Express combo lifts, and 24 slope-side restaurants."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides",
+    "mapHint": "Schematic (may be unverified)"
+  },
+  "logo": "Ishiuchi Maruyama Ski Resort",
+  "hero": {
+    "eyebrow": "Minamiuonuma · Niigata",
+    "title": "Ishiuchi Maruyama<br />Ski Resort",
+    "statLabel": "Slope-side eateries",
+    "statValue": "24",
+    "statUnit": "spots",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Aug 11 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "From Echigo-Yuzawa,<br />10 min by car or bus.",
+    "lead": "~10 minutes by free shuttle or taxi from JR Echigo-Yuzawa Station on the Joetsu Shinkansen — or ~5 minutes from Shiozawa-Ishiuchi IC. Day trips from Tokyo pair easily with 236 ha of terrain and 24 slope-side dining stops.",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Snowy Echigo-Yuzawa Station and Shinkansen — winter trip to Ishiuchi Maruyama"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Echigo-Yuzawa Station"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Lifts & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Ishiuchi Maruyama",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "24 slope-side restaurants",
+      "lead": "Not a single mega food court — 24 independent lodges serve Koshihikari rice, local pork yakiniku, ramen, and set meals. Winter House Daimaru's smokeless roaster and Bird Land's house-made rice bowls are reasons skiers return for lunch alone.",
+      "cta": "Food guide",
+      "imgAlt": "Koshihikari rice and yakiniku at an Ishiuchi Maruyama slope-side lodge"
+    },
+    "secondary": {
+      "title": "Sunrise Express & panorama terrace",
+      "lead": "The state-of-the-art Sunrise Express combo lift links gondola cabins and heated chairs on one line to mid-mountain The Veranda Ishiuchi Maruyama — a panorama terrace even non-skiers can enjoy.",
+      "cta": "Open trail map"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby hot springs",
+    "title": "Ishiuchi baths &<br />Yuzawa onsen loop",
+    "lead": "From Hatsukaishi Onsen Jungparnass and Maruyama Onsen Kojokan near the slopes to Ponshukan's sake bath in Echigo-Yuzawa — design recovery and town walks in one snow day.",
+    "whisper": "Day-use rules and hours are on each facility's official site.",
+    "cta": "3 onsen picks guide",
+    "imgAlt": "Snow-view outdoor bath — Minamiuonuma onsen image"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 onsen picks — Ishiuchi Maruyama Ski Resort",
+      "description": "Jungparnass, Kojokan, Ponshukan sake bath — Ishiuchi & Yuzawa bath guide"
+    },
+    "backLink": "Back to Ishiuchi Maruyama guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />soak.",
+      "tagline": "Echigo-Yuzawa 10 min · Ishiuchi baths & sake soak",
+      "imgAlt": "Snow-view bathhouse — Ishiuchi & Yuzawa onsen circuit"
+    },
+    "notice": "Day-use rules, hours, and fees are on each facility's official site. Check winter road conditions in advance.",
+    "introTitle": "Why baths anchor the Ishiuchi stay",
+    "introLead": "From slope-side Ishiuchi baths to Yuzawa's unique sake bath — easy to weave into après after big-mountain runs.",
+    "introBody": "Three picks from the Ishiuchi area to Yuzawa station, ordered for post-ski routing.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Ishiuchi Maruyama",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links"
+    },
+    "linkFoodGuide": "2 food picks guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "3 Ishiuchi & Yuzawa onsen picks",
+    "spotsLead": "From Ishiuchi day baths to Yuzawa's sake soak — ordered for post-ski loops.",
+    "regions": {
+      "ishiuchi": "Ishiuchi area",
+      "yuzawa": "Yuzawa onsen town"
+    },
+    "spots": {
+      "jungparnass": {
+        "tag": "Ishiuchi · day bath",
+        "title": "Hatsukaishi Onsen Ishiuchi Jungparnass",
+        "lead": "946 Jido, Ishiuchi, Minamiuonuma, Niigata. Day onsen minutes from the slopes — warm up right after skiing. TEL 025-783-7888.",
+        "imgAlt": "Ishiuchi Jungparnass — Ishiuchi area hot spring"
+      },
+      "kojokan": {
+        "tag": "Ishiuchi · ryokan bath",
+        "title": "Maruyama Onsen Kojokan",
+        "lead": "1873 Ishiuchi, Minamiuonuma, Niigata. Legacy Ishiuchi inn — verify day-bath availability. TEL 025-783-2219.",
+        "imgAlt": "Maruyama Onsen Kojokan — Ishiuchi ryokan bath"
+      },
+      "ponshukan": {
+        "tag": "Yuzawa · sake bath",
+        "title": "Ponshukan Echigo-Yuzawa sake bath",
+        "lead": "2427 Yuzawa, Yuzawa Town. Unique sake bath and tasting — evening town walk. TEL 025-784-3361.",
+        "imgAlt": "Ponshukan sake bath — Echigo-Yuzawa onsen town"
+      }
+    },
+    "pairingTitle": "Ishiuchi × gourmet × baths",
+    "pairingLead": "Morning: Sunrise Express to mid-mountain → lunch at gereshoku lodges → Veranda snow picnic → Jungparnass soak → Ishidora yakiniku → Ponshukan sake tasting.",
+    "pairingFoodCta": "2 food picks guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 food picks — Ishiuchi Maruyama Ski Resort",
+      "description": "Winter House Daimaru and Ishidora — Ishiuchi dining guide with area map"
+    },
+    "backLink": "Back to Ishiuchi Maruyama guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />gereshoku & town food",
+      "tagline": "On-slope yakiniku & Ishiuchi classics — Echigo-Yuzawa 10 min food loop",
+      "imgAlt": "Ishiuchi Maruyama gereshoku and Minamiuonuma food"
+    },
+    "notice": "Hours, closures, reservations, and menus are on each facility's official site. Book dinner in peak season when possible.",
+    "introTitle": "Why food completes the Ishiuchi day",
+    "introLead": "24 slope-side spots are an activity, not just lunch — from on-mountain favorites to Ishiuchi town classics.",
+    "introBody": "Two picks on the mountain and after skiing, ordered for your snow-day meals.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Ishiuchi Maruyama",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links"
+    },
+    "linkOnsenGuide": "3 onsen picks guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "2 Ishiuchi food picks",
+    "spotsLead": "On-slope yakiniku to town classics — ordered for snow-trip meals.",
+    "spots": {
+      "daimaru": {
+        "tag": "On-mountain · yakiniku",
+        "title": "Winter House Daimaru",
+        "lead": "Ishiuchi Maruyama ski area, Minamiuonuma. Smokeless-roaster yakiniku — a gereshoku favorite. TEL 025-783-4047.",
+        "imgAlt": "Winter House Daimaru yakiniku on Ishiuchi Maruyama slopes"
+      },
+      "ishidora": {
+        "tag": "Ishiuchi · yakiniku · ramen",
+        "title": "Ishidora",
+        "lead": "194-2 Ishiuchi, Minamiuonuma. Legacy grill house with playful menu — après-ski dinner. TEL 025-788-0956.",
+        "imgAlt": "Ishidora yakiniku — Ishiuchi area favorite"
+      }
+    },
+    "pairingTitle": "One-day loop model",
+    "pairingLead": "Morning: shuttle from station → Daimaru lunch → 4,000 m downhill → Jungparnass soak → Ishidora dinner → Ponshukan sake tasting.",
+    "pairingOnsenCta": "3 onsen picks guide"
+  },
+  "guides": {
+    "sunrise": {
+      "title": "Sunrise Express combo lift",
+      "body": "Gondola cabins and heated chairs share one line on the world's latest combo lift — 10-seat gondolas overlook the Uonuma plain to mid-mountain The Veranda. Comfort cuts wait stress for families and first-timers."
+    },
+    "gereshoku": {
+      "title": "24 gereshoku stops",
+      "body": "Italian, yakiniku, organic set meals, and hearty rice bowls across 24 independent lodges — local Koshihikari and pork draw repeat visitors who ski for the food circuit alone."
+    },
+    "yuzawa": {
+      "title": "~10 min by car or bus from Echigo-Yuzawa",
+      "body": "~10 min by shuttle or taxi from JR Echigo-Yuzawa — link GALA Yuzawa and Yuzawa Kogen with the three-mountain pass. Rent at the station to hop Naeba, Kandatsu, and other Minamiuonuma resorts."
+    }
+  },
+  "access": {
+    "postal": "〒949-6372",
+    "line": "1699 Ishiuchi, Minamiuonuma, Niigata",
+    "note": "~10 min by car or bus from Echigo-Yuzawa Station; ~5 min from Shiozawa-Ishiuchi IC (~3 km)",
+    "phone": "TEL 025-783-2222",
+    "places": "",
+    "rentacarEyebrow": "世界最新鋭のコンビリフトと、24店舗の絶品「ゲレ食」が織りなす究極の美食スノーリゾート。",
+    "rentacarLink": "越後湯沢駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "石打丸山スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Ishiuchi Maruyama Ski Resort (mock)",
+    "location": "〒949-6372 1699 Ishiuchi, Minamiuonuma, Niigata",
+    "guideNotice": "This guide is a work in progress. Photos and illustrations are atmospheric references and may differ from actual slopes and facilities. Confirm fees, hours, and road rules on official sources."
+  }
+}

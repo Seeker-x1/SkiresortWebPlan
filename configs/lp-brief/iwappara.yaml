@@ -1,0 +1,60 @@
+resortId: iwappara
+schemaVersion: "2026-08-11"
+
+name:
+  ja: 岩原スキー場
+  en: Iwappara Ski Resort
+region:
+  ja: 新潟県南魚沼郡湯沢町
+  en: Yuzawa, Niigata
+japowResortId: 304
+
+strategy:
+  ja: 圧倒的な開放感を誇る最大幅200mの一枚バーンと名物ピッツァで、初心者・ファミリーのゲレンデデビューを独占する。
+  en: Dominating beginner and family segments with an overwhelmingly wide open terrain and legendary local pizza.
+archetype: transit-onsen
+copyFrom: sichinohe-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 越後湯沢駅から車・バス約12〜16分——最大幅200mのワイドバーンとピットーレのピッツァ。
+    en: ~12–16 min by car or bus from Echigo-Yuzawa Station — 200 m wide runs and Pittore pizza.
+  badges: [family, beginner, food]
+
+pillars:
+  - id: wide-burn
+    hook: { ja: 最大幅200mワイドバーン, en: "200 m wide open run" }
+  - id: pittore
+    hook: { ja: ピットーレ薪窯ピッツァ, en: "Pittore wood-fired pizza" }
+  - id: onsen
+    hook: { ja: いわっぱらの湯, en: "Iwappara-no-Yu baths" }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+facts:
+  operator: 岩原スキー場
+  location: 〒949-6103 新潟県南魚沼郡湯沢町大字土樽731-79
+  phone: "025-787-3211"
+  lift: リフト中心（ゴンドラなし・公式要確認）
+  courses: コンパクトな家族向けゲレンデ・ソリランド634m
+  elevation: 標高1,000m未満（公式要確認）
+  access:
+    train: JR越後湯沢駅から車・バス約12〜16分
+    car: 関越自動車道 湯沢ICから約10分（目安）
+
+map:
+  mode: schematic
+  sources: ["公式パンフレット", "configs/lp-brief/iwappara.yaml"]
+  heroImage: images/maps/iwappara-hero.png
+
+affiliates:
+  rentacar: echigoyuzawa_station
+
+humanReview:
+  - japowResortId 304 = 岩原スキー場
+  - 2025-2026シーズン料金・リフト運行
+  - シャトルバス時刻・駐車場

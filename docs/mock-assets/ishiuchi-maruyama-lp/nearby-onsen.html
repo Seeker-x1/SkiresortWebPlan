@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="ishiuchi-maruyama">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>周辺温泉3選 — 神立スノーリゾート</title>
+  <meta name="description" content="神の湯・江神共同浴場・駒子の湯——湯沢エリアの湯めぐりガイド" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/lp-layout.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="./" class="logo" data-i18n="logo">神立スノーリゾート</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="./#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=ishiuchi-maruyama" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="../area-map.html?resort=ishiuchi-maruyama&layers=onsen,anchor" data-i18n="nearbyOnsen.navAreaMap">周辺マップ</a></li>
+          <li><a href="nearby-food.html" data-i18n="nearbyOnsen.linkFoodGuide">周辺飲食2選</a></li>
+          <li><a href="./#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--spot" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img
+          src="lp-mock-ishiuchi-maruyama-onsen.png"
+          data-i18n-attr="alt:nearbyOnsen.hero.imgAlt"
+          alt="湯沢エリアの温泉"
+          width="1200"
+          height="1500"
+        />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <a href="./" class="detail-back">← <span data-i18n="nearbyOnsen.backLink">神立ガイドトップへ戻る</span></a>
+        <p class="eyebrow" data-i18n="nearbyOnsen.hero.eyebrow">Onsen · Map</p>
+        <h1 class="hero-title" data-i18n-html="nearbyOnsen.hero.title">滑ったあと、<br />湯へ。</h1>
+        <p class="hero-tagline" data-i18n="nearbyOnsen.hero.tagline">越後湯沢駅7分 · 神の湯と街の共同浴場</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="inner">
+        <p role="note" class="notice-banner" data-i18n="nearbyOnsen.notice">入浴マナー・営業時間は各施設の公式情報が最新です。</p>
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.introTitle">なぜ、湯が神立の核になるのか</h2>
+        <p class="lead" style="margin-top:1.5rem; max-width:36rem" data-i18n="nearbyOnsen.introLead">センターハウス内の神の湯と駅周辺の共同浴場で、アフタースキーを完結・拡張できます。</p>
+        <p class="lead-whisper" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.introBody">滑走後に組み込みやすい温泉3箇所を厳選しました。</p>
+      </div>
+    </section>
+
+    <section class="section border-top" id="onsen-map">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyOnsen.mapEyebrow">Area map</p>
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.mapTitle">付近の温泉マップ</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.mapLead">飲食・温泉・拠点をボタンで切り替え——複数レイヤーの同時表示に対応。</p>
+        <div data-map-embed data-default-layers="onsen,anchor">
+          <div class="map-layer-toggles" role="group" data-i18n-attr="aria-label:nearbyOnsen.mapEmbedTitle">
+            <button type="button" class="map-layer-btn" data-map-layer="food" aria-pressed="false" data-i18n="nearbyOnsen.mapLayers.food">飲食</button>
+            <button type="button" class="map-layer-btn" data-map-layer="onsen" aria-pressed="true" data-i18n="nearbyOnsen.mapLayers.onsen">温泉</button>
+            <button type="button" class="map-layer-btn" data-map-layer="anchor" aria-pressed="true" data-i18n="nearbyOnsen.mapLayers.anchor">拠点</button>
+          </div>
+          <p class="map-layer-hint" data-i18n="nearbyOnsen.mapLayers.hint">飲食と温泉は同時に表示できます</p>
+          <p class="map-layer-hint map-layer-hint--mobile" data-i18n="nearbyOnsen.mapLayers.mobileHint">ピンが重なるときは一覧の「地図で見る」をご利用ください</p>
+          <div class="map-embed">
+            <iframe
+              title="湯沢周辺の飲食・温泉・拠点マップ"
+              data-i18n-attr="title:nearbyOnsen.mapEmbedTitle"
+              src="../area-map.html?resort=ishiuchi-maruyama&embed=1&layers=onsen,anchor"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="map-embed-cta-row">
+          <a href="../area-map.html?resort=ishiuchi-maruyama&layers=onsen,anchor" class="btn btn-primary" data-i18n="nearbyOnsen.mapCta">フルサイズマップを開く</a>
+          <a href="nearby-food.html" class="btn btn-ghost" data-i18n="nearbyOnsen.linkFoodGuide">周辺飲食2選ガイド</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyOnsen.spotsEyebrow">3 picks</p>
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.spotsTitle">湯沢温泉3選</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.spotsLead">ゲレンデ内から駅前まで——滑走後に組み込みやすい順に掲載。</p>
+
+        <h3 class="onsen-region" data-i18n="nearbyOnsen.regions.resort">ゲレンデ内</h3>
+        <ol class="food-spot-list" start="1">
+          <li class="food-spot" id="entry-kaminoyu" data-spot-entry="kaminoyu">
+            <span class="food-spot__num">01</span>
+            <div class="food-spot__body">
+              <figure class="food-spot__figure">
+                <img src="lp-mock-ishiuchi-maruyama-onsen.png" data-i18n-attr="alt:nearbyOnsen.spots.kaminoyu.imgAlt" alt="神の湯" width="960" height="600" loading="lazy" />
+              </figure>
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.kaminoyu.tag">ゲレンデ内 · 最大級</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.kaminoyu.title">神の湯（GROUND BASE内）</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.kaminoyu.lead">湯沢地区最大規模の入浴施設——深夜営業・仮眠室完備。</p>
+              <a href="../area-map.html?resort=ishiuchi-maruyama&layers=onsen,anchor&focus=kaminoyu" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="onsen-region" data-i18n="nearbyOnsen.regions.village">湯沢駅周辺</h3>
+        <ol class="food-spot-list" start="2">
+          <li class="food-spot" id="entry-egami" data-spot-entry="egami">
+            <span class="food-spot__num">02</span>
+            <div class="food-spot__body">
+              <figure class="food-spot__figure">
+                <img src="lp-mock-ishiuchi-maruyama-transit.png" data-i18n-attr="alt:nearbyOnsen.spots.egami.imgAlt" alt="江神共同浴場" width="960" height="600" loading="lazy" />
+              </figure>
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.egami.tag">共同浴場 · 駅近</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.egami.title">江神共同浴場</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.egami.lead">越後湯沢駅から徒歩圏の共同浴場——日帰り入浴600円（公式要確認）。</p>
+              <a href="../area-map.html?resort=ishiuchi-maruyama&layers=onsen,anchor&focus=egami" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-komako" data-spot-entry="komako">
+            <span class="food-spot__num">03</span>
+            <div class="food-spot__body">
+              <figure class="food-spot__figure">
+                <img src="lp-mock-ishiuchi-maruyama-highlight.png" data-i18n-attr="alt:nearbyOnsen.spots.komako.imgAlt" alt="駒子の湯" width="960" height="600" loading="lazy" />
+              </figure>
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.komako.tag">共同浴場 · 下湯沢</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.komako.title">下湯沢共同浴場 駒子の湯</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.komako.lead">下湯沢エリアの共同浴場——日帰り入浴850円（公式要確認）。</p>
+              <a href="../area-map.html?resort=ishiuchi-maruyama&layers=onsen,anchor&focus=komako" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.pairingTitle">湯沢 × スキー × 湯</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.pairingLead">午前：シャトル → 午後：パーク → 夕方：神の湯 → 夜：ぽんしゅ館 → 深夜：ロングナイター。</p>
+        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="nearby-food.html" class="btn btn-ghost" data-i18n="nearbyOnsen.pairingFoodCta">飲食2選ガイド</a>
+          <a href="./" class="btn btn-ghost" data-i18n="nearbyOnsen.backLink">神立ガイドトップへ戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p class="footer-notice" role="note" data-i18n="footer.guideNotice">本ガイドは制作中の案です。写真・イラストは雰囲気の参考であり、実際のゲレンデ・施設と異なる場合があります。料金・営業・道路規制は各施設の公式情報を優先してください。</p>
+      <div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 神立スノーリゾート（案）</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒949-6102 新潟県南魚沼郡湯沢町神立4121-1</span> ·
+        <a href="./" data-i18n="nearbyOnsen.backLink">神立ガイドトップへ戻る</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+  <script src="../_shared/map-embed-layers.js"></script>
+  <script>
+    window.addEventListener("mock-i18n-ready", (e) => {
+      const m = e.detail.messages;
+      const meta = m.nearbyOnsen && m.nearbyOnsen.meta;
+      if (meta && meta.title) document.title = meta.title;
+      if (meta && meta.description) {
+        const tag = document.querySelector('meta[name="description"]');
+        if (tag) tag.setAttribute("content", meta.description);
+      }
+    });
+  </script>
+</body>
+</html>

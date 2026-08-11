@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "title": "Kagura Ski Resort",
+    "description": "1,845 m summit · 32 courses · 6,000 m longest run — Yuzawa's premier powder and long season. Bus 20–45 min from Echigo-Yuzawa Station; après at onsen town and Ponshu-kan."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides",
+    "mapHint": "Schematic (may be unverified)"
+  },
+  "logo": "Kagura Ski Resort",
+  "hero": {
+    "eyebrow": "Yuzawa · Niigata",
+    "title": "Kagura<br />Ski Resort",
+    "statLabel": "Summit",
+    "statValue": "1,845",
+    "statUnit": "m",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Aug 11 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "Shinkansen + bus<br />to high-alpine powder.",
+    "lead": "From JR Joetsu Shinkansen Echigo-Yuzawa Station, route buses reach Mitsumata Station in ~20 minutes and Tashiro Station in ~35 minutes (varies by stop). Ropeways and gondolas climb to 1,845 m for Honshu-class dry powder and a season from late November through late May.",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Winter bus on a snowy mountain road — from Echigo-Yuzawa to Kagura"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Echigo-Yuzawa Station"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Lifts & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Kagura",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "Yuzawa's highest-elevation powder",
+      "lead": "1,845 m summit · 1,225 m vertical · 6,000 m longest run — 35% ungroomed terrain and high-season-only Goroma (No.5 Romance) lift access to tree runs. Part of Mt. Naeba, linked to Naeba by the Dragon gondola.",
+      "cta": "Trail map",
+      "imgAlt": "High-alpine powder and Minamiuonuma snow panorama at Kagura"
+    },
+    "secondary": {
+      "title": "Kids free & Tashiro views",
+      "lead": "Prince Snow Resorts Kids Free program — elementary school and under ski free all season. Lake Tashiro views on Ariesca course and three linked areas (Kagura, Mitsumata, Tashiro) across a vast snow resort.",
+      "cta": "Onsen guide"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby hot springs",
+    "title": "Kaido no Yu &<br />hidden mountain baths",
+    "lead": "From Kaido no Yu beside Mitsumata Station to historic Kaikake Onsen and Shukuba no Yu — recovery after skiing plus a stop at Michi-no-Eki Mitsumata on one loop.",
+    "whisper": "Check each facility's official site for day-use hours and availability.",
+    "cta": "3 onsen picks guide",
+    "imgAlt": "Snow-view rotenburo — winter baths in Yuzawa"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 onsen picks — Kagura Ski Resort",
+      "description": "Kaido no Yu, Kaikake Onsen, Shukuba no Yu — bath circuit near Kagura"
+    },
+    "backLink": "Back to Kagura guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />soak.",
+      "tagline": "Mitsumata baths · hidden Kaikake",
+      "imgAlt": "Snow-view outdoor bath — wooden bathhouse in winter"
+    },
+    "notice": "Day-use hours, fees, and winter road conditions — confirm with each facility before visiting.",
+    "introTitle": "Why onsen anchors Kagura",
+    "introLead": "From base-area baths to Echigo-Yuzawa onsen town — powder days and local bath culture pair naturally here.",
+    "introBody": "Three baths near Mitsumata, ordered for easy après-ski routing.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen, and anchor map near Kagura",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen layers can show together",
+      "mobileHint": "If pins overlap, use “View on map” in the list"
+    },
+    "linkFoodGuide": "2 food picks guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "3 onsen near Kagura",
+    "spotsLead": "From Mitsumata public baths to a hidden spring — easy après order.",
+    "regions": {
+      "resort": "Resort base",
+      "town": "Mitsumata · Futoi"
+    },
+    "spots": {
+      "kaido": {
+        "tag": "Public bath · Mitsumata",
+        "title": "Mitsumata Kaido no Yu",
+        "lead": "1021 Mitsumata, Yuzawa. Open-air bath beside Mitsumata Station — a post-ski staple. TEL 025-788-9229.",
+        "imgAlt": "Kaido no Yu — snow-view rotenburo at Mitsumata"
+      },
+      "kaikake": {
+        "tag": "Hidden spring · eye bath",
+        "title": "Kaikake Onsen",
+        "lead": "686 Mitsumata, Yuzawa. Historic “eye onsen” since Edo times — quiet mountain bath. TEL 025-788-9911.",
+        "imgAlt": "Kaikake Onsen — hidden mountain hot spring"
+      },
+      "shukuba": {
+        "tag": "Public bath · Futoi",
+        "title": "Futoi Shukuba no Yu",
+        "lead": "537 Futoi, Mikuni, Yuzawa. Community bath toward Tashiro area. TEL 025-789-2910.",
+        "imgAlt": "Shukuba no Yu — community bath in Mikuni"
+      }
+    },
+    "pairingTitle": "Kagura · Yuzawa deep loop",
+    "pairingLead": "AM: bus to Mitsumata · powder laps → PM: Kaido no Yu → bus to Echigo-Yuzawa → evening: Moritaki or Ninjintei → Ponshu-kan sake tasting.",
+    "pairingFoodCta": "2 food picks guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 food picks — Kagura Ski Resort",
+      "description": "Chaya Moritaki and Tonkatsu Ninjintei — Yuzawa dining with area map"
+    },
+    "backLink": "Back to Kagura guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />town dining",
+      "tagline": "Udon suki & queue-worthy tonkatsu — bus to evening streets",
+      "imgAlt": "Echigo-Yuzawa snowscape and local food"
+    },
+    "notice": "Hours, holidays, and reservations — check each restaurant. Book dinner in peak season.",
+    "introTitle": "Why food completes Yuzawa",
+    "introLead": "From Buna Kitchen on the hill to onsen-town classics — the powder & local culture loop works best with an early descent for dinner in town.",
+    "introBody": "Two dinner picks that fit a snow-day evening.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen, and anchor map near Kagura",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen layers can show together",
+      "mobileHint": "If pins overlap, use “View on map” in the list"
+    },
+    "linkOnsenGuide": "3 onsen picks guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "2 Yuzawa food picks",
+    "spotsLead": "Signature udon suki to famous tonkatsu — in après-friendly order.",
+    "spots": {
+      "moritaki": {
+        "tag": "Japanese · udon suki",
+        "title": "Chaya Moritaki",
+        "lead": "357-5 Nishinaka, Yuzawa. Crab suki and udon suki institution near Echigo-Yuzawa Station. TEL 025-784-3600.",
+        "imgAlt": "Moritaki udon suki — classic Yuzawa washoku"
+      },
+      "ninjin": {
+        "tag": "Tonkatsu · popular queue",
+        "title": "Tonkatsu Ninjintei",
+        "lead": "497-4 Yuzawa, Yuzawa. Echigo mochi pork and Minamiuonuma Koshihikari rice — fill up before the ride home. TEL 025-785-5727. https://ninjintei.net/",
+        "imgAlt": "Ninjintei tonkatsu — popular Yuzawa restaurant"
+      }
+    },
+    "pairingTitle": "One-day loop model",
+    "pairingLead": "AM: bus to Mitsumata · powder → noon: Ariesca with Lake Tashiro views → PM: Kaido no Yu → evening: Moritaki or Ninjintei → Ponshu-kan tasting.",
+    "pairingOnsenCta": "3 onsen picks guide"
+  },
+  "guides": {
+    "powder": {
+      "title": "1,845 m powder & long season",
+      "body": "Roughly half the year from late November through late May — Yuzawa's last reliable snow. Thirty-five percent ungroomed; Goroma (No.5 Romance) tree runs are a core-rider pilgrimage in high season."
+    },
+    "bus-access": {
+      "title": "Bus 20–45 min from Echigo-Yuzawa",
+      "body": "~20 min to Mitsumata Station, ~35 min to Tashiro (route bus; varies by stop). ~15 min by car from Yuzawa IC. Ropeway and gondola links reach main Kagura terrain — more transfers, but the snow quality pays off."
+    },
+    "yuzawa-apres": {
+      "title": "Powder & local culture loop",
+      "body": "After skiing: Michi-no-Eki Mitsumata and Kaido no Yu, then bus to Moritaki, Ninjintei, and Ponshu-kan — a sample après line that extends beyond the resort gates."
+    }
+  },
+  "access": {
+    "postal": "〒949-6211",
+    "line": "742 Mitsumata, Yuzawa, Minamiuonuma, Niigata (Mitsumata Station)",
+    "note": "Bus ~20–45 min from JR Joetsu Shinkansen Echigo-Yuzawa Station (Mitsumata ~20 min, Tashiro ~35 min; varies by stop). ~15 min / ~8 km from Kan-Etsu Expwy Yuzawa IC to Mitsumata.",
+    "phone": "TEL 025-788-9221 (Mitsumata) / 025-789-3111 (Tashiro)",
+    "places": "",
+    "rentacarEyebrow": "本州屈指のパウダースノーとロングシーズン営業を誇る、極上のネイチャーアドベンチャーリゾート。",
+    "rentacarLink": "越後湯沢駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "かぐらスキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Kagura Ski Resort (draft)",
+    "location": "742 Mitsumata, Yuzawa, Minamiuonuma, Niigata 949-6211",
+    "guideNotice": "Draft guide for planning. Photos and illustrations are atmospheric references; confirm fees, hours, and road rules with official sources."
+  }
+}

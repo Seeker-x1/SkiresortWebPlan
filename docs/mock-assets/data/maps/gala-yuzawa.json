@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "gala-yuzawa",
+  "name": {
+    "ja": "GALA湯沢スキー場",
+    "en": "GALA Yuzawa Snow Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "公式パンフレット",
+    "configs/lp-brief/gala-yuzawa.yaml"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/gala-yuzawa-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "ゴンドラ（カワバンガ〜チアーズ）",
+        "en": "Gondola (Kawabanga–Cheers)"
+      },
+      "shortLabel": {
+        "ja": "ゴンドラ",
+        "en": "Gondola"
+      },
+      "meta": {
+        "ja": {
+          "所要": "約7〜8分",
+          "区分": "駅〜ゲレンデ大動脈"
+        },
+        "en": {
+          "Duration": "~7–8 min",
+          "Zone": "Station to slopes"
+        }
+      }
+    },
+    {
+      "id": "lift-rando-ropeway",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": {
+        "ja": "ロープウェイ「ランドー」",
+        "en": "Rando ropeway"
+      },
+      "shortLabel": {
+        "ja": "ランドー",
+        "en": "Rando"
+      },
+      "meta": {
+        "ja": {
+          "区分": "湯沢高原連絡"
+        },
+        "en": {
+          "Zone": "Yuzawa Kogen link"
+        }
+      }
+    },
+    {
+      "id": "lift-central-quad",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "中央クワッド",
+        "en": "Central quad"
+      },
+      "shortLabel": {
+        "ja": "中央",
+        "en": "Central"
+      },
+      "meta": {
+        "ja": {
+          "区分": "中央エリア"
+        },
+        "en": {
+          "Zone": "Central area"
+        }
+      }
+    },
+    {
+      "id": "trail-falcon",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "ファルコン（下山）",
+        "en": "Falcon downhill"
+      },
+      "shortLabel": {
+        "ja": "ファルコン",
+        "en": "Falcon"
+      },
+      "meta": {
+        "ja": {
+          "距離": "2,500m",
+          "備考": "最長ダウンヒル"
+        },
+        "en": {
+          "Distance": "2,500 m",
+          "Note": "Signature long run"
+        }
+      }
+    },
+    {
+      "id": "trail-grenoble",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "グルノーブル",
+        "en": "Grenoble"
+      },
+      "shortLabel": {
+        "ja": "グルノーブル",
+        "en": "Grenoble"
+      },
+      "meta": {
+        "ja": {
+          "標高": "1,181m",
+          "備考": "急斜面・絶景"
+        },
+        "en": {
+          "Elevation": "1,181 m",
+          "Note": "Steep · panorama"
+        }
+      }
+    },
+    {
+      "id": "trail-family-c3",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "C3初心者コース",
+        "en": "C3 beginner"
+      },
+      "shortLabel": {
+        "ja": "C3",
+        "en": "C3"
+      },
+      "meta": {
+        "ja": {
+          "備考": "初心者・家族向け"
+        },
+        "en": {
+          "Note": "Beginner & family"
+        }
+      }
+    }
+  ]
+}

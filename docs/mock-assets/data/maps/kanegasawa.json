@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "kanegasawa",
+  "name": {
+    "ja": "金ヶ沢スキー場",
+    "en": "Kanegasawa Ski Area"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "Deep Research batch #110",
+    "configs/lp-brief/kanegasawa.yaml"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/kanegasawa-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "tow-main",
+      "type": "lift",
+      "status": "hold",
+      "liftKind": "surface",
+      "label": {
+        "ja": "ロープトゥ",
+        "en": "Rope tow"
+      },
+      "shortLabel": {
+        "ja": "ロープ",
+        "en": "Rope"
+      },
+      "meta": {
+        "ja": {
+          "種別": "表面牽引",
+          "備考": "来場者がいれば稼働することがある"
+        },
+        "en": {
+          "Type": "Surface tow",
+          "Note": "May run when visitors arrive"
+        }
+      }
+    },
+    {
+      "id": "trail-bowl-west",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "日陰ボウル西側",
+        "en": "Shade bowl west"
+      },
+      "shortLabel": {
+        "ja": "西側",
+        "en": "West"
+      },
+      "meta": {
+        "ja": {
+          "雪面": "非圧雪",
+          "特徴": "日陰で雪質保持"
+        },
+        "en": {
+          "Surface": "Ungroomed",
+          "Feature": "Shade-kept powder"
+        }
+      }
+    },
+    {
+      "id": "trail-bowl-center",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "中央ボウルライン",
+        "en": "Center bowl line"
+      },
+      "shortLabel": {
+        "ja": "中央",
+        "en": "Center"
+      },
+      "meta": {
+        "ja": {
+          "滑走距離": "約120〜200m",
+          "備考": "メイン導線"
+        },
+        "en": {
+          "Length": "~120–200 m",
+          "Note": "Main line"
+        }
+      }
+    },
+    {
+      "id": "trail-bowl-east",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate-advanced",
+      "label": {
+        "ja": "日陰ボウル東側",
+        "en": "Shade bowl east"
+      },
+      "shortLabel": {
+        "ja": "東側",
+        "en": "East"
+      },
+      "meta": {
+        "ja": {
+          "雪面": "圧雪/非圧雪混在",
+          "備考": "状況次第"
+        },
+        "en": {
+          "Surface": "Mixed groomed/ungroomed",
+          "Note": "Depends on conditions"
+        }
+      }
+    }
+  ]
+}

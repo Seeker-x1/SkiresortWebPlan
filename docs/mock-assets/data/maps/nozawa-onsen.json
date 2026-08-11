@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "nozawa-onsen",
+  "name": {
+    "ja": "野沢温泉スキー場",
+    "en": "Nozawa Onsen Snow Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "公式パンフレット",
+    "configs/lp-brief/nozawa-onsen.yaml"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/nozawa-onsen-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-nagasaka-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "長坂ゴンドラ",
+        "en": "Nagasaka Gondola"
+      },
+      "shortLabel": {
+        "ja": "長坂",
+        "en": "Nagasaka"
+      },
+      "meta": {
+        "ja": {
+          "区分": "メイン輸送"
+        },
+        "en": {
+          "Zone": "Main uplift"
+        }
+      }
+    },
+    {
+      "id": "lift-yamabiko-quad",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "やまびこクワッド",
+        "en": "Yamabiko Quad"
+      },
+      "shortLabel": {
+        "ja": "やまびこ",
+        "en": "Yamabiko"
+      },
+      "meta": {
+        "ja": {
+          "区分": "山頂エリア"
+        },
+        "en": {
+          "Zone": "Summit area"
+        }
+      }
+    },
+    {
+      "id": "lift-higashi-quad",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "東急クワッド",
+        "en": "Higashi Quad"
+      },
+      "shortLabel": {
+        "ja": "東急",
+        "en": "Higashi"
+      },
+      "meta": {
+        "ja": {
+          "区分": "初心者エリア"
+        },
+        "en": {
+          "Zone": "Beginner area"
+        }
+      }
+    },
+    {
+      "id": "trail-forest-long",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "林間ロングコース",
+        "en": "Forest long run"
+      },
+      "shortLabel": {
+        "ja": "林間",
+        "en": "Forest"
+      },
+      "meta": {
+        "ja": {
+          "距離": "最長10km級",
+          "備考": "ロングクルーズ"
+        },
+        "en": {
+          "Distance": "Up to ~10 km",
+          "Note": "Long cruise"
+        }
+      }
+    },
+    {
+      "id": "trail-yamabiko",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate-advanced",
+      "label": {
+        "ja": "やまびこゲレンデ",
+        "en": "Yamabiko area"
+      },
+      "shortLabel": {
+        "ja": "やまびこ",
+        "en": "Yamabiko"
+      },
+      "meta": {
+        "ja": {
+          "雪面": "非圧雪あり",
+          "備考": "パウダー志向"
+        },
+        "en": {
+          "Surface": "Ungroomed zones",
+          "Note": "Powder-oriented"
+        }
+      }
+    },
+    {
+      "id": "trail-paradise",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "パラダイスコース",
+        "en": "Paradise course"
+      },
+      "shortLabel": {
+        "ja": "パラダイス",
+        "en": "Paradise"
+      },
+      "meta": {
+        "ja": {
+          "備考": "上級者向け"
+        },
+        "en": {
+          "Note": "Advanced terrain"
+        }
+      }
+    },
+    {
+      "id": "trail-family",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "ファミリーゲレンデ",
+        "en": "Family area"
+      },
+      "shortLabel": {
+        "ja": "ファミリー",
+        "en": "Family"
+      },
+      "meta": {
+        "ja": {
+          "備考": "初心者・家族向け"
+        },
+        "en": {
+          "Note": "Beginner & family"
+        }
+      }
+    }
+  ]
+}

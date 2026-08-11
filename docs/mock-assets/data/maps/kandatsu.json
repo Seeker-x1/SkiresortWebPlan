@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "kandatsu",
+  "name": {
+    "ja": "神立スノーリゾート",
+    "en": "Kandatsu Snow Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "公式パンフレット",
+    "configs/lp-brief/kandatsu.yaml"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/kandatsu-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-a",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "Aリフト",
+        "en": "Lift A"
+      },
+      "shortLabel": {
+        "ja": "A",
+        "en": "A"
+      },
+      "meta": {
+        "ja": {
+          "区分": "ベース輸送"
+        },
+        "en": {
+          "Zone": "Base uplift"
+        }
+      }
+    },
+    {
+      "id": "lift-mid-quad",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "中腹クワッド",
+        "en": "Mid quad"
+      },
+      "shortLabel": {
+        "ja": "中腹",
+        "en": "Mid"
+      },
+      "meta": {
+        "ja": {
+          "区分": "中腹エリア"
+        },
+        "en": {
+          "Zone": "Mid-mountain"
+        }
+      }
+    },
+    {
+      "id": "lift-park-tow",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "surface",
+      "label": {
+        "ja": "パーク牽引",
+        "en": "Park tow"
+      },
+      "shortLabel": {
+        "ja": "パーク",
+        "en": "Park"
+      },
+      "meta": {
+        "ja": {
+          "区分": "カストル"
+        },
+        "en": {
+          "Zone": "Castor park"
+        }
+      }
+    },
+    {
+      "id": "trail-milky-way",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "ミルキーウェイ",
+        "en": "Milky Way"
+      },
+      "shortLabel": {
+        "ja": "ミルキー",
+        "en": "Milky"
+      },
+      "meta": {
+        "ja": {
+          "距離": "最長3500m",
+          "備考": "尾根ロング"
+        },
+        "en": {
+          "Distance": "Up to 3,500 m",
+          "Note": "Ridge cruise"
+        }
+      }
+    },
+    {
+      "id": "trail-castor",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "カストル",
+        "en": "Castor"
+      },
+      "shortLabel": {
+        "ja": "カストル",
+        "en": "Castor"
+      },
+      "meta": {
+        "ja": {
+          "備考": "スノーパーク"
+        },
+        "en": {
+          "Note": "Terrain park"
+        }
+      }
+    },
+    {
+      "id": "trail-orion",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "オリオン",
+        "en": "Orion"
+      },
+      "shortLabel": {
+        "ja": "オリオン",
+        "en": "Orion"
+      },
+      "meta": {
+        "ja": {
+          "斜度": "最大45度",
+          "備考": "上級者向け"
+        },
+        "en": {
+          "Pitch": "Up to 45°",
+          "Note": "Expert terrain"
+        }
+      }
+    },
+    {
+      "id": "trail-antares",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "スーパーアンタレス",
+        "en": "Super Antares"
+      },
+      "shortLabel": {
+        "ja": "アンタレス",
+        "en": "Antares"
+      },
+      "meta": {
+        "ja": {
+          "雪面": "非圧雪",
+          "備考": "パウダー"
+        },
+        "en": {
+          "Surface": "Ungroomed",
+          "Note": "Powder"
+        }
+      }
+    }
+  ]
+}

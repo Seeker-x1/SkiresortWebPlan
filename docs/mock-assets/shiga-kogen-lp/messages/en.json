@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Shiga Kogen Mountain Resort",
+    "description": "1–1.2 hours from Nagano Station — Japan's mega mountain resort with 18 areas, 84 runs, and premium powder."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides"
+  },
+  "logo": "Shiga Kogen Mountain Resort",
+  "hero": {
+    "eyebrow": "Yamanouchi · Nagano",
+    "title": "Shiga Kogen<br />Mountain Resort",
+    "statLabel": "Summit elevation",
+    "statValue": "2307",
+    "statUnit": "m",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Feb 11 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "From Nagano,<br />into the plateau.",
+    "lead": "~70 minutes by express bus from JR Nagano Station, or ~1–1.2 hours by car — into Japan's largest mountain resort with 18 linked ski areas. A rental car makes loops to Yudanaka, Shibu onsen, and Jigokudani snow monkeys easy to plan.",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Snowy drive from Nagano toward Shiga Kogen — highland mountain scenery"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Nagano Station"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Lifts & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Shiga Kogen",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "Scale you cannot ski in one day",
+      "lead": "425 ha, 84 runs, up to 6,000 m longest descent — one all-mountain pass links 18 areas. At 2,307 m, dry inland powder and a dispersed layout keep lift lines shorter than many mega-resorts.",
+      "cta": "Open trail map",
+      "imgAlt": "Skier on vast Shiga Kogen slopes — plateau panorama and deep snow"
+    },
+    "secondary": {
+      "title": "After skiing, onsen towns & snow monkeys",
+      "lead": "Kumanoyu, Shibu onsen, Yudanaka — compensate for thin après-ski on the plateau with foothill hot-spring towns and the famous snow monkeys.",
+      "cta": "3 onsen picks guide"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby hot springs",
+    "title": "Kumanoyu &<br />Shibu onsen loop",
+    "lead": "From Kumanoyu inside the resort to 700-year-old Shibu onsen and emerald Happu springs — post-ski recovery and foothill base-town stays are easy to design.",
+    "whisper": "Dinner options are limited on the plateau — routing down to Shibu or Yudanaka for evening meals is a local favorite.",
+    "cta": "3 onsen picks guide",
+    "imgAlt": "Steam from snow-view outdoor bath — Shiga Kogen and Shibu onsen"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 onsen picks — Shiga Kogen Mountain Resort",
+      "description": "Kumanoyu, Shibu onsen, Happu springs — hot-spring loop guide for Shiga Kogen and foothill towns"
+    },
+    "backLink": "Back to Shiga Kogen guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />soak.",
+      "tagline": "Nagano 70 min · onsen towns & snow monkeys",
+      "imgAlt": "Steam from snow-view outdoor bath — Shiga Kogen area onsen"
+    },
+    "notice": "Day-use hours, fees, and seasonal closures are on each facility's official site. Allow buffer time for inter-area travel.",
+    "introTitle": "Why onsen anchors the Shiga Kogen stay",
+    "introLead": "From plateau classics to historic foothill towns — recovery spreads across the whole area, not just the slopes.",
+    "introBody": "Three picks within easy reach, ordered for post-ski routing.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Shiga Kogen",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links or the map spot list at bottom right"
+    },
+    "linkFoodGuide": "2 food picks guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "3 onsen near Shiga Kogen",
+    "spotsLead": "Plateau classics to historic foothill baths — ordered for post-ski loops.",
+    "regions": {
+      "kogen": "Shiga Kogen area",
+      "yamanochi": "Foothill · Shibu onsen"
+    },
+    "spots": {
+      "kumanoyu": {
+        "tag": "On-plateau · classic",
+        "title": "Kumanoyu Onsen (Kumanoyu Hotel)",
+        "lead": "Hirune 7148, Yamanouchi, Nagano. Iconic Shiga Kogen hot spring known for strong acidic water. TEL 0269-34-2311 (verify on official site).",
+        "imgAlt": "Outdoor bath at Kumanoyu — classic Shiga Kogen onsen"
+      },
+      "shibu": {
+        "tag": "Public baths · history",
+        "title": "Shibu Onsen (inn association)",
+        "lead": "Hirune 2115, Yamanouchi. Over 1,350 years of history — stroll nine public baths in a wooden streetscape. TEL 0269-33-2921 (verify).",
+        "imgAlt": "Stone-paved onsen town — Shibu Onsen"
+      },
+      "happu": {
+        "tag": "Emerald water · plateau",
+        "title": "Happu Onsen (Shiga Swiss Inn)",
+        "lead": "Hirune 7149, Yamanouchi. Emerald-green water and steam vents — distinctive resort-linked springs. TEL 0269-34-3456 (verify).",
+        "imgAlt": "Emerald pool at Happu Onsen — Shiga Kogen"
+      }
+    },
+    "pairingTitle": "Nagano × ski × onsen",
+    "pairingLead": "Morning: bus from Nagano → afternoon: Yokote & Ichinose cruising → evening: Shibu public baths → next day: Jigokudani snow monkeys.",
+    "pairingFoodCta": "2 food picks guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 food picks — Shiga Kogen Mountain Resort",
+      "description": "Daruma Shokudo and Yokote Drive-In — Shiga Kogen dining guide with area map"
+    },
+    "backLink": "Back to Shiga Kogen guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />plateau flavors",
+      "tagline": "Shinshu beef and hand-cut soba — Nagano 70 min zone",
+      "imgAlt": "Shiga Kogen snow scenery and local food"
+    },
+    "notice": "Hours, closures, reservations, and menus are on each facility's official site.",
+    "introTitle": "Why food completes the Shiga Kogen loop",
+    "introLead": "From 2,100 m soba with a view to Shinshu beef in Ichinose — dining is scattered across 18 areas worth exploring.",
+    "introBody": "Two picks for slope lunch and evening reward along your route.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Shiga Kogen",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links or the map spot list at bottom right"
+    },
+    "linkOnsenGuide": "3 onsen picks guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "2 food picks at Shiga Kogen",
+    "spotsLead": "Plateau lunch to scenic soba — ordered for snow-trip loops.",
+    "spots": {
+      "daruma": {
+        "tag": "Shinshu beef · Ichinose",
+        "title": "Daruma Shokudo",
+        "lead": "Ichinose, Shiga Kogen, Yamanouchi — Hotel Japan Shiga 1F. Popular meat dishes with Shinshu beef — a central-area lunch staple. TEL 0269-34-2801 (verify).",
+        "imgAlt": "Shinshu beef dish at Daruma Shokudo — Ichinose area"
+      },
+      "yokote": {
+        "tag": "Summit view · soba",
+        "title": "Yokote-yama Drive-In",
+        "lead": "Hirune 7149, Yamanouchi. Hand-cut soba with views from ~2,100 m — a Yokote-yama landmark. TEL 0269-34-2338 (verify).",
+        "imgAlt": "Scenic soba at Yokote Drive-In — Shiga Kogen"
+      }
+    },
+    "pairingTitle": "One-day loop model",
+    "pairingLead": "Morning: bus from Nagano → lunch: Yokote soba → afternoon: all-mountain pass cruising → evening: Shibu onsen → night: Daruma Shinshu beef.",
+    "pairingOnsenCta": "3 onsen picks guide"
+  },
+  "guides": {
+    "powder": {
+      "title": "Japan-scale terrain & JAPOW",
+      "body": "1,341–2,307 m elevation and 425 ha — inland dry powder from late November through late May. One pass links 18 areas and 84 runs in a rare all-mountain experience."
+    },
+    "nagano": {
+      "title": "~70 min bus from Nagano Station",
+      "body": "Express bus ~70 minutes or car ~1–1.2 hours from JR Nagano — pair with the Hokuriku Shinkansen for weekend trips. Rent at Nagano Station for Yudanaka, Shibu, and snow-monkey loops."
+    },
+    "eco": {
+      "title": "UNESCO eco-park wilderness",
+      "body": "Inside Joshin'etsu Kogen National Park and a UNESCO eco-park — pristine nature and high elevation stabilize snow quality. A dispersed layout appeals to guests avoiding crowded mega-resorts."
+    }
+  },
+  "access": {
+    "postal": "〒381-0401",
+    "line": "Hirune 7148, Yamanouchi, Nagano",
+    "note": "~1–1.2 h by car or ~70 min express bus from Nagano Station (typical)",
+    "phone": "TEL 0269-34-2404",
+    "places": "",
+    "rentacarEyebrow": "圧倒的スケールと極上パウダーを誇る日本最大の山岳リゾートを、DXと回遊性強化で世界水準の滞在型エコリゾートへ進化させる。",
+    "rentacarLink": "長野駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "志賀高原スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Shiga Kogen Mountain Resort (mock)",
+    "location": "〒381-0401 Hirune 7148, Yamanouchi, Nagano"
+  }
+}

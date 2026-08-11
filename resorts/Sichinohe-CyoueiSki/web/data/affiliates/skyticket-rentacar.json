@@ -61,6 +61,27 @@
         "en": "Morioka Station"
       }
     },
+    "nagano_station": {
+      "url": "https://skyticket.jp/rentacar/koushinetsu/nagano/nagano_station/",
+      "label": {
+        "ja": "長野駅",
+        "en": "Nagano Station"
+      }
+    },
+    "iiyama_station": {
+      "url": "https://skyticket.jp/rentacar/koushinetsu/nagano/iiyama_station/",
+      "label": {
+        "ja": "飯山駅",
+        "en": "Iiyama Station"
+      }
+    },
+    "echigoyuzawa_station": {
+      "url": "https://skyticket.jp/rentacar/koushinetsu/niigata/echigoyuzawa_station/",
+      "label": {
+        "ja": "越後湯沢駅",
+        "en": "Echigo-Yuzawa Station"
+      }
+    },
     "takasaki_station": {
       "url": "https://skyticket.jp/rentacar/kanto/gunma/takasaki_station/",
       "label": {

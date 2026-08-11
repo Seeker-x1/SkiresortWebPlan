@@ -1,0 +1,60 @@
+resortId: naeba
+schemaVersion: "2026-08-11"
+
+name:
+  ja: 苗場スキー場
+  en: Naeba Ski Resort
+region:
+  ja: 新潟県湯沢町
+  en: Yuzawa, Niigata
+japowResortId: 325
+
+strategy:
+  ja: 圧倒的スケールのゲレンデと直結ホテルの利便性に、地元温泉と美食の回遊性を加えた「24時間遊べるエンタメスノーリゾート」への進化。
+  en: Transforming into a 24-hour entertainment snow resort by combining a vast ski area and ski-in/ski-out hotel convenience with local hot springs and gastronomy.
+archetype: transit-onsen
+copyFrom: sichinohe-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 苗場プリンスホテル直結——ドラゴンドラでかぐらへ、夜は温泉と地元の食へ。
+    en: Ski-in at Naeba Prince Hotel — Dragon Gondola to Kagura, après at local baths and dining.
+  badges: [family, scale, onsen]
+
+pillars:
+  - id: scale
+    hook: { ja: Mt.Naeba・最長4,000m, en: Mt.Naeba · 4,000 m runs }
+  - id: hotel
+    hook: { ja: ホテル徒歩0分, en: 0 min from hotel to slopes }
+  - id: onsen
+    hook: { ja: 雪ささの湯と街の食, en: Yukisasa baths & local food }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+facts:
+  operator: 苗場スキー場（プリンスホテル）
+  location: 〒949-6102 新潟県南魚沼郡湯沢町三国202
+  phone: "025-789-4117"
+  lift: ゴンドラ3・クワッド4・ペア5（公式要確認）
+  courses: 全24コース（初42%・中25%・上33%）
+  elevation: 標高1,789m（山頂）〜900m（ベース）
+  access:
+    train: 上越新幹線越後湯沢駅からバス約40〜45分
+    note: 関越自動車道 湯沢ICから約25分
+
+map:
+  mode: schematic
+  sources: ["公式パンフレット", "configs/lp-brief/naeba.yaml"]
+  heroImage: images/maps/naeba-hero.png
+
+affiliates:
+  rentacar: echigoyuzawa_station
+
+humanReview:
+  - japowResortId 325 = 苗場スキー場
+  - 2025-2026シーズン料金・ドラゴンドラ運行
+  - Mt.Naeba共通券・かぐら連結

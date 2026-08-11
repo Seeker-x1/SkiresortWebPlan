@@ -1,0 +1,60 @@
+resortId: ishiuchi-maruyama
+schemaVersion: "2026-08-11"
+
+name:
+  ja: 石打丸山スキー場
+  en: Ishiuchi Maruyama Ski Resort
+region:
+  ja: 新潟県南魚沼市
+  en: Minamiuonuma, Niigata
+japowResortId: 302
+
+strategy:
+  ja: 世界最新鋭のコンビリフトと、24店舗の絶品「ゲレ食」が織りなす究極の美食スノーリゾート。
+  en: World-class combo lifts meet 24 exceptional slope-side dining options — the ultimate gourmet snow resort.
+archetype: transit-onsen
+copyFrom: sichinohe-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 越後湯沢駅から車・バス約10分——236haの老舗ビッグゲレンデで、ゲレ食24店舗を巡る。
+    en: ~10 min by car or bus from Echigo-Yuzawa — a 236 ha legacy resort with 24 slope-side eateries to explore.
+  badges: [gereshoku, combo-lift, night-ski]
+
+pillars:
+  - id: access
+    hook: { ja: 越後湯沢駅から約10分, en: ~10 min from Echigo-Yuzawa }
+  - id: gereshoku
+    hook: { ja: ゲレ食24店舗, en: 24 slope-side restaurants }
+  - id: onsen
+    hook: { ja: 石打温泉と湯沢街, en: Ishiuchi baths & Yuzawa town }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+facts:
+  operator: 石打丸山スキー場
+  location: 〒949-6372 新潟県南魚沼市石打1699
+  phone: "025-783-2222"
+  lift: リフト14基（サンライズエクスプレス含む・公式要確認）
+  courses: 全23コース（初30〜40%・中40%・上20〜30%）
+  elevation: 標高920m（山頂）〜256m（山麓）・高低差664m
+  access:
+    train: JR上越新幹線「越後湯沢駅」から車・バス約10分
+    note: 関越自動車道 塩沢石打ICから約5分（約3km）
+
+map:
+  mode: schematic
+  sources: ["ishiuchi.or.jp", "configs/lp-brief/ishiuchi-maruyama.yaml"]
+  heroImage: images/maps/ishiuchi-maruyama-hero.png
+
+affiliates:
+  rentacar: echigoyuzawa_station
+
+humanReview:
+  - japowResortId 302 = 石打丸山スキー場
+  - 2025-2026シーズン料金・リフト運行
+  - 湯沢スノーリンク三山共通券

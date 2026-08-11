@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "title": "Santa Present Park Marose Ski Area",
+    "description": "15–20 minutes by car from downtown Asahikawa. Family snow play and night skiing with city views."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "highlights": "Highlights",
+    "paths": "Explore",
+    "onsen": "Onsen",
+    "guides": "Features"
+  },
+  "logo": "Santa Present Park",
+  "hero": {
+    "eyebrow": "Asahikawa, Hokkaido · 330 m",
+    "title": "Santa Present<br />Park",
+    "statLabel": "Night skiing until",
+    "statValue": "21",
+    "statUnit": ":00",
+    "ctaToday": "Today's operations",
+    "updatedAt": "Aug 11, 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "From Asahikawa<br />to the snow.",
+    "lead": "About 15–20 minutes by car from JR Asahikawa Station, or roughly 30 minutes from Asahikawa Airport—the local hill for a zoo morning and night-ski evening without leaving the city orbit.",
+    "ctaToday": "Today's operations",
+    "imgAlt": "Car on a snowy road at dusk heading toward slopes with Asahikawa city lights"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Access"
+    },
+    "map": {
+      "label": "Slopes",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Pricing",
+      "title": "Tickets & rentals"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Marose",
+    "title": "What sets us apart",
+    "primary": {
+      "title": "Kids area & snow escalator",
+      "lead": "A free kids slope separate from the main hill, loading carpets on lifts, and a snow escalator for first-timers. The parent–child daytime set ticket is ¥6,000 (2025–26 official) for an easy family day.",
+      "cta": "View access",
+      "imgAlt": "Families playing in the kids snow area at Santa Present Park Marose"
+    },
+    "secondary": {
+      "title": "Night skiing over the city",
+      "lead": "Night tickets from 16:00 are ¥1,800 adults / ¥1,100 children (2025–26 official). Ski with Asahikawa's night skyline below—World Cup–grade powder lines for after-work or pre-hotel sessions.",
+      "cta": "See onsen recovery options"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby onsen",
+    "title": "After skiing,<br />soak in Asahikawa.",
+    "lead": "Within about 30–60 minutes by car: Yusk Isamu no Yu in Asahikawa, Tenninkyo Onsen, and the Sounkyo spa cluster—classic recovery loops after night skiing.",
+    "whisper": "Staying in Asahikawa? Zoo by day, slopes at dusk, onsen at night is the standard three-act day.",
+    "cta": "Asahikawa area onsen guide",
+    "imgAlt": "Snow-view outdoor bath in the Asahikawa region"
+  },
+  "guides": {
+    "powder": {
+      "title": "World Cup powder & six courses",
+      "body": "Two Snowboard World Cup events hosted here. Six courses for beginner through advanced, longest run about 1,000 m and max pitch around 25° (official). Chase fresh lines close to the city without big-resort crowds."
+    },
+    "shinkansen": {
+      "title": "From station or airport",
+      "body": "15–20 minutes by car from Asahikawa Station, about 30 from the airport. Dohoku Bus \"Santa Present Park\" line takes roughly 25 minutes from the station (terminus stop). Pick up a rental at Asahikawa Airport for zoo + slopes in one day."
+    },
+    "beginners": {
+      "title": "Beginners & families",
+      "body": "Free kids slope, snow escalator ¥1,500 unlimited 10:00–15:00 (official), and sled zones—built for first snow days. Free parking for 1,500 vehicles (official) makes family drives easy."
+    }
+  },
+  "access": {
+    "postal": "070-8013, Japan",
+    "line": "Kamui 3-jo 9-chome 1-1, Asahikawa, Hokkaido",
+    "note": "About 15–20 min by car from JR Asahikawa Station · ~30 min from Asahikawa Airport · Open 9:00–21:00 (night 16:00–)",
+    "phone": "TEL +81-166-36-4911",
+    "places": "",
+    "rentacarEyebrow": "旭川市内15〜20分・ファミリー雪遊び",
+    "rentacarLink": "旭川空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "サンタプレゼントパーク・マロースゲレンデ周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Santa Present Park Marose Ski Area",
+    "location": "070-8013 · Kamui 3-jo 9-chome 1-1, Asahikawa, Hokkaido"
+  }
+}

@@ -350,7 +350,7 @@
       "japowResortId": 37,
       "guideTier": "mock",
       "affiliates": {
-        "rentacar": "chitose_international_airport"
+        "rentacar": "asahikawa_airport"
       }
     },
     {
@@ -394,6 +394,29 @@
       "guidePath": "/canmore/",
       "guideUrl": "https://guides.japowserch.com/canmore/",
       "japowResortId": 38,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "asahikawa_airport"
+      }
+    },
+    {
+      "id": "santa-present-park",
+      "slug": "santa-present-park-lp",
+      "name": {
+        "ja": "サンタプレゼントパーク・マロースゲレンデ",
+        "en": "Santa Present Park Marose Ski Area"
+      },
+      "region": {
+        "ja": "北海道旭川市",
+        "en": "Asahikawa, Hokkaido"
+      },
+      "strategy": {
+        "ja": "旭川市内15〜20分・ファミリー雪遊び",
+        "en": "15–20 min from Asahikawa · family snow play"
+      },
+      "guidePath": "/santa-present-park/",
+      "guideUrl": "https://guides.japowserch.com/santa-present-park/",
+      "japowResortId": 41,
       "guideTier": "mock",
       "affiliates": {
         "rentacar": "asahikawa_airport"
@@ -2677,6 +2700,52 @@
       }
     },
     {
+      "id": "appi-kogen",
+      "slug": "appi-kogen-lp",
+      "name": {
+        "ja": "安比高原スキー場",
+        "en": "Appi Kogen Ski Resort"
+      },
+      "region": {
+        "ja": "岩手県八幡平市安比高原",
+        "en": "Appi Kogen, Hachimantai, Iwate"
+      },
+      "strategy": {
+        "ja": "東北屈指のスケールと極上アスピリンスノー、世界基準のプレミアムリゾートへ。",
+        "en": "Discover Tohoku's grandest scale and ultimate aspirin snow at our world-class premium resort."
+      },
+      "guidePath": "/appi-kogen/",
+      "guideUrl": "https://guides.japowserch.com/appi-kogen/",
+      "japowResortId": 109,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "morioka_station"
+      }
+    },
+    {
+      "id": "kurodake",
+      "slug": "kurodake-lp",
+      "name": {
+        "ja": "大雪山黒岳スキー場",
+        "en": "Daisetsuzan Kurodake Ski Area"
+      },
+      "region": {
+        "ja": "北海道上川町層雲峡",
+        "en": "Sounkyo, Kamikawa, Hokkaido"
+      },
+      "strategy": {
+        "ja": "旭川90分・層雲峡ロープウェイ山岳パウダー",
+        "en": "Asahikawa 90 min · Sounkyo ropeway alpine powder"
+      },
+      "guidePath": "/kurodake/",
+      "guideUrl": "https://guides.japowserch.com/kurodake/",
+      "japowResortId": 45,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "asahikawa_airport"
+      }
+    },
+    {
       "id": "tajima-bokujo",
       "slug": "tajima-bokujo-lp",
       "name": {
@@ -2697,6 +2766,397 @@
       "guideTier": "mock",
       "affiliates": {
         "rentacar": "kansai_international_airport"
+      }
+    },
+    {
+      "id": "iwate-kogen-snow-park",
+      "slug": "iwate-kogen-snow-park-lp",
+      "name": {
+        "ja": "岩手高原スノーパーク",
+        "en": "Iwate Kogen Snow Park"
+      },
+      "region": {
+        "ja": "岩手県岩手郡雫石町",
+        "en": "Shizukuishi, Iwate"
+      },
+      "strategy": {
+        "ja": "小学生以下いつでも無料！盛岡から一番近くて便利な、家族の笑顔があふれる雪の遊び場。",
+        "en": "The most accessible and family-friendly snow resort from Morioka, where kids ride free every day."
+      },
+      "guidePath": "/iwate-kogen-snow-park/",
+      "guideUrl": "https://guides.japowserch.com/iwate-kogen-snow-park/",
+      "japowResortId": 111,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "morioka_station"
+      }
+    },
+    {
+      "id": "horotachi",
+      "slug": "horotachi-lp",
+      "name": {
+        "ja": "ほろたちスキー場",
+        "en": "Horotachi Ski Area"
+      },
+      "region": {
+        "ja": "北海道幌加内町",
+        "en": "Horokanai, Hokkaido"
+      },
+      "strategy": {
+        "ja": "旭川から1時間強・44°パウダー",
+        "en": "Asahikawa drive · 44° powder"
+      },
+      "guidePath": "/horotachi/",
+      "guideUrl": "https://guides.japowserch.com/horotachi/",
+      "japowResortId": 56,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "asahikawa_airport"
+      }
+    },
+    {
+      "id": "hakuba-goryu",
+      "slug": "hakuba-goryu-lp",
+      "name": {
+        "ja": "エイブル白馬五竜スキー場",
+        "en": "ABLE Hakuba GORYU"
+      },
+      "region": {
+        "ja": "長野県白馬村",
+        "en": "Hakuba, Nagano"
+      },
+      "strategy": {
+        "ja": "24時間ベースセンターと極上パウダーで、全世代・全季節を満たすオールラウンド・サステナブルリゾート。",
+        "en": "An all-around, sustainable resort featuring a 24-hour base center and premium powder snow for every generation and season."
+      },
+      "guidePath": "/hakuba-goryu/",
+      "guideUrl": "https://guides.japowserch.com/hakuba-goryu/",
+      "japowResortId": 296,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "nagano_station"
+      }
+    },
+    {
+      "id": "hakuba-happo-one",
+      "slug": "hakuba-happo-one-lp",
+      "name": {
+        "ja": "白馬八方尾根スキー場",
+        "en": "Hakuba Happo-One Snow Resort"
+      },
+      "region": {
+        "ja": "長野県北安曇郡白馬村",
+        "en": "Hakuba, Nagano"
+      },
+      "strategy": {
+        "ja": "世界が認めた極上のパウダーと全長8kmのロングライド。北アルプスの絶景に飛び込む国際山岳リゾート。",
+        "en": "Dive into the ultimate international mountain resort with world-class powder, an 8km long ride, and panoramic views of the Northern Alps."
+      },
+      "guidePath": "/hakuba-happo-one/",
+      "guideUrl": "https://guides.japowserch.com/hakuba-happo-one/",
+      "japowResortId": 299,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "nagano_station"
+      }
+    },
+    {
+      "id": "shizukuishi",
+      "slug": "shizukuishi-lp",
+      "name": {
+        "ja": "雫石スキー場",
+        "en": "Shizukuishi Ski Resort"
+      },
+      "region": {
+        "ja": "岩手県雫石町",
+        "en": "Shizukuishi, Iwate"
+      },
+      "strategy": {
+        "ja": "世界が認めた秀峰のパウダーと、混雑無縁のプライベート空間を誇るプレミアム・マウンテンリゾート。",
+        "en": "A premium mountain resort offering world-class powder snow and an uncrowded, private skiing experience."
+      },
+      "guidePath": "/shizukuishi/",
+      "guideUrl": "https://guides.japowserch.com/shizukuishi/",
+      "japowResortId": 115,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "morioka_station"
+      }
+    },
+    {
+      "id": "madarao-kogen",
+      "slug": "madarao-kogen-lp",
+      "name": {
+        "ja": "斑尾高原スキー場",
+        "en": "Madarao Mountain Resort"
+      },
+      "region": {
+        "ja": "長野県飯山市",
+        "en": "Iiyama, Nagano"
+      },
+      "strategy": {
+        "ja": "天然100%パウダー「マダパウ」と日本最大級のツリーランを誇る、世界基準へ進化する極上スノーリゾート。",
+        "en": "Experience \"Madapow\" and Japan's largest tree run terrain at a rapidly evolving world-class snow resort."
+      },
+      "guidePath": "/madarao-kogen/",
+      "guideUrl": "https://guides.japowserch.com/madarao-kogen/",
+      "japowResortId": 258,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "iiyama_station"
+      }
+    },
+    {
+      "id": "shiga-kogen",
+      "slug": "shiga-kogen-lp",
+      "name": {
+        "ja": "志賀高原スキー場",
+        "en": "Shiga Kogen Mountain Resort"
+      },
+      "region": {
+        "ja": "長野県山ノ内町",
+        "en": "Yamanouchi, Nagano"
+      },
+      "strategy": {
+        "ja": "圧倒的スケールと極上パウダーを誇る日本最大の山岳リゾートを、DXと回遊性強化で世界水準の滞在型エコリゾートへ進化させる。",
+        "en": "Transforming Japan's largest mountain resort, boasting unparalleled scale and premium powder, into a world-class, stay-oriented eco-resort through DX and enhanced mobility."
+      },
+      "guidePath": "/shiga-kogen/",
+      "guideUrl": "https://guides.japowserch.com/shiga-kogen/",
+      "japowResortId": 235,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "nagano_station"
+      }
+    },
+    {
+      "id": "togakushi",
+      "slug": "togakushi-lp",
+      "name": {
+        "ja": "戸隠スキー場",
+        "en": "Togakushi Ski Resort"
+      },
+      "region": {
+        "ja": "長野県長野市",
+        "en": "Nagano City, Nagano"
+      },
+      "strategy": {
+        "ja": "「魔法の粉雪」と戸隠神社の神秘を巡る、歴史と絶景のスノーリゾート。",
+        "en": "A historical snow resort combining magical powder snow and the spiritual mystery of Togakushi Shrine."
+      },
+      "guidePath": "/togakushi/",
+      "guideUrl": "https://guides.japowserch.com/togakushi/",
+      "japowResortId": 253,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "nagano_station"
+      }
+    },
+    {
+      "id": "kandatsu",
+      "slug": "kandatsu-lp",
+      "name": {
+        "ja": "神立スノーリゾート",
+        "en": "Kandatsu Snow Resort"
+      },
+      "region": {
+        "ja": "新潟県南魚沼郡湯沢町",
+        "en": "Yuzawa, Niigata"
+      },
+      "strategy": {
+        "ja": "首都圏から最短でアクセスできる、天然雪100%と深夜ロングナイターを誇る究極の利便性リゾート。",
+        "en": "The ultimate convenient resort accessible from Tokyo, featuring 100% natural snow and late-night skiing."
+      },
+      "guidePath": "/kandatsu/",
+      "guideUrl": "https://guides.japowserch.com/kandatsu/",
+      "japowResortId": 307,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "echigoyuzawa_station"
+      }
+    },
+    {
+      "id": "kandatsu",
+      "slug": "kandatsu-lp",
+      "name": {
+        "ja": "神立スノーリゾート",
+        "en": "Kandatsu Snow Resort"
+      },
+      "region": {
+        "ja": "新潟県南魚沼郡湯沢町",
+        "en": "Yuzawa, Niigata"
+      },
+      "strategy": {
+        "ja": "首都圏から最短でアクセスできる、天然雪100%と深夜ロングナイターを誇る究極の利便性リゾート。",
+        "en": "The ultimate convenient resort accessible from Tokyo, featuring 100% natural snow and late-night skiing."
+      },
+      "guidePath": "/kandatsu/",
+      "guideUrl": "https://guides.japowserch.com/kandatsu/",
+      "japowResortId": 307,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "echigoyuzawa_station"
+      }
+    },
+    {
+      "id": "gala-yuzawa",
+      "slug": "gala-yuzawa-lp",
+      "name": {
+        "ja": "GALA湯沢スキー場",
+        "en": "GALA Yuzawa Snow Resort"
+      },
+      "region": {
+        "ja": "新潟県湯沢町",
+        "en": "Yuzawa, Niigata"
+      },
+      "strategy": {
+        "ja": "新幹線駅直結の圧倒的利便性と、通年型マウンテンフィールド化による顧客単価の最大化。",
+        "en": "Maximizing yield through unmatched Shinkansen access and an all-season mountain field transition."
+      },
+      "guidePath": "/gala-yuzawa/",
+      "guideUrl": "https://guides.japowserch.com/gala-yuzawa/",
+      "japowResortId": 306,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "echigoyuzawa_station"
+      }
+    },
+    {
+      "id": "ishiuchi-maruyama",
+      "slug": "ishiuchi-maruyama-lp",
+      "name": {
+        "ja": "石打丸山スキー場",
+        "en": "Ishiuchi Maruyama Ski Resort"
+      },
+      "region": {
+        "ja": "新潟県南魚沼市",
+        "en": "Minamiuonuma, Niigata"
+      },
+      "strategy": {
+        "ja": "世界最新鋭のコンビリフトと、24店舗の絶品「ゲレ食」が織りなす究極の美食スノーリゾート。",
+        "en": "World-class combo lifts meet 24 exceptional slope-side dining options — the ultimate gourmet snow resort."
+      },
+      "guidePath": "/ishiuchi-maruyama/",
+      "guideUrl": "https://guides.japowserch.com/ishiuchi-maruyama/",
+      "japowResortId": 302,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "echigoyuzawa_station"
+      }
+    },
+    {
+      "id": "maiko",
+      "slug": "maiko-lp",
+      "name": {
+        "ja": "舞子スノーリゾート",
+        "en": "Maiko Snow Resort"
+      },
+      "region": {
+        "ja": "新潟県南魚沼市",
+        "en": "Minamiuonuma, Niigata"
+      },
+      "strategy": {
+        "ja": "ICから1分の究極アクセスと、多彩なコース・充実の施設を誇るオールシーズン・ビッグリゾート。",
+        "en": "The ultimate all-season big resort boasting 1-minute access from the IC, diverse courses, and extensive facilities."
+      },
+      "guidePath": "/maiko/",
+      "guideUrl": "https://guides.japowserch.com/maiko/",
+      "japowResortId": 315,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "echigoyuzawa_station"
+      }
+    },
+    {
+      "id": "nozawa-onsen",
+      "slug": "nozawa-onsen-lp",
+      "name": {
+        "ja": "野沢温泉スキー場",
+        "en": "Nozawa Onsen Snow Resort"
+      },
+      "region": {
+        "ja": "長野県野沢温泉村",
+        "en": "Nozawa Onsen, Nagano"
+      },
+      "strategy": {
+        "ja": "100%天然パウダーと13の外湯巡り。エコエネルギーが彩る、伝統と革新の温泉スノーリゾート。",
+        "en": "Immerse yourself in 100% natural JAPOW and 13 historic hot springs at Japan's premier eco-friendly snow and cultural resort."
+      },
+      "guidePath": "/nozawa-onsen/",
+      "guideUrl": "https://guides.japowserch.com/nozawa-onsen/",
+      "japowResortId": 255,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "iiyama_station"
+      }
+    },
+    {
+      "id": "iwappara",
+      "slug": "iwappara-lp",
+      "name": {
+        "ja": "岩原スキー場",
+        "en": "Iwappara Ski Resort"
+      },
+      "region": {
+        "ja": "新潟県南魚沼郡湯沢町",
+        "en": "Yuzawa, Niigata"
+      },
+      "strategy": {
+        "ja": "圧倒的な開放感を誇る最大幅200mの一枚バーンと名物ピッツァで、初心者・ファミリーのゲレンデデビューを独占する。",
+        "en": "Dominating beginner and family segments with an overwhelmingly wide open terrain and legendary local pizza."
+      },
+      "guidePath": "/iwappara/",
+      "guideUrl": "https://guides.japowserch.com/iwappara/",
+      "japowResortId": 304,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "echigoyuzawa_station"
+      }
+    },
+    {
+      "id": "naeba",
+      "slug": "naeba-lp",
+      "name": {
+        "ja": "苗場スキー場",
+        "en": "Naeba Ski Resort"
+      },
+      "region": {
+        "ja": "新潟県湯沢町",
+        "en": "Yuzawa, Niigata"
+      },
+      "strategy": {
+        "ja": "圧倒的スケールのゲレンデと直結ホテルの利便性に、地元温泉と美食の回遊性を加えた「24時間遊べるエンタメスノーリゾート」への進化。",
+        "en": "Transforming into a 24-hour entertainment snow resort by combining a vast ski area and ski-in/ski-out hotel convenience with local hot springs and gastronomy."
+      },
+      "guidePath": "/naeba/",
+      "guideUrl": "https://guides.japowserch.com/naeba/",
+      "japowResortId": 325,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "echigoyuzawa_station"
+      }
+    },
+    {
+      "id": "kagura",
+      "slug": "kagura-lp",
+      "name": {
+        "ja": "かぐらスキー場",
+        "en": "Kagura Ski Resort"
+      },
+      "region": {
+        "ja": "新潟県湯沢町",
+        "en": "Yuzawa, Niigata"
+      },
+      "strategy": {
+        "ja": "本州屈指のパウダースノーとロングシーズン営業を誇る、極上のネイチャーアドベンチャーリゾート。",
+        "en": "The ultimate nature adventure resort boasting Japan's finest powder snow and the longest skiing season."
+      },
+      "guidePath": "/kagura/",
+      "guideUrl": "https://guides.japowserch.com/kagura/",
+      "japowResortId": 324,
+      "guideTier": "mock",
+      "affiliates": {
+        "rentacar": "echigoyuzawa_station"
       }
     }
   ],

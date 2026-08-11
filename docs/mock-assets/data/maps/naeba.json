@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "naeba",
+  "name": {
+    "ja": "苗場スキー場",
+    "en": "Naeba Ski Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "公式パンフレット",
+    "configs/lp-brief/naeba.yaml"
+  ],
+  "updatedAt": "2026-08-11T13:45:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/naeba-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-dragon-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "ドラゴンドラ",
+        "en": "Dragon Gondola"
+      },
+      "shortLabel": {
+        "ja": "ドラゴン",
+        "en": "Dragon"
+      },
+      "meta": {
+        "ja": {
+          "距離": "5,481m",
+          "区分": "かぐら連絡"
+        },
+        "en": {
+          "Distance": "5,481 m",
+          "Zone": "Kagura link"
+        }
+      }
+    },
+    {
+      "id": "lift-prince-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "プリンスゴンドラ",
+        "en": "Prince gondola"
+      },
+      "shortLabel": {
+        "ja": "プリンス",
+        "en": "Prince"
+      },
+      "meta": {
+        "ja": {
+          "区分": "ホテル前輸送"
+        },
+        "en": {
+          "Zone": "Hotel-front uplift"
+        }
+      }
+    },
+    {
+      "id": "lift-central-quad",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "中央クワッド",
+        "en": "Central quad"
+      },
+      "shortLabel": {
+        "ja": "中央",
+        "en": "Central"
+      },
+      "meta": {
+        "ja": {
+          "区分": "中央エリア"
+        },
+        "en": {
+          "Zone": "Central area"
+        }
+      }
+    },
+    {
+      "id": "trail-hotel-front",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "ホテル前ゲレンデ",
+        "en": "Hotel-front area"
+      },
+      "shortLabel": {
+        "ja": "ホテル前",
+        "en": "Hotel front"
+      },
+      "meta": {
+        "ja": {
+          "備考": "初心者・家族向け"
+        },
+        "en": {
+          "Note": "Beginner & family"
+        }
+      }
+    },
+    {
+      "id": "trail-splash-bowl",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "スプラッシュボウル",
+        "en": "Splash Bowl"
+      },
+      "shortLabel": {
+        "ja": "スプラッシュ",
+        "en": "Splash"
+      },
+      "meta": {
+        "ja": {
+          "斜度": "最大39度",
+          "備考": "上級者向け"
+        },
+        "en": {
+          "Pitch": "Up to 39°",
+          "Note": "Expert terrain"
+        }
+      }
+    },
+    {
+      "id": "trail-long-cruise",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "ロングクルーズ",
+        "en": "Long cruise"
+      },
+      "shortLabel": {
+        "ja": "ロング",
+        "en": "Long"
+      },
+      "meta": {
+        "ja": {
+          "距離": "最長4,000m",
+          "備考": "圧雪バーン"
+        },
+        "en": {
+          "Distance": "Up to 4,000 m",
+          "Note": "Groomed cruise"
+        }
+      }
+    },
+    {
+      "id": "trail-family-snowland",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "わくわくファミリースノーランド",
+        "en": "Family Snowland"
+      },
+      "shortLabel": {
+        "ja": "スノーランド",
+        "en": "Snowland"
+      },
+      "meta": {
+        "ja": {
+          "備考": "キッズ雪遊び"
+        },
+        "en": {
+          "Note": "Kids snow play"
+        }
+      }
+    }
+  ]
+}

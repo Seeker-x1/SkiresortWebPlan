@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "shizukuishi",
+  "name": {
+    "ja": "雫石スキー場",
+    "en": "Shizukuishi Ski Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "公式パンフレット",
+    "configs/lp-brief/shizukuishi.yaml"
+  ],
+  "updatedAt": "2026-08-11T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/shizukuishi-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-ropeway",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "雫石ロープウェー",
+        "en": "Shizukuishi Ropeway"
+      },
+      "shortLabel": {
+        "ja": "ロープウェー",
+        "en": "Ropeway"
+      },
+      "meta": {
+        "ja": {
+          "区分": "ベース〜中腹"
+        },
+        "en": {
+          "Zone": "Base to mid-mountain"
+        }
+      }
+    },
+    {
+      "id": "lift-highspeed",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "quad",
+      "label": {
+        "ja": "雫石高速リフト",
+        "en": "Shizukuishi high-speed lift"
+      },
+      "shortLabel": {
+        "ja": "高速",
+        "en": "Express"
+      },
+      "meta": {
+        "ja": {
+          "区分": "4人乗りフード付き"
+        },
+        "en": {
+          "Zone": "4-seat hooded quad"
+        }
+      }
+    },
+    {
+      "id": "lift-sunshine",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "サンシャインリフト",
+        "en": "Sunshine lift"
+      },
+      "shortLabel": {
+        "ja": "サンシャイン",
+        "en": "Sunshine"
+      },
+      "meta": {
+        "ja": {
+          "区分": "中級エリア"
+        },
+        "en": {
+          "Zone": "Intermediate area"
+        }
+      }
+    },
+    {
+      "id": "trail-alpine",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "アルペンコース",
+        "en": "Alpine course"
+      },
+      "shortLabel": {
+        "ja": "アルペン",
+        "en": "Alpine"
+      },
+      "meta": {
+        "ja": {
+          "備考": "1993年世界選手権コース・最大36°"
+        },
+        "en": {
+          "Note": "1993 World Championship course · max 36°"
+        }
+      }
+    },
+    {
+      "id": "trail-downhill",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "ダウンヒルコース",
+        "en": "Downhill course"
+      },
+      "shortLabel": {
+        "ja": "DH",
+        "en": "DH"
+      },
+      "meta": {
+        "ja": {
+          "備考": "名門ロングラン"
+        },
+        "en": {
+          "Note": "Legendary long run"
+        }
+      }
+    },
+    {
+      "id": "trail-family",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "ファミリーゲレンデ",
+        "en": "Family slope"
+      },
+      "shortLabel": {
+        "ja": "ファミリー",
+        "en": "Family"
+      },
+      "meta": {
+        "ja": {
+          "備考": "スノーランド併設"
+        },
+        "en": {
+          "Note": "Adjacent snow park"
+        }
+      }
+    }
+  ]
+}

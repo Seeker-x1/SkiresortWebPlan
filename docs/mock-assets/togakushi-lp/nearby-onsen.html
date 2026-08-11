@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="togakushi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>周辺温泉3選 — 雫石スキー場</title>
+  <meta name="description" content="ありね山荘・ゆこたんの森・高倉温泉——雫石と網張の湯めぐりガイド" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/lp-layout.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="./" class="logo" data-i18n="logo">雫石スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="./#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=togakushi" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="../area-map.html?resort=togakushi&layers=onsen,anchor" data-i18n="nearbyOnsen.navAreaMap">周辺マップ</a></li>
+          <li><a href="nearby-food.html" data-i18n="nearbyOnsen.linkFoodGuide">周辺飲食2選</a></li>
+          <li><a href="./#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--spot" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img
+          src="lp-mock-togakushi-onsen.png"
+          data-i18n-attr="alt:nearbyOnsen.hero.imgAlt"
+          alt="雪見露天と湯気——雫石周辺の温泉イメージ"
+          width="1200"
+          height="1500"
+        />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <a href="./" class="detail-back">← <span data-i18n="nearbyOnsen.backLink">雫石ガイドトップへ戻る</span></a>
+        <p class="eyebrow" data-i18n="nearbyOnsen.hero.eyebrow">Onsen · Map</p>
+        <h1 class="hero-title" data-i18n-html="nearbyOnsen.hero.title">滑ったあと、<br />湯へ。</h1>
+        <p class="hero-tagline" data-i18n="nearbyOnsen.hero.tagline">盛岡IC30分 · 雫石グルメと秘湯</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="inner">
+        <p role="note" class="notice-banner" data-i18n="nearbyOnsen.notice">
+          日帰り入浴の可否・営業時間・料金・冬季休業は各施設の公式情報が最新です。
+        </p>
+
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.introTitle">なぜ、温泉が雫石の核になるのか</h2>
+        <p class="lead" style="margin-top:1.5rem; max-width:36rem" data-i18n="nearbyOnsen.introLead">
+          網張の硫黄泉から森の露天まで——ゲレンデ単体では完結しない「ととのい」が、エリア全体に点在します。
+        </p>
+        <p class="lead-whisper" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.introBody">
+          雫石スキー場から車で30分圏の温泉3箇所を、帰路に組み込みやすい順に厳選しました。
+        </p>
+      </div>
+    </section>
+
+    <section class="section border-top" id="onsen-map">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyOnsen.mapEyebrow">Area map</p>
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.mapTitle">付近の温泉マップ</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.mapLead">
+          飲食・温泉・拠点をボタンで切り替え——複数レイヤーの同時表示に対応。
+        </p>
+
+        <div data-map-embed data-default-layers="onsen,anchor">
+          <div class="map-layer-toggles" role="group" data-i18n-attr="aria-label:nearbyOnsen.mapEmbedTitle">
+            <button type="button" class="map-layer-btn" data-map-layer="food" aria-pressed="false" data-i18n="nearbyOnsen.mapLayers.food">飲食</button>
+            <button type="button" class="map-layer-btn" data-map-layer="onsen" aria-pressed="true" data-i18n="nearbyOnsen.mapLayers.onsen">温泉</button>
+            <button type="button" class="map-layer-btn" data-map-layer="anchor" aria-pressed="true" data-i18n="nearbyOnsen.mapLayers.anchor">拠点</button>
+          </div>
+          <p class="map-layer-hint" data-i18n="nearbyOnsen.mapLayers.hint">飲食と温泉は同時に表示できます</p>
+          <p class="map-layer-hint map-layer-hint--mobile" data-i18n="nearbyOnsen.mapLayers.mobileHint">ピンが重なるときは下の温泉一覧の「地図で見る」か、地図右下の「スポット一覧」をご利用ください</p>
+
+          <div class="map-embed">
+            <iframe
+              title="雫石周辺の飲食・温泉・拠点マップ"
+              data-i18n-attr="title:nearbyOnsen.mapEmbedTitle"
+              src="../area-map.html?resort=togakushi&embed=1&layers=onsen,anchor"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="map-embed-cta-row">
+          <a href="../area-map.html?resort=togakushi&layers=onsen,anchor" class="btn btn-primary" data-i18n="nearbyOnsen.mapCta">フルサイズマップを開く</a>
+          <a href="nearby-food.html" class="btn btn-ghost" data-i18n="nearbyOnsen.linkFoodGuide">周辺飲食2選ガイド</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyOnsen.spotsEyebrow">3 picks</p>
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.spotsTitle">雫石・網張温泉3選</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.spotsLead">
+          硫黄泉の名湯からリゾート直結の湯まで——滑走後に組み込みやすい順に掲載。
+        </p>
+
+        <h3 class="onsen-region" data-i18n="nearbyOnsen.regions.amihari">網張温泉郷</h3>
+        <ol class="food-spot-list" start="1">
+          <li class="food-spot" id="entry-yugokan" data-spot-entry="yugokan">
+            <span class="food-spot__num">01</span>
+            <div class="food-spot__body">
+              <figure class="food-spot__figure">
+                <img
+                  src="lp-mock-togakushi-onsen.png"
+                  data-i18n-attr="alt:nearbyOnsen.spots.yugokan.imgAlt"
+                  alt="ありね山荘の硫黄泉"
+                  width="960"
+                  height="600"
+                  loading="lazy"
+                />
+              </figure>
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.yugokan.tag">硫黄泉 · 盆地眺望</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.yugokan.title">網張温泉 ありね山荘</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.yugokan.lead">岩手県岩手郡雫石町長山小松倉13-7。白濁した硫黄泉と雫石盆地の絶景。</p>
+              <a href="../area-map.html?resort=togakushi&layers=onsen,anchor&focus=yugokan" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-tengu" data-spot-entry="tengu">
+            <span class="food-spot__num">02</span>
+            <div class="food-spot__body">
+              <figure class="food-spot__figure">
+                <img
+                  src="lp-mock-togakushi-onsen.png"
+                  data-i18n-attr="alt:nearbyOnsen.spots.tengu.imgAlt"
+                  alt="ゆこたんの森の森囲み露天"
+                  width="960"
+                  height="600"
+                  loading="lazy"
+                />
+              </figure>
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.tengu.tag">森の露天 · 上質な癒し</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.tengu.title">南網張ありね温泉 ゆこたんの森</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.tengu.lead">岩手県岩手郡雫石町長山猫沢3-6。森に溶け込む露天風呂と高いホスピタリティ。</p>
+              <a href="../area-map.html?resort=togakushi&layers=onsen,anchor&focus=tengu" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="onsen-region" data-i18n="nearbyOnsen.regions.togakushi">雫石リゾート</h3>
+        <ol class="food-spot-list" start="3">
+          <li class="food-spot" id="entry-urumoi" data-spot-entry="urumoi">
+            <span class="food-spot__num">03</span>
+            <div class="food-spot__body">
+              <figure class="food-spot__figure">
+                <img
+                  src="lp-mock-togakushi-onsen.png"
+                  data-i18n-attr="alt:nearbyOnsen.spots.urumoi.imgAlt"
+                  alt="雫石高倉温泉の露天"
+                  width="960"
+                  height="600"
+                  loading="lazy"
+                />
+              </figure>
+              <p class="food-spot__tag" data-i18n="nearbyOnsen.spots.urumoi.tag">リゾート直結 · 高倉温泉</p>
+              <h3 class="food-spot__title" data-i18n="nearbyOnsen.spots.urumoi.title">雫石高倉温泉（プリンスホテル内）</h3>
+              <p class="food-spot__lead" data-i18n="nearbyOnsen.spots.urumoi.lead">岩手県岩手郡雫石町高倉温泉。雫石プリンスホテル併設の露天風呂——ゲレンデ直後の入浴に便利。</p>
+              <a href="../area-map.html?resort=togakushi&layers=onsen,anchor&focus=urumoi" class="food-spot__map-link" data-i18n="nearbyOnsen.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <h2 class="heading-lg" data-i18n="nearbyOnsen.pairingTitle">盛岡 × スキー × 温泉</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyOnsen.pairingLead">
+          午前：盛岡ICから雫石へ → 午後：パウダーとCATツアー → 夕方：松ぼっくりでジェラート → 夜：ありね山荘で硫黄泉。
+        </p>
+        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="nearby-food.html" class="btn btn-ghost" data-i18n="nearbyOnsen.pairingFoodCta">飲食2選ガイド</a>
+          <a href="./" class="btn btn-ghost" data-i18n="nearbyOnsen.backLink">雫石ガイドトップへ戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p class="footer-notice" role="note" data-i18n="footer.guideNotice">本ガイドは制作中の案です。写真・イラストは雰囲気の参考であり、実際のゲレンデ・施設と異なる場合があります。料金・営業・道路規制は各施設の公式情報を優先してください。</p>
+<div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 雫石スキー場（案）</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒020-0593 岩手県岩手郡雫石町高倉温泉</span> ·
+        <a href="./" data-i18n="nearbyOnsen.backLink">雫石ガイドトップへ戻る</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+  <script src="../_shared/map-embed-layers.js"></script>
+  <script>
+    window.addEventListener("mock-i18n-ready", (e) => {
+      const m = e.detail.messages;
+      const meta = m.nearbyOnsen && m.nearbyOnsen.meta;
+      if (meta && meta.title) document.title = meta.title;
+      if (meta && meta.description) {
+        const tag = document.querySelector('meta[name="description"]');
+        if (tag) tag.setAttribute("content", meta.description);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "hida-kawai",
+  "name": {
+    "ja": "飛騨かわいスキー場",
+    "en": "Hida Kawai Ski Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "Deep Research batch #113",
+    "configs/lp-brief/hida-kawai.yaml",
+    "hidakawai.com"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/hida-kawai-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-main",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "第1リフト",
+        "en": "Lift 1"
+      },
+      "shortLabel": {
+        "ja": "第1",
+        "en": "L1"
+      },
+      "meta": {
+        "ja": {
+          "種別": "メインリフト",
+          "備考": "週末の基幹動線"
+        },
+        "en": {
+          "Type": "Main lift",
+          "Note": "Core weekend access"
+        }
+      }
+    },
+    {
+      "id": "lift-second",
+      "type": "lift",
+      "status": "hold",
+      "liftKind": "pair",
+      "label": {
+        "ja": "第2リフト",
+        "en": "Lift 2"
+      },
+      "shortLabel": {
+        "ja": "第2",
+        "en": "L2"
+      },
+      "meta": {
+        "ja": {
+          "種別": "補助リフト",
+          "備考": "土日祝中心の想定"
+        },
+        "en": {
+          "Type": "Aux lift",
+          "Note": "Typically weekends and holidays"
+        }
+      }
+    },
+    {
+      "id": "trail-powder",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "急斜面パウダーライン",
+        "en": "Steep powder line"
+      },
+      "shortLabel": {
+        "ja": "急斜面",
+        "en": "Steep"
+      },
+      "meta": {
+        "ja": {
+          "雪面": "非圧雪",
+          "最大斜度": "35°級",
+          "特徴": "週末パウダーの主役"
+        },
+        "en": {
+          "Surface": "Ungroomed",
+          "Max slope": "35° class",
+          "Feature": "Main weekend powder line"
+        }
+      }
+    },
+    {
+      "id": "trail-forest",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate-advanced",
+      "label": {
+        "ja": "林間ルート",
+        "en": "Forest route"
+      },
+      "shortLabel": {
+        "ja": "林間",
+        "en": "Forest"
+      },
+      "meta": {
+        "ja": {
+          "特徴": "ツリー脇の流れ",
+          "備考": "地形遊び向き"
+        },
+        "en": {
+          "Feature": "Flowing line beside the trees",
+          "Note": "Good for terrain play"
+        }
+      }
+    },
+    {
+      "id": "trail-main",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "メイン整地ライン",
+        "en": "Main groomed line"
+      },
+      "shortLabel": {
+        "ja": "メイン",
+        "en": "Main"
+      },
+      "meta": {
+        "ja": {
+          "備考": "滑り込みやすい主動線"
+        },
+        "en": {
+          "Note": "Most approachable primary route"
+        }
+      }
+    },
+    {
+      "id": "trail-kids",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "sled",
+      "label": {
+        "ja": "キッズパーク",
+        "en": "Kids park"
+      },
+      "shortLabel": {
+        "ja": "キッズ",
+        "en": "Kids"
+      },
+      "meta": {
+        "ja": {
+          "備考": "本線と分離した雪遊び帯"
+        },
+        "en": {
+          "Note": "Separate snow-play zone away from the main runs"
+        }
+      }
+    }
+  ]
+}

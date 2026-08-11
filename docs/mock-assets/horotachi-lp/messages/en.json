@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Horotachi Ski Area",
+    "description": "44° powder in Horokanai—local slopes and buckwheat soba after the runs, via Asahikawa Airport."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Explore",
+    "onsen": "Onsen",
+    "guides": "Features"
+  },
+  "logo": "Horotachi Ski Area",
+  "hero": {
+    "eyebrow": "Horokanai, Hokkaido",
+    "title": "Horotachi<br />Ski Area",
+    "statLabel": "Max slope",
+    "statValue": "44",
+    "statUnit": "°",
+    "ctaToday": "Today's operations",
+    "updatedAt": "Feb 11, 9:00"
+  },
+  "transit": {
+    "eyebrow": "Drive",
+    "title": "From Asahikawa,<br />over the pass.",
+    "lead": "About 60 minutes from downtown Asahikawa, roughly two hours by rental car from Asahikawa Airport via the Chichibubetsu IC. Mountain weather can change fast—check road conditions before you cross the pass.",
+    "ctaToday": "Today's operations",
+    "imgAlt": "Car on a snowy road—winter drive from Asahikawa to Horokanai"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Access"
+    },
+    "map": {
+      "label": "Slopes",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Pricing",
+      "title": "Tickets & rentals"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Horokanai",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "44° ungroomed lines",
+      "lead": "The Horotachi course hits 44° on ungroomed snow. Deep snowfall and natural terrain draw riders who want steep, quiet powder—one 635 m pair lift and almost no queues.",
+      "cta": "Trail map",
+      "imgAlt": "Skier on steep ungroomed powder at Horotachi"
+    },
+    "secondary": {
+      "title": "After the runs: soba",
+      "lead": "Horokanai is Japan's top buckwheat region. Hit a town soba shop after skiing—the hill cafeteria and local noodle houses are the post-run ritual.",
+      "cta": "Nearby food guide"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Warm-up on the return",
+    "title": "After skiing,<br />Sounkyo on the way back.",
+    "lead": "Hot springs in Horokanai town are limited, but Sounkyo and Kamikawa onsen cluster along the drive back to Asahikawa.",
+    "whisper": "If pass weather turns, heading down early may beat a long soak. Always follow official road and facility updates.",
+    "cta": "Nearby onsen guide",
+    "imgAlt": "Snow-view outdoor bath—Sounkyo area hot spring image"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "Nearby onsen — Horotachi Ski Area",
+      "description": "Sounkyo and Kamikawa—return-route baths with map"
+    },
+    "backLink": "Back to Horotachi guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />hot springs.",
+      "tagline": "Return route · Sounkyo and Kamikawa",
+      "imgAlt": "Snow-view bath—Sounkyo area"
+    },
+    "notice": "Day-use hours, winter closures, and road rules—official sources first. Check pass weather too.",
+    "introTitle": "Why onsen fits the return drive",
+    "introLead": "Few baths in Horokanai town, but famous springs line the road back to Asahikawa.",
+    "introBody": "Three recovery stops aligned with your drive home.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchor layers.",
+    "mapCta": "Open full map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Horokanai food · onsen · anchor map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Base",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use map links in the list"
+    },
+    "linkFoodGuide": "Food guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "Three return-route onsen",
+    "spotsLead": "Along the drive back to Asahikawa—in easy order after skiing.",
+    "regions": {
+      "shichinohe": "Sounkyo · Kamikawa",
+      "towada": "Asahikawa area"
+    },
+    "spots": {
+      "higashi-hakkoda": {
+        "tag": "Canyon · hot-spring town",
+        "title": "Sounkyo Onsen",
+        "lead": "Hot-spring hotels in the Daisetsuzan canyon—classic recovery on the way back (check each property).",
+        "imgAlt": "Sounkyo canyon and hot-spring town"
+      },
+      "tsuta": {
+        "tag": "Town · day-use",
+        "title": "Kamikawa Onsen",
+        "lead": "Between Sounkyo and Asahikawa—good for a shorter stop after the hill (official hours first).",
+        "imgAlt": "Kamikawa onsen indoor bath"
+      },
+      "yakeyama": {
+        "tag": "Asahikawa · spa",
+        "title": "Asahikawa area onsen",
+        "lead": "City and Asahidake-side baths before you return the rental car (winter hours vary by property).",
+        "imgAlt": "Asahikawa-area hot spring before car return"
+      }
+    },
+    "pairingTitle": "Ski × soba × onsen",
+    "pairingLead": "Morning from Asahikawa → ski Horotachi → town soba → Sounkyo bath → return car in Asahikawa.",
+    "pairingFoodCta": "Food guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "Nearby food — Horotachi Ski Area",
+      "description": "Hill cafeteria and Horokanai soba—with area map"
+    },
+    "backLink": "Back to Horotachi guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />soba.",
+      "tagline": "From hill classics to hand-cut noodles",
+      "imgAlt": "Horokanai soba after skiing"
+    },
+    "notice": "Hours, holidays, and menus—check each venue's official site.",
+    "introTitle": "Why food matters on this trip",
+    "introLead": "Horokanai is a soba kingdom. The hill cafeteria and town noodle shops are close and easy to pair with your ski day.",
+    "introBody": "Lunch and a return-route reward—two picks along the drive.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchor layers.",
+    "mapCta": "Open full map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Horokanai food · onsen · anchor map",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Base",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use map links in the list below"
+    },
+    "linkOnsenGuide": "Nearby onsen guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "Two Horokanai food picks",
+    "spotsLead": "From the hill to town soba—in trip-friendly order.",
+    "spots": {
+      "hutte": {
+        "tag": "On-hill · cafeteria",
+        "title": "Horotachi hill cafeteria",
+        "lead": "Beside the pair lift—simple hill lunch and breaks (confirm on-site).",
+        "imgAlt": "Warm meal at the Horotachi cafeteria"
+      },
+      "tabikura": {
+        "tag": "Town · hand-cut soba",
+        "title": "Horokanai soba shop",
+        "lead": "Hand-cut buckwheat noodles in Japan's top soba town—popular in new-soba season (check each shop).",
+        "imgAlt": "Hand-cut soba in Horokanai"
+      }
+    },
+    "pairingTitle": "One-day loop",
+    "pairingLead": "Morning: rental from Asahikawa Airport → lunch at the hill → afternoon: 44° powder → town soba → Sounkyo onsen on the return.",
+    "pairingOnsenCta": "Onsen guide"
+  },
+  "guides": {
+    "powder": {
+      "title": "Chasing 44° powder",
+      "body": "Four courses, one pair lift. Horotachi is advanced ungroomed; the forest course is a 1,100 m beginner groomer—small in scale, big on pitch and snow quality."
+    },
+    "drive": {
+      "title": "From Asahikawa Airport",
+      "body": "Pick up a rental at Asahikawa Airport and follow National Route 275 toward Horokanai. About 60 minutes from downtown Asahikawa; roughly two hours from the airport."
+    },
+    "soba": {
+      "title": "Soba and town food",
+      "body": "Horokanai soba is the local star. Pair the hill cafeteria with a town noodle shop for a half-day food loop."
+    }
+  },
+  "access": {
+    "postal": "〒074-0415",
+    "line": "Osarunai, Horokanai, Uryu, Hokkaido",
+    "note": "About 60 min by car from Asahikawa; about 60 min from Chichibubetsu IC via Route 275 (estimate)",
+    "phone": "TEL 0165-35-3410",
+    "places": "",
+    "rentacarEyebrow": "旭川から1時間強・44°パウダー",
+    "rentacarLink": "旭川空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "ほろたちスキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Horotachi Ski Area",
+    "location": "〒074-0415 Osarunai, Horokanai, Uryu, Hokkaido"
+  }
+}

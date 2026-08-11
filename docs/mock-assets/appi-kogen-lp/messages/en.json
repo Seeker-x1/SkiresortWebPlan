@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Appi Kogen Ski Resort",
+    "description": "Morioka in 60 minutes — Tohoku's grand 21-course, 45 km resort with aspirin snow and integrated luxury hotels."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides"
+  },
+  "logo": "Appi Kogen Ski Resort",
+  "hero": {
+    "eyebrow": "Hachimantai · Iwate",
+    "title": "Appi Kogen<br />Ski Resort",
+    "statLabel": "Skiable distance",
+    "statValue": "45",
+    "statUnit": "km",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Feb 11 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "From Morioka,<br />into the alpine.",
+    "lead": "~60 minutes from JR Morioka by car, bus, or train — a shinkansen gateway route to a world-class premium resort where ANA Crowne Plaza meets the slopes.",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Winter road from Morioka toward Appi Kogen — Iwate mountain scenery"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Morioka"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Lifts & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Appi",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "Tohoku-scale terrain",
+      "lead": "21 courses and ~45 km of skiing across West, Central, East, and Appi zones — one of Tohoku's largest resorts. Central Quad and Sailer Gondola lift you to long cruises in dry aspirin snow.",
+      "cta": "Open trail map",
+      "imgAlt": "Skier on vast powder slopes at Appi Kogen — Tohoku's grand resort scale"
+    },
+    "secondary": {
+      "title": "After skiing, resort dining & baths",
+      "lead": "From Japanese, Chinese, and yakiniku inside ANA Crowne Plaza to Shirakaba-no-Yu hot spring — stay, eat, and soak without leaving the resort footprint.",
+      "cta": "Onsen guide"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby hot springs",
+    "title": "Appi onsen &<br />Hachimantai baths",
+    "lead": "Appi Onsen Shirakaba-no-Yu offers large saunas and open-air baths minutes from the resort. Azumino-yu and Sai-to onsen add post-ski recovery across the Hachimantai area.",
+    "whisper": "Evening shuttle loops to local restaurants are under study — check the official site for the latest.",
+    "cta": "Appi onsen guide",
+    "imgAlt": "Snow-view rotenburo among birch trees — Appi Kogen onsen image"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 onsen picks — Appi Kogen Ski Resort",
+      "description": "Shirakaba-no-Yu, Azumino-yu, Sai-to — hot-spring loop guide for Appi and Hachimantai"
+    },
+    "backLink": "Back to Appi Kogen guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />soak.",
+      "tagline": "Morioka 60 min · resort & Hachimantai baths",
+      "imgAlt": "Steam from snow-view outdoor bath — Appi Kogen area onsen"
+    },
+    "notice": "Day-use hours, fees, and seasonal closures are on each facility's official site. Allow buffer time when lifts close for wind.",
+    "introTitle": "Why onsen anchors the Appi stay",
+    "introLead": "From resort-linked Shirakaba-no-Yu to town baths in Hachimantai — recovery fits naturally after skiing.",
+    "introBody": "Three picks within ~30 minutes by car, ordered for easy post-ski routing.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Appi Kogen",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links or the map spot list at bottom right"
+    },
+    "linkFoodGuide": "2 food picks guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "3 onsen near Appi & Hachimantai",
+    "spotsLead": "Resort-linked to town classics — ordered for post-ski loops.",
+    "regions": {
+      "appi": "Appi Kogen Resort",
+      "hachimantai": "Hachimantai town"
+    },
+    "spots": {
+      "shirakaba": {
+        "tag": "Resort-linked · large sauna",
+        "title": "Appi Onsen Shirakaba-no-Yu",
+        "lead": "605-365 Appi Kogen, Hachimantai. Large sauna and rotenburo. Day use ~¥1,200 adults (official — verify). TEL 0195-73-6060.",
+        "imgAlt": "Open-air bath at Shirakaba-no-Yu — Appi resort hot spring"
+      },
+      "azumino": {
+        "tag": "Skin-beauty · local bath",
+        "title": "Wataboshi Onsen Azumino-yu",
+        "lead": "436-1 Hosono, Hachimantai. Sodium bicarbonate chloride spring. Day use ~¥600 adults (official — verify). TEL 0195-72-6811.",
+        "imgAlt": "Indoor bath at Wataboshi Onsen — local Hachimantai spring"
+      },
+      "saito": {
+        "tag": "Forest rotenburo · beauty",
+        "title": "Shikikan Sai-to (Danburi-no-Yu)",
+        "lead": "254-9 Akasakata, Hachimantai. Forest open-air bath. Day use ~¥720 adults (official — verify). TEL 0195-72-5344.",
+        "imgAlt": "Forest outdoor bath at Sai-to — Hachimantai snow-view soak"
+      }
+    },
+    "pairingTitle": "Morioka × ski × onsen",
+    "pairingLead": "Morning: Morioka → afternoon: long cruises at Appi → evening: Shirakaba-no-Yu → resort dinner → next day: beech forest trek.",
+    "pairingFoodCta": "2 food picks guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 food picks — Appi Kogen Ski Resort",
+      "description": "Gappei yakiniku and HOUSE APPI — dining guide with area map"
+    },
+    "backLink": "Back to Appi Kogen guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />Appi flavors",
+      "tagline": "Resort dining to local yakiniku — Morioka 60 min zone",
+      "imgAlt": "Snow resort scenery and dining at Appi Kogen"
+    },
+    "notice": "Hours, closures, reservations, and menus are on each facility's official site.",
+    "introTitle": "Why food completes the resort stay",
+    "introLead": "From international hotel dining to beloved local yakiniku — eat without leaving the resort footprint.",
+    "introBody": "Two picks for après dinner and next-morning brunch along your route.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Appi Kogen",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links or the map spot list at bottom right"
+    },
+    "linkOnsenGuide": "3 onsen picks guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "2 food picks near Appi",
+    "spotsLead": "Resort to local favorites — ordered for snow-trip loops.",
+    "spots": {
+      "gappei": {
+        "tag": "Local yakiniku · near resort",
+        "title": "Yakiniku Gappei",
+        "lead": "661-3 Appi Kogen, Hachimantai. Local favorite yakiniku for après-ski reward dinners. TEL 0173-29-4313 (official — verify).",
+        "imgAlt": "Yakiniku at Gappei — local Appi Kogen grill"
+      },
+      "house-appi": {
+        "tag": "In-resort · bakery",
+        "title": "HOUSE APPI",
+        "lead": "ANA Crowne Plaza Appi Kogen Tower 1F. Bakery restaurant — breakfast through light meals integrated with hotel stay. TEL 0195-73-5011 (official — verify).",
+        "imgAlt": "HOUSE APPI bakery restaurant — in-resort dining"
+      }
+    },
+    "pairingTitle": "One-day loop model",
+    "pairingLead": "Morning: Morioka → Appi → lunch on slopes → long cruise → Shirakaba-no-Yu → dinner at Gappei → next morning: HOUSE APPI brunch.",
+    "pairingOnsenCta": "3 onsen picks guide"
+  },
+  "guides": {
+    "powder": {
+      "title": "Aspirin snow at scale",
+      "body": "Dry inland Tohoku snow across 21 courses and ~45 km — West, Central, East, and Appi zones for weather-flex routing. Gondolas may close in high wind (check official ops)."
+    },
+    "morioka": {
+      "title": "60 minutes from Morioka",
+      "body": "~60 min from JR Morioka by car, bus, or train — realistic weekend skiing via shinkansen. Rental cars unlock Morioka dining and wider Hachimantai loops."
+    },
+    "resort": {
+      "title": "Resort stay model",
+      "body": "ANA Crowne Plaza Appi Kogen links directly to the slopes — near ski-in/out convenience. VIP products like BLACK PASS (30/day limit — verify on official site) target international premium guests."
+    }
+  },
+  "access": {
+    "postal": "〒028-7301",
+    "line": "117-17 Appi Kogen, Hachimantai, Iwate",
+    "note": "~60 min from JR Morioka by car, bus, or train (typical)",
+    "phone": "TEL 0195-73-1111",
+    "places": "",
+    "rentacarEyebrow": "東北屈指のスケールと極上アスピリンスノー、世界基準のプレミアムリゾートへ。",
+    "rentacarLink": "盛岡駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "安比高原スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Appi Kogen Ski Resort (mock)",
+    "location": "〒028-7301 117-17 Appi Kogen, Hachimantai, Iwate"
+  }
+}

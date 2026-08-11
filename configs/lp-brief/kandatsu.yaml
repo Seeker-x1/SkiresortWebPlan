@@ -1,0 +1,60 @@
+resortId: kandatsu
+schemaVersion: "2026-08-11"
+
+name:
+  ja: 神立スノーリゾート
+  en: Kandatsu Snow Resort
+region:
+  ja: 新潟県南魚沼郡湯沢町
+  en: Yuzawa, Niigata
+japowResortId: 307
+
+strategy:
+  ja: 首都圏から最短でアクセスできる、天然雪100%と深夜ロングナイターを誇る究極の利便性リゾート。
+  en: The ultimate convenient resort accessible from Tokyo, featuring 100% natural snow and late-night skiing.
+archetype: transit-onsen
+copyFrom: sichinohe-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 越後湯沢駅から車・バス約7分——天然雪100%と深夜2時までのロングナイター。
+    en: ~7 min by car or bus from Echigo-Yuzawa Station — 100% natural snow and skiing until 2 a.m.
+  badges: [powder, night, onsen]
+
+pillars:
+  - id: night
+    hook: { ja: 深夜2時までロングナイター, en: "Late-night skiing until 2 a.m." }
+  - id: powder
+    hook: { ja: 天然雪100%・最長3500m, en: "100% natural snow · 3,500 m runs" }
+  - id: onsen
+    hook: { ja: 神の湯とGROUND BASE, en: "Kami-no-Yu & GROUND BASE" }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+facts:
+  operator: 神立スノーリゾート
+  location: 〒949-6102 新潟県南魚沼郡湯沢町神立4121-1
+  phone: "025-788-0111"
+  lift: リフト5基（Aリフト等・公式要確認）
+  courses: 全16コース・最長滑走3,500m
+  elevation: 標高460〜1,000m（標高差540m）
+  access:
+    train: JR越後湯沢駅東口から無料シャトルバス約7分
+    car: 関越道湯沢ICから約3分
+
+map:
+  mode: schematic
+  sources: ["公式パンフレット", "configs/lp-brief/kandatsu.yaml"]
+  heroImage: images/maps/kandatsu-hero.png
+
+affiliates:
+  rentacar: echigoyuzawa_station
+
+humanReview:
+  - japowResortId 307 = 神立スノーリゾート
+  - 2025-2026シーズン料金・ナイター営業日
+  - シャトルバス時刻・駐車場

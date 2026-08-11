@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Shizukuishi Ski Resort",
+    "description": "~30 min from Morioka IC — legendary powder facing Mt. Iwate in an uncrowded, private mountain resort."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides"
+  },
+  "logo": "Shizukuishi Ski Resort",
+  "hero": {
+    "eyebrow": "Shizukuishi · Iwate",
+    "title": "Shizukuishi<br />Ski Resort",
+    "statLabel": "Vertical drop",
+    "statValue": "702",
+    "statUnit": "m",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Feb 11 9:00"
+  },
+  "transit": {
+    "eyebrow": "Drive",
+    "title": "30 minutes<br />from Morioka IC.",
+    "lead": "~30 minutes by car from Morioka IC on the Tohoku Expressway — a legendary resort facing Mt. Iwate. Pair with the Tohoku Shinkansen at Morioka Station for a premium weekend powder trip.",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Snowy drive from Morioka IC toward Shizukuishi — Iwate mountain scenery"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Morioka IC"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Lifts & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Shizukuishi",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "Private powder facing Mt. Iwate",
+      "lead": "Host of the 1993 Alpine World Championships — Alpine course to 36° and ungroomed zones. Near-zero lift lines mean you can own the deep snow on wide burns.",
+      "cta": "Open trail map",
+      "imgAlt": "Skier in deep powder at Shizukuishi — Mt. Iwate panorama"
+    },
+    "secondary": {
+      "title": "After skiing, Shizukuishi food & baths",
+      "lead": "Matsubokkuri gelato, local soba, Morioka reimen yakiniku — step off the slopes into a food loop and Amihari hot springs.",
+      "cta": "Food guide"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby hot springs",
+    "title": "Amihari onsen &<br />Shizukuishi baths",
+    "lead": "From sulfur springs at Arine Sanso to forest rotenburo at Yukotan-no-Mori and Takakura Onsen in the Prince Hotel — post-ski recovery is easy to plan.",
+    "whisper": "Some guests find the Prince Hotel bath limited — routing to Amihari's hidden springs on the way home is a local favorite.",
+    "cta": "3 onsen picks guide",
+    "imgAlt": "Steam from snow-view outdoor bath — Shizukuishi and Amihari onsen"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 onsen picks — Shizukuishi Ski Resort",
+      "description": "Arine Sanso, Yukotan-no-Mori, Takakura Onsen — hot-spring loop guide for Shizukuishi and Amihari"
+    },
+    "backLink": "Back to Shizukuishi guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />soak.",
+      "tagline": "Morioka IC 30 min · Shizukuishi food & secret springs",
+      "imgAlt": "Steam from snow-view outdoor bath — Shizukuishi area onsen"
+    },
+    "notice": "Day-use hours, fees, and seasonal closures are on each facility's official site. Allow buffer time when lifts close for wind.",
+    "introTitle": "Why onsen anchors the Shizukuishi stay",
+    "introLead": "From Amihari sulfur springs to forest baths — recovery spreads across the whole area, not just the resort.",
+    "introBody": "Three picks within ~30 minutes by car, ordered for easy post-ski routing.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Shizukuishi",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links or the map spot list at bottom right"
+    },
+    "linkFoodGuide": "2 food picks guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "3 onsen near Shizukuishi & Amihari",
+    "spotsLead": "Sulfur classics to resort-linked baths — ordered for post-ski loops.",
+    "regions": {
+      "amihari": "Amihari Onsen area",
+      "shizukuishi": "Shizukuishi resort"
+    },
+    "spots": {
+      "arine": {
+        "tag": "Sulfur spring · basin view",
+        "title": "Amihari Onsen Arine Sanso",
+        "lead": "13-7 Komagura, Nagayama, Shizukuishi. Milky sulfur water and Shizukuishi basin views. Day use available (verify on official site). TEL 019-693-3232.",
+        "imgAlt": "Sulfur bath and basin view at Arine Sanso — Amihari Onsen"
+      },
+      "yukotan": {
+        "tag": "Forest rotenburo · hospitality",
+        "title": "Minami-Amihari Yukotan-no-Mori",
+        "lead": "3-6 Nekozawa, Nagayama, Shizukuishi. Forest open-air bath with warm hospitality. Day use available (verify). TEL 019-693-3600.",
+        "imgAlt": "Forest outdoor bath at Yukotan-no-Mori — South Amihari"
+      },
+      "takakura": {
+        "tag": "Resort-linked · Takakura",
+        "title": "Shizukuishi Takakura Onsen (Prince Hotel)",
+        "lead": "Takakura Onsen, Shizukuishi. Open-air bath at Shizukuishi Prince Hotel — convenient right after skiing. TEL 019-693-1111 (verify).",
+        "imgAlt": "Open-air bath at Takakura Onsen — inside Prince Hotel"
+      }
+    },
+    "pairingTitle": "Morioka × ski × onsen",
+    "pairingLead": "Morning: Morioka IC → Shizukuishi → afternoon: powder & CAT tour → Matsubokkuri gelato → evening: Arine sulfur bath → night: Morioka reimen yakiniku.",
+    "pairingFoodCta": "2 food picks guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 food picks — Shizukuishi Ski Resort",
+      "description": "Matsubokkuri and Yamajyu soba — Shizukuishi dining guide with area map"
+    },
+    "backLink": "Back to Shizukuishi guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />Shizukuishi flavors",
+      "tagline": "Gelato and soba — Morioka IC 30 min food loop",
+      "imgAlt": "Shizukuishi snow scenery and local food"
+    },
+    "notice": "Hours, closures, reservations, and menus are on each facility's official site.",
+    "introTitle": "Why food completes the Shizukuishi loop",
+    "introLead": "From Matsubokkuri — one of Iwate's top three gelato shops — to beloved local soba, you don't have to rely on slope food alone.",
+    "introBody": "Two picks for après dessert and evening meals along your route.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Shizukuishi",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links or the map spot list at bottom right"
+    },
+    "linkOnsenGuide": "3 onsen picks guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "2 food picks near Shizukuishi",
+    "spotsLead": "Famous gelato to hand-cut soba — ordered for snow-trip loops.",
+    "spots": {
+      "matsubokkuri": {
+        "tag": "Iwate top-3 gelato · queue favorite",
+        "title": "Matsubokkuri Ice Cream Farm",
+        "lead": "70-48 Hayasaka, Nagayama, Shizukuishi. Fresh milk and seasonal gelato — perfect in-car dessert after skiing. TEL 019-691-5030.",
+        "imgAlt": "Handmade gelato at Matsubokkuri — Shizukuishi specialty"
+      },
+      "yamajyu": {
+        "tag": "Hand-cut soba · local classic",
+        "title": "Yamajyu Hand-cut Soba",
+        "lead": "179-7 Takamaeda, Nagayama, Shizukuishi. A longtime soba shop in Shizukuishi's competitive soba scene. TEL 019-691-1158 (verify).",
+        "imgAlt": "Hand-cut soba at Yamajyu — local Shizukuishi noodle shop"
+      }
+    },
+    "pairingTitle": "One-day loop model",
+    "pairingLead": "Morning: Morioka IC → Shizukuishi powder → Matsubokkuri gelato → Arine onsen → Morioka reimen yakiniku for dinner.",
+    "pairingOnsenCta": "3 onsen picks guide"
+  },
+  "guides": {
+    "powder": {
+      "title": "Legendary powder & CAT tours",
+      "body": "Ungroomed zones and snowcat (CAT) tours reach premium powder beyond regular lifts. Skiing the 1993 World Championship course is a story core skiers seek."
+    },
+    "morioka": {
+      "title": "~30 min from Morioka IC",
+      "body": "~30 minutes by car from Morioka IC — pair with JR Morioka and a rental car for wider loops to Morioka city, Appi Kogen, and Amihari."
+    },
+    "family": {
+      "title": "Kids free & Snow Land",
+      "body": "Elementary-age lift tickets are free all season — Shizukuishi Snow Land offers moving walkways and snow play. Parents can take CAT tours while kids enjoy safe snow programs."
+    }
+  },
+  "access": {
+    "postal": "〒020-0593",
+    "line": "Takakura Onsen, Shizukuishi, Iwate",
+    "note": "~30 min by car from Morioka IC (typical)",
+    "phone": "TEL 019-693-1111",
+    "places": "",
+    "rentacarEyebrow": "世界が認めた秀峰のパウダーと、混雑無縁のプライベート空間を誇るプレミアム・マウンテンリゾート。",
+    "rentacarLink": "盛岡駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "雫石スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Shizukuishi Ski Resort (mock)",
+    "location": "〒020-0593 Takakura Onsen, Shizukuishi, Iwate"
+  }
+}

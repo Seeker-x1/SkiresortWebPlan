@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Nozawa Onsen Snow Resort",
+    "description": "~25 min by bus from Iiyama Station — 100% natural JAPOW and 13 historic soto-yu baths in Japan's iconic onsen snow village."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides"
+  },
+  "logo": "Nozawa Onsen Snow Resort",
+  "hero": {
+    "eyebrow": "Nozawa Onsen · Nagano",
+    "title": "Nozawa Onsen<br />Snow Resort",
+    "statLabel": "Public baths",
+    "statValue": "13",
+    "statUnit": "",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Feb 11 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "From Iiyama,<br />25 min by bus.",
+    "lead": "~25 minutes by bus from JR Iiyama Station — step off the slopes into a walkable onsen village. Pair with the Hokuriku Shinkansen for realistic weekend snow-and-bath trips from Tokyo.",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Winter bus on snowy road from Iiyama Station toward Nozawa Onsen ski resort"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Iiyama Station"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Lifts & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Nozawa",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "Natural powder & forest long runs",
+      "lead": "One of Japan's deepest snow belts — Yamabiko's ungroomed zones and forest lines up to ~10 km. Nagasaka gondola capacity and season-long premium snow keep core fans coming back.",
+      "cta": "Open trail map",
+      "imgAlt": "Skier in deep powder on forest run at Nozawa Onsen"
+    },
+    "secondary": {
+      "title": "After skiing, 13 soto-yu",
+      "lead": "Thirteen communal bathhouses dot the village below the slopes — from Oyu's wooden architecture to coin-donation outdoor baths. An après culture other resorts cannot copy.",
+      "cta": "Onsen guide"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby hot springs",
+    "title": "13 soto-yu &<br />village nights",
+    "lead": "Oyu and other 100% spring-fed communal baths, swimsuit-friendly Sparena, and Furusato-no-Yu near Ogama — easy post-ski loops through the onsen town.",
+    "whisper": "Soto-yu are cared for by local bath cooperatives. Rinse before soaking and bring a small donation.",
+    "cta": "3 onsen picks guide",
+    "imgAlt": "Snow-framed wooden soto-yu bathhouse in Nozawa Onsen village"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 onsen picks — Nozawa Onsen Snow Resort",
+      "description": "Oyu, Sparena, Furusato-no-Yu — Nozawa Onsen bath circuit guide"
+    },
+    "backLink": "Back to Nozawa guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />soak.",
+      "tagline": "Iiyama bus 25 min · 13-bath village culture",
+      "imgAlt": "Snow-view wooden soto-yu — Nozawa Onsen bathhouse"
+    },
+    "notice": "Bath manners, hours, and day-use rules are on each facility's official site. Confirm donation and rinsing rules before visiting soto-yu.",
+    "introTitle": "Why baths anchor the Nozawa stay",
+    "introLead": "The ski village and onsen town share the same valley — après is a walk, not a shuttle.",
+    "introBody": "Three picks from iconic communal baths to large day-use facilities, ordered for post-ski routing.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Nozawa Onsen",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links or the map spot list at bottom right"
+    },
+    "linkFoodGuide": "2 food picks guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "3 Nozawa onsen picks",
+    "spotsLead": "From symbol Oyu to large day baths — ordered for post-ski loops.",
+    "regions": {
+      "village": "Onsen town",
+      "resort": "Resort foot"
+    },
+    "spots": {
+      "oyu": {
+        "tag": "Soto-yu · symbol",
+        "title": "Nozawa Onsen Oyu (public bath)",
+        "lead": "Toyogo, Nozawa Onsen Village. The village symbol — wooden communal bathhouse. Donation-based spring water (verify on site). Tourism association TEL 0269-85-3155.",
+        "imgAlt": "Wooden Oyu bathhouse — symbol soto-yu of Nozawa Onsen"
+      },
+      "sparena": {
+        "tag": "Large day bath · swimsuit OK",
+        "title": "Nozawa Onsen Sparena",
+        "lead": "Swimsuit large outdoor bath, pool, and sauna — family-friendly day recovery. TEL 0269-85-3166 (resort common line — verify).",
+        "imgAlt": "Sparena outdoor bath — large day facility at Nozawa Onsen"
+      },
+      "furusato": {
+        "tag": "Day-use · near Ogama",
+        "title": "Ogama Furusato-no-Yu",
+        "lead": "Day-use bath with showers — hot and mild pools plus outdoor bath near Ogama spring. TEL 0269-85-3700 (verify).",
+        "imgAlt": "Furusato-no-Yu outdoor bath near Ogama"
+      }
+    },
+    "pairingTitle": "Iiyama × ski × soto-yu",
+    "pairingLead": "Morning: bus from Iiyama → afternoon: Yamabiko powder → evening: LIBUSHI craft beer → night: Oyu and bath hopping → next morning: Ogama viewpoint.",
+    "pairingFoodCta": "2 food picks guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 food picks — Nozawa Onsen Snow Resort",
+      "description": "LIBUSHI and Atarashiya — Nozawa dining guide with area map"
+    },
+    "backLink": "Back to Nozawa guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />village flavors",
+      "tagline": "Craft beer and classic washoku — Iiyama 25 min night loop",
+      "imgAlt": "Nozawa Onsen snow scenery and local food"
+    },
+    "notice": "Hours, closures, reservations, and menus are on each facility's official site. Book dinner in peak season when possible.",
+    "introTitle": "Why food completes the Nozawa night",
+    "introLead": "From a craft brewery to Michelin-trained Italian and legacy unagi — the onsen town nightlife starts when you leave the slopes.",
+    "introBody": "Two picks from apéro to dinner along your evening route.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Nozawa Onsen",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links"
+    },
+    "linkOnsenGuide": "3 onsen picks guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "2 Nozawa food picks",
+    "spotsLead": "Standing craft beer to legacy washoku — ordered for snow-trip nights.",
+    "spots": {
+      "libushi": {
+        "tag": "Craft beer · brewery",
+        "title": "LIBUSHI (Ribushi)",
+        "lead": "9347 Toyogo, Nozawa Onsen. Craft beer brewed with local spring water — standing apéro before Oyu. TEL 080-6930-3992. http://libushi.com/",
+        "imgAlt": "Craft beer at LIBUSHI brewery bar in Nozawa Onsen"
+      },
+      "atarashiya": {
+        "tag": "Legacy · unagi & yakitori",
+        "title": "Atarashiya",
+        "lead": "8866 Toyogo, Nozawa Onsen. Famous for unagi and yakitori rice bowls — Showa-era atmosphere for classic village dinner. TEL 0269-85-2044 (verify).",
+        "imgAlt": "Washoku at Atarashiya — legacy Nozawa restaurant"
+      }
+    },
+    "pairingTitle": "One-day loop model",
+    "pairingLead": "Morning: bus from Iiyama → midday powder → Sparena soak → LIBUSHI beer → Atarashiya dinner → two soto-yu stops.",
+    "pairingOnsenCta": "3 onsen picks guide"
+  },
+  "guides": {
+    "powder": {
+      "title": "Natural powder & forest lines",
+      "body": "297 ha of skiable terrain — Yamabiko ungroomed zones, self-responsibility areas, and forest runs up to ~10 km. Deep-snow quality in a premier heavy-snow region (verify on official sources)."
+    },
+    "iiyama": {
+      "title": "~25 min bus from Iiyama",
+      "body": "~25 min by bus from JR Iiyama Station — pair with Hokuriku Shinkansen. Rent at Iiyama Station to loop Shiga Kogen, Madarao, and other northern Nagano resorts."
+    },
+    "onsen": {
+      "title": "13-bath village culture",
+      "body": "Thirteen communal baths managed by local cooperatives since the Edo period — donation entry and straight-from-source water. Oyu architecture, Ogama village life, and onsen eggs complete the snow-and-culture package."
+    }
+  },
+  "access": {
+    "postal": "〒389-2502",
+    "line": "Toyogo, Nozawa Onsen Village, Shimotakai, Nagano",
+    "note": "~25 min by bus from JR Iiyama Station (typical)",
+    "phone": "TEL 0269-85-3166",
+    "places": "",
+    "rentacarEyebrow": "100%天然パウダーと13の外湯巡り。エコエネルギーが彩る、伝統と革新の温泉スノーリゾート。",
+    "rentacarLink": "飯山駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "野沢温泉スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Nozawa Onsen Snow Resort (mock)",
+    "location": "〒389-2502 Toyogo, Nozawa Onsen Village, Shimotakai, Nagano"
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "title": "Naeba Ski Resort",
+    "description": "~40–45 min by bus from Echigo-Yuzawa Station — 134 ha Mt.Naeba with 4,000 m runs. Naeba Prince Hotel ski-in, Dragon Gondola to Kagura, après at Yukisasa baths and local dining."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides",
+    "mapHint": "Schematic (may be unverified)"
+  },
+  "logo": "Naeba Ski Resort",
+  "hero": {
+    "eyebrow": "Yuzawa · Niigata",
+    "title": "Naeba<br />Ski Resort",
+    "statLabel": "Bus from station",
+    "statValue": "40",
+    "statUnit": "min",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Aug 11 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "From Echigo-Yuzawa,<br />~40–45 min by bus.",
+    "lead": "~40–45 minutes by local or shuttle bus from Joetsu Shinkansen Echigo-Yuzawa Station to Naeba Prince Hotel — stay ski-in/ski-out at 0 min from your room, or day-trip the groomed wide runs and Dragon Gondola link to Kagura.",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Winter bus on snowy mountain road — journey from Echigo-Yuzawa Station to Naeba"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Echigo-Yuzawa Station"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Lifts & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Naeba",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "Mt.Naeba scale",
+      "lead": "134 ha and 4,000 m longest run — Japan's 5,481 m Dragon Gondola links Naeba to Kagura for one of the country's largest ski networks. From gentle hotel-front beginner terrain to 39° Splash Bowl, more than a single day can cover.",
+      "cta": "Open trail map",
+      "imgAlt": "Dragon Gondola crossing snowy ridges — panoramic Mt.Naeba terrain"
+    },
+    "secondary": {
+      "title": "After skiing, baths & local food",
+      "lead": "Step outside the hotel bubble to Yukisasa-no-Yu brown-spring baths and neighborhood spots like Wakakiya and Ikoi — après loops that extend beyond resort-only stays.",
+      "cta": "Onsen guide"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby hot springs",
+    "title": "Yukisasa baths &<br />Naeba onsen loop",
+    "lead": "From in-resort spas to day-use springs with a hidden-hot-spring feel — recovery and evening walks on one line.",
+    "whisper": "Confirm day-use rules and hours on each facility's official site. Watch winter road conditions.",
+    "cta": "3 onsen picks guide",
+    "imgAlt": "Snow-framed outdoor bath — Yukisasa-no-Yu at Naeba"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 onsen picks — Naeba Ski Resort",
+      "description": "Yukisasa-no-Yu, Shukuba-no-Yu, Kaikake Onsen — Naeba bath circuit guide"
+    },
+    "backLink": "Back to Naeba guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />into the baths.",
+      "tagline": "40 min from Echigo-Yuzawa · Naeba flowing springs",
+      "imgAlt": "Snow-framed bathhouse — Naeba onsen circuit"
+    },
+    "notice": "Day-use rules, hours, and fees are set by each facility. Check winter road conditions before driving.",
+    "introTitle": "Why baths anchor Naeba",
+    "introLead": "Beyond hotel spas — brown flowing springs and Mikuni Pass communal baths. Three easy après stops after your last run.",
+    "introBody": "Extend from resort-only stays into local baths and dining in the evening.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchors — multiple layers at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen, and anchors near Naeba",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchors",
+      "hint": "Food and onsen layers can show together",
+      "mobileHint": "If pins overlap, use list links on the map"
+    },
+    "linkFoodGuide": "2 food picks guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "Naeba onsen 3 picks",
+    "spotsLead": "Flowing day-use springs to communal baths — easy après order.",
+    "regions": {
+      "resort": "Naeba area",
+      "town": "Mikuni Pass"
+    },
+    "spots": {
+      "yukisasa": {
+        "tag": "Flowing spring · day use",
+        "title": "Naeba Onsen Yukisasa-no-Yu",
+        "lead": "355 Mikuni, Yuzawa. Brown flowing spring with a hidden-bath feel outside the hotel. TEL 025-780-9500. https://yukisasa.net/",
+        "imgAlt": "Yukisasa-no-Yu — flowing spring at Naeba"
+      },
+      "shukuba": {
+        "tag": "Communal bath · historic",
+        "title": "Ni-kai Shukuba-no-Yu",
+        "lead": "537 Mikuni, Yuzawa. Local communal bath evoking the Mikuni Kaido post town — a reason to stay beyond slopes-only. Confirm hours officially.",
+        "imgAlt": "Shukuba-no-Yu communal bath at Mikuni Pass"
+      },
+      "kaikake": {
+        "tag": "Hidden spring · day use",
+        "title": "Kaikake Onsen",
+        "lead": "686 Mitsumata, Yuzawa. A short drive from Naeba for a different après soak. Confirm hours officially.",
+        "imgAlt": "Kaikake Onsen — Yuzawa hidden hot spring"
+      }
+    },
+    "pairingTitle": "Naeba snow · bath · local food loop",
+    "pairingLead": "Morning family lessons at hotel-front runs → afternoon Dragon Gondola to Kagura → Yukisasa-no-Yu → Wakakiya or Ikoi for dinner → Shukuba-no-Yu to finish.",
+    "pairingFoodCta": "2 food picks guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 food picks — Naeba Ski Resort",
+      "description": "Wakakiya and Ikoi — Naeba area food guide"
+    },
+    "backLink": "Back to Naeba guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />Naeba dining",
+      "tagline": "Local canteens & izakaya — nights outside the hotel",
+      "imgAlt": "Snowy Naeba village and local dining atmosphere"
+    },
+    "notice": "Hours, holidays, reservations, and menus are set by each restaurant. Book ahead in peak season.",
+    "introTitle": "Why food anchors Naeba",
+    "introLead": "Beyond resort-priced hotel dining — neighborhood canteens and izakaya that improve après value and area circulation.",
+    "introBody": "Two dinner-friendly picks along a natural loop.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchors — multiple layers at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen, and anchors near Naeba",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchors",
+      "hint": "Food and onsen layers can show together",
+      "mobileHint": "If pins overlap, use list links on the map"
+    },
+    "linkOnsenGuide": "3 onsen picks guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "Naeba food 2 picks",
+    "spotsLead": "Ramen teishoku to local izakaya — snow-night friendly order.",
+    "spots": {
+      "wakakiya": {
+        "tag": "Local · teishoku",
+        "title": "Wakakiya Shokudo",
+        "lead": "69-1 Mikuni, Yuzawa. Beloved ramen and set meals — a go-to when you want dinner outside the hotel. TEL 025-789-2041. https://naeba.jp/restaurant/wakakiya/",
+        "imgAlt": "Wakakiya Shokudo — neighborhood canteen at Naeba"
+      },
+      "ikoi": {
+        "tag": "Izakaya · ramen",
+        "title": "Ikoi Shokudo",
+        "lead": "211-2 Mikuni, Yuzawa. Late-night izakaya and ramen for après hunger. TEL 025-783-3217. https://naeba.jp/restaurant/ikoi/",
+        "imgAlt": "Ikoi Shokudo — local izakaya at Naeba"
+      }
+    },
+    "pairingTitle": "One-day loop model",
+    "pairingLead": "Morning kids' lessons → Dragon Gondola to Kagura → Yukisasa-no-Yu → Wakakiya or Ikoi dinner → Shukuba-no-Yu finish.",
+    "pairingOnsenCta": "3 onsen picks guide"
+  },
+  "guides": {
+    "dragon": {
+      "title": "Dragon Gondola 5,481 m",
+      "body": "Japan's longest-class gondola links Naeba and Kagura — Mt.Naeba shared tickets unlock backcountry-scale distance in one day. May close in high winds (check official status)."
+    },
+    "prince-hotel": {
+      "title": "0 min from Naeba Prince Hotel",
+      "body": "Naeba Prince Hotel towers at the base — rental, school, and dining under one roof, with free lift passes for elementary kids and under via the Kids Free Program."
+    },
+    "night-hop": {
+      "title": "Naeba night hopping",
+      "body": "Leave the hotel bubble for Yukisasa-no-Yu, Wakakiya, Ikoi, and yakiniku Tokichi — a local bath-and-bar loop similar to Nozawa's hashigo culture, designed inside the Naeba area."
+    }
+  },
+  "access": {
+    "postal": "〒949-6102",
+    "line": "202 Mikuni, Yuzawa, Minamiuonuma, Niigata",
+    "note": "~40–45 min by local or shuttle bus from Joetsu Shinkansen Echigo-Yuzawa Station; ~25 min from Yuzawa IC on Kan-Etsu Expressway",
+    "phone": "TEL 025-789-4117",
+    "places": "",
+    "rentacarEyebrow": "圧倒的スケールのゲレンデと直結ホテルの利便性に、地元温泉と美食の回遊性を加えた「24時間遊べるエンタメスノーリゾート」への進化。",
+    "rentacarLink": "越後湯沢駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "苗場スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Naeba Ski Resort (draft)",
+    "location": "〒949-6102 202 Mikuni, Yuzawa, Niigata",
+    "guideNotice": "Draft guide for planning. Photos and illustrations are atmospheric references — actual slopes and facilities may differ. Confirm fees, hours, and road rules on official sources."
+  }
+}

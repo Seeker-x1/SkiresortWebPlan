@@ -318,7 +318,7 @@ function main() {
   validateResortGuides(registryRaw, resortGuides);
   const registry = mergeJapowIds(registryRaw, resortGuides);
 
-  rmSync(OUT, { recursive: true, force: true });
+  rmSync(OUT, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
   mkdirSync(OUT, { recursive: true });
 
   // Hub (guides/hub/ → public/index.html)

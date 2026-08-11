@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Togakushi Ski Resort",
+    "description": "~42 min by car from Nagano Station — magical powder snow and the spiritual mystery of Togakushi Shrine."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides"
+  },
+  "logo": "Togakushi Ski Resort",
+  "hero": {
+    "eyebrow": "Togakushi · Nagano",
+    "title": "Togakushi<br />Ski Resort",
+    "statLabel": "Vertical drop",
+    "statValue": "528",
+    "statUnit": "m",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Aug 11 9:00"
+  },
+  "transit": {
+    "eyebrow": "Drive",
+    "title": "42 minutes<br />from Nagano Station.",
+    "lead": "Pick up a rental car at Nagano Station and drive ~42 minutes to base elevation 1,220 m — \"magical powder snow\" and Togakushi ridge panoramas. Pair with the Hokuriku Shinkansen for a realistic weekend powder trip.",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Snowy drive from Nagano toward Togakushi — Shinshu mountain scenery"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Nagano Station"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Lifts & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Togakushi",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "Magical powder & Champion run",
+      "lead": "Dry powder at 1,220 m base and the 31° groomed burn on Champion Course. Less crowding than Hakuba mega-resorts — premium snow and carving for advanced skiers.",
+      "cta": "Open trail map",
+      "imgAlt": "Skier in light powder on Togakushi Champion course — mountain panorama"
+    },
+    "secondary": {
+      "title": "After skiing, soba & shrines",
+      "lead": "From queue-famous soba at Uzuraya to cedar avenues at Togakushi Shrine — ski and cultural history in one day loop, unique to Nagano's doorstep.",
+      "cta": "Food guide"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby hot springs",
+    "title": "Kamikokage onsen &<br />Togakushi baths",
+    "lead": "From Yugokan at the Chusha base to Mure Onsen Tengu-no-Yakata and Susobana Ururuikan — post-ski recovery is easy to plan across the area.",
+    "whisper": "On shrine pilgrimage peak days, allow extra time for evening baths.",
+    "cta": "3 onsen picks guide",
+    "imgAlt": "Steam from snow-view outdoor bath — Togakushi area onsen"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 onsen picks — Togakushi Ski Resort",
+      "description": "Yugokan, Tengu-no-Yakata, Ururuikan — hot-spring loop guide for Togakushi and Nagano"
+    },
+    "backLink": "Back to Togakushi guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />soak.",
+      "tagline": "Nagano Station 42 min · Togakushi soba & secret springs",
+      "imgAlt": "Steam from snow-view outdoor bath — Togakushi area onsen"
+    },
+    "notice": "Day-use hours, fees, and seasonal closures are on each facility's official site.",
+    "introTitle": "Why onsen anchors the Togakushi stay",
+    "introLead": "From day-use baths at the base to famous springs on the return route — recovery spreads beyond the resort alone.",
+    "introBody": "Three picks within ~30–50 minutes by car, ordered for easy post-ski routing.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Togakushi",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links or the map spot list at bottom right"
+    },
+    "linkFoodGuide": "2 food picks guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "3 onsen near Togakushi & Nagano",
+    "spotsLead": "Base-area baths to return-route classics — ordered for post-ski loops.",
+    "regions": {
+      "togakushi": "Togakushi area",
+      "nagano": "Nagano city"
+    },
+    "spots": {
+      "yugokan": {
+        "tag": "Base area · day use",
+        "title": "Togakushi Kamikokage Onsen Yugokan",
+        "lead": "3182 Togakushi, Nagano. Day-use bath at the Chusha base — convenient right after skiing. TEL 026-254-1126 (verify).",
+        "imgAlt": "Yugokan outdoor bath — Kamikokage Onsen at Togakushi"
+      },
+      "tengu": {
+        "tag": "Hidden spring · Iizuna",
+        "title": "Mure Onsen Tengu-no-Yakata",
+        "lead": "2755-345 Kawakami, Iizuna, Nagano. ~30 min by car from Togakushi — forest hot spring with day use (verify). TEL 026-253-3740.",
+        "imgAlt": "Tengu-no-Yakata — forest hot spring in Mure"
+      },
+      "urumoi": {
+        "tag": "Natural spring · Nagano city",
+        "title": "Susobana Ururuikan",
+        "lead": "98 Tsumashina, Nagano. Natural hot spring on the return to Nagano city — final recovery before car return. TEL 026-237-4126.",
+        "imgAlt": "Ururuikan indoor bath — Susobana natural hot spring"
+      }
+    },
+    "pairingTitle": "Nagano × ski × onsen",
+    "pairingLead": "Morning: rental from Nagano Station → afternoon: Champion powder → Uzuraya soba → evening: Yugokan bath → next morning: Togakushi Shrine visit.",
+    "pairingFoodCta": "2 food picks guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 food picks — Togakushi Ski Resort",
+      "description": "Uzuraya and Sobanomi — Togakushi soba guide with area map"
+    },
+    "backLink": "Back to Togakushi guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />Togakushi soba",
+      "tagline": "One of Japan's top three soba regions — Nagano Station 42 min food loop",
+      "imgAlt": "Togakushi soba — warm buckwheat noodles after skiing"
+    },
+    "notice": "Hours, closures, reservations, and menus are on each facility's official site.",
+    "introTitle": "Why food completes the Togakushi loop",
+    "introLead": "Togakushi is one of Japan's three great soba regions. Shrine-area shops draw lines even in winter.",
+    "introBody": "Two picks for lunch after runs and dinner on the way home.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Togakushi",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links or the map spot list at bottom right"
+    },
+    "linkOnsenGuide": "3 onsen picks guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "2 Togakushi soba picks",
+    "spotsLead": "Queue-famous shop to longtime classic — ordered for snow-trip loops.",
+    "spots": {
+      "uzuraya": {
+        "tag": "Queue favorite · stone mill",
+        "title": "Uzuraya",
+        "lead": "3229 Togakushi, Nagano. Hand-ground stone-mill soba — expect lines even in winter. TEL 026-254-2219.",
+        "imgAlt": "Uzuraya Togakushi soba — famous stone-mill shop"
+      },
+      "sobanomi": {
+        "tag": "Classic · Togakushi soba",
+        "title": "Sobanomi",
+        "lead": "3510-25 Togakushi, Nagano. A longtime Togakushi soba shop — warm pure buckwheat noodles. TEL 026-254-2102.",
+        "imgAlt": "Sobanomi hand-cut soba — classic Togakushi shop"
+      }
+    },
+    "pairingTitle": "One-day loop model",
+    "pairingLead": "Morning: rental from Nagano → Champion course powder → Uzuraya soba → shrine visit → Yugokan bath at night.",
+    "pairingOnsenCta": "3 onsen picks guide"
+  },
+  "guides": {
+    "powder": {
+      "title": "Magical powder & Champion",
+      "body": "Dry powder at 1,220 m base and Champion Course to 31°. 19 runs, 3,000 m max length — a skilled local resort for advanced skiers avoiding mega-resort crowds."
+    },
+    "nagano": {
+      "title": "~42 min from Nagano Station",
+      "body": "~42 min by car from Nagano Station (Zenkoji exit bus area). Pair JR Nagano with a rental car for wider loops to Togakushi Shrine, Shiga Kogen, and Hakuba. Route bus ~60–80 min (Alpico — verify)."
+    },
+    "shrine": {
+      "title": "Ninja slope & Togakushi Shrine",
+      "body": "Ninja Slope with a moving walkway is popular for families. After skiing, cedar avenues at Togakushi Shrine and famous soba shops — sport and cultural history in one day."
+    }
+  },
+  "access": {
+    "postal": "〒381-4101",
+    "line": "3682 Togakushi, Nagano City, Nagano",
+    "note": "~42 min by car from Nagano Station (typical)",
+    "phone": "TEL 026-254-2106",
+    "places": "",
+    "rentacarEyebrow": "「魔法の粉雪」と戸隠神社の神秘を巡る、歴史と絶景のスノーリゾート。",
+    "rentacarLink": "長野駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "戸隠スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Togakushi Ski Resort (mock)",
+    "location": "〒381-4101 3682 Togakushi, Nagano City, Nagano"
+  }
+}

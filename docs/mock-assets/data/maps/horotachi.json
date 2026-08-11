@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "2026-08-11",
+  "id": "horotachi",
+  "name": { "ja": "ほろたちスキー場", "en": "Horotachi Ski Area" },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "configs/lp-brief/horotachi.yaml",
+    "batch-asahikawa-area-6",
+    "pref.hokkaido.lg.jp 施設一覧"
+  ],
+  "updatedAt": "2026-08-11T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/horotachi-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-pair",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": { "ja": "ペアリフト", "en": "Pair lift" },
+      "shortLabel": { "ja": "ペア", "en": "Pair" },
+      "meta": {
+        "ja": { "全長": "635m", "区分": "メイン" },
+        "en": { "Length": "635 m", "Zone": "Main" }
+      }
+    },
+    {
+      "id": "trail-horotachi",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": { "ja": "ほろたちコース", "en": "Horotachi course" },
+      "shortLabel": { "ja": "ほろたち", "en": "Horotachi" },
+      "meta": {
+        "ja": { "最大斜度": "44°", "雪面": "非圧雪" },
+        "en": { "Max slope": "44°", "Surface": "Ungroomed" }
+      }
+    },
+    {
+      "id": "trail-shirakaba",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate-advanced",
+      "label": { "ja": "しらかばコース", "en": "Shirakaba course" },
+      "shortLabel": { "ja": "しらかば", "en": "Shirakaba" },
+      "meta": {
+        "ja": { "最大斜度": "26°", "雪面": "非圧雪" },
+        "en": { "Max slope": "26°", "Surface": "Ungroomed" }
+      }
+    },
+    {
+      "id": "trail-karamatsu",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": { "ja": "からまつコース", "en": "Karamatsu course" },
+      "shortLabel": { "ja": "からまつ", "en": "Karamatsu" },
+      "meta": {
+        "ja": { "最大斜度": "26°", "雪面": "圧雪" },
+        "en": { "Max slope": "26°", "Surface": "Groomed" }
+      }
+    },
+    {
+      "id": "trail-forest",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": { "ja": "林間コース", "en": "Forest course" },
+      "shortLabel": { "ja": "林間", "en": "Forest" },
+      "meta": {
+        "ja": { "滑走距離": "約1,100m", "最大斜度": "18°" },
+        "en": { "Length": "~1,100 m", "Max slope": "18°" }
+      }
+    }
+  ]
+}

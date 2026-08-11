@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "appi-kogen",
+  "name": {
+    "ja": "安比高原スキー場",
+    "en": "Appi Kogen Ski Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "公式パンフレット",
+    "configs/lp-brief/appi-kogen.yaml"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/appi-kogen-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-central-quad",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "セントラルクワッド",
+        "en": "Central Quad"
+      },
+      "shortLabel": {
+        "ja": "クワッド",
+        "en": "Quad"
+      },
+      "meta": {
+        "ja": {
+          "区分": "セントラルエリア"
+        },
+        "en": {
+          "Zone": "Central area"
+        }
+      }
+    },
+    {
+      "id": "lift-sailer-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "セイラーゴンドラ",
+        "en": "Sailer Gondola"
+      },
+      "shortLabel": {
+        "ja": "ゴンドラ",
+        "en": "Gondola"
+      },
+      "meta": {
+        "ja": {
+          "区分": "山頂アクセス"
+        },
+        "en": {
+          "Zone": "Summit access"
+        }
+      }
+    },
+    {
+      "id": "lift-west-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "ウェストゴンドラ",
+        "en": "West Gondola"
+      },
+      "shortLabel": {
+        "ja": "Wゴンドラ",
+        "en": "W Gondola"
+      },
+      "meta": {
+        "ja": {
+          "区分": "ウェストエリア"
+        },
+        "en": {
+          "Zone": "West area"
+        }
+      }
+    },
+    {
+      "id": "trail-central-main",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "セントラルメイン",
+        "en": "Central main"
+      },
+      "shortLabel": {
+        "ja": "セントラル",
+        "en": "Central"
+      },
+      "meta": {
+        "ja": {
+          "雪面": "アスピリンスノー",
+          "備考": "ロングクルーズ"
+        },
+        "en": {
+          "Surface": "Aspirin snow",
+          "Note": "Long cruise"
+        }
+      }
+    },
+    {
+      "id": "trail-west-bowl",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate-advanced",
+      "label": {
+        "ja": "ウェストボウル",
+        "en": "West bowl"
+      },
+      "shortLabel": {
+        "ja": "ウェスト",
+        "en": "West"
+      },
+      "meta": {
+        "ja": {
+          "備考": "パウダー志向"
+        },
+        "en": {
+          "Note": "Powder-oriented"
+        }
+      }
+    },
+    {
+      "id": "trail-east-ridge",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "イーストリッジ",
+        "en": "East ridge"
+      },
+      "shortLabel": {
+        "ja": "イースト",
+        "en": "East"
+      },
+      "meta": {
+        "ja": {
+          "備考": "上級者向け"
+        },
+        "en": {
+          "Note": "Advanced terrain"
+        }
+      }
+    },
+    {
+      "id": "trail-appi-family",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "アッピファミリー",
+        "en": "Appi family"
+      },
+      "shortLabel": {
+        "ja": "アッピ",
+        "en": "Appi"
+      },
+      "meta": {
+        "ja": {
+          "備考": "初心者・家族向け"
+        },
+        "en": {
+          "Note": "Beginner & family"
+        }
+      }
+    }
+  ]
+}

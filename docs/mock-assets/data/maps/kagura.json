@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "kagura",
+  "name": {
+    "ja": "かぐらスキー場",
+    "en": "Kagura Ski Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "princehotels.co.jp",
+    "configs/lp-brief/kagura.yaml"
+  ],
+  "updatedAt": "2026-08-11T13:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/kagura-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-mitsumata-ropeway",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "みつまたロープウェー",
+        "en": "Mitsumata ropeway"
+      },
+      "shortLabel": {
+        "ja": "みつまたRW",
+        "en": "Mitsumata"
+      },
+      "meta": {
+        "ja": {
+          "区分": "麓〜みつまたエリア"
+        },
+        "en": {
+          "Zone": "Base to Mitsumata"
+        }
+      }
+    },
+    {
+      "id": "lift-kagura-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "かぐらゴンドラ",
+        "en": "Kagura gondola"
+      },
+      "shortLabel": {
+        "ja": "かぐらG",
+        "en": "Kagura G"
+      },
+      "meta": {
+        "ja": {
+          "区分": "かぐらメイン動脈"
+        },
+        "en": {
+          "Zone": "Main Kagura artery"
+        }
+      }
+    },
+    {
+      "id": "lift-goroma",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "かぐら第5ロマンス（ゴロマ）",
+        "en": "Kagura No.5 Romance (Goroma)"
+      },
+      "shortLabel": {
+        "ja": "ゴロマ",
+        "en": "Goroma"
+      },
+      "meta": {
+        "ja": {
+          "区分": "パウダー・BCゲート",
+          "備考": "ハイシーズン限定"
+        },
+        "en": {
+          "Zone": "Powder · BC gate",
+          "Note": "High season only"
+        }
+      }
+    },
+    {
+      "id": "lift-tashiro-ropeway",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "田代ロープウェー",
+        "en": "Tashiro ropeway"
+      },
+      "shortLabel": {
+        "ja": "田代RW",
+        "en": "Tashiro"
+      },
+      "meta": {
+        "ja": {
+          "区分": "田代エリア"
+        },
+        "en": {
+          "Zone": "Tashiro area"
+        }
+      }
+    },
+    {
+      "id": "trail-main-gelende",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "かぐらメインゲレンデ",
+        "en": "Kagura main slope"
+      },
+      "shortLabel": {
+        "ja": "メイン",
+        "en": "Main"
+      },
+      "meta": {
+        "ja": {
+          "距離": "6,000m",
+          "備考": "最長滑走距離（林間〜メイン〜ゴンドラ）"
+        },
+        "en": {
+          "Distance": "6,000 m",
+          "Note": "Longest run (forest–main–gondola)"
+        }
+      }
+    },
+    {
+      "id": "trail-ariesca",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "アリエスカコース",
+        "en": "Ariesca course"
+      },
+      "shortLabel": {
+        "ja": "アリエスカ",
+        "en": "Ariesca"
+      },
+      "meta": {
+        "ja": {
+          "備考": "田代湖を望む絶景"
+        },
+        "en": {
+          "Note": "Lake Tashiro panorama"
+        }
+      }
+    },
+    {
+      "id": "trail-family-tashiro",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "田代ファミリーコース",
+        "en": "Tashiro family course"
+      },
+      "shortLabel": {
+        "ja": "田代F",
+        "en": "Tashiro F"
+      },
+      "meta": {
+        "ja": {
+          "備考": "キッズフリー・初心者向け"
+        },
+        "en": {
+          "Note": "Kids free · beginners"
+        }
+      }
+    }
+  ]
+}

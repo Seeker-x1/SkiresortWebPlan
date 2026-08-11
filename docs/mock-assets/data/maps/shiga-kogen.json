@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "shiga-kogen",
+  "name": {
+    "ja": "志賀高原スキー場",
+    "en": "Shiga Kogen Mountain Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "公式パンフレット",
+    "configs/lp-brief/shiga-kogen.yaml"
+  ],
+  "updatedAt": "2026-06-13T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/shiga-kogen-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-resort-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "志賀高原リゾートゴンドラ",
+        "en": "Shiga Kogen Resort Gondola"
+      },
+      "shortLabel": {
+        "ja": "リゾート",
+        "en": "Resort"
+      },
+      "meta": {
+        "ja": {
+          "区分": "一の瀬・中央エリア"
+        },
+        "en": {
+          "Zone": "Ichinose central"
+        }
+      }
+    },
+    {
+      "id": "lift-buna-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "ブナ平ゴンドラ",
+        "en": "Buna-daira Gondola"
+      },
+      "shortLabel": {
+        "ja": "ブナ平",
+        "en": "Buna"
+      },
+      "meta": {
+        "ja": {
+          "区分": "蓮池エリア"
+        },
+        "en": {
+          "Zone": "Hasuike area"
+        }
+      }
+    },
+    {
+      "id": "lift-yokote-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "横手山ゴンドラ",
+        "en": "Yokote-yama Gondola"
+      },
+      "shortLabel": {
+        "ja": "横手山",
+        "en": "Yokote"
+      },
+      "meta": {
+        "ja": {
+          "区分": "標高2307m"
+        },
+        "en": {
+          "Zone": "Summit 2307 m"
+        }
+      }
+    },
+    {
+      "id": "lift-okushiga-gondola",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "奥志賀高原ゴンドラ",
+        "en": "Okushiga Kogen Gondola"
+      },
+      "shortLabel": {
+        "ja": "奥志賀",
+        "en": "Okushiga"
+      },
+      "meta": {
+        "ja": {
+          "区分": "奥志賀エリア"
+        },
+        "en": {
+          "Zone": "Okushiga area"
+        }
+      }
+    },
+    {
+      "id": "trail-central-main",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "中央メインコース",
+        "en": "Central main"
+      },
+      "shortLabel": {
+        "ja": "中央",
+        "en": "Central"
+      },
+      "meta": {
+        "ja": {
+          "距離": "最長6000m（迂回路含む）",
+          "備考": "ロングクルーズ"
+        },
+        "en": {
+          "Distance": "Up to 6 km",
+          "Note": "Long cruise"
+        }
+      }
+    },
+    {
+      "id": "trail-yokote-ridge",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate-advanced",
+      "label": {
+        "ja": "横手山リッジ",
+        "en": "Yokote ridge"
+      },
+      "shortLabel": {
+        "ja": "横手山",
+        "en": "Yokote"
+      },
+      "meta": {
+        "ja": {
+          "備考": "標高2307m・パウダー"
+        },
+        "en": {
+          "Note": "Summit powder"
+        }
+      }
+    },
+    {
+      "id": "trail-okushiga-bowl",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "advanced",
+      "label": {
+        "ja": "奥志賀ボウル",
+        "en": "Okushiga bowl"
+      },
+      "shortLabel": {
+        "ja": "奥志賀",
+        "en": "Okushiga"
+      },
+      "meta": {
+        "ja": {
+          "雪面": "非圧雪",
+          "備考": "上級者向け"
+        },
+        "en": {
+          "Surface": "Ungroomed",
+          "Note": "Advanced terrain"
+        }
+      }
+    }
+  ]
+}

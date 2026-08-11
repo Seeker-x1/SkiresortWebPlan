@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Kandatsu Snow Resort",
+    "description": "~7 min by car or bus from Echigo-Yuzawa Station — 100% natural snow, late-night skiing until 2 a.m., and Kami-no-Yu baths at the base."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides"
+  },
+  "logo": "Kandatsu Snow Resort",
+  "hero": {
+    "eyebrow": "Yuzawa · Niigata",
+    "title": "Kandatsu<br />Snow Resort",
+    "statLabel": "Longest run",
+    "statValue": "3,500",
+    "statUnit": "m",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Aug 11 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "From Echigo-Yuzawa,<br />7 min by car or bus.",
+    "lead": "~7 minutes by free shuttle from JR Echigo-Yuzawa Station East Exit — pair with the Joetsu Shinkansen for Friday-night departures and high-turnover skiing until late. ~3 min by car from Yuzawa IC.",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Snowy Echigo-Yuzawa Station and Shinkansen — winter trip to Kandatsu Snow Resort"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Echigo-Yuzawa Station"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Lifts & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Kandatsu",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "100% natural snow & late-night skiing",
+      "lead": "No artificial snow — 100% natural powder with late-night skiing until 2 a.m. on peak nights. Sixteen courses up to 3,500 m, a busy snow park, and ungroomed zones draw young snowboarders and park riders.",
+      "cta": "Open trail map",
+      "imgAlt": "Snowboarder in terrain park at Kandatsu Snow Resort on natural snow"
+    },
+    "secondary": {
+      "title": "After skiing, Kami-no-Yu",
+      "lead": "Kami-no-Yu inside GROUND BASE — Yuzawa's largest bathhouse at the center house. Late hours and nap rooms extend day trips without an on-mountain hotel.",
+      "cta": "Onsen guide"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby hot springs",
+    "title": "Kami-no-Yu &<br />Yuzawa bath loop",
+    "lead": "Finish at on-mountain Kami-no-Yu or extend to station-side communal baths and Ponshukan's sake bath — convenience and town walks in one snow day.",
+    "whisper": "Check locker rules (e.g. suitcase restrictions) on official notices before visiting Kami-no-Yu.",
+    "cta": "3 onsen picks guide",
+    "imgAlt": "Steam rising from outdoor bath — Kami-no-Yu at Kandatsu Snow Resort"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 onsen picks — Kandatsu Snow Resort",
+      "description": "Kami-no-Yu, Egami communal bath, Komako-no-Yu — Yuzawa bath circuit guide"
+    },
+    "backLink": "Back to Kandatsu guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />soak.",
+      "tagline": "Echigo-Yuzawa 7 min · Kami-no-Yu & town baths",
+      "imgAlt": "Snow-view bathhouse — Yuzawa onsen circuit"
+    },
+    "notice": "Bath manners, hours, and day-use rules are on each facility's official site. Confirm Kami-no-Yu locker rules in advance.",
+    "introTitle": "Why baths anchor the Kandatsu stay",
+    "introLead": "Without a large slope-side hotel, Kami-no-Yu at the base and station communal baths complete or extend your après.",
+    "introBody": "Three picks from on-mountain baths to station-side soaks, ordered for post-ski routing.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Yuzawa",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links or the map spot list at bottom right"
+    },
+    "linkFoodGuide": "2 food picks guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "3 Yuzawa onsen picks",
+    "spotsLead": "From on-mountain Kami-no-Yu to station communal baths — ordered for post-ski loops.",
+    "regions": {
+      "village": "Station area",
+      "resort": "On-mountain"
+    },
+    "spots": {
+      "kaminoyu": {
+        "tag": "On-mountain · largest",
+        "title": "Kami-no-Yu (GROUND BASE)",
+        "lead": "4121-1 Kandatsu, Yuzawa, Niigata. Yuzawa's largest bathhouse — late hours and nap rooms for immediate post-ski recovery. TEL 025-788-0111 (resort main line — verify).",
+        "imgAlt": "Kami-no-Yu outdoor bath inside Kandatsu center house"
+      },
+      "egami": {
+        "tag": "Communal bath · near station",
+        "title": "Egami communal bath",
+        "lead": "1-1-8 Yuzawa, Yuzawa Town. Walkable from Echigo-Yuzawa Station — day bath ~¥600 (verify). TEL 025-784-2727. https://egamionsen.com/",
+        "imgAlt": "Egami communal bath near Echigo-Yuzawa Station"
+      },
+      "komako": {
+        "tag": "Communal bath · lower Yuzawa",
+        "title": "Shimoyuzawa Komako-no-Yu",
+        "lead": "148 Yuzawa, Yuzawa Town. Lower Yuzawa communal bath — day bath ~¥850 (verify). TEL 025-785-7660.",
+        "imgAlt": "Komako-no-Yu — Shimoyuzawa communal bath"
+      }
+    },
+    "pairingTitle": "Yuzawa × ski × baths",
+    "pairingLead": "Morning: shuttle from station → afternoon: Castor park laps → evening: Kami-no-Yu → night: Ponshukan sake → late: long-night skiing again.",
+    "pairingFoodCta": "2 food picks guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 food picks — Kandatsu Snow Resort",
+      "description": "Nakano-ya and Yuzawa Kamakura — Yuzawa dining guide with area map"
+    },
+    "backLink": "Back to Kandatsu guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />Yuzawa flavors",
+      "tagline": "Hegi soba & Uonuma rice — Echigo-Yuzawa 7 min food loop",
+      "imgAlt": "Yuzawa snow scenery and local food"
+    },
+    "notice": "Hours, closures, reservations, and menus are on each facility's official site. Book dinner in peak season when possible.",
+    "introTitle": "Why food completes the Kandatsu day",
+    "introLead": "Uonuma Koshihikari rice, Niigata wagyu, and legacy hegi soba — station-side dining extends après beyond the slopes.",
+    "introBody": "Two picks from lunch to dinner along your evening route.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchor layers — multiple layers at once supported.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen & anchor map near Yuzawa",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchor",
+      "hint": "Food and onsen can show together",
+      "mobileHint": "If pins overlap, use list links"
+    },
+    "linkOnsenGuide": "3 onsen picks guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "2 Yuzawa food picks",
+    "spotsLead": "Legacy soba to Koshihikari washoku — ordered for snow-trip meals.",
+    "spots": {
+      "nakano": {
+        "tag": "Hegi soba · legacy",
+        "title": "Nakano-ya Yuzawa Honten",
+        "lead": "2-1-5 Yuzawa, Yuzawa Town. Classic Yuzawa hegi soba for lunch or light meals. TEL 025-784-3720. http://www.umaisoba.com/ Budget ~¥1,000–2,000.",
+        "imgAlt": "Hegi soba at Nakano-ya Yuzawa main shop"
+      },
+      "kamakura": {
+        "tag": "Izakaya · Uonuma rice",
+        "title": "Yuzawa Kamakura",
+        "lead": "2440-10 Yuzawa, Yuzawa Town. Uonuma rice and Niigata wagyu izakaya — lunch ~¥2,000, dinner ~¥5,000. TEL 025-788-1077. https://www.sep-i.co.jp/yuzawa/",
+        "imgAlt": "Washoku at Yuzawa Kamakura — local rice and sake"
+      }
+    },
+    "pairingTitle": "One-day loop model",
+    "pairingLead": "Morning: shuttle from station → midday powder → Kami-no-Yu soak → Nakano-ya soba → Kamakura dinner → Ponshukan sake tasting.",
+    "pairingOnsenCta": "3 onsen picks guide"
+  },
+  "guides": {
+    "night": {
+      "title": "Late-night skiing until 2 a.m.",
+      "body": "Ski until 2 a.m. on peak nights — the signature high-turnover experience for Friday departures from Tokyo with nap breaks. Pre-night grooming is a fan favorite (verify on official sources)."
+    },
+    "yuzawa": {
+      "title": "~7 min by car or bus from Echigo-Yuzawa",
+      "body": "~7 min by free shuttle from JR Echigo-Yuzawa Station East Exit — pair with Joetsu Shinkansen. Rent at the station to loop Naeba, GALA Yuzawa, and other Minamiuonuma resorts."
+    },
+    "onsen": {
+      "title": "Kami-no-Yu & GROUND BASE",
+      "body": "Kami-no-Yu inside the center house is Yuzawa's largest bath complex — late hours and nap rooms offset the lack of slope-side lodging. Cashless options including Alipay are available (verify)."
+    }
+  },
+  "access": {
+    "postal": "〒949-6102",
+    "line": "4121-1 Kandatsu, Yuzawa, Minamiuonuma, Niigata",
+    "note": "~7 min by car or bus from Echigo-Yuzawa Station (typical)",
+    "phone": "TEL 025-788-0111",
+    "places": "",
+    "rentacarEyebrow": "首都圏から最短でアクセスできる、天然雪100%と深夜ロングナイターを誇る究極の利便性リゾート。",
+    "rentacarLink": "越後湯沢駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "神立スノーリゾート周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Kandatsu Snow Resort (mock)",
+    "location": "〒949-6102 4121-1 Kandatsu, Yuzawa, Minamiuonuma, Niigata"
+  }
+}

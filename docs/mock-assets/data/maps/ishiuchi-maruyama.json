@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "2026-06-13",
+  "id": "ishiuchi-maruyama",
+  "name": {
+    "ja": "石打丸山スキー場",
+    "en": "Ishiuchi Maruyama Ski Resort"
+  },
+  "disclaimer": {
+    "ja": "コース・リフトはイラスト内に描画済み。リストで運行状況を確認できます（概略図・現地表示優先）。",
+    "en": "Trails and lifts are drawn in the illustration. Use the list for status (schematic; on-site signage prevails)."
+  },
+  "sources": [
+    "ishiuchi.or.jp",
+    "configs/lp-brief/ishiuchi-maruyama.yaml"
+  ],
+  "updatedAt": "2026-08-11T12:00:00+09:00",
+  "viewBox": "0 0 1024 1024",
+  "hero": {
+    "src": "images/maps/ishiuchi-maruyama-hero.png",
+    "width": 1024,
+    "height": 1024,
+    "viewBox": "0 0 1024 1024"
+  },
+  "bakedLines": true,
+  "mapMode": "schematic",
+  "features": [
+    {
+      "id": "lift-sunrise-express",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "サンライズエクスプレス",
+        "en": "Sunrise Express"
+      },
+      "shortLabel": {
+        "ja": "サンライズ",
+        "en": "Sunrise"
+      },
+      "meta": {
+        "ja": {
+          "区分": "中央口〜中腹",
+          "備考": "ゴンドラ＋チェア混在"
+        },
+        "en": {
+          "Zone": "Central to mid-mountain",
+          "Note": "Combo gondola + chair"
+        }
+      }
+    },
+    {
+      "id": "lift-central-quad",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "pair",
+      "label": {
+        "ja": "中央クワッド",
+        "en": "Central quad"
+      },
+      "shortLabel": {
+        "ja": "中央",
+        "en": "Central"
+      },
+      "meta": {
+        "ja": {
+          "区分": "メイン動線"
+        },
+        "en": {
+          "Zone": "Main artery"
+        }
+      }
+    },
+    {
+      "id": "lift-veranda",
+      "type": "lift",
+      "status": "operating",
+      "liftKind": "gondola",
+      "label": {
+        "ja": "ザ・ヴェランダ連絡",
+        "en": "The Veranda link"
+      },
+      "shortLabel": {
+        "ja": "ヴェランダ",
+        "en": "Veranda"
+      },
+      "meta": {
+        "ja": {
+          "区分": "展望テラス"
+        },
+        "en": {
+          "Zone": "Panorama terrace"
+        }
+      }
+    },
+    {
+      "id": "trail-long-run",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "ロングダウンヒル（4,000m）",
+        "en": "Long downhill (4,000 m)"
+      },
+      "shortLabel": {
+        "ja": "ロング",
+        "en": "Long"
+      },
+      "meta": {
+        "ja": {
+          "距離": "4,000m",
+          "備考": "最長滑走距離"
+        },
+        "en": {
+          "Distance": "4,000 m",
+          "Note": "Longest run"
+        }
+      }
+    },
+    {
+      "id": "trail-panorama",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "beginner",
+      "label": {
+        "ja": "パノラマコース",
+        "en": "Panorama course"
+      },
+      "shortLabel": {
+        "ja": "パノラマ",
+        "en": "Panorama"
+      },
+      "meta": {
+        "ja": {
+          "備考": "魚沼平野の眺望"
+        },
+        "en": {
+          "Note": "Uonuma plain views"
+        }
+      }
+    },
+    {
+      "id": "trail-night",
+      "type": "trail",
+      "status": "open",
+      "difficulty": "intermediate",
+      "label": {
+        "ja": "ナイターコース群",
+        "en": "Night skiing zone"
+      },
+      "shortLabel": {
+        "ja": "ナイター",
+        "en": "Night"
+      },
+      "meta": {
+        "ja": {
+          "備考": "12コース・最長3km（公式要確認）"
+        },
+        "en": {
+          "Note": "12 courses · up to 3 km (verify)"
+        }
+      }
+    }
+  ]
+}

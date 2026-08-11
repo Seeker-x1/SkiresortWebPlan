@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "title": "GALA Yuzawa Snow Resort",
+    "description": "0 min from Joetsu Shinkansen Gala Yuzawa Station — 16 courses, 823 m vertical, day-trip snow resort. Après at onsen town and Ponshu-kan."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides",
+    "mapHint": "Schematic (may be unverified)"
+  },
+  "logo": "GALA Yuzawa Snow Resort",
+  "hero": {
+    "eyebrow": "Yuzawa · Niigata",
+    "title": "GALA Yuzawa<br />Snow Resort",
+    "statLabel": "From station",
+    "statValue": "0",
+    "statUnit": "min",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Feb 11 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "Ticket gate to<br />the slopes.",
+    "lead": "0 minutes from Joetsu Shinkansen Gala Yuzawa Station to ski center Kawabanga — Tokyo in ~70 minutes, hands-free Shinkansen, rental-to-gondola in one building. Finish at GALA no Yu spa or Echigo-Yuzawa onsen town.",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Gala Yuzawa Station directly linked to the ski center — from ticket gate to snow"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Gala Yuzawa Station"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Lifts & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why GALA",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "Japan's ultimate station link",
+      "lead": "Step off the Shinkansen into the ski center — no snowy drives, no heavy bags. Built for day-trip snow with friction stripped from every step of the journey.",
+      "cta": "See access",
+      "imgAlt": "Long run and Minamiuonuma snow mountain panorama at GALA Yuzawa"
+    },
+    "secondary": {
+      "title": "After skiing, onsen town",
+      "lead": "From in-resort GALA no Yu spa to Yuzawa onsen village via ropeway — Komako-no-Yu and Ponshu-kan fit naturally into an afternoon loop.",
+      "cta": "Onsen guide"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby hot springs",
+    "title": "GALA no Yu &<br />Echigo-Yuzawa baths",
+    "lead": "Day-use spa inside the ski center plus 800-year onsen town soto-yu — recovery and street walks on one après line.",
+    "whisper": "Public baths are local community spaces. Rinse before soaking and check official hours before visiting.",
+    "cta": "3 onsen picks guide",
+    "imgAlt": "GALA no Yu hot spring with snowy mountain view"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 onsen picks — GALA Yuzawa Snow Resort",
+      "description": "GALA no Yu, Komako-no-Yu, HATAGO Isen — Yuzawa bath circuit guide"
+    },
+    "backLink": "Back to GALA Yuzawa guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />into the baths.",
+      "tagline": "0 min from station · town onsen loop",
+      "imgAlt": "Snow-framed wooden bathhouse in Echigo-Yuzawa onsen town"
+    },
+    "notice": "Day-use rules, hours, and fees are set by each facility. Check winter road conditions before driving.",
+    "introTitle": "Why baths anchor GALA",
+    "introLead": "Step outside the resort and Snow Country's onsen village unfolds — the setting of Kawabata's classic novel.",
+    "introBody": "Three stops from in-resort spa to town baths, ordered for easy post-ski loops.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchors — multiple layers at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen, and anchors near GALA Yuzawa",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchors",
+      "hint": "Food and onsen layers can show together",
+      "mobileHint": "If pins overlap, use list links or the spot list on the map"
+    },
+    "linkFoodGuide": "2 food picks guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "Yuzawa onsen 3 picks",
+    "spotsLead": "From in-resort spa to town soto-yu — easy après order.",
+    "regions": {
+      "resort": "In resort",
+      "town": "Onsen town"
+    },
+    "spots": {
+      "gala-no-yu": {
+        "tag": "In-resort · day spa",
+        "title": "SPA GALA no Yu",
+        "lead": "Day-use baths inside GALA ski center — rinse off right after your last run. Hours and fees: check official site. TEL 025-785-6543 (main).",
+        "imgAlt": "GALA no Yu day spa inside the ski center"
+      },
+      "komako": {
+        "tag": "Soto-yu · town",
+        "title": "Komako-no-Yu public bath",
+        "lead": "Yuzawa 148. Iconic communal bath in the onsen street — Snow Country atmosphere. TEL 025-785-7660.",
+        "imgAlt": "Komako-no-Yu soto-yu in Echigo-Yuzawa town"
+      },
+      "hatago": {
+        "tag": "Ryokan · foot bath",
+        "title": "HATAGO Isen",
+        "lead": "Yuzawa 2455. Ryokan known for Uonuma Koshihikari and local cuisine — day-use and foot baths: check official site. TEL 0120-85-0039.",
+        "imgAlt": "HATAGO Isen ryokan and foot bath in Yuzawa"
+      }
+    },
+    "pairingTitle": "GALA-led Yuzawa deep loop",
+    "pairingLead": "Morning Shinkansen to GALA → afternoon ropeway lunch at Yuzawa Kogen → Komako-no-Yu → dinner at Ninjin-tei → sake tasting at Ponshu-kan.",
+    "pairingFoodCta": "2 food picks guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 food picks — GALA Yuzawa Snow Resort",
+      "description": "Yasuyoshi and Ninjin-tei tonkatsu — Yuzawa food guide with area map"
+    },
+    "backLink": "Back to GALA Yuzawa guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />town dining",
+      "tagline": "Maitake feast and famous tonkatsu — from station link to night walks",
+      "imgAlt": "Snowy Yuzawa street food atmosphere"
+    },
+    "notice": "Hours, holidays, reservations, and menus are set by each restaurant. Book dinner ahead in peak season.",
+    "introTitle": "Why food anchors Yuzawa",
+    "introLead": "From resort restaurants to legacy washoku and Italian in the onsen street — easy to shift downhill early for town dinners.",
+    "introBody": "Two stops for dinner and après, chosen along a natural loop.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchors — multiple layers at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen, and anchors near GALA Yuzawa",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchors",
+      "hint": "Food and onsen layers can show together",
+      "mobileHint": "If pins overlap, use list links or the spot list on the map"
+    },
+    "linkOnsenGuide": "3 onsen picks guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "Yuzawa food 2 picks",
+    "spotsLead": "Local washoku to queue-worthy tonkatsu — night-friendly order.",
+    "spots": {
+      "yasuyoshi": {
+        "tag": "Local · maitake",
+        "title": "Yasuyoshi",
+        "lead": "Yuzawa 328-1. Legacy washoku — signature maitake set meals. TEL 025-784-2244. https://www.yasuyoshi.net/",
+        "imgAlt": "Yasuyoshi maitake set — legacy Yuzawa washoku"
+      },
+      "ninjin": {
+        "tag": "Tonkatsu · local favorite",
+        "title": "Ninjin-tei tonkatsu",
+        "lead": "Yuzawa Takinosawa 497-4. Beloved local tonkatsu shop — fuel before the Shinkansen home. TEL 025-785-5727 (confirm official).",
+        "imgAlt": "Ninjin-tei tonkatsu — popular Yuzawa diner"
+      }
+    },
+    "pairingTitle": "One-day loop model",
+    "pairingLead": "Morning Shinkansen to GALA → ski → ropeway lunch → Komako-no-Yu → Yasuyoshi or Ninjin-tei → Ponshu-kan sake tasting.",
+    "pairingOnsenCta": "3 onsen picks guide"
+  },
+  "guides": {
+    "shinkansen": {
+      "title": "0 min from Gala Yuzawa Station",
+      "body": "~70 minutes from Tokyo — ticket gate to Kawabanga ski center. Rental, lockers, and gondola in one seamless day-trip snow line."
+    },
+    "falcon": {
+      "title": "Falcon 2,500 m long run",
+      "body": "2,500 m downhill, max 20° — panoramic Tanigawa peaks over Minamiuonuma. Plus Grenoble summit views and Super Swan off-piste on 16 varied courses."
+    },
+    "yuzawa-town": {
+      "title": "Echigo-Yuzawa deep loop",
+      "body": "Expand with Yuzawa Snow Link to Yuzawa Kogen and Ishiuchi Maruyama — then shift to town baths and Ponshu-kan for a full-area day beyond resort-only stays."
+    }
+  },
+  "access": {
+    "postal": "〒949-6101",
+    "line": "1039-2 Myokokogen, Yuzawa, Minamiuonuma, Niigata",
+    "note": "Direct link from Joetsu Shinkansen Gala Yuzawa Station (0 min walk); ~3 km (~5 min) from Yuzawa IC on Kan-Etsu Expressway",
+    "phone": "TEL 025-785-6543",
+    "places": "",
+    "rentacarEyebrow": "新幹線駅直結の圧倒的利便性と、通年型マウンテンフィールド化による顧客単価の最大化。",
+    "rentacarLink": "越後湯沢駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "GALA湯沢スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© GALA Yuzawa Snow Resort (draft)",
+    "location": "〒949-6101 Minamiuonuma, Niigata",
+    "guideNotice": "Draft guide for planning. Photos and illustrations are atmospheric references — actual slopes and facilities may differ. Confirm fees, hours, and road rules on official sources."
+  }
+}

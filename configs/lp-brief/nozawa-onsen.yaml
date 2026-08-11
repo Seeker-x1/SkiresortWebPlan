@@ -1,0 +1,60 @@
+resortId: nozawa-onsen
+schemaVersion: "2026-08-11"
+
+name:
+  ja: 野沢温泉スキー場
+  en: Nozawa Onsen Snow Resort
+region:
+  ja: 長野県下高井郡野沢温泉村
+  en: Nozawa Onsen, Nagano
+japowResortId: 255
+
+strategy:
+  ja: 100%天然パウダーと13の外湯巡り。エコエネルギーが彩る、伝統と革新の温泉スノーリゾート。
+  en: Immerse yourself in 100% natural JAPOW and 13 historic hot springs at Japan's premier eco-friendly snow and cultural resort.
+archetype: transit-onsen
+copyFrom: sichinohe-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 飯山駅からバス約25分——13の外湯と極上パウダーが同居する温泉スノーリゾート。
+    en: ~25 min by bus from Iiyama Station — JAPOW and 13 soto-yu baths in one walkable village.
+  badges: [powder, onsen, culture]
+
+pillars:
+  - id: powder
+    hook: { ja: 天然パウダー・林間ロング, en: Natural powder · forest runs }
+  - id: onsen
+    hook: { ja: 13の外湯巡り, en: 13 public bath circuit }
+  - id: transit
+    hook: { ja: 飯山駅バス約25分, en: ~25 min bus from Iiyama }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+facts:
+  operator: 野沢温泉スキー場（要確認）
+  location: 〒389-2502 長野県下高井郡野沢温泉村豊郷
+  phone: "0269-85-3166"
+  lift: ゴンドラ・リフト等（公式要確認）
+  courses: 総滑走面積297ha（総面積785ha・公式要確認）
+  elevation: 標高1,650m（山頂・公式要確認）
+  access:
+    train: JR飯山駅からバス約25分
+    note: 冬季はスタッドレスタイヤ推奨（公式確認）
+
+map:
+  mode: schematic
+  sources: ["公式パンフレット", "configs/lp-brief/nozawa-onsen.yaml"]
+  heroImage: images/maps/nozawa-onsen-hero.png
+
+affiliates:
+  rentacar: iiyama_station
+
+humanReview:
+  - japowResortId 255 = 野沢温泉スキー場
+  - 2025-2026シーズン料金・リフト運行
+  - 外湯の入浴マナー・寸志

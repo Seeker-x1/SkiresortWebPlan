@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja" data-mock-resort="appi-kogen">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>周辺飲食2選 — 安比高原スキー場</title>
+  <meta name="description" content="焼肉家副本とHOUSE APPI——安比の食と周辺マップ付きガイド" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/lp-layout.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+</head>
+<body class="detail-page">
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="./" class="logo" data-i18n="logo">安比高原スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="./#access" data-i18n="nav.access">アクセス</a></li>
+          <li><a href="../map.html?resort=appi-kogen" data-i18n="nav.map">ゲレンデマップ</a></li>
+          <li><a href="../area-map.html?resort=appi-kogen&layers=food,anchor" data-i18n="nearbyFood.navAreaMap">周辺マップ</a></li>
+          <li><a href="nearby-onsen.html" data-i18n="nearbyFood.linkOnsenGuide">周辺温泉3選</a></li>
+          <li><a href="./#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--spot" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img
+          src="lp-mock-appi-kogen-hero.png"
+          data-i18n-attr="alt:nearbyFood.hero.imgAlt"
+          alt="ゲレンデで滑るスキーヤーのイメージ"
+          width="1920"
+          height="1080"
+        />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <a href="./" class="detail-back">← <span data-i18n="nearbyFood.backLink">安比高原ガイドトップへ戻る</span></a>
+        <p class="eyebrow" data-i18n="nearbyFood.hero.eyebrow">Eat · Map</p>
+        <h1 class="hero-title" data-i18n-html="nearbyFood.hero.title">雪のあと、<br />安比の食へ</h1>
+        <p class="hero-tagline" data-i18n="nearbyFood.hero.tagline">リゾート内グルメから地元焼肉まで——盛岡60分圏</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="inner">
+        <p role="note" class="notice-banner" data-i18n="nearbyFood.notice">
+          営業時間・定休・メニューは各施設の公式情報が最新です。
+        </p>
+
+        <h2 class="heading-lg" data-i18n="nearbyFood.introTitle">なぜ、食もリゾート体験の核になるのか</h2>
+        <p class="lead" style="margin-top:1.5rem; max-width:36rem" data-i18n="nearbyFood.introLead">
+          ANAクラウンプラザ内の多国籍料理から、地元で愛される焼肉店まで——ゲレンデとホテルが一体の食体験が可能です。
+        </p>
+        <p class="lead-whisper" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyFood.introBody">
+          滑走中のランチと、帰路のご褒美——動線に沿って2施設を厳選しました。
+        </p>
+      </div>
+    </section>
+
+    <section class="section border-top" id="food-map">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyFood.mapEyebrow">Area map</p>
+        <h2 class="heading-lg" data-i18n="nearbyFood.mapTitle">付近の飲食マップ</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyFood.mapLead">
+          飲食・温泉・拠点をボタンで切り替え——複数レイヤーの同時表示に対応。
+        </p>
+
+        <div data-map-embed data-default-layers="food,anchor">
+          <div class="map-layer-toggles" role="group" data-i18n-attr="aria-label:nearbyFood.mapEmbedTitle">
+            <button type="button" class="map-layer-btn" data-map-layer="food" aria-pressed="true" data-i18n="nearbyFood.mapLayers.food">飲食</button>
+            <button type="button" class="map-layer-btn" data-map-layer="onsen" aria-pressed="false" data-i18n="nearbyFood.mapLayers.onsen">温泉</button>
+            <button type="button" class="map-layer-btn" data-map-layer="anchor" aria-pressed="true" data-i18n="nearbyFood.mapLayers.anchor">拠点</button>
+          </div>
+          <p class="map-layer-hint" data-i18n="nearbyFood.mapLayers.hint">飲食と温泉は同時に表示できます</p>
+          <p class="map-layer-hint map-layer-hint--mobile" data-i18n="nearbyFood.mapLayers.mobileHint">ピンが重なるときは下の店舗一覧の「地図で見る」か、地図右下の「スポット一覧」をご利用ください</p>
+
+          <div class="map-embed">
+            <iframe
+              title="安比高原周辺の飲食・温泉・拠点マップ"
+              data-i18n-attr="title:nearbyFood.mapEmbedTitle"
+              src="../area-map.html?resort=appi-kogen&embed=1&layers=food,anchor"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="map-embed-cta-row">
+          <a href="../area-map.html?resort=appi-kogen&layers=food,anchor" class="btn btn-primary" data-i18n="nearbyFood.mapCta">フルサイズマップを開く</a>
+          <a href="nearby-onsen.html" class="btn btn-ghost" data-i18n="nearbyFood.linkOnsenGuide">周辺温泉3選ガイド</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="nearbyFood.spotsEyebrow">2 picks</p>
+        <h2 class="heading-lg" data-i18n="nearbyFood.spotsTitle">安比周辺グルメ2選</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyFood.spotsLead">
+          ゲレンデ内から駅近の道の駅まで、雪旅に組み込みやすい順に掲載。
+        </p>
+
+        <ol class="food-spot-list">
+          <li class="food-spot" id="entry-gappei" data-spot-entry="gappei">
+            <span class="food-spot__num">01</span>
+            <div class="food-spot__body">
+              <figure class="food-spot__figure">
+                <img
+                  src="lp-mock-appi-kogen-highlight.png"
+                  data-i18n-attr="alt:nearbyFood.spots.gappei.imgAlt"
+                  alt="焼肉家副本"
+                  width="960"
+                  height="600"
+                  loading="lazy"
+                />
+              </figure>
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.gappei.tag">地元焼肉 · リゾート近く</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.gappei.title">焼肉家 副本</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.gappei.lead">岩手県八幡平市安比高原661-3。地元で評判の焼肉店——滑走後のご褒美ディナーに。</p>
+              <a href="../area-map.html?resort=appi-kogen&layers=food,anchor&focus=gappei" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+          <li class="food-spot" id="entry-house-appi" data-spot-entry="house-appi">
+            <span class="food-spot__num">02</span>
+            <div class="food-spot__body">
+              <figure class="food-spot__figure">
+                <img
+                  src="lp-mock-appi-kogen-transit.png"
+                  data-i18n-attr="alt:nearbyFood.spots.house-appi.imgAlt"
+                  alt="HOUSE APPI"
+                  width="960"
+                  height="600"
+                  loading="lazy"
+                />
+              </figure>
+              <p class="food-spot__tag" data-i18n="nearbyFood.spots.house-appi.tag">リゾート内 · ベーカリー</p>
+              <h3 class="food-spot__title" data-i18n="nearbyFood.spots.house-appi.title">HOUSE APPI</h3>
+              <p class="food-spot__lead" data-i18n="nearbyFood.spots.house-appi.lead">ANAクラウンプラザリゾート安比高原タワー棟1F。ベーカリーレストラン——朝食から軽食まで。</p>
+              <a href="../area-map.html?resort=appi-kogen&layers=food,anchor&focus=house-appi" class="food-spot__map-link" data-i18n="nearbyFood.spotMapLink">地図で見る</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section border-top">
+      <div class="inner">
+        <h2 class="heading-lg" data-i18n="nearbyFood.pairingTitle">一日の回遊モデル</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="nearbyFood.pairingLead">
+          午前：盛岡から安比へ → 昼：ゲレンデランチ → 午後：ロングクルーズ → 夕方：白樺の湯 → 夜：焼肉家副本。
+        </p>
+        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem">
+          <a href="nearby-onsen.html" class="btn btn-ghost" data-i18n="nearbyFood.pairingOnsenCta">温泉3選ガイド</a>
+          <a href="./" class="btn btn-ghost" data-i18n="nearbyFood.backLink">安比高原ガイドトップへ戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p class="footer-notice" role="note" data-i18n="footer.guideNotice">本ガイドは制作中の案です。写真・イラストは雰囲気の参考であり、実際のゲレンデ・施設と異なる場合があります。料金・営業・道路規制は各施設の公式情報を優先してください。</p>
+<div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© 安比高原スキー場（案）</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒028-7301 岩手県八幡平市安比高原117-17</span> ·
+        <a href="./" data-i18n="nearbyFood.backLink">安比高原ガイドトップへ戻る</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+  <script src="../_shared/map-embed-layers.js"></script>
+  <script>
+    window.addEventListener("mock-i18n-ready", (e) => {
+      const m = e.detail.messages;
+      const meta = m.nearbyFood && m.nearbyFood.meta;
+      if (meta && meta.title) document.title = meta.title;
+      if (meta && meta.description) {
+        const tag = document.querySelector('meta[name="description"]');
+        if (tag) tag.setAttribute("content", meta.description);
+      }
+    });
+  </script>
+</body>
+</html>

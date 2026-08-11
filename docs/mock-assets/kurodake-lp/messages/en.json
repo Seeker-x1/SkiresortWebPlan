@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "title": "Daisetsuzan Kurodake Ski Area",
+    "description": "Ropeway to 1,984 m — alpine powder at Sounkyo, 90 minutes from Asahikawa. Daisetsuzan National Park on Kurodake's northeast face."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides"
+  },
+  "logo": "Daisetsuzan Kurodake Ski Area",
+  "hero": {
+    "eyebrow": "Sounkyo · Kamikawa, Hokkaido",
+    "title": "Daisetsuzan<br />Kurodake Ski",
+    "statLabel": "Peak (Kurodake)",
+    "statValue": "1984",
+    "statUnit": "m",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Dec 1 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "From Asahikawa,<br />into the alpine.",
+    "lead": "JR Asahikawa → Limited Express Daisetsu to Kamikawa ~40 min, then Dohoku Bus to Sounkyo ~30 min. By car: ~90 min from Asahikawa Airport, or ~30 min from Kamikawa-Sounkyo IC. Free parking for 60 vehicles.",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Snow road toward Sounkyo from Asahikawa — Daisetsuzan range ahead"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Asahikawa"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Ropeway & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Kurodake",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "Ropeway × alpine powder",
+      "lead": "On the 1,984 m northeast face of Kurodake — ropeway to the 5th station, pair lift to the start. One main line branches into forest and cornice routes, up to ~30° pitch and ~1.2 km. Iconic Daisetsuzan powder and panoramas inside the national park.",
+      "cta": "Open trail map",
+      "imgAlt": "Powder slope on Daisetsuzan from Kurodake Ropeway — alpine skiing"
+    },
+    "secondary": {
+      "title": "After skiing, Sounkyo onsen",
+      "lead": "Sounkyo Onsen lines the canyon with ryokan — snow-view baths are the classic post-ski recovery. In winter, studless tires and road conditions need a pre-trip check.",
+      "cta": "See onsen area"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby hot springs",
+    "title": "Sounkyo Onsen,<br />canyon bath loop",
+    "lead": "Ryokan along the Sounkyo gorge — many within walking distance of the ropeway base, with day-use baths for snow-view soaking.",
+    "whisper": "Warm up in the hot-spring town, then pair the next day with Asahidake or wider Sounkyo sightseeing.",
+    "cta": "Access & area info",
+    "imgAlt": "Sounkyo canyon in snow — hot-spring town along the gorge"
+  },
+  "guides": {
+    "powder": {
+      "title": "Daisetsuzan alpine powder",
+      "body": "Not a groomed wide resort — volcanic alpine terrain with dry Daisetsuzan powder. Outside the managed zone requires entry permits and registration (verify on the official site)."
+    },
+    "ropeway": {
+      "title": "Ropeway to the 5th station",
+      "body": "~7 min on the Kurodake Ropeway to the 5th station, then the pair lift. Day pass (ropeway round-trip + lift) ~¥5,200 adults, ~¥2,600 children (official info — verify). Closure periods apply — check the official site before you go."
+    },
+    "access": {
+      "title": "Getting there from Asahikawa",
+      "body": "Train + bus: Asahikawa → Kamikawa ~40 min, bus to Sounkyo ~30 min. Car: ~90 min from Asahikawa Airport, ~30 min from Kamikawa-Sounkyo IC. Studless tires required in winter."
+    }
+  },
+  "access": {
+    "postal": "〒078-1701",
+    "line": "Sounkyo, Kamikawa, Hokkaido",
+    "note": "~90 min by train + bus from JR Asahikawa, ~90 min by car from Asahikawa Airport (typical)",
+    "phone": "TEL 01658-5-3031",
+    "places": "",
+    "rentacarEyebrow": "旭川90分・層雲峡ロープウェイ山岳パウダー",
+    "rentacarLink": "旭川空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "大雪山黒岳スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Daisetsuzan Kurodake Ski Area (mock)",
+    "location": "〒078-1701 Sounkyo, Kamikawa, Hokkaido"
+  }
+}

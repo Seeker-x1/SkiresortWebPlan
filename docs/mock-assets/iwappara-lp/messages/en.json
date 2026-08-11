@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "title": "Iwappara Ski Resort",
+    "description": "~12–16 min by car or bus from Echigo-Yuzawa Station — 200 m wide beginner runs, Pittore pizza, and Iwappara-no-Yu baths in a compact family resort."
+  },
+  "nav": {
+    "access": "Access",
+    "map": "Trail map",
+    "areaMap": "Area map",
+    "highlights": "Highlights",
+    "paths": "Paths",
+    "onsen": "Onsen",
+    "guides": "Guides",
+    "mapHint": "Schematic (may be unverified)"
+  },
+  "logo": "Iwappara Ski Resort",
+  "hero": {
+    "eyebrow": "Yuzawa · Niigata",
+    "title": "Iwappara<br />Ski Resort",
+    "statLabel": "Max run width",
+    "statValue": "200",
+    "statUnit": "m",
+    "ctaToday": "Today's ops",
+    "updatedAt": "Aug 11 9:00"
+  },
+  "transit": {
+    "eyebrow": "Transit",
+    "title": "From Echigo-Yuzawa,<br />12–16 min by car or bus.",
+    "lead": "~12–16 minutes by car or bus from JR Echigo-Yuzawa Station — pair with the Joetsu Shinkansen for an easy family snow debut on a compact resort. ~10 min by car from Yuzawa IC (approx.).",
+    "ctaToday": "Today's ops",
+    "imgAlt": "Snowy Echigo-Yuzawa Station and shuttle bus — winter trip to Iwappara Ski Resort"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Today's operations"
+    },
+    "access": {
+      "label": "Access",
+      "title": "From Echigo-Yuzawa Station"
+    },
+    "map": {
+      "label": "Resort",
+      "title": "Trail map"
+    },
+    "pricing": {
+      "label": "Tickets",
+      "title": "Lifts & day pass"
+    }
+  },
+  "highlights": {
+    "eyebrow": "Why Iwappara",
+    "title": "What sets it apart",
+    "primary": {
+      "title": "200 m wide open run",
+      "lead": "Beginners feel less intimidated on the open terrain — parking, kids' areas, and lifts stay compact, so non-skiing family members move with less stress. The 634 m Sori Land sled course is a hit with adults too.",
+      "cta": "Open trail map",
+      "imgAlt": "Family skiing a wide open run at Iwappara Ski Resort"
+    },
+    "secondary": {
+      "title": "After skiing, Pittore",
+      "lead": "Wood-fired pizza and wine at Pizzeria La Locanda del Pittore — the resort's signature dining experience that drives repeat visits.",
+      "cta": "Food guide"
+    }
+  },
+  "onsen": {
+    "eyebrow": "Nearby hot springs",
+    "title": "Iwappara-no-Yu &<br />Yuzawa bath loop",
+    "lead": "Warm up at on-resort Iwappara-no-Yu, then head to station-side communal baths or Ponshu-kan — snow play, food, and baths loop naturally in Yuzawa.",
+    "whisper": "Check bathing rules and hours on each facility's official site before visiting.",
+    "cta": "3 onsen picks guide",
+    "imgAlt": "Snow-framed hot spring — Iwappara-no-Yu at Iwappara Ski Resort"
+  },
+  "nearbyOnsen": {
+    "meta": {
+      "title": "3 onsen picks — Iwappara Ski Resort",
+      "description": "Iwappara-no-Yu, Shinsen-no-Yu, Egami communal bath — Yuzawa bath circuit guide"
+    },
+    "backLink": "Back to Iwappara guide",
+    "hero": {
+      "eyebrow": "Onsen · Map",
+      "title": "After skiing,<br />into the baths.",
+      "tagline": "12 min from Echigo-Yuzawa · on-resort and town baths",
+      "imgAlt": "Snow-framed bathhouse — Yuzawa onsen circuit"
+    },
+    "notice": "Day-use rules, hours, and fees are set by each facility. Check winter road conditions before driving.",
+    "introTitle": "Why baths anchor Iwappara",
+    "introLead": "From on-resort Iwappara-no-Yu to Shinsen-no-Yu — the only drinkable spring in Echigo-Yuzawa — three easy après stops.",
+    "introBody": "Finish at the resort, then extend into town baths in the evening.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby onsen map",
+    "mapLead": "Toggle food, onsen, and anchors — multiple layers at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen, and anchors near Iwappara",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchors",
+      "hint": "Food and onsen layers can show together",
+      "mobileHint": "If pins overlap, use list links or the spot list on the map"
+    },
+    "linkFoodGuide": "2 food picks guide",
+    "spotsEyebrow": "3 picks",
+    "spotsTitle": "Yuzawa onsen 3 picks",
+    "spotsLead": "From on-resort baths to station-side soto-yu — easy après order.",
+    "regions": {
+      "resort": "In resort",
+      "town": "Station area"
+    },
+    "spots": {
+      "iwappara-no-yu": {
+        "tag": "In-resort · day use",
+        "title": "Iwappara-no-Yu",
+        "lead": "731-79 Tsuchitaru, Yuzawa (inside Iwappara Ski Resort). Warm up right after your last run. TEL 025-787-3211. https://iwa-ppara.com/",
+        "imgAlt": "Iwappara-no-Yu day-use baths inside the ski resort"
+      },
+      "shinsen": {
+        "tag": "Drinkable spring · flowing source",
+        "title": "Shinsen-no-Yu",
+        "lead": "3448-1 Kamidate, Yuzawa. The only drinkable flowing spring in Echigo-Yuzawa — ~15 min by car from Iwappara. ~¥600 adult (approx.; confirm official). TEL 025-788-0260.",
+        "imgAlt": "Shinsen-no-Yu — drinkable flowing hot spring"
+      },
+      "egami": {
+        "tag": "Communal bath · near station",
+        "title": "Egami communal bath",
+        "lead": "1-1-8 Yuzawa. Showa-era local bath 3 min walk from Echigo-Yuzawa Station East Exit — ~15 min by car from Iwappara. TEL 025-784-2727.",
+        "imgAlt": "Egami communal bath near Echigo-Yuzawa Station"
+      }
+    },
+    "pairingTitle": "Iwappara snow · food · bath loop",
+    "pairingLead": "Morning lessons and Sori Land → Pittore pizza lunch → Iwappara-no-Yu → Ponshu-kan sake tasting → Nakano-ya hegi soba dinner.",
+    "pairingFoodCta": "2 food picks guide"
+  },
+  "nearbyFood": {
+    "meta": {
+      "title": "2 food picks — Iwappara Ski Resort",
+      "description": "Pittore and Nakano-ya — Yuzawa food guide with area map"
+    },
+    "backLink": "Back to Iwappara guide",
+    "hero": {
+      "eyebrow": "Eat · Map",
+      "title": "After snow,<br />legendary dining",
+      "tagline": "Wood-fired pizza and hegi soba — from resort to town night walks",
+      "imgAlt": "Wood-fired pizza and snowy Yuzawa dining atmosphere"
+    },
+    "notice": "Hours, holidays, reservations, and menus are set by each restaurant. Book ahead in peak season.",
+    "introTitle": "Why food anchors Iwappara",
+    "introLead": "From Pittore on the slopes to queue-worthy hegi soba by the station — easy to shift downhill early for town meals.",
+    "introBody": "Two stops for lunch and dinner along a natural loop.",
+    "mapEyebrow": "Area map",
+    "mapTitle": "Nearby food map",
+    "mapLead": "Toggle food, onsen, and anchors — multiple layers at once.",
+    "mapCta": "Open full-size map",
+    "spotMapLink": "View on map",
+    "navAreaMap": "Area map",
+    "mapEmbedTitle": "Food, onsen, and anchors near Iwappara",
+    "mapLayers": {
+      "food": "Food",
+      "onsen": "Onsen",
+      "anchor": "Anchors",
+      "hint": "Food and onsen layers can show together",
+      "mobileHint": "If pins overlap, use list links or the spot list on the map"
+    },
+    "linkOnsenGuide": "3 onsen picks guide",
+    "spotsEyebrow": "2 picks",
+    "spotsTitle": "Yuzawa food 2 picks",
+    "spotsLead": "Resort pizza to station soba — snow-day friendly order.",
+    "spots": {
+      "pittore": {
+        "tag": "Italian · wood-fired",
+        "title": "Pizzeria La Locanda del Pittore",
+        "lead": "731-1 Tsuchitaru, Yuzawa. Signature Bismarck pizza from a wood oven — Iwappara's flagship slope-side restaurant. TEL 025-787-3940. http://pittore.jp/",
+        "imgAlt": "Pittore wood-fired pizza — Iwappara signature dining"
+      },
+      "nakano": {
+        "tag": "Soba · local favorite",
+        "title": "Nakano-ya Yuzawa main shop",
+        "lead": "2-1-5 Yuzawa. Famous hegi soba with funori seaweed binder — 1 min walk from Echigo-Yuzawa Station East Exit. TEL 025-784-3720. https://www.umaisoba.com/",
+        "imgAlt": "Nakano-ya hegi soba — Echigo-Yuzawa specialty"
+      }
+    },
+    "pairingTitle": "One-day loop model",
+    "pairingLead": "Morning wide runs and Sori Land → Pittore lunch → afternoon skiing → Iwappara-no-Yu → Ponshu-kan → Nakano-ya hegi soba.",
+    "pairingOnsenCta": "3 onsen picks guide"
+  },
+  "guides": {
+    "wide-burn": {
+      "title": "200 m wide open run",
+      "body": "One wide face ideal for first-timers — compact parking-to-kids-park flow means less shuttle waiting than mega-resorts, a core Iwappara advantage for families."
+    },
+    "pittore": {
+      "title": "Pittore wood-fired pizza",
+      "body": "Authentic Italian on the slopes — the Bismarck pizza is a review favorite. Pairs snow play with signature dining for family trips."
+    },
+    "yuzawa-loop": {
+      "title": "Echigo-Yuzawa area loop",
+      "body": "Snow at Iwappara in the morning, Ponshu-kan sake in the afternoon, Nakano-ya or Yakiniku Omoide for dinner — a Yuzawa IC / station hub itinerary beyond resort-only stays."
+    }
+  },
+  "access": {
+    "postal": "〒949-6103",
+    "line": "731-79 Tsuchitaru, Yuzawa, Minamiuonuma, Niigata",
+    "note": "~12–16 min by car or bus from JR Echigo-Yuzawa Station; ~10 min from Yuzawa IC on Kan-Etsu Expressway (approx.)",
+    "phone": "TEL 025-787-3211",
+    "places": "",
+    "rentacarEyebrow": "圧倒的な開放感を誇る最大幅200mの一枚バーンと名物ピッツァで、初心者・ファミリーのゲレンデデビューを独占する。",
+    "rentacarLink": "越後湯沢駅でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "岩原スキー場周辺のドライブ向け"
+  },
+  "footer": {
+    "copyright": "© Iwappara Ski Resort (draft)",
+    "location": "〒949-6103 731-79 Tsuchitaru, Yuzawa, Niigata",
+    "guideNotice": "Draft guide for planning. Photos and illustrations are atmospheric references — actual slopes and facilities may differ. Confirm fees, hours, and road rules on official sources."
+  }
+}

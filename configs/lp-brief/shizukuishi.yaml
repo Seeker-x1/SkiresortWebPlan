@@ -1,0 +1,60 @@
+resortId: shizukuishi
+schemaVersion: "2026-08-11"
+
+name:
+  ja: 雫石スキー場
+  en: Shizukuishi Ski Resort
+region:
+  ja: 岩手県雫石町
+  en: Shizukuishi, Iwate
+japowResortId: 115
+
+strategy:
+  ja: 世界が認めた秀峰のパウダーと、混雑無縁のプライベート空間を誇るプレミアム・マウンテンリゾート。
+  en: A premium mountain resort offering world-class powder snow and an uncrowded, private skiing experience.
+archetype: transit-onsen
+copyFrom: sichinohe-lp
+
+audience: both
+
+hero:
+  tagline:
+    ja: 岩手山を望む名門リゾート——盛岡ICから30分。
+    en: A legendary resort facing Mt. Iwate — 30 minutes from Morioka IC.
+  badges: [powder, private, family]
+
+pillars:
+  - id: powder
+    hook: { ja: 非圧雪・CATツアー, en: "Ungroomed · CAT tours" }
+  - id: drive
+    hook: { ja: 盛岡IC約30分, en: "~30 min from Morioka IC" }
+  - id: gourmet
+    hook: { ja: 雫石グルメ回遊, en: "Shizukuishi food loop" }
+
+subPages:
+  - nearby-food
+  - nearby-onsen
+
+facts:
+  operator: 西武・プリンスホテルズワールドワイド
+  location: 〒020-0593 岩手県岩手郡雫石町高倉温泉
+  phone: "019-693-1111"
+  lift: ロープウェー1基・リフト5基
+  courses: 全20コース・総滑走距離約15,660m
+  elevation: 標高426〜1,217m（標高差約702m）
+  access:
+    car: 盛岡ICから車で約30分
+    note: 冬季はスタッドレスタイヤ推奨（公式確認）
+
+map:
+  mode: schematic
+  sources: ["公式パンフレット", "configs/lp-brief/shizukuishi.yaml"]
+  heroImage: images/maps/shizukuishi-hero.png
+
+affiliates:
+  rentacar: morioka_station
+
+humanReview:
+  - japowResortId 115 = 雫石スキー場
+  - 2025-2026シーズン料金・リフト運行
+  - 強風時のロープウェー運休
