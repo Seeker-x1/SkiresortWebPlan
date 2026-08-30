@@ -1,0 +1,13 @@
+{
+  "provider": "asahikawa-hotel-compare",
+  "site": "https://japowsearch.com/tools/asahikawa-hotels-compare",
+  "projectName": "japowsearch.com — JAPOW Chaser's Guide",
+  "travelpayoutsMarker": "",
+  "agodaCid": "",
+  "bookingAid": "",
+  "notes": {
+    "travelpayoutsMarker": "Dashboard lower-left Partner ID. Used for Hotellook bulk search (?marker=).",
+    "agodaCid": "partners.agoda.com → Profile → Manage My Sites. Optional if using Travelpayouts Agoda program links instead.",
+    "bookingAid": "Partner Centre → Marketplace → Booking-branded Platform, or Travelpayouts Booking program. URL param ?aid="
+  }
+}

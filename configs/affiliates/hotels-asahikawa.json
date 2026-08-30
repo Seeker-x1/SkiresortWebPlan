@@ -1,0 +1,9 @@
+{
+  "provider": "asahikawa-hotel-compare",
+  "site": "https://japowsearch.com/tools/hotel-compare?hub=asahikawa",
+  "projectName": "japowsearch.com — JAPOW Chaser's Guide",
+  "travelpayoutsMarker": "763558",
+  "agodaCid": "",
+  "bookingAid": "",
+  "deprecated": "Use configs/affiliates/hotels.json — this file is legacy fallback only"
+}
