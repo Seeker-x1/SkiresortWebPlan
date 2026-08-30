@@ -1,0 +1,91 @@
+IMPORT FILE
+nozawa-eat-mymap-en.csv
+(English import. JA twin: nozawa-eat-mymap.csv — do not import both.)
+Restaurants 01–11 only — no sotoyu rows in this file.
+
+ADD SOTO-YU (existing map already has 01–11)
+nozawa-sotoyu-mymap-en.csv
+Live map has **two checkbox layers**. Do not merge them:
+  Nozawa Eat Map
+  Sotoyu-Map(Hotsprings)
+Do NOT re-import the restaurant CSV. Do not delete the soto-yu layer.
+Colour-group inside each layer from the Layer column.
+Keep the four eat colours. Soto-yu colours:
+  Soto-yu · this week   (色A — Ōyu / Kuma-no-tearai-yu / Kawarayu)
+  Soto-yu · other       (色B — the other ten)
+Do not number baths 01–13. Restaurant 01–11 stay as they are.
+
+TITLE
+Nozawa Onsen eat map · 01–11 from Chuo BT
+(My Maps truncates the red header. Leave the title. Long name lives in the PDF caption.)
+
+DESCRIPTION
+Numbers match The Ultimate JAPOW Chaser's Guide — Nozawa Act 2 eat table.
+Bath pins have no numbers. 03 is Wakagiri, not a soak.
+
+Colours: dinner vs this week’s 3 soaks vs other soto-yu. Book food from the table. Do these three baths; you do not need the other ten.
+
+Pin colour for restaurants is how you leave Chuo / Ōyu. Zoom to the village core.
+All restaurant pins use Layer `Nozawa Eat Map` (one checkbox). Egress colour groups are set in My Maps Style → Group places by → Description prefix or manual colours — not by splitting the Layer column on re-import.
+
+01–03, 05–07, 09–10  Walk from Chuo / Ōyu
+04                     Kongou — Shinden. Not the Ōyu stroll.
+08                     Yamabiko Rest House — on-hill Nagasaka. Daytime only.
+11                     Atarashiya — Grand Hotel / Shin-yu. Not Ōyu core.
+
+Soto-yu · this week (no numbers)
+  Ōyu — arrival
+  Kuma-no-tearai-yu — after ski
+  Kawarayu — out morning
+
+Soto-yu · other (no numbers)
+  Akiha-no-yu · Asagama-no-yu · Kamitera-yu · Matsuba-no-yu · Nakao-no-yu
+  Shinden-no-yu · Shin-yu · Taki-no-yu · Yokochi-no-yu · Juodo-no-yu
+
+Do not mix these pins:
+• 01 Suminoya is yakiniku inside tanuki (9285) — not the hotel rooms
+• 02 Daimon is そば処 大茂ん (9509) — not 大門, not Shohei (10)
+• 04 Kongou is 風土village金剛 (新田4348-1) — not 道の駅 (虫生2375)
+• 05 Winterland is 横落9582-2, opposite Chuo BT — not Yokochi-no-yu
+• 07 Tsukushinbo is Tokiwaya B1 — not the inn lobby (0269-85-3128)
+• 08 Yamabiko is 2F at Nagasaka Yamabiko station — not village dinner
+• 11 Atarashiya restaurant is 8866 — not the inn あたらしや at 6950, not Shin-yu the bath
+• Baths have no 01–11. Do not retitle Ōyu as 01 or 13
+• Asagama-no-yu is the bath. Ogama source park is villagers only — do not pin Ogama
+• Taki-no-yu is village-guest only (confirm on the door)
+• Shin-yu closes 22:00 — earlier than Ōyu
+• Do not add Furusato-no-yu / Spalina (paid, not the 13) or inn baths
+
+Official names + hours: https://nozawakanko.jp/hotspring/
+English trail names: https://en.nozawaski.com/the-village/activities/onsen-trail/
+番地 is not on the official kanko page. Address column is the Japanese bath name for geocoding. If a pin sucks to an inn, hand-place it.
+
+Book from the chapter table. This map is where to walk.
+https://japowsearch.com
+
+IMPORT (locked — two checkbox layers on the live map. Do not merge.)
+Title column = Name
+Location column = Address
+Description column = Description
+Style → Uniform style → Group places by → Layer
+Eat pins stay on `Nozawa Eat Map` (Layer column = `Nozawa Eat Map` for all 01–11). Soto-yu pins stay on `Sotoyu-Map(Hotsprings)` — import from nozawa-sotoyu-mymap-en.csv only.
+Do not collapse to one checkbox. Do not delete the soto-yu layer.
+
+KNOT (add by hand, not in the CSV)
+Name: Nozawa Chuo BT
+Search: 野沢温泉 中央ターミナル / Nozawa Onsen Chuo Bus Terminal
+Same place as NSS Nozawa Base Camp. Not a restaurant pin. Not Nagasaka.
+
+PDF SCREENSHOT
+Light / beige basemap (not default “Map”). Close the basemap picker.
+Crop the left editor panel.
+Zoom the village core so Walk pins 01–03, 05–07, 09–10, Chuo BT, and Ōyu the bath are in frame.
+This week’s 3 soaks overlapping dinner pins is expected.
+Shinden / Nagasaka / some other baths may sit off-frame. Long side ≥ 1920 px.
+Save as docs/japow-chasers-guide/assets/japow-guide-nozawa-eatmap-v1.png
+
+PUBLISHED
+https://www.google.com/maps/d/viewer?mid=1Uto3jE4dZRliChUPWDqHOJRS2XrA8mI
+
+EDIT (owner only — never in the chapter)
+https://www.google.com/maps/d/edit?mid=1Uto3jE4dZRliChUPWDqHOJRS2XrA8mI
