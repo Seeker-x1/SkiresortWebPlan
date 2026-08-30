@@ -61,6 +61,8 @@ More stable, clearer days. For late March dry snow, stay with the **Asahikawa** 
 
 ## HUB 1 — Asahikawa & OMO7
 
+**Season:** Yen figures below are **2025–26 published** unless a newer official page is cited. **[VERIFY 2026–27]** means that number or timetable is not locked for next winter yet — last season’s published figure, confirm when that season’s PDF / shop goes live. The tags stay next to the figures; they are not errors.
+
 ### This week in 30 seconds
 
 | | Do this |
@@ -96,7 +98,7 @@ More stable, clearer days. For late March dry snow, stay with the **Asahikawa** 
 
 If you want one hub that covers big terrain, multiple mountains, dry snow, and serious food, **Asahikawa** is the clearest answer in northern Hokkaido.
 
-**The main reason powder hunters choose Asahikawa:** it is the practical gateway to **Daisetsuzan Asahidake (旭岳)**—Hokkaido’s highest peak and Japan’s most revered **ropeway-accessed** backcountry zone. This is not Niseko with groomers and patrol. There are **no ski lifts**—only a **single ropeway** (旭岳ロープウェイ) into an active volcano, unpatrolled alpine terrain, and dry inland powder that riders describe as “crystal smoke.” National Geographic has called the mountain among the **world’s best powder destinations**—a quiet alternative to the mega-resort circus.
+**The main reason powder hunters choose Asahikawa:** it is the practical gateway to **Daisetsuzan Asahidake (旭岳)**—Hokkaido’s highest peak and Japan’s most revered **ropeway-accessed** backcountry zone. This is not Niseko with groomers and patrol. There are **no ski lifts**—only a **single ropeway** (旭岳ロープウェイ) into an active volcano, unpatrolled alpine terrain, and dry inland powder that riders describe as crystal smoke. In 2017, *National Geographic* reported that professional riders often rank Asahi-dake among the world's best powder destinations—a quiet alternative to Niseko ([*In Japan's Northern Wonderland, Winter Is Coming*](https://www.nationalgeographic.com/adventure/article/winter-mountain-snow-asahi-dake-hokkaido), Oct 2017).
 
 | Mountain | Drive from city | Why go |
 |----------|-----------------|--------|
@@ -122,7 +124,7 @@ One decision. Do not mix. Inn dinner is **not** a path here — this is a city h
 
 **Path A — OMO7 shuttle week.** **Guest-only free** ski buses to Asahidake / Kamui / Pippu / Canmore / Santa. Not the public Ideyu-go. Book the seat by **22:00** the night before (official 2025–26 Asahidake hotel departures 7:04 / 9:04 / 12:04 — **[VERIFY 2026–27]**). A car is optional (Furano / Tomamu only).
 
-**Path B — Station hotel + public transport.** No OMO7 guest shuttle. Kamui and Santa: Dohoku **455**. Pippu: Dohoku bus or JR Pippu + resort shuttle. Furano: Lavender-go (full day). **Asahidake: you can go.** Asahikawa Denkikido **Ideyu-go (いで湯号, route 66)** runs year-round, **four** round-trips. JR Asahikawa Station (stop 9) **7:15 → Asahidake 9:03**; last bus down **16:55** → station **18:33**. Adult fare last published **¥1,800** **[VERIFY 2026–27]**. Official: [asahikawa-denkikido.jp/asahidaek_line](https://www.asahikawa-denkikido.jp/asahidaek_line/). That clock is the day. Wind hold on the ropeway = no skiing, and you still have to make 16:55.
+**Path B — Station hotel + public transport.** No OMO7 guest shuttle. Kamui and Santa: Dohoku **455**. Pippu: Dohoku bus or JR **Pippu (比布) Station** + free resort shuttle (season). Furano: Lavender-go (full day). **Asahidake: you can go.** Asahikawa Denkikido **Ideyu-go (いで湯号, route 66)** runs year-round, **four** round-trips. JR Asahikawa Station (stop 9) **7:15 → Asahidake 9:03**; last bus down **16:55** → station **18:33**. Adult fare last published **¥1,800** **[VERIFY 2026–27]**. Official: [asahikawa-denkikido.jp/asahidaek_line](https://www.asahikawa-denkikido.jp/asahidaek_line/). That clock is the day. Wind hold on the ropeway = no skiing, and you still have to make 16:55.
 
 **Path C — Shared 4WD.** Station hotel or OMO7. Shuttles already cover Kamui / Asahidake / Pippu / Canmore / Santa. A car still wins on **clock and range**: first chair before the bus, leftover municipal hills, Furano / Tomamu without a full-day coach. You pay for that, and the driver does not drink. **Studless** on the voucher and on the tires. Split the group on arrival (Hack 2). Drinking and driving is a **serious crime**.
 
@@ -169,7 +171,7 @@ These are **one-way** estimates from **JR Asahikawa Station**. Buses run on fixe
 | **Santa Present Park** | City bus **455** (Rapid Santa·Links) | **~15–20 min** | Easiest no-car hill; pairs with night skiing |
 | **Kamui Ski Links** | Same **455** bus (runs via Santa) | **~35–45 min** | Frequent morning departures from platform **22** |
 | **Pippu Ski Area** | **Dohoku Bus** direct from station | **~60–75 min** | Few departures—miss the bus, lose half a day |
-| **Pippu Ski Area** | JR to Bibai + free resort shuttle | **~75–90 min** | Backup route; connection waits are long |
+| **Pippu Ski Area** | JR to **Pippu (比布) Station** + free resort shuttle (season) | **~45–60 min** | Asahikawa→比布 **15–30 min** (JR) + shuttle **~30 min**; match [official timetables](https://www.town.pippu.hokkaido.jp/ski/access.html) |
 | **Furano Ski Resort** | **Lavender-go** sightseeing bus to New Furano Prince Hotel area | **~1.5–2 hr** | **Plan a full day**—you will sit on the bus ~3–4 hr round-trip before lifts |
 | **Daisetsuzan Asahidake** | **Ideyu-go** (route 66) year-round, 4/day · station **7:15 → 9:03** · last down **16:55** · **¥1,800** **[VERIFY 2026–27]** · or ~75–90 min car / OMO7 guest shuttle | **~75–90 min car** | Public bus exists. It is a **clock**, not a shuttle. Wind hold = the day is dead |
 
@@ -181,7 +183,7 @@ Shortlist near **JR Asahikawa Station** (verify winter rates, parking for a tall
 
 | Hotel | Walk from station | Best for | Ski-relevant notes |
 |-------|-------------------|----------|--------------------|
-| **[Hotel WBF Grande Asahikawa](https://www.hotelwbf.com/grande-asahikawa/en/)** | ~8–12 min (central / food street side) | Closest “ski hotel” vibe without OMO7 | Seasonal **Wax Bar**; **free Kamui round-trip city-bus tickets** (Dec–Mar, front desk); limited hotel-front priority bus via OMO7 toward Kamui; lift-ticket pickup box; big onsen / sauna complex |
+| **[Hotel WBF Grande Asahikawa](https://www.hotelwbf.com/grande-asahikawa/en/)** | ~8–12 min (central / food street side) | Closest “ski hotel” vibe without OMO7 | Seasonal **Wax Bar**; **free Kamui round-trip city-bus tickets** (Dec–Mar, front desk); limited-seat Kamui private bus (hotel-front departures, routes via OMO7; QR at check-in, 5 seats/departure — [WBF](https://www.ishinhotels.com/wbf/grande-asahikawa/grandeasahikawa-lp) · [Kamui bus](https://www.kamui-skilinks.com/important-information-about-kamui-ski-links-private-bus-en/)); lift-ticket pickup box; big onsen / sauna complex |
 | **[Hotel Route Inn Grand Asahikawa Ekimae](https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_635/)** | ~2 min (north exit) | Station + car pickup convenience | Onsen / sauna; coin laundry; easy drop for TA-Q-BIN; strong “Standard” budget-tier pick |
 | **[KOKO HOTEL Asahikawa Ekimae](https://koko-hotels.com/asahikawa_station/)** | ~2 min | Cheapest true station-front base | Former **Hotel Wing** site; coin laundry; strong breakfast reputation; airport bus / AEON side convenience; **no onsen** / no known ski dry room |
 | **[Dormy Inn Asahikawa](https://dormy-hotels.com/dormyinn/hotels/asahikawa/)** | ~8–10 min | Onsen recovery + inbound-familiar chain | Rooftop natural onsen **Kamui no Yu** + sauna; late-night *yonaki* noodles; airport city-bus stop nearby. **Tattoos: official no** on the big bath ([spa page](https://dormy-hotels.com/dormyinn/hotels/asahikawa/spa)) |
@@ -462,7 +464,7 @@ Book **January–February** early. **Ropeway tickets** (not resort lift passes) 
 | Path | Stay | Transport | Beds + local moves |
 |------|------|-----------|---------------------|
 | **A — OMO7 shuttle week** | OMO7 | Guest shuttles; optional 4WD only for Furano/Tomamu | **~$1,100–1,500** |
-| **B — station buses only** | Super Hotel / KOKO | Airport bus + city / Dohoku / Lavender-go. Asahidake = **Ideyu-go** (paid, four clocks) | **~$700–950** |
+| **B — station buses only** | Super Hotel / KOKO / Route Inn Grand | Airport bus + city / Dohoku / Lavender-go. Asahidake = **Ideyu-go** (paid, four clocks) | **~$700–950** |
 | **C — station + shared 4WD** | Super Hotel / KOKO / Route Inn Grand / Dormy / AMANEK / WBF | Shared 4WD (Discover Cars AKJ or station) | **~$1,000–1,400** |
 
 Peak January weeks move the room line. Path A is not “Premium” — it is the shuttle machine. Path B is cheaper because you dropped the guest shuttle, not because Asahidake is impossible. Super Hotel is a **station bed**: run it as Path B or add a 4WD and it becomes Path C.
@@ -653,11 +655,11 @@ Official FAQ: *“People with tattoos are welcome.”* ([inquiry](https://hakuba
 
 **Four municipal baths**, same source. Default this week: **Happo-no-Yu** — largest, open-air, Happo walk. Then dinner.
 
-| Bath | Walk | Adult | Tattoo | Book | Notes |
-|------|------|-------|--------|------|-------|
+| Bath | Walk | Day-use | Tattoo | Book | Notes |
+|------|------|---------|--------|------|-------|
 | **Happo-no-Yu** (八方の湯) | ~5–10 min Happo (gondola ~10 min official) | **¥1,000** | **OK** | Walk-in | 10:00–21:00 (last in 20:30). Every day. Card / QR. |
 | **Mimizuku-no-Yu** (みみずくの湯) | Station side (~10 min from JR Hakuba, not Happo BT) | **¥800** | **OK** | Walk-in | 10:00–21:00. Every day. Card / QR. |
-| **Obinata-no-Yu** (おびなたの湯) | Closest to the source (~3 km) | **¥25,000 / hr** (up to 5) · +**¥5,000** / head from the 6th. Under 7 free | **OK** | [Chillnn](https://www.chillnn.com/ja/18c527b35585/#hotelMenu) | Winter **1-hour** charter. Shuttle (max 7), towels, drinks in the fee. Seven slots / day (bus-stop meet 13:00–19:00). **[VERIFY 2026–27]** |
+| **Obinata-no-Yu** (おびなたの湯) | Closest to the source (~3 km) | — | **OK** | [Chillnn](https://www.chillnn.com/ja/18c527b35585/#hotelMenu) | Winter **1-hour** charter. **¥25,000 / hr** (up to 5) · +**¥5,000** / head from the 6th. Under 7 free. Shuttle (max 7), towels, drinks in the fee. Seven slots / day (bus-stop meet 13:00–19:00). **[VERIFY 2026–27]** |
 | **Sato-no-Yu** (郷の湯) | Happo core (BT → gondola) | **¥800** | **OK** | Walk-in | Winter evenings **16:00–20:00** (last 19:30). Official season **1 Dec–31 Mar**. **Cash.** |
 
 Hotel: THE HAPPO / Panorama in-house **ask desk**. Panorama’s tub is heated well water, not the municipal spring. Moegi has no hotel bath — Happo-no-Yu.
@@ -766,11 +768,11 @@ Evening jobs are scarce. **Do not stack Hie and Goryu night skiing. Do not night
 
 **Lights — three hills, not the same product.** Happo-One has **no night skiing**. Official: stay off the mountain **17:00–07:30** (groomer cables). Iwatake, Tsugaike, and 47 have none. Goryu calls itself Hakuba **village’s only** nighter.
 
-| Hill | When (2025–26; **[VERIFY 2026–27]**) | Hours | From Happo BT |
-|------|--------------------------------------|-------|----------------|
-| **ABLE Hakuba Goryu** — Toomi (Iimori some nights) | **Most nights** 27 Dec–19 Mar (closed 4 Mar 2026, private event) | **18:00–21:30** (packed 17:00–18:00) | **The default.** Adult night ticket **¥6,500** (youth/child **¥3,000**). Day ticket / HV pass **does not** cover it. Counter 17:30. [Nighter](https://www.hakubaescal.com/winter-en/gelande/nighter/) |
-| **Cortina** — Ike-no-ta | **Selected dates only.** Official 2026–27 already posted: 26 Dec–2 Jan, 10 Jan, and Jan/Feb Saturdays | **17:00–21:00** | Do not from Happo BT. Line V dies after the daytime buses. |
-| **Nozawa** — Nagasaka | **Selected dates only:** 27 Dec–3 Jan daily, then Saturdays 10 Jan–21 Mar (+ 11 Jan, 22 Feb, 20 Mar) | Day close–**20:00** (lift table **16:30–20:00**) | Act 2 only. Village shuttle to **Nagasaka**. Not every village night. Adult **¥2,700** — not in the day ticket. [FAQ](https://nozawaski.com/winter/general/contact/) |
+| Hill | When | Hours | From Happo BT |
+|------|------|-------|----------------|
+| **ABLE Hakuba Goryu** — Toomi (Iimori some nights) | **2025–26:** most nights 27 Dec–19 Mar (closed 4 Mar 2026, private event). **[VERIFY 2026–27]** | **18:00–21:30** (packed 17:00–18:00) | **The default.** Adult night ticket **¥6,500** (youth/child **¥3,000**). Day ticket / HV pass **does not** cover it. Counter 17:30. [Nighter](https://www.hakubaescal.com/winter-en/gelande/nighter/) |
+| **Cortina** — Ike-no-ta | **2026–27 confirmed.** Selected dates only: 26 Dec–2 Jan, 10 Jan, and Jan/Feb Saturdays | **17:00–21:00** | Do not from Happo BT. Line V dies after the daytime buses. |
+| **Nozawa** — Nagasaka | **2025–26:** selected dates only — 27 Dec–3 Jan daily, then Saturdays 10 Jan–21 Mar (+ 11 Jan, 22 Feb, 20 Mar) | Day close–**20:00** (lift table **16:30–20:00**) | Act 2 only. Village shuttle to **Nagasaka**. Not every village night. Adult **¥2,700** — not in the day ticket. [FAQ](https://nozawaski.com/winter/general/contact/) |
 
 Goryu FAQ: **free night shuttle** to Escal Plaza — check that season’s PDF. **Line VN bans skis**; it is the Echoland dinner bus, not a nighter bus. Taxi is the backup. Do not drink and then drive.
 
@@ -869,6 +871,7 @@ Where do locals actually go? Off the Happo stroll, and not on Line VN. Station r
 | **25** | **Takahashi-ke** (髙橋家) | Ramen (container shop at the Goryu gate). Not Yokohama *ie-kei* (たかはしけ) | **Goryu / Kamishiro** (神城23386-1) — taxi | Walk-in. Closed Fri (hakubameshi). Winter listed **12:00–20:15** L.O. Phone **090-2165-8523** |
 | **26** | **Donmaru** (虹屋丼丸 白馬店) | Cheap takeout kaisendon — seafood fast food | **Iimori / Kamishiro** — taxi | Walk-in / takeout. Phone **0261-75-3224** |
 | **27** | **TABITABI** (タビタビ) | Farm gelato / dessert | **Mizuho** (official) — taxi / car | Walk-in gelato. Parfait: [TableCheck](https://www.tablecheck.com/ja/tabitabi/reserve/). Closed Mon–Tue (official). Winter hours **vary**. [sakurafarm-hakuba.jp](https://sakurafarm-hakuba.jp/) · **0261-85-2520** |
+| **28** | **Yamashina** (山品) | Shingyo soba from local buckwheat flour (地粉). **Lunch only** — **11:00 until sold out**. Not Zen Soba. Not Ringoya. Not Riki | **Omachi Miasa / Shingyo** — ~30 min by car from Happo | Walk-in. Be in line around **11:00–12:00**. Closed Fri. Phone **0261-23-1230** |
 | **29** | **Riki** (蕎麦処 りき) | Scratch soba / Hakuba galette. **Lunch only** — **11:00–15:00** until sold out. Closed Thu / Fri. Not a steakhouse. Not Zen Soba. Not Ringoya. Not Yamashina | **Mizuho** (北城3020-90) — taxi | Walk-in. Phone **0261-85-4311**. [Site](https://sobadokororiki.com/) |
 
 Nagano is Shinshu soba country. This ski week does not put a soba pilgrimage on the list. If you have a car and you care about soba, **go anyway**: **28 · Yamashina** (山品) in Omachi Miasa / Shingyo — about **30 minutes** from Happo. This is Shinshu buckwheat country, and this guide’s pick for the bowl worth the drive: hand-cut **Shingyo soba from local buckwheat flour** (地粉 — Omachi tourism). Lunch only; **11:00 until sold out**. Be in line around **11:00–12:00**. Closed Fri. Phone **0261-23-1230**. Not Happo walk. Not Ringoya. Not Zen Soba. Not Riki. Not Echoland.
@@ -1096,7 +1099,7 @@ This hub is **Echigo-Yuzawa Station**. Seven nights from one bed is enough — *
 
 Echigo-Yuzawa is a **rail-and-onsen town**, not an airport village. You leave Tokyo after breakfast and ski by late morning without a domestic flight. The Joetsu Shinkansen is the spine (~66–80 min). From the **east exit** you catch free shuttles to Gala, Iwappara, and Kandatsu. From **湯沢駅前 / east exit** you take the paid express bus toward Kagura / Naeba. The knot still wins because the pilgrimage hill (Kagura / Naeba, linked) is a bus, not a second hotel.
 
-JMA Yuzawa station **block 0544**, 1991–2020 normals (cm, do not round): Nov **12** · Dec **210** · Jan **377** · Feb **288** · Mar **159** · Apr **20** · Annual **1,054**. Station elevation ≠ Kagura summit. Japan Sea snow can be denser than inland Hokkaido.
+JMA Yuzawa station **block 0544**, 1991–2020 normals (cm, do not round): May–Oct **0** · Nov **12** · Dec **210** · Jan **377** · Feb **288** · Mar **159** · Apr **20** · Year **1,054** (JMA 降雪の深さ合計 year row — monthly normals do not arithmetic-sum to the year total). Station elevation ≠ Kagura summit. Japan Sea snow can be denser than inland Hokkaido.
 
 ![JMA Yuzawa block 0544 snowfall normals (1991–2020, cm)](assets/japow-guide-04-jma-yuzawa-v1.png)
 
@@ -1196,7 +1199,7 @@ Search intent: **Echigo-Yuzawa Station**. Nippon lot **1-12-4**. Not Yuzawa IC. 
 
 #### Mid-week raid
 
-The station buses already fill the week. Most of the near hills are **~30 minutes** from the east exit — that ring is enough. You do not need a car for it. If [japowsearch](https://japowsearch.com) shows a farther hill you actually want, rent a car for a short raid. Take **Myoko-area hills** and **Muikamachi Hakkaisan** — they keep **several ungroomed runs**. Hakkaisan is pin **27** (≤1 h). **Nozawa / Madarao** (pins **47–52**) is the same day-trip job — do not overnight there; that is a different week. The raid when it is **snowing** is **Myoko** (~90–120 min, a day trip). Pick up a **studless 4WD** for a day or two from the station (same Discover Cars link). You do not overnight in Myoko. Sleep stays in Yuzawa. Drive that day; go back to the east-exit shuttles when you return the car. Same **Parking** column. Do not drink if you drive. **Pink pins** are Myoko. **Nozawa / Madarao** is its own checkbox on the drive map above.
+The station buses already fill the week. Most east-exit shuttles are **~30 minutes** (Naeba express **~37 min** — shuttle table). That ring is enough. You do not need a car for it. If [japowsearch](https://japowsearch.com) shows a farther hill you actually want, rent a car for a short raid. Take **Myoko-area hills** and **Muikamachi Hakkaisan** — they keep **several ungroomed runs**. Hakkaisan is pin **27** (≤1 h). **Nozawa / Madarao** (pins **47–52**) is the same day-trip job — do not overnight there; that is a different week. The raid when it is **snowing** is **Myoko** (~90–120 min, a day trip). Pick up a **studless 4WD** for a day or two from the station (same Discover Cars link). You do not overnight in Myoko. Sleep stays in Yuzawa. Drive that day; go back to the east-exit shuttles when you return the car. Same **Parking** column. Do not drink if you drive. **Pink pins** are Myoko. **Nozawa / Madarao** is its own checkbox on the drive map above.
 
 ---
 
@@ -1342,9 +1345,9 @@ Evening = one job. **Do not stack nighter + Moritaki. Do not nighter the night y
 | **2** | Weather table. Quiet fallback: **Iwappara**. Lunch there: **Pittore** pizza. | **Kamagura**, or hegi still serving (Kojimaya / Kikushin). Not Nakanoya (lunch queue). |
 | **3** | Weather table. Quiet fallback: **Joetsu Kokusai** (JR) *if* Kagura upper held. | **Moritaki if booked.** Not nighter. |
 | **4** | Weather table. Quiet fallback: a hill you have not sat. Not “empty Gala weekday.” | **Muran Gozzo if booked**, else Yasuyoshi. Not Kamagura again. |
-| **5** | Weather table. Quiet fallback: a hill you have not sat. Not “Iwappara leftover.” | **Kandatsu nighter** *only if* that date is on. Else Uotami or Asfes. Not Moritaki. |
-| **6** | Weather table. **Full day** — boards stay. Quiet fallback: the hill the week skipped. Not default Gala. | Last dinner (Asfes or leftover izakaya). **No nighter** (morning train). |
-| **7 · Out** | Echigo-Yuzawa → **Tokyo ~66–80 min** (Ueno **~6 min less**). Then **HND** Keikyu **~30 min** from Tokyo — about **~2 h** to the airport **plus transfer**. **NRT** N'EX **53 min** from Tokyo, or Skyliner **~36 min** from Keisei-Ueno — about **~2–2.5 h plus transfer**. Keisei-Ueno ≠ JR Ueno. Boards on the train. Morning hill only if the flight still fits. Not default Gala. | On the train. Allow time after posted airport arrival. |
+| **5** | Weather table. Quiet fallback: a hill you have not sat. Not “Iwappara leftover.” | **Kandatsu nighter** *only if* that date is on. Else Uotami or **Asfes if open**. Not Moritaki. |
+| **6** | Weather table. **Full day** — boards stay. Quiet fallback: the hill the week skipped. Not default Gala. | Last dinner (**Asfes if open**, else leftover izakaya). **No nighter** (morning train). |
+| **7 · Out** | Echigo-Yuzawa → **Tokyo ~66–80 min** (Ueno **~6 min less**). Then **HND**: JR to **Shinagawa** · **Keikyu Airport Line** **~15 min** (not from Tokyo Station — see inbound table) — about **~2 h** to the airport **plus transfer**. **NRT** N'EX **53 min** from Tokyo, or Skyliner **~36 min** from Keisei-Ueno — about **~2–2.5 h plus transfer**. Keisei-Ueno ≠ JR Ueno. Boards on the train. Morning hill only if the flight still fits. Not default Gala. | On the train. Allow time after posted airport arrival. |
 
 **Lights — not the same product.**
 
@@ -1378,11 +1381,11 @@ Confirm hours the same day on Google Maps and the shop Instagram. **Otoshi** (co
 | **03** | Izakaya / washoku | **Muran Gozzo** (むらんごっつぉ) | **Required** — 17:45 or 19:30; book by noon | [TableCheck](https://www.tablecheck.com/en/murangozzo/reserve) | Partial (EN UI) |
 | **04** | Izakaya / washoku | **Uonuma Kamagura** (魚沼釜蔵) | Recommended | Phone **025-240-7092** | **Yes** (official EN menu) |
 | **05** | Izakaya / washoku | **Yasuyoshi** (保よし) | Recommended | Phone **025-784-2244** (TableCheck **closed** 2026-08-13) | Partial (EN site) |
-| **09** | Hegi / noodles | **Kikushin** (菊新) | Walk-in (busy: no bookings) | **No** | Unknown |
 | **06** | Hegi / noodles | **Shinbashi** (しんばし) | Walk-in until sold out | Phone **025-784-2309** | Unknown |
-| **10** | Hegi / noodles | **Nakanoya Honten** (中野屋) | Walk-in — **lunch queue** to 16:00; **no table hold** | **No** | Unknown |
 | **07** | Nabe / meat | **Chaya Moritaki** (茶屋 森瀧) | Recommended (winter weekends fill) | Phone **025-784-3600** | Unknown |
 | **08** | Nabe / meat | **Omoide** (想い出) | Recommended. Cash | Phone **025-784-2083** | Unknown |
+| **09** | Hegi / noodles | **Kikushin** (菊新) | Walk-in (busy: no bookings) | **No** | Unknown |
+| **10** | Hegi / noodles | **Nakanoya Honten** (中野屋) | Walk-in — **lunch queue** to 16:00; **no table hold** | **No** | Unknown |
 | **11** | Late | **Uotami** (魚民) | Walk-in. East exit, immediately right. **17:00–0:00** (Sat/Sun **16:00–**) | Official net book (not TableCheck) | Chain |
 | **12** | Beer | **Asfes** (アズフェス) | Walk-in. ~10 min west. Open planned Sept 2026 | [asfesbrew.com](https://asfesbrew.com/brewery/) | Winter clock **[VERIFY 2026–27]** |
 | **—** | Pizza / Iwappara | **Pittore** (ラ・ロカンダ・デル・ピットーレ) | Winter lunch **walk-in** (no booking). Dinner **phone** | Phone **025-787-3940** · [pittore.jp](https://pittore.jp/) | Unknown |
@@ -1492,7 +1495,7 @@ You already chose Path A or Path B. Do not re-pick here. Book the beds (links un
 
 ---
 
-This week does not change hotels. The knot is **Echigo-Yuzawa Station**. Path A’s buses already fill the near hills in about **30 minutes**. Path B is a station 4WD on the days you want the clock — or a 1–2 day raid. Sleep stays here. Name **west** vs **east** on every shuttle and walk.
+This week does not change hotels. The knot is **Echigo-Yuzawa Station**. Path A’s buses already fill the near hills in about **30 minutes** (Naeba **~37 min**). Path B is a station 4WD on the days you want the clock — or a 1–2 day raid. Sleep stays here. Name **west** vs **east** on every shuttle and walk.
 
 The week’s hill is **Kagura**. Take the guided day on the first clear/cold window. The weather table wins. Days 2–6 are not a locked tour of Iwappara → Joetsu → Gala.
 
