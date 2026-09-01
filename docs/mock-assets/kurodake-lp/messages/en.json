@@ -92,7 +92,10 @@
     "rentacarEyebrow": "旭川90分・層雲峡ロープウェイ山岳パウダー",
     "rentacarLink": "旭川空港でレンタカー予約",
     "rentacarNote": "スカイチケット（外部サイト）",
-    "rentacarHint": "大雪山黒岳スキー場周辺のドライブ向け"
+    "rentacarHint": "大雪山黒岳スキー場周辺のドライブ向け",
+    "hotelHubEyebrow": "Asahikawa hub · stay",
+    "hotelHubLink": "Compare Asahikawa hub hotels",
+    "hotelHubNote": "Japowsearch hotel compare (external)"
   },
   "footer": {
     "copyright": "© Daisetsuzan Kurodake Ski Area (mock)",

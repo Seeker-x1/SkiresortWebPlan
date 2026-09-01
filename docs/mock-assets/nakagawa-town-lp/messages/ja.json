@@ -163,7 +163,10 @@
     "rentacarEyebrow": "道北良質パウダーを400円で。降雪API直結のライブダッシュボードで、町民スキー場の運営情報を透明に開示する。",
     "rentacarLink": "旭川空港でレンタカー予約",
     "rentacarNote": "スカイチケット（外部サイト）",
-    "rentacarHint": "中川町民スキー場周辺のドライブ向け"
+    "rentacarHint": "中川町民スキー場周辺のドライブ向け",
+    "hotelHubEyebrow": "旭川ハブ · 宿",
+    "hotelHubLink": "旭川ハブの宿を一括比較",
+    "hotelHubNote": "Japowsearch ホテル比較（外部）"
   },
   "footer": {
     "copyright": "© 中川町民スキー場",

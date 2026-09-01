@@ -1,0 +1,559 @@
+﻿<!DOCTYPE html>
+<html lang="ja" data-mock-resort="kamoidake">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>かもい岳国際スキー場</title>
+  <meta name="description" content="歌志内の東2リフトと西パウダー——旭川から車で約70分" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mock.css" />
+  <link rel="stylesheet" href="../_shared/lp-layout.css" />
+  <link rel="stylesheet" href="../_shared/mock-i18n.css" />
+  <link rel="stylesheet" href="../_shared/affiliates/rentacar-link.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner header-row">
+      <a href="./" class="logo" data-i18n="logo">かもい岳国際スキー場</a>
+      <nav data-i18n-attr="aria-label:common.mainNav">
+        <ul class="nav">
+          <li><a href="#access" data-i18n="nav.access">アクセス</a></li>
+          <li class="nav-map-item"><a href="../map.html?resort=kamoidake" data-i18n="nav.map" data-i18n-attr="title:nav.mapHint">ゲレンデマップ</a><span class="nav-map-hint" data-i18n="nav.mapHint" aria-hidden="true">概略（未検証の場合あり）</span></li>
+          <li><a href="#live" data-i18n="nav.live">本日</a></li>
+          <li><a href="#pass" data-i18n="nav.pass">パス</a></li>
+          <li><a href="#family" data-i18n="nav.family">ファミリー</a></li>
+          <li><a href="#spa" data-i18n="nav.spa">温泉</a></li>
+          <li><a href="#highlights" data-i18n="nav.highlights">魅力</a></li>
+          <li><a href="#guides" data-i18n="nav.guides">特集</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.switch">
+        <button type="button" data-lang-switch="ja" data-i18n-attr="aria-label:lang.switch">JA</button>
+        <button type="button" data-lang-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-i18n-attr="aria-label:common.firstView">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="lp-mock-kamoidake-hero.png" alt="" width="1920" height="1080" />
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="inner hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">北海道歌志内市 · 空知</p>
+        <h1 class="hero-title" data-i18n-html="hero.title">かもい岳<br />国際スキー場</h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">東は第1・第2リフト、西は積雪次第のパウダー。旭川から車で約70分。</p>
+        <span class="badge-price" data-i18n="hero.badgeLocal">大人1日券 ¥6,000</span>
+        <span class="badge-visitor" data-i18n="hero.badgeVisitor">Snow & Spa Pass</span>
+        <span class="badge-sled" data-i18n="hero.badgeSled">リフト 9:00–15:30</span>
+        <div class="hero-cta">
+          <a href="#pass" class="btn btn-gold" data-i18n="hero.ctaPass">パス・料金</a>
+          <a href="#live" class="btn btn-ghost" data-i18n="hero.ctaLive">本日のコンディション</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="live" class="live-dashboard" data-i18n-attr="aria-label:live.ariaLabel">
+      <div class="inner">
+        <div class="live-head">
+          <div>
+            <span class="live-pulse" aria-hidden="true"></span>
+            <span class="live-label">Live</span>
+            <span style="font-size:0.75rem;color:var(--muted);margin-left:0.5rem" data-i18n="live.subtitle">公式ゲレンデ案内に基づく概要（営業日は要確認）</span>
+          </div>
+          <p class="live-updated" data-i18n="live.updatedAt">更新 12/25 9:00</p>
+        </div>
+        <div class="status-grid">
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.lift.label">リフト</p>
+            <p class="status-card__value" data-i18n="live.lift.value">運行中</p>
+            <p class="status-card__note" data-i18n="live.lift.note">第1 1,002m · 第2 584m · 第3は運休</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.courses.label">コース</p>
+            <p class="status-card__value" data-i18n="live.courses.value">東5本＋西</p>
+            <p class="status-card__note" data-i18n="live.courses.note">バンビ〜大会 · 西パウダーは別料金</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.night.label">営業</p>
+            <p class="status-card__value" data-i18n="live.night.value">15:30まで</p>
+            <p class="status-card__note" data-i18n="live.night.note">9:00〜 · 第2リフトは15:00まで</p>
+          </div>
+          <div class="status-card">
+            <p class="status-card__label" data-i18n="live.yotei.label">ビュー</p>
+            <p class="status-card__value" style="color:var(--accent-yotei)" data-i18n="live.yotei.value">空知の雲海</p>
+            <p class="status-card__note" data-i18n="live.yotei.note">晴天時は大パノラマ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="transit-heading">
+      <div class="inner">
+        <div class="transit-grid">
+          <div class="transit-visual">
+            <div class="frame">
+              <img
+                src="lp-mock-kamoidake-transit.png"
+                data-i18n-attr="alt:transit.imgAlt"
+                alt="道道1027から見るかもい岳のベースとセンターハウス"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="transit-card">
+            <p class="eyebrow" data-i18n="transit.eyebrow">Station Walk</p>
+            <h2 id="transit-heading" class="heading-lg" data-i18n-html="transit.title">駅から徒歩、<br />そのまま雪へ。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:28rem" data-i18n="transit.lead">
+              公共交通の徒歩ゲレンデではない。拠点は旭川。道央道・砂川SAスマートIC経由が近い。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="transit.specs.0">旭川市街から車で約70分</li>
+              <li class="spec-tag" data-i18n="transit.specs.1">砂川SAスマートICから約15分</li>
+              <li class="spec-tag" data-i18n="transit.specs.2">駐車場あり（道道1027沿い）</li>
+            </ul>
+            <div class="transit-actions">
+              <a href="#pass" class="btn btn-gold" data-i18n="transit.ctaPass">パスを見る</a>
+              <a href="#live" class="btn btn-ghost" data-i18n="transit.ctaLive">本日の運営</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section border-top" aria-labelledby="paths-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.explore">Explore</p>
+        <h2 id="paths-heading" class="heading-lg" data-i18n="common.pathsTitle">まずここから</h2>
+        <div class="path-grid">
+          <a href="#live" class="path-tile span-8">
+            <span class="path-tile__label" data-i18n="paths.today.label">今日</span>
+            <span class="path-tile__title" data-i18n="paths.today.title">リフト・コース・雪質</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#access" class="path-tile span-4">
+            <span class="path-tile__label" data-i18n="paths.access.label">アクセス</span>
+            <span class="path-tile__title" data-i18n="paths.access.title">旭川ハブ・車が基本</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#pass" class="path-tile span-6">
+            <span class="path-tile__label" data-i18n="paths.pass.label">パス</span>
+            <span class="path-tile__title" data-i18n="paths.pass.title">Snow & Spa Pass</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#family" class="path-tile span-6">
+            <span class="path-tile__label" data-i18n="paths.family.label">ファミリー</span>
+            <span class="path-tile__title" data-i18n="paths.family.title">バンビコース</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#spa" class="path-tile span-8" style="grid-column: 1 / -1">
+            <span class="path-tile__label" data-i18n="paths.spa.label">温泉</span>
+            <span class="path-tile__title" data-i18n="paths.spa.title">雲海の里かもい岳</span>
+            <span class="path-tile__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section" aria-labelledby="highlights-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="highlights.eyebrow">かもい岳の骨格</p>
+        <h2 id="highlights-heading" class="heading-lg" data-i18n="highlights.title">ここが違う</h2>
+
+        <div class="highlight-duet">
+          <article class="highlight-primary">
+            <div class="frame">
+              <img
+                src="lp-mock-kamoidake-hero.png"
+                data-i18n-attr="alt:highlights.primary.imgAlt"
+                alt="空知の雲海を背景に広がるかもい岳国際スキー場——コンパクトな初級ゲレンデ"
+                width="1600"
+                height="1100"
+              />
+            </div>
+            <div class="highlight-primary-body">
+              <h3 data-i18n="highlights.primary.title">第1・第2がいまの営業核</h3>
+              <p class="lead" style="margin-top:1rem" data-i18n="highlights.primary.lead">
+                リフト1本・東5本＋西・標高差50m——恐怖心を与えない「雪の箱庭」。富良野スキー場の混雑や長時間待ちを避け、空知の雲海を背景に静かに雪遊びを楽しむ隠れた名所（Hidden Gem）。
+              </p>
+              <a href="#" class="btn btn-gold" style="margin-top:2rem" data-i18n="highlights.primary.cta">コース・ビューを見る</a>
+            </div>
+          </article>
+
+          <article class="highlight-secondary">
+            <h3 data-i18n="highlights.secondary.title">西パウダーは入場別</h3>
+            <p class="lead-whisper" style="margin-top:1rem" data-i18n="highlights.secondary.lead">
+              西は積雪次第で開放。西エリア入場券が別途必要で、第3リフトは運行しない。山頂へは東の第1リフト。戻りは開放日の無料シャトル。
+            </p>
+            <a href="#family" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="highlights.secondary.cta">ファミリーゾーン案内</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pass" class="section border-top" aria-labelledby="pass-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow" data-i18n="pass.eyebrow">Visitor Pass</p>
+            <h2 id="pass-heading" class="heading-lg" data-i18n-html="pass.title">Snow & Spa Pass、<br />¥5,000〜。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="pass.lead">
+              町民向けの大人日券¥1,000は維持しつつ、海外旅行者向けにレンタル連携・1日リフト券・雲海の里入浴をセットにした高付加価値パスを新設する提言（LP案）。客単価を5〜7倍に引き上げ、売上倍増の即効レバー。
+            </p>
+            <div class="price-duet">
+              <div class="price-card">
+                <p class="price-card__label">Local</p>
+                <p class="price-card__value" data-i18n="pass.localPrice">大人1日券 ¥6,000</p>
+              </div>
+              <div class="price-card price-card--visitor">
+                <p class="price-card__label">Pass</p>
+                <p class="price-card__value" data-i18n="pass.visitorPrice">Snow & Spa Pass ¥5,000〜</p>
+              </div>
+            </div>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="pass.specs.0">4時間券 大人 ¥5,000</li>
+              <li class="spec-tag" data-i18n="pass.specs.1">道民割1日券 ¥4,500（身分証）</li>
+              <li class="spec-tag" data-i18n="pass.specs.2">西エリア入場 別¥2,900</li>
+            </ul>
+            <div class="notice-box">
+              <strong data-i18n="pass.noticeTitle">受入インフラ（提言）：</strong><span data-i18n="pass.noticeBody">キャッシュレス決済・多言語QR案内・外部レンタル事業者との手ぶらパッケージ——現状の摩擦を解消し、手ぶらで訪れるFIT層を受け入れる短期施策（レポート第7章）。</span>
+            </div>
+            <a href="#" class="btn btn-gold" style="margin-top:2rem" data-i18n="pass.cta">パス詳細</a>
+          </div>
+          <div class="feature-visual">
+            <div class="frame frame--wide">
+              <img
+                src="lp-mock-kamoidake-onsen.png"
+                data-i18n-attr="alt:pass.imgAlt"
+                alt="かもい岳のリフト券とセンターハウス"
+                width="1600"
+                height="1100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rental" class="section border-top" aria-labelledby="rental-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-visual feature-visual--left">
+            <div class="frame">
+              <img
+                src="lp-mock-kamoidake-food.png"
+                data-i18n-attr="alt:rental.imgAlt"
+                alt="ロッジでのレンタル受け取り——手ぶら来場の雪遊び体験"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="feature-copy feature-copy--right">
+            <p class="eyebrow" data-i18n="rental.eyebrow">Hands-free Package</p>
+            <h2 id="rental-heading" class="heading-lg" data-i18n-html="rental.title">手ぶらパッケージ、<br />到着時に受け取り。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="rental.lead">
+              施設内レンタルは現状なし——富良野エリアの民間レンタル事業者と連携し、事前オンライン決済でウェア・板をロッジ内またはロッカー受け取りにする「手ぶらパッケージ」提言（LP案）。
+            </p>
+            <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="rental.whisper">
+              在庫リスクを施設が抱えず、海外からのお客様の受入を実現する外部連携モデル。
+            </p>
+            <a href="#" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="rental.cta">手ぶら案内</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="yukinko" class="section border-top" aria-labelledby="yukinko-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow" data-i18n="yukinko.eyebrow">Hours</p>
+            <h2 id="yukinko-heading" class="heading-lg" data-i18n-html="yukinko.title">日中営業。<br />ナイターは出していない。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="yukinko.lead">
+              リフト 9:00–15:30。第2リフトのみ 15:00まで。夜の照明滑走を売りにするゲレンデではない。
+            </p>
+            <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="yukinko.whisper">
+              休業日・オープンは公式ブログとライブカメラで確認。
+            </p>
+            <a href="#" class="btn btn-gold" style="margin-top:2rem" data-i18n="yukinko.cta">営業時間</a>
+          </div>
+          <div class="feature-visual">
+            <div class="frame frame--wide">
+              <img
+                src="lp-mock-kamoidake-night.png"
+                data-i18n-attr="alt:yukinko.imgAlt"
+                alt="日中の東ゲレンデと第1リフト"
+                width="1600"
+                height="1100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="family" class="section border-top" aria-labelledby="family-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-visual feature-visual--left">
+            <div class="frame">
+              <img
+                src="lp-mock-kamoidake-family.png"
+                data-i18n-attr="alt:family.imgAlt"
+                alt="下部の緩斜面バンビコース"
+                width="1200"
+                height="1500"
+              />
+            </div>
+          </div>
+          <div class="feature-copy feature-copy--right">
+            <p class="eyebrow" data-i18n="family.eyebrow">Beginner</p>
+            <h2 id="family-heading" class="heading-lg" data-i18n-html="family.title">初めてなら<br />バンビコース。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="family.lead">
+              山全体が初級ではない。緩斜面はバンビ（600m・12–18°）。大会コースは17–29°の競技斜面。家族は第2リフト周りとバンビを先に見る。
+            </p>
+            <ul class="spec-list">
+              <li class="spec-tag" data-i18n="family.specs.0">バンビコース 600m</li>
+              <li class="spec-tag" data-i18n="family.specs.1">第2リフト 584m</li>
+              <li class="spec-tag" data-i18n="family.specs.2">センターハウスに食堂・休憩</li>
+            </ul>
+            <div class="notice-box">
+              <strong data-i18n="family.noticeTitle">注意：</strong><span data-i18n="family.noticeBody">トレーニングバーンと大会コースは練習・レースで閉鎖や非圧雪があり得る。</span>
+            </div>
+            <a href="#" class="btn btn-ghost" style="margin-top:1.5rem" data-i18n="family.cta">ファミリー・初雪案内</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="spa" class="section border-top" aria-labelledby="spa-heading">
+      <div class="inner">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow" data-i18n="spa.eyebrow">Snow & Spa</p>
+            <h2 id="spa-heading" class="heading-lg" data-i18n-html="spa.title">滑ったあと、<br />隣接の雲海の里。</h2>
+            <p class="lead" style="margin-top:1.5rem; max-width:32rem" data-i18n="spa.lead">
+              ゲレンデに隣接する宿泊「雲海の里かもい岳」。フィンランド式サウナと大浴場。
+            </p>
+            <p class="lead-whisper" style="margin-top:1rem; max-width:32rem" data-i18n="spa.whisper">
+              日帰り入浴の可否・時間は宿の公式で確認。
+            </p>
+            <a href="#access" class="btn btn-gold" style="margin-top:2rem" data-i18n="spa.cta">温泉ルートを見る</a>
+          </div>
+          <div class="feature-visual">
+            <div class="frame frame--wide">
+              <img
+                src="lp-mock-kamoidake-onsen.png"
+                data-i18n-attr="alt:spa.imgAlt"
+                alt="源泉かけ流しの雲海の里——スキー後の癒し"
+                width="1600"
+                height="1100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="workation" class="section border-top" aria-labelledby="workation-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="workation.eyebrow">Day trip</p>
+        <h2 id="workation-heading" class="heading-lg" data-i18n-html="workation.title">旭川をハブに、<br />日帰り一本。</h2>
+        <p class="lead" style="margin-top:1rem; max-width:36rem" data-i18n="workation.lead">
+          朝に旭川を出て空知で滑り、午後早めにリフトを下りて宿か旭川へ戻る。駅徒歩モデルではない。
+        </p>
+        <span class="work-badge" data-i18n="workation.badge">ASAHIKAWA HUB · CAR</span>
+
+        <div class="journey">
+          <div class="journey-step">
+            <p class="journey-step__num">01</p>
+            <p class="journey-step__title" data-i18n="workation.steps.01.title">旭川空港／市街</p>
+            <p class="journey-step__body" data-i18n="workation.steps.01.body">レンタカー。スカイチケットは旭川空港</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">02</p>
+            <p class="journey-step__title" data-i18n="workation.steps.02.title">道央道・砂川方面</p>
+            <p class="journey-step__body" data-i18n="workation.steps.02.body">砂川SAスマートICが近い入口</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">03</p>
+            <p class="journey-step__title" data-i18n="workation.steps.03.title">東ゲレンデ</p>
+            <p class="journey-step__body" data-i18n="workation.steps.03.body">第1・第2。西は別券・積雪次第</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">04</p>
+            <p class="journey-step__title" data-i18n="workation.steps.04.title">雲海の里</p>
+            <p class="journey-step__body" data-i18n="workation.steps.04.body">センターハウスで券・レンタル</p>
+          </div>
+          <div class="journey-step">
+            <p class="journey-step__num">05</p>
+            <p class="journey-step__title" data-i18n="workation.steps.05.title">雲海の里または旭川</p>
+            <p class="journey-step__body" data-i18n="workation.steps.05.body">隣接の宿か、ハブへ戻って夕食</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" class="section border-top" aria-labelledby="guides-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.guidesEyebrow">特集</p>
+        <h2 id="guides-heading" class="heading-lg" data-i18n="common.guidesTitle">特集ページ</h2>
+
+        <ul class="guides-list">
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="true" data-guide="local">
+              <span data-i18n="guides.local.title">空知の競技山が、いま東中心</span>
+              <span class="guide-icon" aria-hidden="true">−</span>
+            </button>
+            <div class="guide-panel is-open" id="panel-local">
+              <p class="lead" data-i18n="guides.local.body">
+                歌志内のかもい岳は空知の競技ゲレンデとして知られる。現行の一般営業は東の2本。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="schools">
+              <span data-i18n="guides.schools.title">大会コースとトレーニングバーン</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-schools" hidden>
+              <p class="lead" data-i18n="guides.schools.body">
+                17–29°の大会コースと、圧雪が日によって変わるトレーニングバーン。ポール練習で閉まる日がある。初雪体験だけが目的ならバンビから。
+              </p>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+          <li class="guide-item">
+            <button type="button" class="guide-trigger" aria-expanded="false" data-guide="summer">
+              <span data-i18n="guides.summer.title">西は別チケット</span>
+              <span class="guide-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="guide-panel" id="panel-summer" hidden>
+              <p class="lead" data-i18n="guides.summer.body">
+                西パウダーは積雪量に達してから。入場料は別。第3リフトは動かない。東の第1で上がり、戻りはシャトル。
+              </p>
+              <div class="hashtags">
+                <span class="hashtag" data-i18n="guides.summer.hashtags.0">#Kamoidake</span>
+                <span class="hashtag" data-i18n="guides.summer.hashtags.1">#Utashinai</span>
+                <span class="hashtag" data-i18n="guides.summer.hashtags.2">#AsahikawaHub</span>
+              </div>
+              <a href="#" class="btn btn-ghost" style="margin-top:1.25rem" data-i18n="common.read">読む</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="access" class="access-section border-top" aria-labelledby="access-heading">
+      <div class="inner">
+        <p class="eyebrow" data-i18n="common.accessEyebrow">Access</p>
+        <h2 id="access-heading" class="heading-lg" data-i18n="common.location">所在地</h2>
+        <div class="access-grid">
+          <address class="access-address">
+            <span class="access-postal" data-i18n="access.postal">〒073-0404</span>
+            <span class="access-line" data-i18n="access.line">北海道歌志内市字歌神95-9</span>
+            <p class="access-places" data-i18n-html="access.places" hidden></p>
+            <p class="access-note" data-i18n="access.note">旭川から車で約70分 · 東リフト2基</p>
+            <p class="access-phone" data-i18n-html="access.phone">0125-74-5900</p>
+          </address>
+          <div class="access-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%8B%E3%82%82%E3%81%84%E5%B2%B3%E5%9B%BD%E9%9A%9B%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4%20%E6%AD%8C%E5%BF%97%E5%86%85"
+              class="btn btn-map"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="common.googleMap">Google Mapで開く</span>
+            </a>
+            <a href="#access" class="btn btn-ghost" data-i18n="common.call">お問い合わせ</a>
+            <div class="access-affiliate" data-skyticket-rentacar-block>
+              <p class="access-affiliate__eyebrow" data-i18n="access.rentacarEyebrow">旭川ハブから空知へ</p>
+              <a
+                href="#"
+                class="access-affiliate__link"
+                data-skyticket-rentacar-link
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <img
+                  src=""
+                  alt=""
+                  width="0"
+                  height="1"
+                  class="access-affiliate__pixel"
+                  data-skyticket-rentacar-pixel
+                  aria-hidden="true"
+                />
+                <span data-i18n="access.rentacarLink">旭川空港でレンタカー予約</span>
+              </a>
+              <p class="access-affiliate__note" data-i18n="access.rentacarNote">スカイチケット（外部サイト）</p>
+              <p class="access-affiliate__hint" data-i18n="access.rentacarHint">かもい岳・歌志内へのドライブ向け</p>
+            </div>
+            <div class="access-affiliate access-affiliate--hotel" data-hotel-hub="asahikawa">
+              <p class="access-affiliate__eyebrow" data-i18n="access.hotelHubEyebrow">Powder week · hub hotels</p>
+              <a
+                href="https://japowsearch.com/tools/hotel-compare?hub=asahikawa"
+                class="access-affiliate__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="access.hotelHubLink"
+              >旭川ハブの宿を比較</a>
+              <p class="access-affiliate__note" data-i18n="access.hotelHubNote">Japowsearch hotel compare（外部）</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p class="footer-notice" role="note" data-i18n="footer.guideNotice">本ガイドは制作中の案です。写真・イラストは雰囲気の参考であり、実際のゲレンデ・施設と異なる場合があります。料金・営業・道路規制は各施設の公式情報を優先してください。</p>
+<div class="footer-row">
+        <div class="footer-meta">
+          <p data-i18n="footer.copyright">© かもい岳国際スキー場</p>
+        </div>
+      </div>
+      <p class="footer-location">
+        <span data-i18n="footer.location">〒073-0404 北海道歌志内市字歌神95-9</span> ·
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%8B%E3%82%82%E3%81%84%E5%B2%B3%E5%9B%BD%E9%9A%9B%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4%20%E6%AD%8C%E5%BF%97%E5%86%85" target="_blank" rel="noopener noreferrer" data-i18n="common.footerMap">Google Map</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_shared/mock-i18n.js"></script>
+  <script src="../_shared/affiliates/skyticket-rentacar.js"></script>
+  <script>
+    document.querySelectorAll(".guide-trigger").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.guide;
+        const panel = document.getElementById("panel-" + id);
+        const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".guide-trigger").forEach((b) => {
+          b.setAttribute("aria-expanded", "false");
+          b.querySelector(".guide-icon").textContent = "+";
+        });
+        document.querySelectorAll(".guide-panel").forEach((p) => {
+          p.classList.remove("is-open");
+          p.hidden = true;
+        });
+
+        if (!isOpen) {
+          btn.setAttribute("aria-expanded", "true");
+          btn.querySelector(".guide-icon").textContent = "−";
+          panel.classList.add("is-open");
+          panel.hidden = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

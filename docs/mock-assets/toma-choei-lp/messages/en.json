@@ -138,7 +138,10 @@
     "rentacarEyebrow": "旭山動物園・旭川北IC近接。ファミリー雪遊び受け皿。",
     "rentacarLink": "旭川空港でレンタカー予約",
     "rentacarNote": "スカイチケット（外部サイト）",
-    "rentacarHint": "当麻町営スキー場周辺のドライブ向け"
+    "rentacarHint": "当麻町営スキー場周辺のドライブ向け",
+    "hotelHubEyebrow": "Asahikawa hub · stay",
+    "hotelHubLink": "Compare Asahikawa hub hotels",
+    "hotelHubNote": "Japowsearch hotel compare (external)"
   },
   "footer": {
     "copyright": "© Toma Municipal Ski Area",

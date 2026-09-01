@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "title": "Kamoidake International Ski Area",
+    "description": "East-area pair lifts and west powder above Utashinai — about 70 minutes by car from Asahikawa"
+  },
+  "logo": "Kamoidake International Ski Area",
+  "nav": {
+    "family": "Family",
+    "spa": "Onsen",
+    "access": "Access",
+    "map": "Trail map",
+    "mapHint": "Schematic (may be unverified)",
+    "live": "Today",
+    "pass": "Pass",
+    "highlights": "Why",
+    "guides": "Guides"
+  },
+  "hero": {
+    "eyebrow": "Utashinai, Hokkaido · Sorachi",
+    "title": "Kamoidake<br />International",
+    "tagline": "East: Lifts 1 and 2. West: snow-dependent powder, extra ticket. About 70 minutes from Asahikawa.",
+    "badgeLocal": "Adult day ¥6,000",
+    "badgeVisitor": "Tourist ¥8,000",
+    "badgeSled": "Lifts 9:00–15:30",
+    "ctaPass": "Passes & pricing",
+    "ctaLive": "Today's conditions"
+  },
+  "live": {
+    "ariaLabel": "Today's operations dashboard",
+    "subtitle": "From the official trail guide (check open days)",
+    "updatedAt": "See official site for live hours",
+    "lift": {
+      "label": "Lifts",
+      "value": "East: 2",
+      "note": "Lift 1 1,002 m · Lift 2 584 m · Lift 3 closed"
+    },
+    "courses": {
+      "label": "Courses",
+      "value": "East 5 + west",
+      "note": "Bambi to race course · west powder extra ticket"
+    },
+    "night": {
+      "label": "Hours",
+      "value": "Until 15:30",
+      "note": "From 9:00 · Lift 2 until 15:00"
+    },
+    "yotei": {
+      "label": "View",
+      "value": "Sorachi unkai",
+      "note": "Sea of clouds over the plain on clear days"
+    }
+  },
+  "transit": {
+    "eyebrow": "Asahikawa Hub",
+    "title": "Drive from Asahikawa,<br />one hill in Sorachi.",
+    "lead": "This is not a walk-from-the-station hill. Base yourself in Asahikawa. The usual drive is the Do-o Expressway toward Sunagawa SA smart IC. JR Sunagawa or Akabira plus taxi or a rental car.",
+    "specs": [
+      "~70 min by car from central Asahikawa",
+      "~15 min from Sunagawa SA smart IC",
+      "Parking on Hokkaido Route 1027"
+    ],
+    "ctaPass": "View passes",
+    "ctaLive": "Today's operations",
+    "imgAlt": "Kamoidake base and center house from Route 1027"
+  },
+  "paths": {
+    "today": {
+      "label": "Today",
+      "title": "Lifts · courses · snow"
+    },
+    "pass": {
+      "label": "Pass",
+      "title": "Lift tickets"
+    },
+    "family": {
+      "label": "Family",
+      "title": "Bambi course"
+    },
+    "spa": {
+      "label": "Onsen",
+      "title": "Unkai-no-Sato Kamoidake"
+    },
+    "access": {
+      "label": "Access",
+      "title": "Asahikawa hub · car first"
+    }
+  },
+  "highlights": {
+    "eyebrow": "How the hill is built",
+    "title": "Ski the east. Treat the west as extra.",
+    "primary": {
+      "title": "Lifts 1 and 2 are the operating core",
+      "lead": "Official current copy is the east area. Lift 1 (1,002 m) to the summit, Lift 2 (584 m) on the lower east. Bambi 600 m 12–18°, Course 1 1,400 m max 27°, race course 1,200 m 17–29°, training burn, Course 2.",
+      "cta": "Course list",
+      "imgAlt": "East face, Lift 1, summit radio tower"
+    },
+    "secondary": {
+      "title": "West powder is a separate ticket",
+      "lead": "West opens when snowpack allows. Extra west-area ticket. Lift 3 does not run. Climb on East Lift 1. Return on the free shuttle when west is open.",
+      "cta": "West-area notes"
+    }
+  },
+  "pass": {
+    "eyebrow": "Lift tickets",
+    "title": "Adult day ticket ¥6,000.",
+    "lead": "Official 25–26 guide: residents adult day ¥6,000, tourist ¥8,000, junior high ¥3,000, elementary ¥2,300. A Hokkaido-resident day rate also exists. No night-skiing ticket.",
+    "localPrice": "Adult day ¥6,000",
+    "visitorPrice": "Tourist day ¥8,000",
+    "specs": [
+      "4-hour adult ¥5,000",
+      "Hokkaido-resident day ¥4,500 (ID)",
+      "West-area entry extra ¥2,900"
+    ],
+    "noticeTitle": "Check:",
+    "noticeBody": "Prices follow the official table. Season and multi-ride tickets exist. Sold on center-house floor 2.",
+    "cta": "Pass details",
+    "imgAlt": "Kamoidake lift tickets and center house"
+  },
+  "rental": {
+    "eyebrow": "Rental",
+    "title": "Rental desk,<br />center house floor 2.",
+    "lead": "Ski and board sets are issued at the same floor as tickets. This is not a no-rental town-park model.",
+    "whisper": "Sizes and stock: check on site or the official site.",
+    "cta": "Rental",
+    "imgAlt": "Rental desk on center house floor 2"
+  },
+  "yukinko": {
+    "eyebrow": "Hours",
+    "title": "Daytime only.<br />No night skiing listed.",
+    "lead": "Lifts 9:00–15:30. Lift 2 until 15:00. This hill is not sold as a floodlit night venue.",
+    "whisper": "Closures and opening days: official blog and live camera.",
+    "cta": "Hours",
+    "imgAlt": "East area and Lift 1 in daylight"
+  },
+  "workation": {
+    "eyebrow": "Day trip",
+    "title": "Asahikawa as hub,<br />one day out.",
+    "lead": "Leave Asahikawa in the morning, ski Sorachi, come down before last lift, then the lodge or back to the hub. Not a station-walk itinerary.",
+    "badge": "ASAHIKAWA HUB · CAR",
+    "steps": {
+      "01": {
+        "title": "Asahikawa Airport / city",
+        "body": "Rental car. Skyticket from Asahikawa Airport"
+      },
+      "02": {
+        "title": "Do-o Expwy toward Sunagawa",
+        "body": "Sunagawa SA smart IC is the near ramp"
+      },
+      "03": {
+        "title": "Base on Route 1027",
+        "body": "Tickets and rental at the center house"
+      },
+      "04": {
+        "title": "East area",
+        "body": "Lifts 1 and 2. West is extra ticket, snow-dependent"
+      },
+      "05": {
+        "title": "Unkai-no-Sato or Asahikawa",
+        "body": "Lodge next door, or dinner back at the hub"
+      }
+    }
+  },
+  "family": {
+    "eyebrow": "Beginner",
+    "title": "Start on Bambi,<br />not the race pitch.",
+    "lead": "The mountain is not 100% beginner. The gentle run is Bambi (600 m, 12–18°). The race course is 17–29°. Families should look at Lift 2 and Bambi first.",
+    "specs": [
+      "Bambi 600 m",
+      "Lift 2 584 m",
+      "Cafeteria and rest in the center house"
+    ],
+    "noticeTitle": "Note:",
+    "noticeBody": "The training burn and race course may close or stay ungroomed for training.",
+    "cta": "Beginner entry",
+    "imgAlt": "Lower Bambi beginner slope"
+  },
+  "spa": {
+    "eyebrow": "Unkai-no-Sato",
+    "title": "After skiing,<br />the lodge next door.",
+    "lead": "Unkai-no-Sato Kamoidake sits beside the hill: Finnish sauna and large bath.",
+    "whisper": "Day-use bathing hours: check the lodge site.",
+    "cta": "Unkai-no-Sato",
+    "imgAlt": "Snow around the center house and adjacent lodge"
+  },
+  "guides": {
+    "local": {
+      "title": "A Sorachi race hill, east-first for now",
+      "body": "Kamoidake in Utashinai is a known Sorachi race hill. Public ops today are the two east lifts."
+    },
+    "schools": {
+      "title": "Race course and training burn",
+      "body": "The 17–29° race course and a training burn whose grooming changes by day. Gates can close them. First snow only: start on Bambi."
+    },
+    "summer": {
+      "title": "West is a separate ticket",
+      "body": "West powder waits for snowpack. Extra entry. Lift 3 does not run. Climb on East Lift 1; return by shuttle.",
+      "hashtags": [
+        "#Kamoidake",
+        "#Utashinai",
+        "#AsahikawaHub"
+      ]
+    }
+  },
+  "access": {
+    "postal": "〒073-0404",
+    "line": "95-9 Utakami, Utashinai, Hokkaido",
+    "note": "~70 min by car from Asahikawa · two east lifts",
+    "phone": "0125-74-5900",
+    "places": "<span class=\"place-unit\"><ruby>Hokkaido<rt>Hokkaido</rt></ruby></span><span class=\"place-unit\"><ruby>Utashinai<rt>Utashinai</rt></ruby></span><span class=\"place-unit\"><ruby>Utakami<rt>Utakami</rt></ruby></span>",
+    "rentacarEyebrow": "空知の雲海と西斜面パウダー——旭川から約70分",
+    "rentacarLink": "旭川空港でレンタカー予約",
+    "rentacarNote": "スカイチケット（外部サイト）",
+    "rentacarHint": "かもい岳国際スキー場周辺のドライブ向け",
+    "hotelHubEyebrow": "Asahikawa hub · stay",
+    "hotelHubLink": "Compare Asahikawa hub hotels",
+    "hotelHubNote": "Japowsearch hotel compare (external)"
+  },
+  "footer": {
+    "copyright": "© Kamoidake International Ski Area",
+    "location": "〒073-0404 95-9 Utakami, Utashinai, Hokkaido"
+  },
+  "common": {
+    "explore": "Explore",
+    "pathsTitle": "Start here",
+    "guidesEyebrow": "Guides",
+    "guidesTitle": "Guides",
+    "accessEyebrow": "Access",
+    "location": "Location",
+    "googleMap": "Open in Google Maps",
+    "call": "Contact",
+    "footerMap": "Google Map",
+    "read": "Read"
+  }
+}
