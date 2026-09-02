@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Asahikawa eat · add 09 Kouya</name>
+    <description>Import into the published Asahikawa eat map if pin 09 is missing. Layer: Taxi · Kaguraoka.</description>
+    <Folder>
+      <name>Taxi · Kaguraoka</name>
+      <Placemark>
+        <name>09 Kouya</name>
+09,Taxi · Kaguraoka,09 Kouya,"43.740701, 142.3735135 (スープカリのお店 香屋 · 北海道旭川市神楽岡5条6丁目3-10)",OPEN MAP: https://maps.google.com/?q=43.740701%2C142.3735135. Soup curry specialist (スープカレーのお店 香屋 / Kouya). Walk-in only — no seats booked. Closed Tue/Wed. Hours often 11:00–19:30 LO 19:00 — confirm. Ticket-machine order. Taxi / car ~10 min from JR Asahikawa. Phone 0166-66-8120. Kaguraoka — not Midorigaoka. Not Okushiba.
+        <Point>
+          <coordinates>142.3735135,43.740701,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

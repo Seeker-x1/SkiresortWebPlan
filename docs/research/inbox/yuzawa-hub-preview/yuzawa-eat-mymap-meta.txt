@@ -1,0 +1,77 @@
+================================================================================
+OWNER CHECKLIST (3 min — do before PDF ship)
+================================================================================
+1. Open EDIT URL (logged in as map owner):
+   https://www.google.com/maps/d/edit?mid=1bjlmgLYwn82CK3FxtxdDwZ6u4u-sc_w
+2. Import yuzawa-eat-mymap-en.csv → replace restaurant pins (01–12, incl. Asfes)
+3. Base map: Light / silver. Knot pin: Echigo-Yuzawa Station (manual)
+4. Share → General access → Anyone with the link → Viewer
+5. Logged-out: viewer loads; title shows 01–12
+6. Screenshot → japow-guide-yuzawa-eatmap-v1.png (or v2 if pins changed)
+
+公開 URL（PUBLISHED）
+https://www.google.com/maps/d/viewer?mid=1bjlmgLYwn82CK3FxtxdDwZ6u4u-sc_w
+（編集用。PDF には出さない: https://www.google.com/maps/d/edit?mid=1bjlmgLYwn82CK3FxtxdDwZ6u4u-sc_w）
+
+取り込みファイル
+yuzawa-eat-mymap-en.csv
+（ピン名と住所は英語章と揃えるため CSV は英語のまま）
+
+タイトル（地図全体。左上の Untitled map）
+Echigo-Yuzawa eat map · 01–12 from Echigo-Yuzawa Station
+
+説明文（My Maps に貼る。英語だけ。日本語は貼らない）
+Numbers match The JAPOW Chaser's Guide — Echigo-Yuzawa chapter.
+
+Pin colour is how you leave Echigo-Yuzawa Station. Zoom to tonight’s cluster.
+
+01 is inside CoCoLo (Kojimaya). 02 is also inside CoCoLo (Ponshukan eat-in: bakudan onigiri + tasting wall, not the sake bath). 03-08 and 12 are the west-exit walk. 09-11 are the east-exit walk. 12 Asfes is the former nursery, about 10 min west.
+
+Book from the chapter table. This map is where to walk.
+https://japowsearch.com
+
+チェックボックスは1レイヤー。色分けは Layer 列（出口）。出口ごとにチェックボックスを分けない。Layer 列から「レイヤーを追加」しない。
+
+01        駅の中（CoCoLo）— 小嶋屋 2427-1。結びピンではない。
+02        駅の中（CoCoLo）— ぽんしゅ館イートイン 2427-3。爆弾おにぎり + 唎酒。酒風呂ピンではない。
+03–08, 12 西口徒歩。12 Asfes は旧保育園（1590）。
+09–11     東口徒歩。
+
+ホテル、酒風呂ピン、ゲレンデ食堂はこの地図に載せない。02 はぽんしゅ館のイートイン（おにぎり + 唎酒）であって、湯のピンではない。
+
+このピンを混ぜない:
+• 01 小嶋屋（CoCoLo へぎ、2427-1）≠ 02 ぽんしゅ館イートイン（2427-3）≠ 酒風呂
+• 01 小嶋屋 ≠ 10 中野屋本店（2-1-5）≠ 09 菊新（1-1-2）
+• 03 むらんごっつぉは HATAGO 井仙 2F、2455 — CoCoLo のカフェでも、HATAGO ロビーでもない
+• 04 釜蔵の電話: 店 025-240-7092 vs 観光 025-788-1077 — 看板を撮る
+• 07 森瀧は 357-5 茶屋 森瀧 — 西中ではない
+• 08 想い出（354-18、現金）≠ 石打の石どら（車。旧 石打ドライブイン焼肉）
+• 11 魚民は原宿ビル 1F、東口出てすぐ右 — 越後一新ではない（約 15 分、21:00 閉店）
+• 12 Asfes（1590、旧保育園）≠ ジョークン Beer Labo Jokun（318-6）
+
+予約は章の表から。この地図は歩く場所。
+https://japowsearch.com
+
+ピンの Description 先頭は OPEN MAP: https://maps.google.com/?q=LAT%2CLNG （カンマは %2C。日本語クエリは使わない）。タップで Google マップが開く。
+
+取り込み（確定 — 旭川 / 八方と同じ。分割しない）
+タイトル列 = Name
+位置列 = Address（英語 / ローマ字。同じ番地）
+説明列 = Description
+スタイル → 統一スタイル → 場所をグループ化 → Layer
+チェックボックスは1レイヤー。色は Layer 列。レイヤー追加 / 分割はしない。
+
+結びピン（CSV には入れない。手置き）
+名前: Echigo-Yuzawa Station
+検索: 越後湯沢駅
+飲食店ピンではない。1回だけ置く（西口でも東口でもよい）。色は結び。食事ではない。
+
+PDF 用スクリーンショット
+基図は Light / ベージュ（デフォルトの「地図」ではない）。基図ピッカーを閉じる。
+左の編集パネルは切ってから撮る。
+駅の結び + 徒歩ピン 01–12 がフレームに入る。番号が読めること。
+長辺 ≥ 1920 px。
+保存先: docs/japow-chasers-guide/assets/japow-guide-yuzawa-eatmap-v1.png
+
+KML
+ピン確認後、このフォルダにエクスポートを保存する。

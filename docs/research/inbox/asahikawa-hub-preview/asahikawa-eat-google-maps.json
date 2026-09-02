@@ -1,0 +1,22 @@
+{
+  "note": "maps.google.com/?q=lat,lng — chapter tables + My Maps CSV Description (OPEN MAP: prefix). Verify on [VERIFY 2026–27] before fly.",
+  "spots": {
+    "01 Santouka": "https://maps.google.com/?q=43.7647514,142.3600012",
+    "02 Baikohken": "https://maps.google.com/?q=43.7650476,142.3615878",
+    "03 Hachiya Gojo": "https://maps.google.com/?q=43.762456,142.364512",
+    "04 Ichikura": "https://maps.google.com/?q=43.765234,142.362891",
+    "05 Ramen Village": "https://maps.google.com/?q=43.729845,142.414567",
+    "06 Daikokuya": "https://maps.google.com/?q=43.763433,142.363819",
+    "07 Taisetsu Ji-Beer Kan": "https://maps.google.com/?q=43.765867,142.358119",
+    "08 Hitsujiya": "https://maps.google.com/?q=43.764725,142.362891",
+    "09 Sushi Triton (Kyokushin)": "https://maps.google.com/?q=43.728592,142.348011",
+    "10 Mitsumoto": "https://maps.google.com/?q=43.755089,142.378614",
+    "11 Konishi Sushi": "https://maps.google.com/?q=43.765167,142.362398",
+    "12 Kouya": "https://maps.google.com/?q=43.740701,142.3735135",
+    "13 Okushiba": "https://maps.google.com/?q=43.748912,142.365234",
+    "14 Gin-neko": "https://maps.google.com/?q=43.762912,142.365034",
+    "15 Sanshiro": "https://maps.google.com/?q=43.766089,142.361712",
+    "16 Sumiya": "https://maps.google.com/?q=43.763891,142.364123",
+    "17 Coffee Tei Tirol": "https://maps.google.com/?q=43.765812,142.361234"
+  }
+}

@@ -2,7 +2,7 @@
 
 **Rule:** PASS only if a reader can **book tonight and stand on a hill tomorrow** from that block. Readable prose does not count.  
 **Bar:** union of Hakuba operations + Asahikawa hotel-as-system / food categories.  
-**Measured:** 2026-08-30 — **`docs/research/inbox/full-guide-preview/index.html`** (`#hub-asahikawa` L391–2515 · `#hub-nagano` L2517–4663 · `#hub-yuzawa` L4665–5893) cross-checked with `DRAFT_v1_copyedited.md` after waves 1–7.  
+**Measured:** 2026-09-02 — **`docs/research/inbox/full-guide-preview/index.html`** cross-checked with `DRAFT_v1_copyedited.md` after Steves pass + post-Steves maps/VERIFY.  
 **Scoring:** **PASS** / **FAIL**. No partial credit on the chapter row.
 
 ---
@@ -26,7 +26,7 @@
 
 ---
 
-## Chapter scores (HTML print surface — 2026-08-30)
+## Chapter scores (HTML print surface — 2026-09-02)
 
 | # | Block | Asahikawa | Hakuba Happo-One | Echigo-Yuzawa | Evidence (HTML) |
 |---|--------|-----------|------------------|---------------|-----------------|
@@ -35,22 +35,22 @@
 | 3 | Why this hub | **PASS** | **PASS** | **PASS** | Mountain tables + Asahidake / Happo pilgrimage prose |
 | 4 | Choose the week | **PASS** | **PASS** | **PASS** | Path A/B/C (Asahikawa) · eat-out vs inn (Hakuba) · Path A/B (Yuzawa) + named beds |
 | 5 | Soak after the hill | **PASS** | **PASS** | **PASS** | Tattoo / price / official URLs (Happo-no-Yu, Yukoman-so, Kaido-no-Yu, etc.) |
-| 6 | How you get here | **PASS** | **PASS** | **PASS** | AKJ airport bus · NSS + Alpico · Skyliner/N'EX/Joetsu + TA-Q-BIN |
+| 6 | How you get here | **PASS** | **PASS** | **PASS** | AKJ airport bus ¥750 · NSS + Alpico · Skyliner/N'EX/Joetsu + TA-Q-BIN |
 | 7 | 7 nights | **PASS** | **PASS** | **PASS** | Weather tables win; “Days 2–6 are **not** … locked tour” (all three) |
-| 8 | Eat | **PASS** | **FAIL** | **PASS** | See notes below |
+| 8 | Eat | **PASS** | **PASS** | **PASS** | See notes below |
 | 9 | When tracked | **PASS** | **PASS** | **PASS** | Lean-week rows; Goryu Waves; waki-pow / Joetsu Kokusai |
 | 10 | Backcountry | **PASS** | **PASS** | **PASS** | `/ group` / `pp` labeled (Yabai, Evergreen, Canyons) |
 | 11 | What it costs | **PASS** | **PASS** | **PASS** | Path forks: A/B/C · Eat out / Inn dinner / Backup · Path A/B |
 | 12 | Book this | **PASS** | **PASS** | **PASS** | `#asahikawa-book` · `#hakuba-book` · `#yuzawa-book` |
-| | **PASS count** | **12 / 12** | **11 / 12** | **12 / 12** | |
+| | **PASS count** | **12 / 12** | **12 / 12** | **12 / 12** | |
 
 ### Block 8 notes
 
 | Hub | Status | Detail |
 |-----|--------|--------|
-| **Asahikawa** | PASS | Layer A+B · pins **01–09** · closed days on Santouka/Ji-Beer/Gin-neko · live map `mid=1H9fAIB…` · PNG `japow-guide-asahikawa-eatmap-v1.png` · no “re-import CSV” prose |
-| **Hakuba** | **FAIL** | CSV **`eat-mymap-en.csv` = 3 layers** (Walk / Echoland / Taxi) + **#28 Yamashina** in HTML table — but embedded PNG is still **`japow-guide-hakuba-eatmap-v3.png`**. **v4 re-capture pending** (wave 3 manual). Live My Map viewer not re-verified this pass. |
-| **Yuzawa** | PASS | CSV 3 layers · table **01–12** · map + PNG wired |
+| **Asahikawa** | PASS | pins **01–17** · CSV/meta synced · PNG `japow-guide-asahikawa-eatmap-v1.png` (Playwright capture 2026-09-02) |
+| **Hakuba** | PASS | Steves week map **12 pins** (Walk 6 / Echoland 3 / Locals 3) · CSV trimmed · PNG **`japow-guide-hakuba-eatmap-v4.png`** |
+| **Yuzawa** | PASS | CSV **01–12** · map + PNG wired |
 
 ### Block 11 notes
 
@@ -95,29 +95,25 @@
 | **B7** | Asfes unconditional dinner | **CLOSED** | Week table: `Asfes if open` (wave 6) |
 | **B8** | Pippu JR Bibai wrong | **CLOSED** | Official 比布駅 + [access page](https://www.town.pippu.hokkaido.jp/ski/access.html) (wave 7) |
 
-**Ship gate:** audit **BLOCKERs B1–B8 are closed** on purchaser print surface. Remaining ship risk is **Hakuba eat PNG** (block 8), not cost tier shape.
+**Ship gate:** audit **BLOCKERs B1–B8 are closed** on purchaser print surface. Hakuba eat block 8 **PASS** after v4 PNG + 12-pin CSV (2026-09-02).
 
 ---
 
-## Remaining work (not BLOCKER — manual / other chat)
+## Remaining work (not BLOCKER)
 
 | Item | Owner | Why still open |
 |------|-------|----------------|
-| **Hakuba eatmap v4 PNG** | Manual re-screenshot | CSV/table wave 3 done; PNG still **v3** → Hakuba block **8 FAIL** |
-| **Nozawa My Map live viewer** | Manual browser | CSV/checkbox lock wave 3; **not eye-verified** this session |
-| **hotel-compare 404** | japowsearch deploy | Links in HTML/DRAFT → `japowsearch.com/tools/hotel-compare?hub=*` — **live URL not verified** |
-| **`hakuba-hub-preview/` git untracked** | Git hygiene | `?? docs/research/inbox/hakuba-hub-preview/` — CSV fixes not in repo history |
-| **Hakuba `#hakuba-budget` tier rows** | ~~Wave 8 NIT~~ | **CLOSED** — path table Eat out / Inn dinner / Backup |
-| **M19 audit dates in body** | Wave 4 | e.g. `Official pages (as of 15 Aug 2026)` · `2026-08-17` tattoo note |
-| **Bare `[VERIFY]` tags** | Wave 8 NIT | Standardize to `[VERIFY 2026–27]` where season-bound |
+| **My Maps live re-import** | Owner Google account | CSV/meta ready; viewer title may still show old pin count until owner imports on edit URL |
+| **Nozawa My Map live viewer** | Manual browser | Eat + sotoyu layers — eye-verify only |
+| **hotel-compare live 404** | japowsearch deploy | HTML links use `japowsearch.com/tools/hotel-compare?hub=*` |
 
 ---
 
 ## $15 read (honest)
 
-- **Asahikawa · 12/12** on HTML — executable week after waves 1–2–7.  
+- **Asahikawa · 12/12** on HTML — executable week after waves 1–2–7 + VERIFY pass.  
 - **Yuzawa · 12/12** on HTML — path fork, eat pair, lean-week, JMA 0544 note (wave 6).  
-- **Hakuba · 11/12** — ops-strong; **eat PNG stale** (block 8) is the remaining FAIL.  
+- **Hakuba · 12/12** on HTML — ops-strong; eat v4 PNG + 12-pin CSV (2026-09-02).  
 - **Three-hub PDF** is **not** “12/12 × 3” until Hakuba block 8 (PNG) is re-captured.
 
 Quality bar for the next hub: **12 / 12** on this sheet, using [MAP_TEMPLATE.md](./MAP_TEMPLATE.md). Do not copy the old “12/12×3” header from the 2026-08-17 fill pass.

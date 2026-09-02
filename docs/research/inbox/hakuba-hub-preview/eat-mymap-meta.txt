@@ -1,3 +1,14 @@
+================================================================================
+OWNER CHECKLIST (3 min — do before PDF ship)
+================================================================================
+1. Open EDIT URL (logged in as map owner):
+   https://www.google.com/maps/d/u/0/edit?mid=1tVmXYHtX8whQCDnpJaKf4-wWDjDXi5A
+2. Import eat-mymap-en.csv → replace restaurant pins (12 pins · 3 layers)
+3. Base map: Light / silver. Knot pin: Happo Bus Terminal (manual, not in CSV)
+4. Share → General access → Anyone with the link → Viewer
+5. Logged-out: open viewer URL — map loads without sign-in
+6. Screenshot walk layer → japow-guide-hakuba-eatmap-v4.png (long side ≥ 1920 px)
+
 PUBLISHED
 https://www.google.com/maps/d/viewer?mid=1tVmXYHtX8whQCDnpJaKf4-wWDjDXi5A
 (edit, do not put in the PDF: https://www.google.com/maps/d/u/0/edit?mid=1tVmXYHtX8whQCDnpJaKf4-wWDjDXi5A)
@@ -6,25 +17,23 @@ IMPORT FILE
 eat-mymap-en.csv
 
 TITLE
-Hakuba Happo eat map · 01–29 from Happo BT
+Hakuba Happo eat map · 12 from Happo BT
 
 DESCRIPTION
-Numbers match The Ultimate JAPOW Chaser's Guide — Hakuba Happo chapter.
+Numbers match The Ultimate JAPOW Chaser's Guide — Hakuba Happo chapter (Steves week map).
 
 Layers are how you leave Happo Bus Terminal — not cuisine, not a ranking.
 
-01–10  Walk from Happo BT. 10 Ringoya is lunch only.
-11–16  Echoland (Line VN). Ride Line VN (~10 min). Do not walk from Happo (dark, ice). Sleep stays at Happo.
-17–29  Taxi — station road, Misorano, Goryu / Kamishiro, Omachi car day-trip. 22 Grindel is lunch only. 28 Yamashina (~30 min by car) is not this week's must. 29 Riki is Mizuho lunch soba. Not a steakhouse.
+01, 03, 05, 06, 09, 10  Walk from Happo BT. 10 Ringoya is lunch only.
+11, 12, 13  Echoland (Line VN). Ride Line VN (~10 min). Do not walk from Happo (dark, ice).
+17, 18, 19  Taxi — station road (locals nights). Not Happo BT walk.
+
+Yamashina (Omachi car-day soba) is prose only in the chapter — not on this map.
 
 Do not mix these pins:
-• 06 Koiya (eel, Happo walk) ≠ 15 KoiKoi (izakaya, Echoland)
-• 06 Koiya address is Happo 4093-2 (北城八方4093-2) — not 4093-2 Hokujo alone
-• 19 Miyama is station yakiniku — not the old Echoland jingisukan (moved to Matsumoto)
-• 09 Zen Soba ≠ 10 Ringoya ≠ 29 Riki ≠ 28 Yamashina — four soba shops
-• 16 koubo-nikki is 3020-142 — not TABITABI (27) at 3020-1406
-• 02 HAKUBAR is 5078 — not Sushi Sakai / THE HAPPO at 5090-1
-• 07 Yohei is Happo 5057 — not 5069 / Taigakukan 5094
+• 06 Koiya (eel, Happo walk) ≠ any Echoland izakaya
+• 09 Zen Soba ≠ 10 Ringoya — two soba shops on the walk layer
+• 17 Wagyu Samurai ≠ 18 Kikyo-ya ≠ 19 Miyama — three station-area nights
 
 Book from the chapter table. This map is where to walk or ride.
 https://japowsearch.com

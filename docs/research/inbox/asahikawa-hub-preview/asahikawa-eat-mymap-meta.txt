@@ -1,0 +1,135 @@
+================================================================================
+OWNER CHECKLIST (3 min — do before PDF ship)
+================================================================================
+1. Open EDIT URL (logged in as map owner):
+   https://www.google.com/maps/d/edit?mid=1H9fAIBhcInblW99U2jBObN4dOxJ_2G4
+2. Import asahikawa-eat-mymap-en.csv → replace restaurant pins (01–17)
+3. Base map: Light / silver. Knot pins: OMO7 + JR Asahikawa Station (manual)
+4. Share → General access → Anyone with the link → Viewer
+5. Logged-out: viewer loads without sign-in; title shows 01–17
+6. Screenshot walk layer → japow-guide-asahikawa-eatmap-v1.png (long side ≥ 1920 px)
+
+PUBLISHED (viewer — put this URL in the chapter)
+https://www.google.com/maps/d/viewer?mid=1H9fAIBhcInblW99U2jBObN4dOxJ_2G4
+
+EDIT (owner only — never in the PDF)
+https://www.google.com/maps/d/edit?mid=1H9fAIBhcInblW99U2jBObN4dOxJ_2G4
+
+================================================================================
+公開設定（リンクを開くと「アクセス許可」を求められるとき）
+================================================================================
+原因: 地図が「制限付き」（特定 Google アカウントのみ）のまま。
+
+手順（地図を開いた状態で）:
+1. 右上 **共有**（Share）をクリック
+2. **一般的なアクセス**（General access）を **制限付き** → **リンクを知っている全員** に変更
+3. 権限は **閲覧者**（Viewer）。編集者にしない
+4. **完了** → 表示されている viewer URL をコピー（mid= が同じか確認）
+5. 別ブラウザ or ログアウト状態で viewer URL を開き、ログイン不要で地図が見えるか確認
+
+まだログイン画面になる場合:
+- 共有ダイアログを再度開き、リンクを知っている全員が本当に ON か確認
+- 会社 Google Workspace で外部共有がブロックされていないか確認
+- 一度 **ファイル → 新しい地図にコピーを作成** → 新コピーで上と同じ公開 → 章の mid= URL を差し替え
+
+※ Yuzawa drive map メモと同じ: viewer がログインに落ちるあいだは Share → リンクを知っている全員が見られる。
+
+================================================================================
+インポートで「匿名でのインポートはできません」
+================================================================================
+CSV の中身が悪いのではなく、**Google があなたをログイン済みユーザーとして認識していない**ときに出ます。
+
+よくある原因:
+1. **viewer URL** で開いている（閲覧専用）。**edit URL** で開くこと
+2. **ログインしていない** / ゲスト / シークレット / 別アカウント
+3. **地図のオーナーではない** Google アカウントで編集を試している
+4. ブラウザの **Cookie・セッション不調**（2026年頃、My Maps で多発報告）
+
+手順（この順で試す）:
+1. Chrome（推奨）で **edit URL** を開く:
+   https://www.google.com/maps/d/edit?mid=1H9fAIBhcInblW99U2jBObN4dOxJ_2G4
+2. 右上アイコンで **地図を作った Google アカウント** に切り替え
+3. 別タブで https://sheets.google.com を開き、同アカウントでログイン確認
+4. My Maps に戻り、左レイヤー **インポート** → CSV を選択（ドラッグでも可）
+5. まだ失敗 → 一度ログアウトして再ログイン / Cookie 削除 / Edge 試行
+6. 代替: CSV を **Google ドライブにアップロード** → My Maps のインポートで Drive から選択
+
+viewer で「アクセス許可」を求められる件と、匿名インポートは別問題:
+- 閲覧の公開 = 共有設定
+- インポート = 必ず **オーナーアカウント + edit 画面 + ログイン状態**
+
+================================================================================
+OWNER REFRESH (2026-09-02)
+Screenshot replaced: docs/japow-chasers-guide/assets/japow-guide-asahikawa-eatmap-v1.png (2754×1729, 01–17 pins).
+
+OWNER REFRESH (2026-09-02)
+Expanded 01–17 pins. Re-import asahikawa-eat-mymap-en.csv (replaces old 01–09 set).
+Each Description starts with OPEN MAP: https://maps.google.com/?q=lat%2Clng
+
+IMPORT FILE
+asahikawa-eat-mymap-en.csv
+
+GOOGLE MAPS LINKS (chapter tables)
+asahikawa-eat-google-maps.json — lat/lng for chapter Maps links + CSV OPEN MAP lines
+
+TITLE
+Asahikawa eat map · 01–17 from OMO7 / station
+
+DESCRIPTION
+Numbers match The Ultimate JAPOW Chaser's Guide — Asahikawa chapter.
+
+Pin colour is how you leave OMO7 / JR Asahikawa Station — not a ranking. Zoom to tonight's cluster.
+
+LAYERS (checkbox names = Layer column in CSV)
+Walk from OMO7 / station     01–04, 06–08, 11, 14–17
+Taxi · northeast             05 Ramen Village
+Taxi · Kyokushin             09 Sushi Triton (Kyokushin)
+Taxi · east                  10 Mitsumoto
+Taxi · Kaguraoka             12 Kouya
+Taxi · Midorigaoka           13 Okushiba Shoten Asahikawa-tei
+
+PIN LIST (do not mix)
+01  Santouka — MANNY BLD 1-jo 8-chome 348-6
+02  Baikohken — Piaza B1 2-jo 8
+03  Hachiya Gojo — 5-7 Alley Furari-to (not Gin-neko)
+04  Ichikura — late-night ramen near station
+05  Ramen Village — Atsuta (taxi ~15 min)
+06  Daikokuya — 4-jo 5-chome Nakadori (not Sapporo)
+07  Ji-Beer Kan — Miyashita-dori 11 Kuraimu (not Harete yatai-mura)
+08  Hitsujiya — station area Genghis (not Daikokuya)
+09  Triton — Kyokushin 3-jo 5-1 (not Konishi)
+10  Mitsumoto — 鮨処みつもと east (taxi ~10 min)
+11  Konishi — 3-jo 6 (not Triton)
+12  Kouya — Kaguraoka 5-jo 6-3-10 (not Okushiba)
+13  Okushiba — 奥芝商店 旭川亭 Midorigaoka (not Kouya)
+14  Gin-neko — 5-7 Alley (not Sanshiro)
+15  Sanshiro — Dokushaku Sanshiro 2-jo 5 (not Gin-neko)
+16  Sumiya — salt horumon
+17  Coffee Tei Tirol — café since 1939
+
+Book from the chapter table. This map is where to walk or ride.
+https://japowsearch.com
+
+IMPORT (locked — Happo / Nozawa / Yuzawa method)
+Title column = Name
+Location column = Address
+Description column = Description
+Each Description starts with OPEN MAP: https://maps.google.com/?q=lat%2Clng
+Style → Uniform style → Group places by → Layer
+One import replaces all restaurant pins. Knot pins (OMO7, JR station) stay manual.
+
+KNOT (add by hand, not in the CSV)
+Name: OMO7 Asahikawa
+Search: 星野リゾート OMO7 旭川 / 6-jo-dori 9-chome 45-1
+Not a restaurant pin.
+
+Name: JR Asahikawa Station
+Search: JR旭川駅
+Not a restaurant pin.
+
+PDF SCREENSHOT
+Light / beige basemap. Close the basemap picker. Crop the left editor panel.
+Zoom so OMO7, JR Asahikawa, and Walk pins 01–04, 06–08, 11, 14–17 are in frame.
+05, 09, 10, 12, 13 may sit off-frame — expected.
+Long side ≥ 1920 px.
+Save as docs/japow-chasers-guide/assets/japow-guide-asahikawa-eatmap-v1.png
